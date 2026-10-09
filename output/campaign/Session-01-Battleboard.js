@@ -1390,6 +1390,19 @@
       campaignIndex.restorePoints.push({ id, label: 'Before Wave Echo content upgrade', kind: 'migration', created: Date.now() });
     }
     state = saved ? normalize(saved, loadedPackId) : activeCampaignId === 'default' && activeSessionId === 'session-01' ? readSavedState() : newCustomState();
+    // Apply the two DM-approved level-four choices only to the current live
+    // Echo Below session. Historical sessions and practice campaigns stay as saved.
+    const levelFourIds = activeCampaignId === 'default'
+      ? ['pc-pebble', 'pc-trista'].filter(id => Number(state.party?.[id]?.level) === 3 && Number.isFinite(state.party[id].maxHp)) : [];
+    if (levelFourIds.length) {
+      const id = `before-pebble-trista-level-4-${Date.now()}`, sessions = {};
+      for (const entry of campaignIndex.sessions)
+        sessions[entry.id] = entry.id === activeSessionId ? JSON.stringify(state) : await readRecord(campaignSessionKey(entry.id));
+      await writeRecord(`recovery:${activeCampaignId}:${id}`, JSON.stringify({ schemaVersion: DATA_VERSION,
+        index: JSON.stringify(campaignIndex), sessions, created: Date.now() }));
+      campaignIndex.restorePoints.push({ id, label: 'Before Pebble and Trista level 4', kind: 'migration', created: Date.now() });
+      globalThis.ECHO_PARTY_DATA.applyLevelFourChoices(state, levelFourIds);
+    }
     campaignContinuity();
     if (Number(state.party?.['pc-donavan']?.level) >= 3 && campaignIndex.rules?.characterOptions)
       campaignIndex.rules.characterOptions['donavan-scribes'] = 'active';

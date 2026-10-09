@@ -1,17 +1,18 @@
 # Pebble
 
 **Campaign:** The Echo Below  
-**Level:** 3  
+**Level:** 4
 **Character concept:** A warmhearted Goron from an isolated mountain tribe. He loves eating rocks, understands stone better than social customs, and has come down from the mountains in search of a rare stone that he simply thinks will taste good. He protects new friends with a hammer and shield.
 
 ## Rules build
 
 This uses the 2014 *Player's Handbook* rules with options from *Tasha's Cauldron of Everything*. Goron is represented by **custom lineage**; there is no published Goron ancestry in the supplied D&D books. Pebble is Medium, has a 30-foot walking speed and 60-foot darkvision, and speaks Common and Goron. His Goron language is subject to the DM's agreement. His +2 lineage ability increase goes to Strength. His lineage feat is **Crusher**, which adds another +1 Strength.
 
-**Class:** Fighter 3 - Champion  
+**Class:** Fighter 4 - Champion
 **Background:** Outlander  
 **Fighting Style:** Interception (*Tasha's*)  
 **Subclass:** Champion; weapon attacks score a critical hit on natural 19-20.
+**Level-4 feat:** Tough. Maximum HP increases by 2 per character level, including 8 HP at level 4.
 
 ### Ability scores
 
@@ -32,8 +33,8 @@ Standard array, before ancestry: Strength 15, Dexterity 10, Constitution 14, Int
 | --- | --- |
 | Proficiency bonus | +2 |
 | Armor Class | 18 (chain mail and shield) |
-| Hit points | 23 maximum |
-| Hit Dice | 3d10 |
+| Hit points | 43 maximum (level-4 d10 roll 10, +2 CON, +8 Tough) |
+| Hit Dice | 4d10 |
 | Initiative | +0 |
 | Speed | 30 feet |
 | Passive Perception | 13 |
@@ -49,7 +50,8 @@ Standard array, before ancestry: Strength 15, Dexterity 10, Constitution 14, Int
 - **Improved Critical:** Weapon attack critical range is 19-20. This does not grant Extra Attack.
 
 - **Interception:** When a creature Pebble can see hits someone other than him within 5 feet of him, he can use his reaction to reduce that attack's damage by 1d10 + 2. He must be holding his shield or a weapon.
-- **Second Wind:** Once per short or long rest, he can use a bonus action to regain 1d10 + 3 hit points.
+- **Second Wind:** Once per short or long rest, he can use a bonus action to regain 1d10 + 4 hit points.
+- **Tough:** His maximum HP includes +8 at level 4 and increases by another 2 at each later level.
 - **Crusher:** Once on each of his turns, after a bludgeoning hit, he can move the target 5 feet into an empty space if it is no more than one size larger than him. A bludgeoning critical hit also makes attacks against that target more accurate until the start of his next turn.
 - **Outlander:** He remembers terrain and can usually find food and fresh water for himself and up to five others when the land provides them.
 

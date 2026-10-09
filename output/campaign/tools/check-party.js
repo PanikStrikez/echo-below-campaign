@@ -58,6 +58,51 @@ assert(model.ownerView(leveled['pc-trista']).actions.some(item => item.name === 
 assert(model.ownerView(leveled['pc-trista']).features.some(item => item.name === 'Deflect Attacks'));
 assert.equal(model.ownerView(leveled['pc-pebble']).resources.find(item => item.id === 'pebble-action-surge').current, 1);
 assert(model.ownerView(leveled['pc-pebble']).features.some(item => item.name === 'Improved Critical'));
+// Apply the approved fourth-level choices to a damaged, partially spent live party.
+leveled['pc-pebble'].hp = 13;
+leveled['pc-pebble'].hitDice.current = 1;
+leveled['pc-pebble'].resources.find(item => item.id === 'pebble-second-wind').current = 0;
+leveled['pc-trista'].hp = 11;
+leveled['pc-trista'].hitDice.current = 2;
+leveled['pc-trista'].resources.find(item => item.id === 'trista-focus').current = 1;
+const fourth = { party: structuredClone(leveled), tokens: [
+  { id: 'pc-pebble', hp: 13, maxHp: 23 }, { id: 'pc-trista', hp: 11, maxHp: 21 }
+] };
+model.applyLevelFourChoices(fourth, ['pc-pebble', 'pc-trista']);
+assert.equal(fourth.party['pc-pebble'].level, 4);
+assert.equal(fourth.party['pc-pebble'].maxHp, 43);
+assert.equal(fourth.party['pc-pebble'].hp, 33);
+assert.equal(fourth.party['pc-pebble'].hitDice.current, 2);
+assert.equal(fourth.party['pc-pebble'].resources.find(item => item.id === 'pebble-second-wind').current, 0);
+assert.equal(fourth.party['pc-pebble'].actions.find(item => item.id === 'pebble-second-wind').damageDice, '1d10+4');
+assert(fourth.party['pc-pebble'].features.some(item => item.name === 'Tough'));
+assert.equal(fourth.party['pc-pebble'].levelHistory.at(-1).snapshot.level, 3);
+assert.equal(fourth.party['pc-trista'].level, 4);
+assert.equal(fourth.party['pc-trista'].maxHp, 29);
+assert.equal(fourth.party['pc-trista'].hp, 19);
+assert.equal(fourth.party['pc-trista'].abilities.con, 18);
+assert.equal(fourth.party['pc-trista'].speed, 50);
+assert.equal(fourth.party['pc-trista'].saves.con.override, 4);
+assert.equal(fourth.party['pc-trista'].hitDice.current, 3);
+assert.deepEqual(fourth.party['pc-trista'].resources.find(item => item.id === 'trista-focus') &&
+  Object.fromEntries(['current', 'max'].map(key => [key, fourth.party['pc-trista'].resources.find(item => item.id === 'trista-focus')[key]])),
+  { current: 2, max: 4 });
+assert.equal(fourth.party['pc-trista'].actions.find(item => item.id === 'trista-deflect').damageDice, '1d10+8');
+assert(fourth.party['pc-trista'].actions.some(item => item.id === 'trista-slow-fall'));
+assert(fourth.party['pc-trista'].features.some(item => item.name === 'Speedy'));
+assert.equal(fourth.tokens[0].maxHp, 43);
+assert.equal(fourth.tokens[1].maxHp, 29);
+assert.equal(model.ownerView(fourth.party['pc-pebble']).maxHp, 43);
+assert.equal(model.ownerView(fourth.party['pc-trista']).speed, 50);
+assert.equal(model.ownerView(fourth.party['pc-trista']).resources.find(item => item.id === 'trista-focus').current, 2);
+const savedFourth = structuredClone(fourth);
+model.applyLevelFourChoices(fourth, ['pc-pebble', 'pc-trista']);
+assert.deepEqual(fourth, savedFourth);
+const restoredFourth = model.normalizeParty(JSON.parse(JSON.stringify(fourth.party)), fourth.tokens, false, true);
+assert.equal(restoredFourth['pc-pebble'].maxHp, 43);
+assert.equal(restoredFourth['pc-trista'].speed, 50);
+assert.equal(restoredFourth['pc-trista'].resources.find(item => item.id === 'trista-focus').current, 2);
+assert(!JSON.stringify(model.safeView(restoredFourth['pc-trista'])).includes('levelHistory'));
 assert.equal(party['pc-donavan'].hp, 24);
 assert.equal(model.seedParty([{ id: 'pc-donavan', hp: 0, maxHp: 0, tempHp: 0, ac: null }])['pc-donavan'].hp, null);
 assert.equal(party['pc-donavan'].abilities.int, 18);

@@ -393,6 +393,85 @@
     'pc-pebble': { level2: 16, level3: 23, die: 10, rolls: 'd10: 2 at level 2, 5 at level 3; +2 CON each level' }
   };
 
+  // Approved level-four choices and the single recorded HP rolls. Keep this separate
+  // from the seed sheets so older session snapshots retain their original level.
+  const levelFourChoices = {
+    'pc-pebble': { die: 10, roll: 10, feat: 'Tough', source: '2014 Player’s Handbook' },
+    'pc-trista': { die: 8, roll: 1, feat: 'Speedy', source: '2024 Player’s Handbook character exception' }
+  };
+
+  function levelFourSheet(raw) {
+    const choice = levelFourChoices[raw?.id];
+    if (!choice || Number(raw.level) !== 3 || !Number.isFinite(raw.maxHp)) return raw;
+    const sheet = structuredClone(raw), snapshot = structuredClone(raw);
+    snapshot.levelHistory = [];
+    const put = (kind, item, key = 'id') => {
+      sheet[kind] ||= [];
+      const index = sheet[kind].findIndex(old => old[key] === item[key]);
+      if (index < 0) sheet[kind].push(item);
+      else sheet[kind][index] = { ...sheet[kind][index], ...item };
+    };
+    sheet.level = 4;
+    sheet.proficiency = 2;
+    let gain;
+    if (raw.id === 'pc-pebble') {
+      // 10 on d10, +2 CON, and Tough grants +2 HP for each of four levels.
+      gain = choice.roll + 2 + 2 * sheet.level;
+      put('actions', action('pebble-second-wind', 'Second Wind', 'Bonus action', null, '1d10+4',
+        'Heal Pebble; once per short or long rest.', { resourceId: 'pebble-second-wind' }));
+      put('features', { name: 'Second Wind', text: 'Bonus action to heal 1d10+4; once per short or long rest.', source: '2014 Fighter 1' }, 'name');
+      put('features', { name: 'Tough', text: 'Maximum HP increases by 2 per character level (8 HP at level 4), and by 2 at each later level.', source: '2014 Player’s Handbook · feat' }, 'name');
+    } else {
+      // Speedy raises CON 17 → 18. The new modifier applies to all prior levels.
+      gain = choice.roll + 4 + 3;
+      sheet.abilities.con = 18;
+      sheet.saves.con = { ...(sheet.saves.con || { rank: 0 }), override: 4 };
+      sheet.speed = 50;
+      const focus = sheet.resources?.find(item => item.id === 'trista-focus');
+      if (focus) {
+        const spent = Math.max(0, (Number(focus.max) || 3) - (Number(focus.current) || 0));
+        focus.max = 4;
+        focus.current = Math.max(0, 4 - spent);
+      }
+      put('actions', action('trista-uncanny', 'Uncanny Metabolism', 'When rolling initiative', null, '1d6+4',
+        'Restore all spent Focus Points and heal 1d6 + Monk level; once per long rest.', { resourceId: 'trista-uncanny' }));
+      put('actions', action('trista-deflect', 'Deflect Attacks', 'Reaction', null, '1d10+8',
+        'When hit by an attack that deals bludgeoning, piercing, or slashing, reduce total damage by 1d10 + DEX + Monk level. If reduced to 0, you may spend 1 Focus Point to redirect.'));
+      put('actions', action('trista-slow-fall', 'Slow Fall', 'Reaction', null, '',
+        'When you fall, reduce the falling damage by 5 × Monk level (20 at level 4).'));
+      put('actions', action('trista-speedy-dash', 'Speedy: Dash', 'When you Dash', null, '',
+        'Difficult terrain does not cost extra movement for the rest of this turn.'));
+      put('features', { name: 'Monk’s Focus', text: '4 Focus Points; Flurry of Blows, Patient Defense, and Step of the Wind. Regain points after a short or long rest. Focus save DC 10.', source: '2024 Monk 2–4' }, 'name');
+      put('features', { name: 'Uncanny Metabolism', text: 'On initiative, regain all Focus Points and heal 1d6+4; once per long rest.', source: '2024 Monk 2' }, 'name');
+      put('features', { name: 'Deflect Attacks', text: 'Reaction: reduce qualifying attack damage by 1d10+8; on reduction to 0, spend 1 Focus Point to redirect with DEX save DC 10.', source: '2024 Monk 3–4' }, 'name');
+      put('features', { name: 'Slow Fall', text: 'Reaction when falling: reduce falling damage by 20 at level 4.', source: '2024 Monk 4' }, 'name');
+      put('features', { name: 'Speedy', text: 'CON +1 (now 18); speed +10 ft. Dash ignores difficult terrain for the rest of the turn; opportunity attacks against Trista have disadvantage.', source: '2024 Player’s Handbook · feat' }, 'name');
+    }
+    sheet.maxHp += gain;
+    if (Number.isFinite(raw.hp)) sheet.hp = raw.hp <= 0 ? raw.hp : Math.min(sheet.maxHp, raw.hp + gain);
+    const oldDice = raw.hitDice || {};
+    sheet.hitDice = { ...oldDice, die: choice.die, max: 4,
+      current: Math.min(4, Math.max(0, (Number(oldDice.current) || 0) + 1)) };
+    if (oldDice.pools?.length === 1) sheet.hitDice.pools = [{ ...oldDice.pools[0], max: 4,
+      current: Math.min(4, Math.max(0, (Number(oldDice.pools[0].current) || 0) + 1)) }];
+    sheet.sourceStatus = `Approved level 4 · ${choice.feat}; HP d${choice.die} roll ${choice.roll}; ${choice.source}`;
+    sheet.levelHistory = [...(raw.levelHistory || []), { date: new Date().toISOString().slice(0, 10), level: 4,
+      summary: `Level 4 ${choice.feat}; HP d${choice.die}=${choice.roll}; max HP ${raw.maxHp} → ${sheet.maxHp}`, snapshot }].slice(-30);
+    return sheet;
+  }
+
+  function applyLevelFourChoices(state, ids) {
+    for (const id of ids) {
+      const prior = state.party?.[id];
+      if (!prior || Number(prior.level) !== 3) continue;
+      const next = levelFourSheet(prior);
+      state.party[id] = normalizeSheet(next, prior);
+      const token = state.tokens?.find(item => item.id === id);
+      if (token) { token.maxHp = next.maxHp; token.hp = next.hp; }
+    }
+    return state;
+  }
+
   function levelThreeSheet(raw, tokenSheet) {
     const build = levelThreeHp[raw.id];
     if (!build || Number(raw.level) >= 3) return raw;
@@ -827,6 +906,6 @@
   }
 
   globalThis.ECHO_PARTY_DATA = { ABILITIES, SKILLS, seeds, seedSheet, normalizeSheet, seedParty,
-    normalizeParty, levelThreeSheet, donavanLevelThreeSheet, latestLevelThreeSheet,
+    normalizeParty, levelThreeSheet, levelFourSheet, applyLevelFourChoices, donavanLevelThreeSheet, latestLevelThreeSheet,
     abilityMod, proficiencyForLevel, rankValue, passive, safeView, ownerView, previewRest };
 })();

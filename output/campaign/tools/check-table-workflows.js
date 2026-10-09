@@ -2,7 +2,8 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const appRoot = path.resolve(__dirname, '..');
-assert(fs.readFileSync(path.join(appRoot, 'Session-01-Loader.js'), 'utf8').includes('Session-01-Encounter-Launch.js'));
+assert(fs.readFileSync(path.join(appRoot, 'Session-01-Loader.js'), 'utf8').includes('Campaign-Module-Manifest.js'));
+assert(fs.readFileSync(path.join(appRoot, 'Campaign-Module-Manifest.js'), 'utf8').includes('Session-01-Encounter-Launch.js'));
 assert(fs.readFileSync(path.join(appRoot, 'Session-01-TV-Display.html'), 'utf8').includes('id="quick-table-check"'));
 
 class FakeElement {

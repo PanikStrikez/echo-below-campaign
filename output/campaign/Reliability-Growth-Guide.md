@@ -15,9 +15,9 @@ Stale/offline warnings also appear in the top bar and table check. The Player TV
 
 ## Portable package
 
-In **Reliability → Backup**, choose **Download full app + campaign + artwork package**. Use the desktop HTTP app, not a file:// tab. This exports the current browser’s campaign and uploaded media, copies the app/art/audio and local source PDFs into a relocatable ZIP, and verifies SHA-256 hashes before download. Large media makes this substantially larger and slower than the JSON backup.
+In **Reliability → Backup**, choose **Download full app + campaign + artwork package**. Use the desktop HTTP app, not a file:// tab. This exports the current browser’s campaign and uploaded media, copies the app/art/audio into a relocatable ZIP, and verifies SHA-256 hashes before download. Personal source PDFs remain separate and must be copied locally by their owner. Large media makes this substantially larger and slower than the JSON backup.
 
-The ZIP contains private campaign information and personal books. It is a personal backup, not a public app distribution.
+The ZIP contains private campaign information. It is a personal backup, not a public app distribution. The separate private campaign-command-center SQLite database is also excluded; back it up as described in `CAMPAIGN-ENGINE-SETUP.md`.
 
 Extract it on the destination computer. Python 3.10+ is required. Stop any existing Echo Below servers, run `Start-Campaign.command` on a Mac (or `python3 Start-Campaign.py`), then restore `campaign-backup.json` as a new campaign using Reliability → Backup. Run Table check and confirm TV and audio there. The package does not automatically overwrite browser saves.
 

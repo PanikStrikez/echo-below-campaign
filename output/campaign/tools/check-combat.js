@@ -54,7 +54,9 @@ const ui = fs.readFileSync(path.join(root, 'Session-01-Combat-UI.js'), 'utf8');
 for (const [, id] of ui.matchAll(/\$\('([^']+)'\)/g))
   assert(html.includes(`id="${id}"`), `Missing UI element: ${id}`);
 const loader = fs.readFileSync(path.join(root, 'Session-01-Loader.js'), 'utf8');
-assert(loader.includes('Session-01-Combat-Data.js') && loader.includes('Session-01-Combat-UI.js'));
+const manifest = fs.readFileSync(path.join(root, 'Campaign-Module-Manifest.js'), 'utf8');
+assert(loader.includes('Campaign-Module-Manifest.js'));
+assert(manifest.includes('Session-01-Combat-Data.js') && manifest.includes('Session-01-Combat-UI.js'));
 const board = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
 assert(board.includes('statusDue:') && board.includes('prepareArea:') && board.includes('applyReviewedDamage'));
 assert(board.includes("token('yeemik', 'Yeemik', 'Y', 'goblin', 'enemy', 12, 'den')"));

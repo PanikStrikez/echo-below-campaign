@@ -1,5 +1,7 @@
 # The Echo Below campaign table: complete-tool roadmap
 
+**Historical build list.** Its checkboxes and character-status notes were written across earlier releases and are not a current readiness assessment. Use `App-Readiness-Status.md` for verified current status and `App-Improvement-Staged-Plan.md` for the next stages.
+
 This is the build list for the local two-screen setup: the Dungeon Master uses a private computer display, and the players see a flat table TV. Section 1 records the rules-library work now present in the live battleboard.
 
 ## Starting point

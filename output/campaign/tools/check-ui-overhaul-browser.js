@@ -1,0 +1,82 @@
+const assert = require('node:assert/strict');
+const path = require('node:path');
+const { chromium } = require('playwright');
+
+(async () => {
+  const browser = await chromium.launch({ headless: true, channel: 'chrome' });
+  try {
+    const context = await browser.newContext({ viewport: { width: 1512, height: 982 } });
+    const page = await context.newPage();
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    page.on('dialog', dialog => dialog.accept());
+    await page.goto('file://' + path.resolve(__dirname, '../Session-01-TV-Display.html'));
+    await page.locator('#dm-app.cockpit-v2').waitFor();
+    assert.equal(await page.locator('.mode-switch #mode-run').count(), 1);
+    assert.equal(await page.locator('.mode-switch #mode-prep').count(), 1);
+    assert.equal(await page.locator('.mode-switch #mode-review').count(), 1);
+    assert(await page.locator('#dm-stage').isVisible());
+    assert(await page.locator('#tv-now-badge').isVisible());
+    assert(await page.locator('#session-flow-open').isVisible());
+    await page.locator('#mode-prep').click();
+    assert(await page.locator('#dm-app').evaluate(node => node.classList.contains('prep-mode')));
+    await page.screenshot({ path: '/private/tmp/echo-ui-stage1-prep.png' });
+    await page.locator('#mode-review').click();
+    assert(await page.locator('#dm-app').evaluate(node => node.classList.contains('review-mode')));
+    await page.screenshot({ path: '/private/tmp/echo-ui-stage1-review.png' });
+    await page.locator('#mode-run').click();
+    assert(await page.locator('#dm-app').evaluate(node => node.classList.contains('run-mode')));
+    assert(await page.locator('#dm-stage').isVisible());
+    for (const name of ['Party', 'World', 'Library', 'Settings']) {
+      const previousTitle = await page.locator('#context-title').innerText();
+      await page.locator(`[data-cockpit-nav="${name}"]`).click();
+      assert(await page.locator(`#cockpit-tools-${name}`).isVisible(), `${name} tools are visible`);
+      await page.locator('#cockpit-context-back').click();
+      assert.equal(await page.locator('#context-title').innerText(), previousTitle, `${name} returns to previous context`);
+    }
+    await page.locator('[data-context-tab="guide"]').click();
+    await page.locator('#cockpit-scene-notes').click();
+    assert(await page.locator('.runbook-panel').isVisible());
+    await page.locator('#cockpit-context-back').click();
+    assert(await page.locator('#context-guide').isVisible(), 'Scene notes returns to guide');
+    await page.locator('[data-cockpit-nav="Party"]').click();
+    await page.getByRole('button', { name: 'Party tokens' }).click();
+    assert(await page.locator('.party-panel').isVisible());
+    await page.locator('#cockpit-context-back').click();
+    assert(await page.locator('#cockpit-tools-Party').isVisible(), 'Party panel returns to Party tools');
+    await page.locator('#cockpit-favorites').click();
+    assert(await page.locator('#personal-quick-bar').isVisible());
+    await page.locator('#cockpit-favorites').click();
+    await page.locator('[data-cockpit-nav="Settings"]').click();
+    await page.getByRole('button', { name: 'Use classic layout' }).click();
+    await page.locator('#dm-app.cockpit').waitFor();
+    assert.equal(await page.locator('#dm-app.cockpit-v2').count(), 0);
+    await page.locator('[data-cockpit-nav="Settings"]').click();
+    await page.getByRole('button', { name: 'Use redesigned layout' }).click();
+    await page.locator('#dm-app.cockpit-v2').waitFor();
+    assert(await page.locator('#dm-stage').isVisible());
+    await page.screenshot({ path: '/private/tmp/echo-ui-stage1-dm.png' });
+    const tvPopup = context.waitForEvent('page');
+    await page.locator('#quick-director').click();
+    const tv = await tvPopup;
+    await tv.waitForLoadState();
+    await tv.waitForTimeout(750);
+    await tv.screenshot({ path: '/private/tmp/echo-ui-stage1-tv.png' });
+    assert.deepEqual(errors, []);
+    const small = await browser.newContext({ viewport: { width: 820, height: 1180 } });
+    const tablet = await small.newPage();
+    const tabletErrors = [];
+    tablet.on('pageerror', error => tabletErrors.push(error.message));
+    await tablet.goto('file://' + path.resolve(__dirname, '../Session-01-TV-Display.html'));
+    await tablet.locator('#dm-app.cockpit-v2').waitFor();
+    assert(await tablet.locator('#dm-stage').isVisible());
+    assert(await tablet.locator('.cockpit-nav').isVisible());
+    assert(await tablet.locator('#context-sidebar').isVisible());
+    const widths = await tablet.evaluate(() => ({ document: document.documentElement.scrollWidth, viewport: innerWidth }));
+    assert(widths.document <= widths.viewport + 2, `tablet horizontal overflow: ${JSON.stringify(widths)}`);
+    assert.deepEqual(tabletErrors, []);
+    console.log('Stage 1 UI shell passed: modes, map persistence, rail navigation, Back, favorites, classic fallback, 820px layout, and no browser errors.');
+  } finally {
+    await browser.close();
+  }
+})().catch(error => { console.error(error); process.exitCode = 1; });

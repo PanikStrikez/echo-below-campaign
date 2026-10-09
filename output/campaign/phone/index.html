@@ -14,7 +14,7 @@
   <script src="/phone.js" defer></script>
 </head>
 <body>
-  <header><small>THE ECHO BELOW</small><h1>Player companion</h1><p id="connection">Joining the table…</p></header>
+  <header><small>THE ECHO BELOW</small><h1>Your adventure</h1><p id="connection" role="status">Joining the table…</p></header>
   <main>
     <section class="card connection-tools"><p id="sheet-freshness">No saved sheet yet.</p><button id="reconnect-phone" type="button" hidden>Reconnect</button><details><summary>Saved sheet & joining</summary><button id="rejoin-phone" type="button">Join with current QR</button><button id="show-saved-sheet" type="button">View saved sheet</button></details></section>
     <section id="join" class="card" hidden>
@@ -32,14 +32,14 @@
       </section>
       <button id="phone-priority" class="phone-priority" type="button" hidden aria-live="polite"></button>
       <section id="party-objective" class="card"></section>
-      <nav class="phone-tabs" aria-label="Player companion views">
-        <button id="tab-table" type="button" class="active" aria-selected="true">Table</button>
-        <button id="tab-explore" type="button" aria-selected="false">Explore</button>
-        <button id="tab-sheet" type="button" aria-selected="false">My sheet</button>
-        <button id="tab-clues" type="button" aria-selected="false">Journal & clues</button>
-        <button id="tab-loot" type="button" aria-selected="false">Loot & promises</button>
+      <nav class="phone-tabs" role="tablist" aria-label="Player companion views">
+        <button id="tab-table" type="button" role="tab" class="active" aria-selected="true" aria-controls="table-panel">Home</button>
+        <button id="tab-explore" type="button" role="tab" aria-selected="false" aria-controls="explore-panel">Explore</button>
+        <button id="tab-sheet" type="button" role="tab" aria-selected="false" aria-controls="sheet-panel">Sheet</button>
+        <button id="tab-clues" type="button" role="tab" aria-selected="false" aria-controls="clues-panel">Journal</button>
+        <button id="tab-loot" type="button" role="tab" aria-selected="false" aria-controls="loot-panel">Items</button>
       </nav>
-      <div id="table-panel">
+      <div id="table-panel" role="tabpanel" aria-labelledby="tab-table">
       <section id="combat-prompts" class="card" hidden aria-live="polite"></section>
       <section id="initiative-phone-panel" class="card initiative-phone-panel" hidden></section>
       <section id="action-composer" class="card" hidden></section>
@@ -61,7 +61,7 @@
         <p id="map-message" class="map-message" aria-live="polite"></p>
       </section>
       </div>
-      <div id="explore-panel" hidden>
+      <div id="explore-panel" role="tabpanel" aria-labelledby="tab-explore" hidden>
         <section class="card phone-atlas-card">
           <small>SHARED ATLAS</small><h2 id="phone-atlas-title">Campaign atlas</h2>
           <p id="phone-atlas-status">Your DM has not shared an atlas view yet.</p>
@@ -70,7 +70,7 @@
         </section>
         <details class="card" open><summary>Journey & destination requests</summary><section id="phone-travel"></section></details>
       </div>
-      <div id="sheet-panel" hidden>
+      <div id="sheet-panel" role="tabpanel" aria-labelledby="tab-sheet" hidden>
         <section class="card sheet-card">
           <div class="card-head"><div><small>LIVE CHARACTER SHEET</small><h2 id="sheet-title">Your sheet</h2></div><span id="sheet-level" class="sheet-level"></span></div>
           <button id="save-offline-sheet" type="button">Download emergency sheet</button>
@@ -82,8 +82,8 @@
         <section class="card"><h2>Spellbook</h2><div id="spell-search"></div><div id="spell-results"></div></section>
         <div id="sheet-sections"></div>
       </div>
-      <section id="clues-panel" class="card" hidden><h2>Journal & clues</h2><p>Shared quests and campaign events appear alongside clues sent only to your character.</p><div id="clues-list"></div><div id="player-journal-list"></div><section id="personal-note-editor"></section></section>
-      <section id="loot-panel" class="card" hidden><h2>Loot & promises</h2><div id="loot-list"></div><div id="inventory-actions"></div><section id="item-request-editor"></section><section id="currency-split-editor"></section><div id="inventory-request-history"></div></section>
+      <section id="clues-panel" class="card" role="tabpanel" aria-labelledby="tab-clues" hidden><h2>Journal & clues</h2><p>Shared quests and campaign events appear alongside clues sent only to your character.</p><div id="clues-list"></div><div id="player-journal-list"></div><section id="personal-note-editor"></section></section>
+      <section id="loot-panel" class="card" role="tabpanel" aria-labelledby="tab-loot" hidden><h2>Loot & promises</h2><div id="loot-list"></div><div id="inventory-actions"></div><section id="item-request-editor"></section><section id="currency-split-editor"></section><div id="inventory-request-history"></div></section>
     </div>
     <details class="card"><summary>Offline sheets and future home-screen app</summary><p>Download an emergency sheet while connected. The downloaded file opens without the table and includes a reconnect link. This tab also keeps the last sheet available during connection loss. An installed home-screen app with reliable offline startup is a later setup upgrade.</p><button id="forget-saved-sheet" type="button">Remove saved sheet from this phone</button></details>
   </main>

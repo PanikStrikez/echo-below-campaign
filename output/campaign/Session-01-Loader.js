@@ -19,7 +19,9 @@
     await load('Voice-Subtitles.js');
     await load('LMOP-Visual-Catalog.js');
     await load('LMOP-Battle-Map-Catalog.js');
-    if (!player) for (const file of ECHO_MODULES.ordered) await load(file);
+    const classic = (() => { try { return localStorage.getItem('echo-ui-classic') === 'true'; } catch { return false; } })();
+    if (!player) for (const file of ECHO_MODULES.ordered)
+      await load(classic && file === 'Session-01-Cockpit.js' ? 'Session-01-Cockpit-Classic.js' : file);
     await load('Session-01-Presentation.js');
     await load('Session-01-Table-Tools.js');
     if (!player) await load('Campaign-Engine-UI.js');

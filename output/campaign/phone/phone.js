@@ -118,8 +118,9 @@
     const reply = String(view.requests || '');
     const decision = /approved|resolved|declined|clarification|cancelled|undone/i.test(reply);
     const combat = !!view.turn?.activeId || initiative;
-    $('tab-table').textContent = combat ? 'My turn' : 'Table';
+    $('tab-table').textContent = combat ? 'My turn' : 'Home';
     $('tab-table').classList.toggle('combat-priority', combat);
+    priority.dataset.target = 'table';
     if((view.combatPrompts?.saves||[]).some(b=>b.status==='waiting')||(view.combatPrompts?.reactions||[]).some(p=>p.status==='waiting')){priority.textContent='Saving throw or reaction waiting · Tap to respond';priority.dataset.kind='combat';}
     else if (initiative && (view.initiative.total === null || view.initiative.total === undefined)) {
       priority.textContent = 'Roll initiative now · Tap to open'; priority.dataset.kind = 'initiative';
@@ -130,6 +131,10 @@
       priority.textContent = `${reply} · Tap to view the table`; priority.dataset.kind = 'decision';
     } else if (initiative) {
       priority.textContent = `Initiative ${view.initiative.total ?? 'pending'} · Tap to view`; priority.dataset.kind = 'initiative';
+    } else if (view.dungeon?.enabled && view.isMap) {
+      priority.textContent = 'Explore this area · Open the map and search tools'; priority.dataset.kind = 'explore';
+    } else if (view.journey?.destination) {
+      priority.textContent = `Explore the route to ${view.journey.destination}`; priority.dataset.kind = 'explore'; priority.dataset.target = 'explore';
     } else { priority.hidden = true; priority.dataset.kind = ''; return; }
     priority.hidden = false;
   }
@@ -541,8 +546,8 @@
 
   $('tab-table').addEventListener('click', () => selectTab('table'));
   $('tab-explore').addEventListener('click', () => selectTab('explore'));
-  $('phone-priority').addEventListener('click', () => { selectTab('table');
-    const target = !$('combat-prompts').hidden ? $('combat-prompts') : !$('initiative-phone-panel').hidden ? $('initiative-phone-panel') : !$('turn-guide').hidden ? $('turn-guide') : $('table-panel');
+  $('phone-priority').addEventListener('click', () => { const tab=$('phone-priority').dataset.target||'table';selectTab(tab);
+    const target = tab==='explore' ? $('explore-panel') : !$('combat-prompts').hidden ? $('combat-prompts') : !$('initiative-phone-panel').hidden ? $('initiative-phone-panel') : !$('turn-guide').hidden ? $('turn-guide') : $('table-panel');
     target.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
   $('tab-sheet').addEventListener('click', () => selectTab('sheet'));
   $('tab-clues').addEventListener('click', () => selectTab('clues'));

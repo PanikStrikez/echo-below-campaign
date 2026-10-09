@@ -111,3 +111,33 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 .phone-dungeon-overlay{position:absolute;inset:0;pointer-events:none;z-index:8}.phone-memory{position:absolute;background:rgba(12,17,24,.62)}.phone-dungeon-object{position:absolute;transform:translate(-50%,-50%);pointer-events:auto;min-height:28px!important;min-width:28px;background:#354b36;color:#ffdda3;border:1px solid #d6bb81;padding:1px 5px}.phone-dungeon-object:disabled{pointer-events:none}#phone-dungeon textarea{min-height:70px;width:100%}#phone-dungeon section{border-top:1px solid #716447;margin-top:12px;padding-top:8px}
 
 .phone-walkthrough{border:1px solid #d4b373}.phone-walkthrough button{margin:4px;min-height:42px}.phone-walkthrough small{color:#d4b373}
+/* Stage 1 player navigation: one current task, stable bottom tabs, readable cards. */
+:root{--phone-bg:#101e18;--phone-card:#1d3025;--phone-line:#9a8359;--phone-gold:#e7c58a}
+body{background:linear-gradient(180deg,#203429 0,#102018 190px,#0e1b16 100%);color:#f5ecd9}
+header{position:relative;padding:calc(14px + env(safe-area-inset-top)) 16px 11px;background:#14251d;border-bottom:1px solid var(--phone-line)}
+header small{font-size:10px}header h1{margin:3px 0;font-size:22px}header p{font-size:12px}
+main{max-width:680px;padding:11px 12px calc(96px + env(safe-area-inset-bottom))}
+.card{padding:14px;border-color:#8b7956;background:var(--phone-card);box-shadow:0 4px 15px #0003}
+.connection-tools{display:flex;align-items:center;gap:9px;min-height:42px;padding:8px 12px;background:#1b3024}
+.connection-tools p{margin:0;flex:1;font-size:12px;line-height:1.3;color:#d8decf}
+.connection-tools>button{min-height:36px;font-size:12px}
+.connection-tools details{font-size:12px}.connection-tools summary{cursor:pointer;color:#e7c58a;white-space:nowrap}
+.connection-tools details button{display:block;width:100%;margin-top:6px;text-align:left;font-size:12px}
+.character-card{padding:14px 15px 13px}.character-card h2{font-size:24px;margin-bottom:3px}.character-card .card-head p{font-size:12px}
+.character-card .vitals{margin-top:9px}.vitals>div{padding:8px 6px;background:#293e2e}.vitals strong{font-size:21px}.vitals span{font-size:11px}
+.character-card .status{line-height:1.45;max-height:4.35em;overflow:auto}
+#phone-priority{margin-bottom:11px;border-radius:9px;min-height:55px;font-size:14px;line-height:1.35}
+#phone-priority[data-kind="explore"]{background:#d6e5c5;color:#1d2d20;border-color:#a9c19a}
+#party-objective{padding:11px 14px}#party-objective h2{font:700 17px Georgia,serif;margin:0 0 4px}#party-objective p{font-size:13px;margin:0 0 4px;line-height:1.35}#party-objective details{font-size:12px;color:#e6c891}
+.phone-tabs{position:fixed;top:auto;bottom:0;left:50%;transform:translateX(-50%);z-index:50;width:min(100%,680px);display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;margin:0;padding:6px 7px calc(6px + env(safe-area-inset-bottom));border:1px solid #b19664;border-bottom:0;border-radius:13px 13px 0 0;background:#14271ef5;box-shadow:0 -7px 25px #0008;backdrop-filter:blur(14px)}
+.phone-tabs button{min-width:0;min-height:49px;padding:6px 1px;font-size:clamp(10px,2.5vw,12px);line-height:1.1;border:1px solid transparent;background:none;color:#e9e4d5}
+.phone-tabs button.active{background:#e1bd7e;border-color:#f7d997;color:#1a241b}
+.phone-tabs button.combat-priority:not(.active){background:#5c4829;border-color:#d0a96a}
+.phone-tabs button:focus-visible{outline:3px solid #ffe198;outline-offset:-2px}
+#table-panel>.card:first-child,#explore-panel>.card:first-child{margin-top:4px}
+.dice-card .dice-row button{min-height:54px}.initiative-phone-actions button{min-height:46px}
+.sheet-card .card-head{align-items:center}.sheet-card h2{font-size:21px}
+details.card>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:#f0d49b;font-weight:750}
+button,input,select,textarea{font-size:16px}button{border-radius:7px}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #ffe198;outline-offset:2px}
+@media(max-width:390px){.connection-tools{flex-wrap:wrap}.connection-tools details{margin-left:auto}.character-card h2{font-size:22px}.phone-tabs{padding-left:3px;padding-right:3px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:0.01ms!important;animation-duration:0.01ms!important}}

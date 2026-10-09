@@ -1,0 +1,71 @@
+/* Stage 1 interface shell. All stateful controls remain in their original modules. */
+#dm-app.cockpit.cockpit-v2{--ui-bg:#0e1b17;--ui-surface:#182820;--ui-raised:#24382c;--ui-line:#7f704d;--ui-text:#f4ead6;--ui-muted:#bec5b7;--ui-gold:#e1be7e;background:var(--ui-bg);color:var(--ui-text)}
+#dm-app.cockpit.cockpit-v2 .dm-header{min-height:65px;padding:8px 16px;gap:16px;background:#12221c}
+#dm-app.cockpit.cockpit-v2 .dm-header h1{font-size:20px;white-space:nowrap}
+#dm-app.cockpit.cockpit-v2 .dm-header .mode-switch{display:flex;flex:0 0 auto;margin:0;padding:3px}
+#dm-app.cockpit.cockpit-v2 .dm-header .mode-switch button{min-height:38px;min-width:66px;font-size:13px}
+#dm-app.cockpit.cockpit-v2 .cockpit-session-selectors{margin:0 0 0 auto;display:flex;align-items:center;gap:6px;min-width:0;max-width:420px}
+#dm-app.cockpit.cockpit-v2 .cockpit-session-selectors label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#dm-app.cockpit.cockpit-v2 .cockpit-session-selectors select{max-width:190px;min-width:110px;margin:0;min-height:39px;background:#20342a;color:#f5e8cf;border:1px solid #836f4e;font-size:12px;text-overflow:ellipsis}
+#dm-app.cockpit.cockpit-v2 #save-status{margin-left:0;white-space:nowrap;color:#bed8b6;font-size:11px}
+#dm-app.cockpit.cockpit-v2 .run-actions{min-height:51px;padding:7px 15px;gap:7px;background:#1a2b22;flex-wrap:nowrap}
+#dm-app.cockpit.cockpit-v2 .run-actions>button{min-height:39px;font-size:12px;padding:7px 12px}
+#dm-app.cockpit.cockpit-v2 .run-actions #quick-scene{order:0}
+#dm-app.cockpit.cockpit-v2 .run-actions #next-turn{order:1;display:block!important;background:#c9a667;color:#14221a;border-color:#e1c287}
+#dm-app.cockpit.cockpit-v2 .run-actions #quick-director{order:2}
+#dm-app.cockpit.cockpit-v2 .run-actions #quick-mute{order:3}
+#dm-app.cockpit.cockpit-v2 .run-actions #quick-inbox{order:4}
+#dm-app.cockpit.cockpit-v2 .run-actions #quick-undo{order:5}
+#dm-app.cockpit.cockpit-v2 .run-actions #tv-now-badge{order:6;margin-left:auto;max-width:25vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#dm-app.cockpit.cockpit-v2 .run-actions #connection-status{order:7;max-width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#dm-app.cockpit.cockpit-v2 .run-actions #resync-player{order:8}
+#dm-app.cockpit.cockpit-v2 .run-actions #phone-health-warning{order:9}
+#dm-app.cockpit.cockpit-v2:is(.prep-mode,.review-mode) .run-actions{display:none!important}
+#dm-app.cockpit.cockpit-v2 #cockpit-live-strip #session-flow-open{display:block!important;min-height:31px;margin:0;text-align:center}
+#dm-app.cockpit.cockpit-v2:not(.quickbar-open) #personal-quick-bar{display:none!important}
+#dm-app.cockpit.cockpit-v2 #personal-quick-bar{padding:7px 13px;flex:0 0 auto}
+#dm-app.cockpit.cockpit-v2 #cockpit-live-strip{display:flex;align-items:center;gap:9px;min-height:39px;padding:5px 15px;border-bottom:1px solid #756943;background:#1b2b22;font-size:12px}
+#dm-app.cockpit.cockpit-v2 #cockpit-live-objective{min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#e5d3ad}
+#dm-app.cockpit.cockpit-v2 #cockpit-live-strip button{min-height:29px;padding:4px 9px;font-size:11px;white-space:nowrap;background:#2b4031}
+#dm-app.cockpit.cockpit-v2 #cockpit-live-urgent.has-urgent{background:#693d29;color:#fff0d0;border-color:#dfad70}
+#dm-app.cockpit.cockpit-v2:not(.review-mode) .dm-layout{display:grid!important;grid-template-columns:104px minmax(0,1fr) 350px!important;grid-template-areas:'rail map details';grid-template-rows:minmax(0,1fr);gap:0;position:relative}
+#dm-app.cockpit.cockpit-v2 .cockpit-nav{grid-area:rail;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:5px;min-width:0;overflow-y:auto;padding:13px 7px;background:#13221d;border-right:1px solid #7a704e;order:0}
+#dm-app.cockpit.cockpit-v2 .cockpit-nav button{width:100%;min-height:43px;margin:0;padding:8px 4px;text-align:center;font-size:12px;white-space:normal;line-height:1.25}
+#dm-app.cockpit.cockpit-v2 .cockpit-nav #quick-search{margin:8px 0 0;font-size:12px;min-width:0}
+#dm-app.cockpit.cockpit-v2 .cockpit-nav #quick-search::after{content:none}
+#dm-app.cockpit.cockpit-v2 .cockpit-nav #cockpit-favorites{margin-top:auto;border-top:1px solid #70674a;border-radius:0;color:#e6c992}
+#dm-app.cockpit.cockpit-v2 .sidebar{display:none!important}
+#dm-app.cockpit.cockpit-v2 .dm-main{grid-area:map;min-width:0;padding:14px!important;background:radial-gradient(ellipse at center,#253c2f,#10201a)}
+#dm-app.cockpit.cockpit-v2 .dm-main .stage{max-height:calc(100dvh - 235px);border-color:#b29a68}
+#dm-app.cockpit.cockpit-v2 .map-toolbar{min-height:33px}
+#dm-app.cockpit.cockpit-v2 .map-toolbar strong{font-size:18px}
+#dm-app.cockpit.cockpit-v2 .map-tools{padding:7px 0}
+#dm-app.cockpit.cockpit-v2 .context-sidebar{grid-area:details;min-width:0;padding:15px!important;background:#182820;border-left:1px solid #7a704e}
+#dm-app.cockpit.cockpit-v2 .context-head{position:relative;min-height:52px;padding-right:65px}
+#dm-app.cockpit.cockpit-v2 .context-head h2{font-size:23px;line-height:1.2}
+#dm-app.cockpit.cockpit-v2 #cockpit-context-back{position:absolute;right:0;top:0;min-height:34px;padding:5px 8px;font-size:11px}
+#dm-app.cockpit.cockpit-v2 .context-tabs{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+#dm-app.cockpit.cockpit-v2 .context-tabs button,#dm-app.cockpit.cockpit-v2 .context-tabs select{min-height:43px;font-size:12px}
+#dm-app.cockpit.cockpit-v2 #cockpit-objective{margin:0 0 12px}
+#dm-app.cockpit.cockpit-v2 #cockpit-objective small{font-size:11px}
+#dm-app.cockpit.cockpit-v2 #cockpit-objective p{margin:7px 0 0;padding:10px 12px;font-size:13px}
+#dm-app.cockpit.cockpit-v2 #cockpit-scene-notes{width:100%;min-height:42px;margin:10px 0;text-align:left}
+#dm-app.cockpit.cockpit-v2 #cockpit-workbench .runbook-panel{display:block!important;max-height:none!important}
+#dm-app.cockpit.cockpit-v2 .cockpit-tools-head button{display:none!important}
+#dm-app.cockpit.cockpit-v2 #cockpit-preview{inset:52px 14px 14px}
+#dm-app.cockpit.cockpit-v2 #cockpit-workbench button,#dm-app.cockpit.cockpit-v2 .context-content button{max-width:100%}
+#dm-app.cockpit.cockpit-v2.prep-mode .dm-layout{grid-template-columns:104px minmax(300px,0.75fr) minmax(410px,1fr)!important}
+#dm-app.cockpit.cockpit-v2.prep-mode #cockpit-live-strip,#dm-app.cockpit.cockpit-v2.review-mode #cockpit-live-strip{display:none!important}
+#dm-app.cockpit.cockpit-v2.prep-mode .dm-main .stage{max-height:calc(100dvh - 160px)}
+#dm-app.cockpit.cockpit-v2.cockpit-focus:not(.review-mode) .dm-layout{grid-template-columns:minmax(0,1fr) 350px!important;grid-template-areas:'map details'}
+#dm-app.cockpit.cockpit-v2.cockpit-focus .cockpit-nav{display:none!important}
+#dm-app.cockpit.cockpit-v2 :is(button,select,input,textarea,summary):focus-visible{outline:3px solid #ffe29a!important;outline-offset:2px}
+@media(max-width:1150px){#dm-app.cockpit.cockpit-v2:not(.review-mode) .dm-layout{grid-template-columns:84px minmax(0,1fr) 315px!important}#dm-app.cockpit.cockpit-v2.prep-mode .dm-layout{grid-template-columns:84px minmax(260px,.7fr) minmax(350px,1fr)!important}#dm-app.cockpit.cockpit-v2 .dm-header{gap:8px;padding:7px 10px}#dm-app.cockpit.cockpit-v2 .cockpit-session-selectors select{max-width:135px;min-width:90px}#dm-app.cockpit.cockpit-v2 .run-actions #connection-status{display:none}}
+@media(max-width:850px){#dm-app.cockpit.cockpit-v2 .cockpit-session-selectors{display:none}#dm-app.cockpit.cockpit-v2:not(.review-mode) .dm-layout,#dm-app.cockpit.cockpit-v2.prep-mode .dm-layout{grid-template-columns:78px minmax(0,1fr)!important;grid-template-areas:'rail map' 'rail details';grid-template-rows:minmax(330px,55%) minmax(220px,1fr)}#dm-app.cockpit.cockpit-v2 .cockpit-nav{grid-row:1 / span 2}#dm-app.cockpit.cockpit-v2 .context-sidebar{border-left:0;border-top:1px solid #7a704e}#dm-app.cockpit.cockpit-v2 .dm-main .stage{max-height:calc(55dvh - 90px)}#dm-app.cockpit.cockpit-v2 .run-actions{overflow-x:auto}#dm-app.cockpit.cockpit-v2 #cockpit-live-objective{max-width:45vw}}
+@media(max-width:640px){#dm-app.cockpit.cockpit-v2{height:auto;min-height:100dvh;overflow:visible}#dm-app.cockpit.cockpit-v2 .dm-header{flex-wrap:wrap}#dm-app.cockpit.cockpit-v2:not(.review-mode) .dm-layout,#dm-app.cockpit.cockpit-v2.prep-mode .dm-layout{display:flex!important;flex-direction:column}#dm-app.cockpit.cockpit-v2 .cockpit-nav{order:0;display:flex;flex-direction:row;overflow-x:auto;border-bottom:1px solid #7a704e;border-right:0}#dm-app.cockpit.cockpit-v2 .cockpit-nav button{min-width:80px}#dm-app.cockpit.cockpit-v2 .dm-main{order:1;min-height:340px}#dm-app.cockpit.cockpit-v2 .context-sidebar{order:2;max-height:none!important;min-height:320px}#dm-app.cockpit.cockpit-v2 #cockpit-live-strip{flex-wrap:wrap}#dm-app.cockpit.cockpit-v2 #cockpit-live-objective{max-width:none;flex-basis:100%}#dm-app.cockpit.cockpit-v2 .run-actions #tv-now-badge{display:none}}
+@media(prefers-reduced-motion:reduce){#dm-app.cockpit.cockpit-v2 *,#player-app *{scroll-behavior:auto!important;transition-duration:0.01ms!important;animation-duration:0.01ms!important}}
+/* Keep the table TV quiet and readable; DM controls stay on the DM screen. */
+#player-app .player-header{background:#13221de8;border-bottom:1px solid #b49a66}
+#player-app .player-header strong{font-size:clamp(15px,1.6vw,23px)}
+#player-app .player-turn-bar{background:#1d3027e8}
+#player-app .player-frame{border-color:#d4b17a}

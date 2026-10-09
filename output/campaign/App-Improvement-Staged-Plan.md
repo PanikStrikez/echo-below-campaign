@@ -8,7 +8,7 @@ The goal is a table tool that carries the DM from preparation to the end of a se
 
 | Area | Working foundation | Gap to address |
 | --- | --- | --- |
-| DM desk | Prep, Run, and Review; a central map; a contextual right panel; table check; guided scene and encounter tools | Some actions still lead through several panels, and similar controls appear in more than one place. The live path needs one consistent sequence. |
+| DM desk | Prep, Run, and Review; a central map; a contextual right panel; table check; guided scene and encounter tools | The current interface is confusing during play. Navigation, labels, visual hierarchy, and repeated controls need a complete redesign across the whole app. |
 | Players | TV staging and audience filtering; QR phones with sheets, rolls, requests, clues, inventory, and quest views | Actual connection, touch, rotation, and readability need recurring checks on the physical table. A disconnected phone retains its last sheet but cannot complete live actions. |
 | Combat and exploration | Tokens, fog, initiative, guided attacks, reactions, damage review, persistent dungeon records, and maps | Exceptions and incomplete character data still need DM correction. Movement and turn resolution should stay simple under table pressure. |
 | Campaign | Quests, outcomes, journals, NPC records, atlas, expedition records, and scene packages | Planned material and actual play need continued reconciliation. Preparing the next likely session has more value than completing every future site. |
@@ -37,21 +37,39 @@ Run the current table check on the actual DM computer, flat TV, speakers, and al
 
 **Done when:** the DM can answer “what works tonight, what needs a manual fallback, and where is my restorable backup?” from one screen. A restore opens in an isolated browser and the real TV and phones each show their intended information. Document any device check that has not happened.
 
-## Stage 1 — Make one clear path through an evening
+## Stage 1 — Complete UI overhaul
 
-**Priority:** highest user-facing improvement. **Size:** medium. **Depends on:** Stage 0.
+**Priority:** highest user-facing improvement. **Size:** large, released in usable slices. **Depends on:** Stage 0.
 
-Join the existing table check, quest prep, scene launch, combat, outcome review, and closing review into one visible sequence: **Get ready → Open scene → Resolve action → Record outcome → Close session**. Keep the map central and the right panel contextual. Preserve the advanced editors, but place them behind an explicit edit menu and return the DM to the same run position afterward. The top bar should show only current scene, next turn, player TV, mute, inbox, and undo during play.
+Redesign the **DM screen, player TV controls, and phone companion as one product**. First map every current feature and control to its new home. Watch a full practice session and record where the DM loses the map, searches a long list, repeats a step, or cannot tell what players see. Turn those findings into clickable layouts before changing live code. Check the layouts with the DM and at least one player on an actual phone and table-sized display. A new design is not complete if a working feature becomes hard to find.
 
-For each scene, show the current objective, one next action, urgent player requests, read-aloud text, and a private “if they go elsewhere” route. Make the player-visible change a deliberate **Preview → Show on TV** action, with a persistent “Now showing” label. Make empty, loading, stale, and disconnected states unambiguous. Add a small, searchable command palette for experienced use without requiring it for normal play.
+Use three clear DM modes: **Prep** for editing, **Run** for the live table, and **Review** for outcomes and closing. In Run, keep the map or staged visual in the center, a single contextual panel on the right, and a compact strip for urgent requests and the next beat. Give the top bar only the actions needed repeatedly: scene, next turn, player TV, mute, inbox, and undo. Put Party, Quests, World, Library, and settings in consistent navigation and a global search; preserve direct access to advanced controls without scattering them across the live view. A token, NPC, quest, clue, or scene opens its details in the same panel with a predictable Back action. The panel should remember where the DM was when an editor or rule reference closes.
 
-**Proposed usability targets:** start the prepared session in at most five minutes after devices are connected; show a prepared scene in at most three deliberate DM actions; reach an urgent phone request from the live view in one action. Measure these in a rehearsal; revise targets if they cause unsafe shortcuts.
+For the TV, design around **one current presentation**: map, illustration, handout, journal, title card, or black screen. Show the DM an exact preview and a conspicuous **Show on TV** action; keep “Now showing” and connection status visible on the DM screen. For phones, put the player's current task first: **My turn** during combat, **Explore** during travel or dungeon play, and the active objective otherwise. Keep Sheet, Quests, Journal, and Inventory easy to reach with stable navigation. Private clues and character quests remain owner-only.
 
-**Done when:** a new DM can run a short exploration, conversation, fight, and closeout without opening a setup editor. Every existing feature remains reachable, and TV publication is unmistakable.
+Create a compact design system for type sizes, contrast, spacing, buttons, status colors, fantasy decoration, focus states, and reduced motion. Use the fantasy style for atmosphere while keeping controls plain and readable. Favor one primary action per panel, clear labels over lore-themed labels, short lists with search/filter, and confirmation only where a choice is consequential. Give every request an obvious status; distinguish **waiting for the DM**, **needs a player response**, **saved**, **shown on TV**, **offline**, and **failed**. Support keyboard use and large touch targets. Keep DM secrets out of TV and phone layouts before transport, not merely hidden by styling.
 
-## Stage 2 — Make state changes and recovery dependable
+Build the new interface on top of existing state and services. Release one workflow at a time, preserve a temporary way back to the previous controls during migration, and remove the old controls only after feature parity and save compatibility checks. Keep a feature-to-screen inventory and a task checklist covering table setup, scene changes, combat, exploration, quests, character sheets, inventory, maps, audio, books, outcomes, backups, and recovery.
 
-**Priority:** high. **Size:** large, delivered in small migrations. **Depends on:** Stage 0; can overlap Stage 1.
+**Proposed usability targets:** find and stage a prepared scene in at most three deliberate DM actions; reach an urgent request in one action; identify what the TV shows without opening the TV window; find any existing feature through navigation or search in under 15 seconds during a timed rehearsal. These are targets to validate with people, not claims about the current app.
+
+**Done when:** the DM can run exploration, conversation, combat, and closing from the redesigned interface without consulting a guide; a player can find their turn, sheet, and quest on a phone; the TV remains readable from every seat; the feature inventory has no orphaned controls; and the old campaign save opens unchanged.
+
+## Stage 2 — Make one clear path through an evening
+
+**Priority:** high. **Size:** medium. **Depends on:** the Stage 1 navigation and live layout.
+
+Join the existing table check, quest prep, scene launch, combat, outcome review, and closing review into one visible sequence: **Get ready → Open scene → Resolve action → Record outcome → Close session**. Use the redesigned Run view to show the current objective, one next action, urgent player requests, read-aloud text, and a private “if they go elsewhere” route. Advanced editors return to the same run position afterward.
+
+Make each change to the player display a deliberate **Preview → Show on TV** action with a persistent “Now showing” label. Make empty, loading, stale, and disconnected states unambiguous. Add a small, searchable command palette for experienced use without requiring it for normal play.
+
+**Proposed usability targets:** start the prepared session in at most five minutes after devices are connected; complete a normal scene transition in at most three deliberate DM actions. Measure these in a rehearsal and revise if they cause unsafe shortcuts.
+
+**Done when:** a new DM can follow the guided path through a short session without opening a setup editor, while every advanced feature remains reachable through the new navigation.
+
+## Stage 3 — Make state changes and recovery dependable
+
+**Priority:** high. **Size:** large, delivered in small migrations. **Depends on:** Stage 0; can overlap Stages 1 and 2.
 
 Incrementally remove state-changing responsibilities from the large `Session-01-Battleboard.js` coordinator. Reuse the existing modules; add a narrow command layer for actions such as apply damage, spend a resource, publish a clue, move a token, and confirm an outcome. Each command should validate the current revision, present its effects, commit all related changes together, and create an undoable event. Keep the existing saved schema readable while introducing versioned migrations and a migration report.
 
@@ -59,9 +77,9 @@ Make backup verification a release step: export, inspect package contents, resto
 
 **Done when:** a deliberately interrupted save and a failed import recover without partial HP, inventory, or quest changes; an old campaign save opens after the update; a fresh browser restores the same playable state. The main coordinator becomes smaller through measured extractions rather than a single rewrite.
 
-## Stage 3 — Make the TV and phones feel like one table
+## Stage 4 — Make the TV and phones feel like one table
 
-**Priority:** high. **Size:** medium. **Depends on:** Stages 1 and 2 for consistent actions.
+**Priority:** high. **Size:** medium. **Depends on:** Stages 1–3 for consistent screens and actions.
 
 Give each connected screen a visible last-seen time, last-applied revision, and one-device resync. Keep a DM-only “what players can see” preview. Let the DM release or reassign one phone without restarting everyone. On phones, put **My turn** first in combat, show request status clearly, preserve the last synced sheet, and explain when a request cannot be sent. On the flat TV, verify safe edges, rotation, token size, ruler readability, and contrast at the real viewing distance.
 
@@ -69,9 +87,9 @@ Treat a home-screen phone app as a separate later upgrade. The current phone com
 
 **Done when:** disconnecting and reconnecting one phone does not interrupt the other four; a stale TV displays a clear warning and resyncs; an offline phone cannot silently spend a resource; private DM information never reaches a phone or TV response.
 
-## Stage 4 — Finish the fast combat and exploration loop
+## Stage 5 — Finish the fast combat and exploration loop
 
-**Priority:** high for upcoming sessions. **Size:** medium to large. **Depends on:** Stages 1–3.
+**Priority:** high for upcoming sessions. **Size:** medium to large. **Depends on:** Stages 1–4.
 
 Use the active-turn card as the single place for movement, action, target, roll, reaction, damage, conditions, and end turn. Dragging a token should always move it unless the DM explicitly selected a measurement tool. Keep target selection from either a token or a phone request. Show the math and source for attack, AC, cover, resistance, concentration, save timing, and resource use before applying it. Unusual spells and ambiguous effects should ask for a DM ruling instead of guessing.
 
@@ -79,9 +97,9 @@ Complete the current party's action cards from confirmed sheets and chosen level
 
 **Done when:** a representative fight can be run from the map and one panel, all action costs and damage components are reviewable, an accidental drag is reversible, and retreat/rest/return preserves the explored state.
 
-## Stage 5 — Make the campaign respond to what happened
+## Stage 6 — Make the campaign respond to what happened
 
-**Priority:** continuous, starting with the next session. **Size:** ongoing packages. **Depends on:** Stages 0 and 1; uses Stage 2's transactions when ready.
+**Priority:** continuous, starting with the next session. **Size:** ongoing packages. **Depends on:** Stages 0–2; uses Stage 3's transactions when ready.
 
 Prepare content one or two likely sessions ahead. Start from Barthen's Provisions, Gundren at the inn, Trista's rat, and the unresolved Glasstaff situation. Keep Cragmaw Castle as a private lead until the players establish it. Bring quests, NPC knowledge, map markers, handouts, and recaps from one reviewed outcome record. A discovery can propose several updates, but the DM approves each audience and consequence together.
 
@@ -89,9 +107,9 @@ Keep two content tracks: **next playable package** (read-aloud, NPC intentions, 
 
 **Done when:** after the session, one reviewed account of what occurred updates the relevant quest, journal, NPC, map, and recap views without revealing the DM-only branch or completing unrelated objectives. The next prep board shows two or three credible leads and a playable alternative if the party declines them.
 
-## Stage 6 — Improve presentation without slowing play
+## Stage 7 — Improve presentation without slowing play
 
-**Priority:** after the live flow is stable. **Size:** medium. **Depends on:** Stages 1 and 3.
+**Priority:** after the live flow is stable. **Size:** medium. **Depends on:** Stages 1, 2, and 4.
 
 Create scene presets that stage art, lighting, weather, ambience, a handout, and optional narration together, with a private preview and one deliberate publish action. Use subtle effects by default; keep off, subtle, and full options and a large immediate mute/stop control. Tie effects to the actual target token where appropriate, while leaving fog, geometry, and token positions unchanged. Keep subtitles and manual reading available.
 
@@ -99,9 +117,9 @@ For Voice Studio, verify one real provider request only after the account, appro
 
 **Done when:** a scene can move from private preview to TV and speakers without changing combat state; stopping audio is immediate; losing network or provider access leaves visuals, subtitles, and manual narration usable.
 
-## Stage 7 — Add grounded assistance with a human decision point
+## Stage 8 — Add grounded assistance with a human decision point
 
-**Priority:** optional enhancement. **Size:** medium to large. **Depends on:** Stages 2 and 5; live provider use also depends on approved account limits.
+**Priority:** optional enhancement. **Size:** medium to large. **Depends on:** Stages 3 and 6; live provider use also depends on approved account limits.
 
 Build on the current local assistant and audience-specific context builders. The useful actions are: run this scene, what this NPC knows, clues here, relevant rule, and next useful action. Require supporting record IDs, show whether a statement is actual, claimed, inferred, planned, or suggested, and say when the record cannot answer. NPC drafts receive only that NPC's permitted knowledge for the people present. Player help receives only that player's allowed context. Keep books local by default and send only selected, reviewed text to any external provider.
 
@@ -109,9 +127,9 @@ AI can draft narration, dialogue, recap wording, improv options, and proposed co
 
 **Done when:** every answer shows its basis or its uncertainty; a forged citation is rejected; no audience receives another audience's private record; no suggestion changes campaign state without review.
 
-## Stage 8 — Package a reusable platform for the long campaign
+## Stage 9 — Package a reusable platform for the long campaign
 
-**Priority:** after the core table experience is dependable. **Size:** large. **Depends on:** Stages 2, 3, and 5.
+**Priority:** after the core table experience is dependable. **Size:** large. **Depends on:** Stages 3, 4, and 6.
 
 Separate the reusable app, the Echo Below campaign content, the current group's private save, local source books, and generated media. Build a blank campaign template and a guided duplicate/archive flow so another group cannot inherit this party's discoveries or private clues. Produce a portable release with a manifest, asset checks, migration version, restore instructions, and a one-click health check. Keep personal PDFs under separate local control.
 
@@ -123,13 +141,14 @@ Only then consider optional remote play, cloud sync, or installed phone apps. Ea
 
 | Release | Stages included | What the DM should notice |
 | --- | --- | --- |
-| **R1 — Ready table** | 0, first part of 1 | Accurate readiness, backup, current objective, and fewer competing controls. |
-| **R2 — Dependable play** | rest of 1, 2, 3 | One run path; reliable saves; clear TV/phone status and individual reconnect. |
-| **R3 — Faster adventures** | 4 and rolling 5 packages | Combat and exploration need fewer clicks; outcomes drive the next session. |
-| **R4 — Immersive table** | 6 | Staged visuals and audio work predictably; optional narration can be trusted. |
-| **R5 — Assisted campaign** | 7 and 8 | Grounded optional AI and a portable, reusable campaign platform. |
+| **R1 — Ready table and UI design** | 0, Stage 1 feature inventory and tested layouts | Accurate readiness, backup, and a reviewed design for DM, TV, and phones. |
+| **R2 — Redesigned table** | rest of 1, 2 | A complete new interface with a clear session path and all existing features accessible. |
+| **R3 — Dependable play** | 3, 4 | Reliable saves; clear TV/phone status and individual reconnect. |
+| **R4 — Faster adventures** | 5 and rolling 6 packages | Combat and exploration need fewer clicks; outcomes drive the next session. |
+| **R5 — Immersive table** | 7 | Staged visuals and audio work predictably; optional narration can be trusted. |
+| **R6 — Assisted campaign** | 8 and 9 | Grounded optional AI and a portable, reusable campaign platform. |
 
-The first work batch should be **Stage 0 plus the smallest Stage 1 changes**: record the live baseline, restore a backup in a second browser, rehearse the current table hardware, map the clicks from opening the app to showing a scene, and remove the worst duplicate controls. That yields an immediate usability gain and exposes any reliability problem before deeper refactoring.
+The first work batch should be **Stage 0 and the Stage 1 design pass**: record the live baseline, restore a backup in a second browser, rehearse the current table hardware, inventory every feature, map the confusing paths, and test a clickable DM/TV/phone layout. Then implement the redesigned Run view first, followed by Prep, Review, and phone navigation. This establishes the new interface before deeper workflow and data changes.
 
 ## Verification standard
 

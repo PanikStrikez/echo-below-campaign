@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<title>Settlement orientation diagram</title>
+<defs><pattern id="grain" width="23" height="29" patternUnits="userSpaceOnUse"><circle cx="7" cy="11" r="1" fill="#60775a" opacity=".08"/></pattern><pattern id="town-blocks" width="88" height="66" patternUnits="userSpaceOnUse"><rect width="88" height="66" fill="#b5a27c"/><g stroke="#625f51" stroke-width="1.5"><rect x="5" y="6" width="23" height="22" fill="#788084"/><rect x="36" y="4" width="34" height="23" fill="#a37959"/><rect x="9" y="39" width="29" height="21" fill="#9b8060"/><rect x="50" y="37" width="25" height="21" fill="#71807b"/></g><path d="M7 17H26M39 15H68M12 48H35M53 47H73" stroke="#c5b894" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="800" fill="#648b8e"/><rect width="1200" height="800" fill="url(#grain)"/>
+<polygon points="214,0 1200,0 1200,800 131,800 70,694 89,606 74,524 87,440 162,405 225,345 170,303 155,246 187,169 207,85" fill="#bac0a0"/>
+<polyline points="1200,383 930,377 710,388 470,362 335,392 175,371 0,397" fill="none" stroke="#648b8e" stroke-width="75" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="214,0 207,85 187,169 155,246 170,303 225,345 162,405 87,440 74,524 89,606 70,694 131,800" fill="none" stroke="#648b8e" stroke-width="75" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="444,198 497,166 545,162 555,202 512,227 443,235 429,218" fill="#658e90" stroke="#436e74" stroke-width="4"/>
+<polygon points="213,332 348,147 510,89 745,79 967,140 1127,257 1152,351 867,370 714,358 477,336 345,368" fill="url(#town-blocks)" stroke="#71674f" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="209,416 414,397 654,410 923,420 1120,418 1120,568 1020,680 859,720 450,729 274,617 155,486" fill="url(#town-blocks)" stroke="#71674f" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="287,357 344,345 384,388 342,421 300,408" fill="#777466" stroke="#484d43" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="444,198 497,166 545,162 555,202 512,227 443,235 429,218" fill="#648b8e" stroke="#436e74" stroke-width="4"/>
+<polyline points="1040,740 1040,600 1110,492 1120,418" fill="none" stroke="#938363" stroke-width="27" stroke-linejoin="round"/><polyline points="1040,740 1040,600 1110,492 1120,418" fill="none" stroke="#d1c398" stroke-width="19" stroke-linejoin="round"/>
+<g stroke="#5d6552" fill="none" opacity=".6"><path d="M1140 80V28m-10 17 10-18 10 18" stroke-width="3"/></g></svg>

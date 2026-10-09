@@ -1,0 +1,9 @@
+{
+  "result": "pass",
+  "checks": 223,
+  "maps": 14,
+  "serviceCards": 4,
+  "privateMarkers": 4,
+  "routeCount": 1,
+  "note": "Focused checks of private operating notes, approved NPC IDs, unknown availability/price/agreement, existing map links and public payload exclusion. Full existing map validation was not repeated; all 14 SVG hashes were separately compared before/after this metadata-only build and were unchanged."
+}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<title>Luskan · city overview — private preparation</title>
+<defs><clipPath id="frame"><rect width="1200" height="800"/></clipPath></defs>
+<g id="terrain"><image x="0" y="0" width="1200" height="800" preserveAspectRatio="xMidYMid meet" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIj4KPHRpdGxlPlNldHRsZW1lbnQgb3JpZW50YXRpb24gZGlhZ3JhbTwvdGl0bGU+CjxkZWZzPjxwYXR0ZXJuIGlkPSJncmFpbiIgd2lkdGg9IjIzIiBoZWlnaHQ9IjI5IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48Y2lyY2xlIGN4PSI3IiBjeT0iMTEiIHI9IjEiIGZpbGw9IiM2MDc3NWEiIG9wYWNpdHk9Ii4wOCIvPjwvcGF0dGVybj48cGF0dGVybiBpZD0idG93bi1ibG9ja3MiIHdpZHRoPSI4OCIgaGVpZ2h0PSI2NiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHJlY3Qgd2lkdGg9Ijg4IiBoZWlnaHQ9IjY2IiBmaWxsPSIjYjVhMjdjIi8+PGcgc3Ryb2tlPSIjNjI1ZjUxIiBzdHJva2Utd2lkdGg9IjEuNSI+PHJlY3QgeD0iNSIgeT0iNiIgd2lkdGg9IjIzIiBoZWlnaHQ9IjIyIiBmaWxsPSIjNzg4MDg0Ii8+PHJlY3QgeD0iMzYiIHk9IjQiIHdpZHRoPSIzNCIgaGVpZ2h0PSIyMyIgZmlsbD0iI2EzNzk1OSIvPjxyZWN0IHg9IjkiIHk9IjM5IiB3aWR0aD0iMjkiIGhlaWdodD0iMjEiIGZpbGw9IiM5YjgwNjAiLz48cmVjdCB4PSI1MCIgeT0iMzciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyMSIgZmlsbD0iIzcxODA3YiIvPjwvZz48cGF0aCBkPSJNNyAxN0gyNk0zOSAxNUg2OE0xMiA0OEgzNU01MyA0N0g3MyIgc3Ryb2tlPSIjYzViODk0IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPgo8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9IiM2NDhiOGUiLz48cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjZ3JhaW4pIi8+Cjxwb2x5bGluZSBwb2ludHM9IjEyMDAsODAgMTA1MCwxNjYgODQ1LDIyOSA2NjgsMjYwIDQ2NywzMjUgMjk1LDM4OCAyMjAsNDk3IDE2NSw2MjUgNjUsNzA1IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NDhiOGUiIHN0cm9rZS13aWR0aD0iNzUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cG9seWdvbiBwb2ludHM9IjAsMCAxMjAwLDAgMTIwMCw3NSAxMDUwLDE1NiA4NDUsMjIwIDY2OCwyNTAgNDY3LDMxNSAyOTIsMzE4IDIxNSwyNzkgMTA1LDI0NSAwLDI0NSIgZmlsbD0iI2JiYmJhMCIgc3Ryb2tlPSIjN2M4MDYyIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBvbHlnb24gcG9pbnRzPSIxMjAwLDExMCAxMTAwLDE3MCA5NTUsMjQzIDgwNywzMTUgNjkwLDQxMSA2NjQsNTIyIDY3Myw2MjggODAxLDc0MyA5NDgsNzczIDExMjcsNjQxIDEyMDAsNDkzIiBmaWxsPSJ1cmwoI3Rvd24tYmxvY2tzKSIgc3Ryb2tlPSIjNzE2NzRmIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBvbHlnb24gcG9pbnRzPSI0MjAsNTE1IDQ0NSw0NDggNDgzLDQzMCA1MDksNDY5IDQ4Niw1MjIgNDgwLDU2OSA1MjAsNjAwIDUwMCw2NjcgNDM5LDY4MSA0MjAsNjM5IiBmaWxsPSIjYThhZTg3IiBzdHJva2U9IiM2NDZmNTUiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cG9seWdvbiBwb2ludHM9IjUyMCwzNTIgNTQ4LDMyMiA1ODMsMzQwIDYwNCwzODIgNTY2LDQwNSA1MzMsMzkwIiBmaWxsPSIjYThhZTg3IiBzdHJva2U9IiM2NDZmNTUiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cG9seWdvbiBwb2ludHM9IjUyNyw0NjAgNTU0LDQzMCA1OTgsNDI4IDYxNCw0NjMgNTkwLDUzMiA1NTAsNTQwIDUyMCw1MTAiIGZpbGw9IiNhOGFlODciIHN0cm9rZT0iIzY0NmY1NSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjxwb2x5Z29uIHBvaW50cz0iMjM5LDYwNCAyNzAsNTY1IDMwOSw1MzYgMzI4LDU1MiAzMDcsNjExIDI4Myw2NTUgMjQ4LDY1OSIgZmlsbD0iI2E4YWU4NyIgc3Ryb2tlPSIjNjQ2ZjU1IiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBvbHlnb24gcG9pbnRzPSIxOTAsNDE3IDI1NywzMzcgMzY4LDMwMiAzOTMsMzMxIDMzNiw0MDAgMjg1LDQ1MyAyMTQsNDg3IiBmaWxsPSIjYThhZTg3IiBzdHJva2U9IiM2NDZmNTUiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8ZyBzdHJva2U9IiM1ZDY1NTIiIGZpbGw9Im5vbmUiIG9wYWNpdHk9Ii42Ij48cGF0aCBkPSJNMTE0MCA4MFYyOG0tMTAgMTcgMTAtMTggMTAgMTgiIHN0cm9rZS13aWR0aD0iMyIvPjwvZz48L3N2Zz4K"/></g>
+<g id="geographic-features" clip-path="url(#frame)">
+<polyline id="luskan-mirar@city-luskan" points="1200,80 1050,166 845,229 668,260 467,325 295,388 220,497 165,625 65,705" fill="none" stroke="#7cdaee" stroke-width="0.84" opacity=".4"/>
+<polyline id="luskan-open-sea@city-luskan" points="" fill="none" stroke="#7cdaee" stroke-width="0.84" opacity=".4"/>
+</g><g id="private-proposal-areas" clip-path="url(#frame)">
+</g><g id="private-routes" clip-path="url(#frame)" opacity=".7">
+</g><g id="private-editable-labels">
+<g id="label-loc-north-bank-luskan"><path d="M590,185 L620.72,147.56" stroke="#fff2d0" stroke-width="0.6" opacity=".8"/>
+<circle cx="590" cy="185" r="2.04" fill="#ffe6b2" stroke="#28392e" stroke-width="0.6"/>
+<text x="620.72" y="154.28" fill="#fff2d0" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="normal" font-size="19.2">North Bank (Luskan)</text></g>
+<g id="label-loc-harbor-arm-island"><path d="M280,360 L310.72,322.55999999999995" stroke="#fff2d0" stroke-width="0.6" opacity=".8"/>
+<circle cx="280" cy="360" r="2.04" fill="#ffe6b2" stroke="#28392e" stroke-width="0.6"/>
+<text x="310.72" y="329.28" fill="#fff2d0" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="normal" font-size="19.2">Harbor Arm Island</text></g>
+<g id="label-loc-blood-island"><path d="M565,365 L595.72,327.55999999999995" stroke="#fff2d0" stroke-width="0.6" opacity=".8"/>
+<circle cx="565" cy="365" r="2.04" fill="#ffe6b2" stroke="#28392e" stroke-width="0.6"/>
+<text x="595.72" y="334.28" fill="#fff2d0" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="normal" font-size="19.2">Blood Island</text></g>
+<g id="label-loc-whitesails-harbor"><path d="M187,415 L217.72,377.55999999999995" stroke="#fff2d0" stroke-width="0.6" opacity=".8"/>
+<circle cx="187" cy="415" r="2.04" fill="#ffe6b2" stroke="#28392e" stroke-width="0.6"/>
+<text x="217.72" y="384.28" fill="#fff2d0" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="normal" font-size="19.2">Whitesails Harbor</text></g>
+<g id="label-loc-south-bank-luskan"><path d="M870,435 L900.72,397.55999999999995" stroke="#fff2d0" stroke-width="0.6" opacity=".8"/>
+<circle cx="870" cy="435" r="2.04" fill="#ffe6b2" stroke="#28392e" stroke-width="0.6"/>
+<text x="900.72" y="404.28" fill="#fff2d0" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="normal" font-size="19.2">South Bank (Luskan)</text></g>
+<g id="label-loc-closeguard-island"><path d="M565,485 L595.72,447.55999999999995" stroke="#fff2d0" stroke-width="0.6" opacity=".8"/>
+<circle cx="565" cy="485" r="2.04" fill="#ffe6b2" stroke="#28392e" stroke-width="0.6"/>
+<text x="595.72" y="454.28" fill="#fff2d0" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="normal" font-size="19.2">Closeguard Island</text></g>
+<g id="label-loc-cutlass-island"><path d="M451,550 L481.72,512.56" stroke="#fff2d0" stroke-width="0.6" opacity=".8"/>
+<circle cx="451" cy="550" r="2.04" fill="#ffe6b2" stroke="#28392e" stroke-width="0.6"/>
+<text x="481.72" y="519.28" fill="#fff2d0" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="normal" font-size="19.2">Cutlass Island</text></g>
+<g id="label-loc-captains-close"><path d="M910,600 L940.72,562.56" stroke="#fff2d0" stroke-width="0.6" opacity=".8"/>
+<circle cx="910" cy="600" r="2.04" fill="#ffe6b2" stroke="#28392e" stroke-width="0.6"/>
+<text x="940.72" y="569.28" fill="#fff2d0" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="normal" font-size="19.2">Captain&#x27;s Close</text></g>
+<g id="label-loc-fang-island"><path d="M292,620 L322.72,582.56" stroke="#fff2d0" stroke-width="0.6" opacity=".8"/>
+<circle cx="292" cy="620" r="2.04" fill="#ffe6b2" stroke="#28392e" stroke-width="0.6"/>
+<text x="322.72" y="589.28" fill="#fff2d0" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="normal" font-size="19.2">Fang Island</text></g>
+<g id="label-luskan-mirar@city-luskan"><path d="M825,235 L855.72,197.56" stroke="#dcd7a7" stroke-width="0.6" opacity=".8"/>
+<text x="855.72" y="204.28" fill="#dcd7a7" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="italic" font-size="19.2">River Mirar</text></g>
+<g id="label-luskan-open-sea@city-luskan"><path d="M100,580 L130.72,542.56" stroke="#dcd7a7" stroke-width="0.6" opacity=".8"/>
+<text x="130.72" y="549.28" fill="#dcd7a7" stroke="#20342d" stroke-width="1.08" paint-order="stroke" font-family="Georgia,serif" font-style="italic" font-size="19.2">Sea of Swords</text></g>
+</g>
+<rect x="18.0" y="736.0" width="504.0" height="48.0" rx="3.6" fill="#172a28" fill-opacity=".92"/><text x="30.0" y="757.5999999999999" font-family="sans-serif" font-size="9.6" fill="#f6dfae">PRIVATE PREPARATION · NOT TO SCALE</text><text x="30.0" y="774.4" font-family="sans-serif" font-size="6.6" fill="#e8dbbd">Proposed sites and paths do not establish discoveries.</text>
+</svg>

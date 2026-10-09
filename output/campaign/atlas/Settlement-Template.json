@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "audience": "dm-only",
+  "templateOnly": true,
+  "registered": false,
+  "identityAuthority": "Allocate canonical IDs in Location-Register.json only when creating an actual proposed place; this blank template is not loaded by the app.",
+  "boards": [
+    {
+      "id": null,
+      "title": null,
+      "locationId": null,
+      "parentId": null,
+      "image": null,
+      "viewBox": [
+        0,
+        0,
+        null,
+        null
+      ],
+      "northUp": null,
+      "source": {
+        "source": null,
+        "path": null,
+        "printedPage": null,
+        "pdfPage": null,
+        "method": null,
+        "render": null
+      },
+      "precision": null,
+      "anchors": [],
+      "features": [],
+      "artworkShapes": [],
+      "notes": [],
+      "preparation": {
+        "status": "unregistered-template",
+        "arrivalPoints": [],
+        "districts": [],
+        "serviceContacts": [],
+        "onwardRoutes": [],
+        "opening": null,
+        "decisionsToConfirm": [],
+        "noAutomaticEffects": [
+          "No discoveries, visits, purchases, lodging, relationships or time changes."
+        ]
+      }
+    }
+  ],
+  "examplesOfFieldShapes": {
+    "anchor": {
+      "locationId": null,
+      "point": [
+        null,
+        null
+      ],
+      "basis": null,
+      "note": null
+    },
+    "feature": {
+      "id": null,
+      "title": null,
+      "kind": null,
+      "points": [],
+      "labelPoint": null,
+      "closed": false,
+      "public": false,
+      "sourceApproved": false
+    },
+    "serviceContact": {
+      "locationId": null,
+      "contactName": null,
+      "available": null,
+      "price": null,
+      "agreement": null,
+      "status": "proposal"
+    },
+    "onwardRoute": {
+      "routeId": null,
+      "direction": null,
+      "destinationLocationId": null,
+      "distanceMiles": null,
+      "note": null
+    }
+  }
+}

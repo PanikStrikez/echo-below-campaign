@@ -1,0 +1,79 @@
+THE ECHO BELOW — PRIVATE VOICE AUDITIONS
+Updated 5 October 2026
+
+OPEN THE WORKSPACE
+Desktop app > Settings > AI assistance > Voice auditions.
+Barthen, Sildar and Dracuseth also have a Voice audition button on their NPC cards. Choose the general narrator from the same cast selector.
+
+CURRENT STATUS
+Four original scripts and reusable profiles are prepared. Four real speech requests through the connected ElevenLabs plugin have now completed: Roger for Barthen, Eric for Sildar, George for Dracuseth, and Bella for the narrator. All four remain proposed until you listen and select them. No cloning was used.
+
+The user upgraded to Creator and approved one take per role, up to 1,200 included credits, with no top-ups or additional paid usage. Provider-reported cost for the four completed samples is 949.905 credits. Estimates did not generate or charge anything. The individual results, exact scripts, models, voice IDs, generation references, durations and timestamps are recorded in Voice-Audition-Results.json. Plugin results and the app's local account connection are separate; local usage totals do not include plugin requests.
+
+Barthen/Roger: 226.9773 credits; 14.49 seconds of audio.
+Sildar/Eric: 236.9763 credits; 13.42 seconds of audio.
+Dracuseth/George: 237.9762 credits; 14.58 seconds of audio.
+Narrator/Bella: 247.9752 credits; 18.85 seconds of audio.
+
+Exact synthesis runtime was not returned. Completion was first observed 34–38 seconds after submission while other work continued; that is an upper bound, not measured generation latency. Clip length is not generation time. The proposed listening contrasts are Roger's casual resonance, Eric's smooth delivery, George's storytelling warmth, and Bella's bright professional tone, based on their catalog descriptions. Audible quality and name pronunciation have not been judged by the assistant; the user's listening decisions remain pending.
+
+The local app retains Free-only settings until explicitly switched. Creator mode requires positive per-sample and total included-credit limits, a verified remaining balance, and disabled overage. Insufficient or unknown allowances block speech. All dispatched reservations count toward the local history ceiling, including failed or cancelled requests. No provider or billing fallback is automatic.
+
+LOCAL SETUP
+1. Revoke the API key previously pasted into chat and create a replacement in ElevenLabs Developers > API Keys. A local comparison confirmed the saved app key matches that disclosed key; it was not used for these plugin auditions. Allow speech generation and read access to voices, models, and your account/subscription. Keep usage-based billing disabled.
+2. Double-click Set-Up-ElevenLabs.command in output/campaign/launchers. Paste the key into its hidden local prompt. Keep it out of chat and campaign files.
+3. Return here and choose Refresh voices. Under Account & audition budget, choose Free account credits only or Creator included credits only. For Creator, enter explicit per-sample and total limits. Approve that allowance, enable auditions, then Save audition setup. This does not change provider billing settings.
+4. Select Check account allowance, then Load stock voices. A saved key is not a verified connection; an account check is not a speech test.
+5. Choose a character and stock-voice candidate, then Generate this audition. Only the original script is synthesized; no books, character records, campaign secrets or phone data accompany it.
+
+PRIVATE LISTENING AND SELECTION
+Connect headphones or another private output on the DM computer. Its default speaker output might be the table TV. Confirm private output before Preview on this computer. Audio is not automatically published to the TV or phones. Stop preview and the existing Mute all control stop playback.
+
+Listen for clear names, warmth, restraint, distinctness and consistent emotion. After the full sample plays, Use this voice for [character] records your choice. A staged candidate is not a selection; mock samples cannot be selected.
+
+Save voice profile preserves direction notes. Clear selected voice and Undo last voice edit support corrections. Selection retains provider, model, voice, exact script fingerprint and audition reference. Changing voice/model identity returns it to proposed. Blank campaigns do not acquire this cast automatically.
+
+DELIVERY LIMIT
+The initial plugin samples use eleven_multilingual_v2 and unchanged script text. The local app supports Multilingual v2 and Eleven v3, preserving the model with each take. Saved pacing, pronunciation and emotional notes are proposed guidance; this build does not apply a pronunciation dictionary or force those notes into the speech. Listen before treating any direction as achieved. Only stock voices are available; cloning is not included.
+
+FOUR ORIGINAL AUDITIONS
+These 35–50-word samples are hypothetical dialogue, not new campaign events or promises. Expanded direction and source references are in the app.
+
+ELMAR BARTHEN
+Elmar Barthen, at your service. Mind that coil of rope by the counter. Tell me what you need for the road, and we’ll work through it properly. Food first, then dry blankets. A bargain is no use if it leaves you cold and hungry.
+Proposed direction: Warm, practical shopkeeper; about 145 words/minute. Welcome, concern, gentle exasperation, firm bargaining.
+Proposed pronunciation: Elmar Barthen = EL-mar BAR-thun; Phandalin = fan-DAL-in.
+
+SILDAR HALLWINTER
+Sildar Hallwinter. Take a breath, and start with what you saw. Then tell me what you were told. We can act quickly without acting blindly. If someone is in danger, say so plainly. We will weigh the risks, and you will choose your course.
+Proposed direction: Measured, humane authority; about 125 words/minute. Reassurance, urgency, disappointment, restrained relief.
+Proposed pronunciation: Sildar Hallwinter = SIL-dar HALL-win-ter.
+
+DRACUSETH MAW OF FLAMES
+Call me Dracuseth. Sit, if you like. There is no need to turn every conversation into a council of war. Tell me what help you want, and what you would rather keep to yourselves. I can make an introduction. What comes after is your choice.
+Proposed direction: Warm, plainspoken, patient; about 130 words/minute. Dry amusement, firm boundaries, protective concern; avoid constant growling.
+Proposed pronunciation: Dracuseth = DRAK-yoo-seth; Waterdeep = WAW-ter-deep.
+
+GENERAL NARRATOR
+Rain eases to a whisper against the shutters. Outside, Phandalin’s lamplight gathers in the puddles, and a cart rattles over uneven stone. For a moment, the room belongs to ordinary things: warm bread, tired feet, and a chair left open by the fire.
+Proposed direction: Clear, intimate, observant; about 120 words/minute. Everyday warmth, wonder, suspense and calm transitions.
+Proposed pronunciation: Phandalin = fan-DAL-in.
+
+USAGE, BACKUP AND TESTS
+Each local sample card reports status, submitted characters, measured request time and provider-reported usage when available. Submitted text, reserved credits, provider-reported characters, and actual billed credits are separate measurements. Cancellation discards audio, but an already dispatched request may consume included credits. There is no automatic retry. Opening the voice panel again requires a fresh private-output check. Stop preview and Mute all remain available.
+
+Keys and private audio remain outside campaign files. Campaign backups retain profiles and selections, not credentials or audition recordings. Set up a new computer separately; an unavailable old sample must be generated again. Source books remain untouched.
+
+The updated test pass covers 28 voice/key checks plus profile/context tests, including Creator allowance caps, model preservation, stale account verification, corrupt usage records, source references, proposed/selected status, correction/undo, immutable data, save/restore, blank campaigns, and TV exclusion. The isolated browser rehearsal uses synthetic silence, not generated speech, and verifies Creator setup, fresh consent when changing allowance, private preview, global mute, navigation stop, profile save/reload/undo, NPC shortcuts and TV isolation.
+
+Still needed: private listening and final cast choices; replacement local API credential before direct in-app generation. Existing plugin takes open in ElevenLabs and are separate from local app audio storage. Offline recording import/playback belongs to the following Voice Studio phase. Physical headphones/speakers and live phones were not exercised during these tests.
+
+PROVIDER COMPARISON — RESEARCH VERSUS AUDITION
+ElevenLabs: four actual Multilingual v2 takes completed on the same prepared scripts. Creator account reported by the user; plugin usage above is provider-reported. This is the only provider auditioned.
+Cartesia: current official documentation describes Sonic 3.6 with 44 languages and transcript-based pacing. It is a candidate for a later identical-script comparison, not a connected or tested provider here.
+OpenAI: official text-to-speech documentation describes gpt-4o-mini-tts with instructions for delivery and 13 built-in voices. No speech account or audition budget was confirmed for it, and no sample was generated.
+No audible winner or cross-provider latency ranking is claimed. Comparison would require the same four scripts, verified accounts, an approved allowance, and actual listening.
+References checked 5 October 2026:
+https://elevenlabs.io/docs/overview/models
+https://docs.cartesia.ai/build-with-cartesia/tts-models/latest
+https://developers.openai.com/api/docs/guides/text-to-speech

@@ -1,0 +1,143 @@
+{
+  "passed": true,
+  "auditDate": "2026-10-08T22:53:38.609Z",
+  "isolation": "Fresh browser contexts; OS-assigned loopback ports; temporary AI store; original backup read-only; no live service contact or restart",
+  "checks": [
+    {
+      "name": "Backup restored into fresh browser and copied to practice",
+      "passed": true
+    },
+    {
+      "name": "World browsing, zoom and pan only save atlas view settings",
+      "passed": true,
+      "detail": {
+        "zoom": 1.25,
+        "panX": 14.093959731543624,
+        "panY": 14.499999999999998
+      }
+    },
+    {
+      "name": "Stage is private; explicit Show shares sanitized world",
+      "passed": true
+    },
+    {
+      "name": "Approved label positions render with leaders; cloned travel projection safely places the party on a public route",
+      "passed": true
+    },
+    {
+      "name": "Repeated TV sync preserves image; Return to map restores underlying scene",
+      "passed": true
+    },
+    {
+      "name": "Full published hierarchy drills down privately; hidden Waterdeep rooms cannot stage",
+      "passed": true,
+      "detail": [
+        "world",
+        "waterdeep",
+        "city-waterdeep",
+        "wd-map-mending-neighborhood",
+        "wd-map-mending-court",
+        "wd-map-mending-lodging"
+      ]
+    },
+    {
+      "name": "DM location details visibly distinguish published anchors and proposed campaign placements with source and confidence",
+      "passed": true
+    },
+    {
+      "name": "Neighborhood route opens the connected tavern atlas privately without creating scenes or recording movement",
+      "passed": true
+    },
+    {
+      "name": "Waterdeep city, five settlement overviews and the Leilon plan share as raster images without changing combat, fog, tokens or position",
+      "passed": true,
+      "detail": [
+        {
+          "id": "city-waterdeep",
+          "snapshotBytes": 822618
+        },
+        {
+          "id": "town-leilon",
+          "snapshotBytes": 1137703
+        },
+        {
+          "id": "city-neverwinter",
+          "snapshotBytes": 295965
+        },
+        {
+          "id": "city-luskan",
+          "snapshotBytes": 282102
+        },
+        {
+          "id": "town-daggerford",
+          "snapshotBytes": 272741
+        },
+        {
+          "id": "city-baldurs-gate",
+          "snapshotBytes": 300539
+        },
+        {
+          "id": "town-leilon-plan",
+          "snapshotBytes": 308774
+        }
+      ]
+    },
+    {
+      "name": "Courtyard connects to the binding workroom, with permission required before private staging and explicit sharing",
+      "passed": true
+    },
+    {
+      "name": "Private room access requires explicit transient review without inferring tenancy or ownership",
+      "passed": true
+    },
+    {
+      "name": "Practice discovery enables reviewed Waterdeep rooms Stage/Show while preserving battle state",
+      "passed": true
+    },
+    {
+      "name": "Existing phone API accepts all seven overview rasters and the reviewed workroom without new static paths or a service restart",
+      "passed": true
+    },
+    {
+      "name": "Phone API preserves only validated route interpolation and approved label positions",
+      "passed": true
+    },
+    {
+      "name": "Simulated phone joins Explore, receives an opaque raster atlas and emits no movement from atlas clicks",
+      "passed": true
+    },
+    {
+      "name": "Separate battle-map preparation preserves all original IDs, fog, maps, party and tokens",
+      "passed": true
+    },
+    {
+      "name": "Explicit variant show uses a fully fogged raster on TV/phone, with no raw tactical path",
+      "passed": true
+    },
+    {
+      "name": "Saved zoom/pan and separate fog-covered variant survive reload and fresh-profile backup restore",
+      "passed": true
+    },
+    {
+      "name": "No browser exceptions across DM, TV, phone and restored campaign",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "atlas/Workflow-Waterdeep-TV-World.png",
+    "atlas/Workflow-Waterdeep-TV-City.png",
+    "atlas/Workflow-Waterdeep-TV-Bindery.png",
+    "atlas/Workflow-Waterdeep-DM-Rooms.png",
+    "atlas/Workflow-Waterdeep-TV-Rooms.png",
+    "atlas/Workflow-Waterdeep-Phone-City.png",
+    "atlas/Workflow-Waterdeep-Phone-Bindery.png",
+    "atlas/Workflow-Waterdeep-Phone-Explore.png",
+    "atlas/Workflow-Waterdeep-DM-Room-Review.png",
+    "atlas/Workflow-Waterdeep-TV-Fogged-Variant.png"
+  ],
+  "physicalDevicesTested": false,
+  "limitations": [
+    "Desktop Chrome emulates a phone; physical TV, touch device and live table were not used.",
+    "Discovery changes and source-layout preparation occurred only in a throwaway practice campaign."
+  ]
+}

@@ -1,0 +1,235 @@
+THE ECHO BELOW — MAP DELIVERY GUIDE
+8 October 2026 · private campaign preparation
+
+WHAT IS AVAILABLE
+The atlas contains one world view, six regional detail plates, linked settlement
+and site views, and twenty optional source-layout maps. All 472 canonical location
+records are searchable. Only sourced anchors and clearly identified proposals
+receive regional positions; unsupported venues and room positions remain unpinned.
+The Nine stay private preparation. The Walking Tower is a roaming area; the Broken
+Star marks a terrestrial approach to a partly planar destination, not a known portal.
+Loudwater has no verified position on the supplied geographic reference and remains
+unpinned. No map asset establishes a discovery, visit, defeat or ownership.
+
+OPEN AND NAVIGATE
+1. Open World → Campaign atlas.
+2. Choose Expand atlas for a larger working view. Pan and zoom as needed.
+3. Browse world → region → settlement/site → interior using the navigation links,
+   or search the current view or whole atlas. The map register remains a separate
+   read-only index under World → Map register.
+4. Select a location to see its source, private notes, linked maps and Journey &
+   discovery action. Existing shared travel records govern what the players know.
+   Newly introduced atlas travel definitions start hidden; old discoveries remain.
+
+SHOW A REVIEWED PLAYER VIEW
+1. Choose Stage player view. Staging creates a private preview.
+2. Inspect the preview: hidden places have no player records or pins; rumors have
+   names only; exact pins require located/visited/cleared records. A hidden parent
+   site also prevents exposing its interior board.
+3. Choose Show staged view on TV. This shares the staged projection, not the DM
+   atlas or its private source data. The party does not move and time does not pass.
+4. Choose Return TV to live scene when finished. Atlas browsing and presentation
+   leave the underlying live battle map and fog intact.
+If knowledge changes after staging, stage the view again before showing it.
+
+IMPORTANT DISTINCTION FOR DUNGEON MAPS
+Stage player view shares the ENTIRE ordinary unkeyed floor layout. Clean artwork
+has no room keys, occupants, treasure or secret connectors, but unexplored geometry
+can itself reveal information. For gradual exploration, select Prepare separate
+battle map. That creates an opt-in variant with blank fog and its own scene identity.
+No old tokens move; no old fog, drawings, notes, original images or scene IDs are
+replaced. Reveal only the geometry reached in play using the new board's fog tools.
+Review the source notes, scale and entry before use. Never copy old painted-map
+coordinates onto the revised source geometry merely because grid counts look alike.
+
+SOURCE-LAYOUT COLLECTION
+20 clean SVG variants derive from six editable geometry masters: Phandalin,
+Redbrand Hideout, Cragmaw Hideout, Cragmaw Castle, Thundertree and Wave Echo Cave.
+Nineteen are tactical views with separate 5-foot overlay metadata. Phandalin is a
+source-relative town orientation map; it has no tactical combat-grid claim.
+Wave Echo sectors overlap within one shared floor coordinate system. They are not
+separately rearranged dungeons. Secret bypasses and hidden connections are retained
+only in the private topology companion and must be revealed deliberately.
+
+Source check and map index:
+  tactical/Tactical-Map-Audit.txt
+  tactical/Validation.json
+  ../Phandelver-Map-Collection.js
+Private geometry and source references:
+  tactical/Phandelver-Tactical-Topology-DM.json
+The source-map task reports 620 checks covering paths, grids, selected topology,
+visible openings, public-art separation and retained original hashes. Full map
+renders and targeted details were inspected. These checks do not prove exact wall
+tracing or authorize migration of an existing play save.
+
+ACTUAL TERRAIN IMAGE DIMENSIONS
+These are native raster sizes, not advertised enlargement sizes.
+
+Sword Coast atlas                1559 × 1009 pixels     atlas/art/Sword-Coast-Terrain.png
+Northern Coast & Icewind Dale    1832 × 859 pixels     atlas/art/north-Terrain.png
+Neverwinter & Phandelver         1452 × 1083 pixels     atlas/art/phandelver-Terrain.png
+The High Road                    1208 × 1302 pixels     atlas/art/high-road-Terrain.png
+Waterdeep & Daggerford           1510 × 1042 pixels     atlas/art/waterdeep-Terrain.png
+Eastern Interior                 1266 × 1243 pixels     atlas/art/interior-east-Terrain.png
+Baldur’s Gate & Candlekeep       1316 × 1195 pixels     atlas/art/south-Terrain.png
+
+The official geographic reference is 10200 × 6600. Atlas coordinate viewports use
+that reference and its crop dimensions to preserve proportions. A 10200-wide
+coordinate viewport or SVG export does not create 10200 pixels of terrain detail.
+The seven images are separate illustrated plates with shared reference coordinates,
+not seamless image tiles. No correction attempt that aligned less well was adopted.
+
+The twenty Phandelver collection SVGs declare a 1536 × 1024 viewport: these are vector coordinate
+units, not native raster pixels. Their geometry is resolution-independent. The
+extra Wave Echo master uses a 1125 × 1500 portrait viewport. The new Waterdeep
+collection adds fourteen original views; SVG viewports describe authored geometry.
+The older Waterdeep orientation SVG is retained as a private legacy schematic.
+
+GEOGRAPHY AND SCALE LIMITS
+The supplied official map and specific adventure pages were inspected; this was
+not a page-by-page inspection of complete sourcebooks. Source notes distinguish
+visual checks, text/OCR checks, manual transfers and custom proposals. Regional
+lines and outlines are generalized, not exact coastlines, watershed boundaries or
+surveyed roads. Generated painting contours can drift from those coordinates,
+including the Neverwinter river mouth and Mount Hotenow peak. Source coordinates
+were retained. Never use the painting to overrule published distances or source
+room connections.
+Only directly supported route distances are numeric. The five-mile ambush-to-hideout
+trail and fifteen-mile Phandalin-to-Wave-Echo relation were visually checked in
+Lost Mine of Phandelver. Other records identify their evidence or remain unknown.
+No miles, days or physical table scale are derived from image pixels. River lines
+do not establish boat passage; a proposed approach does not guarantee a safe route.
+Tactical grids describe the authored source-coordinate reconstruction. Irregular
+walls, rubble, roofs, foliage and furnishings remain simplified.
+
+FILES TO USE
+  Atlas-Data.json — generated atlas transport and board metadata
+  Geography-Register.json — source coordinates, bounds, confidence and proposals
+  Route-Register.json — sourced distances and unknown paths
+  Geography-Verification.txt — exact review scope and alignment caveats
+  exports/player/ — world, regional and settlement terrain-only SVGs
+  exports/dm/ — annotated world, region, settlement and Waterdeep room SVGs
+  exports/README.txt — editable export layers and disclosure rules
+  ../map-audit/Location-Register.json — canonical IDs, provenance and map inventory
+  ../map-audit/Map-Audit-and-Checklist.txt — completed additions and remaining work
+DM exports keep labels, leaders, roads and proposal areas in separate editable
+SVG groups. Public terrain exports contain no settlement names or campaign-site
+metadata. The register and atlas JSON are private and are not player handouts.
+Atlas-Data.json is readable/editable JSON, but a rebuild overwrites direct edits.
+For lasting changes, edit Location-Register.json, Geography-Register.json,
+Route-Register.json or the atlas builder as appropriate, then rebuild.
+
+RETAINED ARTWORK AND REMAINING WORK
+All original paintings and book PDFs remain available. Old Redbrand and other
+painted dungeon layouts retain their documented needs-correction findings; the
+new source layouts are separate optional variants. Flagged Nine/Waterdeep spoiler
+composites are blocked from Presentation and remain private reference. The existing
+Waterdeep town SVG remains a legacy schematic. The new source-aware city and
+original neighborhood/interior views are delivered; exact street survey claims
+are deliberately absent.
+Undermountain Level 1 still needs a connected clean player floor: the blank tactical
+canvas and private keyed source scan do not complete it. Deeper floors, detailed
+Nine site packages and off-coast Tales adaptations remain future work when selected.
+New Tresendar arrivals default to the exterior courtyard. Existing saved arrival
+choices remain intact; an older direct-interior choice has a Use Tresendar courtyard
+arrival correction in Journey & discovery. Compatibility checks preserve all other
+old travel values, plans, customized distances, history and pending requests.
+
+VERIFIED APP WORKFLOWS
+Workflow-Verification.json records thirteen passing isolated browser checks across
+DM, TV and a simulated phone, including backup restore, navigation, staged sharing,
+neutral public titles/opaque IDs, fog masking and preserved battle state.
+Save-Compatibility.json records travel migration and blank-campaign checks.
+Original file preservation: 125 source/art/backup files and 36 original map scene
+IDs verified intact by the map-register test.
+Physical touch devices, table-TV calibration and Wi-Fi were not rehearsed.
+
+PHONE SERVICE UPDATE
+The updated phone service was restarted with DM approval on 8 October 2026.
+Its health and generic atlas renderer were checked. Reload the DM app, open phone
+access, and use the new QR code. Campaign saves remain in the DM browser.
+
+
+WATERDEEP AND FUTURE SETTLEMENTS
+Waterdeep city uses the supplied SCAG printed56 city map as a 1095×1357 north-up
+reference frame. Its new clean painting is 1127×1396 native raster pixels. The
+castle and northern inner wall received a reviewed correction. Fine streets,
+blocks and eastern countryside remain illustrative. Portal is an approximate
+published ward anchor; Mending Court and custom businesses have proposed block
+positions, not established addresses or lodging agreements.
+
+Navigate Waterdeep → proposed neighborhood → Mending Court → shared area, available rooms or the permitted bindery. The 14 original Waterdeep SVG views also include Portal/well,
+Second Margin, Ninepin Works, Lantern House, Blue Lantern Quay and three flexible
+rooms. The collection's access requirement is preparation to confirm in play,
+not recorded permission. Neutral player captions and opaque public IDs keep
+private room purposes out of public projections. Private room/entrance labels
+appear only on DM views and DM exports.
+
+For gradual room exploration, Prepare separate battle map creates its own blank
+fog. Never apply the original painted-map coordinates to a new layout. Existing
+visual scene IDs, courtyard beats, leases, relationships, stored objects and
+Undermountain state remain unchanged. Return links are navigation only.
+
+Leilon is the most plausible prepared optional stop on the proposed southbound
+High Road route. Its overview is a new 1536×1024 painting using a 1200×800 frame.
+Five original service points start hidden; contact names, stock, prices, spells,
+room availability and terms are unknown until the DM introduces them. A separate
+editable SVG planning diagram is retained as an alternative arrangement. It is
+not a published town plan and does not match the painting parcel for parcel.
+
+Neverwinter, Luskan, Daggerford and Baldur's Gate have lighter vector overviews.
+Neverwinter/Luskan/Baldur's Gate generalize selected supplied city maps.
+Daggerford is a conceptual diagram based on published prose. Their decorative
+roof blocks do not represent source-verified buildings or streets.
+
+All new SVG artifacts are resolution-independent vectors. Waterdeep tactical
+views declare 1536×1024 coordinate viewports; settlement diagrams use 1200×800.
+These are not native raster pixel claims. The neighborhood has no tactical grid;
+other Waterdeep grids describe authored play-space dimensions. Only the stated
+Portal well dimension is source-informed; no full official floorplan is claimed.
+
+Source review, map index and blank future template:
+  Settlement-Verification.txt
+  Settlement-Geography-Register.json
+  Settlement-Template.json
+  Settlement-Template-Guide.txt
+  tactical/Waterdeep-Map-Audit.txt
+  tactical/Waterdeep-Validation.json
+  ../Waterdeep-Map-Collection.js
+
+Atlas-Data.json and Campaign-Atlas-Data.js are generated transports. Edit source
+registers and the relevant collection/builder for durable changes, then rebuild.
+Direct generated-file edits are overwritten. The blank template is unregistered
+and creates no place, route, discovery, contact, image or app state by itself.
+
+Final Waterdeep artifact verification reports 717 checks across 14 views and
+eight original masters. The private crop exports were visually checked after
+label layout and origin normalization; source precision limits still apply.
+
+RUN A SETTLEMENT OR NEIGHBORHOOD STOP
+Each primary settlement overview now has a collapsed DM-only Run this stop panel.
+It exposes optional arrival framing, entry areas, broad districts, ordinary service
+requests, existing contact references and onward route choices. Leilon includes a
+short original arrival line and alternatives for continuing or addressing one
+specific need. Unknown contact names, availability, costs and agreements remain
+explicitly unset. Opening a card changes no money, inventory, time or travel state.
+
+The Mending neighborhood has four private clickable service waypoints: book
+repair/notebooks, meals/packed food, packing/delivery advice, and shared landing
+copying. These use the existing residents and open the existing relevant maps.
+They are preparation links, not new discovered places, residence bounds or rights
+of access. The ordinary city-to-court introduction sequence still governs who has
+actually met whom. Full private room entry requires its separate permission review.
+
+A private proposed street line points toward the Yawning Portal off the map. Its
+edge is a direction cue, not the inn's surveyed parcel or door. It has no distance
+or compass claim. Players receive the clean ordinary streets; these service points,
+contact notes and proposed direction line are excluded from public projections.
+Existing venue People links use the original NPC IDs; missing or unintroduced
+contacts are reference material, not automatically added as present characters.
+
+This follow-up added preparation and navigation metadata only: no new settlement,
+building, NPC identity or map image. All 152 registered artwork paths retained the
+same bytes during the update. Source books, canonical IDs, discoveries and saves
+were unchanged. The four lighter overviews remain diagrams with the previously
+documented source and precision limits.

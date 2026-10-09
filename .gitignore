@@ -1,0 +1,32 @@
+# Personal reference books and local working data are never published.
+/sources/
+/tmp/
+/tools/
+/AGENTS.md
+
+# Generated duplicates and older copies of campaign files.
+/output/releases/
+/output/campaign/archive/
+/output/campaign/character-sources/
+/output/campaign/books/players-handbook-2014.pdf
+/output/campaign/books/dungeon-masters-guide-2014.pdf
+/output/campaign/Session-01-Visual-Kit.zip
+/output/character-turnarounds.zip
+/output/five-nights-at-it-service-desk.png
+
+# Local credentials, databases, caches, and editor debris.
+**/.env
+**/.env.*
+!**/.env.example
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+**/*.key
+**/*.pem
+**/*-wal
+**/*-shm
+**/__pycache__/
+**/*.pyc
+**/.DS_Store
+**/node_modules/
+**/*.log

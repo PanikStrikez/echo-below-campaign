@@ -1,0 +1,7 @@
+Undermountain Level 1 source check
+Source: supplied Dungeon of the Mad Mage PDF, printed map p15 (PDF p16), keyed pp14–26.
+Native extract: 1443 x 1900 raster pixels. Hand-traced grid: 17.15 px per published 10-foot square; origin 3.5,5.5. Master viewport 1536 x 1024 SVG vector units, padded source frame -536.725,65.525,2572.5,1715. Exactly 300 x 200 authored 5-foot cells. This is a traced derivative; individual broken wall/shelf contours are approximate.
+Clean player map: atlas/undermountain/level-1-player.svg. Private keyed map: atlas/undermountain/level-1-dm-keyed.svg. 8 aligned sections share one full floor scene. 11 secret geometry overlays stay disabled until reviewed discovery.
+Source paths checked: 1 south→2a→2b; 2b north→6a; 2b south→25a→25b; optional west via 24b→24a→southern 23 corridor; 23c side room; 26b side closet off 26a; 39a ordinary stairs to Level2. One-way north secret of 1 is not an ordinary exit. Area24a broken gate is not town exit; 26d leads to Level10 only if its restrictions are met.
+Custom instrument belongs only to unexplored 25a; the character arcs and rewards are not painted onto player art. No occupants or room keys are painted onto public art. All rooms, hidden links, arrows and keys remain private until used in play.
+Later floors: workflow source register provides confirmed route/gate references; no playable Level2/3/Skullport room geometry is claimed here.

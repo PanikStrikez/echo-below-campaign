@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "auditDate": "2026-10-08T22:32:32.555Z",
+  "isolation": "Fresh browser contexts; OS-assigned loopback ports; temporary AI store; original backup read-only; no live service contact or restart",
+  "checks": [
+    {
+      "name": "Backup restored into fresh browser and copied to practice",
+      "passed": true
+    },
+    {
+      "name": "World browsing, zoom and pan only save atlas view settings",
+      "passed": true,
+      "detail": {
+        "zoom": 1.25,
+        "panX": 14.093959731543624,
+        "panY": 14.499999999999998
+      }
+    },
+    {
+      "name": "Stage is private; explicit Show shares sanitized world",
+      "passed": true
+    },
+    {
+      "name": "Approved label positions render with leaders; cloned travel projection safely places the party on a public route",
+      "passed": true
+    },
+    {
+      "name": "Repeated TV sync preserves image; Return to map restores underlying scene",
+      "passed": true
+    },
+    {
+      "name": "Full published hierarchy drills down privately; hidden Redbrand cannot stage",
+      "passed": true,
+      "detail": [
+        "world",
+        "phandelver",
+        "town-phandalin",
+        "site-tresendar",
+        "site-redbrand",
+        "phandelver-proposal-redbrand-hideout-full"
+      ]
+    },
+    {
+      "name": "Practice discovery enables reviewed Redbrand Stage/Show while preserving battle state",
+      "passed": true
+    },
+    {
+      "name": "Phone API preserves only validated route interpolation and approved label positions",
+      "passed": true
+    },
+    {
+      "name": "Simulated phone joins Explore, receives an opaque raster atlas and emits no movement from atlas clicks",
+      "passed": true
+    },
+    {
+      "name": "Separate battle-map preparation preserves all original IDs, fog, maps, party and tokens",
+      "passed": true
+    },
+    {
+      "name": "Explicit variant show uses a fully fogged raster on TV/phone, with no raw tactical path",
+      "passed": true
+    },
+    {
+      "name": "Saved zoom/pan and separate fog-covered variant survive reload and fresh-profile backup restore",
+      "passed": true
+    },
+    {
+      "name": "No browser exceptions across DM, TV, phone and restored campaign",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "atlas/Workflow-TV-World.png",
+    "atlas/Workflow-DM-Redbrand.png",
+    "atlas/Workflow-TV-Redbrand.png",
+    "atlas/Workflow-Phone-Explore.png",
+    "atlas/Workflow-TV-Fogged-Variant.png"
+  ],
+  "physicalDevicesTested": false,
+  "limitations": [
+    "Desktop Chrome emulates a phone; physical TV, touch device and live table were not used.",
+    "Discovery changes and source-layout preparation occurred only in a throwaway practice campaign."
+  ]
+}

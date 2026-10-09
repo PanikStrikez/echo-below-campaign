@@ -1,0 +1,147 @@
+THE ECHO BELOW — MAP AUDIT AND BUILD ORDER
+Private DM reference · 2026-10-08
+
+Find the atlas: World → Campaign atlas. Use Expand atlas, board navigation and search.
+Find this inventory: World → Map register → Checklist / Locations / Maps.
+The standalone Map-Audit.html opens the same read-only register without starting the table.
+
+472 location records; 152 retained map/reference/variant files; 36 registered map scenes.
+Unique-file classifications: 13 needs-correction, 55 optional, 84 ready-to-reuse.
+Counts include source references, old variants and preview sheets. They are not a count of unique finished player maps.
+Current stop: before entering Redbrand Hideout. Later prepared sessions do not establish visits.
+
+DELIVERED AND REMAINING
+1. Seven clean terrain rasters and separately editable labels, routes and private proposals are available in Campaign atlas. They use shared source coordinates but remain distinct illustrative plates with documented alignment drift.
+2. Twenty source-reconciled SVG variants cover Phandalin, Redbrand, Cragmaw Hideout/Castle, Thundertree and Wave Echo. Prepare a separate battle map for blank fog; original scenes and saved coordinates remain untouched. Manual source geometry is approximate.
+3. Original Redbrand paintings still misrepresent the crevasse. Retain their needs-correction finding; the new dry-chasm variants are separate ready options.
+4. Presentation blocks flagged Nine/Waterdeep composites. Use Stage player view, inspect it, Show staged view on TV, then Return TV to live scene. Unkeyed dungeon staging shows the entire layout; use the separate battle map for gradual exploration.
+5. Undermountain Level 1 still needs a connected clean player floor. The current tactical canvas and private keyed scan do not complete that coverage.
+6. Waterdeep now has a source-aligned city painting and fourteen reviewed original neighborhood/interior views. Private room labels, permission notes and custom placement badges remain DM-only. Leilon has an optional painted stop with five proposed services; four other settlements have lighter source-relative overviews.
+
+PRIORITIZED CHECKLIST
+
+P0 · Prepare the corrected Redbrand variant when needed [ready-to-reuse]
+Clean full-layout and crevasse SVG variants now preserve source-relative dry chasm and room connections; original paintings remain flagged.
+  - Open Campaign atlas → Redbrand → the source layout variant; review its calibration and precision notes.
+  - Use Prepare separate battle map for a new scene with blank fog; retain original scene ID, original artwork, tokens, notes and saved fog.
+  - Stage player view shares the entire unkeyed layout; use battle-map fog for gradual exploration.
+  - Consult Tactical-Map-Audit.txt for source pages, hidden connections and remaining tracing limits.
+
+P0 · Use the clean atlas instead of private composites [ready-to-reuse]
+Presentation now blocks flagged composites and the atlas uses filtered public payloads with clean terrain. Original composite files remain DM-only.
+  - Open World → Campaign atlas for reviewed public terrain.
+  - Keep Nine composites, older custom-labeled Waterdeep art, source scans and DM annotated exports private.
+  - Review Stage player view before Show staged view on TV. New atlas records start hidden.
+  - Use Return TV to live scene after sharing; atlas browsing does not move the party or change fog.
+
+P0 · Keep exterior arrival separate from dungeon entry [ready-to-reuse]
+New Tresendar arrival defaults to the exterior courtyard. Existing saved arrivals are preserved and the travel card offers an explicit courtyard correction; source-layout entrance links retain their original scene IDs.
+  - Use the exterior courtyard before choosing an interior entrance.
+  - For an older saved direct-interior arrival, choose Journey & discovery → Use Tresendar courtyard arrival.
+  - Existing travel values, custom distances, plans and histories passed isolated compatibility checks.
+
+P1 · Reuse frontier, town and encounter boards [ready-to-reuse]
+Working Phandalin, wilderness and encounter art already covers most immediate choices.
+  - Reuse current town/frontier navigation and editable markers.
+  - Keep Old Owl Well and Wyvern Tor outcomes distinct from proposed revisits.
+  - Calibrate any board used for measured combat; images do not establish physical TV scale.
+
+P1 · Use the editable world atlas and six regional plates [ready-to-reuse]
+World, six regional plates, source-aware city/settlement boards, editable geographic features and private proposals; all 472 locations searchable. New places remain hidden.
+  - Open World → Campaign atlas; Expand atlas and search the whole atlas or current board.
+  - Follow world → region → settlement/site → interior links; missing exact coordinates remain unpinned.
+  - Stage the player preview, inspect it, then Show staged view on TV.
+  - Use separate player terrain and DM annotated SVG exports; never share the private annotated sheets.
+  - Treat the plates as consistent reference-coordinate illustrations, not seamless tiles or a physical distance scale.
+
+P1 · Use optional source-reconciled Phandelver variants [ready-to-reuse]
+Twenty clean SVG variants now cover Phandalin, Redbrand, Cragmaw Hideout/Castle, Thundertree and Wave Echo. Six masters preserve connected geometry across related crops; approximations remain explicit.
+  - Choose the next location reached in play; variants do not establish visits or reveal occupants.
+  - Review source map index and precision notes in atlas/tactical/Tactical-Map-Audit.txt.
+  - Use Prepare separate battle map, then reveal the needed terrain with its new blank fog.
+  - Wave Echo sectors share one coordinate system; do not transfer old painted-sector coordinates.
+  - Keep original painted maps as optional staging; their previous geometry findings remain attached.
+
+P2 · Prepare Waterdeep and home at usable scales [ready-to-reuse]
+New source-aligned city painting, 14 reviewed original Waterdeep play-space views, local source/proposal markers and separate room/entrance labels are linked. Mending Court exact address and occupancy remain unestablished.
+  - Open Waterdeep → proposed neighborhood → court → shared/available rooms; respect each permission requirement.
+  - Stage then inspect the public layout; only explicit Show shares it. Prepare a separate blank-fog battle map for gradual exploration.
+  - Leilon is an optional future stop; five service proposals need actual availability and terms confirmed.
+  - Older city/neighborhood paintings remain private legacy references with their original findings.
+
+P2 · Make one connected Level 1 player map [missing]
+41 room cards and three contracts exist, but um1-table is a blank canvas; published Level 1 uses 10-ft squares.
+  - Build clean source-faithful geometry for 1→2 and branches toward 6,25 and optional23/24.
+  - Retain keyed room IDs, gates, exits, retreat positions and saved dungeon objects.
+  - Separate 10-ft source scale from a 5-ft combat overlay; validate rather than stretch.
+  - Use one persistent floor with route crops, not a new unrelated map per room or expedition.
+
+P3 · Prepare Silent Library when its lead is selected [ready-to-reuse]
+An original exploration plan and room preparation already exist.
+  - Check custom room key against the plan and maintain secret access from Second Margin.
+  - Keep it optional; do not mark the library discovered because its asset exists.
+  - Apply Option 5 terrain style during a future polish pass if needed.
+
+P4 · Keep later sites and books as a backlog [optional]
+Regional entries are not a demand for hundreds of new battle maps.
+  - Map deeper Undermountain floors as expeditions reach them.
+  - Produce Nine site packages only after a lead is chosen; do not assign open character homelands.
+  - Tales Realms adaptations stay book-suggested choices; Chult and Thay remain off the Sword Coast map.
+  - Do not infer fixed routes to Walking Tower, Broken Star or planar destinations.
+
+THE NINE — PLACEMENTS REMAIN PRIVATE
+1. Undermountain [loc-undermountain]: Beneath Waterdeep.
+   published-anchor-confirmed; proposed-unplayed
+2. Wave Echo Cave [loc-wave-echo-cave]: East/northeast of Phandalin, per corrected atlas; published mine location remains source authority.
+   published-anchor-corrected-atlas; proposed-unplayed
+3. The Silent Library [loc-silent-library]: Beneath the Second Margin in Waterdeep; Castle Ward shop placement is campaign preparation.
+   custom-relative-placement-established-exact-street-open; proposed-unplayed
+4. The Drowned Observatory [loc-drowned-observatory]: Offshore west of Leilon, in the Sea of Swords; boat and dive access.
+   newest-custom-regional-proposal-no-exact-bearings; proposed-unplayed
+5. The Dead God’s Scar [loc-dead-gods-scar]: Sheltered valley at the western edge of the High Moor, approached from Daggerford.
+   newest-custom-regional-proposal-exact-valley-open; proposed-unplayed
+6. The Frozen Door [loc-frozen-door]: Southwest edge of the Reghed Glacier.
+   newest-custom-regional-proposal-exact-approach-open; proposed-unplayed
+7. The Walking Tower [loc-walking-tower]: Western Anauroch appearance region; roaming marker rather than fixed coordinates.
+   newest-custom-appearance-region-mobile; proposed-unplayed
+8. The Broken Star [loc-broken-star]: Proposed terrestrial approach in the Star Mounts within the High Forest; destination remains partly planar.
+   newest-custom-approach-proposal-planar-destination-open; proposed-unplayed
+9. The Hollow Mountain [loc-hollow-mountain]: Provisional peak in the southern Greypeaks, northeast of Loudwater.
+   newest-custom-regional-proposal-exact-peak-open; proposed-unplayed
+
+GEOGRAPHY AND IDENTITY RULES
+Location-Register.json is the editable authority for identity, provenance and preparation. Map-Register-Data.js is generated from it. Approved outcome records and campaign saves retain authority over actual play and disclosure.
+Existing scene, room, marker, route and site IDs are aliases/links, not renamed or migrated. A location may have several maps. A map may show several locations. Source books and original artwork remain unchanged.
+Walking Tower has a roaming region, not a fixed pin. Broken Star has a regional approach and partly planar destination, not a new travel power. Character homes and the threatened district remain unplaced where choices are open.
+Book-suggested Tales placements remain adaptations. Tamoachan in Chult and Doomvault in Thay belong in separate geographic views; Bloodgate Keep is a different location.
+No location is discovered because its name or art exists. New atlas travel definitions start hidden; existing ledger states are preserved. Reading this register publishes nothing to TV or phones.
+
+SCOPE AND LIMITATIONS
+- Register combines the original static audit with completed atlas and source-layout additions. Browser-only uploaded/custom images and a newer unsaved live campaign were not independently inspected.
+- Ready to reuse is limited to the stated purpose: geographic orientation or explicitly prepared new map variant. It does not certify exact source geometry, physical table calibration or flawless image registration.
+- World and all six regional annotated sheets were rendered and visually reviewed. Generated terrain can drift from official reference coordinates: Neverwinter river-mouth and Mount Hotenow peak alignment are documented examples. Plates are not seamless tiles.
+- Twenty Phandelver SVG variants received manual source-map and room-key comparison, full-render inspection and targeted topology/opening checks. Natural contours, clutter, vegetation and some furnishings are simplified. The 620 checks are regression evidence, not proof of pixel-perfect tracing.
+- Book audit covers meaningful regions, settlements, venues and destinations; it was not a page-by-page inspection of every complete book. Unplaced minor venues, dungeon rooms, individual Ten-Towns settlements and Loudwater have no invented regional pins.
+- Personal PDFs remain local read-only references. Scan offsets differ, particularly Dragon Heist; source references distinguish visual verification from text extraction and inference.
+- The register, private atlas data, DM annotated SVGs, source scans and topology companion remain private. Public projection includes only reviewed artwork, approved broad geography and discovery-filtered records; Presentation blocks flagged composites.
+- Existing scene IDs, selected original art and saved fog/tokens/notes are retained. A source variant is an opt-in new scene with blank fog, not an automatic migration. Staging an unkeyed map exposes its full ordinary layout.
+- No miles or travel durations are calculated from image coordinates. Only directly sourced distances are numeric; other distances remain unknown. Walking Tower is a roaming area, Broken Star an approach area; proposed Nine placements do not establish discovery.
+- Arrival-routing follow-up is tracked separately until its integration and preservation checks complete.
+
+FILES
+Location-Register.json — authoritative private editable data
+Map-Register-Data.js — generated read-only browser copy
+Map-Audit.html — standalone searchable DM report
+Visual-Audit.txt — detailed Redbrand/Waterdeep/Nine visual findings
+Book-Source-Notes.txt — book coverage and reference limitations
+Verification.txt — original audit workflow and preservation results
+../atlas/Map-Delivery-Guide.txt — navigation, staging, separate-map workflow and actual image dimensions
+../atlas/Atlas-Data.json — generated atlas transport; direct edits are overwritten by rebuild
+../atlas/Settlement-Geography-Register.json — source-aware city and proposed local coordinates
+../atlas/Settlement-Verification.txt — selected book map checks and local precision limits
+../atlas/Settlement-Template.json — blank unregistered template for future settlements
+../atlas/tactical/Waterdeep-Map-Audit.txt — fourteen original Waterdeep play-space proposals
+../atlas/tactical/Waterdeep-Validation.json — latest Waterdeep artifact checks
+../atlas/Geography-Verification.txt — source checks and painting-alignment limits
+../atlas/tactical/Tactical-Map-Audit.txt — Phandelver source check, map index and precision caveats
+../atlas/tactical/Validation.json — latest tactical artifact verification result

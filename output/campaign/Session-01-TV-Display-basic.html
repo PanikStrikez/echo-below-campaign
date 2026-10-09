@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Echo Below — Session 1 TV Display</title>
+  <style>
+    :root { color-scheme: dark; font-family: Georgia, serif; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; background: #050507; overflow: hidden; }
+    main, .slide { position: absolute; inset: 0; }
+    .slide { display: none; align-items: center; justify-content: center; background: #050507; }
+    .slide.active { display: flex; }
+    .slide img { width: 100%; height: 100%; object-fit: contain; }
+    .slide.cover img { object-fit: cover; }
+    .map-frame { position: relative; width: min(100vw, 150vh); height: min(100vh, 66.667vw); }
+    .map-frame.gridded::after { content: ''; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(to right, #f2e7cf66 1px, transparent 1px), linear-gradient(to bottom, #f2e7cf66 1px, transparent 1px); background-size: 3.333333% 5%; }
+    .slide.black { background: #000; }
+    .cave svg { display: block; width: min(100vw, 151vh); height: min(100vh, 66vw); max-width: 100%; max-height: 100%; background: #131313; }
+    .fog-tile { fill: #050507; stroke: #14151a; stroke-width: .7; cursor: crosshair; touch-action: none; }
+    .fog-tile.revealed { opacity: 0; pointer-events: none; }
+    #blank { position: absolute; inset: 0; background: #000; display: none; z-index: 5; }
+    #blank.visible { display: block; }
+    .hud { position: absolute; left: 0; right: 0; bottom: 0; z-index: 6; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #efe8d8; background: linear-gradient(transparent, rgba(0,0,0,.82)); font: 14px system-ui, sans-serif; opacity: .22; transition: opacity .2s ease; }
+    .hud:hover, .hud:focus-within { opacity: 1; }
+    .controls { display: flex; flex-wrap: wrap; gap: 6px; }
+    button { color: #efe8d8; background: #27252a; border: 1px solid #77706a; border-radius: 5px; padding: 7px 10px; font: inherit; cursor: pointer; }
+    button:hover, button:focus-visible { background: #504a51; outline: 2px solid #d7b47a; }
+    #cave-controls { display: none; }
+    body.on-cave #cave-controls { display: flex; }
+    .hint { opacity: .75; white-space: nowrap; }
+    @media (max-width: 900px) { .hint { display: none; } .hud { font-size: 12px; } }
+  </style>
+</head>
+<body>
+  <main aria-label="Player-facing Session 1 images and maps">
+    <section class="slide cover active" data-title="The Echo Below"><img src="assets/Echo-Below-Cover.png" alt="The Echo Below campaign cover"></section>
+    <section class="slide" data-title="Gundren's departure"><img src="session-01-visuals/scene-01-gundren-departs.png" alt="Gundren departs before the escort journey"></section>
+    <section class="slide" data-title="The empty horses"><img src="session-01-visuals/scene-02-empty-horses.png" alt="Two riderless horses block the road"></section>
+    <section class="slide" data-title="Road ambush — gridless"><div class="map-frame"><img src="session-01-visuals/road-ambush-painted-gridless.png" alt="Player-facing road ambush battle map without grid"></div></section>
+    <section class="slide" data-title="Road ambush — 5-foot grid"><div class="map-frame gridded"><img src="session-01-visuals/road-ambush-painted-gridless.png" alt="Player-facing road ambush battle map with five-foot grid"></div></section>
+    <section class="slide" data-title="Cave mouth"><img src="session-01-visuals/scene-03-cave-mouth.png" alt="The stream and cave mouth at Cragmaw Hideout"></section>
+    <section class="slide" data-title="Cave approach — gridless"><div class="map-frame"><img src="session-01-visuals/cave-approach-painted-gridless.png" alt="Player-facing cave approach battle map without grid"></div></section>
+    <section class="slide" data-title="Cave approach — 5-foot grid"><div class="map-frame gridded"><img src="session-01-visuals/cave-approach-painted-gridless.png" alt="Player-facing cave approach battle map with five-foot grid"></div></section>
+    <section class="slide cave" data-title="Hideout interior — reveal as explored">
+      <svg id="cave-svg" viewBox="0 0 2100 1400" role="img" aria-label="Cragmaw Hideout map with removable fog of war">
+        <image href="session-01-visuals/cragmaw-hideout-painted-gridless.png" x="0" y="0" width="2100" height="1400" />
+        <defs><pattern id="cave-grid" width="70" height="70" patternUnits="userSpaceOnUse"><path d="M70 0H0V70" fill="none" stroke="#f2e7cf" stroke-opacity=".35" stroke-width="1.5"/></pattern></defs>
+        <rect x="0" y="0" width="2100" height="1400" fill="url(#cave-grid)" pointer-events="none" />
+        <g id="fog"></g>
+      </svg>
+    </section>
+    <section class="slide black" data-title="Blank screen"></section>
+  </main>
+  <div id="blank" aria-hidden="true"></div>
+  <div class="hud" aria-label="Display controls">
+    <div><strong id="title">The Echo Below</strong> <span id="counter">1 / 10</span></div>
+    <div class="controls">
+      <button id="prev" type="button" aria-label="Previous slide">◀</button>
+      <button id="next" type="button" aria-label="Next slide">▶</button>
+      <button id="toggle-blank" type="button">Black screen</button>
+      <button id="fullscreen" type="button">Full screen</button>
+      <span id="cave-controls" class="controls">
+        <button id="reveal-all" type="button">Reveal map</button>
+        <button id="reset-fog" type="button">Reset fog</button>
+      </span>
+    </div>
+    <span class="hint">←/→ slides · B black · F full screen · drag to reveal map</span>
+  </div>
+  <script>
+    const slides = [...document.querySelectorAll('.slide')];
+    let index = 0;
+    const title = document.getElementById('title');
+    const counter = document.getElementById('counter');
+    const blank = document.getElementById('blank');
+    const fog = document.getElementById('fog');
+    let drawing = false;
+
+    function buildFog() {
+      fog.replaceChildren();
+      for (let row = 0; row < 10; row++) {
+        for (let col = 0; col < 16; col++) {
+          const tile = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+          tile.setAttribute('x', String(col * 131.25));
+          tile.setAttribute('y', String(row * 140));
+          tile.setAttribute('width', '131.25');
+          tile.setAttribute('height', '140');
+          tile.setAttribute('class', 'fog-tile');
+          tile.dataset.row = row;
+          tile.dataset.col = col;
+          fog.appendChild(tile);
+        }
+      }
+      // Show only the known stream and cave entrance at the beginning.
+      for (const tile of fog.children) {
+        const row = Number(tile.dataset.row);
+        const col = Number(tile.dataset.col);
+        if (row >= 8 && col >= 4 && col <= 6) tile.classList.add('revealed');
+      }
+    }
+
+    function show(n) {
+      index = (n + slides.length) % slides.length;
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+      title.textContent = slides[index].dataset.title;
+      counter.textContent = `${index + 1} / ${slides.length}`;
+      document.body.classList.toggle('on-cave', slides[index].classList.contains('cave'));
+      blank.classList.remove('visible');
+    }
+
+    function revealAt(event) {
+      const target = document.elementFromPoint(event.clientX, event.clientY);
+      if (target?.classList?.contains('fog-tile')) target.classList.add('revealed');
+    }
+
+    fog.addEventListener('pointerdown', event => { drawing = true; revealAt(event); event.preventDefault(); });
+    window.addEventListener('pointermove', event => { if (drawing) revealAt(event); });
+    window.addEventListener('pointerup', () => { drawing = false; });
+    document.getElementById('prev').addEventListener('click', () => show(index - 1));
+    document.getElementById('next').addEventListener('click', () => show(index + 1));
+    document.getElementById('toggle-blank').addEventListener('click', () => blank.classList.toggle('visible'));
+    document.getElementById('fullscreen').addEventListener('click', () => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen());
+    document.getElementById('reveal-all').addEventListener('click', () => [...fog.children].forEach(tile => tile.classList.add('revealed')));
+    document.getElementById('reset-fog').addEventListener('click', buildFog);
+    document.addEventListener('keydown', event => {
+      if (event.key === 'ArrowRight') show(index + 1);
+      else if (event.key === 'ArrowLeft') show(index - 1);
+      else if (event.key.toLowerCase() === 'b') blank.classList.toggle('visible');
+      else if (event.key.toLowerCase() === 'f') document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+      else if (slides[index].classList.contains('cave') && event.key.toLowerCase() === 'a') [...fog.children].forEach(tile => tile.classList.add('revealed'));
+      else if (slides[index].classList.contains('cave') && event.key.toLowerCase() === 'r') buildFog();
+    });
+    buildFog();
+    show(0);
+  </script>
+</body>
+</html>

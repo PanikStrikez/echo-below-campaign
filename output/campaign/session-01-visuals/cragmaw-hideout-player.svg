@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 1400" role="img" aria-label="Unlabeled Cragmaw Hideout player map, thirty by twenty five-foot squares">
+  <defs>
+    <pattern id="stone" width="120" height="100" patternUnits="userSpaceOnUse"><rect width="120" height="100" fill="#2f3432"/><path d="M0 58Q35 48 63 55T120 52M36 0q-9 23 3 45m48 26q-8 10-5 29" fill="none" stroke="#414641" stroke-width="5" opacity=".55"/></pattern>
+    <pattern id="grid" width="70" height="70" patternUnits="userSpaceOnUse"><path d="M70 0H0V70" fill="none" stroke="#473d31" stroke-width="2" opacity=".38"/></pattern>
+    <pattern id="briars" width="105" height="105" patternUnits="userSpaceOnUse"><rect width="105" height="105" fill="#344a35"/><path d="M-10 72Q20 30 48 73T115 59M0 15q35 58 82 7" fill="none" stroke="#60714d" stroke-width="8" opacity=".75"/></pattern>
+    <linearGradient id="floor" x2=".1" y2="1"><stop stop-color="#b6aa90"/><stop offset="1" stop-color="#857967"/></linearGradient>
+    <linearGradient id="water" x2="1" y2=".2"><stop stop-color="#376074"/><stop offset=".5" stop-color="#6790a0"/><stop offset="1" stop-color="#24495e"/></linearGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="2100" height="1400" fill="url(#stone)"/>
+  <g fill="url(#floor)" stroke="#342e28" stroke-width="25" stroke-linejoin="round">
+    <!-- Main stream passage, western passage, and eastern links. -->
+    <path d="M675 1400L680 1135 780 935 750 710 865 485 975 280 1190 215 1340 260 1450 280 1460 390 1270 405 1110 420 1010 620 1040 900 940 1130 935 1400Z"/>
+    <path d="M770 545Q700 510 605 475L570 345 720 325 860 365 935 455Z"/>
+    <path d="M1010 880L1190 845 1370 885 1555 830 1650 950 1440 1030 1190 1000 970 1050Z"/>
+    <path d="M1620 585L1785 585 1840 780 1720 885 1575 785Z"/>
+    <!-- Rooms follow the published connections; no room keys appear on the player map. -->
+    <path d="M100 235Q200 140 370 190L650 180Q800 200 790 355L750 510Q800 630 690 675L470 690Q260 660 110 570Z"/>
+    <path d="M1060 825Q1070 700 1190 680L1420 690Q1530 725 1550 850L1530 1040Q1440 1160 1250 1135L1080 1090Z"/>
+    <path d="M1460 220Q1540 140 1690 160L1900 150Q2050 190 2045 345L2025 560Q1940 700 1760 680L1530 650Q1440 560 1460 420Z"/>
+    <path d="M1530 810Q1630 750 1800 765L2010 780Q2090 880 2050 1060L2050 1220Q1990 1350 1800 1340L1600 1270Q1510 1170 1530 1000Z"/>
+  </g>
+  <g fill="url(#briars)" stroke="#52634b" stroke-width="10">
+    <path d="M35 1000Q110 885 330 865L580 870Q690 950 660 1160L650 1375H40Z"/>
+    <path d="M965 1025Q1070 1020 1105 1110L1085 1390H940Q955 1195 965 1025Z"/>
+  </g>
+  <path d="M30 1310Q230 1250 410 1280L610 1260Q720 1190 760 1050L800 920Q760 830 820 720L880 575Q920 460 1020 415L1200 355Q1330 350 1430 300L1560 300" fill="none" stroke="#1d3543" stroke-width="105" stroke-linecap="round"/>
+  <path d="M30 1310Q230 1250 410 1280L610 1260Q720 1190 760 1050L800 920Q760 830 820 720L880 575Q920 460 1020 415L1200 355Q1330 350 1430 300L1560 300" fill="none" stroke="url(#water)" stroke-width="82" stroke-linecap="round"/>
+  <path d="M40 1287Q235 1230 410 1250L610 1235Q700 1170 730 1030L770 900Q730 820 800 700L850 565Q900 440 1000 393L1190 333" fill="none" stroke="#b2d4d4" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+  <g fill="url(#water)" stroke="#244454" stroke-width="12">
+    <ellipse cx="1655" cy="290" rx="155" ry="100"/>
+    <ellipse cx="1880" cy="330" rx="135" ry="125"/>
+  </g>
+  <path d="M1745 215L1740 445M1960 225L1945 455" stroke="#5b5545" stroke-width="25" stroke-dasharray="60 12"/>
+  <g stroke="#3a291c" stroke-width="24" stroke-linecap="round"><path d="M1035 295L1215 525"/><path d="M1065 305L1245 535"/></g>
+  <g stroke="#9f8060" stroke-width="10"><path d="M1035 295L1215 525M1065 305L1245 535"/><path d="M1060 330L1090 315M1095 375L1125 360M1130 420L1160 405M1165 465L1195 450M1200 510L1230 495"/></g>
+  <g fill="#575449" stroke="#333027" stroke-width="8">
+    <circle cx="1175" cy="900" r="27"/><circle cx="1420" cy="760" r="22"/><circle cx="1800" cy="920" r="33"/><circle cx="1850" cy="1170" r="27"/><circle cx="350" cy="525" r="22"/><circle cx="660" cy="405" r="24"/>
+  </g>
+  <g fill="#6e5a3d" stroke="#433621" stroke-width="8"><rect x="1750" y="1100" width="130" height="60" transform="rotate(-12 1750 1100)"/><rect x="1885" y="1040" width="110" height="75" transform="rotate(9 1885 1040)"/><rect x="1640" y="1150" width="95" height="60" transform="rotate(7 1640 1150)"/><rect x="250" y="320" width="80" height="45"/><rect x="440" y="250" width="110" height="50"/></g>
+  <circle cx="1750" cy="1015" r="57" fill="#5a3b28" stroke="#b0844e" stroke-width="10"/><circle cx="1750" cy="1015" r="36" fill="#ba6934" opacity=".8"/>
+  <rect width="2100" height="1400" fill="url(#grid)"/>
+</svg>

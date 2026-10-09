@@ -1,0 +1,17 @@
+Built-in image_gen tool; 8 October 2026. Native image: 1127 × 1396 pixels. Source-coordinate frame: 1095 × 1357; changing this frame does not add detail. Original output retained in Codex generated_images.
+Reference geography: supplied Sword Coast Adventurer's Guide, printed p56 / PDF57. Style: approved Option5 Game-world atlas. Generated terrain is illustrative, not a surveyed street plan. Location markers/ward and road overlays are separate authored data.
+
+PROMPT
+Create a detailed overhead Waterdeep city atlas terrain plate. Reference 1 is the authoritative geographic ground plan, a crop from the supplied Sword Coast Adventurer's Guide. Reference 2 shows the approved Game-world atlas PALETTE AND PAINTERLY FINISH ONLY. Preserve the EXACT full frame composition, city silhouette, harbor shape, mountain footprint, city walls, important street centerlines, park and district positions of reference 1. Portrait aspect ratio 1095:1357. North is straight up. Do not copy the geography, symbols, or labels from reference 2.
+
+Redraw reference 1 as a rich full-color, strict top-down orthographic game-world city map: deep blue coastal water with delicate surf, mossy greens, warm sandstone lanes, tiny individual slate-blue and terracotta rooftops, pale stone fortifications, gardens, miniature courtyards and layered rocky contours. Fine native detail suitable for zooming, clean crisp street geometry, no perspective buildings or horizon. Keep roads navigable and distinguish broad major avenues from narrow streets.
+
+Geographic invariants on the 1095x1357 reference frame:
+- Sea down the entire western edge and broad harbor at bottom. The city is tall, mostly in the LEFT TWO THIRDS. Do not expand the city into the right-hand countryside.
+- Northern belt is the Field Ward between the two wall lines; Sea Ward northwest below it; North Ward northeast; central Castle Ward below Sea/North; compact oval walled garden cemetery EAST of Castle Ward near x620 y640; Trades Ward immediately below and to its southeast; Dock Ward bordering the harbor's north/east; Southern Ward the narrow southeast lobe.
+- Mount Waterdeep is the rocky long WEST-CENTRAL peninsula at x110–310 y540–900, west of Castle Ward and immediately NORTH of harbor, not an enormous middle-of-city mountain.
+- Main north-south avenue near x495 links north gate to city center; large open marketplace near x395 y506. Preserve reference street web, fortresses, walls and gates with no extra invented bridges.
+- Harbor occupies x130–625 y985–1270, surrounded by waterfront wharves, with southern island/coastal defensive strip and southeast outlet as drawn. Match individual shoreline promontories.
+- Right countryside is mostly open grassland/Undercliff with sparse fields. Remove the old title, north arrow, coat of arms and other decorative panels there and fill with modest uninterrupted terrain, not extra city.
+
+ABSOLUTELY NO WORDS, letters, numbers, labels, names, compass letters, map markers, keys, legends, scale bars, boundary-colored ward fills, grids, pictograms, title/banner, or framing border. Do not draw monsters, persons, tokens, hidden rooms, magic, clue emblems or campaign sites. All text and location markers will be editable overlays later. This is the PLAYER-SAFE clean terrain plate, not the annotated DM map. Use the source city layout faithfully and make the artwork feel like the approved sophisticated hand-painted game-world atlas.

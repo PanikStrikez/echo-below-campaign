@@ -1,0 +1,12 @@
+{
+  "result": "pass",
+  "checks": 717,
+  "proposals": 14,
+  "masters": 8,
+  "approvedPublicArt": 14,
+  "declaredViewport": [
+    1536,
+    1024
+  ],
+  "note": "Checks verify inert player SVGs, gates, authored scale, sampled openings, return identities and reference hashes. They do not establish actual access, occupancy, source-canonical room plans or geographic placement."
+}

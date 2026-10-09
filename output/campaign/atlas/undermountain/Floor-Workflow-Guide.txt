@@ -1,0 +1,124 @@
+UNDERMOUNTAIN — PRIVATE SOURCE AUDIT AND LATER-FLOOR WORKFLOW
+
+Scope
+This is preparation, not a record of visits. Floor-Workflow.json is a private
+reference with 23 connections, five campaign hook records and nine conditional
+refuge candidates. Floor-Workflow-Template.json is an unregistered blank example.
+Neither file changes the app, saved dungeon, discoveries, characters or contracts.
+
+Sources checked
+Supplied Dungeon of the Mad Mage PDF and its local text extraction; existing
+Undermountain-Arc-Data.js, Undermountain-Roadmap.md, campaign outline and first
+expedition guide. All source files remain unchanged.
+
+Visually inspected: printed 15/PDF 16 (Level 1 map), 29/PDF 30 (Level 2 map),
+45/PDF 46 (Level 3 map), 303/PDF 304 (Skullport access), 307/PDF 308 (lower/middle
+town map), 309/PDF 310 (upper town map and refuge keys). These maps use ten-foot
+source squares. General rules and selected room descriptions were checked in
+the supplied text with printed-page sequence cross-checks. This was not a full
+page-by-page audit of the book. Destination keys on floors 4–10 are cited by their
+origin gates; their complete destination maps were not audited here.
+
+Existing campaign hooks
+• A Map Worth Paying For: 1 → 2a → 2b → northern corridor → 6a threshold.
+  Optional side branches are not required objectives. Accurate refusal or an
+  early stopping point can satisfy agreed survey terms. Published anchors:
+  pp 14–17, map 15. The contract and Ilvara's proposed payment are custom.
+• The Missing Instrument: 1 → 2a → 2b → 25a. N 9-14 is a custom mundane tool,
+  not printed treasure. Seed it only before an unsearched-room visit, or retain
+  its recorded carrier. A city custody inquiry is the fallback if the room has
+  already been searched. The 25a–25b tunnel is five feet wide and high (p 22).
+• Terms of Passage: the trial southern lane ends at 25a. Northern 6a staging is
+  optional; it does not impose an Undertaker toll on a southern route. Optional
+  Guild contact follows 25b west door → western passage →24b south door →24a
+  north exit → southern 23 corridor →23a/b. Area 23c is a side room. The 26c cube
+  starts on another branch. Maps and hazards do not disappear for a negotiation.
+• The floor 2 research fragment is an approved broad custom overlay, with no
+  exact room or custodian assigned. Its incomplete diagram must not become a
+  printed find or an invented possession. Floor 3 recognition and Mara's later
+  Skullport contact likewise have no fixed speaker, room or automatic meeting.
+
+Next floor and the deeper routes
+The next relevant floor is Level 2 only if the party chooses a deeper expedition
+and earns a route to 39a. The three contracts do not require that descent.
+
+Connection                         Basis                    Restriction
+L 1/39a → L 2/1a approach             p 26, maps 15/29            stairs; 200 ft down
+L 2 → L 3/1 approach                 maps 29/45                 unnumbered stairs
+L 3/17a → L 4/1                     p 52, map 45                guarded slope
+L 3/23b → Skullport passages        pp 58/303, map 45           sentries/shriekers
+L 3 Sargauth → Skullport            pp 48/50–52/303             river; actual craft
+
+The Level 2 descent is the map-labelled unnumbered stair north of 23a and east
+of 20a. Its complete approach must be traced from the actual party position.
+Distance and vertical drop remain unknown. The named Skullport passes are real:
+Shadow, Beggar's Rest, Taglath's Gap and Steamfall enter lower town; Whisperhaunt
+enters upper town (maps 307/309). The book does not supply an exact pairing of
+each pass with a keyed Level 3 junction. Keep those links unresolved.
+
+Magic gates are separate connections, not substitute stairs:
+• L 1/26d → L 10/8: magic wand with a charge; level 11+ (p 22).
+• L 2/5 → L 4/11c: gold coin; level 8+ (p 31).
+• L 2/12 → L 5/3b: dead twig or branch; level 8+ (p 35).
+• L 2/20c → L 6/24: wholly ferrous nonmagical item consumed; level 9+ (pp 38–39).
+• L 3/15b → L 5/6i: three staff taps; level 8+ (p 52).
+• L 3/21p → L 6/36c: gemstone worth at least 100 gp consumed; level 9+ (p 57).
+Each opens for one minute and has the keyed elder-rune risk. Jhesiyra's gate
+restriction and any deliberate DM override are governed by pp 10–12. Conventional
+stairs remain physically usable with their actual risks; they are not portals.
+
+False shortcuts and actual exceptions
+L 1/24a is a destroyed gate with residual wild magic, not transit. L 1/27 enters
+a local demiplane with a return to the same alcove. L 1/4 vents require Tiny or
+gaseous form. L 1/37's map is symbolic, not a usable floor plan or active portal.
+General teleportation/planar escape is restricted (pp 10–12). Skullport 27 has a
+specific exception: Tasselgryn alone can cast teleportation circle in her shop,
+for 50 gp per person upfront, to her Waterdeep destination or an appropriate known
+circle (p 308). No free or generally reversible city portal is implied.
+
+The sea-cave route exists, but the hoist is broken (p 303). Small craft need an
+actual haulage plan around the barrier; large ships cannot simply sail through.
+The Skullport inn's secret 300 ft tunnel leads to Xanathar's hideout (p 308), not
+to an assumed safe city exit. Its destination map needs separate preparation.
+
+Refuges need conditions
+L 1/22 shows traces of earlier rests, not guaranteed safety. L 2/11b is occupied
+by Midna, who initially refuses sharing. The bazaar is a market, not free lodging.
+Azrok's Hold requires registration, an audience/tribute and current permission.
+Skullport's Guts&Garters charges 5 gp/day and has a spying proprietor. Keel Hall
+and Dalagor's Fortress have faction conditions; no membership is granted here.
+Tanor'thal Refuge becomes useful only after its spiders are actually cleared.
+
+Reusable preparation loop
+1. Read the approved saved position, resources, known passages and faction
+   outcomes. Pick one reachable objective and a concrete return condition.
+2. Read its source map and adjacent keys. Work from one coordinate master;
+   derive crops from it. Keep doors, stairs, elevations and bottlenecks intact.
+3. Record entry, exit, receiving area, reverse path and obstruction separately.
+   Use null for unknown distance or unresolved junction. Read gate rules anew.
+4. Put source keys, hazards, secret connections, hooks and NPC placement on a
+   private layer. Keep custom hook placement separate from published geometry.
+5. Review a clean public scene and its calibrated grid. An unkeyed whole-floor
+   image still reveals the whole layout. Use limited scenes/fog where needed.
+   Preserve old scenes, tokens and exploration; prepare a separate variant only
+   through the explicit opt-in workflow.
+6. Stage privately, then explicitly Show. Opening preparation does not travel,
+   reveal, spend, spawn, award or reset. After play, record actual changes through
+   the existing review and keep the same saved dungeon for the next expedition.
+
+Conditional preparation boundaries
+Level 2: first prepare the 1a arrival and whichever bazaar/western branch players
+choose, with retreat. Baseline book party level 6. Select a plausible unsearched
+home for the custom fragment only when needed; no default room is invented.
+Level 3: first prepare catacombs arrival and the chosen route through/around the
+drow territory. Baseline book party level 7. Prepare Azrok, river or foot-pass
+choices from actual contact and resources, not a mandatory Skullport itinerary.
+Skullport: prepare one arrival, one selected service/contact and a credible exit.
+Keep lower/middle/upper town connected vertically rather than flattening them.
+The other twenty floors remain references until a chosen route makes them relevant.
+
+Open precision limits
+No complete Level 2/3 tactical redraw or per-room door inventory was performed.
+No new route lengths were inferred from illustration pixels. Current party
+readiness, discovered route, living inhabitants and agreements were not inferred.
+All new workflow material stays private until an explicit later integration.

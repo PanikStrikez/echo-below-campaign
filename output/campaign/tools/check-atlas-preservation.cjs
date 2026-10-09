@@ -1,0 +1,24 @@
+/* Save compatibility checks without loading a personal browser or running service. */
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
+const app=path.resolve(__dirname,'..'),plain=x=>JSON.parse(JSON.stringify(x));
+const old=vm.createContext({}),next=vm.createContext({location:{hash:''}});
+vm.runInContext(fs.readFileSync(path.join(app,'archive/atlas-before-2026-10-08/Session-01-Travel.js'),'utf8'),old);
+for(const f of ['Campaign-Atlas-Data.js','Campaign-Atlas.js','Session-01-Travel.js'])vm.runInContext(fs.readFileSync(path.join(app,f),'utf8'),next);
+const prior=plain(old.ECHO_TRAVEL.normalize());
+prior.places[0].note='Keep a private note';prior.places[0].inaccessible=true;prior.places[0].reason='Closed road';
+prior.position={x:38,y:52,placeId:'region-road-ambush',visible:false};
+prior.plan={legs:[{routeId:'route-2',from:'region-road-ambush',to:'region-cragmaw-hideout'}],pace:'slow',leg:0,miles:1,started:true};
+prior.routes[2].miles=6;prior.routes[2].source='DM-reviewed detour';prior.routes[2].published=false;
+prior.history=[{at:'2026-10-08',from:'region-road-ambush',to:'region-cragmaw-hideout',routeId:'route-2',miles:1,minutes:30,complete:false,points:[{x:38,y:52},{x:37,y:50}]}];
+prior.requests=[{id:'test-request',owner:'pc-trista',destination:'region-phandalin',note:'After resting',status:'waiting',at:'2026-10-08',message:''}];
+const after=plain(next.ECHO_TRAVEL.normalize(prior));
+for(const field of ['position','plan','settings','supplies','weather','history','camps','events','requests'])assert.deepEqual(after[field],prior[field],field);
+for(const place of prior.places)assert.deepEqual(after.places.find(p=>p.id===place.id),place,'Existing place '+place.id);
+for(const route of prior.routes)assert.deepEqual(after.routes.find(p=>p.id===route.id),route,'Existing route '+route.id);
+assert(after.places.filter(p=>!prior.places.some(q=>q.id===p.id)).every(p=>p.status==='hidden'));
+assert.equal(next.ECHO_TRAVEL.normalize().places.find(p=>p.id==='region-tresendar').arrival.scene,'lmop-map-tresendar-courtyard');
+assert.equal(next.ECHO_TRAVEL.normalize({contentProfile:'blank'}).places.length,0);
+assert.equal(next.ECHO_TRAVEL.normalize({contentProfile:'blank'}).routes.length,0);
+const workspace={views:{world:{zoom:2,panX:13,panY:-5}},shown:null};assert.deepEqual(plain(next.ECHO_ATLAS.normalizeWorkspace(workspace)).views,workspace.views);
+const result={passed:true,checks:['Existing travel values and customized distances retained','Existing routes, plans, history and requests retained','All added places start hidden','Blank campaigns remain blank','New Tresendar default uses exterior; saved arrival stays unchanged','Atlas views survive normalization'],newPlaces:after.places.length-prior.places.length,newRoutes:after.routes.length-prior.routes.length};
+fs.writeFileSync(path.join(app,'atlas/Save-Compatibility.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));

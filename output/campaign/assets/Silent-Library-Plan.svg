@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000" role="img" aria-label="An unlabelled stone archive exploration plan">
+<defs>
+ <radialGradient id="void"><stop stop-color="#25302c"/><stop offset="1" stop-color="#0f191a"/></radialGradient>
+ <pattern id="stone" width="100" height="80" patternUnits="userSpaceOnUse"><rect width="100" height="80" fill="#726e57"/><path d="M0 0H100M0 40H100M0 80H100M0 0V40M50 40V80M100 0V40" fill="none" stroke="#4c5143" stroke-width="2"/><path d="M8 7H42M61 49H92M8 73H31" stroke="#a49770" opacity=".22"/></pattern>
+ <radialGradient id="light"><stop stop-color="#e9c46b" stop-opacity=".28"/><stop offset="1" stop-color="#e9c46b" stop-opacity="0"/></radialGradient>
+ <filter id="shade" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="7" stdDeviation="10" flood-color="#050908" flood-opacity=".7"/></filter>
+ <g id="shelf"><rect width="40" height="170" rx="3" fill="#2a241e" stroke="#ac905b" stroke-width="3"/><path d="M8 8V162M20 8V162M31 8V162M4 42H36M4 85H36M4 126H36" stroke="#826d44" stroke-width="4"/></g>
+ <g id="desk"><rect width="100" height="48" rx="4" fill="#403827" stroke="#ba9959" stroke-width="3"/><rect x="37" y="8" width="27" height="31" fill="#cfbea0"/><path d="M44 15H58M44 21H60M44 27H56" stroke="#887e66" stroke-width="1"/><rect x="33" y="57" width="35" height="26" rx="4" fill="#4b3d2c" stroke="#997943" stroke-width="2"/></g>
+</defs>
+<rect width="1500" height="1000" fill="url(#void)"/>
+<rect x="28" y="28" width="1444" height="944" rx="20" fill="none" stroke="#947d4c" stroke-width="2" opacity=".65"/>
+<path d="M125 205H380V380H465V195H825V350H910V145H1340V610H1175V705H1295V915H1010V705H1100V610H910V425H825V675H465V455H380V680H125Z" fill="url(#stone)" stroke="#b5a785" stroke-width="17" stroke-linejoin="round" filter="url(#shade)"/>
+<path d="M140 220H365V388H480V210H810V358H925V160H1325V595H1160V720H1280V900H1025V720H1115V595H925V417H810V660H480V448H365V665H140Z" fill="none" stroke="#343d36" stroke-width="4" opacity=".8"/>
+<path d="M65 580H174V650H65Z" fill="url(#stone)"/><path d="M65 580H128M65 650H128M65 580V650" fill="none" stroke="#b5a785" stroke-width="8"/><path d="M80 584V646M95 584V646M110 584V646" stroke="#4b5144" stroke-width="5"/>
+<!-- Ordinary stairs and furnishings only. Room keys and hazards stay in the DM scene cards. -->
+<path d="M180 230H325V345H180Z" fill="#444b42" stroke="#b7a989" stroke-width="3"/>
+<path d="M180 246H325M180 264H325M180 282H325M180 300H325M180 318H325M180 336H325" stroke="#b7a989" stroke-width="4"/>
+<path d="M162 541H333M162 562H333M162 583H333" stroke="#555b4a" stroke-width="3"/>
+<rect x="207" y="548" width="81" height="45" rx="3" fill="#3a3528" stroke="#a18b57" stroke-width="3"/>
+<use href="#desk" x="514" y="277"/><use href="#desk" x="674" y="277"/><use href="#desk" x="514" y="470"/><use href="#desk" x="674" y="470"/>
+<use href="#shelf" x="484" y="220"/><use href="#shelf" x="779" y="440"/>
+<use href="#shelf" x="940" y="191"/><use href="#shelf" x="1274" y="195"/><use href="#shelf" x="1274" y="405"/>
+<circle cx="1115" cy="381" r="115" fill="#38362d" stroke="#b19661" stroke-width="8"/>
+<circle cx="1115" cy="381" r="90" fill="#504b3a" stroke="#807450" stroke-width="2"/>
+<circle cx="1115" cy="381" r="27" fill="#403e34" stroke="#958256" stroke-width="3"/>
+<g fill="#4d432e" stroke="#a38c55" stroke-width="3"><rect x="1097" y="233" width="37" height="28" rx="5"/><rect x="1097" y="503" width="37" height="28" rx="5"/><rect x="967" y="363" width="28" height="37" rx="5"/><rect x="1236" y="363" width="28" height="37" rx="5"/></g>
+<rect x="1082" y="827" width="148" height="48" rx="4" fill="#2e3c3a" stroke="#baa16b" stroke-width="5"/>
+<rect x="1100" y="839" width="112" height="23" fill="#819797" opacity=".4"/>
+<path d="M1037 730V776M1266 730V776" stroke="#b29a66" stroke-width="5"/>
+<circle cx="246" cy="400" r="150" fill="url(#light)"/><circle cx="652" cy="419" r="220" fill="url(#light)"/><circle cx="1115" cy="381" r="240" fill="url(#light)"/>
+<g fill="#c3ae77" opacity=".16"><circle cx="842" cy="770" r="2"/><circle cx="403" cy="725" r="2"/><circle cx="563" cy="727" r="2"/><circle cx="971" cy="634" r="2"/><circle cx="914" cy="813" r="2"/><circle cx="1390" cy="580" r="2"/></g>
+</svg>

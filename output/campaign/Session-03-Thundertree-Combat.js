@@ -1,0 +1,75 @@
+(() => {
+  'use strict';
+  const data = globalThis.ECHO_COMBAT_DATA;
+  const a = (name, bonus, dice, type, range, note = '') => ({ name, bonus, dice, type, range, note });
+  Object.assign(data.CREATURES, {
+    'twig-blight': { name:'Twig Blight', source:'Lost Mine of Phandelver appendix B, printed p. 63', book:'lmop', page:63,
+      size:'Small plant', alignment:'neutral evil', cr:.125, xp:25, ac:13, hp:4, hitDice:'1d6+1', speed:'20 ft.',
+      abilities:[6,13,12,4,8,3], saves:'', skills:'Stealth +3', senses:'Blindsight 60 ft. (blind beyond); passive Perception 9',
+      languages:'Understands Common but cannot speak', resistances:'', vulnerabilities:'fire', immunities:'', conditionImmunities:'blinded, deafened',
+      traits:[{name:'False Appearance',text:'While motionless among vegetation, resembles a dead shrub and can hide without being out of sight.'}],
+      actions:[a('Claws',3,'1d4+1','piercing','Melee 5 ft.')], reactions:[], spells:[], variants:'Thundertree: compare Stealth to passive Perception before placing hidden blights.' },
+    'ash-zombie': { ...data.CREATURES.zombie, name:'Ash Zombie', source:'Lost Mine of Phandelver printed p. 31; Zombie appendix B p. 63', book:'lmop', page:31,
+      traits:[...data.CREATURES.zombie.traits, {name:'Ash Puff',text:'The first time this zombie takes damage, each living creature within 5 feet makes DC 10 Constitution save. On failure it has disadvantage on attacks, saving throws, and ability checks for one minute; repeat save at each turn end. Track this for each zombie separately.'}],
+      variants:'Thundertree ash zombies begin slumped and rise when disturbed; standing uses half their speed.' },
+    'giant-spider': { name:'Giant Spider', source:'Lost Mine of Phandelver appendix B, printed p. 58', book:'lmop', page:58,
+      size:'Large beast', alignment:'unaligned', cr:1, xp:200, ac:14, hp:26, hitDice:'4d10+4', speed:'30 ft.; climb 30 ft.',
+      abilities:[14,16,12,2,11,4], saves:'', skills:'Stealth +7', senses:'Blindsight 10 ft.; darkvision 60 ft.; passive Perception 10',
+      languages:'—', resistances:'', vulnerabilities:'', immunities:'', conditionImmunities:'',
+      traits:[{name:'Spider Climb',text:'Can climb difficult surfaces, including ceilings, without a check.'},
+        {name:'Web Sense and Walker',text:'Knows creatures touching the same web and ignores web movement restrictions.'}],
+      actions:[a('Bite',5,'1d8+3','piercing','Melee 5 ft.','DC 11 Constitution save for 2d8 poison, half on success. If poison reduces target to 0 HP, stable but paralyzed for one hour.'),
+        {name:'Web (Recharge 5–6)',bonus:5,dice:'',type:'restrained',range:'30/60 ft.',note:'Target restrained. Escape action DC 12 Strength; web AC 10, HP 5, vulnerable fire.'}],
+      reactions:[], spells:[], variants:'Area 6: two hide inside the building, not visible from the lane.' },
+    'young-green-dragon': { name:'Young Green Dragon · Venomfang', source:'Lost Mine of Phandelver appendix B, printed p. 63', book:'lmop', page:63,
+      size:'Large dragon', alignment:'lawful evil', cr:8, xp:3900, ac:18, hp:136, hitDice:'16d10+48', speed:'40 ft.; fly 60 ft.; swim 40 ft.',
+      abilities:[19,12,17,16,13,15], saves:'Dexterity +4; Constitution +6; Wisdom +4; Charisma +5',
+      skills:'Deception +5; Perception +7; Stealth +4', senses:'Blindsight 30 ft.; darkvision 120 ft.; passive Perception 17',
+      languages:'Common, Draconic', resistances:'', vulnerabilities:'', immunities:'poison', conditionImmunities:'poisoned',
+      traits:[{name:'Amphibious',text:'Can breathe air and water.'}],
+      actions:[{name:'Multiattack',text:'One bite and two claw attacks.'},
+        a('Bite',7,'2d10+4','piercing','Melee 10 ft.','Plus 2d6 poison damage on a hit.'),
+        a('Claw',7,'2d6+4','slashing','Melee 5 ft.'),
+        {name:'Poison Breath (Recharge 5–6)',bonus:null,dice:'12d6',type:'poison',range:'30-ft. cone',note:'DC 16 Constitution save for half damage.'}],
+      reactions:[], spells:[], variants:'Area 7: far above a routine level-2 encounter. At half HP, flies away. Give scouting and retreat chances.' },
+    cultist: { name:'Cultist', source:'Lost Mine of Phandelver appendix B, printed p. 56', book:'lmop', page:56,
+      size:'Medium humanoid (human)', alignment:'any non-good', cr:.125, xp:25, ac:12, hp:9, hitDice:'2d8', speed:'30 ft.',
+      abilities:[11,12,10,10,11,10], saves:'', skills:'Deception +2; Religion +2', senses:'Passive Perception 10',
+      languages:'Common, Draconic in Thundertree', resistances:'', vulnerabilities:'', immunities:'', conditionImmunities:'',
+      traits:[{name:'Devotion',text:'Advantage on saving throws against being charmed or frightened.'}],
+      actions:[a('Scimitar',3,'1d6+1','slashing','Melee 5 ft.')], reactions:[], spells:[],
+      variants:'Favric leads six cultists total in area 13; they prefer talking and avoiding fights.' }
+  });
+  const ids = (encounter, type, count) => Array.from({length:count},(_,i)=>`s3-${encounter}-${type}-${i+1}`);
+  const wave = (name, tokenIds, note) => [{name,tokenIds,note}];
+  const blightPlan = (number, count, note) => ({ terrain:'Ruined Thundertree cottage and overgrowth; rubble and brush can slow movement.',
+    objective:'Explore, avoid, or survive the hidden plants.', starting:`${count} twig blights concealed until spotted.`,
+    waves:wave('Hidden twig blights',ids(`tt-blights-${number}`,'twig-blight',count),note),
+    reinforcements:number===2?'Surviving area-1 blights can join after one round. Move their existing tokens.':'Only nearby groups that hear the actual fight.',
+    nonCombat:'Scout, pass around the growth, or retreat.', morale:'Blights fight when disturbed.', retreat:'Village lanes remain open.', negotiation:'None expected.' });
+  Object.assign(data.PLANS, {
+    'tt-blights-1':blightPlan(1,2,'Compare Stealth and Perception before revealing.'),
+    'tt-blights-2':blightPlan(2,6,'Area-1 survivors can move here; do not duplicate.'),
+    'tt-zombies-3':{terrain:'Brown Horse tavern; walls and bar provide cover.', objective:'Survive or bypass the undead.',
+      starting:'Four ash zombies slumped and prone until living creatures enter.', waves:wave('Tavern zombies',ids('tt-zombies-3','ash-zombie',4),'Track Ash Puff on each zombie’s first damage.'),
+      reinforcements:'None automatic.',nonCombat:'Withdraw or skirt the tavern.',morale:'Mindless pursuit.',retreat:'Door to street.',negotiation:'None.'},
+    'tt-blights-5':blightPlan(5,8,'If disturbed, reveal arrivals in pairs at each door over three rounds.'),
+    'tt-spiders-6':{terrain:'Web-filled lane and ruined store; web squares are difficult terrain.',objective:'Cross or avoid the webs.',
+      starting:'Two giant spiders hidden on inner walls.',waves:wave('Store spiders',ids('tt-spiders-6','giant-spider',2),'Reveal when seen or when they attack.'),
+      reinforcements:'None automatic.',nonCombat:'Go around; cut webs; escape restrained creatures.',morale:'Spiders hunt from cover.',retreat:'Lane away from webs.',negotiation:'None.'},
+    'tt-dragon-7':{terrain:'Tower, attached cottage, rooftop opening, 40-foot ceiling.',objective:'Survive, negotiate, or drive away Venomfang; killing it is not required.',
+      starting:'Young green dragon concealed in the tower until discovered.',waves:wave('Venomfang',ids('tt-dragon-7','young-green-dragon',1),'Do not surprise players with a routine combat: show warning signs and room to retreat.'),
+      reinforcements:'Cultists may approach only if their actions bring them here.',nonCombat:'Parley, leave, scout, or return at higher level.',morale:'At half HP it flies away.',retreat:'Open tower roof and village paths.',negotiation:'Venomfang is intelligent and self-interested.'},
+    'tt-zombies-8':{terrain:'Old smithy with rotten timber and anvils.',objective:'Pass or defeat two ash zombies.',starting:'Two ash zombies prone until disturbed.',
+      waves:wave('Smithy zombies',ids('tt-zombies-8','ash-zombie',2),'Track each Ash Puff separately.'),reinforcements:'None automatic.',
+      nonCombat:'Avoid the building.',morale:'Pursue once they see the party.',retreat:'Street exit.',negotiation:'None.'},
+    'tt-zombies-11':{terrain:'Intact garrison, bunks, narrow windows, rooftop ladder.',objective:'Pass or defeat five ash zombies.',starting:'Five dormant ash zombies.',
+      waves:wave('Garrison zombies',ids('tt-zombies-11','ash-zombie',5),'Old armor does not improve AC.'),reinforcements:'None automatic.',
+      nonCombat:'Avoid the barracks.',morale:'Pursue when disturbed.',retreat:'Doors and roof.',negotiation:'None.'},
+    'tt-blights-12':blightPlan(12,6,'Loud combat can draw area-13 cultists to investigate.'),
+    'tt-cultists-13':{terrain:'Barred cottage with shutters and several interior rooms.',objective:'Learn their intent and choose whether to bargain.',
+      starting:'Six cultists including Favric, hidden inside.',waves:wave('Favric and cultists',ids('tt-cultists-13','cultist',6),'Talk first; four stand guard, two rest.'),
+      reinforcements:'No automatic dragon support. Favric may seek an alliance.',nonCombat:'Talk, watch, withdraw, or expose Favric’s plan.',
+      morale:'Followers flee if Favric is captured or killed.',retreat:'Doors and windows.',negotiation:'Favric claims he can broker a dragon alliance.'}
+  });
+})();

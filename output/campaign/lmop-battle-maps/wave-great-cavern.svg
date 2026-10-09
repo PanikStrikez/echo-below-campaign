@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-label="Wave Echo Cave great cavern battlefield player-safe battle map">
+<defs>
+<pattern id="grass" width="118" height="107" patternUnits="userSpaceOnUse"><rect width="118" height="107" fill="#68775d"/><path d="M8 24l7-8m5 10l6-6M63 20l5-9m4 11l8-9M95 73l9-8m-37 22l5-9M21 77l7-8m4 11l5-7" stroke="#829070" stroke-width="2" opacity=".65"/><circle cx="49" cy="54" r="3" fill="#536c4e"/><circle cx="108" cy="37" r="3" fill="#536c4e"/></pattern>
+<pattern id="dirt" width="95" height="90" patternUnits="userSpaceOnUse"><rect width="95" height="90" fill="#95856a"/><path d="M9 14l17 3m35-9l13 6M24 66l12-6m33 16l13-4" stroke="#b3a182" stroke-width="3" opacity=".47"/><circle cx="48" cy="39" r="3" fill="#746a59"/></pattern>
+<pattern id="stone" width="122" height="102" patternUnits="userSpaceOnUse"><rect width="122" height="102" fill="#a99b82"/><path d="M0 49h122M44 0v49m48 0v49M23 49v53m56-53v53" fill="none" stroke="#807966" stroke-width="2.4" opacity=".48"/><path d="M13 20l18-4m48 62l15 3" fill="none" stroke="#d1bea0" stroke-width="2" opacity=".45"/></pattern>
+<pattern id="rock" width="110" height="96" patternUnits="userSpaceOnUse"><rect width="110" height="96" fill="#393b38"/><path d="M4 16l24-10 24 15 23-11 28 16M6 72l24 10 27-15 21 9 27-15" fill="none" stroke="#55594f" stroke-width="3" opacity=".65"/></pattern>
+<pattern id="wood" width="48" height="100" patternUnits="userSpaceOnUse"><rect width="48" height="100" fill="#83694c"/><path d="M0 0v100M23 0v100M47 0v100" stroke="#57432f" stroke-width="4"/><path d="M7 23v44m33-59v54" stroke="#a5845b" stroke-width="2" opacity=".6"/></pattern>
+<pattern id="water" width="110" height="80" patternUnits="userSpaceOnUse"><rect width="110" height="80" fill="#3e6570"/><path d="M5 16q23-10 46 0t53 0M9 55q23-10 46 0t50 0" fill="none" stroke="#95b3ad" stroke-width="3" opacity=".52"/></pattern>
+<pattern id="web" width="70" height="70" patternUnits="userSpaceOnUse"><path d="M0 0l70 70M70 0L0 70M35 0v70M0 35h70" stroke="#d6d1bc" stroke-width="2" opacity=".5" fill="none"/></pattern>
+<radialGradient id="canopy"><stop stop-color="#8a9a73"/><stop offset=".62" stop-color="#526a4e"/><stop offset="1" stop-color="#344e3c"/></radialGradient>
+<radialGradient id="fire"><stop stop-color="#ffda83"/><stop offset=".4" stop-color="#d78637"/><stop offset="1" stop-color="#70432c"/></radialGradient>
+</defs>
+<rect width="1500" height="1000" fill="url(#rock)"/>
+<path d="M95 100Q385 50 650 145 1000 60 1370 172L1450 690Q1240 925 955 876 555 950 250 851 60 670 95 100z" fill="url(#dirt)" stroke="#242927" stroke-width="17" stroke-linejoin="round" />
+<path d="M120 430Q300 350 445 452T800 430Q1040 380 1395 458" fill="none" stroke="#4b514a" stroke-width="44" stroke-linejoin="round" />
+<path d="M130 490Q395 530 570 485T920 504Q1200 500 1400 542" fill="none" stroke="#c0ae8b" stroke-width="8" stroke-linejoin="round" />
+<rect x="542" y="412" width="95" height="90" rx="0" fill="#8d816e" stroke="#504d43" stroke-width="5"/>
+<path d="M547 427.0L632 427.0" fill="none" stroke="#5c5a50" stroke-width="4" stroke-linecap="round" />
+<path d="M547 442.0L632 442.0" fill="none" stroke="#5c5a50" stroke-width="4" stroke-linecap="round" />
+<path d="M547 457.0L632 457.0" fill="none" stroke="#5c5a50" stroke-width="4" stroke-linecap="round" />
+<path d="M547 472.0L632 472.0" fill="none" stroke="#5c5a50" stroke-width="4" stroke-linecap="round" />
+<path d="M547 487.0L632 487.0" fill="none" stroke="#5c5a50" stroke-width="4" stroke-linecap="round" />
+<rect x="995" y="462" width="100" height="100" rx="0" fill="#8d816e" stroke="#504d43" stroke-width="5"/>
+<path d="M1000 478.6666666666667L1090 478.6666666666667" fill="none" stroke="#5c5a50" stroke-width="4" stroke-linecap="round" />
+<path d="M1000 495.3333333333333L1090 495.3333333333333" fill="none" stroke="#5c5a50" stroke-width="4" stroke-linecap="round" />
+<path d="M1000 512.0L1090 512.0" fill="none" stroke="#5c5a50" stroke-width="4" stroke-linecap="round" />
+<path d="M1000 528.6666666666666L1090 528.6666666666666" fill="none" stroke="#5c5a50" stroke-width="4" stroke-linecap="round" />
+<path d="M1000 545.3333333333334L1090 545.3333333333334" fill="none" stroke="#5c5a50" stroke-width="4" stroke-linecap="round" />
+<g transform="rotate(0 350 250)"><rect x="285.0" y="222.5" width="130" height="55" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="298.0" cy="234.5" r="4" fill="#3c3125"/><circle cx="402.0" cy="265.5" r="4" fill="#3c3125"/></g>
+<g transform="rotate(0 850 265)"><rect x="785.0" y="237.5" width="130" height="55" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="798.0" cy="249.5" r="4" fill="#3c3125"/><circle cx="902.0" cy="280.5" r="4" fill="#3c3125"/></g>
+<g transform="rotate(0 1100 310)"><rect x="1035.0" y="282.5" width="130" height="55" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="1048.0" cy="294.5" r="4" fill="#3c3125"/><circle cx="1152.0" cy="325.5" r="4" fill="#3c3125"/></g>
+<g transform="rotate(0 340 680)"><rect x="275.0" y="652.5" width="130" height="55" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="288.0" cy="664.5" r="4" fill="#3c3125"/><circle cx="392.0" cy="695.5" r="4" fill="#3c3125"/></g>
+<g transform="rotate(0 800 715)"><rect x="735.0" y="687.5" width="130" height="55" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="748.0" cy="699.5" r="4" fill="#3c3125"/><circle cx="852.0" cy="730.5" r="4" fill="#3c3125"/></g>
+<g transform="rotate(0 1160 685)"><rect x="1095.0" y="657.5" width="130" height="55" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="1108.0" cy="669.5" r="4" fill="#3c3125"/><circle cx="1212.0" cy="700.5" r="4" fill="#3c3125"/></g>
+<circle cx="425" cy="540" r="40" fill="#49453d" stroke="#353d39" stroke-width="4"/>
+<circle cx="425" cy="540" r="28" fill="url(#fire)" stroke="#ac6736" stroke-width="3"/>
+<path d="M413 546q6-25 13-13 6-23 18 11-6 14-18 14z" fill="#ffd37e" stroke="#a8562e" stroke-width="2" stroke-linejoin="round" />
+<circle cx="1030" cy="660" r="40" fill="#49453d" stroke="#353d39" stroke-width="4"/>
+<circle cx="1030" cy="660" r="28" fill="url(#fire)" stroke="#ac6736" stroke-width="3"/>
+<path d="M1018 666q6-25 13-13 6-23 18 11-6 14-18 14z" fill="#ffd37e" stroke="#a8562e" stroke-width="2" stroke-linejoin="round" />
+<path d="M165 204l17-17 35 0 17 17-8 35h-35z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M189 204L211 198" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M1265 185l22-22 45 0 22 22-11 45h-45z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1295 185L1325 178" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M674 798l18-18 36 0 18 18-9 36h-36z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M698 798L722 792" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M1110 825l15-15 30 0 15 15-7 30h-30z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1130 825L1150 820" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<rect x="7" y="7" width="1486" height="986" fill="none" stroke="#232a27" stroke-width="14"/>
+</svg>

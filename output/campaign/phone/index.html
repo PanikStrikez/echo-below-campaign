@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#19251e">
+  <title>The Echo Below · Player</title>
+  <link rel="stylesheet" href="/phone.css">
+  <script src="/character-summary.js" defer></script>
+  <script src="/player-tools.js" defer></script>
+  <script src="/travel.js" defer></script>
+  <script src="/dungeon.js" defer></script>
+  <script src="/atlas-view.js" defer></script>
+  <script src="/phone.js" defer></script>
+</head>
+<body>
+  <header><small>THE ECHO BELOW</small><h1>Player companion</h1><p id="connection">Joining the table…</p></header>
+  <main>
+    <section class="card connection-tools"><p id="sheet-freshness">No saved sheet yet.</p><button id="reconnect-phone" type="button" hidden>Reconnect</button><details><summary>Saved sheet & joining</summary><button id="rejoin-phone" type="button">Join with current QR</button><button id="show-saved-sheet" type="button">View saved sheet</button></details></section>
+    <section id="join" class="card" hidden>
+      <h2>Choose your character</h2>
+      <p>Ask your DM if your character is already claimed on another phone.</p>
+      <div id="character-choices"></div>
+      <p id="join-error" role="alert"></p>
+    </section>
+    <div id="play" hidden>
+      <section class="card character-card">
+        <div class="card-head"><div><small>YOUR CHARACTER</small><h2 id="character-name"></h2><p id="character-detail"></p></div><span id="turn-pill" hidden>YOUR TURN</span></div>
+        <div id="vitals" class="vitals"></div>
+        <div id="status" class="status"></div>
+        <p id="phone-action-status" class="phone-action-status" role="status" hidden></p>
+      </section>
+      <button id="phone-priority" class="phone-priority" type="button" hidden aria-live="polite"></button>
+      <section id="party-objective" class="card"></section>
+      <nav class="phone-tabs" aria-label="Player companion views">
+        <button id="tab-table" type="button" class="active" aria-selected="true">Table</button>
+        <button id="tab-explore" type="button" aria-selected="false">Explore</button>
+        <button id="tab-sheet" type="button" aria-selected="false">My sheet</button>
+        <button id="tab-clues" type="button" aria-selected="false">Journal & clues</button>
+        <button id="tab-loot" type="button" aria-selected="false">Loot & promises</button>
+      </nav>
+      <div id="table-panel">
+      <section id="combat-prompts" class="card" hidden aria-live="polite"></section>
+      <section id="initiative-phone-panel" class="card initiative-phone-panel" hidden></section>
+      <section id="action-composer" class="card" hidden></section>
+      <section id="action-requests" class="card" aria-live="polite" hidden></section>
+      <section id="turn-guide" class="card turn-guide" hidden></section>
+      <section class="card dice-card">
+        <h2>Roll dice</h2>
+        <div class="dice-row"><button type="button" data-quick-roll="normal">d20</button><button type="button" data-quick-roll="advantage">Advantage</button><button type="button" data-quick-roll="disadvantage">Disadvantage</button></div>
+        <div class="dice-settings"><label>Dice<select id="dice-sides"><option value="4">d4</option><option value="6">d6</option><option value="8">d8</option><option value="10">d10</option><option value="12">d12</option><option value="20" selected>d20</option><option value="100">d100</option></select></label><label>Number<input id="dice-count" type="number" min="1" max="20" value="1"></label><label>Modifier<input id="dice-modifier" type="number" min="-99" max="99" value="0"></label></div>
+        <label class="roll-label">What is it for? <input id="roll-label" type="text" maxlength="50" placeholder="Attack, Perception, damage…"></label>
+        <button id="roll-custom" class="primary" type="button">Roll on the table</button>
+        <p id="roll-result" class="roll-result" aria-live="polite"></p>
+      </section>
+      <details class="card"><summary>Dungeon searches & map notes</summary><section id="phone-dungeon"></section></details>
+      <section class="card map-card">
+        <div class="card-head"><div><small>PLAYER MAP</small><h2 id="scene-title">Waiting for a map</h2></div><span id="round"></span></div>
+        <p id="map-hint">Your DM controls the scene.</p>
+        <div id="phone-map" class="phone-map" hidden><img id="map-image" alt="Current player map"><div id="map-fog"></div><div id="map-points"></div><div id="map-tokens"></div></div>
+        <p id="map-message" class="map-message" aria-live="polite"></p>
+      </section>
+      </div>
+      <div id="explore-panel" hidden>
+        <section class="card phone-atlas-card">
+          <small>SHARED ATLAS</small><h2 id="phone-atlas-title">Campaign atlas</h2>
+          <p id="phone-atlas-status">Your DM has not shared an atlas view yet.</p>
+          <div id="phone-atlas" class="phone-atlas" hidden></div>
+          <p>Use the journey controls below to request a destination. This atlas does not move your battlefield token.</p>
+        </section>
+        <details class="card" open><summary>Journey & destination requests</summary><section id="phone-travel"></section></details>
+      </div>
+      <div id="sheet-panel" hidden>
+        <section class="card sheet-card">
+          <div class="card-head"><div><small>LIVE CHARACTER SHEET</small><h2 id="sheet-title">Your sheet</h2></div><span id="sheet-level" class="sheet-level"></span></div>
+          <button id="save-offline-sheet" type="button">Download emergency sheet</button>
+          <p id="sheet-summary" class="sheet-summary"></p>
+          <p id="sheet-roll-result" class="roll-result" aria-live="polite"></p>
+          <div id="sheet-abilities" class="ability-grid"></div>
+          <div id="sheet-passives" class="sheet-passives"></div>
+        </section>
+        <section class="card"><h2>Spellbook</h2><div id="spell-search"></div><div id="spell-results"></div></section>
+        <div id="sheet-sections"></div>
+      </div>
+      <section id="clues-panel" class="card" hidden><h2>Journal & clues</h2><p>Shared quests and campaign events appear alongside clues sent only to your character.</p><div id="clues-list"></div><div id="player-journal-list"></div><section id="personal-note-editor"></section></section>
+      <section id="loot-panel" class="card" hidden><h2>Loot & promises</h2><div id="loot-list"></div><div id="inventory-actions"></div><section id="item-request-editor"></section><section id="currency-split-editor"></section><div id="inventory-request-history"></div></section>
+    </div>
+    <details class="card"><summary>Offline sheets and future home-screen app</summary><p>Download an emergency sheet while connected. The downloaded file opens without the table and includes a reconnect link. This tab also keeps the last sheet available during connection loss. An installed home-screen app with reliable offline startup is a later setup upgrade.</p><button id="forget-saved-sheet" type="button">Remove saved sheet from this phone</button></details>
+  </main>
+</body>
+</html>

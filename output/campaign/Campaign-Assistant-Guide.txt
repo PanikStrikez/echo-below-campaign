@@ -1,0 +1,79 @@
+THE ECHO BELOW — SCENE ASSISTANCE AND NPC DIALOGUE
+8 October 2026
+
+WHERE TO FIND IT
+Refresh the DM app. Choose Session > DM assistant. It opens in the existing
+right panel while the map remains visible. NPC cards also have Dialogue suggestions.
+
+LOCAL ASSISTANCE
+Choose run scene, NPC knowledge, clues, rule, next action, or campaign history.
+Use campaign records gathers source-linked excerpts, current party statistics,
+objectives, preparation and unresolved decisions. Expand a source to read its
+status and provenance, review the original outcome, or open a local book page.
+Preparation is not proof that an event happened. Unknown answers remain unknown.
+Rules use the 2014 base with recorded character exceptions. Skill bonuses and
+passive scores use the existing character calculator; saved attacks remain saved
+values. Book summaries retain their verification warnings. Books remain local.
+
+NPC DIALOGUE
+Choose the NPC, everyone who can hear, and the conversational approach. Enter the
+player's words, then draft responses. Local drafts use only approved knowledge
+that has been explicitly permitted for every listener. Being known to the party
+does not give an NPC that knowledge. Claims and suspicions retain qualifiers.
+The private knowledge section shows withheld records; you can withhold more.
+Prepared goals, speaking cues and approved relationship/promise records remain
+in the DM panel. The local alternatives are conservative templates, not AI prose.
+
+Edit a response and perform it yourself, or check its table-audience review box
+and send it to Voice Studio. This does not generate, approve or play any audio.
+Private conversations cannot be sent to table narration. New promises, prices,
+revelations or relationship changes go through Review consequences first. This
+creates a private, planned outcome draft; it does not establish an actual event.
+Use the existing outcome review to record what actually happens, correct it or
+undo it. Assistant suggestions never change HP, resources, quests or inventory.
+Changes to source records invalidate old answers and block stale handoffs.
+
+OPTIONAL PROVIDER DRAFTS
+Expand Optional AI draft, review the exact outgoing context, approve that context
+and question, then choose Ask configured AI. It uses the existing provider,
+credentials, allowance and spending controls. The app remains useful with AI off.
+NPC requests omit private motives and withheld knowledge. Local book summaries,
+feature text and mechanical calculations are not sent for model reinterpretation.
+Context is bounded; it is not the whole campaign archive. Ask focused questions.
+Provider output must cite identifiers present in its request. Valid citations do
+not prove the interpretation is correct: every AI answer is an unverified draft.
+Cancellation is best effort after dispatch; a provider may still count usage.
+Closing the panel cancels a pending request. No credentials are stored in these
+panel drafts or added to campaign exports.
+
+NARRATION
+Use Prepare narration on a runbook opening, or select an approved handout, letter
+or published recap in Voice Studio. Generate from the exact selected audience
+text, preview privately, approve a take, then explicitly play it to the table.
+The existing transport supports pause/resume, skip and stop. Music ducks during
+narration without lowering the voice; the prior mix returns afterward. Visual and
+ambience staging is explicit. Subtitle-only and ordinary manual reading remain
+available. Recap audio becomes stale when approved source events change.
+Approved letters now close the story drawer when opening Voice Studio.
+
+VERIFICATION
+Passed nine pure assistant checks plus existing audience and voice tests:
+confirmed versus unplayed history; superseded records; private audience boundaries;
+friendly, deceptive, negotiating and unknown dialogue; beliefs and suspicions;
+Trista and Donavan exceptions; existing skill/passive calculations; forged citations;
+credential redaction; private planned proposals; no source mutation.
+An isolated practice browser rehearsed the right panel, focused actions, context
+approval, mock service completion/cancellation, edited wording handoff, stale-record
+blocking, private conversation blocking, outcome drafts and a separate TV view.
+Narration rehearsal used five simulated requests and synthetic audio: exact scene
+text, private preview, approval, pause/resume/skip/stop, music ducking, subtitle-only,
+recap invalidation, offline replay, missing-device safety and backup restoration.
+Ten sessions reopened; four audio files were verified byte-for-byte after restore.
+Map, tokens and combat did not change from assistant use or narration.
+
+LIMITATIONS
+No real text or speech provider request was made for this implementation. Mock
+transport is not generated prose, and synthetic audio is not an audible voice test.
+Existing provider accounts/limits were not changed. Test real headphones, speakers,
+TV and phones at the table. Keep reviewed text/manual reading available if AI or
+audio is unavailable. Live phone access was not restarted or reconfigured.

@@ -1,0 +1,16 @@
+Built-in image_gen;8 October2026. Native1536×1024pixels. Custom proposed settlement staging plan based on the High Road regional setting, not a published Leilon street survey. Distances, occupancy, service availability and visits unestablished. Editable service markers recorded separately. Reference: approved Option5palette only.
+
+Create a clean player-safe TOP-DOWN settlement exploration map for Leilon on the Sword Coast. Landscape3:2aspect. Use the attached approved game-world atlas solely as the PALETTE and fine painterly style reference: natural greens, warm tan roads, slate-blue and reddishbrown rooftops, rockyvegetation, crisporganicdetail. No labels, words, numbers, markers, symbols, grids, legend, map border, creatures, people, treasure, magical effects or hidden sites. This is an explicitly CUSTOM PROPOSED town staging plan, not a copy of a published surveyed town map.
+
+Overhead orthographic camera straightdown, no isometric perspective, no visiblefacades. Small frontier settlement in modest rebuilding condition with roughly45 varied buildings/barns, several stone foundations, fencing, kitchen gardens, grassy empty plots, but service footprints kept where specified. This is inland along the HighRoad; no large harbor, ocean, river orcastle invented inside this frame. North is up. Warm afternoon neutral light, roofs closed (no private interiors). Do not show a sinister tower, hauntedsecret, clue, graveyard or namedNPC.
+
+Follow this exact1200×800groundplan proportionally, leaving space around settlement edge:
+- Tan central HighRoad runs north-south, enteringtop at(650,0), through(625,180),(600,380),(560,620), and leavingbottom at(550,800). It is a broad unblockedwagon road.
+- A secondary street runs from(330,395) to(600,380) to(890,350).
+- Main visible settlement occupies an irregular roughlyoval footprint boundedby(130,170),(480,120),(865,170),(1050,420),(905,665),(375,700),(185,550), with scatteredlowstonefoundations andwoodenfences along edges. NO continuous citywall.
+- At(390,260) to(515,360), recognizable modest two-wing roadside lodge with a roofedrearstable and small fenced yard. Roofslateblue.
+- At(740,240) to(855,340), useful supply-store building, reddishroof, fenced storage exterior.
+- At(700,440) to(850,530), carpentry/wagon repair yard with roofedopenwork shed and timberstacks, not an industrialfactory.
+- At(365,490) to(455,570), tiny ordinary shrine/chapeled cottage and quiet greenplot, with NOreligioussymbolpainted.
+- At(625,295) to(717,435), an open road/caravan yard immediately EAST of mainroad, sandypaving with unobstructedentrance facingroad. NO abandonedbattle/corpse/storyevent.
+Add clustered ordinaryroofhouses around theseanchors with believablelanes branchingoffcrossroad, but keep the mainroad continuous and eachservice accessible. Clear empty arrivalroads at north/south connectonward. Do not cover serviceyards withtrees. Rich detailedhandpaintedatlasfinish with subtle roofshadows and groundtexture whilemakingeachstreetroute immediately legible.

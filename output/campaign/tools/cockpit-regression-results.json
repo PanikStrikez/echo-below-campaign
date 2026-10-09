@@ -1,0 +1,252 @@
+[
+  {
+    "test": "check-atmosphere-audio.js",
+    "passed": true,
+    "output": "Presentation audio passed: ducking throughout crossfades, mute including retiring and pending tracks, and stop.\n"
+  },
+  {
+    "test": "check-atmosphere-ui.js",
+    "passed": true,
+    "output": "Effects UI passed: preview/reveal, presets without autoplay, explicit playback, zone style/dismiss, rotations, off setting and scene ducking.\n"
+  },
+  {
+    "test": "check-atmosphere.js",
+    "passed": true,
+    "output": "Atmosphere passed: persistence, secret filtering, expiry, actual target placement, stable transitions, off mode, audio layers, intensity, ducking, mute, crossfade and cancelled loads.\n"
+  },
+  {
+    "test": "check-character-tools.js",
+    "passed": true,
+    "output": "Character tools passed: staged level-ups/imports, stale guards, mixed Hit Dice, rest variants/overrides, favorites, private-safe shared handouts, atomic upcasting, persistence, and guided UI.\n"
+  },
+  {
+    "test": "check-combat-plus.js",
+    "passed": true,
+    "output": "Combat plus passed: path costs/crawling/difficult terrain, opportunity pauses, multi-owner saves, revisions/privacy, component defenses, Shield expiry, held rolls, damage atomicity, spell entry/turn/expiry triggers, boss events, condition guidance, persistence, and TV/phone projections.\nCombat tools UI passed: saves, damage preview/apply, template conversion, encounter events, and movement confirmation.\nLarge-map movement preview: 11ms for 254 tokens and 50 areas.\n"
+  },
+  {
+    "test": "check-combat-run.js",
+    "passed": true,
+    "output": "Combat run passed: save migration, attack dice, and encounter state.\n"
+  },
+  {
+    "test": "check-combat.js",
+    "passed": true,
+    "output": "Combat checks passed: creature sources, templates, geometry, damage, pacing, and UI hooks.\n"
+  },
+  {
+    "test": "check-content.js",
+    "passed": true,
+    "output": "Content checks passed: source books, page links, creature pack, exceptions, and audio cues.\n"
+  },
+  {
+    "test": "check-continuity.js",
+    "passed": true,
+    "output": "Continuity passed: seeded actual history, campaign isolation, persistence, quest states, knowledge, custody, map reveal/withdrawal, undo/redo, and TV/phone privacy.\nContinuity UI passed: selecting without mutation, edit revokes approval, approve/withdraw/undo, tracked follow-up drafts, and unpublished recap creation.\n"
+  },
+  {
+    "test": "check-dm-desk-ui.js",
+    "passed": true,
+    "output": "DM desk UI passed: stale requests, token actions, pacing, automatic closing review, recovery and canonical promotion.\n"
+  },
+  {
+    "test": "check-dm-desk.js",
+    "passed": true,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nDM desk model passed: derived inbox, closing capture, private promotion, persistent layouts, Undo/Redo and TV/phone privacy.\n"
+  },
+  {
+    "test": "check-dm-search.js",
+    "passed": true,
+    "output": "Context search passed: scene priority, party suggestions and permanent improvised records.\n"
+  },
+  {
+    "test": "check-dungeon-ui.js",
+    "passed": true,
+    "output": "Dungeon UI passed: profile presets, reveal controls, paired passages, phone memory overlay, stable drafts, targeted searches, revisions and offline controls.\n"
+  },
+  {
+    "test": "check-dungeon.js",
+    "passed": true,
+    "output": "Dungeon checks passed: carried light, per-character senses, LOS doors, memory, manual fog, hidden enemies/notes, persistent objects, noise propagation, paired return, private searches, approval outcomes, production traversal, saves and Undo/Redo.\n"
+  },
+  {
+    "test": "check-encounter-levels.js",
+    "passed": true,
+    "output": "Encounter pacing passed: levels 1\u201320, threshold boundaries, mixed parties, all count bands, party-size shifts, XP separation, and invalid inputs.\n"
+  },
+  {
+    "test": "check-growth-performance.js",
+    "passed": true,
+    "output": "{\"tokens\":500,\"fogCells\":10000,\"walls\":500,\"maxAnchors\":60,\"maxZones\":100,\"p95Ms\":1.1,\"note\":\"CPU projection and simulated DOM construction; not browser GPU/FPS or image decode.\"}\n"
+  },
+  {
+    "test": "check-guided-dm.js",
+    "passed": true,
+    "output": "Guided DM passed: non-mutating suggestions, narration, branch navigation, initiative progress, reaction gate, retained reminders, off-scene combat, wrap-up and opt-out.\nInline cockpit guidance passed: live initiative updates and return navigation.\n"
+  },
+  {
+    "test": "check-guided-integration.js",
+    "passed": true,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nGuided production integration passed: one-action initiative collection, no player autoroll, idempotent NPC rolls and stale-map editing guard.\n"
+  },
+  {
+    "test": "check-journey-map-art.js",
+    "passed": true,
+    "output": "Journey art: PNG size, saved-image upgrade, landmark alignment, notes, reveals, view, custom artwork, and one-time migration passed.\n"
+  },
+  {
+    "test": "check-journey-map-motion.js",
+    "passed": true,
+    "output": "Journey motion: saved toggle, public payload, approved TV markers, DM preview privacy, continuing animation phase, and scene scoping passed.\n"
+  },
+  {
+    "test": "check-lmop-art.js",
+    "passed": true,
+    "output": "Lost Mine art: 103 valid files, all chapter packs and Session 2 cues linked, player display gated.\n"
+  },
+  {
+    "test": "check-maps.js",
+    "passed": true,
+    "output": "Map checks passed: save shape, private data, wall-aware visibility, calibration, and controls.\n"
+  },
+  {
+    "test": "check-party.js",
+    "passed": true,
+    "output": "Party checks passed: five PCs and Sildar, rest variants, private TV view, and full owner-only phone sheet.\n"
+  },
+  {
+    "test": "check-phone-action-ui.js",
+    "passed": true,
+    "output": "Phone UI passed: out-of-turn requests, target selection, persistent draft, canonical action submission, revision, cancellation, and resolved roll/status display.\n"
+  },
+  {
+    "test": "check-phone-actions.js",
+    "passed": true,
+    "output": "Phone actions passed: atomic resolution, resources, HP/temp HP, defenses, shared area rolls, concentration, turn usage, revisions/cancel, deduplication, stale previews, owner privacy, save/restore, conflict-aware undo, and DM review controls.\n"
+  },
+  {
+    "test": "check-phone-player-ui.js",
+    "passed": true,
+    "output": "Phone player UI passed: stable note drafts, deliberate sharing, spell filters, canonical spell indices, potion previews, coin split previews and offline controls.\n"
+  },
+  {
+    "test": "check-phone-reconnect.js",
+    "passed": true,
+    "output": "Reconnect passed: timestamped safe sheet caching, offline preservation, disabled offline request protocol, and authoritative state restored after reconnect.\n"
+  },
+  {
+    "test": "check-player-tools.js",
+    "passed": true,
+    "output": "Player tools passed: private notes, explicit clue sharing, ownership, item splits, held potion healing, action use, stale reviews, currency conservation, equipment, objectives, persistence, TV privacy, real Undo/Redo and reconnectable handouts.\nDM inventory panel passed: separate preview/apply and persisted resolution.\n"
+  },
+  {
+    "test": "check-reliability-growth.js",
+    "passed": true,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nReliability growth passed: exact TV acknowledgement, stale heartbeat, restore preparation, isolated store reopening/media readback and failure cleanup (simulated IndexedDB).\n"
+  },
+  {
+    "test": "check-rules-library.js",
+    "passed": true,
+    "output": "Rules library checks passed: 983 references, 19 books.\n"
+  },
+  {
+    "test": "check-run-ui.js",
+    "passed": true,
+    "output": "Run UI checks passed: focused mode, live actions, and unique controls.\n"
+  },
+  {
+    "test": "check-session2-migration.js",
+    "passed": true,
+    "output": "Session 2 save migration preserved HP and notes, added hideout content once, and kept wave IDs.\n"
+  },
+  {
+    "test": "check-session3.js",
+    "passed": true,
+    "output": "Session 3 pack verified: 39 beats, 23 encounters, 98 enemy tokens.\n"
+  },
+  {
+    "test": "check-session4.js",
+    "passed": true,
+    "output": "Session 4 verified: 31 cards, 20 rooms, 12 encounters, 57 tokens; migration/return state, source/art links, caster resources, private TV/phone data, conditional endings, and journal controls.\n"
+  },
+  {
+    "test": "check-settlements-integration.js",
+    "passed": true,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nSettlement integration passed: production travel clock, no heartbeat double-count, departure/return, Undo/Redo, and no private TV/phone leakage.\n"
+  },
+  {
+    "test": "check-settlements-ui.js",
+    "passed": true,
+    "output": "Settlement UI passed: evidence gate, NPC edit, deadline preparation, explicit approval, and reviewed TV narration excluding private consequences.\n"
+  },
+  {
+    "test": "check-settlements.js",
+    "passed": true,
+    "output": "Settlements model passed: review-only deadlines, project completion review, evidence-required variants, NPC knowledge boundaries, stock previews/staleness, save roundtrip and return summaries.\n"
+  },
+  {
+    "test": "check-spotlights.js",
+    "passed": true,
+    "output": "Character stories passed: 5 arcs, 30 cards, unplayed defaults, attendance/preferences, fair suggestions, deduplicated outcomes, undo/redo, archive round-trip, private drafts, UI controls, and TV/phone privacy.\n"
+  },
+  {
+    "test": "check-story.js",
+    "passed": true,
+    "output": "Story checks passed: nine sites, 23 floors, nine NPCs, branching, calendar, backup, and player journal controls.\n"
+  },
+  {
+    "test": "check-table-tools.js",
+    "passed": true,
+    "output": "Table tools passed: saved data, private clue validation, inventory, and scene time.\n"
+  },
+  {
+    "test": "check-table-workflows.js",
+    "passed": true,
+    "output": "Table workflows passed: private encounter staging and one-click readiness checks.\n"
+  },
+  {
+    "test": "check-town-maps.js",
+    "passed": true,
+    "output": "Town and journey maps: five overhead scenes, linked content packs, approved markers, and private clue filtering passed.\n"
+  },
+  {
+    "test": "check-travel-ui.js",
+    "passed": true,
+    "output": "Travel UI passed: preview before arrival, camp before apply, marker drag commit, stable phone drafts, revise/cancel and offline disabling.\n"
+  },
+  {
+    "test": "check-travel.js",
+    "passed": true,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\n"
+  },
+  {
+    "test": "check-tv-text.js",
+    "passed": true,
+    "output": "TV text checks passed: visible cards, private text filtering, and live controls.\n"
+  },
+  {
+    "test": "check-waterdeep-integration.js",
+    "passed": true,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nExpedition integration passed: real campaign extra snapshots, Undo/Redo and no private story/ending data in TV or phone payloads.\n"
+  },
+  {
+    "test": "check-waterdeep-pack.js",
+    "passed": true,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nWaterdeep actual session creation passed: all 49 beats, valid scenes, unchanged character levels/HP and save normalization.\n"
+  },
+  {
+    "test": "check-waterdeep-ui.js",
+    "passed": true,
+    "output": "Waterdeep UI passed: private staging, explicit TV approval, editable handouts, room persistence, exact stat links, hidden routes, Nine roles and choice confirmation.\n"
+  },
+  {
+    "test": "check-waterdeep.js",
+    "passed": true,
+    "output": "Waterdeep content passed: 8 scenes, 7 handouts, all 41 rooms, 9 site roles, runbook/save bounds, source links, routes and non-deterministic ending evidence.\n"
+  },
+  {
+    "test": "check-wave-combat.js",
+    "passed": true,
+    "output": "Wave Echo combat verified: 12 encounters, 57 unique enemies, map links, source-specific blocks, spell resources, and no duplicate reinforcements.\n"
+  }
+]

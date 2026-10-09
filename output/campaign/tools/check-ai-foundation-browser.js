@@ -1,0 +1,75 @@
+/* Fresh browser + temporary service store. No production phones, accounts, or generation. */
+const {chromium}=require('playwright'),{spawn}=require('node:child_process');
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const app=path.resolve(__dirname,'..');
+const backup=path.join(app,'../releases/Echo-Below-Package-Backup.json');
+const server=spawn(process.env.ECHO_TEST_PYTHON||'/usr/bin/python3',[ '-u',path.join(__dirname,'ai-rehearsal-server.py')],{stdio:['ignore','pipe','pipe']});
+let stderr='';server.stderr.on('data',b=>stderr+=b);
+const port=new Promise((resolve,reject)=>{server.stdout.once('data',b=>resolve(Number(String(b).trim())));server.once('exit',code=>reject(Error(`Test server exited ${code}: ${stderr}`)));});
+(async()=>{let browser;try{
+ const base='http://127.0.0.1:'+await port,url=base+'/output/campaign/Session-01-TV-Display.html';
+ browser=await chromium.launch({headless:true,channel:'chrome'});
+ const context=await browser.newContext({viewport:{width:1500,height:1000}}),page=await context.newPage(),errors=[],blocked=[];
+ await context.route('**/*',route=>{const target=new URL(route.request().url());if(target.protocol==='http:'&&target.origin===base)return route.continue();if(['data:','blob:','file:'].includes(target.protocol))return route.continue();blocked.push(target.origin);return route.abort();});
+ page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>d.accept());page.setDefaultTimeout(20000);
+ await page.addInitScript(()=>{for(const [key,capture]of [['ECHO_RELIABILITY','__recovery'],['ECHO_AI_UI','__aiHost']]){let api;Object.defineProperty(window,key,{configurable:true,get:()=>api,set:v=>{api=v;const init=v.init;v.init=h=>{window[capture]=h;return init(h);};}});}});
+ await page.goto(url);await page.locator('.cockpit-nav').waitFor();
+ await page.locator('#load-campaign-file').setInputFiles(backup);
+ await page.waitForFunction(()=>document.getElementById('toast').textContent.includes('Restored'));
+ const before=await page.evaluate(()=>JSON.stringify({state:__aiHost.context().state,story:__aiHost.context().story}));
+ await page.getByRole('button',{name:'Settings',exact:true}).click();
+ await page.getByRole('button',{name:'AI assistance',exact:true}).click();
+ await page.waitForFunction(()=>document.querySelector('.ai-status')?.textContent==='AI is off');
+ assert.equal(await page.getByLabel('Enable AI requests',{exact:true}).isChecked(),false);
+ await page.getByLabel('Enable AI requests',{exact:true}).check();
+ await page.getByRole('button',{name:'Save AI settings',exact:true}).click();
+ await page.waitForFunction(()=>document.querySelector('.ai-status')?.textContent.includes('Mock mode'));
+ await page.locator('#ai-diagnostics summary').click();
+ await page.getByRole('button',{name:'Run mock foundation check',exact:true}).click();
+ await page.getByRole('button',{name:'Cancel request',exact:true}).click();
+ await page.waitForFunction(()=>document.querySelector('#ai-job')?.textContent.includes('cancelled'));
+ await page.getByRole('button',{name:'Run mock foundation check',exact:true}).click();
+ await page.waitForFunction(()=>document.querySelector('#ai-job')?.textContent.includes('completed'));
+ assert.match(await page.locator('#ai-job').innerText(),/MOCK DRAFT/);
+ assert.equal(await page.locator('#ai-run-mock').isEnabled(),true);
+ // Canonical campaign contexts are usable by the real gateway, without external providers.
+ const checks=await page.evaluate(async()=>{
+   const c=__aiHost.context(),dm=ECHO_AI_CONTEXT.buildDM(c),players=Object.entries(c.state.party).filter(([,p])=>p.role==='pc').map(([characterId])=>ECHO_AI_CONTEXT.buildPlayer({...c,characterId}));
+   const npc=ECHO_AI_CONTEXT.buildNPC({...c,npcId:c.story.npcs[0].id});
+   for(const value of [dm,...players,npc]){if(!ECHO_AI_CONTEXT.validate(value).valid)throw Error('Invalid context');}
+   const job=await ECHO_AI_SERVICE.start(dm,'Mock only: verify the real DM context shape.');
+   await ECHO_AI_SERVICE.cancel(job.id);
+   return {dm:dm.records.length,players:players.map(c=>[c.subjectId,c.records.length]),npc:npc.records.length};
+ });
+ assert(checks.dm>10);assert.equal(checks.players.length,5);
+ await page.locator('#ai-context-section summary').click();
+ await page.getByLabel('Audience',{exact:true}).selectOption('player');
+ await page.getByRole('button',{name:'Build local preview',exact:true}).click();
+ assert.match(await page.locator('#ai-context-preview').innerText(),/player context/);
+ await page.getByLabel('Provider',{exact:true}).selectOption('chatgpt');
+ assert.match(await page.locator('.ai-provider-options').innerText(),/Connect your own/);
+ assert.equal(await page.getByRole('button',{name:'Load my available models',exact:true}).isEnabled(),false);
+ assert.equal(await page.getByLabel('Maximum ChatGPT requests per day',{exact:true}).inputValue(),'0');
+ assert.equal(await page.getByLabel('I approve this app using my ChatGPT plan within this request limit',{exact:true}).isChecked(),false);
+ await page.getByRole('button',{name:'Save AI settings',exact:true}).click();
+ const denied=await page.evaluate(async()=>{try{await ECHO_AI_SERVICE.start(ECHO_AI_UI.diagnosticContext(),'Must be blocked.');return '';}catch(e){return e.code;}});
+ assert.equal(denied,'confirmation_required');
+ await page.screenshot({path:'/tmp/echo-ai-foundation-settings.png',fullPage:false});
+ const after=await page.evaluate(()=>JSON.stringify({state:__aiHost.context().state,story:__aiHost.context().story}));assert.equal(after,before,'AI use must not mutate campaign records');
+ const exported=await page.evaluate(()=>JSON.stringify(__recovery.validateBackup()));
+ for(const key of ['csrfToken','dailyBudgetUsd','planConfirmed','access_token','refresh_token','externalConfirmed'])assert(!exported.includes('"'+key+'"'),'Backup must exclude '+key);
+ const tv=await context.newPage();await tv.goto(url+'#player');await tv.waitForFunction(()=>document.querySelector('#player-stage')?.childElementCount>0);
+ assert.equal(await tv.evaluate(()=>typeof ECHO_AI_SERVICE),'undefined');assert.equal(await tv.evaluate(()=>typeof ECHO_AI_CONTEXT),'undefined');
+ assert.equal(await tv.locator('#open-ai-settings').count(),0);
+ await page.reload();await page.locator('.cockpit-nav').waitFor();
+ assert.equal(await page.evaluate(()=>JSON.stringify({state:__aiHost.context().state,story:__aiHost.context().story})),before,'Campaign persists independently from AI settings');
+ await page.evaluate(()=>ECHO_AI_UI.open());await page.waitForFunction(()=>document.querySelector('.ai-status')?.textContent==='ChatGPT plan selected');
+ // Simulated unavailable service leaves local previews and all campaign records available.
+ await page.route('**/__echo_ai/**',route=>route.abort());
+ await page.getByRole('button',{name:'Refresh connection',exact:true}).click();
+ await page.waitForFunction(()=>document.querySelector('.ai-error')?.textContent.includes('unavailable'));
+ await page.locator('#ai-context-section summary').click();await page.getByRole('button',{name:'Build local preview',exact:true}).click();
+ assert.match(await page.locator('#ai-context-preview').innerText(),/dm context/);
+ assert.deepEqual(errors,[]);
+ console.log(JSON.stringify({passed:true,checks,workflows:['default-off','settings-save','mock-cancel','mock-complete','repeat-run','real-context-gateway','unapproved-generation-blocked','no-campaign-mutation','clean-backup','no-TV-AI-modules','reload','offline-local-preview'],externalRequests:'blocked',phoneService:'untouched',screenshot:'/tmp/echo-ai-foundation-settings.png'}));
+}finally{await browser?.close();server.kill('SIGTERM');}})().catch(e=>{console.error(e);if(stderr)console.error(stderr.slice(-2000));process.exitCode=1;});

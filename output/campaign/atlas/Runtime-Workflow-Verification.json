@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "auditDate": "2026-10-08T23:44:03.647Z",
+  "smokeFixture": false,
+  "isolation": "Fresh browser contexts and temporary loopback services; original backup read-only; no live service contact or restart",
+  "checks": [
+    {
+      "name": "Backup restored into fresh browser and copied to practice",
+      "passed": true
+    },
+    {
+      "name": "Reviewed world travel, regional approach, city exploration and tavern conversation share explicitly without changing party resources",
+      "passed": true,
+      "detail": {
+        "route": "route-2",
+        "minutes": 15
+      }
+    },
+    {
+      "name": "Phone joins Explore and submits a destination request without moving the party",
+      "passed": true
+    },
+    {
+      "name": "One saved floor prepares privately with blank fog and explicit Show; no raw floor artwork or dense ledger reaches TV/phone",
+      "passed": true
+    },
+    {
+      "name": "Dense pointer reveal exposes only its saved cell; unseen native markers, defeated occupants and private notes stay hidden",
+      "passed": true
+    },
+    {
+      "name": "Phone search requests require visible objects, preserve state until review, and reject an unrevealed gate",
+      "passed": true
+    },
+    {
+      "name": "Section staging and Show change only camera; fog, objects, occupants, party and combat retain one authoritative floor",
+      "passed": true
+    },
+    {
+      "name": "Effects respect reduced motion and immediate Stop without changing fog, collision, native rooms or combat",
+      "passed": true
+    },
+    {
+      "name": "TV label rotations, saved orientation, safe-edge calibration and browser fullscreen work; large-floor physical grid fit remains honestly limited",
+      "passed": true,
+      "detail": {
+        "width": 817,
+        "fits": false,
+        "actualSquare": 0.09148697916666666
+      }
+    },
+    {
+      "name": "Combat completes, retreat and reviewed rest retain current resources, and city return preserves explored floor, native journal and defeated inhabitants",
+      "passed": true
+    },
+    {
+      "name": "Dense fog and camera survive undo/redo, DM reload, phone offline/reconnect and fresh-profile backup restore",
+      "passed": true
+    },
+    {
+      "name": "Phone map bytes stay raster-only and uncached; private floor sources, catalogs, thumbnail and package routes remain unavailable",
+      "passed": true
+    },
+    {
+      "name": "No browser exceptions across runtime, TV, phone and restored campaign",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "atlas/Workflow-Runtime-TV-World-Travel.png",
+    "atlas/Workflow-Runtime-TV-Conversation.png",
+    "atlas/Workflow-Runtime-Phone-City-Explore.png",
+    "atlas/Workflow-Runtime-TV-Blank-Floor.png",
+    "atlas/Workflow-Runtime-TV-Exploration.png",
+    "atlas/Workflow-Runtime-DM-Section.png",
+    "atlas/Workflow-Runtime-TV-Section.png",
+    "atlas/Workflow-Runtime-Phone-Reconnected.png"
+  ],
+  "physicalDevicesTested": false,
+  "limitations": [
+    "Desktop Chrome emulates touch and reduced motion; physical TV alignment, speakers, phones and Wi-Fi still need a table check.",
+    "New source floor remains a manually revealed layout; artwork is not an automatic wall or gate rules engine."
+  ]
+}

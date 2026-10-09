@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "auditDate": "2026-10-08T23:10:04.812Z",
+  "isolation": "Fresh Chrome profile and temporary loopback service; original backup read-only; no live endpoint or restart",
+  "checks": [
+    {
+      "name": "All six stop cards render collapsed preparation, unknown terms and private destination links",
+      "passed": true
+    },
+    {
+      "name": "Private service markers open existing maps; all collection layouts expose compact play guidance",
+      "passed": true
+    },
+    {
+      "name": "Preparation, contacts, play notes and DM points are omitted by public projection and shared renderer",
+      "passed": true
+    },
+    {
+      "name": "Saved person links select the intended record; missing contacts do not select or create another person",
+      "passed": true
+    },
+    {
+      "name": "Opening and following private preparation leaves all campaign and public state unchanged",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "atlas/Preparation-DM-Stop.png",
+    "atlas/Preparation-DM-Neighborhood.png"
+  ],
+  "physicalDevicesTested": false,
+  "neighborhoodVisualAuditDate": "2026-10-08T23:13:59.989Z"
+}

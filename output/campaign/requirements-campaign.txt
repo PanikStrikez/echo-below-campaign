@@ -1,0 +1,2 @@
+# Optional PDF extraction dependency; application/state/session logic uses stdlib.
+pypdf>=5

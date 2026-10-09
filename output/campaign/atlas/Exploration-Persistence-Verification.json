@@ -1,0 +1,40 @@
+{
+  "auditDate": "2026-10-08T23:46:24.326Z",
+  "passed": true,
+  "isolation": "In-memory production hooks and throwaway fixtures only; no live saves, browser, phone service or network used.",
+  "checks": [
+    {
+      "name": "Failed passage lookup and return repair are read-only",
+      "pass": true
+    },
+    {
+      "name": "Paired links cannot exceed persisted passage or scene limits",
+      "pass": true
+    },
+    {
+      "name": "Reviewed retreat, rest and production return retain the authoritative floor and all durable exploration",
+      "pass": true
+    },
+    {
+      "name": "Newly blocked paired exits and native-room changes invalidate a return review without applying it",
+      "pass": true
+    },
+    {
+      "name": "Changes during async recovery-point creation also invalidate return before switching sessions",
+      "pass": true
+    },
+    {
+      "name": "TV and phone projections omit hidden gates, source keys, private room accounts and expedition metadata",
+      "pass": true
+    },
+    {
+      "name": "Dense manual floor mask and section camera survive normalization, return and backup restore without publishing the ledger",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Actual artwork decoding and section-focus camera integration are verified separately by the browser workflow.",
+    "Legacy phone overlay remains 32 columns by 20 rows; dense floor reveals use the masked raster and keep their cell ledger private.",
+    "Automatic vision needs DM-reviewed barriers; source topology is not automatically imported."
+  ]
+}

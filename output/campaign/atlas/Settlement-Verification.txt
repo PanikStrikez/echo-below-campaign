@@ -1,0 +1,98 @@
+WATERDEEP AND SETTLEMENT ATLAS — SOURCE AND VISUAL REVIEW
+8 October 2026 · DM-only preparation
+
+SOURCE GEOMETRY
+Waterdeep: Sword Coast Adventurer's Guide printed p56, supplied PDF57, rendered
+1190×1550. Map frame cropped [28,67,1095,1357] to
+  tmp/waterdeep-audit/Waterdeep-Reference.png
+This 1095×1357 north-up frame is the city coordinate authority. City coastline,
+mountain, cemetery, wards, Market, major road and wall lines were manually
+sampled/generalized. The eastern title/crest field is replaced by illustrative
+Undercliff grass in the new painting; that space was not a surveyed terrain map.
+
+Dragon Heist supplied 219-page scan lacks the city poster foldout. Its contents,
+low-text/map candidates and end material were checked. It is not treated as a
+complete reproduction. The ward chapter was rendered and the relevant printed
+pages visually read: 176/PDF170 (Castle/North and temples), 177/PDF171 (Portal
+history/Trades), 178/PDF172 (Trades/Southern/Dock), 179/PDF173 (City of Dead),
+180/PDF174 (Field Ward, Undercliff, Undermountain). The latter confirms Field Ward
+is not an official ward. No universal Dragon Heist page offset was used.
+SCAG printed54/PDF55 ward descriptions were also visually inspected.
+
+Yawning Portal is a published Castle Ward venue. The supplied city map does not
+label its building; the atlas working point is an approximate ward anchor. It is
+not a source-verified street address. The new tavern floor is separately audited
+in tactical/Waterdeep-Map-Audit.txt and its collection, with original room
+geometry and a source-informed well; no full published floorplan tracing claimed.
+
+Custom businesses: Second Margin and Reed & Ledger use the hub's Castle Ward
+context; Ninepin Works uses Trades Ward; Lantern House uses Southern Ward; Blue
+Lantern Quay uses Dock Ward. All exact blocks are proposals. Mending Court is
+proposed near the Portal in Castle Ward for atlas preparation only: the approved
+courtyard plan still leaves actual ward, street, distance and compass bearing
+unassigned. No rental, keys, access or relationship is established by this map.
+
+OTHER SETTLEMENTS
+Neverwinter: SCAG printed52/PDF53 map visually inspected; river, coast, Castle
+Never, Protector's Enclave and Bluelake generalized. Printed51–53 prose supplies
+rebuilding context. Streets/roof patterns in the overview are illustrative.
+Luskan: SCAG printed97/PDF98 map and text visually inspected; north/south banks,
+Mirar and named islands generalized. No minor street/channel survey claim.
+Baldur's Gate: SCAG printed46/PDF47 map visually inspected, with printed45/PDF46
+and47/PDF48 prose. River, broad districts and crossing relationships generalized;
+no exact Upper/Lower boundary or individual gate point is asserted.
+Daggerford: SCAG printed47–48/PDF48–49 visually read. Diagram uses the river,
+low hill and southern Tyndal's Bridge approach. Precise inn/gate/castle parcels
+are not verified and remain unpinned. Diagram river curvature is conceptual.
+
+LEILON FUTURE STOP
+Campaign-Transition-Data.js proposes Phandalin → Triboar Trail west → High Road
+south → Waterdeep. Leilon is a plausible optional stop, not a mandated/visited
+stop. Its regional placement is sourced in Geography-Register.json. The supplied
+material does not provide a verified Leilon street plan. The local road yard,
+wayfarers' lodge, supply shed, repair yard and roadside shrine are five original
+proposals. No published businesses or NPCs, available inventory, spell services,
+prices, room agreements or completed purchases are asserted. All five records
+start hidden. Service conversations and continuing north/south are prepared;
+actual availability, timing and route decisions remain in play.
+
+RENDER REVIEW
+The corrected Waterdeep painting, all six DM overview exports, and the five
+vector diagrams were rendered and visually inspected. City harbor, cemetery,
+mountain and corrected castle fit the source frame at the intended broad scale.
+Minor street/roof positions and wall curves drift. Ward boundaries are broad
+relationships, not legal/surveyed boundaries. Marker leader lines preserve source
+anchors. City labels fit without clipped names. New venue labels explicitly say
+proposal in private exports; player art contains no custom venue labels or keys.
+The northern inner-wall feature is generalized and not a measured wall trace.
+The four lighter city/town overview vectors are sparse source-relative diagrams;
+their roof texture is decorative, not a claim of mapped individual buildings.
+
+SCOPE
+Selected maps/pages and campaign preparation were reviewed, not every page of
+all PDFs. No GPS accuracy, miles-per-pixel, exact street plan or whole-city battle
+scale is claimed. SVG dimensions are coordinate viewports, not native raster
+pixels. No discovery, arrival, tenancy, dungeon reset or live service restart was
+performed by this data/build work. Source books and old images remain unchanged.
+
+LEILON PAINTED OVERVIEW REVIEW
+New terrain is 1536×1024 native raster pixels in a 1200×800 coordinate frame.
+The proposed lodge, supply building, repair yard, shrine and road yard markers
+were aligned to the actual painted features and the final DM export inspected.
+The original SVG diagram remains an alternate board with its own schematic
+coordinates; it is not described as a crop of or exact match to the painting.
+
+WATERDEEP PRIVATE ROOM OVERLAYS
+Fourteen DM annotated exports use room bounds and entrance points from the
+private authored topology. Labels are private metadata (public:false and
+sourceApproved:false) and never baked into public SVGs. Crop coordinates are
+normalized only in portable exports; the live atlas keeps original master-space
+viewBox values. Public image review remains distinct from permission/tenancy.
+
+FINAL CROP REVIEW
+Final court, shared, lodging and bindery DM exports were rendered at 1200 pixels
+wide and visually inspected. Lodging labels are short, separated and inside
+their rooms; the shared landing, well and table are labelled. Bindery retains
+its correct east-side footprint. Nonzero crop origins are subtracted only for
+portable SVG export; app labelPlacements are translated back to master space.
+The Waterdeep collection reports 717 checks for 14 approved views/eight masters.

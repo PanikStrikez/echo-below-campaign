@@ -1,0 +1,55 @@
+UNDERMOUNTAIN MAP INDEX — PRIVATE DM PREPARATION
+
+Where to open it
+  World → Waterdeep → Yawning Portal → Undermountain → Dungeon Level in the
+  app's World atlas. Review a map privately, then Prepare saved floor view.
+  The prepared map joins the current expedition; it does not replace the
+  existing `um1-table` canvas or its room records. Use Show on TV to stage it.
+
+Player exploration
+  level-1-player.svg is the clean, unkeyed full-floor source layout.
+  It begins under dense manual fog in the saved scene. Focus one of the eight
+  sections below to enlarge play; all sections retain the same tokens,
+  objects, doors, fog and combat. Drag on the DM map to reveal, Shift-drag to
+  conceal. The grid appears only at useful tactical zoom. The keyed source
+  and undiscovered secret geometry stay private.
+
+Section                         Main use
+  Entry                          Yawning Portal well, reliefs, pillar junction
+  North                          Northern threshold and Undertakers
+  Excavation                     25a–25b and the instrument lead
+  Western                        Optional route toward 24 and 23
+  Upper west                     Western northern halls
+  Upper east                     Eastern northern halls
+  Lower center                   Southern passages and alternatives
+  Lower east                     Eastern caverns, area 39a descent
+
+For private keys and source checks
+  level-1-dm-keyed.svg; Level-1-Topology-DM.json;
+  Level-1-Map-Audit.txt. The eight `-dm-keyed.svg` section crops share the
+  same source frame as their `-player.svg` counterparts. Eleven secret
+  geometry overlays are available through the map's DM review; enabling one
+  never opens a door or qualifies the party for a gate automatically.
+
+Return route and restrictions
+  The well in area 1 returns to the Yawning Portal through the actual winch
+  arrangement. Area 39a's ordinary stairs descend to Level 2 area 1a.
+  Area 26d is a restricted gate toward Level 10, not the return route.
+  Area 24a is a destroyed gate. Known gate locations and their activation
+  requirements are separate private records in Floor-Workflow.json.
+
+Later floors
+  Floor-Workflow-Guide.txt and Floor-Workflow-Template.json provide the
+  next-floor preparation process, verified route distinctions and conditional
+  Level 2, Level 3 and Skullport source audits. Their complete room-by-room
+  playable maps are not yet drawn or registered. Prepare the next reachable
+  section when the party actually chooses that descent; browsing the atlas
+  never records an arrival.
+
+Scale and precision
+  The supplied Level 1 map is a 1443 × 1900 raster with printed ten-foot
+  squares. This independent SVG is a hand-traced, resolution-independent
+  derivative aligned to that grid; it is not a publisher vector extraction.
+  The saved scene uses a 300 × 200 five-foot subgrid. Irregular wall edges
+  remain approximate. A full floor cannot provide one-inch physical squares
+  on a normal table TV; zoom to a tactical section and calibrate that view.

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "audience": "DM-only",
+  "registered": false,
+  "floor": null,
+  "boardId": null,
+  "locationId": null,
+  "sourceRefs": [],
+  "sourceFrame": {
+    "width": null,
+    "height": null,
+    "gridFeet": null,
+    "gridOrigin": null,
+    "pixelsPerSourceSquare": null,
+    "calibrationMethod": null
+  },
+  "actualEntry": {
+    "fromBoardId": null,
+    "roomKey": null,
+    "kind": null,
+    "verifiedPath": []
+  },
+  "sector": {
+    "masterId": null,
+    "viewBox": null,
+    "roomKeys": [],
+    "publicTitle": null,
+    "privateTitle": null
+  },
+  "connections": [],
+  "roomRequirements": [],
+  "privateDoorsAndHazards": [],
+  "conditionalRefuges": [],
+  "customHooks": [
+    {
+      "contentRef": null,
+      "roomKey": null,
+      "placementStatus": "unassigned",
+      "refusalFallback": null
+    }
+  ],
+  "retreat": {
+    "path": [],
+    "turnbackCondition": null,
+    "knownObstructions": []
+  },
+  "review": {
+    "geometry": false,
+    "publicSecretsAbsent": false,
+    "grid": false,
+    "entryAndExit": false,
+    "actualStateReconciled": false
+  },
+  "automaticEffects": [],
+  "notes": "Blank reusable authoring template only; no invented live ID, discovery, visit, door state, creature placement or new floor map. Fill only the next relevant sector."
+}

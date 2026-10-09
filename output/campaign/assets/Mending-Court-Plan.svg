@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-labelledby="title desc">
+ <title id="title">Mending Court</title><desc id="desc">An original illustrative home plan with a north passage, west lodging, east bindery, central well, south covered table, pantry and side stair. Not to scale.</desc>
+ <defs>
+  <pattern id="stone" width="90" height="60" patternUnits="userSpaceOnUse"><rect width="90" height="60" fill="#b5ac92"/><path d="M0 0H90M0 30H90M45 0V30M15 30V60M75 30V60" stroke="#887f6b" stroke-width="2"/><path d="M4 4H41M49 34H70" stroke="#cec6ac" stroke-width="2" opacity=".6"/></pattern>
+  <pattern id="floor" width="28" height="110" patternUnits="userSpaceOnUse"><rect width="28" height="110" fill="#8a6b47"/><path d="M0 0V110M28 0V110M0 38H28" stroke="#5d4734" stroke-width="2"/></pattern>
+  <pattern id="roof" width="38" height="23" patternUnits="userSpaceOnUse"><rect width="38" height="23" fill="#455e58"/><path d="M0 0H38M19 0V23" stroke="#2c433f" stroke-width="2"/></pattern>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="4" dy="6" stdDeviation="5" flood-opacity=".3"/></filter>
+ </defs>
+ <rect width="1000" height="760" fill="#172b28"/><rect x="12" y="12" width="976" height="736" rx="12" fill="#d4c4a0" stroke="#b99657" stroke-width="4"/>
+ <path d="M315 117H700V505H722V694H285V505H315Z" fill="url(#stone)" stroke="#786c55" stroke-width="7"/>
+ <path d="M430 14H570V149H430Z" fill="url(#stone)" stroke="#766a53" stroke-width="9"/>
+ <path d="M430 24H482M518 24H570" stroke="#392e23" stroke-width="14"/>
+ <g filter="url(#shadow)" stroke="#3c342a" stroke-width="11" fill="url(#floor)">
+  <rect x="30" y="190" width="280" height="258" rx="4"/><path d="M30 329H188M235 329H310"/>
+  <rect x="700" y="152" width="270" height="244" rx="4"/>
+  <rect x="30" y="524" width="260" height="190" rx="4"/>
+  <rect x="720" y="494" width="250" height="205" rx="4"/>
+ </g>
+ <!-- Openings and door arcs face the communal court. -->
+ <g stroke="#c3b394" stroke-width="14"><path d="M310 270V321M700 251V305M225 524H277M720 552V603"/></g>
+ <g fill="none" stroke="#4a3928" stroke-width="3"><path d="M310 270h-51a51 51 0 0 0 51 51M700 251h54a54 54 0 0 1-54 54M225 524v51a51 51 0 0 0 51-51M720 552h51a51 51 0 0 1-51 51"/></g>
+ <!-- Two unassigned rooms, ordinary furniture, no character property. -->
+ <g fill="#506960" stroke="#2e4940" stroke-width="3"><rect x="53" y="211" width="70" height="85" rx="4"/><rect x="142" y="211" width="70" height="85" rx="4"/><rect x="53" y="350" width="70" height="76" rx="4"/></g>
+ <g fill="#ded3b5"><rect x="59" y="217" width="58" height="22" rx="4"/><rect x="148" y="217" width="58" height="22" rx="4"/><rect x="59" y="356" width="58" height="20" rx="4"/></g>
+ <rect x="192" y="365" width="76" height="48" fill="#5c432e" stroke="#352b20" stroke-width="4"/>
+ <!-- Bindery press, customer shelves, workbench. -->
+ <g fill="#65482f" stroke="#372d24" stroke-width="4"><rect x="723" y="173" width="218" height="31"/><rect x="805" y="302" width="131" height="65"/><rect x="734" y="287" width="45" height="80"/></g>
+ <path d="M828 307V352M914 307V352M821 326H921" stroke="#d0b677" stroke-width="7"/>
+ <g stroke="#e6d5a8" stroke-width="6"><path d="M738 176V200M752 176V200M766 176V200M790 176V200M806 176V200M831 176V200M850 176V200M868 176V200M887 176V200M911 176V200"/></g>
+ <!-- Central well and washing slab. -->
+ <ellipse cx="500" cy="326" rx="68" ry="49" fill="#595846" opacity=".4"/>
+ <circle cx="500" cy="316" r="47" fill="#d1c5a8" stroke="#544d3e" stroke-width="10"/><circle cx="500" cy="316" r="30" fill="#2e4a4b" stroke="#8b8167" stroke-width="5"/>
+ <path d="M443 270L500 243L557 270Z" fill="url(#roof)" stroke="#2b413b" stroke-width="5"/><path d="M454 270V329M546 270V329" stroke="#735034" stroke-width="8"/>
+ <rect x="588" y="299" width="64" height="40" rx="5" fill="#d9ccb0" stroke="#71694f" stroke-width="4"/>
+ <!-- Washing lines leave the east path clear. -->
+ <path d="M325 172L677 130M322 465L687 443" fill="none" stroke="#645439" stroke-width="2"/>
+ <path d="M367 166l40-5 6 51-40 5ZM427 159l30-4 7 38-31 4ZM378 462l52-3 2 31-52 3" fill="#efdfbb" stroke="#a69a7c" stroke-width="2"/>
+ <!-- Covered communal table with benches, clear route around it. -->
+ <rect x="350" y="524" width="300" height="174" rx="4" fill="#60746a" opacity=".35" stroke="#2e453e" stroke-width="5"/>
+ <g fill="#715331" stroke="#3a3124" stroke-width="5"><rect x="385" y="573" width="235" height="70" rx="5"/><rect x="400" y="548" width="203" height="15"/><rect x="400" y="654" width="203" height="15"/></g>
+ <g fill="#bfac7d"><circle cx="426" cy="602" r="10"/><circle cx="576" cy="613" r="10"/><rect x="493" y="593" width="27" height="20" rx="3"/></g>
+ <g fill="#39524a"><circle cx="351" cy="524" r="9"/><circle cx="650" cy="524" r="9"/><circle cx="351" cy="699" r="9"/><circle cx="650" cy="699" r="9"/></g>
+ <!-- Pantry and stairs are private interiors, sketched for orientation. -->
+ <g fill="#795434" stroke="#463321" stroke-width="4"><rect x="52" y="546" width="97" height="35"/><rect x="51" y="658" width="207" height="30"/><circle cx="235" cy="568" r="25"/></g>
+ <rect x="846" y="516" width="98" height="156" fill="#b6a280" stroke="#64583f" stroke-width="4"/>
+ <path d="M846 535H944M846 555H944M846 575H944M846 595H944M846 615H944M846 635H944M846 655H944" stroke="#75684c" stroke-width="3"/>
+ <path d="M894 650V548M881 562l13-14 13 14" fill="none" stroke="#433d30" stroke-width="4"/>
+ <g font-family="Georgia,serif" fill="#f5e4bb" text-anchor="middle"><text x="205" y="68" font-size="32" fill="#38463d">MENDING COURT</text><text x="194" y="98" font-size="16" fill="#63523a">A shared Waterdeep home</text></g>
+ <g font-family="Georgia,serif" fill="#f4e7c9" font-size="20" text-anchor="middle" paint-order="stroke" stroke="#312b23" stroke-width="4" stroke-linejoin="round"><text x="500" y="105">Passage</text><text x="169" y="318">Lodgings</text><text x="842" y="237">Bindery</text><text x="500" y="384" fill="#3b3c2b" stroke="#e3d5b2">Well &amp; washing</text><text x="500" y="689">Covered table</text><text x="160" y="623">Pantry</text><text x="786" y="637">Landing</text></g>
+ <text x="500" y="739" font-family="Georgia,serif" font-size="16" fill="#554933" text-anchor="middle">Original campaign layout · illustrative, not to scale</text>
+</svg>

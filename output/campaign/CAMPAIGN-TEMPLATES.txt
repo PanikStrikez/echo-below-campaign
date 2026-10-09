@@ -1,0 +1,41 @@
+CAMPAIGN TEMPLATES AND PORTABLE COPIES
+
+Your Echo Below campaign is unchanged by creating a blank campaign.
+Settings > Campaign templates > Create blank campaign starts with one black screen,
+no characters, NPCs, discoveries, quests, personal exceptions, or media assignments.
+Add scenes in Session > Session editor; add characters in Party; add objectives in
+Quests > Add a quest. Review player wording before publishing. One main quest goes
+to the TV, side quests to shared phones, and character quests to their owner.
+Active and Completed player previews remain in Quests.
+
+Download blank example produces an ordinary campaign backup. Restore it through
+Settings > Recovery & campaigns > Backup. To reuse YOUR prepared content, use
+Recovery & campaigns > Campaigns > Duplicate. Review private history and character
+assignments before using a duplicate for another group. A duplicate is not blank.
+Campaign switching closes phone joins to avoid carrying access into another group.
+
+Campaign-Module-Manifest.js identifies reusable tools and the optional Echo Below
+modules while retaining their tested dependency order. Campaign-Templates.js owns
+the blank profile. Saved profile fields prevent Echo party/map/story/media defaults
+from repopulating blank records. The existing prepared Echo tools remain available
+in the collapsed Echo Below story packages group. Some legacy modules still mix
+engine and source-reference data; this is not a wholesale engine rewrite.
+
+PORTABLE PACKAGE
+Extract the ZIP, then run Start-Campaign.py using Python 3.10 or newer.
+On Mac, Start-Campaign.command is also supplied. A desktop browser is required.
+Restore campaign-backup.json as a NEW campaign. Do not run two table servers on the
+same ports. Start phone access and scan its new QR code. Saves remain in that
+browser's storage; exporting again is needed to carry later play to another device.
+
+The package contains private DM material. Give players the phone join page, not
+this archive. Personal source books are excluded. PERSONAL-BOOKS.json lists their
+optional separate destinations. Copy only the books you choose into sources/ on
+your own computer. The original synced sources are never changed by packaging.
+The included SRD retains its attribution. Maps and audio keep their source notes.
+
+The original exported campaign is retained separately from the normalized package
+backup. Restore preserves older character values instead of automatically applying
+later level-up migrations. Existing default fields may be added to old schemas.
+Known obsolete storeroom catalog references are replaced by the existing correctly
+named Redbrand and Cragmaw Castle assets. No play outcomes are invented.

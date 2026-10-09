@@ -1,0 +1,4 @@
+Built-in image generation, 8 October 2026.
+Style: Option 5 game-world atlas: blue-teal water, jade/olive forests, warm green land, stone mountain relief, pale snow.
+Geography: match the full 10200 x 6600 official Sword Coast reference extent. Upper-left origin; north up. All labels, settlement symbols, roads, routes, borders, keys, scale bars and campaign clues kept outside terrain rasters.
+World terrain + six regional detail plates. Generated raster dimensions are recorded from actual files; no enlarged image is described as added detail. Region bounds and editable vectors share the same master coordinate system. Source geometry and regional context take precedence over incidental painted detail.

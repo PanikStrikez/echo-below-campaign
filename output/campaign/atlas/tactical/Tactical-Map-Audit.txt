@@ -1,0 +1,157 @@
+PHANDELVER TACTICAL MAP CORRECTIONS — REVIEW PACKAGE
+Date: 2026-10-08
+
+DELIVERY
+20 proposed public maps, derived from 6 editable native SVG geometry masters.
+19 tactical boards use whole-column 5-foot grid metadata; the Phandalin town
+map is for orientation, with an approximate source ruler and no tactical grid.
+All proposal scenes retain their legacy scene IDs as identity references.
+Nothing in this package registers a scene, changes a selected image, writes a
+save, resets fog, or moves tokens. The collection is proposal data only.
+
+FILES
+  ../../Phandelver-Map-Collection.js
+    Global PHANDELVER_MAP_COLLECTION: policy, maps, and 32 existing-scene audits.
+    Every proposal carries geometryChanged:true, reviewNeeded:true, and
+    automaticReplacement:false; current art paths and SHA-256 hashes remain.
+  Phandelver-Tactical-Topology-DM.json
+    DM-only source-coordinate room polygons, ordinary door centers, keyed
+    connections, source-page references, entrances, elevations, hidden routes.
+    Never include this file in a player export or phone asset allowlist.
+  build-collection.cjs
+    DM authoring source. Reproducible native SVG geometry; contains private keys.
+  ../../../../tools/check-phandelver-map-collection.cjs (project tools directory)
+    Read-only validation. Does not import the app or inspect live saved play.
+  Validation.json
+    Result of the final validation run.
+  *-review.png
+    Rendered previews of the newly authored geometry, not modified paintings.
+
+SOURCE AND PRECISION
+Inspected the local private keyed map scans and relevant printed room keys:
+Cragmaw Hideout p9; Phandalin p17; Redbrand p21 / keys20–25; Thundertree p31 /
+keys30–34; Cragmaw Castle p37 / keys35–41; Wave Echo p43 / keys42–51.
+The private native scans are 1382×1900. Working coordinates subtract (140,110)
+from native scan pixels. Anchors can be translated back without resizing.
+
+These are manual, source-reconciled redraws, not pixel-perfect vector traces.
+Door centers and room footprints were sampled from the inspected source;
+natural walls, rubble boundaries, roofs, vegetation, and some furnishings are
+simplified. This limitation is stated in every proposal. Exact-looking grid
+numbers describe the authored geometry and do not prove survey accuracy.
+
+Calibrations: Redbrand about39px/5ft; Hideout38.5px/5ft; Castle37.3px/5ft;
+Thundertree39.3px/10ft; Wave Echo31.7px/10ft. Phandalin uses about493px/500ft
+from the source distance ruler, with tacticalMeasurement:false.
+Each tactical view is expanded to an enclosing source-grid-aligned 3:2
+rectangle: whole columns/rows, zero offset, no stretching. All public boards
+declare an SVG viewport of1536×1024; they are resolution-independent vectors,
+not rasters with native pixel detail. The extra Wave Echo master declares1125×1500 and
+is a full-volume reference, not an automatically registered battleboard.
+
+PRIORITY CORRECTIONS
+
+P0 — REDBRAND
+  redbrand-hideout-full.svg / redbrand-crevasse.svg
+  Same source geometry in both views. The crevasse is dry, not a blue river.
+  Two bridges, two stone columns, the southern forest tunnel, manor entry
+  stairs, cellar cistern, pens with barred partitions, three crypt slabs,
+  workshop/quarters doorway and eastern-room connections are present.
+  Ordinary room details include the four guard bunks and workshop furnishings.
+  The hall's concealed pit is not drawn. Secret bypasses 1↔8, 7↔12, and 7↔6
+  are private geometry only. The bridge's hidden failure condition is private.
+  A discovered secret route must be revealed deliberately using the separate
+  DM geometry; it is not embedded in the player floor image.
+
+P1 — CRAGMAW HIDEOUT
+  cragmaw-hideout-full.svg (legacy scene interior)
+  Source mouth, kennel, west den, stream route, elevated overpass, two pools
+  and dams, and eastern chamber remain in the same source coordinate frame.
+  The bridge crosses20ft above the stream; it is not a four-way floor junction.
+  The kennel-to-eastern-room chimney is a private30ft vertical connection,
+  not an invented public walk-through corridor. Exterior return: approach.
+
+P1 — CRAGMAW CASTLE
+  cragmaw-castle-full.svg / cragmaw-castle-east.svg
+  Source-relative towers, western approaches, chapel/shrine, banquet room,
+  eastern rooms and postern are connected. The sheltered postern landing has
+  its door in the north wall at source(578,589); the banquet side doorway is
+  at(522,532). The northern concealed entrance and falling-rubble trigger
+  remain private. King's-room closeup is a crop of the full geometry.
+
+P1 — THUNDERTREE
+  thundertree-full.svg / thundertree-town.svg plus five room crops
+  Printed positions and winding lanes replace the invented painted crossroads
+  and stream. All13 keyed areas are represented. Brown Horse has western
+  brewing vats and an eastern common room. The store has its north entrance,
+  south breach, and internal gap. The tower has its attached cottage and
+  circular stairs. Garrison's northern and southern bunk rooms are connected;
+  its2/3 double-bunk arrangement follows the prose. Ruined cottages have wall
+  breaks. Vegetation is schematic; exact difficult-terrain edges need DM review.
+  Web hazard placement is in the DM companion, not baked into the clean base.
+  No dragon, spiders, zombies, cultists, bodies, or treasure is pre-placed.
+
+P1 — WAVE ECHO
+  wave-echo-south.svg / wave-echo-central.svg / wave-echo-north.svg
+  plus great-cavern / smelter / forge / temple crops and portrait master
+  All20 keyed areas share one coordinate system. Sector boards overlap; they
+  are windows into one floorplan and are not separate rearranged dungeons.
+  The north end of the mine maze continues from the southern to central view;
+  coverage metadata calls this out. Source-coordinate transforms and related
+  board links support consistent entrances and returns between new boards.
+  Entrance pit connects to2 and3 at its bottom and is20ft deep. Dark Pool,
+  Great Cavern, North Barracks, Smelter, Starry Cavern, Forge, Booming Cavern,
+  streambed, temple and priest quarters retain their source relationships.
+  The Smelter/Great Cavern join is checked in rendered pixels, not just a graph.
+  Source10-ft cells are subdivided into5-ft overlay squares. The former44-column
+  scale must not be carried over. No creatures, loot or hidden triggers appear.
+
+P1 — PHANDALIN
+  phandalin-town.svg
+  Winding north/south road and branching local lanes, orchard, town green,
+  landmark centers, eastern ruined manor, and southern farm/exchange area are
+  aligned to the source town plan. Minor roof details/vegetation are schematic.
+  This is town orientation; it does not establish exact tactical building
+  interiors or replace the original street-encounter board.
+
+REUSE WITH HONEST LIMITS
+Conyberry, Triboar Trail, road ambush, night camp, Agatha's grove, Old Owl Well,
+Wyvern Tor, Sleeping Giant, Tresendar courtyard and Phandalin street remain
+usable as original encounter staging. They have no claim of exact published
+keyed geometry. LMOP provides no keyed Conyberry town floorplan to verify;
+its invented river/ruin layout is a campaign staging choice. Existing5ft/30-column
+grids on such boards describe a chosen encounter space, not surveyed geography.
+The cave approach remains original exterior staging and returns to the hideout
+mouth by navigation; no unsupported geographic pixel alignment is claimed.
+Full existing-scene classifications are in the collection audit array.
+
+PLAYER/DM SEPARATION
+Public SVGs contain only native paths, rectangles, circles, groups, and local
+paint definitions. There are no text elements, keys, labels, monsters, treasure,
+hidden doors, encoded room identifiers, external assets, scripts or source scans.
+They do show full ordinary floor layouts: stage privately and use fog before
+showing unexplored dungeon areas. Being spoiler-free art does not make a fully
+revealed dungeon appropriate for an unexplored session.
+The DM companion and generator deliberately contain room names and secrets.
+Proposal playerTitle fields supply neutral captions for the ruined tower,
+eastern cottage/chamber, workshop and northern hall. The legacy title field
+retains the existing DM catalog title; do not expose unknown inhabitants through it.
+Current play, discoveries, defeats, ownership, and stopping point are not
+inferred from presence of a map, a source key, or an asset filename.
+
+VERIFICATION
+Read-only test command: node tools/check-phandelver-map-collection.cjs
+620 assertions passed before final handoff, including source/native sizes,
+original-art hashes, no public text/raster/scripts/semantic spoilers, whole
+aligned grids, identical master geometry across crops, valid return links,
+mandatory source connections, and sampled visible openings/hidden wall pixels.
+The tests found and helped fix a Smelter join and the store's internal wall.
+Full-map renders were inspected visually. These checks are a regression guard,
+not proof that every irregular source-wall pixel is matched. Review is still
+required for approximate tracing, decorative detail, and any saved-scene move.
+
+ADOPTION
+Prepare a separate review board or explicitly migrate after DM review. Keep
+legacy scene IDs, selected original art, saved fog, tokens, drawings, notes,
+expedition links, and custom art intact. Never reuse old coordinates merely
+because a proposal happens to have the same number of grid columns.

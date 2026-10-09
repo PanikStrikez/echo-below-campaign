@@ -1,0 +1,21 @@
+SWORD COAST CAMPAIGN ATLAS — IMAGE DRAFT
+Generated with the built-in image generator, 8 October 2026.
+Geography reference: https://media.wizards.com/2015/images/dnd/resources/Sword-Coast-Map_HighRes.jpg
+Style reference: existing professional/phandelver-region.png.
+The user requested only the image at this stage. No app data, campaign saves, player discoveries or actual outcomes were changed.
+
+Story placements used in the illustration:
+I Undermountain: beneath Waterdeep (existing setting).
+II Wave Echo Cave: east/northeast of Phandalin (existing adventure).
+III Silent Library: below Second Margin, Waterdeep (existing campaign); Castle Ward neighborhood proposed.
+IV Drowned Observatory: Sea of Swords offshore west of Leilon; boat and dive access fits sailors, salvage and tides.
+V Dead God's Scar: sheltered valley at the western edge of the High Moor, approached from Daggerford; allows farms, affected residents, dust and a relief route from Waterdeep. No divine identity assigned.
+VI Frozen Door: southwest edge of the Reghed Glacier; northern expedition, cold-weather approach and a sealed threshold.
+VII Walking Tower: western Anauroch appearance region; roaming marker rather than a permanent position or controllable travel route.
+VIII Broken Star: proposed approach in the Star Mounts, with the destination remaining partly planar. This does not establish a working portal, travel spell or shortcut.
+IX Hollow Mountain: provisional peak in the southern Greypeaks, northeast of Loudwater. No connection to a character's homeland, ancestors, or a specific community is assigned.
+
+Tales placement options chosen for this DM illustration, not discovered locations:
+Sunless Citadel northwest of Thundertree; Forge of Fury northwest of Mirabar; White Plume Mountain near Mount Hotenow; giant adventures in the Spine of the World; Tomb of Horrors in the Serpent Hills. Tamoachan in Chult and Doomvault in Thay remain off-chart. Based on the book's Forgotten Realms placement notes, not a claim that every suggested placement is a fixed canonical address.
+
+Image status: illustrated concept draft, 1536 x 1024 native output. All Nine have visible markers. Generated labels and geography retain errors/omissions: some small labels are malformed, Mending Court is missing from the revised inset, and several town positions remain approximate. Do not treat the image as a complete gazetteer or use pixels to compute travel distances. The correct intended placement list above remains the reference for later precise atlas work. Sources and existing maps are unchanged.

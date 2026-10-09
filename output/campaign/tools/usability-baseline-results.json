@@ -1,0 +1,288 @@
+[
+  {
+    "test": "check-atmosphere-audio.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Presentation audio passed: ducking throughout crossfades, mute including retiring and pending tracks, and stop.\n"
+  },
+  {
+    "test": "check-atmosphere-ui.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Effects UI passed: preview/reveal, presets without autoplay, explicit playback, zone style/dismiss, rotations, off setting and scene ducking.\n"
+  },
+  {
+    "test": "check-atmosphere.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Atmosphere passed: persistence, secret filtering, expiry, actual target placement, stable transitions, off mode, audio layers, intensity, ducking, mute, crossfade and cancelled loads.\n"
+  },
+  {
+    "test": "check-character-tools.js",
+    "passed": true,
+    "seconds": 0.11,
+    "output": "Character tools passed: staged level-ups/imports, stale guards, mixed Hit Dice, rest variants/overrides, favorites, private-safe shared handouts, atomic upcasting, persistence, and guided UI.\n"
+  },
+  {
+    "test": "check-combat-plus.js",
+    "passed": true,
+    "seconds": 0.16,
+    "output": "Combat plus passed: path costs/crawling/difficult terrain, opportunity pauses, multi-owner saves, revisions/privacy, component defenses, Shield expiry, held rolls, damage atomicity, spell entry/turn/expiry triggers, boss events, condition guidance, persistence, and TV/phone projections.\nCombat tools UI passed: saves, damage preview/apply, template conversion, encounter events, and movement confirmation.\nLarge-map movement preview: 10ms for 254 tokens and 50 areas.\n"
+  },
+  {
+    "test": "check-combat-run.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Combat run passed: save migration, attack dice, and encounter state.\n"
+  },
+  {
+    "test": "check-combat.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Combat checks passed: creature sources, templates, geometry, damage, pacing, and UI hooks.\n"
+  },
+  {
+    "test": "check-content.js",
+    "passed": true,
+    "seconds": 0.13,
+    "output": "Content checks passed: source books, page links, creature pack, exceptions, and audio cues.\n"
+  },
+  {
+    "test": "check-continuity.js",
+    "passed": true,
+    "seconds": 0.09,
+    "output": "Continuity passed: seeded actual history, campaign isolation, persistence, quest states, knowledge, custody, map reveal/withdrawal, undo/redo, and TV/phone privacy.\nContinuity UI passed: selecting without mutation, edit revokes approval, approve/withdraw/undo, tracked follow-up drafts, and unpublished recap creation.\n"
+  },
+  {
+    "test": "check-dm-desk-ui.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "DM desk UI passed: stale requests, token actions, pacing, automatic closing review, recovery and canonical promotion.\n"
+  },
+  {
+    "test": "check-dm-desk.js",
+    "passed": true,
+    "seconds": 0.11,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nDM desk model passed: derived inbox, closing capture, private promotion, persistent layouts, Undo/Redo and TV/phone privacy.\n"
+  },
+  {
+    "test": "check-dm-search.js",
+    "passed": true,
+    "seconds": 0.05,
+    "output": "Context search passed: scene priority, party suggestions and permanent improvised records.\n"
+  },
+  {
+    "test": "check-dungeon-ui.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Dungeon UI passed: profile presets, reveal controls, paired passages, phone memory overlay, stable drafts, targeted searches, revisions and offline controls.\n"
+  },
+  {
+    "test": "check-dungeon.js",
+    "passed": true,
+    "seconds": 0.11,
+    "output": "Dungeon checks passed: carried light, per-character senses, LOS doors, memory, manual fog, hidden enemies/notes, persistent objects, noise propagation, paired return, private searches, approval outcomes, production traversal, saves and Undo/Redo.\n"
+  },
+  {
+    "test": "check-encounter-levels.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Encounter pacing passed: levels 1\u201320, threshold boundaries, mixed parties, all count bands, party-size shifts, XP separation, and invalid inputs.\n"
+  },
+  {
+    "test": "check-growth-performance.js",
+    "passed": true,
+    "seconds": 0.09,
+    "output": "{\"tokens\":500,\"fogCells\":10000,\"walls\":500,\"maxAnchors\":60,\"maxZones\":100,\"p95Ms\":0.96,\"note\":\"CPU projection and simulated DOM construction; not browser GPU/FPS or image decode.\"}\n"
+  },
+  {
+    "test": "check-journey-map-art.js",
+    "passed": true,
+    "seconds": 0.08,
+    "output": "Journey art: PNG size, saved-image upgrade, landmark alignment, notes, reveals, view, custom artwork, and one-time migration passed.\n"
+  },
+  {
+    "test": "check-journey-map-motion.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Journey motion: saved toggle, public payload, approved TV markers, DM preview privacy, continuing animation phase, and scene scoping passed.\n"
+  },
+  {
+    "test": "check-lmop-art.js",
+    "passed": true,
+    "seconds": 0.18,
+    "output": "Lost Mine art: 103 valid files, all chapter packs and Session 2 cues linked, player display gated.\n"
+  },
+  {
+    "test": "check-maps.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Map checks passed: save shape, private data, wall-aware visibility, calibration, and controls.\n"
+  },
+  {
+    "test": "check-party.js",
+    "passed": true,
+    "seconds": 0.07,
+    "output": "Party checks passed: five PCs and Sildar, rest variants, private TV view, and full owner-only phone sheet.\n"
+  },
+  {
+    "test": "check-phone-action-ui.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Phone UI passed: out-of-turn requests, target selection, persistent draft, canonical action submission, revision, cancellation, and resolved roll/status display.\n"
+  },
+  {
+    "test": "check-phone-actions.js",
+    "passed": true,
+    "seconds": 0.14,
+    "output": "Phone actions passed: atomic resolution, resources, HP/temp HP, defenses, shared area rolls, concentration, turn usage, revisions/cancel, deduplication, stale previews, owner privacy, save/restore, conflict-aware undo, and DM review controls.\n"
+  },
+  {
+    "test": "check-phone-player-ui.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Phone player UI passed: stable note drafts, deliberate sharing, spell filters, canonical spell indices, potion previews, coin split previews and offline controls.\n"
+  },
+  {
+    "test": "check-phone-reconnect.js",
+    "passed": true,
+    "seconds": 0.07,
+    "output": "Reconnect passed: timestamped safe sheet caching, offline preservation, disabled offline request protocol, and authoritative state restored after reconnect.\n"
+  },
+  {
+    "test": "check-player-tools.js",
+    "passed": true,
+    "seconds": 0.12,
+    "output": "Player tools passed: private notes, explicit clue sharing, ownership, item splits, held potion healing, action use, stale reviews, currency conservation, equipment, objectives, persistence, TV privacy, real Undo/Redo and reconnectable handouts.\nDM inventory panel passed: separate preview/apply and persisted resolution.\n"
+  },
+  {
+    "test": "check-reliability-growth.js",
+    "passed": true,
+    "seconds": 0.12,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nReliability growth passed: exact TV acknowledgement, stale heartbeat, restore preparation, isolated store reopening/media readback and failure cleanup (simulated IndexedDB).\n"
+  },
+  {
+    "test": "check-rules-library.js",
+    "passed": true,
+    "seconds": 0.09,
+    "output": "Rules library checks passed: 983 references, 19 books.\n"
+  },
+  {
+    "test": "check-run-ui.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Run UI checks passed: focused mode, live actions, and unique controls.\n"
+  },
+  {
+    "test": "check-session2-migration.js",
+    "passed": false,
+    "output": "Timed out"
+  },
+  {
+    "test": "check-session3.js",
+    "passed": false,
+    "output": "Timed out"
+  },
+  {
+    "test": "check-session4.js",
+    "passed": true,
+    "seconds": 0.12,
+    "output": "Session 4 verified: 31 cards, 20 rooms, 12 encounters, 57 tokens; migration/return state, source/art links, caster resources, private TV/phone data, conditional endings, and journal controls.\n"
+  },
+  {
+    "test": "check-settlements-integration.js",
+    "passed": true,
+    "seconds": 0.12,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nSettlement integration passed: production travel clock, no heartbeat double-count, departure/return, Undo/Redo, and no private TV/phone leakage.\n"
+  },
+  {
+    "test": "check-settlements-ui.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Settlement UI passed: evidence gate, NPC edit, deadline preparation, explicit approval, and reviewed TV narration excluding private consequences.\n"
+  },
+  {
+    "test": "check-settlements.js",
+    "passed": true,
+    "seconds": 0.05,
+    "output": "Settlements model passed: review-only deadlines, project completion review, evidence-required variants, NPC knowledge boundaries, stock previews/staleness, save roundtrip and return summaries.\n"
+  },
+  {
+    "test": "check-spotlights.js",
+    "passed": true,
+    "seconds": 0.1,
+    "output": "Character stories passed: 5 arcs, 30 cards, unplayed defaults, attendance/preferences, fair suggestions, deduplicated outcomes, undo/redo, archive round-trip, private drafts, UI controls, and TV/phone privacy.\n"
+  },
+  {
+    "test": "check-story.js",
+    "passed": false,
+    "seconds": 0.06,
+    "output": "nd street', note: 'Four ruffians confront the party only when the town conflict reaches this point. Parley, retreat, capture, and combat remain possible.' },\\n\" +\n    \"    { id: 'hideout-cellar', name: 'Hideout 1 \u00b7 Cellar', note: 'Cistern and hidden satchel; noise can alert room 2.' },\\n\" +\n    \"    { id: 'hideout-barracks', name: 'Hideout 2 \u00b7 Ruffian barracks', note: 'Three ruffians, possibly alerted by cellar noise.' },\\n\" +\n    \"    { id: 'hideout-trap', name: 'Hideout 3 \u00b7 Pit trap', note: 'Find or bypass the concealed pit.' },\\n\" +\n    \"    { id: 'hideout-crypt', name: 'Hideout 4 \u00b7 Crypt', note: 'Three skeletons activate near the side doors.' },\\n\" +\n    \"    { id: 'hideout-pens', name: 'Hideout 5 \u00b7 Slave pens', note: 'Two guards and the Dendrar family. Keep captives safe.' },\\n\" +\n    \"    { id: 'hideout-crevasse', name: 'Hideout 8 \u00b7 Crevasse', note: 'Nothic can negotiate; beware the south bridge.' },\\n\" +\n    \"    { id: 'hideout-bugbears', name: 'Hideout 9 \u00b7 Bugbears', note: 'Three bugbears; Droop is a noncombatant.' },\\n\" +\n    \"    { id: 'hideout-common', name: 'Hideout 10 \u00b7 Common room', note: 'Four drunken ruffians and a possible disguise approach.' },\\n\" +\n    \"    { id: 'hideout-glasstaff', name: 'Hideout 12 \u00b7 Glasstaff', note: 'Iarno may flee if his familiar warned him.' },\\n\" +\n    \"    { id: 'old-owl-well', name: 'Old Owl Well \u00b7 optional fight', note: 'Hamun Kost and up to twelve zombies. Parley is the intended first contact; reveal undead when they emerge.' },\\n\" +\n    \"    { id: 'wyvern-tor', name: 'Wyvern Tor \u00b7 optional camp', note: 'One sentry, six ordinary orcs inside, Brughor (30 HP), and Gog the ogre. Extremely dangerous for low-level PCs.' },\\n\" +\n    \"    { id: 'tt-blights-1', name: 'Thundertree 1 \u00b7 Western cottage', note: 'Two hidden twig blights; area 2 may attract them.' },\\n\" +\n    \"    { id: 'tt-blights-2', name: 'Thundertree 2 \u00b7 Blighted cottages', note: 'Six twig blights; move surviving area-1 blights if they join.' },\\n\" +\n    \"    { id: 'tt-zombies-3', name: 'Thundertree 3 \u00b7 Brown Horse', note: 'Four ash zombies; track each first-damage Ash Puff.' },\\n\" +\n    \"    { id: 'tt-blights-5', name: 'Thundertree 5 \u00b7 Farmhouse', note: 'Eight twig blights may approach doorways in pairs.' },\\n\" +\n    \"    { id: 'tt-spiders-6', name: 'Thundertree 6 \u00b7 Spider store', note: 'Two hidden giant spiders and restraining webs.' },\\n\" +\n    \"    { id: 'tt-dragon-7', name: 'Thundertree 7 \u00b7 Venomfang', note: 'Young green dragon; very dangerous for level-2 party. Parley and retreat are supported.' },\\n\" +\n    \"    { id: 'tt-zombies-8', name: 'Thundertree 8 \u00b7 Smithy', note: 'Two ash zombies; first-damage Ash Puff.' },\\n\" +\n    \"    { id: 'tt-zombies-11', name: 'Thundertree 11 \u00b7 Garrison', note: 'Five ash zombies; old armor does not improve AC.' },\\n\" +\n    \"    { id: 'tt-blights-12', name: 'Thundertree 12 \u00b7 Weaver\u2019s cottage', note: 'Six twig blights; noise alerts area 13.' },\\n\" +\n    \"    { id: 'tt-cultists-13', name: 'Thundertree 13 \u00b7 Dragon cultists', note: 'Six cultists including Favric; they prefer talking.' },\\n\" +\n    \"    { id: 'castle-archers', name: 'Castle 3 \u00b7 Arrow-slit posts', note: 'Two goblins in each post. They warn areas 4 and 6 if they spot an intruder.' },\\n\" +\n    \"    { id: 'castle-trap', name: 'Castle 2 \u00b7 Falling rubble', note: 'Passive Perception 20 or active DC 10 Perception while searching; DC 10 Dexterity save, 3d6 bludgeoning or half.' },\\n\" +\n    \"    { id: 'castle-barracks', name: 'Castle 4 \u00b7 Ruined barracks', note: 'Three goblins; loud noise attracts a scout from the banquet hall.' },\\n\" +\n    \"    { id: 'castle-hobgoblins', name: 'Castle 6 \u00b7 Hobgoblin barracks', note: 'Four hobgoblins, AC 18; remember Martial Advantage.' },\\n\" +\n    \"    { id: 'castle-banquet', name: 'Castle 7 \u00b7 Banquet hall', note: 'Yegg (12 HP) plus seven goblins; account for any scout who left.' },\\n\" +\n    \"    { id: 'castle-grick', name: 'Castle 8 \u00b7 Dark hall', note: 'One grick on an upper ledge. Check sight and surprise, then reveal it.' },\\n\" +\n    \"    { id: 'castle-shrine', name: 'Castle 9 \u00b7 Goblin shrine', note: 'Lhupo (12 HP) and two goblins. They prepare if the grick fight was heard.' },\\n\" +\n    \"    { id: 'castle-guards', name: 'Castle 12 \u00b7 Guard barracks', note: 'Two hobgoblins; one warns Grol and returns two rounds later.' },\\n\" +\n    \"    { id: 'castl\"... 332105 more characters,\n  expected: /story: globalThis\\.ECHO_STORY_DATA\\.normalize\\(archive\\.story\\)/,\n  operator: 'match'\n}\n\nNode.js v22.13.0\n"
+  },
+  {
+    "test": "check-table-tools.js",
+    "passed": false,
+    "seconds": 0.05,
+    "output": "node:assert:126\n  throw new AssertionError(obj);\n  ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   atmosphere: null,\n    clues: [],\n+   desk: null,\n+   dungeon: null,\n+   expedition: null,\n    inventory: [],\n+   playerHub: null,\n    reducedEffects: false,\n    schemaVersion: 1,\n+   settlements: null,\n+   travel: null\n  }\n\n    at Object.<anonymous> (/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-table-tools.js:6:8)\n    at Module._compile (node:internal/modules/cjs/loader:1562:14)\n    at Object..js (node:internal/modules/cjs/loader:1699:10)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: {\n    schemaVersion: 1,\n    clues: [],\n    inventory: [],\n    desk: null,\n    expedition: null,\n    settlements: null,\n    atmosphere: null,\n    dungeon: null,\n    travel: null,\n    playerHub: null,\n    reducedEffects: false\n  },\n  expected: { schemaVersion: 1, clues: [], inventory: [], reducedEffects: false },\n  operator: 'deepStrictEqual'\n}\n\nNode.js v22.13.0\n"
+  },
+  {
+    "test": "check-table-workflows.js",
+    "passed": true,
+    "seconds": 0.07,
+    "output": "Table workflows passed: private encounter staging and one-click readiness checks.\n"
+  },
+  {
+    "test": "check-town-maps.js",
+    "passed": false,
+    "seconds": 0.05,
+    "output": "node:internal/assert/utils:281\n    throw err;\n    ^\n\nAssertionError [ERR_ASSERTION]: Town map absent from pack waterdeep-undermountain-1\n    at Object.<anonymous> (/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-town-maps.js:30:5)\n    at Module._compile (node:internal/modules/cjs/loader:1562:14)\n    at Object..js (node:internal/modules/cjs/loader:1699:10)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49 {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '=='\n}\n\nNode.js v22.13.0\n"
+  },
+  {
+    "test": "check-travel-ui.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Travel UI passed: preview before arrival, camp before apply, marker drag commit, stable phone drafts, revise/cancel and offline disabling.\n"
+  },
+  {
+    "test": "check-travel.js",
+    "passed": true,
+    "seconds": 0.1,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\n"
+  },
+  {
+    "test": "check-tv-text.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "TV text checks passed: visible cards, private text filtering, and live controls.\n"
+  },
+  {
+    "test": "check-waterdeep-integration.js",
+    "passed": true,
+    "seconds": 0.11,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nExpedition integration passed: real campaign extra snapshots, Undo/Redo and no private story/ending data in TV or phone payloads.\n"
+  },
+  {
+    "test": "check-waterdeep-pack.js",
+    "passed": true,
+    "seconds": 0.11,
+    "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nWaterdeep actual session creation passed: all 49 beats, valid scenes, unchanged character levels/HP and save normalization.\n"
+  },
+  {
+    "test": "check-waterdeep-ui.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Waterdeep UI passed: private staging, explicit TV approval, editable handouts, room persistence, exact stat links, hidden routes, Nine roles and choice confirmation.\n"
+  },
+  {
+    "test": "check-waterdeep.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Waterdeep content passed: 8 scenes, 7 handouts, all 41 rooms, 9 site roles, runbook/save bounds, source links, routes and non-deterministic ending evidence.\n"
+  },
+  {
+    "test": "check-wave-combat.js",
+    "passed": true,
+    "seconds": 0.06,
+    "output": "Wave Echo combat verified: 12 encounters, 57 unique enemies, map links, source-specific blocks, spell resources, and no duplicate reinforcements.\n"
+  }
+]

@@ -1,0 +1,185 @@
+WATERDEEP / MENDING COURT PLAY-SPACE COLLECTION
+Private authoring and review report — 8 October 2026
+
+RESULT
+14 new proposals (13 courtyard/interior views and one neighborhood), using eight
+editable SVG masters. Every public SVG was rendered and visually reviewed.
+Waterdeep-Validation.json records 717 passing artifact checks. The unchanged
+Phandelver collection also passed its existing 620 checks.
+
+All 14 records now have publicImageApproved=true. This approves the public art,
+not the party's access, tenancy, presence, discoveries or permissions. Each record
+still has reviewNeeded=true, geometryChanged=true, automaticReplacement=false,
+and an explicit access requirement. Loading the private collection is inert.
+The catalog requests separate new boards with fresh hidden fog and a private
+preview before deliberate reveal. It does not register scenes or write saves.
+
+ARTIFACTS
+  Waterdeep-Map-Collection.js (campaign root; WATERDEEP_MAP_COLLECTION)
+  atlas/tactical/build-waterdeep-collection.cjs (private authoring source)
+  atlas/tactical/Waterdeep-Tactical-Topology-DM.json (private designations/routes)
+  atlas/tactical/Waterdeep-Validation.json
+  atlas/tactical/Waterdeep-Preparation-Validation.json
+  atlas/tactical/wd-*.svg (the 14 views listed below)
+  atlas/tactical/wd-*-review.png (14 review renders, 1200 x 800)
+  tools/check-waterdeep-map-collection.cjs (project root; read-only verifier)
+  tools/check-waterdeep-preparation.cjs (project root; focused private-note checks)
+
+DECLARED VIEWPORT AND MEASUREMENT
+SVG viewport: 1536 x 1024, resolution-independent vector. This is not a claim of
+native raster detail. Every view is 3:2. The neighborhood is schematic, with no
+tactical grid, mile scale, confirmed street name, compass bearing or ward.
+The other 13 views use an integer five-foot grid and zero offset; crop origins
+align with the authored master grid. Ordinary dimensions are authored staging,
+not measurements from a published floorplan. The Portal well's inner diameter
+is exactly 40 feet (320 drawing units at 40 units per five-foot square).
+
+IDENTITIES / FILES / ACCESS
+For each key below:
+  proposal id = waterdeep-proposal-<key>
+  new scene id = wd-map-<key>
+  public art = atlas/tactical/wd-<key>.svg
+All legacySceneId values are null. sourceSceneIds are contextual references,
+not identities to replace or migrate.
+
+Key                   Public title            Grid    Access and parent
+mending-neighborhood  Courtyard neighborhood   none    Proposed visit; city-waterdeep
+mending-court         Shared courtyard        30x20   Public court; neighborhood
+mending-bindery       Binding workroom        12x8    Permission; court
+mending-shared        Shared rooms            24x16   Permission; court
+mending-lodging       Available rooms          12x8    Permission; court
+yawning-portal        Tavern public floor     30x20   Public floor; city-waterdeep
+yawning-well          Tavern well              18x12   Public rim; tavern public floor
+second-margin         Bookshop                15x10   Open shop / permitted use; city
+ninepin-works         Workshop                15x10   Permission; city
+lantern-house         House of care           30x20   Permitted common areas; city
+blue-lantern-quay     Dockside                 30x20   Public quay; city
+flex-shop             Shop                    15x10   Assign permitted site; city
+flex-archive          Archive                 15x10   Assign permitted site; city
+flex-meeting          Meeting room            15x10   Assign permitted site; city
+
+The five Mending views use loc-mending-court. Portal views use loc-yawning-portal.
+Named venues use their matching loc-* identity. Flexible rooms use loc-waterdeep.
+Parent scene IDs and returnProposalId/returnSceneId pairs are explicit in data.
+The well's controlled descent refers to existing um1-table and offers private
+atlas navigation to site-undermountain; it neither
+grants descent permission nor initializes or resets any Undermountain state.
+
+SOURCE RECONCILIATION
+Mending Court:
+  Campaign-Courtyard-Data.js supplies the seven-zone arrangement: north covered
+  passage, west rooms, east bindery, central ordinary well, south shared table,
+  southwest kitchen, southeast side stair. Campaign-Transition-Data.js supplies
+  the consent and introduction constraints. This arrangement is retained, while
+  exact dimensions and street-block geometry are new proposals. Any Castle Ward
+  pin near the Portal is a proposed placement, not established campaign geography.
+  The public court roofs the lodging, pantry and bindery. It does not contain the
+  lodging's wall division, pantry fittings or bindery equipment hidden behind a
+  mask; those are only generated for their separately gated inspection views.
+  The bindery has an ordinary press, sewing frame, drying boards and neutral
+  wrapped/unmarked books and paper. No customer text or historical clue is drawn.
+  Upper residences and
+  attic private floorplans are absent. Only the lower stair/landing and its
+  small ordinary writing desk are visible; the approach remains clear.
+  The lodging shows two empty adjoining rooms. No beds, party storage or acquired
+  furnishings are placed there. Shared table/pantry fittings represent the
+  proposed existing common workspace, not player purchases or free supplies.
+
+Yawning Portal:
+  Local Tales from the Yawning Portal pp5–6 prose (PDF pp7–8) supplies the public
+  taproom, 40-foot well, 140-foot shaft, large fireplace, stairs and overlooking
+  balconies. The supplied 219-page Dragon Heist copy lacks the later Portal
+  layout/key. The new floor is an original source-informed proposal; room outline,
+  furniture positions and doors are not a traced published plan. Upper balconies,
+  private rooms and dungeon contents are omitted. The well is a dark overhead
+  shaft, with rim, steps and hoist; no encounter is pre-staged.
+
+Other named venues:
+  The supplied Echo Below DM Book Waterdeep Hub text (pp11–12,14–16) and campaign
+  transition/expedition notes provide the venue premises. Original floorplans
+  show a bookshop/research table; workshop with neutral trays; house of care with
+  common reception, food preparation and herb court; and a dockside with empty
+  berths. Hidden stairs/rooms, private family or patient plans, contracts, caches,
+  factions and secret cargo are absent. No named person or vessel is placed.
+  The flexible shop/archive/meeting-room boards have no assigned premises or
+  claim that a room has been rented or any document discovered.
+
+EXISTING VISUALS AUDITED AND RETAINED
+assets/Mending-Court-Plan.svg
+  Reuse as DM reference: labelled seven-zone plan, explicitly not to scale;
+  exposes private room layout unsuitable for unrestricted courtyard reveal.
+assets/Yawning-Portal-Scene.svg
+  Reuse as illustration: labelled perspective well vignette, not a floorplan.
+assets/Second-Margin-Scene.svg
+  Reuse as illustration: labelled book/title card, not a playable plan.
+assets/Waterdeep-Neighborhood-Map.png
+  DM reference: baked names and implied street relationships; not source-verified.
+assets/Waterdeep-City-Map.png
+  DM-only: baked custom site names include unrevealed locations. Full image must
+  not be classified player-ready. The root's separate clean city art supersedes
+  it for player use without deleting the original.
+SHA-256 values for these five retained assets are in the private companion and
+catalog audit; the verifier confirms that they still match the captured values.
+
+VISUAL / ROUTE CORRECTIONS DURING REVIEW
+- Joined the courtyard paving into one continuous footprint and removed both
+  blocking seams at the covered passage. Street-to-court travel is visibly open.
+- Gave the quay one continuous T-shaped pier and an open shoreward gangway;
+  removed the overlapping rectangle seam. The public planning canopy has a
+  visible entrance. No boat or booked voyage is implied by the empty water.
+- Widened the waiting-room route around the house-of-care benches.
+- Added the permitted bindery floor as a fourteenth view in response to the final
+  coverage review. The same existing footprint remains roofed on public/common
+  boards. Added a landing desk and checked its approach to the lower stairs.
+- Added private atlas return navigation from the well to site-undermountain while
+  retaining the existing um1-table destination and its permission requirement.
+- Matched palette to the approved direction: deep blue water, moss planting,
+  warm ochre paving, slate/red-brown roofs, restrained brass detail, subtle
+  overhead shadows and wood/stone patterns. All geometry is strictly overhead.
+
+VERIFICATION AND LIMITS
+717 checks cover the expected 14 IDs, private companion, neutral titles, inert
+SVG tags, absence of text/raster/scripts/hidden labels/external resources, source
+qualifications, permission flags, false actual-play presumptions, dimensions,
+integer five-foot grids, crop alignment, valid returns, source asset hashes,
+public/private geometry separation, published well diameter, and sampled visible
+openings on every layout. All 14 rendered views were inspected visually.
+
+The tests are not a claim of source-canonical architecture, surveyed geography,
+automatic collision navigation, real permission, tenancy or recorded play. They
+sample meaningful passages rather than exhaustively proving every possible
+movement route. Integration into TV/phone, opaque raster publication and live
+save preservation are owned and tested separately by the app integration agent.
+No existing app, source, save, live service, Phandelver master or legacy map asset
+was edited by this Waterdeep authoring task.
+
+PRIVATE PLAY GUIDANCE AND NEIGHBORHOOD SERVICES
+The follow-up audit found that the playable art lacked operating notes and the
+neighborhood lacked useful service waypoints. These are now private metadata;
+all 14 SVG files have identical hashes before and after this addition.
+
+Each map has playNotes with summary, cover, elevation, movement, furniture and
+sceneUses. Notes distinguish substantial furniture from soft/open objects and
+require the DM to check actual lines and positions before applying the existing
+cover rules. No bonus is granted automatically. Optional stair/rim/tide heights
+are explicitly authored staging; the source-grounded Portal dimensions remain
+40-foot diameter and 140-foot shaft. Empty lodging includes the possibility of
+agreed secured storage, with no containers, contents or furniture acquired.
+
+Neighborhood preparation contains four service cards using existing approved
+NPC IDs: Nessa's ordinary binding work; Jori/Pellan's meals and packed food;
+Orenna's packing/local-delivery advice; and Aven's copying or agreed observation
+at the shared landing. The cards link to existing permitted boards. Availability,
+prices and agreements are null. They establish no introduction, presence, free
+service, tenancy, custody, knowledge of a private object or current obligation.
+
+Two arrival waypoints and a proposed walking line connect the court passage to
+the street and the off-map tavern direction. No mileage, exact bearing, named
+street or travel time is invented. Private markers and that route are supplied
+for the atlas builder/UI; neither belongs in the public map payload.
+
+Waterdeep-Preparation-Validation.json records 223 focused passing checks for the
+new notes, existing NPC identities, unconfirmed terms, links and exclusion from
+player projections. The prior 717 geometry/privacy checks were not repeated for
+this metadata-only addition. App integration separately checks the private cards
+and markers after the atlas data refresh.

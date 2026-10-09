@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Echo Below — Campaign Table</title>
+  <link rel="stylesheet" href="Session-01-Battleboard.css">
+  <link rel="stylesheet" href="Session-01-Cockpit.css">
+  <link rel="stylesheet" href="Campaign-Courtyard.css">
+  <link rel="stylesheet" href="AI-Settings.css">
+  <link rel="stylesheet" href="Campaign-Engine.css">
+  <script src="Session-01-Loader.js" defer></script>
+</head>
+<body>
+  <div id="dm-app" class="app run-mode">
+    <header class="dm-header">
+      <div>
+        <h1>The Echo Below <span>campaign table</span></h1>
+        <p>Dungeon Master screen</p>
+      </div>
+      <div class="header-actions">
+        <span id="connection-status" class="connection-status">Player screen closed</span>
+        <button id="resync-player" type="button" hidden>Resync TV</button>
+        <details class="header-menu">
+          <summary>Setup & tools</summary>
+          <div class="header-menu-content">
+            <button id="open-rules" type="button">Rules & books</button>
+            <button id="open-party" type="button">Characters & party</button>
+            <button id="open-combat" type="button">All combat tools</button>
+            <button id="open-map" type="button">Maps & exploration</button>
+            <button id="open-quests" type="button">Quest guide</button>
+            <button id="open-mystery" type="button">Evidence and research</button>
+            <button id="open-chapters" type="button">Character chapters & satellite adventures</button>
+            <button id="open-finale" type="button">Intervention & finale</button>
+            <button id="open-undermountain-arc" type="button">First Undermountain expeditions</button>
+            <button id="open-expeditions" type="button">Expedition record</button>
+            <button id="open-downtime" type="button">Between expeditions</button>
+            <button id="open-courtyard" type="button">Mending Court</button>
+            <button id="open-story" type="button">Story & continuity</button>
+            <button id="open-campaign-engine" type="button">Campaign command center</button>
+            <button id="open-presentation" type="button">TV & atmosphere</button>
+            <button id="open-ergonomics" type="button">Search & quick tools</button>
+            <button id="open-reliability" type="button">Recovery & campaigns</button>
+            <button id="open-phones" type="button">Connect phones <span id="phone-request-count" hidden></span></button>
+            <button id="open-player" type="button">Open player TV window</button>
+            <div class="mode-switch" aria-label="Workspace mode">
+              <button id="mode-run" type="button" class="active" aria-pressed="true">Run</button>
+              <button id="mode-prep" type="button" aria-pressed="false">Prepare</button>
+              <button id="mode-review" type="button" aria-pressed="false">Review</button>
+            </div>
+            <button id="new-campaign" type="button">New campaign</button>
+            <button id="restart-session" type="button" title="Save a restore point, then restart this session's table state">Restart session</button>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <div class="session-bar" aria-label="Campaign sessions">
+      <label for="campaign-select">Campaign</label>
+      <select id="campaign-select" aria-label="Campaign"></select>
+      <label for="session-select">Session</label>
+      <select id="session-select"></select>
+      <div class="prep-session-actions">
+        <button id="new-session" class="primary" type="button">New session</button>
+        <button id="new-phandalin-pack" type="button" title="Prepare Session 2 from the actual Cragmaw Hideout outcome">Session 2 · Phandalin</button>
+        <button id="new-part3-pack" type="button" title="Create a session with the wilderness, Thundertree, and Cragmaw Castle scene art">Part 3 visuals</button>
+        <button id="new-part4-pack" type="button" title="Create a session with all Wave Echo Cave scene art">Part 4 visuals</button>
+        <button id="new-session-pack" type="button" title="Prepare a reusable Cragmaw Hideout continuation session">Cragmaw pack</button>
+        <button id="duplicate-session" type="button">Duplicate</button>
+        <button id="rename-session" type="button">Rename</button>
+        <button id="delete-session" type="button">Delete</button>
+        <button id="download-campaign" type="button">Back up campaign</button>
+        <button id="load-campaign-button" type="button">Restore campaign</button>
+      </div>
+      <input id="load-campaign-file" type="file" accept="application/json,.json" hidden>
+      <small id="save-status" class="save-status">Ready</small>
+    </div>
+
+    <div class="turn-bar dm-turn-bar" aria-label="DM turn order">
+      <div class="turn-heading">
+        <strong id="dm-turn-summary">No turn order yet</strong>
+        <div class="turn-controls">
+          <button id="start-combat" class="primary" type="button">Start combat</button>
+          <details class="turn-more">
+            <summary>Turn options</summary>
+            <div class="turn-more-content">
+              <button id="build-turn-order" type="button">Build order</button>
+              <button id="request-initiative" type="button">Ask phones for initiative</button>
+              <button id="roll-enemy-initiative" type="button">Roll placed enemies</button>
+              <button id="previous-turn" type="button">Previous turn</button>
+              <button id="end-combat" type="button">End combat</button>
+            </div>
+          </details>
+        </div>
+      </div>
+      <div id="dm-turn-list" class="turn-list"></div>
+    </div>
+
+    <div class="run-actions" aria-label="Live session actions">
+      <label class="guided-toggle"><input id="guided-toggle" type="checkbox" checked> Guided play</label><button id="guided-tools" type="button">Help me run this</button>
+      <span id="phone-health-warning" role="status" hidden></span><button id="quick-inbox" type="button">Inbox</button>
+      <label class="desk-layout-label">Workspace <select id="desk-layout"><option value="exploration">Exploration</option><option value="conversation">Conversation</option><option value="combat">Combat</option></select></label>
+      <button id="quick-scene" type="button">▦ Scene</button>
+      <button id="next-turn" class="primary" type="button">Next turn</button>
+      <button id="quick-director" type="button">▣ Player TV</button>
+      <span id="tv-now-badge" class="tv-now-badge" role="status">Now showing: loading…</span>
+      <button id="quick-mute" class="panic-mute" type="button" aria-pressed="false">■ Mute all</button>
+      <button id="quick-undo" type="button">↶ Undo</button>
+      <details class="run-more"><summary>More tools</summary><div class="run-more-content">
+<button id="quick-table-check" type="button">✓ Table check</button>
+<button id="quick-expedition" type="button">⌂ Expedition</button>
+<button id="quick-settlements" type="button">♜ Towns</button>
+<button id="quick-atmosphere" type="button">✧ Effects</button>
+<button id="quick-dungeon" type="button">▥ Dungeon</button>
+<button id="quick-travel" type="button">⚑ Travel</button>
+<button id="quick-region-map" type="button" title="Show the Phandelver journey map on the player TV">⌖ Journey map</button>
+<button id="quick-desk" type="button">Session desk · pacing & closing</button>
+        <button id="quick-search" type="button">⌕ Search</button>
+        <button id="quick-roll" type="button">🎲 Roll</button>
+        <button id="quick-damage" type="button">♥ Damage / heal</button>
+        <button id="quick-notes" type="button">✎ Notes</button>
+        <button id="quick-encounter-card" type="button">▤ Encounter card</button>
+        <button id="quick-effects" type="button">◌ Turn reminders</button>
+        <button id="quick-area" type="button">◇ Area spell</button>
+        <button id="quick-encounter" type="button">⚔ Encounter</button>
+        <button id="quick-handout" type="button">✦ Handout</button>
+        <button id="quick-tv-text" type="button">▤ TV text</button>
+        <button id="quick-overlays" type="button">◌ Hide overlays</button>
+        <button id="quick-redo" type="button">↷ Redo</button>
+      </div></details>
+      <span class="run-actions-hint">Click a token for its card. Drag to move.</span>
+    </div>
+
+    <div id="next-up-strip" class="next-up-strip" aria-label="Next runbook beat"></div>
+
+    <div class="dm-layout">
+      <aside class="sidebar" aria-label="Dungeon Master controls">
+        <section id="run-focus" class="panel run-focus" aria-label="Next action"></section>
+        <section id="run-support" class="panel run-support" aria-label="Live party and cave guide"></section>
+        <section id="tv-text-panel" class="panel tv-text-panel" aria-label="Player TV text">
+          <div class="tv-text-head"><h2>Text on player TV</h2><span id="tv-text-count">0 on TV</span></div>
+          <div id="tv-text-list" class="tv-text-list"></div>
+          <div class="button-row"><button id="tv-text-hide-all" type="button">Hide all text</button></div>
+          <details><summary>Write a new player text card</summary>
+            <label class="field-label" for="tv-text-title">Title</label><input id="tv-text-title" type="text" maxlength="100" placeholder="A clue, place, or question">
+            <label class="field-label" for="tv-text-body">Text the players may read</label><textarea id="tv-text-body" rows="4" maxlength="3000"></textarea>
+            <button id="tv-text-add" class="primary" type="button">Show text on TV</button>
+          </details>
+        </section>
+        <section class="panel scene-panel">
+          <h2>Player TV</h2>
+          <div class="live-tv-now"><small>ON THE TV NOW</small><strong id="live-tv-title">Loading…</strong><span id="live-tv-kind"></span></div>
+          <p id="live-tv-next" class="live-tv-next"></p>
+          <div class="live-tv-choices" aria-label="Choose player TV content">
+            <button id="live-choose-map" type="button">▦ Map</button>
+            <button id="live-choose-art" type="button">▧ Scene art</button>
+            <button id="live-choose-handout" type="button">✦ Handout</button>
+          </div>
+          <div class="live-tv-actions"><button id="live-return-map" type="button">Return to map</button><button id="live-black-screen" type="button">Black screen</button></div>
+          <details class="scene-legacy-select"><summary>All session scenes</summary><label class="field-label" for="scene-select">Jump directly to a scene</label><select id="scene-select"></select></details>
+          <label id="grid-control" class="check-line"><input id="show-grid" type="checkbox" checked> Show 5-foot grid</label>
+          <div class="button-row"><button id="bring-party" type="button">Bring party to this map</button></div>
+          <p class="help">Drag an icon from the roster onto the map. Click a placed icon for its combat card, or drag it to move. Enemy icons stay off the player screen until you place them.</p>
+        </section>
+        <section id="phone-request-panel" class="panel" hidden><h2>Player requests</h2><div id="phone-requests" aria-live="polite"></div></section>
+
+        <section id="session-builder" class="panel session-builder">
+          <h2>Prepare this session</h2>
+          <p id="session-builder-help" class="help"></p>
+          <details>
+            <summary>Content ready for the next session</summary>
+            <p><strong>Session 2 starts outside Barthen’s Provisions.</strong> Choose <strong>Session 2 · Phandalin</strong> from the Session menu at the top for the town runbook, street map, and optional Redbrand hideout with a fogged TV map, room prompts, and encounters. Existing Session 2 saves gain the new hideout material when opened. <a href="Session-02-Phandalin-DM-Run-Sheet.md" target="_blank" rel="noopener">Open the Session 2 DM run sheet</a>.</p>
+            <p>These are preparation notes for the original Session 2 opening. Use Story & continuity for the party’s latest approved events and Characters & party for current statistics.</p>
+            <p>The <a href="Session-01-Actual-Recap.md" target="_blank" rel="noopener">Session 1 record</a> preserves that session’s history; later approved events in Story & continuity take precedence. The Cragmaw pack remains available for a later return to the hideout.</p>
+            <p>Town and battle music are in the Audio board. Echo and Nine sounds are marked spoiler. <a href="Campaign-Content-Prep.md" target="_blank" rel="noopener">Open the source and cue guide</a>.</p>
+          </details>
+          <details>
+            <summary>How to use this every session</summary>
+            <ol class="session-steps">
+              <li>Choose a saved session or a session pack from the <strong>Session</strong> menu at the top. New sessions carry forward the party’s current HP, AC, and saved attacks.</li>
+              <li>Add a map or illustration, then add encounters and combatants for this session.</li>
+              <li>Add DM beats with your read-aloud text and private reminders.</li>
+              <li>Open the player screen on the table TV and run the session.</li>
+              <li>Use <strong>Encounters & combat</strong> to deploy waves, review rolls, resolve timed effects, and apply damage after checking targets.</li>
+              <li>Use <strong>Back up campaign</strong> to save all sessions and uploaded images in one file.</li>
+            </ol>
+          </details>
+          <div id="custom-session-tools" hidden>
+            <details>
+              <summary>Scenes and maps</summary>
+              <label class="field-label" for="scene-name">Scene name</label>
+              <input id="scene-name" type="text" maxlength="80" placeholder="e.g. Redbrand Hideout">
+              <label class="field-label" for="scene-kind">Type</label>
+              <select id="scene-kind"><option value="map">Battle map</option><option value="visual">Illustration</option></select>
+              <label class="check-line"><input id="scene-fog" type="checkbox"> Start this map covered for exploration</label>
+              <label class="check-line"><input id="scene-grid" type="checkbox"> Show 5-foot grid overlay</label>
+              <label class="field-label" for="scene-columns">Squares across the map (for ruler and grid)</label>
+              <input id="scene-columns" type="number" min="5" max="100" value="30">
+              <label class="field-label" for="scene-image-file">Image (optional for a blank map)</label>
+              <input id="scene-image-file" type="file" accept="image/png,image/jpeg,image/webp">
+              <div class="button-row"><button id="save-scene" type="button">Add scene</button><button id="cancel-scene-edit" type="button" hidden>Cancel edit</button></div>
+              <div id="scene-builder-list" class="builder-list"></div>
+            </details>
+            <details>
+              <summary>Encounters and combatants</summary>
+              <label class="field-label" for="new-encounter-name">Encounter name</label>
+              <input id="new-encounter-name" type="text" maxlength="80" placeholder="e.g. Redbrand ambush">
+              <label class="field-label" for="new-encounter-note">DM note</label>
+              <textarea id="new-encounter-note" rows="2" maxlength="500"></textarea>
+              <div class="button-row"><button id="add-encounter" type="button">Add encounter</button></div>
+              <div id="encounter-builder-list" class="builder-list"></div>
+              <h3>Add combatants</h3>
+              <label class="field-label" for="new-token-name">Name</label>
+              <input id="new-token-name" type="text" maxlength="60" placeholder="e.g. Redbrand Ruffian">
+              <div class="builder-grid">
+                <label>Team<select id="new-token-team"><option value="enemy">Enemy</option><option value="ally">Ally</option><option value="pc">Hero</option></select></label>
+                <label>Type<select id="new-token-type"><option value="custom">Custom</option><option value="goblin">Goblin · 2014</option><option value="wolf">Wolf · 2014</option><option value="bugbear">Bugbear · 2014</option><option value="hobgoblin">Hobgoblin · 2014</option><option value="grick">Grick · 2014</option><option value="owlbear">Owlbear · 2014</option><option value="doppelganger">Doppelganger · DM secret</option><option value="orc">Orc · 2014</option><option value="ogre">Ogre · 2014</option><option value="zombie">Zombie · 2014</option><option value="hamun-kost">Hamun Kost · Old Owl Well</option><option value="twig-blight">Twig blight · Thundertree</option><option value="ash-zombie">Ash zombie · Thundertree</option><option value="giant-spider">Giant spider · Thundertree</option><option value="young-green-dragon">Young green dragon · DM only</option><option value="cultist">Cultist · Thundertree</option><option value="paladin">Waterdeep: Dracuseth · 2024</option><option value="sildar">Sildar · check sheet</option></select></label>
+                <label>HP<input id="new-token-hp" type="number" min="0" max="999" value="7"></label>
+                <label>AC<input id="new-token-ac" type="number" min="0" max="99" placeholder="?"></label>
+                <label>Count<input id="new-token-count" type="number" min="1" max="20" value="1"></label>
+                <label>Encounter<select id="new-token-encounter"></select></label>
+              </div>
+              <div class="button-row"><button id="add-combatants" type="button">Add combatants</button></div>
+            </details>
+            <details>
+              <summary>DM notes and read-aloud</summary>
+              <label class="field-label" for="beat-title">Beat title</label>
+              <input id="beat-title" type="text" maxlength="100" placeholder="e.g. The Redbrands arrive">
+              <div class="builder-grid">
+                <label>Scene<select id="beat-scene"></select></label>
+                <label>Encounter<select id="beat-encounter"></select></label>
+              </div>
+              <label class="field-label" for="beat-read">Say aloud</label>
+              <textarea id="beat-read" rows="4" maxlength="2400"></textarea>
+              <label class="field-label" for="beat-run">How to run it</label>
+              <textarea id="beat-run" rows="4" maxlength="2400"></textarea>
+              <label class="field-label" for="beat-private">Private DM reminder</label>
+              <textarea id="beat-private" rows="3" maxlength="1400"></textarea>
+              <div class="button-row"><button id="save-beat" type="button">Add beat</button><button id="cancel-beat-edit" type="button" hidden>Cancel edit</button></div>
+            </details>
+          </div>
+        </section>
+
+        <section class="panel dice-panel prep-only">
+          <h2>Dice and roll log</h2>
+          <label class="field-label" for="roll-label">What is this roll for?</label>
+          <input id="roll-label" type="text" maxlength="80" placeholder="e.g. Goblin attack or Perception">
+          <div class="dice-fields">
+            <label>Number <input id="dice-count" type="number" min="1" max="20" value="1"></label>
+            <label>Modifier <input id="dice-modifier" type="number" min="-99" max="99" value="0"></label>
+          </div>
+          <div class="dice-buttons" aria-label="Roll dice">
+            <button type="button" data-die="4">d4</button>
+            <button type="button" data-die="6">d6</button>
+            <button type="button" data-die="8">d8</button>
+            <button type="button" data-die="10">d10</button>
+            <button type="button" data-die="12">d12</button>
+            <button type="button" data-die="20">d20</button>
+            <button type="button" data-die="100">d100</button>
+          </div>
+          <div class="manual-roll">
+            <label>Physical dice total <input id="manual-roll-total" type="number" min="-999" max="999" placeholder="Total"></label>
+            <button id="log-manual-roll" type="button">Log it</button>
+          </div>
+          <div class="button-row"><button id="hide-tv-roll" type="button">Hide roll result from TV</button></div>
+          <div id="roll-history" class="roll-history" aria-live="polite"></div>
+        </section>
+
+        <section class="panel handout-panel run-optional">
+          <h2>Player handout</h2>
+          <p class="help">Show a clue beside the map on the TV. Only the handout you send appears there.</p>
+          <div id="handout-dm-preview" class="handout-dm-preview" aria-label="DM preview of staged handout"></div>
+          <label class="field-label" for="handout-image">Image</label>
+          <select id="handout-image">
+            <option value="">No image</option>
+            <option value="session-01-visuals/scene-01-gundren-departs.png">Gundren departs</option>
+            <option value="session-01-visuals/scene-02-empty-horses.png">The empty horses</option>
+            <option value="session-01-visuals/scene-03-cave-mouth.png">The cave mouth</option>
+            <option value="session-01-visuals/scene-12-road-ambush-reveal.png">Road ambush · after enemies appear</option>
+            <option value="session-01-visuals/scene-04-goblin-trail.png">Goblin trail</option>
+            <option value="session-01-visuals/scene-13-snare-discovered.png">Snare · after discovery</option>
+            <option value="session-01-visuals/scene-14-pit-discovered.png">Pit · after discovery</option>
+            <option value="session-01-visuals/scene-05-goblin-blind.png">Area 2 · Goblin blind</option>
+            <option value="session-01-visuals/scene-06-kennel.png">Area 3 · Kennel</option>
+            <option value="session-01-visuals/scene-07-steep-passage.png">Area 4 · Steep passage</option>
+            <option value="session-01-visuals/scene-08-overpass.png">Area 5 · Overpass</option>
+            <option value="session-01-visuals/scene-09-goblin-den.png">Area 6 · Goblin den</option>
+            <option value="session-01-visuals/scene-10-twin-pools.png">Area 7 · Twin pools</option>
+            <option value="session-01-visuals/scene-11-klargs-cave.png">Area 8 · Klarg’s cave</option>
+            <option value="session-01-visuals/scene-15-phandalin-arrival.png">Phandalin arrival · optional</option>
+            <option value="session-01-visuals/scene-16-barthens-provisions.png">Barthen’s Provisions · optional</option>
+            <option value="assets/Echo-Below-Cover.png">Campaign cover</option>
+            <option value="assets/Nine-Sites-Watercolor.png">The Nine Sites</option>
+            <option value="assets/Waterdeep-City-Map.png">Waterdeep city map</option>
+            <option value="assets/Waterdeep-Cast-Watercolor.png">Waterdeep cast</option>
+          </select>
+          <label class="field-label" for="handout-title">Title</label>
+          <input id="handout-title" type="text" maxlength="100" placeholder="e.g. A strange token">
+          <label class="field-label" for="handout-text">Clue or description</label>
+          <textarea id="handout-text" rows="4" maxlength="1200" placeholder="What the players can read or see"></textarea>
+          <div class="button-row">
+            <button id="show-handout" class="primary" type="button">Show on TV</button>
+            <button id="hide-handout" type="button">Hide handout</button>
+          </div>
+          <small id="handout-status" class="handout-status">No handout on TV</small>
+        </section>
+
+        <section class="panel log-panel prep-only">
+          <h2>Undo and session log</h2>
+          <p class="help">Undo and redo cover recent changes. Restore points keep separate copies of the campaign.</p>
+          <div class="button-row"><button id="undo-last" type="button">Undo last change</button><button id="redo-last" type="button">Redo</button><button id="open-restore-points" type="button">Restore points</button></div>
+          <div id="session-log" class="session-log" aria-live="polite"></div>
+        </section>
+
+        <section class="panel runbook-panel" aria-label="Dungeon Master runbook">
+          <h2>DM runbook</h2>
+          <label class="field-label" for="runbook-select">What you are running</label>
+          <select id="runbook-select"></select>
+          <div class="button-row runbook-nav">
+            <button id="runbook-prev" type="button">← Previous beat</button>
+            <button id="runbook-next" type="button">Next beat →</button>
+          </div>
+          <div id="runbook-content" class="runbook-content"></div>
+        </section>
+
+        <section id="fog-panel" class="panel">
+          <h2>Map exploration</h2>
+          <p class="help">Click or drag across shaded squares on your map to reveal them on the TV. Hold Shift while dragging to cover squares again.</p>
+          <div class="button-row">
+            <button id="reveal-all" type="button">Reveal entire map</button>
+            <button id="reset-fog" type="button">Reset map fog</button>
+          </div>
+          <label class="check-line"><input id="player-reveal" type="checkbox"> Let players reveal squares themselves</label>
+          <p class="help">Otherwise, players can click a dark square to ask you to reveal it.</p>
+          <div id="explore-requests" aria-live="polite"></div>
+        </section>
+
+        <section class="panel party-panel">
+          <h2>Party health</h2>
+          <div class="button-row"><label id="leader-temp-hp-label" class="temp-hp-label">Inspiring Leader temp HP <input id="leader-temp-hp" type="number" min="0" max="999" value="7"></label><button id="inspiring-leader" type="button">Give to party</button></div>
+          <p id="party-help" class="help">Set Donavan’s maximum HP from his live character sheet before play. Damage buttons use temporary HP first.</p>
+          <div id="party-roster"></div>
+        </section>
+
+        <section class="panel enemies-panel">
+          <h2>Enemies and allies</h2>
+          <label class="field-label" for="encounter-select">Encounter</label>
+          <select id="encounter-select"></select>
+          <div id="enemy-roster"></div>
+        </section>
+
+        <section class="panel prep-only">
+          <h2>Session save</h2>
+          <p class="help">The open session saves in this browser. Download its save, or use Back up campaign above to keep every session together.</p>
+          <div class="button-row">
+            <button id="download-save" type="button">Download save</button>
+            <button id="load-save-button" type="button">Load save</button>
+            <input id="load-save-file" type="file" accept="application/json,.json" hidden>
+          </div>
+        </section>
+
+        <section id="source-shelf" class="panel prep-only">
+          <h2>Source shelf</h2>
+          <p class="help">Open the campaign books and adventure references when you need a detail beyond the current session notes.</p>
+          <ul class="source-list">
+            <li><a href="Five-Character-Stories.md" target="_blank" rel="noopener">Five character stories · DM preparation</a></li>
+            <li><a href="Current-Party.md" target="_blank" rel="noopener">Current five-person party</a></li>
+            <li><a href="Session-02-03-Actual-Recap.md" target="_blank" rel="noopener">Sessions 2–3 · actual record and next opening</a></li>
+            <li><a href="Current-Player-Handouts.md" target="_blank" rel="noopener">Current level-3 handouts index</a></li>
+            <li><a href="The-Echo-Below-Player-Guide.pdf" target="_blank" rel="noopener">Updated shared player guide</a></li>
+            <li><a href="Campaign-Core.md" target="_blank" rel="noopener">Campaign core</a></li>
+            <li><a href="The-Echo-Below-DM-Book.pdf" target="_blank" rel="noopener">The Echo Below · DM Book</a></li>
+            <li><a href="../waterdeep/Waterdeep-Hub.md" target="_blank" rel="noopener">Waterdeep hub</a></li>
+            <li><a href="Undermountain-Roadmap.md" target="_blank" rel="noopener">Undermountain roadmap</a></li>
+            <li><a href="Site-Adventures.md" target="_blank" rel="noopener">The six satellite adventures</a></li>
+            <li><a href="Clue-Handouts.md" target="_blank" rel="noopener">Clue handouts</a></li>
+            <li><a href="../../sources/pdfcoffee.com_lost-mine-of-phandelverpdf-pdf-free.pdf#page=6" target="_blank" rel="noopener">Lost Mine of Phandelver · Part 1, pages 6–12</a></li>
+            <li><a href="Session-01-DM-Run-Sheet.md" target="_blank" rel="noopener">Session 1 run sheet</a></li>
+            <li><a href="Town-Exploration-Maps-Guide.md" target="_blank" rel="noopener">Town exploration maps guide</a></li>
+            <li><a href="books/RULES-AUDIT.md" target="_blank" rel="noopener">Rules and combat card audit</a></li>
+            <li><a href="../pdf/Dracuseth-Maw-of-Flames-Character-Sheet.pdf" target="_blank" rel="noopener">Dracuseth · Waterdeep NPC reference</a></li>
+            <li><a href="../pdf/Trista-Player-Handout.pdf" target="_blank" rel="noopener">Trista · level-3 handout (private)</a></li>
+            <li><a href="../pdf/Donavan-Kemp-Player-Handout.pdf" target="_blank" rel="noopener">Donavan · level-3 handout</a></li>
+            <li><a href="../pdf/Ringgo-Paul-Player-Guide.pdf" target="_blank" rel="noopener">Ringgo · level-3 handout</a></li>
+            <li><a href="../pdf/Pebble-Player-Handout.pdf" target="_blank" rel="noopener">Pebble · level-3 handout</a></li>
+            <li><a href="../pdf/Aldric-Vane-Player-Handout.pdf" target="_blank" rel="noopener">Aldric · level-3 handout</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="dm-main" aria-label="Dungeon Master map preview">
+        <div class="map-toolbar">
+          <strong id="dm-scene-title">Campaign cover</strong>
+          <span id="map-instruction">Choose a scene to begin.</span>
+        </div>
+        <div id="map-tools" class="map-tools" aria-label="Map tools">
+          <button type="button" data-map-tool="move" class="active">Move / reveal</button>
+          <button type="button" data-map-tool="target">Target</button>
+          <button type="button" data-map-tool="ruler">Ruler</button>
+          <button type="button" data-map-tool="ping">Ping</button>
+          <details class="map-more">
+            <summary>Area shapes & marks</summary>
+            <div class="map-more-content">
+              <button type="button" data-map-tool="circle">Circle</button>
+              <button type="button" data-map-tool="cone">Cone</button>
+              <button type="button" data-map-tool="square">Square</button>
+              <button type="button" data-map-tool="line">Line</button>
+              <button id="clear-map-marks" type="button">Clear marks</button>
+            </div>
+          </details>
+          <span id="map-tool-hint">Drag any token to move it immediately.</span>
+        </div>
+        <div class="stage-wrap"><div id="dm-stage" class="stage"></div></div>
+        <p class="dm-footnote">The DM map shows hidden placements. The TV receives visible tokens, map marks, pings, and handouts you show.</p>
+      </section>
+      <aside id="context-sidebar" class="context-sidebar" aria-label="Session details">
+        <div class="context-head"><small>AT THE TABLE</small><h2 id="context-title">Active turn</h2></div>
+        <nav class="context-tabs" aria-label="Sidebar details">
+          <button type="button" data-context-tab="guide">Guide</button>
+          <label class="cockpit-detail-label">Details<select id="cockpit-detail-choice" aria-label="Selected details"><option value="scene">Scene</option><option value="token">Token</option><option value="encounter">Encounter</option><option value="clue">Clue</option></select></label>
+          <button type="button" data-context-tab="tools" class="cockpit-internal-tab">Tools</button>
+          <button type="button" data-context-tab="requests">Inbox</button>
+          <button type="button" data-context-tab="turn" aria-pressed="true">Turn</button>
+          <button type="button" data-context-tab="token" aria-pressed="false">Token</button>
+          <button type="button" data-context-tab="scene" aria-pressed="false">Scene</button>
+          <button type="button" data-context-tab="encounter" aria-pressed="false">Encounter</button>
+          <button type="button" data-context-tab="clue" aria-pressed="false">Clue</button>
+        </nav>
+        <div id="context-guide" class="context-content" hidden></div>
+        <div id="context-tools" class="context-content" hidden></div>
+        <div id="context-turn" class="context-content"><div id="combat-live-panel" class="combat-live-panel"></div><details id="combat-plus-tools"><summary>Combat tools · saves, reactions &amp; effects</summary><div id="combat-plus-panel"></div></details></div>
+        <div id="context-token" class="context-content" hidden><p id="context-token-empty">Click a token on the map to see its combat card here.</p><aside id="combat-card" class="combat-card" aria-label="Combat card" hidden></aside></div>
+        <div id="context-scene" class="context-content" hidden></div>
+        <div id="context-encounter" class="context-content" hidden></div>
+        <div id="context-requests" class="context-content" hidden><div id="desk-inbox"></div><details id="desk-action-review"><summary>Phone action review</summary><div id="phone-action-review-detail" class="phone-action-review"></div></details></div>
+        <div id="context-clue" class="context-content" hidden></div>
+      </aside>
+    </div>
+    <section id="review-workspace" class="review-workspace" aria-label="Session review" hidden></section>
+    <div id="rules-scrim" class="rules-scrim" hidden></div>
+    <section id="rules-drawer" class="rules-drawer" role="dialog" aria-modal="true" aria-label="Rules and books" hidden>
+      <header class="rules-head">
+        <div><small>THE ECHO BELOW · DM REFERENCE</small><h2>Rules & books</h2></div>
+        <button id="close-rules" type="button" aria-label="Close rules and books">Close</button>
+      </header>
+      <div class="rules-body">
+        <aside class="rules-rail">
+          <label class="field-label" for="rules-profile">Campaign rules</label>
+          <select id="rules-profile">
+            <option value="2014">2014 fifth edition + named exceptions</option>
+            <option value="mixed">2014 core · allow all newer character entries</option>
+          </select>
+          <p class="help">2014 is the campaign base. Trista has a 2024 sheet exception; Dracuseth's 2024 reference is for Waterdeep only. Pebble uses his handout; Aldric has a DM-built 2014 Wizard 1 sheet with Reborn and Haunted One exceptions. Bowman's later sheet can replace the build.</p>
+          <details><summary>Optional supplements</summary>
+            <label><input id="rules-xan-enabled" type="checkbox"> Xanathar’s Guide · optional rules lookup</label>
+            <label><input id="rules-tasha-enabled" type="checkbox"> Tasha’s Cauldron · optional rules lookup</label>
+            <p class="help">These switches expose optional references. They do not change character sheets or automate optional rules. Donavan’s approved spell exceptions remain available.</p>
+          </details>
+          <p class="help">Card audit: goblin, wolf, and bugbear use 2014 SRD statistics; Redbrand Ruffian, Nothic, and equipped Sildar use Lost Mine appendix B. Dracuseth's Waterdeep reference follows his 2024 sheet. Captive Sildar remains at 1 HP without gear. Dice buttons leave rules decisions and HP changes to the DM.</p>
+          <details id="rules-exceptions-details"><summary>Character & house exceptions</summary>
+            <div id="rules-exceptions"></div>
+            <label class="field-label" for="rules-exception-name">Add an exception</label>
+            <input id="rules-exception-name" type="text" maxlength="80" placeholder="Character or rule name">
+            <textarea id="rules-exception-text" rows="3" maxlength="700" placeholder="What differs, and which sheet or source controls?"></textarea>
+            <input id="rules-exception-source" type="text" maxlength="100" placeholder="Source: sheet, book page, or house rule">
+            <button id="rules-add-exception" type="button">Add exception</button>
+          </details>
+          <details><summary>Optional character choices</summary>
+            <p class="help">Plan a future choice here. Enable it only after the player chooses it and reaches the listed level. Enabling records the choice; review the book and update the sheet separately.</p>
+            <div id="rules-character-options"></div>
+          </details>
+          <details><summary>Table rulings</summary>
+            <div id="rules-rulings"></div>
+            <label class="field-label" for="rules-ruling-name">Ruling</label>
+            <input id="rules-ruling-name" type="text" maxlength="80" placeholder="e.g. Searching the cave">
+            <textarea id="rules-ruling-text" rows="3" maxlength="700" placeholder="How we ruled it at the table"></textarea>
+            <input id="rules-ruling-source" type="text" maxlength="100" placeholder="Source or page (optional)">
+            <button id="rules-add-ruling" type="button">Save ruling</button>
+          </details>
+          <h3>Book shelf</h3>
+          <label class="field-label" for="rules-book">Private book</label>
+          <select id="rules-book">
+            <optgroup label="Rulebooks"><option value="phb">Player’s Handbook · 2014</option><option value="dmg">Dungeon Master’s Guide · 2014</option><option value="mm">Monster Manual · 2014 · DM only</option><option value="xan">Xanathar’s Guide · optional · DM only</option><option value="tasha">Tasha’s Cauldron · optional · DM only</option><option value="srd">Free SRD 5.1 · 2014 rules</option></optgroup>
+            <optgroup label="Campaign books"><option value="lmop">Lost Mine of Phandelver · DM only</option><option value="madMage">Dungeon of the Mad Mage · DM only</option><option value="echo">The Echo Below · DM book</option><option value="echoPlayer">The Echo Below · player guide</option></optgroup>
+            <optgroup label="Character guides"><option value="trista">Trista · 2024 Monk</option><option value="ringgo">Ringgo · 2014 Rogue</option><option value="dracuseth">Dracuseth · Waterdeep reference</option><option value="donavan">Donavan · character guide</option></optgroup>
+          </select>
+          <div class="rules-page-row"><label for="rules-page">PDF page</label><input id="rules-page" type="number" min="1" value="1"><button id="rules-open-page" type="button">Go</button></div>
+          <div class="button-row"><button id="rules-new-tab" type="button">Open book in new tab</button><button id="rules-bookmark-page" type="button">Bookmark page</button></div>
+          <label class="field-label" for="rules-book-file">If the book moved, choose its PDF</label>
+          <input id="rules-book-file" type="file" accept="application/pdf,.pdf">
+          <div id="rules-bookmarks"></div>
+          <details><summary>Book contents</summary><div id="rules-toc"></div></details>
+          <p class="help">Books stay on this computer. A chosen PDF is available until this page is refreshed.</p>
+          <p class="help">If a book says “blocked” in the in-app browser, open The Echo Below from your Desktop icon. Its local book viewer loads the same files without sending them online.</p>
+          <p class="help">SRD 5.1 is provided under <a href="books/SRD-LICENSE.txt" target="_blank" rel="noopener">CC BY 4.0 attribution</a>.</p>
+        </aside>
+        <div class="rules-workspace">
+          <div class="rules-search-row">
+            <input id="rules-search" type="search" placeholder="Find a rule, spell, item, feature, or page" aria-label="Search rules and books">
+            <select id="rules-category" aria-label="Reference category">
+              <option value="all">All references</option><option value="rule">Rules</option><option value="condition">Conditions</option>
+              <option value="spell">Spells</option><option value="item">Items</option><option value="feature">Class features</option><option value="creature">Creatures</option><option value="location">Locations</option>
+              <option value="dm-tool">DM toolbox</option><option value="pages">Book pages</option><option value="favorite">Favorites</option>
+            </select>
+          </div>
+          <div id="rules-results" class="rules-results" aria-live="polite"></div>
+          <div class="rules-viewer-head"><strong id="rules-viewer-title">Player’s Handbook · PDF page 1</strong><span id="rules-viewer-note"></span></div>
+          <iframe id="rules-viewer" class="rules-viewer" title="Private rulebook preview"></iframe>
+        </div>
+      </div>
+    </section>
+    <div id="party-scrim" class="party-scrim" hidden></div>
+    <section id="party-drawer" class="party-drawer" role="dialog" aria-modal="true" aria-label="Characters and party" hidden>
+      <header class="party-head">
+        <div><small>THE ECHO BELOW · PARTY RECORD</small><h2>Characters & party</h2><span id="party-source"></span></div>
+        <button id="close-party" type="button">Close</button>
+      </header>
+      <div class="party-toolbar">
+        <label>Character <select id="party-select"></select></label>
+        <button id="party-show-tv" type="button">Show this character on TV</button>
+        <button id="party-hide-tv" type="button">Hide character from TV</button>
+        <button id="party-export" type="button">Export sheet</button>
+        <button id="party-import-button" type="button">Import sheet</button>
+        <input id="party-import-file" type="file" accept="application/json,.json" hidden>
+        <button id="party-print" type="button">Print emergency sheet</button>
+      </div>
+      <nav id="party-tabs" class="party-tabs" aria-label="Character tools">
+        <button type="button" data-tab="overview" class="active">Party overview</button>
+        <button type="button" data-tab="sheet">Full sheet</button>
+        <button type="button" data-tab="actions">Actions</button>
+        <button type="button" data-tab="resources">Resources & gear</button>
+        <button type="button" data-tab="rest">Group rest</button>
+        <button type="button" data-tab="advance">Level up</button>
+        <button type="button" data-tab="casting">Cast</button>
+        <button type="button" data-tab="favorites">Favorites</button>
+        <button type="button" data-tab="import">Import review</button>
+        <button type="button" data-tab="history">Level history</button>
+      </nav>
+      <div id="party-content" class="party-content"></div>
+    </section>
+    <div id="combat-scrim" class="combat-scrim" hidden></div>
+    <section id="combat-drawer" class="combat-drawer" role="dialog" aria-modal="true" aria-label="Encounters and combat" hidden>
+      <header class="combat-head">
+        <div><small>THE ECHO BELOW · DM WORKSPACE</small><h2>Encounters & combat</h2><span id="combat-context"></span></div>
+        <button id="close-combat" type="button">Close</button>
+      </header>
+      <label class="combat-tool-chooser">Tool
+        <select id="combat-tool-select" class="combat-tab-select" aria-label="Choose combat tool">
+          <option value="encounters">Encounter plan & waves</option>
+          <option value="rolls">Roll dice</option>
+          <option value="damage">Apply damage or healing</option>
+          <option value="flow">Turn effects & reactions</option>
+          <option value="area">Area spell</option>
+          <option value="creatures">Creature cards</option>
+          <option value="pacing">Pacing</option>
+          <option value="wrap">After combat</option>
+        </select>
+      </label>
+      <div id="combat-content" class="combat-content"></div>
+    </section>
+    <div id="map-scrim" class="map-scrim" hidden></div>
+    <section id="map-drawer" class="map-drawer" role="dialog" aria-modal="true" aria-label="Maps and exploration" hidden>
+      <header class="map-head"><div><small>THE ECHO BELOW · SCENE TOOLS</small><h2>Maps & exploration</h2><span id="map-context"></span></div><button id="close-map" type="button">Close</button></header>
+      <nav id="map-tabs" class="map-tabs" aria-label="Map tools">
+        <button data-map-tab="scene" class="active" type="button">Scene</button><button data-map-tab="vision" type="button">Walls & light</button><button data-map-tab="tokens" type="button">Tokens</button><button data-map-tab="explore" type="button">Explore</button><button data-map-tab="display" type="button">Table TV</button>
+      </nav>
+      <div id="map-content" class="map-content"></div>
+    </section>
+    <div id="story-scrim" class="story-scrim" hidden></div>
+    <section id="story-drawer" class="story-drawer" role="dialog" aria-modal="true" aria-label="Story and continuity" hidden>
+      <header class="story-head"><div><small>THE ECHO BELOW · CAMPAIGN MEMORY</small><h2>Story & continuity</h2><span id="story-context"></span></div><button id="close-story" type="button">Close</button></header>
+      <label class="story-chooser">Open tool<select id="story-tool">
+        <option value="spotlights">Character stories & spotlights</option>
+        <option value="chapters">Character chapters & satellite adventures</option>
+        <option value="finale">Intervention & finale</option>
+        <option value="quest-preview">Quests · player view</option>
+        <option value="quests">Quest guide</option>
+        <option value="quest-workspace">Quest session workspace</option>
+        <option value="outcomes">Outcome review</option>
+        <option value="continuity">Campaign continuity & quests</option>
+        <option value="mystery">Evidence and research</option>
+        <option value="undermountain-arc">First Undermountain expeditions</option>
+        <option value="expeditions">Expedition record & return</option>
+        <option value="downtime">Between expeditions</option>
+        <option value="courtyard">Mending Court · home & relationships</option>
+        <option value="transition">Phandalin → Waterdeep</option>
+        <option value="wave-echo">Wave Echo journal</option>
+        <option value="prep">Session prep</option><option value="adventures">Phandelver packs</option><option value="runbook">Branching runbook</option><option value="handouts">Secret handouts</option><option value="evidence">Evidence</option><option value="journal">Player journal</option><option value="people">People</option><option value="waterdeep">Waterdeep</option><option value="sites">Nine sites</option><option value="dungeon">Undermountain</option><option value="calendar">Calendar & clocks</option><option value="wrap">End of session</option>
+      </select></label>
+      <div id="story-content" class="story-content"></div>
+    </section>
+    <div id="presentation-scrim" class="presentation-scrim" hidden></div>
+    <section id="presentation-drawer" class="presentation-drawer" role="dialog" aria-modal="true" aria-label="TV and atmosphere" hidden>
+      <header class="presentation-head"><div><small>THE ECHO BELOW · SHOW CONTROL</small><h2>TV & atmosphere</h2></div><button id="close-presentation" type="button">Close</button></header>
+      <nav id="presentation-tabs" class="presentation-tabs" aria-label="Presentation tools">
+        <button data-presentation-tab="live" class="active" type="button">Choose for TV</button><button data-presentation-tab="director" type="button">Presets</button><button data-presentation-tab="art" type="button">Lost Mine art</button><button data-presentation-tab="maps" type="button">Battle maps</button><button data-presentation-tab="audio" type="button">Audio</button><button data-presentation-tab="cues" type="button">Cues</button><button data-presentation-tab="media" type="button">Media</button><button data-presentation-tab="handouts" type="button">Handouts</button><button data-presentation-tab="cards" type="button">Cards</button><button data-presentation-tab="tv" type="button">TV settings</button>
+      </nav>
+      <div id="presentation-content" class="presentation-content"></div>
+    </section>
+    <div id="ergonomics-scrim" class="ergonomics-scrim" hidden></div>
+    <section id="ergonomics-drawer" class="ergonomics-drawer" role="dialog" aria-modal="true" aria-label="DM quick tools" hidden>
+      <header class="ergonomics-head"><div><small>THE ECHO BELOW · TABLE TOOLS</small><h2>Find it fast</h2></div><button id="close-ergonomics" type="button">Close</button></header>
+      <nav id="ergonomics-tabs" class="ergonomics-tabs" aria-label="Quick tools"><button type="button" data-ergo-tab="search">Search</button><button type="button" data-ergo-tab="encounter">Encounter</button><button type="button" data-ergo-tab="notes">Notes & improv</button><button type="button" data-ergo-tab="shortcuts">Shortcuts & display</button></nav>
+      <div id="ergonomics-content" class="ergonomics-content"></div>
+    </section>
+    <div id="reliability-scrim" class="reliability-scrim" hidden></div>
+    <section id="reliability-drawer" class="reliability-drawer" role="dialog" aria-modal="true" aria-label="Recovery and campaigns" hidden>
+      <header class="reliability-head"><div><small>THE ECHO BELOW · SAFETY DESK</small><h2>Recovery & campaigns</h2></div><button id="close-reliability" type="button">Close</button></header>
+      <nav id="reliability-tabs" class="reliability-tabs" aria-label="Safety tools"><button data-reliability-tab="table" type="button">Table check</button><button data-reliability-tab="health" type="button">Offline check</button><button data-reliability-tab="snapshots" type="button">Restore points</button><button data-reliability-tab="campaigns" type="button">Campaigns</button><button data-reliability-tab="backup" type="button">Backup</button></nav>
+      <div id="reliability-content" class="reliability-content"></div>
+    </section>
+    <div id="phones-scrim" class="phones-scrim" hidden></div>
+    <section id="phones-drawer" class="phones-drawer" role="dialog" aria-modal="true" aria-label="Player phones" hidden>
+      <header class="phones-head"><div><small>THE ECHO BELOW · PLAYER CONNECTION</small><h2>Connect player phones</h2></div><button id="close-phones" type="button">Close</button></header>
+      <p>Resync asks one phone to reload live data. Release frees its character for a fresh QR join. Reassign changes only that phone’s character; other players stay connected.</p><p id="phones-status" role="status">Checking phone connection…</p>
+      <div class="phones-actions"><button id="phones-start" class="primary" type="button">Start phone access</button><button id="phones-reset" type="button" hidden>New join code</button><button id="phones-stop" type="button" hidden>Stop phone access</button></div>
+      <div id="phones-join" hidden><p>Have each player scan this code while connected to the same Wi-Fi as this computer.</p><img id="phones-qr" alt="Player phone join QR code"><a id="phones-url" href="#" target="_blank" rel="noopener"></a><p class="help">Each player chooses their character once. Their Table, My sheet, My clues, and Party loot tabs update during play.</p></div>
+      <h3>Connected characters</h3><div id="phones-claims" class="phones-claims">No phones joined.</div>
+      <p class="help">Players can roll and move their own token. Exploration requests wait for your approval in the map request list. The computer running this DM screen keeps the campaign save.</p>
+      <div id="table-tools" class="table-tools"></div><div id="player-tools" class="table-tools"></div>
+    </section>
+  </div>
+
+  <div id="player-app" class="app" hidden>
+    <header class="player-header">
+      <strong id="player-scene-title">The Echo Below</strong>
+      <span id="player-hint">Waiting for the DM screen…</span>
+      <button id="player-fullscreen" type="button">Full screen</button>
+      <button id="player-journal-button" type="button" hidden>Journal</button>
+    </header>
+    <div class="turn-bar player-turn-bar" aria-label="Player turn order">
+      <strong id="player-turn-summary">Waiting for combat</strong>
+      <div id="player-turn-list" class="turn-list"></div>
+      <strong id="player-roll-banner" class="player-roll-banner" hidden></strong>
+    </div>
+    <div class="player-stage-wrap">
+      <div class="player-frame">
+        <div id="player-stage" class="stage"></div>
+        <span class="frame-corner frame-corner-tl" aria-hidden="true"></span>
+        <span class="frame-corner frame-corner-tr" aria-hidden="true"></span>
+        <span class="frame-corner frame-corner-br" aria-hidden="true"></span>
+        <span class="frame-corner frame-corner-bl" aria-hidden="true"></span>
+      </div>
+      <section id="player-presentation" class="player-presentation" hidden></section>
+      <div id="player-tv-overlays" class="player-tv-overlays" hidden></div>
+      <div id="player-scene-mood" class="player-scene-mood" hidden></div>
+      <div id="player-screen-effect" class="player-screen-effect" hidden></div>
+      <div id="player-rehearsal" class="player-rehearsal" hidden>REHEARSAL · SAMPLE TURN</div>
+      <div id="player-text-cards" class="player-text-cards" hidden></div>
+      <aside id="player-handout" class="player-handout" hidden></aside>
+      <aside id="player-character" class="player-character" hidden></aside>
+      <aside id="player-journal" class="player-journal" hidden></aside>
+    </div>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

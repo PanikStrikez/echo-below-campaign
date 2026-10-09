@@ -1,0 +1,18 @@
+#!/bin/zsh
+health="http://127.0.0.1:48261/__echo_health"
+if [[ "$(/usr/bin/curl -fsS --max-time 1 "$health" 2>/dev/null)" != "echo-below-campaign" ]]; then
+  /usr/bin/nohup /usr/bin/python3 '/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/launchers/serve_campaign.py' >/tmp/echo-below-local-server.log 2>&1 </dev/null &
+  for attempt in 1 2 3 4 5 6 7 8 9 10; do
+    [[ "$(/usr/bin/curl -fsS --max-time 1 "$health" 2>/dev/null)" == "echo-below-campaign" ]] && break
+    /bin/sleep 0.2
+  done
+fi
+phone_health="http://127.0.0.1:48262/__echo_phone_health"
+if [[ "$(/usr/bin/curl -fsS --max-time 1 "$phone_health" 2>/dev/null)" != *'"service":"echo-phones"'* ]]; then
+  /usr/bin/nohup /usr/bin/python3 '/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/launchers/serve_phones.py' >/tmp/echo-below-phone-server.log 2>&1 </dev/null &
+  for attempt in 1 2 3 4 5 6 7 8 9 10; do
+    [[ "$(/usr/bin/curl -fsS --max-time 1 "$phone_health" 2>/dev/null)" == *'"service":"echo-phones"'* ]] && break
+    /bin/sleep 0.2
+  done
+fi
+/usr/bin/open 'http://127.0.0.1:48261/output/campaign/Session-01-TV-Display.html'

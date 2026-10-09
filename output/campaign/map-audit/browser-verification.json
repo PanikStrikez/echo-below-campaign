@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "fresh isolated practice campaign",
+    "lazy DM-only data",
+    "right-panel search/filter/pagination",
+    "map remains visible",
+    "native size and proposal labels",
+    "save/stats/fog/tokens/history unchanged",
+    "no automatic spoiler images",
+    "TV does not load new register module/data",
+    "standalone file opening",
+    "player hash fails closed"
+  ],
+  "physicalDevicesTested": false
+}

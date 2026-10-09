@@ -1,0 +1,21 @@
+Book location source audit
+
+Merged authority: Location-Register.json (the book candidate list was an audit working file).
+328 regional candidates, including optional adaptations; 4 off-Sword-Coast destination records.
+All records include sourcebook, printed page or range, source confidence, a source_validation object, status, parent, broad placement context and optional readiness. No coordinates were invented.
+
+Coverage: SCAG chapter 2 every geographical section heading; Dragon Heist named neighborhood/adventure/faction venues and Enchiridion geography; all seven Tales adventure openings/placement sidebars plus named staging towns. This is not a complete page-by-page visual audit. Zero newly visually verified PDF pages.
+
+Key corrections and constraints:
+- Pink Flumph Theater is in Castle Ward, confirmed in the spring alley narrative.
+- Spouting Fish is a Dock Ward tavern on printed p. 27 (not p. 30).
+- Yellowspire is explicitly in Castle Ward, confirmed by the winter Mistshore narrative.
+- Tower of Luck is in Sea Ward in the Enchiridion narrative but Castle Ward in its temple table; record preserves the conflict.
+- Source also differs on House/Tower of the Moon and Shrines of/to Nature naming.
+- The supplied Dragon Heist scan has duplicate/irregular pagination. No universal page offset was used. Its Enchiridion precise page references are explicitly inferred; pp. 174–183 is supplied as a safe section reference.
+- SCAG name-page pairs checked through normalized source text search; Rauvin and Dernall Forest remain spelling-sensitive OCR cases.
+- All Tales suggested Forgotten Realms relocations remain labeled book-suggested-adaptation. Oakhurst and Blasingdell inherit conditional placement, not independent canonical Sword Coast coordinates.
+- Tamoachan stays off-map (Maztica or Chult suggestion). Doomvault stays in Thay; Bloodgate Keep is the separate Sword Coast prologue site near Daggerford.
+- Tomb of Horrors and all three Against the Giants strongholds have alternative regions, not a chosen universal pin.
+- Dragon Heist Vault entrance varies by season. Moving vessels and demiplanes need nonpermanent map treatment.
+

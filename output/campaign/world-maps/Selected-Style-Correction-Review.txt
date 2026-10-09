@@ -1,0 +1,26 @@
+SELECTED STYLE 5 — CORRECTION REVIEW
+Image: Sword-Coast-Campaign-Map.png
+Method: built-in image-generation edit, using selected style 05 and the publisher's geography reference.
+Prompt: Selected-Style-Correction-Prompt.txt
+Native dimensions: 1536 x 1024.
+
+Visual checks:
+- II Wave Echo Cave is now near east/northeast of Phandalin; the old southeastern marker is gone.
+- IX Hollow Mountain is northeast of Loudwater in the Greypeaks.
+- Mere of Dead Men is labeled on a coastal mainland marsh between Leilon and Waterdeep.
+- High Moor is southeast of Daggerford and south of Loudwater; V is on its western side.
+- Star Mounts and VIII are surrounded by High Forest woodland.
+- Sea of Swords and Reghed Glacier are labeled.
+- I and III retain leader lines to Waterdeep; IV remains offshore west of Leilon; VI remains in the glacial north; VII retains its Anauroch roaming boundary.
+- All nine numbered campaign markers are present with readable names.
+- The arbitrary mileage scale is absent; footer explicitly says geography approximate.
+- Selected palette, terrain style, frame, and core composition retained.
+
+Scope: correction of the selected image only. No app changes, TV publication,
+player discoveries, saves, source books, or canonical outcome records altered.
+Existing drafts and style options preserved.
+
+Limits: this is illustrative regional geography, not an exact reproduction of
+the reference map's projection or scale. It does not contain every settlement,
+book location, or street-level campaign establishment. Custom placements remain
+campaign preparation. Use source maps and defined travel routes for navigation.

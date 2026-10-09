@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Unmarked player battle map of the Redbrand hideout, with rooms, a crevasse, and two bridges">
+  <defs>
+    <pattern id="rock" width="88" height="74" patternUnits="userSpaceOnUse"><rect width="88" height="74" fill="#554c43"/><path d="M5 17l28-9 18 13 29-8M9 56l19 9 29-13 26 9" fill="none" stroke="#766a58" stroke-width="3" opacity=".52"/></pattern>
+    <pattern id="stone" width="84" height="66" patternUnits="userSpaceOnUse"><rect width="84" height="66" fill="#b7a68b"/><path d="M0 32h84M40 0v32M16 32v34M62 32v34" fill="none" stroke="#867765" stroke-width="2.5" opacity=".62"/></pattern>
+    <pattern id="water" width="75" height="60" patternUnits="userSpaceOnUse"><rect width="75" height="60" fill="#405e65"/><path d="M5 16q19-9 35 0t30 0M3 44q17-8 35 0t34 0" fill="none" stroke="#87a2a0" stroke-width="3" opacity=".6"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#rock)"/>
+  <path d="M55 70h1490v860H55z" fill="#453d34" stroke="#8d7b63" stroke-width="16"/>
+  <!-- Connected stone rooms follow the broad orientation of the private keyed map. -->
+  <path d="M100 115h225v190H100zM325 115h205v190H325zM530 115h305v190H530zM850 115h165v190H850zM1015 115h250v285h-250zM100 345h265v280H100zM850 345h165v280H850zM1015 465h430v160h-430zM100 690h265v190H100zM850 690h165v190H850zM1015 665h430v215h-430z" fill="url(#stone)" stroke="#4d453b" stroke-width="18" stroke-linejoin="round"/>
+  <!-- Corridors are broad enough for table tokens; the exact room geometry remains on the DM map. -->
+  <path d="M255 305v40M365 430h95M255 625v65M835 215h15M1015 260h30M1015 535h35M1015 760h35M930 625v65" fill="none" stroke="#b7a68b" stroke-width="30"/>
+  <path d="M365 345h140v-40M365 625h140v65M745 470h105M745 755h105" fill="none" stroke="#ad9b80" stroke-width="44" stroke-linecap="square"/>
+  <!-- Natural cavern and long central fissure. -->
+  <path d="M463 309q51 36 121-9 80 36 169 0l70 78-21 166 25 152-63 177q-82-39-145 18-68-28-124-7l-62-146 20-131-29-129z" fill="#8d816a" stroke="#3e3a32" stroke-width="18"/>
+  <path d="M618 316q-55 60-33 126 25 65-6 128-15 83 25 133-42 100 14 172h70q42-71 5-141 42-89 9-153 24-66-7-139 12-66-34-126z" fill="#23272a" stroke="#625e50" stroke-width="8"/>
+  <path d="M544 490h181M548 753h180" stroke="#674d36" stroke-width="42"/><path d="M544 490h181M548 753h180" stroke="#d1aa72" stroke-width="24" stroke-dasharray="12 8"/>
+  <path d="M530 885q75 45 165 0l-21 85H549z" fill="#85765e" stroke="#3e3a32" stroke-width="14"/>
+  <!-- Visible room dressing. -->
+  <rect x="1090" y="700" width="168" height="92" rx="10" fill="url(#water)" stroke="#746d5b" stroke-width="11"/>
+  <rect x="135" y="747" width="88" height="42" fill="#75614a" stroke="#493e31" stroke-width="9"/><rect x="251" y="747" width="75" height="42" fill="#75614a" stroke="#493e31" stroke-width="9"/>
+  <rect x="1055" y="150" width="100" height="28" fill="#615748"/><rect x="1055" y="336" width="100" height="28" fill="#615748"/>
+  <path d="M882 397h100M882 484h100M882 567h100" stroke="#796f5c" stroke-width="27"/><path d="M882 397h100M882 484h100M882 567h100" stroke="#d0bea0" stroke-width="11"/>
+  <circle cx="214" cy="477" r="34" fill="#7a5b3f" stroke="#443629" stroke-width="9"/><circle cx="313" cy="547" r="23" fill="#795b40" stroke="#443629" stroke-width="7"/>
+  <rect x="1050" y="520" width="155" height="45" fill="#736550" stroke="#483e32" stroke-width="9"/><path d="M1090 520v45M1140 520v45" stroke="#514536" stroke-width="7"/>
+  <path d="M450 300h70M825 345h40M980 880h65" fill="none" stroke="#cfba96" stroke-width="8" opacity=".5"/>
+</svg>

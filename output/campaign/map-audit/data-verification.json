@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "locationCount": 472,
+  "existingMapAssets": 153,
+  "preservedOriginalFiles": 125,
+  "registeredMapSceneIdsPreserved": 36,
+  "phoneRoutesBlocked": [
+    "/map-audit/Location-Register.json",
+    "/map-audit/Map-Register-Data.js",
+    "/map-audit/Map-Audit.html",
+    "/Campaign-Map-Register-UI.js",
+    "/world-maps/Sword-Coast-Campaign-Map.png",
+    "/output/campaign/map-audit/Location-Register.json"
+  ],
+  "phoneStateExcludesUnknownPrivateRegister": true,
+  "phoneTestMethod": "real Handler invoked in isolated in-memory harness, not physical phone or live server"
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<title>Settlement orientation diagram</title>
+<defs><pattern id="grain" width="23" height="29" patternUnits="userSpaceOnUse"><circle cx="7" cy="11" r="1" fill="#60775a" opacity=".08"/></pattern><pattern id="town-blocks" width="88" height="66" patternUnits="userSpaceOnUse"><rect width="88" height="66" fill="#b5a27c"/><g stroke="#625f51" stroke-width="1.5"><rect x="5" y="6" width="23" height="22" fill="#788084"/><rect x="36" y="4" width="34" height="23" fill="#a37959"/><rect x="9" y="39" width="29" height="21" fill="#9b8060"/><rect x="50" y="37" width="25" height="21" fill="#71807b"/></g><path d="M7 17H26M39 15H68M12 48H35M53 47H73" stroke="#c5b894" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="800" fill="#bac0a0"/><rect width="1200" height="800" fill="url(#grain)"/>
+<polyline points="0,650 172,532 351,472 560,496 758,586 982,577 1200,666" fill="none" stroke="#648b8e" stroke-width="75" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="58,415 94,239 186,100 355,142 487,211 564,350 550,450 414,435 295,462 198,535 75,516" fill="url(#town-blocks)" stroke="#71674f" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="150,294 180,148 278,147 329,211 294,276 231,307" fill="url(#town-blocks)" stroke="#8c7c60" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="575,228 749,165 883,240 1010,414 971,492 833,430 700,347" fill="url(#town-blocks)" stroke="#978d70" stroke-width="5" stroke-linejoin="round"/>
+<rect x="1040" y="565" width="38" height="100" rx="3" fill="#a99b7b" stroke="#665e50" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="930,430 1040,523 1060,620 1090,800" fill="none" stroke="#938363" stroke-width="27" stroke-linejoin="round"/><polyline points="930,430 1040,523 1060,620 1090,800" fill="none" stroke="#d1c398" stroke-width="19" stroke-linejoin="round"/>
+<g stroke="#5d6552" fill="none" opacity=".6"><path d="M1140 80V28m-10 17 10-18 10 18" stroke-width="3"/></g></svg>

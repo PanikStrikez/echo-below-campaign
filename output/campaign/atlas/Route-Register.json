@@ -1,0 +1,1442 @@
+{
+  "schemaVersion": 1,
+  "id": "sword-coast-atlas-routes",
+  "preparedAt": "2026-10-08",
+  "audience": "dm-only-preparation",
+  "coordinateReference": "Geography-Register.json",
+  "sourceDefinitions": "Geography-Register.json:sources",
+  "canonicalLocationRegister": "output/campaign/map-audit/Location-Register.json",
+  "rules": [
+    "Every from/to/via ID resolves to the canonical 467-location register.",
+    "distanceMiles is null unless directly supported by cited published text; never calculate physical distance from display coordinates.",
+    "The five-mile Goblin Trail and fifteen-mile Wave Echo Cave relation were visually verified on source pages. Blackford, Oakhurst and Blasingdell figures were checked in text extraction only.",
+    "Route lines are generalized geographic aids; they establish no automatic travel, discovery, safe passage or fixed encounter outcome.",
+    "Null geometry is intentional for unverified paths, hidden/city links, optional unplaced adventures and unresolved proposed approaches.",
+    "Walking Tower has a roaming area in Geography-Register.json and no route to a fixed point."
+  ],
+  "routes": [
+    {
+      "id": "route-luskan-neverwinter",
+      "name": "Luskan to Neverwinter",
+      "from": "loc-luskan",
+      "to": "loc-neverwinter",
+      "via": [],
+      "kind": "published-road",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            38.66,
+            13.57
+          ],
+          [
+            38.9,
+            14.7
+          ],
+          [
+            39.2,
+            17.0
+          ],
+          [
+            39.4,
+            18.6
+          ],
+          [
+            39.84,
+            20.55
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-high-road"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-neverwinter-leilon",
+      "name": "Neverwinter to Leilon",
+      "from": "loc-neverwinter",
+      "to": "loc-leilon",
+      "via": [],
+      "kind": "published-road",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            39.84,
+            20.55
+          ],
+          [
+            40.2,
+            21.2
+          ],
+          [
+            40.9,
+            21.4
+          ],
+          [
+            41.0,
+            23.0
+          ],
+          [
+            41.2,
+            25.0
+          ],
+          [
+            41.18,
+            26.87
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-high-road"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map",
+        "lmop-regional-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Leilon endpoint transferred approximately from adventure map. High Road alignment is generalized.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-leilon-waterdeep",
+      "name": "Leilon to Waterdeep",
+      "from": "loc-leilon",
+      "to": "loc-waterdeep",
+      "via": [
+        "loc-thornhold"
+      ],
+      "kind": "published-road",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            41.18,
+            26.87
+          ],
+          [
+            42.0,
+            27.4
+          ],
+          [
+            42.8,
+            28.1
+          ],
+          [
+            42.8,
+            29.0
+          ],
+          [
+            42.3,
+            30.1
+          ],
+          [
+            42.16,
+            31.6
+          ],
+          [
+            42.9,
+            33.3
+          ],
+          [
+            43.3,
+            34.5
+          ],
+          [
+            44.2,
+            35.9
+          ],
+          [
+            45.0,
+            36.4
+          ],
+          [
+            45.2,
+            37.12
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-high-road"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map",
+        "lmop-regional-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Normal High Road journey around Mere of Dead Men and Sword Mountains. No mileage or guaranteed travel duration asserted.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-luskan-mirabar",
+      "name": "Luskan to Mirabar",
+      "from": "loc-luskan",
+      "to": "loc-mirabar",
+      "via": [],
+      "kind": "published-road",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            38.66,
+            13.57
+          ],
+          [
+            39.2,
+            12.9
+          ],
+          [
+            40.1,
+            12.0
+          ],
+          [
+            41.6,
+            11.7
+          ],
+          [
+            42.6,
+            10.7
+          ],
+          [
+            43.44,
+            10.14
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-blackford-road"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-luskan-blackford-crossing",
+      "name": "Luskan to Blackford Crossing",
+      "from": "loc-luskan",
+      "to": "loc-blackford-crossing",
+      "via": [],
+      "kind": "published-geographic-relation",
+      "placementStatus": "published",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": 30,
+      "distanceIsApproximate": true,
+      "distanceBasis": "published-text",
+      "distanceConfidence": "verified-extracted-text",
+      "sourceIds": [
+        "scag-blackford",
+        "official-sword-coast-map"
+      ],
+      "confidence": "high-relation-medium-number",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Source gives crossing some thirty miles upstream of Luskan. This is a river-relative distance; not guaranteed road mileage. Route geometry omitted to avoid conflating the road approach with upstream measurement.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-mirabar-longsaddle",
+      "name": "Mirabar to Longsaddle",
+      "from": "loc-mirabar",
+      "to": "loc-longsaddle",
+      "via": [],
+      "kind": "published-road",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            43.44,
+            10.14
+          ],
+          [
+            44.3,
+            10.8
+          ],
+          [
+            44.1,
+            12.7
+          ],
+          [
+            44.5,
+            13.9
+          ],
+          [
+            45.0,
+            14.5
+          ],
+          [
+            45.28,
+            17.52
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-long-road"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-longsaddle-amphail",
+      "name": "Longsaddle to Amphail",
+      "from": "loc-longsaddle",
+      "to": "loc-amphail",
+      "via": [],
+      "kind": "published-road",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            45.28,
+            17.52
+          ],
+          [
+            45.5,
+            19.0
+          ],
+          [
+            46.1,
+            20.0
+          ],
+          [
+            46.6,
+            22.2
+          ],
+          [
+            46.7,
+            23.8
+          ],
+          [
+            46.3,
+            26.2
+          ],
+          [
+            46.0,
+            28.1
+          ],
+          [
+            46.1,
+            30.0
+          ],
+          [
+            45.8,
+            32.0
+          ],
+          [
+            45.36,
+            33.57
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-long-road"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Passes Triboar, which is presently a null-ID geographic anchor in the source location register. No invalid route endpoint has been invented.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-amphail-waterdeep",
+      "name": "Amphail to Waterdeep",
+      "from": "loc-amphail",
+      "to": "loc-waterdeep",
+      "via": [],
+      "kind": "published-road",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            45.36,
+            33.57
+          ],
+          [
+            44.9,
+            35.4
+          ],
+          [
+            45.2,
+            37.12
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-long-road"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-silverymoon-sundabar",
+      "name": "Silverymoon to Sundabar",
+      "from": "loc-silverymoon",
+      "to": "loc-sundabar",
+      "via": [],
+      "kind": "published-road",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            55.48,
+            15.51
+          ],
+          [
+            56.0,
+            14.4
+          ],
+          [
+            57.4,
+            13.9
+          ],
+          [
+            58.8,
+            13.9
+          ],
+          [
+            59.6,
+            14.4
+          ],
+          [
+            59.52,
+            14.93
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-evermoor-way"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Follows visible red road in reference. Does not assert an unverified road name for this segment.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-waterdeep-daggerford",
+      "name": "Waterdeep to Daggerford",
+      "from": "loc-waterdeep",
+      "to": "loc-daggerford",
+      "via": [],
+      "kind": "published-road",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            45.2,
+            37.12
+          ],
+          [
+            45.9,
+            37.4
+          ],
+          [
+            46.8,
+            38.6
+          ],
+          [
+            47.8,
+            39.8
+          ],
+          [
+            48.39,
+            40.48
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-trade-way-north"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-daggerford-dragonspear",
+      "name": "Daggerford to Dragonspear Castle",
+      "from": "loc-daggerford",
+      "to": "loc-dragonspear-castle",
+      "via": [],
+      "kind": "published-road",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            48.39,
+            40.48
+          ],
+          [
+            49.2,
+            42.6
+          ],
+          [
+            50.0,
+            44.0
+          ],
+          [
+            51.5,
+            45.2
+          ],
+          [
+            52.5,
+            46.3
+          ],
+          [
+            52.9,
+            48.0
+          ],
+          [
+            53.82,
+            48.92
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-trade-way-north"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Visible Trade Way segment. Reference line does not establish safety, condition or encounter outcome.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-dragonspear-boareskyr",
+      "name": "Dragonspear to Boareskyr Bridge",
+      "from": "loc-dragonspear-castle",
+      "to": "loc-boareskyr-bridge",
+      "via": [],
+      "kind": "unresolved-road-connection",
+      "placementStatus": "unverified-connection",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "low",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Potential regional itinerary. The master reference does not show a continuous red road across this gap; leave connector untraced until source verifies it.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-boareskyr-scornubel",
+      "name": "Boareskyr Bridge to Scornubel",
+      "from": "loc-boareskyr-bridge",
+      "to": "loc-scornubel",
+      "via": [],
+      "kind": "partly-mapped-road-corridor",
+      "placementStatus": "published",
+      "geometry": null,
+      "geometryFeatureIds": [
+        "road-trade-way-south"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium-corridor-low-connector",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Trade Way southern segment is visible from south of bridge region to Scornubel. Endpoint connector to bridge is untraced, so route has no continuous polyline.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-daggerford-secomber",
+      "name": "Daggerford to Secomber along Delimbiyr corridor",
+      "from": "loc-daggerford",
+      "to": "loc-secomber",
+      "via": [],
+      "kind": "river-corridor",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            48.39,
+            40.48
+          ],
+          [
+            48.5,
+            40.5
+          ],
+          [
+            49.2,
+            40.3
+          ],
+          [
+            50.0,
+            40.2
+          ],
+          [
+            50.5,
+            39.5
+          ],
+          [
+            51.4,
+            39.0
+          ],
+          [
+            51.7,
+            38.6
+          ],
+          [
+            52.48,
+            37.95
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "river-delimbiyr"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Geographic river corridor only. Does not assert navigability, towpath, bridge access or a direct road.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-baldurs-gate-elturel",
+      "name": "Baldur’s Gate to Elturel along Chionthar",
+      "from": "loc-baldurs-gate",
+      "to": "loc-elturel",
+      "via": [],
+      "kind": "river-corridor",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            52.47,
+            64.65
+          ],
+          [
+            53.8,
+            64.2
+          ],
+          [
+            54.6,
+            63.5
+          ],
+          [
+            55.5,
+            63.2
+          ],
+          [
+            56.8,
+            62.5
+          ],
+          [
+            57.7,
+            62.9
+          ],
+          [
+            58.8,
+            62.8
+          ],
+          [
+            59.48,
+            62.31
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "river-chionthar"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "General river course; availability of boat passage and exact navigation distance not verified.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-baldurs-gate-candlekeep",
+      "name": "Baldur’s Gate to Candlekeep approach",
+      "from": "loc-baldurs-gate",
+      "to": "loc-candlekeep",
+      "via": [],
+      "kind": "road-plus-unverified-connector",
+      "placementStatus": "published",
+      "geometry": null,
+      "geometryFeatureIds": [
+        "road-coast-way"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium-road-low-last-approach",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Coast Way is visible inland of Candlekeep. The final westward access road is absent from this reference, so no continuous route geometry or mileage is claimed.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-neverwinter-phandalin",
+      "name": "Neverwinter to Phandalin caravan itinerary",
+      "from": "loc-neverwinter",
+      "to": "loc-phandalin",
+      "via": [],
+      "kind": "published-road-itinerary",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            39.84,
+            20.55
+          ],
+          [
+            40.2,
+            21.2
+          ],
+          [
+            40.9,
+            21.4
+          ],
+          [
+            41.0,
+            23.0
+          ],
+          [
+            41.2,
+            25.0
+          ],
+          [
+            41.12,
+            24.72
+          ],
+          [
+            41.55,
+            24.79
+          ],
+          [
+            42.15,
+            24.54
+          ],
+          [
+            42.18,
+            25.28
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-high-road",
+        "road-triboar-trail",
+        "road-phandalin-spur"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "lmop-road",
+        "lmop-regional-map",
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "South on High Road, east on Triboar Trail, then Phandalin approach. Adventure describes a journey of several days; do not lock an exact arrival day from this schematic.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-phandalin-leilon",
+      "name": "Phandalin to Leilon via High Road",
+      "from": "loc-phandalin",
+      "to": "loc-leilon",
+      "via": [],
+      "kind": "published-road-network-itinerary",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            42.18,
+            25.28
+          ],
+          [
+            42.15,
+            24.54
+          ],
+          [
+            41.55,
+            24.79
+          ],
+          [
+            41.12,
+            24.72
+          ],
+          [
+            41.2,
+            25.0
+          ],
+          [
+            41.18,
+            26.87
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-phandalin-spur",
+        "road-triboar-trail",
+        "road-high-road"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "lmop-regional-map",
+        "official-sword-coast-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Approximate network itinerary. Source supports roads and endpoints, not an exact mileage.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-ambush-hideout",
+      "name": "Ambush site to Cragmaw Hideout",
+      "from": "loc-triboar-ambush-site",
+      "to": "loc-cragmaw-hideout",
+      "via": [],
+      "kind": "published-goblin-trail",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            41.55,
+            24.79
+          ],
+          [
+            41.4,
+            24.65
+          ],
+          [
+            41.32,
+            24.45
+          ],
+          [
+            41.24,
+            24.29
+          ]
+        ]
+      },
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": 5,
+      "distanceIsApproximate": false,
+      "distanceBasis": "published-text",
+      "distanceConfidence": "visually-verified",
+      "sourceIds": [
+        "lmop-goblin-trail",
+        "lmop-regional-map"
+      ],
+      "confidence": "high-text-low-master-geometry",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Five miles northwest in published text. Polyline is illustrative: exact ambush coordinate and turns are not mapped. Use the source distance instead of measuring the displayed line.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-ambush-phandalin",
+      "name": "Ambush site to Phandalin",
+      "from": "loc-triboar-ambush-site",
+      "to": "loc-phandalin",
+      "via": [],
+      "kind": "published-travel-relation",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            41.55,
+            24.79
+          ],
+          [
+            42.15,
+            24.54
+          ],
+          [
+            42.18,
+            25.28
+          ]
+        ]
+      },
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "lmop-road",
+        "lmop-regional-map"
+      ],
+      "confidence": "high-text-low-master-geometry",
+      "travelTimeText": "About half a day remains to Phandalin at the ambush, as adventure opening describes.",
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Source places ambush when still about half a day from Phandalin. No miles supplied.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-phandalin-wave-echo",
+      "name": "Phandalin to Wave Echo Cave",
+      "from": "loc-phandalin",
+      "to": "loc-wave-echo-cave",
+      "via": [],
+      "kind": "published-travel-relation",
+      "placementStatus": "published",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": 15,
+      "distanceIsApproximate": false,
+      "distanceBasis": "published-text",
+      "distanceConfidence": "visually-verified",
+      "sourceIds": [
+        "lmop-wave-echo",
+        "lmop-regional-map"
+      ],
+      "confidence": "high-text-medium-endpoints",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Published text says fifteen miles east, in deep vales of Sword Mountains. It does not supply a surveyed path; no straight line or invented trail is supplied.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-phandalin-conyberry",
+      "name": "Phandalin to Conyberry via Triboar Trail",
+      "from": "loc-phandalin",
+      "to": "loc-conyberry",
+      "via": [],
+      "kind": "published-trail-network-itinerary",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            42.18,
+            25.28
+          ],
+          [
+            42.15,
+            24.54
+          ],
+          [
+            42.8,
+            24.2
+          ],
+          [
+            43.0,
+            23.5
+          ],
+          [
+            43.4,
+            22.1
+          ],
+          [
+            43.98,
+            21.28
+          ]
+        ]
+      },
+      "geometryFeatureIds": [
+        "road-triboar-trail"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "lmop-regional-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Approximate adventure-map transfer. No numeric distance verified.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-conyberry-agatha",
+      "name": "Conyberry to Agatha’s Lair",
+      "from": "loc-conyberry",
+      "to": "loc-agatha-lair",
+      "via": [],
+      "kind": "published-forest-trail",
+      "placementStatus": "published",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            43.98,
+            21.28
+          ],
+          [
+            43.85,
+            21.2
+          ]
+        ]
+      },
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "lmop-agatha",
+        "lmop-regional-map"
+      ],
+      "confidence": "high-text-medium-endpoints",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Old trail northwest from ruined Conyberry; source says a few miles, retained as text rather than guessed number.",
+      "geometryValidation": "Generalized visible source-road/course; see referenced feature caveats."
+    },
+    {
+      "id": "route-neverwinter-thundertree",
+      "name": "Neverwinter to Thundertree vicinity",
+      "from": "loc-neverwinter",
+      "to": "loc-thundertree",
+      "via": [],
+      "kind": "river-and-wood-edge-corridor",
+      "placementStatus": "published",
+      "geometry": null,
+      "geometryFeatureIds": [
+        "river-neverwinter-river"
+      ],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "lmop-thundertree",
+        "lmop-regional-map"
+      ],
+      "confidence": "medium",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Thundertree is near where river emerges from wood. No specific road, river navigability or measured journey verified.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-oakhurst-sunless-citadel",
+      "name": "Oakhurst to Sunless Citadel",
+      "from": "loc-oakhurst",
+      "to": "loc-sunless-citadel",
+      "via": [],
+      "kind": "optional-adventure-route",
+      "placementStatus": "book-suggested-adaptation-not-adopted",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": 7,
+      "distanceIsApproximate": false,
+      "distanceBasis": "published-text",
+      "distanceConfidence": "verified-extracted-text",
+      "sourceIds": [
+        "tales-oakhurst"
+      ],
+      "confidence": "high-extracted-distance-unplaced",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Published adventure distance; its placement into Forgotten Realms is optional. Endpoints intentionally have no master coordinates. Does not establish a canonical Sword Coast town or current campaign route.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-blasingdell-stone-tooth",
+      "name": "Blasingdell to Stone Tooth / Khundrukar approach",
+      "from": "loc-blasingdell",
+      "to": "loc-the-stone-tooth",
+      "via": [],
+      "kind": "optional-adventure-route",
+      "placementStatus": "book-suggested-adaptation-not-adopted",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": 30,
+      "distanceIsApproximate": true,
+      "distanceBasis": "published-text",
+      "distanceConfidence": "verified-extracted-text",
+      "sourceIds": [
+        "tales-blasingdell"
+      ],
+      "confidence": "high-extracted-distance-unplaced",
+      "travelTimeText": "Three days on foot or two days on horseback, as the adventure describes for its rugged terrain.",
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Blasingdell about thirty miles south of Stone Tooth. Published relative route, optional campaign placement; no fixed Sword Coast pin.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-yawning-portal-undermountain",
+      "name": "Yawning Portal to Undermountain",
+      "from": "loc-yawning-portal",
+      "to": "loc-undermountain",
+      "via": [],
+      "kind": "city-subterranean-entry",
+      "placementStatus": "published",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "campaign-nine-placement"
+      ],
+      "confidence": "published-connection-regional-geometry-not-applicable",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Existing canonical city/dungeon connection; regional geometry deliberately omitted. Use published city and dungeon maps for the entry.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-second-margin-silent-library",
+      "name": "Second Margin to Silent Library",
+      "from": "loc-second-margin",
+      "to": "loc-silent-library",
+      "via": [],
+      "kind": "custom-subterranean-access",
+      "placementStatus": "custom-campaign-proposal",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "campaign-nine-placement"
+      ],
+      "confidence": "proposed",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Concealed access is campaign preparation. Exact access conditions and layout belong on local maps; no world-road line or discovery asserted.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-leilon-drowned-observatory",
+      "name": "Leilon to Drowned Observatory proposal",
+      "from": "loc-leilon",
+      "to": "loc-drowned-observatory",
+      "via": [],
+      "kind": "custom-boat-and-dive-approach",
+      "placementStatus": "custom-campaign-proposal",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            41.18,
+            26.87
+          ],
+          [
+            40.5,
+            26.9
+          ],
+          [
+            39.4,
+            26.75
+          ]
+        ]
+      },
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "campaign-nine-placement",
+        "official-sword-coast-map"
+      ],
+      "confidence": "proposed",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Indicative offshore approach only. Landward dock/launch site is open; boat journey and dive required. Exact site, navigable channel and distance unresolved.",
+      "geometryValidation": "Approximate transferred adventure corridor or custom preparation route; not a surveyed track."
+    },
+    {
+      "id": "route-daggerford-dead-gods-scar",
+      "name": "Daggerford to Dead God’s Scar proposal",
+      "from": "loc-daggerford",
+      "to": "loc-dead-gods-scar",
+      "via": [],
+      "kind": "custom-moor-expedition",
+      "placementStatus": "custom-campaign-proposal",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "campaign-nine-placement",
+        "official-sword-coast-map"
+      ],
+      "confidence": "proposed",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "General expedition into western High Moor, east of Misty Forest. Exact pass, river crossings, trail and travel time unresolved.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-icewind-frozen-door",
+      "name": "Icewind Dale to Frozen Door approach area",
+      "from": "loc-icewind-dale",
+      "to": "loc-frozen-door",
+      "via": [],
+      "kind": "custom-glacier-expedition",
+      "placementStatus": "custom-campaign-proposal",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "campaign-nine-placement",
+        "official-sword-coast-map"
+      ],
+      "confidence": "proposed",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Southwest Reghed Glacier approach area. No exact door or safe route; normal expedition required.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-star-mounts-broken-star",
+      "name": "Star Mounts to Broken Star approach",
+      "from": "loc-star-mounts",
+      "to": "loc-broken-star",
+      "via": [],
+      "kind": "conditional-terrestrial-planar-approach",
+      "placementStatus": "custom-campaign-proposal",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "campaign-nine-placement",
+        "official-sword-coast-map"
+      ],
+      "confidence": "proposed",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Terrestrial approach area only. Destination partly planar; access conditions unresolved. Not a known portal, fixed shortcut or automatic travel.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    },
+    {
+      "id": "route-loudwater-hollow-mountain",
+      "name": "Loudwater to Hollow Mountain proposal",
+      "from": "loc-loudwater",
+      "to": "loc-hollow-mountain",
+      "via": [],
+      "kind": "unresolved-custom-mountain-expedition",
+      "placementStatus": "custom-campaign-proposal",
+      "geometry": null,
+      "geometryFeatureIds": [],
+      "coordinateSystem": "image-percent-top-left",
+      "distanceMiles": null,
+      "distanceIsApproximate": null,
+      "distanceBasis": "unknown; not inferred from image pixels",
+      "distanceConfidence": "unknown",
+      "sourceIds": [
+        "campaign-nine-placement",
+        "official-sword-coast-map"
+      ],
+      "confidence": "low-unresolved",
+      "travelTimeText": null,
+      "normalTravelRequired": true,
+      "discoveryStateChange": null,
+      "notes": "Intended approach to a provisional southern Greypeaks peak northeast of Loudwater. Loudwater master coordinate and exact peak remain unverified; no line, mileage or travel time asserted.",
+      "geometryValidation": "No verified master-coordinate route geometry supplied."
+    }
+  ],
+  "validation": {
+    "routeCount": 33,
+    "knownNumericDistances": 5,
+    "nullDistances": 28,
+    "allEndpointIdsResolve": true,
+    "pixelDerivedDistances": 0,
+    "geometryEndpointsChecked": true
+  }
+}

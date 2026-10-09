@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-label="Sleeping Giant tap house battlefield player-safe battle map">
+<defs>
+<pattern id="grass" width="118" height="107" patternUnits="userSpaceOnUse"><rect width="118" height="107" fill="#68775d"/><path d="M8 24l7-8m5 10l6-6M63 20l5-9m4 11l8-9M95 73l9-8m-37 22l5-9M21 77l7-8m4 11l5-7" stroke="#829070" stroke-width="2" opacity=".65"/><circle cx="49" cy="54" r="3" fill="#536c4e"/><circle cx="108" cy="37" r="3" fill="#536c4e"/></pattern>
+<pattern id="dirt" width="95" height="90" patternUnits="userSpaceOnUse"><rect width="95" height="90" fill="#95856a"/><path d="M9 14l17 3m35-9l13 6M24 66l12-6m33 16l13-4" stroke="#b3a182" stroke-width="3" opacity=".47"/><circle cx="48" cy="39" r="3" fill="#746a59"/></pattern>
+<pattern id="stone" width="122" height="102" patternUnits="userSpaceOnUse"><rect width="122" height="102" fill="#a99b82"/><path d="M0 49h122M44 0v49m48 0v49M23 49v53m56-53v53" fill="none" stroke="#807966" stroke-width="2.4" opacity=".48"/><path d="M13 20l18-4m48 62l15 3" fill="none" stroke="#d1bea0" stroke-width="2" opacity=".45"/></pattern>
+<pattern id="rock" width="110" height="96" patternUnits="userSpaceOnUse"><rect width="110" height="96" fill="#393b38"/><path d="M4 16l24-10 24 15 23-11 28 16M6 72l24 10 27-15 21 9 27-15" fill="none" stroke="#55594f" stroke-width="3" opacity=".65"/></pattern>
+<pattern id="wood" width="48" height="100" patternUnits="userSpaceOnUse"><rect width="48" height="100" fill="#83694c"/><path d="M0 0v100M23 0v100M47 0v100" stroke="#57432f" stroke-width="4"/><path d="M7 23v44m33-59v54" stroke="#a5845b" stroke-width="2" opacity=".6"/></pattern>
+<pattern id="water" width="110" height="80" patternUnits="userSpaceOnUse"><rect width="110" height="80" fill="#3e6570"/><path d="M5 16q23-10 46 0t53 0M9 55q23-10 46 0t50 0" fill="none" stroke="#95b3ad" stroke-width="3" opacity=".52"/></pattern>
+<pattern id="web" width="70" height="70" patternUnits="userSpaceOnUse"><path d="M0 0l70 70M70 0L0 70M35 0v70M0 35h70" stroke="#d6d1bc" stroke-width="2" opacity=".5" fill="none"/></pattern>
+<radialGradient id="canopy"><stop stop-color="#8a9a73"/><stop offset=".62" stop-color="#526a4e"/><stop offset="1" stop-color="#344e3c"/></radialGradient>
+<radialGradient id="fire"><stop stop-color="#ffda83"/><stop offset=".4" stop-color="#d78637"/><stop offset="1" stop-color="#70432c"/></radialGradient>
+</defs>
+<rect width="1500" height="1000" fill="url(#rock)"/>
+<rect x="0" y="0" width="1500" height="1000" rx="0" fill="url(#dirt)" stroke="none" stroke-width="0"/>
+<rect x="160" y="115" width="1120" height="720" rx="0" fill="url(#stone)" stroke="#30332f" stroke-width="14"/>
+<rect x="160" y="765" width="1120" height="80" rx="0" fill="url(#wood)" stroke="#403b30" stroke-width="9"/>
+<path d="M860 115L860 835" fill="none" stroke="#363a35" stroke-width="18" stroke-linecap="round" />
+<rect x="848" y="424.0" width="24" height="92" rx="0" fill="url(#stone)" stroke="none" stroke-width="0"/>
+<path d="M845 424.0L845 516.0" fill="none" stroke="#5e523e" stroke-width="4" stroke-linecap="round" />
+<rect x="376.0" y="823" width="108" height="24" rx="0" fill="url(#stone)" stroke="none" stroke-width="0"/>
+<path d="M376.0 820L484.0 820" fill="none" stroke="#5e523e" stroke-width="4" stroke-linecap="round" />
+<rect x="990" y="170" width="230" height="410" rx="0" fill="url(#wood)" stroke="#423729" stroke-width="8"/>
+<rect x="1035" y="186" width="145" height="65" rx="0" fill="#6d5138" stroke="#3b3128" stroke-width="5"/>
+<g transform="rotate(0 365 295)"><rect x="290.0" y="253.0" width="150" height="84" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="303.0" cy="265.0" r="4" fill="#3c3125"/><circle cx="427.0" cy="325.0" r="4" fill="#3c3125"/></g>
+<rect x="253" y="269" width="32" height="52" rx="0" fill="#5d4a36" stroke="#3d342a" stroke-width="3"/>
+<rect x="445" y="269" width="32" height="52" rx="0" fill="#5d4a36" stroke="#3d342a" stroke-width="3"/>
+<g transform="rotate(0 610 305)"><rect x="535.0" y="263.0" width="150" height="84" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="548.0" cy="275.0" r="4" fill="#3c3125"/><circle cx="672.0" cy="335.0" r="4" fill="#3c3125"/></g>
+<rect x="498" y="279" width="32" height="52" rx="0" fill="#5d4a36" stroke="#3d342a" stroke-width="3"/>
+<rect x="690" y="279" width="32" height="52" rx="0" fill="#5d4a36" stroke="#3d342a" stroke-width="3"/>
+<g transform="rotate(0 360 560)"><rect x="285.0" y="518.0" width="150" height="84" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="298.0" cy="530.0" r="4" fill="#3c3125"/><circle cx="422.0" cy="590.0" r="4" fill="#3c3125"/></g>
+<rect x="248" y="534" width="32" height="52" rx="0" fill="#5d4a36" stroke="#3d342a" stroke-width="3"/>
+<rect x="440" y="534" width="32" height="52" rx="0" fill="#5d4a36" stroke="#3d342a" stroke-width="3"/>
+<g transform="rotate(0 615 580)"><rect x="540.0" y="538.0" width="150" height="84" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="553.0" cy="550.0" r="4" fill="#3c3125"/><circle cx="677.0" cy="610.0" r="4" fill="#3c3125"/></g>
+<rect x="503" y="554" width="32" height="52" rx="0" fill="#5d4a36" stroke="#3d342a" stroke-width="3"/>
+<rect x="695" y="554" width="32" height="52" rx="0" fill="#5d4a36" stroke="#3d342a" stroke-width="3"/>
+<circle cx="1110" cy="705" r="71" fill="#49453d" stroke="#353d39" stroke-width="4"/>
+<circle cx="1110" cy="705" r="59" fill="url(#fire)" stroke="#ac6736" stroke-width="3"/>
+<path d="M1098 711q6-25 13-13 6-23 18 11-6 14-18 14z" fill="#ffd37e" stroke="#a8562e" stroke-width="2" stroke-linejoin="round" />
+<circle cx="950" cy="675" r="25" fill="#7b6246" stroke="#40372d" stroke-width="5"/>
+<circle cx="950" cy="675" r="15.5" fill="none" stroke="#b69a6e" stroke-width="3"/>
+<circle cx="1240" cy="660" r="25" fill="#7b6246" stroke="#40372d" stroke-width="5"/>
+<circle cx="1240" cy="660" r="15.5" fill="none" stroke="#b69a6e" stroke-width="3"/>
+<circle cx="215" cy="185" r="20" fill="#7b6246" stroke="#40372d" stroke-width="5"/>
+<circle cx="215" cy="185" r="12.4" fill="none" stroke="#b69a6e" stroke-width="3"/>
+<circle cx="1215" cy="160" r="20" fill="#7b6246" stroke="#40372d" stroke-width="5"/>
+<circle cx="1215" cy="160" r="12.4" fill="none" stroke="#b69a6e" stroke-width="3"/>
+<circle cx="216" cy="708" r="20" fill="#7b6246" stroke="#40372d" stroke-width="5"/>
+<circle cx="216" cy="708" r="12.4" fill="none" stroke="#b69a6e" stroke-width="3"/>
+<rect x="7" y="7" width="1486" height="986" fill="none" stroke="#232a27" stroke-width="14"/>
+</svg>

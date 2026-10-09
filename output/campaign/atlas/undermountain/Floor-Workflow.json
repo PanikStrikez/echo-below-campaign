@@ -1,0 +1,1516 @@
+{
+  "schemaVersion": 1,
+  "id": "undermountain-floor-workflow",
+  "audience": "DM-only",
+  "status": "private preparation; not an import or discovered route register",
+  "sourcePdf": "sources/pdfcoffee.com_dungeon-of-the-mad-mage-29112018-pdf-free.pdf",
+  "sourceSha256": "21cd086eec7ba825c38d9f309ea9d67e948fe396012d425512097a774e561edc",
+  "campaignStatePolicy": "No visit, contract acceptance, clear room, reward, NPC agreement or character revelation inferred. Current actual state must come from approved campaign records.",
+  "sourceAudit": {
+    "visualPdfPages": [
+      16,
+      30,
+      46,
+      304,
+      308,
+      310
+    ],
+    "visualPrintedPages": [
+      15,
+      29,
+      45,
+      303,
+      307,
+      309
+    ],
+    "textCoverage": "Focused general rules, Level 1 hook and topology keys, Level 2 and Level 3 transit and refuge keys, and Skullport pp. 303–309; not a complete page-by-page book review.",
+    "notVerified": [
+      "Continuous named-pass junctions between Level 3 and Skullport",
+      "Every room dimension and door on Levels 2–3",
+      "All receiving rooms on Level 4 and below beyond the origin key’s destination references",
+      "Current live party location, resources or NPC availability",
+      "Exact room for the custom Level 2 research fragment or Level 3 recognition scene"
+    ]
+  },
+  "generalConstraints": [
+    {
+      "note": "General interlevel and exit teleportation and planar travel fail except wish, published gates and explicit exceptions. A creature returning from the Border Ethereal is pulled back into the dungeon; extradimensional spaces do not bypass these limits.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 10,
+          "pdfPage": 11,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "note": "Jhesiyra’s prerequisites apply to gates. Conventional stairs remain physical routes with warnings. Any DM override is explicit.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 10,
+          "pdfPage": 11,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "note": "Magically protected walls, floors and ceilings cannot be shaped by ordinary spells. Doors and furnishings are not protected. One-way doors need knock or similar magic from the wrong side; the ordinary secret-door detection DC is 20 unless its key overrides it.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 11,
+          "pdfPage": 12,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "note": "Map-edge tunnels to expanded dungeons are optional authoring boundaries, not verified through-routes.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 12,
+          "pdfPage": 13,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    }
+  ],
+  "preparedHooks": [
+    {
+      "packageId": "map",
+      "title": "A Map Worth Paying For",
+      "questId": "route",
+      "routeLocationId": "loc-undermountain-first-survey-route",
+      "classification": "approved custom preparation; outcomes pending",
+      "requiredKeys": [
+        "1",
+        "2a",
+        "2b",
+        "6a threshold"
+      ],
+      "path": "1 south exit → 2a → 2b north stairs → north corridor east branch → 6a threshold",
+      "optionalKeys": [
+        "3",
+        "4",
+        "5",
+        "22"
+      ],
+      "objective": "Bounded survey; accurate stopping point/refusal is useful. No defeat/clearance requirement.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 14,
+          "pdfPage": 15,
+          "roomKeys": [
+            "1",
+            "2a"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 15,
+          "pdfPage": 16,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 16,
+          "pdfPage": 17,
+          "roomKeys": [
+            "2b"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 17,
+          "pdfPage": 18,
+          "roomKeys": [
+            "6a"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "packageId": "instrument",
+      "title": "The Missing Instrument",
+      "questId": "instrument",
+      "routeLocationId": "loc-undermountain-instrument-route",
+      "classification": "approved custom preparation; placement/custody must be chosen",
+      "requiredKeys": [
+        "1",
+        "2a",
+        "2b",
+        "25a"
+      ],
+      "optionalKeys": [
+        "25b",
+        "24",
+        "26c"
+      ],
+      "path": "1 → 2a → 2b south stairs → 25a; optional five-foot-wide, five-foot-high tunnel → 25b",
+      "customObject": "Ninepin clinometer N9-14; mundane, not published treasure",
+      "placementGuard": "Only seed unexplored 25a. If previously searched, use its recorded carrier or a city salvage inquiry; never duplicate the object or invent a missed find. Gilded Compass custody requires an actual path and timeline.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 15,
+          "pdfPage": 16,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 22,
+          "pdfPage": 23,
+          "roomKeys": [
+            "25a",
+            "25b"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "packageId": "passage",
+      "title": "Terms of Passage",
+      "questId": "passage",
+      "routeLocationId": "loc-undermountain-passage-route",
+      "classification": "approved custom preparation; negotiated outcomes pending",
+      "requiredKeys": [
+        "1",
+        "2a",
+        "2b",
+        "25a"
+      ],
+      "optionalKeys": [
+        "6a",
+        "8",
+        "25b",
+        "24b",
+        "24a",
+        "23a",
+        "23b"
+      ],
+      "path": "Trial southern lane: 1 → 2a → 2b → 25a. Optional Guild approach: 25b west door → western unkeyed passage → 24b south door → 24a north exit → southern 23 corridor → 23a/b. Area 23c is a side room.",
+      "agreementGuard": "Northern 6a rendezvous is optional; Undertakers have no automatic toll on the southern lane. The bugbears’ published golem bargain is dishonest. The keyed exception concerns surviving goblins after all their relevant bugbear and intellect-devourer leaders are removed.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 13,
+          "pdfPage": 14,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 15,
+          "pdfPage": 16,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 21,
+          "pdfPage": 22,
+          "roomKeys": [
+            "23",
+            "24"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 22,
+          "pdfPage": 23,
+          "roomKeys": [
+            "25"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "packageId": null,
+      "title": "Floor 2 research fragment",
+      "questId": null,
+      "classification": "approved broad custom overlay; exact room unassigned",
+      "floor": 2,
+      "roomKey": null,
+      "content": "Damaged radial diagram with RESONANCE OBSERVED; preserves uncertainty.",
+      "guard": "Not a printed find. Choose a plausible unsearched room or custodian before future preparation. Do not relocate a published room to Level 1 or assert possession.",
+      "campaignRefs": [
+        "Echo-Below-Campaign-Outline.md:92",
+        "Undermountain-Roadmap.md:16",
+        "Undermountain-Arc-Data.js:instrument"
+      ]
+    },
+    {
+      "packageId": null,
+      "title": "Sargauth recognition / Skullport buyers",
+      "classification": "approved broad custom overlay; speaker and exact room unassigned",
+      "floor": 3,
+      "roomKey": null,
+      "guard": "Recognition yields a lead, not an omniscient faction identity. A Mara reunion requires her prior Waterdeep introduction and credible travel; no NPC knows private items without a source or disclosure.",
+      "campaignRefs": [
+        "Undermountain-Roadmap.md:17",
+        "Undermountain-Roadmap.md:19"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "um-well-descent",
+      "kind": "shaft",
+      "fromEndpoint": {
+        "floor": "Waterdeep",
+        "roomKey": null,
+        "locationId": "loc-yawning-portal"
+      },
+      "toEndpoint": {
+        "floor": 1,
+        "roomKey": "1",
+        "locationId": "loc-undermountain-dungeon-level"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 6,
+          "pdfPage": 7,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 14,
+          "pdfPage": 15,
+          "roomKeys": [
+            "1"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 15,
+          "pdfPage": 16,
+          "roomKeys": [
+            "1"
+          ],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "Portal winch is the prepared entry/return. One passenger at a time; fee and return payment follow the published procedure and actual arrangement. No automatic transfer or discovery."
+    },
+    {
+      "id": "um1-to-um2",
+      "kind": "stairs",
+      "fromEndpoint": {
+        "floor": 1,
+        "roomKey": "39a",
+        "locationId": "loc-undermountain-dungeon-level"
+      },
+      "toEndpoint": {
+        "floor": 2,
+        "roomKey": "1a approach",
+        "locationId": "loc-undermountain-level-2"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 26,
+          "pdfPage": 27,
+          "roomKeys": [
+            "39a"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 15,
+          "pdfPage": 16,
+          "roomKeys": [
+            "39a"
+          ],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 29,
+          "pdfPage": 30,
+          "roomKeys": [
+            "1a approach"
+          ],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "Stairs west of the two-headed statue descend to Level 2. Approach defenders and secret doors remain subject to play.",
+      "verticalDescentFeet": 200,
+      "travelLengthFeet": null
+    },
+    {
+      "id": "um1-mirror-to-um10",
+      "kind": "magic-gate",
+      "fromEndpoint": {
+        "floor": 1,
+        "roomKey": "26d",
+        "locationId": "loc-undermountain-dungeon-level"
+      },
+      "toEndpoint": {
+        "floor": 10,
+        "roomKey": "8",
+        "locationId": "loc-undermountain-level-10"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 22,
+          "pdfPage": 23,
+          "roomKeys": [
+            "26d"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 10,
+          "pdfPage": 11,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 12,
+          "pdfPage": 13,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Touch the mirror with a magic wand holding at least one charge. Opens for one minute; minimum level 11; first transit triggers an elder rune.",
+      "minimumCharacterLevel": 11,
+      "activation": "charged magic wand touch",
+      "openDurationSeconds": 60,
+      "elderRune": true,
+      "destinationKeyVerification": "destination named by origin key; destination floor not audited"
+    },
+    {
+      "id": "um1-destroyed-arch",
+      "kind": "disabled-gate",
+      "fromEndpoint": {
+        "floor": 1,
+        "roomKey": "24a",
+        "locationId": "loc-undermountain-dungeon-level"
+      },
+      "toEndpoint": null,
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 21,
+          "pdfPage": 22,
+          "roomKeys": [
+            "24a"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Destroyed in Spellplague. Crossing can trigger residual wild magic; no transit destination.",
+      "traversable": false
+    },
+    {
+      "id": "um1-hidden-demiplane",
+      "kind": "demiplane-entrance",
+      "fromEndpoint": {
+        "floor": 1,
+        "roomKey": "27",
+        "locationId": "loc-undermountain-dungeon-level"
+      },
+      "toEndpoint": {
+        "floor": "local demiplane",
+        "roomKey": null,
+        "locationId": null
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 22,
+          "pdfPage": 23,
+          "roomKeys": [
+            "27"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Wearing the bronze Halaster mask from area 21 activates the alcove. Nonmagical anchors are severed. The 30-foot-square demiplane returns through a misty doorway to the same alcove; it is not an exit from the dungeon.",
+      "returnEndpoint": {
+        "floor": 1,
+        "roomKey": "27",
+        "locationId": "loc-undermountain-dungeon-level"
+      }
+    },
+    {
+      "id": "um1-vent-exit",
+      "kind": "restricted-vent",
+      "fromEndpoint": {
+        "floor": 1,
+        "roomKey": "4",
+        "locationId": "loc-undermountain-dungeon-level"
+      },
+      "toEndpoint": {
+        "floor": "Waterdeep",
+        "roomKey": "unnamed shop cellars",
+        "locationId": "loc-waterdeep"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 16,
+          "pdfPage": 17,
+          "roomKeys": [
+            "4"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Vents are 10 inches long and 5 inches wide. With grilles removed, only Tiny or gaseous creatures can escape. Exact city endpoints are unassigned.",
+      "partyExitSuitable": false
+    },
+    {
+      "id": "um2-to-um3",
+      "kind": "stairs",
+      "fromEndpoint": {
+        "floor": 2,
+        "roomKey": "unnumbered stairs north of23a/east of20a",
+        "locationId": "loc-undermountain-level-2"
+      },
+      "toEndpoint": {
+        "floor": 3,
+        "roomKey": "1 approach",
+        "locationId": "loc-undermountain-level-3"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 29,
+          "pdfPage": 30,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 45,
+          "pdfPage": 46,
+          "roomKeys": [
+            "1"
+          ],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "Map-labelled ordinary stair connection. Exact travel length/vertical drop not verified. No invented numbered room assigned.",
+      "verticalDescentFeet": null
+    },
+    {
+      "id": "um2-gate-to-um4",
+      "kind": "magic-gate",
+      "fromEndpoint": {
+        "floor": 2,
+        "roomKey": "5",
+        "locationId": "loc-undermountain-level-2"
+      },
+      "toEndpoint": {
+        "floor": 4,
+        "roomKey": "11c",
+        "locationId": "loc-undermountain-level-4"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 31,
+          "pdfPage": 32,
+          "roomKeys": [
+            "5"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 10,
+          "pdfPage": 11,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 12,
+          "pdfPage": 13,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Secret-room arch: feeding one gold piece opens it for one minute; minimum level 8; elder rune.",
+      "minimumCharacterLevel": 8,
+      "activation": "one gold coin",
+      "openDurationSeconds": 60,
+      "elderRune": true
+    },
+    {
+      "id": "um2-gate-to-um5",
+      "kind": "magic-gate",
+      "fromEndpoint": {
+        "floor": 2,
+        "roomKey": "12",
+        "locationId": "loc-undermountain-level-2"
+      },
+      "toEndpoint": {
+        "floor": 5,
+        "roomKey": "3b",
+        "locationId": "loc-undermountain-level-5"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 35,
+          "pdfPage": 36,
+          "roomKeys": [
+            "12"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 10,
+          "pdfPage": 11,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 12,
+          "pdfPage": 13,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Western-hall arch opens on contact with a dead twig or branch; minimum level 8; elder rune.",
+      "minimumCharacterLevel": 8,
+      "activation": "dead twig or branch touch",
+      "openDurationSeconds": 60,
+      "elderRune": true
+    },
+    {
+      "id": "um2-gate-to-um6",
+      "kind": "magic-gate",
+      "fromEndpoint": {
+        "floor": 2,
+        "roomKey": "20c",
+        "locationId": "loc-undermountain-level-2"
+      },
+      "toEndpoint": {
+        "floor": 6,
+        "roomKey": "24",
+        "locationId": "loc-undermountain-level-6"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 38,
+          "pdfPage": 39,
+          "roomKeys": [
+            "20c"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 39,
+          "pdfPage": 40,
+          "roomKeys": [
+            "20c"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 10,
+          "pdfPage": 11,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 12,
+          "pdfPage": 13,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Arch consumes a wholly ferrous nonmagical item into rust; minimum level 9; elder rune.",
+      "minimumCharacterLevel": 9,
+      "activation": "nonmagical wholly ferrous item",
+      "openDurationSeconds": 60,
+      "elderRune": true
+    },
+    {
+      "id": "um3-to-um4",
+      "kind": "descending-tunnel",
+      "fromEndpoint": {
+        "floor": 3,
+        "roomKey": "17a",
+        "locationId": "loc-undermountain-level-3"
+      },
+      "toEndpoint": {
+        "floor": 4,
+        "roomKey": "1",
+        "locationId": "loc-undermountain-level-4"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 52,
+          "pdfPage": 53,
+          "roomKeys": [
+            "17a"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 45,
+          "pdfPage": 46,
+          "roomKeys": [
+            "17a"
+          ],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "West tunnel descends steeply. Published current guards require audience with Azrok/Lurkana before access; actual present faction controls crossing. Not a level-gated portal.",
+      "verticalDescentFeet": null
+    },
+    {
+      "id": "um3-gate-to-um5",
+      "kind": "magic-gate",
+      "fromEndpoint": {
+        "floor": 3,
+        "roomKey": "15b",
+        "locationId": "loc-undermountain-level-3"
+      },
+      "toEndpoint": {
+        "floor": 5,
+        "roomKey": "6i",
+        "locationId": "loc-undermountain-level-5"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 52,
+          "pdfPage": 53,
+          "roomKeys": [
+            "15b"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Tap the arch three times with a staff; minimum level 8; elder rune.",
+      "minimumCharacterLevel": 8,
+      "activation": "three staff taps",
+      "openDurationSeconds": 60,
+      "elderRune": true
+    },
+    {
+      "id": "um3-gate-to-um6",
+      "kind": "magic-gate",
+      "fromEndpoint": {
+        "floor": 3,
+        "roomKey": "21p",
+        "locationId": "loc-undermountain-level-3"
+      },
+      "toEndpoint": {
+        "floor": 6,
+        "roomKey": "36c",
+        "locationId": "loc-undermountain-level-6"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 57,
+          "pdfPage": 58,
+          "roomKeys": [
+            "21p"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Put a gemstone worth at least 100 gp in the dragon mouth; gem destroyed; minimum level 9; elder rune.",
+      "minimumCharacterLevel": 9,
+      "activation": "gemstone worth at least 100 gp consumed",
+      "openDurationSeconds": 60,
+      "elderRune": true
+    },
+    {
+      "id": "um3-skullport-river",
+      "kind": "river",
+      "fromEndpoint": {
+        "floor": 3,
+        "roomKey": "Sargauth downstream of16",
+        "locationId": "loc-undermountain-level-3"
+      },
+      "toEndpoint": {
+        "floor": "Skullport",
+        "roomKey": "river/Skull Island approach",
+        "locationId": "loc-skullport"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 48,
+          "pdfPage": 49,
+          "roomKeys": [
+            "8c"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 50,
+          "pdfPage": 51,
+          "roomKeys": [
+            "13a",
+            "13b"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 51,
+          "pdfPage": 52,
+          "roomKeys": [
+            "13b"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 52,
+          "pdfPage": 53,
+          "roomKeys": [
+            "16a",
+            "16b"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 45,
+          "pdfPage": 46,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 303,
+          "pdfPage": 304,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "Downstream southwest to Skullport. Drow ledges 16a/b cover the passage. Area 13a rafts and 13b gondola are separate options; no automatic boat ownership. Gondola holds seven Medium creatures plus gear; pilot expects one coin per passenger. Removing the pilot changes the keyed river hazards.",
+      "travelLengthFeet": null
+    },
+    {
+      "id": "um3-skullport-foot",
+      "kind": "cavern-passage",
+      "fromEndpoint": {
+        "floor": 3,
+        "roomKey": "23b southwest map edge",
+        "locationId": "loc-undermountain-level-3"
+      },
+      "toEndpoint": {
+        "floor": "Skullport",
+        "roomKey": "pass network; exact named branch unresolved",
+        "locationId": "loc-skullport"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 58,
+          "pdfPage": 59,
+          "roomKeys": [
+            "23a",
+            "23b"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 45,
+          "pdfPage": 46,
+          "roomKeys": [
+            "23b"
+          ],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 303,
+          "pdfPage": 304,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "The published map points from 23b toward Skullport. Area 23a guards and 23b shriekers are actual obstacles. The source does not pair this map edge with one named Skullport pass.",
+      "exactBranchUnverified": true
+    },
+    {
+      "id": "skullport-sea-caves",
+      "kind": "water-route",
+      "fromEndpoint": {
+        "floor": "Skullport",
+        "roomKey": "Sargauth west/hoist",
+        "locationId": "loc-skullport"
+      },
+      "toEndpoint": {
+        "floor": "Waterdeep coast",
+        "roomKey": "South Sea Caves",
+        "locationId": "loc-waterdeep"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 303,
+          "pdfPage": 304,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "Sea caves and magical locks exist; the hoist is nonfunctional. The retaining wall rises 10 ft above water; the river on its other side is 100 ft below. Small craft can be hauled with arrangements. This is not an open shipping route or a verified safe retreat.",
+      "travelLengthFeet": null
+    },
+    {
+      "id": "skullport-tasselgryn-exit",
+      "kind": "specific-teleportation-exception",
+      "fromEndpoint": {
+        "floor": "Skullport",
+        "roomKey": "27",
+        "locationId": "loc-skullport"
+      },
+      "toEndpoint": {
+        "floor": "Waterdeep",
+        "roomKey": "orphanage attic Dock Ward; unnamed",
+        "locationId": "loc-waterdeep"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 308,
+          "pdfPage": 309,
+          "roomKeys": [
+            "27"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Tasselgryn alone can cast teleportation circle within her shop despite the general restriction. Payment is 50 gp per person upfront. Destination can be an appropriate known circle or her Dock Ward orphanage circle. Requires the available NPC and actual payment; no unrestricted reverse connection.",
+      "costGpPerPerson": 50,
+      "reverseAvailability": null
+    },
+    {
+      "id": "skullport-inn-secret-tunnel",
+      "kind": "secret-tunnel",
+      "fromEndpoint": {
+        "floor": "Skullport",
+        "roomKey": "22 cellar",
+        "locationId": "loc-skullport"
+      },
+      "toEndpoint": {
+        "floor": "Xanathar hideout",
+        "roomKey": null,
+        "locationId": null
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 308,
+          "pdfPage": 309,
+          "roomKeys": [
+            "22"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ],
+      "note": "Secret door: DC 15 Perception. A 300 ft rough tunnel runs west to Xanathar’s hideout described in Dragon Heist. The destination map was not audited in this task.",
+      "travelLengthFeet": 300
+    },
+    {
+      "id": "skullport-pass-beggars-rest-pass",
+      "kind": "named-pass",
+      "fromEndpoint": {
+        "floor": "Skullport",
+        "roomKey": "Beggar's Rest Pass",
+        "locationId": "loc-skullport"
+      },
+      "toEndpoint": {
+        "floor": 3,
+        "roomKey": null,
+        "locationId": "loc-undermountain-level-3"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 303,
+          "pdfPage": 304,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 307,
+          "pdfPage": 308,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "Published lower-town pass connects into the Level 3 passage network. No exact Level 3 room junction, continuous traced geometry, distance or safe status verified.",
+      "exactBranchUnverified": true
+    },
+    {
+      "id": "skullport-pass-shadow-pass",
+      "kind": "named-pass",
+      "fromEndpoint": {
+        "floor": "Skullport",
+        "roomKey": "Shadow Pass",
+        "locationId": "loc-skullport"
+      },
+      "toEndpoint": {
+        "floor": 3,
+        "roomKey": null,
+        "locationId": "loc-undermountain-level-3"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 303,
+          "pdfPage": 304,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 307,
+          "pdfPage": 308,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "Published lower-town pass connects into the Level 3 passage network. No exact Level 3 room junction, continuous traced geometry, distance or safe status verified.",
+      "exactBranchUnverified": true
+    },
+    {
+      "id": "skullport-pass-steamfall-pass",
+      "kind": "named-pass",
+      "fromEndpoint": {
+        "floor": "Skullport",
+        "roomKey": "Steamfall Pass",
+        "locationId": "loc-skullport"
+      },
+      "toEndpoint": {
+        "floor": 3,
+        "roomKey": null,
+        "locationId": "loc-undermountain-level-3"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 303,
+          "pdfPage": 304,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 307,
+          "pdfPage": 308,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "Published lower-town pass connects into the Level 3 passage network. No exact Level 3 room junction, continuous traced geometry, distance or safe status verified.",
+      "exactBranchUnverified": true
+    },
+    {
+      "id": "skullport-pass-taglaths-gap",
+      "kind": "named-pass",
+      "fromEndpoint": {
+        "floor": "Skullport",
+        "roomKey": "Taglath’s Gap",
+        "locationId": "loc-skullport"
+      },
+      "toEndpoint": {
+        "floor": 3,
+        "roomKey": null,
+        "locationId": "loc-undermountain-level-3"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 303,
+          "pdfPage": 304,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 307,
+          "pdfPage": 308,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "Published lower-town pass connects into the Level 3 passage network. No exact Level 3 room junction, continuous traced geometry, distance or safe status verified.",
+      "exactBranchUnverified": true
+    },
+    {
+      "id": "skullport-pass-whisperhaunt-pass",
+      "kind": "named-pass",
+      "fromEndpoint": {
+        "floor": "Skullport",
+        "roomKey": "Whisperhaunt Pass",
+        "locationId": "loc-skullport"
+      },
+      "toEndpoint": {
+        "floor": 3,
+        "roomKey": null,
+        "locationId": "loc-undermountain-level-3"
+      },
+      "classification": "published",
+      "knownToParty": null,
+      "traversed": null,
+      "distanceMiles": null,
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 303,
+          "pdfPage": 304,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 309,
+          "pdfPage": 310,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "note": "Published upper-town pass connects into the Level 3 passage network. No exact Level 3 room junction, continuous traced geometry, distance or safe status verified.",
+      "exactBranchUnverified": true
+    }
+  ],
+  "refugeCandidates": [
+    {
+      "floor": 1,
+      "roomKey": "22",
+      "status": "candidate only",
+      "note": "Discarded consumables suggest previous rests; the published key is empty. A current watch and threat assessment are required.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 21,
+          "pdfPage": 22,
+          "roomKeys": [
+            "22"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "floor": 1,
+      "roomKey": "7a",
+      "status": "occupied faction retreat",
+      "note": "Undertaker fallback; not a default party refuge.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 17,
+          "pdfPage": 18,
+          "roomKeys": [
+            "7"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "floor": 2,
+      "roomKey": "1d",
+      "status": "market; no promised rest",
+      "note": "Published trade and guards; peacekeeping does not guarantee protection elsewhere.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 28,
+          "pdfPage": 29,
+          "roomKeys": [
+            "1d"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "floor": 2,
+      "roomKey": "11b",
+      "status": "contested occupied rest area",
+      "note": "Midna initially refuses sharing. Servants and actual outcomes govern access; published food replenishment does not grant free access.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 35,
+          "pdfPage": 36,
+          "roomKeys": [
+            "11b"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "floor": 3,
+      "roomKey": "21",
+      "status": "conditional faction hospitality",
+      "note": "Identification registration at 21c and an audience/tribute at 21n are required; drow face hostility. Protection is limited to the settlement; Lurkana can expel those who refuse her quest.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 55,
+          "pdfPage": 56,
+          "roomKeys": [
+            "21",
+            "21c"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 57,
+          "pdfPage": 58,
+          "roomKeys": [
+            "21n"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "floor": "Skullport",
+      "roomKey": "22",
+      "status": "paid lodging with private risk",
+      "note": "Guts&Garters charges 5 gp per day; its proprietor spies for Xanathar. This is not a secure private refuge.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 308,
+          "pdfPage": 309,
+          "roomKeys": [
+            "22"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "floor": "Skullport",
+      "roomKey": "26",
+      "status": "faction condition",
+      "note": "Keel Hall sanctuary is offered for proven Zhentarim membership. No automatic membership.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 308,
+          "pdfPage": 309,
+          "roomKeys": [
+            "26"
+          ],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        }
+      ]
+    },
+    {
+      "floor": "Skullport",
+      "roomKey": "31",
+      "status": "faction condition",
+      "note": "Dalagor’s Fortress refuge is offered to Harpers; no automatic membership.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 309,
+          "pdfPage": 310,
+          "roomKeys": [
+            "31"
+          ],
+          "validation": "visual PDF map/page inspection"
+        }
+      ]
+    },
+    {
+      "floor": "Skullport",
+      "roomKey": "36",
+      "status": "clearance condition",
+      "note": "Tanor’thal Refuge is useful only after its giant spiders are cleared. Actual safe access and a watch still matter.",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 309,
+          "pdfPage": 310,
+          "roomKeys": [
+            "36"
+          ],
+          "validation": "visual PDF map/page inspection"
+        }
+      ]
+    }
+  ],
+  "workflow": [
+    {
+      "step": 1,
+      "title": "Choose the actual next destination",
+      "actions": [
+        "Read approved current position, revealed passages, resources, faction outcomes and the chosen objective.",
+        "Prepare only the next reachable sector and a return route. Level 2 is the next conditional floor; completion of three Level 1 contracts does not itself unlock it."
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Check source topology",
+      "actions": [
+        "Read the floor map and exact adjacent room keys. Preserve north, grid, doors, secret walls, elevations, stairs and hazards.",
+        "Create one source-coordinate master and derive crops without reshaping corridors. Keep keyed labels private.",
+        "List every entry and exit as stairs, tunnel, river, shaft, gate or specific exception. Keep unknown lengths null."
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Keep custom hooks separate",
+      "actions": [
+        "Assign an optional hook only to a plausible unsearched room or custodian with an approved source.",
+        "Keep an unknown exact room null. Provide refusal, early retreat or city follow-up. No character, item, death, ownership claim or revelation is compulsory."
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Prepare play and privacy",
+      "actions": [
+        "Private layer: source keys, stat references, traps, secret passages, custody, hooks, conditional refuges and actual response paths.",
+        "Public layer: reviewed unkeyed geometry; conceal secret areas with separate scenes or fog. An unkeyed whole floor still reveals its entire layout.",
+        "Calibrate the authored five-foot tactical grid against ten-foot source squares. Preserve existing scenes, fog and tokens; offer a separate variant only by explicit opt-in."
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Review the next-floor boundary",
+      "actions": [
+        "Trace the complete approach from the actual earned position; do not jump directly to stairs.",
+        "Prepare receiving area, departure area and reverse retreat. Check a gate’s destination, activation, minimum level, elder rune and return requirements separately.",
+        "Record the visible entry signal, turnback condition and refuge conditions; no universal safe-room flag."
+      ]
+    },
+    {
+      "step": 6,
+      "title": "Run and retain outcomes",
+      "actions": [
+        "Opening, staging or preparing does not move creatures, advance time, locate places, award loot, change resources or complete quests.",
+        "After play record exact turnpoint, doors, hazards, surviving relocations, agreements and custody through the existing review. Reuse the saved dungeon.",
+        "Select the next likely sector; leave other floors as logical references until needed."
+      ]
+    }
+  ],
+  "conditionalFloorPrep": [
+    {
+      "floor": 2,
+      "boardId": "undermountain-level-2",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 27,
+          "pdfPage": 28,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 29,
+          "pdfPage": 30,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "entry": "1a approach from Level 1 /39a",
+      "baselinePartyLevel": 6,
+      "prepareFirst": [
+        "receiving stairs and 1a",
+        "player-chosen bazaar or western branch",
+        "earned return route"
+      ],
+      "laterBoundary": "Unkeyed Level 3 stairs require the full actual approach; no straight-line shortcut across rooms.",
+      "customHookRoomKey": null
+    },
+    {
+      "floor": 3,
+      "boardId": "undermountain-level-3",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 43,
+          "pdfPage": 44,
+          "roomKeys": [],
+          "validation": "supplied PDF text extraction; printed-page sequence checked"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 45,
+          "pdfPage": 46,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "entry": "1 catacombs from the Level 2 stairs",
+      "baselinePartyLevel": 7,
+      "prepareFirst": [
+        "catacombs arrival",
+        "chosen route around or into the drow-controlled complex",
+        "retreat"
+      ],
+      "laterBoundary": "Choose a Skullport foot passage or river route through actual exploration. Check Azrok’s territory, river guards and transport before travel.",
+      "customHookRoomKey": null
+    },
+    {
+      "floor": "Skullport",
+      "locationId": "loc-skullport",
+      "sourceRefs": [
+        {
+          "book": "madMage",
+          "printedPage": 303,
+          "pdfPage": 304,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 307,
+          "pdfPage": 308,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        },
+        {
+          "book": "madMage",
+          "printedPage": 309,
+          "pdfPage": 310,
+          "roomKeys": [],
+          "validation": "visual PDF map/page inspection"
+        }
+      ],
+      "prepareFirst": [
+        "specific arrival pass or river landing",
+        "one chosen service or contact",
+        "named retreat method"
+      ],
+      "laterBoundary": "Lower, middle and upper catwalk levels stay distinct. Do not flatten vertical connections. No automatic lodging, faction refuge or Tasselgryn casting."
+    }
+  ]
+}

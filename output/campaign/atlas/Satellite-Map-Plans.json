@@ -1,0 +1,1578 @@
+{
+  "schemaVersion": 1,
+  "id": "satellite-map-plans",
+  "audience": "DM-only",
+  "status": "editable preparation metadata; not an app import and not player discoveries",
+  "canonicalRegister": "map-audit/Location-Register.json",
+  "sourceAuthority": [
+    "Newest user-approved broad atlas placements",
+    "Current Campaign-Satellites-Data.js and campaign outline",
+    "Reconciled Site-Adventures.md room keys",
+    "Older artwork as a reusable visual only"
+  ],
+  "scope": "Seven custom sites. Wave Echo and Undermountain are existing separate packages. All proposed people, events, costs, discoveries and exact destination details remain conditional.",
+  "assetAudit": "Existing Silent Library plan visually checked and reusable; other six sites have no dedicated registered local maps at this audit. Labelled Nine composites are private only.",
+  "plans": [
+    {
+      "id": "satellite-map-plan-silent-library",
+      "audience": "DM-only",
+      "siteId": "silent-library",
+      "siteNumber": 3,
+      "locationId": "loc-silent-library",
+      "boardId": "site-silent-library",
+      "parentBoardId": "site-second-margin",
+      "travelId": "loc-silent-library",
+      "questId": "silent-library",
+      "prepLink": {
+        "kind": "satellite",
+        "siteId": "silent-library",
+        "leadId": "satellite-silent-library",
+        "questId": "silent-library",
+        "entryBeatId": "satellite-library-offer",
+        "contentProvider": "ECHO_ADVENTURES.site / ECHO_SATELLITES_DATA"
+      },
+      "existingSceneIds": [
+        "sl-library-map"
+      ],
+      "existingObjectIds": [
+        "sl-room-1",
+        "sl-room-2",
+        "sl-room-3",
+        "sl-room-4",
+        "sl-folio",
+        "sl-access",
+        "sl-chute"
+      ],
+      "classification": "custom campaign proposal; not published geography or an actual visit",
+      "stage": "Next new satellite package to prepare; offer in Act III, alongside floors 9–13, after city trust and research questions develop. The older suggested level 6–8 timing is superseded for revelations.",
+      "regionalPlacement": {
+        "source": "atlas/Geography-Register.json#nine-3",
+        "placementSource": "world-maps/Sword-Coast-Atlas-Placements.txt",
+        "kind": "city-subterranean-link",
+        "geometry": null,
+        "referenceCoordinate": [
+          45.2,
+          37.12
+        ],
+        "coordinateUnits": "official reference normalized0..100; geometry only proposed area",
+        "exactDestinationEstablished": false,
+        "description": "Beneath the Second Margin in Waterdeep; Castle Ward shop placement is campaign preparation.",
+        "notes": "Below the Second Margin, proposed Castle Ward shop. Share Waterdeep world coordinate and use leader/inset; no precise street or subterranean footprint established."
+      },
+      "sourcePrecedence": "Newest atlas record supplies broad regional proposal. Approved satellite package supplies story limits. A broad region does not fill exact bearings, personal connections, interior identities or actual access.",
+      "contentRefs": [
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "sites[id=silent-library]"
+        },
+        {
+          "path": "Echo-Below-Campaign-Outline.md",
+          "selector": "Act III and satellite menu"
+        },
+        {
+          "path": "Continuity-Reference.md",
+          "selector": "The Nine — Site3"
+        },
+        {
+          "path": "Site-Adventures.md",
+          "selector": "15–33"
+        },
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "silent-library beats"
+        },
+        {
+          "path": "Campaign-Adventures.js",
+          "selector": "seedLibrary and sl-library-map"
+        }
+      ],
+      "existingAsset": {
+        "path": "assets/Silent-Library-Plan.svg",
+        "sceneId": "sl-library-map",
+        "format": "svg",
+        "declaredViewport": [
+          1500,
+          1000
+        ],
+        "nativeRasterDimensions": null,
+        "resolutionIndependent": true,
+        "sha256": "50c9f9cfd7d77011c2932ed5d626c5b04be51eab3f276af2bf62c8e8c4ab3997",
+        "validation": "SVG source read and rendered PNG visually inspected: four connected furnished areas, stairs and side chute; no visible text or keys. No exact tactical scale established.",
+        "gridPolicy": "Existing scene grid=false; do not reinterpret fallback gridColumns30 as verified five-foot scale."
+      },
+      "legacyAssetPolicy": "Nine-Sites-Atlas.png, Nine-Sites-Watercolor.png and labelled world-map composites remain private references, never per-site public fallback. No existing artwork is changed by this plan.",
+      "mapScope": "Reuse the existing coherent four-room plan; add reversible private keys, route notes and optional room crops from one master.",
+      "mapPackage": [
+        {
+          "role": "approach",
+          "state": "existing city and Second Margin chain",
+          "requirements": "Walk from the Yawning Portal or Mending Court to the Second Margin using established city placement; no invented published street address. The local stair descends into a separate site, not an Undermountain shortcut."
+        },
+        {
+          "role": "overview",
+          "state": "reuse existing master",
+          "requirements": "One connected site overview with ordinary approach, visible retreat and annotated private points; keep DM secrets off public art."
+        },
+        {
+          "role": "interior-or-investigation-sectors",
+          "state": "existing four rooms",
+          "keys": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "rooms": [
+        {
+          "key": "1",
+          "title": "Forgotten stair",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Service stair, landing, erased-name wall and clear route back to the shop; alternate coal chute joins this room.",
+          "existingMasterBounds": [
+            125,
+            205,
+            255,
+            475
+          ],
+          "entryConnections": [
+            "stair",
+            "chute"
+          ],
+          "onwardConnections": [
+            "2"
+          ],
+          "canonicalLocationId": "loc-silent-library",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "2",
+          "title": "Listening desks",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Four work desks and shelves; continuous walkable aisle. Quiet effect belongs to private notes, not a sealed physical barrier.",
+          "existingMasterBounds": [
+            465,
+            195,
+            360,
+            480
+          ],
+          "entryConnections": [
+            "1"
+          ],
+          "onwardConnections": [
+            "3"
+          ],
+          "canonicalLocationId": "loc-silent-library",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "3",
+          "title": "Circular table",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Large circular table with usable perimeter and removable slips. Do not require any token or medallion to solve the count.",
+          "existingMasterBounds": [
+            910,
+            145,
+            430,
+            465
+          ],
+          "entryConnections": [
+            "2"
+          ],
+          "onwardConnections": [
+            "4"
+          ],
+          "canonicalLocationId": "loc-silent-library",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "4",
+          "title": "Sealed folio",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Small chamber with glass-front packet cabinet and optional mechanical test control; clear reverse path through room3.",
+          "existingMasterBounds": [
+            1010,
+            705,
+            285,
+            210
+          ],
+          "entryConnections": [
+            "3"
+          ],
+          "onwardConnections": [],
+          "canonicalLocationId": "loc-silent-library",
+          "newDiscoveryRecord": false
+        }
+      ],
+      "entranceRequirements": [
+        "Agree permission and which documents may be copied.",
+        "Bring lights, plain paper, tags, soft brushes, cloth and a rope or sound ladder.",
+        "Name a street-level contact and an agreed return time.",
+        "Inspect the stair and damp before moving heavy material; price any hired repairs through the existing downtime review."
+      ],
+      "accessCondition": "A deed, Selise’s missing-stair lead or independent archive correspondence can identify the entrance. Introduce the deed’s contents only when actually inspected.",
+      "exitPolicy": "Main service stair returns to the Second Margin by permission; inspected coal chute is slower alternate. No private tenant room is bypassed.",
+      "fallback": "Selise can safeguard the stair and seek a conservation estimate. Supply an incomplete authorized catalogue copy only through a later actual agreement. Independent correspondence and Undermountain records can establish nine sites and reconstruction discrepancies; refusing this excursion never locks Looking Glass options.",
+      "alternateApproaches": [
+        "Mediate supervised access, document each room and compare the catalogue with an independently held inventory.",
+        "Commission permitted copies and a building inspection while the party follows a dungeon lead; the report will preserve its author’s limits.",
+        "Make a short exterior/stair survey now and defer the archive until copying and custody terms are agreed; no automatic deterioration deadline is imposed."
+      ],
+      "noCompulsoryCharacterOrItem": true,
+      "forbiddenAssumptions": [
+        "No connection to Undermountain",
+        "No revealed society name, fate or membership",
+        "No compulsory Echo’s Whisper or medallion activation"
+      ],
+      "unknowns": "The society’s name, disappearance, original membership and several catalogue identifications remain open. No token or medallion is required to enter or understand the core catalogue.",
+      "conditionalPeople": [
+        {
+          "name": "Selise, Second Margin custodian",
+          "motive": "Preserve usable evidence and her ordinary working shop.",
+          "limits": "She does not know why the society vanished, every site’s location or the truth of Looking Glass."
+        },
+        {
+          "name": "Ressa Vale — proposed modern collection claimant",
+          "motive": "Keep inherited family papers from being copied indiscriminately while making a legitimate claim assessable.",
+          "limits": "Her claimed ancestral connection needs checking. She is not a vanished original member, a confirmed heir to the whole library or automatically connected to a PC."
+        },
+        {
+          "name": "Evin Doss — proposed neighboring tenants’ representative",
+          "motive": "Keep the shared cellar supports sound and the passage usable.",
+          "limits": "Practical building knowledge; no secret society membership or complete magical explanation."
+        },
+        {
+          "name": "Nessa Brindle — optional independent craft reviewer",
+          "motive": "Give an honest answer within her craft without risking customer property.",
+          "limits": "Can identify technique and repairs, not name Ilyra from style alone or certify a returned soul."
+        }
+      ],
+      "contribution": {
+        "method": "A practical missing-record audit: compare find-spots, edge matches, independent inventories and raw versus reconstructed labels; preserve a visible gap instead of silently filling it.",
+        "limits": "Detects specific omissions or contradictions in records. It is not a universal truth detector, soul test, power upgrade or method for restoring the society.",
+        "test": "At the return workshop, compare two honestly labeled sample copies with a deliberately omitted harmless line against the original. Have an independent reviewer find the gap, then use the same protocol on one real disputed record. Record false matches and unresolved gaps.",
+        "alternative": "Use an independent city collection plus dungeon raw logs with the same audit procedure; the Library adds context and independent catalogue material."
+      },
+      "geometryAuthoringPolicy": {
+        "masterCoordinates": "Choose one authored local frame; preserve integer tactical grid if needed. Local art coordinates never become world bearings.",
+        "scale": "Not specified by story; any new five-foot grid is authored, not source-measured.",
+        "publicLayer": "Unkeyed terrain and ordinary furnishings; no named inhabitants, written clues, hazard keys, future identity or automatic openings.",
+        "privateLayer": "Room keys, doors, staged hazards, access terms, heights/water states, room-specific source links and proposals.",
+        "sharing": "Explicit Stage then Show only after the parent site is located; full unkeyed geometry may still reveal layout.",
+        "automaticEffects": []
+      },
+      "readyForArt": true,
+      "openBeforeStorySpecificInterior": [
+        "Precise local dimensions are authored proposals, not surveyed facts"
+      ]
+    },
+    {
+      "id": "satellite-map-plan-drowned-observatory",
+      "audience": "DM-only",
+      "siteId": "drowned-observatory",
+      "siteNumber": 4,
+      "locationId": "loc-drowned-observatory",
+      "boardId": "site-drowned-observatory",
+      "parentBoardId": "phandelver",
+      "travelId": "loc-drowned-observatory",
+      "questId": "observatory",
+      "prepLink": {
+        "kind": "satellite",
+        "siteId": "drowned-observatory",
+        "leadId": "satellite-drowned-observatory",
+        "questId": "observatory",
+        "entryBeatId": null,
+        "contentProvider": "ECHO_ADVENTURES.site / ECHO_SATELLITES_DATA"
+      },
+      "existingSceneIds": [],
+      "existingObjectIds": [],
+      "classification": "custom campaign proposal; not published geography or an actual visit",
+      "stage": "Optional later excursion; approximately levels 8–10 if actually ready. Offer from verified coastal records, not a forced next stop after the Library.",
+      "regionalPlacement": {
+        "source": "atlas/Geography-Register.json#nine-4",
+        "placementSource": "world-maps/Sword-Coast-Atlas-Placements.txt",
+        "kind": "offshore-site-proposal",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              39.0,
+              26.2
+            ],
+            [
+              39.8,
+              26.2
+            ],
+            [
+              39.8,
+              27.3
+            ],
+            [
+              39.0,
+              27.3
+            ],
+            [
+              39.0,
+              26.2
+            ]
+          ]
+        },
+        "referenceCoordinate": [
+          39.4,
+          26.75
+        ],
+        "coordinateUnits": "official reference normalized0..100; geometry only proposed area",
+        "exactDestinationEstablished": false,
+        "description": "Offshore west of Leilon, in the Sea of Swords; boat and dive access.",
+        "notes": "Offshore west of Leilon and west of visible coastline. Proposed boat-and-dive destination; exact reef/site and sailing distance unresolved."
+      },
+      "sourcePrecedence": "Newest atlas record supplies broad regional proposal. Approved satellite package supplies story limits. A broad region does not fill exact bearings, personal connections, interior identities or actual access.",
+      "contentRefs": [
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "sites[id=drowned-observatory]"
+        },
+        {
+          "path": "Echo-Below-Campaign-Outline.md",
+          "selector": "Act III and satellite menu"
+        },
+        {
+          "path": "Continuity-Reference.md",
+          "selector": "The Nine — Site4"
+        },
+        {
+          "path": "Site-Adventures.md",
+          "selector": "35–53"
+        },
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "drowned-observatory"
+        }
+      ],
+      "existingAsset": null,
+      "legacyAssetPolicy": "Nine-Sites-Atlas.png, Nine-Sites-Watercolor.png and labelled world-map composites remain private references, never per-site public fallback. No existing artwork is changed by this plan.",
+      "mapScope": "Surface approach and one connected four-area flooded ruin master, with low/high water layers and interior crops.",
+      "mapPackage": [
+        {
+          "role": "approach",
+          "state": "requires authored proposal",
+          "requirements": "Normal coastal journey plus an earned dive method; precise bearings and costs remain to be confirmed."
+        },
+        {
+          "role": "overview",
+          "state": "requires authored proposal",
+          "requirements": "One connected site overview with ordinary approach, visible retreat and annotated private points; keep DM secrets off public art."
+        },
+        {
+          "role": "interior-or-investigation-sectors",
+          "state": "requires authored proposal",
+          "keys": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "rooms": [
+        {
+          "key": "1",
+          "title": "Tide stair",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Low-tide stair, checked air pocket, visible tide-height scale, external tether route and faster cracked gallery with reachable lower ledge.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "surface boat",
+            "external dome route"
+          ],
+          "onwardConnections": [
+            "2",
+            "3"
+          ],
+          "canonicalLocationId": "loc-drowned-observatory",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "2",
+          "title": "Keeper’s room",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Protected cabinet and ceramic log sleeve; retain dry working space above the current waterline, connected back to the stair.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "1"
+          ],
+          "onwardConnections": [
+            "3"
+          ],
+          "canonicalLocationId": "loc-drowned-observatory",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "3",
+          "title": "Drowned lens",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Tilted bronze lens frame above cracked floor; two chambers flood unevenly. Keep safe perimeter, crawlspace and an accessible casualty position.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "1",
+            "2"
+          ],
+          "onwardConnections": [
+            "4"
+          ],
+          "canonicalLocationId": "loc-drowned-observatory",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "4",
+          "title": "Counterweight well",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Tide wheel, visible linkage and cracked housing; two-person work area or space for a brace. The equipment supports one local observation only.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "3"
+          ],
+          "onwardConnections": [],
+          "canonicalLocationId": "loc-drowned-observatory",
+          "newDiscoveryRecord": false
+        }
+      ],
+      "entranceRequirements": [
+        "Breathable air, swim capability, light and warmth.",
+        "Tether, surface lookout, rescue capacity and spare time.",
+        "Current tide forecast and a return signal."
+      ],
+      "accessCondition": "Verify incomplete bearings with Vess, salvage records or a second sailor; choose the actual embarkation point at preparation.",
+      "exitPolicy": "Surface boat, tether and current air/tide reserve are the return system. The low ledge and crawlspace remain reachable; Edda’s presence and custody require staging.",
+      "fallback": "Share general sailing warnings with consent; an allied survey or authenticated log can supply a limited instability lead. No wreck is automatically blamed on the party.",
+      "alternateApproaches": [
+        "Retrieve the protected log by a patient exterior route and leave large salvage.",
+        "Secure the lens frame, help Edda and take one bounded waterline measurement.",
+        "Remain at the surface and commission or compare independent logs before diving."
+      ],
+      "noCompulsoryCharacterOrItem": true,
+      "forbiddenAssumptions": [
+        "No fixed public bearings",
+        "No complete network activation",
+        "No unexplained lethal sweep-away or guaranteed air pocket"
+      ],
+      "unknowns": "The warning’s reason, present occupants and wider instability remain unproved.",
+      "conditionalPeople": [
+        {
+          "name": "Vess",
+          "motive": "Make the trip and its return credible.",
+          "limits": "Her ship cannot solve underwater breathing or establish the reason for Halaster’s warning."
+        },
+        {
+          "name": "Edda Marr — proposed salvage diver",
+          "motive": "Return alive with enough legitimate salvage to pay a crew.",
+          "limits": "Introduce peril only when staged; she is not already trapped in campaign history and does not know the apparatus."
+        },
+        {
+          "name": "Coastal households and working crews",
+          "motive": "Reduce missing boats and reckless expeditions without losing trade.",
+          "limits": "Choose the coast community and witness names when a real itinerary is approved."
+        }
+      ],
+      "contribution": {
+        "method": "Correlate a visible waterline or alignment change with loss of a stable reading, creating an early stop signal.",
+        "limits": "Mechanical lens movement explains some noise, not all resonance or Halaster’s warning. A repaired star plate is an ordinary observing aid, not a site finder.",
+        "test": "Repeat one short observation at different permitted water levels with a shuttered-lens control; have a second crew compare before relying on the signal elsewhere.",
+        "alternative": "Compare dated independent voyage logs and an ordinary instrument bench test; retain the unobserved underwater uncertainties."
+      },
+      "geometryAuthoringPolicy": {
+        "masterCoordinates": "Choose one authored local frame; preserve integer tactical grid if needed. Local art coordinates never become world bearings.",
+        "scale": "Not specified by story; any new five-foot grid is authored, not source-measured.",
+        "publicLayer": "Unkeyed terrain and ordinary furnishings; no named inhabitants, written clues, hazard keys, future identity or automatic openings.",
+        "privateLayer": "Room keys, doors, staged hazards, access terms, heights/water states, room-specific source links and proposals.",
+        "sharing": "Explicit Stage then Show only after the parent site is located; full unkeyed geometry may still reveal layout.",
+        "automaticEffects": []
+      },
+      "readyForArt": true,
+      "openBeforeStorySpecificInterior": [
+        "Precise local dimensions are authored proposals, not surveyed facts"
+      ]
+    },
+    {
+      "id": "satellite-map-plan-dead-gods-scar",
+      "audience": "DM-only",
+      "siteId": "dead-gods-scar",
+      "siteNumber": 5,
+      "locationId": "loc-dead-gods-scar",
+      "boardId": "site-dead-gods-scar",
+      "parentBoardId": "interior-east",
+      "travelId": "loc-dead-gods-scar",
+      "questId": "scar",
+      "prepLink": {
+        "kind": "satellite",
+        "siteId": "dead-gods-scar",
+        "leadId": "satellite-dead-gods-scar",
+        "questId": "scar",
+        "entryBeatId": null,
+        "contentProvider": "ECHO_ADVENTURES.site / ECHO_SATELLITES_DATA"
+      },
+      "existingSceneIds": [],
+      "existingObjectIds": [],
+      "classification": "custom campaign proposal; not published geography or an actual visit",
+      "stage": "Optional Act III or later; approximately levels 10–12. Exact divine identity and geography remain undecided.",
+      "regionalPlacement": {
+        "source": "atlas/Geography-Register.json#nine-5",
+        "placementSource": "world-maps/Sword-Coast-Atlas-Placements.txt",
+        "kind": "valley-site-proposal",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              54.1,
+              43.7
+            ],
+            [
+              55.3,
+              43.7
+            ],
+            [
+              55.3,
+              45.0
+            ],
+            [
+              54.1,
+              45.0
+            ],
+            [
+              54.1,
+              43.7
+            ]
+          ]
+        },
+        "referenceCoordinate": [
+          54.6,
+          44.3
+        ],
+        "coordinateUnits": "official reference normalized0..100; geometry only proposed area",
+        "exactDestinationEstablished": false,
+        "description": "Sheltered valley at the western edge of the High Moor, approached from Daggerford.",
+        "notes": "Western High Moor east of Misty Forest; sheltered valley proposal approached from Daggerford. Exact valley and settlement layout open."
+      },
+      "sourcePrecedence": "Newest atlas record supplies broad regional proposal. Approved satellite package supplies story limits. A broad region does not fill exact bearings, personal connections, interior identities or actual access.",
+      "contentRefs": [
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "sites[id=dead-gods-scar]"
+        },
+        {
+          "path": "Echo-Below-Campaign-Outline.md",
+          "selector": "Act III and satellite menu"
+        },
+        {
+          "path": "Continuity-Reference.md",
+          "selector": "The Nine — Site5"
+        },
+        {
+          "path": "Site-Adventures.md",
+          "selector": "55–73"
+        },
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "dead-gods-scar"
+        }
+      ],
+      "existingAsset": null,
+      "legacyAssetPolicy": "Nine-Sites-Atlas.png, Nine-Sites-Watercolor.png and labelled world-map composites remain private references, never per-site public fallback. No existing artwork is changed by this plan.",
+      "mapScope": "Valley overview with relief route, proposed care hall and three outdoor investigation sectors; one hall interior if useful.",
+      "mapPackage": [
+        {
+          "role": "approach",
+          "state": "requires authored proposal",
+          "requirements": "A wilderness valley outside Waterdeep; name and location follow the approved itinerary, not a fixed new world map."
+        },
+        {
+          "role": "overview",
+          "state": "requires authored proposal",
+          "requirements": "One connected site overview with ordinary approach, visible retreat and annotated private points; keep DM secrets off public art."
+        },
+        {
+          "role": "interior-or-investigation-sectors",
+          "state": "requires authored proposal",
+          "keys": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "rooms": [
+        {
+          "key": "1",
+          "title": "Grain-hall assembly point",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Six-household aid setting remains proposed. Hall has clear care and stretcher circulation and an ordinary exit toward the relief route; no ownership or divine identity assigned.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "relief approach"
+          ],
+          "onwardConnections": [
+            "2"
+          ],
+          "canonicalLocationId": "loc-dead-gods-scar",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "2",
+          "title": "Broken field channel",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Irrigation ditch, dust-bearing walking route, removable boards and bypass on clean ground. Screens change exposure locally, not a magical cure.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "1"
+          ],
+          "onwardConnections": [
+            "3"
+          ],
+          "canonicalLocationId": "loc-dead-gods-scar",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "3",
+          "title": "Retaining stones",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Old boundary stones with a safe outside observation line. Optional sensory echo stays in private notes; do not inscribe a deity’s confirmed name.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "2"
+          ],
+          "onwardConnections": [
+            "4"
+          ],
+          "canonicalLocationId": "loc-dead-gods-scar",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "4",
+          "title": "Exposed seam",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Palm-wide seam behind collapsed retaining stone; private inner exposure boundary, a gradient measurement line and room for a partner/rope to stop a step.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "3"
+          ],
+          "onwardConnections": [],
+          "canonicalLocationId": "loc-dead-gods-scar",
+          "newDiscoveryRecord": false
+        }
+      ],
+      "entranceRequirements": [
+        "Confirm actual route, guide and supply budget.",
+        "Bring ordinary dust covers, clean water, boards and care transport.",
+        "Ask residents which treatment and movement assistance they accept."
+      ],
+      "accessCondition": "Anja’s permissioned accounts, a public survey or independent temple records can establish a lead.",
+      "exitPolicy": "A clean assembly point links to the same relief approach. Allow voluntary evacuation with care transport; no instant agreement or cost is established.",
+      "fallback": "Anja can arrange an ordinary aid referral; the party may review redacted accounts later. Declining a divine mystery does not remove essential containment options.",
+      "alternateApproaches": [
+        "Compare consenting accounts and reduce dust exposure by diverting a ditch or screening work areas.",
+        "Assist voluntary relocation with care continuity and documented return conditions.",
+        "Study the outer gradient remotely and support residents’ existing choices."
+      ],
+      "noCompulsoryCharacterOrItem": true,
+      "forbiddenAssumptions": [
+        "No named divine identity",
+        "No chosen PC ancestry or forced memory",
+        "No sacrificial absorber"
+      ],
+      "unknowns": "The divine being’s identity, exact history and any PC connection remain open; similar dreams prove no personal ancestry.",
+      "conditionalPeople": [
+        {
+          "name": "Teren Moss — proposed resident caretaker",
+          "motive": "Keep vulnerable neighbors with reliable care.",
+          "limits": "Use a settlement name only after placing the route; Teren has no divine identification."
+        },
+        {
+          "name": "Anja",
+          "motive": "Reduce harm and argue for bounded isolation.",
+          "limits": "Her faction’s wider theory remains a position, not the answer to all evidence."
+        },
+        {
+          "name": "Local healers and growers",
+          "motive": "Preserve useful care, food and homes.",
+          "limits": "No one must sacrifice their body or expose private health details to prove a point."
+        }
+      ],
+      "contribution": {
+        "method": "Separate exposure, consent and benefit in a monitoring plan, then test a limited physical screen or evacuation safeguard.",
+        "limits": "Dust control and measured shielding do not cure divine contamination or establish a universal protective ward.",
+        "test": "Compare permitted outer-boundary measurements before and after a removable screen; retain ordinary weather changes and stop if harm increases.",
+        "alternative": "A city protection drill and independently reviewed affected-person records can establish consent and monitoring practices without travel."
+      },
+      "geometryAuthoringPolicy": {
+        "masterCoordinates": "Choose one authored local frame; preserve integer tactical grid if needed. Local art coordinates never become world bearings.",
+        "scale": "Not specified by story; any new five-foot grid is authored, not source-measured.",
+        "publicLayer": "Unkeyed terrain and ordinary furnishings; no named inhabitants, written clues, hazard keys, future identity or automatic openings.",
+        "privateLayer": "Room keys, doors, staged hazards, access terms, heights/water states, room-specific source links and proposals.",
+        "sharing": "Explicit Stage then Show only after the parent site is located; full unkeyed geometry may still reveal layout.",
+        "automaticEffects": []
+      },
+      "readyForArt": true,
+      "openBeforeStorySpecificInterior": [
+        "Precise local dimensions are authored proposals, not surveyed facts"
+      ]
+    },
+    {
+      "id": "satellite-map-plan-frozen-door",
+      "audience": "DM-only",
+      "siteId": "frozen-door",
+      "siteNumber": 6,
+      "locationId": "loc-frozen-door",
+      "boardId": "site-frozen-door",
+      "parentBoardId": "north",
+      "travelId": "loc-frozen-door",
+      "questId": "frozen-door",
+      "prepLink": {
+        "kind": "satellite",
+        "siteId": "frozen-door",
+        "leadId": "satellite-frozen-door",
+        "questId": "frozen-door",
+        "entryBeatId": null,
+        "contentProvider": "ECHO_ADVENTURES.site / ECHO_SATELLITES_DATA"
+      },
+      "existingSceneIds": [],
+      "existingObjectIds": [],
+      "classification": "custom campaign proposal; not published geography or an actual visit",
+      "stage": "Optional Act IV; approximately levels 12–14. Exterior inspection can be the entire successful expedition.",
+      "regionalPlacement": {
+        "source": "atlas/Geography-Register.json#nine-6",
+        "placementSource": "world-maps/Sword-Coast-Atlas-Placements.txt",
+        "kind": "glacier-approach-area",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              38.3,
+              5.6
+            ],
+            [
+              39.3,
+              5.2
+            ],
+            [
+              40.0,
+              5.7
+            ],
+            [
+              39.6,
+              6.5
+            ],
+            [
+              38.5,
+              6.4
+            ],
+            [
+              38.3,
+              5.6
+            ]
+          ]
+        },
+        "referenceCoordinate": null,
+        "coordinateUnits": "official reference normalized0..100; geometry only proposed area",
+        "exactDestinationEstablished": false,
+        "description": "Southwest edge of the Reghed Glacier.",
+        "notes": "Proposed southwestern Reghed Glacier approach above Icewind Dale. Area only: no precise pass, door, hazard-free trail or teleport destination established."
+      },
+      "sourcePrecedence": "Newest atlas record supplies broad regional proposal. Approved satellite package supplies story limits. A broad region does not fill exact bearings, personal connections, interior identities or actual access.",
+      "contentRefs": [
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "sites[id=frozen-door]"
+        },
+        {
+          "path": "Echo-Below-Campaign-Outline.md",
+          "selector": "Act III and satellite menu"
+        },
+        {
+          "path": "Continuity-Reference.md",
+          "selector": "The Nine — Site6"
+        },
+        {
+          "path": "Site-Adventures.md",
+          "selector": "75–93"
+        },
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "frozen-door"
+        },
+        {
+          "path": "Continuity-Reference.md",
+          "selector": "The Nine — Site6"
+        }
+      ],
+      "existingAsset": null,
+      "legacyAssetPolicy": "Nine-Sites-Atlas.png, Nine-Sites-Watercolor.png and labelled world-map composites remain private references, never per-site public fallback. No existing artwork is changed by this plan.",
+      "mapScope": "Glacier approach, camp and exterior threshold master with close inspection view. No map beyond the door until separately prepared.",
+      "mapPackage": [
+        {
+          "role": "approach",
+          "state": "requires authored proposal",
+          "requirements": "Normal travel north, then a prepared glacier approach; no exact location is chosen until the lead is accepted."
+        },
+        {
+          "role": "overview",
+          "state": "requires authored proposal",
+          "requirements": "One connected site overview with ordinary approach, visible retreat and annotated private points; keep DM secrets off public art."
+        },
+        {
+          "role": "interior-or-investigation-sectors",
+          "state": "exterior only; interior unassigned",
+          "keys": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "rooms": [
+        {
+          "key": "1",
+          "title": "Expedition shelf",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Sheltered traverse, cairns, protected lookout and a return trail with reserve supplies. No compulsory fatal crevasse.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "glacier approach"
+          ],
+          "onwardConnections": [
+            "2"
+          ],
+          "canonicalLocationId": "loc-frozen-door",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "2",
+          "title": "Outward camp",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Sled repair space, tents facing away from door, readable maintenance plaque and a clear departure route. Ossa is proposed, never painted in.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "1"
+          ],
+          "onwardConnections": [
+            "3"
+          ],
+          "canonicalLocationId": "loc-frozen-door",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "3",
+          "title": "Inspection stones",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Three exterior indicators beside the doorway, a cracked marker and safe rope shelter from falling ice. Indicators are not automatic keys.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "2"
+          ],
+          "onwardConnections": [
+            "4"
+          ],
+          "canonicalLocationId": "loc-frozen-door",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "4",
+          "title": "Sealed threshold",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Lone black door in glacier; no exterior building or invented ruins. Hinges, patches and tool marks can be examined while closed. Beyond-door layout remains unassigned.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "3"
+          ],
+          "onwardConnections": [],
+          "canonicalLocationId": "loc-frozen-door",
+          "newDiscoveryRecord": false
+        }
+      ],
+      "entranceRequirements": [
+        "Northern travel arrangements and local guide.",
+        "Cold protection, provisions, shelter, repair gear and an actual weather window.",
+        "A glacier return route with a reserve day and no irreversible resource spiral."
+      ],
+      "accessCondition": "Corroborate Kestrel’s partial journal with the original, caravan records or a consenting survivor; do not count copies as independent.",
+      "exitPolicy": "Sheltered camp and ordinary prepared glacier return. Exterior inspection can fully succeed without opening the door.",
+      "fallback": "Ask for permitted rubbings or fund a small ordinary repair through willing guardians. A local isolation prototype in Waterdeep can preserve a different finale option.",
+      "alternateApproaches": [
+        "Inspect and repair exterior markers while leaving the door closed.",
+        "Record the maintenance plaque and seek independent review before altering anything.",
+        "Propose a separate limited opening expedition only after a tested closing and retreat method exists."
+      ],
+      "noCompulsoryCharacterOrItem": true,
+      "forbiddenAssumptions": [
+        "No confirmed seal-maker identity",
+        "No automatic medallion key",
+        "No invented exterior ruin or finished ancient interior"
+      ],
+      "unknowns": "The makers, interior inhabitants and original sealing purpose remain open. The seal predates Halaster’s involvement.",
+      "conditionalPeople": [
+        {
+          "name": "The earlier expedition’s survivor",
+          "motive": "Keep another crew from repeating an experience they may not wish to recount fully.",
+          "limits": "Name, current location, health and account remain to prepare through an earned lead; drawing the Nine is not consent to interrogation."
+        },
+        {
+          "name": "Ossa Fen — proposed field researcher",
+          "motive": "Recover a legible maintenance record and return safely.",
+          "limits": "No established relation to Jori or Pellan Fen; surname alone creates no family connection."
+        },
+        {
+          "name": "Present guardians — roles to place later",
+          "motive": "Keep a seal functional and strangers accountable.",
+          "limits": "Their identity and the ancient makers are unassigned; neither is automatically the Still Hand."
+        }
+      ],
+      "contribution": {
+        "method": "A reversible local isolation principle inferred from inspected, maintained boundaries and a tested exterior repair.",
+        "limits": "Protects only the measured boundary; does not guarantee city-scale isolation or make the medallion a key.",
+        "test": "Measure the same exterior witness strip before and after a reversible repair, with a control beyond the marker; commission an independent review before adapting it.",
+        "alternative": "Use an authenticated maintenance copy with a small bench-scale boundary trial; weaker provenance and scale limits remain explicit."
+      },
+      "geometryAuthoringPolicy": {
+        "masterCoordinates": "Choose one authored local frame; preserve integer tactical grid if needed. Local art coordinates never become world bearings.",
+        "scale": "Not specified by story; any new five-foot grid is authored, not source-measured.",
+        "publicLayer": "Unkeyed terrain and ordinary furnishings; no named inhabitants, written clues, hazard keys, future identity or automatic openings.",
+        "privateLayer": "Room keys, doors, staged hazards, access terms, heights/water states, room-specific source links and proposals.",
+        "sharing": "Explicit Stage then Show only after the parent site is located; full unkeyed geometry may still reveal layout.",
+        "automaticEffects": []
+      },
+      "readyForArt": true,
+      "openBeforeStorySpecificInterior": [
+        "Precise local dimensions are authored proposals, not surveyed facts"
+      ]
+    },
+    {
+      "id": "satellite-map-plan-walking-tower",
+      "audience": "DM-only",
+      "siteId": "walking-tower",
+      "siteNumber": 7,
+      "locationId": "loc-walking-tower",
+      "boardId": "site-walking-tower",
+      "parentBoardId": "interior-east",
+      "travelId": "loc-walking-tower",
+      "questId": "walking-tower",
+      "prepLink": {
+        "kind": "satellite",
+        "siteId": "walking-tower",
+        "leadId": "satellite-walking-tower",
+        "questId": "walking-tower",
+        "entryBeatId": null,
+        "contentProvider": "ECHO_ADVENTURES.site / ECHO_SATELLITES_DATA"
+      },
+      "existingSceneIds": [],
+      "existingObjectIds": [],
+      "classification": "custom campaign proposal; not published geography or an actual visit",
+      "stage": "Optional Act IV; approximately levels 14–16, after several independently dated sightings.",
+      "regionalPlacement": {
+        "source": "atlas/Geography-Register.json#nine-7",
+        "placementSource": "world-maps/Sword-Coast-Atlas-Placements.txt",
+        "kind": "roaming-area",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              66.4,
+              30.0
+            ],
+            [
+              70.8,
+              31.6
+            ],
+            [
+              72.1,
+              38.0
+            ],
+            [
+              70.9,
+              43.0
+            ],
+            [
+              67.0,
+              42.0
+            ],
+            [
+              65.8,
+              36.0
+            ],
+            [
+              66.4,
+              30.0
+            ]
+          ]
+        },
+        "referenceCoordinate": null,
+        "coordinateUnits": "official reference normalized0..100; geometry only proposed area",
+        "exactDestinationEstablished": false,
+        "description": "Western Anauroch appearance region; roaming marker rather than fixed coordinates.",
+        "notes": "Western Anauroch roaming region, not a fixed tower coordinate. Label anchor is merely annotation placement. No guaranteed interception route."
+      },
+      "sourcePrecedence": "Newest atlas record supplies broad regional proposal. Approved satellite package supplies story limits. A broad region does not fill exact bearings, personal connections, interior identities or actual access.",
+      "contentRefs": [
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "sites[id=walking-tower]"
+        },
+        {
+          "path": "Echo-Below-Campaign-Outline.md",
+          "selector": "Act III and satellite menu"
+        },
+        {
+          "path": "Continuity-Reference.md",
+          "selector": "The Nine — Site7"
+        },
+        {
+          "path": "Site-Adventures.md",
+          "selector": "95–113"
+        },
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "walking-tower"
+        }
+      ],
+      "existingAsset": null,
+      "legacyAssetPolicy": "Nine-Sites-Atlas.png, Nine-Sites-Watercolor.png and labelled world-map composites remain private references, never per-site public fallback. No existing artwork is changed by this plan.",
+      "mapScope": "One provisional stationary arrival clearing plus vertically connected lower landing, study and counterweight interior views.",
+      "mapPackage": [
+        {
+          "role": "approach",
+          "state": "requires authored proposal",
+          "requirements": "The asymmetrical stepped crown identifies sightings, not a controllable teleport route. Travel to a probable appearance and wait within agreed supplies."
+        },
+        {
+          "role": "overview",
+          "state": "requires authored proposal",
+          "requirements": "One connected site overview with ordinary approach, visible retreat and annotated private points; keep DM secrets off public art."
+        },
+        {
+          "role": "interior-or-investigation-sectors",
+          "state": "requires authored proposal",
+          "keys": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "rooms": [
+        {
+          "key": "1",
+          "title": "Appearance clearing",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Predicted appearance ring, distant lookout, grounded rendezvous and entry bell. Local overview depicts one possible stationary appearance, not permanent world coordinates.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "ordinary overland approach"
+          ],
+          "onwardConnections": [
+            "2"
+          ],
+          "canonicalLocationId": "loc-walking-tower",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "2",
+          "title": "Lower landing",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Ordinary exit stair and hauling path for two chests; narrow crack with reachable recovery position and space for a plank.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "1"
+          ],
+          "onwardConnections": [
+            "3"
+          ],
+          "canonicalLocationId": "loc-walking-tower",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "3",
+          "title": "Tilted study",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Chained furniture, accessible mounting collar and table for padded measurements. Fragment identity and inventory text are private overlays.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "2"
+          ],
+          "onwardConnections": [
+            "4"
+          ],
+          "canonicalLocationId": "loc-walking-tower",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "4",
+          "title": "Counterweight room",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Load linkage to study, spare stone blocks, pulley attachment and space to replace mass before removal. Keep ordinary stairs to the ground usable.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "3"
+          ],
+          "onwardConnections": [],
+          "canonicalLocationId": "loc-walking-tower",
+          "newDiscoveryRecord": false
+        }
+      ],
+      "entranceRequirements": [
+        "Normal journey to the expected appearance area.",
+        "A lookout, hauling gear, spare ballast and enough help for planned loads.",
+        "A departure signal and a ground rendezvous independent of the tower."
+      ],
+      "accessCondition": "Compare two independent dated sightings from Selise, Pell or a coastal witness; choose the actual predicted region afterward.",
+      "exitPolicy": "Use ordinary stairs to the independent ground rendezvous. Pebbles climbing and entry-bell vibration provide at least ten minutes warning before movement.",
+      "fallback": "Exchange sightings or help a returned conservator in Waterdeep. A measured fragment copy and independent apparatus record can support disconnection research without entering the tower.",
+      "alternateApproaches": [
+        "Help stranded people first and document the mounted fragment without removing it.",
+        "Bring spare ballast and a hauling team to rescue documents and recover the fragment with custody consent.",
+        "Observe from outside and acquire authenticated sketches or a willing visitor’s bounded account."
+      ],
+      "noCompulsoryCharacterOrItem": true,
+      "forbiddenAssumptions": [
+        "No permanent world pin",
+        "No controllable teleport command",
+        "No movement triggered merely to defeat sensible preparation"
+      ],
+      "unknowns": "The movement mechanism, route and custodians remain to investigate. Possessing a fragment does not command the tower.",
+      "conditionalPeople": [
+        {
+          "name": "Linn Aster — proposed itinerant conservator",
+          "motive": "Leave safely with documents entrusted to them.",
+          "limits": "Their explanation of the tower’s motion is a theory; they do not know why Looking Glass was abandoned."
+        },
+        {
+          "name": "Pell of the Gilded Compass",
+          "motive": "Make dependable routes valuable through earned credit.",
+          "limits": "Not Pellan Fen; records become actual evidence only after a real exchange."
+        },
+        {
+          "name": "Present custodians or other stranded visitors",
+          "motive": "Keep their people and property from being treated as salvage.",
+          "limits": "Choose named roles when the sighting and current occupants are prepared, not a fixed secret lineage."
+        }
+      ],
+      "contribution": {
+        "method": "Inspect a fragment’s mounting and documented behavior to identify one reversible disconnection point.",
+        "limits": "Construction study supports a candidate intervention, not remote shutdown, universal transit or proof that amplification restores souls.",
+        "test": "Use an inert mock-up to rehearse mass replacement, then an inspected separated component only under a bounded consented plan; compare independent observations before adapting to the live apparatus.",
+        "alternative": "Study a properly documented copy or an allied conservator’s measured record alongside an accessible apparatus diagram."
+      },
+      "geometryAuthoringPolicy": {
+        "masterCoordinates": "Choose one authored local frame; preserve integer tactical grid if needed. Local art coordinates never become world bearings.",
+        "scale": "Not specified by story; any new five-foot grid is authored, not source-measured.",
+        "publicLayer": "Unkeyed terrain and ordinary furnishings; no named inhabitants, written clues, hazard keys, future identity or automatic openings.",
+        "privateLayer": "Room keys, doors, staged hazards, access terms, heights/water states, room-specific source links and proposals.",
+        "sharing": "Explicit Stage then Show only after the parent site is located; full unkeyed geometry may still reveal layout.",
+        "automaticEffects": []
+      },
+      "readyForArt": true,
+      "openBeforeStorySpecificInterior": [
+        "Precise local dimensions are authored proposals, not surveyed facts"
+      ]
+    },
+    {
+      "id": "satellite-map-plan-broken-star",
+      "audience": "DM-only",
+      "siteId": "broken-star",
+      "siteNumber": 8,
+      "locationId": "loc-broken-star",
+      "boardId": "site-broken-star",
+      "parentBoardId": "interior-east",
+      "travelId": "loc-broken-star",
+      "questId": "broken-star",
+      "prepLink": {
+        "kind": "satellite",
+        "siteId": "broken-star",
+        "leadId": "satellite-broken-star",
+        "questId": "broken-star",
+        "entryBeatId": null,
+        "contentProvider": "ECHO_ADVENTURES.site / ECHO_SATELLITES_DATA"
+      },
+      "existingSceneIds": [],
+      "existingObjectIds": [],
+      "classification": "custom campaign proposal; not published geography or an actual visit",
+      "stage": "Optional late Act IV or Act V; approximately levels 16–18 after an outward and return method is earned.",
+      "regionalPlacement": {
+        "source": "atlas/Geography-Register.json#nine-8",
+        "placementSource": "world-maps/Sword-Coast-Atlas-Placements.txt",
+        "kind": "terrestrial-approach-area",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              54.3,
+              24.8
+            ],
+            [
+              55.7,
+              24.8
+            ],
+            [
+              56.0,
+              26.4
+            ],
+            [
+              54.5,
+              26.7
+            ],
+            [
+              54.3,
+              24.8
+            ]
+          ]
+        },
+        "referenceCoordinate": null,
+        "coordinateUnits": "official reference normalized0..100; geometry only proposed area",
+        "exactDestinationEstablished": false,
+        "description": "Proposed terrestrial approach in the Star Mounts within the High Forest; destination remains partly planar.",
+        "notes": "Star Mounts approach to a partly planar destination. Area identifies terrestrial approach only; no fixed portal, known access condition, straight-line planar distance or automatic journey."
+      },
+      "sourcePrecedence": "Newest atlas record supplies broad regional proposal. Approved satellite package supplies story limits. A broad region does not fill exact bearings, personal connections, interior identities or actual access.",
+      "contentRefs": [
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "sites[id=broken-star]"
+        },
+        {
+          "path": "Echo-Below-Campaign-Outline.md",
+          "selector": "Act III and satellite menu"
+        },
+        {
+          "path": "Continuity-Reference.md",
+          "selector": "The Nine — Site8"
+        },
+        {
+          "path": "Site-Adventures.md",
+          "selector": "115 onward"
+        },
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "broken-star"
+        }
+      ],
+      "existingAsset": null,
+      "legacyAssetPolicy": "Nine-Sites-Atlas.png, Nine-Sites-Watercolor.png and labelled world-map composites remain private references, never per-site public fallback. No existing artwork is changed by this plan.",
+      "mapScope": "Separate terrestrial approach overview and a conditional planar shelf/path/room/ridge master. Do not draw a geographic line across planes.",
+      "mapPackage": [
+        {
+          "role": "approach",
+          "state": "requires authored proposal",
+          "requirements": "Not entirely on the Material Plane; exact origin and geography intentionally open. Impossible views of Waterdeep are observations, not traversable doors."
+        },
+        {
+          "role": "overview",
+          "state": "requires authored proposal",
+          "requirements": "One connected site overview with ordinary approach, visible retreat and annotated private points; keep DM secrets off public art."
+        },
+        {
+          "role": "interior-or-investigation-sectors",
+          "state": "requires authored proposal",
+          "keys": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "rooms": [
+        {
+          "key": "1",
+          "title": "Arrival shelf",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Stable shelf with tether points and a tested return position. No map symbol implies that a working portal already exists.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "earned transport method"
+          ],
+          "onwardConnections": [
+            "2"
+          ],
+          "canonicalLocationId": "loc-broken-star",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "2",
+          "title": "Contrary path",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Two visible choices: anchored narrow traverse and broad reflective slope. Include shallow reachable recovery basin, not an unannounced bottomless drop.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "1"
+          ],
+          "onwardConnections": [
+            "3"
+          ],
+          "canonicalLocationId": "loc-broken-star",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "3",
+          "title": "Overlapping observation rooms",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Two offset room outlines and shared instrument with three shutters; impossible Waterdeep views are scenic windows, never traversable exits.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "2"
+          ],
+          "onwardConnections": [
+            "4"
+          ],
+          "canonicalLocationId": "loc-broken-star",
+          "newDiscoveryRecord": false
+        },
+        {
+          "key": "4",
+          "title": "Protected observation ridge",
+          "classification": "existing custom room/stage; exact drawing is an authored proposal unless existing bounds supplied",
+          "geometryRequirements": "Sheltered observation point, removable screen and a separate announced exposure zone during alignment. Keep marked retreat to the arrival shelf.",
+          "existingMasterBounds": null,
+          "entryConnections": [
+            "3"
+          ],
+          "onwardConnections": [],
+          "canonicalLocationId": "loc-broken-star",
+          "newDiscoveryRecord": false
+        }
+      ],
+      "entranceRequirements": [
+        "Confirm travel magic or negotiated transport under its real rules and cost.",
+        "Tethers, markers, protective shelter, supplies and a return reserve.",
+        "A route check and a method for withdrawing companions without scattering the party."
+      ],
+      "accessCondition": "A real capable method and a verified return point must be prepared before this outline becomes playable.",
+      "exitPolicy": "The selected rules-supported transport must have a tested return before departure. Mark shelf and protected ridge; preserve rescue access to basin.",
+      "fallback": "Dianna can critique an actually obtained redacted measurement and Orren can model a limited boundary with permitted data. Local evacuation drills remain useful without planar travel.",
+      "alternateApproaches": [
+        "Observe from a stable shelf and return with repeated timing notes.",
+        "Escort explorers along an anchored route while testing one removable shield.",
+        "Use remote observations or legitimately collected inert material with independent review."
+      ],
+      "noCompulsoryCharacterOrItem": true,
+      "forbiddenAssumptions": [
+        "No fixed working portal",
+        "No chosen meteor/planar-fragment origin",
+        "No Waterdeep window travel shortcut",
+        "No scattering party across planes on failed checks"
+      ],
+      "unknowns": "It may be a meteor, planar fragment or magical structure; no cosmology is selected by this outline.",
+      "conditionalPeople": [
+        {
+          "name": "A willing previous explorer",
+          "motive": "Ensure the next crew has a credible way home.",
+          "limits": "Name and relationship come from actual play; a research sketch alone does not make them an eyewitness."
+        },
+        {
+          "name": "The expedition’s travel provider or custodian",
+          "motive": "Use a scarce capability responsibly.",
+          "limits": "Select a legitimate ally or character capability; no invented free portal or automatic medallion destination."
+        },
+        {
+          "name": "Other explorers — optional affected people",
+          "motive": "Recover from a route failure without losing companions.",
+          "limits": "Prepare named people and why they are there only after choosing the actual route."
+        }
+      ],
+      "contribution": {
+        "method": "A tested warning sign and limited observation of how a boundary fails or shifts.",
+        "limits": "A shield at one ridge does not protect a city or prove the origin of the Star. Viewing Waterdeep offers no shortcut.",
+        "test": "Compare one shuttered view with a control through an ordinary stable interval; keep routes marked and stop before the announced shift. Review different observers’ timing before generalizing.",
+        "alternative": "Compare independent explorer logs with a small local model and a district evacuation exercise; retain unknown scaling and travel conditions."
+      },
+      "geometryAuthoringPolicy": {
+        "masterCoordinates": "Choose one authored local frame; preserve integer tactical grid if needed. Local art coordinates never become world bearings.",
+        "scale": "Not specified by story; any new five-foot grid is authored, not source-measured.",
+        "publicLayer": "Unkeyed terrain and ordinary furnishings; no named inhabitants, written clues, hazard keys, future identity or automatic openings.",
+        "privateLayer": "Room keys, doors, staged hazards, access terms, heights/water states, room-specific source links and proposals.",
+        "sharing": "Explicit Stage then Show only after the parent site is located; full unkeyed geometry may still reveal layout.",
+        "automaticEffects": []
+      },
+      "readyForArt": true,
+      "openBeforeStorySpecificInterior": [
+        "Precise local dimensions are authored proposals, not surveyed facts"
+      ]
+    },
+    {
+      "id": "satellite-map-plan-hollow-mountain",
+      "audience": "DM-only",
+      "siteId": "hollow-mountain",
+      "siteNumber": 9,
+      "locationId": "loc-hollow-mountain",
+      "boardId": "site-hollow-mountain",
+      "parentBoardId": "interior-east",
+      "travelId": "loc-hollow-mountain",
+      "questId": "hollow-mountain",
+      "prepLink": {
+        "kind": "satellite",
+        "siteId": "hollow-mountain",
+        "leadId": "satellite-hollow-mountain",
+        "questId": "hollow-mountain",
+        "entryBeatId": null,
+        "contentProvider": "ECHO_ADVENTURES.site / ECHO_SATELLITES_DATA"
+      },
+      "existingSceneIds": [],
+      "existingObjectIds": [],
+      "classification": "custom campaign proposal; not published geography or an actual visit",
+      "stage": "Optional late campaign; approximately levels 18–20. Deliberately unassigned until actual relationships and unresolved needs supply a reason.",
+      "regionalPlacement": {
+        "source": "atlas/Geography-Register.json#nine-9",
+        "placementSource": "world-maps/Sword-Coast-Atlas-Placements.txt",
+        "kind": "provisional-mountain-area",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              60.5,
+              34.0
+            ],
+            [
+              62.3,
+              34.0
+            ],
+            [
+              63.0,
+              36.1
+            ],
+            [
+              61.4,
+              36.6
+            ],
+            [
+              60.6,
+              35.7
+            ],
+            [
+              60.5,
+              34.0
+            ]
+          ]
+        },
+        "referenceCoordinate": null,
+        "coordinateUnits": "official reference normalized0..100; geometry only proposed area",
+        "exactDestinationEstablished": false,
+        "description": "Provisional peak in the southern Greypeaks, northeast of Loudwater.",
+        "notes": "Southern Greypeaks proposal northeast of the intended Loudwater approach. Peak open; Loudwater master coordinate remains unverified, so northeast relationship must be checked before fixing the mountain. No ancestral/home connection asserted."
+      },
+      "sourcePrecedence": "Newest atlas record supplies broad regional proposal. Approved satellite package supplies story limits. A broad region does not fill exact bearings, personal connections, interior identities or actual access.",
+      "contentRefs": [
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "sites[id=hollow-mountain]"
+        },
+        {
+          "path": "Echo-Below-Campaign-Outline.md",
+          "selector": "Act III and satellite menu"
+        },
+        {
+          "path": "Continuity-Reference.md",
+          "selector": "The Nine — Site9"
+        },
+        {
+          "path": "Campaign-Satellites-Data.js",
+          "selector": "hollow-mountain"
+        },
+        {
+          "path": "Echo-Below-Questbook.md",
+          "selector": "The Unfilled Circle"
+        },
+        {
+          "path": "Continuity-Reference.md",
+          "selector": "The Nine — Site9"
+        }
+      ],
+      "existingAsset": null,
+      "legacyAssetPolicy": "Nine-Sites-Atlas.png, Nine-Sites-Watercolor.png and labelled world-map composites remain private references, never per-site public fallback. No existing artwork is changed by this plan.",
+      "mapScope": "An explicitly provisional mountain approach is permitted by newest atlas geography. Reserve neutral terrain/threshold variants only; story-specific interior, people and identity remain unassigned.",
+      "mapPackage": [
+        {
+          "role": "approach",
+          "state": "requires authored proposal",
+          "requirements": "Intentionally unassigned. Do not place it automatically in Pebble’s mountain home, Aldric’s past, another plane or beneath Mending Court."
+        },
+        {
+          "role": "overview",
+          "state": "requires authored proposal",
+          "requirements": "One connected site overview with ordinary approach, visible retreat and annotated private points; keep DM secrets off public art."
+        },
+        {
+          "role": "interior-or-investigation-sectors",
+          "state": "unassigned; no fixed story footprint",
+          "keys": []
+        }
+      ],
+      "rooms": [],
+      "entranceRequirements": [
+        "Approve actual location and why the party can reach it.",
+        "Choose route, requirements and costs from their current capabilities.",
+        "Agree local permission, a return point and why any observation is worth attempting."
+      ],
+      "accessCondition": "An earned personal or community lead corroborated by an independent source; an unfilled mark is not a bearing.",
+      "exitPolicy": "Before an actual expedition, choose an ordinary or rules-supported exit and a refuge tied to the approved location. A terrain placeholder is not proof of access.",
+      "fallback": "All established finale approaches remain available. Resolve the community’s ordinary need through another route where possible; no missing-site punishment or forced journey.",
+      "alternateApproaches": [
+        "Help the actual community’s immediate need and study only with permission.",
+        "Trade a limited report or a tested technique while leaving custody local.",
+        "Decline travel, support an allied investigation or choose an already available intervention instead."
+      ],
+      "noCompulsoryCharacterOrItem": true,
+      "forbiddenAssumptions": [
+        "No chosen community or family connection",
+        "No ninth-mark filling trigger",
+        "No compulsory finale component",
+        "No claim Halaster reached the site"
+      ],
+      "unknowns": "Location, identities, inhabitants, site state, exact contribution and mark-filling trigger remain open.",
+      "conditionalPeople": [
+        {
+          "name": "A community the party has actually come to know",
+          "motive": "Address a concrete unresolved need of its own.",
+          "limits": "No name, homeworld, ancestry or secret relationship is predetermined."
+        },
+        {
+          "name": "An independently reached witness or custodian",
+          "motive": "Protect their own people and terms of access.",
+          "limits": "Not automatically Halaster’s missing apprentice, a PC relative or an original society survivor."
+        },
+        {
+          "name": "Halaster — distant interested investigator",
+          "motive": "Obtain knowledge from a site he has never reached.",
+          "limits": "He cannot supply the location or demand a mandatory final key; party success need not prove his theory."
+        }
+      ],
+      "contribution": {
+        "method": "Choose one bounded missing capability from the party’s actual intervention plan, such as a better warning interval, a repairable isolation seam or a consent-preserving access arrangement.",
+        "limits": "Never the only solution, a required person-sacrifice, a universal activation key or proof of a preselected ancestry.",
+        "test": "Before staging, write one prediction, a reversible small test, a stop condition, an independent reviewer and a credible failure result; approve them in research review.",
+        "alternative": "Improve an already tested method from Undermountain, the city or another optional site; cooperate with residents or change the intervention scope."
+      },
+      "geometryAuthoringPolicy": {
+        "masterCoordinates": "Choose one authored local frame; preserve integer tactical grid if needed. Local art coordinates never become world bearings.",
+        "scale": "Not specified by story; any new five-foot grid is authored, not source-measured.",
+        "publicLayer": "Unkeyed terrain and ordinary furnishings; no named inhabitants, written clues, hazard keys, future identity or automatic openings.",
+        "privateLayer": "Room keys, doors, staged hazards, access terms, heights/water states, room-specific source links and proposals.",
+        "sharing": "Explicit Stage then Show only after the parent site is located; full unkeyed geometry may still reveal layout.",
+        "automaticEffects": []
+      },
+      "readyForArt": false,
+      "openBeforeStorySpecificInterior": [
+        "Chosen local need and inhabitants",
+        "One bounded test and stop condition",
+        "Actual access and return",
+        "Approved interior premise"
+      ]
+    }
+  ],
+  "reviewBeforeIntegration": [
+    "Keep canonical IDs, saved scene IDs and discoveries unchanged.",
+    "Use opaque public IDs and neutral public titles.",
+    "Confirm ordinary retreat, alternate route and independent clue fallback on every map.",
+    "Visually review each public layer; keep private notes and source keys separate.",
+    "No new map is approved by the existence of this JSON."
+  ]
+}

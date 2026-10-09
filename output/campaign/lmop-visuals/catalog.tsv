@@ -1,0 +1,104 @@
+chapter|key|slug|title|reveal|subject
+Phandalin|P01|barthen-exterior|Outside Barthen’s Provisions|On arrival at the shop|A sturdy frontier trading post on a dusty Phandalin street, wagon space and stacked crates outside, warm daytime light, no readable signage.
+Phandalin|P02|stonehill-inn|Stonehill Inn|When the inn comes into view|A welcoming two-story frontier inn with lanterns, porch, horses and townsfolk in the dusty village, no readable sign.
+Phandalin|P03|stonehill-common-room|Stonehill common room|On entering the inn|Warm common room with rough wooden tables, hearth, travelers and local miners in conversation, no named NPC likenesses.
+Phandalin|P04|townmasters-hall|Townmaster’s Hall|When the party visits the hall|Plain wooden civic hall on a broad village square with posted notices whose writing is indistinct.
+Phandalin|P05|lionshield-coster|Lionshield Coster|When the party finds the shop|Neat frontier supply shop with stacked crates and a simple blue shield emblem, no readable lettering.
+Phandalin|P06|miners-exchange|Miner’s Exchange|When the party visits|Bustling assay and trade office with scales, ore samples and miners bargaining, no readable text.
+Phandalin|P07|shrine-of-luck|Shrine of Luck|When the party visits|Modest outdoor stone shrine to good fortune among village buildings with candles and small offerings, quiet morning light.
+Phandalin|P08|alderleaf-farm|Alderleaf Farm|When the party reaches the farm|Small green farm with tidy fields, farmhouse, vegetable beds and orchard at edge of village.
+Phandalin|P09|sleeping-giant|Sleeping Giant tap house|When the tap house comes into view|Rough rundown tap house on a muddy lane, a few red-cloaked toughs loitering outside, ominous but no fight yet.
+Phandalin|P09B|sleeping-giant-interior|Sleeping Giant common room|When the party enters the tap house|Rough dim tap house interior with scarred tables, smoky hearth, spilled ale and wary red-cloaked patrons, tense but no fight underway.
+Phandalin|P09C|edermath-orchard|Edermath Orchard|When the party visits Daran|Old orchard near Phandalin with rows of apple trees, a humble cottage and a retired adventurer tending the trees in afternoon light.
+Phandalin|P10|redbrand-confrontation|Redbrand confrontation|After the ruffians confront the party|Dusty frontier street with four red-cloaked ruffians blocking the party’s way, tense standoff, no depicted player characters.
+Phandalin|P11|tresendar-manor|Tresendar Manor ruins|When the manor is approached|Ruined old manor atop a low hillside above Phandalin, overgrown stone walls and broken roof, no secret entrance visible.
+Phandalin|P12|tresendar-tunnel|Hillside tunnel entrance|Once the tunnel is found|A narrow concealed opening in brushy hillside below a ruined manor, dark earthen passage beyond.
+Redbrand Hideout|R01|cellar-cistern|Area 1 · Cellar and cistern|On entering area 1|Cool stone cellar beneath manor with stairs, barrels, cistern of dark water and old masonry; no hidden satchel visible.
+Redbrand Hideout|R02|ruffian-barracks|Area 2 · Ruffian barracks|On entering area 2|Cramped underground barracks with rough bunks, scattered cards and weapons, three red-cloaked ruffians startled by entry.
+Redbrand Hideout|R03|pit-hall|Area 3 · Hall with hidden pit|On entering area 3|Narrow dim stone corridor, uneven dusty floor and old timber beams; no visible pit or trap mechanism.
+Redbrand Hideout|R03B|pit-discovered|Area 3 · Pit discovered|After the pit is detected or triggered|Narrow stone corridor with an exposed open pit in the floor and splintered boards at its edge.
+Redbrand Hideout|R04|crypt|Area 4 · Crypt|On entering area 4|Cold crypt with stone sarcophagi, carved slabs and dusty niches; skeletal remains are still and no ambush is shown.
+Redbrand Hideout|R05|slave-pens|Area 5 · Slave pens|When the pens are visible|Empty underground stone holding room with two closed iron-barred cells, a table and two lanterns; no people or creatures shown.
+Redbrand Hideout|R06|armory|Area 6 · Armory|On entering area 6|Small stone armory with racks of swords, crossbows and supplies, old torchlight and dusty floor.
+Redbrand Hideout|R07|redbrand-storeroom|Area 7 · Storeroom|On entering area 7|Low stone storeroom with stacked crates, barrels and worn sacks, dim lantern light.
+Redbrand Hideout|R08|crevasse|Area 8 · Crevasse|On entering area 8|Large rough-hewn cavern split by deep dark crevasse with precarious wooden bridges and old stonework; creature hidden in shadows.
+Redbrand Hideout|R08B|nothic-reveal|Area 8 · Nothic revealed|Only when the nothic is seen|One-eyed nothic emerging from shadow beside deep crevasse and frail bridge, eerie gaze, no gore.
+Redbrand Hideout|R09|bugbear-barracks|Area 9 · Bugbear barracks|On entering area 9|Rough chamber with three hulking bugbears and one frightened small goblin, filthy bedding, crates, tense encounter.
+Redbrand Hideout|R10|common-room|Area 10 · Common room|On entering area 10|Underground common room with worn table, cards, ale and four red-cloaked ruffians, smoky lamplight.
+Redbrand Hideout|R11|wizards-workshop|Area 11 · Wizard’s workshop|On entering area 11|Secret alchemical workshop with glassware, books, worktables, faint magical glow and no readable notes.
+Redbrand Hideout|R12|glasstaff-quarters|Area 12 · Glasstaff’s quarters|On entering area 12|Comfortable hidden quarters with polished furnishings, bed, chest, desk, fireplace and an elegant glass staff leaning nearby; occupant status not fixed.
+Wilderness|W01|triboar-trail|Triboar Trail journey|During travel east of Phandalin|Long rugged frontier trail through grassland and sparse woods beneath broad cloudy sky, travelers not shown.
+Wilderness|W02|conyberry|Conyberry ruins|When the ruined town comes into view|Deserted ruined village swallowed by grass and saplings, stone foundations and collapsed cottages in moody daylight.
+Wilderness|W03|agathas-lair|Agatha’s woven shelter|Before Agatha appears|Domed shelter woven from living branches deep in dim old forest, moss, dead leaves, quiet supernatural chill, no banshee visible.
+Wilderness|W04|agatha-reveal|Agatha appears|Only when Agatha manifests|Pale elven banshee manifesting within a woven woodland shelter, tragic and haunting rather than gory, spectral white hair.
+Wilderness|W05|old-owl-well|Old Owl Well|When the site is approached|Ruined watchtower courtyard on lonely hill with old stone well and a colorful tent, no undead visible.
+Wilderness|W06|old-owl-well-undead|Old Owl Well · undead revealed|When the zombies emerge|Broken watchtower courtyard, red-robed wizard by a bright tent while ancient zombies shamble from the ruins.
+Wilderness|W07|wyvern-tor-approach|Wyvern Tor|When the tor is spotted|Rugged hill and rocky ravine in open wilderness, thin smoke rising discreetly from hidden cave camp.
+Wilderness|W08|wyvern-tor-camp|Wyvern Tor · orc camp|When the camp is visible|Rocky ravine cave with crude campfire, orcs and a hulking ogre among bedrolls, no depicted party.
+Wilderness|W09|stirge-encounter|Wilderness encounter · stirges|Only when stirges attack or are spotted|A swarm of small batlike stirges wheeling between trees at dusk above the Triboar Trail, no blood or party figures.
+Wilderness|W10|ghoul-encounter|Wilderness encounter · ghouls|Only when ghouls are encountered|A few gray ghouls emerging from brush beside a night camp on the Triboar Trail, fantasy horror without gore or party figures.
+Wilderness|W11|ogre-encounter|Wilderness encounter · ogre|Only when the ogre is encountered|One enormous lone ogre on a rocky forest trail, looking for prey, no party figures.
+Wilderness|W12|goblin-encounter|Wilderness encounter · goblins|Only when goblins are encountered|A small band of goblins emerging from thickets beside a frontier road, bows and scimitars ready, no party figures.
+Wilderness|W13|hobgoblin-encounter|Wilderness encounter · hobgoblins|Only when hobgoblins are encountered|Disciplined armored hobgoblins marching across a wooded trail with shields and long swords, no party figures.
+Wilderness|W14|orc-encounter|Wilderness encounter · orcs|Only when orcs are encountered|A raiding band of orcs at the edge of a rugged hillside trail, tense approach, no party figures.
+Wilderness|W15|wolf-encounter|Wilderness encounter · wolves|Only when wolves are encountered|A pack of hungry gray wolves encircling a lonely woodland trail at twilight, no people or gore.
+Wilderness|W16|owlbear-encounter|Wilderness encounter · owlbear|Only when the owlbear is encountered|A lone owlbear pushing through dense northern forest onto a mossy trail, imposing natural creature, no people or gore.
+Thundertree|T00|thundertree-approach|Thundertree approach|When the ruined town comes into view|Overgrown ruined village, ash-dusted trees, crumbling cottages and distant round tower rising over the settlement, dragon not visible.
+Thundertree|T01|western-cottage|Area 1 · Western cottage|On entering area 1|Roofless crumbling cottage under a large tree, weeds and stones across floor, twig blights camouflaged as brush.
+Thundertree|T02|blighted-cottages|Area 2 · Blighted cottages|On entering area 2|Two adjacent roofless cottages with young trees growing through rubble and dense unnatural thorny scrub, no visible hidden chest.
+Thundertree|T03|brown-horse|Area 3 · Brown Horse|On entering area 3|Sagging old tavern with weathered horse-and-ale emblem, broken brewer vats inside and ash-covered zombies visible in gloom.
+Thundertree|T04|druids-watch|Area 4 · Druid’s Watch|When cottage is approached|Small reinforced cottage with thick shutters in ruined town, watchful older white-bearded druid at doorway.
+Thundertree|T05|blighted-farmhouse|Area 5 · Blighted farmhouse|On entering area 5|Old farmhouse almost swallowed by thorn thicket beside overgrown field, subtle hostile twig shapes hidden among branches.
+Thundertree|T06|ruined-store|Area 6 · Ruined store|When the webbed ruin is seen|Partly roofed ruined store and lane choked by huge white spider webs, dark interior; giant spiders not yet visible.
+Thundertree|T06B|spider-reveal|Area 6 · Spiders revealed|When the spiders are seen|Two giant spiders crawling through web-choked ruined store, tense fantasy encounter, no gore.
+Thundertree|T07|dragon-tower|Area 7 · Dragon’s tower|When tower hill is approached|Round ruined tower and attached cottage on hill above abandoned village, two dead giant spiders on overgrown path, dragon hidden inside.
+Thundertree|T07B|venomfang-reveal|Area 7 · Venomfang revealed|Only when the dragon is seen|Young green dragon coiled inside shattered round tower with torn roof and broken masonry, imposing but not enormous, no party shown.
+Thundertree|T08|old-smithy|Area 8 · Old smithy|On entering area 8|Ruined smithy with wide chimney, cold forge and old tools, two ash-covered zombies slumped amid dust.
+Thundertree|T09|herbalists-shop|Area 9 · Herbalist’s shop|On entering area 9|Ruined herbalist shop with sagging shelves, broken pottery, glass and rotted books, heirloom hiding place not visible.
+Thundertree|T10|town-square|Area 10 · Town square|On entering area 10|Overgrown crossroads with leaning weathered wooden warrior statue holding spear and shield, ruins all around.
+Thundertree|T11|old-garrison|Area 11 · Old garrison|On entering area 11|Ruined stone barracks with battlement and arrow slits, shattered bunks inside and ash-covered zombies lurking.
+Thundertree|T12|weavers-cottage|Area 12 · Weaver’s cottage|On entering area 12|Collapsed cottage with broken loom and dyed fibers, dense thicket outside concealing twig blights.
+Thundertree|T13|cultist-cottage|Area 13 · Dragon cultists’ cottage|When cottage is approached|Intact shuttered cottage in abandoned ruined village, ominously closed doors, no cultists visible.
+Thundertree|T13B|cultists-reveal|Area 13 · Cultists revealed|Once the cottage is entered|Inside shuttered cottage, six black-cloaked dragon cultists gathered in uneasy council by candlelight.
+Cragmaw Castle|C00|castle-approach|Cragmaw Castle approach|When the castle is first seen|Seven overlapping crumbling stone towers amid forest, battered walls and old entrance gate, no defenders visible.
+Cragmaw Castle|C01|castle-entrance|Area 1 · Castle entrance|At the entrance|Collapsed bronze-covered castle gates, stone terrace and dark arrow slits between ruined towers, no goblins exposed.
+Cragmaw Castle|C02|trapped-hall|Area 2 · Trapped hall|On entering area 2|Dusty plaster and rubble in old castle passage with branching doors and cracked ceiling; concealed tripwire invisible.
+Cragmaw Castle|C02B|hall-collapse|Area 2 · Hall collapse|Only if the trap triggers|Ancient hall ceiling collapsing into cloud of plaster and stone after a hidden wire is tripped, no injured figures.
+Cragmaw Castle|C03|archer-post|Area 3 · Archer post|When an archer post is entered|Small debris-filled stone guard room with narrow arrow slit overlooking castle gate, two goblins with shortbows.
+Cragmaw Castle|C04|ruined-barracks|Area 4 · Ruined barracks|On entering area 4|Rubble-filled southwest tower with crude bedrolls and three goblins in makeshift camp.
+Cragmaw Castle|C05|castle-storeroom|Area 5 · Storeroom|On entering area 5|Old castle storeroom of casks and sacks, bloodied chain shirt and human weapons set aside among supplies.
+Cragmaw Castle|C06|hobgoblin-barracks|Area 6 · Hobgoblin barracks|On entering area 6|Stone barracks with four pallets and weapons on walls, four armored hobgoblins on alert.
+Cragmaw Castle|C07|banquet-hall|Area 7 · Banquet hall|On entering area 7|Large soot-blackened feasting hall, long messy tables, brazier and goblin cook with several goblins.
+Cragmaw Castle|C08|dark-hall|Area 8 · Dark hall|On entering area 8|High narrow old chapel hall with carved angelic figures, hanging curtains and stone brazier, grick hidden in deep shadow.
+Cragmaw Castle|C08B|grick-reveal|Area 8 · Grick revealed|When the grick attacks or is found|Serpentine grick monster uncoiling from chapel shadows among carved angelic pillars and curtains.
+Cragmaw Castle|C09|goblin-shrine|Area 9 · Goblin shrine|On entering area 9|North tower shrine with dark stained altar cloth, small golden implements and three goblins conducting a grim rite.
+Cragmaw Castle|C10|postern-gate|Area 10 · Postern gate|When found|Overgrown narrow path to locked iron postern door in castle wall, dark arrow slits above.
+Cragmaw Castle|C11|ruined-tower|Area 11 · Ruined tower|On entering area 11|Mostly collapsed round tower with rotting crates, barrels and rubble, concealed canvas passage not revealed.
+Cragmaw Castle|C12|guard-barracks|Area 12 · Guard barracks|On entering area 12|Castle guard room with warm brazier, four pallets, hanging curtain and two armored hobgoblins.
+Cragmaw Castle|C13|owlbear-tower|Area 13 · Owlbear tower|When tower interior is visible|Tall hollow collapsed tower with stone rubble and broken glass, captive owlbear among debris, dramatic but not gory.
+Cragmaw Castle|C14|kings-quarters|Area 14 · King’s quarters|When room is visible|Castle chamber with fur carpet, trophies, bed, brazier and table; wounded unconscious dwarf on floor, armored bugbear king, wolf and female drow-looking visitor.
+Wave Echo Cave|E01|cave-entrance|Area 1 · Cave entrance|On entering area 1|Large natural cavern with central rock pillar, stalagmites, supplies and bedrolls, dead dwarf in travel clothes and deep pit with rope, respectful no gore.
+Wave Echo Cave|E02|mine-tunnels|Area 2 · Mine tunnels|On entering area 2|Maze of low unfinished mine passages with exposed stone faces, old tool marks and darkness; ochre jelly unseen.
+Wave Echo Cave|E03|old-entrance|Area 3 · Old entrance|On entering area 3|Vast cave with dwarf and gnome miner reliefs, ancient skeletons and brass lanterns; ceiling stirges camouflaged in dark.
+Wave Echo Cave|E04|guardroom|Area 4 · Old guardroom|On entering area 4|Dusty guardroom with benches, old weapons racks, rubble and still bones scattered near walls.
+Wave Echo Cave|E04B|guardroom-skeletons|Area 4 · Skeletons rise|Once the skeletons animate|Ancient skeletal guards rising among weapon racks in ruined mine guardroom, fantasy horror without gore.
+Wave Echo Cave|E05|assayers-office|Area 5 · Assayers’ office|On entering area 5|Dwarven assay office with stone counter, iron scales, cubbyholes and dusty papers, hidden strongbox not visible.
+Wave Echo Cave|E06|south-barracks|Area 6 · South barracks|On entering area 6|Stone bunk room with cold iron brazier, scattered bones and three gray ghouls crouched in the gloom.
+Wave Echo Cave|E07|ruined-storeroom|Area 7 · Ruined storeroom|On entering area 7|Ancient mine storeroom with collapsed east wall and cracked dusty kegs in an intact northern alcove.
+Wave Echo Cave|E08|fungi-cavern|Area 8 · Fungi cavern|On entering area 8|Cavern carpeted by strange luminous fungi, large puffballs and tall stalks, sickly green phosphorescence, no gas cloud yet.
+Wave Echo Cave|E08B|fungal-gas|Area 8 · Spores released|Only after spores are disturbed|Toxic green spores billowing from disturbed puffball fungi across a low cavern, no party figures.
+Wave Echo Cave|E09|great-cavern|Area 9 · Great cavern|On entering area 9|Huge tiered cavern with rocky escarpments, old tables and braziers and long-dead miners, ghouls concealed on far ledge.
+Wave Echo Cave|E10|dark-pool|Area 10 · Dark pool|On entering area 10|Still underground pool with pale shell-strewn shore and stream disappearing northeast, submerged treasure not visible.
+Wave Echo Cave|E11|north-barracks|Area 11 · North barracks|On entering area 11|Old stone barracks with bunks, glowing brazier, barricaded door and five bugbears in occupation.
+Wave Echo Cave|E12|smelter-cavern|Area 12 · Smelter cavern|On entering area 12|Vast old smelter cavern with blast furnace, dry waterwheel, mechanical bellows, ore carts, a floating flaming skull and shambling undead.
+Wave Echo Cave|E13|starry-cavern|Area 13 · Starry cavern|On entering area 13|Expansive cavern whose mineral ceiling glitters like stars, skeletal remains and two freestanding scorched stone buildings.
+Wave Echo Cave|E14|wizards-quarters|Area 14 · Wizards’ quarters|On entering area 14|Scorched ancient wizard chamber, blackened beds and bookshelves, charred furniture, closed iron chest; wraith unseen.
+Wave Echo Cave|E14B|mormesk-reveal|Area 14 · Mormesk appears|When the wraith manifests|Wraith of ancient wizard rising from shadows in scorched quarters, ghostly robes and cold spectral light.
+Wave Echo Cave|E15|forge-of-spells-v2|Area 15 · Forge of Spells|On entering area 15|Damaged magical workshop, worktables and green-flame brazier on pedestal, one hovering spectator with a central eye and four eye stalks.
+Wave Echo Cave|E16|booming-cavern|Area 16 · Booming cavern|On entering area 16|Narrow cave ledge above surging underground water, waves striking rock wall, mist and spray, no artificial portal.
+Wave Echo Cave|E17|old-streambed|Area 17 · Old streambed|On entering area 17|Low dry boulder-choked passage through ancient cave, only four feet high, mineral stains show former stream.
+Wave Echo Cave|E18|collapsed-cavern|Area 18 · Collapsed cavern|On entering area 18|Wide rocky rift receiving waterfall, ropes and iron stakes descending, three bugbears and a drow-looking male among rubble.
+Wave Echo Cave|E19|temple-of-dumathoin|Area 19 · Temple of Dumathoin|On entering area 19|Ancient dwarf temple with cracked marble pillars, nine-foot seated dwarf statue holding warhammer with green glass eyes, campfire and bedrolls; enemies optional and not fixed.
+Wave Echo Cave|E19B|nezznar-confrontation|Area 19 · Black Spider confrontation|Only when Nezznar confronts the party here|Drow wizard Nezznar before dwarf statue in cracked temple, giant spiders and bugbear guards among pillars, no player characters.
+Wave Echo Cave|E20|priests-quarters|Area 20 · Priests’ quarters|On entering area 20|Dusty draped chamber with old bed and brazier, bound unconscious dwarf on floor, respectful no gore.
+Epilogue|Z01|phandalin-homecoming|Phandalin homecoming|Only after a successful return|Warm evening return to frontier village with repaired lantern-lit street and peaceful townsfolk, no predetermined named heroes.

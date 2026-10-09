@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<title>Settlement orientation diagram</title>
+<defs><pattern id="grain" width="23" height="29" patternUnits="userSpaceOnUse"><circle cx="7" cy="11" r="1" fill="#60775a" opacity=".08"/></pattern><pattern id="town-blocks" width="88" height="66" patternUnits="userSpaceOnUse"><rect width="88" height="66" fill="#b5a27c"/><g stroke="#625f51" stroke-width="1.5"><rect x="5" y="6" width="23" height="22" fill="#788084"/><rect x="36" y="4" width="34" height="23" fill="#a37959"/><rect x="9" y="39" width="29" height="21" fill="#9b8060"/><rect x="50" y="37" width="25" height="21" fill="#71807b"/></g><path d="M7 17H26M39 15H68M12 48H35M53 47H73" stroke="#c5b894" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="800" fill="#bac0a0"/><rect width="1200" height="800" fill="url(#grain)"/>
+<polygon points="130,170 480,120 865,170 1050,420 905,665 375,700 185,550" fill="url(#town-blocks)" stroke="#71674f" stroke-width="5" stroke-linejoin="round"/>
+<rect x="390" y="260" width="125" height="100" rx="3" fill="#857b69" stroke="#554f40" stroke-width="5" stroke-linejoin="round"/>
+<rect x="740" y="240" width="115" height="100" rx="3" fill="#857b69" stroke="#554f40" stroke-width="5" stroke-linejoin="round"/>
+<rect x="700" y="440" width="150" height="90" rx="3" fill="#857b69" stroke="#554f40" stroke-width="5" stroke-linejoin="round"/>
+<rect x="365" y="490" width="90" height="80" rx="3" fill="#857b69" stroke="#554f40" stroke-width="5" stroke-linejoin="round"/>
+<rect x="625" y="295" width="92" height="140" rx="3" fill="#c4b78c" stroke="#93845e" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="650,0 625,180 600,380 560,620 550,800" fill="none" stroke="#938363" stroke-width="27" stroke-linejoin="round"/><polyline points="650,0 625,180 600,380 560,620 550,800" fill="none" stroke="#d1c398" stroke-width="19" stroke-linejoin="round"/>
+<polyline points="330,395 600,380 890,350" fill="none" stroke="#938363" stroke-width="27" stroke-linejoin="round"/><polyline points="330,395 600,380 890,350" fill="none" stroke="#d1c398" stroke-width="19" stroke-linejoin="round"/>
+<g stroke="#5d6552" fill="none" opacity=".6"><path d="M1140 80V28m-10 17 10-18 10 18" stroke-width="3"/></g></svg>

@@ -1,0 +1,3698 @@
+{
+  "schemaVersion": 1,
+  "sourceFrame": {
+    "nativePixels": [
+      1443,
+      1900
+    ],
+    "printedGridOrigin": [
+      3.5,
+      5.5
+    ],
+    "printedSquarePixels": 17.15,
+    "printedSquareFeet": 10,
+    "coordinateBasis": "Hand-traced source image; all child sectionBounds share this padded source coordinate frame."
+  },
+  "paddedFrame": [
+    -536.725,
+    65.525,
+    2572.5,
+    1715
+  ],
+  "source": {
+    "source": "Dungeon of the Mad Mage",
+    "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+    "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+  },
+  "rooms": [
+    {
+      "id": "1",
+      "label": [
+        43,
+        50
+      ],
+      "bounds": [
+        41,
+        48,
+        4,
+        4
+      ],
+      "name": "Well room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "2a",
+      "label": [
+        33.5,
+        53
+      ],
+      "bounds": [
+        30,
+        52,
+        7,
+        2
+      ],
+      "name": "Relief hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "2b",
+      "label": [
+        26.6,
+        53
+      ],
+      "bounds": [
+        24,
+        50,
+        6,
+        6
+      ],
+      "name": "Sunken basin",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "4",
+      "label": [
+        31.5,
+        49.5
+      ],
+      "bounds": [
+        29,
+        48,
+        5,
+        3
+      ],
+      "name": "Secret room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "3",
+      "label": [
+        35,
+        60
+      ],
+      "bounds": [
+        32,
+        58,
+        6,
+        4
+      ],
+      "name": "Sloping flooded chamber",
+      "reveal": "cellar-access",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "21",
+      "label": [
+        19.5,
+        53.5
+      ],
+      "bounds": [
+        15,
+        53,
+        9,
+        1
+      ],
+      "name": "Mirror hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "22",
+      "label": [
+        22.5,
+        50.8
+      ],
+      "bounds": [
+        21,
+        50,
+        3,
+        2
+      ],
+      "name": "Abandoned rest chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "23a",
+      "label": [
+        19.5,
+        57
+      ],
+      "bounds": [
+        18,
+        56,
+        3,
+        2
+      ],
+      "name": "Northern guard room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "23b",
+      "label": [
+        23,
+        56.5
+      ],
+      "bounds": [
+        20,
+        55,
+        5,
+        5
+      ],
+      "name": "Southern guard room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "23c",
+      "label": [
+        19.5,
+        64.5
+      ],
+      "bounds": [
+        18,
+        63,
+        3,
+        3
+      ],
+      "name": "Side room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "24a",
+      "label": [
+        15.8,
+        67.7
+      ],
+      "bounds": [
+        15,
+        66,
+        2,
+        3
+      ],
+      "name": "Arch chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "24b",
+      "label": [
+        18,
+        70
+      ],
+      "bounds": [
+        16,
+        67,
+        4,
+        5
+      ],
+      "name": "Southern chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "25a",
+      "label": [
+        25.4,
+        66.5
+      ],
+      "bounds": [
+        24,
+        66,
+        3,
+        1
+      ],
+      "name": "Excavation mouth",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "25b",
+      "label": [
+        27,
+        72.5
+      ],
+      "bounds": [
+        26,
+        71,
+        2,
+        4
+      ],
+      "name": "Southern excavation",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "9b",
+      "label": [
+        20,
+        17
+      ],
+      "bounds": [
+        18,
+        16,
+        4,
+        2
+      ],
+      "name": "Northern side room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "9a",
+      "label": [
+        18,
+        20
+      ],
+      "bounds": [
+        15,
+        19,
+        7,
+        2
+      ],
+      "name": "Pillared hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "10",
+      "label": [
+        18.5,
+        30.5
+      ],
+      "bounds": [
+        18,
+        30,
+        1,
+        1
+      ],
+      "name": "Tiny cubicle",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "11",
+      "label": [
+        22,
+        32
+      ],
+      "bounds": [
+        21,
+        31,
+        2,
+        2
+      ],
+      "name": "Secret cubicle",
+      "reveal": "cubicle-access",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "12",
+      "label": [
+        29,
+        20.9
+      ],
+      "bounds": [
+        21,
+        20,
+        23,
+        2
+      ],
+      "name": "Statue hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "13",
+      "label": [
+        29.5,
+        26.5
+      ],
+      "bounds": [
+        29,
+        26,
+        2,
+        1
+      ],
+      "name": "Side cubicle",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "14a",
+      "label": [
+        35,
+        17.5
+      ],
+      "bounds": [
+        33,
+        16,
+        3,
+        3
+      ],
+      "name": "Stepped passage",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "14b",
+      "label": [
+        39.5,
+        17.5
+      ],
+      "bounds": [
+        38,
+        16,
+        3,
+        3
+      ],
+      "name": "Domed chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "14c",
+      "label": [
+        41.5,
+        16.5
+      ],
+      "bounds": [
+        41,
+        16,
+        1,
+        1
+      ],
+      "name": "Concealed closet",
+      "reveal": "closet-access",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "15",
+      "label": [
+        40.5,
+        25
+      ],
+      "bounds": [
+        37,
+        23,
+        5,
+        4
+      ],
+      "name": "Armory",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "15-closet",
+      "label": [
+        40.5,
+        27.5
+      ],
+      "bounds": [
+        40,
+        27,
+        1,
+        1
+      ],
+      "name": "Sharpening closet",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "8c",
+      "label": [
+        21.6,
+        22.8
+      ],
+      "bounds": [
+        20,
+        21,
+        4,
+        3
+      ],
+      "name": "Table room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "8a",
+      "label": [
+        25.4,
+        24.8
+      ],
+      "bounds": [
+        23,
+        22,
+        5,
+        6
+      ],
+      "name": "High hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "8b",
+      "label": [
+        20.2,
+        26.8
+      ],
+      "bounds": [
+        19,
+        26,
+        4,
+        3
+      ],
+      "name": "L-shaped side room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "7a",
+      "label": [
+        35,
+        31.5
+      ],
+      "bounds": [
+        33,
+        27,
+        3,
+        8
+      ],
+      "name": "Concealed retreat",
+      "reveal": "retreat-access",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "7b",
+      "label": [
+        37,
+        35.5
+      ],
+      "bounds": [
+        36,
+        34,
+        2,
+        3
+      ],
+      "name": "Side crypt",
+      "reveal": "retreat-access",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6a",
+      "label": [
+        34.2,
+        43.8
+      ],
+      "bounds": [
+        30,
+        36,
+        6,
+        9
+      ],
+      "name": "Three-statue hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6c",
+      "label": [
+        30,
+        37.5
+      ],
+      "bounds": [
+        29,
+        36,
+        2,
+        3
+      ],
+      "name": "Bath chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6d",
+      "label": [
+        27.5,
+        43
+      ],
+      "bounds": [
+        26,
+        42,
+        3,
+        2
+      ],
+      "name": "Western room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6e",
+      "label": [
+        23,
+        40.5
+      ],
+      "bounds": [
+        22,
+        38,
+        5,
+        4
+      ],
+      "name": "Western passage",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6b",
+      "label": [
+        39.5,
+        42.4
+      ],
+      "bounds": [
+        36,
+        40,
+        6,
+        5
+      ],
+      "name": "Eastern loop",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "5",
+      "label": [
+        13.5,
+        43
+      ],
+      "bounds": [
+        12,
+        40,
+        5,
+        5
+      ],
+      "name": "Pillared side room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "16",
+      "label": [
+        48,
+        22
+      ],
+      "bounds": [
+        44,
+        15,
+        8,
+        15
+      ],
+      "name": "Octagonal hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "18",
+      "label": [
+        57.5,
+        17.5
+      ],
+      "bounds": [
+        56,
+        16,
+        3,
+        3
+      ],
+      "name": "Northern room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "17a",
+      "label": [
+        48,
+        32
+      ],
+      "bounds": [
+        47,
+        30,
+        2,
+        4
+      ],
+      "name": "Southern foyer",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "17b",
+      "label": [
+        48,
+        40
+      ],
+      "bounds": [
+        45,
+        34,
+        6,
+        11
+      ],
+      "name": "High column hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "19a",
+      "label": [
+        59.5,
+        34.5
+      ],
+      "bounds": [
+        58,
+        28,
+        9,
+        9
+      ],
+      "name": "Northern table room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "19b",
+      "label": [
+        60,
+        39
+      ],
+      "bounds": [
+        57,
+        38,
+        6,
+        3
+      ],
+      "name": "Western table room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "19c",
+      "label": [
+        59.5,
+        44
+      ],
+      "bounds": [
+        56,
+        43,
+        7,
+        3
+      ],
+      "name": "Southern table room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "20",
+      "label": [
+        67.5,
+        33.5
+      ],
+      "bounds": [
+        67,
+        33,
+        1,
+        1
+      ],
+      "name": "Green-door threshold",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "27",
+      "label": [
+        38.5,
+        69.5
+      ],
+      "bounds": [
+        38,
+        69,
+        1,
+        1
+      ],
+      "name": "Masked alcove",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "26b",
+      "label": [
+        19.5,
+        76.5
+      ],
+      "bounds": [
+        19,
+        76,
+        1,
+        1
+      ],
+      "name": "Side closet",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "26a",
+      "label": [
+        29,
+        77.5
+      ],
+      "bounds": [
+        16,
+        77,
+        19,
+        1
+      ],
+      "name": "Long southern hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "26d",
+      "label": [
+        41.5,
+        78.3
+      ],
+      "bounds": [
+        41,
+        77,
+        1,
+        3
+      ],
+      "name": "Gate alcove",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "26c",
+      "label": [
+        21,
+        86.5
+      ],
+      "bounds": [
+        19,
+        86,
+        3,
+        1
+      ],
+      "name": "Southern dead end",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "28a",
+      "label": [
+        43,
+        65
+      ],
+      "bounds": [
+        41,
+        64,
+        4,
+        2
+      ],
+      "name": "Western loop",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "28b",
+      "label": [
+        49,
+        63
+      ],
+      "bounds": [
+        47,
+        61,
+        4,
+        7
+      ],
+      "name": "Cross-shaped chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "28c",
+      "label": [
+        53,
+        65
+      ],
+      "bounds": [
+        52,
+        62,
+        2,
+        6
+      ],
+      "name": "Eastern loop",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "28d",
+      "label": [
+        49.5,
+        69.5
+      ],
+      "bounds": [
+        49,
+        68,
+        1,
+        2
+      ],
+      "name": "Southern dead end",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "29",
+      "label": [
+        49,
+        55.5
+      ],
+      "bounds": [
+        45,
+        55,
+        9,
+        1
+      ],
+      "name": "Northern link",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "30a",
+      "label": [
+        60,
+        54
+      ],
+      "bounds": [
+        54,
+        53,
+        16,
+        2
+      ],
+      "name": "Zigzag hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "30b",
+      "label": [
+        66.5,
+        56
+      ],
+      "bounds": [
+        65,
+        55,
+        3,
+        2
+      ],
+      "name": "Southern side room",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "32a",
+      "label": [
+        61,
+        49.5
+      ],
+      "bounds": [
+        58,
+        48,
+        6,
+        3
+      ],
+      "name": "Northern chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "32b",
+      "label": [
+        56,
+        50
+      ],
+      "bounds": [
+        55,
+        49,
+        2,
+        2
+      ],
+      "name": "Western alcove",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "33",
+      "label": [
+        72.3,
+        54.5
+      ],
+      "bounds": [
+        70,
+        53,
+        4,
+        3
+      ],
+      "name": "Northeast chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "34",
+      "label": [
+        72.3,
+        58.5
+      ],
+      "bounds": [
+        70,
+        57,
+        4,
+        3
+      ],
+      "name": "Southeast chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "35",
+      "label": [
+        58.5,
+        57.2
+      ],
+      "bounds": [
+        55,
+        56,
+        7,
+        4
+      ],
+      "name": "Alcove chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "31",
+      "label": [
+        65.5,
+        60.5
+      ],
+      "bounds": [
+        54,
+        60,
+        14,
+        1
+      ],
+      "name": "Statue corridor",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "36a",
+      "label": [
+        60.5,
+        65.5
+      ],
+      "bounds": [
+        58,
+        65,
+        5,
+        1
+      ],
+      "name": "Rough eastern corridor",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "36c",
+      "label": [
+        61.5,
+        68.4
+      ],
+      "bounds": [
+        59,
+        66,
+        6,
+        5
+      ],
+      "name": "High rough chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "36b",
+      "label": [
+        69.5,
+        65
+      ],
+      "bounds": [
+        67,
+        63,
+        5,
+        6
+      ],
+      "name": "Diagonal chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "36b-closet",
+      "label": [
+        66.5,
+        65.5
+      ],
+      "bounds": [
+        66,
+        65,
+        1,
+        1
+      ],
+      "name": "Side closet",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "37",
+      "label": [
+        44.7,
+        79
+      ],
+      "bounds": [
+        43,
+        77,
+        5,
+        5
+      ],
+      "name": "Pit chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "38",
+      "name": "Curved secret passage",
+      "label": [
+        42.3,
+        86
+      ],
+      "bounds": [
+        41.6,
+        82,
+        3.4,
+        8
+      ],
+      "reveal": "curved-backway",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "39a",
+      "label": [
+        47,
+        90
+      ],
+      "bounds": [
+        44,
+        87,
+        6,
+        6
+      ],
+      "name": "Southwest hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "39b",
+      "label": [
+        52,
+        89
+      ],
+      "bounds": [
+        51,
+        86,
+        2,
+        6
+      ],
+      "name": "Southern side hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "39c",
+      "label": [
+        52,
+        80
+      ],
+      "bounds": [
+        51,
+        76,
+        2,
+        9
+      ],
+      "name": "Northern side hall",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "39d",
+      "label": [
+        57.5,
+        76
+      ],
+      "bounds": [
+        53,
+        72,
+        7,
+        7
+      ],
+      "name": "Northern chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "40",
+      "label": [
+        55.5,
+        81.5
+      ],
+      "bounds": [
+        55,
+        78,
+        1,
+        7
+      ],
+      "name": "Statue crossing",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "41",
+      "label": [
+        63,
+        91.5
+      ],
+      "bounds": [
+        60,
+        90,
+        6,
+        3
+      ],
+      "name": "Eastern chamber",
+      "reveal": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    }
+  ],
+  "ordinaryFloors": [
+    {
+      "id": "1",
+      "d": "M41 48h4v4h-4Z"
+    },
+    {
+      "id": "entry-west",
+      "d": "M40 50h1v5h-1Z"
+    },
+    {
+      "id": "entry-south",
+      "d": "M36 54h5v1h-5Z"
+    },
+    {
+      "id": "entry-bend",
+      "d": "M36 52h1v3h-1Z"
+    },
+    {
+      "id": "2a",
+      "d": "M30 52h7v2h-7Z"
+    },
+    {
+      "id": "2b",
+      "d": "M26 50L27 50L27 51L29 52L30 52L30 54L29 54L27 55L27 56L26 56L26 55L25 54L24 54L24 53L25 53L25 52L26 51Z"
+    },
+    {
+      "id": "north-stair-route",
+      "d": "M26 46h1v5h-1Z"
+    },
+    {
+      "id": "south-stair-route",
+      "d": "M26 56h1v11h-1Z"
+    },
+    {
+      "id": "4",
+      "d": "M29 48h5v3h-5Z"
+    },
+    {
+      "id": "four-west",
+      "d": "M27 48h2v1h-2Z"
+    },
+    {
+      "id": "four-relief",
+      "d": "M33 51h1v1h-1Z"
+    },
+    {
+      "id": "21",
+      "d": "M15 53h9v1h-9Z"
+    },
+    {
+      "id": "mirror-n-16",
+      "d": "M15.55 52.7h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-s-16",
+      "d": "M15.55 54h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-n-17",
+      "d": "M16.55 52.7h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-s-17",
+      "d": "M16.55 54h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-n-18",
+      "d": "M17.55 52.7h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-s-18",
+      "d": "M17.55 54h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-n-19",
+      "d": "M18.55 52.7h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-s-19",
+      "d": "M18.55 54h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-n-20",
+      "d": "M19.55 52.7h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-s-20",
+      "d": "M19.55 54h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-n-21",
+      "d": "M20.55 52.7h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-s-21",
+      "d": "M20.55 54h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-n-22",
+      "d": "M21.55 52.7h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-s-22",
+      "d": "M21.55 54h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-n-23",
+      "d": "M22.55 52.7h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "mirror-s-23",
+      "d": "M22.55 54h0.5v0.3h-0.5Z"
+    },
+    {
+      "id": "west-spine",
+      "d": "M15 51h1v13h-1Z"
+    },
+    {
+      "id": "rest-approach",
+      "d": "M15 51h9v1h-9Z"
+    },
+    {
+      "id": "22",
+      "d": "M21 50h3v2h-3Z"
+    },
+    {
+      "id": "23-north-access",
+      "d": "M16 55h5v1h-5Z"
+    },
+    {
+      "id": "23-north-bend",
+      "d": "M16 56h2v1h-2Z"
+    },
+    {
+      "id": "23a",
+      "d": "M18 56h3v2h-3Z"
+    },
+    {
+      "id": "23b",
+      "d": "M21 55L25 55L25 58L23 58L23 60L20 60L20 58L21 58Z"
+    },
+    {
+      "id": "23-south-access",
+      "d": "M15 59h8v1h-8Z"
+    },
+    {
+      "id": "23-side-stem",
+      "d": "M18 60h1v3h-1Z"
+    },
+    {
+      "id": "23c",
+      "d": "M18 63h3v3h-3Z"
+    },
+    {
+      "id": "24-north-step",
+      "d": "M16 63h1v3h-1Z"
+    },
+    {
+      "id": "24-north-turn",
+      "d": "M15 65h2v1h-2Z"
+    },
+    {
+      "id": "24a",
+      "d": "M15 66h2v3h-2Z"
+    },
+    {
+      "id": "24-expansion",
+      "d": "M7 67h8v1h-8Z"
+    },
+    {
+      "id": "24b",
+      "d": "M17 67L18 67L18 69L20 69L20 70L19 70L19 71L17 71L17 72L16 72L16 69L17 69Z"
+    },
+    {
+      "id": "24-south-leg",
+      "d": "M19 70h1v4h-1Z"
+    },
+    {
+      "id": "25-west-passage",
+      "d": "M18 73h8v1h-8Z"
+    },
+    {
+      "id": "25a",
+      "d": "M24 66h3v1h-3Z"
+    },
+    {
+      "id": "25a-lower",
+      "d": "M24 67h1v2h-1Z"
+    },
+    {
+      "id": "25-crawl",
+      "d": "M24 68.7C23.7 69.4 23.5 70.3 24 70.7C24.5 71.2 25.7 69.8 26.5 69.5C27.4 69.1 27.6 69.7 27.1 71.2L27.7 71.2C28.5 69.2 28 68.4 26.7 68.8C25.6 69.1 24.7 70.2 24.4 70.1L25 68.7Z"
+    },
+    {
+      "id": "25b",
+      "d": "M26 71h2v4h-2Z"
+    },
+    {
+      "id": "25-double-threshold",
+      "d": "M28 73h1v2h-1Z"
+    },
+    {
+      "id": "9b",
+      "d": "M18 16h4v2h-4Z"
+    },
+    {
+      "id": "9-expansion",
+      "d": "M19 4h1v12h-1Z"
+    },
+    {
+      "id": "9b-stem",
+      "d": "M21 18h1v3h-1Z"
+    },
+    {
+      "id": "9a",
+      "d": "M15 19h7v2h-7Z"
+    },
+    {
+      "id": "9a-niche",
+      "d": "M15 18h1v1h-1Z"
+    },
+    {
+      "id": "west-corridor-a",
+      "d": "M15 21h1v4h-1Z"
+    },
+    {
+      "id": "west-corridor-b",
+      "d": "M15 24h3v1h-3Z"
+    },
+    {
+      "id": "west-corridor-c",
+      "d": "M17 25h1v5h-1Z"
+    },
+    {
+      "id": "west-corridor-d",
+      "d": "M17 29h4v1h-4Z"
+    },
+    {
+      "id": "west-corridor-e",
+      "d": "M20 30h1v4h-1Z"
+    },
+    {
+      "id": "west-corridor-f",
+      "d": "M21 33h1v1h-1Z"
+    },
+    {
+      "id": "10",
+      "d": "M18 30h1v1h-1Z"
+    },
+    {
+      "id": "12",
+      "d": "M21 20h23v2h-23Z"
+    },
+    {
+      "id": "13-stem",
+      "d": "M30 22h1v4h-1Z"
+    },
+    {
+      "id": "13",
+      "d": "M29 26h2v1h-2Z"
+    },
+    {
+      "id": "14a-entrance",
+      "d": "M33 19h1v1h-1Z"
+    },
+    {
+      "id": "14a",
+      "d": "M33 16L36 16L36 19L33 19L33 18L34 18L34 17L33 17Z"
+    },
+    {
+      "id": "14-north-leg",
+      "d": "M33 14h1v2h-1Z"
+    },
+    {
+      "id": "14-north-turn",
+      "d": "M33 14h5v1h-5Z"
+    },
+    {
+      "id": "14-east-leg",
+      "d": "M37 15h1v2h-1Z"
+    },
+    {
+      "id": "14-east-turn",
+      "d": "M37 16h2v1h-2Z"
+    },
+    {
+      "id": "14b",
+      "d": "M38 16h3v3h-3Z"
+    },
+    {
+      "id": "15-stem",
+      "d": "M37 22h1v4h-1Z"
+    },
+    {
+      "id": "15",
+      "d": "M39 23L42 23L42 27L39 27L39 26L37 26L37 25L39 25Z"
+    },
+    {
+      "id": "15-closet",
+      "d": "M40 27h1v1h-1Z"
+    },
+    {
+      "id": "8c",
+      "d": "M20 21L21 21L21 22L24 22L24 23L23 23L23 24L20 24Z"
+    },
+    {
+      "id": "8a",
+      "d": "M24 22L27 22L27 23L28 23L28 28L23 28L23 23L24 23Z"
+    },
+    {
+      "id": "8b",
+      "d": "M19 26L23 26L23 29L22 29L22 27L21 27L21 28L19 28Z"
+    },
+    {
+      "id": "8-back-hall",
+      "d": "M22 28h9v1h-9Z"
+    },
+    {
+      "id": "8-back-turn",
+      "d": "M30 29h1v2h-1Z"
+    },
+    {
+      "id": "8-back-east",
+      "d": "M30 30h3v1h-3Z"
+    },
+    {
+      "id": "7-public-spine",
+      "d": "M32 27h1v9h-1Z"
+    },
+    {
+      "id": "6a",
+      "d": "M32 36L35 36L35 39L36 39L36 45L32 45L32 44L30 44L30 43L32 43Z"
+    },
+    {
+      "id": "6c",
+      "d": "M29 36h2v3h-2Z"
+    },
+    {
+      "id": "6c-stem",
+      "d": "M29 39h1v2h-1Z"
+    },
+    {
+      "id": "6d-east-hall",
+      "d": "M29 41h2v1h-2Z"
+    },
+    {
+      "id": "6d-east-turn",
+      "d": "M30 42h1v2h-1Z"
+    },
+    {
+      "id": "6d",
+      "d": "M26 42h3v2h-3Z"
+    },
+    {
+      "id": "6e",
+      "d": "M22 38L23 38L23 40L24 40L24 39L27 39L27 42L26 42L26 40L25 40L25 41L22 41Z"
+    },
+    {
+      "id": "6b",
+      "d": "M36 40L42 40L42 44L41 44L41 45L38 45L38 44L39 44L39 43L41 43L41 41L36 41Z"
+    },
+    {
+      "id": "5",
+      "d": "M12 40L13 40L13 41L16 41L16 42L17 42L17 43L16 43L16 45L12 45Z"
+    },
+    {
+      "id": "5-6-crosshall",
+      "d": "M15 45h22v1h-22Z"
+    },
+    {
+      "id": "6a-south-threshold",
+      "d": "M35 44h2v2h-2Z"
+    },
+    {
+      "id": "16",
+      "d": "M44 17L46 15L50 15L52 17L52 28L50 30L46 30L44 28Z"
+    },
+    {
+      "id": "16-east-spine",
+      "d": "M53 17h1v18h-1Z"
+    },
+    {
+      "id": "16-east-threshold-17.5",
+      "d": "M52 17h1v1h-1Z"
+    },
+    {
+      "id": "16-east-threshold-21.5",
+      "d": "M52 21h1v1h-1Z"
+    },
+    {
+      "id": "16-east-threshold-25.5",
+      "d": "M52 25h1v1h-1Z"
+    },
+    {
+      "id": "18",
+      "d": "M56 16h3v3h-3Z"
+    },
+    {
+      "id": "18-return",
+      "d": "M58 19h1v2h-1Z"
+    },
+    {
+      "id": "18-link",
+      "d": "M54 20h5v1h-5Z"
+    },
+    {
+      "id": "17a",
+      "d": "M47 30h2v4h-2Z"
+    },
+    {
+      "id": "17b",
+      "d": "M45 34L51 34L51 44L50 44L50 45L46 45L46 44L45 44Z"
+    },
+    {
+      "id": "19a",
+      "d": "M58 28L64 28L64 29L59 29L59 32L62 32L62 36L66 36L66 30L67 31L67 37L58 37Z"
+    },
+    {
+      "id": "19-approach",
+      "d": "M53 34h6v1h-6Z"
+    },
+    {
+      "id": "19-spine",
+      "d": "M54 35h1v7h-1Z"
+    },
+    {
+      "id": "19-crosshall",
+      "d": "M54 41h6v1h-6Z"
+    },
+    {
+      "id": "19b",
+      "d": "M57 38L63 38L63 40L58 40L58 41L57 41Z"
+    },
+    {
+      "id": "19c-doorway",
+      "d": "M59 42h1v1h-1Z"
+    },
+    {
+      "id": "19c",
+      "d": "M56 43L63 43L63 46L60 46L60 45L59 45L59 46L56 46Z"
+    },
+    {
+      "id": "20",
+      "d": "M67 33h1v1h-1Z"
+    },
+    {
+      "id": "20-expanded-a",
+      "d": "M68 33h4v1h-4Z"
+    },
+    {
+      "id": "20-expanded-b",
+      "d": "M71 32h9v1h-9Z"
+    },
+    {
+      "id": "25-east-spine",
+      "d": "M29 73h1v4h-1Z"
+    },
+    {
+      "id": "27-west",
+      "d": "M29 73h6v1h-6Z"
+    },
+    {
+      "id": "27-turn",
+      "d": "M34 70h1v4h-1Z"
+    },
+    {
+      "id": "27-upper",
+      "d": "M34 70h7v1h-7Z"
+    },
+    {
+      "id": "27-east-leg",
+      "d": "M40 71h1v2h-1Z"
+    },
+    {
+      "id": "27-east-threshold",
+      "d": "M40 72h2v1h-2Z"
+    },
+    {
+      "id": "27",
+      "d": "M38 69h1v1h-1Z"
+    },
+    {
+      "id": "26b",
+      "d": "M19 76h1v1h-1Z"
+    },
+    {
+      "id": "26a",
+      "d": "M16 77h19v1h-19Z"
+    },
+    {
+      "id": "26-east-elbow",
+      "d": "M34 78h1v2h-1Z"
+    },
+    {
+      "id": "26-east-hall",
+      "d": "M34 79h8v1h-8Z"
+    },
+    {
+      "id": "26d",
+      "d": "M41 77h1v3h-1Z"
+    },
+    {
+      "id": "26-south-stem",
+      "d": "M19 78h1v9h-1Z"
+    },
+    {
+      "id": "26c",
+      "d": "M19 86h3v1h-3Z"
+    },
+    {
+      "id": "26-cross",
+      "d": "M20 81h8v1h-8Z"
+    },
+    {
+      "id": "26-step",
+      "d": "M27 82h1v3h-1Z"
+    },
+    {
+      "id": "26-lower",
+      "d": "M23 84h10v1h-10Z"
+    },
+    {
+      "id": "26-expanded",
+      "d": "M23 85h1v8h-1Z"
+    },
+    {
+      "id": "28a",
+      "d": "M41 64h4v2h-4Z"
+    },
+    {
+      "id": "28a-north",
+      "d": "M44 62h1v3h-1Z"
+    },
+    {
+      "id": "28a-down",
+      "d": "M41 66h1v9h-1Z"
+    },
+    {
+      "id": "28a-south-elbow",
+      "d": "M41 74h3v1h-3Z"
+    },
+    {
+      "id": "37-north-corridor",
+      "d": "M43 75h1v2h-1Z"
+    },
+    {
+      "id": "28-loop",
+      "d": "M44 64V61C44 55.5 52 55.5 52 61V64H51V61C51 57 45 57 45 61V64Z"
+    },
+    {
+      "id": "28b",
+      "d": "M48 61L50 61L50 62L51 62L51 64L50 64L50 68L48 68L48 64L47 64L47 62L48 62Z"
+    },
+    {
+      "id": "28-cross",
+      "d": "M44 65h10v1h-10Z"
+    },
+    {
+      "id": "28c",
+      "d": "M52 62h2v6h-2Z"
+    },
+    {
+      "id": "28-south-link",
+      "d": "M50 67h4v1h-4Z"
+    },
+    {
+      "id": "28d",
+      "d": "M49 68h1v2h-1Z"
+    },
+    {
+      "id": "28-diagonal",
+      "d": "M48 67L42 71.5L47 75.8V79H48V75.2L43.5 71.5L49 68Z"
+    },
+    {
+      "id": "29-west",
+      "d": "M44 55h1v7h-1Z"
+    },
+    {
+      "id": "29-west-niche",
+      "d": "M44 54h1v1h-1Z"
+    },
+    {
+      "id": "29",
+      "d": "M45 55h9v1h-9Z"
+    },
+    {
+      "id": "29-east",
+      "d": "M53 54h1v8h-1Z"
+    },
+    {
+      "id": "30a",
+      "d": "M54 54L55 53L57 53L58 54L59 53L61 53L62 54L63 53L65 53L66 54L67 53L69 53L70 54L70 55L69 55L68 54L67 55L65 55L64 54L63 55L61 55L60 54L59 55L57 55L56 54L55 55L54 55Z"
+    },
+    {
+      "id": "30b",
+      "d": "M65 55h3v2h-3Z"
+    },
+    {
+      "id": "32a",
+      "d": "M58 48h6v3h-6Z"
+    },
+    {
+      "id": "32b",
+      "d": "M55 49h2v2h-2Z"
+    },
+    {
+      "id": "32-connector",
+      "d": "M56 48h3v1h-3Z"
+    },
+    {
+      "id": "32-east-threshold",
+      "d": "M64 49h2v1h-2Z"
+    },
+    {
+      "id": "32-bend",
+      "d": "M65 50h4v1h-4Z"
+    },
+    {
+      "id": "32-south",
+      "d": "M68 51h1v3h-1Z"
+    },
+    {
+      "id": "33-34-spine",
+      "d": "M69 54h1v5h-1Z"
+    },
+    {
+      "id": "33",
+      "d": "M70 54L71 53L74 53L74 56L71 56L70 55Z"
+    },
+    {
+      "id": "34",
+      "d": "M70 58L71 57L74 57L74 60L71 60L70 59Z"
+    },
+    {
+      "id": "35",
+      "d": "M55 56L62 56L62 59L60 59L60 58L59 58L59 60L58 60L58 58L57 58L57 59L55 59Z"
+    },
+    {
+      "id": "31",
+      "d": "M54 60h14v1h-14Z"
+    },
+    {
+      "id": "31-north-neck",
+      "d": "M66 59h1v1h-1Z"
+    },
+    {
+      "id": "31-north-alcoves",
+      "d": "M65 58h3v1h-3Z"
+    },
+    {
+      "id": "31-south-alcove-62",
+      "d": "M62 61h1v1h-1Z"
+    },
+    {
+      "id": "31-south-alcove-64",
+      "d": "M64 61h1v1h-1Z"
+    },
+    {
+      "id": "31-south-alcove-66",
+      "d": "M66 61h1v1h-1Z"
+    },
+    {
+      "id": "36-cave-entry",
+      "d": "M54 63.6C55.3 63.9 55.8 62.3 56.9 62.7C58 63 57.1 64.1 57.4 65L58 65.9L57.5 66.4L56.8 65.4C56.5 64.5 57.4 63.5 56.7 63.4C55.8 63.2 55.3 64.6 54 64.3Z"
+    },
+    {
+      "id": "36a",
+      "d": "M58 65h5v1h-5Z"
+    },
+    {
+      "id": "36a-west",
+      "d": "M57 65h1v1h-1Z"
+    },
+    {
+      "id": "36-north-crawl",
+      "d": "M62 65.5C62.1 64.3 62.7 63.7 63.3 63.7C63.7 62.3 65 62.2 66 63H69V64H65.9C65.1 63.2 64.2 63.1 64 64.2C63.1 64.2 62.8 65 63 66Z"
+    },
+    {
+      "id": "36-south-crawl",
+      "d": "M57 65.5C56.5 66.4 56.3 67.2 56.3 67.8C56.4 68.4 57.5 68.5 57.4 69.1C57.4 69.7 56.3 69.8 56 70.5C55.8 71 57 70.9 58 71.1C58.8 71.2 59.3 70 59.4 69.5L58.8 69.2C58.5 70.2 58.4 70.6 57.8 70.4L56.9 70.3C58.6 69.4 58.2 68.7 57.3 68.1C56.7 67.8 57.1 66.6 57.7 66Z"
+    },
+    {
+      "id": "36c",
+      "d": "M59 68L60 67L64 67L64 66L65 66L65 69L63 69L63 71L60 71L60 69L59 69Z"
+    },
+    {
+      "id": "36b",
+      "d": "M67 63L70 63L72 65L68 69L67 69L67 68L70 65L67 65Z"
+    },
+    {
+      "id": "36b-closet",
+      "d": "M66 65h1v1h-1Z"
+    },
+    {
+      "id": "37",
+      "d": "M43 77L46 77L46 79L48 79L48 81L46 81L46 82L43 82Z"
+    },
+    {
+      "id": "39a",
+      "d": "M44 87h6v6h-6Z"
+    },
+    {
+      "id": "39a-west-entry",
+      "d": "M43 89h1v1h-1Z"
+    },
+    {
+      "id": "39a-stairs",
+      "d": "M35 91h9v1h-9Z"
+    },
+    {
+      "id": "39a-south-loop",
+      "d": "M42 90h1v5h-1Z"
+    },
+    {
+      "id": "39a-bottom",
+      "d": "M42 94h8v1h-8Z"
+    },
+    {
+      "id": "39a-east-bottom",
+      "d": "M49 93h3v2h-3Z"
+    },
+    {
+      "id": "39b",
+      "d": "M51 86h2v6h-2Z"
+    },
+    {
+      "id": "39b-west-link",
+      "d": "M50 89h1v1h-1Z"
+    },
+    {
+      "id": "39b-east-loop",
+      "d": "M53 90h1v5h-1Z"
+    },
+    {
+      "id": "39b-bottom",
+      "d": "M51 94h3v1h-3Z"
+    },
+    {
+      "id": "39c",
+      "d": "M51 76h2v9h-2Z"
+    },
+    {
+      "id": "39c-west",
+      "d": "M49 74h1v15h-1Z"
+    },
+    {
+      "id": "39c-north-niche",
+      "d": "M49 74h2v1h-2Z"
+    },
+    {
+      "id": "39c-cross-78",
+      "d": "M49 78h4v1h-4Z"
+    },
+    {
+      "id": "39c-cross-81",
+      "d": "M49 81h4v1h-4Z"
+    },
+    {
+      "id": "39c-cross-84",
+      "d": "M49 84h4v1h-4Z"
+    },
+    {
+      "id": "39d",
+      "d": "M55 74L56 74L57 73L57 72L58 72L58 73L59 74L60 74L60 79L58 79L58 78L53 78L53 76L55 76Z"
+    },
+    {
+      "id": "40",
+      "d": "M55 78h1v7h-1Z"
+    },
+    {
+      "id": "40-cross",
+      "d": "M53 83h5v1h-5Z"
+    },
+    {
+      "id": "40-alcove-54",
+      "d": "M54 79h1v1h-1Z"
+    },
+    {
+      "id": "40-alcove-56",
+      "d": "M56 79h1v1h-1Z"
+    },
+    {
+      "id": "41-east-spine",
+      "d": "M58 82h1v9h-1Z"
+    },
+    {
+      "id": "41-lower-spine",
+      "d": "M57 90h1v5h-1Z"
+    },
+    {
+      "id": "41-approach",
+      "d": "M57 92h3v1h-3Z"
+    },
+    {
+      "id": "41",
+      "d": "M60 90h6v3h-6Z"
+    },
+    {
+      "id": "41-south",
+      "d": "M57 94h6v1h-6Z"
+    },
+    {
+      "id": "41-expanded",
+      "d": "M62 95h1v8h-1Z"
+    }
+  ],
+  "doors": [
+    {
+      "id": "four-west-door",
+      "point": [
+        29,
+        48.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "four-relief-door",
+      "point": [
+        33.5,
+        52
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": "north-relief",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "three-relief-door",
+      "point": [
+        32.5,
+        54
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": "cellar-access",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "23a-north",
+      "point": [
+        19.5,
+        56
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "23b-northwest",
+      "point": [
+        21,
+        55.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "23c-north",
+      "point": [
+        18.5,
+        60
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "24-north-corridor",
+      "point": [
+        16,
+        63.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "24a-north",
+      "point": [
+        15.5,
+        66
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "24b-northwest",
+      "point": [
+        17,
+        67.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "24b-south",
+      "point": [
+        20,
+        73.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "25b-west",
+      "point": [
+        26,
+        73.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "25b-east",
+      "point": [
+        28.5,
+        74
+      ],
+      "orientation": "v",
+      "width": 1.5,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "ten-door",
+      "point": [
+        18.5,
+        30
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "eleven-secret",
+      "point": [
+        21.5,
+        33
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": "cubicle-access",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "thirteen-door",
+      "point": [
+        30,
+        26.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "14-secret",
+      "point": [
+        41,
+        16.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": "closet-access",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "14-south",
+      "point": [
+        33.5,
+        20
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "15-north",
+      "point": [
+        37.5,
+        22
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "15-closet-door",
+      "point": [
+        40.5,
+        27
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "8c-north",
+      "point": [
+        20.5,
+        21
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "8a-north",
+      "point": [
+        25.5,
+        22
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "8a-west",
+      "point": [
+        23.5,
+        23
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "8-dais-west",
+      "point": [
+        23.8,
+        28.5
+      ],
+      "orientation": "v",
+      "width": 0.7,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "8-dais-east",
+      "point": [
+        27.1,
+        28.5
+      ],
+      "orientation": "v",
+      "width": 0.7,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "7-north-secret",
+      "point": [
+        33,
+        27.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": "retreat-access",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "7-south-secret",
+      "point": [
+        33,
+        31.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": "retreat-access",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6c-south",
+      "point": [
+        29.5,
+        39
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6c-lower",
+      "point": [
+        29.5,
+        41
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6d-east",
+      "point": [
+        28.5,
+        42
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6e-south",
+      "point": [
+        26.5,
+        42
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6b-west",
+      "point": [
+        36,
+        40.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6b-secret",
+      "point": [
+        40,
+        44.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": "north-backway",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "6a-south",
+      "point": [
+        36,
+        44.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "1-north-secret",
+      "point": [
+        41.5,
+        48
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": "north-backway",
+      "rule": "Manually opens only from the north. South side requires knock or equivalent.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "16-west",
+      "point": [
+        44,
+        21
+      ],
+      "orientation": "v",
+      "width": 1.7,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "16-east-17.5",
+      "point": [
+        52.5,
+        17.5
+      ],
+      "orientation": "v",
+      "width": 1.5,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "16-east-21.5",
+      "point": [
+        52.5,
+        21.5
+      ],
+      "orientation": "v",
+      "width": 1.5,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "16-east-25.5",
+      "point": [
+        52.5,
+        25.5
+      ],
+      "orientation": "v",
+      "width": 1.5,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "17-foyer",
+      "point": [
+        48,
+        30
+      ],
+      "orientation": "h",
+      "width": 1.5,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "19c-north",
+      "point": [
+        59.5,
+        42
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "20-green",
+      "point": [
+        67,
+        33.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "28a-west",
+      "point": [
+        42,
+        72.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "26b-south",
+      "point": [
+        19.5,
+        77
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "28b-west",
+      "point": [
+        48,
+        65.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "28a-secret",
+      "point": [
+        44.5,
+        62
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": "west-loop",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "28c-secret",
+      "point": [
+        53.5,
+        62
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": "east-loop",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "30-west",
+      "point": [
+        54,
+        54.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "30-east",
+      "point": [
+        68,
+        53.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "32-east",
+      "point": [
+        64,
+        49.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "33-west",
+      "point": [
+        70,
+        54.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "34-west",
+      "point": [
+        70,
+        58.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "35-south",
+      "point": [
+        58.5,
+        60
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "31-west",
+      "point": [
+        60,
+        60.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "30b-secret",
+      "point": [
+        65,
+        55.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": "statue-backway",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "31-secret",
+      "point": [
+        65,
+        58.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": "statue-backway",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "36b-closet-door",
+      "point": [
+        67,
+        65.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "36c-secret",
+      "point": [
+        64.5,
+        67
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": "rough-backway",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "37-north",
+      "point": [
+        43.5,
+        77
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "37-east",
+      "point": [
+        47.5,
+        79
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "37-secret",
+      "point": [
+        44.5,
+        82
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": "curved-backway",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "39-secret",
+      "point": [
+        43,
+        89.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": "curved-backway",
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "40-north",
+      "point": [
+        55.5,
+        78
+      ],
+      "orientation": "h",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "40-west",
+      "point": [
+        53,
+        83.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "40-east",
+      "point": [
+        58,
+        83.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "41-west",
+      "point": [
+        60,
+        92.5
+      ],
+      "orientation": "v",
+      "width": 0.8,
+      "secret": null,
+      "rule": null,
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    }
+  ],
+  "hidden": [
+    {
+      "id": "cellar-access",
+      "title": "Area 3: discovered relief and flooded access",
+      "note": "South nalfeshnee relief in 2a. Add only after access is discovered; water deepens westward.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "retreat-access",
+      "title": "Area 7: discovered concealed retreat",
+      "note": "Two separate source secret doors, from 6a approach and 8a back passage. No one-way rule.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "cubicle-access",
+      "title": "Area 11: discovered secret cubicle",
+      "note": "Concealed side chamber off the winding western corridor.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "closet-access",
+      "title": "Area 14c: discovered concealed closet",
+      "note": "Northeast/east secret door from 14b.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "north-backway",
+      "title": "Area 1 / 6b: discovered northern back passage",
+      "note": "Area 1 north secret opens manually from north only; from well-room side magic is required. Six-b alarm belongs west side of secret.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "north-relief",
+      "title": "Area 4: discovered relief doorway",
+      "note": "North dretch relief in 2a; obvious from inside 4. Tiny vents are not a party passage.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "west-loop",
+      "title": "Areas 28a / 29: discovered west connection",
+      "note": "Concealed door from northern end of area 28a.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "east-loop",
+      "title": "Areas 28c / 29: discovered east connection",
+      "note": "Concealed door from northern end of area 28c.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "statue-backway",
+      "title": "Areas 30b / 31: discovered concealed passage",
+      "note": "West secret of 30b joins north statue-secret in 31.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "rough-backway",
+      "title": "Areas 36c / 36b: discovered rough passage",
+      "note": "Northeastern secret of 36c links to 36b through the mapped rough passage.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    },
+    {
+      "id": "curved-backway",
+      "title": "Areas 37 / 38 / 39a: discovered curved passage",
+      "note": "South secret in 37, curved passage 38, west secret into 39a.",
+      "sourceRef": {
+        "source": "Dungeon of the Mad Mage",
+        "locator": "Printed map 15; supplied PDF page 16; room keys printed pp14–26",
+        "verification": "Keyed source image visually inspected against ten-foot grid; manual vector trace reconciled with room-key text. Wall contours are approximate, not a publisher vector extraction."
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "entry",
+      "title": "Entry, reliefs and pillar junction",
+      "bounds": [
+        387.66,
+        796.115,
+        430.465,
+        286.976095
+      ],
+      "keys": [
+        "1",
+        "2a",
+        "2b",
+        "4",
+        "21"
+      ]
+    },
+    {
+      "id": "north",
+      "title": "Northern threshold and Undertakers",
+      "bounds": [
+        209.3,
+        520,
+        643.125,
+        428.74999999999994
+      ],
+      "keys": [
+        "5",
+        "6a",
+        "6b",
+        "6c",
+        "6d",
+        "6e",
+        "7a",
+        "8a",
+        "8b"
+      ]
+    },
+    {
+      "id": "excavation",
+      "title": "Southern excavations",
+      "bounds": [
+        217.875,
+        837.275,
+        643.125,
+        428.74999999999994
+      ],
+      "keys": [
+        "2b",
+        "21",
+        "22",
+        "23a",
+        "23b",
+        "23c",
+        "24a",
+        "24b",
+        "25a",
+        "25b"
+      ]
+    },
+    {
+      "id": "western",
+      "title": "Western negotiation approach",
+      "bounds": [
+        209.3,
+        931.6,
+        694.5749999999999,
+        463.04999999999995
+      ],
+      "keys": [
+        "23a",
+        "23b",
+        "23c",
+        "24a",
+        "24b",
+        "25a",
+        "25b",
+        "26a"
+      ]
+    },
+    {
+      "id": "upper-west",
+      "title": "Northern western halls",
+      "bounds": [
+        192.15,
+        82.675,
+        591.675,
+        394.45
+      ],
+      "keys": [
+        "8a",
+        "9a",
+        "9b",
+        "12",
+        "14a",
+        "14b"
+      ]
+    },
+    {
+      "id": "upper-east",
+      "title": "Northern eastern halls",
+      "bounds": [
+        723.8,
+        219.875,
+        694.5749999999999,
+        463.04999999999995
+      ],
+      "keys": [
+        "16",
+        "17a",
+        "17b",
+        "18",
+        "19a",
+        "19b",
+        "19c",
+        "20"
+      ]
+    },
+    {
+      "id": "lower-center",
+      "title": "Southern central passages",
+      "bounds": [
+        457.975,
+        1171.7,
+        694.5749999999999,
+        463.04999999999995
+      ],
+      "keys": [
+        "26a",
+        "26c",
+        "26d",
+        "27",
+        "28a",
+        "28b",
+        "28c",
+        "29",
+        "30a",
+        "31"
+      ]
+    },
+    {
+      "id": "lower-east",
+      "title": "Eastern caverns and descent",
+      "bounds": [
+        818.125,
+        828.7,
+        591.675,
+        754.5999999999999
+      ],
+      "keys": [
+        "30a",
+        "32a",
+        "33",
+        "34",
+        "35",
+        "36a",
+        "36b",
+        "36c",
+        "39a",
+        "40",
+        "41"
+      ]
+    }
+  ],
+  "criticalConnections": [
+    {
+      "from": "Portal well",
+      "to": "1",
+      "kind": "vertical winch",
+      "source": "printed pp6,14"
+    },
+    {
+      "from": "1",
+      "to": "2a",
+      "kind": "ordinary south and west passage",
+      "source": "map p15"
+    },
+    {
+      "from": "2a",
+      "to": "2b",
+      "kind": "descending stairs",
+      "source": "map pp15–16"
+    },
+    {
+      "from": "2b",
+      "to": "6a",
+      "kind": "north stairs and eastern branch",
+      "source": "map p15"
+    },
+    {
+      "from": "2b",
+      "to": "25a",
+      "kind": "south stairs",
+      "source": "map p15"
+    },
+    {
+      "from": "25a",
+      "to": "25b",
+      "kind": "five-foot excavation tunnel",
+      "source": "map p15 and key p22"
+    },
+    {
+      "from": "25b",
+      "to": "23",
+      "kind": "west via 24b then 24a to southern 23 corridor",
+      "source": "map p15"
+    },
+    {
+      "from": "39a",
+      "to": "Level 2 area 1a",
+      "kind": "ordinary stairs; 200ft descent",
+      "source": "printed p26 and Level2 map p29"
+    },
+    {
+      "from": "26d",
+      "to": "Level 10 area 8",
+      "kind": "gate, level11+ and activation rules",
+      "source": "printed p24"
+    }
+  ],
+  "customHooks": [
+    {
+      "id": "ninepin-clinometer-N9-14",
+      "room": "25a",
+      "status": "conditional future preparation",
+      "condition": "Only if the room remains unsearched; if searched use saved custody or city salvage inquiry."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "auditDate": "2026-10-08T23:46:26.025Z",
+  "smokeFixture": false,
+  "isolation": "Fresh browser contexts and temporary loopback services; original backup read-only; no live service contact or restart",
+  "checks": [
+    {
+      "name": "Backup restored into fresh browser and copied to practice",
+      "passed": true
+    },
+    {
+      "name": "DM floor uses readable 38% shade while public unrevealed artwork remains opaque",
+      "passed": true
+    },
+    {
+      "name": "Private route diagram decodes at native size, leaves campaign state unchanged, and is absent from TV/phone",
+      "passed": true
+    },
+    {
+      "name": "No browser exceptions in the focused DM/TV check",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "atlas/Floor-Visual-DM-Section.png",
+    "atlas/Floor-Visual-Private-Route-Diagram.png"
+  ],
+  "physicalDevicesTested": false,
+  "limitations": [
+    "This narrow check covers DM floor shading and the private route diagram; Runtime-Workflow-Verification.json covers the full workflow.",
+    "Physical display and touch devices were not used."
+  ]
+}

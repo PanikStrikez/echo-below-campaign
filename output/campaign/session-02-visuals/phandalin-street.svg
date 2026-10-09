@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Player-safe overhead map of a Phandalin street with shops, a well, crates, and a wagon">
+  <defs>
+    <pattern id="earth" width="93" height="79" patternUnits="userSpaceOnUse">
+      <rect width="93" height="79" fill="#bfa986"/>
+      <path d="M5 18q18-8 30 0M61 48q18-9 27-3M19 67q8-6 18-3" fill="none" stroke="#a58d69" stroke-width="3" opacity=".52"/>
+      <circle cx="63" cy="16" r="3" fill="#8c7659" opacity=".6"/><circle cx="13" cy="44" r="2" fill="#78684f" opacity=".45"/>
+    </pattern>
+    <pattern id="stone" width="90" height="68" patternUnits="userSpaceOnUse">
+      <rect width="90" height="68" fill="#cbbda0"/>
+      <path d="M0 30h90M0 65h90M45 0v30M19 30v35M72 30v35" stroke="#867d6b" stroke-width="3" fill="none" opacity=".7"/>
+      <path d="M4 4h36M50 35h17" stroke="#e7dac0" stroke-width="3" opacity=".55"/>
+    </pattern>
+    <pattern id="roof" width="50" height="34" patternUnits="userSpaceOnUse">
+      <rect width="50" height="34" fill="#71554a"/>
+      <path d="M0 17h50M25 0v17M0 17v17M50 17v17" stroke="#4e3834" stroke-width="3" opacity=".65"/>
+      <path d="M5 6h12M31 23h13" stroke="#aa8170" stroke-width="2" opacity=".5"/>
+    </pattern>
+    <pattern id="wood" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#8d6949"/>
+      <path d="M0 4h24M0 17h24" stroke="#59422f" stroke-width="2" opacity=".6"/>
+    </pattern>
+    <filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#earth)"/>
+  <path d="M0 302Q400 289 800 303T1600 286V740Q1200 710 800 723T0 706Z" fill="url(#stone)" stroke="#81765f" stroke-width="12"/>
+  <path d="M0 317Q400 304 800 318T1600 301M0 690Q400 704 800 708T1600 723" fill="none" stroke="#ddd0b4" stroke-width="12" opacity=".75"/>
+  <!-- North-side trading house and cottages: all roofed areas are generic, with no secret information. -->
+  <rect x="75" y="40" width="498" height="240" rx="8" fill="#3e342d" opacity=".33" filter="url(#shadow)"/>
+  <rect x="67" y="31" width="498" height="240" rx="7" fill="url(#roof)" stroke="#44332e" stroke-width="15"/>
+  <path d="M318 30v241" stroke="#b99676" stroke-width="12" opacity=".8"/>
+  <rect x="239" y="270" width="154" height="56" fill="url(#wood)" stroke="#4f3828" stroke-width="8"/>
+  <rect x="292" y="290" width="48" height="36" fill="#5d442f"/>
+  <rect x="672" y="71" width="282" height="204" rx="8" fill="#3e342d" opacity=".28" filter="url(#shadow)"/>
+  <rect x="664" y="63" width="282" height="204" rx="5" fill="url(#roof)" stroke="#4d392d" stroke-width="13"/>
+  <path d="M805 63v204" stroke="#b99676" stroke-width="10"/>
+  <rect x="766" y="267" width="78" height="48" fill="url(#wood)" stroke="#503c2e" stroke-width="6"/>
+  <rect x="1060" y="46" width="440" height="222" rx="8" fill="#3e342d" opacity=".28" filter="url(#shadow)"/>
+  <rect x="1051" y="38" width="440" height="222" rx="7" fill="url(#roof)" stroke="#44332e" stroke-width="15"/>
+  <path d="M1271 38v222" stroke="#b99676" stroke-width="12"/>
+  <rect x="1205" y="260" width="136" height="55" fill="url(#wood)" stroke="#503c2e" stroke-width="7"/>
+  <!-- South-side structures and a recessed porch. -->
+  <rect x="101" y="764" width="353" height="192" rx="8" fill="#3e342d" opacity=".28" filter="url(#shadow)"/>
+  <rect x="93" y="756" width="353" height="192" rx="6" fill="url(#roof)" stroke="#44332e" stroke-width="14"/>
+  <path d="M270 756v192" stroke="#b99676" stroke-width="10"/>
+  <rect x="219" y="710" width="102" height="47" fill="url(#wood)" stroke="#503c2e" stroke-width="7"/>
+  <rect x="604" y="774" width="423" height="179" rx="8" fill="#3e342d" opacity=".28" filter="url(#shadow)"/>
+  <rect x="596" y="766" width="423" height="179" rx="6" fill="url(#roof)" stroke="#44332e" stroke-width="14"/>
+  <path d="M807 766v179" stroke="#b99676" stroke-width="11"/>
+  <rect x="747" y="719" width="120" height="48" fill="url(#wood)" stroke="#503c2e" stroke-width="7"/>
+  <rect x="1160" y="752" width="346" height="215" rx="8" fill="#3e342d" opacity=".28" filter="url(#shadow)"/>
+  <rect x="1152" y="744" width="346" height="215" rx="6" fill="url(#roof)" stroke="#44332e" stroke-width="14"/>
+  <path d="M1325 744v215" stroke="#b99676" stroke-width="10"/>
+  <rect x="1253" y="697" width="144" height="48" fill="url(#wood)" stroke="#503c2e" stroke-width="7"/>
+  <!-- Open street features: low crates, barrels, well, and parked wagon. -->
+  <ellipse cx="820" cy="505" rx="91" ry="84" fill="#4f4337" opacity=".28" filter="url(#shadow)"/>
+  <circle cx="810" cy="492" r="76" fill="#8e8069" stroke="#514c43" stroke-width="12"/>
+  <circle cx="810" cy="492" r="50" fill="#314b50" stroke="#d7c8a6" stroke-width="7"/>
+  <path d="M759 410v-39h102v39" fill="none" stroke="#614b36" stroke-width="16"/>
+  <rect x="293" y="438" width="169" height="107" rx="14" fill="#654831" stroke="#422f22" stroke-width="12"/>
+  <path d="M308 463h139M308 493h139M308 521h139" stroke="#aa8052" stroke-width="10"/>
+  <circle cx="326" cy="558" r="28" fill="#53402e" stroke="#bd9460" stroke-width="10"/>
+  <circle cx="432" cy="558" r="28" fill="#53402e" stroke="#bd9460" stroke-width="10"/>
+  <path d="M462 489h62" stroke="#5c432f" stroke-width="12"/>
+  <rect x="1094" y="395" width="78" height="61" rx="4" fill="url(#wood)" stroke="#48382c" stroke-width="8"/>
+  <rect x="1197" y="417" width="65" height="64" rx="4" fill="url(#wood)" stroke="#48382c" stroke-width="8"/>
+  <circle cx="1111" cy="494" r="20" fill="#745239" stroke="#3d3028" stroke-width="6"/>
+  <circle cx="1154" cy="501" r="20" fill="#745239" stroke="#3d3028" stroke-width="6"/>
+  <circle cx="1250" cy="516" r="20" fill="#745239" stroke="#3d3028" stroke-width="6"/>
+  <path d="M127 353q19-15 42 4M1386 651q37-20 70-2M570 620q19-10 41-1" fill="none" stroke="#8b7659" stroke-width="13" opacity=".5"/>
+  <circle cx="69" cy="558" r="24" fill="#617052" opacity=".7"/><circle cx="1512" cy="540" r="28" fill="#617052" opacity=".7"/>
+</svg>

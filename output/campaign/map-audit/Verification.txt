@@ -1,0 +1,30 @@
+MAP REGISTER VERIFICATION — 8 October 2026
+
+PASSED
+- Canonical register: 467 unique location IDs, valid parent references without cycles, valid map/checklist references, and nine distinct site numbers 1–9.
+- Every one of the existing 36 registered map-scene IDs is represented without renaming or migrating it.
+- 104 retained map/reference/variant assets exist; their native dimensions and file hashes were checked. SVG dimensions describe vector viewports, not claimed raster resolution.
+- 125 original files match the pre-change baseline: source files, existing map artwork/references and the packaged campaign backup.
+- Canonical stopping-point reference resolves to loc-redbrand-hideout; legacy scene redbrand-hideout stays unchanged.
+- Chult/Tamoachan, Thay/Doomvault and relevant off-region destinations are separate from the Sword Coast; Tales placement suggestions remain labeled adaptations.
+- Browser rehearsal in a fresh, isolated practice campaign: World → Map register; lazy loading; Checklist / Locations / Maps; search; filters; pagination; native-size and proposal labels; map remains visible.
+- Opening/searching/filtering the register did not alter the rehearsed campaign state, story, rules, character statistics, fog or tokens.
+- New register does not automatically load spoiler images or publish any location.
+- Simulated TV window did not load the new register UI or private data.
+- Standalone HTML opened from a local file. Starting with #player is blocked; changing its hash to #player clears rendered/private register data.
+- Isolated phone-handler tests returned 404 for new register/data/report files and the private world atlas path. Phone state ignored an injected unknown private-register field.
+- Screenshot reviewed: the DM panel fits the existing layout while the central map stays visible.
+
+TEST BOUNDARIES
+- Browser tests used local Chromium, a temporary service store and a practice copy of the packaged backup. No running table or production phone service was restarted or altered.
+- Phone routing/projection tests invoked the actual handler in an isolated in-memory harness. Physical phones, Wi-Fi and the table TV were not retested.
+- Source geography was audited through supplied text/OCR, contents and referenced sections; most books were not inspected visually page by page. Individual source references record this limitation.
+- Detailed source/visual comparison covered Redbrand and selected Waterdeep/Nine artwork. Other tactical files have registration/guide/contact-sheet review rather than complete source-floorplan certification.
+- Live browser-only uploads and unsaved discoveries are outside this static audit. No claim is made that every custom image ever imported into a browser has been examined.
+- P0 findings in existing image/card workflows remain open: Nine composite fallback, custom Waterdeep baked-in labels, and shared static TV scene metadata. The new private register adds no player publication route and does not repair those older workflows.
+
+CHANGED FILES / DATA AUTHORITY
+- Location-Register.json is the editable authority for location identity, provenance and map planning.
+- Map-Register-Data.js and Map-Audit-and-Checklist.txt are generated views of that JSON.
+- Campaign-Map-Register-UI.js is a private read-only viewer. The DM manifest and initialization gained one entry each. Their original copies are retained in archive/map-register-before-2026-10-08/.
+- Actual play and discovery remain governed by approved outcomes and existing saves, not this snapshot. Every drawing/proposal remains separate from a visit.

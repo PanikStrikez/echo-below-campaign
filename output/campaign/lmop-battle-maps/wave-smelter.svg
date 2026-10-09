@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-label="Wave Echo Cave smelter battlefield player-safe battle map">
+<defs>
+<pattern id="grass" width="118" height="107" patternUnits="userSpaceOnUse"><rect width="118" height="107" fill="#68775d"/><path d="M8 24l7-8m5 10l6-6M63 20l5-9m4 11l8-9M95 73l9-8m-37 22l5-9M21 77l7-8m4 11l5-7" stroke="#829070" stroke-width="2" opacity=".65"/><circle cx="49" cy="54" r="3" fill="#536c4e"/><circle cx="108" cy="37" r="3" fill="#536c4e"/></pattern>
+<pattern id="dirt" width="95" height="90" patternUnits="userSpaceOnUse"><rect width="95" height="90" fill="#95856a"/><path d="M9 14l17 3m35-9l13 6M24 66l12-6m33 16l13-4" stroke="#b3a182" stroke-width="3" opacity=".47"/><circle cx="48" cy="39" r="3" fill="#746a59"/></pattern>
+<pattern id="stone" width="122" height="102" patternUnits="userSpaceOnUse"><rect width="122" height="102" fill="#a99b82"/><path d="M0 49h122M44 0v49m48 0v49M23 49v53m56-53v53" fill="none" stroke="#807966" stroke-width="2.4" opacity=".48"/><path d="M13 20l18-4m48 62l15 3" fill="none" stroke="#d1bea0" stroke-width="2" opacity=".45"/></pattern>
+<pattern id="rock" width="110" height="96" patternUnits="userSpaceOnUse"><rect width="110" height="96" fill="#393b38"/><path d="M4 16l24-10 24 15 23-11 28 16M6 72l24 10 27-15 21 9 27-15" fill="none" stroke="#55594f" stroke-width="3" opacity=".65"/></pattern>
+<pattern id="wood" width="48" height="100" patternUnits="userSpaceOnUse"><rect width="48" height="100" fill="#83694c"/><path d="M0 0v100M23 0v100M47 0v100" stroke="#57432f" stroke-width="4"/><path d="M7 23v44m33-59v54" stroke="#a5845b" stroke-width="2" opacity=".6"/></pattern>
+<pattern id="water" width="110" height="80" patternUnits="userSpaceOnUse"><rect width="110" height="80" fill="#3e6570"/><path d="M5 16q23-10 46 0t53 0M9 55q23-10 46 0t50 0" fill="none" stroke="#95b3ad" stroke-width="3" opacity=".52"/></pattern>
+<pattern id="web" width="70" height="70" patternUnits="userSpaceOnUse"><path d="M0 0l70 70M70 0L0 70M35 0v70M0 35h70" stroke="#d6d1bc" stroke-width="2" opacity=".5" fill="none"/></pattern>
+<radialGradient id="canopy"><stop stop-color="#8a9a73"/><stop offset=".62" stop-color="#526a4e"/><stop offset="1" stop-color="#344e3c"/></radialGradient>
+<radialGradient id="fire"><stop stop-color="#ffda83"/><stop offset=".4" stop-color="#d78637"/><stop offset="1" stop-color="#70432c"/></radialGradient>
+</defs>
+<rect width="1500" height="1000" fill="url(#rock)"/>
+<path d="M85 108Q415 42 745 120 1110 62 1410 170L1455 790Q1180 930 780 879 420 950 100 811z" fill="url(#dirt)" stroke="#242927" stroke-width="17" stroke-linejoin="round" />
+<rect x="518" y="222" width="425" height="332" rx="0" fill="#676459" stroke="#333c38" stroke-width="13"/>
+<circle cx="734" cy="385" r="115" fill="#65473a" stroke="#373d38" stroke-width="16"/>
+<circle cx="734" cy="385" r="68" fill="url(#fire)" stroke="#433a34" stroke-width="10"/>
+<path d="M948 417h330v107H948z" fill="url(#dirt)" stroke="#373d39" stroke-width="12" stroke-linejoin="round" />
+<circle cx="1200" cy="560" r="137" fill="#786e57" stroke="#383d38" stroke-width="16"/>
+<path d="M1200 560L1310.0 560.0" fill="none" stroke="#51493c" stroke-width="11" stroke-linecap="round" />
+<path d="M1200 560L1277.7817459305202 637.7817459305202" fill="none" stroke="#51493c" stroke-width="11" stroke-linecap="round" />
+<path d="M1200 560L1200.0 670.0" fill="none" stroke="#51493c" stroke-width="11" stroke-linecap="round" />
+<path d="M1200 560L1122.2182540694798 637.7817459305202" fill="none" stroke="#51493c" stroke-width="11" stroke-linecap="round" />
+<path d="M1200 560L1090.0 560.0" fill="none" stroke="#51493c" stroke-width="11" stroke-linecap="round" />
+<path d="M1200 560L1122.2182540694798 482.21825406947977" fill="none" stroke="#51493c" stroke-width="11" stroke-linecap="round" />
+<path d="M1200 560L1200.0 450.0" fill="none" stroke="#51493c" stroke-width="11" stroke-linecap="round" />
+<path d="M1200 560L1277.7817459305202 482.21825406947977" fill="none" stroke="#51493c" stroke-width="11" stroke-linecap="round" />
+<circle cx="1200" cy="560" r="28" fill="#433d35" stroke="#c0a57a" stroke-width="7"/>
+<path d="M990 820Q1180 780 1480 876" fill="none" stroke="#3c5260" stroke-width="58" stroke-linejoin="round" />
+<path d="M990 820Q1180 780 1480 876" fill="none" stroke="#8497a0" stroke-width="6" stroke-linejoin="round" />
+<rect x="240" y="270" width="155" height="95" rx="0" fill="url(#wood)" stroke="#433c32" stroke-width="9"/>
+<rect x="335" y="330" width="155" height="95" rx="0" fill="url(#wood)" stroke="#433c32" stroke-width="9"/>
+<rect x="320" y="690" width="155" height="95" rx="0" fill="url(#wood)" stroke="#433c32" stroke-width="9"/>
+<path d="M130 499l17-17 35 0 17 17-8 35h-35z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M154 499L176 493" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M951 187l19-19 39 0 19 19-9 39h-39z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M977 187L1003 181" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M893 711l13-13 27 0 13 13-6 27h-27z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M911 711L929 707" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<rect x="7" y="7" width="1486" height="986" fill="none" stroke="#232a27" stroke-width="14"/>
+</svg>

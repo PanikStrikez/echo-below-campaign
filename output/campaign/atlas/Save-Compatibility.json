@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "Existing travel values and customized distances retained",
+    "Existing routes, plans, history and requests retained",
+    "All added places start hidden",
+    "Blank campaigns remain blank",
+    "New Tresendar default uses exterior; saved arrival stays unchanged",
+    "Atlas views survive normalization"
+  ],
+  "newPlaces": 460,
+  "newRoutes": 28
+}

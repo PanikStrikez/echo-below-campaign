@@ -1,0 +1,3496 @@
+{
+  "schemaVersion": 1,
+  "audience": "dm-only",
+  "preparedAt": "2026-10-08",
+  "identityAuthority": "Location-Register.json; source books unchanged; all new locations hidden",
+  "boards": [
+    {
+      "id": "city-waterdeep",
+      "title": "Waterdeep",
+      "locationId": "loc-waterdeep",
+      "parentId": "waterdeep",
+      "image": "atlas/art/Waterdeep-City-Terrain.png",
+      "viewBox": [
+        0,
+        0,
+        1095,
+        1357
+      ],
+      "northUp": true,
+      "source": {
+        "source": "Sword Coast Adventurer’s Guide",
+        "printedPage": 56,
+        "pdfPage": 57,
+        "path": "../../sources/pdfcoffee.com_sword-coast-adventurerx27s-guide-pdf-free.pdf",
+        "method": "visual-render-and-text",
+        "render": "tmp/waterdeep-audit/scag-pdf57.png"
+      },
+      "referenceImage": "tmp/waterdeep-audit/Waterdeep-Reference.png",
+      "referenceFrame": {
+        "renderDimensions": [
+          1190,
+          1550
+        ],
+        "crop": [
+          28,
+          67,
+          1095,
+          1357
+        ]
+      },
+      "precision": "Published ward/coast geometry generalized from SCAG p56. The supplied Dragon Heist scan omits the city foldout. Venue positions without map labels are approximate ward anchors or custom proposals. No street address, distance, lease or discovery is established.",
+      "anchors": [
+        {
+          "locationId": "loc-castle-waterdeep",
+          "point": [
+            417,
+            817
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-mount-waterdeep",
+          "point": [
+            185,
+            720
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-city-of-the-dead",
+          "point": [
+            622,
+            660
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-deepwater-harbor",
+          "point": [
+            400,
+            1160
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-waterdeep-sea-ward",
+          "point": [
+            285,
+            310
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-waterdeep-north-ward",
+          "point": [
+            575,
+            345
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-waterdeep-castle-ward",
+          "point": [
+            335,
+            625
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-waterdeep-trades-ward",
+          "point": [
+            530,
+            845
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-waterdeep-dock-ward",
+          "point": [
+            395,
+            970
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-waterdeep-southern-ward",
+          "point": [
+            650,
+            1030
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-waterdeep-field-ward",
+          "point": [
+            445,
+            100
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-undercliff",
+          "point": [
+            875,
+            830
+          ],
+          "basis": "published-relative-region",
+          "note": "East of the city in Dragon Heist p180; map position is a broad regional label, not exact terrain."
+        },
+        {
+          "locationId": "loc-yawning-portal",
+          "point": [
+            350,
+            715
+          ],
+          "basis": "published-ward-approximate-anchor",
+          "note": "Published Castle Ward venue; this supplied map has no exact building label. Working anchor is approximate within the ward, not a verified street address."
+        },
+        {
+          "locationId": "loc-mending-court",
+          "point": [
+            395,
+            735
+          ],
+          "basis": "custom-proposed-block",
+          "note": "Custom proposed block within campaign ward context. Exact street, building, compass relationship and ownership remain unestablished; no route mileage inferred."
+        },
+        {
+          "locationId": "loc-second-margin",
+          "point": [
+            425,
+            605
+          ],
+          "basis": "custom-proposed-block",
+          "note": "Custom proposed block within campaign ward context. Exact street, building, compass relationship and ownership remain unestablished; no route mileage inferred."
+        },
+        {
+          "locationId": "loc-ninepin-works",
+          "point": [
+            530,
+            810
+          ],
+          "basis": "custom-proposed-block",
+          "note": "Custom proposed block within campaign ward context. Exact street, building, compass relationship and ownership remain unestablished; no route mileage inferred."
+        },
+        {
+          "locationId": "loc-lantern-house",
+          "point": [
+            650,
+            1070
+          ],
+          "basis": "custom-proposed-block",
+          "note": "Custom proposed block within campaign ward context. Exact street, building, compass relationship and ownership remain unestablished; no route mileage inferred."
+        },
+        {
+          "locationId": "loc-blue-lantern-quay",
+          "point": [
+            450,
+            1060
+          ],
+          "basis": "custom-proposed-block",
+          "note": "Custom proposed block within campaign ward context. Exact street, building, compass relationship and ownership remain unestablished; no route mileage inferred."
+        },
+        {
+          "locationId": "loc-reed-and-ledger",
+          "point": [
+            390,
+            570
+          ],
+          "basis": "custom-proposed-block",
+          "note": "Custom proposed block within campaign ward context. Exact street, building, compass relationship and ownership remain unestablished; no route mileage inferred."
+        }
+      ],
+      "features": [
+        {
+          "id": "wd-sea-coast",
+          "title": "Sea of Swords",
+          "kind": "water",
+          "points": [
+            [
+              165,
+              0
+            ],
+            [
+              142,
+              75
+            ],
+            [
+              98,
+              145
+            ],
+            [
+              91,
+              240
+            ],
+            [
+              70,
+              340
+            ],
+            [
+              64,
+              413
+            ],
+            [
+              109,
+              470
+            ],
+            [
+              141,
+              534
+            ],
+            [
+              116,
+              584
+            ],
+            [
+              147,
+              640
+            ],
+            [
+              114,
+              695
+            ],
+            [
+              93,
+              760
+            ],
+            [
+              94,
+              830
+            ],
+            [
+              50,
+              885
+            ],
+            [
+              69,
+              938
+            ],
+            [
+              104,
+              961
+            ],
+            [
+              82,
+              1004
+            ],
+            [
+              55,
+              1051
+            ],
+            [
+              96,
+              1081
+            ],
+            [
+              117,
+              1130
+            ],
+            [
+              96,
+              1170
+            ],
+            [
+              120,
+              1208
+            ],
+            [
+              101,
+              1230
+            ],
+            [
+              165,
+              1275
+            ]
+          ],
+          "labelPoint": [
+            38,
+            666
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-harbor",
+          "title": "Deepwater Harbor",
+          "kind": "water",
+          "points": [
+            [
+              119,
+              934
+            ],
+            [
+              168,
+              917
+            ],
+            [
+              236,
+              934
+            ],
+            [
+              305,
+              936
+            ],
+            [
+              358,
+              977
+            ],
+            [
+              405,
+              1020
+            ],
+            [
+              451,
+              1035
+            ],
+            [
+              491,
+              1070
+            ],
+            [
+              554,
+              1106
+            ],
+            [
+              603,
+              1142
+            ],
+            [
+              632,
+              1192
+            ],
+            [
+              610,
+              1225
+            ],
+            [
+              560,
+              1239
+            ],
+            [
+              513,
+              1271
+            ],
+            [
+              459,
+              1284
+            ],
+            [
+              412,
+              1305
+            ],
+            [
+              346,
+              1303
+            ],
+            [
+              289,
+              1285
+            ],
+            [
+              243,
+              1267
+            ],
+            [
+              177,
+              1254
+            ],
+            [
+              136,
+              1213
+            ]
+          ],
+          "labelPoint": [
+            410,
+            1180
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-main-road",
+          "title": "Main north–south road",
+          "kind": "road",
+          "points": [
+            [
+              520,
+              10
+            ],
+            [
+              486,
+              89
+            ],
+            [
+              482,
+              161
+            ],
+            [
+              480,
+              319
+            ],
+            [
+              482,
+              473
+            ],
+            [
+              493,
+              629
+            ],
+            [
+              500,
+              777
+            ],
+            [
+              567,
+              862
+            ],
+            [
+              571,
+              951
+            ],
+            [
+              616,
+              1090
+            ],
+            [
+              685,
+              1152
+            ],
+            [
+              771,
+              1182
+            ]
+          ],
+          "labelPoint": null,
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-market-road",
+          "title": "Market approaches",
+          "kind": "road",
+          "points": [
+            [
+              102,
+              434
+            ],
+            [
+              280,
+              435
+            ],
+            [
+              338,
+              486
+            ],
+            [
+              412,
+              490
+            ],
+            [
+              480,
+              494
+            ],
+            [
+              591,
+              512
+            ],
+            [
+              681,
+              494
+            ]
+          ],
+          "labelPoint": null,
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-market",
+          "title": "The Market",
+          "kind": "terrain",
+          "points": [
+            [
+              313,
+              494
+            ],
+            [
+              448,
+              494
+            ],
+            [
+              480,
+              514
+            ],
+            [
+              428,
+              540
+            ],
+            [
+              319,
+              542
+            ],
+            [
+              291,
+              518
+            ]
+          ],
+          "labelPoint": [
+            380,
+            516
+          ],
+          "closed": true,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-mountain",
+          "title": "Mount Waterdeep",
+          "kind": "terrain",
+          "points": [
+            [
+              180,
+              475
+            ],
+            [
+              216,
+              516
+            ],
+            [
+              245,
+              620
+            ],
+            [
+              224,
+              701
+            ],
+            [
+              271,
+              771
+            ],
+            [
+              404,
+              794
+            ],
+            [
+              377,
+              838
+            ],
+            [
+              299,
+              847
+            ],
+            [
+              238,
+              880
+            ],
+            [
+              153,
+              903
+            ],
+            [
+              102,
+              929
+            ],
+            [
+              104,
+              840
+            ],
+            [
+              143,
+              757
+            ],
+            [
+              162,
+              675
+            ],
+            [
+              180,
+              576
+            ]
+          ],
+          "labelPoint": [
+            175,
+            720
+          ],
+          "closed": true,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-dead",
+          "title": "City of the Dead",
+          "kind": "terrain",
+          "points": [
+            [
+              581,
+              586
+            ],
+            [
+              632,
+              574
+            ],
+            [
+              675,
+              605
+            ],
+            [
+              674,
+              682
+            ],
+            [
+              654,
+              758
+            ],
+            [
+              572,
+              737
+            ],
+            [
+              554,
+              666
+            ]
+          ],
+          "labelPoint": [
+            614,
+            661
+          ],
+          "closed": true,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-label-sea-ward",
+          "title": "Sea Ward",
+          "kind": "terrain",
+          "points": [],
+          "labelPoint": [
+            285,
+            310
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-label-north-ward",
+          "title": "North Ward",
+          "kind": "terrain",
+          "points": [],
+          "labelPoint": [
+            575,
+            345
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-label-castle-ward",
+          "title": "Castle Ward",
+          "kind": "terrain",
+          "points": [],
+          "labelPoint": [
+            335,
+            625
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-label-trades-ward",
+          "title": "Trades Ward",
+          "kind": "terrain",
+          "points": [],
+          "labelPoint": [
+            530,
+            845
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-label-dock-ward",
+          "title": "Dock Ward",
+          "kind": "terrain",
+          "points": [],
+          "labelPoint": [
+            395,
+            970
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-label-southern-ward",
+          "title": "Southern Ward",
+          "kind": "terrain",
+          "points": [],
+          "labelPoint": [
+            650,
+            1030
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-label-field-ward",
+          "title": "Field Ward",
+          "kind": "terrain",
+          "points": [],
+          "labelPoint": [
+            445,
+            100
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-label-undercliff",
+          "title": "Undercliff",
+          "kind": "terrain",
+          "points": [],
+          "labelPoint": [
+            875,
+            830
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-outer-wall",
+          "title": "City wall",
+          "kind": "terrain",
+          "geographyKind": "wall",
+          "points": [
+            [
+              172,
+              27
+            ],
+            [
+              275,
+              48
+            ],
+            [
+              425,
+              71
+            ],
+            [
+              487,
+              95
+            ],
+            [
+              624,
+              150
+            ],
+            [
+              688,
+              206
+            ],
+            [
+              684,
+              284
+            ],
+            [
+              689,
+              390
+            ],
+            [
+              693,
+              471
+            ],
+            [
+              714,
+              516
+            ],
+            [
+              697,
+              588
+            ],
+            [
+              682,
+              685
+            ],
+            [
+              674,
+              750
+            ],
+            [
+              712,
+              829
+            ],
+            [
+              708,
+              905
+            ],
+            [
+              725,
+              968
+            ],
+            [
+              727,
+              1050
+            ],
+            [
+              711,
+              1104
+            ],
+            [
+              685,
+              1152
+            ]
+          ],
+          "labelPoint": null,
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-inner-north-wall",
+          "title": "Northern inner wall",
+          "kind": "terrain",
+          "geographyKind": "wall",
+          "points": [
+            [
+              153,
+              95
+            ],
+            [
+              230,
+              108
+            ],
+            [
+              328,
+              137
+            ],
+            [
+              430,
+              164
+            ],
+            [
+              478,
+              174
+            ],
+            [
+              566,
+              206
+            ],
+            [
+              650,
+              253
+            ],
+            [
+              685,
+              276
+            ]
+          ],
+          "labelPoint": null,
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "wd-east-road",
+          "title": "Eastern gate approach",
+          "kind": "terrain",
+          "geographyKind": "wall",
+          "points": [
+            [
+              690,
+              829
+            ],
+            [
+              733,
+              862
+            ],
+            [
+              772,
+              908
+            ],
+            [
+              777,
+              944
+            ]
+          ],
+          "labelPoint": null,
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        }
+      ],
+      "notes": [
+        "The eastern decorative panel on the reference is replaced by illustrative Undercliff terrain; it was not a surveyed topographic area.",
+        "Yawning Portal is published in Castle Ward (Dragon Heist pp20–21,176–177); supplied city map does not label its exact building. Its point is a working ward anchor.",
+        "Custom businesses follow the campaign hub’s ward assignments. Their point positions are proposals only. Mending Court’s proposed Castle Ward block does not change the approved unassigned address or establish lodging."
+      ],
+      "preparation": {
+        "status": "light-future-overview",
+        "opening": "Suggested arrival: The city opens into a maze of gates, streets and working wards. Ask whether the party first wants an inn, a known contact, the proposed courtyard introduction, or time to orient themselves. Choose one next action rather than starting every prepared scene.",
+        "arrivalPoints": [
+          {
+            "id": "north-road",
+            "title": "Northern road approach",
+            "point": [
+              497,
+              91
+            ],
+            "note": "Generalized published city-map approach, not an assigned gate appointment.",
+            "knownToParty": false
+          },
+          {
+            "id": "south-road",
+            "title": "Southern road approach",
+            "point": [
+              770,
+              1182
+            ],
+            "note": "Generalized city frame; no arrival or entry is recorded.",
+            "knownToParty": false
+          },
+          {
+            "id": "harbor",
+            "title": "Deepwater Harbor",
+            "point": [
+              400,
+              1160
+            ],
+            "note": "Published harbor. Landing permission and any vessel arrangements remain separate.",
+            "knownToParty": false
+          }
+        ],
+        "districts": [
+          {
+            "title": "Castle Ward",
+            "locationId": "loc-waterdeep-castle-ward",
+            "note": "Portal and civic context; custom bookshops and the courtyard block remain proposals."
+          },
+          {
+            "title": "Trades Ward",
+            "locationId": "loc-waterdeep-trades-ward",
+            "note": "Workshop and commerce context."
+          },
+          {
+            "title": "Dock Ward",
+            "locationId": "loc-waterdeep-dock-ward",
+            "note": "Quays and cargo; no exact berth or vessel presence implied."
+          },
+          {
+            "title": "Southern Ward",
+            "locationId": "loc-waterdeep-southern-ward",
+            "note": "Overland travelers and Lantern House campaign context."
+          },
+          {
+            "title": "Other wards",
+            "locationId": null,
+            "note": "Sea Ward, North Ward, Field Ward and Undercliff have source-labeled geographic anchors; Field Ward is not an official ward."
+          }
+        ],
+        "serviceContacts": [
+          {
+            "title": "Yawning Portal",
+            "service": "Public tavern, ordinary lodging inquiry and separately agreed well access.",
+            "locationId": "loc-yawning-portal",
+            "npcIds": [
+              "durnan",
+              "kestrel"
+            ],
+            "targetBoardId": "wd-map-yawning-portal",
+            "contactName": "Durnan; Kestrel only if actually present",
+            "note": "Durnan is published; current meetings, fees, rooms and descent must be agreed.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Mending Court neighbors",
+            "service": "Binding, meals, packing and copying by arrangement.",
+            "locationId": "loc-mending-court",
+            "npcIds": [
+              "nessa-brindle",
+              "orenna-pike",
+              "jori-fen",
+              "pellan-fen",
+              "aven-rusk"
+            ],
+            "targetBoardId": "wd-map-mending-neighborhood",
+            "contactName": "Named residents · actual introductions govern contact",
+            "note": "Use the existing introduction sequence; resident availability, access and tenancy remain unsettled.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Second Margin",
+            "service": "Bookshop browsing and a bounded research request.",
+            "locationId": "loc-second-margin",
+            "npcIds": [
+              "selise"
+            ],
+            "targetBoardId": "wd-map-second-margin",
+            "contactName": "Selise Ardent",
+            "note": "Selise is a campaign contact; no free access to private records or hidden spaces.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Ninepin Works",
+            "service": "Discuss an ordinary craft or evidence-inspection request.",
+            "locationId": "loc-ninepin-works",
+            "npcIds": [
+              "orren"
+            ],
+            "targetBoardId": "wd-map-ninepin-works",
+            "contactName": "Orren Brassmantle",
+            "note": "Ask before touching tools or performing destructive tests; price, scope and time remain unagreed.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Lantern House",
+            "service": "Ask about permitted common-area care or a conversation.",
+            "locationId": "loc-lantern-house",
+            "npcIds": [
+              "anja"
+            ],
+            "targetBoardId": "wd-map-lantern-house",
+            "contactName": "Sister Anja Vale",
+            "note": "Patients and private rooms remain private; no service or testimony is guaranteed.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Blue Lantern Quay",
+            "service": "Arrange a dockside meeting or ask about a possible vessel.",
+            "locationId": "loc-blue-lantern-quay",
+            "npcIds": [
+              "mara",
+              "vess"
+            ],
+            "targetBoardId": "wd-map-blue-lantern-quay",
+            "contactName": "Mara Vey / Captain Rusk Vess · presence unknown",
+            "note": "Mara and Vess are campaign contact references, not a claim either is waiting here.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          }
+        ],
+        "onwardRoutes": [
+          {
+            "routeId": "route-leilon-waterdeep",
+            "direction": "North by the High Road",
+            "destinationLocationId": "loc-leilon",
+            "distanceMiles": null,
+            "note": "Select an actual trip; no automatic departure."
+          },
+          {
+            "routeId": "route-waterdeep-daggerford",
+            "direction": "South toward Daggerford",
+            "destinationLocationId": "loc-daggerford",
+            "distanceMiles": null,
+            "note": "Distance and time remain unknown until an agreed route calculation."
+          }
+        ],
+        "source": "SCAG printed54–56; Dragon Heist printed176–180; custom services and NPC premises from Waterdeep-Hub.md and Campaign-Courtyard-Data.js. Exact custom blocks and current presence remain proposals.",
+        "decisionsToConfirm": [
+          "Whether to enter or continue",
+          "Which service or contact to seek",
+          "Current access, availability, prices and terms",
+          "Actual onward route and departure"
+        ],
+        "noAutomaticEffects": [
+          "No discovery, visit, arrival or elapsed time",
+          "No service, purchase, lodging agreement or NPC presence guaranteed"
+        ]
+      }
+    },
+    {
+      "id": "town-leilon",
+      "title": "Leilon · proposed road stop",
+      "locationId": "loc-leilon",
+      "parentId": "high-road",
+      "image": "atlas/art/Leilon-Terrain.png",
+      "viewBox": [
+        0,
+        0,
+        1200,
+        800
+      ],
+      "northUp": true,
+      "source": {
+        "source": "Official Sword Coast geographic reference; campaign transition",
+        "path": "atlas/Geography-Register.json",
+        "locator": "Leilon anchor; Campaign-Transition-Data.js default southbound itinerary",
+        "method": "visual-regional-reference-plus-custom-proposal"
+      },
+      "precision": "Original proposed Leilon stop illustration. Service markers follow the painted buildings; no published town plan, real-world survey, exact streets or distances are claimed.",
+      "anchors": [
+        {
+          "locationId": "loc-leilon-road-yard",
+          "point": [
+            668,
+            262
+          ],
+          "basis": "custom-proposed-service",
+          "note": "Original optional service point. Position, availability, name and terms require DM adoption and introduction in play. Point aligned to the new painting; alternative diagram coordinates differ."
+        },
+        {
+          "locationId": "loc-leilon-wayfarers-lodge",
+          "point": [
+            484,
+            219
+          ],
+          "basis": "custom-proposed-service",
+          "note": "Original optional service point. Position, availability, name and terms require DM adoption and introduction in play. Point aligned to the new painting; alternative diagram coordinates differ."
+        },
+        {
+          "locationId": "loc-leilon-supply-shed",
+          "point": [
+            820,
+            242
+          ],
+          "basis": "custom-proposed-service",
+          "note": "Original optional service point. Position, availability, name and terms require DM adoption and introduction in play. Point aligned to the new painting; alternative diagram coordinates differ."
+        },
+        {
+          "locationId": "loc-leilon-repair-yard",
+          "point": [
+            797,
+            406
+          ],
+          "basis": "custom-proposed-service",
+          "note": "Original optional service point. Position, availability, name and terms require DM adoption and introduction in play. Point aligned to the new painting; alternative diagram coordinates differ."
+        },
+        {
+          "locationId": "loc-leilon-shrine",
+          "point": [
+            469,
+            436
+          ],
+          "basis": "custom-proposed-service",
+          "note": "Original optional service point. Position, availability, name and terms require DM adoption and introduction in play. Point aligned to the new painting; alternative diagram coordinates differ."
+        }
+      ],
+      "features": [
+        {
+          "id": "leilon-road",
+          "title": "High Road",
+          "kind": "road",
+          "points": [
+            [
+              687,
+              0
+            ],
+            [
+              655,
+              125
+            ],
+            [
+              625,
+              285
+            ],
+            [
+              610,
+              400
+            ],
+            [
+              600,
+              610
+            ],
+            [
+              565,
+              800
+            ]
+          ],
+          "labelPoint": [
+            680,
+            100
+          ],
+          "closed": false,
+          "public": false,
+          "sourceApproved": false
+        },
+        {
+          "id": "leilon-lane",
+          "title": "Proposed local lane",
+          "kind": "road",
+          "points": [
+            [
+              200,
+              295
+            ],
+            [
+              410,
+              340
+            ],
+            [
+              620,
+              312
+            ],
+            [
+              860,
+              295
+            ],
+            [
+              1200,
+              320
+            ]
+          ],
+          "labelPoint": null,
+          "closed": false,
+          "public": false,
+          "sourceApproved": false
+        }
+      ],
+      "artworkShapes": [
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              130,
+              170
+            ],
+            [
+              480,
+              120
+            ],
+            [
+              865,
+              170
+            ],
+            [
+              1050,
+              420
+            ],
+            [
+              905,
+              665
+            ],
+            [
+              375,
+              700
+            ],
+            [
+              185,
+              550
+            ]
+          ],
+          "style": "town"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            390,
+            260,
+            125,
+            100
+          ],
+          "style": "building"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            740,
+            240,
+            115,
+            100
+          ],
+          "style": "building"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            700,
+            440,
+            150,
+            90
+          ],
+          "style": "building"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            365,
+            490,
+            90,
+            80
+          ],
+          "style": "building"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            625,
+            295,
+            92,
+            140
+          ],
+          "style": "yard"
+        }
+      ],
+      "notes": [
+        "Optional likely stop on the default High Road route; the party has not selected or reached it.",
+        "Arrival: traffic slows around a road yard; ask whether the party wants rest, provisions, repairs or to continue south. Confirm availability, prices and conditions in play.",
+        "Proposed service roles have no named canon NPCs. A keeper can offer a room, a provisioner supplies, a carter repairs and a caretaker ordinary first aid; spells, inventory, bargains and favors are not guaranteed.",
+        "Outbound choices: High Road north toward Neverwinter; south toward Waterdeep. Boat access toward the custom offshore proposal needs a separately earned lead and safe passage; there is no automatic route or public marker to it.",
+        "Street diagram describes a reusable future scene, not a resolved visit. No rent, purchases, rest, time passage or travel status changes automatically."
+      ],
+      "preparation": {
+        "status": "optional-future-stop",
+        "arrivalPoints": [
+          {
+            "title": "North road approach",
+            "point": [
+              655,
+              125
+            ],
+            "source": "Custom painted overview; High Road regional relationship published",
+            "knownToParty": false
+          },
+          {
+            "title": "South road approach",
+            "point": [
+              580,
+              710
+            ],
+            "source": "Custom painted overview; High Road regional relationship published",
+            "knownToParty": false
+          }
+        ],
+        "districts": [
+          {
+            "title": "Road yard",
+            "locationId": "loc-leilon-road-yard",
+            "note": "Proposed arrival and caravan space."
+          },
+          {
+            "title": "Western lodging and shrine lane",
+            "locationId": null,
+            "note": "Original arrangement in the new painting; not a published town district."
+          },
+          {
+            "title": "Eastern service yards",
+            "locationId": null,
+            "note": "Proposed supplies and ordinary repairs, subject to availability."
+          }
+        ],
+        "serviceContacts": [
+          {
+            "locationId": "loc-leilon-road-yard",
+            "contactName": null,
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "original-proposal",
+            "title": "Road Yard",
+            "service": "Road information and cart space",
+            "note": "Speak with a yard attendant (name unassigned). Ask who has recently traveled the road, where carts may stand and whether help is available. A report may be incomplete; check who actually witnessed it.",
+            "npcIds": []
+          },
+          {
+            "locationId": "loc-leilon-wayfarers-lodge",
+            "contactName": null,
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "original-proposal",
+            "title": "Wayfarers Lodge",
+            "service": "Food, rooms and ordinary rest arrangements",
+            "note": "A keeper (name unassigned) can discuss how many people need space, bedding and meals. Confirm price, privacy, keys, animals and check-out before recording an agreement.",
+            "npcIds": []
+          },
+          {
+            "locationId": "loc-leilon-supply-shed",
+            "contactName": null,
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "original-proposal",
+            "title": "Supply Shed",
+            "service": "Ordinary provisions",
+            "note": "A provisioner (name unassigned) can inspect the requested list and quote only stock actually available. Agree quantity and cost before updating money or inventory.",
+            "npcIds": []
+          },
+          {
+            "locationId": "loc-leilon-repair-yard",
+            "contactName": null,
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "original-proposal",
+            "title": "Repair Yard",
+            "service": "Wheel, harness and mundane equipment repairs",
+            "note": "A carter or craftsperson (name unassigned) examines the specific damage before estimating materials, cost and time. Inspection is not completed repair.",
+            "npcIds": []
+          },
+          {
+            "locationId": "loc-leilon-shrine",
+            "contactName": null,
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "original-proposal",
+            "title": "Shrine",
+            "service": "Ordinary care and a quiet conversation",
+            "note": "A caretaker (name unassigned) may offer directions, shelter or ordinary first aid if present. No deity, priest, healing spell or magical service is promised.",
+            "npcIds": []
+          }
+        ],
+        "onwardRoutes": [
+          {
+            "routeId": "route-neverwinter-leilon",
+            "direction": "north",
+            "destinationLocationId": "loc-neverwinter",
+            "distanceMiles": null,
+            "note": "A detour from the default southbound itinerary; no route acceptance or ETA inferred."
+          },
+          {
+            "routeId": "route-leilon-waterdeep",
+            "direction": "south",
+            "destinationLocationId": "loc-waterdeep",
+            "distanceMiles": null,
+            "note": "Continue the proposed High Road itinerary only after actual route choice."
+          },
+          {
+            "routeId": "route-phandalin-leilon",
+            "direction": "back toward Phandalin",
+            "destinationLocationId": "loc-phandalin",
+            "distanceMiles": null,
+            "note": "Return route requires actual travel choice; no teleport or automatic arrival."
+          }
+        ],
+        "opening": "Optional arrival read-aloud: The High Road widens into a cart-worn yard. A covered repair bay faces a lodging courtyard across the lane; smoke rises beyond a low shrine roof. Someone checks a harness while another waits beside a loaded wagon. The road continues south. What do you need before you leave?",
+        "decisionsToConfirm": [
+          "Whether to stop",
+          "Service contact and availability",
+          "Price and payment before purchase",
+          "Lodging or rest terms",
+          "Next route and actual departure"
+        ],
+        "noAutomaticEffects": [
+          "No discovery or visit",
+          "No expense or inventory change",
+          "No rest or elapsed time",
+          "No lodging agreement",
+          "No offshore lead or vessel passage"
+        ],
+        "options": [
+          "Stop for one named need and leave other services unintroduced.",
+          "Ask for a road report and decide how much of it is firsthand.",
+          "Discuss a room or ordinary aid without accepting a cost yet.",
+          "Continue south; no time, payment or service is applied merely for opening this card."
+        ],
+        "source": "Original future-stop preparation on the published High Road; painted parcels and all five services are proposals."
+      }
+    },
+    {
+      "id": "city-neverwinter",
+      "title": "Neverwinter · city overview",
+      "locationId": "loc-neverwinter",
+      "parentId": "phandelver",
+      "image": "atlas/settlements/neverwinter-Overview.svg",
+      "viewBox": [
+        0,
+        0,
+        1200,
+        800
+      ],
+      "northUp": true,
+      "source": {
+        "source": "Sword Coast Adventurer’s Guide",
+        "printedPage": 52,
+        "pdfPage": 53,
+        "path": "../../sources/pdfcoffee.com_sword-coast-adventurerx27s-guide-pdf-free.pdf",
+        "method": "visual-render-and-text",
+        "render": "tmp/waterdeep-audit/scag-pdf53.png"
+      },
+      "precision": "Generalized from the published city map. Broad water, city and major landmark relationships only; no claim of exact blocks, current buildings or tactical scale.",
+      "anchors": [
+        {
+          "locationId": "loc-castle-never",
+          "point": [
+            340,
+            382
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-protectors-enclave",
+          "point": [
+            430,
+            555
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        }
+      ],
+      "features": [
+        {
+          "id": "nw-river",
+          "title": "Neverwinter River",
+          "kind": "water",
+          "points": [
+            [
+              1200,
+              383
+            ],
+            [
+              930,
+              377
+            ],
+            [
+              710,
+              388
+            ],
+            [
+              470,
+              362
+            ],
+            [
+              335,
+              392
+            ],
+            [
+              175,
+              371
+            ],
+            [
+              0,
+              397
+            ]
+          ],
+          "labelPoint": [
+            815,
+            365
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "nw-sea",
+          "title": "Sea of Swords",
+          "kind": "water",
+          "points": [
+            [
+              214,
+              0
+            ],
+            [
+              207,
+              85
+            ],
+            [
+              187,
+              169
+            ],
+            [
+              155,
+              246
+            ],
+            [
+              170,
+              303
+            ],
+            [
+              225,
+              345
+            ],
+            [
+              162,
+              405
+            ],
+            [
+              87,
+              440
+            ],
+            [
+              74,
+              524
+            ],
+            [
+              89,
+              606
+            ],
+            [
+              70,
+              694
+            ],
+            [
+              131,
+              800
+            ]
+          ],
+          "labelPoint": [
+            50,
+            230
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "nw-bluelake",
+          "title": "Bluelake",
+          "kind": "water",
+          "points": [
+            [
+              444,
+              198
+            ],
+            [
+              497,
+              166
+            ],
+            [
+              545,
+              162
+            ],
+            [
+              555,
+              202
+            ],
+            [
+              512,
+              227
+            ],
+            [
+              443,
+              235
+            ],
+            [
+              429,
+              218
+            ]
+          ],
+          "labelPoint": [
+            489,
+            203
+          ],
+          "closed": true,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "nw-road",
+          "title": "High Road approach",
+          "kind": "road",
+          "points": [
+            [
+              1040,
+              740
+            ],
+            [
+              1040,
+              600
+            ],
+            [
+              1110,
+              492
+            ],
+            [
+              1120,
+              418
+            ]
+          ],
+          "labelPoint": null,
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        }
+      ],
+      "artworkShapes": [
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              213,
+              332
+            ],
+            [
+              348,
+              147
+            ],
+            [
+              510,
+              89
+            ],
+            [
+              745,
+              79
+            ],
+            [
+              967,
+              140
+            ],
+            [
+              1127,
+              257
+            ],
+            [
+              1152,
+              351
+            ],
+            [
+              867,
+              370
+            ],
+            [
+              714,
+              358
+            ],
+            [
+              477,
+              336
+            ],
+            [
+              345,
+              368
+            ]
+          ],
+          "style": "town"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              209,
+              416
+            ],
+            [
+              414,
+              397
+            ],
+            [
+              654,
+              410
+            ],
+            [
+              923,
+              420
+            ],
+            [
+              1120,
+              418
+            ],
+            [
+              1120,
+              568
+            ],
+            [
+              1020,
+              680
+            ],
+            [
+              859,
+              720
+            ],
+            [
+              450,
+              729
+            ],
+            [
+              274,
+              617
+            ],
+            [
+              155,
+              486
+            ]
+          ],
+          "style": "town"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              287,
+              357
+            ],
+            [
+              344,
+              345
+            ],
+            [
+              384,
+              388
+            ],
+            [
+              342,
+              421
+            ],
+            [
+              300,
+              408
+            ]
+          ],
+          "style": "fortress"
+        }
+      ],
+      "notes": [],
+      "preparation": {
+        "status": "light-future-overview",
+        "opening": "Suggested arrival: The river carries the sounds of hammers and cart wheels toward the sea. Fresh work stands beside older stone. Ask what the party came to the city to arrange before introducing a proprietor or official.",
+        "arrivalPoints": [
+          {
+            "id": "high-road-south",
+            "title": "High Road approach",
+            "point": [
+              1040,
+              695
+            ],
+            "note": "Schematic southern/eastern edge of this generalized city frame; exact gate parcel is not surveyed.",
+            "knownToParty": false
+          },
+          {
+            "id": "harbor-approach",
+            "title": "River-mouth harbor approach",
+            "point": [
+              165,
+              405
+            ],
+            "note": "Published coastal/river relationship; this is a broad arrival area, not permission to dock or a booked passage.",
+            "knownToParty": false
+          }
+        ],
+        "districts": [
+          {
+            "title": "Protector’s Enclave",
+            "locationId": "loc-protectors-enclave",
+            "note": "Published civic focus centered on the Hall of Justice."
+          },
+          {
+            "title": "Bluelake district",
+            "locationId": null,
+            "note": "Named on the supplied SCAG city map; district boundary is not surveyed."
+          },
+          {
+            "title": "Tower district",
+            "locationId": null,
+            "note": "Named on the supplied city map northeast of the river; decorative roofs are not exact buildings."
+          }
+        ],
+        "serviceContacts": [
+          {
+            "title": "Civic inquiry",
+            "service": "Ask for the appropriate guard or civic clerk.",
+            "locationId": "loc-hall-of-justice-neverwinter",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Hall of Justice is published; the official on duty, access and any fee are unassigned. Do not assume a meeting with Neverember.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Ordinary supplies and repairs",
+            "service": "Seek a local craftsperson or provisioner.",
+            "locationId": "loc-protectors-enclave",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "The source describes returning craftfolk and trade. Choose an actual shop/contact before making an offer; no shop parcel or proprietor is assigned.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Lodging and road news",
+            "service": "Ask a local keeper about a room and current road conditions.",
+            "locationId": "loc-neverwinter",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Generic proposed service scene, not a named published inn. Availability, price and credibility of news need confirmation.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          }
+        ],
+        "onwardRoutes": [
+          {
+            "routeId": "route-neverwinter-leilon",
+            "direction": "South by the High Road",
+            "destinationLocationId": "loc-leilon",
+            "distanceMiles": null,
+            "note": "Leilon and onward Waterdeep are the southbound option; distance/ETA unknown."
+          },
+          {
+            "routeId": "route-luskan-neverwinter",
+            "direction": "North along the coast",
+            "destinationLocationId": "loc-luskan",
+            "distanceMiles": null,
+            "note": "Northern detour; no safe-road or passage guarantee."
+          },
+          {
+            "routeId": "route-neverwinter-phandalin",
+            "direction": "Toward Phandalin",
+            "destinationLocationId": "loc-phandalin",
+            "distanceMiles": null,
+            "note": "Select the actual connecting road/trail before estimating travel."
+          },
+          {
+            "routeId": "route-neverwinter-thundertree",
+            "direction": "Toward Thundertree",
+            "destinationLocationId": "loc-thundertree",
+            "distanceMiles": null,
+            "note": "Optional local destination, subject to existing discovery state."
+          }
+        ],
+        "source": "SCAG printed pp51–53; city map printed52/PDF53 visually inspected. Service prompts are original preparation; no present contact or inventory asserted.",
+        "decisionsToConfirm": [
+          "Whether to enter or continue",
+          "Which service or contact to seek",
+          "Current access, availability, prices and terms",
+          "Actual onward route and departure"
+        ],
+        "noAutomaticEffects": [
+          "No discovery, visit, arrival or elapsed time",
+          "No service, purchase, lodging agreement or NPC presence guaranteed"
+        ]
+      }
+    },
+    {
+      "id": "city-luskan",
+      "title": "Luskan · city overview",
+      "locationId": "loc-luskan",
+      "parentId": "north",
+      "image": "atlas/settlements/luskan-Overview.svg",
+      "viewBox": [
+        0,
+        0,
+        1200,
+        800
+      ],
+      "northUp": true,
+      "source": {
+        "source": "Sword Coast Adventurer’s Guide",
+        "printedPage": 97,
+        "pdfPage": 98,
+        "path": "../../sources/pdfcoffee.com_sword-coast-adventurerx27s-guide-pdf-free.pdf",
+        "method": "visual-render-and-text",
+        "render": "tmp/waterdeep-audit/scag-pdf98.png"
+      },
+      "precision": "Generalized published river, island and bank positions. Major crossing relationships only; no minor street or surveyed channel claim.",
+      "anchors": [
+        {
+          "locationId": "loc-north-bank-luskan",
+          "point": [
+            590,
+            185
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-south-bank-luskan",
+          "point": [
+            870,
+            435
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-captains-close",
+          "point": [
+            910,
+            600
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-blood-island",
+          "point": [
+            565,
+            365
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-closeguard-island",
+          "point": [
+            565,
+            485
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-cutlass-island",
+          "point": [
+            451,
+            550
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-fang-island",
+          "point": [
+            292,
+            620
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-harbor-arm-island",
+          "point": [
+            280,
+            360
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-whitesails-harbor",
+          "point": [
+            187,
+            415
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        }
+      ],
+      "features": [
+        {
+          "id": "luskan-mirar",
+          "title": "River Mirar",
+          "kind": "water",
+          "points": [
+            [
+              1200,
+              80
+            ],
+            [
+              1050,
+              166
+            ],
+            [
+              845,
+              229
+            ],
+            [
+              668,
+              260
+            ],
+            [
+              467,
+              325
+            ],
+            [
+              295,
+              388
+            ],
+            [
+              220,
+              497
+            ],
+            [
+              165,
+              625
+            ],
+            [
+              65,
+              705
+            ]
+          ],
+          "labelPoint": [
+            825,
+            235
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "luskan-open-sea",
+          "title": "Sea of Swords",
+          "kind": "water",
+          "points": [],
+          "labelPoint": [
+            100,
+            580
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        }
+      ],
+      "artworkShapes": [
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1200,
+              0
+            ],
+            [
+              1200,
+              75
+            ],
+            [
+              1050,
+              156
+            ],
+            [
+              845,
+              220
+            ],
+            [
+              668,
+              250
+            ],
+            [
+              467,
+              315
+            ],
+            [
+              292,
+              318
+            ],
+            [
+              215,
+              279
+            ],
+            [
+              105,
+              245
+            ],
+            [
+              0,
+              245
+            ]
+          ],
+          "style": "land"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              1200,
+              110
+            ],
+            [
+              1100,
+              170
+            ],
+            [
+              955,
+              243
+            ],
+            [
+              807,
+              315
+            ],
+            [
+              690,
+              411
+            ],
+            [
+              664,
+              522
+            ],
+            [
+              673,
+              628
+            ],
+            [
+              801,
+              743
+            ],
+            [
+              948,
+              773
+            ],
+            [
+              1127,
+              641
+            ],
+            [
+              1200,
+              493
+            ]
+          ],
+          "style": "town"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              420,
+              515
+            ],
+            [
+              445,
+              448
+            ],
+            [
+              483,
+              430
+            ],
+            [
+              509,
+              469
+            ],
+            [
+              486,
+              522
+            ],
+            [
+              480,
+              569
+            ],
+            [
+              520,
+              600
+            ],
+            [
+              500,
+              667
+            ],
+            [
+              439,
+              681
+            ],
+            [
+              420,
+              639
+            ]
+          ],
+          "style": "island"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              520,
+              352
+            ],
+            [
+              548,
+              322
+            ],
+            [
+              583,
+              340
+            ],
+            [
+              604,
+              382
+            ],
+            [
+              566,
+              405
+            ],
+            [
+              533,
+              390
+            ]
+          ],
+          "style": "island"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              527,
+              460
+            ],
+            [
+              554,
+              430
+            ],
+            [
+              598,
+              428
+            ],
+            [
+              614,
+              463
+            ],
+            [
+              590,
+              532
+            ],
+            [
+              550,
+              540
+            ],
+            [
+              520,
+              510
+            ]
+          ],
+          "style": "island"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              239,
+              604
+            ],
+            [
+              270,
+              565
+            ],
+            [
+              309,
+              536
+            ],
+            [
+              328,
+              552
+            ],
+            [
+              307,
+              611
+            ],
+            [
+              283,
+              655
+            ],
+            [
+              248,
+              659
+            ]
+          ],
+          "style": "island"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              190,
+              417
+            ],
+            [
+              257,
+              337
+            ],
+            [
+              368,
+              302
+            ],
+            [
+              393,
+              331
+            ],
+            [
+              336,
+              400
+            ],
+            [
+              285,
+              453
+            ],
+            [
+              214,
+              487
+            ]
+          ],
+          "style": "island"
+        }
+      ],
+      "notes": [],
+      "preparation": {
+        "status": "light-future-overview",
+        "opening": "Suggested arrival: Warehouses and working yards face the river, while the denser city spreads across the southern bank. Boats and crossings offer different ways onward. Ask whether the party is seeking trade, shelter, information or passage.",
+        "arrivalPoints": [
+          {
+            "id": "north-bank-road",
+            "title": "North Bank road arrival",
+            "point": [
+              1090,
+              95
+            ],
+            "note": "Broad northern-bank arrival zone from the published map, not a verified gate coordinate.",
+            "knownToParty": false
+          },
+          {
+            "id": "south-road",
+            "title": "Southern city approach",
+            "point": [
+              1060,
+              680
+            ],
+            "note": "Schematic approach to the southern bank; select the actual gate in play.",
+            "knownToParty": false
+          },
+          {
+            "id": "whitesails",
+            "title": "Whitesails Harbor approach",
+            "point": [
+              187,
+              415
+            ],
+            "note": "Published harbor beside Harbor Arm Island. Berth, vessel and landing permission are unconfirmed.",
+            "knownToParty": false
+          }
+        ],
+        "districts": [
+          {
+            "title": "North Bank",
+            "locationId": "loc-north-bank-luskan",
+            "note": "Warehouses, caravan yards and workspace."
+          },
+          {
+            "title": "South Bank",
+            "locationId": "loc-south-bank-luskan",
+            "note": "Main city south of the Mirar."
+          },
+          {
+            "title": "The Reach",
+            "locationId": "loc-the-reach-luskan",
+            "note": "Homes and smaller businesses north of Reaver’s Run; no precise district polygon added."
+          },
+          {
+            "title": "Captain’s Close",
+            "locationId": "loc-captains-close",
+            "note": "Published district context; no high-captain audience or safe access inferred."
+          }
+        ],
+        "serviceContacts": [
+          {
+            "title": "Trade and caravan inquiries",
+            "service": "Ask a warehouse agent or carter about ordinary cargo, repairs and onward arrangements.",
+            "locationId": "loc-north-bank-luskan",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Published North Bank trade yards; contact name, prices and willingness to deal remain unknown.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Harbor passage",
+            "service": "Find a willing boat operator and agree berth, destination and return conditions.",
+            "locationId": "loc-whitesails-harbor",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Published harbor/ferry setting; no captain or ship has been hired. Restricted crossings are not general access rights.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Food and lodging inquiry",
+            "service": "Seek an available innkeeper or food seller on the main city side.",
+            "locationId": "loc-south-bank-luskan",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Generic proposed service, not a named published inn or free hospitality.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          }
+        ],
+        "onwardRoutes": [
+          {
+            "routeId": "route-luskan-neverwinter",
+            "direction": "South toward Neverwinter",
+            "destinationLocationId": "loc-neverwinter",
+            "distanceMiles": null,
+            "note": "Coastal onward route; numeric distance unknown."
+          },
+          {
+            "routeId": "route-luskan-mirabar",
+            "direction": "Inland toward Mirabar",
+            "destinationLocationId": "loc-mirabar",
+            "distanceMiles": null,
+            "note": "Agree the actual road and current conditions."
+          },
+          {
+            "routeId": "route-luskan-blackford-crossing",
+            "direction": "Upstream alternative crossing",
+            "destinationLocationId": "loc-blackford-crossing",
+            "distanceMiles": 30,
+            "note": "Source places Blackford Crossing thirty miles upstream; this geographic relation is not an exact itinerary time."
+          }
+        ],
+        "source": "SCAG printed pp97–98; map/text at printed97/PDF98 visually inspected. Existing named bridge records are searchable; permissions and operating contacts remain unassigned.",
+        "decisionsToConfirm": [
+          "Whether to enter or continue",
+          "Which service or contact to seek",
+          "Current access, availability, prices and terms",
+          "Actual onward route and departure"
+        ],
+        "noAutomaticEffects": [
+          "No discovery, visit, arrival or elapsed time",
+          "No service, purchase, lodging agreement or NPC presence guaranteed"
+        ]
+      }
+    },
+    {
+      "id": "town-daggerford",
+      "title": "Daggerford · town overview",
+      "locationId": "loc-daggerford",
+      "parentId": "waterdeep",
+      "image": "atlas/settlements/daggerford-Overview.svg",
+      "viewBox": [
+        0,
+        0,
+        1200,
+        800
+      ],
+      "northUp": true,
+      "source": {
+        "source": "Sword Coast Adventurer’s Guide",
+        "printedPage": "47–48",
+        "pdfPage": "48–49",
+        "path": "../../sources/pdfcoffee.com_sword-coast-adventurerx27s-guide-pdf-free.pdf",
+        "method": "visual-render-and-text",
+        "render": "tmp/waterdeep-audit/scag-pdf48–49.png"
+      },
+      "precision": "Conceptual settlement diagram from published prose. River, low hill and southern bridge approach are sourced; precise gate, inn and castle parcels are unverified and left unpinned.",
+      "anchors": [
+        {
+          "locationId": "loc-tyndals-bridge",
+          "point": [
+            655,
+            655
+          ],
+          "basis": "published-relative-approach-schematic",
+          "note": "Published southern approach across the Delimbiyr; diagram location and river curve are schematic."
+        }
+      ],
+      "features": [
+        {
+          "id": "daggerford-river",
+          "title": "Delimbiyr",
+          "kind": "water",
+          "points": [
+            [
+              0,
+              620
+            ],
+            [
+              215,
+              590
+            ],
+            [
+              420,
+              610
+            ],
+            [
+              665,
+              650
+            ],
+            [
+              920,
+              612
+            ],
+            [
+              1200,
+              680
+            ]
+          ],
+          "labelPoint": [
+            210,
+            655
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "daggerford-road",
+          "title": "High Road approach",
+          "kind": "road",
+          "points": [
+            [
+              620,
+              0
+            ],
+            [
+              635,
+              270
+            ],
+            [
+              650,
+              500
+            ],
+            [
+              655,
+              655
+            ],
+            [
+              680,
+              800
+            ]
+          ],
+          "labelPoint": null,
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "daggerford-hill",
+          "title": "Low hill",
+          "kind": "terrain",
+          "points": [
+            [
+              600,
+              90
+            ],
+            [
+              870,
+              100
+            ],
+            [
+              1000,
+              330
+            ],
+            [
+              800,
+              425
+            ],
+            [
+              585,
+              360
+            ]
+          ],
+          "labelPoint": [
+            835,
+            245
+          ],
+          "closed": true,
+          "public": true,
+          "sourceApproved": true
+        }
+      ],
+      "artworkShapes": [
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              315,
+              200
+            ],
+            [
+              540,
+              140
+            ],
+            [
+              845,
+              220
+            ],
+            [
+              930,
+              420
+            ],
+            [
+              815,
+              555
+            ],
+            [
+              410,
+              540
+            ],
+            [
+              280,
+              400
+            ]
+          ],
+          "style": "town"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            625,
+            620,
+            70,
+            80
+          ],
+          "style": "bridge"
+        }
+      ],
+      "notes": [],
+      "preparation": {
+        "status": "light-future-overview",
+        "opening": "Suggested arrival: Beyond the river approach, walls rise against a low hill. Carts wait for space while people carry trade toward the gates. Ask whether the group needs a room, provisions, a local introduction or a road report.",
+        "arrivalPoints": [
+          {
+            "id": "tyndals-bridge",
+            "title": "Tyndal’s Bridge approach",
+            "point": [
+              655,
+              655
+            ],
+            "note": "Published southern approach. Diagram position and river curve are conceptual.",
+            "knownToParty": false
+          },
+          {
+            "id": "river-gate",
+            "title": "River Gate inquiry",
+            "point": null,
+            "note": "Published cargo gate; exact parcel not verified, so no new pin.",
+            "knownToParty": false
+          },
+          {
+            "id": "caravan-gate",
+            "title": "Caravan Gate inquiry",
+            "point": null,
+            "note": "Published land-trade gate; exact parcel not verified. Farmers’ Gate is another published entrance.",
+            "knownToParty": false
+          }
+        ],
+        "districts": [
+          {
+            "title": "Walled town",
+            "locationId": null,
+            "note": "Published settlement against a low hill; no formal ward names introduced."
+          },
+          {
+            "title": "River approach",
+            "locationId": "loc-tyndals-bridge",
+            "note": "Shipping/cargo and the southern bridge approach."
+          },
+          {
+            "title": "Surrounding farms",
+            "locationId": null,
+            "note": "Published pastoral surroundings; no specific farm or owner assigned."
+          }
+        ],
+        "serviceContacts": [
+          {
+            "title": "River Shining Tavern",
+            "service": "Ask about a meal, a room or current caravan news.",
+            "locationId": "loc-river-shining-tavern",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Published inn/tavern; keeper on duty, availability and prices unknown. No booking is made.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Silver Flood Inn",
+            "service": "Ask whether rooms are available.",
+            "locationId": "loc-silver-flood-inn",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Published lodging option; room availability, price and current arrangements require agreement.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Lizard’s Gizzard",
+            "service": "Ask whether rooms are available.",
+            "locationId": "loc-lizards-gizzard",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Published lodging option; SCAG p47 says this inn has no food to provide its guests. No proprietor/contact or current booking is assigned.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Happy Cow",
+            "service": "Ask for a public conversation or local information.",
+            "locationId": "loc-happy-cow",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": "Hardcheese family · individual contact unassigned",
+            "note": "Published tavern run by the Hardcheese family. No specific current speaker, favor or private financial arrangement is assumed.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          }
+        ],
+        "onwardRoutes": [
+          {
+            "routeId": "route-waterdeep-daggerford",
+            "direction": "North toward Waterdeep",
+            "destinationLocationId": "loc-waterdeep",
+            "distanceMiles": null,
+            "note": "Road choice and timing remain in play."
+          },
+          {
+            "routeId": "route-daggerford-secomber",
+            "direction": "Inland toward Secomber",
+            "destinationLocationId": "loc-secomber",
+            "distanceMiles": null,
+            "note": "General regional option; no guaranteed safe approach."
+          },
+          {
+            "routeId": "route-daggerford-dragonspear",
+            "direction": "South toward Dragonspear",
+            "destinationLocationId": "loc-dragonspear-castle",
+            "distanceMiles": null,
+            "note": "Optional regional route; a line on the atlas does not establish a visit."
+          }
+        ],
+        "source": "SCAG printed pp47–48/PDF48–49 visually read. Named inns/gates are published, exact parcels remain unpinned; service dialogue is original preparation.",
+        "decisionsToConfirm": [
+          "Whether to enter or continue",
+          "Which service or contact to seek",
+          "Current access, availability, prices and terms",
+          "Actual onward route and departure"
+        ],
+        "noAutomaticEffects": [
+          "No discovery, visit, arrival or elapsed time",
+          "No service, purchase, lodging agreement or NPC presence guaranteed"
+        ]
+      }
+    },
+    {
+      "id": "city-baldurs-gate",
+      "title": "Baldur’s Gate · city overview",
+      "locationId": "loc-baldurs-gate",
+      "parentId": "south",
+      "image": "atlas/settlements/baldurs-gate-Overview.svg",
+      "viewBox": [
+        0,
+        0,
+        1200,
+        800
+      ],
+      "northUp": true,
+      "source": {
+        "source": "Sword Coast Adventurer’s Guide",
+        "printedPage": 46,
+        "pdfPage": 47,
+        "path": "../../sources/pdfcoffee.com_sword-coast-adventurerx27s-guide-pdf-free.pdf",
+        "method": "visual-render-and-text",
+        "render": "tmp/waterdeep-audit/scag-pdf47.png"
+      },
+      "precision": "Generalized source-map river and district relationships. The upper/lower district boundary is approximate; no individual street or gate parcel is asserted.",
+      "anchors": [
+        {
+          "locationId": "loc-upper-city-baldurs-gate",
+          "point": [
+            238,
+            235
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-lower-city-baldurs-gate",
+          "point": [
+            350,
+            372
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-outer-city-baldurs-gate",
+          "point": [
+            855,
+            318
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        },
+        {
+          "locationId": "loc-wyrms-crossing",
+          "point": [
+            1060,
+            620
+          ],
+          "basis": "visual-published-map-generalization",
+          "note": "Generalized source-map position; no measured street or parcel survey."
+        }
+      ],
+      "features": [
+        {
+          "id": "bg-river",
+          "title": "River Chionthar",
+          "kind": "water",
+          "points": [
+            [
+              0,
+              650
+            ],
+            [
+              172,
+              532
+            ],
+            [
+              351,
+              472
+            ],
+            [
+              560,
+              496
+            ],
+            [
+              758,
+              586
+            ],
+            [
+              982,
+              577
+            ],
+            [
+              1200,
+              666
+            ]
+          ],
+          "labelPoint": [
+            765,
+            650
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "bg-coastway",
+          "title": "Coast Way",
+          "kind": "road",
+          "points": [
+            [
+              930,
+              430
+            ],
+            [
+              1040,
+              523
+            ],
+            [
+              1060,
+              620
+            ],
+            [
+              1090,
+              800
+            ]
+          ],
+          "labelPoint": null,
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        }
+      ],
+      "artworkShapes": [
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              58,
+              415
+            ],
+            [
+              94,
+              239
+            ],
+            [
+              186,
+              100
+            ],
+            [
+              355,
+              142
+            ],
+            [
+              487,
+              211
+            ],
+            [
+              564,
+              350
+            ],
+            [
+              550,
+              450
+            ],
+            [
+              414,
+              435
+            ],
+            [
+              295,
+              462
+            ],
+            [
+              198,
+              535
+            ],
+            [
+              75,
+              516
+            ]
+          ],
+          "style": "town"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              150,
+              294
+            ],
+            [
+              180,
+              148
+            ],
+            [
+              278,
+              147
+            ],
+            [
+              329,
+              211
+            ],
+            [
+              294,
+              276
+            ],
+            [
+              231,
+              307
+            ]
+          ],
+          "style": "district"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              575,
+              228
+            ],
+            [
+              749,
+              165
+            ],
+            [
+              883,
+              240
+            ],
+            [
+              1010,
+              414
+            ],
+            [
+              971,
+              492
+            ],
+            [
+              833,
+              430
+            ],
+            [
+              700,
+              347
+            ]
+          ],
+          "style": "suburb"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            1040,
+            565,
+            38,
+            100
+          ],
+          "style": "bridge"
+        }
+      ],
+      "notes": [],
+      "preparation": {
+        "status": "light-future-overview",
+        "opening": "Suggested arrival: Traffic presses around the river city, where stone walls divide districts and harbor work keeps the lower streets busy. Ask whether the party is looking for a contact, a berth, supplies or lodging before selecting an entry.",
+        "arrivalPoints": [
+          {
+            "id": "wyrms-crossing",
+            "title": "Wyrm’s Crossing approach",
+            "point": [
+              1060,
+              620
+            ],
+            "note": "Published crossing relationship; customs, tolls and permission require actual confirmation.",
+            "knownToParty": false
+          },
+          {
+            "id": "gray-harbor",
+            "title": "Harbor approach",
+            "point": [
+              350,
+              472
+            ],
+            "note": "Broad riverfront approach from the published city map; no berth or vessel assignment.",
+            "knownToParty": false
+          },
+          {
+            "id": "land-gates",
+            "title": "Landward gates",
+            "point": null,
+            "note": "Published city entrances; individual gate parcel/access rules not mapped in this overview.",
+            "knownToParty": false
+          }
+        ],
+        "districts": [
+          {
+            "title": "Upper City",
+            "locationId": "loc-upper-city-baldurs-gate",
+            "note": "Walled district associated with the patriar families; no access entitlement inferred."
+          },
+          {
+            "title": "Lower City",
+            "locationId": "loc-lower-city-baldurs-gate",
+            "note": "Harbor-facing trade and working streets."
+          },
+          {
+            "title": "Outer City",
+            "locationId": "loc-outer-city-baldurs-gate",
+            "note": "Settlements and businesses outside the walls."
+          }
+        ],
+        "serviceContacts": [
+          {
+            "title": "Harbor arrangements",
+            "service": "Find a dock agent or willing vessel operator.",
+            "locationId": "loc-lower-city-baldurs-gate",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Published harbor trade context; captain, cost, destination and safe passage unknown.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Supplies and repairs",
+            "service": "Seek a craftsperson or provisioner in the working city.",
+            "locationId": "loc-lower-city-baldurs-gate",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Generic service prompt based on published commerce; exact business, stock and proprietor unassigned.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          },
+          {
+            "title": "Food and lodging",
+            "service": "Ask a keeper about a room or meal.",
+            "locationId": "loc-outer-city-baldurs-gate",
+            "npcIds": [],
+            "targetBoardId": null,
+            "contactName": null,
+            "note": "Original optional scene; do not invent a booked inn or confirmed personal contact.",
+            "available": null,
+            "price": null,
+            "agreement": null,
+            "status": "future-preparation"
+          }
+        ],
+        "onwardRoutes": [
+          {
+            "routeId": "route-baldurs-gate-elturel",
+            "direction": "Inland along the Chionthar region",
+            "destinationLocationId": "loc-elturel",
+            "distanceMiles": null,
+            "note": "Geographic destination only; current political conditions and actual route require review."
+          },
+          {
+            "routeId": "route-baldurs-gate-candlekeep",
+            "direction": "South toward Candlekeep",
+            "destinationLocationId": "loc-candlekeep",
+            "distanceMiles": null,
+            "note": "Route distance remains unknown. Library admission and entry requirements are separate from reaching its vicinity."
+          }
+        ],
+        "source": "SCAG printed pp45–47; city map printed46/PDF47 visually inspected. The campaign’s actual time and contacts govern current conditions; book-era context is not a new played outcome.",
+        "decisionsToConfirm": [
+          "Whether to enter or continue",
+          "Which service or contact to seek",
+          "Current access, availability, prices and terms",
+          "Actual onward route and departure"
+        ],
+        "noAutomaticEffects": [
+          "No discovery, visit, arrival or elapsed time",
+          "No service, purchase, lodging agreement or NPC presence guaranteed"
+        ]
+      }
+    },
+    {
+      "id": "town-leilon-plan",
+      "title": "Leilon · alternate planning diagram",
+      "locationId": "loc-leilon",
+      "parentId": "town-leilon",
+      "image": "atlas/settlements/leilon-Overview.svg",
+      "viewBox": [
+        0,
+        0,
+        1200,
+        800
+      ],
+      "northUp": true,
+      "source": {
+        "source": "Official Sword Coast geographic reference; campaign transition",
+        "path": "atlas/Geography-Register.json",
+        "locator": "Leilon anchor; Campaign-Transition-Data.js default southbound itinerary",
+        "method": "visual-regional-reference-plus-custom-proposal"
+      },
+      "precision": "Conceptual north-up road-stop diagram. Local streets, buildings and service availability are original preparation, not a published Leilon plan. No scale or distance claim.",
+      "anchors": [
+        {
+          "locationId": "loc-leilon-road-yard",
+          "point": [
+            665,
+            365
+          ],
+          "basis": "custom-proposed-service",
+          "note": "Original optional service point. Position, availability, name and terms require DM adoption and introduction in play."
+        },
+        {
+          "locationId": "loc-leilon-wayfarers-lodge",
+          "point": [
+            455,
+            315
+          ],
+          "basis": "custom-proposed-service",
+          "note": "Original optional service point. Position, availability, name and terms require DM adoption and introduction in play."
+        },
+        {
+          "locationId": "loc-leilon-supply-shed",
+          "point": [
+            795,
+            305
+          ],
+          "basis": "custom-proposed-service",
+          "note": "Original optional service point. Position, availability, name and terms require DM adoption and introduction in play."
+        },
+        {
+          "locationId": "loc-leilon-repair-yard",
+          "point": [
+            750,
+            485
+          ],
+          "basis": "custom-proposed-service",
+          "note": "Original optional service point. Position, availability, name and terms require DM adoption and introduction in play."
+        },
+        {
+          "locationId": "loc-leilon-shrine",
+          "point": [
+            410,
+            525
+          ],
+          "basis": "custom-proposed-service",
+          "note": "Original optional service point. Position, availability, name and terms require DM adoption and introduction in play."
+        }
+      ],
+      "features": [
+        {
+          "id": "leilon-road",
+          "title": "High Road",
+          "kind": "road",
+          "points": [
+            [
+              650,
+              0
+            ],
+            [
+              625,
+              180
+            ],
+            [
+              600,
+              380
+            ],
+            [
+              560,
+              620
+            ],
+            [
+              550,
+              800
+            ]
+          ],
+          "labelPoint": [
+            675,
+            115
+          ],
+          "closed": false,
+          "public": true,
+          "sourceApproved": true
+        },
+        {
+          "id": "leilon-lane",
+          "title": "Proposed local lane",
+          "kind": "road",
+          "points": [
+            [
+              330,
+              395
+            ],
+            [
+              600,
+              380
+            ],
+            [
+              890,
+              350
+            ]
+          ],
+          "labelPoint": null,
+          "closed": false,
+          "public": false,
+          "sourceApproved": false
+        }
+      ],
+      "artworkShapes": [
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              130,
+              170
+            ],
+            [
+              480,
+              120
+            ],
+            [
+              865,
+              170
+            ],
+            [
+              1050,
+              420
+            ],
+            [
+              905,
+              665
+            ],
+            [
+              375,
+              700
+            ],
+            [
+              185,
+              550
+            ]
+          ],
+          "style": "town"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            390,
+            260,
+            125,
+            100
+          ],
+          "style": "building"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            740,
+            240,
+            115,
+            100
+          ],
+          "style": "building"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            700,
+            440,
+            150,
+            90
+          ],
+          "style": "building"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            365,
+            490,
+            90,
+            80
+          ],
+          "style": "building"
+        },
+        {
+          "kind": "rect",
+          "points": [
+            625,
+            295,
+            92,
+            140
+          ],
+          "style": "yard"
+        }
+      ],
+      "notes": [
+        "Optional likely stop on the default High Road route; the party has not selected or reached it.",
+        "Arrival: traffic slows around a road yard; ask whether the party wants rest, provisions, repairs or to continue south. Confirm availability, prices and conditions in play.",
+        "Proposed service roles have no named canon NPCs. A keeper can offer a room, a provisioner supplies, a carter repairs and a caretaker ordinary first aid; spells, inventory, bargains and favors are not guaranteed.",
+        "Outbound choices: High Road north toward Neverwinter; south toward Waterdeep. Boat access toward the custom offshore proposal needs a separately earned lead and safe passage; there is no automatic route or public marker to it.",
+        "Street diagram describes a reusable future scene, not a resolved visit. No rent, purchases, rest, time passage or travel status changes automatically.",
+        "Alternate authored planning diagram. This is a different schematic arrangement from the painted overview; it is not an exact crop or replacement for the painting."
+      ]
+    }
+  ],
+  "limits": [
+    "Manual generalization of selected published maps and paragraphs, not full book page-by-page verification.",
+    "Venue points in unlabeled city blocks are approximations or custom proposals. No physical distance or combat grid follows from diagram pixels.",
+    "Custom proposed Leilon services are preparation, not official published town businesses or guaranteed inventory."
+  ]
+}

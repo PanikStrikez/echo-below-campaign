@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-label="Wave Echo Cave central mine battlefield player-safe battle map">
+<defs>
+<pattern id="grass" width="118" height="107" patternUnits="userSpaceOnUse"><rect width="118" height="107" fill="#68775d"/><path d="M8 24l7-8m5 10l6-6M63 20l5-9m4 11l8-9M95 73l9-8m-37 22l5-9M21 77l7-8m4 11l5-7" stroke="#829070" stroke-width="2" opacity=".65"/><circle cx="49" cy="54" r="3" fill="#536c4e"/><circle cx="108" cy="37" r="3" fill="#536c4e"/></pattern>
+<pattern id="dirt" width="95" height="90" patternUnits="userSpaceOnUse"><rect width="95" height="90" fill="#95856a"/><path d="M9 14l17 3m35-9l13 6M24 66l12-6m33 16l13-4" stroke="#b3a182" stroke-width="3" opacity=".47"/><circle cx="48" cy="39" r="3" fill="#746a59"/></pattern>
+<pattern id="stone" width="122" height="102" patternUnits="userSpaceOnUse"><rect width="122" height="102" fill="#a99b82"/><path d="M0 49h122M44 0v49m48 0v49M23 49v53m56-53v53" fill="none" stroke="#807966" stroke-width="2.4" opacity=".48"/><path d="M13 20l18-4m48 62l15 3" fill="none" stroke="#d1bea0" stroke-width="2" opacity=".45"/></pattern>
+<pattern id="rock" width="110" height="96" patternUnits="userSpaceOnUse"><rect width="110" height="96" fill="#393b38"/><path d="M4 16l24-10 24 15 23-11 28 16M6 72l24 10 27-15 21 9 27-15" fill="none" stroke="#55594f" stroke-width="3" opacity=".65"/></pattern>
+<pattern id="wood" width="48" height="100" patternUnits="userSpaceOnUse"><rect width="48" height="100" fill="#83694c"/><path d="M0 0v100M23 0v100M47 0v100" stroke="#57432f" stroke-width="4"/><path d="M7 23v44m33-59v54" stroke="#a5845b" stroke-width="2" opacity=".6"/></pattern>
+<pattern id="water" width="110" height="80" patternUnits="userSpaceOnUse"><rect width="110" height="80" fill="#3e6570"/><path d="M5 16q23-10 46 0t53 0M9 55q23-10 46 0t50 0" fill="none" stroke="#95b3ad" stroke-width="3" opacity=".52"/></pattern>
+<pattern id="web" width="70" height="70" patternUnits="userSpaceOnUse"><path d="M0 0l70 70M70 0L0 70M35 0v70M0 35h70" stroke="#d6d1bc" stroke-width="2" opacity=".5" fill="none"/></pattern>
+<radialGradient id="canopy"><stop stop-color="#8a9a73"/><stop offset=".62" stop-color="#526a4e"/><stop offset="1" stop-color="#344e3c"/></radialGradient>
+<radialGradient id="fire"><stop stop-color="#ffda83"/><stop offset=".4" stop-color="#d78637"/><stop offset="1" stop-color="#70432c"/></radialGradient>
+</defs>
+<rect width="1500" height="1000" fill="url(#rock)"/>
+<path d="M-30 685H425V590H770" fill="none" stroke="#242927" stroke-width="93" stroke-linejoin="round" />
+<path d="M-30 685H425V590H770" fill="none" stroke="url(#stone)" stroke-width="75" stroke-linejoin="round" />
+<path d="M650 335V630H1180" fill="none" stroke="#242927" stroke-width="92" stroke-linejoin="round" />
+<path d="M650 335V630H1180" fill="none" stroke="url(#stone)" stroke-width="74" stroke-linejoin="round" />
+<path d="M930 580H1270V800" fill="none" stroke="#242927" stroke-width="83" stroke-linejoin="round" />
+<path d="M930 580H1270V800" fill="none" stroke="url(#stone)" stroke-width="65" stroke-linejoin="round" />
+<path d="M405 520V260H140" fill="none" stroke="#242927" stroke-width="90" stroke-linejoin="round" />
+<path d="M405 520V260H140" fill="none" stroke="url(#stone)" stroke-width="72" stroke-linejoin="round" />
+<path d="M750 975V630" fill="none" stroke="#242927" stroke-width="90" stroke-linejoin="round" />
+<path d="M750 975V630" fill="none" stroke="url(#stone)" stroke-width="72" stroke-linejoin="round" />
+<path d="M335 440Q540 370 790 426L865 680Q740 842 480 795 295 766 295 580z" fill="url(#dirt)" stroke="#242927" stroke-width="17" stroke-linejoin="round" />
+<path d="M70 450Q190 395 290 510L322 730Q225 861 75 768z" fill="url(#water)" stroke="#2b4b54" stroke-width="8" stroke-linejoin="round" />
+<rect x="85" y="147" width="332" height="206" rx="0" fill="url(#stone)" stroke="#30332f" stroke-width="14"/>
+<path d="M500 105Q770 65 925 147L978 338Q812 436 524 365z" fill="url(#dirt)" stroke="#242927" stroke-width="17" stroke-linejoin="round" />
+<path d="M930 400Q1265 318 1435 456L1450 725Q1290 803 955 690z" fill="url(#dirt)" stroke="#242927" stroke-width="17" stroke-linejoin="round" />
+<rect x="1010" y="765" width="192" height="180" rx="0" fill="url(#stone)" stroke="#30332f" stroke-width="14"/>
+<rect x="1260" y="765" width="192" height="180" rx="0" fill="url(#stone)" stroke="#30332f" stroke-width="14"/>
+<rect x="1117.5" y="753" width="65" height="24" rx="0" fill="url(#stone)" stroke="none" stroke-width="0"/>
+<path d="M1117.5 750L1182.5 750" fill="none" stroke="#5e523e" stroke-width="4" stroke-linecap="round" />
+<rect x="1317.5" y="753" width="65" height="24" rx="0" fill="url(#stone)" stroke="none" stroke-width="0"/>
+<path d="M1317.5 750L1382.5 750" fill="none" stroke="#5e523e" stroke-width="4" stroke-linecap="round" />
+<rect x="398" y="206.0" width="24" height="68" rx="0" fill="url(#stone)" stroke="none" stroke-width="0"/>
+<path d="M395 206.0L395 274.0" fill="none" stroke="#5e523e" stroke-width="4" stroke-linecap="round" />
+<rect x="360" y="260" width="105" height="38" rx="4" fill="#6b5945" stroke="#3e372e" stroke-width="5"/>
+<rect x="366" y="265" width="22" height="28" rx="3" fill="#c5b495" stroke="#6d6555" stroke-width="2"/>
+<rect x="225" y="265" width="105" height="38" rx="4" fill="#6b5945" stroke="#3e372e" stroke-width="5"/>
+<rect x="231" y="270" width="22" height="28" rx="3" fill="#c5b495" stroke="#6d6555" stroke-width="2"/>
+<circle cx="700" cy="255" r="70" fill="#49453d" stroke="#353d39" stroke-width="4"/>
+<circle cx="700" cy="255" r="58" fill="url(#fire)" stroke="#ac6736" stroke-width="3"/>
+<path d="M688 261q6-25 13-13 6-23 18 11-6 14-18 14z" fill="#ffd37e" stroke="#a8562e" stroke-width="2" stroke-linejoin="round" />
+<circle cx="782" cy="190" r="82" fill="#665848" stroke="#3f453e" stroke-width="9"/>
+<circle cx="1255" cy="845" r="47" fill="#65a279" stroke="#315c4e" stroke-width="8"/>
+<g transform="rotate(0 525 585)"><rect x="465.0" y="559.0" width="120" height="52" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="478.0" cy="571.0" r="4" fill="#3c3125"/><circle cx="572.0" cy="599.0" r="4" fill="#3c3125"/></g>
+<g transform="rotate(0 695 640)"><rect x="635.0" y="614.0" width="120" height="52" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="648.0" cy="626.0" r="4" fill="#3c3125"/><circle cx="742.0" cy="654.0" r="4" fill="#3c3125"/></g>
+<g transform="rotate(0 560 725)"><rect x="500.0" y="699.0" width="120" height="52" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="513.0" cy="711.0" r="4" fill="#3c3125"/><circle cx="607.0" cy="739.0" r="4" fill="#3c3125"/></g>
+<path d="M1005 497l12-12 25 0 12 12-6 25h-25z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1022 497L1038 493" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M1289 568l18-18 36 0 18 18-9 36h-36z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1313 568L1337 562" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M996 636l17-17 34 0 17 17-8 34h-34z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1019 636L1041 630" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<g transform="rotate(0 1130 825)"><rect x="1090.0" y="805.5" width="80" height="39" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="1103.0" cy="817.5" r="4" fill="#3c3125"/><circle cx="1157.0" cy="832.5" r="4" fill="#3c3125"/></g>
+<g transform="rotate(0 1340 900)"><rect x="1300.0" y="880.5" width="80" height="39" rx="8" fill="url(#wood)" stroke="#443729" stroke-width="7"/><circle cx="1313.0" cy="892.5" r="4" fill="#3c3125"/><circle cx="1367.0" cy="907.5" r="4" fill="#3c3125"/></g>
+<path d="M972 843l8-8 16 0 8 8-4 16h-16z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M983 843L993 840" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M988 884l6-6 12 0 6 6-3 12h-12z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M996 884L1004 882" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M1018 903l8-8 17 0 8 8-4 17h-17z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1030 903L1040 900" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M1023 828l7-7 14 0 7 7-3 14h-14z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1033 828L1041 825" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M1024 913l6-6 12 0 6 6-3 12h-12z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1032 913L1040 911" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M935 905l5-5 11 0 5 5-2 11h-11z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M943 905L949 903" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M952 922l7-7 14 0 7 7-3 14h-14z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M962 922L970 919" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M990 895l4-4 9 0 4 4-2 9h-9z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M996 895L1002 894" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M960 902l8-8 17 0 8 8-4 17h-17z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M972 902L982 899" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M1032 918l4-4 9 0 4 4-2 9h-9z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1038 918L1044 917" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M1000 900l4-4 9 0 4 4-2 9h-9z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1006 900L1012 899" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M1007 880l7-7 15 0 7 7-3 15h-15z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1017 880L1027 878" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M1019 865l6-6 13 0 6 6-3 13h-13z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M1028 865L1036 863" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<path d="M924 846l4-4 9 0 4 4-2 9h-9z" fill="#77796e" stroke="#4d514c" stroke-width="5" stroke-linejoin="round" />
+<path d="M930 846L936 845" fill="none" stroke="#a2a397" stroke-width="3" stroke-linecap="round" />
+<rect x="7" y="7" width="1486" height="986" fill="none" stroke="#232a27" stroke-width="14"/>
+</svg>

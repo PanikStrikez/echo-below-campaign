@@ -1,0 +1,35 @@
+PREPARE ANOTHER SETTLEMENT
+
+Settlement-Template.json is a blank, unregistered authoring aid. It is not imported
+by the app. Copy its board shape into Settlement-Geography-Register.json only when
+you are deliberately preparing a real proposed board.
+
+1. Find or add the canonical location in map-audit/Location-Register.json. Preserve
+existing IDs and aliases; use a new ID only for a distinct place. New records stay
+hidden. Record the actual book, printed page, PDF page and verification method.
+If only prose is available, call the layout conceptual. If custom, say proposal.
+2. Select the world/region parent. Decide a coordinate frame with the image's true
+aspect ratio. For vectors, dimensions are viewports, not native pixel detail.
+Use source-relative anchors or explicit proposed positions. Leave unknowns empty.
+3. Prepare a clean player image and keep labels separate. Record north only when
+verified or explicitly part of the custom drawing. Do not infer miles from pixels.
+4. List arrival points, broad districts, ordinary services and useful contacts.
+Unknown names, stock, prices, spellcasting and agreements stay null. Put secrets,
+private room purposes, residence/lease terms and unmet access requirements in DM
+notes. A prepared shop is not evidence the party has met its proprietor.
+5. Link onward routes by existing canonical location and route IDs. Give a numeric
+distance only with verified support; otherwise null. Proposed approaches do not
+create known destinations, safe passage, travel powers or automatic arrival.
+6. Add only verified public natural features/roads to the public overlay. Private
+labels use public:false and sourceApproved:false. Exact custom addresses remain
+proposals. Review every public image for baked names, secrets and private details.
+7. Rebuild the atlas, register the new file's hash/bytes and source limits in the
+map register, and render the DM annotated export. Check marker-to-art alignment,
+label clipping, public exclusion and parent discovery gates. Add exact paths to
+the existing renderer/phone policies through the app owner if needed.
+8. In play, introduce places and permissions deliberately through the shared
+travel/access tools. Stage → inspect → Show is presentation only. Prepare a
+separate battle map creates new blank fog; existing scene IDs and saves persist.
+
+Never claim the full source book was checked when only selected maps/pages were
+reviewed. Atlas-Data.json is generated transport; rebuilds overwrite direct edits.

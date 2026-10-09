@@ -1,0 +1,7 @@
+{
+  "result": "pass",
+  "checks": 620,
+  "proposals": 20,
+  "masters": 6,
+  "note": "Tests prove artifact safety, alignment, sampled openings and selected source topology. They do not prove pixel-perfect tracing or permission to migrate saved scenes."
+}

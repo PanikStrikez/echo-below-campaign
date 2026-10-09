@@ -1,0 +1,20 @@
+SELECTED WORLD MAP STYLE
+
+User decision: Keep option 5 — Game-world atlas.
+Selected style reference: style-options/05-Game-World-Atlas.png
+Current corrected image: Sword-Coast-Campaign-Map.png
+Prompt: style-options/Style-Prompts.txt, section 05.
+
+Use this image's clear, colorful terrain, readable routes, settlement symbols,
+and distinctive campaign markers as the visual direction for further map work.
+
+The follow-up correction pass moves Wave Echo Cave east/northeast of Phandalin,
+Hollow Mountain and the Greypeaks northeast of Loudwater, the Mere of Dead Men
+onto the coastal mainland, the High Moor southeast of Daggerford, and the Star
+Mounts inside the High Forest. Dead God's Scar follows the High Moor's western
+edge, and Broken Star follows the Star Mounts. Sea of Swords and Reghed Glacier
+labels were added. The unverified distance scale and comparison caption were removed.
+The image remains an approximate illustrated regional map, not a complete
+gazetteer or a surveyed basis for travel distances. Native image: 1536 x 1024.
+The other style options remain available for reference.
+This selection does not publish the DM map or change campaign discoveries.

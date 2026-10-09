@@ -1,0 +1,110 @@
+THE ECHO BELOW — AI FOUNDATION
+Updated 5 October 2026
+
+WHERE TO FIND IT
+Refresh the desktop app, then choose Settings > AI assistance.
+The map stays visible. AI starts off, and ordinary campaign play works without it.
+
+USING YOUR CHATGPT ACCOUNT
+Choose ChatGPT plan, then Continue with ChatGPT. An eligible account must approve
+this app separately. Signing in does not enable generation.
+After signing in, return to the campaign and choose Refresh connection, then Load
+my available models. Select a model, set a daily request limit, and explicitly
+approve plan usage before enabling and saving settings.
+Also review the app's allowance and credit preferences in ChatGPT Settings > Usage.
+Local request counts cannot determine your remaining ChatGPT plan percentage.
+This connection uses supported text generation; voices need a later integration.
+It does not import this chat or your other ChatGPT conversations.
+
+WHAT THIS FIRST BUILD PROVIDES
+- A shared desktop-only service for later AI features; no automatic campaign edits.
+- Separate DM, player, and NPC reference builders, with source IDs, status, and basis.
+- A local preview of references. The preview itself sends nothing to a provider.
+- A free mock check using fictional records, with progress, cancellation, and usage.
+- ChatGPT sign-in and text adapter; an optional separately billed OpenAI API adapter.
+- API request/daily/monthly spending controls and external request-count limits.
+- Safe failure messages, no automatic retries, and no paid-provider fallback.
+
+The current screen provides setup, previews, and the mock foundation check.
+Campaign questions, NPC conversation controls, phone assistance, and voices will
+use this service in later prompts; they are not presented as finished features here.
+
+PRIVACY AND APPROVAL BOUNDARIES
+AI credentials, configuration, and usage belong to this computer, outside the
+campaign directory. They do not enter saves, TV data, phone pages, or portable ZIPs.
+The API key, if used, comes from OPENAI_API_KEY in the service's environment;
+there is no browser key field. ChatGPT tokens use private owner-only local files.
+Personal books are not read or uploaded by any context builder.
+The phone service has no AI route. Future phone assistance must derive identity
+from its existing authenticated connection, never from a client-supplied character.
+
+Actual approved outcomes take precedence over replaced records and old summaries.
+Plans remain plans. A confirmed report of a claim does not prove the claim itself.
+Player references include only explicitly published wording and that player's
+allowlisted sheet fields. NPC references require both explicit NPC knowledge and
+permission for every conversation recipient. NPC characterization/disclosure tools
+will need further work before rich dialogue is introduced.
+Contexts are bounded selections: up to 120 records and 100,000 UTF-8 JSON bytes.
+An omitted fact is unknown in that request, not disproved. Deliberately publishing
+private prose cannot be undone by an automatic classifier; use the existing preview.
+Retrieved text is treated as reference data, never as instructions or executable code.
+
+USAGE AND CANCELLATION
+Usage days and months use UTC. Mock calls are free. ChatGPT calls use the approved
+account allowance; its dollar cost and remaining plan percentage are not inferred.
+API totals are conservative local estimates. Uncertain/failed API calls retain
+their reservation because a provider may have already processed them. Cancellation
+immediately prevents a result from being published, but cannot guarantee a refund
+of work already accepted remotely. Provider configuration changes cancel pending work.
+
+VERIFIED IN ISOLATION
+- 52 Python checks: sign-in protocol with synthetic identities and real test RSA
+  signature verification, scope checks, refresh rotation, private storage, budget
+  races, cancellation, failures, Host/Origin/CSRF restrictions, and export exclusion.
+  Added gateway audience/subject matching, duplicate source and blank provenance
+  rejection, corrupt optional-account isolation, and case-insensitive private-file
+  exclusions. Approved claims remain Claimed/Inferred rather than becoming observed.
+- JavaScript context checks: private sentinels across audiences, NPC knowledge,
+  status/basis, replacements, withdrawn publications, stale recap suppression,
+  immutable input, redaction, multibyte bounds, and untrusted-reference wrapping.
+- Ten generated context fixtures accepted by the server validator.
+- Browser rehearsal in a fresh profile, with a restored campaign copy and a
+  temporary AI store: off by default; settings; mock completion/cancel/repeat;
+  108-record DM context; all five character contexts; NPC context; blocked
+  unapproved generation; unchanged campaign state and clean backup; reload;
+  TV without AI modules; local previews during simulated service failure.
+- Portable export exclusions checked with a small synthetic package, including
+  accidental copies of private AI state. No full new campaign ZIP was needed.
+
+All text-provider calls and identities in these checks were mocked. No live ChatGPT
+sign-in, model availability, quota, or text generation has been verified with your
+account. No paid text requests were made. Four separately authorized ElevenLabs
+plugin auditions are documented in Voice-Audition-Guide.txt and are not foundation
+mock tests or proof of the separate local app account connection. Current integration verifies RS256 identity
+signatures with local OpenSSL and fails closed if verification is unavailable.
+
+DEPLOYMENT
+Only the desktop service was restarted to load the update. The phone service
+remained running with the same process and assignments. Production AI is off,
+provider Mock, and no ChatGPT account is connected by this work.
+
+INTEGRATION AUDIT
+Campaign-Continuity and Campaign-Outcomes supply authoritative outcomes,
+publication permissions, knowledge, corrections, and recap fingerprints.
+Quest publications and journals supply only their approved audience wording.
+The active party sheet and selected runbook beat are read through the existing
+Battleboard host. Preparation never becomes an outcome merely because it is selected.
+The existing Cockpit right panel hosts all AI settings. Existing save/review/undo
+systems are unchanged; this foundation has no campaign-write action.
+The DM module manifest loads AI code; the player-TV loader does not load it.
+The loopback desktop server hosts AI routes. The LAN phone service, audio mixer,
+and speaker controls retain their existing behavior. Future voice output should
+use the existing audio controls rather than bypassing them.
+
+OFFICIAL REFERENCES
+https://developers.openai.com/siwc/token-sharing-open-source
+https://developers.openai.com/siwc/token-sharing-open-source/sign-in
+https://developers.openai.com/siwc/token-sharing-open-source/models-and-inference
+https://developers.openai.com/siwc/token-sharing-open-source/preview-limitations
+https://developers.openai.com/siwc/token-sharing-open-source/profiles-and-sessions
+https://developers.openai.com/api/docs/models/gpt-4.1-mini

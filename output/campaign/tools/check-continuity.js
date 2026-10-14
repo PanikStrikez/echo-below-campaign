@@ -63,6 +63,7 @@ const imported=C.adoptEvidence({id:'old',title:'Old note',detail:'Possible futur
 // Exercise actual TV/phone snapshot boundary; nothing private leaves the DM campaign store.
 const source=fs.readFileSync(path.join(root,'Session-01-Battleboard.js'),'utf8');
 const boot=source.lastIndexOf('  if (IS_PLAYER) initPlayer();');
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(source.slice(0,boot)+`\n globalThis.__continuityTest={normalize,newCustomState,publicState,phoneSnapshot,setState:v=>state=v,setCampaign:v=>campaignIndex=v};\n})();`);
 __continuityTest.setCampaign({story:copy,rules:null,tableExtras:{},sessions:[{id:'session-01',name:'Test'}],combatLibrary:[]});
 const state=__continuityTest.normalize({...__continuityTest.newCustomState(),scene:'region-lmop'});

@@ -1,0 +1,129 @@
+{
+  "ok": true,
+  "result": {
+    "rooms": [
+      {
+        "id": "s2-prep",
+        "read": 0
+      },
+      {
+        "id": "s2-arrival",
+        "read": 2
+      },
+      {
+        "id": "s2-barthen",
+        "read": 2
+      },
+      {
+        "id": "s2-sildar",
+        "read": 2
+      },
+      {
+        "id": "s2-inn",
+        "read": 2
+      },
+      {
+        "id": "s2-town",
+        "read": 0
+      },
+      {
+        "id": "s2-redbrands",
+        "read": 2
+      },
+      {
+        "id": "s2-manor",
+        "read": 0
+      },
+      {
+        "id": "s2-cellar",
+        "read": 2
+      },
+      {
+        "id": "s2-barracks",
+        "read": 2
+      },
+      {
+        "id": "s2-trap",
+        "read": 2
+      },
+      {
+        "id": "s2-crypt",
+        "read": 2
+      },
+      {
+        "id": "s2-pens",
+        "read": 2
+      },
+      {
+        "id": "s2-armory",
+        "read": 2
+      },
+      {
+        "id": "s2-crevasse",
+        "read": 2
+      },
+      {
+        "id": "s2-bugbears",
+        "read": 2
+      },
+      {
+        "id": "s2-common",
+        "read": 2
+      },
+      {
+        "id": "s2-workshop",
+        "read": 2
+      },
+      {
+        "id": "s2-glasstaff",
+        "read": 2
+      },
+      {
+        "id": "s2-close",
+        "read": 0
+      }
+    ],
+    "party": [
+      {
+        "id": "aldric-slots-1",
+        "name": "1st-level spell slots",
+        "max": 4,
+        "current": 3,
+        "restoreShort": 0,
+        "restoreLong": true,
+        "unit": "slots",
+        "slotLevel": 0
+      },
+      {
+        "id": "aldric-slots-2",
+        "name": "2nd-level spell slots",
+        "max": 2,
+        "current": 2,
+        "restoreShort": 0,
+        "restoreLong": true,
+        "unit": "slots",
+        "slotLevel": 0
+      },
+      {
+        "id": "aldric-past-life",
+        "name": "Knowledge from a Past Life",
+        "max": 2,
+        "current": 2,
+        "restoreShort": 0,
+        "restoreLong": true,
+        "unit": "uses",
+        "slotLevel": 0
+      },
+      {
+        "id": "aldric-arcane-recovery",
+        "name": "Arcane Recovery",
+        "max": 1,
+        "current": 1,
+        "restoreShort": 0,
+        "restoreLong": true,
+        "unit": "use",
+        "slotLevel": 0
+      }
+    ]
+  }
+}

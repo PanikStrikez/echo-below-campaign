@@ -1,0 +1,21 @@
+{
+  "environment": "Disposable Chrome profile and local test services",
+  "liveServicesChanged": false,
+  "physicalDevices": false,
+  "checks": [
+    "Session 1 regional start",
+    "Session 2 town start",
+    "town marker opens prepared scene",
+    "nested source room board opens matching art and narration",
+    "return restores board and zoom",
+    "navigation preserves map, fog, tokens and public presentation",
+    "explicit publication updates TV",
+    "DM room links not loaded on TV",
+    "wilderness and Wave Echo Cave map roots",
+    "41 Undermountain room links",
+    "existing supplied save imports",
+    "legacy Scene guide reachable",
+    "1366 and 1100 viewport fit"
+  ],
+  "errors": []
+}

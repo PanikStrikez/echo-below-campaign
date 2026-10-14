@@ -196,34 +196,37 @@
   };
   function renderActions(root) {
     const s = sheet();
-    const panel = section(root, 'Actions available now', 'Attack and damage rolls stay separate. Check range, target, conditions, and remaining uses before resolving an action.');
+    const panel = section(root, 'Actions available now', 'Choose Review action to check targets, costs, rolls and effects together. Quick rolls do not apply effects or spend resources.');
     const canUse = item => {
       const resource = s.resources.find(x => x.id === item.resourceId);
       return item.prepared !== false && (!resource || item.cost === 0 ||
         (resource.current !== null && resource.current >= item.cost));
     };
-    const available = [...s.attacks, ...s.actions].filter(canUse);
+    const view=model.ownerView(s);
+    const available = [...view.attacks, ...view.actions].filter(canUse);
     if (!available.length) panel.append(node('p', 'party-hint', 'No recorded actions are ready. Check preparation and resources, or add actions from the live sheet.'));
     for (const item of available) {
       const row = node('div', 'party-action-card');
       row.append(node('strong', '', `${item.name} · ${item.type || 'Action'}`));
       const resource = s.resources.find(x => x.id === item.resourceId);
-      row.append(node('small', '', [item.attackBonus !== null ? `Attack ${signed(item.attackBonus)}` : '',
+      row.append(node('small', 'action-math', [item.attackBonus !== null ? `Attack ${signed(item.attackBonus)}` : '',
         item.damageDice ? `${item.damageDice} ${item.damageType}` : '', item.saveDC !== null ? `${item.saveAbility} save DC ${item.saveDC}` : '',
         resource ? `${resource.name} ${resource.current ?? '?'}/${resource.max ?? '?'}` : ''].filter(Boolean).join(' · ')));
       if (item.effect) row.append(node('p', '', item.effect));
+      if(item.support){const badge=node('span','party-support-status echo-status action-support',item.support.label);badge.dataset.state=item.support.status;row.append(badge);row.append(node('small','',item.support.reason));const src=item.support.source;row.append(node('small','',`${src.book}${src.printedPage?' p. '+src.printedPage:''}`));}
       const controls = node('div', 'button-row');
+      if(host.stageAction)button(controls,'Review action',()=>host.stageAction(s.id,view.attacks.includes(item)?'attack':'action',view.attacks.includes(item)?view.attacks.indexOf(item):view.actions.indexOf(item)),'primary');
       if (s.id === 'pc-donavan' && item.name === 'Mind Sliver') button(controls, 'Book', () => host.openBook('tasha', 110));
       if (s.id === 'pc-donavan' && item.name === 'Catapult') button(controls, 'Book', () => host.openBook('xan', 151));
       if (item.attackBonus !== null) button(controls, 'Roll attack', () => host.roll(`${s.name}: ${item.name} attack`, 1, 20, item.attackBonus));
       const dice = parseDice(item.damageDice);
       if (dice) button(controls, item.damageType === 'healing' ? 'Roll healing' : item.damageType === 'bonus' ? 'Roll bonus' : 'Roll damage',
         () => host.roll(`${s.name}: ${item.name} ${item.damageType || 'damage'}`, dice.count, dice.sides, dice.modifier, item.damageType));
-      if (resource && item.cost > 0) button(controls, `Use ${item.cost}`, () => {
-        if (resource.current === null || resource.current < item.cost) { host.toast('Not enough uses recorded. Adjust the resource if the sheet differs.'); return; }
-        resource.current -= item.cost; save(`${s.name} used ${item.name}`);
+      if (resource && item.cost > 0 && !host.stageAction) button(controls, `Use ${item.cost}`, () => {
+        try { host.spendResource(s.id, resource.id, item.cost, item.name); render(); }
+        catch (error) { host.toast(error.message); }
       }).disabled = resource.current === null || resource.current < item.cost;
-      button(controls, 'Edit', () => { editingAction = item.id; render(); });
+      if(!item.derived)button(controls, 'Edit', () => { editingAction = item.id; render(); });
       row.append(controls); panel.append(row);
     }
     const inactive = [...s.attacks, ...s.actions].filter(item => !canUse(item));
@@ -269,7 +272,7 @@
       row.append(node('strong', '', `${item.name} · ${item.current ?? '?'}/${item.max ?? '?'}`));
       const controls = node('div', 'button-row');
       field(controls, 'Long rest refill', item.restoreLong, value => { item.restoreLong = value; save(`Updated ${item.name} recovery`); }, 'checkbox');
-      button(controls, '−1', () => { item.current = Math.max(0, (item.current || 0) - 1); save(`Spent ${item.name}`); });
+      button(controls, '−1', () => { try { host.spendResource(s.id, item.id, 1, item.name); render(); } catch (error) { host.toast(error.message); } }).disabled = item.current === null || item.current < 1;
       button(controls, '+1', () => { item.current = Math.min(item.max ?? 999, (item.current || 0) + 1); save(`Restored ${item.name}`); });
       button(controls, 'Edit', () => {
         const name = prompt('Resource name:', item.name); if (name === null) return;
@@ -513,5 +516,5 @@
       if (event.key === 'Escape' && !$('party-drawer').hidden) { event.stopImmediatePropagation(); close(); }
     }, true);
   }
-  globalThis.ECHO_PARTY_UI = { init, open, openRest: () => { tab = 'rest'; open(); }, refresh: render };
+  globalThis.ECHO_PARTY_UI = { init, open, close, openAdvance:id=>{tab='advance';open(id);}, openRest: () => { tab = 'rest'; open(); }, refresh: render };
 })();

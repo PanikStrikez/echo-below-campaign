@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-aldric",
+      "rest": [
+        "HP → 18",
+        "1st-level spell slots: 3 → 4",
+        "Death saves cleared"
+      ],
+      "hp": 9,
+      "maxHp": 18
+    },
+    {
+      "id": "pc-pebble",
+      "rest": [
+        "HP → 12",
+        "Death saves cleared"
+      ],
+      "hp": 12,
+      "maxHp": 12
+    },
+    {
+      "id": "pc-trista",
+      "rest": [
+        "HP → 11",
+        "Death saves cleared"
+      ],
+      "hp": 11,
+      "maxHp": 11
+    },
+    {
+      "id": "pc-ringgo",
+      "rest": [
+        "HP → 22",
+        "Death saves cleared"
+      ],
+      "hp": 22,
+      "maxHp": 22
+    },
+    {
+      "id": "pc-donavan",
+      "rest": [
+        "HP → 17",
+        "Death saves cleared"
+      ],
+      "hp": 17,
+      "maxHp": 17
+    },
+    {
+      "id": "ally-sildar",
+      "rest": [
+        "HP → 27",
+        "Death saves cleared"
+      ],
+      "hp": 1,
+      "maxHp": 27
+    }
+  ]
+}

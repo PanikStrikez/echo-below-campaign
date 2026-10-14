@@ -1,0 +1,2941 @@
+{
+  "ok": true,
+  "result": {
+    "id": "pc-ringgo",
+    "name": "Ringgo Paul",
+    "role": "pc",
+    "player": "Cade",
+    "className": "Rogue · Assassin",
+    "ancestry": "Tiefling",
+    "background": "Criminal / Spy",
+    "level": 5,
+    "rules": "2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export",
+    "source": "Josvo_171417930-2.pdf · Ringgo pp. 1–5",
+    "sourceStatus": "Approved level 4 · Piercer; HP d8 roll 3; Tasha’s Cauldron of Everything; 2014 Rogue",
+    "proficiency": 3,
+    "abilities": {
+      "str": 7,
+      "dex": 20,
+      "con": 14,
+      "int": 10,
+      "wis": 10,
+      "cha": 18
+    },
+    "saves": {
+      "str": {
+        "rank": 0,
+        "override": null
+      },
+      "dex": {
+        "rank": 1,
+        "override": null
+      },
+      "con": {
+        "rank": 0,
+        "override": null
+      },
+      "int": {
+        "rank": 1,
+        "override": null
+      },
+      "wis": {
+        "rank": 0,
+        "override": null
+      },
+      "cha": {
+        "rank": 0,
+        "override": null
+      }
+    },
+    "skills": {
+      "Acrobatics": {
+        "rank": 1,
+        "override": null
+      },
+      "Animal Handling": {
+        "rank": 0,
+        "override": null
+      },
+      "Arcana": {
+        "rank": 0,
+        "override": null
+      },
+      "Athletics": {
+        "rank": 0,
+        "override": null
+      },
+      "Deception": {
+        "rank": 1,
+        "override": null
+      },
+      "History": {
+        "rank": 0,
+        "override": null
+      },
+      "Insight": {
+        "rank": 0,
+        "override": null
+      },
+      "Intimidation": {
+        "rank": 0,
+        "override": null
+      },
+      "Investigation": {
+        "rank": 2,
+        "override": null
+      },
+      "Medicine": {
+        "rank": 0,
+        "override": null
+      },
+      "Nature": {
+        "rank": 0,
+        "override": null
+      },
+      "Perception": {
+        "rank": 1,
+        "override": null
+      },
+      "Performance": {
+        "rank": 0,
+        "override": null
+      },
+      "Persuasion": {
+        "rank": 1,
+        "override": null
+      },
+      "Religion": {
+        "rank": 0,
+        "override": null
+      },
+      "Sleight of Hand": {
+        "rank": 1,
+        "override": null
+      },
+      "Stealth": {
+        "rank": 2,
+        "override": null
+      },
+      "Survival": {
+        "rank": 0,
+        "override": null
+      }
+    },
+    "speed": 30,
+    "senses": "Darkvision 60 ft.; fire resistance",
+    "languages": "Common, Infernal, Thieves’ Cant",
+    "ac": 17,
+    "hp": 36,
+    "maxHp": 36,
+    "tempHp": 0,
+    "hitDice": {
+      "die": 8,
+      "current": 5,
+      "max": 5,
+      "details": "5d8",
+      "pools": [
+        {
+          "die": 8,
+          "current": 5,
+          "max": 5
+        }
+      ]
+    },
+    "attacks": [
+      {
+        "id": "ringgo-rapier",
+        "name": "Rapier",
+        "type": "Action",
+        "attackBonus": 8,
+        "damageDice": "1d8+5",
+        "damageType": "piercing",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Finesse; Sneak Attack may add 2d6 once per turn.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-shortbow",
+        "name": "Shortbow",
+        "type": "Action",
+        "attackBonus": 8,
+        "damageDice": "1d6+5",
+        "damageType": "piercing",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Range 80/320; Sneak Attack may add 2d6.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-dagger",
+        "name": "Dagger",
+        "type": "Action",
+        "attackBonus": 8,
+        "damageDice": "1d4+5",
+        "damageType": "piercing",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Finesse, light, thrown 20/60.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-offhand",
+        "name": "Second dagger",
+        "type": "Bonus action",
+        "attackBonus": 8,
+        "damageDice": "1d4",
+        "damageType": "piercing",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Two-weapon fighting; no Dexterity modifier to damage.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-sneak",
+        "name": "Sneak Attack",
+        "type": "Once per turn",
+        "attackBonus": null,
+        "damageDice": "2d6",
+        "damageType": "extra",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "ringgo-cunning-dash",
+        "name": "Cunning Action: Dash",
+        "type": "Bonus action",
+        "attackBonus": null,
+        "damageDice": "",
+        "damageType": "",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Move up to your speed again this turn.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-cunning-disengage",
+        "name": "Cunning Action: Disengage",
+        "type": "Bonus action",
+        "attackBonus": null,
+        "damageDice": "",
+        "damageType": "",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Movement this turn does not provoke opportunity attacks.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-cunning-hide",
+        "name": "Cunning Action: Hide",
+        "type": "Bonus action",
+        "attackBonus": null,
+        "damageDice": "",
+        "damageType": "",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Attempt to hide if the circumstances allow it.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-thaumaturgy",
+        "name": "Thaumaturgy",
+        "type": "Action",
+        "attackBonus": null,
+        "damageDice": "",
+        "damageType": "",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Tiefling cantrip: create a minor supernatural sign within 30 feet; no slot.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-hellish-rebuke",
+        "name": "Hellish Rebuke",
+        "type": "Reaction",
+        "attackBonus": null,
+        "damageDice": "3d10",
+        "damageType": "fire",
+        "saveAbility": "DEX",
+        "saveDC": 14,
+        "effect": "Once per long rest as a 2nd-level spell, after a creature you can see within 60 feet damages you. Dexterity save DC 14 for half fire damage.",
+        "resourceId": "ringgo-hellish-rebuke",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-assassinate",
+        "name": "Assassinate",
+        "type": "On attack",
+        "attackBonus": null,
+        "damageDice": "",
+        "damageType": "",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Advantage against any creature that has not yet taken a turn in this combat. A hit against a surprised creature is a critical hit.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-piercer-reroll",
+        "name": "Piercer: reroll damage",
+        "type": "Once per turn on a hit",
+        "attackBonus": null,
+        "damageDice": "",
+        "damageType": "",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "After a piercing hit, reroll one damage die from that attack; use the new roll. A piercing Sneak Attack die also qualifies.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      },
+      {
+        "id": "ringgo-piercer-critical",
+        "name": "Piercer: critical hit",
+        "type": "On a piercing critical hit",
+        "attackBonus": null,
+        "damageDice": "",
+        "damageType": "",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Add one extra weapon damage die: rapier +1d8, shortbow +1d6, or dagger +1d4. This extra die is not doubled.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true
+      }
+    ],
+    "resources": [
+      {
+        "id": "ringgo-arrows",
+        "name": "Arrows",
+        "max": 40,
+        "current": 26,
+        "restoreShort": 0,
+        "restoreLong": false,
+        "unit": "arrows",
+        "slotLevel": 0
+      },
+      {
+        "id": "ringgo-hellish-rebuke",
+        "name": "Hellish Rebuke",
+        "max": 1,
+        "current": 1,
+        "restoreShort": 0,
+        "restoreLong": true,
+        "unit": "use",
+        "slotLevel": 0
+      },
+      {
+        "id": "mock-ringgo-potion",
+        "name": "Recovered healing potion",
+        "max": 1,
+        "current": 0,
+        "restoreShort": 0,
+        "restoreLong": false,
+        "unit": "potion",
+        "slotLevel": 0
+      }
+    ],
+    "spells": [
+      {
+        "name": "Thaumaturgy",
+        "level": 0,
+        "prepared": true,
+        "notes": "Tiefling racial cantrip; Charisma spellcasting."
+      },
+      {
+        "name": "Hellish Rebuke",
+        "level": 2,
+        "prepared": true,
+        "notes": "Tiefling Infernal Legacy at character level 3: cast once per long rest as a 2nd-level spell; Dexterity save DC 14, 3d10 fire."
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Rapier",
+        "quantity": 1,
+        "category": "Weapon",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Shortbow",
+        "quantity": 1,
+        "category": "Weapon",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Dagger",
+        "quantity": 2,
+        "category": "Weapon",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Studded leather",
+        "quantity": 1,
+        "category": "Armor",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Thieves’ tools",
+        "quantity": 1,
+        "category": "Tool",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Arrows",
+        "quantity": 26,
+        "category": "Ammunition",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Hammer",
+        "quantity": 1,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Mess kit",
+        "quantity": 1,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Backpack",
+        "quantity": 1,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Crowbar",
+        "quantity": 2,
+        "category": "Gear",
+        "notes": "PDF lists two",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Ball bearings",
+        "quantity": 999,
+        "category": "Gear",
+        "notes": "One bag",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Bedroll",
+        "quantity": 1,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Bell",
+        "quantity": 1,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Candle",
+        "quantity": 5,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Waterskin",
+        "quantity": 2,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "String",
+        "quantity": 10,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Piton",
+        "quantity": 10,
+        "category": "Gear",
+        "notes": "The current sheet says piton, not potion.",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Rations",
+        "quantity": 15,
+        "category": "Consumable",
+        "notes": "One day each",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Rope, hempen 50 ft.",
+        "quantity": 2,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Hooded lantern",
+        "quantity": 1,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Oil flask",
+        "quantity": 2,
+        "category": "Consumable",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Torch",
+        "quantity": 10,
+        "category": "Gear",
+        "notes": "",
+        "attuned": false,
+        "equipped": false
+      },
+      {
+        "name": "Tinderbox",
+        "quantity": 2,
+        "category": "Gear",
+        "notes": "Updated PDF lists two",
+        "attuned": false,
+        "equipped": false
+      }
+    ],
+    "money": {
+      "cp": 0,
+      "sp": 0,
+      "ep": 0,
+      "gp": 24,
+      "pp": 0
+    },
+    "features": [
+      {
+        "name": "Sneak Attack",
+        "text": "2d6 once per turn on a qualifying finesse or ranged hit.",
+        "source": "Ringgo level 3 PDF p. 2"
+      },
+      {
+        "name": "Cunning Action",
+        "text": "Dash, Disengage, or Hide as a bonus action on each of your turns.",
+        "source": "Ringgo PDF p. 2"
+      },
+      {
+        "name": "Expertise",
+        "text": "Stealth and Investigation. Investigation is the DM-confirmed second choice after this export.",
+        "source": "Ringgo PDF p. 2; DM ruling 2026-09-25"
+      },
+      {
+        "name": "Hellish Resistance",
+        "text": "Resistance to fire damage.",
+        "source": "Ringgo PDF p. 2"
+      },
+      {
+        "name": "Infernal Legacy",
+        "text": "Thaumaturgy cantrip and Hellish Rebuke once per long rest as a 2nd-level spell at this level.",
+        "source": "Ringgo level 3 PDF pp. 2, 5"
+      },
+      {
+        "name": "Assassinate",
+        "text": "Advantage on attacks against creatures that have not taken a turn yet; a hit against a surprised target is a critical hit.",
+        "source": "Ringgo level 3 PDF p. 2"
+      },
+      {
+        "name": "Bonus Proficiencies",
+        "text": "Disguise kit and poisoner’s kit from Assassin archetype.",
+        "source": "Ringgo level 3 PDF p. 2"
+      },
+      {
+        "name": "Training",
+        "text": "Light armor; simple weapons, hand crossbow, longsword, rapier, shortsword; thieves’ tools, playing cards, land vehicles.",
+        "source": "Ringgo PDF p. 1"
+      },
+      {
+        "name": "Piercer",
+        "text": "DEX +1 (now 20). Once per turn on a piercing hit, reroll one damage die from the attack and use the new roll. On a piercing critical hit, add one extra weapon damage die.",
+        "source": "Tasha’s Cauldron of Everything · feat (2014 rules)"
+      },
+      {
+        "name": "Uncanny Dodge",
+        "text": "Reaction halve damage from visible attacker on qualifying hit",
+        "source": "2014 Rogue 5"
+      }
+    ],
+    "inspiration": false,
+    "death": {
+      "successes": 0,
+      "failures": 0,
+      "stable": false
+    },
+    "exhaustion": 0,
+    "conditions": [],
+    "concentration": "",
+    "effects": [],
+    "notes": "Updated player export is level 3 Rogue Assassin, max HP 24; current HP blank, so preserve live damage. Ignore Nick and Vex 2024 labels under the 2014 rules profile. DM confirmed Investigation as second Expertise on 2026-09-25; updated PDF still leaves it unmarked. PDF lists ten pitons, not potions. The PDF account name is Josvo; campaign player assignment remains Cade.",
+    "publicNotes": "Isolated mock character level 5. Current sheet governs; futurefeaturesawaitreview.",
+    "publicOptions": {
+      "showHp": true,
+      "showActions": true,
+      "showResources": false,
+      "showStatus": true
+    },
+    "passiveOverride": {
+      "perception": null,
+      "insight": null,
+      "investigation": null
+    },
+    "levelHistory": [
+      {
+        "date": "2026-10-12T19:39:48.070Z",
+        "level": 2,
+        "summary": "Level 2: Corrected full mock session 1 completed; reviewed progression; HP die 5 (d8), CON 2, maximum HP 10 → 17",
+        "snapshot": {
+          "id": "pc-ringgo",
+          "name": "Ringgo Paul",
+          "role": "pc",
+          "player": "Cade",
+          "className": "Rogue 1",
+          "ancestry": "Tiefling",
+          "background": "Criminal / Spy",
+          "level": 1,
+          "rules": "2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export",
+          "source": "Josvo_171417930-2.pdf · Ringgo pp. 1–5",
+          "sourceStatus": "MOCK level-1 reconstruction from confirmed ability scores and ancestry. Not a live-sheet update.",
+          "proficiency": 2,
+          "abilities": {
+            "str": 7,
+            "dex": 19,
+            "con": 14,
+            "int": 10,
+            "wis": 10,
+            "cha": 18
+          },
+          "saves": {
+            "str": {
+              "rank": 0,
+              "override": null
+            },
+            "dex": {
+              "rank": 1,
+              "override": null
+            },
+            "con": {
+              "rank": 0,
+              "override": null
+            },
+            "int": {
+              "rank": 1,
+              "override": null
+            },
+            "wis": {
+              "rank": 0,
+              "override": null
+            },
+            "cha": {
+              "rank": 0,
+              "override": null
+            }
+          },
+          "skills": {
+            "Acrobatics": {
+              "rank": 1,
+              "override": null
+            },
+            "Animal Handling": {
+              "rank": 0,
+              "override": null
+            },
+            "Arcana": {
+              "rank": 0,
+              "override": null
+            },
+            "Athletics": {
+              "rank": 0,
+              "override": null
+            },
+            "Deception": {
+              "rank": 1,
+              "override": null
+            },
+            "History": {
+              "rank": 0,
+              "override": null
+            },
+            "Insight": {
+              "rank": 0,
+              "override": null
+            },
+            "Intimidation": {
+              "rank": 0,
+              "override": null
+            },
+            "Investigation": {
+              "rank": 2,
+              "override": null
+            },
+            "Medicine": {
+              "rank": 0,
+              "override": null
+            },
+            "Nature": {
+              "rank": 0,
+              "override": null
+            },
+            "Perception": {
+              "rank": 1,
+              "override": null
+            },
+            "Performance": {
+              "rank": 0,
+              "override": null
+            },
+            "Persuasion": {
+              "rank": 1,
+              "override": null
+            },
+            "Religion": {
+              "rank": 0,
+              "override": null
+            },
+            "Sleight of Hand": {
+              "rank": 1,
+              "override": null
+            },
+            "Stealth": {
+              "rank": 2,
+              "override": null
+            },
+            "Survival": {
+              "rank": 0,
+              "override": null
+            }
+          },
+          "speed": 30,
+          "senses": "Darkvision 60 ft.; fire resistance",
+          "languages": "Common, Infernal, Thieves’ Cant",
+          "ac": 16,
+          "hp": 10,
+          "maxHp": 10,
+          "tempHp": 0,
+          "hitDice": {
+            "die": 8,
+            "current": 1,
+            "max": 1,
+            "details": "1d8",
+            "pools": [
+              {
+                "die": 8,
+                "current": 1,
+                "max": 1
+              }
+            ]
+          },
+          "attacks": [
+            {
+              "id": "ringgo-rapier",
+              "name": "Rapier",
+              "type": "Action",
+              "attackBonus": 6,
+              "damageDice": "1d8+4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Finesse; Sneak Attack may add 1d6 once per turn.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-shortbow",
+              "name": "Shortbow",
+              "type": "Action",
+              "attackBonus": 6,
+              "damageDice": "1d6+4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Range 80/320; Sneak Attack may add 1d6.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-dagger",
+              "name": "Dagger",
+              "type": "Action",
+              "attackBonus": 6,
+              "damageDice": "1d4+4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Finesse, light, thrown 20/60.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-offhand",
+              "name": "Second dagger",
+              "type": "Bonus action",
+              "attackBonus": 6,
+              "damageDice": "1d4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Two-weapon fighting; no +4 damage.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-sneak",
+              "name": "Sneak Attack",
+              "type": "Once per turn",
+              "attackBonus": 6,
+              "damageDice": "2d6",
+              "damageType": "extra",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            }
+          ],
+          "actions": [
+            {
+              "id": "ringgo-thaumaturgy",
+              "name": "Thaumaturgy",
+              "type": "Action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Tiefling cantrip: create a minor supernatural sign within 30 feet; no slot.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            }
+          ],
+          "resources": [
+            {
+              "id": "ringgo-arrows",
+              "name": "Arrows",
+              "max": 20,
+              "current": 19,
+              "restoreShort": 0,
+              "restoreLong": false,
+              "unit": "arrows",
+              "slotLevel": 0
+            }
+          ],
+          "spells": [],
+          "equipment": [
+            {
+              "name": "Rapier",
+              "quantity": 1,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Shortbow",
+              "quantity": 1,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Dagger",
+              "quantity": 2,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Studded leather",
+              "quantity": 1,
+              "category": "Armor",
+              "notes": "",
+              "attuned": false,
+              "equipped": true
+            },
+            {
+              "name": "Thieves’ tools",
+              "quantity": 1,
+              "category": "Tool",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Arrows",
+              "quantity": 20,
+              "category": "Ammunition",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Hammer",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Mess kit",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Backpack",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Crowbar",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "PDF lists two",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Ball bearings",
+              "quantity": 999,
+              "category": "Gear",
+              "notes": "One bag",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Bedroll",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Bell",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Candle",
+              "quantity": 5,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Waterskin",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "String",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Piton",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "The current sheet says piton, not potion.",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Rations",
+              "quantity": 15,
+              "category": "Consumable",
+              "notes": "One day each",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Rope, hempen 50 ft.",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Hooded lantern",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Oil flask",
+              "quantity": 2,
+              "category": "Consumable",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Torch",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Tinderbox",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "Updated PDF lists two",
+              "attuned": false,
+              "equipped": false
+            }
+          ],
+          "money": {
+            "cp": 0,
+            "sp": 0,
+            "ep": 0,
+            "gp": 15,
+            "pp": 0
+          },
+          "features": [
+            {
+              "name": "Sneak Attack",
+              "text": "Once per turn, +1d6 with qualifying finesse/ranged hit; review advantage or nearby ally.",
+              "source": "Ringgo level 3 PDF p. 2"
+            },
+            {
+              "name": "Expertise",
+              "text": "Stealth and Investigation. Investigation is the DM-confirmed second choice after this export.",
+              "source": "Ringgo PDF p. 2; DM ruling 2026-09-25"
+            },
+            {
+              "name": "Hellish Resistance",
+              "text": "Resistance to fire damage.",
+              "source": "Ringgo PDF p. 2"
+            },
+            {
+              "name": "Infernal Legacy",
+              "text": "Thaumaturgy cantrip and Hellish Rebuke once per long rest as a 2nd-level spell at this level.",
+              "source": "Ringgo level 3 PDF pp. 2, 5"
+            }
+          ],
+          "inspiration": false,
+          "death": {
+            "successes": 0,
+            "failures": 0,
+            "stable": false
+          },
+          "exhaustion": 0,
+          "conditions": [],
+          "concentration": "",
+          "effects": [],
+          "notes": "Updated player export is level 3 Rogue Assassin, max HP 24; current HP blank, so preserve live damage. Ignore Nick and Vex 2024 labels under the 2014 rules profile. DM confirmed Investigation as second Expertise on 2026-09-25; updated PDF still leaves it unmarked. PDF lists ten pitons, not potions. The PDF account name is Josvo; campaign player assignment remains Cade.",
+          "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+          "publicOptions": {
+            "showHp": true,
+            "showActions": true,
+            "showResources": false,
+            "showStatus": true
+          },
+          "passiveOverride": {
+            "perception": null,
+            "insight": null,
+            "investigation": null
+          },
+          "levelHistory": [],
+          "management": {
+            "favorites": []
+          }
+        }
+      },
+      {
+        "date": "2026-10-12T20:01:40.713Z",
+        "level": 3,
+        "summary": "Level 3: Corrected full mock session 2 completed; reviewed progression; HP die 5 (d8), CON 2, maximum HP 17 → 24",
+        "snapshot": {
+          "id": "pc-ringgo",
+          "name": "Ringgo Paul",
+          "role": "pc",
+          "player": "Cade",
+          "className": "Rogue 2",
+          "ancestry": "Tiefling",
+          "background": "Criminal / Spy",
+          "level": 2,
+          "rules": "2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export",
+          "source": "Josvo_171417930-2.pdf · Ringgo pp. 1–5",
+          "sourceStatus": "Player PDF 2026-09-25 · Rogue 3 Assassin; DM-confirmed second Expertise: Investigation",
+          "proficiency": 2,
+          "abilities": {
+            "str": 7,
+            "dex": 19,
+            "con": 14,
+            "int": 10,
+            "wis": 10,
+            "cha": 18
+          },
+          "saves": {
+            "str": {
+              "rank": 0,
+              "override": -2
+            },
+            "dex": {
+              "rank": 1,
+              "override": 6
+            },
+            "con": {
+              "rank": 0,
+              "override": 2
+            },
+            "int": {
+              "rank": 1,
+              "override": 2
+            },
+            "wis": {
+              "rank": 0,
+              "override": 0
+            },
+            "cha": {
+              "rank": 0,
+              "override": 4
+            }
+          },
+          "skills": {
+            "Acrobatics": {
+              "rank": 1,
+              "override": 6
+            },
+            "Animal Handling": {
+              "rank": 0,
+              "override": null
+            },
+            "Arcana": {
+              "rank": 0,
+              "override": null
+            },
+            "Athletics": {
+              "rank": 0,
+              "override": null
+            },
+            "Deception": {
+              "rank": 1,
+              "override": 6
+            },
+            "History": {
+              "rank": 0,
+              "override": null
+            },
+            "Insight": {
+              "rank": 0,
+              "override": null
+            },
+            "Intimidation": {
+              "rank": 0,
+              "override": null
+            },
+            "Investigation": {
+              "rank": 2,
+              "override": 4
+            },
+            "Medicine": {
+              "rank": 0,
+              "override": null
+            },
+            "Nature": {
+              "rank": 0,
+              "override": null
+            },
+            "Perception": {
+              "rank": 1,
+              "override": 2
+            },
+            "Performance": {
+              "rank": 0,
+              "override": null
+            },
+            "Persuasion": {
+              "rank": 1,
+              "override": 6
+            },
+            "Religion": {
+              "rank": 0,
+              "override": null
+            },
+            "Sleight of Hand": {
+              "rank": 1,
+              "override": 6
+            },
+            "Stealth": {
+              "rank": 2,
+              "override": 8
+            },
+            "Survival": {
+              "rank": 0,
+              "override": null
+            }
+          },
+          "speed": 30,
+          "senses": "Darkvision 60 ft.; fire resistance",
+          "languages": "Common, Infernal, Thieves’ Cant",
+          "ac": 16,
+          "hp": 17,
+          "maxHp": 17,
+          "tempHp": 0,
+          "hitDice": {
+            "die": 8,
+            "current": 2,
+            "max": 2,
+            "details": "2d8",
+            "pools": [
+              {
+                "die": 8,
+                "current": 2,
+                "max": 2
+              }
+            ]
+          },
+          "attacks": [
+            {
+              "id": "ringgo-rapier",
+              "name": "Rapier",
+              "type": "Action",
+              "attackBonus": 6,
+              "damageDice": "1d8+4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Finesse; Sneak Attack may add 2d6 once per turn.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-shortbow",
+              "name": "Shortbow",
+              "type": "Action",
+              "attackBonus": 6,
+              "damageDice": "1d6+4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Range 80/320; Sneak Attack may add 2d6.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-dagger",
+              "name": "Dagger",
+              "type": "Action",
+              "attackBonus": 6,
+              "damageDice": "1d4+4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Finesse, light, thrown 20/60.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-offhand",
+              "name": "Second dagger",
+              "type": "Bonus action",
+              "attackBonus": 6,
+              "damageDice": "1d4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Two-weapon fighting; no +4 damage.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-sneak",
+              "name": "Sneak Attack",
+              "type": "Once per turn",
+              "attackBonus": null,
+              "damageDice": "2d6",
+              "damageType": "extra",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            }
+          ],
+          "actions": [
+            {
+              "id": "ringgo-cunning-dash",
+              "name": "Cunning Action: Dash",
+              "type": "Bonus action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Move up to your speed again this turn.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-cunning-disengage",
+              "name": "Cunning Action: Disengage",
+              "type": "Bonus action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Movement this turn does not provoke opportunity attacks.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-cunning-hide",
+              "name": "Cunning Action: Hide",
+              "type": "Bonus action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Attempt to hide if the circumstances allow it.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-thaumaturgy",
+              "name": "Thaumaturgy",
+              "type": "Action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Tiefling cantrip: create a minor supernatural sign within 30 feet; no slot.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            }
+          ],
+          "resources": [
+            {
+              "id": "ringgo-arrows",
+              "name": "Arrows",
+              "max": 20,
+              "current": 16,
+              "restoreShort": 0,
+              "restoreLong": false,
+              "unit": "arrows",
+              "slotLevel": 0
+            }
+          ],
+          "spells": [],
+          "equipment": [
+            {
+              "name": "Rapier",
+              "quantity": 1,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Shortbow",
+              "quantity": 1,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Dagger",
+              "quantity": 2,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Studded leather",
+              "quantity": 1,
+              "category": "Armor",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Thieves’ tools",
+              "quantity": 1,
+              "category": "Tool",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Arrows",
+              "quantity": 20,
+              "category": "Ammunition",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Hammer",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Mess kit",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Backpack",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Crowbar",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "PDF lists two",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Ball bearings",
+              "quantity": 999,
+              "category": "Gear",
+              "notes": "One bag",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Bedroll",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Bell",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Candle",
+              "quantity": 5,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Waterskin",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "String",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Piton",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "The current sheet says piton, not potion.",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Rations",
+              "quantity": 15,
+              "category": "Consumable",
+              "notes": "One day each",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Rope, hempen 50 ft.",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Hooded lantern",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Oil flask",
+              "quantity": 2,
+              "category": "Consumable",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Torch",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Tinderbox",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "Updated PDF lists two",
+              "attuned": false,
+              "equipped": false
+            }
+          ],
+          "money": {
+            "cp": 0,
+            "sp": 0,
+            "ep": 0,
+            "gp": 15,
+            "pp": 0
+          },
+          "features": [
+            {
+              "name": "Sneak Attack",
+              "text": "2d6 once per turn on a qualifying finesse or ranged hit.",
+              "source": "Ringgo level 3 PDF p. 2"
+            },
+            {
+              "name": "Cunning Action",
+              "text": "Dash, Disengage, or Hide as a bonus action on each of your turns.",
+              "source": "Ringgo PDF p. 2"
+            },
+            {
+              "name": "Expertise",
+              "text": "Stealth and Investigation. Investigation is the DM-confirmed second choice after this export.",
+              "source": "Ringgo PDF p. 2; DM ruling 2026-09-25"
+            },
+            {
+              "name": "Hellish Resistance",
+              "text": "Resistance to fire damage.",
+              "source": "Ringgo PDF p. 2"
+            },
+            {
+              "name": "Infernal Legacy",
+              "text": "Thaumaturgy cantrip and Hellish Rebuke once per long rest as a 2nd-level spell at this level.",
+              "source": "Ringgo level 3 PDF pp. 2, 5"
+            },
+            {
+              "name": "Training",
+              "text": "Light armor; simple weapons, hand crossbow, longsword, rapier, shortsword; thieves’ tools, playing cards, land vehicles.",
+              "source": "Ringgo PDF p. 1"
+            }
+          ],
+          "inspiration": false,
+          "death": {
+            "successes": 0,
+            "failures": 0,
+            "stable": false
+          },
+          "exhaustion": 0,
+          "conditions": [],
+          "concentration": "",
+          "effects": [],
+          "notes": "Updated player export is level 3 Rogue Assassin, max HP 24; current HP blank, so preserve live damage. Ignore Nick and Vex 2024 labels under the 2014 rules profile. DM confirmed Investigation as second Expertise on 2026-09-25; updated PDF still leaves it unmarked. PDF lists ten pitons, not potions. The PDF account name is Josvo; campaign player assignment remains Cade.",
+          "publicNotes": "Age 30, 6 ft. tall; purple skin, green eyes, dark purple hair. Expertise: Stealth and Investigation.",
+          "publicOptions": {
+            "showHp": true,
+            "showActions": true,
+            "showResources": false,
+            "showStatus": true
+          },
+          "passiveOverride": {
+            "perception": null,
+            "insight": null,
+            "investigation": null
+          },
+          "levelHistory": [],
+          "management": {
+            "favorites": []
+          }
+        }
+      },
+      {
+        "date": "2026-10-12T20:27:35.894Z",
+        "level": 4,
+        "summary": "Level 4: Corrected full mock session 3 completed; reviewed progression; HP die 3 (d8), CON 2, maximum HP 24 → 29",
+        "snapshot": {
+          "id": "pc-ringgo",
+          "name": "Ringgo Paul",
+          "role": "pc",
+          "player": "Cade",
+          "className": "Rogue · Assassin",
+          "ancestry": "Tiefling",
+          "background": "Criminal / Spy",
+          "level": 3,
+          "rules": "2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export",
+          "source": "Josvo_171417930-2.pdf · Ringgo pp. 1–5",
+          "sourceStatus": "Player PDF 2026-09-25 · Rogue 3 Assassin; DM-confirmed second Expertise: Investigation",
+          "proficiency": 2,
+          "abilities": {
+            "str": 7,
+            "dex": 19,
+            "con": 14,
+            "int": 10,
+            "wis": 10,
+            "cha": 18
+          },
+          "saves": {
+            "str": {
+              "rank": 0,
+              "override": -2
+            },
+            "dex": {
+              "rank": 1,
+              "override": 6
+            },
+            "con": {
+              "rank": 0,
+              "override": 2
+            },
+            "int": {
+              "rank": 1,
+              "override": 2
+            },
+            "wis": {
+              "rank": 0,
+              "override": 0
+            },
+            "cha": {
+              "rank": 0,
+              "override": 4
+            }
+          },
+          "skills": {
+            "Acrobatics": {
+              "rank": 1,
+              "override": 6
+            },
+            "Animal Handling": {
+              "rank": 0,
+              "override": null
+            },
+            "Arcana": {
+              "rank": 0,
+              "override": null
+            },
+            "Athletics": {
+              "rank": 0,
+              "override": null
+            },
+            "Deception": {
+              "rank": 1,
+              "override": 6
+            },
+            "History": {
+              "rank": 0,
+              "override": null
+            },
+            "Insight": {
+              "rank": 0,
+              "override": null
+            },
+            "Intimidation": {
+              "rank": 0,
+              "override": null
+            },
+            "Investigation": {
+              "rank": 2,
+              "override": 4
+            },
+            "Medicine": {
+              "rank": 0,
+              "override": null
+            },
+            "Nature": {
+              "rank": 0,
+              "override": null
+            },
+            "Perception": {
+              "rank": 1,
+              "override": 2
+            },
+            "Performance": {
+              "rank": 0,
+              "override": null
+            },
+            "Persuasion": {
+              "rank": 1,
+              "override": 6
+            },
+            "Religion": {
+              "rank": 0,
+              "override": null
+            },
+            "Sleight of Hand": {
+              "rank": 1,
+              "override": 6
+            },
+            "Stealth": {
+              "rank": 2,
+              "override": 8
+            },
+            "Survival": {
+              "rank": 0,
+              "override": null
+            }
+          },
+          "speed": 30,
+          "senses": "Darkvision 60 ft.; fire resistance",
+          "languages": "Common, Infernal, Thieves’ Cant",
+          "ac": 16,
+          "hp": 24,
+          "maxHp": 24,
+          "tempHp": 0,
+          "hitDice": {
+            "die": 8,
+            "current": 3,
+            "max": 3,
+            "details": "3d8",
+            "pools": [
+              {
+                "die": 8,
+                "current": 3,
+                "max": 3
+              }
+            ]
+          },
+          "attacks": [
+            {
+              "id": "ringgo-rapier",
+              "name": "Rapier",
+              "type": "Action",
+              "attackBonus": 6,
+              "damageDice": "1d8+4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Finesse; Sneak Attack may add 2d6 once per turn.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-shortbow",
+              "name": "Shortbow",
+              "type": "Action",
+              "attackBonus": 6,
+              "damageDice": "1d6+4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Range 80/320; Sneak Attack may add 2d6.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-dagger",
+              "name": "Dagger",
+              "type": "Action",
+              "attackBonus": 6,
+              "damageDice": "1d4+4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Finesse, light, thrown 20/60.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-offhand",
+              "name": "Second dagger",
+              "type": "Bonus action",
+              "attackBonus": 6,
+              "damageDice": "1d4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Two-weapon fighting; no +4 damage.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-sneak",
+              "name": "Sneak Attack",
+              "type": "Once per turn",
+              "attackBonus": null,
+              "damageDice": "2d6",
+              "damageType": "extra",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            }
+          ],
+          "actions": [
+            {
+              "id": "ringgo-cunning-dash",
+              "name": "Cunning Action: Dash",
+              "type": "Bonus action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Move up to your speed again this turn.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-cunning-disengage",
+              "name": "Cunning Action: Disengage",
+              "type": "Bonus action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Movement this turn does not provoke opportunity attacks.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-cunning-hide",
+              "name": "Cunning Action: Hide",
+              "type": "Bonus action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Attempt to hide if the circumstances allow it.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-thaumaturgy",
+              "name": "Thaumaturgy",
+              "type": "Action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Tiefling cantrip: create a minor supernatural sign within 30 feet; no slot.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-hellish-rebuke",
+              "name": "Hellish Rebuke",
+              "type": "Reaction",
+              "attackBonus": null,
+              "damageDice": "3d10",
+              "damageType": "fire",
+              "saveAbility": "DEX",
+              "saveDC": 14,
+              "effect": "Once per long rest as a 2nd-level spell, after a creature you can see within 60 feet damages you. Dexterity save DC 14 for half fire damage.",
+              "resourceId": "ringgo-hellish-rebuke",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-assassinate",
+              "name": "Assassinate",
+              "type": "On attack",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Advantage against any creature that has not yet taken a turn in this combat. A hit against a surprised creature is a critical hit.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            }
+          ],
+          "resources": [
+            {
+              "id": "ringgo-arrows",
+              "name": "Arrows",
+              "max": 20,
+              "current": 6,
+              "restoreShort": 0,
+              "restoreLong": false,
+              "unit": "arrows",
+              "slotLevel": 0
+            },
+            {
+              "id": "ringgo-hellish-rebuke",
+              "name": "Hellish Rebuke",
+              "max": 1,
+              "current": 1,
+              "restoreShort": 0,
+              "restoreLong": true,
+              "unit": "use",
+              "slotLevel": 0
+            },
+            {
+              "id": "mock-ringgo-potion",
+              "name": "Recovered healing potion",
+              "max": 1,
+              "current": 0,
+              "restoreShort": 0,
+              "restoreLong": false,
+              "unit": "potion",
+              "slotLevel": 0
+            }
+          ],
+          "spells": [
+            {
+              "name": "Thaumaturgy",
+              "level": 0,
+              "prepared": true,
+              "notes": "Tiefling racial cantrip; Charisma spellcasting."
+            },
+            {
+              "name": "Hellish Rebuke",
+              "level": 2,
+              "prepared": true,
+              "notes": "Tiefling Infernal Legacy at character level 3: cast once per long rest as a 2nd-level spell; Dexterity save DC 14, 3d10 fire."
+            }
+          ],
+          "equipment": [
+            {
+              "name": "Rapier",
+              "quantity": 1,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Shortbow",
+              "quantity": 1,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Dagger",
+              "quantity": 2,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Studded leather",
+              "quantity": 1,
+              "category": "Armor",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Thieves’ tools",
+              "quantity": 1,
+              "category": "Tool",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Arrows",
+              "quantity": 20,
+              "category": "Ammunition",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Hammer",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Mess kit",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Backpack",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Crowbar",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "PDF lists two",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Ball bearings",
+              "quantity": 999,
+              "category": "Gear",
+              "notes": "One bag",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Bedroll",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Bell",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Candle",
+              "quantity": 5,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Waterskin",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "String",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Piton",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "The current sheet says piton, not potion.",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Rations",
+              "quantity": 15,
+              "category": "Consumable",
+              "notes": "One day each",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Rope, hempen 50 ft.",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Hooded lantern",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Oil flask",
+              "quantity": 2,
+              "category": "Consumable",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Torch",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Tinderbox",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "Updated PDF lists two",
+              "attuned": false,
+              "equipped": false
+            }
+          ],
+          "money": {
+            "cp": 0,
+            "sp": 0,
+            "ep": 0,
+            "gp": 25,
+            "pp": 0
+          },
+          "features": [
+            {
+              "name": "Sneak Attack",
+              "text": "2d6 once per turn on a qualifying finesse or ranged hit.",
+              "source": "Ringgo level 3 PDF p. 2"
+            },
+            {
+              "name": "Cunning Action",
+              "text": "Dash, Disengage, or Hide as a bonus action on each of your turns.",
+              "source": "Ringgo PDF p. 2"
+            },
+            {
+              "name": "Expertise",
+              "text": "Stealth and Investigation. Investigation is the DM-confirmed second choice after this export.",
+              "source": "Ringgo PDF p. 2; DM ruling 2026-09-25"
+            },
+            {
+              "name": "Hellish Resistance",
+              "text": "Resistance to fire damage.",
+              "source": "Ringgo PDF p. 2"
+            },
+            {
+              "name": "Infernal Legacy",
+              "text": "Thaumaturgy cantrip and Hellish Rebuke once per long rest as a 2nd-level spell at this level.",
+              "source": "Ringgo level 3 PDF pp. 2, 5"
+            },
+            {
+              "name": "Assassinate",
+              "text": "Advantage on attacks against creatures that have not taken a turn yet; a hit against a surprised target is a critical hit.",
+              "source": "Ringgo level 3 PDF p. 2"
+            },
+            {
+              "name": "Bonus Proficiencies",
+              "text": "Disguise kit and poisoner’s kit from Assassin archetype.",
+              "source": "Ringgo level 3 PDF p. 2"
+            },
+            {
+              "name": "Training",
+              "text": "Light armor; simple weapons, hand crossbow, longsword, rapier, shortsword; thieves’ tools, playing cards, land vehicles.",
+              "source": "Ringgo PDF p. 1"
+            }
+          ],
+          "inspiration": false,
+          "death": {
+            "successes": 0,
+            "failures": 0,
+            "stable": false
+          },
+          "exhaustion": 0,
+          "conditions": [],
+          "concentration": "",
+          "effects": [],
+          "notes": "Updated player export is level 3 Rogue Assassin, max HP 24; current HP blank, so preserve live damage. Ignore Nick and Vex 2024 labels under the 2014 rules profile. DM confirmed Investigation as second Expertise on 2026-09-25; updated PDF still leaves it unmarked. PDF lists ten pitons, not potions. The PDF account name is Josvo; campaign player assignment remains Cade.",
+          "publicNotes": "Isolated mock character, level 3. Current sheet and live resources govern.",
+          "publicOptions": {
+            "showHp": true,
+            "showActions": true,
+            "showResources": false,
+            "showStatus": true
+          },
+          "passiveOverride": {
+            "perception": null,
+            "insight": null,
+            "investigation": null
+          },
+          "levelHistory": [],
+          "management": {
+            "favorites": []
+          }
+        }
+      },
+      {
+        "date": "2026-10-12T20:31:48.946Z",
+        "level": 5,
+        "summary": "Level 5: Corrected full mock session 4 completed; reviewed progression; HP die 5 (d8), CON 2, maximum HP 29 → 36",
+        "snapshot": {
+          "id": "pc-ringgo",
+          "name": "Ringgo Paul",
+          "role": "pc",
+          "player": "Cade",
+          "className": "Rogue · Assassin",
+          "ancestry": "Tiefling",
+          "background": "Criminal / Spy",
+          "level": 4,
+          "rules": "2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export",
+          "source": "Josvo_171417930-2.pdf · Ringgo pp. 1–5",
+          "sourceStatus": "Approved level 4 · Piercer; HP d8 roll 3; Tasha’s Cauldron of Everything; 2014 Rogue",
+          "proficiency": 2,
+          "abilities": {
+            "str": 7,
+            "dex": 20,
+            "con": 14,
+            "int": 10,
+            "wis": 10,
+            "cha": 18
+          },
+          "saves": {
+            "str": {
+              "rank": 0,
+              "override": -2
+            },
+            "dex": {
+              "rank": 1,
+              "override": 7
+            },
+            "con": {
+              "rank": 0,
+              "override": 2
+            },
+            "int": {
+              "rank": 1,
+              "override": 2
+            },
+            "wis": {
+              "rank": 0,
+              "override": 0
+            },
+            "cha": {
+              "rank": 0,
+              "override": 4
+            }
+          },
+          "skills": {
+            "Acrobatics": {
+              "rank": 1,
+              "override": 7
+            },
+            "Animal Handling": {
+              "rank": 0,
+              "override": null
+            },
+            "Arcana": {
+              "rank": 0,
+              "override": null
+            },
+            "Athletics": {
+              "rank": 0,
+              "override": null
+            },
+            "Deception": {
+              "rank": 1,
+              "override": 6
+            },
+            "History": {
+              "rank": 0,
+              "override": null
+            },
+            "Insight": {
+              "rank": 0,
+              "override": null
+            },
+            "Intimidation": {
+              "rank": 0,
+              "override": null
+            },
+            "Investigation": {
+              "rank": 2,
+              "override": 4
+            },
+            "Medicine": {
+              "rank": 0,
+              "override": null
+            },
+            "Nature": {
+              "rank": 0,
+              "override": null
+            },
+            "Perception": {
+              "rank": 1,
+              "override": 2
+            },
+            "Performance": {
+              "rank": 0,
+              "override": null
+            },
+            "Persuasion": {
+              "rank": 1,
+              "override": 6
+            },
+            "Religion": {
+              "rank": 0,
+              "override": null
+            },
+            "Sleight of Hand": {
+              "rank": 1,
+              "override": 7
+            },
+            "Stealth": {
+              "rank": 2,
+              "override": 9
+            },
+            "Survival": {
+              "rank": 0,
+              "override": null
+            }
+          },
+          "speed": 30,
+          "senses": "Darkvision 60 ft.; fire resistance",
+          "languages": "Common, Infernal, Thieves’ Cant",
+          "ac": 17,
+          "hp": 29,
+          "maxHp": 29,
+          "tempHp": 0,
+          "hitDice": {
+            "die": 8,
+            "current": 4,
+            "max": 4,
+            "details": "4d8",
+            "pools": [
+              {
+                "die": 8,
+                "current": 4,
+                "max": 4
+              }
+            ]
+          },
+          "attacks": [
+            {
+              "id": "ringgo-rapier",
+              "name": "Rapier",
+              "type": "Action",
+              "attackBonus": 7,
+              "damageDice": "1d8+5",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Finesse; Sneak Attack may add 2d6 once per turn.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-shortbow",
+              "name": "Shortbow",
+              "type": "Action",
+              "attackBonus": 7,
+              "damageDice": "1d6+5",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Range 80/320; Sneak Attack may add 2d6.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-dagger",
+              "name": "Dagger",
+              "type": "Action",
+              "attackBonus": 7,
+              "damageDice": "1d4+5",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Finesse, light, thrown 20/60.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-offhand",
+              "name": "Second dagger",
+              "type": "Bonus action",
+              "attackBonus": 7,
+              "damageDice": "1d4",
+              "damageType": "piercing",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Two-weapon fighting; no Dexterity modifier to damage.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-sneak",
+              "name": "Sneak Attack",
+              "type": "Once per turn",
+              "attackBonus": null,
+              "damageDice": "2d6",
+              "damageType": "extra",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            }
+          ],
+          "actions": [
+            {
+              "id": "ringgo-cunning-dash",
+              "name": "Cunning Action: Dash",
+              "type": "Bonus action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Move up to your speed again this turn.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-cunning-disengage",
+              "name": "Cunning Action: Disengage",
+              "type": "Bonus action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Movement this turn does not provoke opportunity attacks.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-cunning-hide",
+              "name": "Cunning Action: Hide",
+              "type": "Bonus action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Attempt to hide if the circumstances allow it.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-thaumaturgy",
+              "name": "Thaumaturgy",
+              "type": "Action",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Tiefling cantrip: create a minor supernatural sign within 30 feet; no slot.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-hellish-rebuke",
+              "name": "Hellish Rebuke",
+              "type": "Reaction",
+              "attackBonus": null,
+              "damageDice": "3d10",
+              "damageType": "fire",
+              "saveAbility": "DEX",
+              "saveDC": 14,
+              "effect": "Once per long rest as a 2nd-level spell, after a creature you can see within 60 feet damages you. Dexterity save DC 14 for half fire damage.",
+              "resourceId": "ringgo-hellish-rebuke",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-assassinate",
+              "name": "Assassinate",
+              "type": "On attack",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Advantage against any creature that has not yet taken a turn in this combat. A hit against a surprised creature is a critical hit.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-piercer-reroll",
+              "name": "Piercer: reroll damage",
+              "type": "Once per turn on a hit",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "After a piercing hit, reroll one damage die from that attack; use the new roll. A piercing Sneak Attack die also qualifies.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            },
+            {
+              "id": "ringgo-piercer-critical",
+              "name": "Piercer: critical hit",
+              "type": "On a piercing critical hit",
+              "attackBonus": null,
+              "damageDice": "",
+              "damageType": "",
+              "saveAbility": "",
+              "saveDC": null,
+              "effect": "Add one extra weapon damage die: rapier +1d8, shortbow +1d6, or dagger +1d4. This extra die is not doubled.",
+              "resourceId": "",
+              "cost": 1,
+              "prepared": true
+            }
+          ],
+          "resources": [
+            {
+              "id": "ringgo-arrows",
+              "name": "Arrows",
+              "max": 40,
+              "current": 26,
+              "restoreShort": 0,
+              "restoreLong": false,
+              "unit": "arrows",
+              "slotLevel": 0
+            },
+            {
+              "id": "ringgo-hellish-rebuke",
+              "name": "Hellish Rebuke",
+              "max": 1,
+              "current": 1,
+              "restoreShort": 0,
+              "restoreLong": true,
+              "unit": "use",
+              "slotLevel": 0
+            },
+            {
+              "id": "mock-ringgo-potion",
+              "name": "Recovered healing potion",
+              "max": 1,
+              "current": 0,
+              "restoreShort": 0,
+              "restoreLong": false,
+              "unit": "potion",
+              "slotLevel": 0
+            }
+          ],
+          "spells": [
+            {
+              "name": "Thaumaturgy",
+              "level": 0,
+              "prepared": true,
+              "notes": "Tiefling racial cantrip; Charisma spellcasting."
+            },
+            {
+              "name": "Hellish Rebuke",
+              "level": 2,
+              "prepared": true,
+              "notes": "Tiefling Infernal Legacy at character level 3: cast once per long rest as a 2nd-level spell; Dexterity save DC 14, 3d10 fire."
+            }
+          ],
+          "equipment": [
+            {
+              "name": "Rapier",
+              "quantity": 1,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Shortbow",
+              "quantity": 1,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Dagger",
+              "quantity": 2,
+              "category": "Weapon",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Studded leather",
+              "quantity": 1,
+              "category": "Armor",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Thieves’ tools",
+              "quantity": 1,
+              "category": "Tool",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Arrows",
+              "quantity": 26,
+              "category": "Ammunition",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Hammer",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Mess kit",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Backpack",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Crowbar",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "PDF lists two",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Ball bearings",
+              "quantity": 999,
+              "category": "Gear",
+              "notes": "One bag",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Bedroll",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Bell",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Candle",
+              "quantity": 5,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Waterskin",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "String",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Piton",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "The current sheet says piton, not potion.",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Rations",
+              "quantity": 15,
+              "category": "Consumable",
+              "notes": "One day each",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Rope, hempen 50 ft.",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Hooded lantern",
+              "quantity": 1,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Oil flask",
+              "quantity": 2,
+              "category": "Consumable",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Torch",
+              "quantity": 10,
+              "category": "Gear",
+              "notes": "",
+              "attuned": false,
+              "equipped": false
+            },
+            {
+              "name": "Tinderbox",
+              "quantity": 2,
+              "category": "Gear",
+              "notes": "Updated PDF lists two",
+              "attuned": false,
+              "equipped": false
+            }
+          ],
+          "money": {
+            "cp": 0,
+            "sp": 0,
+            "ep": 0,
+            "gp": 24,
+            "pp": 0
+          },
+          "features": [
+            {
+              "name": "Sneak Attack",
+              "text": "2d6 once per turn on a qualifying finesse or ranged hit.",
+              "source": "Ringgo level 3 PDF p. 2"
+            },
+            {
+              "name": "Cunning Action",
+              "text": "Dash, Disengage, or Hide as a bonus action on each of your turns.",
+              "source": "Ringgo PDF p. 2"
+            },
+            {
+              "name": "Expertise",
+              "text": "Stealth and Investigation. Investigation is the DM-confirmed second choice after this export.",
+              "source": "Ringgo PDF p. 2; DM ruling 2026-09-25"
+            },
+            {
+              "name": "Hellish Resistance",
+              "text": "Resistance to fire damage.",
+              "source": "Ringgo PDF p. 2"
+            },
+            {
+              "name": "Infernal Legacy",
+              "text": "Thaumaturgy cantrip and Hellish Rebuke once per long rest as a 2nd-level spell at this level.",
+              "source": "Ringgo level 3 PDF pp. 2, 5"
+            },
+            {
+              "name": "Assassinate",
+              "text": "Advantage on attacks against creatures that have not taken a turn yet; a hit against a surprised target is a critical hit.",
+              "source": "Ringgo level 3 PDF p. 2"
+            },
+            {
+              "name": "Bonus Proficiencies",
+              "text": "Disguise kit and poisoner’s kit from Assassin archetype.",
+              "source": "Ringgo level 3 PDF p. 2"
+            },
+            {
+              "name": "Training",
+              "text": "Light armor; simple weapons, hand crossbow, longsword, rapier, shortsword; thieves’ tools, playing cards, land vehicles.",
+              "source": "Ringgo PDF p. 1"
+            },
+            {
+              "name": "Piercer",
+              "text": "DEX +1 (now 20). Once per turn on a piercing hit, reroll one damage die from the attack and use the new roll. On a piercing critical hit, add one extra weapon damage die.",
+              "source": "Tasha’s Cauldron of Everything · feat (2014 rules)"
+            }
+          ],
+          "inspiration": false,
+          "death": {
+            "successes": 0,
+            "failures": 0,
+            "stable": false
+          },
+          "exhaustion": 0,
+          "conditions": [],
+          "concentration": "",
+          "effects": [],
+          "notes": "Updated player export is level 3 Rogue Assassin, max HP 24; current HP blank, so preserve live damage. Ignore Nick and Vex 2024 labels under the 2014 rules profile. DM confirmed Investigation as second Expertise on 2026-09-25; updated PDF still leaves it unmarked. PDF lists ten pitons, not potions. The PDF account name is Josvo; campaign player assignment remains Cade.",
+          "publicNotes": "Isolated mock character level 4. Current sheet governs; futurefeaturesawaitreview.",
+          "publicOptions": {
+            "showHp": true,
+            "showActions": true,
+            "showResources": false,
+            "showStatus": true
+          },
+          "passiveOverride": {
+            "perception": null,
+            "insight": null,
+            "investigation": null
+          },
+          "levelHistory": [],
+          "management": {
+            "favorites": []
+          }
+        }
+      }
+    ],
+    "management": {
+      "favorites": []
+    }
+  }
+}

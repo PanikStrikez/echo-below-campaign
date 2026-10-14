@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791838356510-bo0b9cvt",
+            "label": "Unarmed Strike · attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              10
+            ],
+            "total": 17,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:36 PM"
+          },
+          {
+            "id": "pa-1791838356510-4pp3ugm1",
+            "label": "Unarmed Strike · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:36 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-9",
+            "text": "Guardroom Skeleton 9: 17 vs AC 13: hit, 6 bludgeoning → 12; temp HP absorbed 0; vulnerabilities: bludgeoning"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

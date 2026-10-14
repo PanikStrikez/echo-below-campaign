@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "result": {
+    "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n← Back to session map\n⌕ Search\nInbox · 1 urgent\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout\nOBJECTIVEComplete the delivery, then investigate the manor and rescue Gundren and other captives.\nReview Common room ruffian 1 · Ray of Frost · speed −10 ft due\nTV connected\nNow showing · Redbrand Hideout\nCollapse guide\nNotices · 0 issues · 19 updates\nPRACTICE CAMPAIGN · changes stay in this copy\nReturn to real campaign\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nT\nT\nD\n▼ TURN\nD\nR\nR\nP\nP\nA\nA\nR1\nR1\n!\nR2\nR2\n!\nR3\nR3\n!\nR4\nR4\n!\n✦\nAT THE TABLE\nNext action\n✕\nGuide\nDetails\nScene\nToken\nEncounter\nClue\nInbox\nTurn\nSession 2 · Phandalin\n\nObjective: Complete the delivery, then investigate the manor and rescue Gundren and other captives.\n\nScene notes\n← Back to next action\nBefore ending this turn\n\nCommon room ruffian 1 · Ray of Frost · speed −10 ft due\n\nReview effect\nAdvance anyway; keep these reminders\nTokens\nFog\nUndo\nNext turn\nMap tools\nTHE ECHO BELOW · DM WORKSPACE\nEncounters & combat\nSession 2 · Phandalin · 10 encounters\nClose\nTool\nEncounter plan & waves\nRoll dice\nApply damage or healing\nTurn effects & reactions\nArea spell\nCreature cards\nPacing\nAfter combat\nStart combat\n\nPlace participants on the map, then set their initiative. Everyone with a token on this map needs a value before the order is built.\n\nTrista\nInitiative\nInitiative bonus\nRoll\nDonavan Kemp\nInitiative\nInitiative bonus\nRoll\nRinggo Paul\nInitiative\nInitiative bonus\nRoll\nPebble\nInitiative\nInitiative bonus\nRoll\nAldric Vane\nInitiative\nInitiative bonus\nRoll\nCommon room ruffian 2\nInitiative\nInitiative bonus\nRoll\nCommon room ruffian 3\nInitiative\nInitiative bonus\nRoll\nCommon room ruffian 4\nInitiative\nInitiative bonus\nRoll\nRoll placed enemiesBuild turn order\nTurn flow\n\nSurprise, readied actions, reactions, concentration, and ongoing effects are tracked here. Reminders never apply damage on their own.\n\nTrista · 20 · 11/11 HP\nSurprised\nReaction used\nReadied action and trigger\nConcentration\nOpen token card\nDonavan Kemp · 20 · 17/17 HP\nSurprised\nReaction used\nReadied action and trigger\nConcentration\nOpen token card\nRinggo Paul · 20 · 22/22 HP\nSurprised\nReaction used\nReadied action and trigger\nConcentration\nOpen token card\nPebble · 20 · 7/12 HP\nSurprised\nReaction used\nReadied action and trigger\nConcentration\nOpen token card\nAldric Vane · 20 · 9/18 HP\nSurprised\nReaction used\nReadied action and trigger\nConcentration\nOpen token card\nCommon room ruffian 1 · 10 · 0/16 HP\nSurprised\nReaction used\nReadied action and trigger\nConcentration\nOpen token card\nCommon room ruffian 2 · 10 · 12/16 HP\nSurprised\nReaction used\nReadied action and trigger\nConcentration\nOpen token card\nCommon room ruffian 3 · 10 · 16/16 HP\nSurprised\nReaction used\nReadied action and trigger\nConcentration\nOpen token card\nCommon room ruffian 4 · 10 · 16/16 HP\nSurprised\nReaction used\nReadied action and trigger\nConcentration\nOpen token card\nTimed conditions and effect reminders\n\nSet the affected token and the actor whose start or end of turn matters. A count of 1 flags the next matching turn.\n\nCommon room ruffian 1 · Ray of Frost · speed −10 ft · DUE\n\nEffect · start of Donavan Kemp turn · 0 triggers left · Apply until the caster’s next turn starts. Movement remains manual.\n\nEdit timerAcknowledge / resetEnd effect\nAdd timed effect",
+    "buttons": [
+      "Map tools",
+      "Close",
+      "Roll",
+      "Roll",
+      "Roll",
+      "Roll",
+      "Roll",
+      "Roll",
+      "Roll",
+      "Roll",
+      "Roll placed enemies",
+      "Build turn order",
+      "Open token card",
+      "Open token card",
+      "Open token card",
+      "Open token card",
+      "Open token card",
+      "Open token card",
+      "Open token card",
+      "Open token card",
+      "Open token card",
+      "Edit timer",
+      "Acknowledge / reset",
+      "End effect",
+      "Add timed effect"
+    ]
+  }
+}

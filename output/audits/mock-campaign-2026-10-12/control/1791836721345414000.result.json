@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791836721506-erij90jw",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              15
+            ],
+            "total": 21,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:21 PM"
+          },
+          {
+            "id": "pa-1791836721506-ss67aqg3",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:21 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-3",
+            "text": "Crypt skeleton 3: 21 vs AC 13: hit, 9 piercing → 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

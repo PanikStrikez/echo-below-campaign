@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "result": {
+    "id": "mock-pc-pebble-road-1",
+    "actor": "pc-pebble",
+    "label": "Warhammer",
+    "rolls": [
+      {
+        "id": "pa-1791829423977-50pqqaoo",
+        "label": "Warhammer · attack 1",
+        "notation": "1d20+6",
+        "parts": [
+          9
+        ],
+        "total": 15,
+        "natural": 9,
+        "public": true,
+        "kind": "digital",
+        "time": "12:23:43 PM"
+      },
+      {
+        "id": "pa-1791829423977-dr2cpdmp",
+        "label": "Warhammer · effect 1.1",
+        "notation": "1d8+4",
+        "parts": [
+          6
+        ],
+        "total": 10,
+        "natural": 6,
+        "public": true,
+        "kind": "digital",
+        "time": "12:23:43 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "goblin-2",
+        "text": "Goblin 2: 15 vs AC 15: hit, 10 bludgeoning → 10; temp HP absorbed 0"
+      }
+    ],
+    "costs": [],
+    "usage": "action"
+  }
+}

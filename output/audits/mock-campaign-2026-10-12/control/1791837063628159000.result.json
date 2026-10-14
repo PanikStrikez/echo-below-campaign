@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "result": {
+    "id": "s3-tt-9",
+    "title": "Thundertree 9 · Herbalist’s shop",
+    "scene": "lmop-map-thundertree-overview",
+    "tv": "Show only this location and creatures the characters have discovered. Keep other buildings fogged.",
+    "read": [
+      "Broken bottles and unreadable books fill an old shop. ",
+      "Glass fragments and damaged pages share the floor beneath the shelving. You can examine one storage place at a time rather than overturn the whole room. If someone has given you a description to follow, you can compare it with what you actually see here."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "run": [
+      "If Mirna Dendrar sent them, the heirloom case is found automatically. Otherwise DC 15 Perception finds it behind the shelves.",
+      "Inside is her emerald necklace worth 200 gp. Record whether the party returns it; doing so earns the printed reward if using XP."
+    ],
+    "private": [
+      "Lost Mine of Phandelver (2014), printed pp. 30–35; use its private marked map for exact building positions."
+    ],
+    "flowVersion": 1,
+    "choices": [
+      "Return to the village map",
+      "Close the session here"
+    ]
+  }
+}

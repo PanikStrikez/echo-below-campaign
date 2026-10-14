@@ -1,0 +1,4 @@
+{
+  "ok": true,
+  "result": "(r)=>{const first=__baseEnemyAttack(r),s=__mock.state.state,actor=s.tokens.find(t=>t.id===r.characterId);if(/ruffian/i.test(actor.id)&&actor.hp>0){let target=s.tokens.find(t=>t.id===r.targetIds[0]);if(target.hp<=0)target=s.tokens.find(t=>t.team==='pc'&&t.hp>0&&t.placed&&t.scene===s.scene);if(target){window.__extraAttack=true;try{first.multiattackSecond=__baseEnemyAttack(ECHO_COMBAT_ACTIONS.stage(s,{actorId:actor.id,actionType:'attack',actionIndex:0,targetIds:[target.id]}));}finally{window.__extraAttack=false}}}return first}"
+}

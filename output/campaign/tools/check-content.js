@@ -106,9 +106,9 @@ const board = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf
 const basic = fs.readFileSync(path.join(root, 'Session-01-TV-Display-basic.html'), 'utf8');
 for (const name of ['road-ambush-painted-gridless.png', 'cave-approach-painted-gridless.png', 'cragmaw-hideout-painted-gridless.png']) {
   assert(fs.existsSync(path.join(root, 'session-01-visuals', name)));
-  assert(board.includes(name) && basic.includes(name), `Map not wired into both views: ${name}`);
+  assert(fs.readFileSync(path.join(root,'Echo-Below-Table-Content.js'),'utf8').includes(name) && basic.includes(name), `Map not wired into both views: ${name}`);
 }
-assert(board.includes('if (isMapScene() && state.grid && visibility?.grid !== false)'));
-assert(board.includes('sceneImage: scene => resolveImage(scene.image)'));
+assert(board.includes('if (isMapScene() && state.grid && visibility?.grid !== false && (!denseFloor || (mapScene.view?.zoom||1)>=5))'));
+assert(board.includes("sceneImage: scene => resolveImage(scene.image || '')"));
 assert(!basic.includes('cragmaw-hideout-map-source-page.png'));
 console.log('Content checks passed: source books, page links, creature pack, exceptions, and audio cues.');

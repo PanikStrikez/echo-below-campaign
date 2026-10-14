@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791836722900-jgtq8tlp",
+            "label": "Unarmed Strike · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              19
+            ],
+            "total": 25,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:22 PM"
+          },
+          {
+            "id": "pa-1791836722900-dip4fle1",
+            "label": "Unarmed Strike · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              6
+            ],
+            "total": 10,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:22 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-3",
+            "text": "Crypt skeleton 3: 25 vs AC 13: hit, 10 bludgeoning → 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

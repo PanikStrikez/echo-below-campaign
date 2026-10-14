@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "label": "Second Wind",
+    "targets": [
+      "Pebble"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791838312403-pcev93c9",
+        "label": "Second Wind · healing 1.1",
+        "notation": "1d10+6",
+        "parts": [
+          1
+        ],
+        "total": 7,
+        "natural": 1,
+        "public": true,
+        "kind": "digital",
+        "time": "2:51:52 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "pc-pebble",
+        "text": "Pebble: 7 healing → 7; temp HP absorbed 0"
+      }
+    ],
+    "costs": [
+      {
+        "id": "pebble-second-wind",
+        "delta": -1
+      }
+    ]
+  }
+}

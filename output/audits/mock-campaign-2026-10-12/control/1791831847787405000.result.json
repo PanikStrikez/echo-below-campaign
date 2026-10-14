@@ -1,0 +1,115 @@
+{
+  "ok": true,
+  "result": {
+    "last": {
+      "requestId": "dm-action-1791831838551-0wpnd3d",
+      "revision": 1,
+      "baseRevision": 18,
+      "plan": {
+        "shield": false,
+        "effectRulingRequired": false,
+        "usage": "action",
+        "override": "",
+        "concentration": "keep",
+        "concentrationName": "",
+        "grantAction": false,
+        "costs": [],
+        "effectNote": "On a hit it attaches. While attached it stops attacking; at the start of each stirge turn its target loses 1d4+3 HP. Track the attached target and blood drained.",
+        "acknowledged": true,
+        "reactionsChecked": true,
+        "reminders": [],
+        "steps": [
+          {
+            "targetId": "pc-pebble",
+            "kind": "attack",
+            "sharedRoll": "",
+            "notation": "1d4+3",
+            "bonus": 5,
+            "mode": "normal",
+            "magical": false,
+            "damageType": "piercing",
+            "saveAbility": "DEX",
+            "dc": 10,
+            "success": "none",
+            "cover": 0,
+            "ac": "",
+            "condition": "",
+            "conditionWhen": "always",
+            "acSet": "",
+            "manual": "",
+            "crit": 20
+          }
+        ]
+      },
+      "patches": [
+        {
+          "kind": "queue",
+          "id": "",
+          "field": "",
+          "before": {
+            "key": "lmop-map-wave-south:1:s4-wave-3-stirge-2",
+            "done": [],
+            "movementUsed": 0,
+            "actionUsed": false,
+            "bonusUsed": false
+          },
+          "after": {
+            "key": "lmop-map-wave-south:1:s4-wave-3-stirge-2",
+            "done": [],
+            "movementUsed": 0,
+            "actionUsed": true,
+            "bonusUsed": false
+          }
+        }
+      ],
+      "effects": [],
+      "rolls": [
+        {
+          "id": "pa-1791831838564-g3eapk3g",
+          "label": "Blood Drain · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            6
+          ],
+          "total": 11,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "1:03:58 PM"
+        },
+        {
+          "id": "pa-1791831838564-nkm8ovom",
+          "label": "Blood Drain · effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            3
+          ],
+          "total": 6,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "1:03:58 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 11 vs AC 18: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "summary": "Pebble: 11 vs AC 18: miss, 0 piercing → 0; temp HP absorbed 0",
+      "at": "2026-10-12T19:03:58.565Z"
+    },
+    "methods": [
+      "normalize",
+      "init",
+      "render",
+      "target",
+      "targetId",
+      "attackChoices",
+      "sequence",
+      "damageDice",
+      "attackOutcome"
+    ]
+  }
+}

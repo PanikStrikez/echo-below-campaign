@@ -45,7 +45,7 @@
   if(list.reduce((n,p)=>n+p.max,0)!==s.hitDice.max||list.reduce((n,p)=>n+p.current,0)!==s.hitDice.current)throw Error('Hit Die pool totals must match the current sheet before adding the new die.');
   let pool=list.find(p=>p.die===die);if(!pool){pool={die,max:0,current:0};list.push(pool);}pool.max++;pool.current++;setPools(next,list);
   const summary=`Level ${next.level}: ${options.summary||'Reviewed advancement'}; HP die ${roll} (d${die}), CON ${con}, maximum HP ${s.maxHp} → ${next.maxHp}`;
-  archive(s,next,summary);return stage(s,next,summary);
+  archive(s,next,summary);const reviewed=stage(s,next,summary);reviewed.warnings=[];if(next.proficiency!==s.proficiency||JSON.stringify(next.abilities)!==JSON.stringify(s.abilities))for(const kind of ['skills','saves'])for(const [key,row]of Object.entries(next[kind]||{}))if(row.override!==null&&row.override!==undefined&&row.override!==''&&row.override===s[kind]?.[key]?.override){const derived=D().rankValue({...next,[kind]:{...next[kind],[key]:{...row,override:null}}},key,kind);reviewed.warnings.push(`${key}: recorded override ${row.override} is preserved; ability/proficiency calculation would be ${derived}. Review its source before keeping or changing it.`);}return reviewed;
  }
  function rest(s,kind,options={}){
   const list=clone(options.pools||pools(s));setPools(clone(s),list);

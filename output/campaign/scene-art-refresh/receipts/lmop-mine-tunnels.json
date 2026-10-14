@@ -1,0 +1,36 @@
+{
+  "id": "lmop-mine-tunnels",
+  "title": "Wave Echo Cave · Area 2 · Mine tunnels",
+  "image": "lmop-visuals/mine-tunnels.png",
+  "key": "E02",
+  "chapter": "Wave Echo Cave",
+  "reveal": "On entering area 2",
+  "sourceRecordIds": [
+    "s4-room-2"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-room-2",
+      "title": "Area 2 · Mine tunnels",
+      "read": [
+        "Low passages cross and divide ahead of you. Tool marks stop abruptly at unfinished stone faces. Between the turns, even your footsteps seem to lose their direction.",
+        "The low stonework makes every turn feel close, and the unfinished faces give several branches a similar appearance. You can keep a mark at the last junction, follow the group carefully, or stop to compare the visible passages before choosing one. Your route back is something you can record as you go."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "Ancient mine-tunnel junction, ceilings only SIX feet high, low narrow roughly hewn passages intersect, abandoned unfinished branches and tool marks. No doors or grand cathedral scale. One ochre jelly is concealed out of sight, not visible. No permanent lights; off-frame lantern. No undiscovered rooms shown.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 2 · Mine tunnels\nObservable scene and constraints: Ancient mine-tunnel junction, ceilings only SIX feet high, low narrow roughly hewn passages intersect, abandoned unfinished branches and tool marks. No doors or grand cathedral scale. One ochre jelly is concealed out of sight, not visible. No permanent lights; off-frame lantern. No undiscovered rooms shown.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "39192024c6dc4728b354871a294a2f172f121e2d1cdcd4b556364544efe92891",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-mine-tunnels.png",
+  "generatedAt": "2026-10-12T16:27:57.932Z",
+  "candidateHash": "974e13c052e36d932880ed0f24676d94c4b2fe12c420f3ac19597f4fdd30eb15",
+  "review": "passed",
+  "reviewedHash": "974e13c052e36d932880ed0f24676d94c4b2fe12c420f3ac19597f4fdd30eb15",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.236Z",
+  "installedHash": "974e13c052e36d932880ed0f24676d94c4b2fe12c420f3ac19597f4fdd30eb15",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/mine-tunnels.png"
+}

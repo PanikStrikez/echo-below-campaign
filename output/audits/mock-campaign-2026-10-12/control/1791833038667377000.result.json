@@ -1,0 +1,3644 @@
+{
+  "ok": true,
+  "result": {
+    "phase": "Live",
+    "pack": "",
+    "beat": "trail",
+    "scene": "black",
+    "levels": {
+      "pc-trista": 1,
+      "pc-pebble": 1,
+      "pc-donavan": 1,
+      "pc-ringgo": 1,
+      "pc-aldric": 1
+    },
+    "phones": [
+      {
+        "id": "pc-trista",
+        "status": 200,
+        "data": {
+          "revision": 974,
+          "resyncRequest": 0,
+          "session": "PRACTICE · Session 1 · Goblin Arrows",
+          "character": {
+            "id": "pc-trista",
+            "name": "Trista",
+            "player": "",
+            "className": "Monk 1",
+            "ancestry": "Human",
+            "background": "Criminal / Spy",
+            "level": 1,
+            "rules": "2024 character exception",
+            "proficiency": 2,
+            "speed": 30,
+            "senses": "",
+            "languages": "Common, Orc",
+            "hp": 11,
+            "maxHp": 11,
+            "ac": 14,
+            "tempHp": 0,
+            "hitDice": {
+              "die": 8,
+              "current": 0,
+              "max": 1,
+              "details": "1d8",
+              "pools": [
+                {
+                  "die": 8,
+                  "current": 0,
+                  "max": 1
+                }
+              ]
+            },
+            "abilities": {
+              "str": {
+                "score": 14,
+                "modifier": 2
+              },
+              "dex": {
+                "score": 18,
+                "modifier": 4
+              },
+              "con": {
+                "score": 17,
+                "modifier": 3
+              },
+              "int": {
+                "score": 9,
+                "modifier": -1
+              },
+              "wis": {
+                "score": 11,
+                "modifier": 0
+              },
+              "cha": {
+                "score": 12,
+                "modifier": 1
+              }
+            },
+            "saves": [
+              {
+                "name": "STR",
+                "bonus": 4,
+                "rank": 1
+              },
+              {
+                "name": "DEX",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "CON",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "INT",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "WIS",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "CHA",
+                "bonus": 1,
+                "rank": 0
+              }
+            ],
+            "skills": [
+              {
+                "name": "Acrobatics",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "Animal Handling",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Arcana",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "Athletics",
+                "bonus": 2,
+                "rank": 0
+              },
+              {
+                "name": "Deception",
+                "bonus": 3,
+                "rank": 1
+              },
+              {
+                "name": "History",
+                "bonus": 1,
+                "rank": 1
+              },
+              {
+                "name": "Insight",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Intimidation",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Investigation",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "Medicine",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Nature",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "Perception",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Performance",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Persuasion",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Religion",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "Sleight of Hand",
+                "bonus": 4,
+                "rank": 0
+              },
+              {
+                "name": "Stealth",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "Survival",
+                "bonus": 0,
+                "rank": 0
+              }
+            ],
+            "passives": {
+              "Perception": 10,
+              "Insight": 10,
+              "Investigation": 9
+            },
+            "attacks": [
+              {
+                "id": "trista-dagger",
+                "name": "Dagger",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d6+4",
+                "damageType": "piercing",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Monk weapon; thrown range 20/60 ft.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "trista-spear",
+                "name": "Spear",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d8+4",
+                "damageType": "piercing",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Versatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Choose one or two hands; the recorded d8 is the two-handed spear.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "trista-unarmed",
+                "name": "Unarmed Strike",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d6+4",
+                "damageType": "bludgeoning",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Martial Arts.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "trista-bonus-strike",
+                "name": "Martial Arts unarmed strike",
+                "type": "Bonus action",
+                "attackBonus": 6,
+                "damageDice": "1d6+4",
+                "damageType": "bludgeoning",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "After the Attack action when Martial Arts applies.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              }
+            ],
+            "actions": [],
+            "spells": [],
+            "resources": [],
+            "equipment": [
+              {
+                "name": "Dagger",
+                "quantity": 5,
+                "category": "Weapon",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Spear",
+                "quantity": 1,
+                "category": "Weapon",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Tinker’s tools",
+                "quantity": 1,
+                "category": "Tool",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Bagpipes",
+                "quantity": 1,
+                "category": "Instrument",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Torch",
+                "quantity": 10,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Rations",
+                "quantity": 10,
+                "category": "Consumable",
+                "notes": "One day each",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Oil flask",
+                "quantity": 2,
+                "category": "Consumable",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Rope",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Tinderbox",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              }
+            ],
+            "money": {
+              "cp": 0,
+              "sp": 0,
+              "ep": 0,
+              "gp": 26,
+              "pp": 0
+            },
+            "features": [
+              {
+                "name": "Martial Arts",
+                "text": "One bonus-action Unarmed Strike at level 1 when requirements apply.",
+                "source": "Trista guide p. 6"
+              }
+            ],
+            "inspiration": false,
+            "death": {
+              "successes": 0,
+              "failures": 0,
+              "stable": false
+            },
+            "exhaustion": 0,
+            "conditions": [],
+            "concentration": "",
+            "effects": [],
+            "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+            "favorites": []
+          },
+          "dungeonProtocol": 1,
+          "dungeon": {
+            "enabled": false,
+            "fine": false,
+            "current": [],
+            "explored": [],
+            "objects": [],
+            "passages": []
+          },
+          "searchRequests": [],
+          "travelProtocol": 1,
+          "journey": {
+            "position": null,
+            "destination": "",
+            "weather": "clear",
+            "estimate": null,
+            "places": [
+              {
+                "id": "region-neverwinter",
+                "title": "Neverwinter",
+                "status": "located",
+                "inaccessible": false,
+                "reason": ""
+              },
+              {
+                "id": "region-phandalin",
+                "title": "Phandalin",
+                "status": "located",
+                "inaccessible": false,
+                "reason": ""
+              }
+            ],
+            "events": []
+          },
+          "atlas": null,
+          "atlasImage": "",
+          "travelRequests": [],
+          "playerToolsProtocol": 1,
+          "playerTools": {
+            "notes": [],
+            "sharedClues": [],
+            "itemRequests": [],
+            "bank": {
+              "cp": 0,
+              "sp": 0,
+              "ep": 0,
+              "gp": 0,
+              "pp": 0
+            },
+            "objective": {
+              "text": "Escort the supplies to Phandalin and investigate danger on the road.",
+              "at": "2026-10-12T19:10:34.672Z"
+            },
+            "roster": [
+              {
+                "id": "pc-aldric",
+                "name": "Aldric Vane"
+              },
+              {
+                "id": "pc-pebble",
+                "name": "Pebble"
+              },
+              {
+                "id": "pc-trista",
+                "name": "Trista"
+              },
+              {
+                "id": "pc-ringgo",
+                "name": "Ringgo Paul"
+              },
+              {
+                "id": "pc-donavan",
+                "name": "Donavan Kemp"
+              }
+            ]
+          },
+          "actionProtocol": 1,
+          "combatProtocol": 1,
+          "combatPrompts": {
+            "saves": [],
+            "reactions": []
+          },
+          "movement": {
+            "columns": 30,
+            "feet": 5,
+            "metric": "grid",
+            "speed": 30,
+            "used": 0,
+            "crawling": false,
+            "areas": []
+          },
+          "scene": "black",
+          "sceneTitle": "Black screen",
+          "isMap": false,
+          "mapImage": "",
+          "playerInput": true,
+          "fog": [],
+          "fogged": false,
+          "fineFog": false,
+          "points": [],
+          "tokens": [],
+          "turn": {
+            "round": 0,
+            "activeId": null
+          },
+          "roll": {
+            "id": "1791832509516-7ukbhbevzby",
+            "label": "Trista initiative",
+            "notation": "1d20+4",
+            "parts": [
+              17
+            ],
+            "total": 21
+          },
+          "requests": "Initiative 21 (17 + 4).",
+          "actionRequests": [],
+          "privateClues": [],
+          "inventory": [],
+          "sceneMood": {
+            "minutes": 540,
+            "weather": "clear",
+            "phase": "day"
+          },
+          "campaignJournal": [
+            {
+              "id": "continuity-outcome-1791832923830-zmlxmuz",
+              "title": "CORRECTED MOCK · Road goblin surrendered",
+              "text": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+              "kind": "confirmed",
+              "when": "MOCK Session1"
+            }
+          ],
+          "quests": [],
+          "campaignTracks": [],
+          "initiative": {
+            "open": false,
+            "total": 21,
+            "bonus": 4
+          },
+          "rehearsal": false
+        }
+      },
+      {
+        "id": "pc-pebble",
+        "status": 200,
+        "data": {
+          "revision": 974,
+          "resyncRequest": 0,
+          "session": "PRACTICE · Session 1 · Goblin Arrows",
+          "character": {
+            "id": "pc-pebble",
+            "name": "Pebble",
+            "player": "Byron",
+            "className": "Fighter 1",
+            "ancestry": "Goron (custom lineage)",
+            "background": "Outlander",
+            "level": 1,
+            "rules": "2014 PHB with Tasha options",
+            "proficiency": 2,
+            "speed": 30,
+            "senses": "Darkvision 60 ft.",
+            "languages": "Common, Goron, Dwarvish",
+            "hp": 12,
+            "maxHp": 12,
+            "ac": 18,
+            "tempHp": 0,
+            "hitDice": {
+              "die": 10,
+              "current": 1,
+              "max": 1,
+              "details": "1d10",
+              "pools": [
+                {
+                  "die": 10,
+                  "current": 1,
+                  "max": 1
+                }
+              ]
+            },
+            "abilities": {
+              "str": {
+                "score": 18,
+                "modifier": 4
+              },
+              "dex": {
+                "score": 10,
+                "modifier": 0
+              },
+              "con": {
+                "score": 14,
+                "modifier": 2
+              },
+              "int": {
+                "score": 8,
+                "modifier": -1
+              },
+              "wis": {
+                "score": 13,
+                "modifier": 1
+              },
+              "cha": {
+                "score": 12,
+                "modifier": 1
+              }
+            },
+            "saves": [
+              {
+                "name": "STR",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "DEX",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "CON",
+                "bonus": 4,
+                "rank": 1
+              },
+              {
+                "name": "INT",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "WIS",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "CHA",
+                "bonus": 1,
+                "rank": 0
+              }
+            ],
+            "skills": [
+              {
+                "name": "Acrobatics",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Animal Handling",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Arcana",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "Athletics",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "Deception",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "History",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "Insight",
+                "bonus": 3,
+                "rank": 1
+              },
+              {
+                "name": "Intimidation",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Investigation",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "Medicine",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Nature",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "Perception",
+                "bonus": 3,
+                "rank": 1
+              },
+              {
+                "name": "Performance",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Persuasion",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Religion",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "Sleight of Hand",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Stealth",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Survival",
+                "bonus": 3,
+                "rank": 1
+              }
+            ],
+            "passives": {
+              "Perception": 13,
+              "Insight": 13,
+              "Investigation": 9
+            },
+            "attacks": [
+              {
+                "id": "pebble-hammer",
+                "name": "Warhammer",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d8+4",
+                "damageType": "bludgeoning",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "One-handed with shield; Crusher may move a qualifying target 5 feet once on Pebble’s turn.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "pebble-handaxe",
+                "name": "Handaxe",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d6+4",
+                "damageType": "slashing",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Melee or thrown 20/60 feet.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              }
+            ],
+            "actions": [
+              {
+                "id": "pebble-interception",
+                "name": "Interception",
+                "type": "Reaction",
+                "attackBonus": null,
+                "damageDice": "1d10+2",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Reduce damage when a visible creature hits someone other than Pebble within 5 feet; Pebble must hold a shield or weapon.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.",
+                  "source": {
+                    "book": "2024 Monk / Tasha’s Interception exception",
+                    "printedPage": null,
+                    "rule": "Damage reduction reactions",
+                    "confidence": "approved table choice"
+                  }
+                }
+              },
+              {
+                "id": "pebble-second-wind",
+                "name": "Second Wind",
+                "type": "Bonus action",
+                "attackBonus": null,
+                "damageDice": "1d10+1",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Heal Pebble; once per short or long rest.",
+                "resourceId": "pebble-second-wind",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Self-healing, one bonus action and one use; uses the recorded Fighter level.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 72,
+                    "rule": "Second Wind",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "pebble-crusher",
+                "name": "Crusher",
+                "type": "Once on Pebble’s turn",
+                "attackBonus": null,
+                "damageDice": "",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "After a bludgeoning hit, move a creature no more than one size larger 5 feet into empty space. On a bludgeoning critical hit, attacks against it have advantage until Pebble’s next turn.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "On a qualifying hit choose the legal 5-foot push; confirm size and destination. Critical-hit advantage is a separate reminder.",
+                  "source": {
+                    "book": "Tasha’s Cauldron; approved feat",
+                    "printedPage": null,
+                    "rule": "Crusher",
+                    "confidence": "approved table choice"
+                  }
+                }
+              }
+            ],
+            "spells": [],
+            "resources": [
+              {
+                "id": "pebble-second-wind",
+                "name": "Second Wind",
+                "current": 1,
+                "max": 1,
+                "unit": "use",
+                "slotLevel": 0
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Warhammer",
+                "quantity": 1,
+                "category": "Weapon",
+                "notes": "Stone appearance",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Handaxe",
+                "quantity": 2,
+                "category": "Weapon",
+                "notes": "Stone appearance",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Shield",
+                "quantity": 1,
+                "category": "Armor",
+                "notes": "Slab-like appearance",
+                "equipped": true,
+                "attuned": false
+              },
+              {
+                "name": "Chain mail",
+                "quantity": 1,
+                "category": "Armor",
+                "notes": "Stone appearance; ordinary chain mail rules",
+                "equipped": true,
+                "attuned": false
+              },
+              {
+                "name": "Explorer’s pack",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Staff",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Hunting trap",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              }
+            ],
+            "money": {
+              "cp": 0,
+              "sp": 0,
+              "ep": 0,
+              "gp": 10,
+              "pp": 0
+            },
+            "features": [
+              {
+                "name": "Interception",
+                "text": "Reaction; reduce damage to a nearby other target by 1d10+2.",
+                "source": "Tasha’s / Pebble handout p. 3"
+              },
+              {
+                "name": "Crusher",
+                "text": "Once on own turn move a qualifying target 5 feet after bludgeoning hit; critical hit grants advantage to attacks against it until next turn.",
+                "source": "Tasha’s / Pebble handout p. 3"
+              },
+              {
+                "name": "Second Wind",
+                "text": "Bonus action to regain 1d10+1 HP, once per short or long rest.",
+                "source": "PHB / Pebble handout p. 3"
+              }
+            ],
+            "inspiration": false,
+            "death": {
+              "successes": 0,
+              "failures": 0,
+              "stable": false
+            },
+            "exhaustion": 0,
+            "conditions": [],
+            "concentration": "",
+            "effects": [],
+            "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+            "favorites": []
+          },
+          "dungeonProtocol": 1,
+          "dungeon": {
+            "enabled": false,
+            "fine": false,
+            "current": [],
+            "explored": [],
+            "objects": [],
+            "passages": []
+          },
+          "searchRequests": [],
+          "travelProtocol": 1,
+          "journey": {
+            "position": null,
+            "destination": "",
+            "weather": "clear",
+            "estimate": null,
+            "places": [
+              {
+                "id": "region-neverwinter",
+                "title": "Neverwinter",
+                "status": "located",
+                "inaccessible": false,
+                "reason": ""
+              },
+              {
+                "id": "region-phandalin",
+                "title": "Phandalin",
+                "status": "located",
+                "inaccessible": false,
+                "reason": ""
+              }
+            ],
+            "events": []
+          },
+          "atlas": null,
+          "atlasImage": "",
+          "travelRequests": [],
+          "playerToolsProtocol": 1,
+          "playerTools": {
+            "notes": [],
+            "sharedClues": [],
+            "itemRequests": [],
+            "bank": {
+              "cp": 0,
+              "sp": 0,
+              "ep": 0,
+              "gp": 0,
+              "pp": 0
+            },
+            "objective": {
+              "text": "Escort the supplies to Phandalin and investigate danger on the road.",
+              "at": "2026-10-12T19:10:34.672Z"
+            },
+            "roster": [
+              {
+                "id": "pc-aldric",
+                "name": "Aldric Vane"
+              },
+              {
+                "id": "pc-pebble",
+                "name": "Pebble"
+              },
+              {
+                "id": "pc-trista",
+                "name": "Trista"
+              },
+              {
+                "id": "pc-ringgo",
+                "name": "Ringgo Paul"
+              },
+              {
+                "id": "pc-donavan",
+                "name": "Donavan Kemp"
+              }
+            ]
+          },
+          "actionProtocol": 1,
+          "combatProtocol": 1,
+          "combatPrompts": {
+            "saves": [],
+            "reactions": []
+          },
+          "movement": {
+            "columns": 30,
+            "feet": 5,
+            "metric": "grid",
+            "speed": 30,
+            "used": 0,
+            "crawling": false,
+            "areas": []
+          },
+          "scene": "black",
+          "sceneTitle": "Black screen",
+          "isMap": false,
+          "mapImage": "",
+          "playerInput": true,
+          "fog": [],
+          "fogged": false,
+          "fineFog": false,
+          "points": [],
+          "tokens": [],
+          "turn": {
+            "round": 0,
+            "activeId": null
+          },
+          "roll": {
+            "id": "1791832510159-twtjr0fmigh",
+            "label": "Pebble initiative",
+            "notation": "1d20",
+            "parts": [
+              7
+            ],
+            "total": 7
+          },
+          "requests": "Initiative 7 (7 + 0).",
+          "actionRequests": [],
+          "privateClues": [],
+          "inventory": [],
+          "sceneMood": {
+            "minutes": 540,
+            "weather": "clear",
+            "phase": "day"
+          },
+          "campaignJournal": [
+            {
+              "id": "continuity-outcome-1791832923830-zmlxmuz",
+              "title": "CORRECTED MOCK · Road goblin surrendered",
+              "text": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+              "kind": "confirmed",
+              "when": "MOCK Session1"
+            }
+          ],
+          "quests": [],
+          "campaignTracks": [],
+          "initiative": {
+            "open": false,
+            "total": 7,
+            "bonus": 0
+          },
+          "rehearsal": false
+        }
+      },
+      {
+        "id": "pc-donavan",
+        "status": 200,
+        "data": {
+          "revision": 974,
+          "resyncRequest": 0,
+          "session": "PRACTICE · Session 1 · Goblin Arrows",
+          "character": {
+            "id": "pc-donavan",
+            "name": "Donavan Kemp",
+            "player": "Brodey",
+            "className": "Wizard 1",
+            "ancestry": "Human",
+            "background": "Sage",
+            "level": 1,
+            "rules": "2014 multiclass with Tasha Order of Scribes, Catapult and Toll the Dead exceptions; all listed spells available by table rule",
+            "proficiency": 2,
+            "speed": 30,
+            "senses": "Passive Perception 13; no familiar shown on updated sheet",
+            "languages": "Common, Dwarvish, Elvish, Giant, Goblin, Sylvan",
+            "hp": 8,
+            "maxHp": 9,
+            "ac": 12,
+            "tempHp": 0,
+            "hitDice": {
+              "die": 6,
+              "current": 0,
+              "max": 1,
+              "details": "1d6",
+              "pools": [
+                {
+                  "die": 6,
+                  "current": 0,
+                  "max": 1
+                }
+              ]
+            },
+            "abilities": {
+              "str": {
+                "score": 12,
+                "modifier": 1
+              },
+              "dex": {
+                "score": 14,
+                "modifier": 2
+              },
+              "con": {
+                "score": 16,
+                "modifier": 3
+              },
+              "int": {
+                "score": 18,
+                "modifier": 4
+              },
+              "wis": {
+                "score": 16,
+                "modifier": 3
+              },
+              "cha": {
+                "score": 16,
+                "modifier": 3
+              }
+            },
+            "saves": [
+              {
+                "name": "STR",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "DEX",
+                "bonus": 2,
+                "rank": 0
+              },
+              {
+                "name": "CON",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "INT",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "WIS",
+                "bonus": 5,
+                "rank": 1
+              },
+              {
+                "name": "CHA",
+                "bonus": 3,
+                "rank": 0
+              }
+            ],
+            "skills": [
+              {
+                "name": "Acrobatics",
+                "bonus": 2,
+                "rank": 0
+              },
+              {
+                "name": "Animal Handling",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "Arcana",
+                "bonus": 8,
+                "rank": 2
+              },
+              {
+                "name": "Athletics",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Deception",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "History",
+                "bonus": 8,
+                "rank": 2
+              },
+              {
+                "name": "Insight",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "Intimidation",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "Investigation",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "Medicine",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "Nature",
+                "bonus": 4,
+                "rank": 0
+              },
+              {
+                "name": "Perception",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "Performance",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "Persuasion",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "Religion",
+                "bonus": 4,
+                "rank": 0
+              },
+              {
+                "name": "Sleight of Hand",
+                "bonus": 2,
+                "rank": 0
+              },
+              {
+                "name": "Stealth",
+                "bonus": 2,
+                "rank": 0
+              },
+              {
+                "name": "Survival",
+                "bonus": 3,
+                "rank": 0
+              }
+            ],
+            "passives": {
+              "Perception": 13,
+              "Insight": 13,
+              "Investigation": 16
+            },
+            "attacks": [
+              {
+                "id": "donavan-dagger",
+                "name": "Dagger",
+                "type": "Action",
+                "attackBonus": 4,
+                "damageDice": "1d4+2",
+                "damageType": "piercing",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Melee or thrown 20/60 ft.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "donavan-ray",
+                "name": "Ray of Frost",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d8",
+                "damageType": "cold",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Ranged spell attack, 60 ft.; cold damage and speed reduced by 10 ft. until the start of your next turn.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack and cold damage; on a hit add the speed reduction reminder until your next turn.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 271,
+                    "rule": "Ray of Frost",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "donavan-unarmed",
+                "name": "Unarmed Strike",
+                "type": "Action",
+                "attackBonus": 3,
+                "damageDice": "2",
+                "damageType": "bludgeoning",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Melee attack; 2 bludgeoning damage on a hit.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              }
+            ],
+            "actions": [
+              {
+                "id": "donavan-arcane-recovery",
+                "name": "Arcane Recovery",
+                "type": "After short rest",
+                "attackBonus": null,
+                "damageDice": "",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "After a short rest regain one first-level slot, once per day.",
+                "resourceId": "donavan-arcane-recovery",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Confirm a short rest and choose expended slots. Donavan can recover one slot level; Aldric two.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 115,
+                    "rule": "Arcane Recovery",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              }
+            ],
+            "spells": [
+              {
+                "name": "Dancing Lights",
+                "level": 0,
+                "prepared": true,
+                "notes": "Cantrip · action · lights within 120 ft. · concentration up to 1 minute.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 230,
+                    "rule": "Dancing Lights",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Prestidigitation",
+                "level": 0,
+                "prepared": true,
+                "notes": "Cantrip · action · minor magical effect within 10 ft.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 267,
+                    "rule": "Prestidigitation",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Ray of Frost",
+                "level": 0,
+                "prepared": true,
+                "notes": "Cantrip · ranged spell attack +6 · 1d8 cold and speed −10 ft.",
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack and cold damage; on a hit add the speed reduction reminder until your next turn.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 271,
+                    "rule": "Ray of Frost",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Identify",
+                "level": 1,
+                "prepared": true,
+                "notes": "MOCK Wizard spell · touch · learn magical properties; ritual possible; material pearl required.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 252,
+                    "rule": "Identify",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Detect Magic",
+                "level": 1,
+                "prepared": true,
+                "notes": "Wizard · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 231,
+                    "rule": "Detect Magic",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Comprehend Languages",
+                "level": 1,
+                "prepared": true,
+                "notes": "Wizard · Understand literal meaning of languages for 1 hour · ritual possible.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 224,
+                    "rule": "Comprehend Languages",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Find Familiar",
+                "level": 1,
+                "prepared": true,
+                "notes": "Wizard · Summon a familiar · 1-hour cast or ritual · material cost applies.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 240,
+                    "rule": "Find Familiar",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Magic Missile",
+                "level": 1,
+                "prepared": true,
+                "notes": "Wizard · Action · three darts within 120 ft. · each deals 1d4+1 force; no attack roll.",
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 257,
+                    "rule": "Magic Missile",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Shield",
+                "level": 1,
+                "prepared": true,
+                "notes": "Wizard · Reaction · +5 AC until next turn and blocks Magic Missile.",
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 275,
+                    "rule": "Shield",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Catapult",
+                "level": 1,
+                "prepared": true,
+                "notes": "Wizard · Xanathar’s · action · Dexterity save DC 14 · fling a 1–5 lb. object; 3d8 bludgeoning.",
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Choose an eligible object and first collision; Dexterity save, no damage on success. Upcasting adds dice.",
+                  "source": {
+                    "book": "Xanathar’s Guide; approved exception",
+                    "printedPage": null,
+                    "rule": "Catapult",
+                    "confidence": "approved table choice"
+                  }
+                }
+              },
+              {
+                "name": "Disguise Self",
+                "level": 1,
+                "prepared": true,
+                "notes": "Wizard · Action · alter your appearance for 1 hour; inspection may reveal illusion.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 233,
+                    "rule": "Disguise Self",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Feather Fall",
+                "level": 1,
+                "prepared": true,
+                "notes": "Wizard · Reaction · slow up to five falling creatures within 60 ft.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 239,
+                    "rule": "Feather Fall",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Witch Bolt",
+                "level": 1,
+                "prepared": true,
+                "notes": "Wizard · Action · ranged spell attack +6 · 1d12 lightning, concentration; action to sustain.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 289,
+                    "rule": "Witch Bolt",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Silent Image",
+                "level": 1,
+                "prepared": true,
+                "notes": "Wizard · Action · range 60 ft. · create a visual illusion within a 15-ft. cube; concentration up to 10 minutes.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 276,
+                    "rule": "Silent Image",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Detect Magic",
+                "level": 1,
+                "prepared": true,
+                "notes": "MOCK Wizard spell · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 231,
+                    "rule": "Detect Magic",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              }
+            ],
+            "resources": [
+              {
+                "id": "donavan-slots-1",
+                "name": "1st-level shared spell slots",
+                "current": 2,
+                "max": 2,
+                "unit": "",
+                "slotLevel": 1
+              },
+              {
+                "id": "donavan-arcane-recovery",
+                "name": "Arcane Recovery",
+                "current": 1,
+                "max": 1,
+                "unit": "",
+                "slotLevel": 0
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Breastplate",
+                "quantity": 1,
+                "category": "Armor",
+                "notes": "AC 16 with DEX +2; no shield listed",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Dagger",
+                "quantity": 1,
+                "category": "Weapon",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Spellbook",
+                "quantity": 1,
+                "category": "Focus",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Arcane focus",
+                "quantity": 1,
+                "category": "Focus",
+                "notes": "Specific form not listed",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Ink bottle",
+                "quantity": 2,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Ink pen",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Backpack",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Common clothes",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Book",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Small knife",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Little bag of sand",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Parchment sheet",
+                "quantity": 13,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Bedroll",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              }
+            ],
+            "money": {
+              "cp": 1050,
+              "sp": 166,
+              "ep": 30,
+              "gp": 90,
+              "pp": 0
+            },
+            "features": [
+              {
+                "name": "Arcane Recovery",
+                "text": "After a short rest regain one first-level slot, once per day.",
+                "source": "2014 Wizard 1"
+              },
+              {
+                "name": "Wizard Spellcasting",
+                "text": "INT spell attack +6; save DC 14. Prepare wizard spells separately from cleric spells.",
+                "source": "Donavan PDF p. 2"
+              }
+            ],
+            "inspiration": false,
+            "death": {
+              "successes": 0,
+              "failures": 0,
+              "stable": false
+            },
+            "exhaustion": 0,
+            "conditions": [],
+            "concentration": "",
+            "effects": [],
+            "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+            "favorites": []
+          },
+          "dungeonProtocol": 1,
+          "dungeon": {
+            "enabled": false,
+            "fine": false,
+            "current": [],
+            "explored": [],
+            "objects": [],
+            "passages": []
+          },
+          "searchRequests": [],
+          "travelProtocol": 1,
+          "journey": {
+            "position": null,
+            "destination": "",
+            "weather": "clear",
+            "estimate": null,
+            "places": [
+              {
+                "id": "region-neverwinter",
+                "title": "Neverwinter",
+                "status": "located",
+                "inaccessible": false,
+                "reason": ""
+              },
+              {
+                "id": "region-phandalin",
+                "title": "Phandalin",
+                "status": "located",
+                "inaccessible": false,
+                "reason": ""
+              }
+            ],
+            "events": []
+          },
+          "atlas": null,
+          "atlasImage": "",
+          "travelRequests": [],
+          "playerToolsProtocol": 1,
+          "playerTools": {
+            "notes": [],
+            "sharedClues": [],
+            "itemRequests": [],
+            "bank": {
+              "cp": 0,
+              "sp": 0,
+              "ep": 0,
+              "gp": 0,
+              "pp": 0
+            },
+            "objective": {
+              "text": "Escort the supplies to Phandalin and investigate danger on the road.",
+              "at": "2026-10-12T19:10:34.672Z"
+            },
+            "roster": [
+              {
+                "id": "pc-aldric",
+                "name": "Aldric Vane"
+              },
+              {
+                "id": "pc-pebble",
+                "name": "Pebble"
+              },
+              {
+                "id": "pc-trista",
+                "name": "Trista"
+              },
+              {
+                "id": "pc-ringgo",
+                "name": "Ringgo Paul"
+              },
+              {
+                "id": "pc-donavan",
+                "name": "Donavan Kemp"
+              }
+            ]
+          },
+          "actionProtocol": 1,
+          "combatProtocol": 1,
+          "combatPrompts": {
+            "saves": [],
+            "reactions": []
+          },
+          "movement": {
+            "columns": 30,
+            "feet": 5,
+            "metric": "grid",
+            "speed": 30,
+            "used": 0,
+            "crawling": false,
+            "areas": []
+          },
+          "scene": "black",
+          "sceneTitle": "Black screen",
+          "isMap": false,
+          "mapImage": "",
+          "playerInput": true,
+          "fog": [],
+          "fogged": false,
+          "fineFog": false,
+          "points": [],
+          "tokens": [],
+          "turn": {
+            "round": 0,
+            "activeId": null
+          },
+          "roll": {
+            "id": "1791832511459-lb2jupt13u",
+            "label": "Donavan initiative",
+            "notation": "1d20+2",
+            "parts": [
+              11
+            ],
+            "total": 13
+          },
+          "requests": "Initiative 13 (11 + 2).",
+          "actionRequests": [],
+          "privateClues": [],
+          "inventory": [],
+          "sceneMood": {
+            "minutes": 540,
+            "weather": "clear",
+            "phase": "day"
+          },
+          "campaignJournal": [
+            {
+              "id": "continuity-outcome-1791832923830-zmlxmuz",
+              "title": "CORRECTED MOCK · Road goblin surrendered",
+              "text": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+              "kind": "confirmed",
+              "when": "MOCK Session1"
+            }
+          ],
+          "quests": [],
+          "campaignTracks": [],
+          "initiative": {
+            "open": false,
+            "total": 13,
+            "bonus": 2
+          },
+          "rehearsal": false
+        }
+      },
+      {
+        "id": "pc-ringgo",
+        "status": 200,
+        "data": {
+          "revision": 974,
+          "resyncRequest": 0,
+          "session": "PRACTICE · Session 1 · Goblin Arrows",
+          "character": {
+            "id": "pc-ringgo",
+            "name": "Ringgo Paul",
+            "player": "Cade",
+            "className": "Rogue 1",
+            "ancestry": "Tiefling",
+            "background": "Criminal / Spy",
+            "level": 1,
+            "rules": "2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export",
+            "proficiency": 2,
+            "speed": 30,
+            "senses": "Darkvision 60 ft.; fire resistance",
+            "languages": "Common, Infernal, Thieves’ Cant",
+            "hp": 10,
+            "maxHp": 10,
+            "ac": 16,
+            "tempHp": 0,
+            "hitDice": {
+              "die": 8,
+              "current": 1,
+              "max": 1,
+              "details": "1d8",
+              "pools": [
+                {
+                  "die": 8,
+                  "current": 1,
+                  "max": 1
+                }
+              ]
+            },
+            "abilities": {
+              "str": {
+                "score": 7,
+                "modifier": -2
+              },
+              "dex": {
+                "score": 19,
+                "modifier": 4
+              },
+              "con": {
+                "score": 14,
+                "modifier": 2
+              },
+              "int": {
+                "score": 10,
+                "modifier": 0
+              },
+              "wis": {
+                "score": 10,
+                "modifier": 0
+              },
+              "cha": {
+                "score": 18,
+                "modifier": 4
+              }
+            },
+            "saves": [
+              {
+                "name": "STR",
+                "bonus": -2,
+                "rank": 0
+              },
+              {
+                "name": "DEX",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "CON",
+                "bonus": 2,
+                "rank": 0
+              },
+              {
+                "name": "INT",
+                "bonus": 2,
+                "rank": 1
+              },
+              {
+                "name": "WIS",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "CHA",
+                "bonus": 4,
+                "rank": 0
+              }
+            ],
+            "skills": [
+              {
+                "name": "Acrobatics",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "Animal Handling",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Arcana",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Athletics",
+                "bonus": -2,
+                "rank": 0
+              },
+              {
+                "name": "Deception",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "History",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Insight",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Intimidation",
+                "bonus": 4,
+                "rank": 0
+              },
+              {
+                "name": "Investigation",
+                "bonus": 4,
+                "rank": 2
+              },
+              {
+                "name": "Medicine",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Nature",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Perception",
+                "bonus": 2,
+                "rank": 1
+              },
+              {
+                "name": "Performance",
+                "bonus": 4,
+                "rank": 0
+              },
+              {
+                "name": "Persuasion",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "Religion",
+                "bonus": 0,
+                "rank": 0
+              },
+              {
+                "name": "Sleight of Hand",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "Stealth",
+                "bonus": 8,
+                "rank": 2
+              },
+              {
+                "name": "Survival",
+                "bonus": 0,
+                "rank": 0
+              }
+            ],
+            "passives": {
+              "Perception": 12,
+              "Insight": 10,
+              "Investigation": 14
+            },
+            "attacks": [
+              {
+                "id": "ringgo-rapier",
+                "name": "Rapier",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d8+4",
+                "damageType": "piercing",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Finesse; Sneak Attack may add 1d6 once per turn.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "ringgo-shortbow",
+                "name": "Shortbow",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d6+4",
+                "damageType": "piercing",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Range 80/320; Sneak Attack may add 1d6.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "ringgo-dagger",
+                "name": "Dagger",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d4+4",
+                "damageType": "piercing",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Finesse, light, thrown 20/60.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "ringgo-offhand",
+                "name": "Second dagger",
+                "type": "Bonus action",
+                "attackBonus": 6,
+                "damageDice": "1d4",
+                "damageType": "piercing",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Two-weapon fighting; no +4 damage.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "ringgo-sneak",
+                "name": "Sneak Attack",
+                "type": "Once per turn",
+                "attackBonus": 6,
+                "damageDice": "2d6",
+                "damageType": "extra",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.",
+                  "source": {
+                    "book": "2014 PHB pp. 96–97; Tasha’s feat exception",
+                    "printedPage": null,
+                    "rule": "Sneak Attack / Assassinate / Piercer",
+                    "confidence": "approved table choice"
+                  }
+                }
+              }
+            ],
+            "actions": [
+              {
+                "id": "ringgo-thaumaturgy",
+                "name": "Thaumaturgy",
+                "type": "Action",
+                "attackBonus": null,
+                "damageDice": "",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Tiefling cantrip: create a minor supernatural sign within 30 feet; no slot.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 282,
+                    "rule": "Thaumaturgy",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              }
+            ],
+            "spells": [],
+            "resources": [
+              {
+                "id": "ringgo-arrows",
+                "name": "Arrows",
+                "current": 19,
+                "max": 20,
+                "unit": "arrows",
+                "slotLevel": 0
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Rapier",
+                "quantity": 1,
+                "category": "Weapon",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Shortbow",
+                "quantity": 1,
+                "category": "Weapon",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Dagger",
+                "quantity": 2,
+                "category": "Weapon",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Studded leather",
+                "quantity": 1,
+                "category": "Armor",
+                "notes": "",
+                "equipped": true,
+                "attuned": false
+              },
+              {
+                "name": "Thieves’ tools",
+                "quantity": 1,
+                "category": "Tool",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Arrows",
+                "quantity": 20,
+                "category": "Ammunition",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Hammer",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Mess kit",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Backpack",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Crowbar",
+                "quantity": 2,
+                "category": "Gear",
+                "notes": "PDF lists two",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Ball bearings",
+                "quantity": 999,
+                "category": "Gear",
+                "notes": "One bag",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Bedroll",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Bell",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Candle",
+                "quantity": 5,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Waterskin",
+                "quantity": 2,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "String",
+                "quantity": 10,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Piton",
+                "quantity": 10,
+                "category": "Gear",
+                "notes": "The current sheet says piton, not potion.",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Rations",
+                "quantity": 15,
+                "category": "Consumable",
+                "notes": "One day each",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Rope, hempen 50 ft.",
+                "quantity": 2,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Hooded lantern",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Oil flask",
+                "quantity": 2,
+                "category": "Consumable",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Torch",
+                "quantity": 10,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Tinderbox",
+                "quantity": 2,
+                "category": "Gear",
+                "notes": "Updated PDF lists two",
+                "equipped": false,
+                "attuned": false
+              }
+            ],
+            "money": {
+              "cp": 0,
+              "sp": 0,
+              "ep": 0,
+              "gp": 15,
+              "pp": 0
+            },
+            "features": [
+              {
+                "name": "Sneak Attack",
+                "text": "Once per turn, +1d6 with qualifying finesse/ranged hit; review advantage or nearby ally.",
+                "source": "Ringgo level 3 PDF p. 2"
+              },
+              {
+                "name": "Expertise",
+                "text": "Stealth and Investigation. Investigation is the DM-confirmed second choice after this export.",
+                "source": "Ringgo PDF p. 2; DM ruling 2026-09-25"
+              },
+              {
+                "name": "Hellish Resistance",
+                "text": "Resistance to fire damage.",
+                "source": "Ringgo PDF p. 2"
+              },
+              {
+                "name": "Infernal Legacy",
+                "text": "Thaumaturgy cantrip and Hellish Rebuke once per long rest as a 2nd-level spell at this level.",
+                "source": "Ringgo level 3 PDF pp. 2, 5"
+              }
+            ],
+            "inspiration": false,
+            "death": {
+              "successes": 0,
+              "failures": 0,
+              "stable": false
+            },
+            "exhaustion": 0,
+            "conditions": [],
+            "concentration": "",
+            "effects": [],
+            "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+            "favorites": []
+          },
+          "dungeonProtocol": 1,
+          "dungeon": {
+            "enabled": false,
+            "fine": false,
+            "current": [],
+            "explored": [],
+            "objects": [],
+            "passages": []
+          },
+          "searchRequests": [],
+          "travelProtocol": 1,
+          "journey": {
+            "position": null,
+            "destination": "",
+            "weather": "clear",
+            "estimate": null,
+            "places": [
+              {
+                "id": "region-neverwinter",
+                "title": "Neverwinter",
+                "status": "located",
+                "inaccessible": false,
+                "reason": ""
+              },
+              {
+                "id": "region-phandalin",
+                "title": "Phandalin",
+                "status": "located",
+                "inaccessible": false,
+                "reason": ""
+              }
+            ],
+            "events": []
+          },
+          "atlas": null,
+          "atlasImage": "",
+          "travelRequests": [],
+          "playerToolsProtocol": 1,
+          "playerTools": {
+            "notes": [],
+            "sharedClues": [],
+            "itemRequests": [],
+            "bank": {
+              "cp": 0,
+              "sp": 0,
+              "ep": 0,
+              "gp": 0,
+              "pp": 0
+            },
+            "objective": {
+              "text": "Escort the supplies to Phandalin and investigate danger on the road.",
+              "at": "2026-10-12T19:10:34.672Z"
+            },
+            "roster": [
+              {
+                "id": "pc-aldric",
+                "name": "Aldric Vane"
+              },
+              {
+                "id": "pc-pebble",
+                "name": "Pebble"
+              },
+              {
+                "id": "pc-trista",
+                "name": "Trista"
+              },
+              {
+                "id": "pc-ringgo",
+                "name": "Ringgo Paul"
+              },
+              {
+                "id": "pc-donavan",
+                "name": "Donavan Kemp"
+              }
+            ]
+          },
+          "actionProtocol": 1,
+          "combatProtocol": 1,
+          "combatPrompts": {
+            "saves": [],
+            "reactions": []
+          },
+          "movement": {
+            "columns": 30,
+            "feet": 5,
+            "metric": "grid",
+            "speed": 30,
+            "used": 0,
+            "crawling": false,
+            "areas": []
+          },
+          "scene": "black",
+          "sceneTitle": "Black screen",
+          "isMap": false,
+          "mapImage": "",
+          "playerInput": true,
+          "fog": [],
+          "fogged": false,
+          "fineFog": false,
+          "points": [],
+          "tokens": [],
+          "turn": {
+            "round": 0,
+            "activeId": null
+          },
+          "roll": {
+            "id": "1791832512115-4ainrkf99gs",
+            "label": "Ringgo initiative",
+            "notation": "1d20+4",
+            "parts": [
+              8
+            ],
+            "total": 12
+          },
+          "requests": "Initiative 12 (8 + 4).",
+          "actionRequests": [],
+          "privateClues": [],
+          "inventory": [],
+          "sceneMood": {
+            "minutes": 540,
+            "weather": "clear",
+            "phase": "day"
+          },
+          "campaignJournal": [
+            {
+              "id": "continuity-outcome-1791832923830-zmlxmuz",
+              "title": "CORRECTED MOCK · Road goblin surrendered",
+              "text": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+              "kind": "confirmed",
+              "when": "MOCK Session1"
+            }
+          ],
+          "quests": [],
+          "campaignTracks": [],
+          "initiative": {
+            "open": false,
+            "total": 12,
+            "bonus": 4
+          },
+          "rehearsal": false
+        }
+      },
+      {
+        "id": "pc-aldric",
+        "status": 200,
+        "data": {
+          "revision": 974,
+          "resyncRequest": 0,
+          "session": "PRACTICE · Session 1 · Goblin Arrows",
+          "character": {
+            "id": "pc-aldric",
+            "name": "Aldric Vane",
+            "player": "Bowman",
+            "className": "Wizard 1",
+            "ancestry": "Reborn",
+            "background": "Haunted One",
+            "level": 1,
+            "rules": "2014 Wizard with Reborn, Haunted One, named later spells, and all listed spells available by table rule",
+            "proficiency": 2,
+            "speed": 30,
+            "senses": "Poison resistance; advantage on death saves and saves against disease or being poisoned",
+            "languages": "Common, Dwarvish, Undercommon, Infernal (from Bowman’s backstory; omitted in JSON export)",
+            "hp": 9,
+            "maxHp": 9,
+            "ac": 12,
+            "tempHp": 0,
+            "hitDice": {
+              "die": 6,
+              "current": 1,
+              "max": 1,
+              "details": "1d6",
+              "pools": [
+                {
+                  "die": 6,
+                  "current": 1,
+                  "max": 1
+                }
+              ]
+            },
+            "abilities": {
+              "str": {
+                "score": 8,
+                "modifier": -1
+              },
+              "dex": {
+                "score": 14,
+                "modifier": 2
+              },
+              "con": {
+                "score": 16,
+                "modifier": 3
+              },
+              "int": {
+                "score": 18,
+                "modifier": 4
+              },
+              "wis": {
+                "score": 12,
+                "modifier": 1
+              },
+              "cha": {
+                "score": 16,
+                "modifier": 3
+              }
+            },
+            "saves": [
+              {
+                "name": "STR",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "DEX",
+                "bonus": 2,
+                "rank": 0
+              },
+              {
+                "name": "CON",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "INT",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "WIS",
+                "bonus": 3,
+                "rank": 1
+              },
+              {
+                "name": "CHA",
+                "bonus": 3,
+                "rank": 0
+              }
+            ],
+            "skills": [
+              {
+                "name": "Acrobatics",
+                "bonus": 2,
+                "rank": 0
+              },
+              {
+                "name": "Animal Handling",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Arcana",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "Athletics",
+                "bonus": -1,
+                "rank": 0
+              },
+              {
+                "name": "Deception",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "History",
+                "bonus": 4,
+                "rank": 0
+              },
+              {
+                "name": "Insight",
+                "bonus": 3,
+                "rank": 1
+              },
+              {
+                "name": "Intimidation",
+                "bonus": 5,
+                "rank": 1
+              },
+              {
+                "name": "Investigation",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "Medicine",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Nature",
+                "bonus": 4,
+                "rank": 0
+              },
+              {
+                "name": "Perception",
+                "bonus": 1,
+                "rank": 0
+              },
+              {
+                "name": "Performance",
+                "bonus": 3,
+                "rank": 0
+              },
+              {
+                "name": "Persuasion",
+                "bonus": 5,
+                "rank": 1
+              },
+              {
+                "name": "Religion",
+                "bonus": 6,
+                "rank": 1
+              },
+              {
+                "name": "Sleight of Hand",
+                "bonus": 2,
+                "rank": 0
+              },
+              {
+                "name": "Stealth",
+                "bonus": 2,
+                "rank": 0
+              },
+              {
+                "name": "Survival",
+                "bonus": 1,
+                "rank": 0
+              }
+            ],
+            "passives": {
+              "Perception": 11,
+              "Insight": 13,
+              "Investigation": 16
+            },
+            "attacks": [
+              {
+                "id": "aldric-fire-bolt",
+                "name": "Fire Bolt",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d10",
+                "damageType": "fire",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Ranged spell attack, 120 ft.; ignites unattended flammable objects.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "aldric-dagger",
+                "name": "Dagger",
+                "type": "Action",
+                "attackBonus": 4,
+                "damageDice": "1d4+2",
+                "damageType": "piercing",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Melee or thrown 20/60 ft.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              }
+            ],
+            "actions": [
+              {
+                "id": "aldric-control-flames",
+                "name": "Control Flames",
+                "type": "Action",
+                "attackBonus": null,
+                "damageDice": "",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Shape, expand, or extinguish a visible nonmagical flame in a 5-foot cube within 60 ft.; no slot.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": null,
+                    "rule": "Current sheet / feature reference",
+                    "confidence": "approved table choice"
+                  }
+                }
+              },
+              {
+                "id": "aldric-mage-hand",
+                "name": "Mage Hand",
+                "type": "Action",
+                "attackBonus": null,
+                "damageDice": "",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Create and control a spectral hand within 30 ft.; no slot.",
+                "resourceId": "",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 256,
+                    "rule": "Mage Hand",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "aldric-ice-knife",
+                "name": "Ice Knife",
+                "type": "Action",
+                "attackBonus": 6,
+                "damageDice": "1d10",
+                "damageType": "piercing + cold",
+                "saveAbility": "DEX",
+                "saveDC": 14,
+                "effect": "Ranged spell attack, 60 ft.; piercing on hit, then target and creatures within 5 ft. make a Dexterity save or take 2d6 cold.",
+                "resourceId": "aldric-slots-1",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Resolve the attack and a separately selected burst, even on a miss. Only piercing attack dice double on a critical.",
+                  "source": {
+                    "book": "Later-source character spell exception",
+                    "printedPage": null,
+                    "rule": "Ice Knife",
+                    "confidence": "approved table choice"
+                  }
+                }
+              },
+              {
+                "id": "aldric-magic-missile",
+                "name": "Magic Missile",
+                "type": "Action",
+                "attackBonus": null,
+                "damageDice": "1d4+1",
+                "damageType": "force",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Three darts at creatures within 120 ft.; no attack roll. Each dart deals force damage.",
+                "resourceId": "aldric-slots-1",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 257,
+                    "rule": "Magic Missile",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "aldric-mage-armor",
+                "name": "Mage Armor",
+                "type": "Action",
+                "attackBonus": null,
+                "damageDice": "",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "Touch an unarmored willing creature; base AC becomes 13 + Dexterity modifier for 8 hours. Aldric’s AC becomes 15.",
+                "resourceId": "aldric-slots-1",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 256,
+                    "rule": "Mage Armor",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "aldric-shield",
+                "name": "Shield",
+                "type": "Reaction",
+                "attackBonus": null,
+                "damageDice": "",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "+5 AC until the start of Aldric’s next turn; blocks Magic Missile.",
+                "resourceId": "aldric-slots-1",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 275,
+                    "rule": "Shield",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "id": "aldric-silvery-barbs",
+                "name": "Silvery Barbs",
+                "type": "Reaction",
+                "attackBonus": null,
+                "damageDice": "",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "When a visible creature within 60 ft. succeeds on an attack, check, or save: force a reroll and use the lower d20; grant another visible creature advantage on one roll within 1 minute.",
+                "resourceId": "aldric-slots-1",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": null,
+                    "rule": "Current sheet / feature reference",
+                    "confidence": "approved table choice"
+                  }
+                }
+              },
+              {
+                "id": "aldric-arcane-recovery",
+                "name": "Arcane Recovery",
+                "type": "After short rest",
+                "attackBonus": null,
+                "damageDice": "",
+                "damageType": "",
+                "saveAbility": "",
+                "saveDC": null,
+                "effect": "After a short rest regain one first-level slot, once per day.",
+                "resourceId": "aldric-arcane-recovery",
+                "cost": 1,
+                "prepared": true,
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Confirm a short rest and choose expended slots. Donavan can recover one slot level; Aldric two.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 115,
+                    "rule": "Arcane Recovery",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              }
+            ],
+            "spells": [
+              {
+                "name": "Control Flames",
+                "level": 0,
+                "prepared": true,
+                "notes": "At-will cantrip.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": null,
+                    "rule": "Current sheet / feature reference",
+                    "confidence": "approved table choice"
+                  }
+                }
+              },
+              {
+                "name": "Fire Bolt",
+                "level": 0,
+                "prepared": true,
+                "notes": "At-will cantrip.",
+                "support": {
+                  "status": "supported",
+                  "label": "Reviewed roll",
+                  "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 195,
+                    "rule": "Attack and damage; weapon table p. 149",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Mage Hand",
+                "level": 0,
+                "prepared": true,
+                "notes": "At-will cantrip.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 256,
+                    "rule": "Mage Hand",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Ice Knife",
+                "level": 1,
+                "prepared": true,
+                "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Resolve the attack and a separately selected burst, even on a miss. Only piercing attack dice double on a critical.",
+                  "source": {
+                    "book": "Later-source character spell exception",
+                    "printedPage": null,
+                    "rule": "Ice Knife",
+                    "confidence": "approved table choice"
+                  }
+                }
+              },
+              {
+                "name": "Mage Armor",
+                "level": 1,
+                "prepared": true,
+                "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 256,
+                    "rule": "Mage Armor",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Magic Missile",
+                "level": 1,
+                "prepared": true,
+                "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 257,
+                    "rule": "Magic Missile",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Shield",
+                "level": 1,
+                "prepared": true,
+                "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+                "support": {
+                  "status": "choice",
+                  "label": "Choose details",
+                  "reason": "Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": 275,
+                    "rule": "Shield",
+                    "confidence": "verified rule / approved sheet"
+                  }
+                }
+              },
+              {
+                "name": "Silvery Barbs",
+                "level": 1,
+                "prepared": true,
+                "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+                "support": {
+                  "status": "reference",
+                  "label": "Manual ruling",
+                  "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+                  "source": {
+                    "book": "2014 PHB",
+                    "printedPage": null,
+                    "rule": "Current sheet / feature reference",
+                    "confidence": "approved table choice"
+                  }
+                }
+              }
+            ],
+            "resources": [
+              {
+                "id": "aldric-slots-1",
+                "name": "1st-level spell slots",
+                "current": 2,
+                "max": 2,
+                "unit": "slots",
+                "slotLevel": 1
+              },
+              {
+                "id": "aldric-past-life",
+                "name": "Knowledge from a Past Life",
+                "current": 2,
+                "max": 2,
+                "unit": "uses",
+                "slotLevel": 0
+              },
+              {
+                "id": "aldric-arcane-recovery",
+                "name": "Arcane Recovery",
+                "current": 1,
+                "max": 1,
+                "unit": "use",
+                "slotLevel": 0
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Dagger",
+                "quantity": 1,
+                "category": "Weapon",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Spellbook",
+                "quantity": 1,
+                "category": "Focus",
+                "notes": "Player export",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Scholar’s pack",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Monster hunter’s pack",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Common clothes",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Trinket",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "Scorched magistrate signet ring in backstory; export labels item as trinket",
+                "equipped": false,
+                "attuned": false
+              },
+              {
+                "name": "Verdict Gloves",
+                "quantity": 1,
+                "category": "Gear",
+                "notes": "Named in export equipment text; properties not specified",
+                "equipped": false,
+                "attuned": false
+              }
+            ],
+            "money": {
+              "cp": 880,
+              "sp": 180,
+              "ep": 30,
+              "gp": 170,
+              "pp": 0
+            },
+            "features": [
+              {
+                "name": "Arcane Recovery",
+                "text": "After a short rest regain one first-level slot, once per day.",
+                "source": "2014 Wizard 1"
+              },
+              {
+                "name": "Knowledge from a Past Life",
+                "text": "Add 1d6 to a skill check after seeing the d20; twice per long rest.",
+                "source": "Reborn lineage"
+              },
+              {
+                "name": "Deathless Nature",
+                "text": "Poison resistance; advantage on death saves and saves against disease or being poisoned; no need to eat, drink, breathe, or sleep; 4-hour motionless long rest while conscious.",
+                "source": "Reborn lineage"
+              },
+              {
+                "name": "Training",
+                "text": "No armor proficiency. Dagger, dart, light crossbow, quarterstaff, and sling proficiency. No tool proficiency listed.",
+                "source": "Aldric JSON export"
+              },
+              {
+                "name": "Heart of Darkness",
+                "text": "Commoners may aid him unless he has shown himself dangerous to them.",
+                "source": "Haunted One"
+              }
+            ],
+            "inspiration": false,
+            "death": {
+              "successes": 0,
+              "failures": 0,
+              "stable": false
+            },
+            "exhaustion": 0,
+            "conditions": [],
+            "concentration": "",
+            "effects": [],
+            "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+            "favorites": []
+          },
+          "dungeonProtocol": 1,
+          "dungeon": {
+            "enabled": false,
+            "fine": false,
+            "current": [],
+            "explored": [],
+            "objects": [],
+            "passages": []
+          },
+          "searchRequests": [],
+          "travelProtocol": 1,
+          "journey": {
+            "position": null,
+            "destination": "",
+            "weather": "clear",
+            "estimate": null,
+            "places": [
+              {
+                "id": "region-neverwinter",
+                "title": "Neverwinter",
+                "status": "located",
+                "inaccessible": false,
+                "reason": ""
+              },
+              {
+                "id": "region-phandalin",
+                "title": "Phandalin",
+                "status": "located",
+                "inaccessible": false,
+                "reason": ""
+              }
+            ],
+            "events": []
+          },
+          "atlas": null,
+          "atlasImage": "",
+          "travelRequests": [],
+          "playerToolsProtocol": 1,
+          "playerTools": {
+            "notes": [],
+            "sharedClues": [],
+            "itemRequests": [],
+            "bank": {
+              "cp": 0,
+              "sp": 0,
+              "ep": 0,
+              "gp": 0,
+              "pp": 0
+            },
+            "objective": {
+              "text": "Escort the supplies to Phandalin and investigate danger on the road.",
+              "at": "2026-10-12T19:10:34.672Z"
+            },
+            "roster": [
+              {
+                "id": "pc-aldric",
+                "name": "Aldric Vane"
+              },
+              {
+                "id": "pc-pebble",
+                "name": "Pebble"
+              },
+              {
+                "id": "pc-trista",
+                "name": "Trista"
+              },
+              {
+                "id": "pc-ringgo",
+                "name": "Ringgo Paul"
+              },
+              {
+                "id": "pc-donavan",
+                "name": "Donavan Kemp"
+              }
+            ]
+          },
+          "actionProtocol": 1,
+          "combatProtocol": 1,
+          "combatPrompts": {
+            "saves": [],
+            "reactions": []
+          },
+          "movement": {
+            "columns": 30,
+            "feet": 5,
+            "metric": "grid",
+            "speed": 30,
+            "used": 0,
+            "crawling": false,
+            "areas": []
+          },
+          "scene": "black",
+          "sceneTitle": "Black screen",
+          "isMap": false,
+          "mapImage": "",
+          "playerInput": true,
+          "fog": [],
+          "fogged": false,
+          "fineFog": false,
+          "points": [],
+          "tokens": [],
+          "turn": {
+            "round": 0,
+            "activeId": null
+          },
+          "roll": {
+            "id": "1791832512761-i9fhpi5p33h",
+            "label": "Aldric initiative",
+            "notation": "1d20+2",
+            "parts": [
+              20
+            ],
+            "total": 22
+          },
+          "requests": "Initiative 22 (20 + 2).",
+          "actionRequests": [],
+          "privateClues": [],
+          "inventory": [],
+          "sceneMood": {
+            "minutes": 540,
+            "weather": "clear",
+            "phase": "day"
+          },
+          "campaignJournal": [
+            {
+              "id": "continuity-outcome-1791832923830-zmlxmuz",
+              "title": "CORRECTED MOCK · Road goblin surrendered",
+              "text": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+              "kind": "confirmed",
+              "when": "MOCK Session1"
+            }
+          ],
+          "quests": [],
+          "campaignTracks": [],
+          "initiative": {
+            "open": false,
+            "total": 22,
+            "bonus": 2
+          },
+          "rehearsal": false
+        }
+      }
+    ],
+    "prepared": [
+      {
+        "id": "prep",
+        "title": "Before play",
+        "readParagraphs": 0
+      },
+      {
+        "id": "departure",
+        "title": "1 · Gundren rides ahead",
+        "readParagraphs": 2
+      },
+      {
+        "id": "ambush",
+        "title": "2 · Dead horses and ambush",
+        "readParagraphs": 2
+      },
+      {
+        "id": "aftermath",
+        "title": "3 · Clues after the road fight",
+        "readParagraphs": 2
+      },
+      {
+        "id": "trail",
+        "title": "4 · Goblin trail and traps",
+        "readParagraphs": 2
+      },
+      {
+        "id": "cave",
+        "title": "5 · Cave mouth and approach",
+        "readParagraphs": 2
+      },
+      {
+        "id": "blind",
+        "title": "Area 2 · Goblin blind",
+        "readParagraphs": 2
+      },
+      {
+        "id": "kennel",
+        "title": "Area 3 · Kennel and wolves",
+        "readParagraphs": 2
+      },
+      {
+        "id": "passage",
+        "title": "Area 4 · Steep passage",
+        "readParagraphs": 2
+      },
+      {
+        "id": "bridge",
+        "title": "Area 5 · Overpass and flood",
+        "readParagraphs": 2
+      },
+      {
+        "id": "den",
+        "title": "Area 6 · Yeemik and Sildar",
+        "readParagraphs": 2
+      },
+      {
+        "id": "pools",
+        "title": "Area 7 · Twin pools",
+        "readParagraphs": 2
+      },
+      {
+        "id": "klarg",
+        "title": "Area 8 · Klarg’s cave",
+        "readParagraphs": 2
+      },
+      {
+        "id": "sildar",
+        "title": "After rescue · What Sildar knows",
+        "readParagraphs": 2
+      },
+      {
+        "id": "close",
+        "title": "Close the session",
+        "readParagraphs": 2
+      },
+      {
+        "id": "rules",
+        "title": "Quick rules and DM safety dial",
+        "readParagraphs": 0
+      }
+    ]
+  }
+}

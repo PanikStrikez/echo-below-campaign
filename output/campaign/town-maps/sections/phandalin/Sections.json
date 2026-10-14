@@ -1,0 +1,106 @@
+{
+  "source": "town-maps/professional/phandalin-overhead.png",
+  "sourceNativePixels": [
+    1536,
+    1024
+  ],
+  "sourceBytes": 4098493,
+  "sections": [
+    {
+      "id": "phandalin-section-nw",
+      "parentSceneId": "phandalin",
+      "source": "town-maps/professional/phandalin-overhead.png",
+      "image": "town-maps/sections/phandalin/nw.png",
+      "nativePixels": [
+        768,
+        512
+      ],
+      "sourcePixelRect": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "sourcePercentRect": [
+        0,
+        0,
+        50,
+        50
+      ],
+      "bytes": 1127167
+    },
+    {
+      "id": "phandalin-section-ne",
+      "parentSceneId": "phandalin",
+      "source": "town-maps/professional/phandalin-overhead.png",
+      "image": "town-maps/sections/phandalin/ne.png",
+      "nativePixels": [
+        768,
+        512
+      ],
+      "sourcePixelRect": [
+        768,
+        0,
+        768,
+        512
+      ],
+      "sourcePercentRect": [
+        50,
+        0,
+        50,
+        50
+      ],
+      "bytes": 1128226
+    },
+    {
+      "id": "phandalin-section-sw",
+      "parentSceneId": "phandalin",
+      "source": "town-maps/professional/phandalin-overhead.png",
+      "image": "town-maps/sections/phandalin/sw.png",
+      "nativePixels": [
+        768,
+        512
+      ],
+      "sourcePixelRect": [
+        0,
+        512,
+        768,
+        512
+      ],
+      "sourcePercentRect": [
+        0,
+        50,
+        50,
+        50
+      ],
+      "bytes": 1123310
+    },
+    {
+      "id": "phandalin-section-se",
+      "parentSceneId": "phandalin",
+      "source": "town-maps/professional/phandalin-overhead.png",
+      "image": "town-maps/sections/phandalin/se.png",
+      "nativePixels": [
+        768,
+        512
+      ],
+      "sourcePixelRect": [
+        768,
+        512,
+        768,
+        512
+      ],
+      "sourcePercentRect": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "bytes": 1117249
+    }
+  ],
+  "losslessPixelComparison": true,
+  "geometry": "Exact pixel crops; percent coordinates refer to the unchanged parent image. No new fog, token, grid or view state.",
+  "audience": "Clean public town terrain only; no private overlays or occupants",
+  "status": "Prepared optional sections, not automatically staged on TV or registered as visits. Existing floor focus sections remain the normal navigation workflow."
+}

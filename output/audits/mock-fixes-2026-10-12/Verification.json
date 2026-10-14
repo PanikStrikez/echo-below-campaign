@@ -1,0 +1,25 @@
+{
+  "passed": [
+    "five rendered phone identities/revisions/HP checked before screenshots",
+    "actual Aldric phone projection and rendered HP update without reload",
+    "objective appears in the outcome preview before approval",
+    "reviewed objective reaches all five phones",
+    "private outcome record excluded from all five responses",
+    "reconnect one simulated phone without releasing others",
+    "actual IndexedDB restore point is compressed and reopens",
+    "explicit retention removes only older automatic points",
+    "phone/recovery/outcome workflows preserve current map and fog"
+  ],
+  "liveCampaignTouched": false,
+  "physicalDevicesTested": false,
+  "realProviderRequests": 0,
+  "pointCompression": {
+    "id": "1791841215639-67o54",
+    "label": "PRACTICE automatic 7",
+    "kind": "automatic",
+    "created": 1791841215656,
+    "bytes": 153822,
+    "originalBytes": 918731,
+    "encoding": "gzip"
+  }
+}

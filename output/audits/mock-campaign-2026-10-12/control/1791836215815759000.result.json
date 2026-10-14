@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "trista-dagger",
+      "name": "Dagger",
+      "type": "Action"
+    },
+    {
+      "id": "trista-spear",
+      "name": "Spear",
+      "type": "Action"
+    },
+    {
+      "id": "trista-unarmed",
+      "name": "Unarmed Strike",
+      "type": "Action"
+    },
+    {
+      "id": "trista-bonus-strike",
+      "name": "Martial Arts unarmed strike",
+      "type": "Bonus action"
+    }
+  ]
+}

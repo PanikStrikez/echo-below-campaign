@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "result": {
+    "wasVisible": false,
+    "buttons": [
+      {
+        "id": "close-combat",
+        "text": "Close"
+      },
+      {
+        "id": "",
+        "text": "Roll"
+      },
+      {
+        "id": "",
+        "text": "Roll"
+      },
+      {
+        "id": "",
+        "text": "Roll"
+      },
+      {
+        "id": "",
+        "text": "Roll"
+      }
+    ]
+  }
+}

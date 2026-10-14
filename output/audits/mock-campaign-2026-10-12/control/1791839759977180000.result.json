@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "1791839760032-eoz8hvoj37s",
+      "label": "Aldricarcaneoffering,DonavanhelpsPersuasionDC10",
+      "notation": "adv 2d20+6",
+      "parts": [
+        3,
+        19
+      ],
+      "total": 25,
+      "kind": "digital",
+      "time": "03:16 PM"
+    },
+    {
+      "id": "1791839760148-poqu3b5c3ak",
+      "label": "AldricbookseamsInvestigationDC12",
+      "notation": "1d20+8",
+      "parts": [
+        1
+      ],
+      "total": 9,
+      "kind": "digital",
+      "time": "03:16 PM"
+    }
+  ]
+}

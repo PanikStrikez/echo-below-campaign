@@ -32,8 +32,8 @@ def manage(table, character, operation, target=None):
     if not tokens:
         raise ValueError('That phone is no longer joined')
     if operation == 'resync':
-        table['revision'] += 1
-        table.setdefault('phone_health', {}).setdefault(character, {}).update(ack=-1, ack_at=0)
+        row = table.setdefault('phone_health', {}).setdefault(character, {})
+        row.update(ack=-1, ack_at=0, resync=row.get('resync', 0) + 1)
         return
     if operation not in ('release', 'reassign'):
         raise ValueError('Unknown phone action')

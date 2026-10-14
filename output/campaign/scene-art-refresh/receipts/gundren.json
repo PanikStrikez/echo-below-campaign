@@ -1,0 +1,36 @@
+{
+  "id": "gundren",
+  "title": "Gundren departs",
+  "image": "session-01-visuals/scene-01-gundren-departs.png",
+  "key": "gundren",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "departure"
+  ],
+  "sourceRecords": [
+    {
+      "id": "departure",
+      "title": "1 · Gundren rides ahead",
+      "read": [
+        "The wagon is loaded with mining supplies and road provisions. Gundren Rockseeker checks the straps one last time while Sildar waits beside their horses. The dwarf grins, but he seems impatient to get to Phandalin. “Take this to Barthen’s Provisions. I’ll meet you there.”",
+        "Gundren turns to Donavan. “If the mine holds anything unusual, write down what you actually see before anyone decides what it is worth.” To Trista, he adds, “Make sure I come back to read his account.” To Ringgo: “Choose the safe camp over the fast one. I hired you to bring people through.”"
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Gundren Rockseeker, sturdy dwarf with weathered auburn beard, mounted and turning back to speak beside loaded mining-supply wagon on damp woodland road from Neverwinter. Sildar, older human warrior near fifty in travel armor, mounted slightly ahead. TWO riders, no depicted player characters or Dracuseth. Morning after rain, muted amber daylight, ordinary road and mining bundles. No secret tokens, portals or missing persons outcome.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Gundren departs\nObservable scene and constraints: Gundren Rockseeker, sturdy dwarf with weathered auburn beard, mounted and turning back to speak beside loaded mining-supply wagon on damp woodland road from Neverwinter. Sildar, older human warrior near fifty in travel armor, mounted slightly ahead. TWO riders, no depicted player characters or Dracuseth. Morning after rain, muted amber daylight, ordinary road and mining bundles. No secret tokens, portals or missing persons outcome.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "7b03f7beca0b00f8750241a11e99f5eab0035295189e2c58d97a11de9a27d69a",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/gundren.png",
+  "generatedAt": "2026-10-12T15:53:26.739Z",
+  "candidateHash": "765acd3712310a18444201fb2b07339f8c25260838963987977e1fefdd358292",
+  "review": "passed",
+  "reviewedHash": "765acd3712310a18444201fb2b07339f8c25260838963987977e1fefdd358292",
+  "reviewedAt": "2026-10-12T16:38:06.416Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:06.580Z",
+  "installedHash": "765acd3712310a18444201fb2b07339f8c25260838963987977e1fefdd358292",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-01-gundren-departs.png"
+}

@@ -232,6 +232,9 @@
     const siteSeed = SITE_SEED.map(([id,name,location,condition,source], index) => ({ id,number:index+1,name,location,startingCondition:condition,state:'unexamined',source,people:'',evidence:'',custody:'',nextConsequence:'',notes:'' }));
     const floorSeed = FLOOR_NAMES.map((name, index) => ({ number:index+1,name,status:'unvisited',routes:'',factions:'',rooms:'',bookNote:'Consult Dungeon of the Mad Mage for map, inhabitants, and keyed rooms.',echoOverlay:FLOOR_OVERLAYS[index],echoNotes:'',source:'BOOK floor · ECHO BELOW overlay' }));
     const result = {
+      commandRevision: Number.isSafeInteger(raw.commandRevision) && raw.commandRevision >= 0 ? raw.commandRevision : 0,
+      reconciliation: globalThis.ECHO_RECONCILIATION?.normalize(raw.reconciliation) || {version:1,enabled:false,head:'',at:''},
+      clueEvents: Array.isArray(raw.clueEvents) ? raw.clueEvents.slice(-30).filter(e=>e&&typeof e.id==='string').map(e=>({id:cut(e.id,80),title:cut(e.title,120),before:e.before===true,after:e.after===true,at:cut(e.at,40)})) : [],
       continuity: globalThis.ECHO_CONTINUITY?.normalize(raw.continuity) || null,
       characterStories: globalThis.ECHO_SPOTLIGHTS?.normalize(raw.characterStories) || null,
       questPrep: globalThis.ECHO_QUEST_PREP?.normalize(raw.questPrep) || raw.questPrep || null,
@@ -301,6 +304,10 @@
     }
     if (raw.contentProfile === 'blank') {
       result.contentProfile='blank';
+      // Optional campaign-specific planning adapters start absent. Keep explicitly
+      // saved user work, but do not manufacture the installed pack's cast/chapters.
+      for (const key of ['characterStories','transition','courtyard','mystery','finale'])
+        if (raw[key] == null) result[key] = null;
       for (const key of ['npcs','sites','floors','routes']) if (!Array.isArray(raw[key])) result[key]=[];
       if (!raw.waterdeep) result.waterdeep={places:[],factions:[],leads:[],downtime:[],returns:[]};
       result.adventureProgress={};

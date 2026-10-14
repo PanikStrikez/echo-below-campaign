@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "ringgo-rapier",
+      "name": "Rapier"
+    },
+    {
+      "id": "ringgo-shortbow",
+      "name": "Shortbow"
+    },
+    {
+      "id": "ringgo-dagger",
+      "name": "Dagger"
+    },
+    {
+      "id": "ringgo-offhand",
+      "name": "Second dagger"
+    },
+    {
+      "id": "ringgo-sneak",
+      "name": "Sneak Attack"
+    }
+  ]
+}

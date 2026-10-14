@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-3-stirge-8",
+    "action": {
+      "actor": "s4-wave-3-stirge-8",
+      "label": "Blood Drain",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838279802-ypiiw9fk",
+          "label": "Blood Drain · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            9
+          ],
+          "total": 14,
+          "natural": 9,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:19 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 14 vs AC 14: hit, physical base 2, 2 piercing → 2; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        },
+        {
+          "actor": "pc-pebble",
+          "label": "Interception",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  }
+}

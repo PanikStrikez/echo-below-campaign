@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "result": {
+    "reveal": "(x,y,w=14,h=12)=>{let s=__mock.state.state,key=s.scene;let f=s.sessionKind==='session1'&&key==='interior'?s.fog:(s.sceneFog[key]||=[]);for(let r=Math.max(0,Math.floor((y-h/2)*20/100));r<=Math.min(19,Math.ceil((y+h/2)*20/100));r++)for(let c=Math.max(0,Math.floor((x-w/2)*32/100));c<=Math.min(31,Math.ceil((x+w/2)*32/100));c++)if(!f.includes(r+','+c))f.push(r+','+c);s.tokens.filter(t=>t.team==='pc'&&t.placed).forEach((t,i)=>{t.x=x-4+i*2;t.y=y+4});__mock.combat.commit('MOCK current room revealed, earlier areas remain recorded');}",
+    "scenes": [
+      {
+        "id": "lmop-starry-cavern",
+        "title": "Wave Echo Cave · Area 13 · Starry cavern",
+        "kind": "visual"
+      },
+      {
+        "id": "lmop-wizards-quarters",
+        "title": "Wave Echo Cave · Area 14 · Wizards’ quarters",
+        "kind": "visual"
+      },
+      {
+        "id": "lmop-mormesk-reveal",
+        "title": "Wave Echo Cave · Area 14 · Mormesk appears",
+        "kind": "visual"
+      },
+      {
+        "id": "lmop-forge-of-spells",
+        "title": "Wave Echo Cave · Area 15 · Forge of Spells",
+        "kind": "visual"
+      },
+      {
+        "id": "lmop-map-wave-forge",
+        "title": "Wave Echo Cave · Wave Echo Cave · Forge of Spells",
+        "kind": "map"
+      }
+    ],
+    "map": {
+      "floor": "",
+      "fineFog": true,
+      "journeyMotion": true,
+      "journeyArtVersion": 0,
+      "light": "bright",
+      "vision": "normal",
+      "dmLayers": {
+        "map": true,
+        "grid": true,
+        "fog": true,
+        "tokens": true,
+        "labels": true,
+        "templates": true,
+        "annotations": true,
+        "markers": true
+      },
+      "playerLayers": {
+        "map": true,
+        "grid": true,
+        "fog": true,
+        "tokens": true,
+        "labels": true,
+        "templates": true,
+        "annotations": true,
+        "markers": true
+      },
+      "floorFog": null,
+      "floorReveals": [],
+      "view": {
+        "zoom": 1,
+        "panX": 0,
+        "panY": 0
+      },
+      "lines": [],
+      "points": [],
+      "links": [],
+      "lights": []
+    }
+  }
+}

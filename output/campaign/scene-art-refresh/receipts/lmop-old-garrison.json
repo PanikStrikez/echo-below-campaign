@@ -1,0 +1,36 @@
+{
+  "id": "lmop-old-garrison",
+  "title": "Thundertree · Area 11 · Old garrison",
+  "image": "lmop-visuals/old-garrison.png",
+  "key": "T11",
+  "chapter": "Thundertree",
+  "reveal": "On entering area 11",
+  "sourceRecordIds": [
+    "s3-tt-11"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-11",
+      "title": "Thundertree 11 · Old garrison",
+      "read": [
+        "An old stone barracks still has a roof and narrow windows. Rusted armor lies among the beds.",
+        "The surviving roof makes the barracks feel more enclosed than the cottages outside. Narrow windows admit limited views, while beds and old armor divide the interior. You can stop to examine the threshold, look over the room, or listen before touching any of the remains."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Old stone garrison with intact roof and narrow arrow-slit windows, five old beds, FIVE ash-covered motionless zombie forms, scraps of rusted mail without suggesting strong intact armor. Dusty stone floor and faded military equipment. Daylight through narrow windows, no combat, new soldiers or lit barracks celebration.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 11 · Old garrison\nObservable scene and constraints: Old stone garrison with intact roof and narrow arrow-slit windows, five old beds, FIVE ash-covered motionless zombie forms, scraps of rusted mail without suggesting strong intact armor. Dusty stone floor and faded military equipment. Daylight through narrow windows, no combat, new soldiers or lit barracks celebration.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "ae0598ebfd0653484c00e61ed1b9f1cc2ed5e26e8750e79b4178677ea3751fb9",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-old-garrison.png",
+  "generatedAt": "2026-10-12T16:19:47.459Z",
+  "candidateHash": "ca55c1023242d716af02002f6f5a130caf3e473efe182af71d3e37db43afc322",
+  "review": "passed",
+  "reviewedHash": "ca55c1023242d716af02002f6f5a130caf3e473efe182af71d3e37db43afc322",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.107Z",
+  "installedHash": "ca55c1023242d716af02002f6f5a130caf3e473efe182af71d3e37db43afc322",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/old-garrison.png"
+}

@@ -71,6 +71,8 @@ globalThis.ECHO_RELIABILITY.runTableCheck().then(async () => {
   assert.match(document.getElementById('reliability-content').innerHTML, /Needs attention before play/, 'Audio needs a human listening check');
   document.getElementById('reliability-content').listeners.click({ target: { closest: () => ({ dataset: { reliable: 'confirm-audio' } }) } });
   await new Promise(resolve => setImmediate(resolve));
-  assert.match(document.getElementById('reliability-content').innerHTML, /Ready for play/);
+  assert.match(document.getElementById('reliability-content').innerHTML, /Needs attention before play/);
+  assert.equal(ECHO_RELIABILITY.tableStatus().checks.storage.status,'unchecked','Unavailable storage evidence must never imply readiness');
+  assert(!document.getElementById('reliability-content').innerHTML.includes('Physical table tested'),'An audio acknowledgement is not a whole physical-table certification');
   console.log('Table workflows passed: private encounter staging and one-click readiness checks.');
 }).catch(error => { console.error(error); process.exitCode = 1; });

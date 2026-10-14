@@ -1,0 +1,28 @@
+COMBAT AFTERMATH — 14 OCTOBER 2026
+
+Where to use it
+Map Desk → Review combat ending.
+The original end-combat button, guided ending, Encounter pacing, After combat tool and linked scene outcome control lead to the same workflow.
+
+How it works
+1. How did it end? Choose victory, surrender, negotiation, escape, retreat or unresolved. Encounter objectives, morale, reinforcements and retreat guidance remain private context.
+2. What changed? Reuse private wrap notes for people, loot, custody, clues, promises, resources, advancement and consequences. Blank fields remain unrecorded. Capture reports HP/resource observations without inferring deaths or awards. Still-open items have an explicit field.
+3. Review updates. Resume the existing outcome draft or correct the existing approved record for that fight. Select audience, knowledge, quest links, custody, relationships and map updates in the established outcome review. Private notes are not copied into public wording. Applying opens the final return step.
+4. Return to map. Explicitly end initiative and restore the originating exploration view. Outstanding queues, effects and requests remain retained. Escape, retreat and unresolved endings retain a resumable turn order. Resume requires the correct battlefield and no other active fight.
+
+Repeat and correction behavior
+Each encounter occurrence has a stable fight reference. Reopening does not add an event or grant a reward. Changed wrap notes enter a correction preview. Unreviewed changes block final return. The outcome ledger provides correction, withdrawal, undo and redo. Ending initiative remains an undoable session change through the existing session Undo.
+A new fight gets a distinct reference; prior full wrap notes are retained and old loot proposals are cleared. A review for an older fight cannot end a different active fight. An open reaction blocks initiative ending.
+
+Verification
+13 focused automated tests passed: all six ending types, private draft isolation, repeated opening, correction, undo/redo, duplicate rejection, stale preview rejection, no inferred death/award and reusable campaign boundaries.
+10 new real-browser workflow checks passed in a fresh profile and temporary local services: review keeps initiative, selected linked updates, reaction blocking, retained effects/queue, map return, single-record correction, undo/redo, reload, updated-note correction and paused-combat resume.
+Existing hybrid combat browser rehearsal passed: free token dragging/undo, explicit ruler, initiative, shared DM/simulated-phone action review, physical dice, reactions, resource costs and the reviewed aftermath ending.
+Guided DM and production guided-integration checks passed. All 12 changed JavaScript modules passed syntax checks. Reviewed-return.png was visually inspected.
+
+Limits
+No live campaign save/database, source PDF, phone listener or provider account was changed by testing. No physical TV, phone hardware or speakers were tested.
+Free-text loot does not silently change money or item quantities. The outcome review records approved custody and links; quantitative item and currency changes continue through the existing reviewed inventory tools. Full notes remain saved; the initial outcome summary is intentionally short and editable. Resuming a paused fight requires explicit TV staging if its battlefield is no longer current.
+
+Loading
+Wait for Saved, then refresh the DM page. Existing phone assignments require no service restart.

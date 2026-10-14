@@ -1,0 +1,115 @@
+{
+  "ok": true,
+  "result": {
+    "session": "session-1791830127550-ob1fd",
+    "selects": [
+      [
+        {
+          "v": "session-01",
+          "t": "Session 1 · Goblin Arrows"
+        },
+        {
+          "v": "session-1791829641355-hkrkt",
+          "t": "Session 2 · Phandalin"
+        },
+        {
+          "v": "session-1791830127550-ob1fd",
+          "t": "Wilderness and castle · optional continuation"
+        },
+        {
+          "v": "pack:next-session-4",
+          "t": "Session 4 · Phandalin after Glasstaff · create"
+        },
+        {
+          "v": "pack:next-session-5",
+          "t": "Session 5 · Leads and Cragmaw Castle · create"
+        },
+        {
+          "v": "pack:next-session-6",
+          "t": "Session 6 · Wave Echo Cave expedition · create"
+        },
+        {
+          "v": "pack:phandalin-aftermath-next",
+          "t": "Phandalin · After Glasstaff · create"
+        },
+        {
+          "v": "pack:lmop-part-4-visuals",
+          "t": "Session 4 · Wave Echo Cave · create"
+        },
+        {
+          "v": "pack:phandalin-waterdeep-transition",
+          "t": "Phandalin → Waterdeep · create"
+        },
+        {
+          "v": "pack:mending-court-home",
+          "t": "Mending Court · home · create"
+        },
+        {
+          "v": "pack:waterdeep-undermountain-1",
+          "t": "Waterdeep · First expedition · create"
+        },
+        {
+          "v": "pack:silent-library-expedition",
+          "t": "The Silent Library · create"
+        },
+        {
+          "v": "pack:lmop-part-3-visuals",
+          "t": "Part 3 · Wilderness and castle · create"
+        },
+        {
+          "v": "pack:cragmaw-continuation",
+          "t": "Cragmaw Hideout continuation · create"
+        }
+      ]
+    ],
+    "stateKeys": [
+      "statusContext",
+      "readStatus",
+      "saveStatus",
+      "refreshStatus",
+      "openOutcomes",
+      "readRehearsal",
+      "saveRehearsal",
+      "rehearsalTool",
+      "state",
+      "registry",
+      "campaignId",
+      "campaignName",
+      "sessionName",
+      "sessionId",
+      "restorePoints",
+      "migrationReport",
+      "scenes",
+      "beats",
+      "media",
+      "story",
+      "resolveImage",
+      "readMedia",
+      "toast",
+      "sceneImage",
+      "storyPortrait",
+      "performance",
+      "connection",
+      "resync",
+      "openTV",
+      "phoneCheck",
+      "openPhones",
+      "audioTest",
+      "openAudio",
+      "openAssets",
+      "createRestorePoint",
+      "restorePoint",
+      "downloadPoint",
+      "createCampaign",
+      "switchCampaign",
+      "duplicateCampaign",
+      "archiveCampaign",
+      "rehearseBackup",
+      "downloadPackage",
+      "downloadBrowserData",
+      "checkWholeStore",
+      "downloadBackup",
+      "validateBackup"
+    ]
+  }
+}

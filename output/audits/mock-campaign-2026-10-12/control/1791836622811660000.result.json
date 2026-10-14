@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "s2-hideout-barracks-1",
+      "type": "redbrand-ruffian"
+    },
+    {
+      "id": "s2-hideout-barracks-2",
+      "type": "redbrand-ruffian"
+    },
+    {
+      "id": "s2-hideout-barracks-3",
+      "type": "redbrand-ruffian"
+    },
+    {
+      "id": "s2-hideout-pens-1",
+      "type": "redbrand-ruffian"
+    },
+    {
+      "id": "s2-hideout-pens-2",
+      "type": "redbrand-ruffian"
+    }
+  ]
+}

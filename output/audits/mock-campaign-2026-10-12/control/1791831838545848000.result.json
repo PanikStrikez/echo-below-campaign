@@ -1,0 +1,4 @@
+{
+  "ok": false,
+  "error": "page.evaluate: TypeError: ECHO_COMBAT_RUN.dueEffects is not a function or its return value is not iterable\n    at window.__nextMock (eval at evaluate (:311:30), <anonymous>:3:82)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:117)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:140)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+}

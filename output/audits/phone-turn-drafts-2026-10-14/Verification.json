@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "Waiting player selects action/targets and saves a private draft with no /api/action traffic",
+    "Reload restores the private draft, selected targets and intent without modifying the table",
+    "Disconnect/reconnect retains editable draft without sending or spending",
+    "Depleted resource and disappeared target are explained; correction does not submit automatically",
+    "Corrected draft submits once on the player turn; only a waiting request changes, with no rolls or spending",
+    "Cancelling the private draft removes only local data",
+    "Service rejects changed prepared mechanics before enqueue, with no partial changes",
+    "Service rechecks prepared resource availability before enqueue"
+  ],
+  "errors": [],
+  "environment": "Fresh DM and phone Chrome profiles; disposable local services",
+  "liveServicesChanged": false,
+  "physicalDevices": false
+}

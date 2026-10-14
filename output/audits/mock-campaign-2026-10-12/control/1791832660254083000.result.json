@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791832660340-tqr5xxz5",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              10
+            ],
+            "total": 16,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          },
+          {
+            "id": "pa-1791832660340-8fh949ly",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              8
+            ],
+            "total": 8,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-3",
+            "text": "Goblin 3: 16 vs AC 15: hit, 8 cold → 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

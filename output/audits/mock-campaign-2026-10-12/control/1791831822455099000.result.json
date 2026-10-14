@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "lmop-map-wave-south",
+    "buttons": [
+      {
+        "id": "hybrid-evening-next",
+        "t": "Finish collecting initiative"
+      },
+      {
+        "id": "",
+        "t": "Return to real campaign"
+      },
+      {
+        "id": "",
+        "t": "Initiative requested"
+      },
+      {
+        "id": "",
+        "t": "Build order · 1 missing"
+      },
+      {
+        "id": "",
+        "t": "Build turn order"
+      },
+      {
+        "id": "",
+        "t": "Combat tools"
+      },
+      {
+        "id": "",
+        "t": "Next turn"
+      }
+    ],
+    "guide": [
+      "desk",
+      "save",
+      "refresh",
+      "toast",
+      "context",
+      "openQuestLead",
+      "review",
+      "inbox",
+      "turn",
+      "previewScene",
+      "chooseScene",
+      "selectBeat",
+      "stage",
+      "build",
+      "next",
+      "combat",
+      "bringParty",
+      "outcome",
+      "end",
+      "closeSession",
+      "initiative",
+      "begin",
+      "tool"
+    ]
+  }
+}

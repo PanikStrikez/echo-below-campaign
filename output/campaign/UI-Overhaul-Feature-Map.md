@@ -45,3 +45,10 @@ The new shell keeps three DM modes: Prep, Run, and Review. The Run view keeps th
 For each row above, verify: entry is visible or searchable; current state is shown; the existing action still works; Back returns to the prior context; keyboard/touch target is usable; no DM-only data reaches TV or phone; save/reload preserves the result. Keep the legacy controls available during migration until every row passes.
 
 The clickable layout study is `UI-Overhaul-Prototype.html`. It contains no campaign save and makes no player-visible changes. A physical table-sized TV and at least one player's phone still need human review of sizing, reach, and labels.
+
+
+## Current header and launchpad — 12 October 2026
+
+The current control locations supersede earlier header/dock placement notes. Search, Inbox, and Stop sound stay in the header. Scene, the full objective, next action, TV status, and the guide toggle sit in the context strip. The launchpad retains all four tiles and the atlas, with a current-session Resume summary. Mute and the audio board are in Menu; Map Desk keeps tokens, fog, undo, next turn, and map tools. The collapsed guide retains its current-step action. All advanced controls retain their existing menu/navigation paths.
+
+See [current visual/header report](UI-Visual-Language-and-Header-2026-10-12.md) for verified scope and before/after images.

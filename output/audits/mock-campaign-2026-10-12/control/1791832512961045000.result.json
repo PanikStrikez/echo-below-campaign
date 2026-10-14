@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "road",
+    "round": 1,
+    "order": [
+      "pc-aldric",
+      "pc-trista",
+      "goblin-3",
+      "goblin-1",
+      "pc-donavan",
+      "pc-ringgo",
+      "pc-pebble",
+      "goblin-4",
+      "goblin-2"
+    ],
+    "index": 0
+  }
+}

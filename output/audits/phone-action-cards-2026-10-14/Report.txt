@@ -1,0 +1,48 @@
+Phone action cards — verified 14 October 2026
+
+Find the changes
+Reload the DM app and each phone page when convenient. No live phone service
+was restarted, no joins were released, and no real campaign save was edited.
+Phone Home -> Request an action: favorites first, expandable ability/spell/resource
+groups, and Describe another action immediately beside the action workflow.
+
+What changed
+Consistent rows: name, timing, d20/save math, effect, named resource cost,
+remaining resources and explicit unknown/situational/manual-ruling states.
+Favorites appear once rather than duplicated in their ordinary group.
+Full effects, source references, requirements and quick rolls are expandable.
+Quick rolls explicitly send dice only; reviewed requests retain the same canonical
+indices, targets, costs and existing DM approval workflow.
+Depleted resources stay visible and can be raised for DM review; no availability
+badge claims range, reaction triggers or every situational requirement was met.
+Unprepared spells remain visible with request disabled. Unknown pools and costs
+remain explicit. Shadow Arts notes declaring Focus costs are not presented as
+spell-slot casting. Unarmed strike and Flurry retain distinct mechanics.
+Wizard and cleric copies of Detect Magic remain separate, labeled choices.
+Freeform intent is a derived owner-view entry: it does not enter the saved sheet,
+grant an ability, consume an action/resource or resolve an effect automatically.
+Its DM review requires a ruling. Offline requests disable; reconnect restores them.
+
+Verified
+20 isolated action-presentation and party-mechanics tests passed.
+Existing phone composer/request test passed (targets, draft retention, revision,
+cancellation, casting-resource choice, status and results).
+Existing player-tool regression passed (private sharing, spell filters, inventory
+requests, potion/currency previews, stable notes and offline controls).
+16 browser checks passed with five independent simulated phone clients, each at
+360 and 390 pixels. Measured no horizontal overflow and minimum 44px request
+buttons. Verified canonical Flurry and freeform requests reach the DM, remain
+pending, and leave sheets/tokens/maps unchanged. Tested depletion and reconnection.
+Syntax checks passed. Existing Goron defense/trait regression was also checked;
+its obsolete pack argument fixture was repaired without weakening assertions.
+
+Limitations
+Real phones and physical table readability were not tested. No claim of faster
+human use is made. Missing spell math/timing remains unconfirmed until the sheet
+supplies it. Manual rulings, unusual spells and conditional effects retain DM review.
+The current service stays running; new canonical freeform entries appear after
+the DM page reload supplies its updated owner snapshot.
+
+Evidence
+Verification.json and all five character screenshots at both widths;
+Flurry-rules.png and Flurry-depleted.png.

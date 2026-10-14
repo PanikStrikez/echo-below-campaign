@@ -1,0 +1,928 @@
+{
+  "label": "ISOLATED MOCK CAMPAIGN — not actual history",
+  "phase": "corrected-hideout-bugbears-round4",
+  "characterId": "pc-trista",
+  "dmNarration": [
+    "FULL MOCK · hideout-bugbears · Round 4\n\n{\n  \"actor\": \"pc-aldric\",\n  \"actions\": [\n    {\n      \"actor\": \"pc-aldric\",\n      \"label\": \"Fire Bolt\",\n      \"rolls\": [\n        {\n          \"id\": \"pa-1791835499577-yhuponpd\",\n          \"label\": \"Fire Bolt · attack 1\",\n          \"notation\": \"1d20+6\",\n          \"parts\": [\n            10\n          ],\n          \"total\": 16,\n          \"natural\": 10,\n          \"public\": true,\n          \"kind\": \"digital\",\n          \"time\": \"2:04:59 PM\"\n        },\n        {\n          \"id\": \"pa-1791835499577-4t74rr93\",\n          \"label\": \"Fire Bolt · effect 1.1\",\n          \"notation\": \"1d10\",\n          \"parts\": [\n            6\n          ],\n          \"total\": 6,\n          \"natural\": 6,\n          \"public\": true,\n          \"kind\": \"digital\",\n          \"time\": \"2:04:59 PM\"\n        }\n      ],\n      \"outcomes\": [\n        {\n          \"targetId\": \"s2-hideout-bugbears-2\",\n          \"text\": \"Bugbear 2: 16 vs AC 16: hit, 6 fire → 6; temp HP absorbed 0\"\n        }\n      ],\n      \"costs\": []\n    }\n  ]\n}"
+  ],
+  "question": "Standing actions applied; major choices and unconscious allies pause play.",
+  "phoneResponse": {
+    "status": 200,
+    "data": {
+      "revision": 2034,
+      "resyncRequest": 0,
+      "session": "PRACTICE · Session 2 · Phandalin",
+      "character": {
+        "id": "pc-trista",
+        "name": "Trista",
+        "player": "",
+        "className": "Monk · Warrior of Shadow",
+        "ancestry": "Human",
+        "background": "Criminal / Spy",
+        "level": 3,
+        "rules": "2024 character exception",
+        "proficiency": 2,
+        "speed": 40,
+        "senses": "Darkvision 60 ft.; see through Darkness cast with Shadow Arts",
+        "languages": "Common, Orc",
+        "hp": 9,
+        "maxHp": 21,
+        "ac": 14,
+        "tempHp": 0,
+        "hitDice": {
+          "die": 8,
+          "current": 3,
+          "max": 3,
+          "details": "3d8",
+          "pools": [
+            {
+              "die": 8,
+              "current": 3,
+              "max": 3
+            }
+          ]
+        },
+        "abilities": {
+          "str": {
+            "score": 14,
+            "modifier": 2
+          },
+          "dex": {
+            "score": 18,
+            "modifier": 4
+          },
+          "con": {
+            "score": 17,
+            "modifier": 3
+          },
+          "int": {
+            "score": 9,
+            "modifier": -1
+          },
+          "wis": {
+            "score": 11,
+            "modifier": 0
+          },
+          "cha": {
+            "score": 12,
+            "modifier": 1
+          }
+        },
+        "saves": [
+          {
+            "name": "STR",
+            "bonus": 4,
+            "rank": 1
+          },
+          {
+            "name": "DEX",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "CON",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "INT",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "WIS",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "CHA",
+            "bonus": 1,
+            "rank": 0
+          }
+        ],
+        "skills": [
+          {
+            "name": "Acrobatics",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Animal Handling",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Arcana",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Athletics",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "Deception",
+            "bonus": 3,
+            "rank": 1
+          },
+          {
+            "name": "History",
+            "bonus": 1,
+            "rank": 1
+          },
+          {
+            "name": "Insight",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Intimidation",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Investigation",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Medicine",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Nature",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Perception",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Performance",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Persuasion",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Religion",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Sleight of Hand",
+            "bonus": 4,
+            "rank": 0
+          },
+          {
+            "name": "Stealth",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Survival",
+            "bonus": 0,
+            "rank": 0
+          }
+        ],
+        "passives": {
+          "Perception": 10,
+          "Insight": 10,
+          "Investigation": 9
+        },
+        "attacks": [
+          {
+            "id": "trista-dagger",
+            "name": "Dagger",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d6+4",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Monk weapon; thrown range 20/60 ft.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "trista-spear",
+            "name": "Spear",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d8+4",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Versatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose one or two hands; the recorded d8 is the two-handed spear.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "trista-unarmed",
+            "name": "Unarmed Strike",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d6+4",
+            "damageType": "bludgeoning",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Martial Arts.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "trista-bonus-strike",
+            "name": "Martial Arts unarmed strike",
+            "type": "Bonus action",
+            "attackBonus": 6,
+            "damageDice": "1d6+4",
+            "damageType": "bludgeoning",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "No Attack action prerequisite while Martial Arts applies.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          }
+        ],
+        "actions": [
+          {
+            "id": "trista-flurry",
+            "name": "Flurry of Blows",
+            "type": "Bonus action",
+            "attackBonus": 6,
+            "damageDice": "1d6+4",
+            "damageType": "bludgeoning",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Spend 1 Focus Point to make two Unarmed Strikes; roll each separately.",
+            "resourceId": "trista-focus",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.",
+              "source": {
+                "book": "2024 Monk exception",
+                "printedPage": null,
+                "rule": "Flurry of Blows",
+                "url": "https://www.dndbeyond.com/sources/dnd/br-2024/character-classes",
+                "confidence": "official rules / approved exception"
+              }
+            }
+          },
+          {
+            "id": "trista-patient",
+            "name": "Patient Defense",
+            "type": "Bonus action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Disengage without spending Focus. Spend 1 Focus Point to Disengage and Dodge.",
+            "resourceId": "",
+            "cost": 0,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.",
+              "source": {
+                "book": "2024 Monk exception",
+                "printedPage": null,
+                "rule": "Patient Defense / Step of the Wind",
+                "url": "https://www.dndbeyond.com/sources/dnd/br-2024/character-classes",
+                "confidence": "official rules / approved exception"
+              }
+            }
+          },
+          {
+            "id": "trista-patient-focus",
+            "name": "Patient Defense + Dodge",
+            "type": "Bonus action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Spend 1 Focus Point to Disengage and Dodge.",
+            "resourceId": "trista-focus",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.",
+              "source": {
+                "book": "2024 Monk exception",
+                "printedPage": null,
+                "rule": "Patient Defense / Step of the Wind",
+                "url": "https://www.dndbeyond.com/sources/dnd/br-2024/character-classes",
+                "confidence": "official rules / approved exception"
+              }
+            }
+          },
+          {
+            "id": "trista-step",
+            "name": "Step of the Wind",
+            "type": "Bonus action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Dash without spending Focus. Spend 1 Focus Point to Dash and Disengage and double jump distance.",
+            "resourceId": "",
+            "cost": 0,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.",
+              "source": {
+                "book": "2024 Monk exception",
+                "printedPage": null,
+                "rule": "Patient Defense / Step of the Wind",
+                "url": "https://www.dndbeyond.com/sources/dnd/br-2024/character-classes",
+                "confidence": "official rules / approved exception"
+              }
+            }
+          },
+          {
+            "id": "trista-step-focus",
+            "name": "Step of the Wind + Disengage",
+            "type": "Bonus action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Spend 1 Focus Point to Dash and Disengage; double jump distance this turn.",
+            "resourceId": "trista-focus",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.",
+              "source": {
+                "book": "2024 Monk exception",
+                "printedPage": null,
+                "rule": "Patient Defense / Step of the Wind",
+                "url": "https://www.dndbeyond.com/sources/dnd/br-2024/character-classes",
+                "confidence": "official rules / approved exception"
+              }
+            }
+          },
+          {
+            "id": "trista-uncanny",
+            "name": "Uncanny Metabolism",
+            "type": "When rolling initiative",
+            "attackBonus": null,
+            "damageDice": "1d6+3",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Restore all spent Focus Points and heal 1d6 + Monk level; once per long rest.",
+            "resourceId": "trista-uncanny",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Confirm initiative was rolled. Restore Focus and roll healing; spend the once-per-long-rest use.",
+              "source": {
+                "book": "2024 Monk exception",
+                "printedPage": null,
+                "rule": "Uncanny Metabolism",
+                "url": "https://www.dndbeyond.com/sources/dnd/br-2024/character-classes",
+                "confidence": "official rules / approved exception"
+              }
+            }
+          },
+          {
+            "id": "trista-deflect",
+            "name": "Deflect Attacks",
+            "type": "Reaction",
+            "attackBonus": null,
+            "damageDice": "1d10+7",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "When hit by an attack that deals bludgeoning, piercing, or slashing, reduce total damage by 1d10 + DEX + Monk level. If reduced to 0, you may spend 1 Focus Point to redirect.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.",
+              "source": {
+                "book": "2024 Monk / Tasha’s Interception exception",
+                "printedPage": null,
+                "rule": "Damage reduction reactions",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "trista-redirect",
+            "name": "Redirect deflected attack",
+            "type": "After Deflect Attacks",
+            "attackBonus": null,
+            "damageDice": "2d6+4",
+            "damageType": "",
+            "saveAbility": "DEX",
+            "saveDC": 10,
+            "effect": "Only if Deflect Attacks reduced damage to 0. Spend 1 Focus Point; eligible target makes DEX save DC 10 or takes the attack’s damage type.",
+            "resourceId": "trista-focus",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.",
+              "source": {
+                "book": "2024 Monk / Tasha’s Interception exception",
+                "printedPage": null,
+                "rule": "Damage reduction reactions",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "trista-minor-illusion",
+            "name": "Minor Illusion",
+            "type": "Action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Create a small sound or image within 30 ft.; Wisdom is the spellcasting ability.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2024 character exception",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "trista-darkness",
+            "name": "Shadow Arts: Darkness",
+            "type": "Action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Spend 1 Focus Point to cast Darkness without components; concentration up to 10 minutes. Trista can see within it and move its area within 60 ft. at the start of each turn.",
+            "resourceId": "trista-focus",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Spend Focus, set concentration and stage the area manually. No automatic darkvision, targeting or fog changes.",
+              "source": {
+                "book": "2024 Monk exception",
+                "printedPage": null,
+                "rule": "Shadow Arts",
+                "url": "https://www.dndbeyond.com/sources/dnd/br-2024/character-classes",
+                "confidence": "official rules / approved exception"
+              }
+            }
+          }
+        ],
+        "spells": [
+          {
+            "name": "Minor Illusion",
+            "level": 0,
+            "prepared": true,
+            "notes": "Warrior of Shadow; at will; Wisdom spellcasting.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2024 character exception",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "name": "Darkness",
+            "level": 2,
+            "prepared": true,
+            "notes": "Shadow Arts; costs 1 Focus Point, no components; concentration.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Spend Focus, set concentration and stage the area manually. No automatic darkvision, targeting or fog changes.",
+              "source": {
+                "book": "2024 Monk exception",
+                "printedPage": null,
+                "rule": "Shadow Arts",
+                "url": "https://www.dndbeyond.com/sources/dnd/br-2024/character-classes",
+                "confidence": "official rules / approved exception"
+              }
+            }
+          }
+        ],
+        "resources": [
+          {
+            "id": "trista-focus",
+            "name": "Focus Points",
+            "current": 3,
+            "max": 3,
+            "unit": "points",
+            "slotLevel": 0
+          },
+          {
+            "id": "trista-uncanny",
+            "name": "Uncanny Metabolism",
+            "current": 1,
+            "max": 1,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Dagger",
+            "quantity": 5,
+            "category": "Weapon",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Spear",
+            "quantity": 1,
+            "category": "Weapon",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Tinker’s tools",
+            "quantity": 1,
+            "category": "Tool",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Bagpipes",
+            "quantity": 1,
+            "category": "Instrument",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Torch",
+            "quantity": 10,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Rations",
+            "quantity": 10,
+            "category": "Consumable",
+            "notes": "One day each",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Oil flask",
+            "quantity": 2,
+            "category": "Consumable",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Rope",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Tinderbox",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          }
+        ],
+        "money": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 26,
+          "pp": 0
+        },
+        "features": [
+          {
+            "name": "Martial Arts",
+            "text": "Bonus-action Unarmed Strike needs no Attack action; Martial Arts die is 1d6.",
+            "source": "2024 Monk 1"
+          },
+          {
+            "name": "Monk’s Focus",
+            "text": "3 Focus Points; Flurry of Blows, Patient Defense, and Step of the Wind. Regain points after a short or long rest. Focus save DC 10.",
+            "source": "2024 Monk 2–3"
+          },
+          {
+            "name": "Unarmored Movement",
+            "text": "Speed +10 ft. while unarmored and not using a shield.",
+            "source": "2024 Monk 2"
+          },
+          {
+            "name": "Uncanny Metabolism",
+            "text": "On initiative, regain all Focus Points and heal 1d6+3; once per long rest.",
+            "source": "2024 Monk 2"
+          },
+          {
+            "name": "Deflect Attacks",
+            "text": "Reaction: reduce qualifying attack damage by 1d10+7; on reduction to 0, spend 1 Focus Point to redirect with DEX save DC 10.",
+            "source": "2024 Monk 3"
+          },
+          {
+            "name": "Shadow Arts",
+            "text": "Darkvision 60 ft., Minor Illusion, and Darkness for 1 Focus Point; see through and move your own Darkness.",
+            "source": "2024 Warrior of Shadow 3"
+          }
+        ],
+        "inspiration": false,
+        "death": {
+          "successes": 0,
+          "failures": 0,
+          "stable": false
+        },
+        "exhaustion": 0,
+        "conditions": [],
+        "concentration": "",
+        "effects": [],
+        "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+        "favorites": []
+      },
+      "dungeonProtocol": 1,
+      "dungeon": {
+        "enabled": false,
+        "fine": false,
+        "current": [],
+        "explored": [],
+        "objects": [],
+        "passages": []
+      },
+      "searchRequests": [],
+      "travelProtocol": 1,
+      "journey": {
+        "position": null,
+        "destination": "",
+        "weather": "clear",
+        "estimate": null,
+        "places": [
+          {
+            "id": "region-neverwinter",
+            "title": "Neverwinter",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-phandalin",
+            "title": "Phandalin",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          }
+        ],
+        "events": []
+      },
+      "atlas": null,
+      "atlasImage": "",
+      "travelRequests": [],
+      "playerToolsProtocol": 1,
+      "playerTools": {
+        "notes": [],
+        "sharedClues": [],
+        "itemRequests": [],
+        "bank": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 0,
+          "pp": 0
+        },
+        "objective": {
+          "text": "Escort the supplies to Phandalin and investigate danger on the road.",
+          "at": "2026-10-12T19:10:34.672Z"
+        },
+        "roster": [
+          {
+            "id": "pc-aldric",
+            "name": "Aldric Vane"
+          },
+          {
+            "id": "pc-pebble",
+            "name": "Pebble"
+          },
+          {
+            "id": "pc-trista",
+            "name": "Trista"
+          },
+          {
+            "id": "pc-ringgo",
+            "name": "Ringgo Paul"
+          },
+          {
+            "id": "pc-donavan",
+            "name": "Donavan Kemp"
+          }
+        ]
+      },
+      "actionProtocol": 1,
+      "combatProtocol": 1,
+      "combatPrompts": {
+        "saves": [],
+        "reactions": []
+      },
+      "movement": {
+        "columns": 30,
+        "feet": 5,
+        "metric": "grid",
+        "speed": 40,
+        "used": 0,
+        "crawling": false,
+        "areas": []
+      },
+      "scene": "redbrand-hideout",
+      "sceneTitle": "Redbrand Hideout · Redbrand Hideout",
+      "isMap": true,
+      "mapImage": "/api/map?v=b4eef1de0bc1",
+      "playerInput": true,
+      "fog": [],
+      "fogged": true,
+      "fineFog": true,
+      "points": [],
+      "tokens": [
+        {
+          "id": "pc-trista",
+          "name": "Trista",
+          "label": "T",
+          "team": "pc",
+          "x": 32,
+          "y": 40
+        },
+        {
+          "id": "pc-donavan",
+          "name": "Donavan",
+          "label": "D",
+          "team": "pc",
+          "x": 23,
+          "y": 48
+        },
+        {
+          "id": "pc-ringgo",
+          "name": "Ringgo",
+          "label": "R",
+          "team": "pc",
+          "x": 26,
+          "y": 48
+        },
+        {
+          "id": "pc-pebble",
+          "name": "Pebble",
+          "label": "P",
+          "team": "pc",
+          "x": 32,
+          "y": 40
+        },
+        {
+          "id": "pc-aldric",
+          "name": "Aldric",
+          "label": "A",
+          "team": "pc",
+          "x": 32,
+          "y": 48
+        }
+      ],
+      "turn": {
+        "round": 4,
+        "activeId": "pc-trista"
+      },
+      "roll": {
+        "id": "1791835401236-aq0amun22vj",
+        "label": "Trista initiative",
+        "notation": "1d20+4",
+        "parts": [
+          14
+        ],
+        "total": 18
+      },
+      "requests": "Initiative 18 (14 + 4).",
+      "actionRequests": [],
+      "privateClues": [],
+      "inventory": [],
+      "sceneMood": {
+        "minutes": 540,
+        "weather": "clear",
+        "phase": "day"
+      },
+      "campaignJournal": [
+        {
+          "id": "continuity-outcome-1791832923830-zmlxmuz",
+          "title": "CORRECTED MOCK · Road goblin surrendered",
+          "text": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+          "kind": "confirmed",
+          "when": "MOCK Session1"
+        }
+      ],
+      "quests": [],
+      "campaignTracks": [],
+      "initiative": {
+        "open": false,
+        "total": 18,
+        "bonus": 4
+      },
+      "rehearsal": false
+    }
+  },
+  "playerTV": "Redbrand Hideout\nControls & interaction\nRound 4 · Trista’s turn\n1 Aldric\n▶ Trista\n3 Ringgo\n4 Pebble\n5 Donavan\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\n!\nDay · Clear\nPRACTICE CAMPAIGN",
+  "displayImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/corrected-hideout-bugbears-round4-TV.png",
+  "phoneImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/players/pc-trista-corrected-hideout-bugbears-round4.png"
+}

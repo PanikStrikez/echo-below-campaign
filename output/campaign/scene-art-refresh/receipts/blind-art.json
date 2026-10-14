@@ -1,0 +1,36 @@
+{
+  "id": "blind-art",
+  "title": "Area 2 · Goblin blind",
+  "image": "session-01-visuals/scene-05-goblin-blind.png",
+  "key": "blind-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "blind"
+  ],
+  "sourceRecords": [
+    {
+      "id": "blind",
+      "title": "Area 2 · Goblin blind",
+      "read": [
+        "Across the stream, the briars are thick enough to swallow the path. A board creaks faintly behind them, then goes still.",
+        "The vegetation interrupts your view of whatever lies beyond it. The stream remains an obvious landmark beside the approach, but the brief creak gives you a reason to watch the cover rather than hurry past it."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Cragmaw area2 east-bank lookout: small hollow in dense briar thickets, wooden planks flatten briars to form low lying lookout, TWO goblins with shortbows visible from east-side discovery angle. Shallow stream/cave nearby. Not tall wooden tower or fortress, no unspotted interior guards.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Area 2 · Goblin blind\nObservable scene and constraints: Cragmaw area2 east-bank lookout: small hollow in dense briar thickets, wooden planks flatten briars to form low lying lookout, TWO goblins with shortbows visible from east-side discovery angle. Shallow stream/cave nearby. Not tall wooden tower or fortress, no unspotted interior guards.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "8dce248c255c00bac57b56b740e4bdb232a7fe3e1f9e9fa646e774d7842276fd",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/blind-art.png",
+  "generatedAt": "2026-10-12T15:46:41.448Z",
+  "candidateHash": "26ca29427f1f3dffbf2765b55524f5241264cad2b674fee307c46d308708f32c",
+  "review": "passed",
+  "reviewedHash": "26ca29427f1f3dffbf2765b55524f5241264cad2b674fee307c46d308708f32c",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.063Z",
+  "installedHash": "26ca29427f1f3dffbf2765b55524f5241264cad2b674fee307c46d308708f32c",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-05-goblin-blind.png"
+}

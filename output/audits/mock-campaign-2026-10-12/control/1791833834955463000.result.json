@@ -1,0 +1,222 @@
+{
+  "ok": true,
+  "result": {
+    "money": {
+      "cp": 1050,
+      "sp": 166,
+      "ep": 30,
+      "gp": 90,
+      "pp": 0
+    },
+    "encounters": [
+      {
+        "id": "road",
+        "name": "Road ambush"
+      },
+      {
+        "id": "blind",
+        "name": "2 · Goblin blind"
+      },
+      {
+        "id": "kennel",
+        "name": "3 · Kennel"
+      },
+      {
+        "id": "overpass",
+        "name": "5 · Overpass"
+      },
+      {
+        "id": "den",
+        "name": "6 · Goblin den"
+      },
+      {
+        "id": "pools",
+        "name": "7 · Twin pools"
+      },
+      {
+        "id": "klarg",
+        "name": "8 · Klarg’s cave"
+      },
+      {
+        "id": "redbrand-street",
+        "name": "Phandalin · Redbrand street"
+      },
+      {
+        "id": "hideout-cellar",
+        "name": "Hideout 1 · Cellar"
+      },
+      {
+        "id": "hideout-barracks",
+        "name": "Hideout 2 · Ruffian barracks"
+      },
+      {
+        "id": "hideout-trap",
+        "name": "Hideout 3 · Pit trap"
+      },
+      {
+        "id": "hideout-crypt",
+        "name": "Hideout 4 · Crypt"
+      },
+      {
+        "id": "hideout-pens",
+        "name": "Hideout 5 · Slave pens"
+      },
+      {
+        "id": "hideout-crevasse",
+        "name": "Hideout 8 · Crevasse"
+      },
+      {
+        "id": "hideout-bugbears",
+        "name": "Hideout 9 · Bugbears"
+      },
+      {
+        "id": "hideout-common",
+        "name": "Hideout 10 · Common room"
+      },
+      {
+        "id": "hideout-glasstaff",
+        "name": "Hideout 12 · Glasstaff"
+      },
+      {
+        "id": "old-owl-well",
+        "name": "Old Owl Well · optional fight"
+      },
+      {
+        "id": "wyvern-tor",
+        "name": "Wyvern Tor · optional camp"
+      },
+      {
+        "id": "tt-blights-1",
+        "name": "Thundertree 1 · Western cottage"
+      },
+      {
+        "id": "tt-blights-2",
+        "name": "Thundertree 2 · Blighted cottages"
+      },
+      {
+        "id": "tt-zombies-3",
+        "name": "Thundertree 3 · Brown Horse"
+      },
+      {
+        "id": "tt-blights-5",
+        "name": "Thundertree 5 · Farmhouse"
+      },
+      {
+        "id": "tt-spiders-6",
+        "name": "Thundertree 6 · Spider store"
+      },
+      {
+        "id": "tt-dragon-7",
+        "name": "Thundertree 7 · Venomfang"
+      },
+      {
+        "id": "tt-zombies-8",
+        "name": "Thundertree 8 · Smithy"
+      },
+      {
+        "id": "tt-zombies-11",
+        "name": "Thundertree 11 · Garrison"
+      },
+      {
+        "id": "tt-blights-12",
+        "name": "Thundertree 12 · Weaver’s cottage"
+      },
+      {
+        "id": "tt-cultists-13",
+        "name": "Thundertree 13 · Dragon cultists"
+      },
+      {
+        "id": "castle-archers",
+        "name": "Castle 3 · Arrow-slit posts"
+      },
+      {
+        "id": "castle-trap",
+        "name": "Castle 2 · Falling rubble"
+      },
+      {
+        "id": "castle-barracks",
+        "name": "Castle 4 · Ruined barracks"
+      },
+      {
+        "id": "castle-hobgoblins",
+        "name": "Castle 6 · Hobgoblin barracks"
+      },
+      {
+        "id": "castle-banquet",
+        "name": "Castle 7 · Banquet hall"
+      },
+      {
+        "id": "castle-grick",
+        "name": "Castle 8 · Dark hall"
+      },
+      {
+        "id": "castle-shrine",
+        "name": "Castle 9 · Goblin shrine"
+      },
+      {
+        "id": "castle-guards",
+        "name": "Castle 12 · Guard barracks"
+      },
+      {
+        "id": "castle-owlbear",
+        "name": "Castle 13 · Owlbear tower"
+      },
+      {
+        "id": "castle-king",
+        "name": "Castle 14 · King’s quarters"
+      },
+      {
+        "id": "castle-warband",
+        "name": "Optional · Returning war band"
+      },
+      {
+        "id": "wave-2",
+        "name": "Wave Echo 2 · Mine tunnels"
+      },
+      {
+        "id": "wave-3",
+        "name": "Wave Echo 3 · Old entrance"
+      },
+      {
+        "id": "wave-4",
+        "name": "Wave Echo 4 · Old guardroom"
+      },
+      {
+        "id": "wave-6",
+        "name": "Wave Echo 6 · South barracks"
+      },
+      {
+        "id": "wave-8",
+        "name": "Wave Echo 8 · Fungi cavern"
+      },
+      {
+        "id": "wave-9",
+        "name": "Wave Echo 9 · Great cavern"
+      },
+      {
+        "id": "wave-11",
+        "name": "Wave Echo 11 · North barracks"
+      },
+      {
+        "id": "wave-12",
+        "name": "Wave Echo 12 · Smelter cavern"
+      },
+      {
+        "id": "wave-14",
+        "name": "Wave Echo 14 · Mormesk"
+      },
+      {
+        "id": "wave-15",
+        "name": "Wave Echo 15 · Forge guardian"
+      },
+      {
+        "id": "wave-18",
+        "name": "Wave Echo 18 · Collapsed cavern"
+      },
+      {
+        "id": "wave-19",
+        "name": "Wave Echo 19 · Nezznar"
+      }
+    ]
+  }
+}

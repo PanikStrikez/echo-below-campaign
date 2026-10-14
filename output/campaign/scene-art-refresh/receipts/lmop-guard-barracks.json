@@ -1,0 +1,36 @@
+{
+  "id": "lmop-guard-barracks",
+  "title": "Cragmaw Castle · Area 12 · Guard barracks",
+  "image": "lmop-visuals/guard-barracks.png",
+  "key": "C12",
+  "chapter": "Cragmaw Castle",
+  "reveal": "On entering area 12",
+  "sourceRecordIds": [
+    "s3-area12"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area12",
+      "title": "Area 12 · Guard barracks",
+      "read": [
+        "Four pallets line a cramped guardroom. A coal brazier glows, and a curtain conceals an arch to the north.",
+        "The brazier's glow reaches the pallets more readily than it reaches beyond the hanging cloth. The curtain separates what you can see from what you can only hear. You can pause to listen, examine the guardroom, or decide who will stand nearest the covered arch."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Small east castle guard barracks: FOUR straw pallets along EAST wall, ONE coal brazier central. Collapsed SOUTH wall, barred wooden door still accessible; curtain in north archway. TWO hobgoblins on duty. No king or commander, additional defenders or table bunkbeds.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 12 · Guard barracks\nObservable scene and constraints: Small east castle guard barracks: FOUR straw pallets along EAST wall, ONE coal brazier central. Collapsed SOUTH wall, barred wooden door still accessible; curtain in north archway. TWO hobgoblins on duty. No king or commander, additional defenders or table bunkbeds.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "777a8bc2b8566ccf9651c6b478255ab613a15bf964a6ce092ddc24084c5bcce5",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-guard-barracks.png",
+  "generatedAt": "2026-10-12T16:28:54.679Z",
+  "candidateHash": "e21acd47ddf3bb9e3813d107bca9857711b59b8e9b4f5ea7245e0b281c82f426",
+  "review": "passed",
+  "reviewedHash": "e21acd47ddf3bb9e3813d107bca9857711b59b8e9b4f5ea7245e0b281c82f426",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.051Z",
+  "installedHash": "e21acd47ddf3bb9e3813d107bca9857711b59b8e9b4f5ea7245e0b281c82f426",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/guard-barracks.png"
+}

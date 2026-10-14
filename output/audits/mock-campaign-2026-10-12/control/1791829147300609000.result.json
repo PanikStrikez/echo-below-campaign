@@ -1,0 +1,190 @@
+{
+  "ok": true,
+  "result": {
+    "beats": [
+      {
+        "id": "prep",
+        "name": "Before play"
+      },
+      {
+        "id": "departure",
+        "name": "1 · Gundren rides ahead"
+      },
+      {
+        "id": "ambush",
+        "name": "2 · Dead horses and ambush"
+      },
+      {
+        "id": "aftermath",
+        "name": "3 · Clues after the road fight"
+      },
+      {
+        "id": "trail",
+        "name": "4 · Goblin trail and traps"
+      },
+      {
+        "id": "cave",
+        "name": "5 · Cave mouth and approach"
+      },
+      {
+        "id": "blind",
+        "name": "Area 2 · Goblin blind"
+      },
+      {
+        "id": "kennel",
+        "name": "Area 3 · Kennel and wolves"
+      },
+      {
+        "id": "passage",
+        "name": "Area 4 · Steep passage"
+      },
+      {
+        "id": "bridge",
+        "name": "Area 5 · Overpass and flood"
+      },
+      {
+        "id": "den",
+        "name": "Area 6 · Yeemik and Sildar"
+      },
+      {
+        "id": "pools",
+        "name": "Area 7 · Twin pools"
+      },
+      {
+        "id": "klarg",
+        "name": "Area 8 · Klarg’s cave"
+      },
+      {
+        "id": "sildar",
+        "name": "After rescue · What Sildar knows"
+      },
+      {
+        "id": "close",
+        "name": "Close the session"
+      },
+      {
+        "id": "rules",
+        "name": "Quick rules and DM safety dial"
+      },
+      {
+        "id": "all",
+        "name": "All notes"
+      }
+    ],
+    "launch": [
+      "state",
+      "beats",
+      "encounters",
+      "scenes",
+      "media",
+      "musicHint",
+      "selectedEncounter",
+      "sceneImage",
+      "toast",
+      "launch",
+      "showEncounter",
+      "refresh"
+    ],
+    "guide": [
+      "desk",
+      "save",
+      "refresh",
+      "toast",
+      "context",
+      "openQuestLead",
+      "review",
+      "inbox",
+      "turn",
+      "previewScene",
+      "chooseScene",
+      "selectBeat",
+      "stage",
+      "build",
+      "next",
+      "combat",
+      "bringParty",
+      "outcome",
+      "end",
+      "closeSession",
+      "initiative",
+      "begin",
+      "tool"
+    ],
+    "combat": [
+      "stageAction",
+      "pendingDMDrafts",
+      "resumeReview",
+      "activeReview",
+      "closeReview",
+      "allState",
+      "columns",
+      "targetTool",
+      "stageDamage",
+      "pauseAttack",
+      "run",
+      "turn",
+      "scene",
+      "isMap",
+      "currentActor",
+      "tokens",
+      "party",
+      "combat",
+      "encounters",
+      "commit",
+      "endTurn",
+      "toggleInitiative",
+      "rollEnemies",
+      "buildOrder",
+      "roll",
+      "previewDamage",
+      "recordActionUse",
+      "applyDamage",
+      "openCombat",
+      "openDamage",
+      "requests",
+      "approveRequest",
+      "dismissRequest",
+      "setReaction",
+      "openParty",
+      "setEncounterStatus",
+      "deployWave"
+    ],
+    "tokenPositions": [
+      {
+        "id": "pc-trista",
+        "placed": false,
+        "scene": "",
+        "hp": 11,
+        "ac": 14
+      },
+      {
+        "id": "pc-donavan",
+        "placed": false,
+        "scene": "",
+        "hp": 17,
+        "ac": 12
+      },
+      {
+        "id": "pc-ringgo",
+        "placed": false,
+        "scene": "",
+        "hp": 22,
+        "ac": 17
+      },
+      {
+        "id": "pc-pebble",
+        "placed": false,
+        "scene": "",
+        "hp": 12,
+        "ac": 18
+      },
+      {
+        "id": "pc-aldric",
+        "placed": false,
+        "scene": "",
+        "hp": 9,
+        "ac": 12
+      }
+    ]
+  }
+}

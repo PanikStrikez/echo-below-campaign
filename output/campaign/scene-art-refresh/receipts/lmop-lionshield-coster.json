@@ -1,0 +1,32 @@
+{
+  "id": "lmop-lionshield-coster",
+  "title": "Phandalin · Lionshield Coster",
+  "image": "lmop-visuals/lionshield-coster.png",
+  "key": "P05",
+  "chapter": "Phandalin",
+  "reveal": "When the party finds the shop",
+  "sourceRecordIds": [
+    "s2-town"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-town",
+      "title": "5 · Follow the party’s town lead",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Lionshield Coster: modest frontier merchant building, sign depicts BLUE LION on wooden shield. Practical armor and weapons supplies at doorway or inside, owner Linene adult human woman about35 with sharp expression. No magical weapons or gold hoard. Same Phandalin earthy street and ruined foundations.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Lionshield Coster\nObservable scene and constraints: Lionshield Coster: modest frontier merchant building, sign depicts BLUE LION on wooden shield. Practical armor and weapons supplies at doorway or inside, owner Linene adult human woman about35 with sharp expression. No magical weapons or gold hoard. Same Phandalin earthy street and ruined foundations.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "f395fd454d72a5350c97ee2663e5f72f609bea614095b25acc4d7c835c1f282b",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-lionshield-coster.png",
+  "generatedAt": "2026-10-12T15:52:28.675Z",
+  "candidateHash": "f0bb851aa758af73caa58fb90ad3f2fddc11a722fd7826fc029b162cba75a259",
+  "review": "passed",
+  "reviewedHash": "f0bb851aa758af73caa58fb90ad3f2fddc11a722fd7826fc029b162cba75a259",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.865Z",
+  "installedHash": "f0bb851aa758af73caa58fb90ad3f2fddc11a722fd7826fc029b162cba75a259",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/lionshield-coster.png"
+}

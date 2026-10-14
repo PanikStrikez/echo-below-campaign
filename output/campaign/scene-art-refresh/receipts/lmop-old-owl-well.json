@@ -1,0 +1,36 @@
+{
+  "id": "lmop-old-owl-well",
+  "title": "Wilderness · Old Owl Well",
+  "image": "lmop-visuals/old-owl-well.png",
+  "key": "W05",
+  "chapter": "Wilderness",
+  "reveal": "When the site is approached",
+  "sourceRecordIds": [
+    "s3-old-owl"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-old-owl",
+      "title": "Optional lead · Old Owl Well",
+      "read": [
+        "The broken watchtower stands where you last saw Hamun Kost. What remains here depends on what the party left behind.",
+        "The broken stone is a landmark you can recognize without deciding what happened after your departure. You can compare the ground and the tower with your last visit, look for an actual new trace, or keep watch while someone examines the place more closely."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Old Owl Well: rugged hills, ancient tower reduced to BROKEN STUMP, rubble walls enclose courtyard, still working ordinary WELL, colorful travel TENT at courtyard center. NO wizard in view because Hamun Kost disappeared; twelve zombies remain hidden inside tower, not visible from approach. No intact enormous wizard tower or visible portal.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wilderness · Old Owl Well\nObservable scene and constraints: Old Owl Well: rugged hills, ancient tower reduced to BROKEN STUMP, rubble walls enclose courtyard, still working ordinary WELL, colorful travel TENT at courtyard center. NO wizard in view because Hamun Kost disappeared; twelve zombies remain hidden inside tower, not visible from approach. No intact enormous wizard tower or visible portal.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "028232dcc67d3e422734f6278e5d4ef6a3e47738ab2ba364c13e08795bf3330f",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-old-owl-well.png",
+  "generatedAt": "2026-10-12T16:26:46.313Z",
+  "candidateHash": "1a87d94d4cb59be47fad60e033fa4135273d9bc4b1273fd7989c975eb9255c52",
+  "review": "passed",
+  "reviewedHash": "1a87d94d4cb59be47fad60e033fa4135273d9bc4b1273fd7989c975eb9255c52",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:09.288Z",
+  "installedHash": "1a87d94d4cb59be47fad60e033fa4135273d9bc4b1273fd7989c975eb9255c52",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/old-owl-well.png"
+}

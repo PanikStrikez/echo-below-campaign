@@ -1,0 +1,1074 @@
+[
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791838269944-2aj50nb1",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              12
+            ],
+            "total": 20,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:09 PM"
+          },
+          {
+            "id": "pa-1791838269944-vqzyhjrd",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              1
+            ],
+            "total": 6,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:09 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-1",
+            "text": "Stirge 1: 20 vs AC 14: hit, 6 piercing \u2192 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-3-stirge-5",
+    "action": {
+      "actor": "s4-wave-3-stirge-5",
+      "label": "Blood Drain",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838271314-q2pp882f",
+          "label": "Blood Drain \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            2
+          ],
+          "total": 7,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:11 PM"
+        },
+        {
+          "id": "pa-1791838271314-08pedngm",
+          "label": "Blood Drain \u00b7 effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            2
+          ],
+          "total": 5,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:11 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 7 vs AC 12: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791838271800-4ys69203",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              12
+            ],
+            "total": 19,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:11 PM"
+          },
+          {
+            "id": "pa-1791838271800-jsigbsrf",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:11 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-5",
+            "text": "Stirge 5: 19 vs AC 14: hit, 7 bludgeoning \u2192 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791838271923-agwhoy9q",
+              "label": "Unarmed Strike \u00b7 attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                2
+              ],
+              "total": 9,
+              "natural": 2,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:11 PM"
+            },
+            {
+              "id": "pa-1791838271923-fn7aveam",
+              "label": "Unarmed Strike \u00b7 effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                4
+              ],
+              "total": 8,
+              "natural": 4,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:11 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-3-stirge-2",
+              "text": "Stirge 2: 9 vs AC 14: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838272384-kxf0uqf5",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              4
+            ],
+            "total": 12,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:12 PM"
+          },
+          {
+            "id": "pa-1791838272384-hplnedyb",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              3
+            ],
+            "total": 8,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:12 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-2",
+            "text": "Stirge 2: 12 vs AC 14: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791838272479-lt7c7q6l",
+              "label": "Warhammer \u00b7 attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                14
+              ],
+              "total": 22,
+              "natural": 14,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:12 PM"
+            },
+            {
+              "id": "pa-1791838272479-cvze9eqa",
+              "label": "Warhammer \u00b7 effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                7
+              ],
+              "total": 12,
+              "natural": 7,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:12 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-3-stirge-2",
+              "text": "Stirge 2: 22 vs AC 14: hit, 12 bludgeoning \u2192 12; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-3-stirge-4",
+    "action": {
+      "actor": "s4-wave-3-stirge-4",
+      "label": "Blood Drain",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838272952-l83ypmiy",
+          "label": "Blood Drain \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            7
+          ],
+          "total": 12,
+          "natural": 7,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:12 PM"
+        },
+        {
+          "id": "pa-1791838272952-jfiidlkx",
+          "label": "Blood Drain \u00b7 effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            2
+          ],
+          "total": 5,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:12 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 12 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-3-stirge-3",
+    "action": {
+      "actor": "s4-wave-3-stirge-3",
+      "label": "Blood Drain",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838273400-5un66sy8",
+          "label": "Blood Drain \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            6
+          ],
+          "total": 11,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:13 PM"
+        },
+        {
+          "id": "pa-1791838273400-wr8pscdl",
+          "label": "Blood Drain \u00b7 effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            2
+          ],
+          "total": 5,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:13 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 11 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-3-stirge-7",
+    "action": {
+      "actor": "s4-wave-3-stirge-7",
+      "label": "Blood Drain",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838273889-iurc3vlp",
+          "label": "Blood Drain \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            20
+          ],
+          "total": 25,
+          "natural": 20,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:13 PM"
+        },
+        {
+          "id": "pa-1791838273889-dbm5jrwe",
+          "label": "Blood Drain \u00b7 effect 1.1",
+          "notation": "2d4+3",
+          "parts": [
+            2,
+            4
+          ],
+          "total": 9,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:13 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 25 vs AC 18: critical hit, 9 piercing \u2192 9; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-3-stirge-8",
+    "action": {
+      "actor": "s4-wave-3-stirge-8",
+      "label": "Blood Drain",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838274452-qu1uai8o",
+          "label": "Blood Drain \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            9
+          ],
+          "total": 14,
+          "natural": 9,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:14 PM"
+        },
+        {
+          "id": "pa-1791838274452-mk9qbmae",
+          "label": "Blood Drain \u00b7 effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            4
+          ],
+          "total": 7,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:14 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 14 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-3-stirge-10",
+    "action": {
+      "actor": "s4-wave-3-stirge-10",
+      "label": "Blood Drain",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838274858-abkxdli2",
+          "label": "Blood Drain \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            14
+          ],
+          "total": 19,
+          "natural": 14,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:14 PM"
+        },
+        {
+          "id": "pa-1791838274858-g9x8f8so",
+          "label": "Blood Drain \u00b7 effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            3
+          ],
+          "total": 6,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:14 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 19 vs AC 18: hit, 6 piercing \u2192 6; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-3-stirge-6",
+    "action": {
+      "actor": "s4-wave-3-stirge-6",
+      "label": "Blood Drain",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838275389-zv8kaadl",
+          "label": "Blood Drain \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            17
+          ],
+          "total": 22,
+          "natural": 17,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:15 PM"
+        },
+        {
+          "id": "pa-1791838275389-8krbqpxi",
+          "label": "Blood Drain \u00b7 effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            1
+          ],
+          "total": 4,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:15 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 22 vs AC 18: hit, 4 piercing \u2192 4; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791838275912-090aohfs",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              4
+            ],
+            "total": 12,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:15 PM"
+          },
+          {
+            "id": "pa-1791838275912-6mm2lzbx",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "2d10",
+            "parts": [
+              7,
+              7
+            ],
+            "total": 14,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:15 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-3",
+            "text": "Stirge 3: 12 vs AC 14: miss, 0 fire \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-3-stirge-9",
+    "action": {
+      "actor": "s4-wave-3-stirge-9",
+      "label": "Blood Drain",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838276334-fz3hl7sr",
+          "label": "Blood Drain \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            16
+          ],
+          "total": 21,
+          "natural": 16,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:16 PM"
+        },
+        {
+          "id": "pa-1791838276334-c3awmlgj",
+          "label": "Blood Drain \u00b7 effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            3
+          ],
+          "total": 6,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:16 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 21 vs AC 18: hit, 6 piercing \u2192 6; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791838276833-f61mpygd",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              17
+            ],
+            "total": 25,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:16 PM"
+          },
+          {
+            "id": "pa-1791838276833-kcf06iwt",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              4,
+              6
+            ],
+            "total": 10,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:16 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-3",
+            "text": "Stirge 3: 25 vs AC 14: hit, 10 cold \u2192 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791838277213-dpgympof",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              10
+            ],
+            "total": 18,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:17 PM"
+          },
+          {
+            "id": "pa-1791838277213-wzdmvbf1",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              2
+            ],
+            "total": 7,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:17 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-4",
+            "text": "Stirge 4: 18 vs AC 14: hit, 7 piercing \u2192 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791838278521-xia7q6r0",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              9
+            ],
+            "total": 16,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:18 PM"
+          },
+          {
+            "id": "pa-1791838278521-prn4e8g0",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              8
+            ],
+            "total": 12,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:18 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-6",
+            "text": "Stirge 6: 16 vs AC 14: hit, 12 bludgeoning \u2192 12; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791838278631-suldama3",
+              "label": "Unarmed Strike \u00b7 attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                6
+              ],
+              "total": 13,
+              "natural": 6,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:18 PM"
+            },
+            {
+              "id": "pa-1791838278631-37mrjv8o",
+              "label": "Unarmed Strike \u00b7 effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                1
+              ],
+              "total": 5,
+              "natural": 1,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:18 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-3-stirge-7",
+              "text": "Stirge 7: 13 vs AC 14: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838279217-bibl5o1j",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              1
+            ],
+            "total": 9,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:19 PM"
+          },
+          {
+            "id": "pa-1791838279217-6fc6h8dn",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              2
+            ],
+            "total": 7,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:19 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-7",
+            "text": "Stirge 7: 9 vs AC 14: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791838279326-pry35mg3",
+              "label": "Warhammer \u00b7 attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                18
+              ],
+              "total": 26,
+              "natural": 18,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:19 PM"
+            },
+            {
+              "id": "pa-1791838279326-1yxihqnh",
+              "label": "Warhammer \u00b7 effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                7
+              ],
+              "total": 12,
+              "natural": 7,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:19 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-3-stirge-7",
+              "text": "Stirge 7: 26 vs AC 14: hit, 12 bludgeoning \u2192 12; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-3-stirge-8",
+    "action": {
+      "actor": "s4-wave-3-stirge-8",
+      "label": "Blood Drain",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838279802-ypiiw9fk",
+          "label": "Blood Drain \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            9
+          ],
+          "total": 14,
+          "natural": 9,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:19 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 14 vs AC 14: hit, physical base 2, 2 piercing \u2192 2; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        },
+        {
+          "actor": "pc-pebble",
+          "label": "Interception",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-3-stirge-10",
+    "bloodloss": {
+      "id": "1791838280684-4vzog6ypbh9",
+      "label": "Attached stirge bloodloss, no attack",
+      "notation": "1d4+3",
+      "parts": [
+        3
+      ],
+      "total": 6,
+      "kind": "digital",
+      "time": "02:51 PM"
+    }
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791838281090-fxccigie",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              12
+            ],
+            "total": 20,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:21 PM"
+          },
+          {
+            "id": "pa-1791838281090-1ku6frsx",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "2d10",
+            "parts": [
+              3,
+              5
+            ],
+            "total": 8,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:21 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-8",
+            "text": "Stirge 8: 20 vs AC 14: hit, 8 fire \u2192 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-3-stirge-9",
+    "bloodloss": {
+      "id": "1791838281467-8i50hyzh2s",
+      "label": "Attached stirge bloodloss, no attack",
+      "notation": "1d4+3",
+      "parts": [
+        1
+      ],
+      "total": 4,
+      "kind": "digital",
+      "time": "02:51 PM"
+    }
+  },
+  {
+    "complete": "hostiles defeated or fled",
+    "state": {
+      "turn": {
+        "scene": "lmop-map-wave-south",
+        "round": 2,
+        "order": [
+          "pc-ringgo",
+          "s4-wave-3-stirge-5",
+          "pc-trista",
+          "pc-pebble",
+          "s4-wave-3-stirge-4",
+          "s4-wave-3-stirge-3",
+          "s4-wave-3-stirge-7",
+          "s4-wave-3-stirge-8",
+          "s4-wave-3-stirge-10",
+          "s4-wave-3-stirge-2",
+          "s4-wave-3-stirge-6",
+          "pc-aldric",
+          "s4-wave-3-stirge-9",
+          "s4-wave-3-stirge-1",
+          "pc-donavan"
+        ],
+        "index": 14
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 45,
+          "maxHp": 47
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 45,
+          "maxHp": 45
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 43,
+          "maxHp": 43
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 28,
+          "maxHp": 63
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 44,
+          "maxHp": 44
+        }
+      ],
+      "foes": [],
+      "due": [
+        {
+          "id": "card-1791838276833-ebxpk2n",
+          "tokenId": "s4-wave-3-stirge-3",
+          "triggerActor": "pc-donavan",
+          "triggerPoint": "start",
+          "remaining": 0,
+          "name": "Ray of Frost \u00b7 speed \u221210 ft",
+          "condition": "",
+          "due": true,
+          "fired": true,
+          "repeatSave": false,
+          "note": "Apply until the caster\u2019s next turn starts. Movement remains manual."
+        }
+      ]
+    }
+  }
+]

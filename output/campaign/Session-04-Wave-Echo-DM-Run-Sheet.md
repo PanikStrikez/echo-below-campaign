@@ -1,10 +1,12 @@
+> Chapter reference, refreshed 12 October 2026. For the next three game nights use the new Session 4–6 preparation packs. The confirmed checkpoint is Barthen’s Provisions, Gundren at an unnamed inn (condition unresolved), Trista holding the rat, and Glasstaff’s castle destination DM-only. Earlier castle delivery is historical, not Gundren’s present location. No later outcomes are assumed.
+
 # Wave Echo Cave — DM run sheet
 
 *The Echo Below · DM only · Session 4 adventure chapter, often several evenings.*
 
 The app runbook contains the complete room narration, encounter references, and optional continuation cards reproduced below. Open **Story → Wave Echo journal** to record rooms, current enemies, treasure, rests, retreats, deadlines, and the actual ending. The journal's homecoming preview should be based on outcomes you enter; it does not mark the adventure completed for you.
 
-The five live heroes are Trista, Pebble, Donavan, Ringgo, and Aldric. Their current records are level 3. The printed chapter recommends **at least level 4** and expects level 5 by the adventure's end. Neither opening the pack nor selecting an ending changes their sheets or awards a level. Review progress and resources first.
+The five live heroes are Trista, Pebble, Donavan, Ringgo, and Aldric. Use their current saved sheets; recorded levels differ. The printed chapter recommends **at least level 4** and expects level 5 by the adventure's end. Neither opening the pack nor selecting an ending changes their sheets or awards a level. Review progress and resources first.
 
 ## Start with what happened
 
@@ -71,7 +73,7 @@ Each section has a private source link. Narration is original. The book sets ini
 
 **Run**
 
-- Trista, Pebble, Donavan, Ringgo, and Aldric currently have level-3 records. The printed mine assumes at least level 4 (2,700 XP if using XP). Opening this chapter does not level anyone up. Review earned progress before departure; if they enter at level 3, make danger and withdrawal clear.
+- Use the current saved five character sheets rather than this historical report for levels and resources. The printed mine assumes at least level 4 (2,700 XP if using XP). Opening this chapter does not level anyone up. Review earned progress before departure; if they enter at level 3, make danger and withdrawal clear.
 - If play ended inside an unfinished encounter, resume its existing save. Do not replace live positions, dead enemies, expended loot, or fog with a fresh chapter.
 - Carry forward Session 1: Klarg died; Yeemik kept Cragmaw Hideout; Sildar was rescued; the party long-rested and reached Barthen’s. Later outcomes remain unconfirmed until recorded.
 - Campaign truth: Redbrands captured Gundren and delivered him to Cragmaw Castle. Trista’s BELOW token remains private unless she has since shared it; Donavan noticed concealment, not its identity.
@@ -359,7 +361,7 @@ Each section has a private source link. Narration is original. The book sets ini
 
 **DM source and boundaries**
 
-- Lost Mine of Phandelver p. 46. Seven ghouls plus terrain can be very dangerous to the current level-3 party.
+- Lost Mine of Phandelver p. 46. Seven ghouls plus terrain can be very dangerous to the current party.
 
 [Open the private adventure at printed/PDF p. 46](../../sources/pdfcoffee.com_lost-mine-of-phandelverpdf-pdf-free.pdf#page=46).
 
@@ -786,7 +788,7 @@ Each section has a private source link. Narration is original. The book sets ini
 - Then roll d12: 1–3, 2d4 stirges; 4–5, 1d4 ghouls; 6, 1d4 gricks; 7–8, 1d4 bugbears; 9, 1d6 skeletons; 10, 1d6 zombies; 11–12, one ochre jelly.
 - Roll only the selected count, place the actual encounter, and identify whether it is a mobile existing group or a newly generated wandering group. Never both remove a keyed enemy and add a duplicate of it.
 - Exclude the explicitly secure area 7 refuge. An encounter is not automatically combat: signs, detection, concealment, parley, or retreat may resolve it.
-- For the current level-3 party, do not pile a random wave onto a major fight just to increase difficulty. Use encounter guidance before committing the result.
+- For the current party, do not pile a random wave onto a major fight just to increase difficulty. Use encounter guidance before committing the result.
 
 **DM source and boundaries**
 

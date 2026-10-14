@@ -110,7 +110,8 @@
       ],
       "leads": [
         "Question a witness or examine Redbrand correspondence.",
-        "Continue the prepared Phandelver runbook."
+        "Continue the prepared Phandelver runbook.",
+        "Check the actual delivery and town business at Barthen’s Provisions before following a new lead."
       ],
       "dm": "Latest played Redbrand session: Glasstaff put Gundren to sleep; the party recovered him and left him at an unnamed inn. Trista holds the captured rat. The party stopped at Barthen’s Provisions. Glasstaff escaped to Cragmaw Castle, but the destination is DM-only. Gundren’s present condition is unreported. Nezznar is independent of Halaster.",
       "reward": "Phandalin relationships, earned rewards, and a route into the next chapter.",
@@ -418,12 +419,12 @@
         {
           "id": "redbrands-1",
           "title": "Establish the current situation",
-          "guide": "Choose an entrance; question survivors; examine orders."
+          "guide": "Review what actually happened in the hideout. Glasstaff escaped; Gundren is at an unnamed inn and Trista holds the captured rat. Confirm surviving prisoners, searched rooms, and recovered orders before using them."
         },
         {
           "id": "redbrands-2",
           "title": "Resolve the immediate objective",
-          "guide": "Hideout is unplayed. Preserve published room locations and actual prisoner outcomes."
+          "guide": "Address surviving Redbrand pressure or pursue an earned lead. Do not respawn defeated occupants or return Glasstaff to the hideout."
         },
         {
           "id": "redbrands-3",
@@ -432,10 +433,11 @@
         }
       ],
       "leads": [
-        "Choose an entrance; question survivors; examine orders.",
-        "Compare the account with an independent record or witness."
+        "Question a surviving witness or examine documents actually recovered from the hideout.",
+        "Compare the account with an independent record or witness.",
+        "Examine the captured rat with Trista’s consent; separate observed behavior from guesses about its nature."
       ],
-      "dm": "Hideout is unplayed. Preserve published room locations and actual prisoner outcomes.",
+      "dm": "The party entered the hideout and Glasstaff escaped. The fates of individual prisoners, searched rooms, and treasure were not supplied. Gundren was left at an unnamed inn, and Trista holds the rat. Glasstaff’s castle destination is DM-only until discovered.",
       "reward": "Record who survived, escaped or was rescued and how town responds.",
       "fallback": "Retreat, negotiation, a surviving document or a later witness can preserve progress.",
       "requires": [],

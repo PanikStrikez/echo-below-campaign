@@ -1,0 +1,111 @@
+{
+  "ok": true,
+  "result": {
+    "body": "THE ECHO BELOW · CAMPAIGN MEMORY\nOutcome review\nMOCK Session 5 · Cragmaw Castle\nClose\nExpand\nOpen tool\nCharacter stories & spotlights\nCharacter chapters & satellite adventures\nIntervention & finale\nQuests · player view\nQuest guide\nQuest session workspace\nOutcome review\nCampaign continuity & quests\nEvidence and research\nFirst Undermountain expeditions\nExpedition record & return\nBetween expeditions\nMending Court · home & relationships\nPhandalin → Waterdeep\nWave Echo journal\nSession prep\nPhandelver packs\nBranching runbook\nSecret handouts\nEvidence\nPlayer journal\nPeople\nWaterdeep\nNine sites\nUndermountain\nCalendar & clocks\nEnd of session\nOutcome review\n\nRecord → who knows → linked changes → review & apply. Drafts stay private and leave the approved record in place.\n\nLinked campaign service · review required\nOutcomes\nReconcile older notes\nUndo outcome change\nRedo\nRecap from approved history\nReview linked changes\n\nThis adds one authoritative outcome.\n\nNew outcome\n\nMOCK Session 5 · Cragmaw Castle · confirmed / Open · Source: DM table record\n\nWho knows: Trista, Pebble, Donavan, Ringgo, Aldric.\n\nAll wording stays private to the DM.\n\nDM custody, promises and people\n\nAfter: : resolved · holder unknown\n\nCharacter and NPC knowledge\nTrista\n\nAdd: undefined\n\nPebble\n\nAdd: undefined\n\nDonavan\n\nAdd: undefined\n\nRinggo\n\nAdd: undefined\n\nAldric\n\nAdd: undefined\n\nMap reveals set independently remain in place. Tracking a transfer records custody; quantities, money and character sheets are unchanged. Other quest objectives are unchanged.\n\nAdd a title, what happened, and the source.\n\nName each tracked person, item or promise.\n\nBack to draft\nApply reviewed outcome",
+    "events": [
+      {
+        "id": "mock-s3-transfer-letter",
+        "kind": "discovery",
+        "publicTitle": "A written transfer order names Cragmaw Castle",
+        "recipients": [],
+        "replaces": [],
+        "origins": [],
+        "session": "Session 2 · Phandalin",
+        "title": "A written transfer order names Cragmaw Castle",
+        "detail": "Isolated mock discovery: party searched Iarno’s desk and found a Redbrand transfer record naming Gundren and Cragmaw Castle. This establishes written evidence of an earlier transfer, not current custody or geographic coordinates.",
+        "playerText": "A transfer order names Gundren and Cragmaw Castle. His present condition and exact route remain unknown.",
+        "source": "MOCK first-entry desk search; existing custom transfer record",
+        "status": "confirmed",
+        "basis": "Observed",
+        "approved": true,
+        "approvedAt": "2026-10-12T20:08:32.980Z",
+        "share": "party",
+        "knows": [
+          "party"
+        ],
+        "quests": [
+          {
+            "id": "gundren",
+            "state": "active",
+            "stepId": ""
+          }
+        ],
+        "markers": [],
+        "tracks": []
+      },
+      {
+        "id": "mock-s3-dendrar-rescue",
+        "kind": "rescue",
+        "publicTitle": "The Dendrars released and escorted",
+        "recipients": [],
+        "replaces": [],
+        "origins": [],
+        "session": "MOCK Session 3 · Redbrand Hideout",
+        "title": "The Dendrars released and escorted",
+        "detail": "ISOLATED corrected mock: Mirna,Nars,Nilsa released after cellguards defeated and Ringgo tools23; escorted along cleared marked corridor, ropecrossing and agreednothicpassage toPhandalin. NoGundrenrescue inferred.",
+        "playerText": "Mirna, Nars and Nilsa are safe inPhandalin. Their information offers aThundertreelead.",
+        "source": "CorrectedmockS3cellguardfightandlockreview",
+        "status": "confirmed",
+        "basis": "Observed",
+        "approved": true,
+        "approvedAt": "2026-10-12T20:27:35.005Z",
+        "share": "party",
+        "knows": [
+          "party",
+          "mirna"
+        ],
+        "quests": [],
+        "markers": [],
+        "tracks": [
+          {
+            "kind": "rescue",
+            "key": "mock-dendrars",
+            "subject": "Mirna,Nars,Nilsa",
+            "holder": "SafeinPhandalin",
+            "owedTo": "",
+            "state": "resolved",
+            "note": "",
+            "public": true
+          }
+        ]
+      },
+      {
+        "id": "mock-s4-castle-route",
+        "kind": "discovery",
+        "publicTitle": "Reidoth gives a usable castle route",
+        "recipients": [],
+        "replaces": [],
+        "origins": [],
+        "session": "MOCK Session 4 · Wilderness leads",
+        "title": "Reidoth gives a usable castle route",
+        "detail": "ISOLATEDMOCK: ReidothfreelygaveusableCastlerouteafterpartyvisitedhisThundertreehouse. Thisearnsmaplocation, notGundrencustody orGlasstaffdestination.",
+        "playerText": "Reidoth’s directions give us a usable route toCragmawCastle.",
+        "source": "CorrectedmockS4Reidothconversation",
+        "status": "confirmed",
+        "basis": "Observed",
+        "approved": true,
+        "approvedAt": "2026-10-12T20:31:48.394Z",
+        "share": "party",
+        "knows": [
+          "party",
+          "reidoth"
+        ],
+        "quests": [
+          {
+            "id": "gundren",
+            "state": "active",
+            "stepId": ""
+          }
+        ],
+        "markers": [
+          {
+            "scene": "region-lmop",
+            "point": "region-cragmaw-castle",
+            "reveal": true
+          }
+        ],
+        "tracks": []
+      }
+    ]
+  }
+}

@@ -126,7 +126,8 @@ check('An approved blocked passage survives save/restore and cannot still be tra
 });
 check('Production TV and phone projections exclude private expedition data',()=>{
   const source=fs.readFileSync(path.join(root,'Session-01-Battleboard.js'),'utf8'),boot=source.lastIndexOf('  if (IS_PLAYER) initPlayer();');assert(boot>0);
-  vm.runInThisContext(source.slice(0,boot)+`\nglobalThis.__expeditionFixture={fresh:()=>normalize(newCustomState()),set:(s,i)=>{state=s;campaignIndex=i;},publicState,phoneSnapshot};\n})();`);
+  require('./test-support.cjs').loadTableContent();
+vm.runInThisContext(source.slice(0,boot)+`\nglobalThis.__expeditionFixture={fresh:()=>normalize(newCustomState()),set:(s,i)=>{state=s;campaignIndex=i;},publicState,phoneSnapshot};\n})();`);
   const F=__expeditionFixture,state=F.fresh(),story=ECHO_STORY_DATA.normalize(),extras=ECHO_TABLE.normalize();
   extras.expeditions=X.normalize({records:[{id:'private-expedition',sessionId:'practice-expedition',title:'PRIVATE_EXPEDITION_TITLE',objective:'PRIVATE_EXPEDITION_OBJECTIVE',survivors:'PRIVATE_EXPEDITION_SURVIVORS',baseline:{secret:'PRIVATE_EXPEDITION_BASELINE'},retreat:{secret:'PRIVATE_EXPEDITION_RETREAT'},history:[{kind:'development',text:'PRIVATE_EXPEDITION_HISTORY'}],proposals:[{title:'PRIVATE_EXPEDITION_PROPOSAL',reason:'PRIVATE_EXPEDITION_REASON',evidence:'PRIVATE_EXPEDITION_EVIDENCE'}]}]});
   F.set(state,{story,presentation:ECHO_PRESENTATION.normalizeLibrary(),tableExtras:extras,rules:null,sessions:[{id:'session-01',name:'Practice'}],combatLibrary:[]});

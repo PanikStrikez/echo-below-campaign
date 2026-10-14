@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791838278521-xia7q6r0",
+            "label": "Unarmed Strike · attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              9
+            ],
+            "total": 16,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:18 PM"
+          },
+          {
+            "id": "pa-1791838278521-prn4e8g0",
+            "label": "Unarmed Strike · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              8
+            ],
+            "total": 12,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:18 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-6",
+            "text": "Stirge 6: 16 vs AC 14: hit, 12 bludgeoning → 12; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791838278631-suldama3",
+              "label": "Unarmed Strike · attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                6
+              ],
+              "total": 13,
+              "natural": 6,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:18 PM"
+            },
+            {
+              "id": "pa-1791838278631-37mrjv8o",
+              "label": "Unarmed Strike · effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                1
+              ],
+              "total": 5,
+              "natural": 1,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:18 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-3-stirge-7",
+              "text": "Stirge 7: 13 vs AC 14: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  }
+}

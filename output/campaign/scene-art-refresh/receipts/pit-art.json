@@ -1,0 +1,36 @@
+{
+  "id": "pit-art",
+  "title": "Pit · discovered",
+  "image": "session-01-visuals/scene-14-pit-discovered.png",
+  "key": "pit-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "trail"
+  ],
+  "sourceRecords": [
+    {
+      "id": "trail",
+      "title": "4 · Goblin trail and traps",
+      "read": [
+        "The goblin trail narrows under the trees. Broken twigs and churned earth show several small creatures passed this way, with heavier marks among them. The road disappears behind you.",
+        "Each disturbed patch offers a place to slow down and look, while the thicker growth limits what you can see ahead. You can keep the heavier marks in view, check the ground before committing your weight, or pause to decide how closely you want to follow."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "DISCOVERED six-foot-wide TEN-foot-deep earthen pit across forest trail, leaf camouflage pulled back, dirt bottom, sloping rough walls can be scrambled out. No spikes, lava, dead victim, rope snare or deep chasm. Clear ordinary forest daylight.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Pit · discovered\nObservable scene and constraints: DISCOVERED six-foot-wide TEN-foot-deep earthen pit across forest trail, leaf camouflage pulled back, dirt bottom, sloping rough walls can be scrambled out. No spikes, lava, dead victim, rope snare or deep chasm. Clear ordinary forest daylight.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "b0e1e490d4251809f935ff8058ced8fdcc991ab724f1703559f964c8bae38976",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/pit-art.png",
+  "generatedAt": "2026-10-12T15:46:01.764Z",
+  "candidateHash": "08444e5b2d9424468d7042f31585c5121650bd61f085acf93f919df61b7625f1",
+  "review": "passed",
+  "reviewedHash": "08444e5b2d9424468d7042f31585c5121650bd61f085acf93f919df61b7625f1",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.012Z",
+  "installedHash": "08444e5b2d9424468d7042f31585c5121650bd61f085acf93f919df61b7625f1",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-14-pit-discovered.png"
+}

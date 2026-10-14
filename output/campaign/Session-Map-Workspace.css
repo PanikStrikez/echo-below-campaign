@@ -1,0 +1,37 @@
+#dm-app.hybrid-ui.run-mode .session-map-workspace{height:100%;min-height:0;display:flex;flex-direction:column;background:#0e241b;color:#eee5cf}
+#dm-app.hybrid-ui .session-map-workspace[hidden],#dm-app.hybrid-ui:not(.run-mode) .session-map-workspace{display:none!important}
+#dm-app.hybrid-ui .session-map-header{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 18px;background:#142d22;border-bottom:1px solid #526144}
+#dm-app.hybrid-ui .session-map-heading{font:22px Georgia;flex:1;min-width:160px}
+#dm-app.hybrid-ui .session-map-header select{max-width:260px}
+#dm-app.hybrid-ui .session-map-body{display:grid;grid-template-columns:minmax(0,1fr) 290px;flex:1;min-height:0}
+#dm-app.hybrid-ui .session-map-viewport{overflow:auto;position:relative;min-width:0;min-height:0;background:#071910;padding:14px;scrollbar-gutter:stable}
+#dm-app.hybrid-ui .session-map-canvas{position:relative;margin:auto;background:#112219;box-shadow:0 6px 24px #0008}
+#dm-app.hybrid-ui .session-map-canvas>img{width:100%;height:100%;display:block;object-fit:fill}
+#dm-app.hybrid-ui .session-map-marker{position:absolute;transform:translate(-50%,-50%);background:transparent;border:0;padding:0;min-width:44px;min-height:44px;display:flex;flex-direction:column;align-items:center;z-index:1;max-width:140px;color:#fff}
+#dm-app.hybrid-ui .session-map-pin{background:#174330;border:2px solid #ead18b;border-radius:50%;width:32px;height:32px;display:grid;place-items:center;box-shadow:0 2px 8px #000c;color:#f5d688}
+#dm-app.hybrid-ui .session-map-marker.private .session-map-pin{background:#403827;border-style:dashed}
+#dm-app.hybrid-ui .session-map-marker.room .session-map-marker-label{display:none}
+#dm-app.hybrid-ui .session-map-marker.room:hover .session-map-marker-label,#dm-app.hybrid-ui .session-map-marker.room:focus-visible .session-map-marker-label{display:block}
+#dm-app.hybrid-ui .session-map-marker-label{font:12px system-ui;background:#10261fed;color:#fff2d0;padding:3px 6px;border-radius:4px;max-width:135px;white-space:normal;box-shadow:0 1px 5px #0008}
+#dm-app.hybrid-ui .session-map-marker:hover,#dm-app.hybrid-ui .session-map-marker:focus-visible{z-index:3;outline:2px solid #f4d48a;outline-offset:3px}
+#dm-app.hybrid-ui .session-map-details{overflow:auto;border-left:1px solid #526144;padding:20px;display:flex;flex-direction:column;gap:10px;background:#142b20}
+#dm-app.hybrid-ui .session-map-details h2{font:26px Georgia;margin:0}
+#dm-app.hybrid-ui .session-map-details small{font:11px system-ui;letter-spacing:.07em;color:#d6cda6}
+#dm-app.hybrid-ui .session-map-details p{font:14px/1.5 system-ui;margin:0}
+#dm-app.hybrid-ui .session-map-details button,#dm-app.hybrid-ui .session-map-header button,#dm-app.hybrid-ui .session-map-header select,#dm-app.hybrid-ui .session-map-details input{min-height:44px;white-space:normal}
+#dm-app.hybrid-ui .session-map-details .hybrid-primary{background:#e0bc70;color:#201b10;font-weight:700}
+#dm-app.hybrid-ui .session-map-tools{display:flex;gap:8px;margin-top:12px}
+#dm-app.hybrid-ui .session-map-results{display:grid;gap:6px}
+#dm-app.hybrid-ui .session-map-private{color:#f1cc86}
+#dm-app.hybrid-ui #session-map-return[hidden]{display:none!important}
+@media(max-width:1000px){#dm-app.hybrid-ui .session-map-body{grid-template-columns:minmax(0,1fr) 245px}#dm-app.hybrid-ui .session-map-header{padding:8px}#dm-app.hybrid-ui .session-map-details{padding:12px}}
+@media(max-width:760px){#dm-app.hybrid-ui .session-map-body{display:flex;flex-direction:column;overflow:auto}#dm-app.hybrid-ui .session-map-viewport{flex:0 0 420px}#dm-app.hybrid-ui .session-map-details{overflow:visible}#dm-app.hybrid-ui .session-map-heading{font-size:18px}}
+
+/* Reviewed DM status is separate from location discovery and player markers. */
+#dm-app.hybrid-ui .session-map-marker[data-state="postponed"] .session-map-pin::after{content:"Ⅱ";font:10px system-ui;position:absolute;right:-5px;top:-5px;border-radius:50%;padding:2px;background:#403c33;color:#fff}
+#dm-app.hybrid-ui .session-map-marker[data-state="outcome-recorded"] .session-map-pin::after{content:"✓";font:10px system-ui;position:absolute;right:-5px;top:-5px;border-radius:50%;padding:2px;background:#234832;color:#fff}
+#dm-app.hybrid-ui .session-map-context h3{font:16px Georgia;margin:4px 0 8px}
+#dm-app.hybrid-ui .session-map-context p+p{margin-top:8px}
+#dm-app.hybrid-ui .session-map-context summary{cursor:pointer;min-height:44px;display:flex;align-items:center}
+#dm-app.hybrid-ui .session-map-status{border-left:3px solid #c6b778;padding-left:10px}
+#dm-app.hybrid-ui .session-map-details > *{flex-shrink:0}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-14",
+  "checks": [
+    "End combat opens review without clearing initiative or changing public/mechanical state",
+    "One reviewed record updates selected quest, journal and shared objective with pending notes retained",
+    "Open reaction prevents initiative being ended",
+    "Outstanding effects and action queue survive initiative ending",
+    "Final return clears initiative and preserves map, tokens, HP, resources and TV",
+    "Reopen and correction retain a single event",
+    "Outcome correction undo and redo preserve fight identity",
+    "Reviewed aftermath survives reload without a duplicate",
+    "Updated wrap notes enter a correction without adding an event",
+    "New fight avoids old loot and unresolved ending preserves resumable initiative"
+  ],
+  "errors": [],
+  "physicalDevices": false,
+  "liveConnectionsChanged": false,
+  "environment": "Fresh browser profile and temporary local servers"
+}

@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791834164914-pxcnlq9r",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              13
+            ],
+            "total": 19,
+            "natural": 13,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:44 PM"
+          },
+          {
+            "id": "pa-1791834164914-mr4m7dba",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:44 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-2",
+            "text": "Redbrand 2: 19 vs AC 14: hit, 8 bludgeoning → 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

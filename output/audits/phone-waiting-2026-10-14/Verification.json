@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Waiting view shows current objective, permitted active creature, round and pending summary; terminal requests are folded with no vibration",
+    "sheet reading keeps its tab, DOM and scroll through routine updates without vibration",
+    "explore reading keeps its tab, DOM and scroll through routine updates without vibration",
+    "clues reading keeps its tab, DOM and scroll through routine updates without vibration",
+    "loot reading keeps its tab, DOM and scroll through routine updates without vibration",
+    "Clarification, saving throw and reaction stay visible above the reading tab and alert only once per new task",
+    "Another player does not receive the private clarification",
+    "Explicit alert tap opens the response; physical saves and reaction replies still work and completed responses move to history",
+    "Closed combat requests remain in local last-received history and do not remain urgent",
+    "Disconnect/reconnect stays conspicuous without leaving Journal; local Completed browsing remains available offline",
+    "360- and 390-pixel layouts remain within the viewport",
+    "Actual joining/reload preserves private drafts and does not repeat a dismissed walkthrough"
+  ],
+  "errors": [],
+  "environment": "Fresh DM and two phone clients; disposable services",
+  "liveServicesChanged": false,
+  "physicalDevices": false
+}

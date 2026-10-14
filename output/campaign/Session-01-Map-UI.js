@@ -6,9 +6,9 @@
     if (cls) e.className = cls; parent.appendChild(e); return e; };
   const btn = (parent, text, fn) => { const b = h('button', text, parent); b.type = 'button'; b.addEventListener('click', fn); return b; };
   const field = (parent, title, value, fn, type = 'text') => { const l = h('label', title, parent, 'map-field');
-    const i = document.createElement('input'); i.type = type; i.value = value ?? ''; if (type === 'checkbox') i.checked = !!value;
+    const i = document.createElement('input'); i.setAttribute('aria-label',title);i.type = type; i.value = value ?? ''; if (type === 'checkbox') i.checked = !!value;
     i.addEventListener('change', () => fn(type === 'checkbox' ? i.checked : i.value)); l.appendChild(i); return i; };
-  const select = (parent, title, value, options, fn) => { const l = h('label', title, parent, 'map-field'); const s = h('select', null, l);
+  const select = (parent, title, value, options, fn) => { const l = h('label', title, parent, 'map-field'); const s = h('select', null, l);s.setAttribute('aria-label',title);
     for (const [key, name] of options) { const o = h('option', name, s); o.value = key; } s.value = value;
     s.addEventListener('change', () => fn(s.value)); return s; };
   const section = (parent, title, note) => { const s = h('section', null, parent, 'map-section'); h('h3', title, s); if (note) h('p', note, s, 'help'); return s; };
@@ -196,6 +196,11 @@
     field(s, 'Safe edge (%)', d.safeEdge, v => { d.safeEdge = Math.max(0, Math.min(15, Number(v) || 0)); save('Safe edge'); }, 'number');
     select(s, 'Orientation', d.orientation, [['landscape','Landscape'],['portrait','Portrait']], v => { d.orientation = v; save('Orientation'); });
     field(s, 'Lock physical grid scale', d.scaleLock, v => { d.scaleLock = v; save('Scale lock'); }, 'checkbox');
+    const presentation=section(root,'Player TV presentation','Quiet table keeps the same calibrated grid and map layout, with restrained decoration. These options affect presentation only.');
+    select(presentation,'Table-display preset',d.tvPreset,[['quiet','Quiet table'],['classic','Decorated / classic']],v=>{d.tvPreset=v;save('TV presentation preset');});
+    field(presentation,'Show objective overlay',d.showObjective,v=>{d.showObjective=v;save('TV objective visibility');},'checkbox');
+    field(presentation,'Show narration subtitles',d.showSubtitles,v=>{d.showSubtitles=v;save('TV subtitle visibility');},'checkbox');
+    h('p','On the TV, use Controls & interaction to enable visible controls and permitted map interactions. Turn it off for the quiet table view. Escape also closes interaction mode. DM permission still controls player movement and exploration.',presentation,'help');
     const result = host.calibration(); h('p', result.fits ? `At full screen, squares are about ${result.actualSquare.toFixed(2)} inches.` : `Requested scale will not fit; fitted squares are about ${result.actualSquare.toFixed(2)} inches. Reduce grid size or use a larger display.`, s, 'map-performance');
     const viewport = host.viewport();
     const actualRatio = viewport ? viewport.width / viewport.height : null;
@@ -203,6 +208,8 @@
     if (!viewport) h('p', 'Open the player TV to check the display against its saved resolution.', s, 'map-performance');
     else if (Math.abs(actualRatio - configuredRatio) > .2) h('p', 'The player TV window does not match the saved resolution or orientation. Move it to the TV and enter full screen.', s, 'map-performance');
     btn(s, 'Open player TV · full screen preset', () => host.openPlayer());
+    btn(s, host.calibrationCheck() ? 'Hide TV readability check' : 'Show TV readability check', () => { host.setCalibrationCheck(!host.calibrationCheck()); render(); });
+    h('p', 'On the TV, check the gold safe edge, actual token labels, sample ruler text, and contrast from every seat. Rotate the TV or update its display setting, then hide the check before play.', s, 'help');
     h('p', 'On the player screen, press Full screen. Browser security requires that click on the TV window.', s, 'help');
   }
   function closeKeepTool() { $('map-drawer').hidden = true; $('map-scrim').hidden = true; host.setPreview(false); }

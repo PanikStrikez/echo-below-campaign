@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "redbrand-hideout",
+      "round": 3,
+      "order": [
+        "pc-ringgo",
+        "pc-donavan",
+        "s2-hideout-barracks-2",
+        "s2-hideout-barracks-1",
+        "pc-trista",
+        "pc-pebble",
+        "pc-aldric",
+        "s2-hideout-barracks-3"
+      ],
+      "index": 1
+    },
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 17
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 24
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 24
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 23
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 23
+      }
+    ],
+    "foes": [
+      {
+        "id": "s2-hideout-barracks-1",
+        "hp": 0
+      },
+      {
+        "id": "s2-hideout-barracks-2",
+        "hp": 0
+      },
+      {
+        "id": "s2-hideout-barracks-3",
+        "hp": 0
+      }
+    ]
+  }
+}

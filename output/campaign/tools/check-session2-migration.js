@@ -10,6 +10,7 @@ for (const file of ['LMOP-Visual-Catalog.js', 'Session-02-Runbook.js', 'Session-
 const source = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
 const boot = source.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot > 0);
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(source.slice(0, boot) + '  globalThis.__session2Test = { normalize, session2EnemyTokens };\n})();');
 const saved = {
   sessionKind: 'custom', session2ContentVersion: 0, scene: 'barthen-art',
@@ -39,14 +40,14 @@ assert.equal(state.party['pc-trista'].level, 2);
 assert.equal(state.tokens.find(token => token.encounter === 'hideout-common').conditions[0], 'Poisoned');
 assert.equal(state.tokens.find(token => token.encounter === 'hideout-glasstaff').ac, 16);
 assert.equal(state.combat.tokens['s2-hideout-crypt-1'].vulnerabilities, 'bludgeoning');
-assert(state.runbookBeats.find(beat => beat.id === 's2-glasstaff').run[3].includes('only if Iarno did not take them'));
+assert(state.runbookBeats.find(beat => beat.id === 's2-glasstaff').run.some(line => line.includes('Check what Glasstaff took')));
 assert(state.runbookBeats.find(beat => beat.id === 's2-prep').run[3].includes('not required scenes'));
 assert(state.runbookBeats.find(beat => beat.id === 's2-prep').run[4].includes('Yeemik'));
-assert(state.runbookBeats.find(beat => beat.id === 's2-prep').private.some(line => line.includes('Redbrands captured Gundren')));
+assert(state.runbookBeats.find(beat => beat.id === 's2-prep').private.some(line => line.includes('Gundren at an unnamed inn')));
 assert(state.runbookBeats.find(beat => beat.id === 's2-town').choices[1].includes('Qelline'));
 assert(state.runbookBeats.find(beat => beat.id === 's2-town').choices[2].includes('Yeemik'));
 assert(state.runbookBeats.find(beat => beat.id === 's2-redbrands').run[2].includes('Redbrands abducted Gundren'));
-assert(state.runbookBeats.find(beat => beat.id === 's2-glasstaff').run[4].includes('transfer record'));
+assert(state.runbookBeats.find(beat => beat.id === 's2-glasstaff').run.some(line => line.includes('transfer record')));
 assert(!state.runbookBeats.find(beat => beat.id === 's2-inn').read[0].includes('Sildar'));
 assert.deepEqual(__session2Test.session2EnemyTokens().filter(token => token.encounter === 'redbrand-street').map(token => token.id),
   ['s2-ruffian-1', 's2-ruffian-2', 's2-ruffian-3', 's2-ruffian-4']);
@@ -59,7 +60,7 @@ oldBeat.run[3] = 'A search finds the Black Spider letter and an unlocked chest: 
 oldBeat.private = ['Lost Mine of Phandelver pp. 25–26; Evil Mage appendix p. 57; staff of defense appendix A p. 53.'];
 const revised = __session2Test.normalize(oldNarration);
 assert(!revised.runbookBeats.find(beat => beat.id === 's2-glasstaff').read[0].includes('slender staff'));
-assert(revised.runbookBeats.find(beat => beat.id === 's2-glasstaff').run[3].includes('only if Iarno did not take them'));
+assert(revised.runbookBeats.find(beat => beat.id === 's2-glasstaff').run.some(line=>line.includes('Check what Glasstaff took')));
 const oldStory = structuredClone(state);
 oldStory.session2ContentVersion = 4;
 const oldBarthen = oldStory.runbookBeats.find(beat => beat.id === 's2-barthen');
@@ -76,12 +77,12 @@ oldPrep.private[2] = 'The humanoid figures who took Gundren were not identified 
 const oldRedbrands = oldAbduction.runbookBeats.find(beat => beat.id === 's2-redbrands');
 oldRedbrands.run[2] = 'If three are defeated, the last tries to escape toward Tresendar Manor. A captured ruffian can supply a lead. Protect bystanders from automatic splash damage.';
 const oldGlasstaff = oldAbduction.runbookBeats.find(beat => beat.id === 's2-glasstaff');
-oldGlasstaff.run = oldGlasstaff.run.filter(line => !line.includes('transfer record'));
+oldGlasstaff.run = oldGlasstaff.run.filter(line => !line.includes('transfer record')).slice(0,5); // Actual pre-v6 shape; a newly expanded runbook is not a legacy fixture.
 oldGlasstaff.run[4] = 'Iarno knows the Spider seeks the Forge, but not the cave’s location. Sildar can arrange custody in the townmaster’s hall; the book doubles the 200 XP award if Iarno is delivered alive. Let the players decide what to do with him.';
 const restoredAbduction = __session2Test.normalize(oldAbduction);
-assert(restoredAbduction.runbookBeats.find(beat => beat.id === 's2-prep').private[2].includes('Redbrands captured Gundren'));
+assert(restoredAbduction.runbookBeats.find(beat => beat.id === 's2-prep').private.some(line=>line.includes('Gundren at an unnamed inn')));
 assert(restoredAbduction.runbookBeats.find(beat => beat.id === 's2-redbrands').run[2].includes('Redbrands abducted Gundren'));
-assert(restoredAbduction.runbookBeats.find(beat => beat.id === 's2-glasstaff').run[4].includes('transfer record'));
+assert(restoredAbduction.runbookBeats.find(beat => beat.id === 's2-glasstaff').run.some(line=>line.includes('transfer record')));
 const olderSheets = structuredClone(state);
 for (const [id, sourceStatus, oldMax, oldCurrent] of [
   ['pc-aldric', 'Playable DM-built sheet; replace choices with Bowman’s sheet if supplied', 8, 8],
@@ -102,12 +103,17 @@ olderSheets.party['pc-aldric'].resources.find(item => item.id === 'aldric-slots-
 olderSheets.party['pc-aldric'].resources.find(item => item.id === 'aldric-slots-1').current = 1;
 olderSheets.party['pc-ringgo'].skills.Investigation = { rank: 0, override: 0 };
 const refreshed = __session2Test.normalize(olderSheets);
-assert.equal(refreshed.tokens.find(item => item.id === 'pc-aldric').hp, 16);
-assert.equal(refreshed.tokens.find(item => item.id === 'pc-donavan').hp, 22);
-assert.equal(refreshed.tokens.find(item => item.id === 'pc-ringgo').maxHp, 24);
-assert.equal(refreshed.party['pc-aldric'].resources.find(item => item.id === 'aldric-slots-1').current, 3);
-assert.equal(refreshed.party['pc-donavan'].spells.find(item => item.name === 'Catapult').prepared, true);
-assert.equal(refreshed.party['pc-ringgo'].skills.Investigation.override, 4);
-assert.equal(refreshed.tokens.find(item => item.id === 'pc-trista').hp, 13);
+// Modern saved sheets are authoritative, even if a legacy source label survives.
+for (const id of ['pc-aldric','pc-donavan','pc-ringgo']) {
+  const before=olderSheets.tokens.find(t=>t.id===id),after=refreshed.tokens.find(t=>t.id===id);
+  assert.equal(after.hp,before.hp);assert.equal(after.maxHp,before.maxHp);
+  assert.equal(refreshed.party[id].level,olderSheets.party[id].level);
+}
+assert.equal(refreshed.party['pc-aldric'].resources.find(item=>item.id==='aldric-slots-1').current,1);
+assert.equal(refreshed.party['pc-aldric'].resources.find(item=>item.id==='aldric-slots-1').max,2);
+assert.equal(refreshed.party['pc-ringgo'].skills.Investigation.override,0);
+assert.equal(refreshed.party['pc-donavan'].spells.find(item=>item.name==='Catapult').prepared,true);
+assert.equal(refreshed.tokens.find(token=>token.id==='pc-trista').hp,13);
+assert.deepEqual(__session2Test.normalize(refreshed).party,refreshed.party,'Repeated normalization preserves authoritative sheets');
 delete global.__session2Test;
 console.log('Session 2 save migration preserved HP and notes, added hideout content once, and kept wave IDs.');

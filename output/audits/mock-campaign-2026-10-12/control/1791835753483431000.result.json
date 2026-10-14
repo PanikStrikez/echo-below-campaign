@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "result": {
+    "scene": {
+      "id": "redbrand-hideout",
+      "title": "Redbrand Hideout · Redbrand Hideout",
+      "image": "lmop-battle-maps/professional/redbrand-hideout.png",
+      "kind": "map",
+      "fog": true,
+      "gridColumns": 30,
+      "grid": true
+    }
+  }
+}

@@ -141,6 +141,8 @@
     if (!root?.isConnected || isPlayer()) return;
     root.replaceChildren();
     el('p', `DM ONLY · Audit snapshot${data?.auditDate ? ' · ' + text(data.auditDate) : ''}. This register describes prepared geography and map coverage, not live discoveries.`, root, 'story-note');
+    el('p','Historical inventory: maps added after this audit are available in the atlas. Its stopping point and checklist do not establish the current campaign situation.',root,'story-note');
+    if(globalThis.ECHO_CURRENT_STATUS_UI)button(root,'Open current status',()=>globalThis.ECHO_RELIABILITY.open('status'));
     if (!data) {
       const message = el('p', error || 'Loading the local map register…', root, error ? 'ai-error' : 'help');
       message.setAttribute('role', error ? 'alert' : 'status');

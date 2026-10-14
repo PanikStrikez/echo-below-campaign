@@ -1,0 +1,82 @@
+{
+  "id": "lmop-stonehill-common-room",
+  "title": "Phandalin · Stonehill common room",
+  "image": "lmop-visuals/stonehill-common-room.png",
+  "key": "P03",
+  "chapter": "Phandalin",
+  "reveal": "On entering the inn",
+  "sourceRecordIds": [
+    "s2-inn",
+    "tr-obligations",
+    "tr-obligations"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-inn",
+      "title": "4 · Stonehill Inn and rumors",
+      "read": [
+        "The inn is warmer and louder than the street. Supper, wet cloaks, and low conversation crowd the common room. Several people glance toward your travel-worn gear. A child at one table stops talking mid-sentence.",
+        "Tables and travel-worn clothing break up the room, leaving conversations close enough to approach without addressing everyone at once. The child's sudden quiet is one detail among several. You can choose a seat, seek the keeper, or listen before deciding whose story you want to hear."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    },
+    {
+      "id": "tr-obligations",
+      "title": "Around the table · people, promises and custody",
+      "read": [
+        "A cleared table fills with the things a journey leaves behind: a folded message, a borrowed tool, a list of names. Outside, ordinary work continues. Here, you have time to decide what must happen before another road is taken.",
+        "Each object on the table points toward someone who may still be waiting. The tool can be returned, the message answered, and the list checked against your own account. None of those tasks has to be buried beneath a new destination."
+      ],
+      "source": [
+        {
+          "book": "lmop",
+          "page": 50,
+          "label": "Lost Mine of Phandelver (2014)",
+          "note": "Printed page; verified against the existing Wave Echo runbook."
+        },
+        {
+          "book": "lmop",
+          "page": 51,
+          "label": "Lost Mine of Phandelver (2014)",
+          "note": "Printed page; verified against the existing Wave Echo runbook."
+        }
+      ]
+    },
+    {
+      "id": "tr-obligations",
+      "title": "Around the table · people, promises and custody",
+      "read": [
+        "A cleared table fills with the things a journey leaves behind: a folded message, a borrowed tool, a list of names. Outside, ordinary work continues. Here, you have time to decide what must happen before another road is taken.",
+        "Each object on the table points toward someone who may still be waiting. The tool can be returned, the message answered, and the list checked against your own account. None of those tasks has to be buried beneath a new destination."
+      ],
+      "source": [
+        {
+          "book": "lmop",
+          "page": 50,
+          "label": "Lost Mine of Phandelver (2014)",
+          "note": "Printed page; verified against the existing Wave Echo runbook."
+        },
+        {
+          "book": "lmop",
+          "page": 51,
+          "label": "Lost Mine of Phandelver (2014)",
+          "note": "Printed page; verified against the existing Wave Echo runbook."
+        }
+      ]
+    }
+  ],
+  "brief": "Stonehill common room, modest fieldstone roadhouse, practical wooden tables, low hearth, local workers talking and eating. Toblen a short friendly male human innkeeper, wife Trilena and young son Pip can remain background. No elite feast, magic entertainment or rat prop. No Gundren prisoner or future quest secrets.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Stonehill common room\nObservable scene and constraints: Stonehill common room, modest fieldstone roadhouse, practical wooden tables, low hearth, local workers talking and eating. Toblen a short friendly male human innkeeper, wife Trilena and young son Pip can remain background. No elite feast, magic entertainment or rat prop. No Gundren prisoner or future quest secrets.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "305389e6857df3e6832052b7ce9dd8bd410c75a3570340e289314cb252b57da3",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-stonehill-common-room.png",
+  "generatedAt": "2026-10-12T15:51:14.308Z",
+  "candidateHash": "36cb40928f3328eca434af7fb0855683ec06dc083000c10eb509f86580a3403f",
+  "review": "passed",
+  "reviewedHash": "36cb40928f3328eca434af7fb0855683ec06dc083000c10eb509f86580a3403f",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.756Z",
+  "installedHash": "36cb40928f3328eca434af7fb0855683ec06dc083000c10eb509f86580a3403f",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/stonehill-common-room.png"
+}

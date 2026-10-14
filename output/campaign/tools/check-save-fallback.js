@@ -1,5 +1,11 @@
-const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
-const source=fs.readFileSync(require('node:path').join(__dirname,'../Session-01-Battleboard.js'),'utf8'),values=new Map(),store=new Map([['record','old-database-value']]);let fail=true;
+const assert=require('node:assert/strict');
+const values=new Map(),store=new Map([['record','old-database-value']]);let fail=true;
 const db={transaction(){const tx={objectStore:()=>({get:key=>{const r={};queueMicrotask(()=>{r.result=store.get(key);r.onsuccess();});return r;},put:(value,key)=>queueMicrotask(()=>{if(fail){tx.error=Error('quota');tx.onerror();}else{store.set(key,value);tx.oncomplete();}})})};return tx;}};
-const box={console,localStorage:{getItem:k=>values.get(k)??null,setItem:(k,v)=>values.set(k,v),removeItem:k=>values.delete(k)},openCampaignDatabase:async()=>db,CAMPAIGN_DB:'test',Blob};vm.createContext(box);vm.runInContext(source.slice(source.indexOf('  async function readRecord(key)'),source.indexOf('  async function writeMediaRecord')),box);
-(async()=>{await box.writeRecord('record','new-fallback-value');assert.equal(store.get('record'),'old-database-value');assert.equal(await box.readRecord('record'),'new-fallback-value');fail=false;await box.writeRecord('record','recovered-database-value');assert.equal(await box.readRecord('record'),'recovered-database-value');assert.equal(values.size,0);console.log('PASS stale-database fallback: newest write survives database failure; successful write removes obsolete fallback.');})().catch(e=>{console.error(e);process.exit(1)});
+const localStorage={getItem:k=>values.get(k)??null,setItem:(k,v)=>values.set(k,v),removeItem:k=>values.delete(k)};
+require('../Session-01-Storage.js');
+const records=ECHO_STORAGE.create('test',{localStorage,openDatabase:async()=>db});
+(async()=>{await records.writeRecord('record','new-fallback-value');assert.equal(store.get('record'),'old-database-value');assert.equal(await records.readRecord('record'),'new-fallback-value');fail=false;await records.writeRecord('record','recovered-database-value');assert.equal(await records.readRecord('record'),'recovered-database-value');assert.equal(values.size,0);
+  fail=true;localStorage.setItem=()=>{throw Error('Storage interrupted');};
+  await assert.rejects(records.writeRecord('record','partial-hp-change'),/Storage interrupted/);
+  assert.equal(await records.readRecord('record'),'recovered-database-value','interrupted save left the previous complete record readable');
+  console.log('PASS stale-database fallback and interrupted save: newest completed record survives database and local-storage failures.');})().catch(e=>{console.error(e);process.exit(1)});

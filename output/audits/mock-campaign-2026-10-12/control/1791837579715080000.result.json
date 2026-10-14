@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-cragmaw-castle",
+      "round": 1,
+      "order": [
+        "pc-donavan",
+        "pc-trista",
+        "s3-castle-guards-hobgoblin-2",
+        "pc-pebble",
+        "pc-ringgo",
+        "s3-castle-guards-hobgoblin-1",
+        "pc-aldric"
+      ],
+      "index": 1
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 38,
+        "maxHp": 38
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 38,
+        "maxHp": 38
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 36,
+        "maxHp": 36
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 53,
+        "maxHp": 53
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 37,
+        "maxHp": 37
+      }
+    ],
+    "foes": [
+      {
+        "id": "s3-castle-guards-hobgoblin-1",
+        "hp": 11
+      }
+    ],
+    "due": []
+  }
+}

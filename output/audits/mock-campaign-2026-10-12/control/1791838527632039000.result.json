@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-south",
+      "round": 2,
+      "order": [
+        "s4-wave-6-ghoul-3",
+        "pc-donavan",
+        "s4-wave-6-ghoul-1",
+        "pc-pebble",
+        "s4-wave-6-ghoul-2",
+        "pc-ringgo",
+        "pc-trista",
+        "pc-aldric"
+      ],
+      "index": 1
+    },
+    "queue": {
+      "key": "lmop-map-wave-south:2:pc-donavan",
+      "done": [],
+      "movementUsed": 0,
+      "actionUsed": true,
+      "bonusUsed": true
+    },
+    "due": [
+      {
+        "id": "card-1791838391227-c708q1k",
+        "tokenId": "s4-wave-6-ghoul-3",
+        "triggerActor": "pc-donavan",
+        "triggerPoint": "start",
+        "remaining": 0,
+        "name": "Ray of Frost · speed −10 ft",
+        "condition": "",
+        "due": true,
+        "fired": true,
+        "repeatSave": false,
+        "note": "Apply until the caster’s next turn starts. Movement remains manual."
+      }
+    ]
+  }
+}

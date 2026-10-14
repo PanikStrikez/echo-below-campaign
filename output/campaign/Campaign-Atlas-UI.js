@@ -7,7 +7,7 @@
   const list = value => Array.isArray(value) ? value : [];
   const text = value => value == null ? '' : typeof value === 'object' ? JSON.stringify(value) : String(value);
   const clone = value => JSON.parse(JSON.stringify(value));
-  let host, root, current = '', selected = '', staged = null, expanded = false, error = '', query = '', filter = '', scope = 'board', limit = 30;
+  let host, root, homeRoot, compact = false, homeQuery = '', current = '', selected = '', staged = null, expanded = false, error = '', query = '', filter = '', scope = 'board', limit = 30;
   let navHistory = [], searchResults, detailsRoot, stageRoot, mapViewport, mapGroup, mapSVG, mapZoomLabel, toolbarButton, prepareButton, listening = false, permissionReviewed = false;
   const views = new Map();
   const model = () => globalThis.ECHO_ATLAS;
@@ -164,6 +164,7 @@
   function navigate(id, remember = true) {
     if (!model().board(data(), id)) throw Error('This atlas view is not prepared.');
     if (remember && current && id !== current) navHistory.push(current);
+    if (id !== current) homeQuery = '';
     current = id; selected = ''; limit = 30; invalidateStage(); render();
   }
   function goBack() {
@@ -178,7 +179,7 @@
       if (target && target !== current) navigate(target);
     }
     selected = id;
-    renderLocation(); renderResults();
+    if (compact) renderCompact(); else { renderLocation(); renderResults(); }
   }
   function marker(group, point, title, status, width, onSelect, extraClass = '', labelPlacement=null) {
     const pin = svg('g', {transform: `translate(${point.x} ${point.y})`, class: `atlas-pin atlas-pin-${status} ${extraClass}`}, group);
@@ -415,8 +416,38 @@
     for(const step of list(workflow.workflow))paragraph(steps,step.title||step.name||step.step||'Prepare',typeof step==='string'?step:Object.entries(step).filter(([k])=>!['title','name','step'].includes(k)).flatMap(([,v])=>Array.isArray(v)?v:[typeof v==='object'?JSON.stringify(v):v]));
     el('p','Levels 2, 3 and Skullport currently retain private source maps and verified transit notes. Their room-by-room playable preparation waits for a chosen destination; no deeper connection is published by browsing here.',box,'help');
   }
+  function renderCompact() {
+    if (!alive()) return;
+    root.replaceChildren(); root.classList.add('campaign-atlas','atlas-home');
+    const board=model()?.board(data(),current);
+    if(!board){el('p','The campaign atlas is not available.',root,'help');return;}
+    const head=el('div',null,root,'atlas-home-head');
+    const crumbs=el('nav',null,head,'atlas-breadcrumb');crumbs.setAttribute('aria-label','Atlas location');
+    for(const item of model().breadcrumbs(data(),current)){const control=button(crumbs,item.title,()=>navigate(item.id));if(item.id===current)control.setAttribute('aria-current','page');}
+    const tools=el('div',null,head,'button-row');
+    button(tools,'−',()=>changeView({zoom:currentView().zoom/1.25})).setAttribute('aria-label','Zoom out');
+    mapZoomLabel=el('span',`${Math.round(currentView().zoom*100)}%`,tools,'atlas-zoom-label');
+    button(tools,'+',()=>changeView({zoom:currentView().zoom*1.25})).setAttribute('aria-label','Zoom in');
+    button(tools,'Reset',()=>changeView({zoom:1,panX:0,panY:0}));
+    draw(root,board);
+    const search=el('label','Find a point of interest',root,'atlas-home-search');
+    const input=el('input',null,search);input.type='search';input.value=homeQuery;input.placeholder='Search this map';input.setAttribute('aria-label','Find an atlas point of interest');
+    const matches=el('div',null,root,'atlas-home-matches');
+    const fillMatches=()=>{matches.replaceChildren();const term=homeQuery.toLocaleLowerCase().trim();if(!term)return;for(const place of model().boardLocations(data(),current).filter(place=>place.name.toLocaleLowerCase().includes(term)).slice(0,8))button(matches,place.name,()=>selectLocation(place.id));if(!matches.childElementCount)el('small','No matching place on this map. Open the full atlas to search everywhere.',matches);};
+    input.addEventListener('input',()=>{homeQuery=input.value;fillMatches();});fillMatches();
+    const foot=el('div',null,root,'atlas-home-foot');
+    const place=model().location(data(),selected);
+    if(place){const status=model().state(place,travel());const info=el('div',null,foot,'atlas-home-place');el('strong',place.name,info);el('span',`${place.type||'Location'} · ${status.status}${status.inaccessible?' · inaccessible':''}`,info);button(foot,'Open details',()=>open({boardId:current,locationId:selected}));}
+    else el('p','Choose a marker for details. Browsing is private and does not move the party.',foot,'help');
+    const children=model().children(data(),current);
+    if(children.length){const row=el('div',null,root,'atlas-home-regions');for(const child of children)button(row,child.title,()=>navigate(child.id));}
+    const actions=el('div',null,root,'button-row atlas-home-actions');
+    if(board.parentId)button(actions,'← Back to wider map',goBack);
+    button(actions,'Open full atlas',()=>open({boardId:current,locationId:selected}));
+  }
   function render() {
     if (!alive()) return;
+    if (compact) return renderCompact();
     root.replaceChildren(); root.classList.add('campaign-atlas'); root.classList.toggle('atlas-expanded', expanded);
     prepareButton = null;
     if (!data() || !model()) { el('p', 'The atlas data is not available in this campaign package.', root, 'help'); return; }
@@ -494,12 +525,20 @@
   function open(options = {}) {
     if (isPlayer() || !host) return false;
     style();
+    globalThis.ECHO_HYBRID_UI?.go?.('explore',{context:false});
+    compact = false;
     const next = options.boardId || current || model()?.rootId(data());
     if (next) current = next;
     if (options.locationId) selected = options.locationId;
     invalidateStage();
     host.content('Campaign atlas', node => { root = node; render(); });
     return true;
+  }
+  function mountHome(node) {
+    if(isPlayer()||!host||!node)return false;
+    style();homeRoot=node;root=node;compact=true;
+    if(!current)current=model()?.rootId(data())||'';
+    render();return true;
   }
   function mountButton() {
     if (isPlayer() || toolbarButton?.isConnected) return;
@@ -519,9 +558,10 @@
         else mountButton();
       });
     }
+    globalThis.ECHO_HYBRID_UI?.atlasReady?.();
     return true;
   }
-  globalThis.ECHO_ATLAS_UI = {init, open, refresh: () => { if (alive()) { invalidateStage(); render(); } },
+  globalThis.ECHO_ATLAS_UI = {init, open, mountHome, refresh: () => { if (alive()) { invalidateStage(); render(); } },
     navigate: id => { if (!isPlayer() && host) navigate(id); },
     current: () => ({boardId: current, locationId: selected, staged: !!staged}),nowShowing:()=>host?.nowShowing?.()||''};
 })();

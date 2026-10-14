@@ -1,0 +1,36 @@
+{
+  "id": "lmop-town-square",
+  "title": "Thundertree · Area 10 · Town square",
+  "image": "lmop-visuals/town-square.png",
+  "key": "T10",
+  "chapter": "Thundertree",
+  "reveal": "On entering area 10",
+  "sourceRecordIds": [
+    "s3-tt-10"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-10",
+      "title": "Thundertree 10 · Town square",
+      "read": [
+        "A leaning warrior statue watches over a square almost swallowed by brush. Paths leave in several directions.",
+        "The warrior's pose remains visible despite the statue's lean, and the paths offer several different ways to leave the square. You can study the carving, check your bearings against the surrounding ruins, or choose the next approach with the whole group in sight."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Thundertree town square swallowed in brush, multiple dirt paths branch around a leaning warrior statue. Human hero holds a spear and shield, ordinary weathered stone. No readable nameplate, magical giant statue or living townspeople. Background ruined cottages, daylight.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 10 · Town square\nObservable scene and constraints: Thundertree town square swallowed in brush, multiple dirt paths branch around a leaning warrior statue. Human hero holds a spear and shield, ordinary weathered stone. No readable nameplate, magical giant statue or living townspeople. Background ruined cottages, daylight.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "bfebe117f7e4aac872663cc5fc4a860d064338c7e0e35f4423089d4d8bd9cade",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-town-square.png",
+  "generatedAt": "2026-10-12T16:17:58.120Z",
+  "candidateHash": "e5affe39f3b9983d2b5278595281dedffebeb4767439ffe1db4e512b960b706b",
+  "review": "passed",
+  "reviewedHash": "e5affe39f3b9983d2b5278595281dedffebeb4767439ffe1db4e512b960b706b",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.051Z",
+  "installedHash": "e5affe39f3b9983d2b5278595281dedffebeb4767439ffe1db4e512b960b706b",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/town-square.png"
+}

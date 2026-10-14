@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "1791838269403-z881rs0d2b",
+      "label": "Stirges groupStealth",
+      "notation": "1d20+3",
+      "parts": [
+        4
+      ],
+      "total": 7,
+      "kind": "digital",
+      "time": "02:51 PM"
+    },
+    {
+      "id": "1791838269472-u0hdjsvfbb9",
+      "label": "Ringgo actively watches ceiling",
+      "notation": "1d20+6",
+      "parts": [
+        8
+      ],
+      "total": 14,
+      "kind": "digital",
+      "time": "02:51 PM"
+    }
+  ]
+}

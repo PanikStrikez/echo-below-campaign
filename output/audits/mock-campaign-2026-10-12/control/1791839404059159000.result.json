@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-19-wave-spider-1",
+    "action": {
+      "actor": "s4-wave-19-wave-spider-1",
+      "label": "Bite",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839404221-g7vpndeo",
+          "label": "Bite · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            15
+          ],
+          "total": 20,
+          "natural": 15,
+          "public": false,
+          "kind": "digital",
+          "time": "3:10:04 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 20 vs AC 14: hit, physical base 0, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  }
+}

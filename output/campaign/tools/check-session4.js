@@ -36,6 +36,7 @@ for (const id of pack.scenes.filter(id => id.startsWith('lmop-'))) {
 const source = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
 const boot = source.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot > 0);
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(source.slice(0, boot) + `
   globalThis.__s4 = { normalize, newState, newCustomState, session4EnemyTokens, seedSession4Resources, gameSnapshot, publicState, phoneSnapshot,
     setState: value => { state = value; }, setCampaign: value => { campaignIndex = value; } };

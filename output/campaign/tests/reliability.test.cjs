@@ -14,7 +14,9 @@ const context = vm.createContext({ Blob, fetch, location: { hash: '' }, setInter
     }
   } });
 for (const file of ['Session-01-Reliability.js', 'Session-01-Presentation.js', 'Session-01-Combat-Data.js', 'Session-01-Rules-Data.js']) {
-  vm.runInContext(fs.readFileSync(path.join(root, file), 'utf8'), context, { filename: file });
+  const source = file === 'Session-01-Reliability.js' && process.env.ECHO_TEST_RELIABILITY_SOURCE
+    ? process.env.ECHO_TEST_RELIABILITY_SOURCE : path.join(root,file);
+  vm.runInContext(fs.readFileSync(source, 'utf8'), context, { filename: file });
 }
 const { ECHO_RELIABILITY: reliability, ECHO_PRESENTATION: presentation,
   ECHO_COMBAT_DATA: combat, ECHO_RULES_DATA: rules } = context;
@@ -22,7 +24,8 @@ const { ECHO_RELIABILITY: reliability, ECHO_PRESENTATION: presentation,
 async function run() {
   assert.equal(reliability.assertSupported({}), 1);
   assert.equal(reliability.assertSupported({ schemaVersion: 2 }), 2);
-  assert.throws(() => reliability.assertSupported({ schemaVersion: 3 }), /Update the app/);
+  assert.equal(reliability.assertSupported({ schemaVersion: reliability.VERSION }), reliability.VERSION);
+  assert.throws(() => reliability.assertSupported({ schemaVersion: reliability.VERSION + 1 }), /Update the app/);
   assert.equal(reliability.normalizeRegistry().active, 'default');
   assert.equal(reliability.normalizeRegistry({ active: 'lost', campaigns: [{ id: 'one', name: 'One', archived: true }] }).campaigns[0].archived, false);
 
@@ -34,7 +37,9 @@ async function run() {
   backup.mediaFiles.portrait = 'data:image/png;base64,YQ==';
   assert.equal(reliability.validateArchive(backup).valid, true);
   assert.throws(() => reliability.validateArchive({ ...backup, sessions: [backup.sessions[0], backup.sessions[0]] }), /duplicate/);
-  assert.throws(() => reliability.validateArchive({ ...backup, schemaVersion: 3 }), /Update the app/);
+  assert.equal(reliability.validateArchive({ ...backup, schemaVersion: reliability.VERSION }).valid, true);
+  assert.throws(() => reliability.validateArchive({ ...backup, schemaVersion: reliability.VERSION + 1 }), /Update the app/);
+  assert.throws(() => reliability.validateArchive({ ...backup, sessions: [{ ...backup.sessions[0], state: { schemaVersion: reliability.VERSION + 1 } }] }), /Update the app/);
 
   const originalStorage = new Map([['media:portrait', new Blob(['picture'], { type: 'image/png' })]]);
   const mediaFiles = await presentation.exportMedia(backup.presentation, async key => originalStorage.get(key));

@@ -1,0 +1,36 @@
+{
+  "id": "lmop-postern-gate",
+  "title": "Cragmaw Castle · Area 10 · Postern gate",
+  "image": "lmop-visuals/postern-gate.png",
+  "key": "C10",
+  "chapter": "Cragmaw Castle",
+  "reveal": "When found",
+  "sourceRecordIds": [
+    "s3-area10"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area10",
+      "title": "Area 10 · South postern gate",
+      "read": [
+        "An overgrown path climbs toward an iron door protected by the wall above it. Narrow slits overlook the approach.",
+        "The door offers a more contained approach than the wrecked main entrance, but the slits still overlook the ground before it. Brush crowds the path around your feet. You can examine the door and wall from a distance or decide how to approach without assuming the entrance is unwatched."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "SOUTH exterior postern: overgrown path climbs sheltered passage in thick castle wall to LARGE IRON door, narrow arrow slits ten feet above ground. Locked but visually ordinary, no revealed guard inside, raised portcullis, moat or magic barrier. Woodland daylight.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 10 · Postern gate\nObservable scene and constraints: SOUTH exterior postern: overgrown path climbs sheltered passage in thick castle wall to LARGE IRON door, narrow arrow slits ten feet above ground. Locked but visually ordinary, no revealed guard inside, raised portcullis, moat or magic barrier. Woodland daylight.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "99362e76b6aaa8cb846f0e7bb08bc643e86abd47cb2869b8020b7ff20b9eecd4",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-postern-gate.png",
+  "generatedAt": "2026-10-12T16:26:46.323Z",
+  "candidateHash": "542287b2dec63b536fe2f414288ce4c9d6a0fb97e262935107565569f06ac3bd",
+  "review": "passed",
+  "reviewedHash": "542287b2dec63b536fe2f414288ce4c9d6a0fb97e262935107565569f06ac3bd",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.960Z",
+  "installedHash": "542287b2dec63b536fe2f414288ce4c9d6a0fb97e262935107565569f06ac3bd",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/postern-gate.png"
+}

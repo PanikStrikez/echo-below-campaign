@@ -1,0 +1,142 @@
+{
+  "ok": true,
+  "result": {
+    "rooms": {
+      "1": {
+        "status": "resolved",
+        "treasure": "unrecorded",
+        "notes": "Inspected bodybelongings,covereddead; securedexistingrope20ftdescent,allfiveeast; miningprovisionsleft,bootsunclaimed",
+        "remaining": ""
+      },
+      "2": {
+        "status": "resolved",
+        "treasure": "unrecorded",
+        "notes": "Ochrejellydestroyed withB/P/fire/cold; noSplittrigger. Markedroute leadsnorthpool",
+        "remaining": ""
+      },
+      "3": {
+        "status": "unresolved",
+        "treasure": "unrecorded",
+        "notes": "Eightstirgesdead,twofedanddepartedalive,buriedentranceunusable;partywithdrawscamp",
+        "remaining": ""
+      },
+      "4": {
+        "status": "resolved",
+        "treasure": "unrecorded",
+        "notes": "Nineanimatedguardsdestroyed; routekept; no treasure",
+        "remaining": ""
+      },
+      "5": {
+        "status": "resolved",
+        "treasure": "Coinscollectedinpartybank; noindividualreward",
+        "notes": "Ringgo tools20 opensbox; Donavanreadsorefragments; papercrumbles",
+        "remaining": ""
+      },
+      "6": {
+        "status": "unresolved",
+        "treasure": "unrecorded",
+        "notes": "Oneghouldead,twoalive. AldricWebcheckedescape,partywithdrawsundercover. Pursuerslosttrail3",
+        "remaining": ""
+      },
+      "7": {
+        "status": "unvisited",
+        "treasure": "unrecorded",
+        "notes": "",
+        "remaining": ""
+      },
+      "8": {
+        "status": "unvisited",
+        "treasure": "unrecorded",
+        "notes": "",
+        "remaining": ""
+      },
+      "9": {
+        "status": "unvisited",
+        "treasure": "unrecorded",
+        "notes": "",
+        "remaining": ""
+      },
+      "10": {
+        "status": "observed",
+        "treasure": "unrecorded",
+        "notes": "Poolsearchedfromshore; bonesseenbutitemsnotretrieved. Atstairjunctionnorthcorridoralsoexists,sourcegeometrycorrection; streamdeferred",
+        "remaining": ""
+      },
+      "11": {
+        "status": "unresolved",
+        "treasure": "unrecorded",
+        "notes": "Fivebugbearsrefusedunconditionalmeeting; demandedflameskullclearance. Partydeclinedbargainandwithdrewwest; guardsremainalive.",
+        "remaining": ""
+      },
+      "12": {
+        "status": "unvisited",
+        "treasure": "unrecorded",
+        "notes": "",
+        "remaining": ""
+      },
+      "13": {
+        "status": "observed",
+        "treasure": "unrecorded",
+        "notes": "Arcanaproficientcasters senseauranorth;Pebbletakesonealreadyloosenonmagicalmineral,noassignedvalue",
+        "remaining": ""
+      },
+      "14": {
+        "status": "resolved",
+        "treasure": "Chestcoins/gems/pipeuntaken",
+        "notes": "MormeskacceptedcopiedSculptSpell/ritualnotesafterA25helpedbyD; supervisedbookaccess. A9seamsearchfailed; nohiddenmapfound. Refusedkillguardianpromise Hidden map search failed; coins and gift items untaken.",
+        "remaining": ""
+      },
+      "15": {
+        "status": "observed",
+        "treasure": "unrecorded",
+        "notes": "Honest questions only. Guardian permits observation without touching protected items; assignment remains active. No false authority claim, no release, no item removal.",
+        "remaining": ""
+      },
+      "16": {
+        "status": "observed",
+        "treasure": "unrecorded",
+        "notes": "Watched2minsurgefrom15ftledge;water rises10ftthenfalls,noswim,noassumednewexit",
+        "remaining": ""
+      },
+      "17": {
+        "status": "resolved",
+        "treasure": "unrecorded",
+        "notes": "Inspectedexistingropes,followedoldstreambedcrouched,tethered returnroute to18; no inventedguardian",
+        "remaining": ""
+      },
+      "18": {
+        "status": "unresolved",
+        "treasure": "Gauntletsnotsearched/retrieved",
+        "notes": "Threecrewrelocatedarmedto11,overseerescaped;riftunsearched.",
+        "remaining": ""
+      },
+      "19": {
+        "status": "resolved",
+        "treasure": "unrecorded",
+        "notes": "Nezznardead,4spidersdestroyed,guard1dead,guard2surrendered,overseerescaped38HP. Riftcrewarrivesalarm;R12failsDC15surrenderoffer. Threecrewwithdrawarmedtoward5alliesin11 ratherthanacceptterms.",
+        "remaining": ""
+      },
+      "20": {
+        "status": "resolved",
+        "treasure": "KeyheldRinggo",
+        "notes": "Nundro caredfor,wakesafterwater/care,independentlygivesfamilynames; escortedby5party andwatchedguardvia18northhall10maze2rope1",
+        "remaining": ""
+      }
+    },
+    "spell": "(id,name,targets,dc=16,notation='8d6',damageType='fire',success='half')=>{let s=__mock.state.state,p=s.party[id],i=p.spells.findIndex(x=>x.name===name),pool=p.resources.find(x=>Number(x.slotLevel)===3&&x.current>0)||p.resources.find(x=>/3.*",
+    "skills": [
+      {
+        "name": "Control Flames",
+        "level": 0,
+        "prepared": true,
+        "notes": "At-will cantrip."
+      },
+      {
+        "name": "Fire Bolt",
+        "level": 0,
+        "prepared": true,
+        "notes": "At-will cantrip."
+      }
+    ]
+  }
+}

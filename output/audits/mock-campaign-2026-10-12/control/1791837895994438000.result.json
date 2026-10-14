@@ -1,0 +1,291 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "next-session-6",
+      "beats": [
+        {
+          "id": "evening6-start",
+          "title": "Session 6 · prepare the mine expedition"
+        },
+        {
+          "id": "s4-arrival",
+          "title": "Arrival · follow a route the party actually earned"
+        },
+        {
+          "id": "s4-room-1",
+          "title": "Area 1 · Rockseeker camp and the descent"
+        },
+        {
+          "id": "s4-room-2",
+          "title": "Area 2 · Mine tunnels",
+          "enc": "wave-2"
+        },
+        {
+          "id": "s4-room-3",
+          "title": "Area 3 · Old entrance and ceiling stirges",
+          "enc": "wave-3"
+        },
+        {
+          "id": "s4-room-4",
+          "title": "Area 4 · Old guardroom",
+          "enc": "wave-4"
+        },
+        {
+          "id": "s4-room-5",
+          "title": "Area 5 · Assayers’ office"
+        },
+        {
+          "id": "s4-room-6",
+          "title": "Area 6 · South barracks",
+          "enc": "wave-6"
+        },
+        {
+          "id": "s4-room-7",
+          "title": "Area 7 · Ruined storeroom and a secure rest"
+        },
+        {
+          "id": "s4-room-8",
+          "title": "Area 8 · Fungi cavern and poison gas",
+          "enc": "wave-8"
+        },
+        {
+          "id": "s4-room-9",
+          "title": "Area 9 · Great cavern",
+          "enc": "wave-9"
+        },
+        {
+          "id": "s4-room-10",
+          "title": "Area 10 · Dark pool"
+        },
+        {
+          "id": "s4-room-11",
+          "title": "Area 11 · North barracks",
+          "enc": "wave-11"
+        },
+        {
+          "id": "s4-room-12",
+          "title": "Area 12 · Smelter cavern",
+          "enc": "wave-12"
+        },
+        {
+          "id": "s4-room-13",
+          "title": "Area 13 · Starry cavern"
+        },
+        {
+          "id": "s4-room-14",
+          "title": "Area 14 · Mormesk and the wizards’ quarters",
+          "enc": "wave-14"
+        },
+        {
+          "id": "s4-room-15",
+          "title": "Area 15 · Forge of Spells and its guardian",
+          "enc": "wave-15"
+        },
+        {
+          "id": "s4-room-16",
+          "title": "Area 16 · Booming cavern"
+        },
+        {
+          "id": "s4-room-17",
+          "title": "Area 17 · Old streambed bypass"
+        },
+        {
+          "id": "s4-room-18",
+          "title": "Area 18 · Collapsed cavern and Vhalak",
+          "enc": "wave-18"
+        },
+        {
+          "id": "s4-room-19",
+          "title": "Area 19 · Temple of Dumathoin",
+          "enc": "wave-19"
+        },
+        {
+          "id": "s4-nezznar",
+          "title": "Nezznar · bargain, battle, escape, or capture"
+        },
+        {
+          "id": "s4-room-20",
+          "title": "Area 20 · Rescue Nundro"
+        },
+        {
+          "id": "s4-forge-use",
+          "title": "Forge use · temporary magic and item custody"
+        },
+        {
+          "id": "s4-rest",
+          "title": "Rest or retreat · keep the expedition state"
+        },
+        {
+          "id": "s4-wandering",
+          "title": "Optional · wandering encounters during exposed delays"
+        },
+        {
+          "id": "s4-return",
+          "title": "Return visit · resume the mine that now exists"
+        },
+        {
+          "id": "s4-outcomes",
+          "title": "Before leaving · record the actual ending"
+        },
+        {
+          "id": "s4-homecoming",
+          "title": "Phandalin · choose the homecoming that happened"
+        },
+        {
+          "id": "s4-custody",
+          "title": "Phandalin · a living Black Spider in custody"
+        },
+        {
+          "id": "s4-beyond",
+          "title": "After the mine · level 5 and the next chosen road"
+        },
+        {
+          "id": "next-session-6-review",
+          "title": "Close this evening · review what actually changed"
+        }
+      ]
+    },
+    {
+      "id": "lmop-part-4-visuals",
+      "beats": [
+        {
+          "id": "s4-prep",
+          "title": "Before play · reconcile the journey to the mine"
+        },
+        {
+          "id": "s4-arrival",
+          "title": "Arrival · follow a route the party actually earned"
+        },
+        {
+          "id": "s4-room-1",
+          "title": "Area 1 · Rockseeker camp and the descent"
+        },
+        {
+          "id": "s4-room-2",
+          "title": "Area 2 · Mine tunnels",
+          "enc": "wave-2"
+        },
+        {
+          "id": "s4-room-3",
+          "title": "Area 3 · Old entrance and ceiling stirges",
+          "enc": "wave-3"
+        },
+        {
+          "id": "s4-room-4",
+          "title": "Area 4 · Old guardroom",
+          "enc": "wave-4"
+        },
+        {
+          "id": "s4-room-5",
+          "title": "Area 5 · Assayers’ office"
+        },
+        {
+          "id": "s4-room-6",
+          "title": "Area 6 · South barracks",
+          "enc": "wave-6"
+        },
+        {
+          "id": "s4-room-7",
+          "title": "Area 7 · Ruined storeroom and a secure rest"
+        },
+        {
+          "id": "s4-room-8",
+          "title": "Area 8 · Fungi cavern and poison gas",
+          "enc": "wave-8"
+        },
+        {
+          "id": "s4-room-9",
+          "title": "Area 9 · Great cavern",
+          "enc": "wave-9"
+        },
+        {
+          "id": "s4-room-10",
+          "title": "Area 10 · Dark pool"
+        },
+        {
+          "id": "s4-room-11",
+          "title": "Area 11 · North barracks",
+          "enc": "wave-11"
+        },
+        {
+          "id": "s4-room-12",
+          "title": "Area 12 · Smelter cavern",
+          "enc": "wave-12"
+        },
+        {
+          "id": "s4-room-13",
+          "title": "Area 13 · Starry cavern"
+        },
+        {
+          "id": "s4-room-14",
+          "title": "Area 14 · Mormesk and the wizards’ quarters",
+          "enc": "wave-14"
+        },
+        {
+          "id": "s4-room-15",
+          "title": "Area 15 · Forge of Spells and its guardian",
+          "enc": "wave-15"
+        },
+        {
+          "id": "s4-room-16",
+          "title": "Area 16 · Booming cavern"
+        },
+        {
+          "id": "s4-room-17",
+          "title": "Area 17 · Old streambed bypass"
+        },
+        {
+          "id": "s4-room-18",
+          "title": "Area 18 · Collapsed cavern and Vhalak",
+          "enc": "wave-18"
+        },
+        {
+          "id": "s4-room-19",
+          "title": "Area 19 · Temple of Dumathoin",
+          "enc": "wave-19"
+        },
+        {
+          "id": "s4-nezznar",
+          "title": "Nezznar · bargain, battle, escape, or capture"
+        },
+        {
+          "id": "s4-room-20",
+          "title": "Area 20 · Rescue Nundro"
+        },
+        {
+          "id": "s4-forge-use",
+          "title": "Forge use · temporary magic and item custody"
+        },
+        {
+          "id": "s4-rest",
+          "title": "Rest or retreat · keep the expedition state"
+        },
+        {
+          "id": "s4-wandering",
+          "title": "Optional · wandering encounters during exposed delays"
+        },
+        {
+          "id": "s4-return",
+          "title": "Return visit · resume the mine that now exists"
+        },
+        {
+          "id": "s4-outcomes",
+          "title": "Before leaving · record the actual ending"
+        },
+        {
+          "id": "s4-homecoming",
+          "title": "Phandalin · choose the homecoming that happened"
+        },
+        {
+          "id": "s4-custody",
+          "title": "Phandalin · a living Black Spider in custody"
+        },
+        {
+          "id": "s4-beyond",
+          "title": "After the mine · level 5 and the next chosen road"
+        }
+      ]
+    }
+  ]
+}

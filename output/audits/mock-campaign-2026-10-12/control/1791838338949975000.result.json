@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-4-wave-skeleton-6",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-6",
+      "label": "Shortsword",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838339065-ohfymx8a",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            5
+          ],
+          "total": 9,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:19 PM"
+        },
+        {
+          "id": "pa-1791838339065-40dxftir",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            1
+          ],
+          "total": 3,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:19 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 9 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

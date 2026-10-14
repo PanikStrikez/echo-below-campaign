@@ -1,0 +1,331 @@
+{
+  "ok": true,
+  "result": {
+    "tokens": [
+      {
+        "id": "pc-trista",
+        "x": 42,
+        "y": 84
+      },
+      {
+        "id": "pc-donavan",
+        "x": 47,
+        "y": 84
+      },
+      {
+        "id": "pc-ringgo",
+        "x": 52,
+        "y": 84
+      },
+      {
+        "id": "pc-pebble",
+        "x": 57,
+        "y": 84
+      },
+      {
+        "id": "pc-aldric",
+        "x": 62,
+        "y": 84
+      },
+      {
+        "id": "ally-sildar",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-2-ochre-jelly-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-3-stirge-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-3-stirge-2",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-3-stirge-3",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-3-stirge-4",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-3-stirge-5",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-3-stirge-6",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-3-stirge-7",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-3-stirge-8",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-3-stirge-9",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-3-stirge-10",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-2",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-3",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-4",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-5",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-6",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-7",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-8",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-9",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-6-ghoul-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-6-ghoul-2",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-6-ghoul-3",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-9-ghoul-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-9-ghoul-2",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-9-ghoul-3",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-9-ghoul-4",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-9-ghoul-5",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-9-ghoul-6",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-9-ghoul-7",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-11-bugbear-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-11-bugbear-2",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-11-bugbear-3",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-11-bugbear-4",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-11-bugbear-5",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-2",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-3",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-4",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-5",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-6",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-7",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-8",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-12-flameskull-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-14-mormesk-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-15-spectator-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-18-bugbear-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-18-bugbear-2",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-18-bugbear-3",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-18-vhalak-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-19-nezznar-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-19-bugbear-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-19-bugbear-2",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-19-wave-spider-1",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-19-wave-spider-2",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-19-wave-spider-3",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "s4-wave-19-wave-spider-4",
+        "x": 50,
+        "y": 50
+      }
+    ],
+    "scene": {
+      "id": "lmop-map-wave-south",
+      "title": "Wave Echo Cave · Wave Echo Cave · southern workings",
+      "image": "lmop-battle-maps/professional/wave-south.png",
+      "kind": "map",
+      "fog": true,
+      "gridColumns": 44,
+      "grid": true
+    }
+  }
+}

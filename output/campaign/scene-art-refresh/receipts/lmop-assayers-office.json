@@ -1,0 +1,36 @@
+{
+  "id": "lmop-assayers-office",
+  "title": "Wave Echo Cave · Area 5 · Assayers’ office",
+  "image": "lmop-visuals/assayers-office.png",
+  "key": "E05",
+  "chapter": "Wave Echo Cave",
+  "reveal": "On entering area 5",
+  "sourceRecordIds": [
+    "s4-room-5"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-room-5",
+      "title": "Area 5 · Assayers’ office",
+      "read": [
+        "Three dusty scales stand on a stone counter. Paper scraps fill small niches behind it, and the floor holds the remains of workers and warriors who never left.",
+        "The arrangement of the scales and niches suggests work that once involved careful measurements and records. The scraps are within reach, but their age is visible in their edges. You can look without touching, search the counter, or ask someone who knows the writing to examine what survives."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "Assayer office: a large STONE COUNTER divides room, THREE dusty iron balance scales atop it. Paper scraps in cubbyholes carved into NORTH wall, long-dead gnome and orc remains on floor. CLOSED iron strongbox BEHIND counter, contents invisible. Off-frame lantern, no functional living mine.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 5 · Assayers’ office\nObservable scene and constraints: Assayer office: a large STONE COUNTER divides room, THREE dusty iron balance scales atop it. Paper scraps in cubbyholes carved into NORTH wall, long-dead gnome and orc remains on floor. CLOSED iron strongbox BEHIND counter, contents invisible. Off-frame lantern, no functional living mine.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "19117ec73f6d0db36d8a178ec62de60ad370d11e5a7ff3a0ddf4943876b598ec",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-assayers-office.png",
+  "generatedAt": "2026-10-12T16:28:54.934Z",
+  "candidateHash": "9f15d91f35776a5bbc4509672ac27f03453d87f01236cf44da5a1385e217e6da",
+  "review": "passed",
+  "reviewedHash": "9f15d91f35776a5bbc4509672ac27f03453d87f01236cf44da5a1385e217e6da",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.436Z",
+  "installedHash": "9f15d91f35776a5bbc4509672ac27f03453d87f01236cf44da5a1385e217e6da",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/assayers-office.png"
+}

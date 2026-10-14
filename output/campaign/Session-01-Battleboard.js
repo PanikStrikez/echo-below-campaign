@@ -6,271 +6,29 @@
   const CAMPAIGN_DB = 'echo-below-campaign-table-v1';
   const CAMPAIGN_INDEX_KEY = 'campaign:index';
   const CAMPAIGN_REGISTRY_KEY = 'campaigns:registry:v2';
-  const DATA_VERSION = 2;
+  const DATA_VERSION = 3;
   const IS_PLAYER = location.hash === '#player';
-  const SCENES = {
-    ...Object.fromEntries((globalThis.ECHO_ADVENTURES?.scenes()||[]).map(scene=>[scene.id,{...scene}])),
-    'mc-court': { title: 'Mending Court · home plan', image: 'assets/Mending-Court-Plan.svg', kind: 'visual' },
-    cover: { title: 'The Echo Below', image: 'assets/Echo-Below-Cover.png' },
-    gundren: { title: 'Gundren departs', image: 'session-01-visuals/scene-01-gundren-departs.png' },
-    horses: { title: 'The empty horses', image: 'session-01-visuals/scene-02-empty-horses.png' },
-    road: { title: 'Road ambush', image: 'session-01-visuals/road-ambush-painted-gridless.png', kind: 'map' },
-    'cave-mouth': { title: 'The cave mouth', image: 'session-01-visuals/scene-03-cave-mouth.png' },
-    approach: { title: 'Cave approach', image: 'session-01-visuals/cave-approach-painted-gridless.png', kind: 'map' },
-    interior: { title: 'Cragmaw Hideout', image: 'session-01-visuals/cragmaw-hideout-painted-gridless.png', kind: 'map', fog: true },
-    'road-reveal': { title: 'Road ambush · revealed', image: 'session-01-visuals/scene-12-road-ambush-reveal.png' },
-    'trail-art': { title: 'Goblin trail', image: 'session-01-visuals/scene-04-goblin-trail.png' },
-    'snare-art': { title: 'Snare · discovered', image: 'session-01-visuals/scene-13-snare-discovered.png' },
-    'pit-art': { title: 'Pit · discovered', image: 'session-01-visuals/scene-14-pit-discovered.png' },
-    'blind-art': { title: 'Area 2 · Goblin blind', image: 'session-01-visuals/scene-05-goblin-blind.png' },
-    'kennel-art': { title: 'Area 3 · Kennel', image: 'session-01-visuals/scene-06-kennel.png' },
-    'passage-art': { title: 'Area 4 · Steep passage', image: 'session-01-visuals/scene-07-steep-passage.png' },
-    'overpass-art': { title: 'Area 5 · Overpass', image: 'session-01-visuals/scene-08-overpass.png' },
-    'den-art': { title: 'Area 6 · Goblin den', image: 'session-01-visuals/scene-09-goblin-den.png' },
-    'pools-art': { title: 'Area 7 · Twin pools', image: 'session-01-visuals/scene-10-twin-pools.png' },
-    'klarg-art': { title: 'Area 8 · Klarg’s cave', image: 'session-01-visuals/scene-11-klargs-cave.png' },
-    'phandalin-art': { title: 'Phandalin arrival', image: 'session-01-visuals/scene-15-phandalin-arrival.png' },
-    'barthen-art': { title: 'Barthen’s Provisions', image: 'session-01-visuals/scene-16-barthens-provisions.png' },
-    'phandalin-street': { title: 'Phandalin street', image: 'lmop-battle-maps/professional/phandalin-street.png', kind: 'map' },
-    'redbrand-hideout': { title: 'Redbrand hideout · unmarked', image: 'lmop-battle-maps/professional/redbrand-hideout.png', kind: 'map', fog: true },
-    'region-lmop': { title: 'Campaign map · Phandelver frontier', image: 'town-maps/professional/phandelver-region.png', kind: 'map', grid: false },
-    'town-phandalin': { title: 'Town map · Phandalin', image: 'town-maps/professional/phandalin-overhead.png', kind: 'map', grid: false },
-    'town-conyberry': { title: 'Town map · Conyberry', image: 'town-maps/professional/conyberry-overhead.png', kind: 'map', grid: false },
-    'town-thundertree': { title: 'Town map · Thundertree', image: 'town-maps/professional/thundertree-overhead.png', kind: 'map', grid: false },
-    'city-waterdeep': { title: 'City map · Waterdeep', image: 'town-maps/waterdeep-overhead.svg', kind: 'map', grid: false },
-    ...Object.fromEntries((globalThis.LMOP_VISUAL_CATALOG || []).map(item => [item.id,
-      { title: `${item.chapter} · ${item.title}`, image: item.image }])),
-    ...Object.fromEntries((globalThis.LMOP_BATTLE_MAP_CATALOG || []).map(item => [item.id,
-      { title: `${item.chapter} · ${item.title}`, image: item.image, kind: 'map',
-        fog: item.fog, gridColumns: item.gridColumns }])),
-    'wd-portal':{title:'The Yawning Portal',image:'assets/Yawning-Portal-Scene.svg'},
-    'wd-research':{title:'Second Margin research',image:'assets/Second-Margin-Scene.svg'},
-    'wd-contact':{title:'Dracuseth · Waterdeep contact',image:'assets/Dracuseth-Maw-of-Flames.png'},
-    'um1-table':{title:'Undermountain · tactical canvas (DM layouts)',image:'assets/Undermountain-Tactical-Canvas.svg',kind:'map',gridColumns:30},
-    black: { title: 'Black screen', kind: 'black' }
-  };
-  const RUNBOOK = Array.isArray(globalThis.ECHO_RUNBOOK) ? globalThis.ECHO_RUNBOOK : [];
-  const RUNBOOK_IDS = new Set(RUNBOOK.map(beat => beat.id));
-  const SCENE_NOTES = {
-    cover: 'prep', gundren: 'departure', horses: 'ambush', road: 'ambush',
-    'cave-mouth': 'cave', approach: 'cave', interior: 'blind',
-    'road-reveal': 'ambush', 'trail-art': 'trail', 'snare-art': 'trail', 'pit-art': 'trail',
-    'blind-art': 'blind', 'kennel-art': 'kennel', 'passage-art': 'passage',
-    'overpass-art': 'bridge', 'den-art': 'den', 'pools-art': 'pools', 'klarg-art': 'klarg',
-    'phandalin-art': 'aftermath', 'barthen-art': 'aftermath'
-  };
-  const ENCOUNTERS = [
-    { id: 'road', name: 'Road ambush', note: 'Four goblins: two on each side of the road. Keep them off the TV until spotted or until they attack.' },
-    { id: 'blind', name: '2 · Goblin blind', note: 'Two goblins watch from the briars beside the stream.' },
-    { id: 'kennel', name: '3 · Kennel', note: 'Three chained wolves. They can be calmed or distracted with food.' },
-    { id: 'overpass', name: '5 · Overpass', note: 'One goblin can signal the pools to release a flood.' },
-    { id: 'den', name: '6 · Goblin den', note: 'Six goblins including Yeemik. Sildar is tracked with the party, starting at 1 HP.' },
-    { id: 'pools', name: '7 · Twin pools', note: 'Three goblins guard the water controls.' },
-    { id: 'klarg', name: '8 · Klarg’s cave', note: 'Klarg, Ripper the wolf, and two goblins. Klarg’s hit is dangerous to level-1 characters.' },
-    { id: 'redbrand-street', name: 'Phandalin · Redbrand street', note: 'Four ruffians confront the party only when the town conflict reaches this point. Parley, retreat, capture, and combat remain possible.' },
-    { id: 'hideout-cellar', name: 'Hideout 1 · Cellar', note: 'Cistern and hidden satchel; noise can alert room 2.' },
-    { id: 'hideout-barracks', name: 'Hideout 2 · Ruffian barracks', note: 'Three ruffians, possibly alerted by cellar noise.' },
-    { id: 'hideout-trap', name: 'Hideout 3 · Pit trap', note: 'Find or bypass the concealed pit.' },
-    { id: 'hideout-crypt', name: 'Hideout 4 · Crypt', note: 'Three skeletons activate near the side doors.' },
-    { id: 'hideout-pens', name: 'Hideout 5 · Slave pens', note: 'Two guards and the Dendrar family. Keep captives safe.' },
-    { id: 'hideout-crevasse', name: 'Hideout 8 · Crevasse', note: 'Nothic can negotiate; beware the south bridge.' },
-    { id: 'hideout-bugbears', name: 'Hideout 9 · Bugbears', note: 'Three bugbears; Droop is a noncombatant.' },
-    { id: 'hideout-common', name: 'Hideout 10 · Common room', note: 'Four drunken ruffians and a possible disguise approach.' },
-    { id: 'hideout-glasstaff', name: 'Hideout 12 · Glasstaff', note: 'Iarno may flee if his familiar warned him.' },
-    { id: 'old-owl-well', name: 'Old Owl Well · optional fight', note: 'Hamun Kost and up to twelve zombies. Parley is the intended first contact; reveal undead when they emerge.' },
-    { id: 'wyvern-tor', name: 'Wyvern Tor · optional camp', note: 'One sentry, six ordinary orcs inside, Brughor (30 HP), and Gog the ogre. Extremely dangerous for low-level PCs.' },
-    { id: 'tt-blights-1', name: 'Thundertree 1 · Western cottage', note: 'Two hidden twig blights; area 2 may attract them.' },
-    { id: 'tt-blights-2', name: 'Thundertree 2 · Blighted cottages', note: 'Six twig blights; move surviving area-1 blights if they join.' },
-    { id: 'tt-zombies-3', name: 'Thundertree 3 · Brown Horse', note: 'Four ash zombies; track each first-damage Ash Puff.' },
-    { id: 'tt-blights-5', name: 'Thundertree 5 · Farmhouse', note: 'Eight twig blights may approach doorways in pairs.' },
-    { id: 'tt-spiders-6', name: 'Thundertree 6 · Spider store', note: 'Two hidden giant spiders and restraining webs.' },
-    { id: 'tt-dragon-7', name: 'Thundertree 7 · Venomfang', note: 'Young green dragon; very dangerous for level-2 party. Parley and retreat are supported.' },
-    { id: 'tt-zombies-8', name: 'Thundertree 8 · Smithy', note: 'Two ash zombies; first-damage Ash Puff.' },
-    { id: 'tt-zombies-11', name: 'Thundertree 11 · Garrison', note: 'Five ash zombies; old armor does not improve AC.' },
-    { id: 'tt-blights-12', name: 'Thundertree 12 · Weaver’s cottage', note: 'Six twig blights; noise alerts area 13.' },
-    { id: 'tt-cultists-13', name: 'Thundertree 13 · Dragon cultists', note: 'Six cultists including Favric; they prefer talking.' },
-    { id: 'castle-archers', name: 'Castle 3 · Arrow-slit posts', note: 'Two goblins in each post. They warn areas 4 and 6 if they spot an intruder.' },
-    { id: 'castle-trap', name: 'Castle 2 · Falling rubble', note: 'Passive Perception 20 or active DC 10 Perception while searching; DC 10 Dexterity save, 3d6 bludgeoning or half.' },
-    { id: 'castle-barracks', name: 'Castle 4 · Ruined barracks', note: 'Three goblins; loud noise attracts a scout from the banquet hall.' },
-    { id: 'castle-hobgoblins', name: 'Castle 6 · Hobgoblin barracks', note: 'Four hobgoblins, AC 18; remember Martial Advantage.' },
-    { id: 'castle-banquet', name: 'Castle 7 · Banquet hall', note: 'Yegg (12 HP) plus seven goblins; account for any scout who left.' },
-    { id: 'castle-grick', name: 'Castle 8 · Dark hall', note: 'One grick on an upper ledge. Check sight and surprise, then reveal it.' },
-    { id: 'castle-shrine', name: 'Castle 9 · Goblin shrine', note: 'Lhupo (12 HP) and two goblins. They prepare if the grick fight was heard.' },
-    { id: 'castle-guards', name: 'Castle 12 · Guard barracks', note: 'Two hobgoblins; one warns Grol and returns two rounds later.' },
-    { id: 'castle-owlbear', name: 'Castle 13 · Owlbear tower', note: 'One owlbear. Fresh meat or an opened exit can avoid combat.' },
-    { id: 'castle-king', name: 'Castle 14 · King’s quarters', note: 'Grol (45 HP), Snarl (18 HP), Vyerith disguised as a drow, and Gundren stable at 0 HP.' },
-    { id: 'castle-warband', name: 'Optional · Returning war band', note: 'Targor (20 HP), two hobgoblins, and two wolves; negotiation is possible.' },
-    ...(globalThis.ECHO_SESSION4_COMBAT?.encounters || [])
-  ];
-  const STATS = {
-    goblin: 'AC 15 · +4 attack · 1d6+2 · Hide/Disengage bonus action',
-    wolf: 'AC 13 · bite +4, 2d4+2 · DC 11 STR or prone',
-    bugbear: '2014 · AC 16 · morningstar +4, 2d8+2 · Surprise Attack +2d6 in round 1 when it surprises a target',
-    hero: 'Use the live character sheet',
-    custom: 'Set AC and a quick attack in Card',
-    paladin: 'Dracuseth’s 2024 sheet · AC 18 · sword +3, 1d8+1 · Lay On Hands 20',
-    sildar: 'Captive at 1 HP without armor or weapons · set AC from current gear before combat',
-    'redbrand-ruffian': 'AC 14 · HP 16 · two shortsword attacks +4, 1d6+2 each',
-    skeleton: 'AC 13 · HP 13 · shortsword +4, 1d6+2 · vulnerable to bludgeoning',
-    nothic: 'AC 15 · HP 45 · two claws +4, 1d6+3 · Rotting Gaze DC 12 Con, 3d6 necrotic',
-    'evil-mage': 'AC 13 with staff held (16 with mage armor) · HP 22 · spell DC 13, attack +5 · 4 first-level, 3 second-level slots',
-    hobgoblin: 'AC 18 · HP 11 · longsword or longbow +3, 1d8+1 · Martial Advantage +2d6 once per turn',
-    grick: 'AC 14 · HP 27 · tentacles +4, 2d6+2; hit permits beak +4, 1d6+2 · conditional weapon resistance',
-    owlbear: 'AC 13 · HP 59 · beak +7, 1d10+5 and claws +7, 2d8+5',
-    doppelganger: 'AC 14 · HP 52 · two slams +6, 1d6+4 each · shapechanger and surprise traits',
-    orc: 'AC 13 · HP 15 · greataxe +5, 1d12+3 · Aggressive bonus action',
-    ogre: 'AC 11 · HP 59 · greatclub +6, 2d8+4 · javelin +6, 2d6+4',
-    zombie: 'AC 8 · HP 22 · slam +3, 1d6+1 · Undead Fortitude',
-    'hamun-kost': 'AC 12 · HP 22 · Evil Mage spells, DC 13 and +5 spell attack · no staff of defense',
-    'twig-blight': 'AC 13 · HP 4 · claws +3, 1d4+1 · vulnerable to fire',
-    'ash-zombie': 'AC 8 · HP 22 · slam +3, 1d6+1 · Ash Puff first time damaged',
-    'giant-spider': 'AC 14 · HP 26 · bite +5, 1d8+3 plus poison · web restrains',
-    'young-green-dragon': 'AC 18 · HP 136 · bite +7 and two claws +7 · poison breath DC 16, 12d6',
-    cultist: 'AC 12 · HP 9 · scimitar +3, 1d6+1'
-  };
-  const INIT_BONUSES = {
-    'hero-trista': 4, 'hero-donavan': 2, 'hero-ringgo': 4, 'hero-pebble': 0, 'hero-aldric': 2,
-    paladin: 1, sildar: 0, goblin: 2, wolf: 2, bugbear: 2, 'redbrand-ruffian': 2, skeleton: 2, nothic: 3, 'evil-mage': 2,
-    hobgoblin: 1, grick: 2, owlbear: 1, doppelganger: 4, orc: 1, ogre: -1, zombie: -2, 'hamun-kost': 2,
-    'twig-blight': 1, 'ash-zombie': -2, 'giant-spider': 3, 'young-green-dragon': 1, cultist: 1
-  };
-  const AC_DEFAULTS = { 'hero-trista': 14, 'hero-donavan': 12, 'hero-ringgo': 16, 'hero-pebble': 18, 'hero-aldric': 12,
-    paladin: 18, sildar: null, goblin: 15, wolf: 13, bugbear: 16, 'redbrand-ruffian': 14, skeleton: 13, nothic: 15, 'evil-mage': 13,
-    hobgoblin: 18, grick: 14, owlbear: 13, doppelganger: 14, orc: 13, ogre: 11, zombie: 8, 'hamun-kost': 12,
-    'twig-blight': 13, 'ash-zombie': 8, 'giant-spider': 14, 'young-green-dragon': 18, cultist: 12 };
+  const IS_PRIVATE_PREVIEW=IS_PLAYER&&new URLSearchParams(location.search).get('dm-preview')==='1'&&window.parent!==window;
   const CONDITIONS = ['Blinded', 'Charmed', 'Deafened', 'Frightened', 'Grappled',
     'Incapacitated', 'Invisible', 'Paralyzed', 'Petrified', 'Poisoned', 'Prone', 'Restrained',
     'Stunned', 'Unconscious', 'Concentrating', 'Surprised'];
-  const COMBAT_CARDS = {
-    goblin: { note: 'Nimble Escape: Hide or Disengage as a bonus action.', attacks: [
-      { name: 'Scimitar', bonus: 4, count: 1, sides: 6, modifier: 2, damage: 'slashing' },
-      { name: 'Shortbow', bonus: 4, count: 1, sides: 6, modifier: 2, damage: 'piercing' }
-    ] },
-    wolf: { note: 'Keen Hearing and Smell grants advantage on relevant Perception checks. Pack Tactics grants advantage if an ally is within 5 feet of the target and that ally is not incapacitated. A creature hit by Bite makes a DC 11 Strength save or falls prone.', attacks: [
-      { name: 'Bite', bonus: 4, count: 2, sides: 4, modifier: 2, damage: 'piercing' }
-    ] },
-    bugbear: { note: '2014: Brute adds the morningstar damage die. Surprise Attack adds 2d6 when the bugbear surprises a creature and hits it during the first round of combat.', attacks: [
-      { name: 'Morningstar', bonus: 4, count: 2, sides: 8, modifier: 2, damage: 'piercing' },
-      { name: 'Javelin · melee', bonus: 4, count: 2, sides: 6, modifier: 2, damage: 'piercing' },
-      { name: 'Javelin · ranged', bonus: 4, count: 1, sides: 6, modifier: 2, damage: 'piercing' },
-      { name: 'Surprise bonus', bonus: null, count: 2, sides: 6, modifier: 0, damage: 'extra damage' }
-    ] },
-    paladin: { note: 'Dracuseth’s 2024 character sheet: one attack per Attack action. Bless and Shield of Faith both require concentration. Lay On Hands: 20-point pool; Cure Wounds: 2d8+3.', attacks: [
-      { name: 'Longsword', bonus: 3, count: 1, sides: 8, modifier: 1, damage: 'slashing · Sap' },
-      { name: 'Sacred Weapon sword', bonus: 6, count: 1, sides: 8, modifier: 1, damage: 'slashing · Sap' },
-      { name: 'Cure Wounds', bonus: null, count: 2, sides: 8, modifier: 3, damage: 'healing' },
-      { name: 'Fire breath', bonus: null, count: 1, sides: 10, modifier: 0, damage: 'fire · DC 13 Dex' }
-    ] },
-    sildar: { note: 'Captive at 1 HP, without armor or weapons (Lost Mine of Phandelver pp. 10–11). Set AC and attacks from gear acquired in play.', attacks: [] },
-    skeleton: { note: 'Vulnerable to bludgeoning; immune to poison damage and poisoned condition.', attacks: [
-      { name: 'Shortsword', bonus: 4, count: 1, sides: 6, modifier: 2, damage: 'piercing' },
-      { name: 'Shortbow', bonus: 4, count: 1, sides: 6, modifier: 2, damage: 'piercing' }
-    ] },
-    nothic: { note: 'Multiattack: two claws. Rotting Gaze is DC 12 Constitution save or 3d6 necrotic; Weird Insight is an Insight versus Deception contest.', attacks: [
-      { name: 'Claw', bonus: 4, count: 1, sides: 6, modifier: 3, damage: 'slashing' },
-      { name: 'Rotting Gaze', bonus: null, count: 3, sides: 6, modifier: 0, damage: 'necrotic' }
-    ] },
-    'evil-mage': { note: 'Iarno: spell save DC 13, attack +5. Slots: 4 first, 3 second. Magic missile 3 × (1d4+1) force; hold person requires concentration; misty step is a bonus action. Held staff of defense adds +1 AC; mage armor makes his total AC 16. Item entry casts shield as an action and costs 2 charges.', attacks: [
-      { name: 'Quarterstaff', bonus: 1, count: 1, sides: 8, modifier: -1, damage: 'bludgeoning' },
-      { name: 'Shocking grasp', bonus: 5, count: 1, sides: 8, modifier: 0, damage: 'lightning' }
-    ] },
-    'redbrand-ruffian': { note: 'Multiattack: two shortsword attacks with its action. If three of the four street ruffians fall, the last attempts to flee toward Tresendar Manor.', attacks: [
-      { name: 'Shortsword', bonus: 4, count: 1, sides: 6, modifier: 2, damage: 'piercing' }
-    ] },
-    hobgoblin: { note: 'Martial Advantage: once per turn add 2d6 to a weapon hit if a non-incapacitated ally is within 5 feet of that target.', attacks: [
-      { name: 'Longsword', bonus: 3, count: 1, sides: 8, modifier: 1, damage: 'slashing' },
-      { name: 'Longbow', bonus: 3, count: 1, sides: 8, modifier: 1, damage: 'piercing' },
-      { name: 'Martial Advantage', bonus: null, count: 2, sides: 6, modifier: 0, damage: 'extra damage' }
-    ] },
-    grick: { note: 'Tentacles first; only on a hit may it make one beak attack against that same target. Resistant to bludgeoning, piercing, and slashing from nonmagical attacks; apply that conditional resistance manually.', attacks: [
-      { name: 'Tentacles', bonus: 4, count: 2, sides: 6, modifier: 2, damage: 'slashing' },
-      { name: 'Beak · after tentacles hit', bonus: 4, count: 1, sides: 6, modifier: 2, damage: 'piercing' }
-    ] },
-    owlbear: { note: 'Multiattack: one beak and one claws attack. In the castle it can be distracted with fresh meat or released to flee.', attacks: [
-      { name: 'Beak', bonus: 7, count: 1, sides: 10, modifier: 5, damage: 'piercing' },
-      { name: 'Claws', bonus: 7, count: 2, sides: 8, modifier: 5, damage: 'slashing' }
-    ] },
-    doppelganger: { note: 'Multiattack: two slams. Shapechanger uses an action. Ambusher grants advantage against surprised targets in round 1; Surprise Attack adds 3d6 to a hit against a creature it surprised in round 1. Read Thoughts is an action and requires concentration.', attacks: [
-      { name: 'Slam', bonus: 6, count: 1, sides: 6, modifier: 4, damage: 'bludgeoning' },
-      { name: 'Surprise bonus', bonus: null, count: 3, sides: 6, modifier: 0, damage: 'extra damage' }
-    ] },
-    orc: { note: 'Aggressive: bonus action to move up to its speed toward a visible hostile creature.', attacks: [
-      { name: 'Greataxe', bonus: 5, count: 1, sides: 12, modifier: 3, damage: 'slashing' },
-      { name: 'Javelin', bonus: 5, count: 1, sides: 6, modifier: 3, damage: 'piercing' }
-    ] },
-    ogre: { note: 'Wyvern Tor Gog is an ogre. Its single heavy hit can drop a low-level PC.', attacks: [
-      { name: 'Greatclub', bonus: 6, count: 2, sides: 8, modifier: 4, damage: 'bludgeoning' },
-      { name: 'Javelin', bonus: 6, count: 2, sides: 6, modifier: 4, damage: 'piercing' }
-    ] },
-    zombie: { note: 'Undead Fortitude: when reduced to 0 HP, Constitution save DC 5 + damage taken; on success it stays at 1 HP. This does not apply to radiant damage or a critical hit.', attacks: [
-      { name: 'Slam', bonus: 3, count: 1, sides: 6, modifier: 1, damage: 'bludgeoning' }
-    ] },
-    'hamun-kost': { note: 'Evil Mage base without Iarno’s staff. AC 12; spell save DC 13, spell attack +5; four 1st-level and three 2nd-level slots. Can call the zombies to halt while parleying.', attacks: [
-      { name: 'Quarterstaff', bonus: 1, count: 1, sides: 8, modifier: -1, damage: 'bludgeoning' },
-      { name: 'Shocking grasp', bonus: 5, count: 1, sides: 8, modifier: 0, damage: 'lightning' }
-    ] },
-    'young-green-dragon': { note: 'Venomfang: multiattack is one bite and two claws. Bite also deals 2d6 poison. Poison Breath recharges on 5–6 and affects a 30-foot cone; DC 16 Constitution save for half of 12d6 poison. At half HP, it flees. Extremely dangerous to this party.', attacks: [
-      { name: 'Bite · piercing', bonus: 7, count: 2, sides: 10, modifier: 4, damage: 'piercing' },
-      { name: 'Bite · poison extra', bonus: null, count: 2, sides: 6, modifier: 0, damage: 'poison' },
-      { name: 'Claw', bonus: 7, count: 2, sides: 6, modifier: 4, damage: 'slashing' },
-      { name: 'Poison Breath · DC 16 Con, half on save', bonus: null, count: 12, sides: 6, modifier: 0, damage: 'poison' }
-    ] },
-    'giant-spider': { note: 'Bite adds 2d8 poison, DC 11 Constitution save for half. Web +5 restrains; recharge 5–6. Escape uses an action, DC 12 Strength.', attacks: [
-      { name: 'Bite · piercing', bonus: 5, count: 1, sides: 8, modifier: 3, damage: 'piercing' },
-      { name: 'Bite · poison extra', bonus: null, count: 2, sides: 8, modifier: 0, damage: 'poison' }
-    ] }
-  };
-  const CARD_SOURCES = {
-    goblin: { label: '2014 SRD 5.1 · Goblin, p. 315', book: 'srd', page: 315 },
-    wolf: { label: '2014 SRD 5.1 · Wolf, p. 393', book: 'srd', page: 393 },
-    bugbear: { label: '2014 SRD 5.1 · Bugbear, p. 266', book: 'srd', page: 266 },
-    skeleton: { label: '2014 Monster Manual · Skeleton, p. 272', book: 'mm', page: 272 },
-    nothic: { label: 'Lost Mine of Phandelver · Nothic, p. 60', book: 'lmop', page: 60 },
-    'evil-mage': { label: 'Lost Mine of Phandelver · Evil Mage, p. 57', book: 'lmop', page: 57 },
-    'redbrand-ruffian': { label: 'Lost Mine of Phandelver · Redbrand Ruffian, p. 61', book: 'lmop', page: 61 },
-    'twig-blight': { label: 'Lost Mine of Phandelver · Twig Blight, p. 63', book: 'lmop', page: 63 },
-    'ash-zombie': { label: 'Lost Mine of Phandelver · Ash Zombies, p. 31; Zombie, p. 63', book: 'lmop', page: 31 },
-    'giant-spider': { label: 'Lost Mine of Phandelver · Giant Spider, p. 58', book: 'lmop', page: 58 },
-    'young-green-dragon': { label: 'Lost Mine of Phandelver · Young Green Dragon, p. 63', book: 'lmop', page: 63 },
-    cultist: { label: 'Lost Mine of Phandelver · Cultist, p. 56', book: 'lmop', page: 56 },
-    hobgoblin: { label: '2014 SRD 5.1 · Hobgoblin, p. 322', book: 'srd', page: 322 },
-    grick: { label: '2014 SRD 5.1 · Grick, p. 318', book: 'srd', page: 318 },
-    owlbear: { label: '2014 SRD 5.1 · Owlbear, pp. 339–340', book: 'srd', page: 339 },
-    doppelganger: { label: '2014 SRD 5.1 · Doppelganger, pp. 279–280', book: 'srd', page: 279 },
-    orc: { label: '2014 SRD 5.1 · Orc, p. 339', book: 'srd', page: 339 },
-    ogre: { label: '2014 SRD 5.1 · Ogre, p. 336', book: 'srd', page: 336 },
-    zombie: { label: '2014 SRD 5.1 · Zombie, pp. 356–357', book: 'srd', page: 356 },
-    'hamun-kost': { label: 'Lost Mine of Phandelver · Old Owl Well, p. 29; Evil Mage, p. 57', book: 'lmop', page: 29 },
-    sildar: { label: 'Lost Mine of Phandelver · captive, pp. 10–11', book: 'lmop', page: 10 },
-    paladin: { label: 'Dracuseth’s 2024 character sheet · pp. 1–2', book: 'dracuseth', page: 1 },
-    'hero-trista': { label: 'Trista’s original character sheet · p. 1', book: 'tristaSheet', page: 1 },
-    'hero-ringgo': { label: 'Ringgo’s current character sheet · p. 1', book: 'ringgoSheet', page: 1 },
-    'hero-donavan': { label: 'Donavan’s current character sheet · p. 1', book: 'donavanSheet', page: 1 },
-    'hero-pebble': { label: 'Pebble player handout · pp. 3–4', book: 'pebble', page: 3 },
-    'hero-aldric': { label: 'Aldric’s story handout · archived level 2 stats', book: 'aldric', page: 2 }
-  };
-  const HANDOUT_IMAGES = new Set(['', 'session-01-visuals/scene-01-gundren-departs.png',
-    'session-01-visuals/scene-02-empty-horses.png', 'session-01-visuals/scene-03-cave-mouth.png',
-    'session-01-visuals/scene-04-goblin-trail.png', 'session-01-visuals/scene-05-goblin-blind.png',
-    'session-01-visuals/scene-06-kennel.png', 'session-01-visuals/scene-07-steep-passage.png',
-    'session-01-visuals/scene-08-overpass.png', 'session-01-visuals/scene-09-goblin-den.png',
-    'session-01-visuals/scene-10-twin-pools.png', 'session-01-visuals/scene-11-klargs-cave.png',
-    'session-01-visuals/scene-12-road-ambush-reveal.png', 'session-01-visuals/scene-13-snare-discovered.png',
-    'session-01-visuals/scene-14-pit-discovered.png', 'session-01-visuals/scene-15-phandalin-arrival.png',
-    'session-01-visuals/scene-16-barthens-provisions.png',
-    'assets/Echo-Below-Cover.png', 'assets/Nine-Sites-Watercolor.png',
-    'assets/Waterdeep-City-Map.png', 'assets/Waterdeep-Cast-Watercolor.png',
-    'town-maps/phandalin-overhead.svg', 'town-maps/conyberry-overhead.svg',
-    'town-maps/thundertree-overhead.svg', 'town-maps/waterdeep-overhead.svg',
-    'town-maps/professional/phandalin-overhead.png', 'town-maps/professional/conyberry-overhead.png',
-    'town-maps/professional/thundertree-overhead.png', 'town-maps/professional/phandelver-region.png',
-    ...(globalThis.LMOP_VISUAL_CATALOG || []).map(item => item.image),
-    ...(globalThis.LMOP_BATTLE_MAP_CATALOG || []).map(item => item.image)]);
+  const content = globalThis.ECHO_TABLE_CONTENT || {};
+  const SCENES = content.SCENES || {};
+  const RUNBOOK = content.RUNBOOK || [];
+  const RUNBOOK_IDS = content.RUNBOOK_IDS || new Set();
+  const SCENE_NOTES = content.SCENE_NOTES || {};
+  const ENCOUNTERS = content.ENCOUNTERS || [];
+  const STATS = content.STATS || {};
+  const INIT_BONUSES = content.INIT_BONUSES || {};
+  const AC_DEFAULTS = content.AC_DEFAULTS || {};
+  const COMBAT_CARDS = content.COMBAT_CARDS || {};
+  const CARD_SOURCES = content.CARD_SOURCES || {};
+  const HANDOUT_IMAGES = content.HANDOUT_IMAGES || new Set();
   const MAP_TOOLS = new Set(['target', 'move', 'ruler', 'circle', 'cone', 'square', 'line', 'ping', 'wall', 'door', 'secret', 'point', 'light', 'link', 'pan']);
   const MAP_SQUARES_ACROSS = 30;
   const SAFE_TOKEN_TYPES = new Set(['custom', 'hero', 'hero-trista', 'hero-donavan', 'hero-ringgo', 'hero-pebble', 'hero-aldric', 'paladin', 'sildar', 'goblin', 'wolf', 'bugbear', 'redbrand-ruffian', 'skeleton', 'nothic', 'evil-mage', 'hobgoblin', 'grick', 'owlbear', 'doppelganger', 'orc', 'ogre', 'zombie', 'hamun-kost', 'twig-blight', 'ash-zombie', 'giant-spider', 'young-green-dragon', 'cultist',
     ...(globalThis.ECHO_SESSION4_COMBAT?.creatureTypes || [])]);
-  const TOWN_MAP_IDS = ['region-lmop', 'town-phandalin', 'town-conyberry', 'town-thundertree', 'city-waterdeep'];
+  const TOWN_MAP_IDS = globalThis.ECHO_BOOT?.echo === false ? [] : ['region-lmop', 'town-phandalin', 'town-conyberry', 'town-thundertree', 'city-waterdeep'];
 
   function seedTownMapScenes(map) {
     if (!IS_PLAYER && map.scenes && globalThis.ECHO_TOWN_MAPS?.scene)
@@ -278,13 +36,14 @@
     return map;
   }
 
+  function displaySceneTitle(value) {return String(value||'').replace(/^(.{1,100}?) · \1 · /,'$1 · ');}
   function sceneEntries(value = state) {
-    if (value.sessionKind === 'custom') return value.scenes || [];
+    if (value.sessionKind === 'custom') return (value.scenes || []).map(scene=>({...scene,title:displaySceneTitle(scene.title)}));
     return Object.entries(SCENES).map(([id, scene]) => ({ id, ...scene }));
   }
 
   function getScene(id, value = state) {
-    if (value.sessionKind === 'custom') return (value.scenes || []).find(scene => scene.id === id);
+    if (Array.isArray(value.scenes)) return value.scenes.find(scene => scene.id === id);
     return SCENES[id];
   }
 
@@ -297,7 +56,7 @@
   }
 
   function sessionRunbook(value = state) {
-    const base = value.sessionKind === 'custom' ? value.runbookBeats || [] : RUNBOOK;
+    const base = (value.sessionKind === 'custom' ? value.runbookBeats || [] : RUNBOOK).map(beat => globalThis.ECHO_NARRATION?.upgradeBeat(beat) || beat).map(beat=>beat.id==='s4-room-10'&&!beat.run?.some(line=>line.includes('dry northern passage'))?{...beat,run:['Source-map erratum · p. 43: the stair junction also has a dry northern passage toward area 18, separate from the low stream. Preserve the party’s known routes; finding this exit does not reveal other rooms.',...(beat.run||[])]}:beat);
     if (arguments.length) return base;
     const plan = campaignIndex.story?.sessionPlans?.[activeSessionId];
     const beats = [...base, ...(plan?.extraBeats || []).map(beat => Object.assign(beat, { storyExtra: true }))];
@@ -344,111 +103,11 @@
         /^s4-wave-18-bugbear-[12]$/.test(foe.id) ? -20 : 0, portrait: '' };
     }
   }
-  function session2EnemyTokens() {
-    const groups = [
-      ['redbrand-street', 'redbrand-ruffian', 'Redbrand', 4, 16],
-      ['hideout-barracks', 'redbrand-ruffian', 'Barracks ruffian', 3, 16],
-      ['hideout-crypt', 'skeleton', 'Crypt skeleton', 3, 13],
-      ['hideout-pens', 'redbrand-ruffian', 'Pen guard', 2, 16],
-      ['hideout-crevasse', 'nothic', 'Nothic', 1, 45],
-      ['hideout-bugbears', 'bugbear', 'Bugbear', 3, 27],
-      ['hideout-common', 'redbrand-ruffian', 'Common room ruffian', 4, 16],
-      ['hideout-glasstaff', 'evil-mage', 'Iarno Glasstaff', 1, 22]
-    ];
-    return groups.flatMap(([encounter, type, name, count, hp]) => Array.from({ length: count }, (_, index) => {
-      const number = index + 1;
-      const label = type === 'redbrand-ruffian' ? 'R' : type === 'bugbear' ? 'B' : type === 'skeleton' ? 'S' : type === 'nothic' ? 'N' : 'G';
-      const id = encounter === 'redbrand-street' ? `s2-ruffian-${number}` : `s2-${encounter}-${number}`;
-      const foe = token(id, `${name}${count > 1 ? ` ${number}` : ''}`, `${label}${count > 1 ? number : ''}`, type, 'enemy', hp, encounter);
-      if (encounter === 'hideout-common') foe.conditions = ['Poisoned'];
-      if (encounter === 'hideout-glasstaff') foe.ac = 16;
-      return foe;
-    }));
-  }
-  function session3EnemyTokens() {
-    const groups = [
-      ['tt-blights-1', 'twig-blight', 'Twig blight', 2, 4],
-      ['tt-blights-2', 'twig-blight', 'Twig blight', 6, 4],
-      ['tt-zombies-3', 'ash-zombie', 'Ash zombie', 4, 22],
-      ['tt-blights-5', 'twig-blight', 'Twig blight', 8, 4],
-      ['tt-spiders-6', 'giant-spider', 'Giant spider', 2, 26],
-      ['tt-dragon-7', 'young-green-dragon', 'Venomfang', 1, 136],
-      ['tt-zombies-8', 'ash-zombie', 'Ash zombie', 2, 22],
-      ['tt-zombies-11', 'ash-zombie', 'Ash zombie', 5, 22],
-      ['tt-blights-12', 'twig-blight', 'Twig blight', 6, 4],
-      ['tt-cultists-13', 'cultist', 'Cultist', 6, 9],
-      ['old-owl-well', 'zombie', 'Tower zombie', 12, 22],
-      ['wyvern-tor', 'orc', 'Orc', 7, 15],
-      ['castle-archers', 'goblin', 'Archer', 4, 7],
-      ['castle-barracks', 'goblin', 'Barracks goblin', 3, 7],
-      ['castle-hobgoblins', 'hobgoblin', 'Barracks hobgoblin', 4, 11],
-      ['castle-banquet', 'goblin', 'Banquet goblin', 7, 7],
-      ['castle-grick', 'grick', 'Grick', 1, 27],
-      ['castle-shrine', 'goblin', 'Shrine goblin', 2, 7],
-      ['castle-guards', 'hobgoblin', 'King’s guard', 2, 11],
-      ['castle-owlbear', 'owlbear', 'Owlbear', 1, 59],
-      ['castle-warband', 'hobgoblin', 'Returning hobgoblin', 2, 11],
-      ['castle-warband', 'wolf', 'Warband wolf', 2, 11]
-    ];
-    const list = groups.flatMap(([encounter, type, name, count, hp]) => Array.from({ length: count }, (_, index) => {
-      const number = index + 1;
-      const foe = token(`s3-${encounter}-${type}-${number}`, `${name}${count > 1 ? ` ${number}` : ''}`,
-        `${type === 'goblin' ? 'G' : type === 'hobgoblin' ? 'H' : type === 'wolf' ? 'W' : type === 'grick' ? 'Gr' : type === 'zombie' ? 'Z' : 'O'}${count > 1 ? number : ''}`,
-        type, 'enemy', hp, encounter);
-      if (encounter === 'tt-cultists-13' && number === 1) { foe.name = 'Favric'; foe.label = 'FV'; }
-      return foe;
-    }));
-    for (const [id, name, label, type, hp, encounter] of [
-      ['s3-hamun', 'Hamun Kost', 'HK', 'hamun-kost', 22, 'old-owl-well'],
-      ['s3-brughor', 'Brughor Axe-Biter', 'BA', 'orc', 30, 'wyvern-tor'],
-      ['s3-gog', 'Gog', 'GO', 'ogre', 59, 'wyvern-tor'],
-      ['s3-yegg', 'Yegg', 'YG', 'goblin', 12, 'castle-banquet'],
-      ['s3-lhupo', 'Lhupo', 'LH', 'goblin', 12, 'castle-shrine'],
-      ['s3-grol', 'King Grol', 'KG', 'bugbear', 45, 'castle-king'],
-      ['s3-snarl', 'Snarl', 'SN', 'wolf', 18, 'castle-king'],
-      ['s3-vyerith', 'Drow emissary', 'DE', 'doppelganger', 52, 'castle-king'],
-      ['s3-targor', 'Targor Bloodsword', 'TG', 'hobgoblin', 20, 'castle-warband']])
-      list.push(token(id, name, label, type, 'enemy', hp, encounter));
-    return list;
-  }
+  function session2EnemyTokens() { return IS_PLAYER ? [] : content.session2EnemyTokens?.(token)||[]; }
 
-  function defaultTokens() {
-    const list = [
-      token('pc-trista', 'Trista', 'T', 'hero-trista', 'pc', 11),
-      token('pc-donavan', 'Donavan', 'D', 'hero-donavan', 'pc', 17),
-      token('pc-ringgo', 'Ringgo', 'R', 'hero-ringgo', 'pc', 17),
-      token('pc-pebble', 'Pebble', 'P', 'hero-pebble', 'pc', 12),
-      token('pc-aldric', 'Aldric', 'A', 'hero-aldric', 'pc', 18),
-      token('ally-sildar', 'Sildar', 'S', 'sildar', 'ally', 27)
-    ];
-    list[4].hp = 9;
-    list[5].hp = 1;
-    let goblin = 1;
-    let wolf = 1;
-    const addGoblins = (encounter, count) => {
-      for (let i = 0; i < count; i++) {
-        const number = goblin++;
-        list.push(token(`goblin-${number}`, `Goblin ${number}`, `G${number}`, 'goblin', 'enemy', 7, encounter));
-      }
-    };
-    const addWolves = (encounter, count) => {
-      for (let i = 0; i < count; i++) {
-        const number = wolf++;
-        list.push(token(`wolf-${number}`, `Wolf ${number}`, `W${number}`, 'wolf', 'enemy', 11, encounter));
-      }
-    };
-    addGoblins('road', 4);
-    addGoblins('blind', 2);
-    addWolves('kennel', 3);
-    addGoblins('overpass', 1);
-    list.push(token('yeemik', 'Yeemik', 'Y', 'goblin', 'enemy', 12, 'den'));
-    addGoblins('den', 5);
-    addGoblins('pools', 3);
-    list.push(token('klarg', 'Klarg', 'K', 'bugbear', 'enemy', 27, 'klarg'));
-    list.push(token('ripper', 'Ripper', 'W4', 'wolf', 'enemy', 11, 'klarg'));
-    addGoblins('klarg', 2);
-    return list;
-  }
+  function session3EnemyTokens() { return IS_PLAYER ? [] : content.session3EnemyTokens?.(token)||[]; }
+
+  function defaultTokens() { return IS_PLAYER ? [] : content.defaultTokens?.(token)||[]; }
 
   function entranceFog() {
     const visible = [];
@@ -458,12 +117,13 @@
 
   function newState() {
     const tokens = defaultTokens();
-    return { schemaVersion: DATA_VERSION, session2ContentVersion: 7, session3ContentVersion: 1, session4ContentVersion: 1, contentPackId: '', waveEcho: globalThis.ECHO_WAVE_ECHO?.normalize() || null, sessionKind: 'session1', scenes: null, encounters: null, runbookBeats: null, sceneFog: {}, assets: {},
-      scene: 'cover', runbook: 'prep', grid: true, playerReveal: false, leaderTempHp: 7, fog: entranceFog(),
+    const empty = globalThis.ECHO_BOOT?.echo === false;
+    return { schemaVersion: DATA_VERSION, commandRevision: 0, session2ContentVersion: 7, session3ContentVersion: 1, session4ContentVersion: 1, contentPackId: '', waveEcho: globalThis.ECHO_WAVE_ECHO?.normalize() || null, contentProfile:empty?'blank':'echo-below', preservePartyProgression:empty, sessionKind:empty?'custom':'session1', scenes:empty?[{id:'black',title:'Black screen',kind:'black',image:'',fog:false,grid:false}]:null, encounters:empty?[]:null, runbookBeats:empty?[]:null, sceneFog: {}, assets: {},
+      scene: empty?'black':'cover', runbook: empty?'all':'prep', grid: !empty, playerReveal: false, leaderTempHp: empty?0:7, fog: empty?[]:entranceFog(),
       requests: [], phoneRequests: [], phoneReplies: {}, phoneActions: globalThis.ECHO_PHONE_ACTIONS?.normalize(), tokens, party: globalThis.ECHO_PARTY_DATA?.seedParty(tokens) || {},
       combat: globalThis.ECHO_COMBAT_DATA?.normalizeCombat(null, ENCOUNTERS) || { plans: {}, creatures: {}, tokens: {}, effects: [], library: [] },
       combatRun: globalThis.ECHO_COMBAT_RUN?.normalize(), combatPlus: globalThis.ECHO_COMBAT_PLUS?.normalize(),
-      partyMeta: { marchingOrder: '', lightSources: '', travelPace: 'normal', notes: 'Set marching order after Byron and Bowman introduce their characters.' },
+      partyMeta: { marchingOrder: '', lightSources: '', travelPace: 'normal', notes: empty?'':'Set marching order after Byron and Bowman introduce their characters.' },
       partyShown: '',
       turn: { scene: '', round: 0, order: [], index: 0 }, rolls: [], publicRollId: null,
       annotations: [], map: seedTownMapScenes(globalThis.ECHO_MAP_DATA?.normalize() || {}), sceneMood: globalThis.ECHO_TABLE?.normalizeMood(), handout: { visible: false, image: '', title: '', text: '' },
@@ -474,7 +134,7 @@
   }
 
   function keepsPartyProgression(source, packId = '') {
-    return (Number(source?.schemaVersion) >= 2 && source?.party && typeof source.party === 'object') || source?.contentProfile === 'blank' || source?.preservePartyProgression === true ||
+    return globalThis.ECHO_BOOT?.echo === false || (Number(source?.schemaVersion) >= 2 && source?.party && typeof source.party === 'object') || source?.contentProfile === 'blank' || source?.preservePartyProgression === true ||
       ['waterdeep-undermountain-1', 'phandalin-waterdeep-transition', 'mending-court-home', 'silent-library-expedition']
         .includes(source?.contentPackId || packId);
   }
@@ -538,6 +198,7 @@
     fresh.partyShown = '';
     fresh.combat = globalThis.ECHO_COMBAT_DATA?.normalizeCombat({ library: from.combat?.library,
       creatures: from.combat?.creatures }, []) || fresh.combat;
+    if(globalThis.ECHO_BOOT?.echo !== false)globalThis.ECHO_PARTY_DATA.syncGoronResistance(fresh);
     return fresh;
   }
 
@@ -594,7 +255,8 @@
     const fresh = newState();
     if (!raw || typeof raw !== 'object') return fresh;
     globalThis.ECHO_RELIABILITY?.assertSupported(raw);
-    fresh.contentProfile = raw.contentProfile === 'blank' ? 'blank' : 'echo-below';
+    fresh.commandRevision = Number.isSafeInteger(raw.commandRevision) && raw.commandRevision >= 0 ? raw.commandRevision : 0;
+    fresh.contentProfile = globalThis.ECHO_BOOT?.echo === false || raw.contentProfile === 'blank' ? 'blank' : 'echo-below';
     fresh.contentPackId = String(raw.contentPackId || packId || '').slice(0, 80);
     // These packs carry the current sheets forward; historical level-up migrations
     // must not replace their saved progression when they are reopened or restored.
@@ -645,7 +307,7 @@
         id: e.id.slice(0, 80), name: String(e.name || 'Encounter').slice(0, 80), note: String(e.note || '').slice(0, 500)
       })) : [];
       fresh.runbookBeats = Array.isArray(raw.runbookBeats) ? raw.runbookBeats.slice(0, 150).filter(b => b && typeof b.id === 'string').map(b => ({
-        id: b.id.slice(0, 80), title: String(b.title || 'Untitled beat').slice(0, 100),
+        id: b.id.slice(0, 80), flowVersion: b.flowVersion===1?1:0, title: String(b.title || 'Untitled beat').slice(0, 100),
         scene: String(b.scene || '').slice(0, 80), encounter: String(b.encounter || '').slice(0, 80),
         read: Array.isArray(b.read) ? b.read.slice(0, 20).map(x => String(x).slice(0, 1200)) : [],
         readAfter: Array.isArray(b.readAfter) ? b.readAfter.slice(0, 20).map(x => String(x).slice(0, 1200)) : [],
@@ -832,7 +494,7 @@
     fresh.playerReveal = raw.playerReveal === true;
     fresh.map = globalThis.ECHO_MAP_DATA?.normalize(raw.map) || fresh.map;
     if (fresh.contentProfile !== 'blank') fresh.map = seedTownMapScenes(fresh.map);
-    if (getScene('region-lmop', fresh)?.image === SCENES['region-lmop'].image)
+    if (SCENES['region-lmop'] && getScene('region-lmop', fresh)?.image === SCENES['region-lmop'].image)
       globalThis.ECHO_TOWN_MAPS?.upgradeRegionScene(fresh.map.scenes?.['region-lmop']);
     fresh.sceneMood = globalThis.ECHO_TABLE?.normalizeMood(raw.sceneMood) || fresh.sceneMood;
     if (Array.isArray(raw.fog)) fresh.fog = [...new Set(raw.fog.filter(validTile))];
@@ -852,13 +514,14 @@
         y: item.kind === 'move' && item.y !== null && item.y !== '' && Number.isFinite(Number(item.y)) ? pointValue(item.y) : null }))
       .filter(item => item.kind === 'tile' ? item.key : item.kind === 'point' ? item.pointId : item.kind === 'move' ? item.x !== null && item.y !== null : item.label);
     fresh.phoneActions = globalThis.ECHO_PHONE_ACTIONS?.normalize(raw.phoneActions);
+    fresh.actionReceipts=(Array.isArray(raw.actionReceipts)?raw.actionReceipts:[]).slice(-60).filter(r=>r&&typeof r.owner==='string').map(r=>({owner:r.owner,receipt:globalThis.ECHO_ACTION_RECEIPTS?.model(r.receipt)})).filter(r=>r.receipt);
     if (raw.phoneReplies && typeof raw.phoneReplies === 'object') fresh.phoneReplies = Object.fromEntries(Object.entries(raw.phoneReplies).slice(0, 12)
       .filter(([id, value]) => /^pc-[A-Za-z0-9_-]{1,75}$/.test(id) && typeof value === 'string')
       .map(([id, value]) => [id, value.slice(0, 160)]));
     const saved = new Map((Array.isArray(raw.tokens) ? raw.tokens : []).filter(t => t && typeof t.id === 'string').map(t => [t.id, t]));
     for (const old of saved.values()) {
       if (fresh.tokens.some(t => t.id === old.id) || fresh.tokens.length >= 250) continue;
-      if (old.id === 'ally-dracuseth') continue;
+      if (globalThis.ECHO_BOOT?.echo !== false && old.id === 'ally-dracuseth') continue;
       if (!['pc', 'ally', 'enemy'].includes(old.team)) continue;
       const type = SAFE_TOKEN_TYPES.has(old.type) || raw.combat?.creatures?.[old.type] ? old.type : 'custom';
       fresh.tokens.push(token(old.id.slice(0, 80), String(old.name || 'Combatant').slice(0, 60),
@@ -969,6 +632,7 @@
         Number(raw.session2ContentVersion || 0) < 3)
       for (const sheet of Object.values(fresh.party)) if (sheet.role === 'pc') sheet.level = Math.max(2, Number(sheet.level) || 0);
     fresh.combat = globalThis.ECHO_COMBAT_DATA?.normalizeCombat(raw.combat, sessionEncounters(fresh)) || fresh.combat;
+    if(globalThis.ECHO_BOOT?.echo !== false)globalThis.ECHO_PARTY_DATA.syncGoronResistance(fresh);
     fresh.combatRun = globalThis.ECHO_COMBAT_RUN?.normalize(raw.combatRun);
     fresh.combatPlus = globalThis.ECHO_COMBAT_PLUS?.normalize(raw.combatPlus);
     if (fresh.contentPackId === 'lmop-part-4-visuals' && Number(raw.session4ContentVersion || 0) < 1)
@@ -1069,13 +733,12 @@
 
   let state = newState();
   let activeSessionId = 'session-01';
-  let campaignIndex = { schemaVersion: DATA_VERSION, active: 'session-01', sessions: [{ id: 'session-01', name: 'Session 1 · Goblin Arrows' }], restorePoints: [],
+  let campaignIndex = { schemaVersion: DATA_VERSION, active: 'session-01', sessions: [{ id: 'session-01', name: globalThis.ECHO_BOOT?.echo === false?'Session 1':'Session 1 · Goblin Arrows' }], installedPacks:globalThis.ECHO_BOOT?.installedPacks, restorePoints: [], migrationReport: [],
     rules: globalThis.ECHO_RULES_UI?.normalizeSettings(null) || null, combatLibrary: [],
     story: globalThis.ECHO_STORY_DATA?.normalize() || null,
     presentation: globalThis.ECHO_PRESENTATION?.normalizeLibrary() || null,
     ergonomics: globalThis.ECHO_ERGONOMICS?.normalizeSettings() || null,
     tableExtras: globalThis.ECHO_TABLE?.normalize() || null };
-  let databasePromise = null;
   let saveQueue = Promise.resolve();
   let campaignRegistry = globalThis.ECHO_RELIABILITY?.normalizeRegistry() || { schemaVersion: DATA_VERSION, active: 'default', campaigns: [{ id: 'default', name: 'The Echo Below', archived: false }] };
   let activeCampaignId = 'default';
@@ -1084,7 +747,7 @@
   const sessionCache = new Map();
   let playerWindow = null;
   const playerClients = new Map();
-  const tvChannel = location.protocol !== 'file:' && typeof BroadcastChannel === 'function'
+  const tvChannel = !IS_PRIVATE_PREVIEW && location.protocol !== 'file:' && typeof BroadcastChannel === 'function'
     ? new BroadcastChannel(`${APP}-player-tv`) : null;
   const tvClientId = `${Date.now()}-${Math.random()}`;
   const dmInstanceId = `${Date.now()}-${Math.random()}`;
@@ -1093,6 +756,9 @@
   let activeDmId = '';
   let activeDmStartedAt = 0;
   let activeDmAt = 0;
+  let playerLastAppliedRevision = 0;
+  let playerStartedAt = Date.now();
+  let tvCalibrationCheck = false;
   let playerViewport = null;
   let playerRenderMs = 0;
   let connected = false;
@@ -1104,7 +770,7 @@
   let fogCovering = false;
   let fogSyncQueued = false;
   let priorScene = 'cover';
-  let toastTimer = null;
+  let toastTimer = null;const feedbackRecords=[];
   let selectedTokenId = null;
   let contextTab = 'turn';
   let selectedClueId = '';
@@ -1170,89 +836,30 @@
     for (const id of Object.keys(state.assets)) if (!references.includes(`asset:${id}`)) delete state.assets[id];
   }
 
+  function commandReceiptPending(review){return review.event?.combatAftermath?.pending?[review.event.combatAftermath.pending]:[];}
+  function actionReceipt(raw,owner='') {
+    const receipt=globalThis.ECHO_ACTION_RECEIPTS?.model(raw);if(!receipt)return;
+    if(owner){state.actionReceipts ||= [];state.actionReceipts.push({owner,receipt:{...receipt,undo:'ask-dm'}});state.actionReceipts=state.actionReceipts.slice(-60);}
+    globalThis.ECHO_ACTION_RECEIPTS.show(receipt,activeCampaignId+'/'+activeSessionId);
+  }
   function toast(message) {
     const el = $('toast');
-    el.textContent = message;
+    el.textContent = String(message);
+    const failure=/cannot|could not|failed|error|blocked|missing|unavailable|disconnected|not saved/i.test(String(message));const previous=feedbackRecords.find(r=>r.message===String(message));if(previous){previous.count++;previous.at=Date.now();}else feedbackRecords.unshift({message:String(message),failure,count:1,at:Date.now()});if(feedbackRecords.length>40){let at=feedbackRecords.findLastIndex(r=>!r.failure);feedbackRecords.splice(at<0?feedbackRecords.length-1:at,1);}
+    el.dataset.state=failure?'failed':'saved';const history=$('dm-feedback-history');if(history){history.replaceChildren();for(const record of feedbackRecords.slice().sort((a,b)=>Number(b.failure)-Number(a.failure)||b.at-a.at)){const row=document.createElement('p');row.textContent=`${record.failure?'Needs attention':'Update'} · ${new Date(record.at).toLocaleTimeString()} · ${record.message}${record.count>1?' · repeated '+record.count+' times':''}`;history.append(row);}const label=$('dm-feedback-summary');label.textContent=`Notices · ${feedbackRecords.filter(r=>r.failure).length} issues · ${feedbackRecords.length} updates`;}
     el.classList.add('show');
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => el.classList.remove('show'), 3200);
   }
 
-  function openCampaignDatabase() {
-    if (databasePromise) return databasePromise;
-    databasePromise = new Promise(resolve => {
-      if (!globalThis.indexedDB) { resolve(null); return; }
-      const timeout = setTimeout(() => resolve(null), 3000);
-      try {
-        const request = indexedDB.open(CAMPAIGN_DB, 1);
-        request.onupgradeneeded = () => {
-          if (!request.result.objectStoreNames.contains('records')) request.result.createObjectStore('records');
-        };
-        request.onsuccess = () => { clearTimeout(timeout); resolve(request.result); };
-        request.onerror = () => { clearTimeout(timeout); resolve(null); };
-        request.onblocked = () => { clearTimeout(timeout); resolve(null); };
-      } catch { clearTimeout(timeout); resolve(null); }
-    });
-    return databasePromise;
-  }
-
-  async function readRecord(key) {
-    try { if (localStorage.getItem(`${CAMPAIGN_DB}:fallback:${key}`) === '1') return localStorage.getItem(`${CAMPAIGN_DB}:${key}`); } catch {}
-    const db = await openCampaignDatabase();
-    if (db) try {
-      const value = await new Promise((resolve, reject) => {
-        const request = db.transaction('records', 'readonly').objectStore('records').get(key);
-        request.onsuccess = () => resolve(request.result ?? null);
-        request.onerror = () => reject(request.error);
-      });
-      if (value !== null) return value;
-    } catch { /* Fall back to local browser storage. */ }
-    try { return localStorage.getItem(`${CAMPAIGN_DB}:${key}`); }
-    catch { return null; }
-  }
-
-  async function writeRecord(key, value) {
-    const db = await openCampaignDatabase();
-    if (db) try {
-      await new Promise((resolve, reject) => {
-        const transaction = db.transaction('records', 'readwrite');
-        transaction.objectStore('records').put(value, key);
-        transaction.oncomplete = () => resolve();
-        transaction.onerror = () => reject(transaction.error);
-        transaction.onabort = () => reject(transaction.error);
-      });
-      try { localStorage.removeItem(`${CAMPAIGN_DB}:fallback:${key}`); localStorage.removeItem(`${CAMPAIGN_DB}:${key}`); } catch {}
-      return;
-    } catch { /* Fall back to local browser storage. */ }
-    localStorage.setItem(`${CAMPAIGN_DB}:${key}`, value);
-    localStorage.setItem(`${CAMPAIGN_DB}:fallback:${key}`, '1');
-  }
-
-  async function writeMediaRecord(id, blob) {
-    if (!(blob instanceof Blob)) throw new Error('Media must be a file.');
-    const db = await openCampaignDatabase();
-    if (!db) throw new Error('Imported media needs browser database storage.');
-    await new Promise((resolve, reject) => {
-      const transaction = db.transaction('records', 'readwrite');
-      transaction.objectStore('records').put(blob, `media:${id}`);
-      transaction.oncomplete = resolve;
-      transaction.onerror = () => reject(transaction.error);
-      transaction.onabort = () => reject(transaction.error);
-    });
-  }
-
-  async function deleteRecord(key) {
-    const db = await openCampaignDatabase();
-    if (db) try {
-      await new Promise((resolve, reject) => {
-        const transaction = db.transaction('records', 'readwrite');
-        transaction.objectStore('records').delete(key);
-        transaction.oncomplete = () => resolve();
-        transaction.onerror = () => reject(transaction.error);
-      });
-    } catch { /* The session can still be removed from the campaign list. */ }
-    try { localStorage.removeItem(`${CAMPAIGN_DB}:${key}`); localStorage.removeItem(`${CAMPAIGN_DB}:fallback:${key}`); } catch { /* Ignore unavailable fallback storage. */ }
-  }
+  const persistence = IS_PLAYER ? null : globalThis.ECHO_STORAGE?.create(CAMPAIGN_DB);
+  const stored = name => (...args) => {
+    if (!persistence) throw Error('Campaign storage module is unavailable. Keep the app files together and reload.');
+    return persistence[name](...args);
+  };
+  const readRecord = stored('readRecord'), writeRecord = stored('writeRecord'),
+    writeRecordsAtomic = stored('writeRecordsAtomic'), writeMediaRecord = stored('writeMediaRecord'),
+    deleteRecord = stored('deleteRecord');
 
   const failedSaveKeys = new Set();
   function enqueueSave(key, value) {
@@ -1277,7 +884,10 @@
 
   function saveCampaignIndex() {
     campaignIndex.schemaVersion = DATA_VERSION;
-    return enqueueSave(campaignIndexKey(), JSON.stringify(campaignIndex));
+    const key=campaignIndexKey(),savedCampaign=activeCampaignId;
+    return enqueueSave(key, JSON.stringify(campaignIndex)).then(()=>{
+      if(!failedSaveKeys.has(key)&&activeCampaignId===savedCampaign)globalThis.ECHO_RECONCILIATION?.notify();
+    });
   }
 
   function saveCampaignRegistry() {
@@ -1315,6 +925,15 @@
         await writeRecord(campaignIndexKey('default'), JSON.stringify(copiedIndex));
         for (const [id, value] of Object.entries(oldSessions)) await writeRecord(campaignSessionKey(id, 'default'), value);
       }
+      if (!oldIndex && !Object.keys(oldSessions).length && ['blank','example'].includes(new URLSearchParams(location.search).get('start'))) {
+        const template = new URLSearchParams(location.search).get('start') === 'example' ? ECHO_TEMPLATES.example() : ECHO_TEMPLATES.blank();
+        const prepared = globalThis.ECHO_RECOVERY.prepare(template, normalize);
+        const freshId=`campaign-${Date.now()}-${Math.random().toString(36).slice(2,7)}`;
+        campaignRegistry.active=freshId;campaignRegistry.campaigns[0].id=freshId;
+        await writeRecordsAtomic([[campaignIndexKey(freshId), JSON.stringify(prepared.index)],
+          [campaignSessionKey('session-01',freshId), JSON.stringify(prepared.sessions[0].state)]]);
+        campaignRegistry.campaigns[0].name = template.campaign.name;
+      }
       await saveCampaignRegistry();
     }
     activeCampaignId = campaignRegistry.active;
@@ -1329,9 +948,10 @@
     if (savedIndex && Array.isArray(savedIndex.sessions) && savedIndex.sessions.length) {
       const sessions = savedIndex.sessions.slice(0, 500).filter(s => s && typeof s.id === 'string' && typeof s.name === 'string').map(s =>
         ({ id: s.id.slice(0, 80), name: s.name.slice(0, 80),
-          packId: (globalThis.ECHO_CONTENT_PACKS || []).some(pack => pack.id === s.packId) ? s.packId : '' }));
-      if (sessions.length) campaignIndex = { schemaVersion: DATA_VERSION, active: sessions.some(s => s.id === savedIndex.active) ? savedIndex.active : sessions[0].id, sessions,
-        restorePoints: Array.isArray(savedIndex.restorePoints) ? savedIndex.restorePoints.slice(-30) : [],
+          packId: /^[A-Za-z0-9_-]{1,100}$/.test(s.packId||'') ? s.packId : '' }));
+      if (sessions.length) campaignIndex = { schemaVersion: DATA_VERSION, installedPacks:globalThis.ECHO_BOUNDARY?.packs(savedIndex)||savedIndex.installedPacks, active: sessions.some(s => s.id === savedIndex.active) ? savedIndex.active : sessions[0].id, sessions,
+        restorePoints: Array.isArray(savedIndex.restorePoints) ? savedIndex.restorePoints : [],
+        migrationReport: Array.isArray(savedIndex.migrationReport) ? savedIndex.migrationReport.slice(-30) : [],
         rules: globalThis.ECHO_RULES_UI?.normalizeSettings(savedIndex.rules) || null,
         combatLibrary: globalThis.ECHO_COMBAT_DATA?.normalizeCombat({ library: savedIndex.combatLibrary }, []).library || [],
         story: globalThis.ECHO_STORY_DATA.normalize(savedIndex.story),
@@ -1339,18 +959,31 @@
         ergonomics: globalThis.ECHO_ERGONOMICS?.normalizeSettings(savedIndex.ergonomics),
         tableExtras: globalThis.ECHO_TABLE?.normalize(savedIndex.tableExtras) };
     }
+    if(savedIndex && savedIndex.installedPacks===undefined && globalThis.ECHO_BOUNDARY){
+      const originalId=`before-pack-boundary-${Date.now()}`,originalSessions={};
+      for(const entry of campaignIndex.sessions)originalSessions[entry.id]=await readRecord(campaignSessionKey(entry.id));
+      await writeRecord(`recovery:${activeCampaignId}:${originalId}`,JSON.stringify({schemaVersion:DATA_VERSION,index:rawIndex,sessions:originalSessions,created:Date.now()}));
+      campaignIndex.restorePoints.push({id:originalId,label:'Original before explicit campaign packs',kind:'migration',created:Date.now()});
+      campaignIndex.migrationReport.push({at:new Date().toISOString(),from:DATA_VERSION,to:DATA_VERSION,session:campaignIndex.active,restorePoint:originalId,note:'Recorded installed campaign packs from the existing content profile; no outcomes or character choices assigned.'});
+    }
     activeSessionId = campaignIndex.active;
     let saved = null;
     const rawSession = await readRecord(campaignSessionKey(activeSessionId));
     if (rawSession) saved = JSON.parse(rawSession);
     if (saved) globalThis.ECHO_RELIABILITY?.assertSupported(saved);
-    if (savedIndex && (globalThis.ECHO_RELIABILITY.versionOf(savedIndex) < DATA_VERSION || saved && globalThis.ECHO_RELIABILITY.versionOf(saved) < DATA_VERSION)) {
-      const id = `before-v2-${Date.now()}`;
+    if ((savedIndex && globalThis.ECHO_RELIABILITY.versionOf(savedIndex) < DATA_VERSION) ||
+        (saved && globalThis.ECHO_RELIABILITY.versionOf(saved) < DATA_VERSION)) {
+      const from = Math.min(savedIndex ? globalThis.ECHO_RELIABILITY.versionOf(savedIndex) : DATA_VERSION,
+        saved ? globalThis.ECHO_RELIABILITY.versionOf(saved) : DATA_VERSION);
+      const id = `before-v3-${Date.now()}`;
       const sessions = {};
       for (const entry of campaignIndex.sessions) sessions[entry.id] = await readRecord(campaignSessionKey(entry.id));
       await writeRecord(`recovery:${activeCampaignId}:${id}`, JSON.stringify({ schemaVersion: 1,
         index: JSON.stringify(savedIndex), sessions, created: Date.now() }));
       campaignIndex.restorePoints.push({ id, label: 'Original before data upgrade', kind: 'migration', created: Date.now() });
+      campaignIndex.migrationReport.push({ at: new Date().toISOString(), from, to: DATA_VERSION,
+        session: activeSessionId, restorePoint: id,
+        note: 'Added revision tracking and retained the original saved campaign before normalization.' });
     }
     const savedKeepsProgression = keepsPartyProgression(saved, campaignIndex.sessions.find(s => s.id === activeSessionId)?.packId);
     if (!savedKeepsProgression && saved?.sessionKind === 'custom' && ['pc-trista', 'pc-pebble'].some(id => Number(saved.party?.[id]?.level) < 3)) {
@@ -1390,23 +1023,35 @@
       campaignIndex.restorePoints.push({ id, label: 'Before Wave Echo content upgrade', kind: 'migration', created: Date.now() });
     }
     state = saved ? normalize(saved, loadedPackId) : activeCampaignId === 'default' && activeSessionId === 'session-01' ? readSavedState() : newCustomState();
-    // Apply the two DM-approved level-four choices only to the current live
+    // Apply the DM-approved level-four choices only to the current live
     // Echo Below session. Historical sessions and practice campaigns stay as saved.
-    const levelFourIds = activeCampaignId === 'default'
-      ? ['pc-pebble', 'pc-trista'].filter(id => Number(state.party?.[id]?.level) === 3 && Number.isFinite(state.party[id].maxHp)) : [];
+    const levelFourIds = globalThis.ECHO_BOOT?.echo !== false && activeCampaignId === 'default'
+      ? ['pc-pebble', 'pc-trista', 'pc-ringgo'].filter(id => Number(state.party?.[id]?.level) === 3 && Number.isFinite(state.party[id].maxHp)) : [];
     if (levelFourIds.length) {
-      const id = `before-pebble-trista-level-4-${Date.now()}`, sessions = {};
+      const id = `before-party-level-4-${Date.now()}`, sessions = {};
       for (const entry of campaignIndex.sessions)
         sessions[entry.id] = entry.id === activeSessionId ? JSON.stringify(state) : await readRecord(campaignSessionKey(entry.id));
       await writeRecord(`recovery:${activeCampaignId}:${id}`, JSON.stringify({ schemaVersion: DATA_VERSION,
         index: JSON.stringify(campaignIndex), sessions, created: Date.now() }));
-      campaignIndex.restorePoints.push({ id, label: 'Before Pebble and Trista level 4', kind: 'migration', created: Date.now() });
+      campaignIndex.restorePoints.push({ id, label: 'Before approved party level 4 choices', kind: 'migration', created: Date.now() });
       globalThis.ECHO_PARTY_DATA.applyLevelFourChoices(state, levelFourIds);
     }
+    // The approved Goron traits also apply when Pebble is already level 4.
+    // Keep this migration out of seeds, historical sessions, and practice campaigns.
+    if (globalThis.ECHO_BOOT?.echo !== false && activeCampaignId === 'default' && state.party?.['pc-pebble'] &&
+        !globalThis.ECHO_PARTY_DATA.hasGoronTraits(state.party['pc-pebble'])) {
+      const id = `before-pebble-goron-traits-${Date.now()}`, sessions = {};
+      for (const entry of campaignIndex.sessions)
+        sessions[entry.id] = entry.id === activeSessionId ? JSON.stringify(state) : await readRecord(campaignSessionKey(entry.id));
+      await writeRecord(`recovery:${activeCampaignId}:${id}`, JSON.stringify({ schemaVersion: DATA_VERSION,
+        index: JSON.stringify(campaignIndex), sessions, created: Date.now() }));
+      campaignIndex.restorePoints.push({ id, label: 'Before Pebble Goron traits', kind: 'migration', created: Date.now() });
+      globalThis.ECHO_PARTY_DATA.applyGoronTraits(state);
+    }
     campaignContinuity();
-    if (Number(state.party?.['pc-donavan']?.level) >= 3 && campaignIndex.rules?.characterOptions)
+    if (globalThis.ECHO_BOOT?.echo !== false && Number(state.party?.['pc-donavan']?.level) >= 3 && campaignIndex.rules?.characterOptions)
       campaignIndex.rules.characterOptions['donavan-scribes'] = 'active';
-    if (Number(state.party?.['pc-ringgo']?.level) >= 3 && campaignIndex.rules?.characterOptions) {
+    if (globalThis.ECHO_BOOT?.echo !== false && Number(state.party?.['pc-ringgo']?.level) >= 3 && campaignIndex.rules?.characterOptions) {
       campaignIndex.rules.characterOptions['ringgo-assassin'] = 'active';
       delete campaignIndex.rules.characterOptions['ringgo-soulknife'];
     }
@@ -1437,10 +1082,14 @@
     if (id === activeSessionId || !campaignIndex.sessions.some(s => s.id === id)) return;
     globalThis.ECHO_TABLE_FLOW?.rememberScene();
     globalThis.ECHO_TABLE?.stopRehearsal();
-    try { await captureRestorePoint('Before changing session', 'automatic'); } catch { /* Continue with the session switch. */ }
+    let restoreId = '';
+    try { restoreId = await captureRestorePoint('Before changing session', 'automatic'); } catch { /* An old save still requires this copy. */ }
     await saveQueue;
     let raw = sessionCache.get(id) || await readRecord(campaignSessionKey(id));
-    state = raw ? normalize(JSON.parse(raw), campaignIndex.sessions.find(item => item.id === id)?.packId) : newCustomState();
+    const source = raw ? JSON.parse(raw) : null;
+    const oldVersion = source ? globalThis.ECHO_RELIABILITY.versionOf(source) : DATA_VERSION;
+    if (oldVersion < DATA_VERSION && !restoreId) throw Error('The older session was left unchanged because a recovery copy could not be made.');
+    state = source ? normalize(source, campaignIndex.sessions.find(item => item.id === id)?.packId) : newCustomState();
     state.combat.library = structuredClone(campaignIndex.combatLibrary);
     activeSessionId = id;
     campaignIndex.active = id;
@@ -1454,6 +1103,11 @@
     resetBuilderForms();
     populateHandoutFields();
     globalThis.ECHO_TABLE_FLOW?.restoreScene();
+    if (oldVersion < DATA_VERSION) {
+      campaignIndex.migrationReport.push({ at:new Date().toISOString(), from:oldVersion, to:DATA_VERSION,
+        session:id, restorePoint:restoreId, note:'Opened and saved an older session with revision tracking.' });
+      await saveLocal();
+    }
     await saveCampaignIndex();
     renderDM(); sendToPlayer();
   }
@@ -1530,6 +1184,7 @@
       }
       fresh.combat = globalThis.ECHO_COMBAT_DATA.normalizeCombat({ library: campaignIndex.combatLibrary,
         creatures: previous.combat?.creatures }, fresh.encounters);
+      if(globalThis.ECHO_BOOT?.echo !== false)globalThis.ECHO_PARTY_DATA.syncGoronResistance(fresh);
       if (fresh.contentPackId === 'lmop-part-4-visuals') seedSession4Resources(fresh);
     }
     fresh.combat.library = structuredClone(campaignIndex.combatLibrary);
@@ -1547,6 +1202,7 @@
   async function createPackedSession(packId = 'cragmaw-continuation', askForName = true) {
     const pack = globalThis.ECHO_CONTENT_PACKS?.find(item => item.id === packId);
     if (!pack) { toast('The session pack could not be loaded.'); return; }
+    if(pack.carryExploration){const existing=campaignIndex.sessions.find(s=>s.packId===packId);if(existing){await switchSession(existing.id);toast('Resumed your saved session; maps, enemies and exploration are preserved. Use Duplicate session for a separate rehearsal.');return;}}
     if(packId==='waterdeep-undermountain-1'){
       const existing=campaignIndex.sessions.find(s=>s.packId===packId);
       if(existing){await reviewArcReturn(existing.id);toast('Your saved first floor is ready for review. Use Duplicate session for a separate copy.');return;}
@@ -1562,17 +1218,20 @@
     await captureRestorePoint(`Before creating ${pack.name}`, 'automatic');
     const previous = state, id = makeSessionId();
     const next = newCustomState(previous);
-    if(['waterdeep-undermountain-1','phandalin-waterdeep-transition','mending-court-home','silent-library-expedition'].includes(packId)){next.preservePartyProgression=true;next.party=structuredClone(previous.party||{});next.tokens=previous.tokens.filter(t=>t.team==='pc'||t.team==='ally').map(t=>({...structuredClone(t),placed:false,scene:'',initiative:null}));}
+    if(pack.preservePartyProgression===true||['waterdeep-undermountain-1','phandalin-waterdeep-transition','mending-court-home','silent-library-expedition','phandalin-aftermath-next'].includes(packId)){next.preservePartyProgression=true;next.party=structuredClone(previous.party||{});next.tokens=previous.tokens.filter(t=>t.team==='pc'||t.team==='ally').map(t=>({...structuredClone(t),placed:false,scene:'',initiative:null}));}
+    if(pack.preservePartyProgression===true){
+      next.combatRun.resources=structuredClone(previous.combatRun?.resources||{});
+    }
     next.contentPackId = pack.id;
     next.scenes = pack.scenes.map(sceneId => ({ id: sceneId, ...SCENES[sceneId],
       kind: SCENES[sceneId].kind || 'visual', image: SCENES[sceneId].image || '',
-      fog: SCENES[sceneId].fog === true, grid: SCENES[sceneId].kind === 'map' }));
+      fog: SCENES[sceneId].fog === true, grid: SCENES[sceneId].kind === 'map' && SCENES[sceneId].grid !== false }));
     for (const item of globalThis.LMOP_BATTLE_MAP_CATALOG || []) if (item.fog && next.scenes.some(scene => scene.id === item.id)) {
       next.sceneFog[item.id] = [];
       next.map.scenes[item.id] = globalThis.ECHO_MAP_DATA.scene({ fineFog: true });
     }
     if(packId==='silent-library-expedition')for(const scene of next.scenes.filter(s=>s.fog)){next.sceneFog[scene.id]=[];next.map.scenes[scene.id]=globalThis.ECHO_MAP_DATA.scene({fineFog:true});}
-    next.encounters = ENCOUNTERS.filter(encounter => pack.encounters.includes(encounter.id)).map(encounter => ({ ...encounter }));
+    next.encounters = ENCOUNTERS.filter(encounter => pack.encounters.includes(encounter.id)).map(encounter => ({ ...encounter, ...(pack.encounterNotes?.[encounter.id]?{note:pack.encounterNotes[encounter.id]}:{}) }));
     next.runbookBeats = (pack.runbook || RUNBOOK).filter(beat => pack.beats.includes(beat.id)).map(beat => structuredClone(beat));
     next.scene = pack.firstScene;
     next.runbook = next.runbookBeats[0]?.id || 'all';
@@ -1585,16 +1244,42 @@
       next.sceneFog['redbrand-hideout'] = [];
       for (const sheet of Object.values(next.party)) if (sheet.role === 'pc') sheet.level = Math.max(2, Number(sheet.level) || 0);
     }
-    if (packId === 'gundren-session-3') next.tokens.push(...session3EnemyTokens());
+    if (packId === 'gundren-session-3') {
+      const played=new Set(globalThis.ECHO_CONTINUITY.effective(campaignContinuity()).filter(e=>e.approved).map(e=>e.id));
+      next.tokens.push(...session3EnemyTokens().filter(foe=>
+        !(played.has('actual-s23-orcs')&&foe.encounter==='wyvern-tor')&&
+        !(played.has('actual-s23-koth')&&foe.id==='s3-hamun')));
+    }
     if (packId === 'lmop-part-4-visuals') { next.tokens.push(...session4EnemyTokens()); seedSession4Resources(next); }
+    if(pack.enemySeed){
+      const retained=previous.tokens.filter(t=>t.team==='enemy'&&pack.encounters.includes(t.encounter));
+      const retainedEncounters=new Set(retained.map(t=>t.encounter));
+      const seeds=pack.enemySeed==='wave'?session4EnemyTokens():session3EnemyTokens();
+      next.tokens.push(...structuredClone(retained),...seeds.filter(t=>pack.encounters.includes(t.encounter)&&!retainedEncounters.has(t.encounter)));
+      if(pack.enemySeed==='wave')seedSession4Resources(next);
+    }
+    if(pack.carryExploration){
+      for(const scene of next.scenes){
+        if(previous.map?.scenes?.[scene.id])next.map.scenes[scene.id]=structuredClone(previous.map.scenes[scene.id]);
+        if(previous.sceneFog?.[scene.id])next.sceneFog[scene.id]=structuredClone(previous.sceneFog[scene.id]);
+      }
+      next.waveEcho=structuredClone(previous.waveEcho);
+    }
     next.combat = globalThis.ECHO_COMBAT_DATA.normalizeCombat({ library: campaignIndex.combatLibrary,
-      creatures: previous.combat?.creatures }, next.encounters);
+      creatures: previous.combat?.creatures, ...(pack.preservePartyProgression===true?{tokens:previous.combat?.tokens,effects:previous.combat?.effects}:{}) }, next.encounters);
+    globalThis.ECHO_PARTY_DATA.syncGoronResistance(next);
     for (const foe of next.tokens.filter(t => t.team === 'enemy'))
       next.combat.tokens[foe.id] ||= globalThis.ECHO_COMBAT_DATA.creatureDefense(foe.type, next.combat.creatures);
     await saveQueue;
     activeSessionId = id; state = next;
     previewSceneId = next.scene; contextTab = 'guide';
     campaignIndex.sessions.push({ id, name, packId }); campaignIndex.active = id;
+    if(['phandalin-aftermath-next','next-session-4'].includes(packId)&&globalThis.ECHO_STAGE6?.applies(campaignContinuity())){
+      const prep=globalThis.ECHO_QUEST_PREP.ensure(campaignIndex.story);
+      const catalog=await questPrepContext(id);
+      globalThis.ECHO_STAGE6.seedBoard({...catalog,story:campaignIndex.story,continuity:campaignContinuity(),prep,sessionId:id,roster:state.tokens.filter(t=>t.team==='pc').map(t=>({id:t.id,name:t.name}))});
+      prep.target=id;
+    }
     if(packId==='silent-library-expedition'&&globalThis.ECHO_ADVENTURES){globalThis.ECHO_ADVENTURES.seedLibrary(campaignIndex.tableExtras);const r=globalThis.ECHO_EXPEDITIONS.create(expeditionContext(),name,['sl-library-map']);r.objective='Review the archive’s access, catalogue provenance and custody with affected people.';r.conditions='Return by the shop stair; record any actual restriction before re-entry.';}
     selectedEncounter = next.encounters[0]?.id || 'all';
     selectedTokenId = null; editingSceneId = null; editingBeatId = null;
@@ -1643,25 +1328,38 @@
     const sessions = {};
     for (const session of campaignIndex.sessions) sessions[session.id] = session.id === activeSessionId
       ? activeSnapshot : sessionCache.get(session.id) || await readRecord(campaignSessionKey(session.id));
-    await writeRecord(`recovery:${activeCampaignId}:${id}`, JSON.stringify({ schemaVersion: DATA_VERSION,
-      index: JSON.stringify(campaignIndex), sessions, created: Date.now() }));
-    campaignIndex.restorePoints ||= [];
-    campaignIndex.restorePoints.push({ id, label: String(label).slice(0, 100), kind, created: Date.now() });
-    const ordinary = campaignIndex.restorePoints.filter(point => point.kind !== 'migration');
-    for (const point of ordinary.slice(0, Math.max(0, ordinary.length - 30))) {
-      campaignIndex.restorePoints = campaignIndex.restorePoints.filter(item => item.id !== point.id);
-      await deleteRecord(`recovery:${activeCampaignId}:${point.id}`);
-    }
+    const encoded=await globalThis.ECHO_RECOVERY.encodePoint({schemaVersion:DATA_VERSION,index:JSON.stringify(campaignIndex),sessions,created:Date.now()});
+    try{await writeRecord(`recovery:${activeCampaignId}:${id}`,encoded.raw);}catch(error){const message='Restore point could not be saved: browser storage may be full. The campaign was not replaced. Download a backup, then review old automatic points in Recovery. '+error.message;globalThis.ECHO_RELIABILITY?.setRecoveryIssue(message);throw Error(message);}
+    const originalPoints=campaignIndex.restorePoints||[];
+    campaignIndex.restorePoints=[...originalPoints,{ id, label: String(label).slice(0, 100), kind, created: Date.now(), bytes:encoded.bytes, originalBytes:encoded.originalBytes, encoding:encoded.encoding }];
+    const ordinary = campaignIndex.restorePoints.filter(point => point.kind === 'automatic'),expired=ordinary.slice(0, Math.max(0, ordinary.length - 30));
+    campaignIndex.restorePoints=campaignIndex.restorePoints.filter(point=>!expired.some(old=>old.id===point.id));
     await saveCampaignIndex();
+    if(failedSaveKeys.has(campaignIndexKey())){
+      campaignIndex.restorePoints=originalPoints;try{await deleteRecord(`recovery:${activeCampaignId}:${id}`);}catch{}
+      const message='Restore point could not be indexed. The campaign was not replaced and existing restore points were retained. Download a backup before trying again.';
+      globalThis.ECHO_RELIABILITY?.setRecoveryIssue(message);throw Error(message);
+    }
+    // Never delete an older point until the replacement and its index are saved.
+    for(const point of expired)await deleteRecord(`recovery:${activeCampaignId}:${point.id}`);
+    globalThis.ECHO_RELIABILITY?.setRecoveryIssue('');
     globalThis.ECHO_RELIABILITY?.render();
     return id;
+  }
+
+  async function pruneRestorePoints(keep) {
+    await saveQueue;const points=globalThis.ECHO_RECOVERY.pruneCandidates(campaignIndex.restorePoints||[],keep);if(!points.length)return 'No old automatic points to remove.';
+    if(!window.confirm(`Remove ${points.length} old automatic restore points and keep the latest ${keep}? Download a backup first. Manual and migration originals stay saved.`))return 'Cleanup cancelled.';
+    const before=campaignIndex.restorePoints;campaignIndex.restorePoints=before.filter(p=>!points.some(x=>x.id===p.id));
+    try{await writeRecord(campaignIndexKey(),JSON.stringify(campaignIndex));}catch(error){campaignIndex.restorePoints=before;throw error;}
+    for(const point of points)await deleteRecord(`recovery:${activeCampaignId}:${point.id}`);return `Removed ${points.length} old automatic restore points. Manual and migration originals retained.`;
   }
 
   async function restorePoint(id) {
     const point = campaignIndex.restorePoints?.find(item => item.id === id);
     if (!point) return;
     let snapshot;
-    try { snapshot = JSON.parse(await readRecord(`recovery:${activeCampaignId}:${id}`)); }
+    try { snapshot = await globalThis.ECHO_RECOVERY.decodePoint(await readRecord(`recovery:${activeCampaignId}:${id}`)); }
     catch { toast('This restore point could not be opened.'); return; }
     if (!snapshot?.sessions || !window.confirm(`Restore “${point.label}”? The current campaign will be copied to a new restore point first.`)) return;
     await captureRestorePoint('Before restore', 'automatic');
@@ -1688,33 +1386,40 @@
     const point = campaignIndex.restorePoints?.find(item => item.id === id);
     const raw = point && await readRecord(`recovery:${activeCampaignId}:${id}`);
     if (!raw) { toast('Restore point is unavailable.'); return; }
-    downloadJson(`echo-below-restore-point-${id}.json`, JSON.parse(raw));
+    downloadJson(`echo-below-restore-point-${id}.json`, await globalThis.ECHO_RECOVERY.decodePoint(raw));
   }
 
   async function buildCampaignArchive() {
     await saveQueue;
+    const capturedIndex=structuredClone(campaignIndex),capturedState=structuredClone(state),capturedCampaign=activeCampaignId,capturedSession=activeSessionId,cache=new Map(sessionCache);
     const sessions = [];
-    for (const session of campaignIndex.sessions) {
-      const raw = session.id === activeSessionId ? JSON.stringify(state)
-        : sessionCache.get(session.id) || await readRecord(campaignSessionKey(session.id));
+    for (const session of capturedIndex.sessions) {
+      const raw = session.id === capturedSession ? JSON.stringify(capturedState)
+        : cache.get(session.id) || await readRecord(campaignSessionKey(session.id,capturedCampaign));
       if (!raw) continue;
       sessions.push({ id: session.id, name: session.name, packId: session.packId || JSON.parse(raw).contentPackId || '', state: JSON.parse(raw) });
     }
     const archive = {
       format: 'echo-below-campaign-v2', schemaVersion: DATA_VERSION,
-      campaign: { name: campaignRegistry.campaigns.find(c => c.id === activeCampaignId)?.name || 'Campaign' },
-      active: activeSessionId, sessions, rules: campaignIndex.rules,
-      combatLibrary: campaignIndex.combatLibrary, story: campaignIndex.story,
-      presentation: campaignIndex.presentation, ergonomics: campaignIndex.ergonomics,
-      tableExtras: campaignIndex.tableExtras,
-      mediaFiles: await globalThis.ECHO_PRESENTATION?.exportMedia(campaignIndex.presentation, readRecord)
+      campaign: { id: capturedCampaign, name: campaignRegistry.campaigns.find(c => c.id === capturedCampaign)?.name || 'Campaign', ...(campaignRegistry.campaigns.find(c=>c.id===capturedCampaign)?.originId?{originId:campaignRegistry.campaigns.find(c=>c.id===capturedCampaign).originId}:{}) },
+      installedPacks:globalThis.ECHO_BOUNDARY?.packs(capturedIndex)||capturedIndex.installedPacks, active: capturedSession, sessions, rules: capturedIndex.rules,
+      migrationReport: capturedIndex.migrationReport || [],
+      combatLibrary: capturedIndex.combatLibrary, story: capturedIndex.story,
+      presentation: capturedIndex.presentation, ergonomics: capturedIndex.ergonomics,
+      tableExtras: capturedIndex.tableExtras,
+      mediaFiles: await globalThis.ECHO_PRESENTATION?.exportMedia(capturedIndex.presentation, readRecord)
     };
+    if(capturedCampaign!==activeCampaignId||capturedSession!==activeSessionId||JSON.stringify(capturedState)!==JSON.stringify(state)||JSON.stringify(capturedIndex)!==JSON.stringify(campaignIndex))throw Error('The campaign changed while capturing its backup. Try again so the records share one snapshot.');
     const report = globalThis.ECHO_RELIABILITY.validateArchive(archive);
     if (!report.valid) throw new Error(`Backup is missing imported media: ${report.missingMedia.join(', ')}`);
     return archive;
   }
 
   async function downloadCampaign() {
+    try{await globalThis.ECHO_WHOLE_BACKUP.download();}catch(error){toast(error.message||'Complete backup could not be created.');}
+  }
+
+  async function downloadBrowserData() {
     try {
       const archive = await buildCampaignArchive();
       downloadJson(`echo-below-${activeCampaignId}-backup.json`, archive);
@@ -1723,6 +1428,9 @@
   }
 
   async function restoreCampaign(file) {
+    if(/\.zip$/i.test(file.name)||file.type==='application/zip'){
+      try{await globalThis.ECHO_WHOLE_BACKUP.openRestore(file);}catch(e){toast(e.message+'. The live campaign was not changed.');}return;
+    }
     let archive;
     try { archive = JSON.parse(await file.text()); }
     catch { toast('That file is not a valid campaign backup.'); return; }
@@ -1730,17 +1438,20 @@
     try { report = globalThis.ECHO_RELIABILITY.validateArchive(archive); }
     catch (error) { toast(error.message); return; }
     if (!report.valid) { toast(`Backup is incomplete: ${report.missingMedia.join(', ')}`); return; }
-    if (!window.confirm(`Restore ${report.sessions} sessions as a new campaign? The current campaign will stay saved.`)) return;
-    const entries = archive.sessions.slice(0, 500).filter(s => s && typeof s.id === 'string' && typeof s.name === 'string' && s.state && typeof s.state === 'object');
-    if (!entries.length) { toast('No valid sessions were found in that backup.'); return; }
-    await saveQueue;
+    let prepared;
     try {
-      const prepared=globalThis.ECHO_RECOVERY.prepare(archive,normalize);
-      const campaignId = `campaign-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
-      for (const entry of prepared.sessions) {
-        const snapshot = JSON.stringify(entry.state);
-        await writeRecord(campaignSessionKey(entry.id.slice(0, 80), campaignId), snapshot);
-      }
+      const targetPacks=globalThis.ECHO_BOUNDARY?.packs(archive);
+      const crossPack=targetPacks&&ECHO_BOUNDARY.key(targetPacks)!==globalThis.ECHO_BOOT?.key;
+      if(crossPack)prepared=ECHO_BOUNDARY.handoff(archive);
+      else {prepared = globalThis.ECHO_RECOVERY.prepare(archive, normalize); await globalThis.ECHO_RECOVERY.rehearse(archive, normalize);}
+    }
+    catch (error) { toast(`Restore check failed: ${error.message}. The live campaign was not changed.`); return; }
+    if (!window.confirm(`Verified ${report.sessions} sessions. Restore them as a new campaign? The current campaign will stay saved.`)) return;
+    await saveQueue;
+    let campaignId = '', activated = false;
+    const addedMedia = [];
+    try {
+      campaignId = `campaign-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
       const restoredIndex = prepared.index;
       await globalThis.ECHO_PRESENTATION?.importMedia(archive.mediaFiles, restoredIndex.presentation,
         async (key, blob) => {
@@ -1754,20 +1465,33 @@
             return;
           }
           await writeMediaRecord(key.replace(/^media:/, ''), blob);
+          addedMedia.push(key);
         });
-      await writeRecord(campaignIndexKey(campaignId), JSON.stringify(restoredIndex));
-      campaignRegistry.campaigns.push({ id: campaignId, name: String(archive.campaign?.name || `${file.name.replace(/\.json$/i, '')} restored`).slice(0, 80), archived: false });
+      await writeRecordsAtomic([...prepared.sessions.map(entry => [campaignSessionKey(entry.id, campaignId), JSON.stringify(entry.state)]),
+        [campaignIndexKey(campaignId), JSON.stringify(restoredIndex)]]);
       await globalThis.ECHO_PHONE?.disconnectForCampaignSwitch();
-      campaignRegistry.active = campaignId; activeCampaignId = campaignId;
-      await saveCampaignRegistry();
+      const nextRegistry = structuredClone(campaignRegistry);
+      nextRegistry.campaigns.push({ id: campaignId, name: String(archive.campaign?.name || `${file.name.replace(/\.json$/i, '')} restored`).slice(0, 80), archived: false });
+      nextRegistry.active = campaignId;
+      await writeRecord(CAMPAIGN_REGISTRY_KEY, JSON.stringify(nextRegistry));
+      activated = true; campaignRegistry = nextRegistry;
+      if(globalThis.ECHO_BOUNDARY && ECHO_BOUNDARY.key(ECHO_BOUNDARY.packs(restoredIndex))!==globalThis.ECHO_BOOT?.key){ECHO_BOUNDARY.reload(`Restored ${prepared.sessions.length} sessions as a separate campaign.`);return;}
+      activeCampaignId=campaignId;
       sessionCache.clear();
       await loadCampaign();
       resetBuilderForms(); populateHandoutFields();
       globalThis.ECHO_RULES_UI?.setSettings(campaignIndex.rules);
       globalThis.ECHO_TABLE_FLOW?.restoreScene();
-    renderDM(); setWorkspaceMode(campaignIndex.ergonomics?.mode || 'run'); sendToPlayer();
-      toast(`Restored ${entries.length} sessions as a separate campaign.`);
-    } catch (error) { toast(`${error.message || 'The campaign could not be stored here.'} Keep your backup file.`); }
+      renderDM(); setWorkspaceMode(campaignIndex.ergonomics?.mode || 'run'); sendToPlayer();
+      toast(`Restored ${prepared.sessions.length} sessions as a separate campaign.`);
+    } catch (error) {
+      if (!activated) {
+        for (const entry of prepared.sessions) await deleteRecord(campaignSessionKey(entry.id, campaignId));
+        if (campaignId) await deleteRecord(campaignIndexKey(campaignId));
+        for (const key of addedMedia) await deleteRecord(key);
+      }
+      toast(`${error.message || 'The campaign could not be stored here.'} ${activated ? 'Restore the previous campaign from Campaigns if needed.' : 'The live campaign was not changed.'} Keep your backup file.`);
+    }
   }
 
   function freshCampaignState() {
@@ -1782,7 +1506,7 @@
   }
 
   function freshCampaignIndex() {
-    return { schemaVersion: DATA_VERSION, active: 'session-01', sessions: [{ id: 'session-01', name: 'Session 1' }], restorePoints: [],
+    return { schemaVersion: DATA_VERSION, active: 'session-01', sessions: [{ id: 'session-01', name: 'Session 1' }], restorePoints: [], migrationReport: [],
       rules: globalThis.ECHO_RULES_UI.normalizeSettings(null), combatLibrary: [],
       story: globalThis.ECHO_STORY_DATA.normalize(), presentation: globalThis.ECHO_PRESENTATION.normalizeLibrary(),
       ergonomics: globalThis.ECHO_ERGONOMICS.normalizeSettings(), tableExtras: globalThis.ECHO_TABLE.normalize() };
@@ -1796,8 +1520,11 @@
     try { await captureRestorePoint('Before switching campaign', 'automatic'); }
     catch { /* The current live save remains available. */ }
     await saveQueue;
-    campaignRegistry.active = id; activeCampaignId = id;
+    campaignRegistry.active = id;
     await saveCampaignRegistry();
+    const targetIndex=JSON.parse(await readRecord(campaignIndexKey(id)));
+    if(globalThis.ECHO_BOUNDARY && ECHO_BOUNDARY.key(ECHO_BOUNDARY.packs(targetIndex))!==globalThis.ECHO_BOOT?.key){ECHO_BOUNDARY.reload(`Opened ${campaignRegistry.campaigns.find(item=>item.id===id)?.name}.`);return;}
+    activeCampaignId=id;
     sessionCache.clear();
     await loadCampaign();
     selectedTokenId = null; editingSceneId = null; editingBeatId = null;
@@ -1808,18 +1535,18 @@
     toast(`Opened ${campaignRegistry.campaigns.find(item => item.id === id)?.name}.`);
   }
 
-  async function createCampaign() {
-    const answer = window.prompt('Name the new campaign:', 'New campaign');
+  async function createCampaign(providedName, example=false) {
+    const answer = typeof providedName === 'string' ? providedName : window.prompt('Name the new campaign:', 'New campaign');
     if (answer === null) return;
     const name = answer.trim().slice(0, 80);
     if (!name) { toast('Give the campaign a name.'); return; }
     const id = `campaign-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
-    const template = globalThis.ECHO_TEMPLATES.blank(name);
+    if(example)await globalThis.ECHO_TEMPLATES.loadExample();
+    const template = example ? globalThis.ECHO_TEMPLATES.example(name) : globalThis.ECHO_TEMPLATES.blank(name);
     const prepared = globalThis.ECHO_RECOVERY.prepare(template, normalize);
     const index = prepared.index;
     const first = prepared.sessions[0].state;
-    await writeRecord(campaignIndexKey(id), JSON.stringify(index));
-    await writeRecord(campaignSessionKey('session-01', id), JSON.stringify(first));
+    await writeRecordsAtomic([[campaignIndexKey(id), JSON.stringify(index)],[campaignSessionKey('session-01', id), JSON.stringify(first)]]);
     campaignRegistry.campaigns.push({ id, name, archived: false });
     await activateCampaign(id);
   }
@@ -1827,9 +1554,11 @@
   async function duplicateCampaign(sourceId, practice = false) {
     const source = campaignRegistry.campaigns.find(item => item.id === sourceId);
     if (!source) return;
-    const answer = practice ? `PRACTICE · ${source.name}` : window.prompt('Name the copy:', `${source.name} copy`);
-    if (answer === null) return;
-    const name = answer.trim().slice(0, 80); if (!name) return;
+    const choice = practice ? {mode:'practice',name:`PRACTICE · ${source.name}`} : await globalThis.ECHO_TEMPLATES.chooseCopy(source.name);
+    if (!choice) return;
+    if (['blank','example'].includes(choice.mode)) return createCampaign(choice.name,choice.mode==='example');
+    practice = choice.mode === 'practice';
+    const name = choice.name.trim().slice(0, 80); if (!name) return;
     await saveQueue;
     const raw = sourceId === activeCampaignId ? JSON.stringify(campaignIndex) : await readRecord(campaignIndexKey(sourceId));
     if (!raw) { toast('That campaign could not be read.'); return; }
@@ -1844,8 +1573,7 @@
       if (!value) { toast(`Could not copy ${session.name}; source save is missing.`); return; }
       copies.push([session.id, value]);
     }
-    for (const [sessionId, value] of copies) await writeRecord(campaignSessionKey(sessionId, id), value);
-    await writeRecord(campaignIndexKey(id), JSON.stringify(index));
+    await writeRecordsAtomic([...copies.map(([sessionId,value])=>[campaignSessionKey(sessionId,id),value]),[campaignIndexKey(id),JSON.stringify(index)]]);
     campaignRegistry.campaigns.push({ id, name, archived: false, ...(practice?{practiceSource:sourceId}:{}) });
     await activateCampaign(id);
   }
@@ -1901,9 +1629,16 @@
     const overlayImages=overlayRecords.map(o=>{let img=atlasMapImages.get(o.image);if(!img){img=new Image();atlasMapImages.set(o.image,img);img.onload=()=>{atlasMaskedImages.clear();sendToPlayer();};img.src=o.image;}return img;});
     const ready=image.complete&&image.naturalWidth&&overlayImages.every(img=>img.complete&&img.naturalWidth);
     if(ready){ctx.save();if(sceneHasFog()){ctx.beginPath();for(const key of revealed){if(!validTile(key))continue;const [r,c]=key.split(',').map(Number);ctx.rect(c*canvas.width/cols,r*canvas.height/rows,canvas.width/cols,canvas.height/rows);}ctx.clip();}ctx.drawImage(image,0,0,canvas.width,canvas.height);for(const img of overlayImages)ctx.drawImage(img,0,0,canvas.width,canvas.height);ctx.restore();}
-    const result=canvas.toDataURL('image/png');
+    const result=safeAtlasCanvas(canvas);
     if(ready){if(atlasMaskedImages.size>12)atlasMaskedImages.clear();atlasMaskedImages.set(signature,result);}
     return result;
+  }
+  let atlasCanvasNotice=false;
+  function safeAtlasCanvas(canvas,type='image/png',quality) {
+    try{return canvas.toDataURL(type,quality);}catch(error){if(error.name!=='SecurityError')throw error;
+      if(!atlasCanvasNotice){atlasCanvasNotice=true;toast('Source map could not be rendered safely from this file address. Open the desktop app with its local http address. The map stays concealed; no private source file was sent.');}
+      const safe=document.createElement('canvas');safe.width=32;safe.height=32;const ctx=safe.getContext('2d');ctx.fillStyle='#142019';ctx.fillRect(0,0,32,32);return safe.toDataURL('image/png');
+    }
   }
   function atlasPresentationKey() {
     const p=state.presentation||{};
@@ -1929,7 +1664,7 @@
     const width=ready&&photographic?Math.min(2000,image.naturalWidth):2000;
     const canvas=document.createElement('canvas');canvas.width=width;canvas.height=Math.round(width*box[3]/box[2]);
     const ctx=canvas.getContext('2d');ctx.fillStyle='#142019';ctx.fillRect(0,0,canvas.width,canvas.height);
-    if(ready){ctx.drawImage(image,0,0,canvas.width,canvas.height);const data=photographic?canvas.toDataURL('image/jpeg',.9):canvas.toDataURL('image/png');atlasFullImages.set(path,data);return data;}
+    if(ready){ctx.drawImage(image,0,0,canvas.width,canvas.height);const data=photographic?safeAtlasCanvas(canvas,'image/jpeg',.9):safeAtlasCanvas(canvas);atlasFullImages.set(path,data);return data;}
     return canvas.toDataURL('image/png');
   }
   function renderPlayerAtlas() {
@@ -2016,10 +1751,10 @@
     const publicMap=globalThis.ECHO_MAP_DATA?.publicScene(mapScene)||{};
     if(mapScene.floorFog){for(const key of ['points','links','lights'])publicMap[key]=(publicMap[key]||[]).filter(p=>fog.has(tileForPoint({...p,scene:state.scene})));publicMap.lines=[];}
     const payload = globalThis.ECHO_RELIABILITY.publicPayload({ atlas: atlasPublic(), atmosphere:atmospherePublic(tokens), dungeon:dungeonPublic(), journey: globalThis.ECHO_TRAVEL?.publicView(globalThis.ECHO_TRAVEL.data(campaignIndex.tableExtras)), sessionKind: state.sessionKind,
-      scenes: state.sessionKind === 'custom' ? [getScene(state.scene)].filter(Boolean).map(scene =>
-        ({ ...scene, image: publicImage })) : null,
+      scenes: [getScene(state.scene)].filter(Boolean).map(scene => ({ id:scene.id||state.scene,title:displaySceneTitle(scene.title),kind:scene.kind,image:publicImage,fog:scene.fog,grid:scene.grid,gridColumns:scene.gridColumns })),
       sessionName: (activeCampaignId.startsWith('practice-')?'PRACTICE · ':'')+(campaignIndex.sessions.find(s => s.id === activeSessionId)?.name || 'Campaign session'),
       scene: state.scene, grid: state.grid, playerReveal: state.playerReveal,
+      calibrationCheck: tvCalibrationCheck,
       map: { playerInput: state.map?.playerInput !== false,
         display: state.map?.displays?.[state.map.displayIndex] || null,
         scenes: { [state.scene]: publicMap },
@@ -2052,6 +1787,16 @@
     return globalThis.ECHO_TABLE?.decoratePublic(payload, state.tokens.find(t => t.team === 'pc' && t.visible !== false) || state.tokens.find(t => t.team === 'pc')) || payload;
   }
 
+  const privatePreviewFrames=new Map();let privatePreviewTimer=null;
+  function privatePreviewPayload(sceneId,key){const staged=key!=='live'?pendingFloorFocus():null;if(key==='live'||!sceneId)return publicState();const wanted=getScene(sceneId)?.kind==='map'?'battle':sceneId==='black'?'black':'scene';if(sceneId===state.scene&&!staged&&state.presentation.mode===wanted&&!state.presentation.mediaId)return publicState();const original=state,originalIndex=campaignIndex;try{state=structuredClone(original);campaignIndex=structuredClone(originalIndex);state.scene=sceneId||original.scene;if(staged)state.map.scenes[staged.sceneId].view={...staged.view};if(sceneId!==original.scene&&campaignIndex.tableExtras.atlas)campaignIndex.tableExtras.atlas.shown=null;if(state.sessionKind==='custom')state.grid=getScene(state.scene)?.grid===true;state.presentation={...state.presentation,mode:getScene(state.scene)?.kind==='map'?'battle':state.scene==='black'?'black':'scene',mediaId:'',handoutId:'',cardId:''};return publicState();}finally{state=original;campaignIndex=originalIndex;}}
+  function mountPrivatePreview(container,sceneId='',key='staged'){
+    initPrivatePreviews();
+    let view=privatePreviewFrames.get(key);if(!view){const frame=document.createElement('iframe');frame.className='exact-tv-preview';frame.title=key==='live'?'Exactly what players see now':'Player-safe preview of the staged scene';frame.tabIndex=-1;const url=new URL(location.href);url.searchParams.set('dm-preview','1');url.hash='player';frame.src=url.href;view={frame,sceneId,loaded:false,payload:null,signature:''};privatePreviewFrames.set(key,view);frame.onload=()=>{view.loaded=true;view.signature='';refreshPrivatePreviews();};}
+    if(view.sceneId!==sceneId){view.sceneId=sceneId;view.signature='';}container.classList.add('exact-tv-preview-host');container.append(view.frame);if(view.container!==container){view.resize?.disconnect();view.container=container;view.resize=new ResizeObserver(()=>{if(view.frame.isConnected)view.frame.style.transform=`scale(${container.clientWidth/(view.width||1920)})`;});view.resize.observe(container);}refreshPrivatePreviews();
+  }
+  function refreshPrivatePreviews(){for(const view of privatePreviewFrames.values()){if(!view.loaded||!view.frame.isConnected||!view.frame.getBoundingClientRect().width)continue;const viewport=playerViewport?.width>0&&playerViewport?.height>0?playerViewport:{width:1920,height:1080};view.width=viewport.width;view.frame.style.width=viewport.width+'px';view.frame.style.height=viewport.height+'px';view.container.style.aspectRatio=viewport.width+'/'+viewport.height;view.frame.style.transform=`scale(${view.container.clientWidth/viewport.width})`;const signature=viewport.width+'x'+viewport.height+':'+lastSentRevision+':'+view.sceneId+':'+(view.frame.title.includes('now')?'':JSON.stringify(pendingFloorFocus()?.view||''));if(view.signature===signature)continue;view.payload=privatePreviewPayload(view.sceneId,view.frame.title.includes('now')?'live':'staged');view.signature=signature;view.frame.contentWindow.postMessage({app:APP,kind:'private-preview-state',payload:view.payload},'*');}}
+  function initPrivatePreviews(){if(privatePreviewTimer)return;privatePreviewTimer=setInterval(refreshPrivatePreviews,1500);window.addEventListener('message',event=>{const view=[...privatePreviewFrames.values()].find(v=>v.frame.contentWindow===event.source);if(!view||event.data?.app!==APP||event.data.kind!=='preview-media-request')return;const id=String(event.data.id||'');if(!view.payload?.presentation?.media?.some(m=>m.id===id))return;void readRecord('media:'+id).then(blob=>{if(blob instanceof Blob&&view.frame.isConnected)view.frame.contentWindow.postMessage({app:APP,kind:'preview-media',id,blob},'*');});});}
+
   function phoneSnapshot() {
     const safe = publicState(), scene = getScene(state.scene);
     const mapScene = safe.map?.scenes?.[state.scene] || {};
@@ -2060,9 +1805,9 @@
     const phoneExtras=globalThis.ECHO_TABLE?.phoneData() || {};
     phoneExtras.privateClues=Object.fromEntries(Object.keys(characters).map(id=>[id,[...(phoneExtras.privateClues?.[id]||[]),...(globalThis.ECHO_QUESTS?.privateClues(campaignContinuity(),id)||[]),...(globalThis.ECHO_OUTCOMES?.privateJournal(campaignContinuity(),id)||[])]]));
     return { campaign: activeCampaignId, atlas:safe.atlas, dungeonProtocol:1, dungeon:safe.dungeon, searchRequests:(dungeonData()?.requests||[]).map(r=>({...r,title:globalThis.ECHO_DUNGEON.scene(dungeonData(),r.scene).objects.find(o=>o.id===r.objectId)?.title||r.area})), travelProtocol: 1, journey: safe.journey, travelRequests: globalThis.ECHO_TRAVEL?.data(campaignIndex.tableExtras).requests || [], playerToolsProtocol: 1,
-      playerTools: Object.fromEntries(Object.keys(characters).map(id=>[id,globalThis.ECHO_PLAYER_TOOLS?.phone(campaignIndex.tableExtras||{},state.party,id)||{}])), actionProtocol: 1, combatProtocol: 1, characters,
+      playerTools: Object.fromEntries(Object.keys(characters).map(id=>[id,{...(globalThis.ECHO_PLAYER_TOOLS?.phone(campaignIndex.tableExtras||{},state.party,id)||{}),objective:globalThis.ECHO_OUTCOMES?.tableObjective(campaignContinuity(),campaignIndex.tableExtras.playerHub?.objective)||{text:'',at:''}}])), actionProtocol: 1, combatProtocol: 1, characters,
       combatPrompts: Object.fromEntries(Object.keys(characters).map(id=>[id,globalThis.ECHO_COMBAT_PLUS?.phone(state,id)||{}])),
-      movementViews: Object.fromEntries(Object.keys(characters).map(id=>[id,{...globalThis.ECHO_COMBAT_PLUS?.scale(state,getScene(state.scene)?.gridColumns||MAP_SQUARES_ACROSS),speed:globalThis.ECHO_COMBAT_PLUS?.speed(state,getToken(id)),used:state.combatRun?.queue.key===`${state.scene}:${state.turn.round}:${id}`?state.combatRun.queue.movementUsed:0,crawling:getToken(id).conditions.includes('Prone'),areas:(state.combatPlus?.areas||[]).filter(a=>a.scene===state.scene&&a.active&&a.public&&a.difficult).map(a=>({kind:a.shape.kind,x1:a.shape.x1,y1:a.shape.y1,x2:a.shape.x2,y2:a.shape.y2}))}])), actionRequests: Object.fromEntries(Object.keys(characters).map(id => [id, globalThis.ECHO_PHONE_ACTIONS?.publicRequests(state,id) || []])), isMap: scene?.kind === 'map', fogged: sceneHasFog() || safe.dungeon?.enabled,
+      movementViews: Object.fromEntries(Object.keys(characters).map(id=>[id,{...globalThis.ECHO_COMBAT_PLUS?.scale(state,getScene(state.scene)?.gridColumns||MAP_SQUARES_ACROSS),speed:globalThis.ECHO_COMBAT_PLUS?.speed(state,getToken(id)),used:state.combatRun?.queue.key===`${state.scene}:${state.turn.round}:${id}`?state.combatRun.queue.movementUsed:0,crawling:getToken(id).conditions.includes('Prone'),areas:(state.combatPlus?.areas||[]).filter(a=>a.scene===state.scene&&a.active&&a.public&&a.difficult).map(a=>({kind:a.shape.kind,x1:a.shape.x1,y1:a.shape.y1,x2:a.shape.x2,y2:a.shape.y2}))}])), receipts:Object.fromEntries(Object.keys(characters).map(id=>[id,(state.actionReceipts||[]).filter(r=>r.owner===id).map(r=>globalThis.ECHO_ACTION_RECEIPTS.model(r.receipt))])), actionRequests: Object.fromEntries(Object.keys(characters).map(id => [id, globalThis.ECHO_PHONE_ACTIONS?.publicRequests(state,id) || []])), isMap: scene?.kind === 'map', fogged: sceneHasFog() || safe.dungeon?.enabled,
       continuity: { journal: globalThis.ECHO_OUTCOMES?.journal(campaignIndex.story) || globalThis.ECHO_CONTINUITY?.publicJournal(campaignContinuity()) || [],
         quests: globalThis.ECHO_QUESTS?.phoneQuests(campaignContinuity()) || (globalThis.ECHO_CONTINUITY?.questCards(campaignContinuity(), true) || []).map(q=>({id:q.id,title:q.title,state:q.state,goal:q.goal})),
         tracks: globalThis.ECHO_CONTINUITY?.trackers(campaignContinuity(), true) || [] },
@@ -2121,7 +1866,7 @@
       return;
     }
     if (['personal-note','share-clue','item-request','item-cancel'].includes(action.kind)) {
-      try { state.phoneReplies[hero.id]=globalThis.ECHO_PLAYER_TOOLS.receive(campaignIndex.tableExtras,state.party,action); void saveCampaignIndex(); commit(`Player companion: ${sheet.name} · ${action.kind}`); }
+      try { state.phoneReplies[hero.id]=globalThis.ECHO_PLAYER_TOOLS.receive(campaignIndex.tableExtras,state.party,action); void saveCampaignIndex(); commit(`Player companion: ${sheet.name} · ${action.kind}`);if(action.kind==='share-clue')actionReceipt({title:'Clue sharing',status:'resolved',committed:['Clue published to the shared party journal.'],pending:[],undo:'conditional'}); }
       catch(error) { state.phoneReplies[hero.id]=error.message;commit('Player companion request needs correction'); } return;
     }
     if (['action-request','action-revise','action-cancel'].includes(action.kind)) {
@@ -2186,6 +1931,7 @@
   }
 
   function postToDM(message) {
+    if(IS_PRIVATE_PREVIEW)return;
     if (tvChannel) tvChannel.postMessage({ ...message, clientId: tvClientId, toDm: message.kind === 'hello' ? '' : activeDmId });
     else window.opener?.postMessage(message, '*');
   }
@@ -2207,14 +1953,18 @@
   }
 
   function connectionHealth() {
-    return globalThis.ECHO_CONNECTION_HEALTH.tv(livePlayerClients().map(([, info]) => info));
+    const clients=livePlayerClients().map(([, info]) => info),health=globalThis.ECHO_CONNECTION_HEALTH.tv(clients);
+    if(clients.length){const seen=Math.min(...clients.map(info=>info.heartbeat||0)),applied=Math.min(...clients.map(info=>info.ackRevision||0)),sent=Math.max(...clients.map(info=>info.sentRevision||0));
+      health.details=`Last seen ${seen?Math.max(0,Math.round((Date.now()-seen)/1000))+'s ago':'never'} · applied update ${applied}/${sent}`;}
+    return health;
   }
 
   function updateConnection() {
     if (IS_PLAYER) return;
     const el = $('connection-status');
     const health = connectionHealth();
-    el.textContent = `Player TV ${health.label}`;
+    el.textContent = `Player TV ${health.label}${health.details?' · '+health.details:''}`;
+    el.title = el.textContent;
     el.classList.toggle('connected', health.level === 'connected');
     el.classList.toggle('stale', health.level === 'stale');
     $('resync-player').hidden = health.level === 'connected';
@@ -2273,8 +2023,10 @@
     rememberDungeon();
     syncPartyFromTokens();
     globalThis.ECHO_COMBAT_PLUS?.syncAreas(state);
-    const nextSnapshot = gameSnapshot(state);
+    let nextSnapshot = gameSnapshot(state);
     if (nextSnapshot !== lastCommittedSnapshot) {
+      state.commandRevision = (globalThis.ECHO_COMMANDS?.revision(state) ?? state.commandRevision ?? 0) + 1;
+      nextSnapshot = gameSnapshot(state);
       globalThis.ECHO_ATMOSPHERE?.changes(JSON.parse(lastCommittedSnapshot),state);
       const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
       const description = label || describeChange(JSON.parse(lastCommittedSnapshot), JSON.parse(nextSnapshot));
@@ -2319,6 +2071,7 @@
       void saveCampaignIndex();
     }
     saveLocal(); renderDM(); sendToPlayer();
+    actionReceipt({title:step.label,status:'undone',pending:['Review the restored state before trying the action again.']});
     toast(`Undid: ${step.label}`);
   }
 
@@ -2401,6 +2154,16 @@
     commit(`Battle map: ${item.title}`);
   }
 
+  function navigationMarkerContext() {
+    const d=campaignContinuity(),prep=campaignIndex.story.questPrep||{links:{},boards:{}},beats=sessionRunbook(),scenes=sceneEntries();
+    const quests=globalThis.ECHO_QUEST_PREP.cards(d),profiles={};
+    for(const q of quests){const seed=globalThis.ECHO_QUEST_PREP_DATA?.records[q.id]||{},links=prep.links?.[q.id]||{};profiles[q.id]=Object.fromEntries(['events','npcs','beats','scenes'].map(k=>[k,[...new Set([...(seed[k]||[]),...(links[k]||[])])]]));}
+    const ctx={continuity:d,prep,story:campaignIndex.story,beats,scenes,encounters:sessionEncounters(),media:campaignIndex.presentation?.media||[],roster:state.tokens.filter(t=>t.team==='pc').map(t=>({id:t.id,name:t.name})),sessionId:activeSessionId,targetExists:true,targetSceneIds:scenes.map(x=>x.id),targetEncounterIds:sessionEncounters().map(x=>x.id)};
+    return {events:globalThis.ECHO_CONTINUITY.effective(d).filter(e=>e.approved&&e.status!=='planned'),quests,profiles,
+      leads:(prep.boards?.[activeSessionId]?.leads||[]).map(l=>({...l,reviewCurrent:globalThis.ECHO_QUEST_PREP.readiness(ctx,l).reviewed})),
+      npcs:campaignIndex.story.npcs.map(n=>({id:n.id,name:n.name})),names:globalThis.ECHO_QUEST_PREP_DATA?.names||{},places:campaignIndex.tableExtras.travel?.places||[]};
+  }
+  function navigationSourceMarkers(){return globalThis.ECHO_BOOT?.echo===false?[]:(globalThis.ECHO_SESSION_MAP_DATA?.maps||[]).flatMap(map=>map.rooms.map(r=>({scene:map.id,point:map.id+'-'+r.id,title:map.title+' · '+r.id+' · '+r.title,visible:false,approved:false,clue:'',revealable:false}))); }
   async function questPrepContext(sessionId) {
     let target = sessionId === activeSessionId ? state : null;
     if (!target && sessionId !== 'next') {
@@ -2499,6 +2262,7 @@
   }
 
   function saveStory(label) {
+    campaignIndex.story.commandRevision = globalThis.ECHO_COMMANDS.revision(campaignIndex.story) + 1;
     globalThis.ECHO_SETTLEMENTS_UI?.refresh();
     if(globalThis.ECHO_SETTLEMENTS&&$('quick-settlements')){const count=globalThis.ECHO_SETTLEMENTS.due(globalThis.ECHO_SETTLEMENTS.data(campaignIndex.tableExtras)).length;$('quick-settlements').textContent=`♜ Towns${count?' ('+count+' due)':''}`;}
     $('runbook-content').dataset.current = '';
@@ -2567,6 +2331,46 @@
     commit();
   }
 
+  function aftermathEncounter() {
+    const encounters=sessionEncounters(),ids=state.turn.order.map(getToken).filter(t=>t?.encounter).map(t=>t.encounter);
+    return ids.includes(selectedEncounter)?selectedEncounter:ids.find(id=>encounters.some(e=>e.id===id))||selectedEncounter||encounters[0]?.id||'';
+  }
+  function ensureAftermath(id) {
+    if(!sessionEncounters().some(e=>e.id===id))throw Error('Choose an available encounter.');
+    const p=state.combat.plans[id] ||= globalThis.ECHO_COMBAT_DATA.normalizePlan(null,id);
+    const a=globalThis.ECHO_COMBAT_AFTERMATH.start(p,{sessionId:activeSessionId,encounterId:id,sceneId:state.turn.scene||state.scene,beatId:state.runbook},!!p.aftermath&&(p.aftermath.sessionId!==activeSessionId||p.aftermath.encounterId!==id));if(state.turn.order.length&&!state.combat.aftermathRunKey)state.combat.aftermathRunKey=a.runKey;return a;
+  }
+  function openCombatAftermath(id=aftermathEncounter()) {globalThis.ECHO_COMBAT_UI.open('wrap',id);}
+  function reviewCombatAftermath(id) {
+    const a=ensureAftermath(id),p=state.combat.plans[id],encounter=sessionEncounters().find(e=>e.id===id);
+    a.step=3;commit('Saved aftermath review position');
+    const A=globalThis.ECHO_COMBAT_AFTERMATH,values=A.values(p,{name:encounter.name,sessionName:campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session'}),old=A.record(campaignContinuity(),a.runKey),pending=A.draft(campaignContinuity(),a.runKey);
+    const nav=globalThis.ECHO_SESSION_MAP?.selection();if(nav?.markerId&&nav.beatId===a.beatId)values.markers=[{scene:nav.board,point:nav.markerId,reveal:false}];
+    const beat=sessionRunbook().find(b=>b.id===a.beatId);if(beat)values.sceneGuide=globalThis.ECHO_ENCOUNTER_FLOW?.reviewContext(activeCampaignId+'/'+activeSessionId,beat);
+    globalThis.ECHO_STORY_UI.outcome(values);
+    if(old&&!pending&&a.reviewedNotes&&a.reviewedNotes!==A.notesSignature(p)){const draft=A.draft(campaignContinuity(),a.runKey);draft.event.detail=values.detail;draft.event.combatAftermath=values.combatAftermath;saveStory('Prepared latest aftermath notes as a correction');globalThis.ECHO_STORY_UI.render();}
+  }
+  function finishCombatAftermath(id) {
+    const a=ensureAftermath(id),e=globalThis.ECHO_COMBAT_AFTERMATH.approved(campaignContinuity(),a.runKey);
+    if(!e)throw Error('Apply the reviewed aftermath before finishing.');
+    if(a.reviewedNotes&&a.reviewedNotes!==globalThis.ECHO_COMBAT_AFTERMATH.notesSignature(state.combat.plans[id]))throw Error('Private aftermath notes changed. Review their correction before finishing.');
+    if(a.sessionId!==activeSessionId||(state.turn.order.length&&(state.turn.scene!==a.sceneId||state.combat.aftermathRunKey!==a.runKey)))throw Error('The active fight changed. Reopen its aftermath.');
+    if(state.combatPlus?.pauses?.some(p=>p.status==='open'&&p.scene===a.sceneId))throw Error('Resolve the current reaction before ending initiative.');
+    if(['retreat','escape','unresolved'].includes(e.combatAftermath.ending)&&state.turn.order.length)a.pausedTurn=structuredClone(state.turn);
+    if(a.finished&&!state.turn.order.length){globalThis.ECHO_SESSION_MAP?.back();return;}
+    a.finished=true;a.step=4;
+    state.turn={scene:'',round:0,order:[],index:0};state.combatRun.initiativePrompt.open=false;
+    // Outstanding reviews, queues, effects and phone requests remain available.
+    commit('Finished reviewed combat aftermath; pending items retained');
+    globalThis.ECHO_SESSION_MAP?.back();
+  }
+  function resumeCombatAftermath(id) {
+    const a=ensureAftermath(id);if(!a.pausedTurn)throw Error('This aftermath has no paused turn order.');
+    if(state.turn.order.length)throw Error('Finish or pause the active fight before resuming another.');if(state.scene!==a.pausedTurn.scene)throw Error('Preview and explicitly show the saved battlefield before resuming this fight.');
+    state.turn=structuredClone(a.pausedTurn);state.combat.aftermathRunKey=a.runKey;a.pausedTurn=null;a.finished=false;
+    commit('Resumed paused combat with saved initiative');globalThis.ECHO_HYBRID_UI.go('combat');
+  }
+
   function buildTurnOrder() {
     if (!currentIsMap()) { toast('Choose a battle map before building turn order.'); return; }
     const missing = state.tokens.filter(t => t.placed && t.scene === state.scene &&
@@ -2575,6 +2379,7 @@
     const combatants = state.tokens.filter(t => t.placed && t.scene === state.scene &&
       t.initiative !== null && (t.team !== 'enemy' || t.hp > 0));
     if (!combatants.length) { toast('Place combatants and enter or roll their initiative first.'); return; }
+    const startingNewFight=!state.turn.order.length||state.turn.scene!==state.scene;
     if (!state.turn.round) void captureRestorePoint('Before combat', 'automatic').catch(() => {});
     combatants.sort((a, b) => b.initiative - a.initiative);
     const activeId = state.turn.order[state.turn.index];
@@ -2583,6 +2388,7 @@
       round: state.turn.scene === state.scene && state.turn.round > 0 ? state.turn.round : 1,
       order, index: Math.max(0, order.indexOf(activeId)) };
     state.combatRun.initiativePrompt.open = false;
+    if(startingNewFight){const id=aftermathEncounter();if(id){const p=state.combat.plans[id] ||= globalThis.ECHO_COMBAT_DATA.normalizePlan(null,id);globalThis.ECHO_COMBAT_AFTERMATH.start(p,{sessionId:activeSessionId,encounterId:id,sceneId:state.scene,beatId:state.runbook},true);state.combat.aftermathRunKey=p.aftermath.runKey;}}
     if (!activeId) processTurnPoint(order[0], 'start');
     commit();
     if (combatants.some((t, index) => index && t.initiative === combatants[index - 1].initiative))
@@ -2698,15 +2504,17 @@
       ? state.turn?.round > 0 && state.turn.activeId === t.id
       : state.turn?.round > 0 && state.turn.scene === state.scene && state.turn.order[state.turn.index] === t.id;
     el.className = `token ${t.team}${mode === 'dm' && !t.visible ? ' hidden-enemy' : ''}${t.hp === 0 || t.defeated ? ' defeated' : ''}${due ? ' status-due' : ''}${concentrating ? ' status-concentrating' : ''}${activeTurn ? ' active-turn' : ''}`;
+    el.dataset.tokenId=t.id;
     el.style.left = `${t.x}%`;
     el.style.top = `${t.y}%`;
     const meta = state.map?.tokenMeta?.[t.id] || {};
     const size = { tiny: .55, small: .8, medium: 1, large: 1.5, huge: 2, gargantuan: 2.5 }[meta.size] || 1;
     el.style.setProperty('--token-scale', String(size));
-    if(mode==='dm'&&globalThis.ECHO_COMBAT_RUN?.targetId?.()===t.id)el.classList.add('combat-targeted');
+    if(mode==='dm'&&globalThis.ECHO_COMBAT_RUN?.targetId?.()===t.id){el.classList.add('combat-targeted');const mark=document.createElement('span');mark.className='token-target-flag';mark.textContent='◎ TARGET';el.append(mark);}
+    if(mode==='dm'&&selectedTokenId===t.id){el.classList.add('token-selected');const mark=document.createElement('span');mark.className='token-selected-flag';mark.textContent='□ SELECTED';el.append(mark);}
     if (mode === 'dm') el.dataset.hp = t.maxHp === 0 ? '?' : `${t.hp}${t.tempHp ? `+${t.tempHp}` : ''}`;
     el.title = t.name;
-    if(mode==='dm'){el.tabIndex=0;el.setAttribute('aria-label',t.name+' · Enter for card; Shift+F10 for quick actions');el.addEventListener('contextmenu',event=>{event.preventDefault();event.stopPropagation();globalThis.ECHO_DM_DESK_UI?.openToken(t.id);});el.addEventListener('keydown',event=>{if(event.key==='ContextMenu'||event.shiftKey&&event.key==='F10'){event.preventDefault();globalThis.ECHO_DM_DESK_UI?.openToken(t.id);}else if(event.key==='Enter'){event.preventDefault();openCombatCard(t.id);}});}
+    if(mode==='dm'){el.tabIndex=0;el.setAttribute('aria-label',t.name+' · Enter for card; arrow keys move 1% of map; Shift+F10 for quick actions');el.addEventListener('contextmenu',event=>{event.preventDefault();event.stopPropagation();globalThis.ECHO_DM_DESK_UI?.openToken(t.id);});el.addEventListener('keydown',event=>{if(event.key==='ContextMenu'||event.shiftKey&&event.key==='F10'){event.preventDefault();globalThis.ECHO_DM_DESK_UI?.openToken(t.id);}else if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(event.key)){event.preventDefault();event.stopPropagation();const current=getToken(t.id);if(!current||!currentIsMap())return;const delta={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0]}[event.key];placeTokensDirect(t.id,{x:Math.max(0,Math.min(100,current.x+delta[0])),y:Math.max(0,Math.min(100,current.y+delta[1]))});document.querySelector('#dm-stage .token[data-token-id="'+t.id+'"]')?.focus();}else if(event.key==='Enter'){event.preventDefault();openCombatCard(t.id);}});}
     const portrait = mode === 'dm' ? resolveImage(meta.portrait || '') : safeImageSource(meta.portrait || '');
     if (portrait) { const image = document.createElement('img'); image.className = 'token-portrait'; image.src = portrait; image.alt = ''; el.appendChild(image); }
     else el.innerHTML = iconMarkup(t.type, t.label);
@@ -2733,30 +2541,21 @@
   }
 
   function placeTokensDirect(actorId, destination) {
-    const actor = getToken(actorId);
-    if (!actor?.placed || actor.scene !== state.scene) throw Error('Choose a token on this map.');
-    const group = state.map?.group?.includes(actorId) ? state.map.group : [actorId];
-    const tokens = [...new Set(group)].map(getToken).filter(t => t?.placed && t.scene === state.scene);
-    const dx = destination.x - actor.x, dy = destination.y - actor.y;
-    let next = state, changed = false;
-    const notes = [];
-    for (const t of tokens) {
-      const end = { x: pointValue(t.x + dx), y: pointValue(t.y + dy) };
-      const result = globalThis.ECHO_COMBAT_PLUS.placeToken(next, t.id, end,
-        getScene(state.scene)?.gridColumns || MAP_SQUARES_ACROSS);
-      next = result.state;
-      changed ||= result.changed;
-      notes.push(...result.notes);
-    }
-    if (!changed) { renderStage('dm'); return; }
-    state = next;
-    commit(`Moved ${tokens.map(t => t.name).join(', ')}`);
-    if (notes.length) toast([...new Set(notes)].join(' '));
+    const plan = globalThis.ECHO_COMMANDS.prepare(state, { type: 'move-token', actorId,
+      x: destination.x, y: destination.y,
+      groupIds: state.map?.group?.includes(actorId) ? state.map.group : [actorId],
+      columns: getScene(state.scene)?.gridColumns || MAP_SQUARES_ACROSS,
+      expectedRevision: globalThis.ECHO_COMMANDS.revision(state) }, { pointValue });
+    if (!plan.changed) { renderStage('dm'); return; }
+    state = globalThis.ECHO_COMMANDS.apply(state, plan);
+    commit(plan.label);
+    if (plan.effects.length > 1) toast(plan.effects.slice(1).join(' '));
   }
 
   function beginTokenDrag(event, el, t, stage, mode) {
     if (event.button !== 0) return;
     const tool = activeMapTool;
+    if (mode === 'dm' && ['ruler','circle','cone','square','line'].includes(tool)) { beginMapTool(event, stage); return; }
     event.preventDefault();
     event.stopPropagation();
     el.setPointerCapture(event.pointerId);
@@ -2776,8 +2575,12 @@
       if(e.type==='pointercancel'){renderStage(mode);return;}
       if (!moved) {
         if (mode === 'dm' && tool === 'target') {
-          if (contextTab === 'requests') globalThis.ECHO_PHONE_ACTIONS_UI?.addTarget(t.id);
-          else { globalThis.ECHO_COMBAT_RUN?.target(t.id); contextTab = 'turn'; renderContextSidebar(); }
+          if (globalThis.ECHO_PHONE_ACTIONS_UI?.active?.()) globalThis.ECHO_PHONE_ACTIONS_UI.addTarget(t.id);
+          else {
+            globalThis.ECHO_COMBAT_RUN?.target(t.id);
+            if (globalThis.ECHO_HYBRID_UI?.current() === 'combat') globalThis.ECHO_HYBRID_UI.closeDrawer();
+            else { contextTab = 'turn'; renderContextSidebar(); }
+          }
           renderStage('dm');
         } else if (mode === 'dm') openCombatCard(t.id);
         return;
@@ -2894,7 +2697,7 @@
     for (const button of document.querySelectorAll('[data-map-tool]'))
       button.classList.toggle('active', button.dataset.mapTool === tool);
     $('map-tool-hint').textContent = tool === 'move' ? TOWN_MAP_IDS.includes(state.scene) ? 'Click stars to inspect locations; drag any token to move it.' : 'Drag any token to move it immediately. Click shaded squares to reveal.'
-      : tool==='target'?'Click a token to target it; drag it to move it.':tool==='ruler'?'Drag on empty map to measure. Drag a token to move it.':tool === 'ping' ? 'Click the map to point something out on the TV.'
+      : tool==='target'?'Click a token to target it; drag it to move it.':tool==='ruler'?'Drag anywhere, including a token, to measure. Choose Move to drag tokens.':tool === 'ping' ? 'Click the map to point something out on the TV.'
         : ['point', 'light', 'link'].includes(tool) ? `Click the map to place a ${tool}.`
           : tool === 'pan' ? 'Drag the map to pan.' : `Drag on the map to draw a ${tool}.`;
   }
@@ -2975,10 +2778,15 @@
     stage.addEventListener('pointercancel', finish);
   }
 
+  const stageRenderKeys = new WeakMap();
   function renderStage(mode) {
     const started = globalThis.performance?.now?.() || Date.now();
     const stage = $(mode === 'dm' ? 'dm-stage' : 'player-stage');
     const scene = state.scene;
+    const currentKey=mode==='player'?JSON.stringify({...state, atmosphere:state.atmosphere?{...state.atmosphere,pulses:(state.atmosphere.pulses||[]).filter(p=>Date.now()-p.at<1600)}:null}):null;
+    if(currentKey&&stageRenderKeys.get(stage)===currentKey&&stage.childElementCount)return;
+    const retainedImage=stage.querySelector('img.scene-image');
+    stageRenderKeys.delete(stage);
     stage.className = `stage ${mapPreviewMode && mode === 'dm' ? 'player' : mode}-view scene-${scene}`;
     stage.replaceChildren();
     stage.onpointerdown = null; stage.ondragover = null; stage.ondrop = null;
@@ -2992,13 +2800,13 @@
       const crop = document.createElement('div');
       crop.className = 'interior-crop';
       const image = document.createElement('img');
-      image.src = SCENES.interior.image;
+      image.src = resolveImage(sceneData.image);
       image.alt = 'Cragmaw Hideout interior map';
       image.draggable = false;
       crop.appendChild(image);
       stage.appendChild(crop);
     } else if (visibility?.map !== false && sceneImage(visibility?.grid !== false)) {
-      const image = document.createElement('img');
+      const image = retainedImage?.getAttribute('src')===sceneImage(visibility?.grid !== false)?retainedImage:document.createElement('img');
       image.className = `scene-image${scene === 'cover' ? ' cover' : ''}`;
       image.src = sceneImage(visibility?.grid !== false);
       image.alt = sceneData.title;
@@ -3162,6 +2970,7 @@
         commit();
       };
     }
+    if(currentKey)stageRenderKeys.set(stage,currentKey);
     lastMapRenderMs = (globalThis.performance?.now?.() || Date.now()) - started;
   }
 
@@ -3199,6 +3008,8 @@
   function createRosterRow(t) {
     const row = document.createElement('div');
     row.className = 'roster-row';
+    // Cached row handlers must follow the current token after immutable commands/Undo.
+    for(const type of ['pointerdown','click','change','dragstart'])row.addEventListener(type,()=>{t=getToken(t.id)||t;},true);
     const top = document.createElement('div');
     top.className = 'roster-top';
     const icon = document.createElement('div');
@@ -3303,13 +3114,17 @@
     return row;
   }
 
+  let rosterRenderKey='';
   function renderRosters() {
+    const encounters = sessionEncounters();
+    const nextKey=JSON.stringify([state.scene,state.sessionKind,selectedEncounter,encounters,state.tokens.map(({x,y,...t})=>t),state.combat?.creatures]);
+    if(nextKey===rosterRenderKey&&$('party-roster').childElementCount)return;
+    rosterRenderKey=nextKey;
     const party = $('party-roster');
     party.replaceChildren();
     for (const t of state.tokens.filter(t => t.team !== 'enemy')) party.appendChild(createRosterRow(t));
     const enemies = $('enemy-roster');
     enemies.replaceChildren();
-    const encounters = sessionEncounters();
     const groups = selectedEncounter === 'all' ? encounters : encounters.filter(e => e.id === selectedEncounter);
     for (const encounter of groups) {
       const note = document.createElement('p');
@@ -3373,11 +3188,20 @@
     }
   }
 
+  function stageCombatAction(actorId, actionType, actionIndex, targetIds=[], casting=null) {
+    const actor=getToken(actorId),attacks=globalThis.ECHO_COMBAT_RUN.attackChoices(actor);
+    const sequence=globalThis.ECHO_COMBAT_RUN.sequence(actor,attacks);
+    const sequenceStep=state.party[actorId]?-1:sequence.findIndex((step,i)=>!state.combatRun.queue.done[i]&&step.attackIndex===actionIndex);
+    const request=globalThis.ECHO_COMBAT_ACTIONS.stage(state,{actorId,actionType,actionIndex,targetIds,casting,sequenceStep});
+    commit(`Staged ${actor.name}: ${request.label}`);
+    globalThis.ECHO_PHONE_ACTIONS_UI.open(request.id);
+  }
+
   function setPhoneActionStatus(id,status,message) {
     const row=globalThis.ECHO_PHONE_ACTIONS.data(state).requests.find(r=>r.id===id);
     if(!row || !globalThis.ECHO_PHONE_ACTIONS.pending(row)) return;
     row.revision++; globalThis.ECHO_PHONE_ACTIONS.transition(row,status,message);
-    state.phoneReplies[row.characterId]=`${row.label}: ${message}`;
+    if(row.source!=='dm')state.phoneReplies[row.characterId]=`${row.label}: ${message}`;
     commit(`${row.label}: ${status}`);
   }
 
@@ -3434,14 +3258,14 @@
         quote.className = 'runbook-read';
         quote.textContent = paragraph;
         article.appendChild(quote);
-        addSmallButton(article, 'Show text on TV', () => globalThis.ECHO_TV_TEXT?.add(heading, paragraph));
+        addSmallButton(article, 'Preview text for TV', () => globalThis.ECHO_TV_TEXT?.preview(heading, paragraph));
       }
     } else {
       const list = document.createElement('ul');
       for (const entry of entries) {
         const item = document.createElement('li');
         item.textContent = entry;
-        if (heading === 'Ask the players') addSmallButton(item, 'Show on TV', () => globalThis.ECHO_TV_TEXT?.add(heading, entry));
+        if (heading === 'Ask the players') addSmallButton(item, 'Preview for TV', () => globalThis.ECHO_TV_TEXT?.preview(heading, entry));
         list.appendChild(item);
       }
       article.appendChild(list);
@@ -3499,10 +3323,10 @@
       article.appendChild(cue);
     }
     if (beat.scene && getScene(beat.scene)) {
-      addSmallButton(article, 'Show this visual on TV', () => changeScene(beat.scene, false), 'runbook-show');
+      addSmallButton(article, 'Preview this visual', () => {previewSceneId=beat.scene;contextTab='scene';renderContextSidebar();globalThis.ECHO_HYBRID_UI?.openDrawer();}, 'runbook-show');
     }
     if (['s2-arrival', 's2-town'].includes(beat.id))
-      addSmallButton(article, 'Open Phandalin town map', () => changeScene('town-phandalin', false), 'runbook-show');
+      addSmallButton(article, 'Preview Phandalin town map', () => {previewSceneId='town-phandalin';contextTab='scene';renderContextSidebar();globalThis.ECHO_HYBRID_UI?.openDrawer();}, 'runbook-show');
     if (beat.id.startsWith('mc-')) addSmallButton(article,'Open Mending Court',()=>globalThis.ECHO_STORY_UI?.open('courtyard'));
     if (beat.id.startsWith('tr-') || ['s4-homecoming','s4-beyond'].includes(beat.id)) addSmallButton(article,'Prepare Phandalin → Waterdeep',()=>globalThis.ECHO_STORY_UI?.open('transition'));
     if (beat.id.startsWith('s4-')) addSmallButton(article, 'Wave Echo journal', () => globalThis.ECHO_STORY_UI?.open('wave-echo'));
@@ -3522,8 +3346,7 @@
         const label = document.createElement('span');
         label.textContent = `${item.key} · ${item.title} — ${item.reveal}`;
         row.appendChild(label);
-        addSmallButton(row, 'Preview', () => globalThis.ECHO_PRESENTATION?.open('art', item.id));
-        addSmallButton(row, 'Show on TV', () => globalThis.ECHO_PRESENTATION?.showCatalogArt(item.id));
+        addSmallButton(row, 'Preview & show', () => globalThis.ECHO_PRESENTATION?.open('art', item.id));
         details.appendChild(row);
       }
       article.appendChild(details);
@@ -3655,18 +3478,20 @@
   function renderPlayerTurnBar() {
     const turn = state.turn || { round: 0, order: [], activeId: null };
     const order = Array.isArray(turn.order) ? turn.order : [];
+    $('player-app').classList.toggle('player-combat-active', order.length > 0 || Boolean(state.publicRoll));
     const list = $('player-turn-list');
     list.replaceChildren();
     const active = order.find(t => t.id === turn.activeId);
     $('player-turn-summary').textContent = order.length
       ? `Round ${turn.round}${active ? ` · ${active.name}’s turn` : ''}`
       : 'Waiting for combat';
-    for (const t of order) {
+    for (const [index,t] of order.entries()) {
       const chip = document.createElement('span');
       chip.className = `turn-chip${t.id === turn.activeId ? ' active' : ''}`;
-      chip.textContent = `${t.name} · ${t.initiative ?? '—'}`;
+      chip.textContent = state.map?.display?.tvPreset!=='classic'?`${t.id===turn.activeId?'▶':index+1} ${t.name}`:`${t.name} · ${t.initiative ?? '—'}`;chip.setAttribute('aria-label',`${index+1}. ${t.name}${t.id===turn.activeId?' · active turn':''}`);
       list.appendChild(chip);
     }
+    if(state.map?.display?.tvPreset!=='classic')requestAnimationFrame(()=>{const current=list.querySelector('.active');if(current)list.scrollLeft=Math.max(0,current.offsetLeft-list.offsetLeft-list.clientWidth/2+current.clientWidth/2);});
     const banner = $('player-roll-banner');
     const roll = state.publicRoll;
     banner.hidden = !roll;
@@ -4027,6 +3852,7 @@
     const sourceScene = getScene(choice.sceneId), scene = sourceScene && {...sourceScene,id:choice.sceneId};
     if (!encounter || scene?.kind !== 'map') { toast('This encounter needs a prepared battle map.'); return; }
     const beat = sessionRunbook().find(item => item.id === choice.beatId);
+    if(state.combat.plans[encounter.id])state.combat.plans[encounter.id].sceneId=scene.id;
     changeScene(scene.id, false, false);
     if (choice.place) {
       const plan = state.combat.plans[encounter.id];
@@ -4035,7 +3861,7 @@
       let position = 0;
       for (const id of members) {
         const token = getToken(id); if (!token || token.hp <= 0) continue;
-        const saved = wave?.positions?.[id];
+        const saved = wave&&globalThis.ECHO_COMBAT_DATA.positionFor(wave,id,scene.id,globalThis.ECHO_COMBAT_DATA.expectedScene(encounter.id));
         const sameMap = token.placed && token.scene === scene.id;
         token.placed = true; token.scene = scene.id;
         token.x = saved?.x ?? (sameMap ? token.x : Math.min(90, 30 + position * 8));
@@ -4074,15 +3900,17 @@
     if (!getScene(previewSceneId)) previewSceneId = state.scene;
     const scene = getScene(previewSceneId);
     if (scene) {
-      const heading = document.createElement('h3'); heading.textContent = scene.title; sceneRoot.append(heading);
+      const heading = document.createElement('h3'); heading.textContent = scene.title.split(' · ').filter((part,index,all)=>index===0||part!==all[index-1]).join(' · '); sceneRoot.append(heading);
       sidebarLine(sceneRoot, 'Type', scene.kind === 'map' ? 'Interactive map' : 'Illustration');
       sidebarLine(sceneRoot, 'TV status', previewSceneId === state.scene ? 'Current scene' : 'DM preview only');
       const floorPreview=pendingFloorFocus(),section=floorPreview&&globalThis.ECHO_ATLAS.proposal(floorPreview.proposalId);
       if(section)sidebarLine(sceneRoot,'Prepared section',section.title+' · current saved fog will remain');
       const preview = resolveImage(section?.proposalImage || scene.image || '');
-      if (preview) { const img = document.createElement('img'); img.className = 'context-scene-preview'; img.src = preview; img.alt = `DM preview of ${scene.title}`; sceneRoot.append(img); }
-      const show = document.createElement('button'); show.type = 'button'; show.textContent = 'Show on TV';
-      show.disabled = !floorPreview && previewSceneId === state.scene && ((scene.kind === 'map' && state.presentation.mode === 'battle') || (scene.kind !== 'map' && state.presentation.mode === 'scene'));
+      if (preview) { const img = document.createElement('img'); img.className = 'context-scene-preview'; img.src = preview; img.alt = `DM preview of ${scene.title}`; sceneRoot.append(img);img.hidden=true; }
+      const staged=document.createElement('section');staged.className='tv-staging-card';const status=document.createElement('strong');status.textContent=previewSceneId===state.scene&&state.presentation.mode===(scene.kind==='map'?'battle':'scene')?'Current TV presentation · player audience':'Ready to show · private preview · player audience';staged.append(status);const exact=document.createElement('div');staged.append(exact);sceneRoot.append(staged);mountPrivatePreview(exact,previewSceneId,'staged');
+      const live=document.createElement('details');const summary=document.createElement('summary');summary.textContent='Now showing · exact player view';live.append(summary);const currentPreview=document.createElement('div');live.append(currentPreview);sceneRoot.append(live);live.ontoggle=()=>{if(live.open)mountPrivatePreview(currentPreview,'','live');};
+      const show = document.createElement('button'); show.type = 'button'; show.textContent = 'Show on TV';show.className='primary';
+      show.disabled = !floorPreview && !state.presentation.mediaId && previewSceneId === state.scene && ((scene.kind === 'map' && state.presentation.mode === 'battle') || (scene.kind !== 'map' && state.presentation.mode === 'scene'));
       show.addEventListener('click', showScenePreview); sceneRoot.append(show);
     }
     const filters=document.createElement('div');filters.className='cockpit-visual-filters';
@@ -4116,12 +3944,12 @@
       for (const clue of clues.slice(0, 30)) { const button = document.createElement('button'); button.type = 'button';
         button.textContent = clue.title; button.classList.toggle('active', clue.id === selectedClueId);
         button.addEventListener('click', () => { selectedClueId = clue.id; renderContextSidebar(); }); list.append(button); }
-      clueRoot.append(list);
+      const picker=document.createElement('details'),pickerTitle=document.createElement('summary');pickerTitle.textContent='Choose another clue';picker.append(pickerTitle,list);
       const clue = clues.find(item => item.id === selectedClueId);
       const heading = document.createElement('h3'); heading.textContent = clue.title; clueRoot.append(heading);
       sidebarLine(clueRoot, 'Status', clue.status); sidebarLine(clueRoot, 'Who knows', clue.whoKnows);
       sidebarLine(clueRoot, 'Players saw', clue.playerSaw); sidebarLine(clueRoot, 'DM detail', clue.detail);
-      const badge = document.createElement('small'); badge.textContent = 'DM ONLY · opens on the TV only when you explicitly publish it'; clueRoot.append(badge);
+      const badge = document.createElement('small'); badge.textContent = 'DM ONLY · opens on the TV only when you explicitly publish it'; clueRoot.append(badge,picker);
     }
   }
 
@@ -4202,7 +4030,7 @@
 
   function renderSessionSelect() {
     const select = $('session-select');
-    const packOrder = ['phandalin-session-2', 'gundren-session-3', 'lmop-part-4-visuals', 'phandalin-waterdeep-transition', 'mending-court-home', 'waterdeep-undermountain-1', 'silent-library-expedition', 'lmop-part-3-visuals', 'cragmaw-continuation'];
+    const packOrder = ['next-session-4','next-session-5','next-session-6','phandalin-aftermath-next', 'phandalin-session-2', 'gundren-session-3', 'lmop-part-4-visuals', 'phandalin-waterdeep-transition', 'mending-court-home', 'waterdeep-undermountain-1', 'silent-library-expedition', 'lmop-part-3-visuals', 'cragmaw-continuation'];
     const packs = (globalThis.ECHO_CONTENT_PACKS || []).filter(pack =>
       !campaignIndex.sessions.some(session => session.packId === pack.id ||
         session.name === (pack.defaultName || 'Cragmaw Hideout · continuation')))
@@ -4544,6 +4372,7 @@
   }
 
   function renderDM() {
+    globalThis.ECHO_ACTION_RECEIPTS?.setScope(activeCampaignId+'/'+activeSessionId);
     globalThis.ECHO_SETTLEMENTS_UI?.refresh();
     const townButton=$('quick-settlements');if(townButton&&globalThis.ECHO_SETTLEMENTS){const count=globalThis.ECHO_SETTLEMENTS.due(globalThis.ECHO_SETTLEMENTS.data(campaignIndex.tableExtras)).length;townButton.textContent=`♜ Towns${count?' ('+count+' due)':''}`;}
     globalThis.ECHO_ATMOSPHERE_UI?.sync();globalThis.ECHO_ATMOSPHERE_UI?.refresh();
@@ -4566,7 +4395,7 @@
     $('leader-temp-hp-label').hidden = !getToken('ally-dracuseth');
     $('leader-temp-hp').value = state.leaderTempHp;
     $('party-help').textContent = 'Current campaign sheets supply HP and AC. Damage uses temporary HP first; use Characters & party for sheet changes.';
-    $('dm-scene-title').textContent = getScene(state.scene)?.title || 'Scene';
+    $('dm-scene-title').textContent = displaySceneTitle(getScene(state.scene)?.title) || 'Scene';
     $('map-instruction').textContent = sceneHasFog()
       ? 'Drag across shaded squares to reveal this map.'
       : currentIsMap() ? 'Drag roster icons onto this map.' : 'Choose a battle map when combat begins.';
@@ -4598,12 +4427,19 @@
     globalThis.ECHO_GUIDED?.render();
     globalThis.ECHO_COCKPIT?.refresh();
     globalThis.ECHO_TABLE_FLOW?.render();
+    globalThis.ECHO_HYBRID_UI?.refresh();
   }
 
+  let tvInteraction=false;
+  function applyTVPresentation(){const app=$('player-app'),d=state.map?.display||{},quiet=d.tvPreset!=='classic';app.classList.toggle('tv-quiet',quiet);app.classList.toggle('tv-interaction',tvInteraction);for(const surface of app.querySelectorAll('.player-frame,.player-text-cards button,.player-handout button,.player-journal button,.player-character button,.player-presentation button'))surface.inert=!tvInteraction;app.dataset.objective=String(d.showObjective!==false);app.dataset.subtitles=String(d.showSubtitles!==false);app.style.setProperty('--tv-overlay-edge',Math.max(0,Math.min(15,Number(d.safeEdge)||0))+'%');const b=$('player-interaction-toggle');b.textContent=tvInteraction?'Interaction on · close controls':'Controls & interaction';b.setAttribute('aria-pressed',String(tvInteraction));b.title='Map interaction still requires DM permission';}
   function renderPlayer() {
     let practice=$('practice-tv-label');if(!practice){practice=document.createElement('div');practice.id='practice-tv-label';practice.textContent='PRACTICE CAMPAIGN';$('player-app').append(practice);}practice.hidden=!String(state.sessionName||'').startsWith('PRACTICE · ');
     if (!IS_PLAYER) return;
-    $('player-scene-title').textContent = getScene(state.scene)?.title || 'The Echo Below';
+    applyTVPresentation();
+    $('player-scene-title').textContent = globalThis.ECHO_MAP_DATA.displayTitle(displaySceneTitle(getScene(state.scene)?.title));
+    const calibration=$('player-calibration-overlay');
+    calibration.hidden=state.calibrationCheck!==true;
+    calibration.style.inset=`${Math.max(0,Math.min(15,Number(state.map?.display?.safeEdge)||0))}%`;
    $('player-hint').textContent = state.map?.playerInput === false ? 'The DM is guiding this scene.' : sceneHasFog()
      ? state.playerReveal ? 'Drag your hero; click dark areas to explore.' : 'Drag your hero; click dark areas to ask the DM to explore.'
       : TOWN_MAP_IDS.includes(state.scene) ? 'Click glowing stars to explore places. Drag your hero to move.'
@@ -4621,6 +4457,7 @@
     globalThis.ECHO_TABLE?.renderPlayer(state);
     globalThis.ECHO_ATMOSPHERE_VIEW?.finish(state);
     renderPlayerAtlas();
+    applyTVPresentation();
   }
 
   let playerJournalOpen = false;
@@ -4755,6 +4592,17 @@
     $('player-app').classList.toggle('portrait-display', display.orientation === 'portrait');
   }
 
+  function updatePlayerLink() {
+    if (!IS_PLAYER) return;
+    const age=Date.now()-(activeDmAt||playerStartedAt),stale=age>7500;
+    const status=$('player-link-status'),warning=$('player-link-warning');
+    status.dataset.state=stale?'stale':playerLastAppliedRevision?'current':'waiting';
+    status.textContent=stale?`DM disconnected · update ${playerLastAppliedRevision||'none'}`:
+      playerLastAppliedRevision?`DM seen ${Math.max(0,Math.round(age/1000))}s ago · update ${playerLastAppliedRevision}`:'Waiting for DM · no update yet';
+    warning.hidden=!stale;
+    if(stale)warning.textContent=`TV connection lost · this view may be out of date. Last update ${playerLastAppliedRevision||'none'}${activeDmAt?' at '+new Date(activeDmAt).toLocaleTimeString():''}. Ask the DM to resync.`;
+  }
+
   function handlePlayerMessage(event) {
     if (tvChannel ? !event.broadcast : event.source !== window.opener) return;
     const data = event.data;
@@ -4766,14 +4614,17 @@
       activeDmStartedAt = data.dmStartedAt;
       activeDmAt = Date.now();
     }
-    if (data.kind === 'dm-heartbeat') return;
+    if (data.kind === 'dm-heartbeat') { activeDmAt=Date.now(); updatePlayerLink(); return; }
     if (data.kind === 'media-asset') { globalThis.ECHO_PRESENTATION?.receiveMedia(data.id, data.blob); return; }
     if (data.kind !== 'state') return;
     try {
+      activeDmAt=Date.now();
       state = data.payload;
       $('player-app').classList.toggle('reduce-motion', state.reduceMotion === true);
       renderPlayer();
       connected = true;
+      playerLastAppliedRevision=data.revision;
+      updatePlayerLink();
       document.getElementById('player-sync-error')?.remove();
       postToDM({ app: APP, kind: 'ack', revision: data.revision });
     } catch (error) {
@@ -4792,6 +4643,8 @@
     $('dm-app').hidden = true;
     $('player-app').hidden = false;
     document.title = 'The Echo Below — Player Battlefield';
+    $('player-interaction-toggle').addEventListener('click',()=>{tvInteraction=!tvInteraction;applyTVPresentation();});window.addEventListener('keydown',event=>{if(event.key==='Escape'&&tvInteraction){tvInteraction=false;applyTVPresentation();}});
+    if(IS_PRIVATE_PREVIEW){document.body.classList.add('private-tv-preview');globalThis.ECHO_TV_LINK={sendToDM:message=>{if(message.kind==='media-request')window.parent.postMessage({...message,kind:'preview-media-request'},'*');}};window.addEventListener('message',event=>{if(event.source!==window.parent||event.data?.app!==APP)return;if(event.data.kind==='preview-media'){globalThis.ECHO_PRESENTATION?.receiveMedia(event.data.id,event.data.blob);return;}if(event.data.kind!=='private-preview-state')return;state=event.data.payload;renderPlayer();});return;}
     $('player-fullscreen').addEventListener('click', () => {
       if (document.fullscreenElement) document.exitFullscreen();
       else document.documentElement.requestFullscreen();
@@ -4801,9 +4654,12 @@
     if (tvChannel) tvChannel.onmessage = event => handlePlayerMessage({ data: event.data, broadcast: true });
     globalThis.ECHO_TV_LINK = { sendToDM: postToDM };
     const bootId = `${Date.now()}-${Math.random()}`;
+    playerStartedAt=Date.now();
     const hello = () => postToDM({ app: APP, kind: 'hello', bootId, width: innerWidth, height: innerHeight, renderMs: lastMapRenderMs });
     hello();
     setInterval(hello, 2000);
+    setInterval(updatePlayerLink, 1000);
+    updatePlayerLink();
     window.addEventListener('resize', () => { applyDisplayCalibration(); hello(); });
     renderPlayer();
   }
@@ -4814,7 +4670,7 @@
 
   function deployEncounterWave(encounterId, index) {
     if (!currentIsMap()) { toast('Choose a battle map before deploying a wave.'); return; }
-    const requiredScene = globalThis.ECHO_COMBAT_DATA.expectedScene(encounterId);
+    const requiredScene = globalThis.ECHO_COMBAT_DATA.expectedScene(encounterId,state.combat.plans);
     if (requiredScene && state.scene !== requiredScene) {
       toast(`Show the ${getScene(requiredScene)?.title || 'matching'} map before deploying this wave.`);
       return;
@@ -4824,11 +4680,11 @@
     if (!wave) return;
     for (const [position, id] of wave.tokenIds.entries()) {
       const t = getToken(id);
-      if (!t) continue;
-      const point = wave.positions?.[id];
+      if (!t || t.hp<=0) continue;
+      const point = globalThis.ECHO_COMBAT_DATA.positionFor(wave,id,state.scene,globalThis.ECHO_COMBAT_DATA.expectedScene(encounterId)),sameMap=t.placed&&t.scene===state.scene;
       t.placed = true; t.scene = state.scene;
-      t.x = point?.x ?? Math.min(90, 30 + position * 8);
-      t.y = point?.y ?? 40;
+      t.x = sameMap?t.x:point?.x ?? Math.min(90, 30 + position * 8);
+      t.y = sameMap?t.y:point?.y ?? 40;
     }
     wave.deployed = true;
     commit(`Deployed ${wave.name}`);
@@ -4887,38 +4743,12 @@
   }
 
   function applyReviewedDamage(draft) {
-    const changed = [];
-    let visibleHit = false, visibleCondition = false;
-    for (const id of [...new Set(draft.selected)]) {
-      const t = getToken(id);
-      if (!t) continue;
-      const record = combatTokenRecord(id);
-      const ruling = draft.overrides?.[id] || 'recorded';
-      const defense = ruling === 'recorded' ? record : {
-        resistances: ruling === 'resist' ? draft.type : '',
-        vulnerabilities: ruling === 'vulnerable' ? draft.type : '',
-        immunities: ruling === 'immune' ? draft.type : ''
-      };
-      const result = globalThis.ECHO_COMBAT_DATA.damagePreview(t, draft.amounts?.[id] ?? draft.amount,
-        draft.type, draft.mode === 'heal' ? 'heal' : 'damage', defense);
-      t.hp = result.hp; t.tempHp = result.tempHp;
-      const shownOnTV = publicState().tokens.some(token => token.id === id);
-      if (draft.mode !== 'heal' && result.adjusted > 0 && shownOnTV) visibleHit = true;
-      if (draft.conditions?.[id] && CONDITIONS.includes(draft.conditions[id])) {
-        t.conditions = [...new Set([...t.conditions, draft.conditions[id]])];
-        if (shownOnTV) visibleCondition = true;
-      }
-      if (draft.mode !== 'heal' && result.adjusted > 0 && record.concentration) {
-        if (t.hp === 0) { record.concentration = ''; t.conditions = t.conditions.filter(c => c !== 'Concentrating'); }
-        else state.combat.effects.push({ id: `effect-${Date.now()}-${Math.random()}`, tokenId: id,
-          name: `Concentration save DC ${Math.max(10, Math.floor(result.adjusted / 2))}`,
-          condition: '', triggerActor: id, triggerPoint: 'start', remaining: 0,
-          repeatSave: false, due: true, fired: true, note: 'Resolve now; this is a reminder, not automatic damage.' });
-      }
-      changed.push(`${t.name} ${t.hp} HP`);
-    }
-    commit(`${draft.mode === 'heal' ? 'Healed' : 'Damaged'}: ${changed.join(', ')}`);
-    // Target effects are generated by the committed HP/condition changes.
+    if(!draft.selected?.length)throw Error('Choose the damage or healing targets.');
+    const request=globalThis.ECHO_COMBAT_ACTIONS.stage(state,{actorId:draft.selected[0],actionType:'action',entry:{name:draft.label|| (draft.mode==='heal'?'Manual healing':'Manual damage'),type:'No action',effect:'DM correction / damage event. Review the actual amount, defenses, reactions, and follow-up effects.'},targetIds:draft.selected});
+    const plan=globalThis.ECHO_PHONE_ACTIONS.initialPlan(state,request);plan.effectRulingRequired=false;
+    plan.steps.forEach(step=>{const defense=draft.overrides?.[step.targetId]||'recorded';Object.assign(step,{kind:draft.mode==='heal'?'heal':'damage',notation:'',manual:draft.amounts?.[step.targetId]??draft.amount,damageType:draft.type,condition:draft.conditions?.[step.targetId]||'',overrides:{[step.targetId]:({recorded:'auto',normal:'none',resist:'resistances',vulnerable:'vulnerabilities',immune:'immunities'})[defense]},concentrationMethod:'reminder'});});
+    commit('Staged damage / healing review');
+    globalThis.ECHO_PHONE_ACTIONS_UI.open(request.id,plan);
   }
 
   function combatSaveBonus(id, ability) {
@@ -5029,13 +4859,43 @@
       panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
       $('tv-text-title').focus();
     });
+    const restoreEntries=new Map();
+    globalThis.ECHO_WHOLE_BACKUP?.init({
+      context:()=>({campaignId:activeCampaignId}),archive:buildCampaignArchive,normalize,toast,
+      content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),open:activateCampaign,
+      stageBrowser:async(archive,id,service,preview)=>{
+        await saveQueue;const prepared=globalThis.ECHO_RECOVERY.prepare(archive,normalize),entries=new Map();
+        if(campaignRegistry.campaigns.some(c=>c.id===id))throw Error('Restore identity already exists.');
+        const head=service.head;
+        prepared.index.story.reconciliation={version:1,enabled:preview.linkedStores===true,head:head.hash||'',revision:head.revision||0,at:head.receipt?.at||''};
+        await globalThis.ECHO_PRESENTATION.importMedia(archive.mediaFiles,prepared.index.presentation,async(key,blob)=>{
+          const previous=await readRecord(key);
+          if(previous!=null){if(!(previous instanceof Blob)||previous.type!==blob.type||await globalThis.ECHO_RECOVERY.mediaHash(previous)!==await globalThis.ECHO_RECOVERY.mediaHash(blob))throw Error('An imported media ID belongs to a different file. Existing media was not replaced.');return;}
+          entries.set(key,blob);
+        });
+        for(const s of prepared.sessions)entries.set(campaignSessionKey(s.id,id),JSON.stringify(s.state));
+        entries.set(campaignIndexKey(id),JSON.stringify(prepared.index));
+        await writeRecordsAtomic([...entries]);restoreEntries.set(id,[...entries.keys()]);
+        for(const [key,value]of entries){const actual=await readRecord(key);if(value instanceof Blob){if(!(actual instanceof Blob)||await globalThis.ECHO_RECOVERY.mediaHash(value)!==await globalThis.ECHO_RECOVERY.mediaHash(actual))throw Error('Imported media verification failed.');}else if(actual!==value)throw Error('Restored browser record could not be verified.');}
+      },
+      register:async(id,name,originId)=>{if(campaignRegistry.campaigns.length>=100)throw Error('Archive or remove another campaign before restoring.');const next=structuredClone(campaignRegistry);next.campaigns.push({id,name:String(name||'Restored campaign').slice(0,80),originId,archived:false});await writeRecordsAtomic([[CAMPAIGN_REGISTRY_KEY,JSON.stringify(next)]]);campaignRegistry=next;restoreEntries.delete(id);},
+      discard:async id=>{for(const key of restoreEntries.get(id)||[])await deleteRecord(key);restoreEntries.delete(id);}
+    });
     globalThis.ECHO_RELIABILITY?.init({
+      statusContext:()=>({campaignId:activeCampaignId,practiceSource:campaignRegistry.campaigns.find(c=>c.id===activeCampaignId)?.practiceSource||'',campaignName:campaignRegistry.campaigns.find(c=>c.id===activeCampaignId)?.name,sessionId:activeSessionId,sessionName:campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name,state,sceneTitle:displaySceneTitle(getScene(state.scene)?.title),events:globalThis.ECHO_CONTINUITY.effective(campaignContinuity()),linkedStore:campaignIndex.story?.reconciliation||null}),
+      readStatus:id=>readRecord(`campaign:${id||activeCampaignId}:readiness-evidence`),
+      saveStatus:async(value,id)=>{if(id&&id!==activeCampaignId)throw Error('The campaign changed. Record this review again in the intended group.');await writeRecord(`campaign:${activeCampaignId}:readiness-evidence`,value);},
+      refreshStatus:()=>globalThis.ECHO_RELIABILITY.render(),openOutcomes:()=>globalThis.ECHO_STORY_UI.open('outcomes'),
+      readRehearsal:id=>readRecord(`campaign:${id}:table-observations`),
+      saveRehearsal:async(value,expected,owner)=>{const group=campaignRegistry.campaigns.find(c=>c.id===activeCampaignId),key=group?.practiceSource||activeCampaignId;if(expected!==activeCampaignId||owner!==key)throw Error('The campaign changed. Reopen the rehearsal before saving observations.');await writeRecord(`campaign:${key}:table-observations`,value);},
+      rehearsalTool:key=>{if(!activeCampaignId.startsWith('practice-'))throw Error('Use a separate practice campaign for rehearsal controls.');if(key==='table')return globalThis.ECHO_RELIABILITY.runTableCheck();if(key==='phones')return globalThis.ECHO_PHONE.open();if(key==='audio')return globalThis.ECHO_PRESENTATION.open('audio');if(key==='handouts')return globalThis.ECHO_PRESENTATION.open('handouts');if(key==='quests')return globalThis.ECHO_STORY_UI.open('quests');if(key==='opening')return globalThis.ECHO_SESSION_FLOW_UI.open('before');if(key==='closing')return globalThis.ECHO_SESSION_FLOW_UI.open('close');if(key==='inbox')return $('quick-inbox').click();if(key==='combat'||key==='explore')return globalThis.ECHO_HYBRID_UI.go(key);},
       get state() { return state; }, get registry() { return campaignRegistry; },
       get campaignId() { return activeCampaignId; },
       get campaignName() { return campaignRegistry.campaigns.find(item => item.id === activeCampaignId)?.name || 'Campaign'; },
       get sessionName() { return campaignIndex.sessions.find(item => item.id === activeSessionId)?.name || 'Session'; },
       get sessionId() { return activeSessionId; },
       get restorePoints() { return campaignIndex.restorePoints || []; },
+      get migrationReport() { return campaignIndex.migrationReport || []; },
       get scenes() { return sceneEntries(); }, get beats() { return sessionRunbook(); }, get media() { return campaignIndex.presentation?.media || []; },
       get story() { return campaignIndex.story; },
       resolveImage, readMedia: id => readRecord(`media:${id}`),
@@ -5050,10 +4910,11 @@
       audioTest: () => globalThis.ECHO_PRESENTATION?.playSfx('recorded-coins') || Promise.resolve(false),
       openAudio: () => globalThis.ECHO_PRESENTATION?.open('audio'),
       openAssets: () => globalThis.ECHO_PRESENTATION?.open('media'),
-      createRestorePoint: captureRestorePoint, restorePoint, downloadPoint,
+      createRestorePoint: captureRestorePoint, pruneRestorePoints, restorePoint, downloadPoint,
       createCampaign, switchCampaign: activateCampaign, duplicateCampaign, archiveCampaign,
       rehearseBackup:async archive=>globalThis.ECHO_RECOVERY.rehearse(archive||await buildCampaignArchive(),normalize),
-      downloadPackage:async()=>{const health=await fetch('/__echo_health',{cache:'no-store'});if(health.headers.get('X-Echo-Package-Policy')!=='2')throw Error('Restart the desktop app servers before creating a new package. This prevents the older exporter from including personal books. The prepared portable ZIP is already available.');const archive=await buildCampaignArchive();await globalThis.ECHO_RECOVERY.rehearse(archive,normalize);toast('Building and verifying the full package. Large artwork may take a few minutes.');const response=await fetch('/__echo_package',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(archive)});if(!response.ok)throw Error('Package service unavailable. Restart the desktop app servers to load the update.');const url=URL.createObjectURL(await response.blob()),link=document.createElement('a');link.href=url;link.download='Echo-Below-Portable.zip';link.click();setTimeout(()=>URL.revokeObjectURL(url),60000);toast('Verified portable package downloaded.');},
+      downloadPackage:()=>globalThis.ECHO_WHOLE_BACKUP.download(),downloadBrowserData,
+      checkWholeStore:()=>globalThis.ECHO_WHOLE_BACKUP.check(),
       downloadBackup: downloadCampaign, validateBackup: buildCampaignArchive
     });
     $('quick-table-check').addEventListener('click', () => { void globalThis.ECHO_RELIABILITY?.runTableCheck(); });
@@ -5065,6 +4926,17 @@
     $('open-quests')?.addEventListener('click',()=>globalThis.ECHO_STORY_UI?.open('quests'));
     globalThis.ECHO_STORY_UI?.init({
       story: () => campaignIndex.story, plan: storyPlan, save: saveStory, toast,
+      outcomePlaces:()=>globalThis.ECHO_SETTLEMENTS.data(campaignIndex.tableExtras).towns.map(t=>({id:t.id,name:t.name})),
+      publishClue:(id,published)=>{const plan=globalThis.ECHO_COMMANDS.prepareStory(campaignIndex.story,
+        {type:'publish-clue',id,published,expectedRevision:globalThis.ECHO_COMMANDS.revision(campaignIndex.story)});
+        if(plan.changed){campaignIndex.story=globalThis.ECHO_COMMANDS.applyStory(campaignIndex.story,plan);saveStory(plan.label);actionReceipt({title:plan.label,status:'resolved',committed:plan.effects,undo:'conditional'});}return plan.effects;},
+      undoCluePublication:()=>{const plan=globalThis.ECHO_COMMANDS.prepareStory(campaignIndex.story,
+        {type:'undo-clue-publication',expectedRevision:globalThis.ECHO_COMMANDS.revision(campaignIndex.story)});
+        campaignIndex.story=globalThis.ECHO_COMMANDS.applyStory(campaignIndex.story,plan);saveStory(plan.label);return plan.effects;},
+      applyOutcome:(draftId,review,context)=>{const plan=globalThis.ECHO_COMMANDS.prepareStory(campaignIndex.story,
+        {type:'confirm-outcome',draftId,review,expectedRevision:globalThis.ECHO_COMMANDS.revision(campaignIndex.story)},{...context,objective:campaignIndex.tableExtras.playerHub?.objective});
+        campaignIndex.story=globalThis.ECHO_COMMANDS.applyStory(campaignIndex.story,plan);actionReceipt({title:review.event?.approved===false?'Outcome approval withdrawn':plan.label,status:'resolved',committed:[...plan.effects,...Object.keys(review.changes||{}).map(k=>'Reviewed '+k+' updates applied')],pending:commandReceiptPending(review),details:['Approved outcome review · '+draftId],undo:'conditional'});return plan;},
+      aftermathApplied:meta=>{globalThis.ECHO_STORY_UI.close();const p=state.combat.plans[meta.encounterId];if(p?.aftermath?.runKey===meta.runKey){p.aftermath.step=4;p.aftermath.ending=meta.ending;p.aftermath.pending=meta.pending;p.aftermath.reviewedNotes=globalThis.ECHO_COMBAT_AFTERMATH.notesSignature(p);commit('Opened reviewed aftermath return');openCombatAftermath(meta.encounterId);}},
       extras:()=>campaignIndex.tableExtras,
       expeditionContext,expeditionSessions:()=>campaignIndex.sessions,
       chapterSessions:()=>campaignIndex.sessions.filter(s=>s.packId==='silent-library-expedition'),
@@ -5103,7 +4975,7 @@
       openSettlements:(tab,town)=>{globalThis.ECHO_STORY_UI?.close();if(town)ensureDowntimeTown(town,town==='waterdeep'?'Waterdeep':town);globalThis.ECHO_SETTLEMENTS_UI?.open(tab,town);},
       spotlights: () => globalThis.ECHO_SPOTLIGHTS.ensure(campaignIndex.story),
       roster: () => state.tokens.filter(t=>t.team==='pc').map(t=>({id:t.id,name:t.name})),
-      continuityMarkers: () => TOWN_MAP_IDS.flatMap(scene => {const raw=mapSceneData(scene),base=scene==='region-lmop'&&globalThis.ECHO_TRAVEL?globalThis.ECHO_TRAVEL.projectMap(globalThis.ECHO_TRAVEL.data(campaignIndex.tableExtras),raw):raw;return (base.points||[]).map(p=>({scene,point:p.id,title:`${getScene(scene)?.title || scene} · ${p.title}`,visible:p.visible,approved:p.approved,clue:p.clue||''}));}),
+      continuityMarkers: () => navigationSourceMarkers().concat(TOWN_MAP_IDS.flatMap(scene => {const raw=mapSceneData(scene),base=scene==='region-lmop'&&globalThis.ECHO_TRAVEL?globalThis.ECHO_TRAVEL.projectMap(globalThis.ECHO_TRAVEL.data(campaignIndex.tableExtras),raw):raw;return (base.points||[]).map(p=>({scene,point:p.id,title:`${getScene(scene)?.title || scene} · ${p.title}`,visible:p.visible,approved:p.approved,clue:p.clue||''}));})),
       expedition: () => state.waveEcho ||= globalThis.ECHO_WAVE_ECHO.normalize(),
       commitExpedition: commit, openParty: () => { globalThis.ECHO_STORY_UI?.close(); globalThis.ECHO_PARTY_UI?.open(); },
       partyLevel: () => Object.values(state.party || {}).filter(item => item.role === 'pc')
@@ -5152,7 +5024,7 @@
     globalThis.ECHO_MAP_UI?.init({
       continuityNotes: id => (globalThis.ECHO_CONTINUITY.effective(campaignContinuity()) || []).filter(e=>e.approved&&e.status!=='planned'&&e.markers.some(m=>m.scene===state.scene&&m.point===id)).map(e=>`${e.status}: ${e.title} — ${e.detail}`),
       map: () => state.map, scene: () => mapSceneData(), sceneId: () => state.scene,
-      sceneName: () => `${getScene(state.scene)?.title || state.scene}${mapSceneData().floor ? ` · ${mapSceneData().floor}` : ''}`,
+      sceneName: () => `${displaySceneTitle(getScene(state.scene)?.title) || state.scene}${mapSceneData().floor ? ` · ${mapSceneData().floor}` : ''}`,
       scenes: () => sceneEntries(), tokens: () => state.tokens, commit, toast,
       floorSections:()=>{const master=globalThis.ECHO_ATLAS?.proposal(getScene(state.scene)?.image);return master?.isFloorMaster?globalThis.ECHO_ATLAS.proposals().filter(p=>p.floorProposalId===master.id):[];},
       focusFloor:id=>{const selected=globalThis.ECHO_ATLAS.proposal(id),master=globalThis.ECHO_ATLAS.proposal(getScene(state.scene)?.image);if(!selected||!master||selected.floorProposalId!==master.id)return;floorFocusPreview={sceneId:state.scene,campaign:activeCampaignId,session:activeSessionId,proposalId:id,view:globalThis.ECHO_FLOOR_MAPS.focus(master,selected)};previewSceneId=state.scene;contextTab='scene';globalThis.ECHO_MAP_UI.close();renderContextSidebar();toast('Section staged privately. Use Show on TV to apply its view.');},
@@ -5170,6 +5042,8 @@
         getScene(state.scene)?.gridColumns || MAP_SQUARES_ACROSS, playerViewport?.width || window.innerWidth, playerViewport?.height || window.innerHeight),
       viewport: () => playerViewport,
       openPlayer: () => $('open-player').click(),
+      calibrationCheck: () => tvCalibrationCheck,
+      setCalibrationCheck: value => { tvCalibrationCheck=!!value;sendToPlayer();globalThis.ECHO_MAP_UI?.render(); },
       revealVisible: (id, radius) => { if(mapSceneData().floorFog){toast('Use manual reveal on this source floor; its walls have not been imported as sight barriers.');return;} const t = getToken(id);
         if (!t || !t.placed || t.scene !== state.scene || !sceneHasFog()) { toast('Choose a placed hero on a fog map.'); return; }
         const tiles = globalThis.ECHO_MAP_DATA.visibleTiles({ x: t.x, y: t.y }, Math.max(1, Math.min(100, radius || 18)), presentedMapScene().lines, mapSceneData().fineFog);
@@ -5227,12 +5101,12 @@
     $('open-ergonomics').addEventListener('click', () => globalThis.ECHO_ERGONOMICS?.open('search'));
     globalThis.ECHO_GUIDED?.init({
       desk:()=>globalThis.ECHO_DM_DESK.data(campaignIndex.tableExtras),save:()=>{void saveCampaignIndex();},refresh:()=>{globalThis.ECHO_ERGONOMICS?.render();renderDM();},toast,
-      context:()=>{const desk=globalThis.ECHO_DM_DESK.data(campaignIndex.tableExtras),local=globalThis.ECHO_DM_DESK.session(desk,activeSessionId);return {state,session:campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session',beat:sessionRunbook().find(b=>b.id===state.runbook),next:nextRunbookBeat(),items:globalThis.ECHO_DM_DESK.inbox(state,campaignIndex.tableExtras,local),questLead:globalThis.ECHO_QUEST_PREP?.live(campaignIndex.story,activeSessionId),objective:globalThis.ECHO_QUEST_PREP?.live(campaignIndex.story,activeSessionId)?.objective||local.objective||campaignIndex.tableExtras.playerHub?.objective?.text||''};},
+      context:()=>{const desk=globalThis.ECHO_DM_DESK.data(campaignIndex.tableExtras),local=globalThis.ECHO_DM_DESK.session(desk,activeSessionId);return {state,session:campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session',beat:sessionRunbook().find(b=>b.id===state.runbook),next:nextRunbookBeat(),items:globalThis.ECHO_DM_DESK.inbox(state,campaignIndex.tableExtras,local),questLead:globalThis.ECHO_QUEST_PREP?.live(campaignIndex.story,activeSessionId),objective:globalThis.ECHO_OUTCOMES?.tableObjective(campaignContinuity(),campaignIndex.tableExtras.playerHub?.objective)?.text||globalThis.ECHO_QUEST_PREP?.live(campaignIndex.story,activeSessionId)?.objective||local.objective||campaignIndex.tableExtras.playerHub?.objective?.text||''};},
       openQuestLead:()=>globalThis.ECHO_STORY_UI.openQuestBoard(activeSessionId),
       review:reviewDeskItem,inbox:()=>{contextTab='requests';renderContextSidebar();},turn:()=>{contextTab='turn';renderContextSidebar();},
       previewScene:id=>{if(!getScene(id)){toast('That scene is not in this session.');return;}previewSceneId=id;contextTab='scene';renderContextSidebar();},chooseScene:()=>{$('quick-scene').click();},selectBeat:selectRunbook,
       stage:(beat,id)=>globalThis.ECHO_ENCOUNTER_LAUNCH.stage(beat,id),build:buildTurnOrder,next:force=>advanceTurn(1,force),
-      combat:()=>globalThis.ECHO_COMBAT_UI.open('flow'),bringParty:()=>{$('bring-party').click();},outcome:()=>globalThis.ECHO_COMBAT_UI.open('wrap'),end:()=>{$('end-combat').click();},
+      combat:()=>globalThis.ECHO_COMBAT_UI.open('flow'),bringParty:()=>{$('bring-party').click();},outcome:()=>openCombatAftermath(),end:()=>{$('end-combat').click();},
       closeSession:(full=true)=>full&&globalThis.ECHO_SESSION_FLOW_UI?globalThis.ECHO_SESSION_FLOW_UI.open('close'):globalThis.ECHO_DM_DESK_UI.open('pace'),
       initiative:(id,value)=>{const t=getToken(id);if(!t?.placed||t.scene!==state.scene){toast('That combatant is no longer on this map.');return;}t.initiative=value;commit('Entered '+t.name+' initiative');},
       begin:()=>{if(!currentIsMap()){toast('Preview and show a battle map first.');return;}if(state.turn.order.length){toast('Combat already has a turn order.');return;}const placed=state.tokens.filter(t=>t.placed&&t.scene===state.scene&&(t.team!=='enemy'||t.hp>0));if(!placed.length){toast('Place combatants before collecting initiative.');return;}for(const t of placed)if(t.team!=='pc'&&!Number.isFinite(t.initiative))t.initiative=recordDiceRoll(t.name+' initiative',1,20,t.initBonus??0).total;state.combatRun.initiativePrompt={open:true,scene:state.scene};applyDeskLayout('combat');commit('Collected phone initiative and rolled missing NPC initiatives');},
@@ -5315,6 +5189,8 @@
       get scenes() { return sceneEntries(); }, get beats() { return sessionRunbook(); },
       get story() { return campaignIndex.story; },
       get sessionId() { return activeSessionId; },
+      atmosphere: () => globalThis.ECHO_ATMOSPHERE?.data(campaignIndex.tableExtras),
+      setEffectsMode: mode => { if(!['off','subtle','full'].includes(mode))return;atmosphereData().mode=mode;campaignIndex.tableExtras.reducedEffects=mode==='off'; },
       sceneImage: scene => resolveImage(scene.image || ''),
       commit, saveLibrary: saveCampaignIndex, changeScene, showCatalogBattleMap,
       readMedia: id => readRecord(`media:${id}`),
@@ -5325,9 +5201,9 @@
       context:()=>({extras:campaignIndex.tableExtras,party:state.party,turn:state.turn,queue:state.combatRun.queue,scene:state.scene}),
       show:()=>globalThis.ECHO_PHONE.open(),toast,
       save:label=>{void saveCampaignIndex();commitParty(label);globalThis.ECHO_PHONE?.sync();},
-      apply:next=>{campaignIndex.tableExtras=next.extras;state.party=next.party;state.combatRun.queue=next.queue;void saveCampaignIndex();commitParty('Resolved player inventory request');globalThis.ECHO_PHONE?.sync();}
+      apply:next=>{const before=globalThis.ECHO_PLAYER_TOOLS.data(campaignIndex.tableExtras).requests;const resolved=globalThis.ECHO_PLAYER_TOOLS.data(next.extras).requests.find(r=>r.status==='resolved'&&before.find(o=>o.id===r.id)?.status!=='resolved');campaignIndex.tableExtras=next.extras;state.party=next.party;state.combatRun.queue=next.queue;if(resolved)actionReceipt({...globalThis.ECHO_ACTION_RECEIPTS.inventory(resolved),undo:'conditional'});void saveCampaignIndex();commitParty('Resolved player inventory request');globalThis.ECHO_PHONE?.sync();}
     });
-    globalThis.ECHO_DM_DESK_UI?.init({state:()=>state,extras:()=>campaignIndex.tableExtras,campaignId:()=>activeCampaignId,sessionId:()=>activeSessionId,sessionName:()=>campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session',sceneTitle:()=>getScene(state.scene)?.title||state.scene,beats:()=>sessionRunbook(),token:getToken,inboxRoot:()=>$('desk-inbox'),toast,
+    globalThis.ECHO_DM_DESK_UI?.init({state:()=>state,extras:()=>campaignIndex.tableExtras,campaignId:()=>activeCampaignId,sessionId:()=>activeSessionId,sessionName:()=>campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session',sceneTitle:()=>displaySceneTitle(getScene(state.scene)?.title)||state.scene,beats:()=>sessionRunbook(),token:getToken,inboxRoot:()=>$('desk-inbox'),toast,
       tracks:()=>globalThis.ECHO_CONTINUITY?.trackers(campaignContinuity())||[],save:label=>{commit(label);void saveCampaignIndex();},review:reviewDeskItem,
       describe:item=>{const r=state.phoneRequests.find(r=>r.id===item.id);if(item.kind==='fog')return 'Reveal square '+item.id+' on the TV.';if(r?.kind==='tile')return 'Reveal square '+r.key+' on the TV.';if(r?.kind==='move')return `Place ${state.party[r.characterId]?.name||'the character'} at the requested position on the map.`;const p=presentedMapScene().points.find(p=>p.id===r?.pointId);return r?.kind==='action'?'Ask the player to resend this action with targets.':p?'Show clue on TV: '+p.title+' — '+(p.clue||'No clue text attached.'):'This map point is no longer available.';},
       legacy:(item,approve)=>{if(item.scene&&item.scene!==state.scene)throw Error('The scene changed. Review the request again.');if(item.kind==='fog'){if(!state.requests.includes(item.id))throw Error('Request no longer pending.');if(approve)revealTile(item.id);else{state.requests=state.requests.filter(k=>k!==item.id);commit('Dismissed fog request');}}else{if(!state.phoneRequests.some(r=>r.id===item.id))throw Error('Request no longer pending.');approve?approvePhoneRequest(item.id):dismissPhoneRequest(item.id);}},
@@ -5353,17 +5229,18 @@
       openDowntime:()=>globalThis.ECHO_STORY_UI?.open('downtime'),
       reviewJob:(job,result)=>globalThis.ECHO_STORY_UI?.outcome({...globalThis.ECHO_DOWNTIME.jobDraft(job,globalThis.ECHO_SETTLEMENTS.data(campaignIndex.tableExtras).minutes),...(result?{downtime:{...globalThis.ECHO_DOWNTIME.jobDraft(job).downtime,result,at:globalThis.ECHO_SETTLEMENTS.data(campaignIndex.tableExtras).minutes}}:{})}),
       correctOutcome:id=>globalThis.ECHO_STORY_UI?.correctOutcome?.(id),
+      worldReturn:id=>globalThis.ECHO_WORLD_RETURN.build(campaignContinuity(),globalThis.ECHO_SETTLEMENTS.data(campaignIndex.tableExtras),id,campaignIndex.story.npcs),
       returnSummary:id=>globalThis.ECHO_DOWNTIME.returnSummary(campaignContinuity(),globalThis.ECHO_SETTLEMENTS.data(campaignIndex.tableExtras),id),
       save:label=>{commit(label);void saveCampaignIndex();},
       publish:(title,text)=>{state.handout={visible:true,image:'',title,text};state.presentation.mode='battle';commit('Show reviewed town-return narration');},
       advance:minutes=>{if(state.turn.order.length)throw Error('End combat before advancing downtime.');state.map.clock.minutes+=minutes;for(const t of state.map.clock.timers)t.remaining=Math.max(0,t.remaining-minutes);globalThis.ECHO_TABLE?.advanceMinutes(minutes);commit('Advanced reviewed downtime');}
     });
-    globalThis.ECHO_ATMOSPHERE_UI?.init({extras:()=>campaignIndex.tableExtras,state:()=>state,title:()=>getScene(state.scene)?.title||state.scene,media:()=>campaignIndex.presentation.media,visible:()=>publicState().tokens,
+    globalThis.ECHO_ATMOSPHERE_UI?.init({extras:()=>campaignIndex.tableExtras,state:()=>state,title:()=>displaySceneTitle(getScene(state.scene)?.title)||state.scene,media:()=>campaignIndex.presentation.media,visible:()=>publicState().tokens,
       save:label=>{void saveCampaignIndex();commit(label);},refresh:()=>{renderStage('dm');sendToPlayer();},toast,
       place:id=>{atmospherePlacement={id,scene:state.scene};setMapTool('move');toast('Click the map to place this animated feature.');},
       zones:()=>globalThis.ECHO_COMBAT_PLUS_UI?.open('areas')
     });
-    globalThis.ECHO_DUNGEON_UI?.init({expeditionRecord:()=>globalThis.ECHO_STORY_UI.open('expeditions'),extras:()=>campaignIndex.tableExtras,state:()=>state,map:()=>mapSceneData(),title:()=>getScene(state.scene)?.title||state.scene,
+    globalThis.ECHO_DUNGEON_UI?.init({expeditionRecord:()=>globalThis.ECHO_STORY_UI.open('expeditions'),extras:()=>campaignIndex.tableExtras,state:()=>state,map:()=>mapSceneData(),title:()=>displaySceneTitle(getScene(state.scene)?.title)||state.scene,
       roster:()=>state.tokens.filter(t=>t.team==='pc').map(t=>({id:t.id,name:t.name,senses:state.party[t.id]?.senses||''})),scenes:()=>sceneEntries(),isMap:currentIsMap,columns:()=>getScene(state.scene)?.gridColumns||MAP_SQUARES_ACROSS,
       aspect:()=>{const image=$('dm-stage')?.querySelector('img');return image?.naturalWidth&&image?.naturalHeight?image.naturalWidth/image.naturalHeight:1.5;},toast,
       save:label=>{void saveCampaignIndex();commit(label);globalThis.ECHO_PHONE?.sync();},clearFog:()=>setFogForScene(state.scene,[]),mapTools:()=>globalThis.ECHO_MAP_UI.open('vision'),
@@ -5416,10 +5293,12 @@
     });
     globalThis.ECHO_COMBAT_PLUS_UI?.init({state:()=>state,replace:next=>state=next,root:()=>$('combat-plus-panel'),
       show:()=>{contextTab='turn';renderContextSidebar();$('combat-plus-panel').closest('details').open=true;},
+      sharedDamage:job=>{const result=globalThis.ECHO_COMBAT_ACTIONS.fromDamage(state,job);commit('Staged damage in shared action review');globalThis.ECHO_PHONE_ACTIONS_UI.open(result.request.id,result.plan);},
       commit,toast,tool:setMapTool,columns:()=>getScene(state.scene)?.gridColumns||MAP_SQUARES_ACROSS,die:rollDie,saveBonus:combatSaveBonus,
       announce:(title,text)=>{state.handout={visible:true,image:'',title,text};commit('Show encounter announcement');}
     });
     globalThis.ECHO_COMBAT_RUN?.init({
+      stageAction:stageCombatAction,pendingDMDrafts:id=>globalThis.ECHO_PHONE_ACTIONS.data(state).requests.filter(r=>r.source==='dm'&&r.characterId===id&&r.scene===state.scene&&globalThis.ECHO_PHONE_ACTIONS.pending(r)),resumeReview:id=>globalThis.ECHO_PHONE_ACTIONS_UI.open(id),activeReview:()=>globalThis.ECHO_PHONE_ACTIONS_UI?.active(),closeReview:()=>globalThis.ECHO_PHONE_ACTIONS_UI?.close(),
       allState:()=>state,columns:()=>getScene(state.scene)?.gridColumns||MAP_SQUARES_ACROSS,targetTool:()=>setMapTool('target'),stageDamage:value=>globalThis.ECHO_COMBAT_PLUS_UI.stageDamage(value),
       pauseAttack:(label,targetId)=>{globalThis.ECHO_COMBAT_PLUS.pause(state,{label,targets:[targetId]});commit('Paused attack for reactions');globalThis.ECHO_COMBAT_PLUS_UI.open('damage');},
       run: () => state.combatRun, turn: () => state.turn, scene: () => state.scene,
@@ -5429,28 +5308,49 @@
       rollEnemies: rollPlacedEnemies, buildOrder: buildTurnOrder,
       roll: rollCombatShortcut,
       previewDamage: (id, amount, type) => globalThis.ECHO_COMBAT_DATA.damagePreview(getToken(id), amount, type, 'damage', combatTokenRecord(id)),
+      recordActionUse: (id, action) => {
+        const sheet=state.party[id], item=sheet?.actions?.find(entry=>entry.id===action.id);
+        if(!sheet||!item)throw Error('The character action changed. Review the sheet.');
+        if(item.resourceId){
+          const plan=globalThis.ECHO_COMMANDS.prepare(state,{type:'spend-resource',characterId:id,
+            resourceId:item.resourceId,cost:Number(item.cost)||1,label:item.name,
+            expectedRevision:globalThis.ECHO_COMMANDS.revision(state)});
+          const type=String(item.type||'').toLowerCase();
+          if(type.includes('bonus'))plan.next.combatRun.queue.bonusUsed=true;
+          else if(type==='action')plan.next.combatRun.queue.actionUsed=true;
+          if(type.includes('reaction'))(plan.next.combat.tokens[id] ||= {}).reactionUsed=true;
+          state=globalThis.ECHO_COMMANDS.apply(state,plan);actionReceipt({title:plan.label,status:'resolved',committed:plan.effects,pending:['Effect awaits DM resolution.'],undo:'conditional'},id);
+        }else{
+          const type=String(item.type||'').toLowerCase();
+          if(type.includes('bonus'))state.combatRun.queue.bonusUsed=true;
+          else if(type==='action')state.combatRun.queue.actionUsed=true;
+          if(type.includes('reaction'))combatTokenRecord(id).reactionUsed=true;
+        }
+        commit(`${sheet.name} used ${item.name}; effect awaits DM resolution`);
+      },
       applyDamage: (id, amount, type, label) => applyReviewedDamage({ mode: 'damage', type, amount: String(amount), selected: [id], overrides: {}, amounts: {}, conditions: {}, label }),
       openCombat: tab => globalThis.ECHO_COMBAT_UI?.open(tab),
       openDamage: ids => globalThis.ECHO_COMBAT_UI?.prepareDamage(ids, 0, 'slashing'),
-      requests: () => [...state.phoneRequests.filter(item => item.scene === state.scene), ...(globalThis.ECHO_PHONE_ACTIONS?.data(state).requests.filter(globalThis.ECHO_PHONE_ACTIONS.pending) || []).map(r=>({...r,kind:'action'}))],
+      requests: () => [...state.phoneRequests.filter(item => item.scene === state.scene), ...(globalThis.ECHO_PHONE_ACTIONS?.data(state).requests.filter(r=>r.source!=='dm'&&globalThis.ECHO_PHONE_ACTIONS.pending(r)) || []).map(r=>({...r,kind:'action'}))],
       approveRequest: approvePhoneRequest, dismissRequest: dismissPhoneRequest,
       setReaction: (id, used) => { combatTokenRecord(id).reactionUsed = used; commit(`${getToken(id)?.name || 'Combatant'} reaction ${used ? 'used' : 'ready'}`); },
       openParty: id => globalThis.ECHO_PARTY_UI?.open(id),
+      openAftermath:openCombatAftermath,
       setEncounterStatus: (id, status) => { state.combatRun.encounterStatus[id] = status; commit(`${id}: ${status}`); },
       deployWave: deployEncounterWave
     });
     globalThis.ECHO_PHONE_ACTION_CONDITIONS = CONDITIONS;
     globalThis.ECHO_PHONE_ACTIONS_UI?.init({ state:()=>state, root:()=>$('phone-action-review-detail'),
-      show:()=>{contextTab='requests';renderContextSidebar();$('desk-action-review').open=true;}, toast,
-      visible:()=>publicState().tokens.map(t=>t.id), conditions:()=>CONDITIONS,
+      show:()=>{contextTab=state.turn.order.length?'turn':'requests';renderContextSidebar();$('desk-action-review').open=true;if(globalThis.ECHO_HYBRID_UI?.current()==='combat')globalThis.ECHO_HYBRID_UI.closeDrawer();}, showTurn:()=>{contextTab='turn';renderDM();},targetTool:()=>setMapTool('target'),toast,
+      visible:r=>r?.source==='dm'?state.tokens.filter(t=>t.scene===state.scene&&t.placed).map(t=>t.id):publicState().tokens.map(t=>t.id), conditions:()=>CONDITIONS,
       distance:(a,b)=>globalThis.ECHO_COMBAT_PLUS.distance(a,b,globalThis.ECHO_COMBAT_PLUS.scale(state,getScene(state.scene)?.gridColumns||MAP_SQUARES_ACROSS)),
-      status:setPhoneActionStatus,pause:r=>{globalThis.ECHO_COMBAT_PLUS.pause(state,{label:`Reaction to ${r.label}`,targets:r.targetIds,source:r.id});commit('Paused phone action for reactions');globalThis.ECHO_COMBAT_PLUS_UI.open('damage');},
-      prepare:(id,plan,cache)=>globalThis.ECHO_PHONE_ACTIONS.prepare(state,state.phoneActions.requests.find(r=>r.id===id),plan,{visible:publicState().tokens.map(t=>t.id),die:rollDie,saveBonus:combatSaveBonus,cache}),
-      resolve:review=>{state=globalThis.ECHO_PHONE_ACTIONS.apply(state,review,publicState().tokens.map(t=>t.id));commit(`Resolved phone action: ${state.phoneActions.requests.find(r=>r.id===review.requestId).label}`);},
-      undo:id=>{state=globalThis.ECHO_PHONE_ACTIONS.undo(state,id);commit('Undid phone action resolution');}
+      status:setPhoneActionStatus,pause:(r,plan)=>{globalThis.ECHO_COMBAT_PLUS.pause(state,{label:`Reaction to ${r.label}`,targets:plan.steps.map(p=>p.targetId),source:r.id});plan.reactionsChecked=false;commit('Paused action for reactions');globalThis.ECHO_COMBAT_PLUS_UI.open('damage');},
+      prepare:(id,plan,cache)=>{const r=state.phoneActions.requests.find(r=>r.id===id);return globalThis.ECHO_COMBAT_ACTIONS.prepare(state,r,plan,{visible:r.source==='dm'?state.tokens.filter(t=>t.scene===state.scene&&t.placed).map(t=>t.id):publicState().tokens.map(t=>t.id),die:rollDie,saveBonus:combatSaveBonus,cache});},
+      resolve:review=>{const r=state.phoneActions.requests.find(r=>r.id===review.requestId);const command=globalThis.ECHO_COMMANDS.prepare(state,{type:'resolve-combat-action',review,expectedRevision:review.baseRevision},{visible:r.source==='dm'?state.tokens.filter(t=>t.scene===state.scene&&t.placed).map(t=>t.id):publicState().tokens.map(t=>t.id)});state=globalThis.ECHO_COMMANDS.apply(state,command);actionReceipt(globalThis.ECHO_ACTION_RECEIPTS.combat(state.phoneActions.requests.find(x=>x.id===r.id),state));commit(`Resolved action: ${r.label}`);},
+      undo:id=>{state=globalThis.ECHO_COMBAT_ACTIONS.undo(state,id);commit('Undid combat action resolution');actionReceipt({title:'Combat resolution',status:'undone',pending:['Send a new request if needed.']});}
     });
     globalThis.ECHO_PHONE?.init({ snapshot: phoneSnapshot, onAction: handlePhoneAction, toast,
-      requestCount: () => (dungeonData()?.requests.filter(r=>['waiting','approved'].includes(r.status)).length||0) + (globalThis.ECHO_TRAVEL?.data(campaignIndex.tableExtras).requests.filter(r=>r.status==='waiting').length||0) + (state.phoneRequests || []).length + (globalThis.ECHO_PHONE_ACTIONS?.data(state).requests.filter(globalThis.ECHO_PHONE_ACTIONS.pending).length || 0) });
+      requestCount: () => (dungeonData()?.requests.filter(r=>['waiting','approved'].includes(r.status)).length||0) + (globalThis.ECHO_TRAVEL?.data(campaignIndex.tableExtras).requests.filter(r=>r.status==='waiting').length||0) + (state.phoneRequests || []).length + (globalThis.ECHO_PHONE_ACTIONS?.data(state).requests.filter(r=>r.source!=='dm'&&globalThis.ECHO_PHONE_ACTIONS.pending(r)).length || 0) });
     $('quick-handout').addEventListener('click', () => {
       const panel = document.querySelector('.handout-panel');
       if (!panel) return;
@@ -5461,15 +5361,20 @@
     });
     globalThis.ECHO_PARTY_UI?.init({
       getParty: () => state.party,
+      stageAction:(id,type,index)=>{globalThis.ECHO_PARTY_UI.close();globalThis.ECHO_HYBRID_UI?.go('combat');stageCombatAction(id,type,index,[]);},
       getMeta: () => state.partyMeta,
       castTargets: () => publicState().tokens.map(t => ({id:t.id,name:t.name})),
       stageCast: (id,index,casting) => {
-        const entry=globalThis.ECHO_PARTY_DATA.ownerView(state.party[id]).spells[index];
-        const request=globalThis.ECHO_PHONE_ACTIONS.receive(state,{kind:'action-request',requestId:`dm-cast-${Date.now()}`,characterId:id,scene:state.scene,actionType:'spell',actionIndex:index,actionName:entry.name,entry,targetIds:casting.targetIds,note:casting.effect,mode:'normal',casting},publicState().tokens.map(t=>t.id));
-        commit(`Staged ${state.party[id].name}: ${entry.name}`);
-        globalThis.ECHO_PHONE_ACTIONS_UI.open(request.id);
+        stageCombatAction(id,'spell',index,casting.targetIds,casting);
       },
       replaceSheet: (id, value) => { state.party[id] = globalThis.ECHO_PARTY_DATA.normalizeSheet({ ...value, id }, state.party[id]); },
+      spendResource: (characterId, resourceId, cost, label) => {
+        const plan = globalThis.ECHO_COMMANDS.prepare(state, { type: 'spend-resource', characterId,
+          resourceId, cost, label, expectedRevision: globalThis.ECHO_COMMANDS.revision(state) });
+        state = globalThis.ECHO_COMMANDS.apply(state, plan);
+        actionReceipt({title:plan.label,status:'resolved',committed:[...plan.effects,'Spent '+cost],details:[state.party[characterId]?.source||'Current character sheet'],undo:'conditional'},characterId);
+        commit(plan.label);
+      },
       commitParty, toast, downloadJson,
       roll: (label, count, sides, modifier, damageType = '') => {
         const actor = Object.values(state.party).find(s => label.startsWith(`${s.name}:`));
@@ -5490,6 +5395,7 @@
     });
     globalThis.ECHO_COMBAT_UI?.init({
       tokens: () => state.tokens, combat: () => state.combat, party: () => state.party,
+      turn:()=>state.turn,continuity:campaignContinuity,aftermathEncounter,ensureAftermath,reviewAftermath:reviewCombatAftermath,finishAftermath:finishCombatAftermath,resumeAftermath:resumeCombatAftermath,encounterStatus:id=>state.combatRun.encounterStatus?.[id]||'fighting',
       encounters: () => sessionEncounters(), scene: () => state.scene,
       sessionName: () => campaignIndex.sessions.find(s => s.id === activeSessionId)?.name || 'Session',
       requestSaves:draft=>{globalThis.ECHO_COMBAT_PLUS.saveBatch(state,{label:'Area saving throw',ability:draft.ability,dc:Number(draft.dc),targets:draft.selected},combatSaveBonus);commit('Requested area saving throws');globalThis.ECHO_COMBAT_PLUS_UI.open('saves');},
@@ -5643,12 +5549,7 @@
     $('roll-enemy-initiative').addEventListener('click', rollPlacedEnemies);
     $('previous-turn').addEventListener('click', () => advanceTurn(-1));
     $('next-turn').addEventListener('click', () => advanceTurn(1));
-    $('end-combat').addEventListener('click', () => {
-      state.turn = { scene: '', round: 0, order: [], index: 0 };
-      state.combatRun.initiativePrompt.open = false;
-      state.combatRun.queue = globalThis.ECHO_COMBAT_RUN.normalize().queue;
-      commit();
-    });
+    $('end-combat').addEventListener('click', () => openCombatAftermath());
     for (const button of document.querySelectorAll('[data-die]')) button.addEventListener('click', () => {
       const count = Math.max(1, Math.min(20, signedInteger($('dice-count').value, 1, 20)));
       const modifier = signedInteger($('dice-modifier').value, -99, 99);
@@ -5720,21 +5621,33 @@
       if (!file) return;
       try {
         const imported = JSON.parse(await file.text());
-        state = normalize(imported);
+        const candidate = normalize(imported);
+        const rules = imported.campaignRules
+          ? globalThis.ECHO_RULES_UI?.normalizeSettings(imported.campaignRules) || null : campaignIndex.rules;
+        const sourceVersion = globalThis.ECHO_RELIABILITY.versionOf(imported);
+        const restoreId = await captureRestorePoint(`Before importing ${file.name}`, 'automatic');
+        const nextIndex = { ...campaignIndex, rules, schemaVersion: DATA_VERSION };
+        if (sourceVersion < DATA_VERSION) nextIndex.migrationReport = [...(campaignIndex.migrationReport || []),
+          { at:new Date().toISOString(), from:sourceVersion, to:DATA_VERSION, session:activeSessionId,
+            restorePoint:restoreId, note:'Imported an older session after validating it; the previous session is recoverable.' }].slice(-30);
+        await saveQueue;
+        await writeRecordsAtomic([[campaignSessionKey(activeSessionId), JSON.stringify(candidate)],
+          [campaignIndexKey(), JSON.stringify(nextIndex)]]);
+        state = candidate;
+        campaignIndex = nextIndex;
         if (imported.campaignRules) {
-          campaignIndex.rules = globalThis.ECHO_RULES_UI?.normalizeSettings(imported.campaignRules) || null;
+          campaignIndex.rules = rules;
           globalThis.ECHO_RULES_UI?.setSettings(campaignIndex.rules);
-          void saveCampaignIndex();
         }
         lastCommittedSnapshot = gameSnapshot(state);
         selectedEncounter = sessionEncounters()[0]?.id || 'all';
         selectedTokenId = null;
         resetBuilderForms();
         populateHandoutFields();
-        saveLocal(); renderDM(); sendToPlayer();
+        sessionCache.set(activeSessionId, JSON.stringify(state)); renderDM(); sendToPlayer();
         toast('Session save loaded.');
       }
-      catch { toast('That file is not a valid session save.'); }
+      catch (error) { toast(`Session import left the live campaign unchanged: ${error.message}`); }
       event.target.value = '';
     });
     window.addEventListener('message', handleDMMessage);
@@ -5765,43 +5678,121 @@
         changeScene(scenes[Math.max(0, Math.min(scenes.length - 1, index + (event.key === 'ArrowRight' ? 1 : -1)))]);
       } else if (event.key.toLowerCase() === 'b') changeScene(state.scene === 'black' ? priorScene : 'black');
     });
-    globalThis.ECHO_COCKPIT?.init({context:tab=>{contextTab=tab;renderContextSidebar();},ensureRun:()=>{if($('dm-app').classList.contains('review-mode'))setWorkspaceMode('run');},toast,image:resolveImage,
-      view:()=>({tab:contextTab,scene:{...getScene(state.scene),id:state.scene},preview:getScene(previewSceneId)?{...getScene(previewSceneId),id:previewSceneId}:null,session:campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session',objective:globalThis.ECHO_QUEST_PREP?.live(campaignIndex.story,activeSessionId)?.objective||globalThis.ECHO_DM_DESK.session(globalThis.ECHO_DM_DESK.data(campaignIndex.tableExtras),activeSessionId).objective||campaignIndex.tableExtras.playerHub?.objective?.text||''}),
-      returnLive:()=>{previewSceneId=state.scene;contextTab='guide';renderContextSidebar();},showPreview:showScenePreview
+    globalThis.ECHO_COCKPIT?.init({previewPlayer:mountPrivatePreview,captureContext:()=>({key:activeCampaignId+'/'+activeSessionId,contextTab,selectedTokenId,selectedEncounter,selectedClueId,previewSceneId}),restoreContext:c=>{if(!c||c.key!==activeCampaignId+'/'+activeSessionId)return;selectedTokenId=getToken(c.selectedTokenId)?c.selectedTokenId:null;selectedEncounter=c.selectedEncounter;selectedClueId=c.selectedClueId;previewSceneId=getScene(c.previewSceneId)?c.previewSceneId:state.scene;contextTab=c.contextTab;},context:tab=>{contextTab=tab;renderContextSidebar();},ensureRun:()=>{if($('dm-app').classList.contains('review-mode'))setWorkspaceMode('run');},toast,image:resolveImage,
+      flow:()=>({key:activeCampaignId+'/'+activeSessionId,
+        phase:globalThis.ECHO_SESSION_FLOW.session(campaignIndex.tableExtras,activeSessionId).phase}),
+      view:()=>({tab:contextTab,scene:{...getScene(state.scene),title:displaySceneTitle(getScene(state.scene)?.title),id:state.scene},preview:getScene(previewSceneId)?{...getScene(previewSceneId),id:previewSceneId}:null,beat:sessionRunbook().find(beat=>beat.id===state.runbook)||null,beatScene:(()=>{const beat=sessionRunbook().find(item=>item.id===state.runbook);return beat?.scene&&getScene(beat.scene)?{...getScene(beat.scene),id:beat.scene}:null;})(),beats:sessionRunbook().map(beat=>({id:beat.id,title:beat.title})),session:campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session',objective:globalThis.ECHO_OUTCOMES?.tableObjective(campaignContinuity(),campaignIndex.tableExtras.playerHub?.objective)?.text||globalThis.ECHO_QUEST_PREP?.live(campaignIndex.story,activeSessionId)?.objective||globalThis.ECHO_DM_DESK.session(globalThis.ECHO_DM_DESK.data(campaignIndex.tableExtras),activeSessionId).objective||campaignIndex.tableExtras.playerHub?.objective?.text||''}),
+      sessionMap:()=>({markerContext:navigationMarkerContext(),packId:state.contentPackId,key:activeCampaignId+'/'+activeSessionId,name:campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session',rootMap:globalThis.ECHO_CONTENT_PACKS?.find(p=>p.id===state.contentPackId)?.rootMap,preparation:(()=>{const p=globalThis.ECHO_CONTENT_PACKS?.find(p=>p.id===state.contentPackId);return p?.preparationVersion===1?{audit:p.preparationAudit,label:p.preparationLabel}:null;})(),currentBeat:state.runbook,beats:sessionRunbook(),scenes:sceneEntries(),points:Object.fromEntries(sceneEntries().filter(s=>s.kind==='map').map(s=>[s.id,state.map.scenes[s.id]?.points||globalThis.ECHO_TOWN_MAPS?.scene(s.id)?.points||[]]))}),
+      openMarkerNPC:id=>{if(campaignIndex.story.npcs.some(n=>n.id===id))globalThis.ECHO_STORY_UI.openPerson(id);else toast('This contact has no saved NPC card yet.');},
+      reviewMapMarker:(scene,point,title)=>{const exists=navigationSourceMarkers().some(m=>m.scene===scene&&m.point===point)||(mapSceneData(scene)?.points||[]).some(m=>m.id===point);if(!exists)return toast('This location marker is no longer available.');globalThis.ECHO_STORY_UI.outcome({title:'Location outcome · '+title,detail:'',status:'planned',basis:'Open',share:'private',playerText:'',markers:[{scene,point,reveal:false}],source:'DM location review — enter what actually happened, including any decision to postpone.'});},
+      reviewEncounter:id=>{const beat=sessionRunbook().find(b=>b.id===id);if(beat?.encounter&&state.combat.plans[beat.encounter]?.aftermath?.sessionId===activeSessionId)return openCombatAftermath(beat.encounter);if(beat)globalThis.ECHO_STORY_UI.outcome({kind:'other',title:'Outcome · '+beat.title,detail:'',playerText:'',status:'planned',basis:'Open',share:'private',markers:(()=>{const nav=globalThis.ECHO_SESSION_MAP?.selection();return nav?.markerId?[{scene:nav.board,point:nav.markerId,reveal:false}]:[];})(),sceneGuide:globalThis.ECHO_ENCOUNTER_FLOW?.reviewContext(activeCampaignId+'/'+activeSessionId,beat),source:'Prepared scene '+id+' — enter and review the actual account before confirming.'});},
+      applySessionPreparation:async()=>{const pack=globalThis.ECHO_CONTENT_PACKS?.find(p=>p.id===state.contentPackId);if(pack?.preparationVersion!==1)return;await captureRestorePoint('Before revised '+pack.preparationLabel+' preparation','manual');state.runbookBeats=structuredClone(pack.runbook);for(const id of pack.scenes)if(!state.scenes.some(s=>s.id===id)&&SCENES[id])state.scenes.push({id,...SCENES[id],kind:SCENES[id].kind||'visual',fog:SCENES[id].fog===true,grid:SCENES[id].kind==='map'&&SCENES[id].grid!==false});if(!pack.beats.includes(state.runbook))state.runbook=pack.beats[0];commit('Updated '+pack.preparationLabel+' preparation; gameplay and TV unchanged');globalThis.ECHO_SESSION_MAP?.render();},
+      previewSessionMap:id=>{if(!getScene(id)||!isMapScene(id))return;previewSceneId=id;contextTab='scene';renderContextSidebar();},
+      returnLive:()=>{previewSceneId=state.scene;contextTab='guide';renderContextSidebar();},showPreview:showScenePreview,
+      showBeatVisual:(artId)=>{const beat=sessionRunbook().find(item=>item.id===state.runbook);
+        if(artId&&getScene(artId)?.kind!=='map'){
+          const media=campaignIndex.presentation.media.find(m=>m.path===getScene(artId)?.image&&m.audience!=='dm');
+          if(media){Object.assign(state.presentation,{mode:'scene',mediaId:media.id,handoutId:'',title:'',subtitle:'',banner:'',activePreset:''});if(campaignIndex.tableExtras.atlas)campaignIndex.tableExtras.atlas.shown=null;commit('Showed reviewed location art');return;}
+        }
+        if(!beat?.scene||!getScene(beat.scene)){toast('This beat has no prepared visual in the current session.');return;}
+        if(state.turn.order.length&&state.turn.scene!==beat.scene){toast('End the current combat before showing a different scene.');return;}
+        changeScene(beat.scene,false);
+      },
+      previewBeatScene:()=>{const beat=sessionRunbook().find(item=>item.id===state.runbook);
+        if(!beat?.scene||!getScene(beat.scene)){toast('This beat has no prepared map.');return;}
+        previewSceneId=beat.scene;contextTab='scene';renderContextSidebar();
+      },
+      combat:{
+        snapshot:()=>({isMap:currentIsMap(),sceneId:state.scene,sceneTitle:displaySceneTitle(getScene(state.scene)?.title)||'Scene',
+          precision:(()=>{const scene=getScene(state.scene),source=globalThis.ECHO_ATLAS?.proposal(scene?.image);
+            if(source?.scale?.tacticalMeasurement===true)return 'Calibrated tactical grid · use its saved scale';
+            if(source?.scale?.tacticalMeasurement===false||scene?.grid===false||/^lmop-map-wave/.test(state.scene))return 'Illustrative map · distances need a DM ruling';
+            return 'Grid scale unverified · confirm before exact measurement';})(),
+          encounterId:selectedEncounter,encounters:sessionEncounters().map(({id,name})=>({id,name})),
+          tokens:state.tokens.map(({id,name,team,encounter,scene,placed,visible,hp,maxHp,ac,initiative,conditions})=>({id,name,team,encounter,scene,placed,visible,hp,maxHp,ac,initiative,conditions:[...conditions||[]]})),
+          turn:{...state.turn,order:[...state.turn.order]},initiativeOpen:!!state.combatRun.initiativePrompt.open}),
+        setMoveTool:()=>setMapTool('move'),
+        previewCombatMap:()=>{if(!getScene(state.turn.scene))return;
+          previewSceneId=state.turn.scene;contextTab='scene';renderContextSidebar();},
+        selectEncounter:id=>{if(!sessionEncounters().some(item=>item.id===id))return;selectedEncounter=id;renderEncounterSelect();renderRosters();renderContextSidebar();globalThis.ECHO_HYBRID_UI?.refresh();},
+        stageEncounter:()=>globalThis.ECHO_ENCOUNTER_LAUNCH?.stage('',selectedEncounter),
+        stageCurrentBeat:()=>{const beat=sessionRunbook().find(item=>item.id===state.runbook);
+          if(beat?.encounter)globalThis.ECHO_ENCOUNTER_LAUNCH?.stage(beat.id,beat.encounter);
+          else globalThis.ECHO_ENCOUNTER_LAUNCH?.stage('',selectedEncounter);
+        },
+        openToken:id=>openCombatCard(id),
+        targetToken:id=>{const token=getToken(id);if(!token?.placed||token.scene!==state.scene)return;
+          globalThis.ECHO_COMBAT_RUN?.target(id);contextTab='turn';renderContextSidebar();renderStage('dm');},
+        placeMissingParty:()=>{if(!currentIsMap())return;
+          const missing=state.tokens.filter(token=>token.team==='pc'&&(!token.placed||token.scene!==state.scene));
+          if(!missing.length)return;
+          const placed=state.tokens.filter(token=>token.team==='pc'&&token.placed&&token.scene===state.scene).length;
+          missing.forEach((token,index)=>{const slot=placed+index;token.placed=true;token.visible=true;token.scene=state.scene;
+            token.x=Math.min(80,18+(slot%5)*11);token.y=Math.min(84,72+Math.floor(slot/5)*8);});
+          commit(`Placed ${missing.length} party token${missing.length===1?'':'s'} on map`);
+        },
+        toggleToken:id=>{const token=getToken(id);if(!token)return;
+          if(token.placed&&token.scene===state.scene){
+            if(state.turn.order.includes(id)){toast('This token is in turn order. End combat before removing it, or hide it from the TV.');return;}
+            token.placed=false;commit(`${token.name} removed from map`);return;
+          }
+          if(!currentIsMap()){toast('Choose a battle map before placing tokens.');return;}
+          const teammates=state.tokens.filter(item=>item.id!==id&&item.team===token.team&&item.placed&&item.scene===state.scene);
+          const slot=teammates.length;token.scene=state.scene;token.placed=true;
+          token.x=token.team==='enemy'?Math.min(86,68+(slot%4)*6):Math.min(38,18+(slot%4)*6);
+          token.y=Math.min(82,27+Math.floor(slot/4)*10);
+          commit(`${token.name} placed on map`);
+        },
+        toggleVisibility:id=>{const token=getToken(id);if(!token||token.team==='pc')return;token.visible=!token.visible;commit(`${token.name} ${token.visible?'shown on':'hidden from'} TV`);},
+        setInitiative:(id,value)=>{const token=getToken(id);if(!token)return;
+          if(value==='')token.initiative=null;
+          else if(!Number.isInteger(Number(value))||Number(value)<-99||Number(value)>999){toast('Initiative must be a whole number from -99 to 999.');return;}
+          else token.initiative=Number(value);
+          commit(`${token.name} initiative ${token.initiative??'cleared'}`);
+        },
+        requestInitiative:toggleInitiativePrompt,rollEnemies:rollPlacedEnemies,buildOrder:buildTurnOrder,
+        nextTurn:()=>advanceTurn(1),endCombat:()=>$('end-combat').click()
+      }
     });
     globalThis.ECHO_MAP_REGISTER_UI?.init({content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill)});
     initAtlas();
+    globalThis.ECHO_RECONCILIATION?.init({
+      context:()=>({campaignId:activeCampaignId,story:campaignIndex.story}),
+      saveDraft:saveStory,
+      persist:async()=>{const key=campaignIndexKey();await enqueueSave(key,JSON.stringify(campaignIndex));if(failedSaveKeys.has(key))throw Error('Browser save failed. The service was not updated; download a backup.');},
+      refresh:()=>{} // Keep the current outcome form and its focus intact while background updates finish.
+    });
     globalThis.ECHO_CAMPAIGN_ENGINE_UI?.setContext(()=>({campaignId:activeCampaignId,sessionId:activeSessionId,story:campaignIndex.story,
       title:campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session',scratch:state.ergonomics?.scratch||'',
       recap:globalThis.ECHO_SESSION_FLOW?.session(campaignIndex.tableExtras,activeSessionId)?.notes?.recap||''}));
-    globalThis.ECHO_CAMPAIGN_ASSISTANT_UI?.init({
-      content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),toast,
-      context:()=>({campaignId:activeCampaignId,sessionId:activeSessionId,state,story:campaignIndex.story,rules:campaignIndex.rules,
-        scene:{...getScene(state.scene),id:state.scene},beat:sessionRunbook().find(b=>b.id===state.runbook),
+    const assistantContext=()=>({campaignId:activeCampaignId,sessionId:activeSessionId,state,story:campaignIndex.story,rules:campaignIndex.rules,
+        scene:{...getScene(state.scene),title:displaySceneTitle(getScene(state.scene)?.title),id:state.scene},beat:sessionRunbook().find(b=>b.id===state.runbook),
         objectives:globalThis.ECHO_QUEST_PREP.cards(campaignContinuity()).filter(q=>q.status==='active'),
         pending:globalThis.ECHO_DM_DESK.inbox(state,campaignIndex.tableExtras,globalThis.ECHO_DM_DESK.session(globalThis.ECHO_DM_DESK.data(campaignIndex.tableExtras),activeSessionId),globalThis.ECHO_CONTINUITY.trackers(campaignContinuity()),true),
-        clues:(presentedMapScene().points||[]).map(p=>({id:p.id,title:p.title,clue:p.clue,visible:p.visible,approved:p.approved}))}),
+        clues:(presentedMapScene().points||[]).map(p=>({id:p.id,title:p.title,clue:p.clue,visible:p.visible,approved:p.approved}))});
+    globalThis.ECHO_CAMPAIGN_ASSISTANT_UI?.init({
+      content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),toast,advance:id=>globalThis.ECHO_PARTY_UI.openAdvance(id),context:assistantContext,
       book:(book,page)=>globalThis.ECHO_RULES_UI.openBook(book,globalThis.ECHO_RULES_UI.printedToPdf(book,page).page),
       correct:id=>globalThis.ECHO_STORY_UI.correctOutcome(id),outcome:values=>globalThis.ECHO_STORY_UI.outcome(values)
     });
     globalThis.ECHO_AI_UI?.init({content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),settings:()=>globalThis.ECHO_COCKPIT.open('Settings'),toast,
-      context:()=>({state,story:campaignIndex.story,scene:{...getScene(state.scene),id:state.scene},beat:sessionRunbook().find(b=>b.id===state.runbook),sessionId:activeSessionId,campaignId:activeCampaignId})});
-    globalThis.ECHO_VOICE_UI?.init({content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),toast,
+      context:()=>({state,story:campaignIndex.story,scene:{...getScene(state.scene),title:displaySceneTitle(getScene(state.scene)?.title),id:state.scene},beat:sessionRunbook().find(b=>b.id===state.runbook),sessionId:activeSessionId,campaignId:activeCampaignId})});
+    globalThis.ECHO_VOICE_UI?.init({content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),toast,advance:id=>globalThis.ECHO_PARTY_UI.openAdvance(id),
       get:()=>campaignIndex.story.voiceCast,blank:()=>campaignIndex.story.contentProfile==='blank',
       set:async value=>{campaignIndex.story.voiceCast=globalThis.ECHO_AI_VOICE_CAST.normalize(value);await saveCampaignIndex();},
       audioState:()=>globalThis.ECHO_PRESENTATION.audioState()});
     globalThis.ECHO_VOICE_STUDIO?.init({
-      content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),toast,campaign:()=>activeCampaignId,practice:()=>activeCampaignId.startsWith('practice-'),
+      content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),toast,advance:id=>globalThis.ECHO_PARTY_UI.openAdvance(id),campaign:()=>activeCampaignId,practice:()=>activeCampaignId.startsWith('practice-'),
       get:()=>campaignIndex.story.voiceStudio,cast:()=>campaignIndex.story.voiceCast,
       set:async value=>{campaignIndex.story.voiceStudio=globalThis.ECHO_VOICE_STUDIO_DATA.normalize(value);await saveCampaignIndex();},
-      sources:()=>globalThis.ECHO_VOICE_STUDIO_SOURCES.collect({story:campaignIndex.story,beats:sessionRunbook(),sessionId:activeSessionId,handouts:campaignIndex.presentation.handouts}),
+      sources:()=>[...globalThis.ECHO_VOICE_STUDIO_SOURCES.collect({story:campaignIndex.story,beats:sessionRunbook(),sessionId:activeSessionId,handouts:campaignIndex.presentation.handouts}),...(campaignIndex.story.voiceStudio?.clips||[]).filter(c=>c.source.kind==='assistant').map(c=>({kind:'assistant',id:c.source.id,sessionId:c.source.sessionId,title:c.title,text:c.script,fingerprint:globalThis.ECHO_CAMPAIGN_ASSISTANT.signature(assistantContext()),allowed:c.source.fingerprint===globalThis.ECHO_CAMPAIGN_ASSISTANT.signature(assistantContext()),reason:'The assistant’s supporting records changed. Draft and review updated wording in DM assistant.'}))],
       media:()=>campaignIndex.presentation.media,readMedia:id=>readRecord('media:'+id),
-      storeMedia:async(id,blob,title)=>{const campaign=activeCampaignId;await writeMediaRecord(id,blob);if(campaign!==activeCampaignId)throw Error('Campaign changed while saving the recording.');campaignIndex.presentation.media.push({id,name:'Voice · '+title,kind:'audio',category:'audio',audience:'dm',mime:blob.type,path:'',hash:'',size:blob.size,tags:['narration-private'],source:'DM-reviewed voice studio recording'});await saveCampaignIndex();},
+      storeMedia:async(id,blob,title)=>{const campaign=activeCampaignId;await writeMediaRecord(id,blob);if(campaign!==activeCampaignId)throw Error('Campaign changed while saving the recording.');campaignIndex.presentation.media.push({id,name:'Voice · '+title,kind:'audio',category:'audio',audience:'dm',mime:blob.type,path:'',hash:'',size:blob.size,tags:['narration-private'],source:'DM-reviewed voice studio recording',license:'Provider-generated or imported; check selected voice rights before sharing'});await saveCampaignIndex();},
       volume:value=>{campaignIndex.presentation.audio.narration=value;void saveCampaignIndex();globalThis.ECHO_PRESENTATION.syncAudio();},
       publish:sendToPlayer,
       stage:async c=>{const media=campaignIndex.presentation.media.find(m=>m.id===c.visualId&&m.kind==='image'&&m.audience!=='dm');if(media){state.presentation.mode='scene';state.presentation.mediaId=media.id;commit('Showed explicitly staged narration visual');}if(c.ambienceId)await globalThis.ECHO_PRESENTATION.playGroup('ambience',c.ambienceId);}
     });
-    globalThis.ECHO_TABLE_FLOW?.init({state:()=>state,extras:()=>campaignIndex.tableExtras,story:()=>campaignIndex.story,campaign:()=>activeCampaignId,session:()=>activeSessionId,beats:sessionRunbook,sceneTitle:()=>getScene(state.scene)?.title||'',save:()=>{void saveCampaignIndex();},toast,
+    globalThis.ECHO_TABLE_FLOW?.init({state:()=>state,extras:()=>campaignIndex.tableExtras,story:()=>campaignIndex.story,campaign:()=>activeCampaignId,session:()=>activeSessionId,beats:sessionRunbook,sceneTitle:()=>displaySceneTitle(getScene(state.scene)?.title)||'',save:()=>{void saveCampaignIndex();},toast,
       content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),
       workspace:()=>({runbook:state.runbook,query:previewQuery,kind:previewKind,context:contextTab}),
       restoreWorkspace:w=>{if(sessionRunbook().some(b=>b.id===w.runbook))state.runbook=w.runbook;previewQuery=typeof w.query==='string'?w.query:'';previewKind=['all','map','art'].includes(w.kind)?w.kind:'all';if(['guide','turn','scene','encounter','clue','requests'].includes(w.context))contextTab=w.context;},
@@ -5812,11 +5803,11 @@
       practice:()=>activeCampaignId.startsWith('practice-'),leavePractice:async()=>{const source=campaignRegistry.campaigns.find(c=>c.id===activeCampaignId)?.practiceSource;if(!source)throw Error('Choose the original campaign in Session.');if(confirm('Return to the real campaign? Practice phone joins will close; reconnect phones after switching.'))await activateCampaign(source);}
     });
     globalThis.ECHO_SESSION_FLOW_UI?.init({
-      context:()=>{const local=globalThis.ECHO_DM_DESK.session(globalThis.ECHO_DM_DESK.data(campaignIndex.tableExtras),activeSessionId),lead=globalThis.ECHO_QUEST_PREP?.live(campaignIndex.story,activeSessionId);return {campaignId:activeCampaignId,sessionId:activeSessionId,sessionName:campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session',state,extras:campaignIndex.tableExtras,story:campaignIndex.story,beat:sessionRunbook().find(b=>b.id===state.runbook),sceneTitle:getScene(state.scene)?.title||state.scene,lead,objective:lead?.objective||local.objective||campaignIndex.tableExtras.playerHub?.objective?.text||'',activeQuests:globalThis.ECHO_QUEST_PREP.cards(campaignContinuity()).filter(q=>q.status==='active').map(q=>({id:q.id,title:q.title,status:q.status})),pending:globalThis.ECHO_DM_DESK.inbox(state,campaignIndex.tableExtras,local,globalThis.ECHO_CONTINUITY.trackers(campaignContinuity()),true),checks:globalThis.ECHO_RELIABILITY.tableStatus()};},
-      content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),toast,
+      context:()=>{const local=globalThis.ECHO_DM_DESK.session(globalThis.ECHO_DM_DESK.data(campaignIndex.tableExtras),activeSessionId),lead=globalThis.ECHO_QUEST_PREP?.live(campaignIndex.story,activeSessionId);return {campaignId:activeCampaignId,sessionId:activeSessionId,sessionName:campaignIndex.sessions.find(s=>s.id===activeSessionId)?.name||'Session',state,extras:campaignIndex.tableExtras,story:campaignIndex.story,beat:sessionRunbook().find(b=>b.id===state.runbook),sceneTitle:displaySceneTitle(getScene(state.scene)?.title)||state.scene,lead,objective:globalThis.ECHO_OUTCOMES?.tableObjective(campaignContinuity(),campaignIndex.tableExtras.playerHub?.objective)?.text||lead?.objective||local.objective||campaignIndex.tableExtras.playerHub?.objective?.text||'',activeQuests:globalThis.ECHO_QUEST_PREP.cards(campaignContinuity()).filter(q=>q.status==='active').map(q=>({id:q.id,title:q.title,status:q.status})),pending:globalThis.ECHO_DM_DESK.inbox(state,campaignIndex.tableExtras,local,globalThis.ECHO_CONTINUITY.trackers(campaignContinuity()),true),checks:globalThis.ECHO_RELIABILITY.tableStatus()};},
+      content:(title,fill)=>globalThis.ECHO_COCKPIT.content(title,fill),toast,advance:id=>globalThis.ECHO_PARTY_UI.openAdvance(id),
       save:async()=>{const key=campaignIndexKey(),raw=JSON.stringify(campaignIndex);const pending=saveQueue.then(()=>writeRecord(key,raw));saveQueue=pending.catch(()=>{});await pending;},snapshot:label=>captureRestorePoint(label,'manual'),outcome:values=>globalThis.ECHO_STORY_UI.outcome(values),
       review:item=>{if(item.kind==='outcome')return globalThis.ECHO_STORY_UI.open('outcomes');if(item.kind==='decision')return globalThis.ECHO_DM_DESK_UI.open('pace');reviewDeskItem(item);},
-      tool:key=>{const actions={quests:()=>globalThis.ECHO_STORY_UI.openQuestBoard(activeSessionId),outcomes:()=>globalThis.ECHO_STORY_UI.open('outcomes'),recap:()=>{const draft=globalThis.ECHO_SESSION_FLOW.session(campaignIndex.tableExtras,activeSessionId).notes.recap;if(draft)globalThis.ECHO_CONTINUITY_UI.stageRecap(draft);else globalThis.ECHO_CONTINUITY_UI.selectTab('recap');globalThis.ECHO_STORY_UI.open('continuity');},explore:()=>{applyDeskLayout('exploration');globalThis.ECHO_GUIDED.open('scene');},conversation:()=>{applyDeskLayout('conversation');globalThis.ECHO_GUIDED.open('scene');},combat:()=>globalThis.ECHO_GUIDED.open('combat'),preview:()=>{const beat=sessionRunbook().find(b=>b.id===state.runbook);if(beat?.encounter)return globalThis.ECHO_ENCOUNTER_LAUNCH.stage(beat.id,beat.encounter);if(beat?.scene&&getScene(beat.scene)){previewSceneId=beat.scene;contextTab='scene';renderContextSidebar();}else $('quick-scene').click();},inventory:()=>globalThis.ECHO_PHONE.open(),party:()=>globalThis.ECHO_PARTY_UI.open(),music:()=>globalThis.ECHO_PRESENTATION.open('audio'),desk:()=>globalThis.ECHO_DM_DESK_UI.open('pace'),detour:()=>globalThis.ECHO_TABLE_FLOW.openDetour()};return actions[key]?.();}
+      tool:key=>{const actions={spotlights:()=>globalThis.ECHO_STORY_UI.open('spotlights'),quests:()=>globalThis.ECHO_STORY_UI.openQuestBoard(activeSessionId),outcomes:()=>globalThis.ECHO_STORY_UI.open('outcomes'),recap:()=>{const draft=globalThis.ECHO_SESSION_FLOW.session(campaignIndex.tableExtras,activeSessionId).notes.recap;if(draft)globalThis.ECHO_CONTINUITY_UI.stageRecap(draft);else globalThis.ECHO_CONTINUITY_UI.selectTab('recap');globalThis.ECHO_STORY_UI.open('continuity');},explore:()=>{applyDeskLayout('exploration');globalThis.ECHO_HYBRID_UI?.go('explore');globalThis.ECHO_GUIDED.open('scene');},conversation:()=>{applyDeskLayout('conversation');globalThis.ECHO_HYBRID_UI?.go('scene');globalThis.ECHO_GUIDED.open('scene');},combat:()=>{globalThis.ECHO_HYBRID_UI?.go('combat');globalThis.ECHO_GUIDED.open('combat');},preview:()=>{const beat=sessionRunbook().find(b=>b.id===state.runbook);if(beat?.encounter)return globalThis.ECHO_ENCOUNTER_LAUNCH.stage(beat.id,beat.encounter);if(beat?.scene&&getScene(beat.scene)){previewSceneId=beat.scene;contextTab='scene';renderContextSidebar();}else $('quick-scene').click();},inventory:()=>globalThis.ECHO_PHONE.open(),party:()=>globalThis.ECHO_PARTY_UI.open(),music:()=>globalThis.ECHO_PRESENTATION.open('audio'),desk:()=>globalThis.ECHO_DM_DESK_UI.open('pace'),detour:()=>globalThis.ECHO_TABLE_FLOW.openDetour()};return actions[key]?.();}
     });
     const practiceButton=document.createElement('button');practiceButton.type='button';practiceButton.textContent='Create practice campaign';practiceButton.onclick=async()=>{if(activeCampaignId.startsWith('practice-')){toast('You are already in a practice campaign.');return;}if(!confirm('Create and open a separate practice copy? Phone access will close; use a new QR code in the practice campaign. Real campaign records remain separate.'))return;practiceButton.disabled=true;try{await duplicateCampaign(activeCampaignId,true);}catch(e){toast(e.message);}finally{practiceButton.disabled=false;}};$('cockpit-tools-Settings').append(practiceButton);
     renderDM();
@@ -5835,4 +5826,5 @@
     message.textContent = `Saved campaign data could not be opened safely: ${error.message}. Your stored records were not replaced. Keep your backup and update the app or restore from a valid file.`;
     document.body.prepend(message);
   });
+  if(globalThis.ECHO_BOUNDARY){const message=ECHO_BOUNDARY.notice();if(message)setTimeout(()=>toast(message),1200);}
 })();

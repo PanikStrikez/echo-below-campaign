@@ -1,0 +1,65 @@
+MOCK CAMPAIGN FIXES — VERIFICATION REPORT
+
+Scope
+App code and disposable tests only. No live browser save, real campaign database, character statistics, inventory, quests, uploaded artwork or source PDFs were edited by the rehearsal. Production phone services were not restarted. No provider requests or paid generation.
+
+FIXES AND WHERE TO FIND THEM
+
+1. Recovery growth and missing error feedback
+Settings → Recovery & campaigns → Restore points: compressed new snapshots, stored-size labels, storage usage check, and deliberate cleanup of older automatic points. Manual and migration originals are protected; reopening no longer truncates the restore-point list to thirty entries. Existing JSON points remain readable, and downloads decode to ordinary JSON. Failed record or index writes raise a persistent explanation and preserve the previous list. Older automatic points are deleted only after the new index saves.
+Measured example: 918,731 original bytes → 153,822 stored bytes, about 83% less. This is one test example, not a guarantee for every campaign.
+
+2. Missing Wave Echo Cave exit
+Area 10's running notes now include the dry northern passage toward area 18, separate from the low stream. A read-only erratum also appears when viewing an older saved beat. It does not reveal rooms or record travel.
+
+3. Painted maps versus source geometry
+Prepare a separate source layout in Atlas, then choose it under Prepared battle map in the encounter preview. Changing the draft remains private and turns off initial placement/reveal. Explicit Show on TV remains required. The old map, IDs, fog and positions stay saved. Encounter waves remember their approved map; captured formations retain their map provenance and cannot be reused on unrelated geometry. Already placed tokens retain their positions, and defeated wave members are not reintroduced automatically.
+Illustrative maps are labeled. Source traces retain their approximate-calibration caveat: these are not exact vectorizations of the printed plans. In a file-address browser, blocked canvas export now conceals the source map and explains that the desktop app's local HTTP address is needed.
+
+4. Higher-level Sneak Attack
+Action preview, damage compilation, critical dice, descriptions and phone feature text use the recorded rogue class level. A multiclass total is not substituted for an explicitly recorded rogue level. Once-per-turn, resource use, private targeting and undo checks remain intact. Character records themselves are not rewritten.
+
+5. Turn-blocking expiry reminders
+Known informational expiries such as Ray of Frost on a defeated enemy remain reviewable in the inbox but no longer block End turn. Player death saves, repeat saves, reactions, regeneration and ambiguous reminders remain urgent.
+
+6. Stale phone screens and misleading captures
+Phones render changed payloads even when the revision number repeats; interrupted requests time out and keep the last sheet. Returning to the phone page triggers a refresh. Screens expose their actually applied revision for diagnostics.
+The rehearsal verifies the rendered character/revision/HP before taking a phone capture. Failed or cancelled captures cannot replace the latest verified live images, and the viewer labels capture failures honestly.
+
+7. Stale party objectives
+Outcome review → Optional linked changes → Update the shared party objective. Review exact player-safe wording alongside the other effects. Publication requires a confirmed shared outcome, and correction/withdrawal/undo follows the history projection. A newer DM-approved phone objective request can still replace an older objective. Private outcome wording is never copied into that field automatically. Unrelated quests and TV main-quest publication rules remain unchanged.
+
+8. Ammunition ambiguity
+Phone sheets and items show the tracked ammunition count. Reviewed sheet ammunition transfers and consumption keep resource counts and carried quantities together; transfers show the proposed change before approval. The existing paper record is not silently repaired during display or preview.
+
+9. Unsupported spell automation
+Reference-only actions display a prominent explanation. The DM must supply the complete effect, targets, timing and costs through the existing ruling/review path. This fix does not claim automatic implementation of every spell or monster trait.
+
+10. Misleading zero-healing results
+Effect-only saves report the save and selected effect without fabricating a zero-damage/healing operation.
+
+11. Readability and level-review warnings
+Repeated scene-name prefixes are removed in display/content generation without rewriting saved map identity or geometry. Level-up previews flag preserved manual skill/save overrides when abilities or proficiency change; the DM can review the source instead of the app guessing a replacement.
+
+TEST EVIDENCE
+
+Passed: 23 focused automated cases across party actions, the new regression cases, and reliability checks.
+Passed: real browser combat — free token drag/undo, explicit ruler, initiative, shared DM/phone-ingress action review, physical dice, reaction boundary, resource spending and one undo event.
+Passed: real browser outcome review — preview/apply, objective wording, correction isolation, journal projection, undo/redo, reload and withdrawal.
+Passed: real browser recovery — interrupted import rollback, version-2 compatibility and fresh-profile restoration with matching characters, quests and scene.
+Passed: real browser source-map staging — separate layout, saved-beat erratum, private selection, placement/reveal reset, deliberate launch, wave binding, old fog and party preserved.
+Passed: real browser action panels — Flurry's two strikes/one cost/undo, explicit upcast Magic Missile dart choices, and a 390px phone request with targets. Its HTTP responses were mocked.
+Passed: inventory, phone-action engine, outcome engine, same-revision reconnect, character review and guided-play checks.
+Passed: five isolated HTTP clients — owner-only responses, one-device resync/rejoin and four uninterrupted peers.
+Earlier successful integration pass: nine workflows across five actual simulated phone browser pages and an ephemeral HTTP service. Visible HP/revisions agreed with responses; an approved objective reached all five, a private canary was excluded, one-phone reconnect preserved the other joins, compressed IndexedDB points reopened, deliberate retention worked, and map/fog remained unchanged. See Verification.json for that pass.
+Passed: deterministic faults in the actual coordinator with in-memory storage — both restore-record and index-write failures preserve state/index, surface the recovery explanation, and permit a later successful compressed point.
+
+LIMITS — NOT COUNTED AS PASSES
+
+The final complete five-screen capture repeat timed out, and a later session-map screenshot also timed out. These are recorded browser/capture limits; the earlier integration evidence is not relabeled as a clean final replay. The latest storage-failure checks were deterministic in-memory faults, not a physical disk-full test.
+This pass did not repeat the entire six-session story with five agents. It retested affected workflows and known defects. Optional adventure branches, exact sight lines, every unusual spell/trait, all dungeon geometry and physical viewing distance are not comprehensively certified.
+No real TV, phone hardware, speakers or live voice provider was tested. Source-layout traces require DM calibration/review, and unusual actions retain manual rulings.
+
+LOADING THE FIXES
+
+When ready, wait for the DM page to say Saved, then refresh it. Open through the desktop app's local HTTP address for source-map rendering. Phones can refresh individually; the existing join service and assignments were not reset by this work. No practice events should be imported into the real campaign.

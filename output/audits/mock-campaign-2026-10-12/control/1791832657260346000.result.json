@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "goblin-4",
+    "action": {
+      "actor": "goblin-4",
+      "label": "Scimitar",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791832657349-nmznr0bp",
+          "label": "Scimitar · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            2
+          ],
+          "total": 6,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:17:37 PM"
+        },
+        {
+          "id": "pa-1791832657349-fl36j4g2",
+          "label": "Scimitar · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            6
+          ],
+          "total": 8,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "1:17:37 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 6 vs AC 18: miss, 0 slashing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

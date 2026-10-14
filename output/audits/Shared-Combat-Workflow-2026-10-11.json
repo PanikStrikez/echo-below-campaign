@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-11",
+  "workflow": [
+    "action",
+    "targets",
+    "rolls",
+    "reactions",
+    "reviewed effects",
+    "resolve"
+  ],
+  "location": "Map Desk > Review action; Inbox > Review player action",
+  "changes": [
+    "DM party and creature action adapters use the existing phone action resolution engine",
+    "DM damage tools stage the same reviewed effect plan",
+    "Physical attack totals require natural die; physical damage replaces dice without bypassing hit or save results",
+    "Typed components reuse conditional defense rules and aggregate concentration per damage event",
+    "Reaction confirmation and current revision required before one command commits all patches",
+    "Shield bundles slot, reaction, AC and expiry; unsupported effects require written DM ruling",
+    "Private DM action labels and resolution internals excluded from phone receipts",
+    "Advanced ruling controls collapsed; DM drafts resumable; token movement remains unrestricted except explicit measurement tools"
+  ],
+  "tests": {
+    "combatUnitCases": 12,
+    "browser": "isolated Chrome; real app UI, DM and simulated phone-ingress attack, identical patches, physical dice, reaction confirmation, one-event undo, resource/reaction use, free token drag and ruler",
+    "phoneFrontEnd": "existing isolated composer/status tests",
+    "provider": "none",
+    "physicalTVAndPhones": "not tested",
+    "releaseGate": {
+      "passed": true,
+      "checks": 94,
+      "faultsCaught": 3,
+      "at": "2026-10-11T22:37:59.391030+00:00"
+    }
+  },
+  "liveCampaignChanged": false,
+  "livePhoneServiceRestarted": false,
+  "sourceBooksEdited": false,
+  "originalBackupSHA256": "5fd26c38231c524d4bad822983129cdab0db432158e2f59bfc5d495c4b31e32b",
+  "runtimeHashes": {
+    "Session-01-Combat-Actions.js": "abba52823da02042049ec8552aa87986447f37c348f2144a1c03ac7607997a73",
+    "Session-01-Phone-Actions.js": "63abda944e29f95b4bb3651e09a4ee900949ad233992b6cd86d76f2f7ddf29ec",
+    "Session-01-Phone-Actions-UI.js": "ef89ccdf63a90b70548f0569a5be5dfd310b02a72de9393706033e9435d517a0",
+    "Session-01-Commands.js": "844273c318ea927ba0402b9e04bba1b265a17edf7a82dabb717d454ef2f7dcd7",
+    "Session-01-Combat-Run.js": "6352329231678f0ad5198732ec10358e3df9f6ae78f6f9bbd05669500633d31a",
+    "Session-01-Combat-Plus-UI.js": "a8142378335b8acb3a3e7b5c5864ef2ab77550716665a887967b0c6560227081",
+    "Session-01-Battleboard.js": "2642c2f9c22ba3c3de68a1e4369d79909a21a698aa90551acd94495382667209",
+    "Session-01-Hybrid-UI.js": "ca8d082cc0bf088b8872d3b697967458d7ce9fd3c8301fe3e31b8c7a5ca91a10",
+    "Session-01-Hybrid-UI.css": "af3a717fbc28377426c6d4a7b6fe8f840dd04d2d59f86e7f346aa5dbf00b9462",
+    "Session-01-DM-Desk.js": "8316fa70d3524252084aedab936893f6ea1211e79962f371c16ec40ff79fbfea",
+    "Session-01-Guided-DM.js": "36d00bf9e375608940d891e70c70847ed1bb109a6a4eaccd87d31e4402d39425",
+    "Campaign-Module-Manifest.js": "6c68cc6d8f89471c6033e36a0e999b62e04df073a1af500e1d2d75e1c607453a",
+    "Session-01-TV-Display.html": "f68f41b9fae71c7441be97349cfe3068fefef79c5522dd0bab3e266586aea047"
+  },
+  "limitations": [
+    "Physical dice totals for action resolution are entered in the DM review; phone requests can still request digital resolution",
+    "Unusual effects are ruled explicitly; effect prose is not automatically executed",
+    "Pending preview drafts and held dice live in the current DM page; after refreshing, prepare a new review",
+    "Opposing reactions remain separate reviewed actions; the interrupted action is rechecked against their resulting state",
+    "No real provider or physical device test performed"
+  ],
+  "releaseCheck": "release-check/latest.html"
+}

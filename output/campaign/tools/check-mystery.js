@@ -30,6 +30,7 @@ for (const name of [
 const source = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
 const boot = source.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot > 0, 'Stop before browser initialization or campaign access');
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(source.slice(0, boot) + `
 globalThis.__mysteryFixture = {
   fresh: () => normalize(newCustomState()), publicState, phoneSnapshot,
@@ -316,7 +317,7 @@ await check('Linking legacy evidence creates one authoritative entry and preserv
   assert.equal(O.journal(restored).filter(e => e.text === 'CORRECTED_VISIBLE_OBSERVATION').length, 1);
 });
 
-await check('Only deliberately reviewed wording reaches shared displays or the selected owner phone', () => {
+await check('Only deliberately reviewed wording reaches shared displays or the selected owner phone', async () => {
   const f = fixture();
   M.prepare(f.story, { ...ECHO_RESEARCH_DATA.templates[6], title: 'PRIVATE_MYSTERY_PROJECT',
     question: 'PRIVATE_MYSTERY_QUESTION', method: 'PRIVATE_MYSTERY_METHOD' });
@@ -346,11 +347,7 @@ await check('Only deliberately reviewed wording reaches shared displays or the s
   assert(!JSON.stringify(F.phoneSnapshot()).includes('ALDRIC_OWNER_REVIEWED_WORDING'));
   assert(C.restore(f.d));
   assert(F.phoneSnapshot().privateClues['pc-aldric'].some(x => x.text === 'ALDRIC_OWNER_REVIEWED_WORDING'));
-  const loader = fs.readFileSync(path.join(root, 'Session-01-Loader.js'), 'utf8');
-  const privateList = loader.slice(loader.indexOf('const privateScripts'), loader.indexOf('const load ='));
-  for (const file of ['Campaign-Mystery-Data.js', 'Campaign-Research-Data.js', 'Campaign-Mystery.js'])
-    assert(privateList.includes(file), file + ' belongs in the DM-only script list');
-  assert.match(loader, /if \(!player\) for \(const file of privateScripts\)/);
+  await require('./test-support.cjs').assertPrivateModules(['Campaign-Mystery-Data.js','Campaign-Research-Data.js','Campaign-Mystery.js']);
 });
 
 for (const c of checks) console.log(`${c.ok ? 'PASS' : 'FAIL'} ${c.name}${c.ok ? '' : '\n' + c.error}`);

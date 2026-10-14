@@ -48,7 +48,7 @@
   }
 
   let host, report = null, loading = null, error = '', selecting = false;
-  const heard = new Set(), mounts = new Set();
+  const heard = new Set(), mounts = new Set(), roles = new WeakMap(), availability = new Map();
   const isSelected = (profile, sample) => profile?.voice.status === 'selected' &&
     profile.voice.auditionId === 'elevenlabs-plugin:' + sample.generationId &&
     profile.voice.provider === sample.provider && profile.voice.voiceId === sample.voiceId &&
@@ -69,20 +69,24 @@
   }
   function init(value) {
     host = value;
-    heard.clear(); mounts.clear(); error = ''; selecting = false;
+    heard.clear(); mounts.clear(); availability.clear(); error = ''; selecting = false;
   }
   function paint(box) {
     box.replaceChildren();
     if (error) el('p', error, box).className = 'ai-error';
     if (!report) { if (!error) el('p', 'Reading completed plugin auditions…', box); return; }
-    el('p', 'Four completed plugin samples. Voice choices are proposed until you listen privately and select one. Open a sample with headphones or another private output; these links open ElevenLabs in a separate tab.', box);
+    el('p', 'Completed plugin samples remain proposed until you listen privately and select a voice. Plugin links open ElevenLabs separately; the app cannot control sound from that tab. Use headphones there.', box);
     el('small', `${report.providerReportedCredits.toFixed(2)} provider-reported credits total · tracked separately from local auditions`, box);
-    for (const sample of report.samples) {
+    for (const sample of report.samples.filter(s=>!roles.get(box)||s.role===roles.get(box))) {
       const profile = M().profile(host.get(), sample.role), selected = isSelected(profile, sample), row = el('div', null, box);
       el('h4', `${profile.name} · ${sample.voiceName}`, row);
       el('p', `${sample.audioDurationSeconds.toFixed(1)} seconds · ${sample.providerReportedCredits.toFixed(2)} credits · ${selected ? 'selected by you' : 'proposed'}`, row);
-      const link = el('a', 'Open private audition', row);
+      const local=availability.get(sample.generationId);
+      el('p',local?.label||(host.localStatus?'Checking local recording…':'Plugin only · not saved for offline replay'),row).className='ai-status';
+      if(host.localStatus&&!availability.has(sample.generationId)){availability.set(sample.generationId,{label:'Checking local recording…'});Promise.resolve(host.localStatus(sample)).then(value=>{availability.set(sample.generationId,value);repaint();}).catch(()=>{availability.set(sample.generationId,{label:'Local file not verified · use recovery before offline play'});repaint();});}
+      const link = el('a', 'Open in ElevenLabs · external playback', row);
       link.href = FLOW_URL + sample.flowId; link.target = '_blank'; link.rel = 'noopener noreferrer';
+      if(host.prepareAudition){const handoff=el('button',local?.ready?'Open local recording':'Save this audition locally',row);handoff.type='button';handoff.addEventListener('click',()=>host.prepareAudition(sample));el('small','Download the existing sample from ElevenLabs, then import that file in Voice Studio. No new generation is needed. Importing does not select the campaign voice or approve table playback.',row);}
       const label = el('label', null, row), checkbox = el('input', null, label);
       checkbox.type = 'checkbox'; checkbox.checked = selected || heard.has(sample.generationId); checkbox.disabled = selected;
       el('span', 'I listened privately', label);
@@ -105,12 +109,13 @@
       });
     }
   }
-  function render(parent) {
+  function render(parent, role) {
     if (!host || host.blank?.()) return;
     const section = el('details', null, parent);
     section.open = false;
     el('summary', 'Completed plugin auditions · four proposed voices', section);
     const box = el('div', null, section);
+    roles.set(box,role||'');availability.clear();
     mounts.add(box); paint(box);
     if (!report && !loading && !error) void load();
     return section;

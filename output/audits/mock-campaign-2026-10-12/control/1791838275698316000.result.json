@@ -1,0 +1,85 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-south",
+      "round": 1,
+      "order": [
+        "pc-ringgo",
+        "s4-wave-3-stirge-5",
+        "pc-trista",
+        "pc-pebble",
+        "s4-wave-3-stirge-4",
+        "s4-wave-3-stirge-3",
+        "s4-wave-3-stirge-7",
+        "s4-wave-3-stirge-8",
+        "s4-wave-3-stirge-10",
+        "s4-wave-3-stirge-2",
+        "s4-wave-3-stirge-6",
+        "pc-aldric",
+        "s4-wave-3-stirge-9",
+        "s4-wave-3-stirge-1",
+        "pc-donavan"
+      ],
+      "index": 11
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 47,
+        "maxHp": 47
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45,
+        "maxHp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43,
+        "maxHp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 44,
+        "maxHp": 63
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 44,
+        "maxHp": 44
+      }
+    ],
+    "foes": [
+      {
+        "id": "s4-wave-3-stirge-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-4",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-6",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-7",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-8",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-9",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-10",
+        "hp": 2
+      }
+    ],
+    "due": []
+  }
+}

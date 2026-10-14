@@ -1,0 +1,77 @@
+{
+  "at": "2026-10-12T05:19:46.881Z",
+  "kind": "Isolated real-browser rehearsal; phone snapshot, not physical phones",
+  "package": "phandalin-aftermath-next",
+  "checkpoint": "Barthen\u2019s Provisions; Gundren at unnamed inn, condition unresolved; Trista holds rat; Glasstaff escaped, destination private",
+  "leadChecks": [
+    {
+      "id": "s5-barthen",
+      "before": "lmop-barthen-exterior",
+      "staged": "lmop-barthen-exterior",
+      "loaded": true,
+      "shown": "barthen-art",
+      "secretInPhone": false,
+      "events": 20
+    },
+    {
+      "id": "s5-inn",
+      "before": "barthen-art",
+      "staged": "barthen-art",
+      "loaded": true,
+      "shown": "phandalin-art",
+      "secretInPhone": false,
+      "events": 20
+    },
+    {
+      "id": "s5-rat",
+      "before": "phandalin-art",
+      "staged": "phandalin-art",
+      "loaded": true,
+      "shown": "phandalin-art",
+      "secretInPhone": false,
+      "events": 20
+    },
+    {
+      "id": "s5-redbrand",
+      "before": "phandalin-art",
+      "staged": "phandalin-art",
+      "loaded": true,
+      "shown": "town-phandalin",
+      "secretInPhone": false,
+      "events": 20
+    }
+  ],
+  "checks": [
+    "three seeded leads",
+    "local visuals loaded",
+    "private stage then publish",
+    "no prepared outcome recorded",
+    "party statistics preserved",
+    "phone snapshot and TV secrecy",
+    "reviewed discovery and undo",
+    "no orc camp or Kost respawn"
+  ],
+  "physical": "Not checked",
+  "liveServices": "Not restarted",
+  "originalSaveSha256": "5fd26c38231c524d4bad822983129cdab0db432158e2f59bfc5d495c4b31e32b",
+  "versions": {
+    "app": {
+      "sha256": "55b85420c9c84cec6b90c3c35c12e63a7de302a784c87a11ed7721eda6519763",
+      "files": 210,
+      "bytes": 8584297
+    },
+    "assets": {
+      "sha256": "87a0fba317377625b02215a822b6bdde68e08697a579bfd6c49b36b9d9aacc0c",
+      "files": 521,
+      "bytes": 987844904
+    },
+    "tests": {
+      "sha256": "f8b34cca529d0ba285eec44ab43f68b240c017c7a35a2e0a4710e880dbe468e5",
+      "files": 179,
+      "bytes": 1442880
+    },
+    "saveSchema": 3
+  },
+  "automatedScope": "Targeted quest-prep, loader, campaign boundary and next-package browser checks; not a new full release gate",
+  "dmReviewed": false
+}

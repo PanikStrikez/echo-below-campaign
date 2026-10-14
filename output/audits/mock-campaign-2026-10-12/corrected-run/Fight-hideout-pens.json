@@ -1,0 +1,530 @@
+[
+  {
+    "actor": "s2-hideout-pens-2",
+    "action": {
+      "actor": "s2-hideout-pens-2",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836753812-t7i0ry81",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            11
+          ],
+          "total": 15,
+          "natural": 11,
+          "public": false,
+          "kind": "digital",
+          "time": "2:25:53 PM"
+        },
+        {
+          "id": "pa-1791836753812-lu9owhy8",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:25:53 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 15 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-hideout-pens-2",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836754015-bd58ndoz",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              15
+            ],
+            "total": 19,
+            "natural": 15,
+            "public": false,
+            "kind": "digital",
+            "time": "2:25:54 PM"
+          },
+          {
+            "id": "pa-1791836754015-6p3mk9mv",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              2
+            ],
+            "total": 4,
+            "natural": 2,
+            "public": false,
+            "kind": "digital",
+            "time": "2:25:54 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 19 vs AC 18: hit, 4 piercing \u2192 4; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791836756246-qhg4s8mz",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              2
+            ],
+            "total": 8,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:56 PM"
+          },
+          {
+            "id": "pa-1791836756246-0o9xwc8j",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              3
+            ],
+            "total": 3,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:56 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-2",
+            "text": "Pen guard 2: 8 vs AC 14: miss, 0 fire \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-hideout-pens-1",
+    "action": {
+      "actor": "s2-hideout-pens-1",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836756827-u0dp6a84",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            12
+          ],
+          "total": 16,
+          "natural": 12,
+          "public": false,
+          "kind": "digital",
+          "time": "2:25:56 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 16 vs AC 14: hit, physical base 0, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-hideout-pens-1",
+        "label": "Shortsword",
+        "targets": [
+          "Trista"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836757482-5krhxz9m",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              6
+            ],
+            "total": 10,
+            "natural": 6,
+            "public": false,
+            "kind": "digital",
+            "time": "2:25:57 PM"
+          },
+          {
+            "id": "pa-1791836757482-u996aa8a",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              3
+            ],
+            "total": 5,
+            "natural": 3,
+            "public": false,
+            "kind": "digital",
+            "time": "2:25:57 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-trista",
+            "text": "Trista: 10 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791836757984-o46yy9ql",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              15
+            ],
+            "total": 21,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:57 PM"
+          },
+          {
+            "id": "pa-1791836757984-hs0qlxzd",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:57 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-2",
+            "text": "Pen guard 2: 21 vs AC 14: hit, 6 piercing \u2192 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791836758610-qzlwejo0",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              14
+            ],
+            "total": 20,
+            "natural": 14,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:58 PM"
+          },
+          {
+            "id": "pa-1791836758610-rk9p5isi",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:58 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-1",
+            "text": "Pen guard 1: 20 vs AC 14: hit, 7 bludgeoning \u2192 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Pen guard 1"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836758825-hq7qfu2w",
+            "label": "Martial Arts unarmed strike \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              15
+            ],
+            "total": 21,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:58 PM"
+          },
+          {
+            "id": "pa-1791836758825-5midkvcn",
+            "label": "Martial Arts unarmed strike \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:58 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-1",
+            "text": "Pen guard 1: 21 vs AC 14: hit, 6 bludgeoning \u2192 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791836759454-n3odfvov",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              19
+            ],
+            "total": 25,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:59 PM"
+          },
+          {
+            "id": "pa-1791836759454-ephfpz8j",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              5
+            ],
+            "total": 5,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:59 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-2",
+            "text": "Pen guard 2: 25 vs AC 14: hit, 5 cold \u2192 5; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791836760067-shn4ai9q",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              13
+            ],
+            "total": 19,
+            "natural": 13,
+            "public": true,
+            "kind": "digital",
+            "time": "2:26:00 PM"
+          },
+          {
+            "id": "pa-1791836760067-rhkvs206",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:26:00 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-2",
+            "text": "Pen guard 2: 19 vs AC 14: hit, 6 bludgeoning \u2192 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791836760553-9zp6wlnu",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              17
+            ],
+            "total": 23,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "2:26:00 PM"
+          },
+          {
+            "id": "pa-1791836760554-964cfjcs",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              9
+            ],
+            "total": 9,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "2:26:00 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-1",
+            "text": "Pen guard 1: 23 vs AC 14: hit, 9 fire \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "complete": "hostiles defeated or fled",
+    "state": {
+      "turn": {
+        "scene": "redbrand-hideout",
+        "round": 2,
+        "order": [
+          "s2-hideout-pens-2",
+          "pc-aldric",
+          "s2-hideout-pens-1",
+          "pc-ringgo",
+          "pc-trista",
+          "pc-donavan",
+          "pc-pebble"
+        ],
+        "index": 3
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 17,
+          "maxHp": 21
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 24,
+          "maxHp": 24
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 24,
+          "maxHp": 24
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 19,
+          "maxHp": 23
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 16,
+          "maxHp": 23
+        }
+      ],
+      "foes": [],
+      "due": []
+    }
+  }
+]

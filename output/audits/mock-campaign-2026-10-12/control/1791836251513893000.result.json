@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "redbrand-hideout",
+      "round": 1,
+      "order": [
+        "pc-aldric",
+        "s2-hideout-crypt-2",
+        "s2-hideout-crypt-1",
+        "s2-hideout-crypt-3",
+        "pc-trista",
+        "pc-pebble",
+        "pc-ringgo",
+        "pc-donavan"
+      ],
+      "index": 3
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 17,
+        "maxHp": 21
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 24,
+        "maxHp": 24
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 24,
+        "maxHp": 24
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 23,
+        "maxHp": 23
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 23,
+        "maxHp": 23
+      }
+    ],
+    "foes": [
+      {
+        "id": "s2-hideout-crypt-1",
+        "hp": 13
+      },
+      {
+        "id": "s2-hideout-crypt-2",
+        "hp": 13
+      },
+      {
+        "id": "s2-hideout-crypt-3",
+        "hp": 13
+      }
+    ],
+    "due": []
+  }
+}

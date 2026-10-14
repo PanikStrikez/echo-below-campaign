@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "result": {
+    "heal": {
+      "actor": "pc-pebble",
+      "label": "Second Wind",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839219952-bs200kxs",
+          "label": "Second Wind · healing 1.1",
+          "notation": "1d10+6",
+          "parts": [
+            3
+          ],
+          "total": 9,
+          "natural": 3,
+          "public": true,
+          "kind": "digital",
+          "time": "3:06:59 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 9 healing → 9; temp HP absorbed 0"
+        }
+      ],
+      "costs": [
+        {
+          "id": "pebble-second-wind",
+          "delta": -1
+        }
+      ]
+    },
+    "leave": {
+      "actor": "pc-pebble",
+      "label": "Disengage",
+      "targets": [],
+      "rolls": [],
+      "outcomes": [],
+      "costs": []
+    },
+    "turn": {
+      "scene": "lmop-map-wave-temple",
+      "round": 2,
+      "order": [
+        "s4-wave-19-wave-spider-2",
+        "s4-wave-19-wave-spider-3",
+        "pc-ringgo",
+        "pc-aldric",
+        "pc-pebble",
+        "s4-wave-19-nezznar-1",
+        "s4-wave-19-wave-spider-4",
+        "s4-wave-19-bugbear-2",
+        "s4-wave-19-bugbear-1",
+        "pc-donavan",
+        "s4-wave-18-vhalak-1",
+        "pc-trista",
+        "s4-wave-19-wave-spider-1"
+      ],
+      "index": 4
+    }
+  }
+}

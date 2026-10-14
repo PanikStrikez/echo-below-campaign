@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791836253659-83rrox8j",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              15
+            ],
+            "total": 21,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:17:33 PM"
+          },
+          {
+            "id": "pa-1791836253659-itr2jxib",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              2
+            ],
+            "total": 2,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:17:33 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-2",
+            "text": "Crypt skeleton 2: 21 vs AC 13: hit, 2 cold → 2; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

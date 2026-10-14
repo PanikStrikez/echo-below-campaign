@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "result": {
+    "tools": [
+      "init",
+      "open",
+      "render"
+    ],
+    "extras": {
+      "version": 1,
+      "notes": [],
+      "shared": [],
+      "bank": {
+        "cp": 0,
+        "sp": 0,
+        "ep": 0,
+        "gp": 0,
+        "pp": 0
+      },
+      "objective": {
+        "text": "",
+        "at": ""
+      },
+      "requests": []
+    }
+  }
+}

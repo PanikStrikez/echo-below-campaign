@@ -1,0 +1,88 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-barracks-1",
+    "action": {
+      "actor": "s2-hideout-barracks-1",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836664144-itdoe2la",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            4
+          ],
+          "total": 8,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "2:24:24 PM"
+        },
+        {
+          "id": "pa-1791836664144-8ygn2nez",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "2:24:24 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 8 vs AC 14: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-hideout-barracks-1",
+        "label": "Shortsword",
+        "targets": [
+          "Trista"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836664290-vfj2uao3",
+            "label": "Shortsword · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              19
+            ],
+            "total": 23,
+            "natural": 19,
+            "public": false,
+            "kind": "digital",
+            "time": "2:24:24 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-trista",
+            "text": "Trista: 23 vs AC 14: hit, physical base 0, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [
+          {
+            "actor": "pc-trista",
+            "label": "Deflect Attacks",
+            "targets": [],
+            "rolls": [],
+            "outcomes": [],
+            "costs": []
+          }
+        ],
+        "costs": []
+      }
+    }
+  }
+}

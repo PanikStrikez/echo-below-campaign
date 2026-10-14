@@ -1,0 +1,133 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "actor": "pc-ringgo",
+      "actions": [
+        {
+          "actor": "pc-ringgo",
+          "label": "Shortbow",
+          "rolls": [
+            {
+              "id": "pa-1791838436676-hrvkkmxy",
+              "label": "Shortbow · attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                18
+              ],
+              "total": 26,
+              "natural": 18,
+              "public": true,
+              "kind": "digital",
+              "time": "2:53:56 PM"
+            },
+            {
+              "id": "pa-1791838436676-1dzpeju8",
+              "label": "Shortbow · effect 1.1",
+              "notation": "1d6+5",
+              "parts": [
+                3
+              ],
+              "total": 8,
+              "natural": 3,
+              "public": true,
+              "kind": "digital",
+              "time": "2:53:56 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-6-ghoul-1",
+              "text": "South Barracks Ghoul 1: 26 vs AC 12: hit, 8 piercing → 8; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      ]
+    },
+    {
+      "actor": "pc-trista",
+      "actions": [
+        {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791838437008-5kmnzqch",
+              "label": "Unarmed Strike · attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                5
+              ],
+              "total": 12,
+              "natural": 5,
+              "public": true,
+              "kind": "digital",
+              "time": "2:53:57 PM"
+            },
+            {
+              "id": "pa-1791838437008-s80ihqs2",
+              "label": "Unarmed Strike · effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                1
+              ],
+              "total": 5,
+              "natural": 1,
+              "public": true,
+              "kind": "digital",
+              "time": "2:53:57 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-6-ghoul-1",
+              "text": "South Barracks Ghoul 1: 12 vs AC 12: hit, 5 bludgeoning → 5; temp HP absorbed 0"
+            }
+          ],
+          "costs": [],
+          "secondAttack": {
+            "actor": "pc-trista",
+            "label": "Unarmed Strike",
+            "rolls": [
+              {
+                "id": "pa-1791838437147-2307d3o7",
+                "label": "Unarmed Strike · attack 1",
+                "notation": "1d20+7",
+                "parts": [
+                  20
+                ],
+                "total": 27,
+                "natural": 20,
+                "public": true,
+                "kind": "digital",
+                "time": "2:53:57 PM"
+              },
+              {
+                "id": "pa-1791838437147-tnhdx0he",
+                "label": "Unarmed Strike · effect 1.1",
+                "notation": "2d8+4",
+                "parts": [
+                  5,
+                  8
+                ],
+                "total": 17,
+                "natural": 5,
+                "public": true,
+                "kind": "digital",
+                "time": "2:53:57 PM"
+              }
+            ],
+            "outcomes": [
+              {
+                "targetId": "s4-wave-6-ghoul-1",
+                "text": "South Barracks Ghoul 1: 27 vs AC 12: critical hit, 17 bludgeoning → 17; temp HP absorbed 0"
+              }
+            ],
+            "costs": []
+          }
+        }
+      ]
+    }
+  ]
+}

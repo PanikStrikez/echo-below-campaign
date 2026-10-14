@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "result": {
+    "status": 400,
+    "data": {
+      "error": "Choose an appropriate spell slot from your sheet"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "result": {
+    "medicine": {
+      "id": "1791839552715-eeab6u4u5w6",
+      "label": "Donavan examines captive",
+      "notation": "1d20+3",
+      "parts": [
+        10
+      ],
+      "total": 13,
+      "kind": "digital",
+      "time": "03:12 PM"
+    },
+    "healing": {
+      "actor": "pc-donavan",
+      "label": "Cure Wounds",
+      "targets": [
+        "Nundro"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839552857-l352m0c8",
+          "label": "Cure Wounds · healing 1.1",
+          "notation": "1d8+3",
+          "parts": [
+            8
+          ],
+          "total": 11,
+          "natural": 8,
+          "public": true,
+          "kind": "digital",
+          "time": "3:12:32 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "s4-nundro",
+          "text": "Nundro: 11 healing → 11; temp HP absorbed 0"
+        }
+      ],
+      "costs": [
+        {
+          "id": "donavan-slots-1",
+          "delta": -1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "ok": true,
+  "result": {
+    "goblin": 7,
+    "request": {
+      "id": "mock-trista-road-1",
+      "characterId": "pc-trista",
+      "revision": 1,
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T18:21:46.291Z",
+          "note": "Waiting for DM review."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T18:23:17.765Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T18:23:17.765Z",
+          "note": "Goblin 1: effect resolved"
+        }
+      ],
+      "resolution": {
+        "requestId": "mock-trista-road-1",
+        "revision": 1,
+        "baseRevision": 13,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "Monk weapon; thrown range 20/60 ft.",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "goblin-1",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d6+4",
+              "bonus": 6,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "piercing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ],
+          "partyCard": {
+            "kind": "weapon",
+            "choices": {},
+            "turnStamp": "road:1:0:pc-trista",
+            "usedSneak": false,
+            "usedPiercer": false
+          },
+          "support": {
+            "status": "supported",
+            "label": "Reviewed roll",
+            "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+            "source": {
+              "book": "2014 PHB",
+              "printedPage": 195,
+              "rule": "Attack and damage; weapon table p. 149",
+              "confidence": "verified rule / approved sheet"
+            }
+          }
+        },
+        "patches": [
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:1:pc-trista",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:1:pc-trista",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791829397500-vnwsb9j1",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              3
+            ],
+            "total": 9,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "12:23:17 PM"
+          },
+          {
+            "id": "pa-1791829397501-4z7s4zcj",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "12:23:17 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-1",
+            "text": "Goblin 1: 9 vs AC 15: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Goblin 1: 9 vs AC 15: miss, 0 piercing → 0; temp HP absorbed 0",
+        "at": "2026-10-12T18:23:17.502Z"
+      },
+      "source": "phone",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 0,
+      "entry": {
+        "id": "trista-dagger",
+        "name": "Dagger",
+        "type": "Action",
+        "attackBonus": 6,
+        "damageDice": "1d6+4",
+        "damageType": "piercing",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Monk weapon; thrown range 20/60 ft.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true,
+        "support": {
+          "status": "supported",
+          "label": "Reviewed roll",
+          "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 195,
+            "rule": "Attack and damage; weapon table p. 149",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Dagger",
+      "targetIds": [
+        "goblin-1"
+      ],
+      "targetNames": [
+        "Goblin 1"
+      ],
+      "casting": null,
+      "note": "Throw from within 20 feet; DM confirm range and cover.",
+      "mode": "normal",
+      "at": "2026-10-12T18:21:46.291Z",
+      "status": "resolved",
+      "message": "Goblin 1: effect resolved"
+    }
+  }
+}

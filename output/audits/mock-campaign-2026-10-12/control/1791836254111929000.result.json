@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791836254129-e8prhv2b",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              17
+            ],
+            "total": 23,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "2:17:34 PM"
+          },
+          {
+            "id": "pa-1791836254129-a5a4sgsn",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              5
+            ],
+            "total": 5,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:17:34 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-3",
+            "text": "Crypt skeleton 3: 23 vs AC 13: hit, 5 fire → 5; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

@@ -8,6 +8,8 @@ import shutil
 import threading
 import os
 from urllib.parse import urlsplit
+from status_evidence import versions as status_versions
+import datetime
 from portable_package import build
 from ai_service import AIService, PREFIX
 from campaign_service import CampaignService, PREFIX as CAMPAIGN_PREFIX
@@ -74,7 +76,9 @@ class Handler(SimpleHTTPRequestHandler):
             archive=json.loads(self.rfile.read(length))
             with tempfile.TemporaryDirectory(prefix='echo-portable-') as folder:
                 path=Path(folder)/'Echo-Below-Portable.zip'
-                build(ROOT,archive,path)
+                practice_path = ROOT / 'output/releases/Portable-Practice-Campaign.json'
+                practice = json.loads(practice_path.read_text()) if practice_path.exists() else None
+                build(ROOT,archive,path,layered=True,practice_archive=practice)
                 self.send_response(200)
                 self.send_header('Content-Type','application/zip')
                 self.send_header('Content-Disposition','attachment; filename="Echo-Below-Portable.zip"')
@@ -87,11 +91,22 @@ class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         if self._campaign('GET') or self._ai('GET'):
             return
+        if urlsplit(self.path).path == '/__echo_status':
+            allowed = {f'127.0.0.1:{self.server.server_port}', f'localhost:{self.server.server_port}'}
+            if self.headers.get('Host') not in allowed or self.headers.get('Origin') not in (None, *('http://' + h for h in allowed)) or self.headers.get('Sec-Fetch-Site') == 'cross-site':
+                return self.send_error(403)
+            data = json.dumps({'versions':status_versions(ROOT/'output/campaign'), 'at':datetime.datetime.now(datetime.timezone.utc).isoformat()}).encode()
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.send_header('Content-Length',str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+            return
         if self.path == '/__echo_health':
             data = b'echo-below-campaign\n'
             self.send_response(200)
             self.send_header('Content-Type', 'text/plain; charset=utf-8')
-            self.send_header('X-Echo-Package-Policy', '2')
+            self.send_header('X-Echo-Package-Policy', '3')
             self.send_header('Content-Length', str(len(data)))
             self.end_headers()
             self.wfile.write(data)

@@ -1,0 +1,36 @@
+{
+  "id": "pools-art",
+  "title": "Area 7 · Twin pools",
+  "image": "session-01-visuals/scene-10-twin-pools.png",
+  "key": "pools-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "pools"
+  ],
+  "sourceRecords": [
+    {
+      "id": "pools",
+      "title": "Area 7 · Twin pools",
+      "read": [
+        "Two dark pools fill much of the cavern. Water presses against rough stone-and-timber dams. The waterfall’s echo makes quieter movement hard to place.",
+        "The rough barriers hold back a great deal of water, and the noise fills the space around them. You can inspect their visible supports, look for ground that stays out of the current, or study the onward route before putting someone beside a dam."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Cragmaw twin-pools cavern, TWO large natural pools held by LOW FIELDSTONE DAMS, narrow waterfall high in EAST wall feeds them, stream drains WEST. Wide SOUTH exit and TWO smaller west passages. THREE goblin guards if discovered, otherwise neutral pool view. No modern aqueduct, enormous underground ocean or glowing waters. Off-frame visitor light plus dim natural reflected water.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Area 7 · Twin pools\nObservable scene and constraints: Cragmaw twin-pools cavern, TWO large natural pools held by LOW FIELDSTONE DAMS, narrow waterfall high in EAST wall feeds them, stream drains WEST. Wide SOUTH exit and TWO smaller west passages. THREE goblin guards if discovered, otherwise neutral pool view. No modern aqueduct, enormous underground ocean or glowing waters. Off-frame visitor light plus dim natural reflected water.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "417a66dc35c47344443c6dc6ba1721ff0b2b174083b1117833b811188b6d92d8",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/pools-art.png",
+  "generatedAt": "2026-10-12T15:48:23.420Z",
+  "candidateHash": "5f71fde53338d5cc570595412ff5e5b8fedaed2d487f0db4769d3386eb9a6212",
+  "review": "passed",
+  "reviewedHash": "5f71fde53338d5cc570595412ff5e5b8fedaed2d487f0db4769d3386eb9a6212",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.373Z",
+  "installedHash": "5f71fde53338d5cc570595412ff5e5b8fedaed2d487f0db4769d3386eb9a6212",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-10-twin-pools.png"
+}

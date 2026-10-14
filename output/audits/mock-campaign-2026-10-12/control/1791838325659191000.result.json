@@ -1,0 +1,74 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s4-wave-4-wave-skeleton-1",
+        "name": "Guardroom Skeleton 1",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-2",
+        "name": "Guardroom Skeleton 2",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-3",
+        "name": "Guardroom Skeleton 3",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-4",
+        "name": "Guardroom Skeleton 4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-5",
+        "name": "Guardroom Skeleton 5",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-6",
+        "name": "Guardroom Skeleton 6",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-7",
+        "name": "Guardroom Skeleton 7",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-8",
+        "name": "Guardroom Skeleton 8",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-9",
+        "name": "Guardroom Skeleton 9",
+        "hp": 13
+      }
+    ],
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 47
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 44
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 44
+      }
+    ]
+  }
+}

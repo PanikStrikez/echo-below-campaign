@@ -1,0 +1,2377 @@
+{
+  "at": "2026-10-12T05:26:28.689Z",
+  "environment": "Isolated Chrome with disposable local services; original export imported into fresh profile",
+  "physicalDevices": false,
+  "liveServicesChanged": false,
+  "errors": [],
+  "screens": [
+    {
+      "name": "dm-home",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ THE ECHO BELOW",
+          "width": 220,
+          "height": 43
+        },
+        {
+          "text": "Open player TV",
+          "width": 118,
+          "height": 31
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox",
+          "width": 52,
+          "height": 36
+        },
+        {
+          "text": "◖ Mute",
+          "width": 59,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 176,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 189,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 204,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 214,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 200,
+          "height": 38
+        },
+        {
+          "text": "Prepare Thundertree 1 · Western cottage",
+          "width": 175,
+          "height": 36
+        },
+        {
+          "text": "Inbox clear",
+          "width": 83,
+          "height": 36
+        },
+        {
+          "text": "Run a scene\nRead aloud, talk, and stage art",
+          "width": 371,
+          "height": 360
+        },
+        {
+          "text": "Start combat\nMaps, turns, and tokens",
+          "width": 371,
+          "height": 360
+        },
+        {
+          "text": "Explore\nFollow leads and discover places",
+          "width": 371,
+          "height": 360
+        },
+        {
+          "text": "Handle players\nRequests, sheets, and notes",
+          "width": 371,
+          "height": 360
+        },
+        {
+          "text": "Sword Coast atlas",
+          "width": 105,
+          "height": 29
+        },
+        {
+          "text": "−",
+          "width": 21,
+          "height": 29
+        },
+        {
+          "text": "+",
+          "width": 21,
+          "height": 29
+        },
+        {
+          "text": "Reset",
+          "width": 43,
+          "height": 29
+        },
+        {
+          "text": "Northern Coast & Icewind Dale",
+          "width": 176,
+          "height": 29
+        },
+        {
+          "text": "Neverwinter & Phandelver",
+          "width": 153,
+          "height": 29
+        },
+        {
+          "text": "The High Road",
+          "width": 95,
+          "height": 29
+        },
+        {
+          "text": "Waterdeep & Daggerford",
+          "width": 147,
+          "height": 29
+        },
+        {
+          "text": "Eastern Interior",
+          "width": 100,
+          "height": 29
+        },
+        {
+          "text": "Baldur’s Gate & Candlekeep",
+          "width": 162,
+          "height": 29
+        },
+        {
+          "text": "Travel & encounter kit",
+          "width": 132,
+          "height": 29
+        },
+        {
+          "text": "Open full atlas",
+          "width": 95,
+          "height": 30
+        },
+        {
+          "text": "NEXT PREPARED SCENE\nThundertree 1 · Western cottage",
+          "width": 504,
+          "height": 76
+        },
+        {
+          "text": "PLAYER REQUESTS\nInbox clear",
+          "width": 504,
+          "height": 76
+        },
+        {
+          "text": "NOW ON TV\nTV disconnected · last staged: The Echo Below",
+          "width": 504,
+          "height": 76
+        }
+      ],
+      "text": "✦ THE ECHO BELOW\nSession 3 · Gundren’s trail\nOpen player TV\nTV disconnected · last staged: The Echo Below\n⌕ Search\nInbox\n◖ Mute\n■ Stop sound\nMenu\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nCURRENT OBJECTIVE\nChoose a party objective in Quests\nPrepare Thundertree 1 · Western cottage\nInbox clear\nRun a scene\nRead aloud, talk, and stage art\nStart combat\nMaps, turns, and tokens\nExplore\nFollow leads and discover places\nHandle players\nRequests, sheets, and notes\nWORLD ATLAS\nThe Sword Coast\nSword Coast atlas\n−\n100%\n+\nReset\nIcewind Dale\nReghed Glacier\nSpine of the World\nNeverwinter Wood\nSword Mountains\nSouthern Sword Mountains\nHigh Forest\nStar Mounts\nGreypeak Mountains\nWestern Anauroch\nHigh Moor\nMisty Forest\nSerpent Hills\nMarsh of Chelimber\nGreycloak Hills\nForest of Wyrms\nTrollclaws\nTrielta Hills\nFields of the Dead\nLurkwood\nMere of Dead Men\nSouthwood\nCloakwood\nWood of Sharp Teeth\nThe Drowned Observatory · offshore-site-proposal\nThe Dead God’s Scar · valley-site-proposal\nThe Frozen Door · glacier-approach-area\nThe Walking Tower · roaming-area\nThe Broken Star · terrestrial-approach-area\nThe Hollow Mountain · provisional-mountain-area\nAgatha’s Lair\nAmphail\nBaldur's Gate\nBerdusk\nBlackford Crossing\nBoareskyr Bridge\nCandlekeep\nCitadel Felbarr\nConyberry\nCragmaw Castle\nCragmaw Hideout\nDaggerford\nDragonspear Castle\nElturel\nEvereska\nFort Morninglord\nGauntlgrym\nHardbuckler\nHelm's Hold\nIronmaster\nLeilon\nLongsaddle\nLuskan\nMirabar\nMithral Hall\nMount Hotenow\nNeverwinter\nOld Owl Well\nPhandalin\nScornubel\nSecomber\nSilverymoon\nSundabar\nThe Dead God’s Scar\nThe Drowned Observatory\nThe Silent Library\nThornhold\nThundertree\nTriboar Trail ambush site\nUndermountain\nWarlock's Crypt\nWaterdeep\nWave Echo Cave\nWyvern Tor\nYartar\nParty\nFind a point of interest\n\nChoose a marker for details. Browsing is private and does not move the party.\n\nNorthern Coast & Icewind Dale\nNeverwinter & Phandelver\nThe High Road\nWaterdeep & Daggerford\nEastern Interior\nBaldur’s Gate & Candlekeep\nTravel & encounter kit\nOpen full atlas\nNEXT PREPARED SCENE\nThundertree 1 · Western cottage\nPLAYER REQUESTS\nInbox clear\nNOW ON TV\nTV disconnected · last staged: The Echo Below\nRestored 10 sessions as a separate campaign."
+    },
+    {
+      "name": "dm-scene",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ THE ECHO BELOW",
+          "width": 220,
+          "height": 43
+        },
+        {
+          "text": "Scene",
+          "width": 70,
+          "height": 65
+        },
+        {
+          "text": "Explore",
+          "width": 79,
+          "height": 65
+        },
+        {
+          "text": "Map Desk",
+          "width": 94,
+          "height": 65
+        },
+        {
+          "text": "Open player TV",
+          "width": 118,
+          "height": 31
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox",
+          "width": 52,
+          "height": 36
+        },
+        {
+          "text": "◖ Mute",
+          "width": 59,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 176,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 189,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 204,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 214,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 200,
+          "height": 38
+        },
+        {
+          "text": "Open current quest lead",
+          "width": 157,
+          "height": 36
+        },
+        {
+          "text": "Inbox clear",
+          "width": 83,
+          "height": 36
+        },
+        {
+          "text": "Previous",
+          "width": 83,
+          "height": 40
+        },
+        {
+          "text": "Full scene notes",
+          "width": 128,
+          "height": 40
+        },
+        {
+          "text": "If they go elsewhere",
+          "width": 151,
+          "height": 40
+        },
+        {
+          "text": "▣ Show scene on TV",
+          "width": 216,
+          "height": 40
+        },
+        {
+          "text": "◫ Preview map",
+          "width": 216,
+          "height": 40
+        },
+        {
+          "text": "Next scene →",
+          "width": 216,
+          "height": 40
+        }
+      ],
+      "text": "✦ THE ECHO BELOW\nPhandalin · After Glasstaff\nScene\nExplore\nMap Desk\nOpen player TV\nTV disconnected · last staged: Phandalin · Outside Barthen’s Provisions\n⌕ Search\nInbox\n◖ Mute\n■ Stop sound\nMenu\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nCURRENT OBJECTIVE\nThe Missing Rockseeker · Trace Gundren’s abduction\nOpen current quest lead\nInbox clear\nTHE ECHO BELOW · SCENE\nOpening · Barthen’s Provisions\nOpening · Barthen’s Provisions\nLead · Business with Barthen\nLead · Check on Gundren at the inn\nLead · The captured rat\nOptional · Redbrand aftermath and witnesses\nClose · Record the actual changes\nSay aloud\n\nThe noise of Phandalin follows you to Barthen’s door: cart wheels on packed earth, a hammer somewhere farther down the street, and voices turning toward the day’s business. Gundren is at an inn behind you. Glasstaff is gone. The shop is here in front of you. What do you do?\n\nAsk the players\n\nDo you enter, speak outside, or go elsewhere? Who carries the supplies, if any? What do you tell Barthen about Gundren?\n\nChoices\n\nGo inside or handle the delivery.\n\nReturn to Gundren at the unnamed inn.\n\nExamine or question someone about the captured rat.\n\nLeave for another town lead; open the matching existing runbook.\n\nDM notes and secrets\nPrevious\nFull scene notes\nIf they go elsewhere\n\nDM preview · The player TV changes only when you choose Show on TV.\n\n▣ Show scene on TV\n◫ Preview map\nNext scene →\nNext session · Phandalin after Glasstaff is ready. Review carried HP and level-up choices before play."
+    },
+    {
+      "name": "dm-explore",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ THE ECHO BELOW",
+          "width": 220,
+          "height": 43
+        },
+        {
+          "text": "Scene",
+          "width": 70,
+          "height": 65
+        },
+        {
+          "text": "Explore",
+          "width": 79,
+          "height": 65
+        },
+        {
+          "text": "Map Desk",
+          "width": 94,
+          "height": 65
+        },
+        {
+          "text": "Open player TV",
+          "width": 118,
+          "height": 31
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox",
+          "width": 52,
+          "height": 36
+        },
+        {
+          "text": "◖ Mute",
+          "width": 59,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 176,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 189,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 204,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 214,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 200,
+          "height": 38
+        },
+        {
+          "text": "Open current quest lead",
+          "width": 157,
+          "height": 36
+        },
+        {
+          "text": "Inbox clear",
+          "width": 83,
+          "height": 36
+        },
+        {
+          "text": "1\nOpening · Barthen’s Provisions",
+          "width": 311,
+          "height": 71
+        },
+        {
+          "text": "2\nLead · Business with Barthen",
+          "width": 311,
+          "height": 71
+        },
+        {
+          "text": "3\nLead · Check on Gundren at the inn",
+          "width": 311,
+          "height": 71
+        },
+        {
+          "text": "4\nLead · The captured rat",
+          "width": 311,
+          "height": 71
+        },
+        {
+          "text": "5\nOptional · Redbrand aftermath and witnesses",
+          "width": 311,
+          "height": 71
+        },
+        {
+          "text": "Continue →",
+          "width": 170,
+          "height": 50
+        },
+        {
+          "text": "Preview map",
+          "width": 182,
+          "height": 50
+        },
+        {
+          "text": "Nearby options & improv note",
+          "width": 311,
+          "height": 35
+        },
+        {
+          "text": "▣ Show on TV",
+          "width": 341,
+          "height": 58
+        },
+        {
+          "text": "Mute",
+          "width": 54,
+          "height": 43
+        },
+        {
+          "text": "Undo",
+          "width": 56,
+          "height": 43
+        },
+        {
+          "text": "Inbox",
+          "width": 57,
+          "height": 43
+        }
+      ],
+      "text": "✦ THE ECHO BELOW\nPhandalin · After Glasstaff\nScene\nExplore\nMap Desk\nOpen player TV\nTV disconnected · last staged: Phandalin · Outside Barthen’s Provisions\n⌕ Search\nInbox\n◖ Mute\n■ Stop sound\nMenu\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nCURRENT OBJECTIVE\nThe Missing Rockseeker · Trace Gundren’s abduction\nOpen current quest lead\nInbox clear\nSESSION PILOT\n\nFollow the players. Use these beats when they fit.\n\nOpening · Barthen’s Provisions\nLead · Business with Barthen\nLead · Check on Gundren at the inn\nLead · The captured rat\nOptional · Redbrand aftermath and witnesses\nClose · Record the actual changes\n1\nOpening · Barthen’s Provisions\n2\nLead · Business with Barthen\n3\nLead · Check on Gundren at the inn\n4\nLead · The captured rat\n5\nOptional · Redbrand aftermath and witnesses\nBEAT 1 OF 6\nOpening · Barthen’s Provisions\nREAD ALOUD\n\nThe noise of Phandalin follows you to Barthen’s door: cart wheels on packed earth, a hammer somewhere farther down the street, and voices turning toward the day’s business. Gundren is at an inn behind you. Glasstaff is gone. The shop is here in front of you. What do you do?\n\nContinue →\nPreview map\nVISUAL TO STAGE\nPRIVATE NOTES\n\nThe party stopped here; entry, delivery, payment, and a conversation with Barthen are unconfirmed. Ask before treating any of them as done.\n\nBarthen wants the delivery settled and the Rockseeker brothers safe. He knows ordinary town business and the established published leads; he does not know Glasstaff’s escape destination.\n\nLost Mine of Phandelver (2014), Phandalin pp. 14–19, Redbrand Hideout pp. 20–26; actual-play record in Campaign continuity.\n\nIF THEY GO ELSEWHERE · DM ONLY\n\nGo inside or handle the delivery.\n\nReturn to Gundren at the unnamed inn.\n\nNearby options & improv note\n▣ Show on TV\nMute\nUndo\nInbox\nNext session · Phandalin after Glasstaff is ready. Review carried HP and level-up choices before play."
+    },
+    {
+      "name": "dm-combat",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ THE ECHO BELOW",
+          "width": 220,
+          "height": 43
+        },
+        {
+          "text": "Scene",
+          "width": 70,
+          "height": 65
+        },
+        {
+          "text": "Explore",
+          "width": 79,
+          "height": 65
+        },
+        {
+          "text": "Map Desk",
+          "width": 73,
+          "height": 65
+        },
+        {
+          "text": "Open player TV",
+          "width": 118,
+          "height": 31
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox",
+          "width": 52,
+          "height": 36
+        },
+        {
+          "text": "◖ Mute",
+          "width": 59,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 176,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 189,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 204,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 214,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 200,
+          "height": 38
+        },
+        {
+          "text": "Trista · open active turn",
+          "width": 155,
+          "height": 36
+        },
+        {
+          "text": "Inbox clear",
+          "width": 83,
+          "height": 36
+        },
+        {
+          "text": "End turn →",
+          "width": 140,
+          "height": 35
+        },
+        {
+          "text": "Mark action used",
+          "width": 136,
+          "height": 35
+        },
+        {
+          "text": "Mark bonus action used",
+          "width": 181,
+          "height": 35
+        },
+        {
+          "text": "Review action",
+          "width": 115,
+          "height": 35
+        },
+        {
+          "text": "Scene",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Tokens",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Fog",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Audio",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "TV",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Undo",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Next turn",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Map tools",
+          "width": 81,
+          "height": 57
+        }
+      ],
+      "text": "✦ THE ECHO BELOW\nRedbrand Hideout · Redbrand Hideout · Round 1 · Trista\nScene\nExplore\nMap Desk\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout · Redbrand Hideout\n⌕ Search\nInbox\n◖ Mute\n■ Stop sound\nMenu\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nCURRENT OBJECTIVE\nThe Missing Rockseeker · Trace Gundren’s abduction\nTrista · open active turn\nInbox clear\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nMAP DESK\nRun combat\n\nRedbrand Hideout · Redbrand Hideout\n\nGrid scale unverified · confirm before exact measurement\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nMovement used (ft.)\nMark action used\nMark bonus action used\nChoose an action\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions and spells\nChoose an action\nFlurry of Blows · Bonus action\nPatient Defense · Bonus action\nPatient Defense + Dodge · Bonus action\nStep of the Wind · Bonus action\nStep of the Wind + Disengage · Bonus action\nUncanny Metabolism · When rolling initiative\nDeflect Attacks · Reaction\nRedirect deflected attack · After Deflect Attacks\nMinor Illusion · Action\nShadow Arts: Darkness · Action\nSlow Fall · Reaction\nSpeedy: Dash · When you Dash\nDarkness · Level 2 spell\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nAttack +6 · 1d6+4 bludgeoning.\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10 · Bonus action · Cost 1 Focus Points (4 / 4). Effects are applied only after DM review.\nReview action and effects\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nManage limited uses\nAction review\nCombat tools · saves, reactions & effects\nTokens · 5 on map\nCombat tools\nEnd combat\nScene\nTokens\nFog\nAudio\nTV\nUndo\nNext turn\nMap tools\nNext session · Phandalin after Glasstaff is ready. Review carried HP and level-up choices before play."
+    },
+    {
+      "name": "dm-combat-small",
+      "viewport": [
+        1280,
+        800
+      ],
+      "pageWidth": 1280,
+      "buttons": [
+        {
+          "text": "✦ THE ECHO BELOW",
+          "width": 220,
+          "height": 43
+        },
+        {
+          "text": "Scene",
+          "width": 70,
+          "height": 65
+        },
+        {
+          "text": "Explore",
+          "width": 79,
+          "height": 65
+        },
+        {
+          "text": "Map Desk",
+          "width": 63,
+          "height": 65
+        },
+        {
+          "text": "Open player TV",
+          "width": 118,
+          "height": 31
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox",
+          "width": 52,
+          "height": 36
+        },
+        {
+          "text": "◖ Mute",
+          "width": 59,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 130,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 142,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 158,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 168,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 153,
+          "height": 38
+        },
+        {
+          "text": "Trista · open active turn",
+          "width": 155,
+          "height": 36
+        },
+        {
+          "text": "Inbox clear",
+          "width": 83,
+          "height": 36
+        },
+        {
+          "text": "End turn →",
+          "width": 140,
+          "height": 35
+        },
+        {
+          "text": "Mark action used",
+          "width": 136,
+          "height": 35
+        },
+        {
+          "text": "Mark bonus action used",
+          "width": 181,
+          "height": 35
+        },
+        {
+          "text": "Review action",
+          "width": 115,
+          "height": 35
+        },
+        {
+          "text": "Scene",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Tokens",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Fog",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Audio",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "TV",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Undo",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Next turn",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Map tools",
+          "width": 81,
+          "height": 57
+        }
+      ],
+      "text": "✦ THE ECHO BELOW\nRedbrand Hideout · Redbrand Hideout · Round 1 · Trista\nScene\nExplore\nMap Desk\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout · Redbrand Hideout\n⌕ Search\nInbox\n◖ Mute\n■ Stop sound\nMenu\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nCURRENT OBJECTIVE\nThe Missing Rockseeker · Trace Gundren’s abduction\nTrista · open active turn\nInbox clear\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nMAP DESK\nRun combat\n\nRedbrand Hideout · Redbrand Hideout\n\nGrid scale unverified · confirm before exact measurement\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nMovement used (ft.)\nMark action used\nMark bonus action used\nChoose an action\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions and spells\nChoose an action\nFlurry of Blows · Bonus action\nPatient Defense · Bonus action\nPatient Defense + Dodge · Bonus action\nStep of the Wind · Bonus action\nStep of the Wind + Disengage · Bonus action\nUncanny Metabolism · When rolling initiative\nDeflect Attacks · Reaction\nRedirect deflected attack · After Deflect Attacks\nMinor Illusion · Action\nShadow Arts: Darkness · Action\nSlow Fall · Reaction\nSpeedy: Dash · When you Dash\nDarkness · Level 2 spell\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nAttack +6 · 1d6+4 bludgeoning.\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10 · Bonus action · Cost 1 Focus Points (4 / 4). Effects are applied only after DM review.\nReview action and effects\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nManage limited uses\nAction review\nCombat tools · saves, reactions & effects\nTokens · 5 on map\nCombat tools\nEnd combat\nScene\nTokens\nFog\nAudio\nTV\nUndo\nNext turn\nMap tools\nNext session · Phandalin after Glasstaff is ready. Review carried HP and level-up choices before play."
+    },
+    {
+      "name": "dm-quest-panel",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ THE ECHO BELOW",
+          "width": 220,
+          "height": 43
+        },
+        {
+          "text": "Scene",
+          "width": 70,
+          "height": 65
+        },
+        {
+          "text": "Explore",
+          "width": 79,
+          "height": 65
+        },
+        {
+          "text": "Map Desk",
+          "width": 73,
+          "height": 65
+        },
+        {
+          "text": "Open player TV",
+          "width": 118,
+          "height": 31
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox",
+          "width": 52,
+          "height": 36
+        },
+        {
+          "text": "◖ Mute",
+          "width": 59,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 176,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 189,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 204,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 214,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 200,
+          "height": 38
+        },
+        {
+          "text": "Trista · open active turn",
+          "width": 155,
+          "height": 36
+        },
+        {
+          "text": "Inbox clear",
+          "width": 83,
+          "height": 36
+        },
+        {
+          "text": "End turn →",
+          "width": 140,
+          "height": 35
+        },
+        {
+          "text": "Mark action used",
+          "width": 136,
+          "height": 35
+        },
+        {
+          "text": "Mark bonus action used",
+          "width": 181,
+          "height": 35
+        },
+        {
+          "text": "Review action",
+          "width": 115,
+          "height": 35
+        },
+        {
+          "text": "Scene",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Tokens",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Fog",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Audio",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "TV",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Undo",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Next turn",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Map tools",
+          "width": 81,
+          "height": 57
+        },
+        {
+          "text": "Close",
+          "width": 60,
+          "height": 43
+        },
+        {
+          "text": "Choose leads",
+          "width": 113,
+          "height": 43
+        },
+        {
+          "text": "Session board",
+          "width": 118,
+          "height": 43
+        },
+        {
+          "text": "Player quest views",
+          "width": 148,
+          "height": 43
+        },
+        {
+          "text": "Manage quests & publication",
+          "width": 217,
+          "height": 43
+        },
+        {
+          "text": "Record an outcome",
+          "width": 153,
+          "height": 43
+        },
+        {
+          "text": "Prepare Phandalin → Waterdeep",
+          "width": 239,
+          "height": 43
+        },
+        {
+          "text": "The Missing Rockseeker · Approach 3 · Needs prep",
+          "width": 544,
+          "height": 43
+        },
+        {
+          "text": "Find Gundren · Approach 1 · Needs prep",
+          "width": 544,
+          "height": 43
+        },
+        {
+          "text": "The Redbrand Threat · Approach 3 · Needs prep",
+          "width": 544,
+          "height": 43
+        },
+        {
+          "text": "Undo prep change",
+          "width": 146,
+          "height": 43
+        },
+        {
+          "text": "Redo prep change",
+          "width": 144,
+          "height": 43
+        },
+        {
+          "text": "Active",
+          "width": 64,
+          "height": 43
+        },
+        {
+          "text": "Completed",
+          "width": 96,
+          "height": 43
+        },
+        {
+          "text": "All quests",
+          "width": 89,
+          "height": 43
+        }
+      ],
+      "text": "✦ THE ECHO BELOW\nRedbrand Hideout · Redbrand Hideout · Round 1 · Trista\nScene\nExplore\nMap Desk\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout · Redbrand Hideout\n⌕ Search\nInbox\n◖ Mute\n■ Stop sound\nMenu\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nCURRENT OBJECTIVE\nThe Missing Rockseeker · Trace Gundren’s abduction\nTrista · open active turn\nInbox clear\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nMAP DESK\nRun combat\n\nRedbrand Hideout · Redbrand Hideout\n\nGrid scale unverified · confirm before exact measurement\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nMovement used (ft.)\nMark action used\nMark bonus action used\nChoose an action\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions and spells\nChoose an action\nFlurry of Blows · Bonus action\nPatient Defense · Bonus action\nPatient Defense + Dodge · Bonus action\nStep of the Wind · Bonus action\nStep of the Wind + Disengage · Bonus action\nUncanny Metabolism · When rolling initiative\nDeflect Attacks · Reaction\nRedirect deflected attack · After Deflect Attacks\nMinor Illusion · Action\nShadow Arts: Darkness · Action\nSlow Fall · Reaction\nSpeedy: Dash · When you Dash\nDarkness · Level 2 spell\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nAttack +6 · 1d6+4 bludgeoning.\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10 · Bonus action · Cost 1 Focus Points (4 / 4). Effects are applied only after DM review.\nReview action and effects\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nManage limited uses\nAction review\nCombat tools · saves, reactions & effects\nTokens · 5 on map\nCombat tools\nEnd combat\nScene\nTokens\nFog\nAudio\nTV\nUndo\nNext turn\nMap tools\nTHE ECHO BELOW · CAMPAIGN MEMORY\nStory & continuity\nPhandalin · After Glasstaff\nClose\nOpen tool\nCharacter stories & spotlights\nCharacter chapters & satellite adventures\nIntervention & finale\nQuests · player view\nQuest guide\nQuest session workspace\nOutcome review\nCampaign continuity & quests\nEvidence and research\nFirst Undermountain expeditions\nExpedition record & return\nBetween expeditions\nMending Court · home & relationships\nPhandalin → Waterdeep\nWave Echo journal\nSession prep\nPhandelver packs\nBranching runbook\nSecret handouts\nEvidence\nPlayer journal\nPeople\nWaterdeep\nNine sites\nUndermountain\nCalendar & clocks\nEnd of session\nQuest workspace\n\nChoose two or three likely leads for the next session. Everything here is private preparation; approved outcomes supply the history.\n\nChoose leads\nSession board\nPlayer quest views\nManage quests & publication\nRecord an outcome\nPrepare Phandalin → Waterdeep\nPrepare for\nNext session · unassigned\nSession 1 · Goblin Arrows\nSession 2 · Phandalin\nSession 2 · Phandalin\nSession 2 · Phandalin\nSession 3\nSession 2 · Phandalin\nPart 3 · Wilderness and castle\nSession 3 · Gundren’s trail\nSession 4 · Wave Echo Cave\nThe Silent Library\nPhandalin · After Glasstaff\n3/3 likely leads\nThe Missing Rockseeker · Approach 3 · Needs prep\nFind Gundren · Approach 1 · Needs prep\nThe Redbrand Threat · Approach 3 · Needs prep\nUndo prep change\nRedo prep change\nQuest library\n\nActive quests first. Search the complete library to prepare another path; completed quests remain available for follow-ups.\n\nActive\nCompleted\nAll quests\nSearch the full quest library\n\n6 matching quests\n\nChoose a quest\nChoose a quest\nThe Echo Below · active\nThe Missing Rockseeker · active\nFind Gundren · active\nThe Redbrand Threat · active\nInvestigate the Black Spider · active\nOld Owl Well · active\nThe Redbrand Threat\n\nside · active · DM preparation\n\nCurrent objective\n\nThe Redbrand Threat · Establish the current situation\n\nKnown evidence and private context\nAvailable preparation leads\n\nThese are possible approaches to prepare. Their presence does not mean the party has learned them.\n\nApproach 1\n\nQuestion a surviving witness or examine documents actually recovered from the hideout.\n\nAdd approach 1 to board\nApproach 2\n\nCompare the account with an independent record or witness.\n\nAdd approach 2 to board\nApproach 3\n\nExamine the captured rat with Trista’s consent; separate observed behavior from guesses about its nature.\n\nOn session board\nAlternate approaches\nRelevant NPCs (4)\nScenes, maps and runbook (6 visuals · 12 beats)\nEncounters (5)\nMedia cues (7)\nCharacter opportunities (5)\nAdd a reference from the existing library\nNext session · Phandalin after Glasstaff is ready. Review carried HP and level-up choices before play."
+    },
+    {
+      "name": "tv-combat",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "pageWidth": 1920,
+      "buttons": [
+        {
+          "text": "Full screen",
+          "width": 86,
+          "height": 34
+        },
+        {
+          "text": "Journal (16)",
+          "width": 93,
+          "height": 34
+        }
+      ],
+      "text": "Redbrand Hideout · Redbrand Hideout\nDrag your hero; click dark areas to ask the DM to explore.\nDM seen 0s ago · update 2\nFull screen\nJournal (16)\nRound 1 · Trista’s turn\nTrista · 18\nDonavan · 17\nRinggo · 16\nPebble · 15\nAldric · 14\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nDay · Clear"
+    },
+    {
+      "name": "phone-first-join",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 43
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Show me where",
+          "width": 148,
+          "height": 42
+        },
+        {
+          "text": "Next",
+          "width": 62,
+          "height": 42
+        },
+        {
+          "text": "Skip for now",
+          "width": 122,
+          "height": 42
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 364,
+          "height": 58
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:20 PM · update 1\n\nSaved sheet & joining\nPHONE WALKTHROUGH · 1 / 5\nConfirm your character\n\nCheck the name and HP on your character card. If this is not your character, use Saved sheet & joining to rejoin.\n\nShow me whereNextSkip for now\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+6 to hit · 1d6+4Reviewed roll\nQuick roll only\nRequest action\nSpear\n+6 to hit · 1d8+4Choose details\nQuick roll only\nRequest action\nUnarmed Strike\n+6 to hit · 1d6+4Reviewed roll\nQuick roll only\nRequest action\nMartial Arts unarmed strike\n+6 to hit · 1d6+4Reviewed roll\nQuick roll only\nRequest action\nFlurry of Blows\n+6 to hit · 1d6+4Choose details\nQuick roll only\nRequest action\nPatient Defense\nChoose details\nRequest action\nPatient Defense + Dodge\nChoose details\nRequest action\nStep of the Wind\nChoose details\nRequest action\nStep of the Wind + Disengage\nChoose details\nRequest action\nUncanny Metabolism\n1d6+4Choose details\nRequest action\nDeflect Attacks\n1d10+8Manual ruling\nRequest action\nRedirect deflected attack\n2d6+4Manual ruling\nRequest action\nMinor Illusion\nManual ruling\nRequest action\nShadow Arts: Darkness\nManual ruling\nRequest action\nSlow Fall\nManual ruling\nRequest action\nSpeedy: Dash\nManual ruling\nRequest action\nAll spells (2)\nFocus Points\n4 / 4 left\nAsk to use\nUncanny Metabolism\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-turn",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 43
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 364,
+          "height": 58
+        },
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:20 PM · update 1\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+6 to hit · 1d6+4Reviewed roll\nQuick roll only\nRequest action\nSpear\n+6 to hit · 1d8+4Choose details\nQuick roll only\nRequest action\nUnarmed Strike\n+6 to hit · 1d6+4Reviewed roll\nQuick roll only\nRequest action\nMartial Arts unarmed strike\n+6 to hit · 1d6+4Reviewed roll\nQuick roll only\nRequest action\nFlurry of Blows\n+6 to hit · 1d6+4Choose details\nQuick roll only\nRequest action\nPatient Defense\nChoose details\nRequest action\nPatient Defense + Dodge\nChoose details\nRequest action\nStep of the Wind\nChoose details\nRequest action\nStep of the Wind + Disengage\nChoose details\nRequest action\nUncanny Metabolism\n1d6+4Choose details\nRequest action\nDeflect Attacks\n1d10+8Manual ruling\nRequest action\nRedirect deflected attack\n2d6+4Manual ruling\nRequest action\nMinor Illusion\nManual ruling\nRequest action\nShadow Arts: Darkness\nManual ruling\nRequest action\nSlow Fall\nManual ruling\nRequest action\nSpeedy: Dash\nManual ruling\nRequest action\nAll spells (2)\nFocus Points\n4 / 4 left\nAsk to use\nUncanny Metabolism\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-turn-content",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:21 PM · update 2\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+6 to hit · 1d6+4Reviewed roll\nQuick roll only\nRequest action\nSpear\n+6 to hit · 1d8+4Choose details\nQuick roll only\nRequest action\nUnarmed Strike\n+6 to hit · 1d6+4Reviewed roll\nQuick roll only\nRequest action\nMartial Arts unarmed strike\n+6 to hit · 1d6+4Reviewed roll\nQuick roll only\nRequest action\nFlurry of Blows\n+6 to hit · 1d6+4Choose details\nQuick roll only\nRequest action\nPatient Defense\nChoose details\nRequest action\nPatient Defense + Dodge\nChoose details\nRequest action\nStep of the Wind\nChoose details\nRequest action\nStep of the Wind + Disengage\nChoose details\nRequest action\nUncanny Metabolism\n1d6+4Choose details\nRequest action\nDeflect Attacks\n1d10+8Manual ruling\nRequest action\nRedirect deflected attack\n2d6+4Manual ruling\nRequest action\nMinor Illusion\nManual ruling\nRequest action\nShadow Arts: Darkness\nManual ruling\nRequest action\nSlow Fall\nManual ruling\nRequest action\nSpeedy: Dash\nManual ruling\nRequest action\nAll spells (2)\nFocus Points\n4 / 4 left\nAsk to use\nUncanny Metabolism\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-sheet",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 43
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 364,
+          "height": 58
+        },
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Download emergency sheet",
+          "width": 241,
+          "height": 43
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:21 PM · update 3\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nTrista\nLevel 4\nDownload emergency sheet\n\nHuman · Monk · Warrior of Shadow · Criminal / Spy · 2024 character exception\n\nSTR\n+2\n14\nDEX\n+4\n18\nCON\n+4\n18\nINT\n-1\n9\nWIS\n+0\n11\nCHA\n+1\n12\nPassive Perception 10\nPassive Insight 10\nPassive Investigation 9\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nMinor Illusion · cantrip\naction · slot/cantrip available\n\nWarrior of Shadow; at will; Wisdom spellcasting.\n\nAsk to cast\nDarkness · level 2\nunknown · check preparation or casting resource\n\nShadow Arts; costs 1 Focus Point, no components; concentration.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nDagger\nAction · +6 to hit · 1d6+4 piercing\n\nMonk weapon; thrown range 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nSpear\nAction · +6 to hit · 1d8+4 piercing\n\nVersatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nChoose details · Choose one or two hands; the recorded d8 is the two-handed spear.\nUnarmed Strike\nAction · +6 to hit · 1d6+4 bludgeoning\n\nMartial Arts.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nMartial Arts unarmed strike\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nNo Attack action prerequisite while Martial Arts applies.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nFlurry of Blows\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nQuick roll only\nRoll damage\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nPatient Defense\nBonus action\n\nDisengage without spending Focus. Spend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nPatient Defense + Dodge\nBonus action\n\nSpend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind\nBonus action\n\nDash without spending Focus. Spend 1 Focus Point to Dash and Disengage and double jump distance.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind + Disengage\nBonus action\n\nSpend 1 Focus Point to Dash and Disengage; double jump distance this turn.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nUncanny Metabolism\nWhen rolling initiative · 1d6+4\n\nRestore all spent Focus Points and heal 1d6 + Monk level; once per long rest.\n\nRoll damage\nChoose details · Confirm initiative was rolled. Restore Focus and roll healing; spend the once-per-long-rest use.\nDeflect Attacks\nReaction · 1d10+8\n\nWhen hit by an attack that deals bludgeoning, piercing, or slashing, reduce total damage by 1d10 + DEX + Monk level. If reduced to 0, you may spend 1 Focus Point to redirect.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nRedirect deflected attack\nAfter Deflect Attacks · 2d6+4 · DC 10 DEX\n\nOnly if Deflect Attacks reduced damage to 0. Spend 1 Focus Point; eligible target makes DEX save DC 10 or takes the attack’s damage type.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nMinor Illusion\nAction\n\nCreate a small sound or image within 30 ft.; Wisdom is the spellcasting ability.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nShadow Arts: Darkness\nAction\n\nSpend 1 Focus Point to cast Darkness without components; concentration up to 10 minutes. Trista can see within it and move its area within 60 ft. at the start of each turn.\n\nManual ruling · Spend Focus, set concentration and stage the area manually. No automatic darkvision, targeting or fog changes.\nSlow Fall\nReaction\n\nWhen you fall, reduce the falling damage by 5 × Monk level (20 at level 4).\n\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nSpeedy: Dash\nWhen you Dash\n\nDifficult terrain does not cost extra movement for the rest of this turn.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-sheet-content",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Download emergency sheet",
+          "width": 241,
+          "height": 43
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:22 PM · update 3\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nTrista\nLevel 4\nDownload emergency sheet\n\nHuman · Monk · Warrior of Shadow · Criminal / Spy · 2024 character exception\n\nSTR\n+2\n14\nDEX\n+4\n18\nCON\n+4\n18\nINT\n-1\n9\nWIS\n+0\n11\nCHA\n+1\n12\nPassive Perception 10\nPassive Insight 10\nPassive Investigation 9\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nMinor Illusion · cantrip\naction · slot/cantrip available\n\nWarrior of Shadow; at will; Wisdom spellcasting.\n\nAsk to cast\nDarkness · level 2\nunknown · check preparation or casting resource\n\nShadow Arts; costs 1 Focus Point, no components; concentration.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nDagger\nAction · +6 to hit · 1d6+4 piercing\n\nMonk weapon; thrown range 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nSpear\nAction · +6 to hit · 1d8+4 piercing\n\nVersatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nChoose details · Choose one or two hands; the recorded d8 is the two-handed spear.\nUnarmed Strike\nAction · +6 to hit · 1d6+4 bludgeoning\n\nMartial Arts.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nMartial Arts unarmed strike\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nNo Attack action prerequisite while Martial Arts applies.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nFlurry of Blows\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nQuick roll only\nRoll damage\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nPatient Defense\nBonus action\n\nDisengage without spending Focus. Spend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nPatient Defense + Dodge\nBonus action\n\nSpend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind\nBonus action\n\nDash without spending Focus. Spend 1 Focus Point to Dash and Disengage and double jump distance.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind + Disengage\nBonus action\n\nSpend 1 Focus Point to Dash and Disengage; double jump distance this turn.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nUncanny Metabolism\nWhen rolling initiative · 1d6+4\n\nRestore all spent Focus Points and heal 1d6 + Monk level; once per long rest.\n\nRoll damage\nChoose details · Confirm initiative was rolled. Restore Focus and roll healing; spend the once-per-long-rest use.\nDeflect Attacks\nReaction · 1d10+8\n\nWhen hit by an attack that deals bludgeoning, piercing, or slashing, reduce total damage by 1d10 + DEX + Monk level. If reduced to 0, you may spend 1 Focus Point to redirect.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nRedirect deflected attack\nAfter Deflect Attacks · 2d6+4 · DC 10 DEX\n\nOnly if Deflect Attacks reduced damage to 0. Spend 1 Focus Point; eligible target makes DEX save DC 10 or takes the attack’s damage type.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nMinor Illusion\nAction\n\nCreate a small sound or image within 30 ft.; Wisdom is the spellcasting ability.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nShadow Arts: Darkness\nAction\n\nSpend 1 Focus Point to cast Darkness without components; concentration up to 10 minutes. Trista can see within it and move its area within 60 ft. at the start of each turn.\n\nManual ruling · Spend Focus, set concentration and stage the area manually. No automatic darkvision, targeting or fog changes.\nSlow Fall\nReaction\n\nWhen you fall, reduce the falling damage by 5 × Monk level (20 at level 4).\n\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nSpeedy: Dash\nWhen you Dash\n\nDifficult terrain does not cost extra movement for the rest of this turn.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-journal",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 43
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 364,
+          "height": 58
+        },
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:22 PM · update 4\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nJournal & clues\n\nShared quests and campaign events appear alongside clues sent only to your character.\n\nParty side quests\nCampaign journal\n\nNo private clues have been sent to you.\n\nMy notes\nAdd NPC or location note\nClues shared by the party\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-items",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 43
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 364,
+          "height": 58
+        },
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:23 PM · update 4\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLoot & promises\nKill Klarg in exchange for Sildar’s release · resolved\npromise · Party · Owed to Yeemik\nSildar Hallwinter · resolved\nrescue · With the party at the end of Session 1\nHideout copper and silver · unknown\ncustody · Unrecorded · Amounts unknown; do not invent quantities.\nFound healing potion · resolved\ncustody · Consumed to heal Aldric\nHamun Kost · open\nescape · Whereabouts unknown · Disappeared without combat. Do not assume death, teleportation, or surrender.\nGundren Rockseeker · open\ncustody · At an inn; specific inn unreported · Present condition and safety unconfirmed. Do not mark the rescue complete.\nIarno Albrek (Glasstaff) · open\nescape · Whereabouts unknown to the party · The DM has a private destination record.\nCaptured rat · open\ncustody · Trista · Do not assume the characters know it is a familiar.\n\nNo separate item quantities are recorded in the party inventory.\n\nManage items\n\nChanges wait for DM review. Shared loot and personal equipment are separate records.\n\nDagger ×5\nOn my sheet\nUse / transfer / equip\nSpear ×1\nOn my sheet\nUse / transfer / equip\nTinker’s tools ×1\nOn my sheet\nUse / transfer / equip\nBagpipes ×1\nOn my sheet\nUse / transfer / equip\nTorch ×10\nOn my sheet\nUse / transfer / equip\nRations ×10\nOn my sheet\nUse / transfer / equip\nOil flask ×2\nOn my sheet\nUse / transfer / equip\nRope ×1\nOn my sheet\nUse / transfer / equip\nTinderbox ×1\nOn my sheet\nUse / transfer / equip\n\nShared purse: 0 cp · 0 sp · 0 ep · 0 gp · 0 pp\n\nSplit shared coins\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-items-small",
+      "viewport": [
+        360,
+        780
+      ],
+      "pageWidth": 360,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 43
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 334,
+          "height": 58
+        },
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 68,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 68,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 68,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 68,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 68,
+          "height": 54
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:23 PM · update 4\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLoot & promises\nKill Klarg in exchange for Sildar’s release · resolved\npromise · Party · Owed to Yeemik\nSildar Hallwinter · resolved\nrescue · With the party at the end of Session 1\nHideout copper and silver · unknown\ncustody · Unrecorded · Amounts unknown; do not invent quantities.\nFound healing potion · resolved\ncustody · Consumed to heal Aldric\nHamun Kost · open\nescape · Whereabouts unknown · Disappeared without combat. Do not assume death, teleportation, or surrender.\nGundren Rockseeker · open\ncustody · At an inn; specific inn unreported · Present condition and safety unconfirmed. Do not mark the rescue complete.\nIarno Albrek (Glasstaff) · open\nescape · Whereabouts unknown to the party · The DM has a private destination record.\nCaptured rat · open\ncustody · Trista · Do not assume the characters know it is a familiar.\n\nNo separate item quantities are recorded in the party inventory.\n\nManage items\n\nChanges wait for DM review. Shared loot and personal equipment are separate records.\n\nDagger ×5\nOn my sheet\nUse / transfer / equip\nSpear ×1\nOn my sheet\nUse / transfer / equip\nTinker’s tools ×1\nOn my sheet\nUse / transfer / equip\nBagpipes ×1\nOn my sheet\nUse / transfer / equip\nTorch ×10\nOn my sheet\nUse / transfer / equip\nRations ×10\nOn my sheet\nUse / transfer / equip\nOil flask ×2\nOn my sheet\nUse / transfer / equip\nRope ×1\nOn my sheet\nUse / transfer / equip\nTinderbox ×1\nOn my sheet\nUse / transfer / equip\n\nShared purse: 0 cp · 0 sp · 0 ep · 0 gp · 0 pp\n\nSplit shared coins\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-pc-pebble-actions",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:24 PM · update 4\n\nSaved sheet & joining\nYOUR CHARACTER\nPebble\n\nGoron (custom lineage) · Fighter · Champion · Level 4\n\n43 / 43\nHP\n18\nAC\n0\nTEMP HP\nday · clear · Second Wind 1/1 · Action Surge 1/1 · A curious mountain traveler seeking a delicious shiny rock. He is brave, but unfamiliar roads make him uneasy.\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nRequest an action\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nWarhammer\n+6 to hit · 1d8+4Reviewed roll\nQuick roll only\nRequest action\nHandaxe\n+6 to hit · 1d6+4Reviewed roll\nQuick roll only\nRequest action\nInterception\n1d10+2Manual ruling\nRequest action\nSecond Wind\n1d10+4Reviewed roll\nRequest action\nCrusher\nManual ruling\nRequest action\nAction Surge\nReviewed roll\nRequest action\nImproved Critical\nManual ruling\nRequest action\nFire-Forged\nManual ruling\nRequest action\nRock Eater\nManual ruling\nRequest action\nSecond Wind\n1 / 1 left\nAsk to use\nAction Surge\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-pc-pebble-sheet",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Download emergency sheet",
+          "width": 241,
+          "height": 43
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:25 PM · update 4\n\nSaved sheet & joining\nYOUR CHARACTER\nPebble\n\nGoron (custom lineage) · Fighter · Champion · Level 4\n\n43 / 43\nHP\n18\nAC\n0\nTEMP HP\nday · clear · Second Wind 1/1 · Action Surge 1/1 · A curious mountain traveler seeking a delicious shiny rock. He is brave, but unfamiliar roads make him uneasy.\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nPebble\nLevel 4\nDownload emergency sheet\n\nGoron (custom lineage) · Fighter · Champion · Outlander · 2014 PHB with Tasha options\n\nSTR\n+4\n18\nDEX\n+0\n10\nCON\n+2\n14\nINT\n-1\n8\nWIS\n+1\n13\nCHA\n+1\n12\nPassive Perception 13\nPassive Insight 13\nPassive Investigation 9\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\n\nNo spells match these filters.\n\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nWarhammer\nAction · +6 to hit · 1d8+4 bludgeoning\n\nOne-handed with shield. Weapon attacks crit on natural 19–20; Crusher may move a qualifying target 5 ft. once per turn.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nHandaxe\nAction · +6 to hit · 1d6+4 slashing\n\nMelee or thrown 20/60 ft. Weapon attacks crit on natural 19–20.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nInterception\nReaction · 1d10+2\n\nReduce damage when a visible creature hits someone other than Pebble within 5 feet; Pebble must hold a shield or weapon.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nSecond Wind\nBonus action · 1d10+4\n\nHeal Pebble; once per short or long rest.\n\nRoll damage\nReviewed roll · Self-healing, one bonus action and one use; uses the recorded Fighter level.\nCrusher\nOnce on Pebble’s turn\n\nAfter a bludgeoning hit, move a creature no more than one size larger 5 feet into empty space. On a bludgeoning critical hit, attacks against it have advantage until Pebble’s next turn.\n\nManual ruling · On a qualifying hit choose the legal 5-foot push; confirm size and destination. Critical-hit advantage is a separate reminder.\nAction Surge\nOn your turn\n\nTake one additional action on your turn; once per short or long rest.\n\nReviewed roll · Spend one use on your own turn; make one additional action available. Does not grant a bonus action.\nImproved Critical\nPassive\n\nPebble’s weapon attacks score a critical hit on a natural 19 or 20. Double damage dice, not the modifier.\n\nManual ruling · Already included in qualifying weapon rolls or recorded fire resistance. Do not spend an action.\nFire-Forged\nPassive\n\nYou have resistance to fire damage: halve fire damage you take, rounding down.\n\nManual ruling · Already included in qualifying weapon rolls or recorded fire resistance. Do not spend an action.\nRock Eater\nPassive\n\nOrdinary, nonmagical stone can satisfy your food needs; you still need water. Eating a magical stone stores its magical properties for 24 hours of in-game time. Choose when to activate or use its power within that window. Stored properties expire 24 hours after the stone is eaten; activating late does not reset that expiry. The DM defines how each stone’s power manifests, its activation/action cost, and any stone-specific uses or limits.\n\nManual ruling · Ordinary stone is food. Magical stone needs a separate approved manifestation, uses and 24-hour expiry.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-pc-donavan-actions",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:25 PM · update 4\n\nSaved sheet & joining\nYOUR CHARACTER\nDonavan Kemp\n\nHuman · Wizard 2 / Cleric 1 · Order of Scribes / Knowledge Domain · Level 3\n\n24 / 24\nHP\n16\nAC\n0\nTEMP HP\nday · clear · 1st-level shared spell slots 4/4 · 2nd-level shared spell slots · upcasting 2/2 · Arcane Recovery 1/1 · Awakened Spellbook quick ritual 1/1 · Order of Scribes / Knowledge Domain. All listed Wizard and Cleric spells are available by DM table rule; 4 first-level slots and 2 second-level slots for upcasting.\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nRequest an action\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+4 to hit · 1d4+2Reviewed roll\nQuick roll only\nRequest action\nRay of Frost\n+6 to hit · 1d8Reviewed roll\nQuick roll only\nRequest action\nUnarmed Strike\n+3 to hit · 2Reviewed roll\nQuick roll only\nRequest action\nDancing Lights\nManual ruling\nRequest action\nPrestidigitation\nManual ruling\nRequest action\nToll the Dead\n1d8Choose details\nRequest action\nToll the Dead · wounded target\n1d12Choose details\nRequest action\nSpare the Dying\nChoose details\nRequest action\nGuidance\n1d4Manual ruling\nRequest action\nCommand\nManual ruling\nRequest action\nIdentify\nManual ruling\nRequest action\nCatapult\n3d8Choose details\nRequest action\nMagic Missile\n1d4+1Choose details\nRequest action\nShield\nChoose details\nRequest action\nHealing Word\n1d4+3Reviewed roll\nRequest action\nCure Wounds\n1d8+3Reviewed roll\nRequest action\nSilent Image\nManual ruling\nRequest action\nCast a 1st-level spell with a 2nd-level slot\nManual ruling\nRequest action\nWizardly Quill\nManual ruling\nRequest action\nAwakened Spellbook: quick ritual\nManual ruling\nRequest action\nAwakened Spellbook: change damage type\nManual ruling\nRequest action\nArcane Recovery\nChoose details\nRequest action\nGuiding Bolt\n+5 to hit · 4d6Choose details\nQuick roll only\nRequest action\nInflict Wounds\n+5 to hit · 3d10Choose details\nQuick roll only\nRequest action\nAll spells (33)\n1st-level shared spell slots\n4 / 4 left\nAsk to use\n2nd-level shared spell slots · upcasting\n2 / 2 left\nAsk to use\nArcane Recovery\n1 / 1 left\nAsk to use\nAwakened Spellbook quick ritual\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-pc-donavan-sheet",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Download emergency sheet",
+          "width": 241,
+          "height": 43
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:26 PM · update 5\n\nSaved sheet & joining\nYOUR CHARACTER\nDonavan Kemp\n\nHuman · Wizard 2 / Cleric 1 · Order of Scribes / Knowledge Domain · Level 3\n\n24 / 24\nHP\n16\nAC\n0\nTEMP HP\nday · clear · 1st-level shared spell slots 4/4 · 2nd-level shared spell slots · upcasting 2/2 · Arcane Recovery 1/1 · Awakened Spellbook quick ritual 1/1 · Order of Scribes / Knowledge Domain. All listed Wizard and Cleric spells are available by DM table rule; 4 first-level slots and 2 second-level slots for upcasting.\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nDonavan Kemp\nLevel 3\nDownload emergency sheet\n\nHuman · Wizard 2 / Cleric 1 · Order of Scribes / Knowledge Domain · Sage · 2014 multiclass with Tasha Order of Scribes, Catapult and Toll the Dead exceptions; all listed spells available by table rule\n\nSTR\n+1\n12\nDEX\n+2\n14\nCON\n+3\n16\nINT\n+4\n18\nWIS\n+3\n16\nCHA\n+3\n16\nPassive Perception 13\nPassive Insight 13\nPassive Investigation 16\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nDancing Lights · cantrip\naction · slot/cantrip available\n\nCantrip · action · lights within 120 ft. · concentration up to 1 minute.\n\nAsk to cast\nPrestidigitation · cantrip\naction · slot/cantrip available\n\nCantrip · action · minor magical effect within 10 ft.\n\nAsk to cast\nRay of Frost · cantrip\naction · slot/cantrip available\n\nCantrip · ranged spell attack +6 · 1d8 cold and speed −10 ft.\n\nAsk to cast\nToll the Dead · cantrip\naction · slot/cantrip available\n\nCantrip · Wisdom save DC 13 · 1d8 necrotic, or 1d12 if target is wounded.\n\nAsk to cast\nSpare the Dying · cantrip\naction · slot/cantrip available\n\nCantrip · action · touch a creature at 0 HP to stabilize it.\n\nAsk to cast\nGuidance · cantrip\naction · slot/cantrip available\n\nCantrip · touch · concentration up to 1 minute · +1d4 to one ability check.\n\nAsk to cast\nCommand · level 1\naction · slot/cantrip available\n\nDomain spell · Wisdom save DC 13 · one-word command within 60 ft.\n\nAsk to cast\nIdentify · level 1\naction / ritual · slot/cantrip available\n\nDomain spell · touch · learn magical properties; ritual possible; material pearl required.\n\nAsk to cast\nDetect Magic · level 1\nritual · slot/cantrip available\n\nWizard · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible.\n\nAsk to cast\nComprehend Languages · level 1\nritual · slot/cantrip available\n\nWizard · Understand literal meaning of languages for 1 hour · ritual possible.\n\nAsk to cast\nFind Familiar · level 1\nritual · slot/cantrip available\n\nWizard · Summon a familiar · 1-hour cast or ritual · material cost applies.\n\nAsk to cast\nMagic Missile · level 1\naction · slot/cantrip available\n\nWizard · Action · three darts within 120 ft. · each deals 1d4+1 force; no attack roll.\n\nAsk to cast\nShield · level 1\nreaction · slot/cantrip available\n\nWizard · Reaction · +5 AC until next turn and blocks Magic Missile.\n\nAsk to cast\nCatapult · level 1\naction · slot/cantrip available\n\nWizard · Xanathar’s · action · Dexterity save DC 14 · fling a 1–5 lb. object; 3d8 bludgeoning.\n\nAsk to cast\nDisguise Self · level 1\naction · slot/cantrip available\n\nWizard · Action · alter your appearance for 1 hour; inspection may reveal illusion.\n\nAsk to cast\nFeather Fall · level 1\nreaction · slot/cantrip available\n\nWizard · Reaction · slow up to five falling creatures within 60 ft.\n\nAsk to cast\nWitch Bolt · level 1\naction · slot/cantrip available\n\nWizard · Action · ranged spell attack +6 · 1d12 lightning, concentration; action to sustain.\n\nAsk to cast\nSilent Image · level 1\naction · slot/cantrip available\n\nWizard · Action · range 60 ft. · create a visual illusion within a 15-ft. cube; concentration up to 10 minutes.\n\nAsk to cast\nCure Wounds · level 1\naction · slot/cantrip available\n\nCleric · Action · touch · restore 1d8+3 HP.\n\nAsk to cast\nHealing Word · level 1\nbonus · slot/cantrip available\n\nCleric · Bonus action · 60 ft. · restore 1d4+3 HP.\n\nAsk to cast\nShield of Faith · level 1\nbonus · slot/cantrip available\n\nCleric · Bonus action · +2 AC to one creature · concentration up to 10 minutes.\n\nAsk to cast\nBane · level 1\naction · slot/cantrip available\n\nCleric · Action · up to three creatures make Charisma saves DC 13; failures subtract 1d4 from attacks and saves · concentration.\n\nAsk to cast\nBless · level 1\naction · slot/cantrip available\n\nCleric · Action · up to three creatures add 1d4 to attacks and saves · concentration.\n\nAsk to cast\nCreate or Destroy Water · level 1\naction · slot/cantrip available\n\nCleric · Action · create or destroy water in an open container or rain/fog in a small area.\n\nAsk to cast\nDetect Evil and Good · level 1\naction · slot/cantrip available\n\nCleric · Action · sense certain supernatural creatures or consecration within 30 ft. · concentration.\n\nAsk to cast\nDetect Magic · level 1\nritual · slot/cantrip available\n\nCleric · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible.\n\nAsk to cast\nDetect Poison and Disease · level 1\naction / ritual · slot/cantrip available\n\nCleric · Action · sense poison, poisonous creatures, or disease within 30 ft. · concentration; ritual.\n\nAsk to cast\nGuiding Bolt · level 1\naction · slot/cantrip available\n\nCleric · Action · ranged spell attack +5 · 4d6 radiant; next attack against target gains advantage.\n\nAsk to cast\nInflict Wounds · level 1\naction · slot/cantrip available\n\nCleric · Action · melee spell attack +5 · 3d10 necrotic.\n\nAsk to cast\nProtection from Evil and Good · level 1\naction · slot/cantrip available\n\nCleric · Action · touch · protect from listed creature types · concentration; material component consumed.\n\nAsk to cast\nPurify Food and Drink · level 1\naction / ritual · slot/cantrip available\n\nCleric · Action or ritual · purify nonmagical food and drink in a 5-ft. radius.\n\nAsk to cast\nSanctuary · level 1\nbonus · slot/cantrip available\n\nCleric · Bonus action · protected creature within 30 ft.; attackers make Wisdom save DC 13.\n\nAsk to cast\nCeremony · level 1\nritual · slot/cantrip available\n\nCleric · Ritual · 1 hour · special rites; gold material component consumed.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nDagger\nAction · +4 to hit · 1d4+2 piercing\n\nMelee or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nRay of Frost\nAction · +6 to hit · 1d8 cold\n\nRanged spell attack, 60 ft.; cold damage and speed reduced by 10 ft. until the start of your next turn.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack and cold damage; on a hit add the speed reduction reminder until your next turn.\nUnarmed Strike\nAction · +3 to hit · 2 bludgeoning\n\nMelee attack; 2 bludgeoning damage on a hit.\n\nQuick roll only\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nDancing Lights\nAction\n\nCreate up to four lights within 120 ft.; concentration, up to 1 minute.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nPrestidigitation\nAction\n\nMinor magical effect within 10 ft.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nToll the Dead\nAction · 1d8 necrotic · DC 13 WIS\n\nWisdom save DC 13; necrotic damage if target has all its HP.\n\nRoll damage\nChoose details · Use d12 only when the target is missing HP; Wisdom save uses Donavan’s cleric DC.\nToll the Dead · wounded target\nAction · 1d12 necrotic · DC 13 WIS\n\nUse instead of the d8 version when the target is missing HP. Wisdom save DC 13.\n\nRoll damage\nChoose details · Use d12 only when the target is missing HP; Wisdom save uses Donavan’s cleric DC.\nSpare the Dying\nAction\n\nStabilize a living creature at 0 HP by touch.\n\nChoose details · Confirm a living creature at 0 HP within touch; stabilize without healing.\nGuidance\nAction · 1d4\n\nTouch a willing creature; concentration, up to 1 minute; add 1d4 to one ability check.\n\nRoll damage\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nCommand\nAction · DC 13 WIS\n\nDomain spell, always prepared. One creature within 60 ft. makes Wisdom save DC 13 or follows one-word command on its next turn.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nIdentify\nRitual or Action\n\nDomain spell, always prepared; reveal magical properties of a touched object or spells affecting a creature. Ritual adds 10 minutes; costly pearl required.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nCatapult\nAction · 3d8 bludgeoning · DC 14 DEX\n\nHurl a 1–5 lb. unattended object along a 90-ft. line; first creature in path makes Dexterity save DC 14 or takes bludgeoning damage.\n\nRoll damage\nChoose details · Choose an eligible object and first collision; Dexterity save, no damage on success. Upcasting adds dice.\nMagic Missile\nAction · 1d4+1 force\n\nThree darts, no attack roll.\n\nRoll damage\nChoose details · Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.\nShield\nReaction\n\n+5 AC until the start of your next turn and block Magic Missile.\n\nChoose details · Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.\nHealing Word\nBonus action · 1d4+3\n\nHeal a visible creature within 60 ft.\n\nRoll damage\nReviewed rol"
+    },
+    {
+      "name": "phone-pc-ringgo-actions",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:26 PM · update 5\n\nSaved sheet & joining\nYOUR CHARACTER\nRinggo Paul\n\nTiefling · Rogue · Assassin · Level 4\n\n29 / 29\nHP\n17\nAC\n0\nTEMP HP\nday · clear · Arrows 20/20 · Hellish Rebuke 1/1 · Age 30, 6 ft. tall; purple skin, green eyes, dark purple hair. Expertise: Stealth and Investigation.\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nRequest an action\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nRapier\n+7 to hit · 1d8+5Choose details\nQuick roll only\nRequest action\nShortbow\n+7 to hit · 1d6+5Choose details\nQuick roll only\nRequest action\nDagger\n+7 to hit · 1d4+5Choose details\nQuick roll only\nRequest action\nSecond dagger\n+7 to hit · 1d4Choose details\nQuick roll only\nRequest action\nSneak Attack\n2d6Manual ruling\nRequest action\nCunning Action: Dash\nChoose details\nRequest action\nCunning Action: Disengage\nChoose details\nRequest action\nCunning Action: Hide\nManual ruling\nRequest action\nThaumaturgy\nManual ruling\nRequest action\nHellish Rebuke\n3d10Choose details\nRequest action\nAssassinate\nManual ruling\nRequest action\nPiercer: reroll damage\nManual ruling\nRequest action\nPiercer: critical hit\nManual ruling\nRequest action\nAll spells (2)\nArrows\n20 / 20 left\nAsk to use\nHellish Rebuke\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-pc-ringgo-sheet",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Download emergency sheet",
+          "width": 241,
+          "height": 43
+        },
+        {
+          "text": "Ask to cast",
+          "width": 332,
+          "height": 43
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:27 PM · update 5\n\nSaved sheet & joining\nYOUR CHARACTER\nRinggo Paul\n\nTiefling · Rogue · Assassin · Level 4\n\n29 / 29\nHP\n17\nAC\n0\nTEMP HP\nday · clear · Arrows 20/20 · Hellish Rebuke 1/1 · Age 30, 6 ft. tall; purple skin, green eyes, dark purple hair. Expertise: Stealth and Investigation.\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nRinggo Paul\nLevel 4\nDownload emergency sheet\n\nTiefling · Rogue · Assassin · Criminal / Spy · 2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export\n\nSTR\n-2\n7\nDEX\n+5\n20\nCON\n+2\n14\nINT\n+0\n10\nWIS\n+0\n10\nCHA\n+4\n18\nPassive Perception 12\nPassive Insight 10\nPassive Investigation 14\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nThaumaturgy · cantrip\naction · slot/cantrip available\n\nTiefling racial cantrip; Charisma spellcasting.\n\nAsk to cast\nHellish Rebuke · level 2\nreaction · check preparation or casting resource\n\nTiefling Infernal Legacy at character level 3: cast once per long rest as a 2nd-level spell; Dexterity save DC 14, 3d10 fire.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nRapier\nAction · +7 to hit · 1d8+5 piercing\n\nFinesse; Sneak Attack may add 2d6 once per turn.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nShortbow\nAction · +7 to hit · 1d6+5 piercing\n\nRange 80/320; Sneak Attack may add 2d6.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nDagger\nAction · +7 to hit · 1d4+5 piercing\n\nFinesse, light, thrown 20/60.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nSecond dagger\nBonus action · +7 to hit · 1d4 piercing\n\nTwo-weapon fighting; no Dexterity modifier to damage.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nSneak Attack\nOnce per turn · 2d6 extra\n\nAdd to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.\n\nRoll damage\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nCunning Action: Dash\nBonus action\n\nMove up to your speed again this turn.\n\nChoose details · Bonus-action usage and benefit reminders are structured; movement and opportunity attacks remain under DM control.\nCunning Action: Disengage\nBonus action\n\nMovement this turn does not provoke opportunity attacks.\n\nChoose details · Bonus-action usage and benefit reminders are structured; movement and opportunity attacks remain under DM control.\nCunning Action: Hide\nBonus action\n\nAttempt to hide if the circumstances allow it.\n\nManual ruling · Hiding requires cover, visibility and a Stealth check; the DM decides whether hiding succeeds.\nThaumaturgy\nAction\n\nTiefling cantrip: create a minor supernatural sign within 30 feet; no slot.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nHellish Rebuke\nReaction · 3d10 fire · DC 14 DEX\n\nOnce per long rest as a 2nd-level spell, after a creature you can see within 60 feet damages you. Dexterity save DC 14 for half fire damage.\n\nRoll damage\nChoose details · Confirm the visible attacker within 60 feet that damaged Ringgo. Racial casting is fixed at 2nd level, once per long rest.\nAssassinate\nOn attack\n\nAdvantage against any creature that has not yet taken a turn in this combat. A hit against a surprised creature is a critical hit.\n\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nPiercer: reroll damage\nOnce per turn on a hit\n\nAfter a piercing hit, reroll one damage die from that attack; use the new roll. A piercing Sneak Attack die also qualifies.\n\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nPiercer: critical hit\nOn a piercing critical hit\n\nAdd one extra weapon damage die: rapier +1d8, shortbow +1d6, or dagger +1d4. This extra die is not doubled.\n\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-pc-aldric-actions",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Quick roll only",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        },
+        {
+          "text": "Request action",
+          "width": 110,
+          "height": 36
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:27 PM · update 6\n\nSaved sheet & joining\nYOUR CHARACTER\nAldric Vane\n\nReborn · Wizard · School of Evocation · Level 3\n\n25 / 25\nHP\n12\nAC\n0\nTEMP HP\nday · clear · 1st-level spell slots 4/4 · 2nd-level spell slots 2/2 · Knowledge from a Past Life 2/2 · Arcane Recovery 1/1 · All spells on Bowman’s level 3 export are available by DM table rule. Age 34, 6 ft. 4 in.; ashen scarred skin, black hair with a white streak, ash-grey eyes that glow like embers while casting. Quiet, hooded, rasping voice.\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nRequest an action\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nFire Bolt\n+6 to hit · 1d10Reviewed roll\nQuick roll only\nRequest action\nDagger\n+4 to hit · 1d4+2Reviewed roll\nQuick roll only\nRequest action\nControl Flames\nManual ruling\nRequest action\nMage Hand\nManual ruling\nRequest action\nIce Knife\n+6 to hit · 1d10Choose details\nQuick roll only\nRequest action\nIce Knife burst\n2d6Manual ruling\nRequest action\nMagic Missile\n1d4+1Choose details\nRequest action\nMage Armor\nManual ruling\nRequest action\nShield\nChoose details\nRequest action\nSilvery Barbs\nManual ruling\nRequest action\nAganazzar’s Scorcher\n3d8Choose details\nRequest action\nWeb\nManual ruling\nRequest action\nKnowledge from a Past Life\n1d6Manual ruling\nRequest action\nArcane Recovery\nChoose details\nRequest action\nAll spells (10)\n1st-level spell slots\n4 / 4 left\nAsk to use\n2nd-level spell slots\n2 / 2 left\nAsk to use\nKnowledge from a Past Life\n2 / 2 left\nAsk to use\nArcane Recovery\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-pc-aldric-sheet",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 187,
+          "height": 43
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 54
+        },
+        {
+          "text": "Download emergency sheet",
+          "width": 241,
+          "height": 43
+        },
+        {
+          "text": "Ask to cast",
+          "width": 332,
+          "height": 43
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/11/2026, 11:26:28 PM · update 7\n\nSaved sheet & joining\nYOUR CHARACTER\nAldric Vane\n\nReborn · Wizard · School of Evocation · Level 3\n\n25 / 25\nHP\n12\nAC\n0\nTEMP HP\nday · clear · 1st-level spell slots 4/4 · 2nd-level spell slots 2/2 · Knowledge from a Past Life 2/2 · Arcane Recovery 1/1 · All spells on Bowman’s level 3 export are available by DM table rule. Age 34, 6 ft. 4 in.; ashen scarred skin, black hair with a white streak, ash-grey eyes that glow like embers while casting. Quiet, hooded, rasping voice.\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nAldric Vane\nLevel 3\nDownload emergency sheet\n\nReborn · Wizard · School of Evocation · Haunted One · 2014 Wizard with Reborn, Haunted One, named later spells, and all listed spells available by table rule\n\nSTR\n-1\n8\nDEX\n+2\n14\nCON\n+3\n16\nINT\n+4\n18\nWIS\n+1\n12\nCHA\n+3\n16\nPassive Perception 11\nPassive Insight 13\nPassive Investigation 16\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nControl Flames · cantrip\naction · slot/cantrip available\n\nAt-will cantrip.\n\nAsk to cast\nFire Bolt · cantrip\naction · slot/cantrip available\n\nAt-will cantrip.\n\nAsk to cast\nMage Hand · cantrip\naction · slot/cantrip available\n\nAt-will cantrip.\n\nAsk to cast\nIce Knife · level 1\naction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nMage Armor · level 1\naction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nMagic Missile · level 1\naction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nShield · level 1\nreaction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nSilvery Barbs · level 1\nreaction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nAganazzar’s Scorcher · level 2\naction · slot/cantrip available\n\nListed as prepared in Bowman’s level 3 export; uses a 2nd-level slot.\n\nAsk to cast\nWeb · level 2\naction · slot/cantrip available\n\nListed as prepared in Bowman’s level 3 export; uses a 2nd-level slot.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nFire Bolt\nAction · +6 to hit · 1d10 fire\n\nRanged spell attack, 120 ft.; ignites unattended flammable objects.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nDagger\nAction · +4 to hit · 1d4+2 piercing\n\nMelee or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nControl Flames\nAction\n\nShape, expand, or extinguish a visible nonmagical flame in a 5-foot cube within 60 ft.; no slot.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nMage Hand\nAction\n\nCreate and control a spectral hand within 30 ft.; no slot.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nIce Knife\nAction · +6 to hit · 1d10 piercing + cold · DC 14 DEX\n\nRanged spell attack, 60 ft.; piercing on hit, then target and creatures within 5 ft. make a Dexterity save or take 2d6 cold.\n\nQuick roll only\nRoll damage\nChoose details · Resolve the attack and a separately selected burst, even on a miss. Only piercing attack dice double on a critical.\nIce Knife burst\nAfter Ice Knife · 2d6 cold · DC 14 DEX\n\nCold burst after the knife attack. Target and all creatures within 5 ft. make Dexterity save DC 14; no extra spell slot.\n\nRoll damage\nManual ruling · Use the combined Ice Knife review to avoid repeating its burst or spending another slot.\nMagic Missile\nAction · 1d4+1 force\n\nThree darts at creatures within 120 ft.; no attack roll. Each dart deals force damage.\n\nRoll damage\nChoose details · Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.\nMage Armor\nAction\n\nTouch an unarmored willing creature; base AC becomes 13 + Dexterity modifier for 8 hours. Aldric’s AC becomes 15.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nShield\nReaction\n\n+5 AC until the start of Aldric’s next turn; blocks Magic Missile.\n\nChoose details · Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.\nSilvery Barbs\nReaction\n\nWhen a visible creature within 60 ft. succeeds on an attack, check, or save: force a reroll and use the lower d20; grant another visible creature advantage on one roll within 1 minute.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nAganazzar’s Scorcher\nAction · 3d8 fire · DC 14 DEX\n\nFire in a 30-foot line, 5 feet wide; Dexterity save DC 14 for half. Sculpt Spells may protect up to three visible creatures.\n\nRoll damage\nChoose details · Select every creature in the line. Explicitly choose eligible Sculpt Spells exclusions; Dexterity save for half.\nWeb\nAction · DC 14 DEX\n\n20-foot cube within 60 feet; concentration up to 1 hour. Creatures entering or starting there make Dexterity save DC 14 or become restrained; see spell for escape and fire.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nKnowledge from a Past Life\nAfter a skill check · 1d6\n\nAfter seeing a d20 result for an ability check using a skill, add 1d6.\n\nRoll damage\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nArcane Recovery\nAfter short rest\n\nOnce per day after a short rest, recover spell slots with combined level 2 or less: one 2nd-level slot or two 1st-level slots.\n\nChoose details · Confirm a short rest and choose expended slots. Donavan can recover one slot level; Aldric two.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nOffline sheets and future home-screen app"
+    }
+  ]
+}

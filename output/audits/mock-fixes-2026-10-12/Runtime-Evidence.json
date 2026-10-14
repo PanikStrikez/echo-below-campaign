@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-12",
+  "errors": [
+    {
+      "screen": "rehearsal-step",
+      "command": "capture",
+      "error": "Rehearsal step timed out after 45 seconds"
+    }
+  ],
+  "network": [],
+  "history": [
+    {
+      "command": "eval",
+      "ok": true,
+      "at": "2026-10-13T12:23:40.894Z"
+    },
+    {
+      "command": "capture",
+      "phase": "01-before",
+      "ok": false,
+      "error": "Rehearsal step timed out after 45 seconds",
+      "at": "2026-10-13T12:40:58.337Z"
+    }
+  ],
+  "physicalDevicesTested": false,
+  "realProviderCalls": 0,
+  "liveStateTouched": false
+}

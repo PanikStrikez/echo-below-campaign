@@ -1,6 +1,8 @@
+> Historical preparation report. Its older resume point, statistics and open choices are not current play records. [Open current status guidance](App-Readiness-Status.md).
+
 # Campaign content readiness
 
-> **Historical Session 1 preparation document.** For upcoming play, resume immediately before the Redbrand hideout using [the latest actual recap](Session-02-03-Actual-Recap.md). The party already knows of the Black Spider and the Redbrands, the orc camp is cleared, and Hamun Kost disappeared. Older level-1 statistics, Barthen’s starting instructions and proposed events below are not current live state. Use the app’s character records and approved continuity.
+> **Historical Session 1 preparation document.** Its earlier pre-hideout resume point has been superseded. The current confirmed checkpoint is Barthen’s Provisions, Gundren at an unnamed inn with condition unresolved, and Trista holding the captured rat. Glasstaff escaped; his destination is private. Use [the latest actual recap](Latest-Redbrand-Session-Actual-Recap.md) and [verified next-session package](Next-Playable-Package-Verification.md). Older statistics and proposed events below are not current live state.
 
 DM reference · 23 September 2026 · Sources under `sources/` are read only.
 

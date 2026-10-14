@@ -23,6 +23,7 @@ for (const name of [
 const code = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
 const boot = code.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot > 0, 'Production fixture must stop before browser initialization');
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(code.slice(0, boot) + `
 globalThis.__transitionFixture = {
   context: questPrepContext, setIndex: x => campaignIndex = x,

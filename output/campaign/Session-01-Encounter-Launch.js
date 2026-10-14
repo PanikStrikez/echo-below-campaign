@@ -7,8 +7,8 @@
     const encounter = host.encounters().find(item => item.id === encounterId);
     if (!encounter) return null;
     const beat = host.beats().find(item => item.id === beatId) || host.beats().find(item => item.encounter === encounterId);
-    const expected = globalThis.ECHO_COMBAT_DATA?.expectedScene(encounterId);
-    const sceneId = [expected, beat?.scene, host.state.scene].find(id => host.scenes().some(scene => scene.id === id && scene.kind === 'map'));
+    const expected = globalThis.ECHO_COMBAT_DATA?.expectedScene(encounterId,host.state.combat?.plans);
+    const sceneId = [draft?.encounterId===encounterId?draft.sceneId:'',expected, beat?.scene, host.state.scene].find(id => host.scenes().some(scene => scene.id === id && scene.kind === 'map'));
     const scene = host.scenes().find(item => item.id === sceneId);
     const wave = host.state.combat?.plans?.[encounterId]?.waves?.[0];
     const tokens = host.state.tokens.filter(item => item.encounter === encounterId && item.hp > 0);
@@ -40,6 +40,10 @@
     box.append(el('small', 'DM PREVIEW · PLAYER TV UNCHANGED'));
     box.append(el('h3', plan.beat?.title || plan.encounter.name));
     box.append(el('p', `Map: ${plan.scene?.title || 'No battle map linked'}`));
+    const sourceMaps=host.scenes().filter(s=>s.kind==='map'&&globalThis.ECHO_ATLAS?.proposal?.(s.image));if(sourceMaps.length){const row=el('label','Prepared battle map'),picker=document.createElement('select');picker.setAttribute('aria-label','Prepared battle map');for(const s of [plan.scene,...sourceMaps].filter((s,i,a)=>s&&a.findIndex(x=>x?.id===s.id)===i)){const option=el('option',s.title);option.value=s.id;picker.append(option);}picker.value=draft.sceneId;picker.onchange=()=>{draft.sceneId=picker.value;draft.place=false;draft.reveal=false;host.refresh();};row.append(picker);box.append(row);box.append(el('small','Changing map remains private. Placement and reveal are turned off; set new positions on the selected geometry. The previous map, fog and positions remain saved.'));}
+    const source=globalThis.ECHO_ATLAS?.proposal?.(plan.scene?.image);
+    if(/^lmop-map-wave/.test(plan.scene?.id||'')){box.append(el('p','Illustrative map · printed room geometry governs doors, exits and distance. This painting is not calibrated for exact movement.','encounter-launch-warning'));const exact=el('button','Review source-layout maps in Atlas');exact.type='button';exact.onclick=()=>globalThis.ECHO_ATLAS_UI?.open();box.append(exact);}
+    else if(source){box.append(el('p',source.scale?.tacticalMeasurement===false?'Source-layout overview · use a tactical section for measured movement.':'Source-layout map · check calibration before measuring.'));if(source.scale?.calibrationCaveat)box.append(el('small',source.scale.calibrationCaveat));}
     if (plan.scene?.image) { const image = el('img', '', 'encounter-launch-image'); image.src = host.sceneImage(plan.scene); image.alt = `DM preview of ${plan.scene.title}`; box.append(image); }
     if (plan.beat?.read?.length) {
       const read = el('div', '', 'encounter-launch-read'); read.append(el('strong', 'Say aloud'));

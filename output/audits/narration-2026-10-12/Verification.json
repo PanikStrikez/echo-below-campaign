@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-12T06:09:58.465Z",
+  "environment": "Real Chrome with fresh profile and disposable local services",
+  "physicalDevices": false,
+  "liveConnectionsChanged": false,
+  "readAloudCount": 341,
+  "sceneParagraphs": 2,
+  "checks": [
+    "Separate paragraphs on scene screen",
+    "Unknown Gundren condition preserved",
+    "Private castle destination excluded from narration",
+    "Exploration screen remains usable",
+    "Undermountain room card shows separate paragraphs",
+    "Reading leaves party/tokens/fog/outcomes unchanged",
+    "Original backup unchanged",
+    "TV excludes private catalog",
+    "Speech source contains selected narration only",
+    "No browser errors"
+  ],
+  "errors": [],
+  "screens": [
+    "dm-scene-before.png",
+    "dm-scene-after.png",
+    "dm-inn-after.png",
+    "dm-exploration-after.png",
+    "tv-after.png",
+    "dm-room-after.png"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "lmop-nezznar-confrontation",
+  "title": "Wave Echo Cave · Area 19 · Black Spider confrontation",
+  "image": "lmop-visuals/nezznar-confrontation.png",
+  "key": "E19B",
+  "chapter": "Wave Echo Cave",
+  "reveal": "Only when Nezznar confronts the party here",
+  "sourceRecordIds": [
+    "s4-room-19",
+    "s4-nezznar"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-room-19",
+      "title": "Area 19 · Temple of Dumathoin",
+      "read": [
+        "Six cracked pillars frame a hall swept clean of rubble. At the far end, a seated dwarf carved from stone watches over a rough camp. Bedrolls, packs, and a paper-covered table show that this shrine has become someone’s headquarters.",
+        "The figures and stonework draw your eye to different parts of the room. You can note where everyone stands and which route remains behind you before answering. The distance between you and anyone present is something to consider while there is still time to speak."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    },
+    {
+      "id": "s4-nezznar",
+      "title": "Nezznar · bargain, battle, escape, or capture",
+      "read": [
+        "The dark elf rests one hand on a spider-carved staff. “You have cost me people, time, and secrecy. Before either of us wastes more, tell me what you believe you came here to claim.”",
+        "The words being exchanged do not settle what either side will accept. You can hold your position, ask for a specific answer, or make your own terms clear. The chamber and the route behind you remain part of the conversation, even if nobody chooses to mention them."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "SAME Dumathoin temple. ONE lean male drow Nezznar with white hair, dark clothing and black spider-topped staff confronts visitors, TWO bugbears and FOUR giant spiders present in their plausible spaces if this initial encounter occurs. No player figures, no Gundren prisoner, no accomplished victory, no fire dragon or giant wizard machine. Architecture stays large dwarf statue, columns, stone dais. Restrained scene lighting, no universal combat spell explosions.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 19 · Black Spider confrontation\nObservable scene and constraints: SAME Dumathoin temple. ONE lean male drow Nezznar with white hair, dark clothing and black spider-topped staff confronts visitors, TWO bugbears and FOUR giant spiders present in their plausible spaces if this initial encounter occurs. No player figures, no Gundren prisoner, no accomplished victory, no fire dragon or giant wizard machine. Architecture stays large dwarf statue, columns, stone dais. Restrained scene lighting, no universal combat spell explosions.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "dcb34a8aeebaf84c75ad37580738053f5682d587bda43c442ce09d5cd369ac2c",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-nezznar-confrontation.png",
+  "generatedAt": "2026-10-12T16:36:28.888Z",
+  "candidateHash": "a3321fce8653a88ca5d0f29f7c49e72bbd6cd83c9ac6660cc547744fe078f69b",
+  "review": "passed",
+  "reviewedHash": "a3321fce8653a88ca5d0f29f7c49e72bbd6cd83c9ac6660cc547744fe078f69b",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:32.756Z",
+  "installedHash": "a3321fce8653a88ca5d0f29f7c49e72bbd6cd83c9ac6660cc547744fe078f69b",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/nezznar-confrontation.png"
+}

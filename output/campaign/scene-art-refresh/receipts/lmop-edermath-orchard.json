@@ -1,0 +1,32 @@
+{
+  "id": "lmop-edermath-orchard",
+  "title": "Phandalin · Edermath Orchard",
+  "image": "lmop-visuals/edermath-orchard.png",
+  "key": "P09C",
+  "chapter": "Phandalin",
+  "reveal": "When the party visits Daran",
+  "sourceRecordIds": [
+    "s2-town"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-town",
+      "title": "5 · Follow the party’s town lead",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Edermath orchard, tidy modest cottage beside productive APPLE orchard on Phandalin outskirts. Older silver-haired half-elf Daran tending trees in everyday clothing. Peaceful work, no hostile magical forest, undead or Order-of-Gauntlet insignia revealed.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Edermath Orchard\nObservable scene and constraints: Edermath orchard, tidy modest cottage beside productive APPLE orchard on Phandalin outskirts. Older silver-haired half-elf Daran tending trees in everyday clothing. Peaceful work, no hostile magical forest, undead or Order-of-Gauntlet insignia revealed.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "cb226f1c64a992afab80a47e3e03d2e8474164bfdb28781a1f7145245191ca3d",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-edermath-orchard.png",
+  "generatedAt": "2026-10-12T16:05:50.437Z",
+  "candidateHash": "f68e82468e55eb37ee592630d2e2263f1634ce648e93e42a757d441d14cca9d2",
+  "review": "passed",
+  "reviewedHash": "f68e82468e55eb37ee592630d2e2263f1634ce648e93e42a757d441d14cca9d2",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.208Z",
+  "installedHash": "f68e82468e55eb37ee592630d2e2263f1634ce648e93e42a757d441d14cca9d2",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/edermath-orchard.png"
+}

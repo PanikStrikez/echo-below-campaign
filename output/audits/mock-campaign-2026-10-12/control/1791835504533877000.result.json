@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791835504657-4hey26ur",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              18
+            ],
+            "total": 24,
+            "natural": 18,
+            "public": true,
+            "kind": "digital",
+            "time": "2:05:04 PM"
+          },
+          {
+            "id": "pa-1791835504657-ep1otefa",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:05:04 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-bugbears-2",
+            "text": "Bugbear 2: 24 vs AC 16: hit, 8 piercing → 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-aldric",
+      "hp": 44,
+      "HD": 6
+    },
+    {
+      "id": "pc-pebble",
+      "hp": 63,
+      "HD": 6
+    },
+    {
+      "id": "pc-trista",
+      "hp": 47,
+      "HD": 6
+    },
+    {
+      "id": "pc-ringgo",
+      "hp": 43,
+      "HD": 6
+    },
+    {
+      "id": "pc-donavan",
+      "hp": 45,
+      "HD": 6
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "result": {
+    "keys": [
+      "session2ContentVersion",
+      "session3ContentVersion",
+      "session4ContentVersion",
+      "contentPackId",
+      "sessionKind",
+      "sessionLog"
+    ],
+    "name": "Session 2 · Phandalin",
+    "extra": {
+      "version": 1,
+      "notes": [],
+      "shared": [],
+      "bank": {
+        "cp": 0,
+        "sp": 0,
+        "ep": 0,
+        "gp": 0,
+        "pp": 0
+      },
+      "objective": {
+        "text": "Escort the supplies to Phandalin and investigate danger on the road.",
+        "at": "2026-10-12T19:10:34.672Z"
+      },
+      "requests": []
+    }
+  }
+}

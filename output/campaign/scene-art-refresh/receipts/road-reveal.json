@@ -1,0 +1,36 @@
+{
+  "id": "road-reveal",
+  "title": "Road ambush · revealed",
+  "image": "session-01-visuals/scene-12-road-ambush-reveal.png",
+  "key": "road-reveal",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "ambush"
+  ],
+  "sourceRecords": [
+    {
+      "id": "ambush",
+      "title": "2 · Dead horses and ambush",
+      "read": [
+        "The trail bends between close woods. Two horses lie across the road ahead, dead and pierced by black-feathered arrows. Their saddlebags hang open. Neither rider is in sight.",
+        "The open saddlebags and arrows give you more to examine than the bodies alone. Beyond the bend, trunks and tangled growth break up the view into the woods; anyone moving closer will have to choose where to stand and what to watch."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "SAME woodland trail and TWO dead saddled horses, FOUR goblins now revealed: TWO with scimitars approaching from roadside, TWO with shortbows near opposite roadside cover. No player characters or arrows hitting people, no invisible remaining goblin locations or victory. Ordinary overcast daylight, no fire magic.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Road ambush · revealed\nObservable scene and constraints: SAME woodland trail and TWO dead saddled horses, FOUR goblins now revealed: TWO with scimitars approaching from roadside, TWO with shortbows near opposite roadside cover. No player characters or arrows hitting people, no invisible remaining goblin locations or victory. Ordinary overcast daylight, no fire magic.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "066536fc871c6e3f467501fcc8d073630ef6e2028e7d5abb993b3c590baa24b7",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/road-reveal.png",
+  "generatedAt": "2026-10-12T15:44:16.701Z",
+  "candidateHash": "7025330554ae96274e519d8cc1da083f7df8996c5d7a203cf76f2d762ed50470",
+  "review": "passed",
+  "reviewedHash": "7025330554ae96274e519d8cc1da083f7df8996c5d7a203cf76f2d762ed50470",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:06.780Z",
+  "installedHash": "7025330554ae96274e519d8cc1da083f7df8996c5d7a203cf76f2d762ed50470",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-12-road-ambush-reveal.png"
+}

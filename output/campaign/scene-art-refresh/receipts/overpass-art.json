@@ -1,0 +1,36 @@
+{
+  "id": "overpass-art",
+  "title": "Area 5 · Overpass",
+  "image": "session-01-visuals/scene-08-overpass.png",
+  "key": "overpass-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "bridge"
+  ],
+  "sourceRecords": [
+    {
+      "id": "bridge",
+      "title": "Area 5 · Overpass and flood",
+      "read": [
+        "A rickety bridge crosses the passage high above the water. A small figure shifts against the shadowed ceiling. Farther upstream, the sound of pooled water presses through the cave.",
+        "The bridge's boards and supports stand out against the rock when your light catches them. Below, the stream continues along the climbing passage. The figure above and the louder water ahead give you two different things to watch as you decide whether to advance."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Cragmaw cave stream passage, rickety WOOD and ROPE bridge connects HIGH tunnels TWENTY feet above shallow stream. Rough natural steps continue below bending east upstream. Spray-dark rock. Goblin lookout hidden, not visible. No low bridge spanning pool, new engineered pillars or installed lamps. Off-frame visitor light.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Area 5 · Overpass\nObservable scene and constraints: Cragmaw cave stream passage, rickety WOOD and ROPE bridge connects HIGH tunnels TWENTY feet above shallow stream. Rough natural steps continue below bending east upstream. Spray-dark rock. Goblin lookout hidden, not visible. No low bridge spanning pool, new engineered pillars or installed lamps. Off-frame visitor light.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "46d57642582d1db597fc44a68aae376f8478fabb8e9a559386650b92dd1ce9a2",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/overpass-art.png",
+  "generatedAt": "2026-10-12T15:47:02.291Z",
+  "candidateHash": "c7e7168d3e1993e8e164d7b92d328860523e6c4c49be8ef8e57684128be1b9b5",
+  "review": "passed",
+  "reviewedHash": "c7e7168d3e1993e8e164d7b92d328860523e6c4c49be8ef8e57684128be1b9b5",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.268Z",
+  "installedHash": "c7e7168d3e1993e8e164d7b92d328860523e6c4c49be8ef8e57684128be1b9b5",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-08-overpass.png"
+}

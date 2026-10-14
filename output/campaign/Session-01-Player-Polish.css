@@ -1,0 +1,39 @@
+/* Player TV presentation. These styles never apply to the DM or phone view. */
+#player-app{color:#f5e9d1;background:#081810}
+#player-app .player-header{min-height:57px;padding:7px 20px;gap:14px;border-bottom:1px solid #9a7f4e;background:linear-gradient(100deg,#081d16,#102a1f 68%,#091d16);box-shadow:0 7px 20px #0005}
+#player-app .player-header::before{width:34px;height:34px;filter:drop-shadow(0 2px 5px #0009)}
+#player-app .player-header strong{color:#f2d69a;font:700 clamp(18px,1.45vw,25px)/1.1 Georgia,serif;letter-spacing:.02em;text-shadow:none}
+#player-app .player-header span{color:#d8ddc9;font:500 clamp(12px,.9vw,17px) system-ui,sans-serif}
+#player-app .player-header button{min-height:34px;padding:5px 10px;border:1px solid #8c7950;border-radius:6px;background:#213b2b;color:#f2e3c4;font:600 12px system-ui,sans-serif}
+#player-app .player-header button:hover{background:#31513a;border-color:#e0bf7b}
+#player-app:not(.player-combat-active) .player-turn-bar{display:none}
+#player-app .player-turn-bar{min-height:68px;padding:8px 20px;border-bottom:1px solid #766647;background:linear-gradient(#163126,#10251d)}
+#player-app .player-turn-bar>strong:first-child{color:#f2d394;font:700 clamp(16px,1.25vw,22px) Georgia,serif}
+#player-app .player-turn-bar .turn-list{gap:7px;margin-top:5px}
+#player-app .turn-chip{padding:4px 11px;border:1px solid #777458;border-radius:999px;background:#244032;color:#f1e7d2;font:600 clamp(11px,.95vw,15px) system-ui,sans-serif}
+#player-app .turn-chip.active{border-color:#f1d08a;background:#e5bf79;color:#1c291d;box-shadow:0 0 0 3px #efca8033;text-decoration:none}
+#player-app .player-roll-banner{color:#ffe1a3;font:700 clamp(17px,1.3vw,24px) Georgia,serif}
+#player-app .player-stage-wrap{padding:15px 20px;overflow:auto;background:radial-gradient(ellipse at center,#20372a,#0b1d15 75%,#06140e)}
+#player-app .player-frame{padding:9px;border:2px solid #b5965f;border-radius:5px;background:#14231a;box-shadow:inset 0 0 0 2px #2b3524,0 10px 32px #000b}
+#player-app .player-frame::after{inset:5px;border-color:#e3c58b77}
+#player-app .player-frame .stage{border:1px solid #423622;box-shadow:0 0 0 1px #d6b57866}
+#player-app:not(.player-combat-active) .player-frame .stage{width:min(calc(100vw - 82px),calc((100dvh - 108px)*1.5));max-height:calc(100dvh - 108px)}
+#player-app .frame-corner{width:51px;height:51px;opacity:.86}
+#player-app .player-presentation{border:2px solid #af925c;border-radius:5px;box-shadow:inset 0 0 0 3px #1d2b1f,0 12px 36px #000c;background:#08120d}
+#player-app .presentation-screen{background:radial-gradient(ellipse at center,#253d2d,#07130d 77%)}
+#player-app .presentation-screen.presentation-title{background:radial-gradient(ellipse at center,#334a34,#07150d 72%)}
+#player-app .presentation-caption{padding:34px 5%;background:linear-gradient(transparent,#07120bed 68%)}
+#player-app .presentation-caption h1{color:#f6dfad;text-shadow:0 3px 12px #000d}
+#player-app .presentation-caption p{color:#f2e9d5}
+#player-app .player-main-quest{left:25px;bottom:24px;width:min(31vw,450px);max-height:26vh;padding:14px 18px;border:1px solid #d0ae72;border-left:4px solid #e0bf7d;border-radius:8px;background:linear-gradient(110deg,#10241cfa,#142820ef);box-shadow:0 8px 24px #000a;backdrop-filter:blur(7px)}
+#player-app .player-main-quest small{color:#e7c683;font:700 11px system-ui,sans-serif;letter-spacing:.15em}
+#player-app .player-main-quest h2{color:#ffebbe}
+#player-app .player-main-quest p{color:#f2ead8}
+#player-app .player-tv-overlays{left:24px;bottom:23px;gap:9px}
+#player-app .presentation-overlay{border:1px solid #d8b87a;border-radius:8px;background:#10281ff0;box-shadow:0 4px 14px #0009}
+#player-app .tv-player-text{padding:clamp(11px,1.2vw,18px);border:1px solid #af8b57;border-left:4px solid #d8b476;border-radius:8px;background:#f1e2bff7;box-shadow:0 8px 25px #000b}
+#player-app .player-handout,#player-app .player-journal,#player-app .player-character{border:2px solid #a7804d;border-radius:7px;box-shadow:0 10px 35px #000d}
+#player-app .player-scene-mood{padding:17px 26px;font-size:clamp(12px,1vw,18px)}
+#player-app .presentation-journal{background:radial-gradient(ellipse at top,#263b2b,#101e16)}
+@media(max-width:900px){#player-app .player-header{gap:8px;padding-inline:10px}#player-app .player-header strong{font-size:17px}#player-app .player-stage-wrap{padding:8px}#player-app:not(.player-combat-active) .player-frame .stage{width:min(calc(100vw - 44px),calc((100dvh - 100px)*1.5));max-height:calc(100dvh - 100px)}#player-app .frame-corner{width:39px;height:39px}#player-app .player-main-quest{left:12px;bottom:12px;width:min(49vw,350px);padding:10px 12px}}
+@media(prefers-reduced-motion:reduce){#player-app .presentation-screen,#player-app .presentation-screen.echo-active::after{animation:none}}

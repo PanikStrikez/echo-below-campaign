@@ -1,0 +1,10 @@
+{
+  "metrics": {
+    "clicks": 21,
+    "scrollEvents": 13,
+    "elapsedMs": 5425
+  },
+  "wrongTurns": [],
+  "interruptions": [],
+  "kind": "Scripted navigation; no human hesitation measured"
+}

@@ -1,0 +1,1950 @@
+{
+  "versions": {
+    "app": {
+      "sha256": "664fdd3616eda1f4df07deb20d91f05cc8fdf4c68a689db4e7d6ddf50d52533c",
+      "files": 192,
+      "bytes": 8310948
+    },
+    "assets": {
+      "sha256": "b871e939dc330668a6fb242cee2b3026efa5b9f8fae3bd23e8066633b1fcf132",
+      "files": 520,
+      "bytes": 987844050
+    },
+    "tests": {
+      "sha256": "b1cbd1fbb6575090fd23f2fd75547f5254885f503f2af90983480d98d5991c2f",
+      "files": 175,
+      "bytes": 1406491
+    },
+    "saveSchema": 3
+  },
+  "at": "2026-10-12T00:19:49.229610+00:00",
+  "profile": "core release gate",
+  "inventory": [
+    {
+      "file": "tests/ai-context.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "8420fa729a1a140f246e09aff9ea2eccbb51f80d6d82fac34a44aa4a6f0fe25a",
+      "note": ""
+    },
+    {
+      "file": "tests/ai-plugin-auditions.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "0d29b1c6b028c957a5b009dad830497b181ea497f6920d284a836b1c092cf8bb",
+      "note": ""
+    },
+    {
+      "file": "tests/ai-voice-cast.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "72dc920b89933195463840d4b1d32455d28668ba0d1dc27f3eb39769139a49ff",
+      "note": ""
+    },
+    {
+      "file": "tests/campaign-assistant.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "72076be5ae779e48850c678d18f57e18f46cc24c5ed225925d21573f988b93bf",
+      "note": ""
+    },
+    {
+      "file": "tests/campaign-reconciliation.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "91d8ffba142d415a231270529c443e6f49bab465be9f9368daad44fea8579938",
+      "note": ""
+    },
+    {
+      "file": "tests/combat-actions.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "a53202e89658fd03d8fca30a81abe8cb2cd40fcfc7a9a4d01831c923687d521a",
+      "note": ""
+    },
+    {
+      "file": "tests/current-status.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "392a4678e8ef31855b7585a5bf4e0651f46a262726926a7e731652d30b3a4c58",
+      "note": ""
+    },
+    {
+      "file": "tests/module-loader.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "e35a8082d1669dc0cfee5af0d3f88fec85f145bbd4decfa205eeee89db85ce6a",
+      "note": ""
+    },
+    {
+      "file": "tests/party-actions.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "ff6eb0fdd71ec3ff82ff18595eb1c8a96c8d7a22de599c25a893726580a1241c",
+      "note": ""
+    },
+    {
+      "file": "tests/reliability.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "b6e25eb70f44f3975fcda029c381c6ff8db8eba64e82db616a0d27015cfae54c",
+      "note": ""
+    },
+    {
+      "file": "tests/table-rehearsal.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "2f16b05fea2ed79ff7e489a4789606f04471c521ce2a39b22f7152256c4bbb54",
+      "note": ""
+    },
+    {
+      "file": "tests/test_ai_chatgpt.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "5170564550fb729a2f40fb1dae28c0e9fe534e474883806a8477b22bb9d3c464",
+      "note": ""
+    },
+    {
+      "file": "tests/test_ai_exports.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "9e571a8d0ec06ed8d02fb7080a1813ce3eccf33304554a9c8f55f0740c23840a",
+      "note": ""
+    },
+    {
+      "file": "tests/test_ai_service.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "2b99699b71236098b662f41d7bd5a46d88b069585b9ec7273e9436ccc101e48d",
+      "note": ""
+    },
+    {
+      "file": "tests/test_campaign_backup.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "fc1f02b8721548c571c6d42c98679679ea522e8a5723e52da54cbb78b1429e6a",
+      "note": ""
+    },
+    {
+      "file": "tests/test_campaign_reconciliation.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "78d1c3526ccf9e11e329a626de7204470f086577ac14228f38768d9eacd7f3cc",
+      "note": ""
+    },
+    {
+      "file": "tests/test_campaign_service.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "9eaebaafaa056533999056c27a6f2a7aee70418ae3fd6e2ea4757e9a0b34fc58",
+      "note": ""
+    },
+    {
+      "file": "tests/test_campaign_sessions.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "63d0b872d1218e652228737ad76b85c1a55a253b13c8c2b72b64318ef0e66a0c",
+      "note": ""
+    },
+    {
+      "file": "tests/test_campaign_sources.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "83c844ceb83b52fa709a27c3b611c08fde72ce5ebde42bc12c66cb45628b87d1",
+      "note": ""
+    },
+    {
+      "file": "tests/test_campaign_store.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "531f96e09c53b7a3374e406e94f83c889d47a29d09416e8127776ddff022601d",
+      "note": ""
+    },
+    {
+      "file": "tests/test_campaign_voice.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "ffcb99e070b65ad7c2a74331ff644f288935a621c0fa22914574c9281f82a3a5",
+      "note": ""
+    },
+    {
+      "file": "tests/test_status_evidence.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "0de81b30f61a75f7b3b198ef5c9fca09c6037003dc8da9b21d93bd462723b5d4",
+      "note": ""
+    },
+    {
+      "file": "tests/test_voice_audition.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "26d7266db7da4ba0748c4e766214b25e3c2a28ce66afc3055121d31287f93413",
+      "note": ""
+    },
+    {
+      "file": "tests/test_voice_key_setup.py",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "0673ad66e5dd4b8bd13182fa1c8fb157427f776bb3cc4d9dc6c3baa76ffd4cba",
+      "note": ""
+    },
+    {
+      "file": "tests/voice-studio.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "37e57e49f253e73d24be663c6e8f760a6c9f4b43797e52c361ba92d1d4e1eb4d",
+      "note": ""
+    },
+    {
+      "file": "tests/voice-transport.test.cjs",
+      "category": "unit or mocked service",
+      "coreGate": true,
+      "sha256": "97ecfbcef18d9db514d6653f5f531bd6be9d7c26683ca8fb9e51f9695d037322",
+      "note": ""
+    },
+    {
+      "file": "tools/check-ai-foundation-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "276f0ebe86e291f1d59ef1d3159d6593272d488948fa262fae08a4c2d7a60676",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-atlas-asset-boundary.py",
+      "category": "local service or asset fixture",
+      "coreGate": true,
+      "sha256": "927885aec0aa0145b77160081115864ec41e82c3bd3cef8b179ba0417da04ec3",
+      "note": ""
+    },
+    {
+      "file": "tools/check-atlas-preparation.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "f8ed03722dc571bf22f4675d30e03ded04ab26618e319efa95a481ddaa0cce6f",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-atlas-preservation.cjs",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "a3cb519fe0fd11029019fe9703b07d839fd2e5adcba93d1722ce2490451f5d12",
+      "note": ""
+    },
+    {
+      "file": "tools/check-atlas-workflow.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "c36e265689cefe4ddc61e8c1ea839f3c1fb1adfb66a4e688eea3bd281da5b547",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-atmosphere-audio.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "5c736b88d230dd6d4c78985b0be5abf45ff8d18b8089b9028090234adea2576c",
+      "note": ""
+    },
+    {
+      "file": "tools/check-atmosphere-ui.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "f714c7f215e1fba6662ac393f9d5ee69311a3afd3c066ec691a201d35f42c1ca",
+      "note": ""
+    },
+    {
+      "file": "tools/check-atmosphere.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "0cd5d578ac6b422fc2e920a032b11e963274822ab9865778e2cd17e8940b018a",
+      "note": ""
+    },
+    {
+      "file": "tools/check-backup-file-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "592238d0a4cdd1926f0dcaff9415c55da0f3903107396b6d3b47e206a5edcd15",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-campaign-assistant-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "f3551f96dd5877eed109779c7417745c827b60997c3cfa36cc55340edadc2442",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-campaign-atlas.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "cc4386fff69af3db30a45885e53d00f7f661faf3d69e48d573a9b72ea4d5593a",
+      "note": ""
+    },
+    {
+      "file": "tools/check-campaign-engine-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "77259f209dc4365489e7914ff6c046ffddd96f0864e469e762734cc8eecef50c",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-chapters-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "a4b63eb931e189491d38f9423e08af79ffb48aee5d178e1d7c5d13be050af474",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-chapters.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "0680ca2d923423d01290463f6e6425a66a04f47a9bfef262e9e1a122d1b5fc9f",
+      "note": ""
+    },
+    {
+      "file": "tools/check-character-tools.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "602b0f80c52418ee458337a83d76bd2637e3a50a4c5173fd2d192186a0c826ae",
+      "note": ""
+    },
+    {
+      "file": "tools/check-combat-plus.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "12b0692d9b3bcd734e3c4e354c0d29d404b9716e67521de3ccb5fd5251ab40d6",
+      "note": ""
+    },
+    {
+      "file": "tools/check-combat-run.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "0bbd02223c48a0178e16c81251a2131f65c49ea3358d692e8f3d9a386f106f46",
+      "note": ""
+    },
+    {
+      "file": "tools/check-combat.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "7f42b2f8179e7e7b8a7820280578aeeeb32b991de22c79887b800ede927718ac",
+      "note": ""
+    },
+    {
+      "file": "tools/check-complete-session-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "1a8ae20f67781a100dcef6d7e045b4442738fb4aa169be626e223a942e86f825",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-consolidation-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "9f6c41887bb8dc8cca7c4deadeeb9b672ea9d80a18f3b3c99f9c83849ea7c57e",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-content.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "3c05aa42a2a7432404e8fb4f6dc86de38e163e37c5e7466ed47b8f64bcbaa7ee",
+      "note": ""
+    },
+    {
+      "file": "tools/check-continuity.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "9bc5335795964bd929e560d0e7f3c53550b9ca0873ceefaeb67093cda59bf4a5",
+      "note": ""
+    },
+    {
+      "file": "tools/check-courtyard-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "df84668702b85187cdcecc81fbfc8a9cb04b545d63a2928fe72a6fa7e09f3a17",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-courtyard.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "d84b7e6d3ebf4a2346276e70c142b760ae1585f2a53cf71d175f7e0fd0790da7",
+      "note": ""
+    },
+    {
+      "file": "tools/check-current-status-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "44adf8aec0d9758c5e712a5043738b4a2098f10c095a50e232557e5090e3b6a5",
+      "note": ""
+    },
+    {
+      "file": "tools/check-dm-desk-ui.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "05cc6b6e1659687d72d96084221b0d44ea8cb1546d41fb60d06c738e8008e4cd",
+      "note": ""
+    },
+    {
+      "file": "tools/check-dm-desk.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "2b9cbad40992c18e4789881c87dda7c18a71ce00f60e547033c1b6750b47caa0",
+      "note": ""
+    },
+    {
+      "file": "tools/check-dm-search.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "83014fb86925e0616c458192bc499547d9e5152d515a993bd731b592b14a85cb",
+      "note": ""
+    },
+    {
+      "file": "tools/check-downtime-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "bc3ddc95d4ffce7974e92ca7b98d0d56b7bc8539c6b3a7f6c1908c9220ce7bb6",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-downtime-outcomes.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "bdaf4f746a13eadf322670ac73ba66cd0e0dde3e8f7ba722a29932705235814b",
+      "note": ""
+    },
+    {
+      "file": "tools/check-downtime-settlements.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "a01315078e8af1d7d9b1c5bdd7ec6f18c95de4a94fcab70c91d392fd8a4ae1e5",
+      "note": ""
+    },
+    {
+      "file": "tools/check-downtime.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "42c8a9881c4a2c5df8f70c5eb8c23892d885dac5e8fe1fbc841b519fcec0ccba",
+      "note": ""
+    },
+    {
+      "file": "tools/check-dungeon-ui.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "618362d76cc273ab15d9622b82dc4c3700c52ae0a7cbb85f12b9b63c4f315eaf",
+      "note": ""
+    },
+    {
+      "file": "tools/check-dungeon.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "39e4e39fdcefca8540bce0ede0c9fa8c4eb0d20ef98785c7c6f7f8988cde09d6",
+      "note": ""
+    },
+    {
+      "file": "tools/check-encounter-levels.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "ba646bd3c7fbb9ca753edab5580491cfe0e239adfaebf5d7b9979da89b15ede1",
+      "note": ""
+    },
+    {
+      "file": "tools/check-evening-path-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "bce85281e47e37c5b32166662a3a89c51574194aa463c52105efbd59ec7103c3",
+      "note": ""
+    },
+    {
+      "file": "tools/check-expedition-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "6b9d5846807a87d18ee9fee4dc1c39028f98090b7190ca292c85f33bcfd32792",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-expedition-persistence.cjs",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "b3340d20b881acb67d416fd5609476cf2775d7d91147a1e85923c15f3b638a96",
+      "note": ""
+    },
+    {
+      "file": "tools/check-expedition-resume.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "19d1de5a03082d759fe9b3ee9661d203ee567c1f5a3d5655f262abf1e88ed145",
+      "note": ""
+    },
+    {
+      "file": "tools/check-expeditions.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "1e5239aa66ea63071354e0205302405d57091ec9f781d91538603087dcaa8661",
+      "note": ""
+    },
+    {
+      "file": "tools/check-finale-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "743f831cc8c669a2c76e91271c1dcd41c9130d1bbb4975a3b2e30d18b6e5d895",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-finale.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "35835ff12d933880c98f0950483d069ed5aa70614a5e31c1f156af37dd5126fb",
+      "note": ""
+    },
+    {
+      "file": "tools/check-growth-performance.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "bb5543d2cd1606b250f4ff198f469674cd67c8c3bd0aa25b356da5bdc7ecdb88",
+      "note": ""
+    },
+    {
+      "file": "tools/check-guided-attack-flow.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "71fc4c2175b4a776678df3c50156a9dc8e40a577b7227aee65292e7481906b52",
+      "note": ""
+    },
+    {
+      "file": "tools/check-guided-dm.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "6bcbac819fac21f1b72718b9a6af89910dc2bc6a293d0ffc52d59111869cd2b5",
+      "note": ""
+    },
+    {
+      "file": "tools/check-guided-integration.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "6589a87c5341a5c52ef73fca6b12e0defcfcbe6e5915016e5bf0c0b1b18b260f",
+      "note": ""
+    },
+    {
+      "file": "tools/check-hybrid-combat-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "a29017437f0cd5b60a7cffada23d00e821e4c1a0dd84a1a85cb1dd8254fda7e0",
+      "note": ""
+    },
+    {
+      "file": "tools/check-hybrid-ui-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "dada53d598e6f65aea28e84ea44661200c0f7d5c90dadcfe155b8cc53383d1fe",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-journey-map-art.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "015caf01cfc2d7c9cd6a109f7b945eee3d6d881ce197b6b44cc7b9341fb8099f",
+      "note": ""
+    },
+    {
+      "file": "tools/check-journey-map-motion.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "913f594dac15bbf0220bb20d0ba5d912b48edf09274903e8eae728d9403ccaa5",
+      "note": ""
+    },
+    {
+      "file": "tools/check-lmop-art.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "a908ec8aa378bab7cc724ef01f551e3175995ba174720921a2b56c9dc862ff3c",
+      "note": ""
+    },
+    {
+      "file": "tools/check-map-register-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "6485afd49c3d9e6ab65b93b1562ece5b634bbbae48c46ea0233c33aef5b225ff",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-map-register.py",
+      "category": "local service or asset fixture",
+      "coreGate": false,
+      "sha256": "7668c34d1aa9d66cc21a1e49e8c51a9a481a06472898a74b6c83790675caf075",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-maps.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "85e828341c9e32969faaad11173fa05b607cad05086edd10d4dd33d8ab7a5230",
+      "note": ""
+    },
+    {
+      "file": "tools/check-mystery-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "ddce9bec7bede59dd738e5e967f10cbe2328e96b67d6c279250bac7ce6fee106",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-mystery.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "0e29c800cf9625f3c844e8c4677da914f6b70edbde158389156046ca8071c2b6",
+      "note": ""
+    },
+    {
+      "file": "tools/check-outcomes-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "2616d694b20afa966961ac7f3af2da5cae97af9396aa2820cf55faa4cae33f57",
+      "note": ""
+    },
+    {
+      "file": "tools/check-outcomes.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "5c4e255e66a87c65992fd701f63a79f636b2c83c5f7ec2bf15a990099134a832",
+      "note": ""
+    },
+    {
+      "file": "tools/check-party-actions-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "ac7588a94b5b776b2fa353300077217f3e0591ecb217e0883137c61ff214ec98",
+      "note": ""
+    },
+    {
+      "file": "tools/check-party.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "115961a97ceb1609d14e05941d1cf5e45440456bfc429b1e824b6d19f487d9d1",
+      "note": ""
+    },
+    {
+      "file": "tools/check-pebble-goron-traits.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "9cba430bff411f5c0209a6eb9cd88df59e2207ec456b4974a2608fd46e6b21ff",
+      "note": ""
+    },
+    {
+      "file": "tools/check-performance-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "af56761177d59d56d3017c7bd16dd419b60c035f609e6b955f714f3148d84240",
+      "note": ""
+    },
+    {
+      "file": "tools/check-phone-action-ui.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "8ffcff4d28a0bd7c866546ad5b3877eb6dedcbadf393ee7db0f27933583825af",
+      "note": ""
+    },
+    {
+      "file": "tools/check-phone-actions.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "2bbe2bd571fcd822283f23d237ecb55ac81cabcb6a93b306e5fd8564c0dabed1",
+      "note": ""
+    },
+    {
+      "file": "tools/check-phone-player-ui.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "a99dc37fd293730d0e0f1d147e8493e2fd80d17f674d3fd554f2e4c1c2dff2ea",
+      "note": ""
+    },
+    {
+      "file": "tools/check-phone-reconnect.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "2f7857ff560eb2465e6b204ae0adf951812768266a7f5dcd5f3021a1f88c520c",
+      "note": ""
+    },
+    {
+      "file": "tools/check-phone-service.py",
+      "category": "local service or asset fixture",
+      "coreGate": true,
+      "sha256": "bf4b9049e01511a37e0ecbbd7960361d9de75811a06e15acb1004974e6772591",
+      "note": ""
+    },
+    {
+      "file": "tools/check-phone-walkthrough.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "316ec7df582e99c611aca06d72dc1384440b619c43f0fd9de18fcbc39362e16b",
+      "note": ""
+    },
+    {
+      "file": "tools/check-player-tools.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "b28b800ef7523eb2a7fdd1ff468b007e99f6d618aeeacd2e72ea476164b9a536",
+      "note": ""
+    },
+    {
+      "file": "tools/check-portable-package.py",
+      "category": "local service or asset fixture",
+      "coreGate": true,
+      "sha256": "2cf72893cb2c71b665afca2018e834d04f9119377a3a7ab6940ecd153c652be5",
+      "note": ""
+    },
+    {
+      "file": "tools/check-portable-service.py",
+      "category": "local service or asset fixture",
+      "coreGate": true,
+      "sha256": "870c0d458422d6e9a7b2d009a9cf2972aa001b422b99869990d491158502eaa0",
+      "note": ""
+    },
+    {
+      "file": "tools/check-quest-prep-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "e145207db7739ddb947cd14be43d424b76441c5de6373346892746f8ce9f9cd5",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-quest-prep.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "1606d6bcd6abbb6929e87349bea8daef9eee357225a9f93d63ffb137684565cf",
+      "note": ""
+    },
+    {
+      "file": "tools/check-quests-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "956916a9756ee6dc0169b5b509bf4e53a1f57ca1966162c4ea3b0057335b49a4",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-quests-integration.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "a6f38f9c9afb59410f01a97f787ee51f5adf3b91f9e531a0c8583e53de30388b",
+      "note": ""
+    },
+    {
+      "file": "tools/check-quests.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "ad5e36c066f2812ec39a3507fa7c7454acc64b9dee283a1b6f1ffef1b1f19baa",
+      "note": ""
+    },
+    {
+      "file": "tools/check-reconciliation-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "f874dcda46d33bd756debe2203292a66127aeacd2a8b4def0577116db2ef2df6",
+      "note": ""
+    },
+    {
+      "file": "tools/check-reliability-growth.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "caab14e7d0b2bd43ee8dfca1eedc27ef11bc34d09b9e3576d69e4db5428c7dab",
+      "note": ""
+    },
+    {
+      "file": "tools/check-ringgo-level-four.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "5ce00efc090ea8927998c6bd0eb237922a09bd3b6011261bb41c87144f1b5d84",
+      "note": ""
+    },
+    {
+      "file": "tools/check-rules-library.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "b3498e7a0c75aebc4a2498be4f5ddf31c41c0d41d99a2cbea08087347cc054e8",
+      "note": ""
+    },
+    {
+      "file": "tools/check-run-ui.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "5317418e218485327263a5f892e79a39e15cc16dc9732055eae1d2a9f1927c39",
+      "note": ""
+    },
+    {
+      "file": "tools/check-save-fallback.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "2897b6ffe0e5b0c43a21dc29170952a0fc08caccecf8e4b35d1631336aa49063",
+      "note": ""
+    },
+    {
+      "file": "tools/check-scene-presets-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "1da95c31338cdc87cba16d6a0ea97788773dc6efbd8154d0d40373e5a70b62b5",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-session-flow-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "78cdb7e19149e1df4a53f44f24eef0d71d3978fbccd88a5dbb779b8707752f05",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-session-flow.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "8fc39b1c59076b86a87f3307a80911b0c11c9ed11de3c7b583c6cd643a205c99",
+      "note": ""
+    },
+    {
+      "file": "tools/check-session2-migration.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "d4ce9ce25d30afa2d992bdef00ea4df04de2e2c1e427b083d24f692b5b944363",
+      "note": ""
+    },
+    {
+      "file": "tools/check-session3.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "1bf37a98560bbae7408e66bc8c21282dc5e80f70186d738386388cfa6fa301fe",
+      "note": ""
+    },
+    {
+      "file": "tools/check-session4.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "8227bda40fdcce2b1b1b986216f23390ec717f95056d677ace819f10c7cc7654",
+      "note": ""
+    },
+    {
+      "file": "tools/check-settlements-integration.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "733c7d887fb2676ddf2914ce2a7de8d2b978fc2a98a61d64e9721b34a4509f3a",
+      "note": ""
+    },
+    {
+      "file": "tools/check-settlements-ui.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "9fd9074969342e1fd8ab90e7c520b38d6c3f4769e394b42c7992ac1c83f92eb7",
+      "note": ""
+    },
+    {
+      "file": "tools/check-settlements.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "e83ee1dd48beb314a44f850c75fe74235c498d078cfa9c257ac576df09ac860f",
+      "note": ""
+    },
+    {
+      "file": "tools/check-spotlights.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "44c08f8997c1176876b8b2919978b544725ad9d46ccb593ebcfeb5943b2d2aea",
+      "note": ""
+    },
+    {
+      "file": "tools/check-stage3-clue-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "5806ae569bff7e0701b682b349a04e2ac2f254659a6846ff78152a5f55773896",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-stage3-commands.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "c9f2984851a715e733f27bf20077500198a62ed7ea3edadabb69abeba4fb09a3",
+      "note": ""
+    },
+    {
+      "file": "tools/check-stage3-recovery-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "5e0a3bdab58e8681b4d593a4b9c3cbce5718dc6b3bc191b5eb1da0ac435e022b",
+      "note": ""
+    },
+    {
+      "file": "tools/check-stage4-five-phones.py",
+      "category": "local service or asset fixture",
+      "coreGate": true,
+      "sha256": "bb3d8e4fe111e382d548922d6c3f3e6e446146470627947ceb68c7191c41c278",
+      "note": ""
+    },
+    {
+      "file": "tools/check-stage4-phone-health.py",
+      "category": "local service or asset fixture",
+      "coreGate": true,
+      "sha256": "6c529fdde198a9afdb7366f8245b1d553d6e18ccf8fb943511cba62c8684ef4a",
+      "note": ""
+    },
+    {
+      "file": "tools/check-stage4-tv-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "a7ff7dd6eb1bd638d6a6af73b1505144342c017c697a45ebdb733a56f8567708",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-stage5-encounter-simulator.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "12324a27931c1b989b5e1154f9b3b615df179821cc47651153e4dfee0fe1b1ce",
+      "note": ""
+    },
+    {
+      "file": "tools/check-stage6-aftermath-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "8151966f14281d503b5083be726588e975e1f77a68b1f8a6f3b9c331342e554c",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-stage9-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "ff24d75b45ec2810feac03a4ea056045fd0d25a40bddf71fefabe89e5ff8e901",
+      "note": ""
+    },
+    {
+      "file": "tools/check-stage9-package.py",
+      "category": "local service or asset fixture",
+      "coreGate": true,
+      "sha256": "881e0a3edbff6873e8710ef0373c664ee50fd77916efa51d7f02f551348f4a61",
+      "note": ""
+    },
+    {
+      "file": "tools/check-story.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "ffca096615ed39eb92dc190f2382cdf70d745174990e1c289cebd4a145c870cf",
+      "note": ""
+    },
+    {
+      "file": "tools/check-table-flow.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "6cc67b1137d354bbed44a4c9d99d0cd73cc4bba2b98ae9880d76451a352e5338",
+      "note": ""
+    },
+    {
+      "file": "tools/check-table-rehearsal-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "5eccf377bacdc1f171965de480f596310d6c6a21cd30347b8bb9aae0ee5e9466",
+      "note": ""
+    },
+    {
+      "file": "tools/check-table-tools.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "7d1c059ebe2c1ac0e406b652d8a41e6143a1d49da090ae7e85e2179e17a9f312",
+      "note": ""
+    },
+    {
+      "file": "tools/check-table-workflows.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "34d015fb1ae329b8ad4da83a22583c44ecb0837ce37d393d0fcf55aacd582601",
+      "note": ""
+    },
+    {
+      "file": "tools/check-token-drag.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "afd02e4a2e929123d76141a67dfa126e2dfd35d9317eb9489fe7a0f869506ab9",
+      "note": ""
+    },
+    {
+      "file": "tools/check-town-maps.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "71738dacf5d6605d72d972b01c39bf95f69f839c97892bae2670428963fa6599",
+      "note": ""
+    },
+    {
+      "file": "tools/check-transition-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "97c632a77fac59ab31f84516b91e200e609b14a1abdf14b16aeb5d34ec6b647b",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-transition.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "9dc26020c2953ad426f407f0623e5919bd021f9faec15f2fba56838b0482ddeb",
+      "note": ""
+    },
+    {
+      "file": "tools/check-travel-ui.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "81f013ba568c8e19ff68bb24ce50c090d026c5e179e641eef1a9428b4f32ccce",
+      "note": ""
+    },
+    {
+      "file": "tools/check-travel.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "25f6003913fa16fae5273b57a4430f32045aaebc2af02726d057ef711dacb595",
+      "note": ""
+    },
+    {
+      "file": "tools/check-tv-text.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "a5a92eefa23983a90e33300e7f633313b2e60119baff01692dc2af5792785176",
+      "note": ""
+    },
+    {
+      "file": "tools/check-ui-overhaul-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "1c8a6c1e6f99f0cf5ba43e72dcd620450771a9df083821fab0f160160c0e8885",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-undermountain-arc-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": false,
+      "sha256": "794f77de430f731d1d61bbb65949bf5340aea45ec9950b2799648a6b4b730e16",
+      "note": "Specialist rehearsal; inventoried, not executed by the core gate."
+    },
+    {
+      "file": "tools/check-undermountain-arc.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "204b60c211cb302d51abe79970a294121b4cc3fe0b8aca4f213e3a779463c7a5",
+      "note": ""
+    },
+    {
+      "file": "tools/check-voice-auditions-browser.js",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "951e69bcbd0b6fdd67d1692b473a5d36f6c8f0783de7eb15fd28db25e7c57705",
+      "note": ""
+    },
+    {
+      "file": "tools/check-voice-handoff-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "c580a8befb87d5b2e206ca6be89402468165fcd71a36359ce691ab9b85d4b7e5",
+      "note": ""
+    },
+    {
+      "file": "tools/check-voice-studio-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "e3e443598f372861614469ee5f00e5d2d96c5d1a2e742add1ceec688fac08aa7",
+      "note": ""
+    },
+    {
+      "file": "tools/check-waterdeep-integration.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "9ee238bd953018887fdd65332a5a392fb567b915889845f599f30874c96d6b97",
+      "note": ""
+    },
+    {
+      "file": "tools/check-waterdeep-pack.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "8637683b6bd3d64ee49eb4b027c6d6c2bf9cff042295a5b815e34fa8e42ccd74",
+      "note": ""
+    },
+    {
+      "file": "tools/check-waterdeep-ui.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "502936627f3162a88bf334134d65476f161f16e54e3aa1cade3539b67a6830b7",
+      "note": ""
+    },
+    {
+      "file": "tools/check-waterdeep.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "ec130a894b3246e4c751fa4c59fa6376eed2720f561d0d2b0d44f7c90a553a25",
+      "note": ""
+    },
+    {
+      "file": "tools/check-wave-combat.js",
+      "category": "in-memory or source-contract check",
+      "coreGate": true,
+      "sha256": "90995d2ed025816194c178ae325486dfb4d9b3da3f8c6a8f6b4b0538f8d47653",
+      "note": ""
+    },
+    {
+      "file": "tools/check-whole-backup-browser.cjs",
+      "category": "isolated browser rehearsal",
+      "coreGate": true,
+      "sha256": "3ac8efebc5a79059ad02bdd43e945718697491d78ba8dac675c5013b53a79030",
+      "note": ""
+    }
+  ],
+  "checks": [
+    {
+      "name": "JavaScript unit suite",
+      "category": "unit and mocked audience context",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.27,
+      "output": "TAP version 13\n# AI context: privacy, publication, NPC disclosure, status, corrections, immutability, redaction and injection boundary checks passed.\n# Subtest: /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/ai-context.test.cjs\nok 1 - /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/ai-context.test.cjs\n  ---\n  duration_ms: 102.755958\n  ...\n# Subtest: completed local report matches canonical original scripts and all four roles\nok 2 - completed local report matches canonical original scripts and all four roles\n  ---\n  duration_ms: 4.085125\n  ...\n# Subtest: validation rejects changed scripts, identities, rights, totals and incomplete takes\nok 3 - validation rejects changed scripts, identities, rights, totals and incomplete takes\n  ---\n  duration_ms: 2.709166\n  ...\n# Subtest: explicit selection keeps exact script, hash, model and generation reference and supports undo\nok 4 - explicit selection keeps exact script, hash, model and generation reference and supports undo\n  ---\n  duration_ms: 2.812625\n  ...\n# Subtest: collapsed panel only reads local metadata and selecting requires a separate listening check\nok 5 - collapsed panel only reads local metadata and selecting requires a separate listening check\n  ---\n  duration_ms: 7.058625\n  ...\n# Subtest: malformed report and blank campaigns cannot create selections\nok 6 - malformed report and blank campaigns cannot create selections\n  ---\n  duration_ms: 2.738458\n  ...\n# Subtest: exactly four proposed original DM auditions with stable character links and content revisions\nok 7 - exactly four proposed original DM auditions with stable character links and content revisions\n  ---\n  duration_ms: 1.904334\n  ...\n# Subtest: source references resolve to reviewed local guidance and scripts contain no campaign revelations\nok 8 - source references resolve to reviewed local guidance and scripts contain no campaign revelations\n  ---\n  duration_ms: 0.687709\n  ...\n# Subtest: normalization rejects future versions and keeps only the voice cast allowlist\nok 9 - normalization rejects future versions and keeps only the voice cast allowlist\n  ---\n  duration_ms: 0.670833\n  ...\n# Subtest: cast and normalized snapshots are deeply immutable without modifying input\nok 10 - cast and normalized snapshots are deeply immutable without modifying input\n  ---\n  duration_ms: 1.462375\n  ...\n# Subtest: suggested voices cannot silently become selected and changing identity invalidates selection\nok 11 - suggested voices cannot silently become selected and changing identity invalidates selection\n  ---\n  duration_ms: 7.594125\n  ...\n# Subtest: clearing and undo preserve prior selection and exact prior profile\nok 12 - clearing and undo preserve prior selection and exact prior profile\n  ---\n  duration_ms: 3.299334\n  ...\n# Subtest: selection preserves the exact model, script fingerprint and sample reference across restore\nok 13 - selection preserves the exact model, script fingerprint and sample reference across restore\n  ---\n  duration_ms: 1.436542\n  ...\n# Subtest: history is bounded and unsafe legacy fields are discarded from historical snapshots\nok 14 - history is bounded and unsafe legacy fields are discarded from historical snapshots\n  ---\n  duration_ms: 31.419125\n  ...\n# Subtest: audition projection contains only exact shared script and proposed speech direction\nok 15 - audition projection contains only exact shared script and proposed speech direction\n  ---\n  duration_ms: 0.917625\n  ...\n# Subtest: story save normalization preserves an explicitly saved cast without seeding it into campaigns\nok 16 - story save normalization preserves an explicitly saved cast without seeding it into campaigns\n  ---\n  duration_ms: 4.173959\n  ...\n# Subtest: unsupported, malformed or unavailable voice normalization fails without changing the original save\nok 17 - unsupported, malformed or unavailable voice normalization fails without changing the original save\n  ---\n  duration_ms: 2.295792\n  ...\n# Subtest: the actual TV payload allowlist excludes cast, audition notes and source metadata\nok 18 - the actual TV payload allowlist excludes cast, audition notes and source metadata\n  ---\n  duration_ms: 1.083792\n  ...\n# Subtest: history retains actual versus unplayed; superseded evidence does not return\nok 19 - history retains actual versus unplayed; superseded evidence does not return\n  ---\n  duration_ms: 3.991333\n  ...\n# Subtest: DM sees private clue; NPC requests never receive private or future records\nok 20 - DM sees private clue; NPC requests never receive private or future records\n  ---\n  duration_ms: 3.07025\n  ...\n# Subtest: private recipients and everyone present constrain disclosure\nok 21 - private recipients and everyone present constrain disclosure\n  ---\n  duration_ms: 2.387791\n  ...\n# Subtest: friendly, deception and negotiation remain proposals with known citations\nok 22 - friendly, deception and negotiation remain proposals with known citations\n  ---\n  duration_ms: 1.742791\n  ...\n# Subtest: beliefs, suspicions, unknown questions and explicit withholding\nok 23 - beliefs, suspicions, unknown questions and explicit withholding\n  ---\n  duration_ms: 1.846959\n  ...\n# Subtest: rules preserve named exception and use existing sheet calculator\nok 24 - rules preserve named exception and use existing sheet calculator\n  ---\n  duration_ms: 2.492417\n  ...\n# Subtest: source validation rejects forged citations and uncited confident answers\nok 25 - source validation rejects forged citations and uncited confident answers\n  ---\n  duration_ms: 1.610041\n  ...\n# Subtest: context strips credentials and source-book prose; proposals are private future drafts\nok 26 - context strips credentials and source-book prose; proposals are private future drafts\n  ---\n  duration_ms: 2.025209\n  ...\n# Subtest: Donavan approved spells are character exceptions, not the general rules profile\nok 27 - Donavan approved spells are character exceptions, not the general rules profile\n  ---\n  duration_ms: 0.380542\n  ...\n# Subtest: outgoing selection is explicit and cannot add another audience source\nok 28 - outgoing selection is explicit and cannot add another audience source\n  ---\n  duration_ms: 1.809916\n  ...\n# Subtest: strict response validation is atomic and preserves a suggested basis\nok 29 - strict response validation is atomic and preserves a suggested basis\n  ---\n  duration_ms: 1.402917\n  ...\n# Subtest: claims, inferences, plans and AI wording cannot masquerade as actual events\nok 30 - claims, inferences, plans and AI wording cannot masquerade as actual events\n  ---\n  duration_ms: 0.181708\n  ...\n# Subtest: player help excludes DM, other owners, future branches and instruction attacks\nok 31 - player help excludes DM, other owners, future branches and instruction attacks\n  ---\n  duration_ms: 6.694542\n  ...\n# Subtest: local drafts retain public recap basis; narration excludes private running notes\nok 32 - local drafts retain public recap basis; narration excludes private running notes\n  ---\n  duration_ms: 1.525\n  ...\n# Subtest: NPC public context never forwards private source notes; Open basis remains uncertain\nok 33 - NPC public context never forwards private source notes; Open basis remains uncertain\n  ---\n  duration_ms: 1.136208\n  ...\n# Subtest: forged result sections cannot inject private records into an audience packet\nok 34 - forged result sections cannot inject private records into an audience packet\n  ---\n  duration_ms: 1.751416\n  ...\n# Subtest: snapshot only contains explicitly permitted outcome fields; all original save records survive\nok 35 - snapshot only contains explicitly permitted outcome fields; all original save records survive\n  ---\n  duration_ms: 6.644167\n  ...\n# Subtest: service staging is private, reviewable and idempotent before and after approval\nok 36 - service staging is private, reviewable and idempotent before and after approval\n  ---\n  duration_ms: 11.627917\n  ...\n# Subtest: a malformed selected service batch cannot partially stage outcomes\nok 37 - a malformed selected service batch cannot partially stage outcomes\n  ---\n  duration_ms: 2.567084\n  ...\n# Subtest: updated facts from the same service record stage a correction of one stable event\nok 38 - updated facts from the same service record stage a correction of one stable event\n  ---\n  duration_ms: 3.04\n  ...\n# Subtest: current linked facts keep historical chronology and source IDs; uncertainties remain explicit\nok 39 - current linked facts keep historical chronology and source IDs; uncertainties remain explicit\n  ---\n  duration_ms: 3.383083\n  ...\n# Subtest: offline service leaves enabled durable browser ledger intact and reports a retryable failure\nok 40 - offline service leaves enabled durable browser ledger intact and reports a retryable failure\n  ---\n  duration_ms: 18.551542\n  ...\n# Subtest: a differing service head blocks automatic overwrite\nok 41 - a differing service head blocks automatic overwrite\n  ---\n  duration_ms: 17.213833\n  ...\n# Subtest: an outcome approved during a mirror request queues the latest version; unrelated saves make no requests\nok 42 - an outcome approved during a mirror request queues the latest version; unrelated saves make no requests\n  ---\n  duration_ms: 47.41625\n  ...\n# Subtest: DM and phone intents produce identical patches, outcomes and roll values in one command\nok 43 - DM and phone intents produce identical patches, outcomes and roll values in one command\n  ---\n  duration_ms: 20.762916\n  ...\n# Subtest: physical attack natural die, critical damage and physical concentration are reviewed together\nok 44 - physical attack natural die, critical damage and physical concentration are reviewed together\n  ---\n  duration_ms: 2.790791\n  ...\n# Subtest: physical damage respects misses, natural 1, saves and component defenses\nok 45 - physical damage respects misses, natural 1, saves and component defenses\n  ---\n  duration_ms: 1.567916\n  ...\n# Subtest: components aggregate one concentration DC per damage event; deferred saves create undoable reminders\nok 46 - components aggregate one concentration DC per damage event; deferred saves create undoable reminders\n  ---\n  duration_ms: 1.202916\n  ...\n# Subtest: conditional defenses and unknown damage types demand explicit rulings; failed preview spends nothing\nok 47 - conditional defenses and unknown damage types demand explicit rulings; failed preview spends nothing\n  ---\n  duration_ms: 1.135667\n  ...\n# Subtest: reaction boundary blocks resolve, retains dice, then recomputes AC after Shield\nok 48 - reaction boundary blocks resolve, retains dice, then recomputes AC after Shield\n  ---\n  duration_ms: 0.793166\n  ...\n# Subtest: revision changes and defense changes invalidate preview before any costs or HP commit\nok 49 - revision changes and defense changes invalidate preview before any costs or HP commit\n  ---\n  duration_ms: 0.474875\n  ...\n# Subtest: NPC multiattack uses the same engine and marks only the selected sequence step\nok 50 - NPC multiattack uses the same engine and marks only the selected sequence step\n  ---\n  duration_ms: 1.566042\n  ...\n# Subtest: legacy staged damage enters the common engine, including physical saves, undo and resource-free events\nok 51 - legacy staged damage enters the common engine, including physical saves, undo and resource-free events\n  ---\n  duration_ms: 1.038\n  ...\n# Subtest: owner receipt excludes private defenses, concentration, patch values and DM-initiated history\nok 52 - owner receipt excludes private defenses, concentration, patch values and DM-initiated history\n  ---\n  duration_ms: 1.50925\n  ...\n# Subtest: Shield is one reversible resolution including slot, reaction, AC and next-turn expiry\nok 53 - Shield is one reversible resolution including slot, reaction, AC and next-turn expiry\n  ---\n  duration_ms: 1.500833\n  ...\n# Subtest: effect-only actions require a written ruling and never infer effects from prose\nok 54 - effect-only actions require a written ruling and never infer effects from prose\n  ---\n  duration_ms: 0.283416\n  ...\n# Subtest: current automated evidence needs full matching release; never certifies a physical table\nok 55 - current automated evidence needs full matching release; never certifies a physical table\n  ---\n  duration_ms: 11.433125\n  ...\n# Subtest: approved ledger is sole fact source; selected prepared scene never becomes a visit\nok 56 - approved ledger is sole fact source; selected prepared scene never becomes a visit\n  ---\n  duration_ms: 0.260125\n  ...\n# Subtest: explicit dated reviews are bound to campaign, save, files and display and can be withdrawn\nok 57 - explicit dated reviews are bound to campaign, save, files and display and can be withdrawn\n  ---\n  duration_ms: 3.241542\n  ...\n# Subtest: expired, future, disconnected or unknown storage evidence cannot mark ready\nok 58 - expired, future, disconnected or unknown storage evidence cannot mark ready\n  ---\n  duration_ms: 3.302708\n  ...\n# Subtest: private status model and evidence refuse player initialization\nok 59 - private status model and evidence refuse player initialization\n  ---\n  duration_ms: 2.260833\n  ...\n# Subtest: actual DM loader follows manifest order with all declared dependencies present\nok 60 - actual DM loader follows manifest order with all declared dependencies present\n  ---\n  duration_ms: 7.468208\n  ...\n# Subtest: player loader excludes every DM module and extracted campaign content\nok 61 - player loader excludes every DM module and extracted campaign content\n  ---\n  duration_ms: 4.956208\n  ...\n# Subtest: classic fallback remains explicit and does not load the hybrid presentation shell\nok 62 - classic fallback remains explicit and does not load the hybrid presentation shell\n  ---\n  duration_ms: 3.680708\n  ...\n# Subtest: card audit classifies every card without changing a character or adding spells; source labels and owner privacy survive\nok 63 - card audit classifies every card without changing a character or adding spells; source labels and owner privacy survive\n  ---\n  duration_ms: 11.314208\n  ...\n# Subtest: Flurry creates two independent attacks but spends one Focus and one bonus action, equally from phone or DM; undo restores all\nok 64 - Flurry creates two independent attacks but spends one Focus and one bonus action, equally from phone or DM; undo restores all\n  ---\n  duration_ms: 30.166917\n  ...\n# Subtest: 2024 Focus variants, Uncanny healing/restoration and initiative confirmation are atomic\nok 65 - 2024 Focus variants, Uncanny healing/restoration and initiative confirmation are atomic\n  ---\n  duration_ms: 10.731084\n  ...\n# Subtest: Champion critical threshold, Second Wind and Action Surge use approved Fighter choices\nok 66 - Champion critical threshold, Second Wind and Action Surge use approved Fighter choices\n  ---\n  duration_ms: 9.927792\n  ...\n# Subtest: Magic Missile allocates every upcast dart with shared damage; target omissions and Shield confirmation block without spending\nok 67 - Magic Missile allocates every upcast dart with shared damage; target omissions and Shield confirmation block without spending\n  ---\n  duration_ms: 7.447958\n  ...\n# Subtest: Ice Knife burst occurs after a miss and uses one slot; Scorcher\u2019s explicit Sculpt exclusions take no damage\nok 68 - Ice Knife burst occurs after a miss and uses one slot; Scorcher\u2019s explicit Sculpt exclusions take no damage\n  ---\n  duration_ms: 7.773833\n  ...\n# Subtest: multiclass spell DC, healing/upcasting and Arcane Recovery use wizard level, not total level\nok 69 - multiclass spell DC, healing/upcasting and Arcane Recovery use wizard level, not total level\n  ---\n  duration_ms: 14.025542\n  ...\n# Subtest: Sneak Attack, arrows, 2014 Assassinate and Piercer are one resolution, once per turn with undo and off-turn reuse\nok 70 - Sneak Attack, arrows, 2014 Assassinate and Piercer are one resolution, once per turn with undo and off-turn reuse\n  ---\n  duration_ms: 8.806375\n  ...\n# Subtest: reference-only effects, Goron powers and hidden targets remain explicit rulings; no automatic state or secret exposure\nok 71 - reference-only effects, Goron powers and hidden targets remain explicit rulings; no automatic state or secret exposure\n  ---\n  duration_ms: 5.514166\n  ...\n# Subtest: edited spell dice and foreign features stay manual; the 2014 bonus-action spell limit blocks invalid combinations\nok 72 - edited spell dice and foreign features stay manual; the 2014 bonus-action spell limit blocks invalid combinations\n  ---\n  duration_ms: 9.755917\n  ...\n# Subtest: saved pending intents remain usable when only support labels are added, while edited mechanics still invalidate them\nok 73 - saved pending intents remain usable when only support labels are added, while edited mechanics still invalidate them\n  ---\n  duration_ms: 2.590209\n  ...\n# Reliability, privacy, combat, media, and book-reference checks passed.\n# Subtest: /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/reliability.test.cjs\nok 10 - /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/reliability.test.cjs\n  ---\n  duration_ms: 74.321375\n  ...\n# Subtest: guided coverage includes all five phones for join/sheet/quest/action and reconnect checks\nok 75 - guided coverage includes all five phones for join/sheet/quest/action and reconnect checks\n  ---\n  duration_ms: 0.489625\n  ...\n# Subtest: live campaign cannot start a rehearsal; missing observations fail without modifying data\nok 76 - live campaign cannot start a rehearsal; missing observations fail without modifying data\n  ---\n  duration_ms: 9.334167\n  ...\n# Subtest: partial and skipped physical tests stay incomplete and never inherit simulated passes\nok 77 - partial and skipped physical tests stay incomplete and never inherit simulated passes\n  ---\n  duration_ms: 2.685875\n  ...\n# Subtest: a prepared fix or simulated retest cannot hide a real problem; a later physical pass retains history\nok 78 - a prepared fix or simulated retest cannot hide a real problem; a later physical pass retains history\n  ---\n  duration_ms: 0.56375\n  ...\n# Subtest: completion requires every device result and a matching verified build; corrections remain append-only\nok 79 - completion requires every device result and a matching verified build; corrections remain append-only\n  ---\n  duration_ms: 1.15925\n  ...\n# Subtest: private rehearsal modules do not initialize in the TV audience\nok 80 - private rehearsal modules do not initialize in the TV audience\n  ---\n  duration_ms: 1.374041\n  ...\n# Subtest: speech request contains exact corrected selection and only provider settings\nok 81 - speech request contains exact corrected selection and only provider settings\n  ---\n  duration_ms: 1.810833\n  ...\n# Subtest: explicit approval preserves old recording through editing and alternate takes\nok 82 - explicit approval preserves old recording through editing and alternate takes\n  ---\n  duration_ms: 2.080833\n  ...\n# Subtest: recap source changes / withdrawal block audio and subtitle-only playback\nok 83 - recap source changes / withdrawal block audio and subtitle-only playback\n  ---\n  duration_ms: 1.059792\n  ...\n# Subtest: simulated approval is restricted to practice; text-only needs separate review\nok 84 - simulated approval is restricted to practice; text-only needs separate review\n  ---\n  duration_ms: 0.6905\n  ...\n# Subtest: save roundtrip retains original and approved takes, rejects unknown schema and missing audio\nok 85 - save roundtrip retains original and approved takes, rejects unknown schema and missing audio\n  ---\n  duration_ms: 0.853958\n  ...\n# Subtest: audience sources omit DM notes and private letters, keep recaps source-linked\nok 86 - audience sources omit DM notes and private letters, keep recaps source-linked\n  ---\n  duration_ms: 0.437792\n  ...\n# Subtest: TV projection contains only explicit public subtitle fields, never files or private profiles\nok 87 - TV projection contains only explicit public subtitle fields, never files or private profiles\n  ---\n  duration_ms: 0.454625\n  ...\n# Subtest: assistant draft basis survives backup and blocks outdated public playback\nok 88 - assistant draft basis survives backup and blocks outdated public playback\n  ---\n  duration_ms: 0.25725\n  ...\n# Subtest: imported plugin provenance survives restoration without arbitrary provider metadata\nok 89 - imported plugin provenance survives restoration without arbitrary provider metadata\n  ---\n  duration_ms: 0.599\n  ...\n# Subtest: local mock is a playable silent WAV, clearly separate from actual speech\nok 90 - local mock is a playable silent WAV, clearly separate from actual speech\n  ---\n  duration_ms: 0.885125\n  ...\n# Subtest: private preview requires separate headphones and never publishes or ducks music\nok 91 - private preview requires separate headphones and never publishes or ducks music\n  ---\n  duration_ms: 1.998042\n  ...\n# Subtest: table transport publishes only on play, pauses ducking, restores it and stops immediately\nok 92 - table transport publishes only on play, pauses ducking, restores it and stops immediately\n  ---\n  duration_ms: 0.588875\n  ...\n# Subtest: stop during asynchronous resume cannot revive an interrupted voice\nok 93 - stop during asynchronous resume cannot revive an interrupted voice\n  ---\n  duration_ms: 1.011542\n  ...\n1..93\n# tests 93\n# suites 0\n# pass 93\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 214.171292\n"
+    },
+    {
+      "name": "Python service suite",
+      "category": "temporary stores and mocked providers",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 5.92,
+      "output": "............................................................................................................................................................................127.0.0.1 - - [11/Oct/2026 18:19:54] \"GET /__echo_status HTTP/1.1\" 200 -\n127.0.0.1 - - [11/Oct/2026 18:19:54] code 403, message Forbidden\n127.0.0.1 - - [11/Oct/2026 18:19:54] \"GET /__echo_status HTTP/1.1\" 403 -\n127.0.0.1 - - [11/Oct/2026 18:19:54] code 403, message Forbidden\n127.0.0.1 - - [11/Oct/2026 18:19:54] \"GET /__echo_status HTTP/1.1\" 403 -\n127.0.0.1 - - [11/Oct/2026 18:19:54] code 403, message Forbidden\n127.0.0.1 - - [11/Oct/2026 18:19:54] \"GET /__echo_status HTTP/1.1\" 403 -\n...............................\n----------------------------------------------------------------------\nRan 203 tests in 5.793s\n\nOK\n"
+    },
+    {
+      "name": "check-atlas-preservation.cjs",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.08,
+      "output": "{\"passed\":true,\"checks\":[\"Existing travel values and customized distances retained\",\"Existing routes, plans, history and requests retained\",\"All added places start hidden\",\"Blank campaigns remain blank\",\"New Tresendar default uses exterior; saved arrival stays unchanged\",\"Atlas views survive normalization\"],\"newPlaces\":460,\"newRoutes\":28}\n"
+    },
+    {
+      "name": "check-atmosphere-audio.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Presentation audio passed: ducking throughout crossfades, mute including retiring and pending tracks, and stop.\n"
+    },
+    {
+      "name": "check-atmosphere-ui.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Effects UI passed: preview/reveal, presets without autoplay, explicit playback, zone style/dismiss, rotations, off setting and scene ducking.\n"
+    },
+    {
+      "name": "check-atmosphere.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Atmosphere passed: persistence, secret filtering, expiry, actual target placement, stable transitions, off mode, audio layers, intensity, ducking, mute, crossfade and cancelled loads.\n"
+    },
+    {
+      "name": "check-campaign-atlas.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Campaign atlas checks passed: hierarchy, shared discovery, private/public boundary, stage revalidation, state preservation and player guards.\n"
+    },
+    {
+      "name": "check-chapters.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.26,
+      "output": "{\n  \"checks\": [\n    {\n      \"name\": \"Five approved character chains have playable chapters linked to their existing objectives\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Eight satellites are optional scopes and only the next custom site is fully prepared\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Every new beat, quest lead, scene and mystery reference resolves without inventing facts\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Selected chapter leads keep the right scene and remain private with board limits and undo\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Prepared library rooms start hidden, preserve edits and remain a plan after save/restore\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Party-copy packs preserve chosen low levels and spent resources through reload and derived sessions\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Adding live scene notes is idempotent and preserves private detail through save/restore\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"All chapter and library scene notes survive their actual storage limits\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Spotlights count actual moments, respect absence and pause, and support corrections and undo\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Actual discoveries require review, preserve quest objectives and publish only selected wording\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"New custom content is loaded only on the DM side\",\n      \"ok\": true\n    }\n  ],\n  \"passed\": 11,\n  \"total\": 11\n}\n"
+    },
+    {
+      "name": "check-character-tools.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "Character tools passed: staged level-ups/imports, stale guards, mixed Hit Dice, rest variants/overrides, favorites, private-safe shared handouts, atomic upcasting, persistence, and guided UI.\n"
+    },
+    {
+      "name": "check-combat-plus.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.15,
+      "output": "Combat plus passed: path costs/crawling/difficult terrain, opportunity pauses, multi-owner saves, revisions/privacy, component defenses, Shield expiry, held rolls, damage atomicity, spell entry/turn/expiry triggers, boss events, condition guidance, persistence, and TV/phone projections.\nCombat tools UI passed: saves, damage preview/apply, template conversion, encounter events, and no movement planner.\nLarge-map movement preview: 9ms for 254 tokens and 50 areas.\n"
+    },
+    {
+      "name": "check-combat-run.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Combat run passed: save migration, attack dice, and encounter state.\n"
+    },
+    {
+      "name": "check-combat.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Combat checks passed: creature sources, templates, geometry, damage, pacing, and UI hooks.\n"
+    },
+    {
+      "name": "check-content.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "Content checks passed: source books, page links, creature pack, exceptions, and audio cues.\n"
+    },
+    {
+      "name": "check-continuity.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.08,
+      "output": "Continuity passed: seeded actual history, campaign isolation, persistence, quest states, knowledge, custody, map reveal/withdrawal, undo/redo, and TV/phone privacy.\nContinuity UI passed: selecting without mutation, edit revokes approval, approve/withdraw/undo, tracked follow-up drafts, and unpublished recap creation.\n"
+    },
+    {
+      "name": "check-courtyard.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.22,
+      "output": "Courtyard passed: 11 playable scenes and references; preserved legacy fingerprints and NPC notes; reviewed relationship changes, clears, independent knowledge, linked promises, correction/withdrawal/undo; lodging and spaces; three distinct factual returns plus manual disturbance gating; save/reload; production TV/phone and read-aloud privacy.\n"
+    },
+    {
+      "name": "check-dm-desk-ui.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "DM desk UI passed: stale requests, token actions, pacing, automatic closing review, recovery and canonical promotion.\n"
+    },
+    {
+      "name": "check-dm-desk.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nDM desk model passed: derived inbox, closing capture, private promotion, persistent layouts, Undo/Redo and TV/phone privacy.\n"
+    },
+    {
+      "name": "check-dm-search.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Context search passed: scene priority, party suggestions and permanent improvised records.\n"
+    },
+    {
+      "name": "check-downtime-outcomes.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Downtime outcome schema passed: old event fingerprints, optional metadata, invalid-duration preservation, canonical preview/approval/correction/undo/reload, and owner-only in-app correspondence.\n"
+    },
+    {
+      "name": "check-downtime-settlements.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Downtime settlement integration passed: preserved old data; projected deadlines, results, corrections and undo; partial review, withdrawal reopening, no duplicated results; canonical return window and private/public recap separation.\n"
+    },
+    {
+      "name": "check-downtime.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.2,
+      "output": "Downtime passed: 12 opportunities across 7 categories and 5 characters; private reversible preparation; actual-cost and effort review; approved result/correction/withdrawal/undo; duplicate prevention; draft-placeholder blocking; owner-only delivered letters in production phone projections; private TV safety; pending NPC plans; filtered town-return window; preserved old outcomes, notes, sheets and save/reload.\n"
+    },
+    {
+      "name": "check-dungeon-ui.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Dungeon UI passed: profile presets, reveal controls, paired passages, phone memory overlay, stable drafts, targeted searches, revisions and offline controls.\n"
+    },
+    {
+      "name": "check-dungeon.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.1,
+      "output": "Dungeon checks passed: carried light, per-character senses, LOS doors, memory, manual fog, hidden enemies/notes, persistent objects, noise propagation, paired return, private searches, approval outcomes, production traversal, saves and Undo/Redo.\n"
+    },
+    {
+      "name": "check-encounter-levels.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Encounter pacing passed: levels 1\u201320, threshold boundaries, mixed parties, all count bands, party-size shifts, XP separation, and invalid inputs.\n"
+    },
+    {
+      "name": "check-expedition-persistence.cjs",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.18,
+      "output": "PASS Failed passage lookup and return repair are read-only\nPASS Paired links cannot exceed persisted passage or scene limits\nPASS Reviewed retreat, rest and production return retain the authoritative floor and all durable exploration\nPASS Newly blocked paired exits and native-room changes invalidate a return review without applying it\nPASS Changes during async recovery-point creation also invalidate return before switching sessions\nPASS TV and phone projections omit hidden gates, source keys, private room accounts and expedition metadata\nPASS Dense manual floor mask and section camera survive normalization, return and backup restore without publishing the ledger\n"
+    },
+    {
+      "name": "check-expedition-resume.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.12,
+      "output": "Expedition resume passed: current sheets and reviewed rest, saved retreat positions, no NPC imports/respawns, stale-review guards, deferred threat reminders, clocks, normalization and full archive restore.\n"
+    },
+    {
+      "name": "check-expeditions.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "PASS Templates require evidence and preserve established successes\nPASS Start captures native objects, fog memory, positions and inhabitants without changing them\nPASS Retreat records exact return point without recovery, teleport or resets\nPASS Retreat rejects prepared, closed and foreign-session records\nPASS Changed room, remembered ground, supplies and injuries appear in return review\nPASS Development requires reason, consequence and concrete evidence\nPASS Review applies only the explicit target and rejects replay, duplicate targets and invalid values\nPASS Staged changes and evidence cannot be applied after state or approved history changes\nPASS Replaced outcomes no longer support a proposal\nPASS Room links preserve cleared state, follow actual edits, and surface independent conflicts\nPASS Wave Echo baseline preserves source room details and specific reminders\nPASS Campaign save normalization retains expedition baseline, return point, links and native map state\nPASS An approved blocked passage survives save/restore and cannot still be traversed\nPASS Production TV and phone projections exclude private expedition data\nPASS 14 isolated expedition checks; no real campaign save read or changed.\n"
+    },
+    {
+      "name": "check-finale.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.17,
+      "output": "{\n  \"checks\": [\n    {\n      \"name\": \"Five independent approaches cover prerequisites, tradeoffs, alternatives and prepared scenes\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Plans preserve characters, approved history and display payloads; save and undo round-trip\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Prerequisite review needs an explicit assessment, actual source and limited explanation\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Rumors, claims, inferences and DM-only truths stay separate from observed player support\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Corrected, withdrawn and indirectly stale sources invalidate support until re-reviewed\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Actual finale drafts require review and never choose an ending or complete objectives\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Epilogues require current actual outcomes and keep apparatus and Halaster independently unresolved\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Prepared scenes remain private, idempotent and preserve edited notes through real storage limits\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Finale quest preparation links resolve and keep the three-lead board private\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"New finale code is DM-only and published rejuvenation is explicitly retained\",\n      \"ok\": true\n    }\n  ],\n  \"passed\": 10,\n  \"total\": 10\n}\n"
+    },
+    {
+      "name": "check-growth-performance.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.09,
+      "output": "{\"tokens\":500,\"fogCells\":10000,\"walls\":500,\"maxAnchors\":60,\"maxZones\":100,\"p95Ms\":0.9,\"note\":\"CPU projection and simulated DOM construction; not browser GPU/FPS or image decode.\"}\n"
+    },
+    {
+      "name": "check-guided-attack-flow.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Guided attack passed: choose action, explicit target, held roll, reaction confirmation, damage preview and staged transaction.\n"
+    },
+    {
+      "name": "check-guided-dm.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Guided DM passed: non-mutating suggestions, narration, branch navigation, initiative progress, reaction gate, retained reminders, off-scene combat, wrap-up and opt-out.\nInline cockpit guidance passed: live initiative updates and return navigation.\nFocus summary passed: urgent filtering, total inbox count, read-only rendering and current-request review.\n"
+    },
+    {
+      "name": "check-guided-integration.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nGuided production integration passed: one-action initiative collection, no player autoroll, idempotent NPC rolls and stale-map editing guard.\n"
+    },
+    {
+      "name": "check-journey-map-art.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.07,
+      "output": "Journey art: PNG size, saved-image upgrade, landmark alignment, notes, reveals, view, custom artwork, and one-time migration passed.\n"
+    },
+    {
+      "name": "check-journey-map-motion.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Journey motion: saved toggle, public payload, approved TV markers, DM preview privacy, continuing animation phase, and scene scoping passed.\n"
+    },
+    {
+      "name": "check-lmop-art.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.12,
+      "output": "Lost Mine art: 103 valid files, all chapter packs and Session 2 cues linked, player display gated.\n"
+    },
+    {
+      "name": "check-maps.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Map checks passed: save shape, private data, wall-aware visibility, calibration, and controls.\n"
+    },
+    {
+      "name": "check-mystery.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.43,
+      "output": "PASS Existing saves retain old event fingerprints and new research metadata round-trips\nPASS Private preparation and stage changes do not record play, change party or reach displays\nPASS Independent origins are grouped; copies and unknown origins never prove a conclusion\nPASS Citations detect corrections, withdrawal, replacement and transitive changes; undo restores them\nPASS Two research attempts share a project but keep separate downtime results and actual values\nPASS A changed project invalidates an already reviewed result before any canonical mutation\nPASS An investigation route needs a real prediction; instructions cannot stand in for one\nPASS Long citation chains stay compact through save/restore and still detect a changed origin\nPASS Linking legacy evidence creates one authoritative entry and preserves deduplication on correction\nPASS Only deliberately reviewed wording reaches shared displays or the selected owner phone\nPASS 10 isolated mystery checks; no live campaign accessed.\n"
+    },
+    {
+      "name": "check-outcomes.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.15,
+      "output": "Outcome engine passed: preserved seeds, draft isolation, reviewed multi-view apply, corrections, undo/redo, owner privacy, quest scope, custody, duplicate links, stale recaps, migration and reload.\nProduction projection passed: TV/phone journals match; travel does not overwrite an approved marker reveal; private details stay out of public payloads.\n"
+    },
+    {
+      "name": "check-party.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.07,
+      "output": "Party checks passed: five PCs and Sildar, rest variants, private TV view, and full owner-only phone sheet.\n"
+    },
+    {
+      "name": "check-pebble-goron-traits.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.07,
+      "output": "Pebble Goron checks passed: owner phone traits, typed fire resistance, save preservation, no stone consumption, idempotence, and current-campaign restore point.\n"
+    },
+    {
+      "name": "check-phone-action-ui.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Phone UI passed: out-of-turn requests, target selection, persistent draft, canonical action submission, revision, cancellation, and resolved roll/status display.\n"
+    },
+    {
+      "name": "check-phone-actions.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.13,
+      "output": "Phone actions passed: atomic resolution, resources, HP/temp HP, defenses, shared area rolls, concentration, turn usage, revisions/cancel, deduplication, stale previews, owner privacy, save/restore, conflict-aware undo, and DM review controls.\n"
+    },
+    {
+      "name": "check-phone-player-ui.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Phone player UI passed: stable note drafts, deliberate sharing, spell filters, canonical spell indices, potion previews, coin split previews and offline controls.\n"
+    },
+    {
+      "name": "check-phone-reconnect.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Reconnect passed: timestamped safe sheet caching, offline preservation, disabled offline request protocol, and authoritative state restored after reconnect.\n"
+    },
+    {
+      "name": "check-phone-walkthrough.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Phone walkthrough passed: navigation-only steps, completion per character, and reassignment.\n"
+    },
+    {
+      "name": "check-player-tools.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "Player tools passed: private notes, explicit clue sharing, ownership, item splits, held potion healing, action use, stale reviews, currency conservation, equipment, objectives, persistence, TV privacy, real Undo/Redo and reconnectable handouts.\nDM inventory panel passed: separate preview/apply and persisted resolution.\n"
+    },
+    {
+      "name": "check-quest-prep.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.18,
+      "output": "Quest preparation passed: all 40 quests linked, actual/private evidence split, five-character opportunities, three-lead limit, read-only planning, alternatives, readiness/stale review, assigned boards, undo/redo, persistence, public-payload privacy and urgent/combat priority.\n"
+    },
+    {
+      "name": "check-quests-integration.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nQuest production integration passed: real TV and phone projection, party objective, character-only delivery, withdrawal and no future-story or DM-note leakage.\nDestination checks passed: main on TV only, side on phones only, character only to owner, main hide propagates.\n"
+    },
+    {
+      "name": "check-quests.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.07,
+      "output": "Quest checks passed: 40 quests, 146 objectives, actual-history migration, save/restore, undo/redo, manual outcomes, immutable reviewed publication, owner isolation, and rendered UI actions.\nQuest preview passed: TV, shared phones, owner-specific preview and no publication/state changes while browsing.\n"
+    },
+    {
+      "name": "check-reliability-growth.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nReliability growth passed: exact TV acknowledgement, stale heartbeat, restore preparation, isolated store reopening/media readback and failure cleanup (simulated IndexedDB).\n"
+    },
+    {
+      "name": "check-ringgo-level-four.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Ringgo level-four checks passed: Piercer, phone stats, HP/Hit Dice/resource preservation, inventory, normalization, idempotence, and active-campaign backup scope.\n"
+    },
+    {
+      "name": "check-rules-library.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.09,
+      "output": "Rules library checks passed: 983 references, 19 books.\n"
+    },
+    {
+      "name": "check-run-ui.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Run UI checks passed: focused mode, live actions, and unique controls.\n"
+    },
+    {
+      "name": "check-save-fallback.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "PASS stale-database fallback and interrupted save: newest completed record survives database and local-storage failures.\n"
+    },
+    {
+      "name": "check-session-flow.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.17,
+      "output": "Evening workflow passed: opening gates, private recap, exact start baseline, resource/loot/promise changes, carried unresolved requests, stale review, safe closing, save/reload, separate sessions, repeated evenings and public-display privacy.\nTravel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nProduction Undo/Redo preserved the evening baseline and review notes.\n"
+    },
+    {
+      "name": "check-session2-migration.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.08,
+      "output": "Session 2 save migration preserved HP and notes, added hideout content once, and kept wave IDs.\n"
+    },
+    {
+      "name": "check-session3.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.08,
+      "output": "Session 3 pack verified: 39 beats, 23 encounters, 98 enemy tokens.\n"
+    },
+    {
+      "name": "check-session4.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.09,
+      "output": "Session 4 verified: 31 cards, 20 rooms, 12 encounters, 57 tokens; migration/return state, source/art links, caster resources, private TV/phone data, conditional endings, and journal controls.\n"
+    },
+    {
+      "name": "check-settlements-integration.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nSettlement integration passed: production travel clock, no heartbeat double-count, departure/return, Undo/Redo, and no private TV/phone leakage.\n"
+    },
+    {
+      "name": "check-settlements-ui.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Settlement UI passed: evidence gate, NPC edit, deadline preparation, explicit approval, and reviewed TV narration excluding private consequences.\n"
+    },
+    {
+      "name": "check-settlements.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Settlements model passed: review-only deadlines, project completion review, evidence-required variants, NPC knowledge boundaries, stock previews/staleness, save roundtrip and return summaries.\n"
+    },
+    {
+      "name": "check-spotlights.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.09,
+      "output": "Character stories passed: 5 arcs, 30 cards, unplayed defaults, attendance/preferences, fair suggestions, deduplicated outcomes, undo/redo, archive round-trip, private drafts, UI controls, and TV/phone privacy.\n"
+    },
+    {
+      "name": "check-stage3-commands.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Stage 3 commands passed: movement, damage, resources, clue publication/undo, outcome review, stale rejection, and no partial mutation on failure.\n"
+    },
+    {
+      "name": "check-stage5-encounter-simulator.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Stage 5 encounter simulator passed: attack, reaction pause, area saves/damage, retreat, rest, return route and persistent floor state.\n"
+    },
+    {
+      "name": "check-story.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Story checks passed: nine sites, 23 floors, nine NPCs, branching, calendar, backup, and player journal controls.\nStory and creature library persist in a captured backup independently of later play.\n"
+    },
+    {
+      "name": "check-table-flow.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Scene workspace integration passed: outgoing capture, incoming restore, unchanged per-scene pan/zoom and idempotent re-show.\nTable flow passed: pins, before/after values, grouped inbox, known detours, independent practice saves and failed-switch isolation.\n"
+    },
+    {
+      "name": "check-table-tools.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "Table tools passed: saved data, private clue validation, inventory, and scene time.\n"
+    },
+    {
+      "name": "check-table-workflows.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Table workflows passed: private encounter staging and one-click readiness checks.\n"
+    },
+    {
+      "name": "check-token-drag.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Direct token drag passed: free movement saves once, explicit measurement stays separate, grouped tokens move, and clicks keep their actions.\n"
+    },
+    {
+      "name": "check-town-maps.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Town and journey maps: five overhead scenes, linked content packs, approved markers, and private clue filtering passed.\n"
+    },
+    {
+      "name": "check-transition.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.2,
+      "output": "Transition passed: 41 quest profiles, real pack/scene/media/book references, seven neutral outcomes, four alternate leads, scenario and delay isolation, survivor presence, public/private/stale bindings, correction and undo, save normalization, preparation boards, and production TV/phone privacy.\n"
+    },
+    {
+      "name": "check-travel-ui.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Travel UI passed: preview before arrival, camp before apply, marker drag commit, stable phone drafts, revise/cancel and offline disabling.\n"
+    },
+    {
+      "name": "check-travel.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.1,
+      "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\n"
+    },
+    {
+      "name": "check-tv-text.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.05,
+      "output": "TV text checks passed: visible cards, private text filtering, and live controls.\n"
+    },
+    {
+      "name": "check-undermountain-arc.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.15,
+      "output": "PASS Three bounded contracts reference existing quests, rooms and scenes\nPASS Arc beats fit persistence limits and retain book/creature reference anchors\nPASS Rival and return preparation has explicit limits and owner-only personal drafts\nPASS Runbook extension is idempotent and preserves existing edits\nPASS Opening an older Waterdeep save adds guidance without resetting its dungeon or party\nPASS Quest preparation stages three contracts without changing outcomes, actors or publication\nPASS Responses create evidence-free, unapplied proposals and cannot update dungeon state\nPASS Private arc plans stay off TV and phones; existing quest audiences remain enforced\nPASS Staging a shared contract changes only its undoable draft until deliberate publication\nPASS 9 isolated Undermountain arc checks; no live campaign data accessed.\n"
+    },
+    {
+      "name": "check-waterdeep-integration.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nExpedition integration passed: real campaign extra snapshots, Undo/Redo and no private story/ending data in TV or phone payloads.\n"
+    },
+    {
+      "name": "check-waterdeep-pack.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.11,
+      "output": "Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.\nWaterdeep actual session creation passed: all 49 beats, valid scenes, unchanged character levels/HP and save normalization.\n"
+    },
+    {
+      "name": "check-waterdeep-ui.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Waterdeep UI passed: private staging, explicit TV approval, editable handouts, room persistence, exact stat links, hidden routes, Nine roles and choice confirmation.\n"
+    },
+    {
+      "name": "check-waterdeep.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Waterdeep content passed: 8 scenes, 7 handouts, all 41 rooms, 9 site roles, runbook/save bounds, source links, routes and non-deterministic ending evidence.\n"
+    },
+    {
+      "name": "check-wave-combat.js",
+      "category": "in-memory or source-contract check",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Wave Echo combat verified: 12 encounters, 57 unique enemies, map links, source-specific blocks, spell resources, and no duplicate reinforcements.\n"
+    },
+    {
+      "name": "check-stage4-five-phones.py",
+      "category": "temporary local service or package fixture",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.6,
+      "output": "Stage 4 five-phone service passed: owner-only data, isolated resync, release/rejoin, and four uninterrupted peers.\n"
+    },
+    {
+      "name": "check-stage4-phone-health.py",
+      "category": "temporary local service or package fixture",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.04,
+      "output": "Stage 4 phone health passed: one-phone resync and release left four other connections current.\n"
+    },
+    {
+      "name": "check-phone-service.py",
+      "category": "temporary local service or package fixture",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.65,
+      "output": "Phone service passed: QR join, private routes, one-character claim, initiative, map, rolls, target validation, canonical action data, owner-only status, deduplication, revisions, cancellations, stale/final request rejection, owner-only save/reaction prompts, physical/digital save events, bounded movement paths, private notes, explicit clue sharing, item ownership, request cancellation, coin-split validation, and shared images.\n"
+    },
+    {
+      "name": "check-atlas-asset-boundary.py",
+      "category": "temporary local service or package fixture",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.61,
+      "output": "PASS Only approved image roots or validated raster data resolve; aliases cannot enter private maps\nPASS Authenticated image endpoints return only current projected raster; private/download/thumbnail/catalog routes stay unavailable and uncached\n"
+    },
+    {
+      "name": "check-portable-service.py",
+      "category": "temporary local service or package fixture",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.6,
+      "output": "127.0.0.1 - - [11/Oct/2026 18:20:04] code 403, message Open the local desktop app first\n127.0.0.1 - - [11/Oct/2026 18:20:04] \"POST /__echo_package HTTP/1.1\" 403 -\n127.0.0.1 - - [11/Oct/2026 18:20:04] \"POST /__echo_package HTTP/1.1\" 200 -\nPortable HTTP download passed: authorized download, app and state present, other origins rejected.\n"
+    },
+    {
+      "name": "check-portable-package.py",
+      "category": "temporary local service or package fixture",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py:1550: UserWarning: Duplicate name: 'campaign-backup.json'\n  return self._open_to_write(zinfo, force_zip64=force_zip64)\nPortable package and phone health passed: relocatable files, campaign archive, integrity corruption rejection, real freshness, isolated release.\n"
+    },
+    {
+      "name": "check-stage9-package.py",
+      "category": "temporary local service or package fixture",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.06,
+      "output": "Stage 9 package fixtures passed: separated layers, clean blank, untouched original, relocated art/audio, credential/PDF exclusion, and corrupt asset rejection.\n"
+    },
+    {
+      "name": "check-voice-handoff-browser.cjs",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 5.43,
+      "output": "{\"at\":\"2026-10-12T00:20:10.639Z\",\"passed\":true,\"realProviderRequests\":0,\"physicalOutputsTested\":false,\"audibleSpeechAssessed\":false,\"checks\":[\"plugin metadata loaded privately\",\"proposed cast retained\",\"plugin-only label\",\"exact-script handoff\",\"verified-local label\",\"generation provenance retained\",\"private preview unpublished\",\"local mock makes no service request\",\"approved recording restored and replayed offline\",\"credentials and output choices excluded\"]}\n"
+    },
+    {
+      "name": "check-voice-studio-browser.cjs",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 35.6,
+      "output": "{\"passed\":true,\"speechRequests\":5,\"realProviderRequests\":0,\"checks\":[\"private-output-block\",\"dedicated-preview\",\"explicit-approval\",\"preset-voice-preview-and-play\",\"TV-subtitles\",\"pause-resume-stop-ducking\",\"map-combat-unchanged\",\"outdated-block\",\"alternate-take-preservation\",\"offline-replay\",\"backup-audio\",\"fresh-context-restore-and-replay\",\"scene-exact-text\",\"subtitle-only\",\"recap-invalidation\",\"device-loss-no-fallback\",\"generation-cancel\"],\"restoreReport\":\"10 sessions reopened and normalized; campaign identity, 90 character records, quest visibility, and current scenes matched; 4 imported media SHA-256 hashes matched. Live campaign unchanged. External artwork is covered by the full package, not this data rehearsal.\"}\n"
+    },
+    {
+      "name": "check-voice-auditions-browser.js",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 5.71,
+      "output": "{\"passed\":true,\"checks\":[\"four-proposed-scripts\",\"free-only-default-off\",\"explicit-setup\",\"mock-catalog-and-generation\",\"Creator-included-credit-limits\",\"billing-change-needs-consent\",\"candidate-survives-refresh\",\"private-preview\",\"global-mute-stops-preview\",\"navigation-stops-preview\",\"reopen-rechecks-private-output\",\"mock-cannot-be-selected\",\"profile-save-export-reload\",\"undo\",\"NPC-shortcut\",\"TV-no-voice-data\"],\"realVoiceRequests\":0,\"livePhones\":\"untouched\"}\n"
+    },
+    {
+      "name": "check-performance-browser.cjs",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 1.89,
+      "output": "Performance regressions passed: retained rows edit current command state, free drag/undo, unchanged TV resync, changed positions/views/layers, map-image reuse, and private preload exclusion. Fresh profile; no live service reached.\n"
+    },
+    {
+      "name": "check-table-rehearsal-browser.cjs",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 3.15,
+      "output": "Guided rehearsal browser passed: live start blocked, existing practice setup, individual phone rows, simulated results excluded, skipped steps retained, reload, fix awaits retest, current-status warning, export, original-group access, unchanged roster/tokens, and TV exclusion. These are fixtures; physical devices not tested.\n"
+    },
+    {
+      "name": "check-current-status-browser.cjs",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 3.78,
+      "output": "Current status browser passed: version comparison, separate automated/DM/physical evidence, simulated observations persisted and withdrawn, history search, unchanged game state, new-group isolation, stale assets rejected, and no status data loaded on TV. Real devices/provider requests: none.\n"
+    },
+    {
+      "name": "check-stage9-browser.cjs",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 4.14,
+      "output": "{\"passed\":true,\"relocated\":false,\"checks\":[\"fresh-blank-bootstrap\",\"practice-art-and-real-audio-decode\",\"TV-without-DM-catalog\",\"new-group-excludes-private-clues\",\"exact-practice-copy\",\"original-totals-and-media-preserved\",\"archive-and-unarchive\",\"old-schema-upgrade-as-new\",\"reload-and-restore-rehearsal\"],\"rehearsal\":\"1 sessions reopened and normalized; campaign identity, 1 character records, quest visibility, and current scenes matched; 0 imported media SHA-256 hashes matched. Live campaign unchanged. External artwork is covered by the full package, not this data rehearsal.\"}\n"
+    },
+    {
+      "name": "check-hybrid-combat-browser.js",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 4.35,
+      "output": "Hybrid combat passed: map staging, free drag/undo, explicit ruler, initiative, identical DM/phone-ingress reviewed results, physical dice, reaction boundary, one-event undo, slot/reaction use, and next turn. Phone ingress simulated; no live clients or services.\n"
+    },
+    {
+      "name": "check-party-actions-browser.cjs",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 4.01,
+      "output": "Party cards browser passed: Party \u2192 review, two Flurry strikes / one cost / undo, explicit upcast dart choices, and a 390px simulated phone with action labels, intent and targets. HTTP services mocked; no live connections touched.\n"
+    },
+    {
+      "name": "check-outcomes-browser.js",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 2.89,
+      "output": "App loaded\nPractice campaign open\nOutcome UI open\nBrowser practice campaign passed: new outcome, explicit objective, review, apply, correction draft isolation, journal updates, undo/redo and persistence. No real campaign storage used.\n"
+    },
+    {
+      "name": "check-stage3-recovery-browser.js",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 1.83,
+      "output": "Stage 3 recovery passed: interrupted import rolled back, version 2 save opened, and fresh browser restored 1 sessions with matching characters, quests, and scene.\n"
+    },
+    {
+      "name": "check-evening-path-browser.js",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 1.72,
+      "output": "Evening path passed: all five steps, private preview and deliberate TV show, alternate route, outcome return, closing, disconnected status, and command palette. Scene transition: 2 actions.\n"
+    },
+    {
+      "name": "check-reconciliation-browser.cjs",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 3.34,
+      "output": "{\"passed\":true,\"type\":\"isolated browser + real temporary SQLite\",\"checks\":[\"reviewed discovery links quest/NPC/map/journal/recap/assistant\",\"public TV and simulated phone privacy\",\"correction removes stale search wording and preserves history\",\"undo/redo mirrors\",\"reload preserves linkage\",\"identity and roster preserved\"],\"liveServicesRestarted\":false,\"realProviderRequests\":0,\"physicalChecks\":\"not performed\"}\n"
+    },
+    {
+      "name": "check-whole-backup-browser.cjs",
+      "category": "fresh browser rehearsal",
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 4.96,
+      "output": "{\"passed\":true,\"type\":\"fresh browser profiles + real temporary SQLite + verified ZIP\",\"checks\":[\"one complete backup download\",\"identity/stats/quests/current scene preview\",\"browser import interrupted atomically\",\"lost commit response preserves current table\",\"both stores restored before activation\",\"records/drafts/history and imported media preserved\",\"restored mirror does not repeat events\",\"player privacy\"],\"liveCampaignChanged\":false,\"phoneServiceRestarted\":false,\"realProviderRequests\":0,\"physicalChecks\":\"not performed\"}\n"
+    }
+  ],
+  "faultProofs": [
+    {
+      "name": "future-schema rejection",
+      "passed": true,
+      "faultCaught": true,
+      "expectedFailure": "Missing expected exception",
+      "observedExitCode": 1,
+      "output": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at run (/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/reliability.test.cjs:28:10)\n    at Object.<anonymous> (/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/reliability.test.cjs:83:1)\n    at Module._compile (node:internal/modules/cjs/loader:1562:14)\n    at Object..js (node:internal/modules/cjs/loader:1699:10)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49 {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: undefined,\n  expected: /Update the app/,\n  operator: 'throws'\n}\n",
+      "productionFileUnchanged": true
+    },
+    {
+      "name": "token drag commit",
+      "passed": true,
+      "faultCaught": true,
+      "expectedFailure": "drag saves once",
+      "observedExitCode": 1,
+      "output": "node:assert:126\n  throw new AssertionError(obj);\n  ^\n\nAssertionError [ERR_ASSERTION]: move drag saves once\n\n0 !== 1\n\n    at Object.<anonymous> (/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-token-drag.js:57:10)\n    at Module._compile (node:internal/modules/cjs/loader:1562:14)\n    at Object..js (node:internal/modules/cjs/loader:1699:10)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49 {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: 0,\n  expected: 1,\n  operator: 'strictEqual'\n}\n\nNode.js v22.13.0\n",
+      "productionFileUnchanged": true
+    },
+    {
+      "name": "DM module leakage",
+      "passed": true,
+      "faultCaught": true,
+      "expectedFailure": "Player loader must exclude",
+      "observedExitCode": 1,
+      "output": "TAP version 13\n# Subtest: actual DM loader follows manifest order with all declared dependencies present\nok 1 - actual DM loader follows manifest order with all declared dependencies present\n  ---\n  duration_ms: 5.231958\n  ...\n# Subtest: player loader excludes every DM module and extracted campaign content\nnot ok 2 - player loader excludes every DM module and extracted campaign content\n  ---\n  duration_ms: 3.86025\n  location: '/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/module-loader.test.cjs:15:1'\n  failureType: 'testCodeFailure'\n  error: 'Player loader must exclude Session-01-Cockpit.js'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: true\n  actual: false\n  operator: '=='\n  stack: |-\n    assertPrivateModules (/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/test-support.cjs:59:5)\n    async TestContext.<anonymous> (/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/module-loader.test.cjs:16:3)\n    async Test.run (node:internal/test_runner/test:932:9)\n    async Test.processPendingSubtests (node:internal/test_runner/test:629:7)\n  ...\n# Subtest: classic fallback remains explicit and does not load the hybrid presentation shell\nnot ok 3 - classic fallback remains explicit and does not load the hybrid presentation shell\n  ---\n  duration_ms: 4.350542\n  location: '/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/module-loader.test.cjs:21:1'\n  failureType: 'testCodeFailure'\n  error: 'Player loader must exclude Session-01-Rules-Index.js'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: true\n  actual: false\n  operator: '=='\n  stack: |-\n    assertPrivateModules (/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/test-support.cjs:59:5)\n    async TestContext.<anonymous> (/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/module-loader.test.cjs:25:3)\n    async Test.run (node:internal/test_runner/test:932:9)\n    async Test.processPendingSubtests (node:internal/test_runner/test:629:7)\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 1\n# fail 2\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 18.944375\n",
+      "productionFileUnchanged": true
+    }
+  ],
+  "liveCampaignChanged": false,
+  "liveServicesRestarted": false,
+  "realProviderRequests": 0,
+  "physicalDevicesTested": false,
+  "restoreBrowserEvidence": {
+    "passed": true,
+    "relocated": false,
+    "checks": [
+      "fresh-blank-bootstrap",
+      "practice-art-and-real-audio-decode",
+      "TV-without-DM-catalog",
+      "new-group-excludes-private-clues",
+      "exact-practice-copy",
+      "original-totals-and-media-preserved",
+      "archive-and-unarchive",
+      "old-schema-upgrade-as-new",
+      "reload-and-restore-rehearsal"
+    ],
+    "rehearsal": "1 sessions reopened and normalized; campaign identity, 1 character records, quest visibility, and current scenes matched; 0 imported media SHA-256 hashes matched. Live campaign unchanged. External artwork is covered by the full package, not this data rehearsal."
+  },
+  "versionsUnchanged": true,
+  "coreGatePassed": true,
+  "diagnosticsPassed": true
+}

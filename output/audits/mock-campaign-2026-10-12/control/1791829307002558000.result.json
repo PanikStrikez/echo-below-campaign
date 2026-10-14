@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "result": {
+    "request": {
+      "id": "mock-trista-road-1",
+      "characterId": "pc-trista",
+      "revision": 1,
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T18:21:46.291Z",
+          "note": "Waiting for DM review."
+        }
+      ],
+      "resolution": null,
+      "source": "phone",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 0,
+      "entry": {
+        "id": "trista-dagger",
+        "name": "Dagger",
+        "type": "Action",
+        "attackBonus": 6,
+        "damageDice": "1d6+4",
+        "damageType": "piercing",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Monk weapon; thrown range 20/60 ft.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true,
+        "support": {
+          "status": "supported",
+          "label": "Reviewed roll",
+          "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 195,
+            "rule": "Attack and damage; weapon table p. 149",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Dagger",
+      "targetIds": [
+        "goblin-1"
+      ],
+      "targetNames": [
+        "Goblin 1"
+      ],
+      "casting": null,
+      "note": "Throw from within 20 feet; DM confirm range and cover.",
+      "mode": "normal",
+      "at": "2026-10-12T18:21:46.291Z",
+      "status": "waiting",
+      "message": "Waiting for DM review."
+    },
+    "body": "Resolve action\n\nReview once, then apply the rolls, costs, concentration, action usage, and selected effects together. All preview rolls stay private until resolution.\n\nHistory · 0\n\nAction → Targets → Rolls → Reactions → Review → Resolve · Current step: Targets & Rolls · confirm targets and costs\n\nTrista: Dagger\n\nRequested targets: Goblin 1\n\nPlayer note: Throw from within 20 feet; DM confirm range and cover.\n\nWaiting for DM review.\n\nNeeds clarificationDecline\n\nUses: action. Resources: none. Concentration: keep.\n\nMonk weapon; thrown range 20/60 ft.\n\nTiming, cost, and effect\nReviewed roll\n\nAttack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\n\n2014 PHB p. 195 · verified rule / approved sheet\nAdd target\nChoose a target\nTrista\nDonavan\nRinggo\nPebble\nAldric\nGoblin 1\nGoblin 2\nGoblin 3\nGoblin 4\nTap token to targetAdd selected target\nTarget 1 · Goblin 1\nTarget\nTrista\nDonavan\nRinggo\nPebble\nAldric\nGoblin 1\nGoblin 2\nGoblin 3\nGoblin 4\nAttack dice\nRoll digitally\nEnter physical dice\nD20 mode\nnormal\nadvantage\ndisadvantage\nPhysical damage / healing (critical dice already included; blank rolls digitally)\nDetails · step 1 · Goblin 1\n\nGoblin 1: attack +6 · normal · AC 15 · cover 0 · 1d6+4 piercing. Expand the step to adjust.\n\nAdd effect / roll step\nReminders · 0\nReactions have been resolved or passed\nI checked the targets, timing, full effect, costs, and any exceptions\nPrepare rolls & preview"
+  }
+}

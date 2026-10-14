@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791835498074-q627apn0",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              17
+            ],
+            "total": 23,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "2:04:58 PM"
+          },
+          {
+            "id": "pa-1791835498074-tpcajm5q",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              6
+            ],
+            "total": 10,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:04:58 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-bugbears-3",
+            "text": "Bugbear 3: 23 vs AC 16: hit, 10 bludgeoning → 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

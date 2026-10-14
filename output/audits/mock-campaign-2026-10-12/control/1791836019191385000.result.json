@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791836019264-lsa2jw4l",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              17
+            ],
+            "total": 23,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:39 PM"
+          },
+          {
+            "id": "pa-1791836019264-eimyrmdu",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              3
+            ],
+            "total": 3,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:39 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-3",
+            "text": "Barracks ruffian 3: 23 vs AC 14: hit, 3 fire → 3; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

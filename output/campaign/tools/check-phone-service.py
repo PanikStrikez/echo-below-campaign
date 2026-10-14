@@ -301,7 +301,10 @@ try:
     assert next(c for c in call("/api/dm/status", origin=dm_origin)[1]["claims"] if c["id"]=="pc-pebble")["status"] == "current"
     call("/api/seen", {"revision": 999999, "characterId":"pc-pebble"}, base, cookie, status=400)
     call("/api/dm/phone", {"id":"pc-pebble","operation":"release"}, base, cookie, status=403)
+    revision_before_resync = call("/api/dm/status", origin=dm_origin)[1]["revision"]
     call("/api/dm/phone", {"id":"pc-pebble","operation":"resync"}, dm_origin)
+    assert call("/api/dm/status", origin=dm_origin)[1]["revision"] == revision_before_resync
+    assert call("/api/state", cookie=cookie)[1]["resyncRequest"] == 1
     assert next(c for c in call("/api/dm/status", origin=dm_origin)[1]["claims"] if c["id"]=="pc-pebble")["status"] == "stale"
     # Free any other assignment for this test; the original phone cookie is reused.
     for c in call("/api/dm/status", origin=dm_origin)[1]["claims"]:
@@ -315,6 +318,14 @@ try:
     call("/api/dm/phone", {"id":"pc-trista","operation":"release"}, dm_origin)
     call("/api/state",cookie=cookie,status=401)
     assert call("/api/state",cookie=other_cookie)[1]["character"]["id"]=="pc-pebble"
+    import time
+    with phone.LOCK:
+        queued_before = list(phone.TABLE["events"])
+        phone.TABLE["last_dm"] = time.time() - 31
+    call("/api/action", {"kind":"roll","expectedCharacterId":"pc-pebble","count":1,"sides":20}, base, other_cookie, status=503)
+    with phone.LOCK:
+        assert phone.TABLE["events"] == queued_before, "offline action must not enter the DM queue"
+        phone.TABLE["last_dm"] = time.time()
     call("/api/dm/reset", {}, dm_origin)
     call("/api/state", cookie=cookie, status=401)
     print("Phone service passed: QR join, private routes, one-character claim, initiative, map, rolls, target validation, canonical action data, owner-only status, deduplication, revisions, cancellations, stale/final request rejection, owner-only save/reaction prompts, physical/digital save events, bounded movement paths, private notes, explicit clue sharing, item ownership, request cancellation, coin-split validation, and shared images.")

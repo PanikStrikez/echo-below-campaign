@@ -1,0 +1,76 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "redbrand-hideout",
+      "round": 1,
+      "order": [
+        "pc-aldric",
+        "pc-trista",
+        "s2-hideout-bugbears-3",
+        "pc-ringgo",
+        "s2-hideout-bugbears-1",
+        "pc-pebble",
+        "s2-hideout-bugbears-2",
+        "pc-donavan"
+      ],
+      "index": 7
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 17,
+        "maxHp": 21
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 24,
+        "maxHp": 24
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 24,
+        "maxHp": 24
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 23,
+        "maxHp": 23
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 23,
+        "maxHp": 23
+      }
+    ],
+    "foes": [
+      {
+        "id": "s2-hideout-bugbears-1",
+        "hp": 10
+      },
+      {
+        "id": "s2-hideout-bugbears-2",
+        "hp": 27
+      },
+      {
+        "id": "s2-hideout-bugbears-3",
+        "hp": 27
+      }
+    ],
+    "due": [
+      {
+        "id": "card-1791834168483-ridphrq",
+        "tokenId": "s2-ruffian-4",
+        "triggerActor": "pc-donavan",
+        "triggerPoint": "start",
+        "remaining": 0,
+        "name": "Ray of Frost · speed −10 ft",
+        "condition": "",
+        "due": true,
+        "fired": true,
+        "repeatSave": false,
+        "note": "Apply until the caster’s next turn starts. Movement remains manual."
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791838351478-y827zo08",
+            "label": "Unarmed Strike · attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              2
+            ],
+            "total": 9,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:31 PM"
+          },
+          {
+            "id": "pa-1791838351478-qxj4uwbc",
+            "label": "Unarmed Strike · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:31 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-5",
+            "text": "Guardroom Skeleton 5: 9 vs AC 13: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791838351612-4h2nysu5",
+              "label": "Unarmed Strike · attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                15
+              ],
+              "total": 22,
+              "natural": 15,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:31 PM"
+            },
+            {
+              "id": "pa-1791838351612-b7wndhpi",
+              "label": "Unarmed Strike · effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                8
+              ],
+              "total": 12,
+              "natural": 8,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:31 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-4-wave-skeleton-5",
+              "text": "Guardroom Skeleton 5: 22 vs AC 13: hit, 12 bludgeoning → 24; temp HP absorbed 0; vulnerabilities: bludgeoning"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "result": {
+    "shield": false,
+    "effectRulingRequired": true,
+    "usage": "action",
+    "override": "",
+    "concentration": "keep",
+    "concentrationName": "",
+    "grantAction": false,
+    "costs": [
+      {
+        "id": "aldric-slots-1",
+        "delta": -1
+      }
+    ],
+    "effectNote": "Touch an unarmored willing creature; base AC becomes 13 + Dexterity modifier for 8 hours. Aldric’s AC becomes 15.\nCasting with 1st-level spell slots. Before entering the manor. Self; no armor; request DM ruling.",
+    "acknowledged": false,
+    "reactionsChecked": false,
+    "reminders": [],
+    "steps": [
+      {
+        "targetId": "pc-aldric",
+        "kind": "effect",
+        "sharedRoll": "",
+        "notation": "",
+        "bonus": 0,
+        "mode": "normal",
+        "magical": true,
+        "damageType": "",
+        "saveAbility": "DEX",
+        "dc": 10,
+        "success": "none",
+        "cover": 0,
+        "ac": "",
+        "condition": "",
+        "conditionWhen": "always",
+        "acSet": "",
+        "manual": "",
+        "crit": 20
+      }
+    ],
+    "partyCard": {
+      "kind": "reference",
+      "choices": {},
+      "turnStamp": "lmop-tresendar-manor:0:0:outside-combat"
+    },
+    "support": {
+      "status": "reference",
+      "label": "Manual ruling",
+      "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+      "source": {
+        "book": "2014 PHB",
+        "printedPage": 256,
+        "rule": "Mage Armor",
+        "confidence": "verified rule / approved sheet"
+      }
+    }
+  }
+}

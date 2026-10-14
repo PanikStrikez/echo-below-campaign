@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "Actual resource command delivers owner-only committed receipt",
+    "Reviewed action commits cost and displays latest receipt without opening history",
+    "Phone receipt fits 360 and 390 widths",
+    "Undo updates result without still claiming resolved effects",
+    "Decline remains distinct from resolution and undo",
+    "Another owner cannot receive the resource or combat receipts"
+  ],
+  "errors": [],
+  "physicalDevices": false,
+  "liveConnectionsChanged": false
+}

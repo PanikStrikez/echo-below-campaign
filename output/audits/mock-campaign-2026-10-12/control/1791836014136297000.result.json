@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791836014295-t2qniaje",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              19
+            ],
+            "total": 25,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:34 PM"
+          },
+          {
+            "id": "pa-1791836014295-391atfmr",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:34 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-1",
+            "text": "Barracks ruffian 1: 25 vs AC 14: hit, 7 piercing → 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Barracks ruffian 1"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836014385-2ivo811x",
+            "label": "Martial Arts unarmed strike · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              11
+            ],
+            "total": 17,
+            "natural": 11,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:34 PM"
+          },
+          {
+            "id": "pa-1791836014386-s65mjy0j",
+            "label": "Martial Arts unarmed strike · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:34 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-1",
+            "text": "Barracks ruffian 1: 17 vs AC 14: hit, 7 bludgeoning → 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

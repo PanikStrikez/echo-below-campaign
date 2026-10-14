@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "result": {
+    "keys": [
+      "ECHO_PLAYER_TOOLS",
+      "ECHO_PLAYER_TOOLS_UI"
+    ],
+    "ergoKeys": [
+      "scratch",
+      "quickNotes",
+      "encounterCards",
+      "branches"
+    ]
+  }
+}

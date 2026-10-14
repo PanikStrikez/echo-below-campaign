@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791837582720-8t0qxc4l",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              6
+            ],
+            "total": 14,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:42 PM"
+          },
+          {
+            "id": "pa-1791837582720-7re928eo",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "2d10",
+            "parts": [
+              7,
+              4
+            ],
+            "total": 11,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:42 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King’s guard 1: 14 vs AC 18: miss, 0 fire → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "ok": false,
+  "error": "page.evaluate: TypeError: d.quests is not iterable\n    at Object.questDefinitions (http://127.0.0.1:52652/output/campaign/Campaign-Outcomes.js:54:56)\n    at Object.questCards (http://127.0.0.1:52652/output/campaign/Campaign-Continuity.js:164:77)\n    at view (http://127.0.0.1:52652/output/campaign/Campaign-Quests.js:32:120)\n    at http://127.0.0.1:52652/output/campaign/Campaign-Quests.js:37:45\n    at Array.map (<anonymous>)\n    at Object.cards (http://127.0.0.1:52652/output/campaign/Campaign-Quests.js:37:38)\n    at Object.cards (http://127.0.0.1:52652/output/campaign/Campaign-Quest-Prep.js:20:58)\n    at Object.context (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5719:674)\n    at C (http://127.0.0.1:52652/output/campaign/Session-01-Session-Flow-UI.js:4:54)\n    at keyOf (http://127.0.0.1:52652/output/campaign/Session-01-Session-Flow-UI.js:4:118)"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "lmop-owlbear-tower",
+  "title": "Cragmaw Castle · Area 13 · Owlbear tower",
+  "image": "lmop-visuals/owlbear-tower.png",
+  "key": "C13",
+  "chapter": "Cragmaw Castle",
+  "reveal": "When tower interior is visible",
+  "sourceRecordIds": [
+    "s3-area13"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area13",
+      "title": "Area 13 · Owlbear tower",
+      "read": [
+        "Something heavy shifts beyond the barred door. The wood shudders once, then a low animal breath fills the silence.",
+        "The barred door gives you a boundary you can choose to keep. The weight behind it is audible before it is visible, and the wood's movement gives you reason to judge your distance. You can listen, examine the fastening, or leave the barrier intact while discussing another route."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Dark castle tower hollow silo THIRTY feet tall after upper floors collapsed, shuttered arrow slits. Rubble, broken glass, ruined worktables/bookshelves south. ONE large mangy OWLBEAR at center, owl head on shaggy four-limbed bear body, no wings. Hidden chest on upper ledge not visible. Off-frame visitor lamp, no exterior daylight filling tower.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 13 · Owlbear tower\nObservable scene and constraints: Dark castle tower hollow silo THIRTY feet tall after upper floors collapsed, shuttered arrow slits. Rubble, broken glass, ruined worktables/bookshelves south. ONE large mangy OWLBEAR at center, owl head on shaggy four-limbed bear body, no wings. Hidden chest on upper ledge not visible. Off-frame visitor lamp, no exterior daylight filling tower.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "d5ee070e71bf8064f24065fb3b0e266eb0425617b4bb6605644841a048581b93",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-owlbear-tower.png",
+  "generatedAt": "2026-10-12T16:26:46.319Z",
+  "candidateHash": "561263ffa90c526bb578a33f56a51e1c52878e1f0f25bc14a35ba1123475ed8f",
+  "review": "passed",
+  "reviewedHash": "561263ffa90c526bb578a33f56a51e1c52878e1f0f25bc14a35ba1123475ed8f",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.108Z",
+  "installedHash": "561263ffa90c526bb578a33f56a51e1c52878e1f0f25bc14a35ba1123475ed8f",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/owlbear-tower.png"
+}

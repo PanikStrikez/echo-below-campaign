@@ -1,0 +1,74 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-crypt-2",
+    "action": {
+      "actor": "s2-hideout-crypt-2",
+      "label": "Shortsword",
+      "targets": [
+        "Donavan"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836250197-04yz4vd5",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            12
+          ],
+          "total": 16,
+          "natural": 12,
+          "public": false,
+          "kind": "digital",
+          "time": "2:17:30 PM"
+        },
+        {
+          "id": "pa-1791836250197-y2wa5zdj",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            4
+          ],
+          "total": 6,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "2:17:30 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-donavan",
+          "text": "Donavan: 16 vs AC 21: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-donavan",
+          "label": "Shield",
+          "targets": [
+            "Donavan"
+          ],
+          "rolls": [],
+          "outcomes": [
+            {
+              "targetId": "pc-donavan",
+              "text": "Donavan: effect reviewed"
+            },
+            {
+              "targetId": "pc-donavan",
+              "text": "Donavan: Shield AC 16 → 21; expires at next turn start."
+            }
+          ],
+          "costs": [
+            {
+              "id": "donavan-slots-1",
+              "delta": -1
+            }
+          ]
+        }
+      ],
+      "costs": []
+    }
+  }
+}

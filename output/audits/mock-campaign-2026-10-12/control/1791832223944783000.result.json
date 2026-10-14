@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "result": {
+    "party": [
+      {
+        "id": "pc-aldric",
+        "level": 1,
+        "hp": 9
+      },
+      {
+        "id": "pc-pebble",
+        "level": 1,
+        "hp": 12
+      },
+      {
+        "id": "pc-trista",
+        "level": 1,
+        "hp": 11
+      },
+      {
+        "id": "pc-ringgo",
+        "level": 1,
+        "hp": 10
+      },
+      {
+        "id": "pc-donavan",
+        "level": 1,
+        "hp": 9
+      }
+    ],
+    "c": 0
+  }
+}

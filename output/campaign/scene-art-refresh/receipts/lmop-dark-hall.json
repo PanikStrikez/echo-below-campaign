@@ -1,0 +1,36 @@
+{
+  "id": "lmop-dark-hall",
+  "title": "Cragmaw Castle · Area 8 · Dark hall",
+  "image": "lmop-visuals/dark-hall.png",
+  "key": "C08",
+  "chapter": "Cragmaw Castle",
+  "reveal": "On entering area 8",
+  "sourceRecordIds": [
+    "s3-area8"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area8",
+      "title": "Area 8 · Dark hall and grick",
+      "read": [
+        "A narrow, lightless hall bears carvings that do not match its current occupants. Heavy curtains hang to the north, and a stone brazier stands between them.",
+        "The carvings reward a closer look, but the curtains prevent you from seeing the spaces beyond them. The stone brazier is a visible landmark between those covered openings. You can study the workmanship, listen toward the cloth, or decide whether to move farther into the hall."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "High narrow former chapel hall, sculpted ANGELIC figures along upper walls. TWO north archways covered by heavy curtains, cracked ornate stone brazier BETWEEN them. No exterior light; off-frame visitor lantern. Hidden grick remains invisible in upper statuary, gold statuette remains buried beneath coals. No active glowing altar or cultists.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 8 · Dark hall\nObservable scene and constraints: High narrow former chapel hall, sculpted ANGELIC figures along upper walls. TWO north archways covered by heavy curtains, cracked ornate stone brazier BETWEEN them. No exterior light; off-frame visitor lantern. Hidden grick remains invisible in upper statuary, gold statuette remains buried beneath coals. No active glowing altar or cultists.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "9c84a9d906c0441b3f080c6866bc874cccdb5f2387017fc7d1fd223343136a36",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-dark-hall.png",
+  "generatedAt": "2026-10-12T16:24:58.141Z",
+  "candidateHash": "80220ec516dc068e0c2ba67cb2e1b4301830d8bc7c4095f137617072149b395f",
+  "review": "passed",
+  "reviewedHash": "80220ec516dc068e0c2ba67cb2e1b4301830d8bc7c4095f137617072149b395f",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.793Z",
+  "installedHash": "80220ec516dc068e0c2ba67cb2e1b4301830d8bc7c4095f137617072149b395f",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/dark-hall.png"
+}

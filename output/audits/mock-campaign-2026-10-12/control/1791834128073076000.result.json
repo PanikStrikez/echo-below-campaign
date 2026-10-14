@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "phandalin-street",
+      "round": 1,
+      "order": [
+        "pc-donavan",
+        "pc-pebble",
+        "s2-ruffian-3",
+        "s2-ruffian-4",
+        "s2-ruffian-2",
+        "pc-trista",
+        "pc-ringgo",
+        "s2-ruffian-1",
+        "pc-aldric"
+      ],
+      "index": 0
+    },
+    "monster": {
+      "name": "Redbrand 1",
+      "attacks": [
+        {
+          "name": "Shortsword",
+          "type": "Action",
+          "attackBonus": 4,
+          "damageDice": "1d6+2",
+          "damageType": "piercing",
+          "effect": "",
+          "source": "Lost Mine of Phandelver appendix B, printed p. 61",
+          "resourceId": "",
+          "cost": 0
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "type": "Action",
+          "effect": "Read the source and enter a ruling.",
+          "damageDice": "",
+          "damageType": "",
+          "source": "Lost Mine of Phandelver appendix B, printed p. 61"
+        }
+      ],
+      "spells": [],
+      "features": [],
+      "resources": []
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-12T06:31:16.534Z",
+  "automatedTests": {
+    "passed": 103,
+    "failed": 0
+  },
+  "realBrowser": {
+    "screens": 20,
+    "errors": [],
+    "horizontalOverflow": false,
+    "actionsTextSeparated": true,
+    "resumePreservesTable": true,
+    "fullObjectiveShown": true,
+    "guideCollapseAndExpand": true
+  },
+  "otherBrowserChecks": [
+    "Evening workflow and TV staging",
+    "Prep/Run/Review, advanced tools, classic fallback, 820px and 640px layouts",
+    "Mock voice audition preview and mute; zero real provider requests"
+  ],
+  "primaryContrast": [
+    {
+      "screen": "dm-scene",
+      "contrast": 8.77,
+      "background": "rgb(224, 190, 121)",
+      "foreground": "rgb(24, 39, 29)"
+    },
+    {
+      "screen": "phone-action-review",
+      "contrast": 8.77,
+      "background": "rgb(224, 190, 121)",
+      "foreground": "rgb(24, 39, 29)"
+    }
+  ],
+  "physicalDevices": "Not retested",
+  "liveConnections": "No restart or reassignment",
+  "sourceHashes": {
+    "Visual-Language.css": "f715da8e5ebac508c2a99d69f9c02622347654cec1ee00501b0516ba97f822d0",
+    "phone/phone.css": "8a396f49321cc8a39ccbf5f64f6e4953de70d0d023704b96f96c29fefdddddab",
+    "phone/index.html": "9aeba49b9413aa22261c238d675490be72860434dbf90c0600c7002577934f1e",
+    "phone/phone.js": "33dd045a5c25961dd6ff6d9f0ddf16f317474b066dfa8dda5c83374acdc91732",
+    "Session-01-TV-Display.html": "24a19df1fc5035d1bf4c6a62ad76fa8956b21f708dee1974c98d4edaf12c2542",
+    "Session-01-Party-UI.js": "d70d8893067aa09a189a80a8a813ae756292642c6766f9150066df36cfa911d6",
+    "Session-01-Hybrid-UI.js": "d6255a7b5e69379ae9155490e886b14c6ced6dcde8fd2776cec7f9e9d5b845d1",
+    "Session-01-Hybrid-UI.css": "3f249f0e444f508cc866005f6cb1e6d10f0dd9c440437c0214d3b3a8458ec3ea"
+  }
+}

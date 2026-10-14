@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791838391227-hdxgf5al",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              15
+            ],
+            "total": 23,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:53:11 PM"
+          },
+          {
+            "id": "pa-1791838391227-y7lgm65a",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              6,
+              5
+            ],
+            "total": 11,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:53:11 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-6-ghoul-3",
+            "text": "South Barracks Ghoul 3: 23 vs AC 12: hit, 11 cold → 11; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

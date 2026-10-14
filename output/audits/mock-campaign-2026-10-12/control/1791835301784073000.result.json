@@ -1,0 +1,92 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "s2-cellar",
+      "run": [
+        "Cistern is 10 feet deep. A waterproof satchel hidden on its south wall is found by DC 15 Perception or probing. It contains a healing potion, invisibility potion, 50 gp, and ordinary travel clothes.",
+        "Loud searching can alert the three ruffians in area 2. The southwest secret door reaches the crevasse; use the secret-door checks in the manor entry beat."
+      ]
+    },
+    {
+      "id": "s2-barracks",
+      "run": [
+        "Three Redbrand ruffians. If area 1 was noisy, they prepare an ambush; check whether the party notices them before deciding surprise. Each has AC 14, HP 16, +2 initiative; two shortsword attacks at +4 for 1d6+2 piercing each.",
+        "Their belt pouches hold 16 sp and 7 gp; 12 sp and 5 gp; and 15 ep plus two garnets worth 10 gp each. Three scarlet cloaks hang here. Award only what the party actually takes."
+      ]
+    },
+    {
+      "id": "s2-trap",
+      "run": [
+        "The covered floor collapses beneath 100 pounds or more. DC 15 Wisdom (Perception) spots the pit and narrow side ledges. DC 10 Dexterity (Acrobatics) skirts it. A triggering creature or one that fails to skirt can catch the edge with DC 15 Dexterity save; otherwise it falls 20 feet, takes 2d6 bludgeoning, and lands prone.",
+        "Mark the hazard only when found or triggered. The book awards 100 XP for surviving or bypassing it if you use XP rather than milestones."
+      ]
+    },
+    {
+      "id": "s2-crypt",
+      "run": [
+        "Three skeletons animate when a creature comes within 10 feet of the doors to areas 5 or 6, unless that creature wears a scarlet cloak or gives the password “Illefarn.” Fighting here alerts the two guards in area 5.",
+        "Each sarcophagus contains a platinum signet ring worth 50 gp. Track which are opened; this is not automatic loot."
+      ]
+    },
+    {
+      "id": "s2-pens",
+      "run": [
+        "Two ruffians guard Mirna Dendrar, her thirteen-year-old son Nars, and her eighteen-year-old daughter Nilsa. If they heard fighting in area 4, they prepare at the wall by the door. The family needs rescue and a safe escort.",
+        "The cell locks require DC 10 Dexterity with thieves’ tools or DC 22 Strength to force; Iarno’s or Mosk’s key opens them. Mirna knows her husband Thel was killed; his body is in area 8. Once safe, she can tell the party about the emerald necklace hidden in the ruined alchemy shop in Thundertree. Do not place captives in splash damage automatically."
+      ]
+    },
+    {
+      "id": "s2-armory",
+      "run": [
+        "Area 6 is locked from the outside. Its racks hold 12 spears, 6 shortswords, 4 longswords, 6 light crossbows, eight quivers of 20 bolts each, and 12 red cloaks.",
+        "Area 7 stores 30 beaver pelts worth 2 gp each. Its secret routes connect to the armory and Glasstaff’s quarters; use the private map for exact doors."
+      ]
+    },
+    {
+      "id": "s2-crevasse",
+      "run": [
+        "Carp’s hillside tunnel enters here. The nothic hides near the west ends of the bridges. It communicates telepathically and prefers food or another useful bargain to combat; it knows the same hideout information the Redbrands do.",
+        "The south bridge collapses under more than 50 pounds. DC 15 Intelligence (Investigation) notices the weak construction. The fissure is 20 feet deep; a fall deals 2d6 bludgeoning and leaves the victim prone in difficult terrain.",
+        "The nothic’s chest is in a cubbyhole at the bottom of the fissure beneath the north bridge, invisible from the edge. It contains 160 sp, 120 gp, five 15 gp malachites, two healing potions, an augury scroll, and Talon, a +1 longsword. Thel Dendrar’s body lies below."
+      ]
+    },
+    {
+      "id": "s2-bugbears",
+      "run": [
+        "Three bugbears sent by the Black Spider. Droop faints when he sees the party; he remains unconscious for 1d10 minutes unless awakened. He hides if fighting starts and is not an automatic attacker.",
+        "Each bugbear has AC 16, HP 27, +4 morningstar for 2d8+2 piercing; Surprise Attack adds 2d6 on a hit against a creature it surprised in the first round. Use the five current level-3 sheets and live HP/resources when assessing risk; make retreat and bluffing possible.",
+        "Scarlet cloaks can persuade the bugbears that the characters serve Iarno; a plausible deception can use DC 15 Charisma (Deception). Droop can describe the hideout and broad northern forest direction of Cragmaw Castle, but not the route. A captured bugbear can disclose the castle’s location on a DC 15 Charisma (Intimidation) check.",
+        "Mosk carries 33 sp, a jeweled eye patch worth 50 gp, and a key that opens every locked door in the hideout."
+      ]
+    },
+    {
+      "id": "s2-common",
+      "run": [
+        "Four ruffians are drinking and gambling. All four have the poisoned condition from drink: disadvantage on attack rolls and ability checks. They are automatically surprised if the party bursts into the room; if the approach is slower, adjudicate what they notice.",
+        "Characters in red cloaks may bluff as new recruits with a DC 10 Charisma (Deception) check, especially if they join the game. The table holds 75 cp, 55 sp, 22 ep, 15 gp, and a ruby-set gold earring worth 30 gp."
+      ]
+    },
+    {
+      "id": "s2-workshop",
+      "run": [
+        "Latest actual play overrides the first-entry setup: the party captured the rat. Keep its current custody; do not put a second rat in this room. Its familiar nature remains DM-only unless the party learned it.",
+        "In the printed first-entry setup, the rat is Iarno’s familiar and warns him telepathically as soon as it detects intruders. It has AC 10, 1 HP, speed 20 feet, and no effective attack.",
+        "The apparatus appears intended to brew invisibility potions, but Iarno has not succeeded. A Dwarvish tome describes the lost mine and Lightbringer. Three reagents—mercury, dragon bile, and powdered nightshade—are worth 25 gp each. Track what is read and taken."
+      ]
+    },
+    {
+      "id": "s2-glasstaff",
+      "run": [
+        "Latest actual play overrides this prepared confrontation: Glasstaff put Gundren to sleep and escaped to Cragmaw Castle; the party left Gundren at an unnamed inn and Trista holds Glasstaff’s rat. Play stopped at Barthen’s Provisions. Do not redeploy Glasstaff here, restart the fight, or present Gundren as a castle hostage. The castle destination is DM-only until discovered.",
+        "For unresolved room contents, inspect the saved scene and what the party actually took before using the printed first-entry setup below.",
+        "Iarno Albrek is Glasstaff. In the printed first-entry setup, a warning from the rat lets him flee by the secret route through areas 7, 8, and 1. Those steps are reference behavior, not a replay of the completed escape.",
+        "Evil Mage base: AC 12, HP 22, speed 30, spell save DC 13, spell attack +5. Slots: 1st level 4, 2nd level 3. Magic missile, charm person, hold person, misty step, shocking grasp, light, mage hand.",
+        "Staff of defense: +1 AC while held; 10 charges. Its printed entry spends 1 charge to cast mage armor or 2 to cast shield, using an action. Mage armor plus Dexterity and held staff makes Iarno AC 16. Track charges. Check the item entry before a shield ruling.",
+        "A search may find the Black Spider letter and an unlocked chest: 180 sp, 130 gp, five carnelians (10 gp each), two peridots (15 gp each), and one pearl (100 gp). Check what Glasstaff took and what the party found before awarding any of it.",
+        "A custom Redbrand transfer record in Iarno’s desk names Gundren Rockseeker and Cragmaw Castle. If found, it documents an earlier transfer, not Gundren’s current location. Do not treat it as discovered unless the party actually searched the desk.",
+        "Iarno knows the Spider seeks the Forge but not the cave’s location. Confirm other knowledge against actual play before giving an answer."
+      ]
+    }
+  ]
+}

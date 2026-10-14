@@ -1,0 +1,869 @@
+{
+  "at": "2026-10-12T08:14:21.516Z",
+  "phase": "after",
+  "physical": false,
+  "liveChanged": false,
+  "errors": [],
+  "screens": [
+    {
+      "name": "launchpad",
+      "viewport": [
+        1512,
+        982
+      ],
+      "overflow": false,
+      "text": "✦ Echo Below\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout\nOBJECTIVEChoose a party objective in Quests\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\nCollapse guide\nRestored 10 sessions as a separate campaign.\nNotices · 0 issues · 1 updates\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nCURRENT SESSION\nSession 3 · Gundren’s trail\nNEXT ACTION\nTrista · open active turn\nResume session →\nRun a scene\nRead aloud, talk, and stage art\nStart combat\nMaps, turns, and tokens\nExplore\nFollow leads and discover places\nHandle players\nRequests, sheets, and notes\nWORLD ATLAS\nThe Sword Coast\nSword Coast atlas\n−\n100%\n+\nReset\nIcewind Dale\nReghed Glacier\nSpine of the World\nNeverwinter Wood\nSword Mountains\nSouthern Sword Mountains\nHigh Forest\nStar Mounts\nGreypeak Mountains\nWestern Anauroch\nHigh Moor\nMisty Forest\nSerpent Hills\nMarsh of Chelimber\nGreycloak Hills\nForest of Wyrms\nTrollclaws\nTrielta Hills\nFields of the Dead\nLurkwood\nMere of Dead Men\nSouthwood\nCloakwood\nWood of Sharp Teeth\nThe Drowned Observatory · offshore-site-proposal\nThe Dead God’s Scar · valley-site-proposal\nThe Frozen Door · glacier-approach-area\nThe Walking Tower · roaming-area\nThe Broken Star · terrestrial-approach-area\nThe Hollow Mountain · provisional-mountain-area\nAgatha’s Lair\nAmphail\nBaldur's Gate\nBerdusk\nBlackford Crossing\nBoareskyr Bridge\nCandlekeep\nCitadel Felbarr\nConyberry\nCragmaw Castle\nCragmaw Hideout\nDaggerford\nDragonspear Castle\nElturel\nEvereska\nFort Morninglord\nGauntlgrym\nHardbuckler\nHelm's Hold\nIronmaster\nLeilon\nLongsaddle\nLuskan\nMirabar\nMithral Hall\nMount Hotenow\nNeverwinter\nOld Owl Well\nPhandalin\nScornubel\nSecomber\nSilverymoon\nSundabar\nThe Dead God’s Scar\nThe Drowned Observatory\nThe Silent Library\nThornhold\nThundertree\nTriboar Trail ambush site\nUndermountain\nWarlock's Crypt\nWaterdeep\nWave Echo Cave\nWyvern Tor\nYartar\nParty\nFind a point of interest\n\nChoose a marker for details. Browsing is private and does not move the party.\n\nNorthern Coast & Icewind Dale\nNeverwinter & Phandelver\nThe High Road\nWaterdeep & Daggerford\nEastern Interior\nBaldur’s Gate & Candlekeep\nTravel & encounter kit\nOpen full atlas"
+    },
+    {
+      "name": "scene",
+      "viewport": [
+        1512,
+        982
+      ],
+      "overflow": false,
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nPREPARED SCENE\nThundertree 1 · Western cottage\nOBJECTIVEChoose a party objective in Quests\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\nCollapse guide\nRestored 10 sessions as a separate campaign.\nNotices · 0 issues · 1 updates\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nTHE ECHO BELOW · SCENE\nThundertree 1 · Western cottage\nBefore play · carry forward what actually happened\n1 · Choose the lead, not the destination\n2 · Triboar Trail and Neverwinter Wood\nOptional lead · Conyberry and Agatha\nOptional lead · Old Owl Well\nIf violence starts · Old Owl Well\nOptional lead · Wyvern Tor\nIf the camp fights · Wyvern Tor\nOptional lead · Reidoth at Thundertree\nThundertree 1 · Western cottage\nThundertree 2 · Blighted cottages\nThundertree 3 · The Brown Horse\nThundertree 4 · Reidoth’s watch\nThundertree 5 · Blighted farmhouse\nThundertree 6 · Ruined store and webs\nThundertree 7 · Venomfang’s tower\nThundertree 8 · Old smithy\nThundertree 9 · Herbalist’s shop\nThundertree 10 · Town square\nThundertree 11 · Old garrison\nThundertree 12 · Weaver’s cottage\nThundertree 13 · Dragon cultists\n3 · Cragmaw Castle comes into view\n4 · Begin castle exploration\nArea 1 · Entrance and sentries\nArea 2 · Falling rubble\nArea 4 · Ruined barracks\nArea 5 · Storeroom and Sildar’s gear\nArea 6 · Hobgoblin barracks\nArea 7 · Banquet hall\nArea 8 · Dark hall and grick\nArea 9 · Goblin shrine\nArea 10 · South postern gate\nArea 11 · Concealed north entrance\nArea 12 · Guard barracks\nArea 13 · Owlbear tower\nArea 14 · Gundren, Grol, and Vyerith\nOptional consequence · Returning war band\nClose · Record the trail to the mine\nSay aloud\n\nA roofless cottage crouches beneath a broad tree. Its doorway has almost vanished into weeds.\n\nThe weeds interrupt a straight approach to the doorway, and the open roof leaves the cottage exposed to the sky. You can examine the nearer ground, look through the ruined walls, or keep watch beneath the broad tree before choosing how to enter.\n\nAsk the players\n\nHow do you approach, and where is each character?\n\nDM notes and secrets\nPrevious\nFull scene notes\nIf they go elsewhere\n\nDM preview · The player TV changes only when you choose Show on TV.\n\n▣ Show scene on TV\n◫ Preview map\nPrepare encounter\nNext scene →"
+    },
+    {
+      "name": "session-pilot",
+      "viewport": [
+        1512,
+        982
+      ],
+      "overflow": false,
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nPREPARED SCENE\nThundertree 1 · Western cottage\nOBJECTIVEChoose a party objective in Quests\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\nCollapse guide\nRestored 10 sessions as a separate campaign.\nNotices · 0 issues · 1 updates\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nSESSION PILOT\n\nFollow the players. Use these beats when they fit.\n\nBefore play · carry forward what actually happened\n1 · Choose the lead, not the destination\n2 · Triboar Trail and Neverwinter Wood\nOptional lead · Conyberry and Agatha\nOptional lead · Old Owl Well\nIf violence starts · Old Owl Well\nOptional lead · Wyvern Tor\nIf the camp fights · Wyvern Tor\nOptional lead · Reidoth at Thundertree\nThundertree 1 · Western cottage\nThundertree 2 · Blighted cottages\nThundertree 3 · The Brown Horse\nThundertree 4 · Reidoth’s watch\nThundertree 5 · Blighted farmhouse\nThundertree 6 · Ruined store and webs\nThundertree 7 · Venomfang’s tower\nThundertree 8 · Old smithy\nThundertree 9 · Herbalist’s shop\nThundertree 10 · Town square\nThundertree 11 · Old garrison\nThundertree 12 · Weaver’s cottage\nThundertree 13 · Dragon cultists\n3 · Cragmaw Castle comes into view\n4 · Begin castle exploration\nArea 1 · Entrance and sentries\nArea 2 · Falling rubble\nArea 4 · Ruined barracks\nArea 5 · Storeroom and Sildar’s gear\nArea 6 · Hobgoblin barracks\nArea 7 · Banquet hall\nArea 8 · Dark hall and grick\nArea 9 · Goblin shrine\nArea 10 · South postern gate\nArea 11 · Concealed north entrance\nArea 12 · Guard barracks\nArea 13 · Owlbear tower\nArea 14 · Gundren, Grol, and Vyerith\nOptional consequence · Returning war band\nClose · Record the trail to the mine\n9\nOptional lead · Reidoth at Thundertree\n10\nThundertree 1 · Western cottage\n11\nThundertree 2 · Blighted cottages\n12\nThundertree 3 · The Brown Horse\n13\nThundertree 4 · Reidoth’s watch\nBEAT 10 OF 39\nThundertree 1 · Western cottage\nCURRENT QUESTION · DM ONLY\nWhat do the players want to do here?\n\nHear their approach, then use the relevant prepared beat or nearby alternatives.\n\nREAD ALOUD\n\nA roofless cottage crouches beneath a broad tree. Its doorway has almost vanished into weeds.\n\nThe weeds interrupt a straight approach to the doorway, and the open roof leaves the cottage exposed to the sky. You can examine the nearer ground, look through the ruined walls, or keep watch beneath the broad tree before choosing how to enter.\n\nChoose another prepared beat\nPreview prepared visual\nPrepare encounter\nVISUAL TO STAGE\nPRIVATE NOTES\n\nTwo twig blights hide beside the entrance. Compare their Stealth to passive Perception; if fighting breaks out, they can aid area 2.\n\nTwig blight: AC 13, HP 4, claws +3 for 1d4+1 piercing; vulnerable to fire.\n\nLost Mine of Phandelver (2014), printed pp. 30–35; use its private marked map for exact building positions.\n\nIF THEY GO ELSEWHERE · DM ONLY\n\nKeep this beat prepared; open nearby leads and NPCs if the party changes course.\n\nNearby options & improv note\n▣ Show on TV"
+    },
+    {
+      "name": "combat",
+      "viewport": [
+        1512,
+        982
+      ],
+      "overflow": false,
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout\nOBJECTIVEChoose a party objective in Quests\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\nCollapse guide\nRestored 10 sessions as a separate campaign.\nNotices · 0 issues · 1 updates\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nPT\nMAP DESK\nRun combat\n\nRedbrand Hideout\n\nGRID SCALE UNVERIFIED · CONFIRM BEFORE EXACT MEASUREMENT\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nMovement used (ft.)\nMark action used\nMark bonus action used\nAction → Targets → Rolls → Reactions → Review → Resolve\n\nCurrent step: Action · choose an attack and target, then open the shared review.\n\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nPractice target\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions & resources\nEncounter controls\nAction review\nCombat tools · saves, reactions & effects\nTokens · 6 on map\nCombat tools\nEnd combat\nTokens\nFog\nUndo\nNext turn\nMap tools"
+    },
+    {
+      "name": "quest-review",
+      "viewport": [
+        1512,
+        982
+      ],
+      "overflow": false,
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout\nOBJECTIVEChoose a party objective in Quests\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\nCollapse guide\nRestored 10 sessions as a separate campaign.\nNotices · 0 issues · 1 updates\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nPT\nMAP DESK\nRun combat\n\nRedbrand Hideout\n\nGRID SCALE UNVERIFIED · CONFIRM BEFORE EXACT MEASUREMENT\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nMovement used (ft.)\nMark action used\nMark bonus action used\nAction → Targets → Rolls → Reactions → Review → Resolve\n\nCurrent step: Action · choose an attack and target, then open the shared review.\n\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nPractice target\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions & resources\nEncounter controls\nAction review\nCombat tools · saves, reactions & effects\nTokens · 6 on map\nCombat tools\nEnd combat\nTokens\nFog\nUndo\nNext turn\nMap tools\nTHE ECHO BELOW · CAMPAIGN MEMORY\nQuest session workspace\nSession 3 · Gundren’s trail\nClose\nExpand\nOpen tool\nCharacter stories & spotlights\nCharacter chapters & satellite adventures\nIntervention & finale\nQuests · player view\nQuest guide\nQuest session workspace\nOutcome review\nCampaign continuity & quests\nEvidence and research\nFirst Undermountain expeditions\nExpedition record & return\nBetween expeditions\nMending Court · home & relationships\nPhandalin → Waterdeep\nWave Echo journal\nSession prep\nPhandelver packs\nBranching runbook\nSecret handouts\nEvidence\nPlayer journal\nPeople\nWaterdeep\nNine sites\nUndermountain\nCalendar & clocks\nEnd of session\nQuest workspace\n\nChoose two or three likely leads for the next session. Everything here is private preparation; approved outcomes supply the history.\n\nChoose leads\nSession board\nPlayer quest views\nManage quests & publication\nRecord an outcome\nPrepare Phandalin → Waterdeep\nPrepare for\nNext session · unassigned\nSession 1 · Goblin Arrows\nSession 2 · Phandalin\nSession 2 · Phandalin\nSession 2 · Phandalin\nSession 3\nSession 2 · Phandalin\nPart 3 · Wilderness and castle\nSession 3 · Gundren’s trail\nSession 4 · Wave Echo Cave\nThe Silent Library\n0/3 likely leads\n\nChoose leads below to build this board.\n\nUndo prep change\nRedo prep change\nQuest library\n\nActive quests first. Search the complete library to prepare another path; completed quests remain available for follow-ups.\n\nActive\nCompleted\nAll quests\nSearch the full quest library\n\n4 matching quests · search includes planned and completed quests\n\nChoose a quest\nChoose a quest\nThe Missing Rockseeker · active\nFind Gundren · active\nThe Redbrand Threat · active\nWave Echo Cave · planned\nFind Gundren\n\nside · active · DM preparation\n\nCurrent objective\n\nFind Gundren · Establish the current situation\n\nKnown evidence and private context\nAvailable preparation leads\n\nThese are possible approaches to prepare. Their presence does not mean the party has learned them.\n\nAsk Gundren what he remembers once he can speak; do not invent his answer\n\nAsk Gundren what he remembers once he can speak; do not invent his answer.\n\nAdd ask gundren what he remembers once he can speak; do not invent his answer to board\nCompare the account with an independent record or witness\n\nCompare the account with an independent record or witness.\n\nAdd compare the account with an independent record or witness to board\nAlternate approaches\nRelevant NPCs (3)\nScenes, maps and runbook (3 visuals · 3 beats)\nEncounters (0)\nMedia cues (4)\nCharacter opportunities (5)\nAdd a reference from the existing library"
+    },
+    {
+      "name": "tv",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "overflow": false,
+      "text": "Redbrand Hideout\nControls & interaction\nRound 1 · Trista’s turn\n▶ Trista\n2 Donavan\n3 Ringgo\n4 Pebble\n5 Aldric\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nPT\nDay · Clear"
+    },
+    {
+      "name": "pc-trista-onboarding",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Trista\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nPHONE WALKTHROUGH · 1 / 5\nConfirm your character\n\nCheck the name and HP at the top. Sheet has your full character. If the name is wrong, open Connection & saved sheet → Saved sheet & joining.\n\nShow me whereNextSkip for now\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nOrdinary unarmed strike is one attack. Flurry of Blows uses its listed bonus action and Focus cost for the listed extra attacks; choose that separate ability when intended.\n\nDagger\n+6 to hit · 1d6+4 piercing\nAction · Monk weapon; thrown range 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nSpear\n+6 to hit · 1d8+4 piercing\nAction · Versatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nUnarmed Strike\n+6 to hit · 1d6+4 bludgeoning\nAction · Martial Arts. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nMartial Arts unarmed strike\n+6 to hit · 1d6+4 bludgeoning\nBonus action · No Attack action prerequisite while Martial Arts applies. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (12)\nSpells (2)\nResources (2)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-pebble-onboarding",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Pebble\nHP 43 / 43\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nPHONE WALKTHROUGH · 1 / 5\nConfirm your character\n\nCheck the name and HP at the top. Sheet has your full character. If the name is wrong, open Connection & saved sheet → Saved sheet & joining.\n\nShow me whereNextSkip for now\nCharacter overview\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nRequest an action\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nWarhammer\n+6 to hit · 1d8+4 bludgeoning\nAction · One-handed with shield. Weapon attacks crit on natural 19–20; Crusher may move a qualifying target 5 ft. once per turn. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nHandaxe\n+6 to hit · 1d6+4 slashing\nAction · Melee or thrown 20/60 ft. Weapon attacks crit on natural 19–20. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (7)\nResources (2)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-donavan-onboarding",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Donavan Kemp\nHP 24 / 24\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nPHONE WALKTHROUGH · 1 / 5\nConfirm your character\n\nCheck the name and HP at the top. Sheet has your full character. If the name is wrong, open Connection & saved sheet → Saved sheet & joining.\n\nShow me whereNextSkip for now\nCharacter overview\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nRequest an action\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+4 to hit · 1d4+2 piercing\nAction · Melee or thrown 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nRay of Frost\n+6 to hit · 1d8 cold\nAction · Ranged spell attack, 60 ft.; cold damage and speed reduced by 10 ft. until the start of your next turn. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nUnarmed Strike\n+3 to hit · 2 bludgeoning\nAction · Melee attack; 2 bludgeoning damage on a hit. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (21)\nSpells (33)\nResources (4)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-ringgo-onboarding",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Ringgo Paul\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nPHONE WALKTHROUGH · 1 / 5\nConfirm your character\n\nCheck the name and HP at the top. Sheet has your full character. If the name is wrong, open Connection & saved sheet → Saved sheet & joining.\n\nShow me whereNextSkip for now\nCharacter overview\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nRequest an action\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nRapier\n+7 to hit · 1d8+5 piercing\nAction · Finesse; Sneak Attack may add 2d6 once per turn. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nShortbow\n+7 to hit · 1d6+5 piercing\nAction · Range 80/320; Sneak Attack may add 2d6. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nDagger\n+7 to hit · 1d4+5 piercing\nAction · Finesse, light, thrown 20/60. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nSecond dagger\n+7 to hit · 1d4 piercing\nBonus action · Two-weapon fighting; no Dexterity modifier to damage. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nSneak Attack\n2d6 extra\nOnce per turn · Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage. · No automatic resource cost · Availability: DM reviews timing and resources\nManual ruling\nRequest action\nAbilities (8)\nSpells (2)\nResources (2)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-aldric-onboarding",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Aldric Vane\nHP 25 / 25\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nPHONE WALKTHROUGH · 1 / 5\nConfirm your character\n\nCheck the name and HP at the top. Sheet has your full character. If the name is wrong, open Connection & saved sheet → Saved sheet & joining.\n\nShow me whereNextSkip for now\nCharacter overview\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nRequest an action\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nFire Bolt\n+6 to hit · 1d10 fire\nAction · Ranged spell attack, 120 ft.; ignites unattended flammable objects. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nDagger\n+4 to hit · 1d4+2 piercing\nAction · Melee or thrown 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (12)\nSpells (10)\nResources (4)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-trista-sheet-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Trista\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nTrista\nLevel 4\nDownload emergency sheet\n\nHuman · Monk · Warrior of Shadow · Criminal / Spy · 2024 character exception\n\nSTR\n+2\n14\nDEX\n+4\n18\nCON\n+4\n18\nINT\n-1\n9\nWIS\n+0\n11\nCHA\n+1\n12\nPassive Perception 10\nPassive Insight 10\nPassive Investigation 9\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nMinor Illusion · cantrip\naction · slot/cantrip available\n\nWarrior of Shadow; at will; Wisdom spellcasting.\n\nAsk to cast\nDarkness · level 2\nunknown · check preparation or casting resource\n\nShadow Arts; costs 1 Focus Point, no components; concentration.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nDagger\nAction · +6 to hit · 1d6+4 piercing\n\nMonk weapon; thrown range 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nSpear\nAction · +6 to hit · 1d8+4 piercing\n\nVersatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nChoose details · Choose one or two hands; the recorded d8 is the two-handed spear.\nUnarmed Strike\nAction · +6 to hit · 1d6+4 bludgeoning\n\nMartial Arts.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nMartial Arts unarmed strike\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nNo Attack action prerequisite while Martial Arts applies.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nFlurry of Blows\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nQuick roll only\nRoll damage\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nPatient Defense\nBonus action\n\nDisengage without spending Focus. Spend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nPatient Defense + Dodge\nBonus action\n\nSpend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind\nBonus action\n\nDash without spending Focus. Spend 1 Focus Point to Dash and Disengage and double jump distance.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind + Disengage\nBonus action\n\nSpend 1 Focus Point to Dash and Disengage; double jump distance this turn.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nUncanny Metabolism\nWhen rolling initiative · 1d6+4\n\nRestore all spent Focus Points and heal 1d6 + Monk level; once per long rest.\n\nRoll damage\nChoose details · Confirm initiative was rolled. Restore Focus and roll healing; spend the once-per-long-rest use.\nDeflect Attacks\nReaction · 1d10+8\n\nWhen hit by an attack that deals bludgeoning, piercing, or slashing, reduce total damage by 1d10 + DEX + Monk level. If reduced to 0, you may spend 1 Focus Point to redirect.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nRedirect deflected attack\nAfter Deflect Attacks · 2d6+4 · DC 10 DEX\n\nOnly if Deflect Attacks reduced damage to 0. Spend 1 Focus Point; eligible target makes DEX save DC 10 or takes the attack’s damage type.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nMinor Illusion\nAction\n\nCreate a small sound or image within 30 ft.; Wisdom is the spellcasting ability.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nShadow Arts: Darkness\nAction\n\nSpend 1 Focus Point to cast Darkness without components; concentration up to 10 minutes. Trista can see within it and move its area within 60 ft. at the start of each turn.\n\nManual ruling · Spend Focus, set concentration and stage the area manually. No automatic darkvision, targeting or fog changes.\nSlow Fall\nReaction\n\nWhen you fall, reduce the falling damage by 5 × Monk level (20 at level 4).\n\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nSpeedy: Dash\nWhen you Dash\n\nDifficult terrain does not cost extra movement for the rest of this turn.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-trista-actions-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Trista\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nOrdinary unarmed strike is one attack. Flurry of Blows uses its listed bonus action and Focus cost for the listed extra attacks; choose that separate ability when intended.\n\nDagger\n+6 to hit · 1d6+4 piercing\nAction · Monk weapon; thrown range 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nSpear\n+6 to hit · 1d8+4 piercing\nAction · Versatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nUnarmed Strike\n+6 to hit · 1d6+4 bludgeoning\nAction · Martial Arts. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nMartial Arts unarmed strike\n+6 to hit · 1d6+4 bludgeoning\nBonus action · No Attack action prerequisite while Martial Arts applies. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (12)\nSpells (2)\nResources (2)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-trista-sheet-360",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Trista\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nTrista\nLevel 4\nDownload emergency sheet\n\nHuman · Monk · Warrior of Shadow · Criminal / Spy · 2024 character exception\n\nSTR\n+2\n14\nDEX\n+4\n18\nCON\n+4\n18\nINT\n-1\n9\nWIS\n+0\n11\nCHA\n+1\n12\nPassive Perception 10\nPassive Insight 10\nPassive Investigation 9\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nMinor Illusion · cantrip\naction · slot/cantrip available\n\nWarrior of Shadow; at will; Wisdom spellcasting.\n\nAsk to cast\nDarkness · level 2\nunknown · check preparation or casting resource\n\nShadow Arts; costs 1 Focus Point, no components; concentration.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nDagger\nAction · +6 to hit · 1d6+4 piercing\n\nMonk weapon; thrown range 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nSpear\nAction · +6 to hit · 1d8+4 piercing\n\nVersatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nChoose details · Choose one or two hands; the recorded d8 is the two-handed spear.\nUnarmed Strike\nAction · +6 to hit · 1d6+4 bludgeoning\n\nMartial Arts.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nMartial Arts unarmed strike\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nNo Attack action prerequisite while Martial Arts applies.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nFlurry of Blows\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nQuick roll only\nRoll damage\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nPatient Defense\nBonus action\n\nDisengage without spending Focus. Spend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nPatient Defense + Dodge\nBonus action\n\nSpend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind\nBonus action\n\nDash without spending Focus. Spend 1 Focus Point to Dash and Disengage and double jump distance.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind + Disengage\nBonus action\n\nSpend 1 Focus Point to Dash and Disengage; double jump distance this turn.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nUncanny Metabolism\nWhen rolling initiative · 1d6+4\n\nRestore all spent Focus Points and heal 1d6 + Monk level; once per long rest.\n\nRoll damage\nChoose details · Confirm initiative was rolled. Restore Focus and roll healing; spend the once-per-long-rest use.\nDeflect Attacks\nReaction · 1d10+8\n\nWhen hit by an attack that deals bludgeoning, piercing, or slashing, reduce total damage by 1d10 + DEX + Monk level. If reduced to 0, you may spend 1 Focus Point to redirect.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nRedirect deflected attack\nAfter Deflect Attacks · 2d6+4 · DC 10 DEX\n\nOnly if Deflect Attacks reduced damage to 0. Spend 1 Focus Point; eligible target makes DEX save DC 10 or takes the attack’s damage type.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nMinor Illusion\nAction\n\nCreate a small sound or image within 30 ft.; Wisdom is the spellcasting ability.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nShadow Arts: Darkness\nAction\n\nSpend 1 Focus Point to cast Darkness without components; concentration up to 10 minutes. Trista can see within it and move its area within 60 ft. at the start of each turn.\n\nManual ruling · Spend Focus, set concentration and stage the area manually. No automatic darkvision, targeting or fog changes.\nSlow Fall\nReaction\n\nWhen you fall, reduce the falling damage by 5 × Monk level (20 at level 4).\n\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nSpeedy: Dash\nWhen you Dash\n\nDifficult terrain does not cost extra movement for the rest of this turn.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-trista-actions-360",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Trista\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nOrdinary unarmed strike is one attack. Flurry of Blows uses its listed bonus action and Focus cost for the listed extra attacks; choose that separate ability when intended.\n\nDagger\n+6 to hit · 1d6+4 piercing\nAction · Monk weapon; thrown range 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nSpear\n+6 to hit · 1d8+4 piercing\nAction · Versatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nUnarmed Strike\n+6 to hit · 1d6+4 bludgeoning\nAction · Martial Arts. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nMartial Arts unarmed strike\n+6 to hit · 1d6+4 bludgeoning\nBonus action · No Attack action prerequisite while Martial Arts applies. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (12)\nSpells (2)\nResources (2)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-pebble-sheet-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Pebble\nHP 43 / 43\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nPebble\nLevel 4\nDownload emergency sheet\n\nGoron (custom lineage) · Fighter · Champion · Outlander · 2014 PHB with Tasha options\n\nSTR\n+4\n18\nDEX\n+0\n10\nCON\n+2\n14\nINT\n-1\n8\nWIS\n+1\n13\nCHA\n+1\n12\nPassive Perception 13\nPassive Insight 13\nPassive Investigation 9\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\n\nNo spells match these filters.\n\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nWarhammer\nAction · +6 to hit · 1d8+4 bludgeoning\n\nOne-handed with shield. Weapon attacks crit on natural 19–20; Crusher may move a qualifying target 5 ft. once per turn.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nHandaxe\nAction · +6 to hit · 1d6+4 slashing\n\nMelee or thrown 20/60 ft. Weapon attacks crit on natural 19–20.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nInterception\nReaction · 1d10+2\n\nReduce damage when a visible creature hits someone other than Pebble within 5 feet; Pebble must hold a shield or weapon.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nSecond Wind\nBonus action · 1d10+4\n\nHeal Pebble; once per short or long rest.\n\nRoll damage\nReviewed roll · Self-healing, one bonus action and one use; uses the recorded Fighter level.\nCrusher\nOnce on Pebble’s turn\n\nAfter a bludgeoning hit, move a creature no more than one size larger 5 feet into empty space. On a bludgeoning critical hit, attacks against it have advantage until Pebble’s next turn.\n\nManual ruling · On a qualifying hit choose the legal 5-foot push; confirm size and destination. Critical-hit advantage is a separate reminder.\nAction Surge\nOn your turn\n\nTake one additional action on your turn; once per short or long rest.\n\nReviewed roll · Spend one use on your own turn; make one additional action available. Does not grant a bonus action.\nImproved Critical\nPassive\n\nPebble’s weapon attacks score a critical hit on a natural 19 or 20. Double damage dice, not the modifier.\n\nManual ruling · Already included in qualifying weapon rolls or recorded fire resistance. Do not spend an action.\nFire-Forged\nPassive\n\nYou have resistance to fire damage: halve fire damage you take, rounding down.\n\nManual ruling · Already included in qualifying weapon rolls or recorded fire resistance. Do not spend an action.\nRock Eater\nPassive\n\nOrdinary, nonmagical stone can satisfy your food needs; you still need water. Eating a magical stone stores its magical properties for 24 hours of in-game time. Choose when to activate or use its power within that window. Stored properties expire 24 hours after the stone is eaten; activating late does not reset that expiry. The DM defines how each stone’s power manifests, its activation/action cost, and any stone-specific uses or limits.\n\nManual ruling · Ordinary stone is food. Magical stone needs a separate approved manifestation, uses and 24-hour expiry.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-pebble-actions-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Pebble\nHP 43 / 43\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nWarhammer\n+6 to hit · 1d8+4 bludgeoning\nAction · One-handed with shield. Weapon attacks crit on natural 19–20; Crusher may move a qualifying target 5 ft. once per turn. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nHandaxe\n+6 to hit · 1d6+4 slashing\nAction · Melee or thrown 20/60 ft. Weapon attacks crit on natural 19–20. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (7)\nResources (2)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-pebble-sheet-360",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Pebble\nHP 43 / 43\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nPebble\nLevel 4\nDownload emergency sheet\n\nGoron (custom lineage) · Fighter · Champion · Outlander · 2014 PHB with Tasha options\n\nSTR\n+4\n18\nDEX\n+0\n10\nCON\n+2\n14\nINT\n-1\n8\nWIS\n+1\n13\nCHA\n+1\n12\nPassive Perception 13\nPassive Insight 13\nPassive Investigation 9\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\n\nNo spells match these filters.\n\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nWarhammer\nAction · +6 to hit · 1d8+4 bludgeoning\n\nOne-handed with shield. Weapon attacks crit on natural 19–20; Crusher may move a qualifying target 5 ft. once per turn.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nHandaxe\nAction · +6 to hit · 1d6+4 slashing\n\nMelee or thrown 20/60 ft. Weapon attacks crit on natural 19–20.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nInterception\nReaction · 1d10+2\n\nReduce damage when a visible creature hits someone other than Pebble within 5 feet; Pebble must hold a shield or weapon.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nSecond Wind\nBonus action · 1d10+4\n\nHeal Pebble; once per short or long rest.\n\nRoll damage\nReviewed roll · Self-healing, one bonus action and one use; uses the recorded Fighter level.\nCrusher\nOnce on Pebble’s turn\n\nAfter a bludgeoning hit, move a creature no more than one size larger 5 feet into empty space. On a bludgeoning critical hit, attacks against it have advantage until Pebble’s next turn.\n\nManual ruling · On a qualifying hit choose the legal 5-foot push; confirm size and destination. Critical-hit advantage is a separate reminder.\nAction Surge\nOn your turn\n\nTake one additional action on your turn; once per short or long rest.\n\nReviewed roll · Spend one use on your own turn; make one additional action available. Does not grant a bonus action.\nImproved Critical\nPassive\n\nPebble’s weapon attacks score a critical hit on a natural 19 or 20. Double damage dice, not the modifier.\n\nManual ruling · Already included in qualifying weapon rolls or recorded fire resistance. Do not spend an action.\nFire-Forged\nPassive\n\nYou have resistance to fire damage: halve fire damage you take, rounding down.\n\nManual ruling · Already included in qualifying weapon rolls or recorded fire resistance. Do not spend an action.\nRock Eater\nPassive\n\nOrdinary, nonmagical stone can satisfy your food needs; you still need water. Eating a magical stone stores its magical properties for 24 hours of in-game time. Choose when to activate or use its power within that window. Stored properties expire 24 hours after the stone is eaten; activating late does not reset that expiry. The DM defines how each stone’s power manifests, its activation/action cost, and any stone-specific uses or limits.\n\nManual ruling · Ordinary stone is food. Magical stone needs a separate approved manifestation, uses and 24-hour expiry.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-pebble-actions-360",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Pebble\nHP 43 / 43\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nWarhammer\n+6 to hit · 1d8+4 bludgeoning\nAction · One-handed with shield. Weapon attacks crit on natural 19–20; Crusher may move a qualifying target 5 ft. once per turn. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nHandaxe\n+6 to hit · 1d6+4 slashing\nAction · Melee or thrown 20/60 ft. Weapon attacks crit on natural 19–20. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (7)\nResources (2)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-donavan-sheet-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Donavan Kemp\nHP 24 / 24\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nDonavan Kemp\nLevel 3\nDownload emergency sheet\n\nHuman · Wizard 2 / Cleric 1 · Order of Scribes / Knowledge Domain · Sage · 2014 multiclass with Tasha Order of Scribes, Catapult and Toll the Dead exceptions; all listed spells available by table rule\n\nSTR\n+1\n12\nDEX\n+2\n14\nCON\n+3\n16\nINT\n+4\n18\nWIS\n+3\n16\nCHA\n+3\n16\nPassive Perception 13\nPassive Insight 13\nPassive Investigation 16\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nDancing Lights · cantrip\naction · slot/cantrip available\n\nCantrip · action · lights within 120 ft. · concentration up to 1 minute.\n\nAsk to cast\nPrestidigitation · cantrip\naction · slot/cantrip available\n\nCantrip · action · minor magical effect within 10 ft.\n\nAsk to cast\nRay of Frost · cantrip\naction · slot/cantrip available\n\nCantrip · ranged spell attack +6 · 1d8 cold and speed −10 ft.\n\nAsk to cast\nToll the Dead · cantrip\naction · slot/cantrip available\n\nCantrip · Wisdom save DC 13 · 1d8 necrotic, or 1d12 if target is wounded.\n\nAsk to cast\nSpare the Dying · cantrip\naction · slot/cantrip available\n\nCantrip · action · touch a creature at 0 HP to stabilize it.\n\nAsk to cast\nGuidance · cantrip\naction · slot/cantrip available\n\nCantrip · touch · concentration up to 1 minute · +1d4 to one ability check.\n\nAsk to cast\nCommand · level 1\naction · slot/cantrip available\n\nDomain spell · Wisdom save DC 13 · one-word command within 60 ft.\n\nAsk to cast\nIdentify · level 1\naction / ritual · slot/cantrip available\n\nDomain spell · touch · learn magical properties; ritual possible; material pearl required.\n\nAsk to cast\nDetect Magic · level 1\nritual · slot/cantrip available\n\nWizard · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible.\n\nAsk to cast\nComprehend Languages · level 1\nritual · slot/cantrip available\n\nWizard · Understand literal meaning of languages for 1 hour · ritual possible.\n\nAsk to cast\nFind Familiar · level 1\nritual · slot/cantrip available\n\nWizard · Summon a familiar · 1-hour cast or ritual · material cost applies.\n\nAsk to cast\nMagic Missile · level 1\naction · slot/cantrip available\n\nWizard · Action · three darts within 120 ft. · each deals 1d4+1 force; no attack roll.\n\nAsk to cast\nShield · level 1\nreaction · slot/cantrip available\n\nWizard · Reaction · +5 AC until next turn and blocks Magic Missile.\n\nAsk to cast\nCatapult · level 1\naction · slot/cantrip available\n\nWizard · Xanathar’s · action · Dexterity save DC 14 · fling a 1–5 lb. object; 3d8 bludgeoning.\n\nAsk to cast\nDisguise Self · level 1\naction · slot/cantrip available\n\nWizard · Action · alter your appearance for 1 hour; inspection may reveal illusion.\n\nAsk to cast\nFeather Fall · level 1\nreaction · slot/cantrip available\n\nWizard · Reaction · slow up to five falling creatures within 60 ft.\n\nAsk to cast\nWitch Bolt · level 1\naction · slot/cantrip available\n\nWizard · Action · ranged spell attack +6 · 1d12 lightning, concentration; action to sustain.\n\nAsk to cast\nSilent Image · level 1\naction · slot/cantrip available\n\nWizard · Action · range 60 ft. · create a visual illusion within a 15-ft. cube; concentration up to 10 minutes.\n\nAsk to cast\nCure Wounds · level 1\naction · slot/cantrip available\n\nCleric · Action · touch · restore 1d8+3 HP.\n\nAsk to cast\nHealing Word · level 1\nbonus · slot/cantrip available\n\nCleric · Bonus action · 60 ft. · restore 1d4+3 HP.\n\nAsk to cast\nShield of Faith · level 1\nbonus · slot/cantrip available\n\nCleric · Bonus action · +2 AC to one creature · concentration up to 10 minutes.\n\nAsk to cast\nBane · level 1\naction · slot/cantrip available\n\nCleric · Action · up to three creatures make Charisma saves DC 13; failures subtract 1d4 from attacks and saves · concentration.\n\nAsk to cast\nBless · level 1\naction · slot/cantrip available\n\nCleric · Action · up to three creatures add 1d4 to attacks and saves · concentration.\n\nAsk to cast\nCreate or Destroy Water · level 1\naction · slot/cantrip available\n\nCleric · Action · create or destroy water in an open container or rain/fog in a small area.\n\nAsk to cast\nDetect Evil and Good · level 1\naction · slot/cantrip available\n\nCleric · Action · sense certain supernatural creatures or consecration within 30 ft. · concentration.\n\nAsk to cast\nDetect Magic · level 1\nritual · slot/cantrip available\n\nCleric · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible.\n\nAsk to cast\nDetect Poison and Disease · level 1\naction / ritual · slot/cantrip available\n\nCleric · Action · sense poison, poisonous creatures, or disease within 30 ft. · concentration; ritual.\n\nAsk to cast\nGuiding Bolt · level 1\naction · slot/cantrip available\n\nCleric · Action · ranged spell attack +5 · 4d6 radiant; next attack against target gains advantage.\n\nAsk to cast\nInflict Wounds · level 1\naction · slot/cantrip available\n\nCleric · Action · melee spell attack +5 · 3d10 necrotic.\n\nAsk to cast\nProtection from Evil and Good · level 1\naction · slot/cantrip available\n\nCleric · Action · touch · protect from listed creature types · concentration; material component consumed.\n\nAsk to cast\nPurify Food and Drink · level 1\naction / ritual · slot/cantrip available\n\nCleric · Action or ritual · purify nonmagical food and drink in a 5-ft. radius.\n\nAsk to cast\nSanctuary · level 1\nbonus · slot/cantrip available\n\nCleric · Bonus action · protected creature within 30 ft.; attackers make Wisdom save DC 13.\n\nAsk to cast\nCeremony · level 1\nritual · slot/cantrip available\n\nCleric · Ritual · 1 hour · special rites; gold material component consumed.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nDagger\nAction · +4 to hit · 1d4+2 piercing\n\nMelee or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nRay of Frost\nAction · +6 to hit · 1d8 cold\n\nRanged spell attack, 60 ft.; cold damage and speed reduced by 10 ft. until the start of your next turn.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack and cold damage; on a hit add the speed reduction reminder until your next turn.\nUnarmed Strike\nAction · +3 to hit · 2 bludgeoning\n\nMelee attack; 2 bludgeoning damage on a hit.\n\nQuick roll only\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nDancing Lights\nAction\n\nCreate up to four lights within 120 ft.; concentration, up to 1 minute.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nPrestidigitation\nAction\n\nMinor magical effect within 10 ft.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nToll the Dead\nAction · 1d8 necrotic · DC 13 WIS\n\nWisdom save DC 13; necrotic damage if target has all its HP.\n\nRoll damage\nChoose details · Use d12 only when the target is missing HP; Wisdom save uses Donavan’s cleric DC.\nToll the Dead · wounded target\nAction · 1d12 necrotic · DC 13 WIS\n\nUse instead of the d8 version when the target is missing HP. Wisdom save DC 13.\n\nRoll damage\nChoose details · Use d12 only when the target is missing HP; Wisdom save uses Donavan’s cleric DC.\nSpare the Dying\nAction\n\nStabilize a living creature at 0 HP by touch.\n\nChoose details · Confirm a living creature at 0 HP within touch; stabilize without healing.\nGuidance\nAction · 1d4\n\nTouch a willing creature; concentration, up to 1 minute; add 1d4 to one ability check.\n\nRoll damage\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nCommand\nAction · DC 13 WIS\n\nDomain spell, always prepared. One creature within 60 ft. makes Wisdom save DC 13 or follows one-word command on its next turn.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nIdentify\nRitual or Action\n\nDomain spell, always prepared; reveal magical properties of a touched object or spells affecting a creature. Ritual adds 10 minutes; costly pearl required.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nCatapult\nAction · 3d8 bludgeoning · DC 14 DEX\n\nHurl a 1–5 lb. unattended object along a 90-ft. line; first creature in path makes Dexterity save DC 14 or takes bludgeoning damage.\n\nRoll damage\nChoose details · Choose an eligible object and first collision; Dexterity save, no damage on success. Upcasting adds dice.\nMagic Missile\nAction · 1d4+1 force\n\nThree darts, no attack roll.\n\nRoll damage\nChoose details · Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.\nShield\nReaction\n\n+5 AC until the start of your next turn and block Magic Missile.\n\nChoose details · Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.\nHealing Word\nBonus action · 1d4+3\n\nHeal a visible creature within 60 ft.\n\nRoll damage\nReviewed roll · One selected target, selected slot, healing dice and spellcasting modifier.\nCure Wounds\nAction · 1d8+3\n\nHeal a creature you touch.\n\nRoll damage\nReviewed roll · One selected target, selected slot, healing dice and spellcasting modifier.\nSilent Image\nAction\n\nCreate a visual illusion in a 15-foot cube within 60 ft.; concentration up to 10 minutes.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nCast a 1st-level spell with a 2nd-level slot\nSpell action\n\nChoose a prepared 1st-level spell. Use a 2nd-level slot; apply its higher-slot effect if any. No 2nd-level spells are listed on this sheet.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nWizardly Quill\nBonus action\n\nCreate a Tiny magical quill that needs no ink and can erase its writing within 5 ft.; copy a spell in 2 minutes per spell level.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nAwakened Spellbook: quick ritual\nRitual\n\nCast one wizard ritual from the spellbook using its normal casting time rather than adding 10 minutes; once per long rest.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nAwakened Spellbook: change damage type\nWhen casting\n\nWhen casting a wizard spell with a slot, use a damage type from another spell in the spellbook of the same level as the slot used.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nArcane Recovery\nAfter short rest\n\nOnce per day after a short rest, recover one expended 1st-level slot.\n\nChoose details · Confirm a short rest and choose expended slots. Donavan can recover one slot level; Aldric two.\nGuiding Bolt\nAction · +5 to hit · 4d6 radiant\n\n120 feet; next attack against the target has advantage before the end of your next turn.\n\nQuick roll only\nRoll damage\nChoose details · Use Donavan’s cleric attack modifier and selected slot. Confirm range and any follow-up advantage.\nInflict Wounds\nAction · +5 to hit · 3d10 necrotic\n\nTouch; melee spell attack.\n\nQuick roll only\nRoll damage\nChoose details · Use Donavan’s cleric attack modifier and selected slot. Confirm range and any follow-up advantage.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-donavan-actions-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Donavan Kemp\nHP 24 / 24\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+4 to hit · 1d4+2 piercing\nAction · Melee or thrown 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nRay of Frost\n+6 to hit · 1d8 cold\nAction · Ranged spell attack, 60 ft.; cold damage and speed reduced by 10 ft. until the start of your next turn. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nUnarmed Strike\n+3 to hit · 2 bludgeoning\nAction · Melee attack; 2 bludgeoning damage on a hit. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (21)\nSpells (33)\nResources (4)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-donavan-sheet-360",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Donavan Kemp\nHP 24 / 24\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nDonavan Kemp\nLevel 3\nDownload emergency sheet\n\nHuman · Wizard 2 / Cleric 1 · Order of Scribes / Knowledge Domain · Sage · 2014 multiclass with Tasha Order of Scribes, Catapult and Toll the Dead exceptions; all listed spells available by table rule\n\nSTR\n+1\n12\nDEX\n+2\n14\nCON\n+3\n16\nINT\n+4\n18\nWIS\n+3\n16\nCHA\n+3\n16\nPassive Perception 13\nPassive Insight 13\nPassive Investigation 16\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nDancing Lights · cantrip\naction · slot/cantrip available\n\nCantrip · action · lights within 120 ft. · concentration up to 1 minute.\n\nAsk to cast\nPrestidigitation · cantrip\naction · slot/cantrip available\n\nCantrip · action · minor magical effect within 10 ft.\n\nAsk to cast\nRay of Frost · cantrip\naction · slot/cantrip available\n\nCantrip · ranged spell attack +6 · 1d8 cold and speed −10 ft.\n\nAsk to cast\nToll the Dead · cantrip\naction · slot/cantrip available\n\nCantrip · Wisdom save DC 13 · 1d8 necrotic, or 1d12 if target is wounded.\n\nAsk to cast\nSpare the Dying · cantrip\naction · slot/cantrip available\n\nCantrip · action · touch a creature at 0 HP to stabilize it.\n\nAsk to cast\nGuidance · cantrip\naction · slot/cantrip available\n\nCantrip · touch · concentration up to 1 minute · +1d4 to one ability check.\n\nAsk to cast\nCommand · level 1\naction · slot/cantrip available\n\nDomain spell · Wisdom save DC 13 · one-word command within 60 ft.\n\nAsk to cast\nIdentify · level 1\naction / ritual · slot/cantrip available\n\nDomain spell · touch · learn magical properties; ritual possible; material pearl required.\n\nAsk to cast\nDetect Magic · level 1\nritual · slot/cantrip available\n\nWizard · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible.\n\nAsk to cast\nComprehend Languages · level 1\nritual · slot/cantrip available\n\nWizard · Understand literal meaning of languages for 1 hour · ritual possible.\n\nAsk to cast\nFind Familiar · level 1\nritual · slot/cantrip available\n\nWizard · Summon a familiar · 1-hour cast or ritual · material cost applies.\n\nAsk to cast\nMagic Missile · level 1\naction · slot/cantrip available\n\nWizard · Action · three darts within 120 ft. · each deals 1d4+1 force; no attack roll.\n\nAsk to cast\nShield · level 1\nreaction · slot/cantrip available\n\nWizard · Reaction · +5 AC until next turn and blocks Magic Missile.\n\nAsk to cast\nCatapult · level 1\naction · slot/cantrip available\n\nWizard · Xanathar’s · action · Dexterity save DC 14 · fling a 1–5 lb. object; 3d8 bludgeoning.\n\nAsk to cast\nDisguise Self · level 1\naction · slot/cantrip available\n\nWizard · Action · alter your appearance for 1 hour; inspection may reveal illusion.\n\nAsk to cast\nFeather Fall · level 1\nreaction · slot/cantrip available\n\nWizard · Reaction · slow up to five falling creatures within 60 ft.\n\nAsk to cast\nWitch Bolt · level 1\naction · slot/cantrip available\n\nWizard · Action · ranged spell attack +6 · 1d12 lightning, concentration; action to sustain.\n\nAsk to cast\nSilent Image · level 1\naction · slot/cantrip available\n\nWizard · Action · range 60 ft. · create a visual illusion within a 15-ft. cube; concentration up to 10 minutes.\n\nAsk to cast\nCure Wounds · level 1\naction · slot/cantrip available\n\nCleric · Action · touch · restore 1d8+3 HP.\n\nAsk to cast\nHealing Word · level 1\nbonus · slot/cantrip available\n\nCleric · Bonus action · 60 ft. · restore 1d4+3 HP.\n\nAsk to cast\nShield of Faith · level 1\nbonus · slot/cantrip available\n\nCleric · Bonus action · +2 AC to one creature · concentration up to 10 minutes.\n\nAsk to cast\nBane · level 1\naction · slot/cantrip available\n\nCleric · Action · up to three creatures make Charisma saves DC 13; failures subtract 1d4 from attacks and saves · concentration.\n\nAsk to cast\nBless · level 1\naction · slot/cantrip available\n\nCleric · Action · up to three creatures add 1d4 to attacks and saves · concentration.\n\nAsk to cast\nCreate or Destroy Water · level 1\naction · slot/cantrip available\n\nCleric · Action · create or destroy water in an open container or rain/fog in a small area.\n\nAsk to cast\nDetect Evil and Good · level 1\naction · slot/cantrip available\n\nCleric · Action · sense certain supernatural creatures or consecration within 30 ft. · concentration.\n\nAsk to cast\nDetect Magic · level 1\nritual · slot/cantrip available\n\nCleric · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible.\n\nAsk to cast\nDetect Poison and Disease · level 1\naction / ritual · slot/cantrip available\n\nCleric · Action · sense poison, poisonous creatures, or disease within 30 ft. · concentration; ritual.\n\nAsk to cast\nGuiding Bolt · level 1\naction · slot/cantrip available\n\nCleric · Action · ranged spell attack +5 · 4d6 radiant; next attack against target gains advantage.\n\nAsk to cast\nInflict Wounds · level 1\naction · slot/cantrip available\n\nCleric · Action · melee spell attack +5 · 3d10 necrotic.\n\nAsk to cast\nProtection from Evil and Good · level 1\naction · slot/cantrip available\n\nCleric · Action · touch · protect from listed creature types · concentration; material component consumed.\n\nAsk to cast\nPurify Food and Drink · level 1\naction / ritual · slot/cantrip available\n\nCleric · Action or ritual · purify nonmagical food and drink in a 5-ft. radius.\n\nAsk to cast\nSanctuary · level 1\nbonus · slot/cantrip available\n\nCleric · Bonus action · protected creature within 30 ft.; attackers make Wisdom save DC 13.\n\nAsk to cast\nCeremony · level 1\nritual · slot/cantrip available\n\nCleric · Ritual · 1 hour · special rites; gold material component consumed.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nDagger\nAction · +4 to hit · 1d4+2 piercing\n\nMelee or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nRay of Frost\nAction · +6 to hit · 1d8 cold\n\nRanged spell attack, 60 ft.; cold damage and speed reduced by 10 ft. until the start of your next turn.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack and cold damage; on a hit add the speed reduction reminder until your next turn.\nUnarmed Strike\nAction · +3 to hit · 2 bludgeoning\n\nMelee attack; 2 bludgeoning damage on a hit.\n\nQuick roll only\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nDancing Lights\nAction\n\nCreate up to four lights within 120 ft.; concentration, up to 1 minute.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nPrestidigitation\nAction\n\nMinor magical effect within 10 ft.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nToll the Dead\nAction · 1d8 necrotic · DC 13 WIS\n\nWisdom save DC 13; necrotic damage if target has all its HP.\n\nRoll damage\nChoose details · Use d12 only when the target is missing HP; Wisdom save uses Donavan’s cleric DC.\nToll the Dead · wounded target\nAction · 1d12 necrotic · DC 13 WIS\n\nUse instead of the d8 version when the target is missing HP. Wisdom save DC 13.\n\nRoll damage\nChoose details · Use d12 only when the target is missing HP; Wisdom save uses Donavan’s cleric DC.\nSpare the Dying\nAction\n\nStabilize a living creature at 0 HP by touch.\n\nChoose details · Confirm a living creature at 0 HP within touch; stabilize without healing.\nGuidance\nAction · 1d4\n\nTouch a willing creature; concentration, up to 1 minute; add 1d4 to one ability check.\n\nRoll damage\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nCommand\nAction · DC 13 WIS\n\nDomain spell, always prepared. One creature within 60 ft. makes Wisdom save DC 13 or follows one-word command on its next turn.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nIdentify\nRitual or Action\n\nDomain spell, always prepared; reveal magical properties of a touched object or spells affecting a creature. Ritual adds 10 minutes; costly pearl required.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nCatapult\nAction · 3d8 bludgeoning · DC 14 DEX\n\nHurl a 1–5 lb. unattended object along a 90-ft. line; first creature in path makes Dexterity save DC 14 or takes bludgeoning damage.\n\nRoll damage\nChoose details · Choose an eligible object and first collision; Dexterity save, no damage on success. Upcasting adds dice.\nMagic Missile\nAction · 1d4+1 force\n\nThree darts, no attack roll.\n\nRoll damage\nChoose details · Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.\nShield\nReaction\n\n+5 AC until the start of your next turn and block Magic Missile.\n\nChoose details · Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.\nHealing Word\nBonus action · 1d4+3\n\nHeal a visible creature within 60 ft.\n\nRoll damage\nReviewed roll · One selected target, selected slot, healing dice and spellcasting modifier.\nCure Wounds\nAction · 1d8+3\n\nHeal a creature you touch.\n\nRoll damage\nReviewed roll · One selected target, selected slot, healing dice and spellcasting modifier.\nSilent Image\nAction\n\nCreate a visual illusion in a 15-foot cube within 60 ft.; concentration up to 10 minutes.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nCast a 1st-level spell with a 2nd-level slot\nSpell action\n\nChoose a prepared 1st-level spell. Use a 2nd-level slot; apply its higher-slot effect if any. No 2nd-level spells are listed on this sheet.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nWizardly Quill\nBonus action\n\nCreate a Tiny magical quill that needs no ink and can erase its writing within 5 ft.; copy a spell in 2 minutes per spell level.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nAwakened Spellbook: quick ritual\nRitual\n\nCast one wizard ritual from the spellbook using its normal casting time rather than adding 10 minutes; once per long rest.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nAwakened Spellbook: change damage type\nWhen casting\n\nWhen casting a wizard spell with a slot, use a damage type from another spell in the spellbook of the same level as the slot used.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nArcane Recovery\nAfter short rest\n\nOnce per day after a short rest, recover one expended 1st-level slot.\n\nChoose details · Confirm a short rest and choose expended slots. Donavan can recover one slot level; Aldric two.\nGuiding Bolt\nAction · +5 to hit · 4d6 radiant\n\n120 feet; next attack against the target has advantage before the end of your next turn.\n\nQuick roll only\nRoll damage\nChoose details · Use Donavan’s cleric attack modifier and selected slot. Confirm range and any follow-up advantage.\nInflict Wounds\nAction · +5 to hit · 3d10 necrotic\n\nTouch; melee spell attack.\n\nQuick roll only\nRoll damage\nChoose details · Use Donavan’s cleric attack modifier and selected slot. Confirm range and any follow-up advantage.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-donavan-actions-360",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Donavan Kemp\nHP 24 / 24\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+4 to hit · 1d4+2 piercing\nAction · Melee or thrown 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nRay of Frost\n+6 to hit · 1d8 cold\nAction · Ranged spell attack, 60 ft.; cold damage and speed reduced by 10 ft. until the start of your next turn. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nUnarmed Strike\n+3 to hit · 2 bludgeoning\nAction · Melee attack; 2 bludgeoning damage on a hit. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (21)\nSpells (33)\nResources (4)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-ringgo-sheet-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Ringgo Paul\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nRinggo Paul\nLevel 4\nDownload emergency sheet\n\nTiefling · Rogue · Assassin · Criminal / Spy · 2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export\n\nSTR\n-2\n7\nDEX\n+5\n20\nCON\n+2\n14\nINT\n+0\n10\nWIS\n+0\n10\nCHA\n+4\n18\nPassive Perception 12\nPassive Insight 10\nPassive Investigation 14\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nThaumaturgy · cantrip\naction · slot/cantrip available\n\nTiefling racial cantrip; Charisma spellcasting.\n\nAsk to cast\nHellish Rebuke · level 2\nreaction · check preparation or casting resource\n\nTiefling Infernal Legacy at character level 3: cast once per long rest as a 2nd-level spell; Dexterity save DC 14, 3d10 fire.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nRapier\nAction · +7 to hit · 1d8+5 piercing\n\nFinesse; Sneak Attack may add 2d6 once per turn.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nShortbow\nAction · +7 to hit · 1d6+5 piercing\n\nRange 80/320; Sneak Attack may add 2d6.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nDagger\nAction · +7 to hit · 1d4+5 piercing\n\nFinesse, light, thrown 20/60.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nSecond dagger\nBonus action · +7 to hit · 1d4 piercing\n\nTwo-weapon fighting; no Dexterity modifier to damage.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nSneak Attack\nOnce per turn · 2d6 extra\n\nAdd to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.\n\nRoll damage\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nCunning Action: Dash\nBonus action\n\nMove up to your speed again this turn.\n\nChoose details · Bonus-action usage and benefit reminders are structured; movement and opportunity attacks remain under DM control.\nCunning Action: Disengage\nBonus action\n\nMovement this turn does not provoke opportunity attacks.\n\nChoose details · Bonus-action usage and benefit reminders are structured; movement and opportunity attacks remain under DM control.\nCunning Action: Hide\nBonus action\n\nAttempt to hide if the circumstances allow it.\n\nManual ruling · Hiding requires cover, visibility and a Stealth check; the DM decides whether hiding succeeds.\nThaumaturgy\nAction\n\nTiefling cantrip: create a minor supernatural sign within 30 feet; no slot.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nHellish Rebuke\nReaction · 3d10 fire · DC 14 DEX\n\nOnce per long rest as a 2nd-level spell, after a creature you can see within 60 feet damages you. Dexterity save DC 14 for half fire damage.\n\nRoll damage\nChoose details · Confirm the visible attacker within 60 feet that damaged Ringgo. Racial casting is fixed at 2nd level, once per long rest.\nAssassinate\nOn attack\n\nAdvantage against any creature that has not yet taken a turn in this combat. A hit against a surprised creature is a critical hit.\n\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nPiercer: reroll damage\nOnce per turn on a hit\n\nAfter a piercing hit, reroll one damage die from that attack; use the new roll. A piercing Sneak Attack die also qualifies.\n\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nPiercer: critical hit\nOn a piercing critical hit\n\nAdd one extra weapon damage die: rapier +1d8, shortbow +1d6, or dagger +1d4. This extra die is not doubled.\n\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-ringgo-actions-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Ringgo Paul\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nRapier\n+7 to hit · 1d8+5 piercing\nAction · Finesse; Sneak Attack may add 2d6 once per turn. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nShortbow\n+7 to hit · 1d6+5 piercing\nAction · Range 80/320; Sneak Attack may add 2d6. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nDagger\n+7 to hit · 1d4+5 piercing\nAction · Finesse, light, thrown 20/60. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nSecond dagger\n+7 to hit · 1d4 piercing\nBonus action · Two-weapon fighting; no Dexterity modifier to damage. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nSneak Attack\n2d6 extra\nOnce per turn · Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage. · No automatic resource cost · Availability: DM reviews timing and resources\nManual ruling\nRequest action\nAbilities (8)\nSpells (2)\nResources (2)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-ringgo-sheet-360",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Ringgo Paul\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nRinggo Paul\nLevel 4\nDownload emergency sheet\n\nTiefling · Rogue · Assassin · Criminal / Spy · 2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export\n\nSTR\n-2\n7\nDEX\n+5\n20\nCON\n+2\n14\nINT\n+0\n10\nWIS\n+0\n10\nCHA\n+4\n18\nPassive Perception 12\nPassive Insight 10\nPassive Investigation 14\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nThaumaturgy · cantrip\naction · slot/cantrip available\n\nTiefling racial cantrip; Charisma spellcasting.\n\nAsk to cast\nHellish Rebuke · level 2\nreaction · check preparation or casting resource\n\nTiefling Infernal Legacy at character level 3: cast once per long rest as a 2nd-level spell; Dexterity save DC 14, 3d10 fire.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nRapier\nAction · +7 to hit · 1d8+5 piercing\n\nFinesse; Sneak Attack may add 2d6 once per turn.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nShortbow\nAction · +7 to hit · 1d6+5 piercing\n\nRange 80/320; Sneak Attack may add 2d6.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nDagger\nAction · +7 to hit · 1d4+5 piercing\n\nFinesse, light, thrown 20/60.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nSecond dagger\nBonus action · +7 to hit · 1d4 piercing\n\nTwo-weapon fighting; no Dexterity modifier to damage.\n\nQuick roll only\nRoll damage\nChoose details · Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.\nSneak Attack\nOnce per turn · 2d6 extra\n\nAdd to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.\n\nRoll damage\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nCunning Action: Dash\nBonus action\n\nMove up to your speed again this turn.\n\nChoose details · Bonus-action usage and benefit reminders are structured; movement and opportunity attacks remain under DM control.\nCunning Action: Disengage\nBonus action\n\nMovement this turn does not provoke opportunity attacks.\n\nChoose details · Bonus-action usage and benefit reminders are structured; movement and opportunity attacks remain under DM control.\nCunning Action: Hide\nBonus action\n\nAttempt to hide if the circumstances allow it.\n\nManual ruling · Hiding requires cover, visibility and a Stealth check; the DM decides whether hiding succeeds.\nThaumaturgy\nAction\n\nTiefling cantrip: create a minor supernatural sign within 30 feet; no slot.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nHellish Rebuke\nReaction · 3d10 fire · DC 14 DEX\n\nOnce per long rest as a 2nd-level spell, after a creature you can see within 60 feet damages you. Dexterity save DC 14 for half fire damage.\n\nRoll damage\nChoose details · Confirm the visible attacker within 60 feet that damaged Ringgo. Racial casting is fixed at 2nd level, once per long rest.\nAssassinate\nOn attack\n\nAdvantage against any creature that has not yet taken a turn in this combat. A hit against a surprised creature is a critical hit.\n\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nPiercer: reroll damage\nOnce per turn on a hit\n\nAfter a piercing hit, reroll one damage die from that attack; use the new roll. A piercing Sneak Attack die also qualifies.\n\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nPiercer: critical hit\nOn a piercing critical hit\n\nAdd one extra weapon damage die: rapier +1d8, shortbow +1d6, or dagger +1d4. This extra die is not doubled.\n\nManual ruling · Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-ringgo-actions-360",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Ringgo Paul\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nRapier\n+7 to hit · 1d8+5 piercing\nAction · Finesse; Sneak Attack may add 2d6 once per turn. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nShortbow\n+7 to hit · 1d6+5 piercing\nAction · Range 80/320; Sneak Attack may add 2d6. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nDagger\n+7 to hit · 1d4+5 piercing\nAction · Finesse, light, thrown 20/60. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nSecond dagger\n+7 to hit · 1d4 piercing\nBonus action · Two-weapon fighting; no Dexterity modifier to damage. · No automatic resource cost · Availability: DM reviews timing and resources\nChoose details\nQuick roll only\nRequest action\nSneak Attack\n2d6 extra\nOnce per turn · Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage. · No automatic resource cost · Availability: DM reviews timing and resources\nManual ruling\nRequest action\nAbilities (8)\nSpells (2)\nResources (2)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-aldric-sheet-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Aldric Vane\nHP 25 / 25\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nAldric Vane\nLevel 3\nDownload emergency sheet\n\nReborn · Wizard · School of Evocation · Haunted One · 2014 Wizard with Reborn, Haunted One, named later spells, and all listed spells available by table rule\n\nSTR\n-1\n8\nDEX\n+2\n14\nCON\n+3\n16\nINT\n+4\n18\nWIS\n+1\n12\nCHA\n+3\n16\nPassive Perception 11\nPassive Insight 13\nPassive Investigation 16\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nControl Flames · cantrip\naction · slot/cantrip available\n\nAt-will cantrip.\n\nAsk to cast\nFire Bolt · cantrip\naction · slot/cantrip available\n\nAt-will cantrip.\n\nAsk to cast\nMage Hand · cantrip\naction · slot/cantrip available\n\nAt-will cantrip.\n\nAsk to cast\nIce Knife · level 1\naction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nMage Armor · level 1\naction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nMagic Missile · level 1\naction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nShield · level 1\nreaction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nSilvery Barbs · level 1\nreaction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nAganazzar’s Scorcher · level 2\naction · slot/cantrip available\n\nListed as prepared in Bowman’s level 3 export; uses a 2nd-level slot.\n\nAsk to cast\nWeb · level 2\naction · slot/cantrip available\n\nListed as prepared in Bowman’s level 3 export; uses a 2nd-level slot.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nFire Bolt\nAction · +6 to hit · 1d10 fire\n\nRanged spell attack, 120 ft.; ignites unattended flammable objects.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nDagger\nAction · +4 to hit · 1d4+2 piercing\n\nMelee or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nControl Flames\nAction\n\nShape, expand, or extinguish a visible nonmagical flame in a 5-foot cube within 60 ft.; no slot.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nMage Hand\nAction\n\nCreate and control a spectral hand within 30 ft.; no slot.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nIce Knife\nAction · +6 to hit · 1d10 piercing + cold · DC 14 DEX\n\nRanged spell attack, 60 ft.; piercing on hit, then target and creatures within 5 ft. make a Dexterity save or take 2d6 cold.\n\nQuick roll only\nRoll damage\nChoose details · Resolve the attack and a separately selected burst, even on a miss. Only piercing attack dice double on a critical.\nIce Knife burst\nAfter Ice Knife · 2d6 cold · DC 14 DEX\n\nCold burst after the knife attack. Target and all creatures within 5 ft. make Dexterity save DC 14; no extra spell slot.\n\nRoll damage\nManual ruling · Use the combined Ice Knife review to avoid repeating its burst or spending another slot.\nMagic Missile\nAction · 1d4+1 force\n\nThree darts at creatures within 120 ft.; no attack roll. Each dart deals force damage.\n\nRoll damage\nChoose details · Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.\nMage Armor\nAction\n\nTouch an unarmored willing creature; base AC becomes 13 + Dexterity modifier for 8 hours. Aldric’s AC becomes 15.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nShield\nReaction\n\n+5 AC until the start of Aldric’s next turn; blocks Magic Missile.\n\nChoose details · Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.\nSilvery Barbs\nReaction\n\nWhen a visible creature within 60 ft. succeeds on an attack, check, or save: force a reroll and use the lower d20; grant another visible creature advantage on one roll within 1 minute.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nAganazzar’s Scorcher\nAction · 3d8 fire · DC 14 DEX\n\nFire in a 30-foot line, 5 feet wide; Dexterity save DC 14 for half. Sculpt Spells may protect up to three visible creatures.\n\nRoll damage\nChoose details · Select every creature in the line. Explicitly choose eligible Sculpt Spells exclusions; Dexterity save for half.\nWeb\nAction · DC 14 DEX\n\n20-foot cube within 60 feet; concentration up to 1 hour. Creatures entering or starting there make Dexterity save DC 14 or become restrained; see spell for escape and fire.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nKnowledge from a Past Life\nAfter a skill check · 1d6\n\nAfter seeing a d20 result for an ability check using a skill, add 1d6.\n\nRoll damage\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nArcane Recovery\nAfter short rest\n\nOnce per day after a short rest, recover spell slots with combined level 2 or less: one 2nd-level slot or two 1st-level slots.\n\nChoose details · Confirm a short rest and choose expended slots. Donavan can recover one slot level; Aldric two.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-aldric-actions-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "text": "Aldric Vane\nHP 25 / 25\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nFire Bolt\n+6 to hit · 1d10 fire\nAction · Ranged spell attack, 120 ft.; ignites unattended flammable objects. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nDagger\n+4 to hit · 1d4+2 piercing\nAction · Melee or thrown 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (12)\nSpells (10)\nResources (4)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-aldric-sheet-360",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Aldric Vane\nHP 25 / 25\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nAldric Vane\nLevel 3\nDownload emergency sheet\n\nReborn · Wizard · School of Evocation · Haunted One · 2014 Wizard with Reborn, Haunted One, named later spells, and all listed spells available by table rule\n\nSTR\n-1\n8\nDEX\n+2\n14\nCON\n+3\n16\nINT\n+4\n18\nWIS\n+1\n12\nCHA\n+3\n16\nPassive Perception 11\nPassive Insight 13\nPassive Investigation 16\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nControl Flames · cantrip\naction · slot/cantrip available\n\nAt-will cantrip.\n\nAsk to cast\nFire Bolt · cantrip\naction · slot/cantrip available\n\nAt-will cantrip.\n\nAsk to cast\nMage Hand · cantrip\naction · slot/cantrip available\n\nAt-will cantrip.\n\nAsk to cast\nIce Knife · level 1\naction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nMage Armor · level 1\naction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nMagic Missile · level 1\naction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nShield · level 1\nreaction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nSilvery Barbs · level 1\nreaction · slot/cantrip available\n\nAvailable by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.\n\nAsk to cast\nAganazzar’s Scorcher · level 2\naction · slot/cantrip available\n\nListed as prepared in Bowman’s level 3 export; uses a 2nd-level slot.\n\nAsk to cast\nWeb · level 2\naction · slot/cantrip available\n\nListed as prepared in Bowman’s level 3 export; uses a 2nd-level slot.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nFire Bolt\nAction · +6 to hit · 1d10 fire\n\nRanged spell attack, 120 ft.; ignites unattended flammable objects.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nDagger\nAction · +4 to hit · 1d4+2 piercing\n\nMelee or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nControl Flames\nAction\n\nShape, expand, or extinguish a visible nonmagical flame in a 5-foot cube within 60 ft.; no slot.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nMage Hand\nAction\n\nCreate and control a spectral hand within 30 ft.; no slot.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nIce Knife\nAction · +6 to hit · 1d10 piercing + cold · DC 14 DEX\n\nRanged spell attack, 60 ft.; piercing on hit, then target and creatures within 5 ft. make a Dexterity save or take 2d6 cold.\n\nQuick roll only\nRoll damage\nChoose details · Resolve the attack and a separately selected burst, even on a miss. Only piercing attack dice double on a critical.\nIce Knife burst\nAfter Ice Knife · 2d6 cold · DC 14 DEX\n\nCold burst after the knife attack. Target and all creatures within 5 ft. make Dexterity save DC 14; no extra spell slot.\n\nRoll damage\nManual ruling · Use the combined Ice Knife review to avoid repeating its burst or spending another slot.\nMagic Missile\nAction · 1d4+1 force\n\nThree darts at creatures within 120 ft.; no attack roll. Each dart deals force damage.\n\nRoll damage\nChoose details · Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.\nMage Armor\nAction\n\nTouch an unarmored willing creature; base AC becomes 13 + Dexterity modifier for 8 hours. Aldric’s AC becomes 15.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nShield\nReaction\n\n+5 AC until the start of Aldric’s next turn; blocks Magic Missile.\n\nChoose details · Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.\nSilvery Barbs\nReaction\n\nWhen a visible creature within 60 ft. succeeds on an attack, check, or save: force a reroll and use the lower d20; grant another visible creature advantage on one roll within 1 minute.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nAganazzar’s Scorcher\nAction · 3d8 fire · DC 14 DEX\n\nFire in a 30-foot line, 5 feet wide; Dexterity save DC 14 for half. Sculpt Spells may protect up to three visible creatures.\n\nRoll damage\nChoose details · Select every creature in the line. Explicitly choose eligible Sculpt Spells exclusions; Dexterity save for half.\nWeb\nAction · DC 14 DEX\n\n20-foot cube within 60 feet; concentration up to 1 hour. Creatures entering or starting there make Dexterity save DC 14 or become restrained; see spell for escape and fire.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nKnowledge from a Past Life\nAfter a skill check · 1d6\n\nAfter seeing a d20 result for an ability check using a skill, add 1d6.\n\nRoll damage\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nArcane Recovery\nAfter short rest\n\nOnce per day after a short rest, recover spell slots with combined level 2 or less: one 2nd-level slot or two 1st-level slots.\n\nChoose details · Confirm a short rest and choose expended slots. Donavan can recover one slot level; Aldric two.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "pc-aldric-actions-360",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Aldric Vane\nHP 25 / 25\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nQuests · Active objectives\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nFire Bolt\n+6 to hit · 1d10 fire\nAction · Ranged spell attack, 120 ft.; ignites unattended flammable objects. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nDagger\n+4 to hit · 1d4+2 piercing\nAction · Melee or thrown 20/60 ft. · No automatic resource cost · Availability: DM reviews timing and resources\nReviewed roll\nQuick roll only\nRequest action\nAbilities (12)\nSpells (10)\nResources (4)\n\nQuick dice · rolls only\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\nPT\n\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-quest",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Trista\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nMy turn\nExplore\nSheet\nJournal\nItems\nJournal & clues\n\nShared quests and campaign events appear alongside clues sent only to your character.\n\nActive\nCompleted\nShared quests\nShared with the party\nFind Gundren\n\nThe party left Gundren at an inn.\n\nactive\nThe Redbrand Threat\n\nGlasstaff escaped. His destination is unknown to the party.\n\nactive\nInvestigate the Black Spider\n\nThe party learned that the Black Spider exists.\n\nactive\nOld Owl Well\n\nHamun Kost, the wizard at Old Owl Well, disappeared instead of fighting. How he disappeared and where he went remain unknown.\n\nactive\nCharacter quests\nOnly you and the DM\n\nNo active character quests published.\n\nClues · private to you\nCampaign journal & history\nMy notes\nAdd NPC or location note\nClues shared by the party\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-item-opened",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Trista\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLoot & promises\nCarried equipment & consumables\n\nChanges wait for DM review. Shared loot and personal equipment are separate records.\n\nDagger ×5\nOn my sheet\nUse / transfer / equip\nSpear ×1\nOn my sheet\nUse / transfer / equip\nTinker’s tools ×1\nOn my sheet\nUse / transfer / equip\nBagpipes ×1\nOn my sheet\nUse / transfer / equip\nTorch ×10\nOn my sheet\nUse / transfer / equip\nRations ×10\nOn my sheet\nUse / transfer / equip\nOil flask ×2\nOn my sheet\nUse / transfer / equip\nRope ×1\nOn my sheet\nUse / transfer / equip\nTinderbox ×1\nOn my sheet\nUse / transfer / equip\nPotion of Healing ×1\nOn my sheet\nUse / transfer / equip\n\nShared purse: 0 cp · 0 sp · 0 ep · 0 gp · 0 pp\n\nSplit shared coins\n\nMy money: 0 cp · 0 sp · 0 ep · 26 gp · 0 pp\n\nImportant item custody & promises\nResolved promises & historical loot\nHideout copper and silver · unknown\ncustody · Unrecorded · Amounts unknown; do not invent quantities.\nHamun Kost · open\nescape · Whereabouts unknown · Disappeared without combat. Do not assume death, teleportation, or surrender.\nGundren Rockseeker · open\ncustody · At an inn; specific inn unreported · Present condition and safety unconfirmed. Do not mark the rescue complete.\nIarno Albrek (Glasstaff) · open\nescape · Whereabouts unknown to the party · The DM has a private destination record.\nCaptured rat · open\ncustody · Trista · Do not assume the characters know it is a familiar.\nParty inventory · all carriers\n\nNo separate item quantities are recorded in the party inventory.\n\nRequest: Potion of Healing\nAction\nUse\nTransfer\nEquip\nUnequip\nQuantity\nRecipient / target\nAldric Vane\nPebble\nTrista\nRinggo Paul\nDonavan Kemp\n\nHealing potion preview: proposed 2d4 + 2 healing (4–10 HP), capped at the target’s maximum. The DM confirms the potion, rolls, target and action cost before consuming it.\n\nYour current HP: 29/29\n\nExpected HP after one standard potion: 29–29.\n\nIntent / effect / details for the DM\n\nSend item requestClose draft\nItem request history\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-item-preview",
+      "viewport": [
+        360,
+        844
+      ],
+      "overflow": false,
+      "text": "Trista\nHP 29 / 29\n\nSession 3 · Gundren’s trail · Connected\n\nNotices\nCharacter overview\nYOUR TURN · Tap for actions and rolls\nMy turn\nExplore\nSheet\nJournal\nItems\nLoot & promises\nCarried equipment & consumables\n\nChanges wait for DM review. Shared loot and personal equipment are separate records.\n\nDagger ×5\nOn my sheet\nUse / transfer / equip\nSpear ×1\nOn my sheet\nUse / transfer / equip\nTinker’s tools ×1\nOn my sheet\nUse / transfer / equip\nBagpipes ×1\nOn my sheet\nUse / transfer / equip\nTorch ×10\nOn my sheet\nUse / transfer / equip\nRations ×10\nOn my sheet\nUse / transfer / equip\nOil flask ×2\nOn my sheet\nUse / transfer / equip\nRope ×1\nOn my sheet\nUse / transfer / equip\nTinderbox ×1\nOn my sheet\nUse / transfer / equip\nPotion of Healing ×1\nOn my sheet\nUse / transfer / equip\n\nShared purse: 0 cp · 0 sp · 0 ep · 0 gp · 0 pp\n\nSplit shared coins\n\nMy money: 0 cp · 0 sp · 0 ep · 26 gp · 0 pp\n\nImportant item custody & promises\nResolved promises & historical loot\nHideout copper and silver · unknown\ncustody · Unrecorded · Amounts unknown; do not invent quantities.\nHamun Kost · open\nescape · Whereabouts unknown · Disappeared without combat. Do not assume death, teleportation, or surrender.\nGundren Rockseeker · open\ncustody · At an inn; specific inn unreported · Present condition and safety unconfirmed. Do not mark the rescue complete.\nIarno Albrek (Glasstaff) · open\nescape · Whereabouts unknown to the party · The DM has a private destination record.\nCaptured rat · open\ncustody · Trista · Do not assume the characters know it is a familiar.\nParty inventory · all carriers\n\nNo separate item quantities are recorded in the party inventory.\n\nRequest: Potion of Healing\nAction\nUse\nTransfer\nEquip\nUnequip\nQuantity\nRecipient / target\nAldric Vane\nPebble\nTrista\nRinggo Paul\nDonavan Kemp\n\nHealing potion preview: proposed 2d4 + 2 healing (4–10 HP), capped at the target’s maximum. The DM confirms the potion, rolls, target and action cost before consuming it.\n\nYour current HP: 29/29\n\nExpected HP after one standard potion: 29–29.\n\nIntent / effect / details for the DM\n\nSend item requestClose draft\nItem request history\nConnection & saved sheet\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "reviewed-phone-attack",
+      "viewport": [
+        1512,
+        982
+      ],
+      "overflow": false,
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · 2\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout\nOBJECTIVEChoose a party objective in Quests\nReview player request\nTV connected\nNow showing · Redbrand Hideout\nCollapse guide\nTrista: Dagger · waiting. Open Actions in the sidebar.\nNotices · 0 issues · 4 updates\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nPT\nMAP DESK\nRun combat\n\nRedbrand Hideout\n\nGRID SCALE UNVERIFIED · CONFIRM BEFORE EXACT MEASUREMENT\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nMovement used (ft.)\nMark action used\nMark bonus action used\nPlayer phone requests\nTrista: Dagger\nReview\nDismiss\nAction → Targets → Rolls → Reactions → Review → Resolve\n\nCurrent step: Action · choose an attack and target, then open the shared review.\n\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nPractice target\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions & resources\nEncounter controls\nAction review\nResolve action\n\nReview once, then apply the rolls, costs, concentration, action usage, and selected effects together. All preview rolls stay private until resolution.\n\nHistory · 0\n\nAction → Targets → Rolls → Reactions → Review → Resolve · Current step: Review · confirm reactions and final changes\n\nTrista: Dagger\n\nRequested targets: Practice target\n\nPlayer note: None\n\nWaiting for DM review.\n\nNeeds clarificationDecline\n\nUses: action. Resources: none. Concentration: keep.\n\nMonk weapon; thrown range 20/60 ft.\n\nTiming, cost, and effect\nReviewed roll\n\nAttack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\n\n2014 PHB p. 195 · verified rule / approved sheet\nAdd target\nChoose a target\nTrista\nDonavan\nRinggo\nPebble\nAldric\nPractice target\nTap token to targetAdd selected target\nTarget 1 · Practice target\nTarget\nTrista\nDonavan\nRinggo\nPebble\nAldric\nPractice target\nAttack dice\nRoll digitally\nEnter physical dice\nPhysical attack total\nNatural attack die (1–20)\nD20 mode\nnormal\nadvantage\ndisadvantage\nPhysical damage / healing (critical dice already included; blank rolls digitally)\nDetails · step 1 · Practice target\n\nPractice target: attack +6 · normal · AC 10 · cover 0 · 5 piercing. Expand the step to adjust.\n\nAdd effect / roll step\nReminders · 0\nReactions have been resolved or passed\nI checked the targets, timing, full effect, costs, and any exceptions\nPrepare rolls & previewPause for reactions; keep these rolls\nReview before applying\n\nDagger · attack 1: Physical dice total [14] = 18\n\nPractice target: 18 vs AC 10: hit, physical base 5, 5 piercing → 5; temp HP absorbed 0\n\nPractice target · hp: 60 → 55\n\nPractice target · concentration: null → \"\"\n\nPractice target · reactionUsed: null → false\n\nTurn: action used · bonus available · multiattack 0/0\n\nUsage: action · Costs: none · Concentration: keep · Reactions: reviewed\n\nMonk weapon; thrown range 20/60 ft.\n\nApprove & resolve together\nCombat tools · saves, reactions & effects\nTokens · 6 on map\nCombat tools\nEnd combat\nTokens\nFog\nUndo\nNext turn\nMap tools"
+    },
+    {
+      "name": "item-dm-review",
+      "viewport": [
+        1512,
+        982
+      ],
+      "overflow": false,
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · 1\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout\nOBJECTIVEChoose a party objective in Quests\nReview player request\nTV connected\nNow showing · Redbrand Hideout\nCollapse guide\nTrista: Dagger · waiting. Open Actions in the sidebar.\nNotices · 0 issues · 4 updates\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nPT\n+\nAT THE TABLE\nInbox\n← Back\n✕\nGuide\nDetails\nScene\nToken\nEncounter\nClue\nInbox\nTurn\nInbox · 1\nNeeds your decision now\n\nNothing waiting.\n\nRequests & ordinary updates\nTrista · use Potion of Healing\nReview\nTokens\nFog\nUndo\nNext turn\nMap tools\nTHE ECHO BELOW · PLAYER CONNECTION\nConnect player phones\nClose\n\nResync asks one phone to reload live data. Release frees its character for a fresh QR join. Reassign changes only that phone’s character; other players stay connected.\n\n5/5 phones up to date. Keep this DM screen open.\n\nNew join code\nStop phone access\n\nHave each player scan this code while connected to the same Wi-Fi as this computer.\n\nhttp://127.0.0.1:61629/join?code=06081568\n\nEach player chooses their character once. Their Table, My sheet, My clues, and Party loot tabs update during play.\n\nConnected characters\n\nTrista · current · last seen 2:14:18 AM (0s ago) · applied update 16/16 at 2:14:18 AM\n\nResync this phoneRelease to rejoin\n\nPebble · current · last seen 2:14:18 AM (0s ago) · applied update 16/16 at 2:14:18 AM\n\nResync this phoneRelease to rejoin\n\nDonavan Kemp · current · last seen 2:14:18 AM (0s ago) · applied update 16/16 at 2:14:18 AM\n\nResync this phoneRelease to rejoin\n\nRinggo Paul · current · last seen 2:14:18 AM (0s ago) · applied update 16/16 at 2:14:18 AM\n\nResync this phoneRelease to rejoin\n\nAldric Vane · current · last seen 2:14:18 AM (0s ago) · applied update 16/16 at 2:14:18 AM\n\nResync this phoneRelease to rejoin\n\nPlayers can roll and move their own token. Exploration requests wait for your approval in the map request list. The computer running this DM screen keeps the campaign save.\n\nTable tools\nPrivate clues to phones\nShared party inventory\nTable rehearsal\nLiving scene\nTV combat effects\nCampaign custody and obligations\nPlayer journal & inventory requests\nParty objective and shared purse\n\n1 requests waiting for review.\n\nTrista · use Potion of Healing\nTrista: use Potion of Healing\n\nTarget: Trista · Quantity: 1\n\nIsolated test; use the potion outside combat after review.\n\nQuantity consumed\nAction usage\nAction\nBonus action\nNo tracked action / outside combat\nHealing dice (blank uses manual total)\nManual healing total\nReviewed item effect, source, range and any timing override\n\nPreview rolls are held until you apply. Other item effects must be resolved explicitly; this panel handles consumption, healing and action usage.\n\nPreview requestDecline\nReady to apply\n\nTrista uses Potion of Healing on Trista; consumes 1; none. Standard healing potion; isolated full-HP target. No combat action spent for this outside-combat practice use. Healing manual = 5; HP 29 → 29.\n\nApply reviewed request\nClues shared with the party\nReviewed inventory history"
+    },
+    {
+      "name": "outcome-correction",
+      "viewport": [
+        1512,
+        982
+      ],
+      "overflow": false,
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout\nOBJECTIVEChoose a party objective in Quests\nTrista · open active turn\nTV connected\nNow showing · Redbrand Hideout\nCollapse guide\nOutcome applied. Undo restores all linked changes.\nNotices · 0 issues · 5 updates\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nPT\n+\nAT THE TABLE\nInbox\n← Back\n✕\nGuide\nDetails\nScene\nToken\nEncounter\nClue\nInbox\nTurn\nInbox · 1\nNeeds your decision now\n\nNothing waiting.\n\nRequests & ordinary updates\nTrista · use Potion of Healing\nReview\nTokens\nFog\nUndo\nNext turn\nMap tools\nTHE ECHO BELOW · CAMPAIGN MEMORY\nOutcome review\nSession 3 · Gundren’s trail\nClose\nExpand\nOpen tool\nCharacter stories & spotlights\nCharacter chapters & satellite adventures\nIntervention & finale\nQuests · player view\nQuest guide\nQuest session workspace\nOutcome review\nCampaign continuity & quests\nEvidence and research\nFirst Undermountain expeditions\nExpedition record & return\nBetween expeditions\nMending Court · home & relationships\nPhandalin → Waterdeep\nWave Echo journal\nSession prep\nPhandelver packs\nBranching runbook\nSecret handouts\nEvidence\nPlayer journal\nPeople\nWaterdeep\nNine sites\nUndermountain\nCalendar & clocks\nEnd of session\nOutcome review\n\nRecord → who knows → linked changes → review & apply. Drafts stay private and leave the approved record in place.\n\nLinked campaign service · review required\nOutcomes\nReconcile older notes\nUndo outcome change\nRedo\nRecap from approved history\nReview linked changes\n\nThis correction replaces the same outcome. Its previous version remains in revision history.\n\nFocused rehearsal discovery\n\nPRIVATE_FOCUS_SENTINEL. A guide offered an unverified route.\n\nSession 3 · Gundren’s trail · confirmed / Open · Source: Isolated regression\n\nWho knows: Everyone in the party.\n\nShared journal wording reaches the TV journal and all phones.\n\nFocused rehearsal discovery\n\nThe route still needs corroboration.\n\nShared journal / TV journal\n\nBefore: Focused rehearsal discovery: A guide offered a possible route.\n\nAfter: Focused rehearsal discovery: The route still needs corroboration.\n\nMap reveals set independently remain in place. Tracking a transfer records custody; quantities, money and character sheets are unchanged. Other quest objectives are unchanged.\n\nBack to draft\nApply reviewed outcome"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "Find a quest lead",
+      "environment": "automated browser",
+      "durationMs": 809,
+      "clicks": [
+        "Menu",
+        "Quests"
+      ],
+      "scrolls": 2,
+      "changes": 2
+    },
+    {
+      "name": "Stage a prepared scene without publishing while browsing",
+      "environment": "automated browser",
+      "durationMs": 76,
+      "clicks": [
+        "Scene",
+        "▣ Show scene on TV"
+      ],
+      "scrolls": 0,
+      "changes": 0
+    },
+    {
+      "name": "Find a phone quest",
+      "environment": "automated browser",
+      "durationMs": 467,
+      "clicks": [
+        "Journal",
+        "Active",
+        "Completed",
+        "Active"
+      ],
+      "scrolls": 0,
+      "changes": 0
+    },
+    {
+      "name": "Request an item use from a phone",
+      "environment": "automated browser",
+      "durationMs": 719,
+      "clicks": [
+        "Items",
+        "Use / transfer / equip",
+        "Send item request"
+      ],
+      "scrolls": 2,
+      "changes": 1
+    },
+    {
+      "name": "Request and resolve an attack from a phone",
+      "environment": "automated browser",
+      "durationMs": 1001,
+      "clicks": [
+        "My turn",
+        "Request action",
+        "Send for DM review"
+      ],
+      "scrolls": 36,
+      "changes": 1
+    },
+    {
+      "name": "Respond to the phone attack and review effects",
+      "environment": "automated browser",
+      "durationMs": 1485,
+      "clicks": [
+        "Inbox · 2",
+        "Review",
+        "Prepare rolls & preview",
+        "Approve & resolve together",
+        "Undo this resolution"
+      ],
+      "scrolls": 4,
+      "changes": 6
+    },
+    {
+      "name": "Review and use the requested item",
+      "environment": "automated browser",
+      "durationMs": 853,
+      "clicks": [
+        "Inbox · 1",
+        "Review",
+        "Preview request",
+        "Apply reviewed request",
+        "Close"
+      ],
+      "scrolls": 3,
+      "changes": 4
+    },
+    {
+      "name": "Correct a reviewed outcome and retain history",
+      "environment": "automated browser",
+      "durationMs": 1126,
+      "clicks": [
+        "Preview linked changes",
+        "Apply reviewed outcome",
+        "Review / correct",
+        "Preview linked changes",
+        "Apply reviewed outcome",
+        "Undo outcome change",
+        "Redo"
+      ],
+      "scrolls": 5,
+      "changes": 1
+    }
+  ],
+  "features": [
+    {
+      "category": "Session",
+      "id": "quick-table-check",
+      "exists": true,
+      "label": "✓ Table check"
+    },
+    {
+      "category": "Session",
+      "id": "quick-desk",
+      "exists": true,
+      "label": "Session desk · pacing & closing"
+    },
+    {
+      "category": "Session",
+      "id": "quick-notes",
+      "exists": true,
+      "label": "✎ Notes"
+    },
+    {
+      "category": "Session",
+      "id": "quick-roll",
+      "exists": true,
+      "label": "🎲 Roll"
+    },
+    {
+      "category": "Session",
+      "id": "quick-encounter-card",
+      "exists": true,
+      "label": "▤ Encounter card"
+    },
+    {
+      "category": "Session",
+      "id": "quick-encounter",
+      "exists": true,
+      "label": "⚔ Encounter"
+    },
+    {
+      "category": "Session",
+      "id": "open-combat",
+      "exists": true,
+      "label": "All combat tools"
+    },
+    {
+      "category": "Session",
+      "id": "quick-effects",
+      "exists": true,
+      "label": "◌ Turn reminders"
+    },
+    {
+      "category": "Session",
+      "id": "quick-area",
+      "exists": true,
+      "label": "◇ Area spell"
+    },
+    {
+      "category": "Session",
+      "id": "new-session",
+      "exists": true,
+      "label": "New session"
+    },
+    {
+      "category": "Session",
+      "id": "new-phandalin-pack",
+      "exists": true,
+      "label": "Session 2 · Phandalin"
+    },
+    {
+      "category": "Session",
+      "id": "new-part3-pack",
+      "exists": true,
+      "label": "Part 3 visuals"
+    },
+    {
+      "category": "Session",
+      "id": "new-part4-pack",
+      "exists": true,
+      "label": "Part 4 visuals"
+    },
+    {
+      "category": "Session",
+      "id": "new-session-pack",
+      "exists": true,
+      "label": "Cragmaw pack"
+    },
+    {
+      "category": "Session",
+      "id": "duplicate-session",
+      "exists": true,
+      "label": "Duplicate"
+    },
+    {
+      "category": "Session",
+      "id": "rename-session",
+      "exists": true,
+      "label": "Rename"
+    },
+    {
+      "category": "Session",
+      "id": "delete-session",
+      "exists": true,
+      "label": "Delete"
+    },
+    {
+      "category": "Session",
+      "id": "download-campaign",
+      "exists": true,
+      "label": "Back up campaign"
+    },
+    {
+      "category": "Session",
+      "id": "load-campaign-button",
+      "exists": true,
+      "label": "Restore campaign"
+    },
+    {
+      "category": "Session",
+      "id": "mode-run",
+      "exists": true,
+      "label": "Run"
+    },
+    {
+      "category": "Session",
+      "id": "mode-prep",
+      "exists": true,
+      "label": "Prepare"
+    },
+    {
+      "category": "Session",
+      "id": "mode-review",
+      "exists": true,
+      "label": "Review"
+    },
+    {
+      "category": "Quests",
+      "id": "open-quests",
+      "exists": true,
+      "label": "Quest guide"
+    },
+    {
+      "category": "Party",
+      "id": "open-party",
+      "exists": true,
+      "label": "Characters & party"
+    },
+    {
+      "category": "Party",
+      "id": "open-phones",
+      "exists": true,
+      "label": "Connect phones 0"
+    },
+    {
+      "category": "Party",
+      "id": "quick-damage",
+      "exists": true,
+      "label": "♥ Damage / heal"
+    },
+    {
+      "category": "World",
+      "id": "quick-travel",
+      "exists": true,
+      "label": "⚑ Travel"
+    },
+    {
+      "category": "World",
+      "id": "quick-dungeon",
+      "exists": true,
+      "label": "▥ Dungeon"
+    },
+    {
+      "category": "World",
+      "id": "quick-settlements",
+      "exists": true,
+      "label": "♜ Towns"
+    },
+    {
+      "category": "World",
+      "id": "quick-expedition",
+      "exists": true,
+      "label": "⌂ Expedition"
+    },
+    {
+      "category": "World",
+      "id": "open-undermountain-arc",
+      "exists": true,
+      "label": "First Undermountain expeditions"
+    },
+    {
+      "category": "World",
+      "id": "quick-region-map",
+      "exists": true,
+      "label": "⌖ Journey map"
+    },
+    {
+      "category": "World",
+      "id": "open-map",
+      "exists": true,
+      "label": "Maps & exploration"
+    },
+    {
+      "category": "World",
+      "id": "open-courtyard",
+      "exists": true,
+      "label": "Mending Court"
+    },
+    {
+      "category": "World",
+      "id": "open-expeditions",
+      "exists": true,
+      "label": "Expedition record"
+    },
+    {
+      "category": "World",
+      "id": "open-downtime",
+      "exists": true,
+      "label": "Between expeditions"
+    },
+    {
+      "category": "World",
+      "id": "open-mystery",
+      "exists": true,
+      "label": "Evidence and research"
+    },
+    {
+      "category": "World",
+      "id": "open-chapters",
+      "exists": true,
+      "label": "Character chapters & satellite adventures"
+    },
+    {
+      "category": "World",
+      "id": "open-finale",
+      "exists": true,
+      "label": "Intervention & finale"
+    },
+    {
+      "category": "World",
+      "id": "open-story",
+      "exists": true,
+      "label": "Story & continuity"
+    },
+    {
+      "category": "Library",
+      "id": "open-rules",
+      "exists": true,
+      "label": "Rules & books"
+    },
+    {
+      "category": "Library",
+      "id": "open-presentation",
+      "exists": true,
+      "label": "TV & atmosphere"
+    },
+    {
+      "category": "Library",
+      "id": "quick-atmosphere",
+      "exists": true,
+      "label": "✧ Effects"
+    },
+    {
+      "category": "Library",
+      "id": "quick-handout",
+      "exists": true,
+      "label": "✦ Handout"
+    },
+    {
+      "category": "Library",
+      "id": "quick-tv-text",
+      "exists": true,
+      "label": "▤ TV text"
+    },
+    {
+      "category": "Library",
+      "id": "quick-overlays",
+      "exists": true,
+      "label": "◌ Hide overlays"
+    },
+    {
+      "category": "Settings",
+      "id": "open-reliability",
+      "exists": true,
+      "label": "Recovery & campaigns"
+    },
+    {
+      "category": "Settings",
+      "id": "open-ergonomics",
+      "exists": true,
+      "label": "Search & quick tools"
+    },
+    {
+      "category": "Settings",
+      "id": "new-campaign",
+      "exists": true,
+      "label": "Create blank campaign"
+    },
+    {
+      "category": "Settings",
+      "id": "restart-session",
+      "exists": true,
+      "label": "Restart session"
+    },
+    {
+      "category": "Settings",
+      "id": "open-player",
+      "exists": true,
+      "label": "Open player TV window"
+    },
+    {
+      "category": "Settings",
+      "id": "quick-redo",
+      "exists": true,
+      "label": "↷ Redo"
+    }
+  ],
+  "retainedPanels": [
+    {
+      "category": "Session",
+      "label": "Session editor",
+      "selector": "#session-builder",
+      "exists": true
+    },
+    {
+      "category": "Session",
+      "label": "Dice & rolls",
+      "selector": ".dice-panel",
+      "exists": true
+    },
+    {
+      "category": "Session",
+      "label": "Session log & undo",
+      "selector": ".log-panel",
+      "exists": true
+    },
+    {
+      "category": "Session",
+      "label": "Session save files",
+      "selector": "#download-save",
+      "exists": true
+    },
+    {
+      "category": "Party",
+      "label": "Party tokens",
+      "selector": ".party-panel",
+      "exists": true
+    },
+    {
+      "category": "Party",
+      "label": "Enemies & allies",
+      "selector": ".enemies-panel",
+      "exists": true
+    },
+    {
+      "category": "World",
+      "label": "Fog & exploration",
+      "selector": "#fog-panel",
+      "exists": true
+    },
+    {
+      "category": "World",
+      "label": "Live clocks & reminders",
+      "selector": "#run-support",
+      "exists": true
+    },
+    {
+      "category": "Library",
+      "label": "Source documents",
+      "selector": "#source-shelf",
+      "exists": true
+    },
+    {
+      "category": "Library",
+      "label": "Map, art & handout selector",
+      "selector": ".scene-panel",
+      "exists": true
+    }
+  ],
+  "findings": [
+    {
+      "kind": "scene-label",
+      "text": "Redbrand Hideout"
+    },
+    {
+      "kind": "onboarding-position",
+      "id": "pc-trista",
+      "top": 193.984375,
+      "height": 312.0625,
+      "viewport": 844
+    },
+    {
+      "kind": "onboarding-position",
+      "id": "pc-pebble",
+      "top": 193.984375,
+      "height": 312.0625,
+      "viewport": 844
+    },
+    {
+      "kind": "onboarding-position",
+      "id": "pc-donavan",
+      "top": 193.984375,
+      "height": 312.0625,
+      "viewport": 844
+    },
+    {
+      "kind": "onboarding-position",
+      "id": "pc-ringgo",
+      "top": 193.984375,
+      "height": 312.0625,
+      "viewport": 844
+    },
+    {
+      "kind": "onboarding-position",
+      "id": "pc-aldric",
+      "top": 193.984375,
+      "height": 312.0625,
+      "viewport": 844
+    },
+    {
+      "kind": "item-editor-position",
+      "top": 89.5,
+      "viewport": 844
+    }
+  ]
+}

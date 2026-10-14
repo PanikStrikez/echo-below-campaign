@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "result": {
+    "due": [],
+    "pauses": [],
+    "queue": {
+      "key": "lmop-map-wave-temple:2:s4-wave-19-wave-spider-4",
+      "done": [],
+      "movementUsed": 0,
+      "actionUsed": false,
+      "bonusUsed": false
+    }
+  }
+}

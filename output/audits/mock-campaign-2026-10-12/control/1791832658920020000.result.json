@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "goblin-3",
+    "action": {
+      "actor": "goblin-3",
+      "label": "Scimitar",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791832659027-1l42avg5",
+          "label": "Scimitar · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            19
+          ],
+          "total": 23,
+          "natural": 19,
+          "public": false,
+          "kind": "digital",
+          "time": "1:17:39 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 23 vs AC 14: hit, physical base 2, 2 slashing → 2; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-pebble",
+          "label": "Interception",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791839408472-me8tq8sz",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              8
+            ],
+            "total": 16,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:08 PM"
+          },
+          {
+            "id": "pa-1791839408472-3cdulg1o",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              4
+            ],
+            "total": 9,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:08 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-wave-spider-4",
+            "text": "Nezznar’s Spider 4: 16 vs AC 14: hit, 9 bludgeoning → 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791839408682-m309pyfk",
+              "label": "Warhammer · attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                9
+              ],
+              "total": 17,
+              "natural": 9,
+              "public": true,
+              "kind": "digital",
+              "time": "3:10:08 PM"
+            },
+            {
+              "id": "pa-1791839408682-c272omcz",
+              "label": "Warhammer · effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                3
+              ],
+              "total": 8,
+              "natural": 3,
+              "public": true,
+              "kind": "digital",
+              "time": "3:10:08 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-19-wave-spider-4",
+              "text": "Nezznar’s Spider 4: 17 vs AC 14: hit, 8 bludgeoning → 8; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  }
+}

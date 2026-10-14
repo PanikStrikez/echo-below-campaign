@@ -1,0 +1,36 @@
+{
+  "id": "lmop-armory",
+  "title": "Redbrand Hideout · Area 6 · Armory",
+  "image": "lmop-visuals/armory.png",
+  "key": "R06",
+  "chapter": "Redbrand Hideout",
+  "reveal": "On entering area 6",
+  "sourceRecordIds": [
+    "s2-armory"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-armory",
+      "title": "13 · Armory and storeroom · areas 6–7",
+      "read": [
+        "Weapon racks line one chamber; the next smells of leather, fur, and dust. Old storage here still serves someone.",
+        "The arrangement of the stored equipment makes it possible to examine one part of the room without disturbing everything else. You can check what is within reach, look for markings, or study the exits. Anything useful still has to be inspected before you decide to carry it away."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Compact stone armory with mundane weapon racks: twelve spears, six shortswords, four longswords, six light crossbows and eight bolt quivers. Twelve dirty scarlet cloaks on hooks beside the ordinary wooden entrance door. Practical oil lamps, flagstones, dressed masonry. No glowing weapons, plate armor suits, inhabitants, open secret passages or overflowing treasure.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Redbrand Hideout · Area 6 · Armory\nObservable scene and constraints: Compact stone armory with mundane weapon racks: twelve spears, six shortswords, four longswords, six light crossbows and eight bolt quivers. Twelve dirty scarlet cloaks on hooks beside the ordinary wooden entrance door. Practical oil lamps, flagstones, dressed masonry. No glowing weapons, plate armor suits, inhabitants, open secret passages or overflowing treasure.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "6e12f3e0c9b0c9da558addcad45ff862b85a1399eaa3dcee297c9b4ed17661b6",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-armory.png",
+  "generatedAt": "2026-10-12T15:46:01.759Z",
+  "candidateHash": "36fe36294c807484b1fd47e955e09ab8e54e54812340031e8e6af73ffe454faa",
+  "review": "passed",
+  "reviewedHash": "36fe36294c807484b1fd47e955e09ab8e54e54812340031e8e6af73ffe454faa",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.690Z",
+  "installedHash": "36fe36294c807484b1fd47e955e09ab8e54e54812340031e8e6af73ffe454faa",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/armory.png"
+}

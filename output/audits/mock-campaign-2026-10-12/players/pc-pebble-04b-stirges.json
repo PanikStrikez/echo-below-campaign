@@ -1,0 +1,874 @@
+{
+  "label": "ISOLATED MOCK CAMPAIGN — not actual history",
+  "phase": "04b-stirges",
+  "characterId": "pc-pebble",
+  "dmNarration": [
+    "Carved miners still work along the walls above a floor strewn with ancient bones. Empty brass lamps hang in the stone. Beyond them, the high ceiling disappears into shadow.",
+    "The lantern exposes the carvings and nearby bones. The ceiling remains beyond its bright pool; the east passage and your secured route back remain visible. Nothing has yet been revealed overhead."
+  ],
+  "question": "How do you inspect the high ceiling? Choose a cautious next action and a response if attacked. No monster is visible yet.",
+  "phoneResponse": {
+    "status": 200,
+    "data": {
+      "revision": 165,
+      "resyncRequest": 0,
+      "session": "PRACTICE · Session 6 · Wave Echo Cave expedition",
+      "character": {
+        "id": "pc-pebble",
+        "name": "Pebble",
+        "player": "Byron",
+        "className": "Fighter",
+        "ancestry": "Goron (custom lineage)",
+        "background": "Outlander",
+        "level": 2,
+        "rules": "2014 PHB with Tasha options",
+        "proficiency": 2,
+        "speed": 30,
+        "senses": "Darkvision 60 ft.; fire resistance (Fire-Forged)",
+        "languages": "Common, Goron, Dwarvish",
+        "hp": 12,
+        "maxHp": 12,
+        "ac": 18,
+        "tempHp": 0,
+        "hitDice": {
+          "die": 10,
+          "current": 1,
+          "max": 1,
+          "details": ""
+        },
+        "abilities": {
+          "str": {
+            "score": 18,
+            "modifier": 4
+          },
+          "dex": {
+            "score": 10,
+            "modifier": 0
+          },
+          "con": {
+            "score": 14,
+            "modifier": 2
+          },
+          "int": {
+            "score": 8,
+            "modifier": -1
+          },
+          "wis": {
+            "score": 13,
+            "modifier": 1
+          },
+          "cha": {
+            "score": 12,
+            "modifier": 1
+          }
+        },
+        "saves": [
+          {
+            "name": "STR",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "DEX",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "CON",
+            "bonus": 4,
+            "rank": 1
+          },
+          {
+            "name": "INT",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "WIS",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "CHA",
+            "bonus": 1,
+            "rank": 0
+          }
+        ],
+        "skills": [
+          {
+            "name": "Acrobatics",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Animal Handling",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Arcana",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Athletics",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Deception",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "History",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Insight",
+            "bonus": 3,
+            "rank": 1
+          },
+          {
+            "name": "Intimidation",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Investigation",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Medicine",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Nature",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Perception",
+            "bonus": 3,
+            "rank": 1
+          },
+          {
+            "name": "Performance",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Persuasion",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Religion",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Sleight of Hand",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Stealth",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Survival",
+            "bonus": 3,
+            "rank": 1
+          }
+        ],
+        "passives": {
+          "Perception": 13,
+          "Insight": 13,
+          "Investigation": 9
+        },
+        "attacks": [
+          {
+            "id": "pebble-hammer",
+            "name": "Warhammer",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d8+4",
+            "damageType": "bludgeoning",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "One-handed with shield; Crusher may move a qualifying target 5 feet once on Pebble’s turn.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "pebble-handaxe",
+            "name": "Handaxe",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d6+4",
+            "damageType": "slashing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Melee or thrown 20/60 feet.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          }
+        ],
+        "actions": [
+          {
+            "id": "pebble-interception",
+            "name": "Interception",
+            "type": "Reaction",
+            "attackBonus": null,
+            "damageDice": "1d10+2",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Reduce damage when a visible creature hits someone other than Pebble within 5 feet; Pebble must hold a shield or weapon.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.",
+              "source": {
+                "book": "2024 Monk / Tasha’s Interception exception",
+                "printedPage": null,
+                "rule": "Damage reduction reactions",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "pebble-second-wind",
+            "name": "Second Wind",
+            "type": "Bonus action",
+            "attackBonus": null,
+            "damageDice": "1d10+1",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Heal Pebble; once per short or long rest.",
+            "resourceId": "pebble-second-wind",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Self-healing, one bonus action and one use; uses the recorded Fighter level.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 72,
+                "rule": "Second Wind",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "pebble-crusher",
+            "name": "Crusher",
+            "type": "Once on Pebble’s turn",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "After a bludgeoning hit, move a creature no more than one size larger 5 feet into empty space. On a bludgeoning critical hit, attacks against it have advantage until Pebble’s next turn.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "On a qualifying hit choose the legal 5-foot push; confirm size and destination. Critical-hit advantage is a separate reminder.",
+              "source": {
+                "book": "Tasha’s Cauldron; approved feat",
+                "printedPage": null,
+                "rule": "Crusher",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "pebble-fire-forged",
+            "name": "Fire-Forged",
+            "type": "Passive",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "You have resistance to fire damage: halve fire damage you take, rounding down.",
+            "resourceId": "",
+            "cost": 0,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Already included in qualifying weapon rolls or recorded fire resistance. Do not spend an action.",
+              "source": {
+                "book": "2014 Champion / approved Goron lineage",
+                "printedPage": null,
+                "rule": "Passive defense or critical range",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "pebble-rock-eater",
+            "name": "Rock Eater",
+            "type": "Passive",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Ordinary, nonmagical stone can satisfy your food needs; you still need water. Eating a magical stone stores its magical properties for 24 hours of in-game time. Choose when to activate or use its power within that window. Stored properties expire 24 hours after the stone is eaten; activating late does not reset that expiry. The DM defines how each stone’s power manifests, its activation/action cost, and any stone-specific uses or limits.",
+            "resourceId": "",
+            "cost": 0,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Ordinary stone is food. Magical stone needs a separate approved manifestation, uses and 24-hour expiry.",
+              "source": {
+                "book": "Goron homebrew approved 9 October 2026",
+                "printedPage": null,
+                "rule": "Rock Eater",
+                "confidence": "approved table choice"
+              }
+            }
+          }
+        ],
+        "spells": [],
+        "resources": [
+          {
+            "id": "pebble-second-wind",
+            "name": "Second Wind",
+            "current": 1,
+            "max": 1,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Warhammer",
+            "quantity": 1,
+            "category": "Weapon",
+            "notes": "Stone appearance",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Handaxe",
+            "quantity": 2,
+            "category": "Weapon",
+            "notes": "Stone appearance",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Shield",
+            "quantity": 1,
+            "category": "Armor",
+            "notes": "Slab-like appearance",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Chain mail",
+            "quantity": 1,
+            "category": "Armor",
+            "notes": "Stone appearance; ordinary chain mail rules",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Explorer’s pack",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Staff",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Hunting trap",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          }
+        ],
+        "money": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 10,
+          "pp": 0
+        },
+        "features": [
+          {
+            "name": "Interception",
+            "text": "Reaction; reduce damage to a nearby other target by 1d10+2.",
+            "source": "Tasha’s / Pebble handout p. 3"
+          },
+          {
+            "name": "Crusher",
+            "text": "Once on own turn move a qualifying target 5 feet after bludgeoning hit; critical hit grants advantage to attacks against it until next turn.",
+            "source": "Tasha’s / Pebble handout p. 3"
+          },
+          {
+            "name": "Second Wind",
+            "text": "Bonus action to regain 1d10+1 HP, once per short or long rest.",
+            "source": "PHB / Pebble handout p. 3"
+          },
+          {
+            "name": "Fire-Forged",
+            "text": "You have resistance to fire damage: halve fire damage you take, rounding down.",
+            "source": "Homebrew Goron traits · DM approved 2026-10-09"
+          },
+          {
+            "name": "Rock Eater",
+            "text": "Ordinary, nonmagical stone can satisfy your food needs; you still need water. Eating a magical stone stores its magical properties for 24 hours of in-game time. Choose when to activate or use its power within that window. Stored properties expire 24 hours after the stone is eaten; activating late does not reset that expiry. The DM defines how each stone’s power manifests, its activation/action cost, and any stone-specific uses or limits.",
+            "source": "Homebrew Goron traits · DM approved 2026-10-09"
+          }
+        ],
+        "inspiration": false,
+        "death": {
+          "successes": 0,
+          "failures": 0,
+          "stable": false
+        },
+        "exhaustion": 0,
+        "conditions": [],
+        "concentration": "",
+        "effects": [],
+        "publicNotes": "A curious mountain traveler seeking a delicious shiny rock. He is brave, but unfamiliar roads make him uneasy.",
+        "favorites": []
+      },
+      "dungeonProtocol": 1,
+      "dungeon": {
+        "enabled": false,
+        "fine": false,
+        "current": [],
+        "explored": [],
+        "objects": [],
+        "passages": []
+      },
+      "searchRequests": [],
+      "travelProtocol": 1,
+      "journey": {
+        "position": {
+          "title": "Phandalin"
+        },
+        "destination": "",
+        "weather": "clear",
+        "estimate": null,
+        "places": [
+          {
+            "id": "region-neverwinter",
+            "title": "Neverwinter",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-old-owl-well",
+            "title": "Old Owl Well",
+            "status": "visited",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-wyvern-tor",
+            "title": "Wyvern Tor",
+            "status": "cleared",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-road-ambush",
+            "title": "Triboar Trail ambush",
+            "status": "visited",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-cragmaw-hideout",
+            "title": "Cragmaw Hideout",
+            "status": "visited",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-phandalin",
+            "title": "Phandalin",
+            "status": "visited",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-tresendar",
+            "title": "Tresendar Manor ruins",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          }
+        ],
+        "events": []
+      },
+      "atlas": null,
+      "atlasImage": "",
+      "travelRequests": [],
+      "playerToolsProtocol": 1,
+      "playerTools": {
+        "notes": [],
+        "sharedClues": [],
+        "itemRequests": [],
+        "bank": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 0,
+          "pp": 0
+        },
+        "objective": {
+          "text": "Explore the mine, find the missing Rockseeker, and establish a safe return route.",
+          "at": "2026-10-12T18:57:27.005Z"
+        },
+        "roster": [
+          {
+            "id": "pc-aldric",
+            "name": "Aldric Vane"
+          },
+          {
+            "id": "pc-pebble",
+            "name": "Pebble"
+          },
+          {
+            "id": "pc-trista",
+            "name": "Trista"
+          },
+          {
+            "id": "pc-ringgo",
+            "name": "Ringgo Paul"
+          },
+          {
+            "id": "pc-donavan",
+            "name": "Donavan Kemp"
+          }
+        ]
+      },
+      "actionProtocol": 1,
+      "combatProtocol": 1,
+      "combatPrompts": {
+        "saves": [],
+        "reactions": []
+      },
+      "movement": {
+        "columns": 44,
+        "feet": 5,
+        "metric": "grid",
+        "speed": 30,
+        "used": 0,
+        "crawling": false,
+        "areas": []
+      },
+      "scene": "lmop-map-wave-south",
+      "sceneTitle": "Wave Echo Cave · Wave Echo Cave · southern workings",
+      "isMap": true,
+      "mapImage": "/api/map?v=059a296ebceb",
+      "playerInput": true,
+      "fog": [
+        "12,2",
+        "12,3",
+        "12,4",
+        "12,5",
+        "12,6",
+        "12,7",
+        "12,8",
+        "12,9",
+        "12,10",
+        "12,11",
+        "13,2",
+        "13,3",
+        "13,4",
+        "13,5",
+        "13,6",
+        "13,7",
+        "13,8",
+        "13,9",
+        "13,10",
+        "13,11",
+        "14,2",
+        "14,3",
+        "14,4",
+        "14,5",
+        "14,6",
+        "14,7",
+        "14,8",
+        "14,9",
+        "14,10",
+        "14,11",
+        "15,2",
+        "15,3",
+        "15,4",
+        "15,5",
+        "15,6",
+        "15,7",
+        "15,8",
+        "15,9",
+        "15,10",
+        "15,11",
+        "16,2",
+        "16,3",
+        "16,4",
+        "16,5",
+        "16,6",
+        "16,7",
+        "16,8",
+        "16,9",
+        "16,10",
+        "16,11",
+        "17,2",
+        "17,3",
+        "17,4",
+        "17,5",
+        "17,6",
+        "17,7",
+        "17,8",
+        "17,9",
+        "17,10",
+        "17,11",
+        "18,2",
+        "18,3",
+        "18,4",
+        "18,5",
+        "18,6",
+        "18,7",
+        "18,8",
+        "18,9",
+        "18,10",
+        "18,11",
+        "19,2",
+        "19,3",
+        "19,4",
+        "19,5",
+        "19,6",
+        "19,7",
+        "19,8",
+        "19,9",
+        "19,10",
+        "19,11",
+        "10,11",
+        "10,12",
+        "10,13",
+        "10,14",
+        "10,15",
+        "10,16",
+        "10,17",
+        "10,18",
+        "10,19",
+        "11,11",
+        "11,12",
+        "11,13",
+        "11,14",
+        "11,15",
+        "11,16",
+        "11,17",
+        "11,18",
+        "11,19",
+        "12,12",
+        "12,13",
+        "12,14",
+        "12,15",
+        "12,16",
+        "12,17",
+        "12,18",
+        "12,19",
+        "13,12",
+        "13,13",
+        "13,14",
+        "13,15",
+        "13,16",
+        "13,17",
+        "13,18",
+        "13,19",
+        "14,12",
+        "14,13",
+        "14,14",
+        "14,15",
+        "14,16",
+        "14,17",
+        "14,18",
+        "14,19",
+        "15,12",
+        "15,13",
+        "15,14",
+        "15,15",
+        "15,16",
+        "15,17",
+        "15,18",
+        "15,19"
+      ],
+      "fogged": true,
+      "fineFog": true,
+      "points": [],
+      "tokens": [
+        {
+          "id": "pc-trista",
+          "name": "Trista",
+          "label": "T",
+          "team": "pc",
+          "x": 45,
+          "y": 65
+        },
+        {
+          "id": "pc-donavan",
+          "name": "Donavan",
+          "label": "D",
+          "team": "pc",
+          "x": 51,
+          "y": 65
+        },
+        {
+          "id": "pc-ringgo",
+          "name": "Ringgo",
+          "label": "R",
+          "team": "pc",
+          "x": 42,
+          "y": 65
+        },
+        {
+          "id": "pc-pebble",
+          "name": "Pebble",
+          "label": "P",
+          "team": "pc",
+          "x": 48,
+          "y": 65
+        },
+        {
+          "id": "pc-aldric",
+          "name": "Aldric",
+          "label": "A",
+          "team": "pc",
+          "x": 54,
+          "y": 65
+        }
+      ],
+      "turn": {
+        "round": 0,
+        "activeId": null
+      },
+      "roll": null,
+      "requests": "",
+      "actionRequests": [],
+      "privateClues": [],
+      "inventory": [],
+      "sceneMood": {
+        "minutes": 540,
+        "weather": "clear",
+        "phase": "day"
+      },
+      "campaignJournal": [
+        {
+          "id": "continuity-outcome-1791829450537-orwray5",
+          "title": "MOCK · Road ambush and guide",
+          "text": "The wagon is safe. A captured goblin pointed out the trail to the stream cave.",
+          "kind": "confirmed",
+          "when": "Session 1 · Goblin Arrows"
+        },
+        {
+          "id": "continuity-outcome-1791829608803-85skzmj",
+          "title": "MOCK · Sildar freed by agreement",
+          "text": "Sildar is free. Klarg withdrew; Yeemik holds the hideout. The party recovered stolen supplies.",
+          "kind": "confirmed",
+          "when": "Session 1 · Goblin Arrows"
+        },
+        {
+          "id": "continuity-outcome-1791830126879-5rtda4w",
+          "title": "MOCK · Delivery, prisoners and escaped wizard",
+          "text": "The supplies were delivered. The party freed prisoners and recovered Gundren, who is sleeping at the inn. Glasstaff escaped; his destination is unknown.",
+          "kind": "confirmed",
+          "when": "Session 2 · Phandalin"
+        }
+      ],
+      "quests": [],
+      "campaignTracks": [
+        {
+          "kind": "rescue",
+          "subject": "Gundren Rockseeker",
+          "holder": "At the inn",
+          "owedTo": "",
+          "state": "resolved",
+          "note": ""
+        },
+        {
+          "kind": "rescue",
+          "subject": "Mirna, Nars and Nilsa",
+          "holder": "",
+          "owedTo": "",
+          "state": "resolved",
+          "note": ""
+        },
+        {
+          "kind": "escape",
+          "subject": "Glasstaff",
+          "holder": "",
+          "owedTo": "",
+          "state": "unknown",
+          "note": ""
+        }
+      ],
+      "initiative": {
+        "open": false,
+        "total": null,
+        "bonus": 0
+      },
+      "rehearsal": false
+    }
+  },
+  "playerTV": "Wave Echo Cave · southern workings\nControls & interaction\nT\nT\nD\nD\nR\nR\nP\nP\nA\nA\nDay · Clear\nMAIN QUEST\nThe Echo Below · investigate the mine\n\nExplore the mine, find the missing Rockseeker, and establish a safe return route.\n\nPRACTICE CAMPAIGN",
+  "displayImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/04b-stirges-TV.png",
+  "phoneImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/players/pc-pebble-04b-stirges.png"
+}

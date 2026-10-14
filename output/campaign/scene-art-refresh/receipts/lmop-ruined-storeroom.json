@@ -1,0 +1,42 @@
+{
+  "id": "lmop-ruined-storeroom",
+  "title": "Wave Echo Cave · Area 7 · Ruined storeroom",
+  "image": "lmop-visuals/ruined-storeroom.png",
+  "key": "E07",
+  "chapter": "Wave Echo Cave",
+  "reveal": "On entering area 7",
+  "sourceRecordIds": [
+    "s4-room-7",
+    "s4-rest"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-room-7",
+      "title": "Area 7 · Ruined storeroom and a secure rest",
+      "read": [
+        "A collapsed wall opens onto a small chamber. Beyond a half-open door, a surviving storeroom holds neat rows of cracked, empty kegs. Its stonework is sound.",
+        "The half-open door breaks the line of the collapsed wall. Beyond it, cracked kegs still stand in something like their old order, a small island of storage amid the ruin. The sound of stonework carries here; its source remains out of sight."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    },
+    {
+      "id": "s4-rest",
+      "title": "Rest or retreat · keep the expedition state",
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "Eastern wall collapsed in a heap of rubble, north door ajar leads into intact secure storeroom. Old dusty kegs neatly against walls, split and cracked with age, contents evaporated. No food, monsters or treasure. Off-frame lantern, heavy stone doors.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 7 · Ruined storeroom\nObservable scene and constraints: Eastern wall collapsed in a heap of rubble, north door ajar leads into intact secure storeroom. Old dusty kegs neatly against walls, split and cracked with age, contents evaporated. No food, monsters or treasure. Off-frame lantern, heavy stone doors.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "64f5405f779874d1b5a4087376d6e3521023f57fad8389dfee104894dbfdd08d",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-ruined-storeroom.png",
+  "generatedAt": "2026-10-12T16:30:20.084Z",
+  "candidateHash": "17eb2624bb38c832b8d2f65f2958a1269c837da8b9ba732cfaaf94e771dab80d",
+  "review": "passed",
+  "reviewedHash": "17eb2624bb38c832b8d2f65f2958a1269c837da8b9ba732cfaaf94e771dab80d",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.522Z",
+  "installedHash": "17eb2624bb38c832b8d2f65f2958a1269c837da8b9ba732cfaaf94e771dab80d",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/ruined-storeroom.png"
+}

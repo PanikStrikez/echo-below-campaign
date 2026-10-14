@@ -1,0 +1,1653 @@
+[
+  {
+    "actor": "s2-ruffian-3",
+    "action": {
+      "actor": "s2-ruffian-3",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834156551-ug1einms",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            17
+          ],
+          "total": 21,
+          "natural": 17,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:36 PM"
+        },
+        {
+          "id": "pa-1791834156551-s0g5aycx",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:36 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 21 vs AC 18: hit, 7 piercing \u2192 7; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-3",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834156691-8gw0vayl",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              8
+            ],
+            "total": 12,
+            "natural": 8,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:36 PM"
+          },
+          {
+            "id": "pa-1791834156691-vspttyw2",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              5
+            ],
+            "total": 7,
+            "natural": 5,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:36 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 12 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "s2-ruffian-4",
+    "action": {
+      "actor": "s2-ruffian-4",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834157551-w151wlt4",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            12
+          ],
+          "total": 16,
+          "natural": 12,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:37 PM"
+        },
+        {
+          "id": "pa-1791834157551-r01jx1p6",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            4
+          ],
+          "total": 6,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:37 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 16 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-4",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834157613-9f3k80ox",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:37 PM"
+          },
+          {
+            "id": "pa-1791834157613-110d0n3q",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              3
+            ],
+            "total": 5,
+            "natural": 3,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:37 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 7 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "s2-ruffian-2",
+    "action": {
+      "actor": "s2-ruffian-2",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834157965-eq5fpuqw",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            4
+          ],
+          "total": 8,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:37 PM"
+        },
+        {
+          "id": "pa-1791834157965-spoocvxp",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            1
+          ],
+          "total": 3,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:37 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 8 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-2",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834158055-dpjxyic7",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              15
+            ],
+            "total": 19,
+            "natural": 15,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:38 PM"
+          },
+          {
+            "id": "pa-1791834158055-lfy7j04x",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              6
+            ],
+            "total": 8,
+            "natural": 6,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 19 vs AC 18: hit, 8 piercing \u2192 8; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791834158430-ov4nelyj",
+            "label": "Dagger \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              3
+            ],
+            "total": 9,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:38 PM"
+          },
+          {
+            "id": "pa-1791834158430-xxy64bou",
+            "label": "Dagger \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-1",
+            "text": "Redbrand 1: 9 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791834158725-ngf0qc22",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              13
+            ],
+            "total": 19,
+            "natural": 13,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:38 PM"
+          },
+          {
+            "id": "pa-1791834158725-x1eo627c",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              1
+            ],
+            "total": 5,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-2",
+            "text": "Redbrand 2: 19 vs AC 14: hit, 5 piercing \u2192 5; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-ruffian-1",
+    "action": {
+      "actor": "s2-ruffian-1",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834159578-chdre1oj",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            10
+          ],
+          "total": 14,
+          "natural": 10,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:39 PM"
+        },
+        {
+          "id": "pa-1791834159578-8jcdk1lz",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            1
+          ],
+          "total": 3,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:39 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 14 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-1",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834159632-3mk0vz7n",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              11
+            ],
+            "total": 15,
+            "natural": 11,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:39 PM"
+          },
+          {
+            "id": "pa-1791834159632-r2umezg7",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              5
+            ],
+            "total": 7,
+            "natural": 5,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:39 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 15 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791834159990-wddb2o2p",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              19
+            ],
+            "total": 25,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:39 PM"
+          },
+          {
+            "id": "pa-1791834159990-owt53vhd",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              6
+            ],
+            "total": 6,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:39 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-1",
+            "text": "Redbrand 1: 25 vs AC 14: hit, 6 fire \u2192 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791834160450-wzbbp0ch",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              14
+            ],
+            "total": 20,
+            "natural": 14,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:40 PM"
+          },
+          {
+            "id": "pa-1791834160450-0ugoiihq",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              2
+            ],
+            "total": 2,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-1",
+            "text": "Redbrand 1: 20 vs AC 14: hit, 2 cold \u2192 2; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Second Wind",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834160769-awma9jok",
+            "label": "Second Wind \u00b7 healing 1.1",
+            "notation": "1d10+2",
+            "parts": [
+              7
+            ],
+            "total": 9,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 9 healing \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": [
+          {
+            "id": "pebble-second-wind",
+            "delta": -1
+          }
+        ]
+      },
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791834160868-suqnhfxw",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              13
+            ],
+            "total": 19,
+            "natural": 13,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:40 PM"
+          },
+          {
+            "id": "pa-1791834160868-qd53opah",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-1",
+            "text": "Redbrand 1: 19 vs AC 14: hit, 7 bludgeoning \u2192 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-ruffian-3",
+    "action": {
+      "actor": "s2-ruffian-3",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834161752-ky9kb4v0",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            2
+          ],
+          "total": 6,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:41 PM"
+        },
+        {
+          "id": "pa-1791834161752-08chmdyt",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:41 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 6 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-3",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834161801-6fnhqw0v",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              8
+            ],
+            "total": 12,
+            "natural": 8,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:41 PM"
+          },
+          {
+            "id": "pa-1791834161801-8wxbfdm1",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              4
+            ],
+            "total": 6,
+            "natural": 4,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:41 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 12 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "s2-ruffian-4",
+    "action": {
+      "actor": "s2-ruffian-4",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834162139-8okt2uza",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            9
+          ],
+          "total": 13,
+          "natural": 9,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:42 PM"
+        },
+        {
+          "id": "pa-1791834162139-q4b7plgm",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:42 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 13 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-4",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834162188-jpk4sum8",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              1
+            ],
+            "total": 5,
+            "natural": 1,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:42 PM"
+          },
+          {
+            "id": "pa-1791834162189-xrg7yfsb",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              1
+            ],
+            "total": 3,
+            "natural": 1,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:42 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 5 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "s2-ruffian-2",
+    "action": {
+      "actor": "s2-ruffian-2",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834162535-wd89xpd4",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            6
+          ],
+          "total": 10,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:42 PM"
+        },
+        {
+          "id": "pa-1791834162535-5karo6s6",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:42 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 10 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-2",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834162625-jk43hfbg",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              10
+            ],
+            "total": 14,
+            "natural": 10,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:42 PM"
+          },
+          {
+            "id": "pa-1791834162625-2bw30jx3",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              2
+            ],
+            "total": 4,
+            "natural": 2,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:42 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 14 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791834162933-yf9uka4t",
+            "label": "Dagger \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              3
+            ],
+            "total": 9,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:42 PM"
+          },
+          {
+            "id": "pa-1791834162933-izkp7yip",
+            "label": "Dagger \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:42 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-2",
+            "text": "Redbrand 2: 9 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791834163748-ru63t3kq",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              1
+            ],
+            "total": 7,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:43 PM"
+          },
+          {
+            "id": "pa-1791834163748-8oeoxz26",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:43 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-2",
+            "text": "Redbrand 2: 7 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791834164060-cq4tjsac",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              1
+            ],
+            "total": 7,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:44 PM"
+          },
+          {
+            "id": "pa-1791834164060-ung0wbn2",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              4
+            ],
+            "total": 4,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:44 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-2",
+            "text": "Redbrand 2: 7 vs AC 14: miss, 0 fire \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791834164535-q5ie0301",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              18
+            ],
+            "total": 24,
+            "natural": 18,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:44 PM"
+          },
+          {
+            "id": "pa-1791834164535-esdq5gv6",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              6
+            ],
+            "total": 6,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:44 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-2",
+            "text": "Redbrand 2: 24 vs AC 14: hit, 6 cold \u2192 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791834164914-pxcnlq9r",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              13
+            ],
+            "total": 19,
+            "natural": 13,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:44 PM"
+          },
+          {
+            "id": "pa-1791834164914-mr4m7dba",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:44 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-2",
+            "text": "Redbrand 2: 19 vs AC 14: hit, 8 bludgeoning \u2192 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-ruffian-3",
+    "action": {
+      "actor": "s2-ruffian-3",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834165816-g14wiig0",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            18
+          ],
+          "total": 22,
+          "natural": 18,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:45 PM"
+        },
+        {
+          "id": "pa-1791834165816-hmdxw7dd",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:45 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 22 vs AC 18: hit, 4 piercing \u2192 4; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-3",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834165958-sbvw39wu",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:45 PM"
+          },
+          {
+            "id": "pa-1791834165958-iaktyu08",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              3
+            ],
+            "total": 5,
+            "natural": 3,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:45 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 8 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "s2-ruffian-4",
+    "action": {
+      "actor": "s2-ruffian-4",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834166374-p5ymvu9a",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            8
+          ],
+          "total": 12,
+          "natural": 8,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:46 PM"
+        },
+        {
+          "id": "pa-1791834166374-14y8z24h",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:46 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 12 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-4",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834166446-6ana7n4w",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:46 PM"
+          },
+          {
+            "id": "pa-1791834166446-q7uyr057",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              6
+            ],
+            "total": 8,
+            "natural": 6,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:46 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 8 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791834166805-c8youdgs",
+            "label": "Dagger \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              13
+            ],
+            "total": 19,
+            "natural": 13,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:46 PM"
+          },
+          {
+            "id": "pa-1791834166805-idsipogt",
+            "label": "Dagger \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:46 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-3",
+            "text": "Redbrand 3: 19 vs AC 14: hit, 9 piercing \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791834167138-0ibhq7rq",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              12
+            ],
+            "total": 18,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:47 PM"
+          },
+          {
+            "id": "pa-1791834167138-eg41lveg",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:47 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-3",
+            "text": "Redbrand 3: 18 vs AC 14: hit, 9 piercing \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791834167980-0jauwdz8",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              1
+            ],
+            "total": 7,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:47 PM"
+          },
+          {
+            "id": "pa-1791834167980-hw9j1ry7",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              10
+            ],
+            "total": 10,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:47 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-4",
+            "text": "Redbrand 4: 7 vs AC 14: miss, 0 fire \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791834168483-5x79c50f",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              9
+            ],
+            "total": 15,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:48 PM"
+          },
+          {
+            "id": "pa-1791834168483-ecn4fshu",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              6
+            ],
+            "total": 6,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:48 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-4",
+            "text": "Redbrand 4: 15 vs AC 14: hit, 6 cold \u2192 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791834168862-iu480le1",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              8
+            ],
+            "total": 14,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:48 PM"
+          },
+          {
+            "id": "pa-1791834168862-c7mu8ftx",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:48 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-4",
+            "text": "Redbrand 4: 14 vs AC 14: hit, 7 bludgeoning \u2192 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-ruffian-4",
+    "action": {
+      "actor": "s2-ruffian-4",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834169298-ghxar1kp",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            17
+          ],
+          "total": 21,
+          "natural": 17,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:49 PM"
+        },
+        {
+          "id": "pa-1791834169298-2f7wwi64",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            4
+          ],
+          "total": 6,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:49 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 21 vs AC 18: hit, 6 piercing \u2192 6; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-4",
+        "label": "Shortsword",
+        "targets": [
+          "Trista"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834169441-x700ri5b",
+            "label": "Shortsword \u00b7 attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              1
+            ],
+            "total": 5,
+            "natural": 1,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:49 PM"
+          },
+          {
+            "id": "pa-1791834169441-93hockss",
+            "label": "Shortsword \u00b7 effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              3
+            ],
+            "total": 5,
+            "natural": 3,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:49 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-trista",
+            "text": "Trista: 5 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  },
+  {
+    "pause": "An ally fell; return rescue/retreat choice to agents",
+    "state": {
+      "turn": {
+        "scene": "phandalin-street",
+        "round": 4,
+        "order": [
+          "pc-donavan",
+          "pc-pebble",
+          "s2-ruffian-3",
+          "s2-ruffian-4",
+          "s2-ruffian-2",
+          "pc-trista",
+          "pc-ringgo",
+          "s2-ruffian-1",
+          "pc-aldric"
+        ],
+        "index": 5
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 15,
+          "maxHp": 15
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 16,
+          "maxHp": 16
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 17,
+          "maxHp": 17
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 0,
+          "maxHp": 16
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 16,
+          "maxHp": 16
+        }
+      ],
+      "foes": [
+        {
+          "id": "s2-ruffian-1",
+          "hp": 0
+        },
+        {
+          "id": "s2-ruffian-2",
+          "hp": 0
+        },
+        {
+          "id": "s2-ruffian-3",
+          "hp": 0
+        },
+        {
+          "id": "s2-ruffian-4",
+          "hp": 3
+        }
+      ],
+      "due": []
+    }
+  }
+]

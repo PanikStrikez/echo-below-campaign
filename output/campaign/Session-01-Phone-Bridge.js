@@ -32,7 +32,9 @@
     else for (const claim of claims) {
       const row = document.createElement('div'); row.className='phone-health-row';
       const age=claim.lastSeen?Math.max(0,Math.round(Date.now()/1000-claim.lastSeen))+'s ago':'never';
-      const label=document.createElement('p');label.textContent=`${claim.name} · ${claim.status||'unverified'} · last seen ${age} · update ${claim.acknowledged??'?'}/${claim.revision??'?'}`;row.append(label);
+      const seen=claim.lastSeen?new Date(claim.lastSeen*1000).toLocaleTimeString():'never';
+      const applied=claim.updatedAt?new Date(claim.updatedAt*1000).toLocaleTimeString():'never';
+      const label=document.createElement('p');label.textContent=`${claim.name} · ${claim.status||'unverified'} · last seen ${seen} (${age}) · applied update ${claim.acknowledged??'?'}/${claim.revision??'?'} at ${applied}`;row.append(label);
       const button=(text,operation,target)=>{const b=document.createElement('button');b.type='button';b.textContent=text;b.onclick=async()=>{b.disabled=true;try{await request('/api/dm/phone',{id:claim.id,operation,target:typeof target==='function'?target():target});await status();}catch(e){host.toast(e.message);b.disabled=false;}};row.append(b);};
       button('Resync this phone','resync');button('Release to rejoin','release');
       const select=document.createElement('select');for(const p of roster.filter(p=>!claims.some(c=>c.id===p.id))){const o=document.createElement('option');o.value=p.id;o.textContent=p.name;select.append(o);}if(select.options.length){select.setAttribute('aria-label','New character for '+claim.name);row.append(select);button('Reassign phone','reassign',()=>select.value);}list.append(row);

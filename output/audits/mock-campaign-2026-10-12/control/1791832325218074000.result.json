@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "result": {
+    "travelKeys": [
+      "version",
+      "contentProfile",
+      "places",
+      "routes",
+      "position",
+      "plan",
+      "settings",
+      "supplies",
+      "weather",
+      "history",
+      "camps",
+      "events",
+      "requests",
+      "traveled",
+      "log"
+    ],
+    "levels": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  }
+}

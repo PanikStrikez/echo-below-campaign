@@ -1,0 +1,1731 @@
+{
+  "ok": true,
+  "result": {
+    "preview": {
+      "event": {
+        "id": "outcome-1791829608803-85skzmj",
+        "kind": "rescue",
+        "publicTitle": "MOCK · Sildar freed by agreement",
+        "recipients": [],
+        "replaces": [],
+        "origins": [],
+        "session": "Session 1 · Goblin Arrows",
+        "title": "MOCK · Sildar freed by agreement",
+        "detail": "In the mock campaign: after Klarg was wounded, the party accepted his departure with his wolf instead of executing him. Yeemik released Sildar under the negotiated bargain and retained the hideout. Donavan interpreted the Goblin conversation. Stolen supplies were recovered for review in Phandalin; no payments granted yet.",
+        "playerText": "Sildar is free. Klarg withdrew; Yeemik holds the hideout. The party recovered stolen supplies.",
+        "source": "Isolated mock campaign; fictional rehearsal outcome only",
+        "status": "confirmed",
+        "basis": "Observed",
+        "approved": true,
+        "approvedAt": "preview",
+        "share": "party",
+        "knows": [
+          "party"
+        ],
+        "quests": [],
+        "markers": [],
+        "tracks": [
+          {
+            "kind": "rescue",
+            "key": "outcome-1791829608803-yoats32",
+            "subject": "",
+            "holder": "",
+            "owedTo": "",
+            "state": "resolved",
+            "note": "",
+            "public": false
+          }
+        ]
+      },
+      "errors": [
+        "Name each tracked person, item or promise."
+      ],
+      "changes": {
+        "journal": {
+          "before": [
+            {
+              "id": "continuity-outcome-1791829450537-orwray5",
+              "title": "MOCK · Road ambush and guide",
+              "text": "The wagon is safe. A captured goblin pointed out the trail to the stream cave.",
+              "kind": "confirmed",
+              "when": "Session 1 · Goblin Arrows"
+            }
+          ],
+          "after": [
+            {
+              "id": "continuity-outcome-1791829450537-orwray5",
+              "title": "MOCK · Road ambush and guide",
+              "text": "The wagon is safe. A captured goblin pointed out the trail to the stream cave.",
+              "kind": "confirmed",
+              "when": "Session 1 · Goblin Arrows"
+            },
+            {
+              "id": "continuity-outcome-1791829608803-85skzmj",
+              "title": "MOCK · Sildar freed by agreement",
+              "text": "Sildar is free. Klarg withdrew; Yeemik holds the hideout. The party recovered stolen supplies.",
+              "kind": "confirmed",
+              "when": "Session 1 · Goblin Arrows"
+            }
+          ]
+        },
+        "tracks": {
+          "before": [],
+          "after": [
+            {
+              "kind": "rescue",
+              "key": "outcome-1791829608803-yoats32",
+              "subject": "",
+              "holder": "",
+              "owedTo": "",
+              "state": "resolved",
+              "note": "",
+              "public": false,
+              "eventId": "outcome-1791829608803-85skzmj",
+              "session": "Session 1 · Goblin Arrows"
+            }
+          ]
+        },
+        "knowledge": {
+          "before": {
+            "party": [
+              {
+                "id": "outcome-1791829450537-orwray5",
+                "text": "In this mock only: Goblins 2 and 4 fell after reviewed attacks. Goblin 1 surrendered, while Goblin 3 fled. The party secured the wagon and obtained directions to the stream cave from the captive goblin."
+              }
+            ]
+          },
+          "after": {
+            "party": [
+              {
+                "id": "outcome-1791829450537-orwray5",
+                "text": "In this mock only: Goblins 2 and 4 fell after reviewed attacks. Goblin 1 surrendered, while Goblin 3 fled. The party secured the wagon and obtained directions to the stream cave from the captive goblin."
+              },
+              {
+                "id": "outcome-1791829608803-85skzmj",
+                "text": "In the mock campaign: after Klarg was wounded, the party accepted his departure with his wolf instead of executing him. Yeemik released Sildar under the negotiated bargain and retained the hideout. Donavan interpreted the Goblin conversation. Stolen supplies were recovered for review in Phandalin; no payments granted yet."
+              }
+            ]
+          }
+        }
+      },
+      "active": true,
+      "signature": "{\"events\":[{\"id\":\"outcome-1791829450537-orwray5\",\"kind\":\"other\",\"publicTitle\":\"MOCK · Road ambush and guide\",\"recipients\":[],\"replaces\":[],\"origins\":[],\"session\":\"Session 1 · Goblin Arrows\",\"title\":\"MOCK · Road ambush and guide\",\"detail\":\"In this mock only: Goblins 2 and 4 fell after reviewed attacks. Goblin 1 surrendered, while Goblin 3 fled. The party secured the wagon and obtained directions to the stream cave from the captive goblin.\",\"playerText\":\"The wagon is safe. A captured goblin pointed out the trail to the stream cave.\",\"source\":\"Isolated five-player mock campaign; not actual table history\",\"status\":\"confirmed\",\"basis\":\"Observed\",\"approved\":true,\"approvedAt\":\"2026-10-12T18:24:10.654Z\",\"share\":\"party\",\"knows\":[\"party\"],\"quests\":[],\"markers\":[],\"tracks\":[]}],\"event\":{\"id\":\"outcome-1791829608803-85skzmj\",\"kind\":\"rescue\",\"publicTitle\":\"MOCK · Sildar freed by agreement\",\"recipients\":[],\"replaces\":[],\"origins\":[],\"session\":\"Session 1 · Goblin Arrows\",\"title\":\"MOCK · Sildar freed by agreement\",\"detail\":\"In the mock campaign: after Klarg was wounded, the party accepted his departure with his wolf instead of executing him. Yeemik released Sildar under the negotiated bargain and retained the hideout. Donavan interpreted the Goblin conversation. Stolen supplies were recovered for review in Phandalin; no payments granted yet.\",\"playerText\":\"Sildar is free. Klarg withdrew; Yeemik holds the hideout. The party recovered stolen supplies.\",\"source\":\"Isolated mock campaign; fictional rehearsal outcome only\",\"status\":\"confirmed\",\"basis\":\"Observed\",\"approved\":false,\"approvedAt\":\"\",\"share\":\"party\",\"knows\":[\"party\"],\"quests\":[],\"markers\":[],\"tracks\":[{\"kind\":\"rescue\",\"key\":\"outcome-1791829608803-yoats32\",\"subject\":\"\",\"holder\":\"\",\"owedTo\":\"\",\"state\":\"resolved\",\"note\":\"\",\"public\":false}]},\"withdraw\":false,\"base\":\"\",\"guide\":{\"version\":1,\"contentProfile\":\"echo-below\",\"customQuests\":[],\"routingVersion\":1,\"enabled\":true,\"initialized\":true,\"currentAct\":\"prologue\",\"records\":{\"echo-below\":{\"status\":\"active\",\"pinned\":true,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"Mock campaign · Escort and rescue\",\"text\":\"Deliver the supplies to Barthen’s and investigate the missing travelers.\"},\"published\":{\"title\":\"Mock campaign · Escort and rescue\",\"text\":\"Deliver the supplies to Barthen’s and investigate the missing travelers.\",\"state\":\"active\",\"audience\":\"party\",\"at\":\"2026-10-12T18:19:57.536Z\"},\"publication\":null},\"act-prologue\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"act-home\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"act-guests\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"act-family\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"act-cost\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"act-ending\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"gundren\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"sildar\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"redbrands\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"orc-camp\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"black-spider\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"old-owl\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"wave-echo\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"route\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"instrument\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"passage\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"second-opinion\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"courtyard\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"survivor\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"ward-records\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"district\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"evacuation\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"silent-library\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"observatory\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"scar\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"frozen-door\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"walking-tower\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"broken-star\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"hollow-mountain\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"character-trista\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"character-pebble\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"character-donavan\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"character-ringgo\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"character-aldric\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"ending-shutdown\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"ending-persuade\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"ending-rescue\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"ending-crisis\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"ending-preserve\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null},\"waterdeep-journey\":{\"status\":\"inactive\",\"pinned\":false,\"notes\":\"\",\"outcome\":\"\",\"steps\":{},\"draft\":{\"title\":\"\",\"text\":\"\"},\"published\":null,\"publication\":null}},\"history\":[{\"at\":\"2026-10-12T18:17:50.969Z\",\"quest\":\"echo-below\",\"text\":\"Enabled main quest TV display using party-known quest titles.\",\"source\":\"DM quest review\"},{\"at\":\"2026-10-12T18:19:57.536Z\",\"quest\":\"echo-below\",\"text\":\"Published reviewed wording to party.\",\"source\":\"DM quest review\"}]}}",
+      "before": {
+        "mystery": [],
+        "downtime": [],
+        "relationships": [],
+        "home": [
+          {
+            "id": "visits",
+            "title": "Confirmed courtyard visits",
+            "text": "No confirmed arrival · 0 ordinary expedition returns"
+          }
+        ],
+        "quests": [
+          [
+            "Find Gundren",
+            "planned"
+          ],
+          [
+            "Find Gundren / Establish the current situation",
+            "open"
+          ],
+          [
+            "Find Gundren / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "Find Gundren / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "Rescue Sildar",
+            "planned"
+          ],
+          [
+            "Rescue Sildar / Establish the current situation",
+            "open"
+          ],
+          [
+            "Rescue Sildar / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "Rescue Sildar / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "The Redbrand Threat",
+            "planned"
+          ],
+          [
+            "The Redbrand Threat / Establish the current situation",
+            "open"
+          ],
+          [
+            "The Redbrand Threat / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "The Redbrand Threat / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "The Orc Camp",
+            "planned"
+          ],
+          [
+            "The Orc Camp / Establish the current situation",
+            "open"
+          ],
+          [
+            "The Orc Camp / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "The Orc Camp / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "Investigate the Black Spider",
+            "planned"
+          ],
+          [
+            "Investigate the Black Spider / Establish the current situation",
+            "open"
+          ],
+          [
+            "Investigate the Black Spider / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "Investigate the Black Spider / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "Old Owl Well",
+            "planned"
+          ],
+          [
+            "Old Owl Well / Establish the current situation",
+            "open"
+          ],
+          [
+            "Old Owl Well / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "Old Owl Well / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "Wave Echo Cave",
+            "planned"
+          ],
+          [
+            "Wave Echo Cave / Establish the current situation",
+            "open"
+          ],
+          [
+            "Wave Echo Cave / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "Wave Echo Cave / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "The Echo Below",
+            "planned"
+          ],
+          [
+            "The Echo Below / Investigate the Phandalin discoveries",
+            "open"
+          ],
+          [
+            "The Echo Below / Follow the Waterdeep connection",
+            "open"
+          ],
+          [
+            "The Echo Below / Identify the experiments",
+            "open"
+          ],
+          [
+            "The Echo Below / Understand Looking Glass",
+            "open"
+          ],
+          [
+            "The Echo Below / Protect the threatened district",
+            "open"
+          ],
+          [
+            "The Echo Below / Resolve the project’s future",
+            "open"
+          ],
+          [
+            "The Missing Rockseeker",
+            "planned"
+          ],
+          [
+            "The Missing Rockseeker / Trace Gundren’s abduction",
+            "open"
+          ],
+          [
+            "The Missing Rockseeker / Resolve the rescue attempt",
+            "open"
+          ],
+          [
+            "The Missing Rockseeker / Address the mine conflict",
+            "open"
+          ],
+          [
+            "The Missing Rockseeker / Return and settle promises",
+            "open"
+          ],
+          [
+            "A Foothold Below",
+            "planned"
+          ],
+          [
+            "A Foothold Below / Find a place to return to",
+            "open"
+          ],
+          [
+            "A Foothold Below / Undertake a bounded expedition",
+            "open"
+          ],
+          [
+            "A Foothold Below / Establish a useful connection",
+            "open"
+          ],
+          [
+            "A Foothold Below / Compare the first observations",
+            "open"
+          ],
+          [
+            "The Host’s Experiments",
+            "planned"
+          ],
+          [
+            "The Host’s Experiments / Compare changed routes",
+            "open"
+          ],
+          [
+            "The Host’s Experiments / Hear the survivor",
+            "open"
+          ],
+          [
+            "The Host’s Experiments / Address the host",
+            "open"
+          ],
+          [
+            "The Host’s Experiments / Choose a working relationship",
+            "open"
+          ],
+          [
+            "The Unfinished Home",
+            "planned"
+          ],
+          [
+            "The Unfinished Home / Identify the project",
+            "open"
+          ],
+          [
+            "The Unfinished Home / Find the family’s independent history",
+            "open"
+          ],
+          [
+            "The Unfinished Home / Test the reconstruction’s limits",
+            "open"
+          ],
+          [
+            "The Unfinished Home / Establish what remains unknown",
+            "open"
+          ],
+          [
+            "The Cost of Returning",
+            "planned"
+          ],
+          [
+            "The Cost of Returning / Understand the catastrophe",
+            "open"
+          ],
+          [
+            "The Cost of Returning / Survey the threatened district",
+            "open"
+          ],
+          [
+            "The Cost of Returning / Develop interventions",
+            "open"
+          ],
+          [
+            "The Cost of Returning / Prepare with residents",
+            "open"
+          ],
+          [
+            "What Remains",
+            "planned"
+          ],
+          [
+            "What Remains / Choose and review a plan",
+            "open"
+          ],
+          [
+            "What Remains / Act on the apparatus and opposition",
+            "open"
+          ],
+          [
+            "What Remains / Protect people during the outcome",
+            "open"
+          ],
+          [
+            "What Remains / Settle what follows",
+            "open"
+          ],
+          [
+            "A Map Worth Paying For",
+            "planned"
+          ],
+          [
+            "A Map Worth Paying For / Agree the scope",
+            "open"
+          ],
+          [
+            "A Map Worth Paying For / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "A Map Worth Paying For / Deliver an outcome",
+            "open"
+          ],
+          [
+            "The Missing Instrument",
+            "planned"
+          ],
+          [
+            "The Missing Instrument / Agree the scope",
+            "open"
+          ],
+          [
+            "The Missing Instrument / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "The Missing Instrument / Deliver an outcome",
+            "open"
+          ],
+          [
+            "Terms of Passage",
+            "planned"
+          ],
+          [
+            "Terms of Passage / Agree the scope",
+            "open"
+          ],
+          [
+            "Terms of Passage / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "Terms of Passage / Deliver an outcome",
+            "open"
+          ],
+          [
+            "An Honest Second Opinion",
+            "planned"
+          ],
+          [
+            "An Honest Second Opinion / Agree the scope",
+            "open"
+          ],
+          [
+            "An Honest Second Opinion / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "An Honest Second Opinion / Deliver an outcome",
+            "open"
+          ],
+          [
+            "A Place at the Table",
+            "planned"
+          ],
+          [
+            "A Place at the Table / Agree the scope",
+            "open"
+          ],
+          [
+            "A Place at the Table / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "A Place at the Table / Deliver an outcome",
+            "open"
+          ],
+          [
+            "The Survivor’s Records",
+            "planned"
+          ],
+          [
+            "The Survivor’s Records / Agree the scope",
+            "open"
+          ],
+          [
+            "The Survivor’s Records / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "The Survivor’s Records / Deliver an outcome",
+            "open"
+          ],
+          [
+            "The Warnings Nobody Combined",
+            "planned"
+          ],
+          [
+            "The Warnings Nobody Combined / Agree the scope",
+            "open"
+          ],
+          [
+            "The Warnings Nobody Combined / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "The Warnings Nobody Combined / Deliver an outcome",
+            "open"
+          ],
+          [
+            "A Door That Wasn’t There",
+            "planned"
+          ],
+          [
+            "A Door That Wasn’t There / Agree the scope",
+            "open"
+          ],
+          [
+            "A Door That Wasn’t There / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "A Door That Wasn’t There / Deliver an outcome",
+            "open"
+          ],
+          [
+            "Everyone Has a Way Home",
+            "planned"
+          ],
+          [
+            "Everyone Has a Way Home / Agree the scope",
+            "open"
+          ],
+          [
+            "Everyone Has a Way Home / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "Everyone Has a Way Home / Deliver an outcome",
+            "open"
+          ],
+          [
+            "The Library That Forgot",
+            "planned"
+          ],
+          [
+            "The Library That Forgot / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "The Library That Forgot / Understand the local conflict",
+            "open"
+          ],
+          [
+            "The Library That Forgot / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "The Library That Forgot / Test what was learned",
+            "open"
+          ],
+          [
+            "Beneath Troubled Waters",
+            "planned"
+          ],
+          [
+            "Beneath Troubled Waters / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "Beneath Troubled Waters / Understand the local conflict",
+            "open"
+          ],
+          [
+            "Beneath Troubled Waters / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "Beneath Troubled Waters / Test what was learned",
+            "open"
+          ],
+          [
+            "The Price of a Miracle",
+            "planned"
+          ],
+          [
+            "The Price of a Miracle / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "The Price of a Miracle / Understand the local conflict",
+            "open"
+          ],
+          [
+            "The Price of a Miracle / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "The Price of a Miracle / Test what was learned",
+            "open"
+          ],
+          [
+            "The Door Left Closed",
+            "planned"
+          ],
+          [
+            "The Door Left Closed / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "The Door Left Closed / Understand the local conflict",
+            "open"
+          ],
+          [
+            "The Door Left Closed / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "The Door Left Closed / Test what was learned",
+            "open"
+          ],
+          [
+            "A Tower Without an Address",
+            "planned"
+          ],
+          [
+            "A Tower Without an Address / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "A Tower Without an Address / Understand the local conflict",
+            "open"
+          ],
+          [
+            "A Tower Without an Address / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "A Tower Without an Address / Test what was learned",
+            "open"
+          ],
+          [
+            "A Route Through Impossible Space",
+            "planned"
+          ],
+          [
+            "A Route Through Impossible Space / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "A Route Through Impossible Space / Understand the local conflict",
+            "open"
+          ],
+          [
+            "A Route Through Impossible Space / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "A Route Through Impossible Space / Test what was learned",
+            "open"
+          ],
+          [
+            "The Unfilled Circle",
+            "planned"
+          ],
+          [
+            "The Unfilled Circle / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "The Unfilled Circle / Understand the local conflict",
+            "open"
+          ],
+          [
+            "The Unfilled Circle / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "The Unfilled Circle / Test what was learned",
+            "open"
+          ],
+          [
+            "What We Keep Hidden",
+            "planned"
+          ],
+          [
+            "What We Keep Hidden / An Old Partner’s Warning",
+            "open"
+          ],
+          [
+            "What We Keep Hidden / The Missing Terms",
+            "open"
+          ],
+          [
+            "What We Keep Hidden / A Pattern in the Dark",
+            "open"
+          ],
+          [
+            "What We Keep Hidden / Terms of Trust",
+            "open"
+          ],
+          [
+            "What We Keep Hidden / The Keeper’s Choice",
+            "open"
+          ],
+          [
+            "The Way Back",
+            "planned"
+          ],
+          [
+            "The Way Back / A Familiar Maker’s Mark",
+            "open"
+          ],
+          [
+            "The Way Back / The Missing Craftsperson",
+            "open"
+          ],
+          [
+            "The Way Back / Stone That Doesn’t Belong",
+            "open"
+          ],
+          [
+            "The Way Back / Someone to Follow",
+            "open"
+          ],
+          [
+            "The Way Back / A Map of His Own",
+            "open"
+          ],
+          [
+            "Knowledge in Good Hands",
+            "planned"
+          ],
+          [
+            "Knowledge in Good Hands / A Question for Home",
+            "open"
+          ],
+          [
+            "Knowledge in Good Hands / A Different Conclusion",
+            "open"
+          ],
+          [
+            "Knowledge in Good Hands / Repeat the Experiment",
+            "open"
+          ],
+          [
+            "Knowledge in Good Hands / Who Needs to Know?",
+            "open"
+          ],
+          [
+            "Knowledge in Good Hands / The Published Record",
+            "open"
+          ],
+          [
+            "An Honest Name",
+            "planned"
+          ],
+          [
+            "An Honest Name / A Proper Contract",
+            "open"
+          ],
+          [
+            "An Honest Name / Someone from Before",
+            "open"
+          ],
+          [
+            "An Honest Name / The Part They Left Out",
+            "open"
+          ],
+          [
+            "An Honest Name / Help with Conditions",
+            "open"
+          ],
+          [
+            "An Honest Name / The Work He Chooses",
+            "open"
+          ],
+          [
+            "A Life Returned",
+            "planned"
+          ],
+          [
+            "A Life Returned / The Ring and the Record",
+            "open"
+          ],
+          [
+            "A Life Returned / Someone Who Remembers",
+            "open"
+          ],
+          [
+            "A Life Returned / The Return Ledger",
+            "open"
+          ],
+          [
+            "A Life Returned / Their Names, Their Lives",
+            "open"
+          ],
+          [
+            "A Life Returned / A Life of His Choosing",
+            "open"
+          ],
+          [
+            "Stop the Apparatus",
+            "planned"
+          ],
+          [
+            "Stop the Apparatus / Establish prerequisites",
+            "open"
+          ],
+          [
+            "Stop the Apparatus / Review with affected people",
+            "open"
+          ],
+          [
+            "Stop the Apparatus / Carry out and record the outcome",
+            "open"
+          ],
+          [
+            "Give Him a Chance to Stop",
+            "planned"
+          ],
+          [
+            "Give Him a Chance to Stop / Establish prerequisites",
+            "open"
+          ],
+          [
+            "Give Him a Chance to Stop / Review with affected people",
+            "open"
+          ],
+          [
+            "Give Him a Chance to Stop / Carry out and record the outcome",
+            "open"
+          ],
+          [
+            "A Smaller Attempt",
+            "planned"
+          ],
+          [
+            "A Smaller Attempt / Establish prerequisites",
+            "open"
+          ],
+          [
+            "A Smaller Attempt / Review with affected people",
+            "open"
+          ],
+          [
+            "A Smaller Attempt / Carry out and record the outcome",
+            "open"
+          ],
+          [
+            "Protect the Living",
+            "planned"
+          ],
+          [
+            "Protect the Living / Establish prerequisites",
+            "open"
+          ],
+          [
+            "Protect the Living / Review with affected people",
+            "open"
+          ],
+          [
+            "Protect the Living / Carry out and record the outcome",
+            "open"
+          ],
+          [
+            "Knowledge Worth Keeping",
+            "planned"
+          ],
+          [
+            "Knowledge Worth Keeping / Establish prerequisites",
+            "open"
+          ],
+          [
+            "Knowledge Worth Keeping / Review with affected people",
+            "open"
+          ],
+          [
+            "Knowledge Worth Keeping / Carry out and record the outcome",
+            "open"
+          ],
+          [
+            "A Road to Waterdeep",
+            "planned"
+          ],
+          [
+            "A Road to Waterdeep / Make a plan for unfinished business",
+            "open"
+          ],
+          [
+            "A Road to Waterdeep / Choose a reason to travel",
+            "open"
+          ],
+          [
+            "A Road to Waterdeep / Reach your chosen contact",
+            "open"
+          ]
+        ],
+        "journal": [
+          {
+            "id": "continuity-outcome-1791829450537-orwray5",
+            "title": "MOCK · Road ambush and guide",
+            "text": "The wagon is safe. A captured goblin pointed out the trail to the stream cave.",
+            "kind": "confirmed",
+            "when": "Session 1 · Goblin Arrows"
+          }
+        ],
+        "privatePhones": {},
+        "tracks": [],
+        "publicTracks": [],
+        "knowledge": {
+          "party": [
+            {
+              "id": "outcome-1791829450537-orwray5",
+              "text": "In this mock only: Goblins 2 and 4 fell after reviewed attacks. Goblin 1 surrendered, while Goblin 3 fled. The party secured the wagon and obtained directions to the stream cave from the captive goblin."
+            }
+          ]
+        },
+        "maps": []
+      },
+      "after": {
+        "mystery": [],
+        "downtime": [],
+        "relationships": [],
+        "home": [
+          {
+            "id": "visits",
+            "title": "Confirmed courtyard visits",
+            "text": "No confirmed arrival · 0 ordinary expedition returns"
+          }
+        ],
+        "quests": [
+          [
+            "Find Gundren",
+            "planned"
+          ],
+          [
+            "Find Gundren / Establish the current situation",
+            "open"
+          ],
+          [
+            "Find Gundren / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "Find Gundren / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "Rescue Sildar",
+            "planned"
+          ],
+          [
+            "Rescue Sildar / Establish the current situation",
+            "open"
+          ],
+          [
+            "Rescue Sildar / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "Rescue Sildar / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "The Redbrand Threat",
+            "planned"
+          ],
+          [
+            "The Redbrand Threat / Establish the current situation",
+            "open"
+          ],
+          [
+            "The Redbrand Threat / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "The Redbrand Threat / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "The Orc Camp",
+            "planned"
+          ],
+          [
+            "The Orc Camp / Establish the current situation",
+            "open"
+          ],
+          [
+            "The Orc Camp / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "The Orc Camp / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "Investigate the Black Spider",
+            "planned"
+          ],
+          [
+            "Investigate the Black Spider / Establish the current situation",
+            "open"
+          ],
+          [
+            "Investigate the Black Spider / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "Investigate the Black Spider / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "Old Owl Well",
+            "planned"
+          ],
+          [
+            "Old Owl Well / Establish the current situation",
+            "open"
+          ],
+          [
+            "Old Owl Well / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "Old Owl Well / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "Wave Echo Cave",
+            "planned"
+          ],
+          [
+            "Wave Echo Cave / Establish the current situation",
+            "open"
+          ],
+          [
+            "Wave Echo Cave / Resolve the immediate objective",
+            "open"
+          ],
+          [
+            "Wave Echo Cave / Record the outcome and follow-up",
+            "open"
+          ],
+          [
+            "The Echo Below",
+            "planned"
+          ],
+          [
+            "The Echo Below / Investigate the Phandalin discoveries",
+            "open"
+          ],
+          [
+            "The Echo Below / Follow the Waterdeep connection",
+            "open"
+          ],
+          [
+            "The Echo Below / Identify the experiments",
+            "open"
+          ],
+          [
+            "The Echo Below / Understand Looking Glass",
+            "open"
+          ],
+          [
+            "The Echo Below / Protect the threatened district",
+            "open"
+          ],
+          [
+            "The Echo Below / Resolve the project’s future",
+            "open"
+          ],
+          [
+            "The Missing Rockseeker",
+            "planned"
+          ],
+          [
+            "The Missing Rockseeker / Trace Gundren’s abduction",
+            "open"
+          ],
+          [
+            "The Missing Rockseeker / Resolve the rescue attempt",
+            "open"
+          ],
+          [
+            "The Missing Rockseeker / Address the mine conflict",
+            "open"
+          ],
+          [
+            "The Missing Rockseeker / Return and settle promises",
+            "open"
+          ],
+          [
+            "A Foothold Below",
+            "planned"
+          ],
+          [
+            "A Foothold Below / Find a place to return to",
+            "open"
+          ],
+          [
+            "A Foothold Below / Undertake a bounded expedition",
+            "open"
+          ],
+          [
+            "A Foothold Below / Establish a useful connection",
+            "open"
+          ],
+          [
+            "A Foothold Below / Compare the first observations",
+            "open"
+          ],
+          [
+            "The Host’s Experiments",
+            "planned"
+          ],
+          [
+            "The Host’s Experiments / Compare changed routes",
+            "open"
+          ],
+          [
+            "The Host’s Experiments / Hear the survivor",
+            "open"
+          ],
+          [
+            "The Host’s Experiments / Address the host",
+            "open"
+          ],
+          [
+            "The Host’s Experiments / Choose a working relationship",
+            "open"
+          ],
+          [
+            "The Unfinished Home",
+            "planned"
+          ],
+          [
+            "The Unfinished Home / Identify the project",
+            "open"
+          ],
+          [
+            "The Unfinished Home / Find the family’s independent history",
+            "open"
+          ],
+          [
+            "The Unfinished Home / Test the reconstruction’s limits",
+            "open"
+          ],
+          [
+            "The Unfinished Home / Establish what remains unknown",
+            "open"
+          ],
+          [
+            "The Cost of Returning",
+            "planned"
+          ],
+          [
+            "The Cost of Returning / Understand the catastrophe",
+            "open"
+          ],
+          [
+            "The Cost of Returning / Survey the threatened district",
+            "open"
+          ],
+          [
+            "The Cost of Returning / Develop interventions",
+            "open"
+          ],
+          [
+            "The Cost of Returning / Prepare with residents",
+            "open"
+          ],
+          [
+            "What Remains",
+            "planned"
+          ],
+          [
+            "What Remains / Choose and review a plan",
+            "open"
+          ],
+          [
+            "What Remains / Act on the apparatus and opposition",
+            "open"
+          ],
+          [
+            "What Remains / Protect people during the outcome",
+            "open"
+          ],
+          [
+            "What Remains / Settle what follows",
+            "open"
+          ],
+          [
+            "A Map Worth Paying For",
+            "planned"
+          ],
+          [
+            "A Map Worth Paying For / Agree the scope",
+            "open"
+          ],
+          [
+            "A Map Worth Paying For / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "A Map Worth Paying For / Deliver an outcome",
+            "open"
+          ],
+          [
+            "The Missing Instrument",
+            "planned"
+          ],
+          [
+            "The Missing Instrument / Agree the scope",
+            "open"
+          ],
+          [
+            "The Missing Instrument / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "The Missing Instrument / Deliver an outcome",
+            "open"
+          ],
+          [
+            "Terms of Passage",
+            "planned"
+          ],
+          [
+            "Terms of Passage / Agree the scope",
+            "open"
+          ],
+          [
+            "Terms of Passage / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "Terms of Passage / Deliver an outcome",
+            "open"
+          ],
+          [
+            "An Honest Second Opinion",
+            "planned"
+          ],
+          [
+            "An Honest Second Opinion / Agree the scope",
+            "open"
+          ],
+          [
+            "An Honest Second Opinion / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "An Honest Second Opinion / Deliver an outcome",
+            "open"
+          ],
+          [
+            "A Place at the Table",
+            "planned"
+          ],
+          [
+            "A Place at the Table / Agree the scope",
+            "open"
+          ],
+          [
+            "A Place at the Table / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "A Place at the Table / Deliver an outcome",
+            "open"
+          ],
+          [
+            "The Survivor’s Records",
+            "planned"
+          ],
+          [
+            "The Survivor’s Records / Agree the scope",
+            "open"
+          ],
+          [
+            "The Survivor’s Records / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "The Survivor’s Records / Deliver an outcome",
+            "open"
+          ],
+          [
+            "The Warnings Nobody Combined",
+            "planned"
+          ],
+          [
+            "The Warnings Nobody Combined / Agree the scope",
+            "open"
+          ],
+          [
+            "The Warnings Nobody Combined / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "The Warnings Nobody Combined / Deliver an outcome",
+            "open"
+          ],
+          [
+            "A Door That Wasn’t There",
+            "planned"
+          ],
+          [
+            "A Door That Wasn’t There / Agree the scope",
+            "open"
+          ],
+          [
+            "A Door That Wasn’t There / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "A Door That Wasn’t There / Deliver an outcome",
+            "open"
+          ],
+          [
+            "Everyone Has a Way Home",
+            "planned"
+          ],
+          [
+            "Everyone Has a Way Home / Agree the scope",
+            "open"
+          ],
+          [
+            "Everyone Has a Way Home / Investigate and choose an approach",
+            "open"
+          ],
+          [
+            "Everyone Has a Way Home / Deliver an outcome",
+            "open"
+          ],
+          [
+            "The Library That Forgot",
+            "planned"
+          ],
+          [
+            "The Library That Forgot / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "The Library That Forgot / Understand the local conflict",
+            "open"
+          ],
+          [
+            "The Library That Forgot / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "The Library That Forgot / Test what was learned",
+            "open"
+          ],
+          [
+            "Beneath Troubled Waters",
+            "planned"
+          ],
+          [
+            "Beneath Troubled Waters / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "Beneath Troubled Waters / Understand the local conflict",
+            "open"
+          ],
+          [
+            "Beneath Troubled Waters / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "Beneath Troubled Waters / Test what was learned",
+            "open"
+          ],
+          [
+            "The Price of a Miracle",
+            "planned"
+          ],
+          [
+            "The Price of a Miracle / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "The Price of a Miracle / Understand the local conflict",
+            "open"
+          ],
+          [
+            "The Price of a Miracle / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "The Price of a Miracle / Test what was learned",
+            "open"
+          ],
+          [
+            "The Door Left Closed",
+            "planned"
+          ],
+          [
+            "The Door Left Closed / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "The Door Left Closed / Understand the local conflict",
+            "open"
+          ],
+          [
+            "The Door Left Closed / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "The Door Left Closed / Test what was learned",
+            "open"
+          ],
+          [
+            "A Tower Without an Address",
+            "planned"
+          ],
+          [
+            "A Tower Without an Address / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "A Tower Without an Address / Understand the local conflict",
+            "open"
+          ],
+          [
+            "A Tower Without an Address / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "A Tower Without an Address / Test what was learned",
+            "open"
+          ],
+          [
+            "A Route Through Impossible Space",
+            "planned"
+          ],
+          [
+            "A Route Through Impossible Space / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "A Route Through Impossible Space / Understand the local conflict",
+            "open"
+          ],
+          [
+            "A Route Through Impossible Space / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "A Route Through Impossible Space / Test what was learned",
+            "open"
+          ],
+          [
+            "The Unfilled Circle",
+            "planned"
+          ],
+          [
+            "The Unfilled Circle / Verify the lead and prepare travel",
+            "open"
+          ],
+          [
+            "The Unfilled Circle / Understand the local conflict",
+            "open"
+          ],
+          [
+            "The Unfilled Circle / Choose whom and how to help",
+            "open"
+          ],
+          [
+            "The Unfilled Circle / Test what was learned",
+            "open"
+          ],
+          [
+            "What We Keep Hidden",
+            "planned"
+          ],
+          [
+            "What We Keep Hidden / An Old Partner’s Warning",
+            "open"
+          ],
+          [
+            "What We Keep Hidden / The Missing Terms",
+            "open"
+          ],
+          [
+            "What We Keep Hidden / A Pattern in the Dark",
+            "open"
+          ],
+          [
+            "What We Keep Hidden / Terms of Trust",
+            "open"
+          ],
+          [
+            "What We Keep Hidden / The Keeper’s Choice",
+            "open"
+          ],
+          [
+            "The Way Back",
+            "planned"
+          ],
+          [
+            "The Way Back / A Familiar Maker’s Mark",
+            "open"
+          ],
+          [
+            "The Way Back / The Missing Craftsperson",
+            "open"
+          ],
+          [
+            "The Way Back / Stone That Doesn’t Belong",
+            "open"
+          ],
+          [
+            "The Way Back / Someone to Follow",
+            "open"
+          ],
+          [
+            "The Way Back / A Map of His Own",
+            "open"
+          ],
+          [
+            "Knowledge in Good Hands",
+            "planned"
+          ],
+          [
+            "Knowledge in Good Hands / A Question for Home",
+            "open"
+          ],
+          [
+            "Knowledge in Good Hands / A Different Conclusion",
+            "open"
+          ],
+          [
+            "Knowledge in Good Hands / Repeat the Experiment",
+            "open"
+          ],
+          [
+            "Knowledge in Good Hands / Who Needs to Know?",
+            "open"
+          ],
+          [
+            "Knowledge in Good Hands / The Published Record",
+            "open"
+          ],
+          [
+            "An Honest Name",
+            "planned"
+          ],
+          [
+            "An Honest Name / A Proper Contract",
+            "open"
+          ],
+          [
+            "An Honest Name / Someone from Before",
+            "open"
+          ],
+          [
+            "An Honest Name / The Part They Left Out",
+            "open"
+          ],
+          [
+            "An Honest Name / Help with Conditions",
+            "open"
+          ],
+          [
+            "An Honest Name / The Work He Chooses",
+            "open"
+          ],
+          [
+            "A Life Returned",
+            "planned"
+          ],
+          [
+            "A Life Returned / The Ring and the Record",
+            "open"
+          ],
+          [
+            "A Life Returned / Someone Who Remembers",
+            "open"
+          ],
+          [
+            "A Life Returned / The Return Ledger",
+            "open"
+          ],
+          [
+            "A Life Returned / Their Names, Their Lives",
+            "open"
+          ],
+          [
+            "A Life Returned / A Life of His Choosing",
+            "open"
+          ],
+          [
+            "Stop the Apparatus",
+            "planned"
+          ],
+          [
+            "Stop the Apparatus / Establish prerequisites",
+            "open"
+          ],
+          [
+            "Stop the Apparatus / Review with affected people",
+            "open"
+          ],
+          [
+            "Stop the Apparatus / Carry out and record the outcome",
+            "open"
+          ],
+          [
+            "Give Him a Chance to Stop",
+            "planned"
+          ],
+          [
+            "Give Him a Chance to Stop / Establish prerequisites",
+            "open"
+          ],
+          [
+            "Give Him a Chance to Stop / Review with affected people",
+            "open"
+          ],
+          [
+            "Give Him a Chance to Stop / Carry out and record the outcome",
+            "open"
+          ],
+          [
+            "A Smaller Attempt",
+            "planned"
+          ],
+          [
+            "A Smaller Attempt / Establish prerequisites",
+            "open"
+          ],
+          [
+            "A Smaller Attempt / Review with affected people",
+            "open"
+          ],
+          [
+            "A Smaller Attempt / Carry out and record the outcome",
+            "open"
+          ],
+          [
+            "Protect the Living",
+            "planned"
+          ],
+          [
+            "Protect the Living / Establish prerequisites",
+            "open"
+          ],
+          [
+            "Protect the Living / Review with affected people",
+            "open"
+          ],
+          [
+            "Protect the Living / Carry out and record the outcome",
+            "open"
+          ],
+          [
+            "Knowledge Worth Keeping",
+            "planned"
+          ],
+          [
+            "Knowledge Worth Keeping / Establish prerequisites",
+            "open"
+          ],
+          [
+            "Knowledge Worth Keeping / Review with affected people",
+            "open"
+          ],
+          [
+            "Knowledge Worth Keeping / Carry out and record the outcome",
+            "open"
+          ],
+          [
+            "A Road to Waterdeep",
+            "planned"
+          ],
+          [
+            "A Road to Waterdeep / Make a plan for unfinished business",
+            "open"
+          ],
+          [
+            "A Road to Waterdeep / Choose a reason to travel",
+            "open"
+          ],
+          [
+            "A Road to Waterdeep / Reach your chosen contact",
+            "open"
+          ]
+        ],
+        "journal": [
+          {
+            "id": "continuity-outcome-1791829450537-orwray5",
+            "title": "MOCK · Road ambush and guide",
+            "text": "The wagon is safe. A captured goblin pointed out the trail to the stream cave.",
+            "kind": "confirmed",
+            "when": "Session 1 · Goblin Arrows"
+          },
+          {
+            "id": "continuity-outcome-1791829608803-85skzmj",
+            "title": "MOCK · Sildar freed by agreement",
+            "text": "Sildar is free. Klarg withdrew; Yeemik holds the hideout. The party recovered stolen supplies.",
+            "kind": "confirmed",
+            "when": "Session 1 · Goblin Arrows"
+          }
+        ],
+        "privatePhones": {},
+        "tracks": [
+          {
+            "kind": "rescue",
+            "key": "outcome-1791829608803-yoats32",
+            "subject": "",
+            "holder": "",
+            "owedTo": "",
+            "state": "resolved",
+            "note": "",
+            "public": false,
+            "eventId": "outcome-1791829608803-85skzmj",
+            "session": "Session 1 · Goblin Arrows"
+          }
+        ],
+        "publicTracks": [],
+        "knowledge": {
+          "party": [
+            {
+              "id": "outcome-1791829450537-orwray5",
+              "text": "In this mock only: Goblins 2 and 4 fell after reviewed attacks. Goblin 1 surrendered, while Goblin 3 fled. The party secured the wagon and obtained directions to the stream cave from the captive goblin."
+            },
+            {
+              "id": "outcome-1791829608803-85skzmj",
+              "text": "In the mock campaign: after Klarg was wounded, the party accepted his departure with his wolf instead of executing him. Yeemik released Sildar under the negotiated bargain and retained the hideout. Donavan interpreted the Goblin conversation. Stolen supplies were recovered for review in Phandalin; no payments granted yet."
+            }
+          ]
+        },
+        "maps": []
+      }
+    },
+    "modal": [],
+    "pack": "phandalin-session-2"
+  }
+}

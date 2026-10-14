@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-12",
+  "environment": "Isolated Chrome and local test services",
+  "physicalDevicesTested": false,
+  "liveConnectionsChanged": false,
+  "checks": [
+    "39 linked scene and reference cards with complete flow fields and two-paragraph narration on reading cards",
+    "Existing guide update preserves gameplay and TV",
+    "Five encounter steps",
+    "Exit opens correct scene without changing public state",
+    "Outcome review opens private unapproved blank draft",
+    "Flow version survives save/reload",
+    "Private catalog excluded from TV",
+    "Audit notes persist and export",
+    "App bible opens",
+    "1366 and 1100 layouts fit with visible next-action controls",
+    "44px encounter action targets",
+    "Scene search expands the folded library",
+    "Current scene remains directly accessible from exploration",
+    "Advanced notes open and close without losing Scene",
+    "Exact player preview is mounted without changing game state",
+    "Castle exits match existing tactical topology",
+    "Village return preserves gameplay",
+    "Current Gundren and cleared-site authority remains intact"
+  ],
+  "errors": []
+}

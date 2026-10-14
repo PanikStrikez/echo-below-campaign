@@ -35,7 +35,8 @@
     const display = d => ({ name: label(d?.name || 'Table TV', 40), width: clamp(d?.width, 640, 7680, 1920),
       height: clamp(d?.height, 480, 4320, 1080), physicalWidth: clamp(d?.physicalWidth, 10, 120, 43),
       squareInches: clamp(d?.squareInches, .5, 3, 1), safeEdge: clamp(d?.safeEdge, 0, 15, 3),
-      orientation: d?.orientation === 'portrait' ? 'portrait' : 'landscape', scaleLock: d?.scaleLock === true });
+      orientation: d?.orientation === 'portrait' ? 'portrait' : 'landscape', scaleLock: d?.scaleLock === true,
+      tvPreset:d?.tvPreset==='classic'?'classic':'quiet',showObjective:d?.showObjective!==false,showSubtitles:d?.showSubtitles!==false });
     const displays = Array.isArray(raw.displays) && raw.displays.length ? raw.displays.slice(0, 8).map(display) : [display()];
     return { displays, displayIndex: Math.round(clamp(raw.displayIndex, 0, displays.length - 1, 0)),
       playerInput: raw.playerInput !== false, preview: false,
@@ -82,5 +83,6 @@
     const width = Math.max(100, Math.floor(display.scaleLock ? Math.min(wanted, usableWidth, usableHeight * 1.5) : Math.min(usableWidth, usableHeight * 1.5)));
     return { width, fits, actualSquare: width / columns * display.physicalWidth / viewportWidth };
   }
-  globalThis.ECHO_MAP_DATA = { normalize, scene, publicScene, blocked, visibleTiles, calibration };
+  function displayTitle(value){return [...new Set(String(value||'The Echo Below').split(/\s*[·|]\s*/).filter(Boolean))].join(' · ');}
+  globalThis.ECHO_MAP_DATA = { displayTitle,normalize, scene, publicScene, blocked, visibleTiles, calibration };
 })();

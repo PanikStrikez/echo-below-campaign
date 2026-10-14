@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="Session-01-Battleboard.css">
   <link rel="stylesheet" href="Session-01-Cockpit.css">
   <link rel="stylesheet" href="Session-01-Interface.css">
+  <link rel="stylesheet" href="Session-01-Hybrid-UI.css">
   <link rel="stylesheet" href="Campaign-Courtyard.css">
   <link rel="stylesheet" href="AI-Settings.css">
   <link rel="stylesheet" href="Campaign-Engine.css">
+  <link rel="stylesheet" href="Session-01-Player-Polish.css">
+  <link rel="stylesheet" href="Visual-Language.css">
   <script src="Session-01-Loader.js" defer></script>
 </head>
 <body>
@@ -73,7 +76,7 @@
         <button id="download-campaign" type="button">Back up campaign</button>
         <button id="load-campaign-button" type="button">Restore campaign</button>
       </div>
-      <input id="load-campaign-file" type="file" accept="application/json,.json" hidden>
+      <input id="load-campaign-file" type="file" accept="application/json,.json,application/zip,.zip" hidden>
       <small id="save-status" class="save-status">Ready</small>
     </div>
 
@@ -89,7 +92,7 @@
               <button id="request-initiative" type="button">Ask phones for initiative</button>
               <button id="roll-enemy-initiative" type="button">Roll placed enemies</button>
               <button id="previous-turn" type="button">Previous turn</button>
-              <button id="end-combat" type="button">End combat</button>
+              <button id="end-combat" type="button">Review combat ending</button>
             </div>
           </details>
         </div>
@@ -145,7 +148,7 @@
           <details><summary>Write a new player text card</summary>
             <label class="field-label" for="tv-text-title">Title</label><input id="tv-text-title" type="text" maxlength="100" placeholder="A clue, place, or question">
             <label class="field-label" for="tv-text-body">Text the players may read</label><textarea id="tv-text-body" rows="4" maxlength="3000"></textarea>
-            <button id="tv-text-add" class="primary" type="button">Show text on TV</button>
+            <button id="tv-text-add" class="primary" type="button">Preview text for TV</button>
           </details>
         </section>
         <section class="panel scene-panel">
@@ -433,7 +436,7 @@
         <div id="context-token" class="context-content" hidden><p id="context-token-empty">Click a token on the map to see its combat card here.</p><aside id="combat-card" class="combat-card" aria-label="Combat card" hidden></aside></div>
         <div id="context-scene" class="context-content" hidden></div>
         <div id="context-encounter" class="context-content" hidden></div>
-        <div id="context-requests" class="context-content" hidden><div id="desk-inbox"></div><details id="desk-action-review"><summary>Phone action review</summary><div id="phone-action-review-detail" class="phone-action-review"></div></details></div>
+        <div id="context-requests" class="context-content" hidden><div id="desk-inbox"></div><details id="desk-action-review"><summary>Action review</summary><div id="phone-action-review-detail" class="phone-action-review"></div></details></div>
         <div id="context-clue" class="context-content" hidden></div>
       </aside>
     </div>
@@ -607,7 +610,7 @@
     <div id="reliability-scrim" class="reliability-scrim" hidden></div>
     <section id="reliability-drawer" class="reliability-drawer" role="dialog" aria-modal="true" aria-label="Recovery and campaigns" hidden>
       <header class="reliability-head"><div><small>THE ECHO BELOW · SAFETY DESK</small><h2>Recovery & campaigns</h2></div><button id="close-reliability" type="button">Close</button></header>
-      <nav id="reliability-tabs" class="reliability-tabs" aria-label="Safety tools"><button data-reliability-tab="table" type="button">Table check</button><button data-reliability-tab="health" type="button">Offline check</button><button data-reliability-tab="snapshots" type="button">Restore points</button><button data-reliability-tab="campaigns" type="button">Campaigns</button><button data-reliability-tab="backup" type="button">Backup</button></nav>
+      <nav id="reliability-tabs" class="reliability-tabs" aria-label="Safety tools"><button data-reliability-tab="status" type="button">Current status</button><button data-reliability-tab="rehearsal" type="button">Table rehearsal</button><button data-reliability-tab="table" type="button">Table check</button><button data-reliability-tab="health" type="button">Offline check</button><button data-reliability-tab="snapshots" type="button">Restore points</button><button data-reliability-tab="campaigns" type="button">Campaigns</button><button data-reliability-tab="backup" type="button">Backup</button></nav>
       <div id="reliability-content" class="reliability-content"></div>
     </section>
     <div id="phones-scrim" class="phones-scrim" hidden></div>
@@ -626,6 +629,8 @@
     <header class="player-header">
       <strong id="player-scene-title">The Echo Below</strong>
       <span id="player-hint">Waiting for the DM screen…</span>
+      <span id="player-link-status" role="status">Waiting for DM · no update yet</span>
+      <button id="player-interaction-toggle" type="button" aria-pressed="false">Controls & interaction</button>
       <button id="player-fullscreen" type="button">Full screen</button>
       <button id="player-journal-button" type="button" hidden>Journal</button>
     </header>
@@ -635,6 +640,8 @@
       <strong id="player-roll-banner" class="player-roll-banner" hidden></strong>
     </div>
     <div class="player-stage-wrap">
+      <div id="player-link-warning" role="alert" hidden>TV connection lost. This view may be out of date. Ask the DM to resync.</div>
+      <div id="player-calibration-overlay" aria-label="TV readability check" hidden><strong>SAFE EDGE · KEEP TEXT INSIDE THIS BORDER</strong><div class="calibration-samples"><span class="calibration-token">HERO</span><span class="calibration-ruler">──────── 20 ft ────────</span></div><p>Read this from every seat · check actual map tokens and labels · then hide the check</p></div>
       <div class="player-frame">
         <div id="player-stage" class="stage"></div>
         <span class="frame-corner frame-corner-tl" aria-hidden="true"></span>

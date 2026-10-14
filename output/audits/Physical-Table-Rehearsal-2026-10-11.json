@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-11T23:39:13.704662+00:00",
+  "stage": "Physical table rehearsal preparation",
+  "status": "Guide implemented; actual table testing pending",
+  "where": "Menu \u2192 Settings \u2192 Recovery & campaigns \u2192 Current status \u2192 Guided table rehearsal",
+  "guide": "../campaign/Table-Rehearsal-Guide.html",
+  "steps": 11,
+  "requiredDeviceStepObservations": 38,
+  "requiredPhysicalDevices": [
+    "DM screen",
+    "Flat TV",
+    "Speakers",
+    "Trista phone",
+    "Pebble phone",
+    "Donavan phone",
+    "Ringgo phone",
+    "Aldric phone"
+  ],
+  "actualPhysicalResults": [],
+  "physicalDevicesTested": false,
+  "actualUserObservationsReceived": 0,
+  "automatedEvidence": {
+    "coreGatePassed": true,
+    "passedCommands": 97,
+    "totalCommands": 97,
+    "at": "2026-10-11T23:37:29.456128+00:00",
+    "versions": {
+      "app": {
+        "sha256": "c093ff5ae008a563a2c403eec6e7958a3b8617c3737bc21d1990e8727f3ddea2",
+        "files": 192,
+        "bytes": 8299003
+      },
+      "assets": {
+        "sha256": "42ad67a4b10f003f9a8231e11d772762652820aae1d737d9878dce69628701c2",
+        "files": 516,
+        "bytes": 983348098
+      },
+      "tests": {
+        "sha256": "447f643a92063b542e4a9697e297f99c76957eaa6fc9b63c1bf5e6a206cfd11f",
+        "files": 167,
+        "bytes": 1355463
+      },
+      "saveSchema": 3
+    },
+    "browserRehearsal": "Fresh browser profile and real temporary local service; observation fixtures, not real hardware",
+    "focusedUnitCases": 6,
+    "deliberateFaultsCaught": 3
+  },
+  "specificChanges": [
+    "One guided step at a time in the existing recovery panel",
+    "Individual observed results for all five phones",
+    "Observer/setup, control name, unreadable text, hesitation timing, skipped checks",
+    "Visible Saving/Saved feedback and navigation disabled during writes",
+    "Problems remain visible across runs and after returning to the original campaign",
+    "Fix notes never clear failures; only a later physical pass does",
+    "Simulation-only results cannot satisfy physical completion",
+    "Existing practice copy and resume controls; no automatic game actions",
+    "Private JSON export and printable recording sheet"
+  ],
+  "remainingChecks": [
+    "Run with real DM, TV, speakers and five phones",
+    "Record readability from actual seats, device browsers and Wi-Fi behavior",
+    "Record action, token, fog, handout, audio and closing observations",
+    "Export observation notes and fix actual reported problems, then retest"
+  ],
+  "preservation": {
+    "originalLiveBackupSha256": "5fd26c38231c524d4bad822983129cdab0db432158e2f59bfc5d495c4b31e32b",
+    "liveCampaignChanged": false,
+    "liveServicesRestarted": false,
+    "realProviderRequests": 0
+  },
+  "limitations": [
+    "Real device checks require DM/player observations; none are inferred from this audit",
+    "Opening a practice campaign releases phone joins and requires a new practice QR; the new guide never does this automatically",
+    "Observation notes are private browser metadata for the source group, separately exportable; current game backup format is unchanged",
+    "Current-file comparison requires the loopback desktop launcher; file-based viewing cannot certify build identity",
+    "In-session problem fixes still require a physical retest"
+  ]
+}

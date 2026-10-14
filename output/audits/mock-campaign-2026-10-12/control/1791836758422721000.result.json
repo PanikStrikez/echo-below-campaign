@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791836758610-qzlwejo0",
+            "label": "Unarmed Strike · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              14
+            ],
+            "total": 20,
+            "natural": 14,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:58 PM"
+          },
+          {
+            "id": "pa-1791836758610-rk9p5isi",
+            "label": "Unarmed Strike · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:58 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-1",
+            "text": "Pen guard 1: 20 vs AC 14: hit, 7 bludgeoning → 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Pen guard 1"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836758825-hq7qfu2w",
+            "label": "Martial Arts unarmed strike · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              15
+            ],
+            "total": 21,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:58 PM"
+          },
+          {
+            "id": "pa-1791836758825-5midkvcn",
+            "label": "Martial Arts unarmed strike · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:58 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-1",
+            "text": "Pen guard 1: 21 vs AC 14: hit, 6 bludgeoning → 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

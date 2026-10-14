@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "result": {
+    "plan": "function initialPlan(s,r){\n  const own=owner(s,r.characterId);let a=definition(s,r);\n  if(r.actionType==='spell')a=own.actions.find(x=>x.name.toLowerCase()===a.name.toLowerCase())||own.attacks.find(x=>x.name.toLowerCase()===a.name.toLowerCase())||a;\n  if(!a)throw Error('Choose this action again from the current phone sheet.');\n  const effect=a.effect||a.notes||'',type=(a.type||'').toLowerCase();\n  const resourceId=a.resourceId||(r.actionType==='resource'?own.resources[r.actionIndex]?.id:'');\n  let costs=resourceId?[{id:resourceId,delta:-(Number(a.cost)||1)}]:[];\n  const healing=/^heal\\b|regain.*hit points/i.test(effect)||/second wind|healing word|cure wounds/i.test(a.name);\n  const kind=Number.isFinite(a.attackBonus)?'attack':healing?'heal':a.saveAbility&&a.saveDC?'save':a.damageDice?'roll':'effect';\n  const usage=type.includes('bonus')?'bonus':type.includes('reaction')?'reaction':/^(action|spell action|ritual or action)$/.test(type)?'action':r.actionType==='attack'||r.actionType==='spell'?'action':'none';\n  let concentration=/concentration/i.test(effect)&&!/no concentration|without concentration/i.test(effect)?a.name:'';\n  const targets=r.targetIds.length?r.targetIds:healing&&/second wind/i.test(a.name)?[r.characterId]:[];\n  let castEffect='',castOverride='';\n  if(r.actionType==='spell'&&r.casting){\n   const c=r.casting,spell=definition(s,r),pool=own.resources.find(p=>p.id===c.resourceId);\n   if(Number(spell.level)>0&&c.mode!=='ritual'){\n    if(!pool)throw Error('Choose a ca",
+    "king": {
+      "id": "s3-area14",
+      "title": "Area 14 · Grol and Vyerith",
+      "scene": "lmop-map-cragmaw-castle",
+      "encounter": "castle-king",
+      "tv": "Reveal the room when the door opens. Gundren was left at an inn and must not be staged here. Keep Vyerith’s true form private until revealed.",
+      "read": [
+        "Voices cut through the door: a harsh demand, then a smooth reply. Inside, furs cover the floor while a towering bugbear argues with a dark-clad visitor.",
+        "The argument reveals different voices, not an agreement you understand yet. The furs and the speakers' positions divide the room into places to approach or avoid. You can listen for a few more words, announce yourselves, or look for a position that keeps your way out clear."
+      ],
+      "ask": [
+        "Do you listen longer, speak through the door, strike first, or look for another way in?"
+      ],
+      "run": [
+        "King Grol is a 45-HP bugbear. Snarl is an 18-HP wolf. Vyerith is a 52-HP doppelganger disguised as a drow emissary of the Black Spider; its true nature is secret.",
+        "The printed encounter makes Gundren a hostage, but actual play left him at an inn. Grol and Vyerith may still bargain over information or possessions they actually hold. Do not invent a new hostage or assume they have Gundren’s map.",
+        "If warned, Vyerith may hide near the northeast exit. If Grol falls, Vyerith may try to escape through area 11; track any item it actually carries.",
+        "The printed room has 220 sp, 160 ep, and three healing potions in a sack. Confirm the map’s current custody from actual play before placing it there.",
+        "Allow conversation, retreat, and pursuit. Record what the party finds and learns; Gundren’s safety is resolved separately at the inn."
+      ],
+      "private": [
+        "Adventure pp. 40–41 supplies the original keyed room. This campaign’s actual Gundren outcome overrides its printed hostage setup. Glasstaff’s arrival at the castle is DM-only until discovered."
+      ],
+      "flowVersion": 1,
+      "choices": [
+        "Area 11 · Concealed north entrance",
+        "Return to the castle map",
+        "Retreat along the known route",
+        "Close the session here"
+      ]
+    }
+  }
+}

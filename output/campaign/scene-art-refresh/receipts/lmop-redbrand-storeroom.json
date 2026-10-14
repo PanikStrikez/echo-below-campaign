@@ -1,0 +1,36 @@
+{
+  "id": "lmop-redbrand-storeroom",
+  "title": "Redbrand Hideout · Area 7 · Storeroom",
+  "image": "lmop-visuals/redbrand-storeroom.png",
+  "key": "R07",
+  "chapter": "Redbrand Hideout",
+  "reveal": "On entering area 7",
+  "sourceRecordIds": [
+    "s2-armory"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-armory",
+      "title": "13 · Armory and storeroom · areas 6–7",
+      "read": [
+        "Weapon racks line one chamber; the next smells of leather, fur, and dust. Old storage here still serves someone.",
+        "The arrangement of the stored equipment makes it possible to examine one part of the room without disturbing everything else. You can check what is within reach, look for markings, or study the exits. Anything useful still has to be inspected before you decide to carry it away."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "North end of a natural cavern finished with dressed stone walls and flagstone flooring. Stored barrels, EMPTY crates, packing straw, hammers, pry bars and nails; bundled beaver pelts among mundane goods. Wide natural cavern continues south, giving a distant view toward an ordinary dark crevasse. No visible secret doors, gold hoard, nothic or prisoners. Functional work/storage space, not a sealed box chamber.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Redbrand Hideout · Area 7 · Storeroom\nObservable scene and constraints: North end of a natural cavern finished with dressed stone walls and flagstone flooring. Stored barrels, EMPTY crates, packing straw, hammers, pry bars and nails; bundled beaver pelts among mundane goods. Wide natural cavern continues south, giving a distant view toward an ordinary dark crevasse. No visible secret doors, gold hoard, nothic or prisoners. Functional work/storage space, not a sealed box chamber.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "95a043fa3a8de730e61a4f7dd9bbdd1ef0ba00ac30432a976edec295de7ddf0e",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-redbrand-storeroom.png",
+  "generatedAt": "2026-10-12T15:48:43.639Z",
+  "candidateHash": "acd60f4eb70f6de423d51b5cd0da3f4d29c12cb4d1ff22bcb6e1dfbedb4b8329",
+  "review": "passed",
+  "reviewedHash": "acd60f4eb70f6de423d51b5cd0da3f4d29c12cb4d1ff22bcb6e1dfbedb4b8329",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.717Z",
+  "installedHash": "acd60f4eb70f6de423d51b5cd0da3f4d29c12cb4d1ff22bcb6e1dfbedb4b8329",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/redbrand-storeroom.png"
+}

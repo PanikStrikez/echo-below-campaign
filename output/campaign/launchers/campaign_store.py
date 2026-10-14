@@ -236,10 +236,10 @@ class CampaignStore:
                         int(fact['player_safe']), fact['epistemic'], _json(fact['provenance'])))
             db.execute('INSERT INTO campaign_search(id,doc_type,text) VALUES(?,?,?)', (fact['id'], 'fact', fact['text']))
 
-    def apply_mutations(self, mutations, expected_revision, actor='dm', session_id=None, commit_hook=None):
+    def apply_mutations(self, mutations, expected_revision, actor='dm', session_id=None, commit_hook=None, managed=False):
         if actor != 'dm':
             raise PermissionError('Only the DM can change campaign state')
-        if not isinstance(mutations, list) or (not mutations and commit_hook is None) or len(mutations) > 500:
+        if not isinstance(mutations, list) or (not mutations and commit_hook is None) or len(mutations) > (20000 if managed else 500):
             raise ValueError('mutations must contain 1 to 500 operations; empty commits require a receipt hook')
         if expected_revision is not None and (isinstance(expected_revision, bool) or not isinstance(expected_revision, int)):
             raise ValueError('expected_revision must be an integer')
@@ -267,6 +267,10 @@ class CampaignStore:
             if expected_revision is not None and expected_revision != revision:
                 raise RevisionConflict('Campaign changed: expected revision %s, current revision %s' % (expected_revision, revision))
             records, deleted = [], []
+            if not managed and db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='outcome_mirrors'").fetchone():
+                for identifier in seen:
+                    if db.execute('SELECT 1 FROM outcome_mirrors WHERE id=?', (identifier,)).fetchone():
+                        raise RevisionConflict('This record is linked to an approved browser outcome. Correct it in Outcome review.')
             for mutation in normalized:
                 if mutation['op'] == 'upsert':
                     try:
@@ -361,15 +365,17 @@ class CampaignStore:
                  bm25(campaign_search) AS rank, f.record_id, f.epistemic AS fact_epistemic,
                  f.visibility AS fact_visibility, f.provenance, c.source_id, c.page,
                  c.epistemic AS source_epistemic, s.filename, s.sha256, s.visibility AS source_visibility,
-                 s.metadata
+                 s.metadata, r.body AS record_body
                  FROM campaign_search
                  LEFT JOIN campaign_facts f ON campaign_search.doc_type='fact' AND f.id=campaign_search.id
+                 LEFT JOIN campaign_records r ON r.id=f.record_id
                  LEFT JOIN campaign_chunks c ON campaign_search.doc_type='source' AND c.id=campaign_search.id
                  LEFT JOIN campaign_sources s ON s.id=c.source_id
                  WHERE campaign_search MATCH ? AND
                  ((campaign_search.doc_type='fact' AND (''' + fact_permission + ''')) OR
                   (campaign_search.doc_type='source' AND (''' + source_permission + ''')))
-                 ORDER BY CASE WHEN campaign_search.doc_type='fact' THEN 0
+                 ORDER BY CASE WHEN campaign_search.doc_type='fact' AND json_extract(r.body,'$.data.scope')='current-linked-state' THEN -1
+                   WHEN campaign_search.doc_type='fact' THEN 0
                    WHEN json_extract(s.metadata,'$.authority') IN ('actual_play','current_campaign') THEN 1
                    WHEN json_extract(s.metadata,'$.authority')='current_dm_plan' THEN 2
                    WHEN json_extract(s.metadata,'$.authority')='campaign_reference' THEN 3
@@ -387,6 +393,11 @@ class CampaignStore:
                         'citations': citations if audience == 'dm' else _public_citations(citations)}
                 if audience == 'dm':
                     item['record_id'] = row['record_id']
+                data = json.loads(row['record_body']).get('data', {})
+                item['authority'] = 'browser-outcome' if data.get('authority') == 'browser-outcome' else 'service-reference'
+                item['source_warning'] = ('Current state from explicit reviewed links; do not infer unrecorded developments.' if data.get('scope') == 'current-linked-state'
+                                              else 'Historical event; not necessarily the current situation.' if data.get('scope') == 'historical-event'
+                                              else 'Separate service reference. Reconcile played events in browser Outcome review before treating this as current table state.')
             else:
                 metadata = json.loads(row['metadata'])
                 citation = {'source_id': row['source_id'], 'filename': row['filename'], 'page': row['page'], 'sha256': row['sha256']}

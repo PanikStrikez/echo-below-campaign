@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-14",
+  "checks": [
+    "Keyboard arrows use the undoable direct movement command and retain focus; no dragging required",
+    "End combat opens review without clearing initiative or changing public/mechanical state",
+    "One reviewed record updates selected quest, journal and shared objective with pending notes retained",
+    "Open reaction prevents initiative being ended",
+    "Outstanding effects and action queue survive initiative ending",
+    "Final return clears initiative and preserves map, tokens, HP, resources and TV",
+    "Reopen and correction retain a single event",
+    "Outcome correction undo and redo preserve fight identity",
+    "Reviewed aftermath survives reload without a duplicate",
+    "Updated wrap notes enter a correction without adding an event",
+    "New fight avoids old loot and unresolved ending preserves resumable initiative",
+    "Closing gathers approved aftermath, open decisions and owner-linked openings; level editor returns without changing the sheet",
+    "An approved practice advancement reaches the joined phone sheet with new feature and level; closing notes stay private",
+    "Phone sheets fit 360 and 390 pixels without horizontal overflow",
+    "Actual TV window retains its map and does not receive private closing notes",
+    "Saving closing review does not level remaining characters or change map, HP, fog, resources or TV",
+    "Closing review at 1366×900 supports keyboard disclosure, 125% text, reduced motion and 44-pixel visible button heights",
+    "Closing deferrals and applied advancement survive save/reload"
+  ],
+  "errors": [],
+  "physicalDevices": false,
+  "liveConnectionsChanged": false,
+  "environment": "Fresh browser profile and temporary local servers"
+}

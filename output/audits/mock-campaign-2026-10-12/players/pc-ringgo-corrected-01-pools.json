@@ -1,0 +1,807 @@
+{
+  "label": "ISOLATED MOCK CAMPAIGN — not actual history",
+  "phase": "corrected-01-pools",
+  "characterId": "pc-ringgo",
+  "dmNarration": [
+    "Two dark pools fill much of the cavern. Water presses against rough stone-and-timber dams. The waterfall’s echo makes quieter movement hard to place.",
+    "The rough barriers hold back a great deal of water, and the noise fills the space around them. You can inspect their visible supports, look for ground that stays out of the current, or study the onward route before putting someone beside a dam."
+  ],
+  "question": "Three goblins watch the dams. Your escorts explain the truce. You inspect the supports from dry ground; both pools are full, and neither is released. The guards warn that Klarg may refuse Yeemik’s proposal. Do you continue together to speak to him, or change your plan?",
+  "phoneResponse": {
+    "status": 200,
+    "data": {
+      "revision": 1441,
+      "resyncRequest": 0,
+      "session": "PRACTICE · Session 1 · Goblin Arrows",
+      "character": {
+        "id": "pc-ringgo",
+        "name": "Ringgo Paul",
+        "player": "Cade",
+        "className": "Rogue 1",
+        "ancestry": "Tiefling",
+        "background": "Criminal / Spy",
+        "level": 1,
+        "rules": "2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export",
+        "proficiency": 2,
+        "speed": 30,
+        "senses": "Darkvision 60 ft.; fire resistance",
+        "languages": "Common, Infernal, Thieves’ Cant",
+        "hp": 10,
+        "maxHp": 10,
+        "ac": 16,
+        "tempHp": 0,
+        "hitDice": {
+          "die": 8,
+          "current": 1,
+          "max": 1,
+          "details": "1d8",
+          "pools": [
+            {
+              "die": 8,
+              "current": 1,
+              "max": 1
+            }
+          ]
+        },
+        "abilities": {
+          "str": {
+            "score": 7,
+            "modifier": -2
+          },
+          "dex": {
+            "score": 19,
+            "modifier": 4
+          },
+          "con": {
+            "score": 14,
+            "modifier": 2
+          },
+          "int": {
+            "score": 10,
+            "modifier": 0
+          },
+          "wis": {
+            "score": 10,
+            "modifier": 0
+          },
+          "cha": {
+            "score": 18,
+            "modifier": 4
+          }
+        },
+        "saves": [
+          {
+            "name": "STR",
+            "bonus": -2,
+            "rank": 0
+          },
+          {
+            "name": "DEX",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "CON",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "INT",
+            "bonus": 2,
+            "rank": 1
+          },
+          {
+            "name": "WIS",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "CHA",
+            "bonus": 4,
+            "rank": 0
+          }
+        ],
+        "skills": [
+          {
+            "name": "Acrobatics",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Animal Handling",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Arcana",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Athletics",
+            "bonus": -2,
+            "rank": 0
+          },
+          {
+            "name": "Deception",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "History",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Insight",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Intimidation",
+            "bonus": 4,
+            "rank": 0
+          },
+          {
+            "name": "Investigation",
+            "bonus": 4,
+            "rank": 2
+          },
+          {
+            "name": "Medicine",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Nature",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Perception",
+            "bonus": 2,
+            "rank": 1
+          },
+          {
+            "name": "Performance",
+            "bonus": 4,
+            "rank": 0
+          },
+          {
+            "name": "Persuasion",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Religion",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Sleight of Hand",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Stealth",
+            "bonus": 8,
+            "rank": 2
+          },
+          {
+            "name": "Survival",
+            "bonus": 0,
+            "rank": 0
+          }
+        ],
+        "passives": {
+          "Perception": 12,
+          "Insight": 10,
+          "Investigation": 14
+        },
+        "attacks": [
+          {
+            "id": "ringgo-rapier",
+            "name": "Rapier",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d8+4",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Finesse; Sneak Attack may add 1d6 once per turn.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-shortbow",
+            "name": "Shortbow",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d6+4",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Range 80/320; Sneak Attack may add 1d6.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-dagger",
+            "name": "Dagger",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d4+4",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Finesse, light, thrown 20/60.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-offhand",
+            "name": "Second dagger",
+            "type": "Bonus action",
+            "attackBonus": 6,
+            "damageDice": "1d4",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Two-weapon fighting; no +4 damage.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-sneak",
+            "name": "Sneak Attack",
+            "type": "Once per turn",
+            "attackBonus": 6,
+            "damageDice": "2d6",
+            "damageType": "extra",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.",
+              "source": {
+                "book": "2014 PHB pp. 96–97; Tasha’s feat exception",
+                "printedPage": null,
+                "rule": "Sneak Attack / Assassinate / Piercer",
+                "confidence": "approved table choice"
+              }
+            }
+          }
+        ],
+        "actions": [
+          {
+            "id": "ringgo-thaumaturgy",
+            "name": "Thaumaturgy",
+            "type": "Action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Tiefling cantrip: create a minor supernatural sign within 30 feet; no slot.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 282,
+                "rule": "Thaumaturgy",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          }
+        ],
+        "spells": [],
+        "resources": [
+          {
+            "id": "ringgo-arrows",
+            "name": "Arrows",
+            "current": 19,
+            "max": 20,
+            "unit": "arrows",
+            "slotLevel": 0
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Rapier",
+            "quantity": 1,
+            "category": "Weapon",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Shortbow",
+            "quantity": 1,
+            "category": "Weapon",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Dagger",
+            "quantity": 2,
+            "category": "Weapon",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Studded leather",
+            "quantity": 1,
+            "category": "Armor",
+            "notes": "",
+            "equipped": true,
+            "attuned": false
+          },
+          {
+            "name": "Thieves’ tools",
+            "quantity": 1,
+            "category": "Tool",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Arrows",
+            "quantity": 20,
+            "category": "Ammunition",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Hammer",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Mess kit",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Backpack",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Crowbar",
+            "quantity": 2,
+            "category": "Gear",
+            "notes": "PDF lists two",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Ball bearings",
+            "quantity": 999,
+            "category": "Gear",
+            "notes": "One bag",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Bedroll",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Bell",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Candle",
+            "quantity": 5,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Waterskin",
+            "quantity": 2,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "String",
+            "quantity": 10,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Piton",
+            "quantity": 10,
+            "category": "Gear",
+            "notes": "The current sheet says piton, not potion.",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Rations",
+            "quantity": 15,
+            "category": "Consumable",
+            "notes": "One day each",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Rope, hempen 50 ft.",
+            "quantity": 2,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Hooded lantern",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Oil flask",
+            "quantity": 2,
+            "category": "Consumable",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Torch",
+            "quantity": 10,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Tinderbox",
+            "quantity": 2,
+            "category": "Gear",
+            "notes": "Updated PDF lists two",
+            "equipped": false,
+            "attuned": false
+          }
+        ],
+        "money": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 15,
+          "pp": 0
+        },
+        "features": [
+          {
+            "name": "Sneak Attack",
+            "text": "Once per turn, +1d6 with qualifying finesse/ranged hit; review advantage or nearby ally.",
+            "source": "Ringgo level 3 PDF p. 2"
+          },
+          {
+            "name": "Expertise",
+            "text": "Stealth and Investigation. Investigation is the DM-confirmed second choice after this export.",
+            "source": "Ringgo PDF p. 2; DM ruling 2026-09-25"
+          },
+          {
+            "name": "Hellish Resistance",
+            "text": "Resistance to fire damage.",
+            "source": "Ringgo PDF p. 2"
+          },
+          {
+            "name": "Infernal Legacy",
+            "text": "Thaumaturgy cantrip and Hellish Rebuke once per long rest as a 2nd-level spell at this level.",
+            "source": "Ringgo level 3 PDF pp. 2, 5"
+          }
+        ],
+        "inspiration": false,
+        "death": {
+          "successes": 0,
+          "failures": 0,
+          "stable": false
+        },
+        "exhaustion": 0,
+        "conditions": [],
+        "concentration": "",
+        "effects": [],
+        "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+        "favorites": []
+      },
+      "dungeonProtocol": 1,
+      "dungeon": {
+        "enabled": false,
+        "fine": false,
+        "current": [],
+        "explored": [],
+        "objects": [],
+        "passages": []
+      },
+      "searchRequests": [],
+      "travelProtocol": 1,
+      "journey": {
+        "position": null,
+        "destination": "",
+        "weather": "clear",
+        "estimate": null,
+        "places": [
+          {
+            "id": "region-neverwinter",
+            "title": "Neverwinter",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-phandalin",
+            "title": "Phandalin",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          }
+        ],
+        "events": []
+      },
+      "atlas": null,
+      "atlasImage": "",
+      "travelRequests": [],
+      "playerToolsProtocol": 1,
+      "playerTools": {
+        "notes": [],
+        "sharedClues": [],
+        "itemRequests": [],
+        "bank": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 0,
+          "pp": 0
+        },
+        "objective": {
+          "text": "Escort the supplies to Phandalin and investigate danger on the road.",
+          "at": "2026-10-12T19:10:34.672Z"
+        },
+        "roster": [
+          {
+            "id": "pc-aldric",
+            "name": "Aldric Vane"
+          },
+          {
+            "id": "pc-pebble",
+            "name": "Pebble"
+          },
+          {
+            "id": "pc-trista",
+            "name": "Trista"
+          },
+          {
+            "id": "pc-ringgo",
+            "name": "Ringgo Paul"
+          },
+          {
+            "id": "pc-donavan",
+            "name": "Donavan Kemp"
+          }
+        ]
+      },
+      "actionProtocol": 1,
+      "combatProtocol": 1,
+      "combatPrompts": {
+        "saves": [],
+        "reactions": []
+      },
+      "movement": {
+        "columns": 30,
+        "feet": 5,
+        "metric": "grid",
+        "speed": 30,
+        "used": 0,
+        "crawling": false,
+        "areas": []
+      },
+      "scene": "interior",
+      "sceneTitle": "Cragmaw Hideout",
+      "isMap": true,
+      "mapImage": "/api/map?v=da7141e78e8e",
+      "playerInput": true,
+      "fog": [
+        "8,0",
+        "8,1",
+        "8,2",
+        "8,3",
+        "8,4",
+        "9,0",
+        "9,1",
+        "9,2",
+        "9,3",
+        "9,4"
+      ],
+      "fogged": true,
+      "fineFog": false,
+      "points": [],
+      "tokens": [
+        {
+          "id": "pc-trista",
+          "name": "Trista",
+          "label": "T",
+          "team": "pc",
+          "x": 10,
+          "y": 90
+        },
+        {
+          "id": "pc-donavan",
+          "name": "Donavan",
+          "label": "D",
+          "team": "pc",
+          "x": 12,
+          "y": 90
+        },
+        {
+          "id": "pc-ringgo",
+          "name": "Ringgo",
+          "label": "R",
+          "team": "pc",
+          "x": 14,
+          "y": 90
+        },
+        {
+          "id": "pc-pebble",
+          "name": "Pebble",
+          "label": "P",
+          "team": "pc",
+          "x": 16,
+          "y": 90
+        },
+        {
+          "id": "pc-aldric",
+          "name": "Aldric",
+          "label": "A",
+          "team": "pc",
+          "x": 18,
+          "y": 90
+        },
+        {
+          "id": "goblin-5",
+          "name": "Goblin 5",
+          "label": "G5",
+          "team": "enemy",
+          "x": 22,
+          "y": 84
+        },
+        {
+          "id": "goblin-6",
+          "name": "Goblin 6",
+          "label": "G6",
+          "team": "enemy",
+          "x": 26,
+          "y": 84
+        }
+      ],
+      "turn": {
+        "round": 0,
+        "activeId": null
+      },
+      "roll": {
+        "id": "1791832512115-4ainrkf99gs",
+        "label": "Ringgo initiative",
+        "notation": "1d20+4",
+        "parts": [
+          8
+        ],
+        "total": 12
+      },
+      "requests": "Initiative 12 (8 + 4).",
+      "actionRequests": [],
+      "privateClues": [],
+      "inventory": [],
+      "sceneMood": {
+        "minutes": 540,
+        "weather": "clear",
+        "phase": "day"
+      },
+      "campaignJournal": [
+        {
+          "id": "continuity-outcome-1791832923830-zmlxmuz",
+          "title": "CORRECTED MOCK · Road goblin surrendered",
+          "text": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+          "kind": "confirmed",
+          "when": "MOCK Session1"
+        }
+      ],
+      "quests": [],
+      "campaignTracks": [],
+      "initiative": {
+        "open": false,
+        "total": 12,
+        "bonus": 4
+      },
+      "rehearsal": false
+    }
+  },
+  "playerTV": "Cragmaw Hideout\nControls & interaction\nT\nT\nD\nD\nR\nR\nP\nP\nA\nA\nG5\nG6\nDay · Clear\nPRACTICE CAMPAIGN",
+  "displayImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/corrected-01-pools-TV.png",
+  "phoneImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/players/pc-ringgo-corrected-01-pools.png"
+}

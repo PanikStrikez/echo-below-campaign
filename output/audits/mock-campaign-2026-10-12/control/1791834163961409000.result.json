@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791834164060-cq4tjsac",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              1
+            ],
+            "total": 7,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:44 PM"
+          },
+          {
+            "id": "pa-1791834164060-ung0wbn2",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              4
+            ],
+            "total": 4,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:44 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-2",
+            "text": "Redbrand 2: 7 vs AC 14: miss, 0 fire → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

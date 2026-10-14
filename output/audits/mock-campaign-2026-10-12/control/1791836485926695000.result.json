@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791836486107-2udnr8ld",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              10
+            ],
+            "total": 16,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "2:21:26 PM"
+          },
+          {
+            "id": "pa-1791836486107-hqiy8jph",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:21:26 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-2",
+            "text": "Crypt skeleton 2: 16 vs AC 13: hit, 8 bludgeoning → 16; temp HP absorbed 0; vulnerabilities: bludgeoning"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

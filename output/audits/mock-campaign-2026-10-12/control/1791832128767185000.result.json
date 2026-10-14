@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "result": {
+    "seeds": [
+      {
+        "id": "pc-aldric",
+        "level": 3,
+        "maxHp": 25,
+        "ac": 12,
+        "features": [
+          "Arcane Recovery",
+          "Sculpt Spells",
+          "Evocation Savant",
+          "Knowledge from a Past Life",
+          "Deathless Nature",
+          "Training",
+          "Heart of Darkness"
+        ]
+      },
+      {
+        "id": "pc-pebble",
+        "level": 1,
+        "maxHp": 12,
+        "ac": 18,
+        "features": [
+          "Interception",
+          "Crusher",
+          "Second Wind"
+        ]
+      },
+      {
+        "id": "pc-trista",
+        "level": 1,
+        "maxHp": 11,
+        "ac": 14,
+        "features": [
+          "Martial Arts"
+        ]
+      },
+      {
+        "id": "pc-ringgo",
+        "level": 3,
+        "maxHp": 24,
+        "ac": 16,
+        "features": [
+          "Sneak Attack",
+          "Cunning Action",
+          "Expertise",
+          "Hellish Resistance",
+          "Infernal Legacy",
+          "Assassinate",
+          "Bonus Proficiencies",
+          "Training"
+        ]
+      },
+      {
+        "id": "pc-donavan",
+        "level": 3,
+        "maxHp": 24,
+        "ac": 16,
+        "features": [
+          "Arcane Recovery",
+          "Knowledge Domain",
+          "Blessings of Knowledge",
+          "Wizard Spellcasting",
+          "Cleric Spellcasting",
+          "Wizardly Quill",
+          "Awakened Spellbook",
+          "Training"
+        ]
+      }
+    ],
+    "partyAPI": [
+      "init",
+      "open",
+      "close",
+      "openRest",
+      "refresh"
+    ],
+    "tools": [
+      "groups",
+      "key",
+      "entries",
+      "pools",
+      "setPools",
+      "diff",
+      "stage",
+      "apply",
+      "imported",
+      "level",
+      "rest",
+      "rollHealing",
+      "slotLevel",
+      "signature"
+    ]
+  }
+}

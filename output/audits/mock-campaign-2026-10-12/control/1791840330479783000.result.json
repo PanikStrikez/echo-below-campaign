@@ -1,0 +1,168 @@
+{
+  "ok": true,
+  "result": {
+    "finished": true,
+    "errors": [
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: TypeError: ECHO_COMBAT_RUN.dueEffects is not a function or its return value is not iterable\n    at window.__nextMock (eval at evaluate (:311:30), <anonymous>:3:82)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:117)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:140)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'push')\n    at log (http://127.0.0.1:52652/output/campaign/Campaign-Quests.js:38:61)\n    at Object.publication (http://127.0.0.1:52652/output/campaign/Campaign-Quests.js:50:136)\n    at eval (eval at evaluate (:311:30), <anonymous>:25:178)\n    at eval (eval at evaluate (:311:30), <anonymous>:27:3)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: TypeError: d.quests is not iterable\n    at Object.questDefinitions (http://127.0.0.1:52652/output/campaign/Campaign-Outcomes.js:54:56)\n    at Object.questCards (http://127.0.0.1:52652/output/campaign/Campaign-Continuity.js:164:77)\n    at view (http://127.0.0.1:52652/output/campaign/Campaign-Quests.js:32:120)\n    at http://127.0.0.1:52652/output/campaign/Campaign-Quests.js:37:45\n    at Array.map (<anonymous>)\n    at Object.cards (http://127.0.0.1:52652/output/campaign/Campaign-Quests.js:37:38)\n    at Object.cards (http://127.0.0.1:52652/output/campaign/Campaign-Quest-Prep.js:20:58)\n    at Object.context (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5719:674)\n    at C (http://127.0.0.1:52652/output/campaign/Session-01-Session-Flow-UI.js:4:54)\n    at keyOf (http://127.0.0.1:52652/output/campaign/Session-01-Session-Flow-UI.js:4:118)"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "dm",
+        "error": "d.quests is not iterable"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: Error: Resolve the open reaction window first.\n    at validate (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:85:104)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:142:3)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at window.__resolveMock (eval at evaluate (:311:30), <anonymous>:1:205)\n    at window.__mockEnemyAttack (eval at evaluate (:311:30), <anonymous>:9:478)\n    at window.__mockStep (eval at evaluate (:311:30), <anonymous>:50:137)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:1)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "review-outcome",
+        "error": "locator.click: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Preview linked changes', exact: true })\u001b[22m\n"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: Error: This is not that character’s turn. Add a timing override or request clarification.\n    at validate (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:92:106)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:142:3)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at window.__mockPlayerAttack (eval at evaluate (:311:30), <anonymous>:12:30)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:99)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:567)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: Error: That action is already used. Explain any extra action or override.\n    at validate (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:95:144)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:142:3)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at window.__mockPlayerAttack (eval at evaluate (:311:30), <anonymous>:12:30)\n    at window.__mockStep (eval at evaluate (:311:30), <anonymous>:47:228)\n    at window.__safeMockStep (eval at evaluate (:311:30), <anonymous>:63:9)\n    at window.__safeMockStep (eval at evaluate (:311:30), <anonymous>:1:561)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:1)\n    at eval (<anonymous>)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'playerHub')\n    at eval (eval at evaluate (:311:30), <anonymous>:1:303)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:514)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "capture",
+        "error": "apiRequestContext.get: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:52653/api/state\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - cookie: echo_phone=thvK7i0LihEv1YuYRNzQ_F5Gtitn1Az8JpnCKez-7PU\u001b[22m\n"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "capture",
+        "error": "apiRequestContext.get: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:52653/api/state\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - cookie: echo_phone=thvK7i0LihEv1YuYRNzQ_F5Gtitn1Az8JpnCKez-7PU\u001b[22m\n"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "capture",
+        "error": "apiRequestContext.get: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:52653/api/state\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - cookie: echo_phone=thvK7i0LihEv1YuYRNzQ_F5Gtitn1Az8JpnCKez-7PU\u001b[22m\n"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "capture",
+        "error": "apiRequestContext.get: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:52653/api/state\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - cookie: echo_phone=thvK7i0LihEv1YuYRNzQ_F5Gtitn1Az8JpnCKez-7PU\u001b[22m\n"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "review-outcome",
+        "error": "locator.click: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Apply reviewed outcome', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\">Apply reviewed outcome</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    13 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "choose",
+        "error": "locator.selectOption: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Choose session', { exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <select aria-label=\"Choose session\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    14 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "choose",
+        "error": "page.waitForFunction: Timeout 7000ms exceeded."
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: SyntaxError: Unexpected identifier 'navigator'\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: Error: Review targets, costs, timing, and the complete effect before preparing.\n    at validate (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:89:31)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:142:3)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at window.__resolveMock (eval at evaluate (:311:30), <anonymous>:1:205)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:746)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:805)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: Error: Describe the DM ruling for this unusual or effect-only action before resolving. Add its mechanical effects and reminders explicitly.\n    at validate (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:108:61)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:142:3)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at window.__resolveMock (eval at evaluate (:311:30), <anonymous>:1:205)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:461)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:520)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: Error: AC must be 0–99.\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:191:96)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at window.__resolveMock (eval at evaluate (:311:30), <anonymous>:1:205)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:629)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:688)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: Error: That action is already used. Explain any extra action or override.\n    at validate (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:95:144)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:142:3)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at window.__basePlayerAttack (eval at evaluate (:311:30), <anonymous>:12:30)\n    at window.__basePlayerAttack (eval at evaluate (:311:30), <anonymous>:9:120)\n    at window.__mockPlayerAttack (eval at evaluate (:311:30), <anonymous>:1:53)\n    at eval (eval at <anonymous> (eval at evaluate (:311:30)), <anonymous>:11:228)\n    at window.__safeMockStep (eval at evaluate (:311:30), <anonymous>:63:9)\n    at eval (eval at <anonymous> (eval at evaluate (:311:30)), <anonymous>:1:502)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: Error: This is not that character’s turn. Add a timing override or request clarification.\n    at validate (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:92:106)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:142:3)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at window.__resolveMock (eval at evaluate (:311:30), <anonymous>:1:205)\n    at window.__stageMock (eval at evaluate (:311:30), <anonymous>:2:196)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:307)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:635)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: Error: That action is already used. Explain any extra action or override.\n    at validate (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:95:144)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:142:3)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at eval (eval at <anonymous> (eval at evaluate (:311:30)), <anonymous>:12:30)\n    at window.__basePlayerAttack (eval at evaluate (:311:30), <anonymous>:9:120)\n    at window.__mockPlayerAttack (eval at evaluate (:311:30), <anonymous>:1:53)\n    at eval (eval at <anonymous> (eval at evaluate (:311:30)), <anonymous>:11:228)\n    at window.__safeMockStep (eval at evaluate (:311:30), <anonymous>:63:9)\n    at eval (eval at <anonymous> (eval at evaluate (:311:30)), <anonymous>:1:502)"
+      },
+      {
+        "screen": "rehearsal-step",
+        "command": "eval",
+        "error": "page.evaluate: ReferenceError: ECHO_PLAYER_HUB is not defined\n    at eval (eval at evaluate (:311:30), <anonymous>:1:27)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+      }
+    ],
+    "network": []
+  }
+}

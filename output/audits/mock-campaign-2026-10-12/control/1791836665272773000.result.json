@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791836665452-q25d5e5a",
+            "label": "Unarmed Strike · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              12
+            ],
+            "total": 18,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:24:25 PM"
+          },
+          {
+            "id": "pa-1791836665452-avkw657d",
+            "label": "Unarmed Strike · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:24:25 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-1",
+            "text": "Barracks ruffian 1: 18 vs AC 14: hit, 9 bludgeoning → 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

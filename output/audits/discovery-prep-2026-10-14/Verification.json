@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "Prepared scene alone is not a reachable clue; DM access explanation required",
+    "One reviewed source flags the bottleneck without changing history or characters",
+    "Alternative route retains unknown condition and witness limitations",
+    "All five invitations and fallbacks appear without recording participation",
+    "Correction invalidates a reviewed route instead of keeping stale readiness",
+    "Manual declined spotlight switches to a different invitation",
+    "Private route settings survive save/reload",
+    "Hidden clue-to-conclusion connections and route reviews are absent from player transport",
+    "New prep question opens the existing evidence/research review without a duplicate system",
+    "Existing spotlight tracker opens through optional tools with Back context retained"
+  ],
+  "errors": [],
+  "physicalDevices": false,
+  "liveConnectionsChanged": false
+}

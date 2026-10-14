@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "result": {
+    "quest": {
+      "status": "active",
+      "pinned": true,
+      "notes": "",
+      "outcome": "",
+      "steps": {},
+      "draft": {
+        "title": "Mock campaign · Escort and rescue",
+        "text": "Deliver the supplies to Barthen’s and investigate the missing travelers."
+      },
+      "published": {
+        "title": "Mock campaign · Escort and rescue",
+        "text": "Deliver the supplies to Barthen’s and investigate the missing travelers.",
+        "state": "active",
+        "audience": "party",
+        "at": "2026-10-12T18:19:57.536Z"
+      },
+      "publication": null
+    },
+    "hp": 11,
+    "closed": {
+      "scene": "",
+      "round": 0,
+      "order": [],
+      "index": 0
+    }
+  }
+}

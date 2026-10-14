@@ -28,6 +28,7 @@
   }
   let host = null;
   let draft = { actor: '', attack: 0, target: '', mode: 'normal', cover: 'none', acOverride: '', roll: null, damage: null, damageManual: '', confirmed: false, manualCrit: false };
+  let chosenUtility = { actor: '', id: '' };
   const state = () => host.run();
   const placed = () => host.tokens().filter(t => t.placed && t.scene === host.scene() && (t.team !== 'enemy' || t.hp > 0));
   const current = () => host.currentActor();
@@ -41,15 +42,16 @@
       const dice = damageDice(item.damageDice);
       if (Number.isFinite(item.attackBonus) && dice) result.push({ name: item.name, bonus: item.attackBonus, dice,
         type: item.damageType || 'damage', note: item.effect || '',
+        source: own.source || 'Current character sheet', resourceId: item.resourceId || '', cost: item.cost || 0,
         critThreshold: own.features?.some(feature => feature.name === 'Improved Critical') ? 19 : 20 });
     }
     for (const item of creature(actor)?.actions || []) {
       const dice = damageDice(item.dice);
       if (Number.isFinite(item.bonus) && dice) result.push({ name: item.name, bonus: item.bonus, dice,
-        type: item.type || 'damage', note: item.note || '' });
+        type: item.type || 'damage', note: item.note || '', source: creature(actor)?.source || 'Creature card' });
     }
     for (const item of actor.extraAttacks || []) if (Number.isFinite(item.bonus)) result.push({ name: item.name, bonus: item.bonus,
-      dice: { count: item.count, sides: item.sides, modifier: item.modifier }, type: item.damage || 'damage', note: '' });
+      dice: { count: item.count, sides: item.sides, modifier: item.modifier }, type: item.damage || 'damage', note: '', source: 'Encounter override' });
     return result;
   }
   function sequence(actor, attacks) {
@@ -125,7 +127,7 @@
     root.append(box);
   }
   function renderResources(root, actor) {
-    const box = el('div', '', 'live-resources'); box.append(el('strong', 'Limited uses'));
+    const box = el('details', '', 'live-resources'); box.append(el('summary', 'Manage limited uses'));
     const own = sheet(actor);
     if (own?.resources?.length) {
       for (const item of own.resources.slice(0, 8)) box.append(el('span', `${item.name}: ${item.current ?? '?'} / ${item.max ?? '?'}`));
@@ -146,7 +148,53 @@
       host.commit(`Added ${actor.name} resource: ${name.trim().slice(0,60)}`); });
     root.append(box);
   }
+  function renderOtherActions(root, actor) {
+    const own=sheet(actor);if(!own)return;
+    const view=globalThis.ECHO_PARTY_DATA.ownerView(own);
+    const actions=view.actions.filter(item=>item.prepared!==false);
+    const named=new Set([...view.attacks,...actions].map(item=>item.name.toLowerCase()));
+    for(const spell of view.spells.filter(item=>item.prepared!==false))if(!named.has(spell.name.toLowerCase()))
+      actions.push({id:`spell:${spell.name}`,name:spell.name,type:`Level ${spell.level} spell`,effect:spell.notes||'Check the spell entry for casting time, target, slot and effect.',referenceOnly:true});
+    if(!actions.length)return;
+    if(chosenUtility.actor!==actor.id)chosenUtility={actor:actor.id,id:actions[0].id};
+    const box=el('section','','live-utility');box.append(el('h3','Other actions and spells'));
+    const label=el('label','Choose an action');const select=el('select');
+    for(const item of actions){const option=el('option',`${item.name} · ${item.type}`);option.value=item.id;select.append(option);}
+    if(!actions.some(item=>item.id===chosenUtility.id))chosenUtility.id=actions[0].id;
+    select.value=chosenUtility.id;select.addEventListener('change',()=>{chosenUtility.id=select.value;render();});label.append(select);box.append(label);
+    const item=actions.find(entry=>entry.id===chosenUtility.id);
+    const pool=own.resources?.find(entry=>entry.id===item.resourceId);
+    box.append(el('p',item.effect||'Check the source before resolving this action.'));
+    if(item.support)box.append(el('small',item.support.label+' · '+item.support.reason,'live-source'));
+    if(item.attackBonus!==null&&item.attackBonus!==undefined)box.append(el('small',`Attack +${item.attackBonus}${item.damageDice?` · ${item.damageDice} ${item.damageType||'type requires ruling'}`:''}.`,'live-math'));
+    if(item.saveAbility||item.saveDC)box.append(el('small',`Save: ${item.saveAbility||'?'} DC ${item.saveDC??'?'}. Select affected targets and resolve each save in Combat tools.`,'live-math'));
+    box.append(el('small',`Source: ${own.source||'Current character sheet'} · ${item.type}${pool?` · Cost ${item.cost||1} ${pool.name} (${pool.current??'?'} / ${pool.max??'?'})`:item.resourceId?` · Resource ${item.resourceId} unavailable`:''}. Effects are applied only after DM review.`,'live-source'));
+    const canRecord=!item.referenceOnly&&(!item.resourceId||pool&&Number.isFinite(pool.current)&&pool.current>=(item.cost||1));
+    if(host.stageAction){button(box,'Review action and effects',()=>{const view=globalThis.ECHO_COMBAT_ACTIONS.actorView(host.allState(),actor.id);const kind=item.referenceOnly?'spell':'action';const index=view[kind==='spell'?'spells':'actions'].findIndex(a=>a.name===item.name);host.stageAction(actor.id,kind,index,[]);},'primary');root.append(box);return;}
+    button(box,item.referenceOnly?'Open spell casting review':'Record use and cost',()=>{
+      if(item.referenceOnly){host.openParty(actor.id);return;}
+      if(!window.confirm(`Record ${actor.name} using ${item.name}${pool?` and spend ${item.cost||1} ${pool.name}`:''}?\n\n${item.effect||'Review the action in its source.'}\n\nDamage, saves, conditions and concentration must be resolved separately.`))return;
+      try{host.recordActionUse(actor.id,item);}catch(error){window.alert(error.message);}
+    }).disabled=!item.referenceOnly&&!canRecord;
+    if(!item.referenceOnly&&!canRecord)box.append(el('p','This resource is unavailable. Check the character sheet or make a DM ruling.','live-caution'));
+    root.append(box);
+  }
+  function renderSharedAttack(root,actor){
+    const entries=globalThis.ECHO_COMBAT_ACTIONS.actorView(host.allState(),actor.id).attacks;
+    const targets=placed().filter(t=>t.id!==actor.id);
+    const box=el('section','','live-attack');box.append(el('h3','Action → Targets → Rolls → Reactions → Review → Resolve'));box.append(el('p','Current step: Action · choose an attack and target, then open the shared review.','combat-flow-steps'));
+    for(const r of host.pendingDMDrafts?.(actor.id)||[])button(box,'Resume '+r.label,()=>host.resumeReview(r.id));
+    if(!entries.length){box.append(el('p','No complete attack is recorded. Use an action or a DM ruling.'));root.append(box);return;}
+    if(draft.actor!==actor.id)draft={actor:actor.id,attack:0,target:'',mode:'normal'};
+    const actionLabel=el('label','Attack'),choice=el('select');choice.setAttribute('aria-label','Attack');
+    entries.forEach((a,i)=>{const option=el('option',`${a.name} · +${a.attackBonus} · ${a.damageDice} ${a.damageType||''}`);option.value=i;choice.append(option);});choice.value=String(draft.attack);choice.onchange=()=>{draft.attack=Number(choice.value);render();};actionLabel.append(choice);box.append(actionLabel);
+    const targetLabel=el('label','Target'),target=el('select');target.setAttribute('aria-label','Target');const none=el('option','Choose now or in review');none.value='';target.append(none);for(const t of targets){const o=el('option',t.name);o.value=t.id;target.append(o);}target.value=draft.target||'';target.onchange=()=>{draft.target=target.value;};targetLabel.append(target);box.append(targetLabel);
+    const entry=entries[draft.attack]||entries[0];box.append(el('small',`Source: ${entry.source||sheet(actor)?.source||'Creature card'}. Review targets, dice, reactions, costs, and effects together.`,'live-source'));
+    button(box,'Review action',()=>host.stageAction(actor.id,'attack',draft.attack,draft.target?[draft.target]:[]),'primary');
+    root.append(box);
+  }
   function renderAttack(root, actor, attacks, steps) {
+    if(host.stageAction){renderSharedAttack(root,actor);return;}
     const box = el('div', '', 'live-attack'); box.append(el('h3', 'Attack and damage'));
     if (!attacks.length) { box.append(el('p', 'No attack with complete dice is on this card. Use the character sheet or custom roll.')); button(box, 'Open rolls', () => host.openCombat('rolls')); root.append(box); return; }
     const targets = placed().filter(t => t.id !== actor.id && t.hp > 0);
@@ -174,10 +222,13 @@
     if(!draft.target){button(box,'Tap token to target',()=>host.targetTool?.());root.append(box);return;}
     const chosen = attacks[draft.attack], target = targets.find(t => t.id === draft.target);
     button(box,'Tap token to target',()=>host.targetTool?.());
+    box.append(el('small', `Source: ${chosen.source || 'Encounter card'} · Attack d20 ${chosen.bonus >= 0 ? '+' : '−'} ${Math.abs(chosen.bonus)} · Damage ${chosen.dice.count}d${chosen.dice.sides}${chosen.dice.modifier ? (chosen.dice.modifier > 0 ? '+' : '') + chosen.dice.modifier : ''} ${chosen.type}.`, 'live-source'));
     const suggestion=host.allState&&target?globalThis.ECHO_COMBAT_PLUS?.suggest(host.allState(),actor.id,target.id,'attack','',globalThis.ECHO_COMBAT_PLUS.distance(actor,target,globalThis.ECHO_COMBAT_PLUS.scale(host.allState(),host.columns()))):null;
     if(suggestion&&(suggestion.yes.length||suggestion.no.length||suggestion.notes.length)){box.append(el('p',`${[...suggestion.yes,...suggestion.no,...suggestion.notes].join(' ')} Suggested: ${suggestion.mode}. The roll selector is your override.`, 'live-caution'));button(box,`Use suggested ${suggestion.mode}`,()=>{draft.mode=suggestion.mode;clearRoll();render();});}
     if (chosen.note) box.append(el('p', chosen.note, 'live-caution'));
+    if (chosen.resourceId) box.append(el('p', `This attack also uses ${chosen.cost || 1} from ${chosen.resourceId}. Review that resource before recording the attack.`, 'live-caution'));
     const targetAC = draft.acOverride === '' ? (target?.ac ?? null) === null ? null : target.ac + (draft.cover === 'half' ? 2 : draft.cover === 'threequarters' ? 5 : 0) : Number(draft.acOverride);
+    box.append(el('p', `Target AC ${target?.ac ?? '?'} ${draft.cover === 'half' ? '+ 2 half cover' : draft.cover === 'threequarters' ? '+ 5 three-quarters cover' : draft.cover === 'full' ? '· full cover blocks targeting' : '+ 0 cover'} = ${targetAC ?? '?'} effective AC. Source: 2014 combat cover rules; any reaction or situational defense is a DM override.`, 'live-math'));
     const ac = el('label', 'AC after reactions or rulings'); const acInput = el('input'); acInput.type = 'number'; acInput.value = draft.acOverride === '' ? targetAC ?? '' : draft.acOverride;
     acInput.placeholder = 'Confirm AC'; acInput.addEventListener('change', () => { draft.acOverride = acInput.value; draft.confirmed = false; render(); }); ac.append(acInput); box.append(ac);
     const rollRow = el('div', '', 'button-row');
@@ -193,10 +244,12 @@
       const natural = draft.roll.natural;
       const suggested = attackOutcome(draft.roll, targetAC, chosen.critThreshold);
       box.append(el('strong', `${draft.roll.total} vs AC ${targetAC ?? '?'} · ${suggested}`));
+      if(targetAC === null) box.append(el('p','AC is unknown. Enter a reviewed AC or DM ruling before confirming damage.', 'live-caution'));
       button(box, 'Mark attack spent (miss or no damage)', () => { const step = steps.findIndex((item, index) => !state().queue.done[index] && item.attackIndex === draft.attack);
         if (step >= 0) state().queue.done[step] = true;
         state().queue.actionUsed = true; clearRoll(); host.commit(`${actor.name} used ${chosen.name}`); });
       const confirm = el('label', ' Confirm the hit after reactions and cover', 'live-confirm'); const check = el('input'); check.type = 'checkbox'; check.checked = draft.confirmed;
+      check.disabled = targetAC === null || draft.cover === 'full';
       check.addEventListener('change', () => { draft.confirmed = check.checked; render(); }); confirm.prepend(check); box.append(confirm);
       if (natural === null) { const crit = el('label', ` Manual roll was a natural ${chosen.critThreshold === 19 ? '19 or 20' : '20'}`, 'live-confirm'); const critCheck = el('input'); critCheck.type = 'checkbox'; critCheck.checked = draft.manualCrit;
         critCheck.addEventListener('change', () => { draft.manualCrit = critCheck.checked; draft.damage = null; render(); }); crit.prepend(critCheck); box.append(crit); }
@@ -209,9 +262,11 @@
         amount.addEventListener('change', () => { draft.damageManual = amount.value; draft.damage = amount.value === '' ? null : bounded(amount.value, 0, 9999); render(); }); damageRow.append(amount); box.append(damageRow);
         if (draft.damage !== null && target) {
           const preview = host.previewDamage(target.id, draft.damage, chosen.type);
-          box.append(el('p','Applying the reviewed damage will update HP and temporary HP, mark this attack and the action used, and add any concentration reminder. Review unusual feature or ammunition costs on the character sheet.', 'live-caution'));
+          box.append(el('p','Review each damage type and any extra component in the damage panel. It checks defenses, temporary HP, concentration, and reaction pauses before applying. Special effects and resource costs require a separate DM ruling.', 'live-caution'));
           box.append(el('p', `${draft.damage} ${chosen.type} → ${preview.adjusted} after defenses; ${preview.tempUsed} temp HP absorbed. ${target.name}: ${target.hp} → ${preview.hp} HP.`, 'live-damage-preview'));
+          if(chosen.type === 'damage') box.append(el('p','Damage type is unspecified on this card. Choose its actual type in the damage review before applying.', 'live-caution'));
           button(box, `Review ${chosen.type} damage / reactions`, () => {
+            if(chosen.type === 'damage'){host.openDamage([target.id]);return;}
             const step=steps.findIndex((item,index)=>!state().queue.done[index]&&item.attackIndex===draft.attack);
             host.stageDamage({label:`${actor.name} · ${chosen.name}`,actorId:actor.id,targets:[target.id],components:[{amount:draft.damage,type:chosen.type,magical:false,overrides:{},activeRules:[]}],
               attack:{total:draft.roll.total,natural:draft.roll.natural??(draft.manualCrit?(chosen.critThreshold||20):null),crit:chosen.critThreshold||20,cover:draft.cover==='half'?2:draft.cover==='threequarters'?5:0,acBonus:draft.acOverride===''?0:Number(draft.acOverride)-Number(target.ac)-(draft.cover==='half'?2:draft.cover==='threequarters'?5:0),step}});
@@ -223,27 +278,35 @@
     button(box, 'Manual damage / correction', () => host.openDamage(target ? [target.id] : []));
     root.append(box);
   }
-  function renderEncounter(root, actor) {
-    const encounter = host.encounters().find(item => item.id === actor?.encounter) || host.encounters().find(item =>
-      host.tokens().some(t => t.encounter === item.id && t.placed && t.scene === host.scene()));
-    if (!encounter) return;
-    const plan = host.combat()?.plans?.[encounter.id] || {};
-    const box = el('details', '', 'live-encounter'); box.open = encounterOpen;
-    const head = el('summary', `Encounter · ${encounter.name}`); box.append(head);
-    box.addEventListener('toggle', () => { encounterOpen = box.open; });
-    for (const [label, value] of [['Objective', plan.objective], ['Terrain', plan.terrain], ['Morale', plan.morale], ['Retreat', plan.retreat], ['Negotiation', plan.negotiation], ['Non-combat outcome', plan.nonCombat]])
-      if (value) box.append(el('p', `${label}: ${value}`));
-    const row = el('div', '', 'button-row');
-    for (const status of ['fighting','parley','retreat','surrender']) button(row, status[0].toUpperCase() + status.slice(1), () => host.setEncounterStatus(encounter.id, status),
-      state().encounterStatus[encounter.id] === status ? 'selected' : '');
-    box.append(row);
-    for (const [index, wave] of (plan.waves || []).entries()) if (!wave.deployed) {
-      const waveRow = el('div', `${wave.name} · ${wave.note || 'reinforcements'}`, 'live-wave');
-      button(waveRow, 'Deploy wave', () => host.deployWave(encounter.id, index)); box.append(waveRow);
-    }
-    root.append(box);
+  function encounterBrief(plan={}) {
+    return {objective:plan.objective||'No objective prepared. Establish the immediate stakes before resolving the fight.',
+      guidance:[['Terrain / cover / hazards',plan.terrain],['Morale / surrender',plan.morale],['Exits / withdrawal',plan.retreat],['Negotiation',plan.negotiation],['Other approaches',plan.nonCombat],['Alarms / reinforcements',plan.reinforcements]].filter(([,value])=>typeof value==='string'&&value.trim())};
   }
-  let encounterOpen = true;
+  let selectedEncounter='',encounterScope='',guidanceOpen=false,extraActionsOpen=false;
+  function renderEncounter(root, actor) {
+    const scope=host.scene();if(encounterScope!==scope){selectedEncounter='';encounterScope=scope;}
+    const encounters=host.encounters(), candidates=encounters.filter(item=>host.tokens().some(t=>t.encounter===item.id&&t.placed&&t.scene===scope));
+    const encounter=encounters.find(item=>item.id===actor?.encounter)||candidates.find(item=>item.id===selectedEncounter)||(candidates.length===1?candidates[0]:null);
+    if(!encounter&&!candidates.length)return;
+    const box=el('section','','live-encounter live-purpose');box.append(el('small','PRIVATE DM · ENCOUNTER PURPOSE'));
+    if(candidates.length>1){const label=el('label','Encounter guidance'),select=el('select');select.setAttribute('aria-label','Encounter guidance');const empty=el('option','Choose the relevant encounter');empty.value='';select.append(empty);for(const item of candidates){const option=el('option',item.name);option.value=item.id;select.append(option);}select.value=encounter?.id||'';select.onchange=()=>{selectedEncounter=select.value;render();};label.append(select);box.append(label);}
+    if(!encounter){box.append(el('p','Several encounters are placed. Choose whose purpose and terrain to use; no result has been inferred.'));root.append(box);return;}
+    const plan=host.combat()?.plans?.[encounter.id]||{},brief=encounterBrief(plan),status=state().encounterStatus[encounter.id]||'fighting';
+    box.append(el('h3',encounter.name),el('p','Objective: '+brief.objective,'live-objective'));
+    if(plan.terrain)box.append(el('p','Terrain: '+plan.terrain));
+    box.append(el('small','Source: saved encounter preparation · '+encounter.id+'. Guidance is not a recorded outcome; check the current map and established changes.','live-source'));
+    const details=el('details');details.open=guidanceOpen;details.append(el('summary','Morale, exits & other approaches'));details.ontoggle=()=>guidanceOpen=details.open;
+    for(const [label,value]of brief.guidance.filter(([label])=>label!=='Terrain / cover / hazards'))details.append(el('p',label+': '+value));
+    for(const [index,wave]of(plan.waves||[]).entries())if(!wave.deployed){const row=el('div',wave.name+' · '+(wave.note||'reinforcements'),'live-wave');button(row,'Deploy wave',()=>host.deployWave(encounter.id,index));details.append(row);}box.append(details);
+    box.append(el('p','DM pacing state: '+(status==='retreat'?'withdrawal':status)));
+    const row=el('div','','button-row');for(const [value,label]of [['fighting','Fighting'],['parley','Parley'],['retreat','Withdrawal'],['surrender','Surrender']])button(row,label,()=>{
+      if(value===status)return;
+      if(!window.confirm('Record '+label.toLowerCase()+' as this encounter’s current pacing state?\n\nThis is undoable. Initiative, HP, rewards and campaign outcomes stay unchanged. Review the actual ending in aftermath.'))return;
+      host.setEncounterStatus(encounter.id,value);
+    },status===value?'selected':'');box.append(row);
+    const recommendation=globalThis.ECHO_COMBAT_AFTERMATH?.recommendation(status);if(recommendation)box.append(el('p',recommendation.text,'live-caution'));
+    button(box,'Review how this encounter ended',()=>host.openAftermath?.(encounter.id),'live-aftermath');root.append(box);
+  }
   function render() {
     const root = $('combat-live-panel'); if (!root || !host) return;
     root.replaceChildren();
@@ -260,7 +323,10 @@
     if (actor.conditions?.length) summary.append(el('span', actor.conditions.join(', ')));
     for (const resource of (own?.resources || []).slice(0, 6)) summary.append(el('span', `${resource.name}: ${resource.current ?? '?'}/${resource.max ?? '?'}`));
     const phase=host.allState?.().combatPlus?.phases?.[actor.id];if(phase)summary.append(el('span',`Boss phase: ${phase}`));
-    root.append(summary);
+    head.append(summary);
+    const stickyReminders=el('div','','live-urgent-reminders');renderReminders(stickyReminders,actor);head.append(stickyReminders);
+    renderEncounter(root,actor);
+    if(host.activeReview?.()){button(root,'Back to action choices',()=>host.closeReview());return;}
     const actions = el('div', '', 'live-actions');
     const used = el('label', 'Movement used (ft.)'); const movement = el('input'); movement.type = 'number'; movement.min = '0'; movement.max = '999'; movement.value = queue.movementUsed;
     movement.addEventListener('change', () => { queue.movementUsed = bounded(movement.value, 0, 999); host.commit(`${actor.name} moved ${queue.movementUsed} ft.`); }); used.append(movement); actions.append(used);
@@ -273,8 +339,8 @@
       steps.forEach((step, index) => button(stepBox, `${queue.done[index] ? '✓' : '○'} ${step.label}`, () => { queue.done[index] = !queue.done[index]; draft.attack = step.attackIndex; clearRoll(); host.commit(`${actor.name}: ${step.label} ${queue.done[index] ? 'done' : 'ready'}`); }, queue.done[index] ? 'done' : ''));
       root.append(stepBox);
     }
-    renderReminders(root, actor); renderResources(root, actor); renderPhoneRequests(root); renderAttack(root, actor, attacks, steps); renderEncounter(root, actor);
+    renderPhoneRequests(root); renderAttack(root, actor, attacks, steps); const extras=el('details','','live-extra-actions');extras.open=extraActionsOpen;extras.ontoggle=()=>extraActionsOpen=extras.open;extras.append(el('summary','Other actions & resources'));renderOtherActions(extras,actor);renderResources(extras,actor);root.append(extras);
   }
   function init(context) { host = context; render(); }
-  globalThis.ECHO_COMBAT_RUN = { normalize, init, render, target:id=>{const actor=current();if(!actor)return;const attacks=attackChoices(actor),targets=placed().filter(t=>t.id!==actor.id);resetDraft(actor,attacks,targets);if(targets.some(t=>t.id===id)){draft.actionChosen=true;draft.target=id;draft.acOverride='';clearRoll();render();}},targetId:()=>draft.target, attackChoices, sequence, damageDice, attackOutcome };
+  globalThis.ECHO_COMBAT_RUN = { normalize, init, render, encounterBrief, target:id=>{const actor=current();if(!actor)return;const attacks=attackChoices(actor),targets=placed().filter(t=>t.id!==actor.id);resetDraft(actor,attacks,targets);if(targets.some(t=>t.id===id)){draft.actionChosen=true;draft.target=id;draft.acOverride='';clearRoll();render();}},targetId:()=>draft.target, attackChoices, sequence, damageDice, attackOutcome };
 })();

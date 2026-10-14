@@ -1,0 +1,8 @@
+
+# Preserve document and media bytes; do not treat generated PDFs as source text.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.wav binary
+*.mp3 binary

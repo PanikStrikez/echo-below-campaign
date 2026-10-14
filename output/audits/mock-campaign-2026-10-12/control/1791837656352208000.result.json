@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "result": {
+    "body": "✦ Echo Below\nScene\nExplore\nMap Desk\n← Back to session map\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nPREPARED SCENE\nArea 14 · Grol and Vyerith\nSCENE AIMResolve Grol’s competing interests without inventing a hostage or map custody.\nRun Area 14 · Grol and Vyerith\nTV connected\nNow showing · Cragmaw Castle · complete\n5 phones needs review\n1 · Get ready\nExpand guide\nNotices · 1 issues · 27 updates\nPRACTICE CAMPAIGN · changes stay in this copy\nReturn to real campaign\nArea 14 · Grol and Vyerith\nChange prepared scene\nENCOUNTER GUIDE · PRIVATE\nArrive\nDescribe\nRespond\nResolve\nContinue\nRead and invite a choice\nStep 2 of 5 · Describe\nSay aloud\n\nVoices cut through the door: a harsh demand, then a smooth reply. Inside, furs cover the floor while a towering bugbear argues with a dark-clad visitor.\n\nThe argument reveals different voices, not an agreement you understand yet. The furs and the speakers' positions divide the room into places to approach or avoid. You can listen for a few more words, announce yourselves, or look for a position that keeps your way out clear.\n\nAsk the players\n\nDo you listen longer, speak through the door, strike first, or look for another way in?\n\nSource and private preparation\nRespond to their choice\nPrevious\nFull scene notes\nIf they go elsewhere\n\nReady to show · private preview\n\nNow showing · Cragmaw Castle · Cragmaw Castle · complete\n\nCheck exact player view\n▣ Show scene on TV\n◫ Preview map\nPrepare encounter",
+    "extras": {
+      "version": 1,
+      "notes": [],
+      "shared": [],
+      "bank": {
+        "cp": 0,
+        "sp": 0,
+        "ep": 0,
+        "gp": 0,
+        "pp": 0
+      },
+      "objective": "Locate Gundren and secure a safe release; inspect the castle together.",
+      "requests": []
+    },
+    "phone": "object",
+    "full": 5
+  }
+}

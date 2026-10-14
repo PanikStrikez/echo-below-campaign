@@ -1,0 +1,36 @@
+{
+  "id": "lmop-western-cottage",
+  "title": "Thundertree · Area 1 · Western cottage",
+  "image": "lmop-visuals/western-cottage.png",
+  "key": "T01",
+  "chapter": "Thundertree",
+  "reveal": "On entering area 1",
+  "sourceRecordIds": [
+    "s3-tt-1"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-1",
+      "title": "Thundertree 1 · Western cottage",
+      "read": [
+        "A roofless cottage crouches beneath a broad tree. Its doorway has almost vanished into weeds.",
+        "The weeds interrupt a straight approach to the doorway, and the open roof leaves the cottage exposed to the sky. You can examine the nearer ground, look through the ruined walls, or keep watch beneath the broad tree before choosing how to enter."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Roofless WESTERN stone cottage immediately beneath the canopy of a broad tree; decayed doorway nearly swallowed by weeds. Broken stone walls, brush and old household debris. TWO twig blights remain concealed in ordinary vegetation and must NOT be visibly identifiable. Daylight, no invented gigantic glowing tree or intact modern cottage.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 1 · Western cottage\nObservable scene and constraints: Roofless WESTERN stone cottage immediately beneath the canopy of a broad tree; decayed doorway nearly swallowed by weeds. Broken stone walls, brush and old household debris. TWO twig blights remain concealed in ordinary vegetation and must NOT be visibly identifiable. Daylight, no invented gigantic glowing tree or intact modern cottage.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "02a83eb45ae36b7bc5d816a3d86d512789155f38d6fb60ede70f5322e5df6247",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-western-cottage.png",
+  "generatedAt": "2026-10-12T16:14:22.664Z",
+  "candidateHash": "f7137e8ff3f9ce32e124d8da66674201470945a84253ac87e1adef802268e038",
+  "review": "passed",
+  "reviewedHash": "f7137e8ff3f9ce32e124d8da66674201470945a84253ac87e1adef802268e038",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.159Z",
+  "installedHash": "f7137e8ff3f9ce32e124d8da66674201470945a84253ac87e1adef802268e038",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/western-cottage.png"
+}

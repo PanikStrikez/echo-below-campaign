@@ -1,0 +1,4 @@
+{
+  "ok": true,
+  "result": "()=>{let s=__mock.state.state;for(let id of ['pc-aldric','pc-donavan']){let p=s.party[id],names=new Set(p.spells.map(x=>x.name)),prof=ECHO_PARTY_DATA.proficiencyForLevel(p.level);for(let list of [p.actions,p.attacks])for(let a of list)if(names.has(a.name)){let cleric=id==='pc-donavan'&&['Command','Identify','Cure Wounds','Healing Word','Bless','Sacred Flame','Guiding Bolt','Thaumaturgy'].includes(a.name),m=ECHO_PARTY_DATA.abilityMod(p.abilities[cleric?'wis':'int']);if(Number.isFinite(a.attackBonus))a.attackBonus=prof+m;if(Number.isFinite(a.saveDC))a.saveDC=8+prof+m;if(p.level>=5&&['Fire Bolt','Ray of Frost','Mind Sliver','Sacred Flame'].includes(a.name))a.damageDice=a.damageDice.replace(/^1d/,'2d');}}__mock.combat.commit('MOCK reviewed caster math at current levels');}"
+}

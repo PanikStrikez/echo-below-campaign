@@ -1,0 +1,46 @@
+Exploration marker choices — verified 14 October 2026
+
+Where to find it
+Explore -> Session map -> select a location or room marker.
+Open scene is the primary action. Other prepared scenes, reviewed information,
+contacts, session leads and alternative approaches remain expandable.
+Another destination / improvise uses the existing private detour and note workflow.
+
+What changed
+Location cards use explicit quest/preparation references, open objectives,
+scene questions and existing NPC records. Contacts are not assumed present.
+DM-reviewed preparation is distinguished from preparation needing review.
+Unresolved / Postponed / Outcome recorded are a separate DM status axis;
+they never mean located, visited or cleared. Marker status uses approved factual
+outcomes linked to the exact map and marker, with corrections/replacements applied.
+Record or postpone this location opens a private draft. Choose the DM marker
+state under Map notes and reveals, enter the actual decision and review changes.
+Opening a linked scene carries that marker into scene or combat aftermath review
+where the current origin still matches. Catalog navigation does not attach an
+unrelated selected marker.
+Private source-layout markers can receive DM record statuses but cannot be revealed.
+Player maps continue using existing permitted wording/discovery projections;
+DM context and status metadata are excluded from TV/phone payloads.
+No new campaign outcomes, rewards, discoveries or visits were added to live data.
+
+Verified results
+19 isolated unit/regression checks passed (7 new marker checks, 12 scene/aftermath).
+9 marker browser checks passed in fresh Chrome profiles/disposable local services.
+12 existing map-return browser checks passed.
+10 existing combat-aftermath browser checks passed.
+Syntax checks passed for the changed browser modules.
+Checked marker relevance, no-op browsing, scene launch/return, improvisation,
+private review preview/application, unchanged tokens/fog/travel/presentation,
+undo/redo, save/reload, player-TV module boundary and phone transport snapshot.
+Screenshots inspected at 1512x982 and 1100x768.
+
+Limitations
+Physical TV and phones were not tested. No live phone service was restarted.
+Locations without explicit quest/preparation links honestly show no linked quest.
+Town locations without a separate travel record do not inherit the town's visit
+state. Reviewed outcome records must link the marker to appear in its status.
+The unnamed inn remains unresolved; selecting the named inn's prepared scene
+must not establish that it is where Gundren was left.
+Books, artwork, geometry and existing saved records were preserved.
+
+Evidence: Verification.json, Map-overview.png, Barthen-location.png, Marker-1100.png.

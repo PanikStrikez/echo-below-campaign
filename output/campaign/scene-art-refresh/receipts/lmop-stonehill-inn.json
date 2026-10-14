@@ -1,0 +1,36 @@
+{
+  "id": "lmop-stonehill-inn",
+  "title": "Phandalin · Stonehill Inn",
+  "image": "lmop-visuals/stonehill-inn.png",
+  "key": "P02",
+  "chapter": "Phandalin",
+  "reveal": "When the inn comes into view",
+  "sourceRecordIds": [
+    "s2-inn"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-inn",
+      "title": "4 · Stonehill Inn and rumors",
+      "read": [
+        "The inn is warmer and louder than the street. Supper, wet cloaks, and low conversation crowd the common room. Several people glance toward your travel-worn gear. A child at one table stops talking mid-sentence.",
+        "Tables and travel-worn clothing break up the room, leaving conversations close enough to approach without addressing everyone at once. The child's sudden quiet is one detail among several. You can choose a seat, seek the keeper, or listen before deciding whose story you want to hear."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Stonehill Inn exterior: large newly built fieldstone roadhouse in central frontier Phandalin, SIX guest rooms under timber roof, modest welcoming doorway, muddy earth street and nearby stone ruins. Not luxurious medieval city tavern. Ordinary locals, no sleeping Gundren declared to be at this specific inn.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Stonehill Inn\nObservable scene and constraints: Stonehill Inn exterior: large newly built fieldstone roadhouse in central frontier Phandalin, SIX guest rooms under timber roof, modest welcoming doorway, muddy earth street and nearby stone ruins. Not luxurious medieval city tavern. Ordinary locals, no sleeping Gundren declared to be at this specific inn.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "9de970d54e54aa55df537debb474cfa3093a1dcc43aed5665e0f06faf3d7667e",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-stonehill-inn.png",
+  "generatedAt": "2026-10-12T15:50:49.290Z",
+  "candidateHash": "870e1f88777cb704827f914a6f6a9390dfcf621478351cd308aa5c20e20a3c1b",
+  "review": "passed",
+  "reviewedHash": "870e1f88777cb704827f914a6f6a9390dfcf621478351cd308aa5c20e20a3c1b",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.679Z",
+  "installedHash": "870e1f88777cb704827f914a6f6a9390dfcf621478351cd308aa5c20e20a3c1b",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/stonehill-inn.png"
+}

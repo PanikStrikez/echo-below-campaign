@@ -1,0 +1,32 @@
+{
+  "clicks": 45,
+  "scrollEvents": 26,
+  "wrongTurns": [],
+  "interruptions": [
+    "Expected reaction guard blocked ending initiative until the test reaction was closed."
+  ],
+  "timings": [
+    {
+      "task": "keyboard token nudge to new state",
+      "ms": 245
+    },
+    {
+      "task": "close click to saved review visible",
+      "ms": 627
+    }
+  ],
+  "closingTask": {
+    "clicks": 8,
+    "scrollEvents": 11,
+    "elapsedMs": 4465,
+    "includesFixturePhoneJoin": true
+  },
+  "limitations": [
+    "Scripted clicks, not human speed or hesitation",
+    "Before screenshot is pre-summary layout reconstructed by hiding the added section; no before timing measured",
+    "Physical TV, phone touch, speakers and real viewing distance not tested",
+    "Existing movement-path menu remains a measurement tool; unrestricted dragging tested separately",
+    "Closing still requires scrolling through the five separate advancement entries.",
+    "No human wrong-turn or interruption rate was measured."
+  ]
+}

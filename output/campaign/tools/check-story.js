@@ -52,9 +52,27 @@ vm.runInNewContext(fs.readFileSync(path.join(root,'Session-01-Handout-Data.js'),
 assert.equal(handoutSandbox.globalThis.ECHO_SOURCE_HANDOUTS.filter(item=>item.kind==='Echo recovered document').length,6);
 assert.equal(handoutSandbox.globalThis.ECHO_SOURCE_HANDOUTS.filter(item=>item.kind==='Mad Mage secret card').length,18);
 const app=fs.readFileSync(path.join(root,'Session-01-Battleboard.js'),'utf8');
-assert.match(app,/combatLibrary: campaignIndex\.combatLibrary, story: campaignIndex\.story/);
-assert.match(app,/ECHO_RECOVERY.prepare\(archive,normalize\)/);
-assert.match(fs.readFileSync(path.join(root,'Session-01-Recovery.js'),'utf8'),/story:ECHO_STORY_DATA.normalize\(archive.story\)/);
+const archiveContext=vm.createContext({structuredClone,Map,saveQueue:Promise.resolve(),sessionCache:new Map(),activeCampaignId:'practice',activeSessionId:'one',DATA_VERSION:3,
+  state:{schemaVersion:3,scene:'road',party:{'pc-trista':{hp:29,maxHp:29}}},
+  campaignRegistry:{campaigns:[{id:'practice',name:'Practice'}]},campaignIndex:{sessions:[{id:'one',name:'One'}],story:JSON.parse(JSON.stringify(seed)),combatLibrary:[{id:'custom-creature'}],presentation:{media:[]},tableExtras:{},rules:{}},
+  readRecord:async()=>null,campaignSessionKey:(id,campaign)=>campaign+':'+id,ECHO_RELIABILITY:{validateArchive:()=>({valid:true})},ECHO_PRESENTATION:{exportMedia:async()=>({})}});
+vm.runInContext(app.slice(app.indexOf('  async function buildCampaignArchive()'),app.indexOf('  async function downloadCampaign()'))+';globalThis.capture=buildCampaignArchive;',archiveContext);
+(async()=>{const captured=await archiveContext.capture();assert.equal(captured.story.sites.length,9);assert.equal(captured.story.npcs.length,9);assert.equal(captured.combatLibrary[0].id,'custom-creature');
+  archiveContext.campaignIndex.story.sites[0].name='Changed later';archiveContext.state.party['pc-trista'].hp=1;
+  assert.notEqual(captured.story.sites[0].name,'Changed later','Backup must be an immutable snapshot');assert.equal(captured.sessions[0].state.party['pc-trista'].hp,29);console.log('Story and creature library persist in a captured backup independently of later play.');})().catch(e=>{console.error(e);process.exitCode=1;});
+require('../Session-01-Story-Data.js');
+require('../Session-01-Reliability.js');
+require('../Session-01-Recovery.js');
+const archive={format:'echo-below-campaign-v2',schemaVersion:2,active:'practice',sessions:[{id:'practice',name:'Practice',state:{schemaVersion:2,scene:'road'}}],story:JSON.parse(JSON.stringify(seed)),presentation:{media:[]},mediaFiles:{}};
+const original=JSON.stringify(archive);
+const prepared=ECHO_RECOVERY.prepare(archive,value=>structuredClone(value));
+assert.equal(prepared.index.story.sites.length,9);
+assert.equal(prepared.index.story.npcs.length,9);
+assert.equal(prepared.index.schemaVersion,ECHO_RELIABILITY.VERSION);
+assert.equal(prepared.index.migrationReport.at(-1).from,2);
+assert.equal(prepared.index.active,'practice');
+assert.equal(JSON.stringify(archive),original,'Preparing restore must not mutate the source');
+assert.throws(()=>ECHO_RECOVERY.prepare({...archive,schemaVersion:ECHO_RELIABILITY.VERSION+1},value=>value),/Update the app/);
 assert.match(app,/filter\(entry => entry\.published\)/);
 assert.match(app,/text: entry\.playerSaw/);
 console.log('Story checks passed: nine sites, 23 floors, nine NPCs, branching, calendar, backup, and player journal controls.');

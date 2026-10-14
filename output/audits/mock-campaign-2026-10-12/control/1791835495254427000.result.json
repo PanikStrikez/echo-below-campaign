@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791835495281-97qoti7q",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              15
+            ],
+            "total": 21,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:04:55 PM"
+          },
+          {
+            "id": "pa-1791835495281-bpc15li2",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              3
+            ],
+            "total": 3,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:04:55 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-bugbears-3",
+            "text": "Bugbear 3: 21 vs AC 16: hit, 3 fire → 3; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

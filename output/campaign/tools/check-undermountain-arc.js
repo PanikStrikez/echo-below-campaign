@@ -23,6 +23,7 @@ const copy=value=>JSON.parse(JSON.stringify(value)), checks=[];
 async function check(name,fn){try{await fn();checks.push({name,ok:true});}catch(error){checks.push({name,ok:false,error:error.stack.slice(0,3000)});}}
 const battleboard=fs.readFileSync(path.join(root,'Session-01-Battleboard.js'),'utf8');
 const boot=battleboard.lastIndexOf('  if (IS_PLAYER) initPlayer();');assert(boot>0);
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(battleboard.slice(0,boot)+`\nglobalThis.__arcTest={normalize,newState,newCustomState,context:questPrepContext,scenes:SCENES,set:(s,i)=>{state=s;campaignIndex=i;},publicState,phoneSnapshot};\n})();`);
 const F=__arcTest;
 function fixture(){
@@ -156,8 +157,9 @@ await check('Private arc plans stay off TV and phones; existing quest audiences 
   const loader=fs.readFileSync(path.join(root,'Session-01-Loader.js'),'utf8');
   const manifest=fs.readFileSync(path.join(root,'Campaign-Module-Manifest.js'),'utf8');
   for(const file of ['Undermountain-Arc-Data.js','Undermountain-Arc-Cast.js','Undermountain-Arc.js','Undermountain-Arc-Links.js'])assert(manifest.includes(file),file+' is in the DM-only manifest');
-  assert.match(loader,/if \(!player\) \{ await load\('Campaign-Module-Manifest.js'\)/);
-  assert.match(loader,/if \(!player\) for \(const file of ECHO_MODULES\.ordered\)/);
+  await require('./test-support.cjs').assertPrivateModules(['Undermountain-Arc-Data.js','Undermountain-Arc-Cast.js','Undermountain-Arc.js','Undermountain-Arc-Links.js','Undermountain-Arc-UI.js']);
+  const blank=await require('./test-support.cjs').loadedScripts(false,false,'blank');
+  assert(!blank.some(file=>file.startsWith('Undermountain-')));
 });
 await check('Staging a shared contract changes only its undoable draft until deliberate publication',()=>{
   const f=fixture();f.continuity.questGuide.enabled=true;

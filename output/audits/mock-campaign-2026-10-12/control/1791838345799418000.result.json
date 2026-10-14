@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791838345899-es54movf",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              6
+            ],
+            "total": 14,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:25 PM"
+          },
+          {
+            "id": "pa-1791838345899-nf8wjg3y",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              3,
+              7
+            ],
+            "total": 10,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:25 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-3",
+            "text": "Guardroom Skeleton 3: 14 vs AC 13: hit, 10 cold → 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

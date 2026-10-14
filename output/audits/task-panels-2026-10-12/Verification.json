@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-12",
+  "automatedTests": 103,
+  "screenshots": 39,
+  "browserErrors": [],
+  "physicalDevicesTested": false,
+  "liveServicesRestarted": false,
+  "paidGenerationRequests": 0,
+  "checks": [
+    "Original save imported into fresh Chrome profile",
+    "Contextual Back restores prior content and scroll",
+    "Quest-to-NPC Back restores quest workspace and scroll",
+    "Compact sheet leaves map visible; Expand/Compact/Back work",
+    "Silent TV preview transports public data without creature HP/AC",
+    "Staging another scene leaves TV and complete game state unchanged",
+    "Sticky active turn and End turn at 1512x982 and 1280x800",
+    "All five phone tabs fit 390x844 and 360x780; useful content starts above 290 CSS pixels",
+    "Active and Completed quest views",
+    "No document horizontal overflow in captured views",
+    "DM and simulated phone attacks produce identical patches",
+    "Physical-dice entry, reaction boundary, resource use, damage review and undo",
+    "Free DM token drag and undo; ruler only when explicitly chosen",
+    "All 40 quests linked; missing preparation distinguished from DM review"
+  ],
+  "sha256": {
+    "Session-01-Cockpit.js": "6391b77ea5240829d19cc67f16a05ea8ed70881693482b3a1736d40073988d09",
+    "Session-01-Hybrid-UI.js": "c37e2a74f36984e6da2776c6d4815ef994a8fa27b2bdc79410b9ce617ecfa432",
+    "Session-01-Combat-Run.js": "666215583ef288b6d92d7aa6e01093eece6777483b6846f0624bb15ecdb6f87a",
+    "Session-01-Phone-Actions-UI.js": "9c2e99680a263228ca7a8fa027d99aec4c0afd051e087152601e22ddd3d42bce",
+    "Session-01-Battleboard.js": "c81be0b8480f350419c5de16b4db7868c3b2a95d1e4c600bf3a33248b39d631c",
+    "Session-01-Story-UI.js": "25459eb759ff973d37d43dcfe1fd5eb092f64336acf1c0eb188d358dc1a4fef4",
+    "Campaign-Quest-Prep.js": "88ce3303a85a89347dbdc66b860362702a8d092a3d8cc397c75715e127fd6cc5",
+    "Campaign-Quest-Prep-UI.js": "6af781a0b706be01f0a290d3dc1a417561f27f7c0e15ae46466a698afbdba39d",
+    "Visual-Language.css": "adfd67156054746d365a0a5a6073089384bd0d146517756ec41109cff8bc4810",
+    "phone/index.html": "69b4f14fd42dba1e281fa0f6877ba8aaa1cb9d325b99361c7a0c5638a2a25776",
+    "phone/phone.js": "808449954717e39cff1c062887870d4d3d73f882ce005d362dc5509cf8fbaae8",
+    "phone/player-tools.js": "da073c784a8d0a379d4626628a08b85b32b0074c4ccf4f421489e54f035c9297",
+    "phone/phone.css": "4fb7ee2e89bbf8fddfb551c9fe7d8f0d3e7f990eef6973767dc25da6a92a4796"
+  }
+}

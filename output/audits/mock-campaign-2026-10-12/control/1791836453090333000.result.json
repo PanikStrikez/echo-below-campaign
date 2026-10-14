@@ -1,0 +1,84 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "redbrand-hideout",
+      "round": 3,
+      "order": [
+        "pc-aldric",
+        "s2-hideout-crypt-2",
+        "s2-hideout-crypt-1",
+        "s2-hideout-crypt-3",
+        "pc-trista",
+        "pc-pebble",
+        "pc-ringgo",
+        "pc-donavan"
+      ],
+      "index": 4
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 14,
+        "maxHp": 21
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 24,
+        "maxHp": 24
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 24,
+        "maxHp": 24
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 23,
+        "maxHp": 23
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 23,
+        "maxHp": 23
+      }
+    ],
+    "foes": [
+      {
+        "id": "s2-hideout-crypt-1",
+        "hp": 13
+      },
+      {
+        "id": "s2-hideout-crypt-2",
+        "hp": 11
+      }
+    ],
+    "due": [
+      {
+        "id": "card-1791836327639-qtjj94s",
+        "tokenId": "pc-trista",
+        "triggerActor": "pc-trista",
+        "triggerPoint": "start",
+        "remaining": 0,
+        "name": "Patient Defense + Dodge",
+        "condition": "",
+        "due": true,
+        "fired": true,
+        "repeatSave": false,
+        "note": "Spend 1 Focus Point to Disengage and Dodge. Movement, opportunity attacks, Dodge and difficult terrain are checked manually."
+      },
+      {
+        "id": "mock-dodge",
+        "tokenId": "pc-trista",
+        "name": "Dodging",
+        "triggerActor": "pc-trista",
+        "triggerPoint": "start",
+        "remaining": 0,
+        "condition": "",
+        "note": "Attackers seen have disadvantage; DEXsavesadvantage, untilnextturn",
+        "fired": true,
+        "due": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791838276833-f61mpygd",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              17
+            ],
+            "total": 25,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:16 PM"
+          },
+          {
+            "id": "pa-1791838276833-kcf06iwt",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              4,
+              6
+            ],
+            "total": 10,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:16 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-3",
+            "text": "Stirge 3: 25 vs AC 14: hit, 10 cold → 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

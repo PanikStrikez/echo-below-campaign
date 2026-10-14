@@ -1,0 +1,36 @@
+{
+  "id": "den-art",
+  "title": "Area 6 · Goblin den",
+  "image": "session-01-visuals/scene-09-goblin-den.png",
+  "key": "den-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "den"
+  ],
+  "sourceRecords": [
+    {
+      "id": "den",
+      "title": "Area 6 · Yeemik and Sildar",
+      "read": [
+        "A cooking fire lights an uneven cavern. Goblins look up from their meal. On a higher ledge, a battered human man is held upright by one of them. He can barely stand.",
+        "One goblin raises a hand for the others to hold. “You want the human? Then we have something to discuss.”"
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Cragmaw goblin den, natural cave divided by TEN-foot escarpment, steep natural stairs between lower NORTH area and upper SOUTH ledge. Small cooking fire on lower floor, smoke haze, poorly cured hides and rough sleeping mats. Prepared initial encounter: FIVE ordinary goblins around lower fire, ONE goblin leader Yeemik above with bound older human Sildar on upper ledge, no armor or weapon on captive. No guard execution, deep bottomless cliff or presumed completed rescue. Original encounter illustration is historical after party rescued him, not current state.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Area 6 · Goblin den\nObservable scene and constraints: Cragmaw goblin den, natural cave divided by TEN-foot escarpment, steep natural stairs between lower NORTH area and upper SOUTH ledge. Small cooking fire on lower floor, smoke haze, poorly cured hides and rough sleeping mats. Prepared initial encounter: FIVE ordinary goblins around lower fire, ONE goblin leader Yeemik above with bound older human Sildar on upper ledge, no armor or weapon on captive. No guard execution, deep bottomless cliff or presumed completed rescue. Original encounter illustration is historical after party rescued him, not current state.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "be7a8cf457280828eeb9970f48456f4464ff17a2d676111d944170672e5ede2b",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/den-art.png",
+  "generatedAt": "2026-10-12T15:47:57.497Z",
+  "candidateHash": "4c1b86a81bd30aa2b3c7880d4be3d9c216022a3e7f148dd1e58937eff38794c5",
+  "review": "passed",
+  "reviewedHash": "4c1b86a81bd30aa2b3c7880d4be3d9c216022a3e7f148dd1e58937eff38794c5",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity. Historical original encounter only; rescued Sildar and killed Klarg must not be reinstated by this art.",
+  "installedAt": "2026-10-12T16:38:07.315Z",
+  "installedHash": "4c1b86a81bd30aa2b3c7880d4be3d9c216022a3e7f148dd1e58937eff38794c5",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-09-goblin-den.png"
+}

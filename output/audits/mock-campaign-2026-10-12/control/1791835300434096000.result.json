@@ -1,0 +1,90 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-trista",
+      "hp": 15,
+      "HD": {
+        "die": 8,
+        "current": 2,
+        "max": 2,
+        "details": "2d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 2,
+            "max": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "pc-pebble",
+      "hp": 16,
+      "HD": {
+        "die": 10,
+        "current": 2,
+        "max": 2,
+        "details": "2d10",
+        "pools": [
+          {
+            "die": 10,
+            "current": 2,
+            "max": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "pc-donavan",
+      "hp": 16,
+      "HD": {
+        "die": 6,
+        "current": 2,
+        "max": 2,
+        "details": "2d6",
+        "pools": [
+          {
+            "die": 6,
+            "current": 2,
+            "max": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "pc-ringgo",
+      "hp": 17,
+      "HD": {
+        "die": 8,
+        "current": 2,
+        "max": 2,
+        "details": "2d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 2,
+            "max": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "pc-aldric",
+      "hp": 16,
+      "HD": {
+        "die": 6,
+        "current": 2,
+        "max": 2,
+        "details": "2d6",
+        "pools": [
+          {
+            "die": 6,
+            "current": 2,
+            "max": 2
+          }
+        ]
+      }
+    }
+  ]
+}

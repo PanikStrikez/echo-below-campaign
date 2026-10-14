@@ -1,0 +1,130 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-barracks-3",
+    "action": {
+      "actor": "s2-hideout-barracks-3",
+      "label": "Shortsword",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836666982-cij0nzg5",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            10
+          ],
+          "total": 14,
+          "natural": 10,
+          "public": false,
+          "kind": "digital",
+          "time": "2:24:26 PM"
+        },
+        {
+          "id": "pa-1791836666982-8opy7xwx",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "2:24:26 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 14 vs AC 17: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-aldric",
+          "label": "Shield",
+          "targets": [
+            "Aldric"
+          ],
+          "rolls": [],
+          "outcomes": [
+            {
+              "targetId": "pc-aldric",
+              "text": "Aldric: effect reviewed"
+            },
+            {
+              "targetId": "pc-aldric",
+              "text": "Aldric: Shield AC 12 → 17; expires at next turn start."
+            }
+          ],
+          "costs": [
+            {
+              "id": "aldric-slots-1",
+              "delta": -1
+            }
+          ]
+        }
+      ],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-hideout-barracks-3",
+        "label": "Shortsword",
+        "targets": [
+          "Aldric"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836667415-co38q9pz",
+            "label": "Shortsword · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              14
+            ],
+            "total": 18,
+            "natural": 14,
+            "public": false,
+            "kind": "digital",
+            "time": "2:24:27 PM"
+          },
+          {
+            "id": "pa-1791836667415-iiunpbee",
+            "label": "Shortsword · effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              5
+            ],
+            "total": 7,
+            "natural": 5,
+            "public": false,
+            "kind": "digital",
+            "time": "2:24:27 PM"
+          },
+          {
+            "id": "pa-1791836667415-wsx5vkmy",
+            "label": "Aldric · concentration DC 10",
+            "notation": "1d20+3",
+            "parts": [
+              16
+            ],
+            "total": 19,
+            "natural": 16,
+            "public": false,
+            "kind": "digital",
+            "time": "2:24:27 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-aldric",
+            "text": "Aldric: 18 vs AC 17: hit, 7 piercing → 7; temp HP absorbed 0, concentration held"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  }
+}

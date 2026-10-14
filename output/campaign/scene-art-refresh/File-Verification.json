@@ -1,0 +1,13 @@
+{
+  "installedImages": 120,
+  "individualReasons": 120,
+  "nativeResolution": [
+    1536,
+    1024
+  ],
+  "originalBackupsVerified": 120,
+  "unchangedMaps": 36,
+  "reviewGalleryAndCandidatesBlockedOnPhones": true,
+  "reviewWorkExcludedFromPortableCampaign": true,
+  "physicalDevicesTested": false
+}

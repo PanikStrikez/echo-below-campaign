@@ -1,0 +1,32 @@
+{
+  "id": "lmop-sleeping-giant-interior",
+  "title": "Phandalin · Sleeping Giant common room",
+  "image": "lmop-visuals/sleeping-giant-interior.png",
+  "key": "P09B",
+  "chapter": "Phandalin",
+  "reveal": "When the party enters the tap house",
+  "sourceRecordIds": [
+    "s2-town"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-town",
+      "title": "5 · Follow the party’s town lead",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Sleeping Giant interior, grubby small drinking room, worn tables and spilled ale, surly female DWARF proprietor Grista behind bar. Rough scarlet-cloaked regulars in background, no sophisticated inn bedrooms, huge feast or other fantasy race for proprietor. Prepared tavern scene, not record of surviving enemies.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Sleeping Giant common room\nObservable scene and constraints: Sleeping Giant interior, grubby small drinking room, worn tables and spilled ale, surly female DWARF proprietor Grista behind bar. Rough scarlet-cloaked regulars in background, no sophisticated inn bedrooms, huge feast or other fantasy race for proprietor. Prepared tavern scene, not record of surviving enemies.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "69d41bfdc69ae70859287700abb61bc2237c49a24d92e5785e8d65b51e385ea7",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-sleeping-giant-interior.png",
+  "generatedAt": "2026-10-12T15:54:02.099Z",
+  "candidateHash": "cb046e5dd8c3020f1ac8ea901a8917f382d5924b484cdbc7031b0d7a85f35be9",
+  "review": "passed",
+  "reviewedHash": "cb046e5dd8c3020f1ac8ea901a8917f382d5924b484cdbc7031b0d7a85f35be9",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.170Z",
+  "installedHash": "cb046e5dd8c3020f1ac8ea901a8917f382d5924b484cdbc7031b0d7a85f35be9",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/sleeping-giant-interior.png"
+}

@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "result": {
+    "keys": [
+      "normalize",
+      "data",
+      "roster",
+      "item",
+      "receive",
+      "prepare",
+      "apply",
+      "phone",
+      "fingerprint",
+      "coins"
+    ],
+    "data": "e=>e.playerHub ||= normalize()"
+  }
+}

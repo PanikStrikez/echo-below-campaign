@@ -1,0 +1,58 @@
+{
+  "id": "lmop-cave-entrance",
+  "title": "Wave Echo Cave · Area 1 · Cave entrance",
+  "image": "lmop-visuals/cave-entrance.png",
+  "key": "E01",
+  "chapter": "Wave Echo Cave",
+  "reveal": "On entering area 1",
+  "sourceRecordIds": [
+    "s4-arrival",
+    "s4-room-1",
+    "s4-return",
+    "s4-outcomes"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-arrival",
+      "title": "Arrival · follow a route the party actually earned",
+      "read": [
+        "The foothills close around the trail. Ahead, a dark opening cuts beneath the rock. Cold air brushes past you, and from somewhere below comes a low crash, like surf heard through the earth.",
+        "The opening offers a visible threshold, but the sound beyond it reaches farther than your sight. The rocky approach gives you a place to check equipment and gather your light before entering. You can study the ground, agree on your order, or listen for the next distant surge."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    },
+    {
+      "id": "s4-room-1",
+      "title": "Area 1 · Rockseeker camp and the descent",
+      "read": [
+        "Three bedrolls surround a silent camp. Supplies lie where their owners left them. A dwarf’s body rests among the bundles, and a rope tied around a stone spire drops into a break in the cavern floor.",
+        "The rope is the clearest connection between this camp and the space below. Its fastening and the edge of the pit can be examined before anyone descends. The bundles and the body offer separate questions, and you can leave room for someone to keep watch while the others decide where to begin."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    },
+    {
+      "id": "s4-return",
+      "title": "Return visit · resume the mine that now exists",
+      "source": "ECHO_SESSION4_RUNBOOK"
+    },
+    {
+      "id": "s4-outcomes",
+      "title": "Before leaving · record the actual ending",
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "Wave Echo Cave entrance CAVERN with abandoned Rockseeker camp: THREE bedrolls, mundane bundles and mining supplies. ONE dead dwarf Tharden partly covered or respectfully framed, no gore; not Gundren or Nundro. Ten-foot-wide pit opening drops twenty feet; rope tied securely around a STONE SPIRE descends into it. Only reached cave, no doors, underground city, forge or visible villain. No built-in light: modest off-frame visitor lantern makes scene visible. No magic glow.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 1 · Cave entrance\nObservable scene and constraints: Wave Echo Cave entrance CAVERN with abandoned Rockseeker camp: THREE bedrolls, mundane bundles and mining supplies. ONE dead dwarf Tharden partly covered or respectfully framed, no gore; not Gundren or Nundro. Ten-foot-wide pit opening drops twenty feet; rope tied securely around a STONE SPIRE descends into it. Only reached cave, no doors, underground city, forge or visible villain. No built-in light: modest off-frame visitor lantern makes scene visible. No magic glow.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "bbaf385e759b4a087b6128fef72e1be4ddabcdc20a645dd2191f284a854bd29f",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-cave-entrance.png",
+  "generatedAt": "2026-10-12T16:28:54.681Z",
+  "candidateHash": "5b08a5db3055e23fe3040d372fcebd99740043696da948075229a15cac8469de",
+  "review": "passed",
+  "reviewedHash": "5b08a5db3055e23fe3040d372fcebd99740043696da948075229a15cac8469de",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.177Z",
+  "installedHash": "5b08a5db3055e23fe3040d372fcebd99740043696da948075229a15cac8469de",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/cave-entrance.png"
+}

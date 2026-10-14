@@ -1,0 +1,36 @@
+{
+  "id": "lmop-phandalin-homecoming",
+  "title": "Epilogue · Phandalin homecoming",
+  "image": "lmop-visuals/phandalin-homecoming.png",
+  "key": "Z01",
+  "chapter": "Epilogue",
+  "reveal": "Only after a successful return",
+  "sourceRecordIds": [
+    "s4-homecoming"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-homecoming",
+      "title": "Phandalin · choose the homecoming that happened",
+      "read": [
+        "Phandalin’s roofs appear beyond the fields. Someone by the road looks up, recognizes you, and hurries toward town. By the time you reach the first houses, people are waiting to hear what happened.",
+        "The places you recognize offer somewhere to begin your account, but the people who hear it will need your words. You can tell them what you witnessed, ask what changed during your absence, or settle a practical need before deciding what comes after the expedition."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "Neutral Phandalin return establishing scene, same small frontier town and muddy roads, modest working shops, ordinary locals continuing daily lives. No compulsory victory parade, mine reopened, rescued named NPCs, restored manor or confirmed marriage. Works with varied endings; festive overlay only after actual outcome approval.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Epilogue · Phandalin homecoming\nObservable scene and constraints: Neutral Phandalin return establishing scene, same small frontier town and muddy roads, modest working shops, ordinary locals continuing daily lives. No compulsory victory parade, mine reopened, rescued named NPCs, restored manor or confirmed marriage. Works with varied endings; festive overlay only after actual outcome approval.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "7162b985c086420adfc323c5f10b7a7c03540764b0c49b9efcbb29168006400e",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-phandalin-homecoming.png",
+  "generatedAt": "2026-10-12T16:34:18.836Z",
+  "candidateHash": "d8821d22ae991c63d71eff56f88c45762ff3ac7d8888d772d7dc29b5fb290016",
+  "review": "passed",
+  "reviewedHash": "d8821d22ae991c63d71eff56f88c45762ff3ac7d8888d772d7dc29b5fb290016",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:32.823Z",
+  "installedHash": "d8821d22ae991c63d71eff56f88c45762ff3ac7d8888d772d7dc29b5fb290016",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/phandalin-homecoming.png"
+}

@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "road",
+      "round": 1,
+      "order": [
+        "pc-trista",
+        "goblin-2",
+        "pc-pebble",
+        "pc-donavan",
+        "pc-ringgo",
+        "pc-aldric",
+        "goblin-3",
+        "goblin-1",
+        "goblin-4"
+      ],
+      "index": 0
+    },
+    "players": [
+      {
+        "id": "pc-trista",
+        "initiative": 19
+      },
+      {
+        "id": "pc-donavan",
+        "initiative": 17
+      },
+      {
+        "id": "pc-ringgo",
+        "initiative": 16
+      },
+      {
+        "id": "pc-pebble",
+        "initiative": 18
+      },
+      {
+        "id": "pc-aldric",
+        "initiative": 15
+      }
+    ],
+    "requests": []
+  }
+}

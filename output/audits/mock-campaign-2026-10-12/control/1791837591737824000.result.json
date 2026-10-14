@@ -1,0 +1,4 @@
+{
+  "ok": false,
+  "error": "apiRequestContext.get: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:52653/api/state\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - cookie: echo_phone=thvK7i0LihEv1YuYRNzQ_F5Gtitn1Az8JpnCKez-7PU\u001b[22m\n"
+}

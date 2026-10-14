@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s2-hideout-crypt-1",
+        "name": "Crypt skeleton 1",
+        "hp": 13
+      },
+      {
+        "id": "s2-hideout-crypt-2",
+        "name": "Crypt skeleton 2",
+        "hp": 13
+      },
+      {
+        "id": "s2-hideout-crypt-3",
+        "name": "Crypt skeleton 3",
+        "hp": 13
+      }
+    ],
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 17
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 24
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 24
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 23
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 23
+      }
+    ]
+  }
+}

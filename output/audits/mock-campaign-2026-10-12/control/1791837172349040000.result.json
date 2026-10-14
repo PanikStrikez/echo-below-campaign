@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "result": {
+    "shield": false,
+    "effectRulingRequired": true,
+    "usage": "action",
+    "override": "",
+    "concentration": "keep",
+    "concentrationName": "",
+    "grantAction": false,
+    "costs": [
+      {
+        "id": "aldric-slots-3",
+        "delta": -1
+      }
+    ],
+    "effectNote": "ApprovedmockWizard5selection; exactareaandSculptrequirementsreviewed\nCasting with 3-level spell slots. undefined",
+    "acknowledged": false,
+    "reactionsChecked": false,
+    "reminders": [],
+    "steps": [],
+    "partyCard": {
+      "kind": "reference",
+      "choices": {},
+      "turnStamp": "lmop-map-thundertree-overview:0:0:outside-combat"
+    },
+    "support": {
+      "status": "reference",
+      "label": "Manual ruling",
+      "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+      "source": {
+        "book": "2014 PHB",
+        "printedPage": null,
+        "rule": "Current sheet / feature reference",
+        "confidence": "approved table choice"
+      }
+    }
+  }
+}

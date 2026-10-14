@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-3-stirge-4",
+    "label": "Blood Drain",
+    "targets": [
+      "Trista"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831889928-g4ztbnwr",
+        "label": "Blood Drain · attack 1",
+        "notation": "1d20+5",
+        "parts": [
+          11
+        ],
+        "total": 16,
+        "natural": 11,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:49 PM"
+      },
+      {
+        "id": "pa-1791831889928-1xt3sxn3",
+        "label": "Blood Drain · effect 1.1",
+        "notation": "1d4+3",
+        "parts": [
+          3
+        ],
+        "total": 6,
+        "natural": 3,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:49 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "pc-trista",
+        "text": "Trista: 16 vs AC 14: hit, 6 piercing → 6; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  }
+}

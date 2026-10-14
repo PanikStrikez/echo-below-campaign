@@ -224,8 +224,11 @@
     };
   }
   function renderState() {
-    const intro = section(content, 'Campaign state', 'Persistent records with separate audience, knowledge status, and provenance. Edits here are explicit DM changes.');
-    if (contextProvider) button(intro, 'Review existing campaign import', async () => {
+    const intro = section(content, 'Campaign state', 'Approved browser outcomes govern played events. Service records hold references and private proposals; they do not independently update quests, maps or phone journals.');
+    if (contextProvider && globalThis.ECHO_RECONCILIATION) button(intro, 'Review linked outcomes', () => {
+      dialog.close(); globalThis.ECHO_STORY_UI.open('outcomes');
+    });
+    else if (contextProvider) button(intro, 'Review existing campaign import', async () => {
       const context = contextProvider();
       const value = await api('/import/preview', {campaignId: context.campaignId, sessionId: context.sessionId, story: context.story});
       draft = value.draft; collectDraft = null;
@@ -255,6 +258,14 @@
       editor.replaceChildren();
       if (!selectedRecord) { el('p', 'Choose a record to inspect its facts, sources, and audience.', editor, 'ce-help'); return; }
       el('h3', selectedRecord.name || 'New ' + activeKind, editor);
+      if(selectedRecord.data?.authority==='browser-outcome'){
+        el('p',selectedRecord.data.scope==='current-linked-state'?'Current state from reviewed outcome links.':'Historical event; does not alone prove the current situation.',editor);
+        el('pre',JSON.stringify(selectedRecord,null,2),editor);
+        button(editor,'Correct authoritative outcome',()=>{dialog.close();globalThis.ECHO_STORY_UI.correctOutcome(selectedRecord.data.outcome_id);});return;
+      }
+      if(selectedRecord.id&&globalThis.ECHO_RECONCILIATION)button(editor,'Review these facts as a table outcome',async()=>{
+        await globalThis.ECHO_RECONCILIATION.stageServiceRecords([selectedRecord],'record');dialog.close();globalThis.ECHO_STORY_UI.open('outcomes');
+      });
       const form = el('form', null, editor);
       const revision = status.revision;
       recordEdit = recordForm(form, selectedRecord, 'new');
@@ -481,12 +492,18 @@
         return value;
       };
       const actions = el('div', null, review, 'ce-actions');
+      if(globalThis.ECHO_RECONCILIATION)button(actions,'Send selected facts to Outcome review',async()=>{
+        const value=collectDraft(),records=value.mutations.filter(m=>m.selected&&m.op==='upsert').map(m=>m.record);
+        if(!records.length)throw Error('Select at least one proposed record.');
+        await globalThis.ECHO_RECONCILIATION.stageServiceRecords(records,`session ${value.id}`);
+        dialog.close();globalThis.ECHO_STORY_UI.open('outcomes');
+      });
       button(actions, 'Save review draft', async () => {
         const value = collectDraft();
         const saved = await api('/sessions/' + encodeURIComponent(value.id) + '/save', {draft: value});
         draft = saved.draft || value; announce('Review draft saved. Campaign state is unchanged.');
       });
-      const commit = button(actions, 'Commit selected changes', async () => {
+      const commit = button(actions, 'Save service references only', async () => {
         if (!approval.checked) throw Error('Review the player recap and selected changes, then tick the DM review checkbox.');
         const value = collectDraft();
         const saved = await api('/sessions/' + encodeURIComponent(value.id) + '/save', {draft: value});

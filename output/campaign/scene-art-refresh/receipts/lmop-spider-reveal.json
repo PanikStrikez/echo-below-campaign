@@ -1,0 +1,36 @@
+{
+  "id": "lmop-spider-reveal",
+  "title": "Thundertree · Area 6 · Spiders revealed",
+  "image": "lmop-visuals/spider-reveal.png",
+  "key": "T06B",
+  "chapter": "Thundertree",
+  "reveal": "When the spiders are seen",
+  "sourceRecordIds": [
+    "s3-tt-6"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-6",
+      "title": "Thundertree 6 · Ruined store and webs",
+      "read": [
+        "White strands cross the lane to a broken store. The building looks empty from outside, though its walls offer plenty of shadows.",
+        "The strands cross the lane as well as the building, making the approach itself worth examining. Your light catches some threads more readily than the shadows behind them. You can study the webbing from clear ground or decide how much of the lane you want to cross."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "SAME ruined tile-roofed store and webbed lane. TWO large giant spiders have emerged from its walls, one on wall edge and one in webbed doorway. Credible arachnid anatomy, eight legs each. No extra spiders, dragon, player character or claimed kill. Cocoon remains in unseen western interior.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 6 · Spiders revealed\nObservable scene and constraints: SAME ruined tile-roofed store and webbed lane. TWO large giant spiders have emerged from its walls, one on wall edge and one in webbed doorway. Credible arachnid anatomy, eight legs each. No extra spiders, dragon, player character or claimed kill. Cocoon remains in unseen western interior.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "470e0568c129cf6fdd0ba9e174e8be0966df4c8a2d2b93c455a79567f4e55fb6",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-spider-reveal.png",
+  "generatedAt": "2026-10-12T16:15:44.256Z",
+  "candidateHash": "6d231616174efe1e399840f864e154d4f8e6d1c7f0516ab3aad2c41a3663c4fc",
+  "review": "passed",
+  "reviewedHash": "6d231616174efe1e399840f864e154d4f8e6d1c7f0516ab3aad2c41a3663c4fc",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.688Z",
+  "installedHash": "6d231616174efe1e399840f864e154d4f8e6d1c7f0516ab3aad2c41a3663c4fc",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/spider-reveal.png"
+}

@@ -1,0 +1,1276 @@
+{
+  "label": "ISOLATED MOCK CAMPAIGN — not actual history",
+  "phase": "corrected-05-grol",
+  "characterId": "pc-aldric",
+  "dmNarration": [
+    "A hulking bugbear and his wolf stand near an unconscious dwarf. The dark-clad visitor watches beside an exit.",
+    "They argue about payment for the dwarf and map. Grol listens to your offer, demands 100 gold for both and safe passage; the visitor objects."
+  ],
+  "question": "Do you accept those terms, counteroffer, or intervene?",
+  "phoneResponse": {
+    "status": 200,
+    "data": {
+      "revision": 3496,
+      "resyncRequest": 0,
+      "session": "PRACTICE · MOCK Session 5 · Cragmaw Castle",
+      "character": {
+        "id": "pc-aldric",
+        "name": "Aldric Vane",
+        "player": "Bowman",
+        "className": "Wizard · School of Evocation",
+        "ancestry": "Reborn",
+        "background": "Haunted One",
+        "level": 5,
+        "rules": "2014 Wizard with Reborn, Haunted One, named later spells, and all listed spells available by table rule",
+        "proficiency": 3,
+        "speed": 30,
+        "senses": "Poison resistance; advantage on death saves and saves against disease or being poisoned",
+        "languages": "Common, Dwarvish, Undercommon, Infernal (from Bowman’s backstory; omitted in JSON export)",
+        "hp": 37,
+        "maxHp": 37,
+        "ac": 12,
+        "tempHp": 0,
+        "hitDice": {
+          "die": 6,
+          "current": 5,
+          "max": 5,
+          "details": "5d6",
+          "pools": [
+            {
+              "die": 6,
+              "current": 5,
+              "max": 5
+            }
+          ]
+        },
+        "abilities": {
+          "str": {
+            "score": 8,
+            "modifier": -1
+          },
+          "dex": {
+            "score": 14,
+            "modifier": 2
+          },
+          "con": {
+            "score": 16,
+            "modifier": 3
+          },
+          "int": {
+            "score": 20,
+            "modifier": 5
+          },
+          "wis": {
+            "score": 12,
+            "modifier": 1
+          },
+          "cha": {
+            "score": 16,
+            "modifier": 3
+          }
+        },
+        "saves": [
+          {
+            "name": "STR",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "DEX",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "CON",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "INT",
+            "bonus": 8,
+            "rank": 1
+          },
+          {
+            "name": "WIS",
+            "bonus": 4,
+            "rank": 1
+          },
+          {
+            "name": "CHA",
+            "bonus": 3,
+            "rank": 0
+          }
+        ],
+        "skills": [
+          {
+            "name": "Acrobatics",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "Animal Handling",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Arcana",
+            "bonus": 8,
+            "rank": 1
+          },
+          {
+            "name": "Athletics",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Deception",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "History",
+            "bonus": 5,
+            "rank": 0
+          },
+          {
+            "name": "Insight",
+            "bonus": 4,
+            "rank": 1
+          },
+          {
+            "name": "Intimidation",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Investigation",
+            "bonus": 8,
+            "rank": 1
+          },
+          {
+            "name": "Medicine",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Nature",
+            "bonus": 5,
+            "rank": 0
+          },
+          {
+            "name": "Perception",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Performance",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "Persuasion",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Religion",
+            "bonus": 8,
+            "rank": 1
+          },
+          {
+            "name": "Sleight of Hand",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "Stealth",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "Survival",
+            "bonus": 1,
+            "rank": 0
+          }
+        ],
+        "passives": {
+          "Perception": 11,
+          "Insight": 14,
+          "Investigation": 18
+        },
+        "attacks": [
+          {
+            "id": "aldric-fire-bolt",
+            "name": "Fire Bolt",
+            "type": "Action",
+            "attackBonus": 8,
+            "damageDice": "2d10",
+            "damageType": "fire",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Ranged spell attack, 120 ft.; ignites unattended flammable objects.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "aldric-dagger",
+            "name": "Dagger",
+            "type": "Action",
+            "attackBonus": 5,
+            "damageDice": "1d4+2",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Melee or thrown 20/60 ft.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          }
+        ],
+        "actions": [
+          {
+            "id": "aldric-control-flames",
+            "name": "Control Flames",
+            "type": "Action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Shape, expand, or extinguish a visible nonmagical flame in a 5-foot cube within 60 ft.; no slot.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "aldric-mage-hand",
+            "name": "Mage Hand",
+            "type": "Action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Create and control a spectral hand within 30 ft.; no slot.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 256,
+                "rule": "Mage Hand",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "aldric-ice-knife",
+            "name": "Ice Knife",
+            "type": "Action",
+            "attackBonus": 8,
+            "damageDice": "1d10",
+            "damageType": "piercing + cold",
+            "saveAbility": "DEX",
+            "saveDC": 16,
+            "effect": "Ranged spell attack, 60 ft.; piercing on hit, then target and creatures within 5 ft. make a Dexterity save or take 2d6 cold.",
+            "resourceId": "aldric-slots-1",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Resolve the attack and a separately selected burst, even on a miss. Only piercing attack dice double on a critical.",
+              "source": {
+                "book": "Later-source character spell exception",
+                "printedPage": null,
+                "rule": "Ice Knife",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "aldric-ice-knife-burst",
+            "name": "Ice Knife burst",
+            "type": "After Ice Knife",
+            "attackBonus": null,
+            "damageDice": "2d6",
+            "damageType": "cold",
+            "saveAbility": "DEX",
+            "saveDC": 15,
+            "effect": "Cold burst after the knife attack. Target and all creatures within 5 ft. make Dexterity save DC 14; no extra spell slot.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Use the combined Ice Knife review to avoid repeating its burst or spending another slot.",
+              "source": {
+                "book": "Later-source character spell exception",
+                "printedPage": null,
+                "rule": "Ice Knife burst",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "aldric-magic-missile",
+            "name": "Magic Missile",
+            "type": "Action",
+            "attackBonus": null,
+            "damageDice": "1d4+1",
+            "damageType": "force",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Three darts at creatures within 120 ft.; no attack roll. Each dart deals force damage.",
+            "resourceId": "aldric-slots-1",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 257,
+                "rule": "Magic Missile",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "aldric-mage-armor",
+            "name": "Mage Armor",
+            "type": "Action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Touch an unarmored willing creature; base AC becomes 13 + Dexterity modifier for 8 hours. Aldric’s AC becomes 15.",
+            "resourceId": "aldric-slots-1",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 256,
+                "rule": "Mage Armor",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "aldric-shield",
+            "name": "Shield",
+            "type": "Reaction",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "+5 AC until the start of Aldric’s next turn; blocks Magic Missile.",
+            "resourceId": "aldric-slots-1",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 275,
+                "rule": "Shield",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "aldric-silvery-barbs",
+            "name": "Silvery Barbs",
+            "type": "Reaction",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "When a visible creature within 60 ft. succeeds on an attack, check, or save: force a reroll and use the lower d20; grant another visible creature advantage on one roll within 1 minute.",
+            "resourceId": "aldric-slots-1",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "aldric-scorcher",
+            "name": "Aganazzar’s Scorcher",
+            "type": "Action",
+            "attackBonus": null,
+            "damageDice": "3d8",
+            "damageType": "fire",
+            "saveAbility": "DEX",
+            "saveDC": 16,
+            "effect": "Fire in a 30-foot line, 5 feet wide; Dexterity save DC 14 for half. Sculpt Spells may protect up to three visible creatures.",
+            "resourceId": "aldric-slots-2",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Select every creature in the line. Explicitly choose eligible Sculpt Spells exclusions; Dexterity save for half.",
+              "source": {
+                "book": "Later-source spell / 2014 Evocation",
+                "printedPage": null,
+                "rule": "Aganazzar’s Scorcher / Sculpt Spells",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "aldric-web",
+            "name": "Web",
+            "type": "Action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "DEX",
+            "saveDC": 16,
+            "effect": "20-foot cube within 60 feet; concentration up to 1 hour. Creatures entering or starting there make Dexterity save DC 14 or become restrained; see spell for escape and fire.",
+            "resourceId": "aldric-slots-2",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "aldric-past-life",
+            "name": "Knowledge from a Past Life",
+            "type": "After a skill check",
+            "attackBonus": null,
+            "damageDice": "1d6",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "After seeing a d20 result for an ability check using a skill, add 1d6.",
+            "resourceId": "aldric-past-life",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "aldric-arcane-recovery",
+            "name": "Arcane Recovery",
+            "type": "After short rest",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Once per day after a short rest, recover spell slots with combined level 2 or less: one 2nd-level slot or two 1st-level slots.",
+            "resourceId": "aldric-arcane-recovery",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Confirm a short rest and choose expended slots. Donavan can recover one slot level; Aldric two.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 115,
+                "rule": "Arcane Recovery",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          }
+        ],
+        "spells": [
+          {
+            "name": "Control Flames",
+            "level": 0,
+            "prepared": true,
+            "notes": "At-will cantrip.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "name": "Fire Bolt",
+            "level": 0,
+            "prepared": true,
+            "notes": "At-will cantrip.",
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Mage Hand",
+            "level": 0,
+            "prepared": true,
+            "notes": "At-will cantrip.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 256,
+                "rule": "Mage Hand",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Ice Knife",
+            "level": 1,
+            "prepared": true,
+            "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Resolve the attack and a separately selected burst, even on a miss. Only piercing attack dice double on a critical.",
+              "source": {
+                "book": "Later-source character spell exception",
+                "printedPage": null,
+                "rule": "Ice Knife",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "name": "Mage Armor",
+            "level": 1,
+            "prepared": true,
+            "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 256,
+                "rule": "Mage Armor",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Magic Missile",
+            "level": 1,
+            "prepared": true,
+            "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 257,
+                "rule": "Magic Missile",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Shield",
+            "level": 1,
+            "prepared": true,
+            "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 275,
+                "rule": "Shield",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Silvery Barbs",
+            "level": 1,
+            "prepared": true,
+            "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "name": "Aganazzar’s Scorcher",
+            "level": 2,
+            "prepared": true,
+            "notes": "Listed as prepared in Bowman’s level 3 export; uses a 2nd-level slot.",
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Select every creature in the line. Explicitly choose eligible Sculpt Spells exclusions; Dexterity save for half.",
+              "source": {
+                "book": "Later-source spell / 2014 Evocation",
+                "printedPage": null,
+                "rule": "Aganazzar’s Scorcher / Sculpt Spells",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "name": "Web",
+            "level": 2,
+            "prepared": true,
+            "notes": "Listed as prepared in Bowman’s level 3 export; uses a 2nd-level slot.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "name": "Mirror Image",
+            "level": 2,
+            "prepared": true,
+            "notes": "Approvedmocklevel4choice",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "name": "Misty Step",
+            "level": 2,
+            "prepared": true,
+            "notes": "Approvedmocklevel4choice",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "name": "Fireball",
+            "level": 3,
+            "prepared": true,
+            "notes": "ApprovedmockWizard5selection; exactareaandSculptrequirementsreviewed",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "name": "Counterspell",
+            "level": 3,
+            "prepared": true,
+            "notes": "ApprovedmockWizard5selection; exactareaandSculptrequirementsreviewed",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": null,
+                "rule": "Current sheet / feature reference",
+                "confidence": "approved table choice"
+              }
+            }
+          }
+        ],
+        "resources": [
+          {
+            "id": "aldric-slots-1",
+            "name": "1st-level spell slots",
+            "current": 4,
+            "max": 4,
+            "unit": "slots",
+            "slotLevel": 1
+          },
+          {
+            "id": "aldric-slots-2",
+            "name": "2nd-level spell slots",
+            "current": 3,
+            "max": 3,
+            "unit": "slots",
+            "slotLevel": 2
+          },
+          {
+            "id": "aldric-past-life",
+            "name": "Knowledge from a Past Life",
+            "current": 2,
+            "max": 2,
+            "unit": "uses",
+            "slotLevel": 0
+          },
+          {
+            "id": "aldric-arcane-recovery",
+            "name": "Arcane Recovery",
+            "current": 1,
+            "max": 1,
+            "unit": "use",
+            "slotLevel": 0
+          },
+          {
+            "id": "aldric-slots-3",
+            "name": "3-level spell slots",
+            "current": 2,
+            "max": 2,
+            "unit": "slots",
+            "slotLevel": 3
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Dagger",
+            "quantity": 1,
+            "category": "Weapon",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Spellbook",
+            "quantity": 1,
+            "category": "Focus",
+            "notes": "Player export",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Scholar’s pack",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Monster hunter’s pack",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Common clothes",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Trinket",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "Scorched magistrate signet ring in backstory; export labels item as trinket",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Verdict Gloves",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "Named in export equipment text; properties not specified",
+            "equipped": false,
+            "attuned": false
+          }
+        ],
+        "money": {
+          "cp": 880,
+          "sp": 180,
+          "ep": 30,
+          "gp": 180,
+          "pp": 0
+        },
+        "features": [
+          {
+            "name": "Arcane Recovery",
+            "text": "Once per day after a short rest, recover spell slots with combined level 2 or less: one 2nd-level or two 1st-level slots.",
+            "source": "2014 Wizard 3"
+          },
+          {
+            "name": "Sculpt Spells",
+            "text": "When casting an evocation spell that affects visible creatures, protect up to 1 + spell level of them: they succeed on their saves and take no half damage.",
+            "source": "2014 Evocation Wizard 2"
+          },
+          {
+            "name": "Evocation Savant",
+            "text": "Half time and gold to copy evocation spells into the spellbook.",
+            "source": "2014 Evocation Wizard 2"
+          },
+          {
+            "name": "Knowledge from a Past Life",
+            "text": "Add 1d6 to a skill check after seeing the d20; twice per long rest.",
+            "source": "Reborn lineage"
+          },
+          {
+            "name": "Deathless Nature",
+            "text": "Poison resistance; advantage on death saves and saves against disease or being poisoned; no need to eat, drink, breathe, or sleep; 4-hour motionless long rest while conscious.",
+            "source": "Reborn lineage"
+          },
+          {
+            "name": "Training",
+            "text": "No armor proficiency. Dagger, dart, light crossbow, quarterstaff, and sling proficiency. No tool proficiency listed.",
+            "source": "Aldric JSON export"
+          },
+          {
+            "name": "Heart of Darkness",
+            "text": "Commoners may aid him unless he has shown himself dangerous to them.",
+            "source": "Haunted One"
+          },
+          {
+            "name": "Mock ASI: Intelligence +2",
+            "text": "Rehearsal selection only, not live player choice",
+            "source": "Isolated mock advancement"
+          },
+          {
+            "name": "Mock spell selection pending review level 4",
+            "text": "No unconfirmed new spells assigned; cantrips scale and existing spells may upcast only after review.",
+            "source": "Rehearsal limitation"
+          },
+          {
+            "name": "Mock spell selection pending review level 5",
+            "text": "No unconfirmed new spells assigned; cantrips scale and existing spells may upcast only after review.",
+            "source": "Rehearsal limitation"
+          }
+        ],
+        "inspiration": false,
+        "death": {
+          "successes": 0,
+          "failures": 0,
+          "stable": false
+        },
+        "exhaustion": 0,
+        "conditions": [],
+        "concentration": "",
+        "effects": [],
+        "publicNotes": "Isolated mock character level 5. Current sheet governs; futurefeaturesawaitreview.",
+        "favorites": []
+      },
+      "dungeonProtocol": 1,
+      "dungeon": {
+        "enabled": false,
+        "fine": false,
+        "current": [],
+        "explored": [],
+        "objects": [],
+        "passages": []
+      },
+      "searchRequests": [],
+      "travelProtocol": 1,
+      "journey": {
+        "position": null,
+        "destination": "",
+        "weather": "clear",
+        "estimate": null,
+        "places": [
+          {
+            "id": "region-neverwinter",
+            "title": "Neverwinter",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-phandalin",
+            "title": "Phandalin",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          }
+        ],
+        "events": []
+      },
+      "atlas": null,
+      "atlasImage": "",
+      "travelRequests": [],
+      "playerToolsProtocol": 1,
+      "playerTools": {
+        "notes": [],
+        "sharedClues": [],
+        "itemRequests": [],
+        "bank": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 0,
+          "pp": 0
+        },
+        "objective": {
+          "text": "Locate Gundren and secure a safe release; inspect the castle together.",
+          "at": "2026-10-12T20:42:34.098Z"
+        },
+        "roster": [
+          {
+            "id": "pc-aldric",
+            "name": "Aldric Vane"
+          },
+          {
+            "id": "pc-pebble",
+            "name": "Pebble"
+          },
+          {
+            "id": "pc-trista",
+            "name": "Trista"
+          },
+          {
+            "id": "pc-ringgo",
+            "name": "Ringgo Paul"
+          },
+          {
+            "id": "pc-donavan",
+            "name": "Donavan Kemp"
+          }
+        ]
+      },
+      "actionProtocol": 1,
+      "combatProtocol": 1,
+      "combatPrompts": {
+        "saves": [],
+        "reactions": []
+      },
+      "movement": {
+        "columns": 36,
+        "feet": 5,
+        "metric": "grid",
+        "speed": 30,
+        "used": 0,
+        "crawling": false,
+        "areas": []
+      },
+      "scene": "lmop-map-cragmaw-castle",
+      "sceneTitle": "Cragmaw Castle · Cragmaw Castle · complete",
+      "isMap": true,
+      "mapImage": "/api/map?v=614a912f233d",
+      "playerInput": true,
+      "fog": [
+        "5,4",
+        "5,5",
+        "5,6",
+        "5,7",
+        "5,8",
+        "5,9",
+        "5,10",
+        "5,11",
+        "5,12",
+        "5,13",
+        "5,14",
+        "6,4",
+        "6,5",
+        "6,6",
+        "6,7",
+        "6,8",
+        "6,9",
+        "6,10",
+        "6,11",
+        "6,12",
+        "6,13",
+        "6,14",
+        "7,4",
+        "7,5",
+        "7,6",
+        "7,7",
+        "7,8",
+        "7,9",
+        "7,10",
+        "7,11",
+        "7,12",
+        "7,13",
+        "7,14",
+        "8,4",
+        "8,5",
+        "8,6",
+        "8,7",
+        "8,8",
+        "8,9",
+        "8,10",
+        "8,11",
+        "8,12",
+        "8,13",
+        "8,14",
+        "9,4",
+        "9,5",
+        "9,6",
+        "9,7",
+        "9,8",
+        "9,9",
+        "9,10",
+        "9,11",
+        "9,12",
+        "9,13",
+        "9,14",
+        "10,4",
+        "10,5",
+        "10,6",
+        "10,7",
+        "10,8",
+        "10,9",
+        "10,10",
+        "10,11",
+        "10,12",
+        "10,13",
+        "10,14",
+        "11,4",
+        "11,5",
+        "11,6",
+        "11,7",
+        "11,8",
+        "11,9",
+        "11,10",
+        "11,11",
+        "11,12",
+        "11,13",
+        "11,14"
+      ],
+      "fogged": true,
+      "fineFog": true,
+      "points": [],
+      "tokens": [
+        {
+          "id": "pc-trista",
+          "name": "Trista",
+          "label": "T",
+          "team": "pc",
+          "x": 32,
+          "y": 40
+        },
+        {
+          "id": "pc-donavan",
+          "name": "Donavan",
+          "label": "D",
+          "team": "pc",
+          "x": 23,
+          "y": 48
+        },
+        {
+          "id": "pc-ringgo",
+          "name": "Ringgo",
+          "label": "R",
+          "team": "pc",
+          "x": 26,
+          "y": 48
+        },
+        {
+          "id": "pc-pebble",
+          "name": "Pebble",
+          "label": "P",
+          "team": "pc",
+          "x": 32,
+          "y": 40
+        },
+        {
+          "id": "pc-aldric",
+          "name": "Aldric",
+          "label": "A",
+          "team": "pc",
+          "x": 32,
+          "y": 48
+        },
+        {
+          "id": "s3-castle-guards-hobgoblin-1",
+          "name": "King’s guard 1",
+          "label": "H1",
+          "team": "enemy",
+          "x": 30,
+          "y": 40
+        }
+      ],
+      "turn": {
+        "round": 0,
+        "activeId": null
+      },
+      "roll": {
+        "id": "1791837576162-6xuoh1gb4wk",
+        "label": "Aldric initiative",
+        "notation": "1d20+2",
+        "parts": [
+          1
+        ],
+        "total": 3
+      },
+      "requests": "Initiative 3 (1 + 2).",
+      "actionRequests": [],
+      "privateClues": [],
+      "inventory": [],
+      "sceneMood": {
+        "minutes": 540,
+        "weather": "clear",
+        "phase": "day"
+      },
+      "campaignJournal": [
+        {
+          "id": "continuity-outcome-1791832923830-zmlxmuz",
+          "title": "CORRECTED MOCK · Road goblin surrendered",
+          "text": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+          "kind": "confirmed",
+          "when": "MOCK Session1"
+        },
+        {
+          "id": "continuity-mock-s3-transfer-letter",
+          "title": "A written transfer order names Cragmaw Castle",
+          "text": "A transfer order names Gundren and Cragmaw Castle. His present condition and exact route remain unknown.",
+          "kind": "confirmed",
+          "when": "Session 2 · Phandalin"
+        },
+        {
+          "id": "continuity-mock-s3-dendrar-rescue",
+          "title": "The Dendrars released and escorted",
+          "text": "Mirna, Nars and Nilsa are safe inPhandalin. Their information offers aThundertreelead.",
+          "kind": "confirmed",
+          "when": "MOCK Session 3 · Redbrand Hideout"
+        },
+        {
+          "id": "continuity-mock-s4-castle-route",
+          "title": "Reidoth gives a usable castle route",
+          "text": "Reidoth’s directions give us a usable route toCragmawCastle.",
+          "kind": "confirmed",
+          "when": "MOCK Session 4 · Wilderness leads"
+        }
+      ],
+      "quests": [
+        {
+          "id": "gundren",
+          "title": "Find Gundren",
+          "state": "active",
+          "goal": "Reidoth’s directions give us a usable route toCragmawCastle."
+        }
+      ],
+      "campaignTracks": [
+        {
+          "kind": "rescue",
+          "subject": "Mirna,Nars,Nilsa",
+          "holder": "SafeinPhandalin",
+          "owedTo": "",
+          "state": "resolved",
+          "note": ""
+        }
+      ],
+      "initiative": {
+        "open": false,
+        "total": 3,
+        "bonus": 2
+      },
+      "rehearsal": false
+    }
+  },
+  "playerTV": "Cragmaw Castle · complete\nControls & interaction\nT\nT\nD\nD\nR\nR\nP\nP\nA\nA\nH1\nH1\nDay · Clear\nPRACTICE CAMPAIGN",
+  "displayImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/corrected-05-grol-TV.png",
+  "phoneImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/players/pc-aldric-corrected-05-grol.png"
+}

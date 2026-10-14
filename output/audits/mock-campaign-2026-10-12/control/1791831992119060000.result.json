@@ -1,0 +1,509 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "k": "rolls",
+      "v": [
+        {
+          "id": "1791831978685-2nszskh6dku",
+          "label": "MOCK Interception correction",
+          "notation": "1d10+2",
+          "parts": [
+            9
+          ],
+          "total": 11,
+          "kind": "digital",
+          "time": "01:06 PM"
+        },
+        {
+          "id": "pa-1791831890465-p9fh1y1u",
+          "label": "Blood Drain · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            5
+          ],
+          "total": 10,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:50 PM"
+        },
+        {
+          "id": "pa-1791831890465-8am9wk9u",
+          "label": "Blood Drain · effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            2
+          ],
+          "total": 5,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:50 PM"
+        },
+        {
+          "id": "pa-1791831889928-g4ztbnwr",
+          "label": "Blood Drain · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            11
+          ],
+          "total": 16,
+          "natural": 11,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:49 PM"
+        },
+        {
+          "id": "pa-1791831889928-1xt3sxn3",
+          "label": "Blood Drain · effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            3
+          ],
+          "total": 6,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:49 PM"
+        },
+        {
+          "id": "pa-1791831889482-o8yedk14",
+          "label": "Blood Drain · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            15
+          ],
+          "total": 20,
+          "natural": 15,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:49 PM"
+        },
+        {
+          "id": "pa-1791831889482-st6wiwc4",
+          "label": "Blood Drain · effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            4
+          ],
+          "total": 7,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:49 PM"
+        },
+        {
+          "id": "pa-1791831888218-7160xohv",
+          "label": "Blood Drain · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            13
+          ],
+          "total": 18,
+          "natural": 13,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:48 PM"
+        },
+        {
+          "id": "pa-1791831888218-0vdg5qju",
+          "label": "Blood Drain · effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            2
+          ],
+          "total": 5,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:48 PM"
+        },
+        {
+          "id": "pa-1791831887114-zkg1jokb",
+          "label": "Blood Drain · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            20
+          ],
+          "total": 25,
+          "natural": 20,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:47 PM"
+        },
+        {
+          "id": "pa-1791831887114-gvl60cmd",
+          "label": "Blood Drain · effect 1.1",
+          "notation": "2d4+3",
+          "parts": [
+            1,
+            4
+          ],
+          "total": 8,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:47 PM"
+        },
+        {
+          "id": "pa-1791831886649-3mlh9j6m",
+          "label": "Unarmed Strike · attack 1",
+          "notation": "1d20+6",
+          "parts": [
+            7
+          ],
+          "total": 13,
+          "natural": 7,
+          "public": true,
+          "kind": "digital",
+          "time": "1:04:46 PM"
+        },
+        {
+          "id": "pa-1791831886649-mi2rujgz",
+          "label": "Unarmed Strike · effect 1.1",
+          "notation": "1d6+4",
+          "parts": [
+            2
+          ],
+          "total": 6,
+          "natural": 2,
+          "public": true,
+          "kind": "digital",
+          "time": "1:04:46 PM"
+        },
+        {
+          "id": "pa-1791831886170-oh0khvy4",
+          "label": "Blood Drain · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            19
+          ],
+          "total": 24,
+          "natural": 19,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:46 PM"
+        },
+        {
+          "id": "pa-1791831886170-o0xe5hli",
+          "label": "Blood Drain · effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            4
+          ],
+          "total": 7,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "1:04:46 PM"
+        },
+        {
+          "id": "pa-1791831838564-g3eapk3g",
+          "label": "Blood Drain · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            6
+          ],
+          "total": 11,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "1:03:58 PM"
+        },
+        {
+          "id": "pa-1791831838564-nkm8ovom",
+          "label": "Blood Drain · effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            3
+          ],
+          "total": 6,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "1:03:58 PM"
+        },
+        {
+          "id": "1791831828499-qcnpgi9sms",
+          "label": "Stirge 10 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            8
+          ],
+          "total": 11,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831828499-tols8vncyxo",
+          "label": "Stirge 9 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            4
+          ],
+          "total": 7,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831828499-gulux3dyj",
+          "label": "Stirge 8 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            14
+          ],
+          "total": 17,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831828499-zyqdae39f3",
+          "label": "Stirge 7 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            15
+          ],
+          "total": 18,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831828499-q4giuu91fds",
+          "label": "Stirge 6 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            3
+          ],
+          "total": 6,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831828499-z9i6iupsnog",
+          "label": "Stirge 5 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            17
+          ],
+          "total": 20,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831828499-1wi4zsxn334",
+          "label": "Stirge 4 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            9
+          ],
+          "total": 12,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831828499-tsxpsm1qd5",
+          "label": "Stirge 3 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            1
+          ],
+          "total": 4,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831828499-vaf0ismivd",
+          "label": "Stirge 2 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            20
+          ],
+          "total": 23,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831828499-52jeusd3ya4",
+          "label": "Stirge 1 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            11
+          ],
+          "total": 14,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831828310-ty78rwocvr",
+          "label": "Trista initiative",
+          "notation": "1d20+4",
+          "parts": [
+            14
+          ],
+          "total": 18,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831792100-x9wlghkf12b",
+          "label": "Stirge 10 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            3
+          ],
+          "total": 6,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831792100-bpeujc5bqnk",
+          "label": "Stirge 9 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            4
+          ],
+          "total": 7,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831792100-igrlxht5bv",
+          "label": "Stirge 8 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            7
+          ],
+          "total": 10,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831792100-diyhxs3juhl",
+          "label": "Stirge 7 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            12
+          ],
+          "total": 15,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831792100-j72ta8ody1b",
+          "label": "Stirge 6 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            8
+          ],
+          "total": 11,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831792100-07fthrzogt9",
+          "label": "Stirge 5 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            16
+          ],
+          "total": 19,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831792100-5dkglzvknq",
+          "label": "Stirge 4 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            19
+          ],
+          "total": 22,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831792100-d3jbkc5m2ck",
+          "label": "Stirge 3 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            10
+          ],
+          "total": 13,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831792100-h3t7edbhdq",
+          "label": "Stirge 2 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            15
+          ],
+          "total": 18,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831792100-gmisg3chbdf",
+          "label": "Stirge 1 initiative",
+          "notation": "1d20+3",
+          "parts": [
+            15
+          ],
+          "total": 18,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831791920-jr0h7yjqnfa",
+          "label": "Aldric initiative",
+          "notation": "1d20+2",
+          "parts": [
+            15
+          ],
+          "total": 17,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831791301-wz29m7lnetb",
+          "label": "Ringgo initiative",
+          "notation": "1d20+4",
+          "parts": [
+            6
+          ],
+          "total": 10,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831790621-f2k5oq69ijq",
+          "label": "Donavan initiative",
+          "notation": "1d20+2",
+          "parts": [
+            1
+          ],
+          "total": 3,
+          "kind": "digital",
+          "time": "01:03 PM"
+        },
+        {
+          "id": "1791831789323-cr4ahbdtncn",
+          "label": "Pebble initiative",
+          "notation": "1d20",
+          "parts": [
+            9
+          ],
+          "total": 9,
+          "kind": "digital",
+          "time": "01:03 PM"
+        }
+      ]
+    },
+    {
+      "k": "publicRollId",
+      "v": null
+    }
+  ]
+}

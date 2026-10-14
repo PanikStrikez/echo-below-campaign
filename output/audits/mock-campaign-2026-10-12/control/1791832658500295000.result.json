@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "road",
+      "round": 2,
+      "order": [
+        "pc-aldric",
+        "pc-trista",
+        "goblin-3",
+        "goblin-1",
+        "pc-donavan",
+        "pc-ringgo",
+        "pc-pebble",
+        "goblin-4",
+        "goblin-2"
+      ],
+      "index": 1
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 7,
+        "maxHp": 11
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 9,
+        "maxHp": 9
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 10,
+        "maxHp": 10
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 12,
+        "maxHp": 12
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 9,
+        "maxHp": 9
+      }
+    ],
+    "foes": [
+      {
+        "id": "goblin-1",
+        "hp": 7
+      },
+      {
+        "id": "goblin-2",
+        "hp": 7
+      },
+      {
+        "id": "goblin-3",
+        "hp": 7
+      },
+      {
+        "id": "goblin-4",
+        "hp": 3
+      }
+    ],
+    "due": []
+  }
+}

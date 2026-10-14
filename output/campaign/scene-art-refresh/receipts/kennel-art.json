@@ -1,0 +1,36 @@
+{
+  "id": "kennel-art",
+  "title": "Area 3 · Kennel",
+  "image": "session-01-visuals/scene-06-kennel.png",
+  "key": "kennel-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "kennel"
+  ],
+  "sourceRecords": [
+    {
+      "id": "kennel",
+      "title": "Area 3 · Kennel and wolves",
+      "read": [
+        "A sharp animal smell cuts through the damp cave air. Chains scrape against stone. Three pairs of eyes turn toward you from the dark, and low growls fill the cramped chamber.",
+        "The scrape of the chains marks the animals' movements more clearly than the dim light does. There is little room to spread out here, and the growling rises when attention turns toward them. You can stop at the edge of the chamber before choosing how to approach."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Cragmaw east cave kennel just past entrance, uneven stone steps rise into small damp natural cave. THREE gray wolves on chains anchored to iron rod at base of stalagmite. Narrow steep fissure at far east end, rubbish near its base, chimney route not shown beyond visible slit. No cage bars, ten wolves, stone masonry or glowing cave. Off-frame visitor light, natural rock.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Area 3 · Kennel\nObservable scene and constraints: Cragmaw east cave kennel just past entrance, uneven stone steps rise into small damp natural cave. THREE gray wolves on chains anchored to iron rod at base of stalagmite. Narrow steep fissure at far east end, rubbish near its base, chimney route not shown beyond visible slit. No cage bars, ten wolves, stone masonry or glowing cave. Off-frame visitor light, natural rock.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "4ab0b721aae223c0f5e2b890f5757b94882c7f5cbd2a6312a47361c1f502260f",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/kennel-art.png",
+  "generatedAt": "2026-10-12T15:46:22.422Z",
+  "candidateHash": "6ebef6f966116a411755c3161fd29c384f4c67c330fb7dbb1da9793a3f923b7c",
+  "review": "passed",
+  "reviewedHash": "6ebef6f966116a411755c3161fd29c384f4c67c330fb7dbb1da9793a3f923b7c",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.116Z",
+  "installedHash": "6ebef6f966116a411755c3161fd29c384f4c67c330fb7dbb1da9793a3f923b7c",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-06-kennel.png"
+}

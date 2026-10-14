@@ -1,0 +1,378 @@
+{
+  "ok": true,
+  "result": {
+    "levels": [
+      {
+        "name": "Aldric Vane",
+        "level": 3,
+        "hp": 9,
+        "maxHp": 18,
+        "slots": [
+          {
+            "id": "aldric-slots-1",
+            "name": "1st-level spell slots",
+            "max": 4,
+            "current": 3,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "slots",
+            "slotLevel": 0
+          },
+          {
+            "id": "aldric-slots-2",
+            "name": "2nd-level spell slots",
+            "max": 2,
+            "current": 2,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "slots",
+            "slotLevel": 0
+          },
+          {
+            "id": "aldric-past-life",
+            "name": "Knowledge from a Past Life",
+            "max": 2,
+            "current": 2,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "uses",
+            "slotLevel": 0
+          },
+          {
+            "id": "aldric-arcane-recovery",
+            "name": "Arcane Recovery",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ]
+      },
+      {
+        "name": "Pebble",
+        "level": 2,
+        "hp": 7,
+        "maxHp": 12,
+        "slots": [
+          {
+            "id": "pebble-second-wind",
+            "name": "Second Wind",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 1,
+            "restoreLong": true,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ]
+      },
+      {
+        "name": "Trista",
+        "level": 2,
+        "hp": 11,
+        "maxHp": 11,
+        "slots": []
+      },
+      {
+        "name": "Ringgo Paul",
+        "level": 4,
+        "hp": 22,
+        "maxHp": 22,
+        "slots": [
+          {
+            "id": "ringgo-arrows",
+            "name": "Arrows",
+            "max": 20,
+            "current": 20,
+            "restoreShort": 0,
+            "restoreLong": false,
+            "unit": "arrows",
+            "slotLevel": 0
+          },
+          {
+            "id": "ringgo-hellish-rebuke",
+            "name": "Hellish Rebuke",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ]
+      },
+      {
+        "name": "Donavan Kemp",
+        "level": 3,
+        "hp": 17,
+        "maxHp": 17,
+        "slots": [
+          {
+            "id": "donavan-slots-1",
+            "name": "1st-level shared spell slots",
+            "max": 4,
+            "current": 4,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "",
+            "slotLevel": 0
+          },
+          {
+            "id": "donavan-slots-2",
+            "name": "2nd-level shared spell slots · upcasting",
+            "max": 2,
+            "current": 2,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "",
+            "slotLevel": 0
+          },
+          {
+            "id": "donavan-arcane-recovery",
+            "name": "Arcane Recovery",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "",
+            "slotLevel": 0
+          },
+          {
+            "id": "donavan-scribes-ritual",
+            "name": "Awakened Spellbook quick ritual",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "",
+            "slotLevel": 0
+          }
+        ]
+      }
+    ],
+    "scene": "lmop-map-thundertree-overview",
+    "map": {
+      "floor": "",
+      "fineFog": true,
+      "journeyMotion": true,
+      "journeyArtVersion": 0,
+      "light": "bright",
+      "vision": "normal",
+      "dmLayers": {
+        "map": true,
+        "grid": true,
+        "fog": true,
+        "tokens": true,
+        "labels": true,
+        "templates": true,
+        "annotations": true,
+        "markers": true
+      },
+      "playerLayers": {
+        "map": true,
+        "grid": true,
+        "fog": true,
+        "tokens": true,
+        "labels": true,
+        "templates": true,
+        "annotations": true,
+        "markers": true
+      },
+      "floorFog": null,
+      "floorReveals": [],
+      "view": {
+        "zoom": 1,
+        "panX": 0,
+        "panY": 0
+      },
+      "lines": [],
+      "points": [],
+      "links": [],
+      "lights": []
+    },
+    "fields": [
+      {
+        "id": "",
+        "aria": "DM text size",
+        "options": [
+          {
+            "v": "1",
+            "t": "Standard"
+          },
+          {
+            "v": "1.5",
+            "t": "Larger · 150%"
+          },
+          {
+            "v": "2",
+            "t": "Largest · 200%"
+          }
+        ]
+      },
+      {
+        "id": "hybrid-scene-beat",
+        "aria": "Choose prepared scene",
+        "options": [
+          {
+            "v": "s3-prep",
+            "t": "Before play · carry forward what actually happened"
+          },
+          {
+            "v": "s3-choice",
+            "t": "1 · Choose the lead, not the destination"
+          },
+          {
+            "v": "s3-travel",
+            "t": "2 · Triboar Trail and Neverwinter Wood"
+          },
+          {
+            "v": "s3-agatha",
+            "t": "Optional lead · Conyberry and Agatha"
+          },
+          {
+            "v": "s3-old-owl",
+            "t": "Optional lead · Old Owl Well"
+          },
+          {
+            "v": "s3-old-owl-fight",
+            "t": "If violence starts · Old Owl Well"
+          },
+          {
+            "v": "s3-wyvern",
+            "t": "Optional lead · Wyvern Tor"
+          },
+          {
+            "v": "s3-wyvern-fight",
+            "t": "If the camp fights · Wyvern Tor"
+          },
+          {
+            "v": "s3-thundertree",
+            "t": "Optional lead · Reidoth at Thundertree"
+          },
+          {
+            "v": "s3-tt-1",
+            "t": "Thundertree 1 · Western cottage"
+          },
+          {
+            "v": "s3-tt-2",
+            "t": "Thundertree 2 · Blighted cottages"
+          },
+          {
+            "v": "s3-tt-3",
+            "t": "Thundertree 3 · The Brown Horse"
+          },
+          {
+            "v": "s3-tt-4",
+            "t": "Thundertree 4 · Reidoth’s watch"
+          },
+          {
+            "v": "s3-tt-5",
+            "t": "Thundertree 5 · Blighted farmhouse"
+          },
+          {
+            "v": "s3-tt-6",
+            "t": "Thundertree 6 · Ruined store and webs"
+          },
+          {
+            "v": "s3-tt-7",
+            "t": "Thundertree 7 · Venomfang’s tower"
+          },
+          {
+            "v": "s3-tt-8",
+            "t": "Thundertree 8 · Old smithy"
+          },
+          {
+            "v": "s3-tt-9",
+            "t": "Thundertree 9 · Herbalist’s shop"
+          },
+          {
+            "v": "s3-tt-10",
+            "t": "Thundertree 10 · Town square"
+          },
+          {
+            "v": "s3-tt-11",
+            "t": "Thundertree 11 · Old garrison"
+          },
+          {
+            "v": "s3-tt-12",
+            "t": "Thundertree 12 · Weaver’s cottage"
+          },
+          {
+            "v": "s3-tt-13",
+            "t": "Thundertree 13 · Dragon cultists"
+          },
+          {
+            "v": "s3-castle-sight",
+            "t": "3 · Cragmaw Castle comes into view"
+          },
+          {
+            "v": "s3-castle-enter",
+            "t": "4 · Begin castle exploration"
+          },
+          {
+            "v": "s3-area1",
+            "t": "Area 1 · Entrance and sentries"
+          },
+          {
+            "v": "s3-area2",
+            "t": "Area 2 · Falling rubble"
+          },
+          {
+            "v": "s3-area4",
+            "t": "Area 4 · Ruined barracks"
+          },
+          {
+            "v": "s3-area5",
+            "t": "Area 5 · Storeroom and Sildar’s gear"
+          },
+          {
+            "v": "s3-area6",
+            "t": "Area 6 · Hobgoblin barracks"
+          },
+          {
+            "v": "s3-area7",
+            "t": "Area 7 · Banquet hall"
+          },
+          {
+            "v": "s3-area8",
+            "t": "Area 8 · Dark hall and grick"
+          },
+          {
+            "v": "s3-area9",
+            "t": "Area 9 · Goblin shrine"
+          },
+          {
+            "v": "s3-area10",
+            "t": "Area 10 · South postern gate"
+          },
+          {
+            "v": "s3-area11",
+            "t": "Area 11 · Concealed north entrance"
+          },
+          {
+            "v": "s3-area12",
+            "t": "Area 12 · Guard barracks"
+          },
+          {
+            "v": "s3-area13",
+            "t": "Area 13 · Owlbear tower"
+          },
+          {
+            "v": "s3-area14",
+            "t": "Area 14 · Grol and Vyerith"
+          },
+          {
+            "v": "s3-warband",
+            "t": "Optional consequence · Returning war band"
+          },
+          {
+            "v": "s3-close",
+            "t": "Close · Record the trail to the mine"
+          }
+        ]
+      }
+    ]
+  }
+}

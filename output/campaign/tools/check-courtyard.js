@@ -25,6 +25,7 @@ if (fs.existsSync(path.join(root, 'Campaign-Courtyard-Links.js')))
 const source = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
 const boot = source.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot > 0, 'Fixture must stop before initializing a browser campaign');
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(source.slice(0, boot) + `
 globalThis.__courtyardFixture = {
   context: questPrepContext, setIndex: x => campaignIndex = x,

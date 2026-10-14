@@ -1,0 +1,36 @@
+{
+  "id": "lmop-banquet-hall",
+  "title": "Cragmaw Castle · Area 7 · Banquet hall",
+  "image": "lmop-visuals/banquet-hall.png",
+  "key": "C07",
+  "chapter": "Cragmaw Castle",
+  "reveal": "On entering area 7",
+  "sourceRecordIds": [
+    "s3-area7"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area7",
+      "title": "Area 7 · Banquet hall",
+      "read": [
+        "Once a grand hall, this chamber now smells of stale food and a neglected brazier. Goblin voices rise around two scarred tables.",
+        "The two tables take up much of the social space, with the neglected brazier drawing stale smells around it. The voices give you something to listen to before you answer them. You can remain at the edge, make your presence clear, or take stock of the route back out."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Castle banquet hall, TWENTY-FIVE-foot ceiling, west portion collapsed into rubble wall. TWO large wooden tables with plain benches, dirty dishes, half-full stew pots, moldy bread and bones. ONE brass brazier glowing in corner. EIGHT goblins TOTAL, including fat chief cook Yegg bullying seven assistants. No banquet of humans, royal throne or five-star kitchen.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 7 · Banquet hall\nObservable scene and constraints: Castle banquet hall, TWENTY-FIVE-foot ceiling, west portion collapsed into rubble wall. TWO large wooden tables with plain benches, dirty dishes, half-full stew pots, moldy bread and bones. ONE brass brazier glowing in corner. EIGHT goblins TOTAL, including fat chief cook Yegg bullying seven assistants. No banquet of humans, royal throne or five-star kitchen.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "b12acdf2c8aa641feb77eae9f787b861e418f9c73102c05991919ef55da02e18",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-banquet-hall.png",
+  "generatedAt": "2026-10-12T16:26:46.315Z",
+  "candidateHash": "c55c169f70f05f543ab2c1a6effe85932b23ae04c128827c86441e63478528e5",
+  "review": "passed",
+  "reviewedHash": "c55c169f70f05f543ab2c1a6effe85932b23ae04c128827c86441e63478528e5",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.757Z",
+  "installedHash": "c55c169f70f05f543ab2c1a6effe85932b23ae04c128827c86441e63478528e5",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/banquet-hall.png"
+}

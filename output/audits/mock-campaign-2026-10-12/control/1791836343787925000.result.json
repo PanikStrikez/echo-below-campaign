@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "result": {
+    "healing": {
+      "actor": "pc-donavan",
+      "label": "Healing Word",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836343889-138s8pro",
+          "label": "Healing Word · healing 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            2
+          ],
+          "total": 5,
+          "natural": 2,
+          "public": true,
+          "kind": "digital",
+          "time": "2:19:03 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 5 healing → 5; temp HP absorbed 0"
+        }
+      ],
+      "costs": [
+        {
+          "id": "donavan-slots-1",
+          "delta": -1
+        }
+      ]
+    },
+    "attack": {
+      "actor": "pc-donavan",
+      "label": "Ray of Frost",
+      "rolls": [
+        {
+          "id": "pa-1791836344016-1vorh0ki",
+          "label": "Ray of Frost · attack 1",
+          "notation": "1d20+6",
+          "parts": [
+            1
+          ],
+          "total": 7,
+          "natural": 1,
+          "public": true,
+          "kind": "digital",
+          "time": "2:19:04 PM"
+        },
+        {
+          "id": "pa-1791836344016-jrk8s0mf",
+          "label": "Ray of Frost · effect 1.1",
+          "notation": "1d8",
+          "parts": [
+            5
+          ],
+          "total": 5,
+          "natural": 5,
+          "public": true,
+          "kind": "digital",
+          "time": "2:19:04 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "s2-hideout-crypt-3",
+          "text": "Crypt skeleton 3: 7 vs AC 13: miss, 0 cold → 0; temp HP absorbed 0"
+        }
+      ],
+      "costs": []
+    },
+    "hp": 14
+  }
+}

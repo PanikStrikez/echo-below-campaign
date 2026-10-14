@@ -1,0 +1,4189 @@
+{
+  "at": "2026-10-12T06:31:16.534Z",
+  "environment": "Isolated Chrome with disposable local services; original export imported into fresh profile",
+  "physicalDevices": false,
+  "liveServicesChanged": false,
+  "errors": [],
+  "screens": [
+    {
+      "name": "dm-home",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ Echo Below",
+          "width": 129,
+          "height": 38
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox · clear",
+          "width": 89,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "Prepare Thundertree 1 · Western cottage",
+          "width": 260,
+          "height": 50
+        },
+        {
+          "text": "Open player TV",
+          "width": 125,
+          "height": 31
+        },
+        {
+          "text": "Collapse guide",
+          "width": 96,
+          "height": 28
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 272,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 285,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 300,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 310,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 296,
+          "height": 38
+        },
+        {
+          "text": "Resume session →",
+          "width": 155,
+          "height": 44
+        },
+        {
+          "text": "Run a scene\nRead aloud, talk, and stage art",
+          "width": 371,
+          "height": 311
+        },
+        {
+          "text": "Start combat\nMaps, turns, and tokens",
+          "width": 371,
+          "height": 311
+        },
+        {
+          "text": "Explore\nFollow leads and discover places",
+          "width": 371,
+          "height": 311
+        },
+        {
+          "text": "Handle players\nRequests, sheets, and notes",
+          "width": 371,
+          "height": 311
+        },
+        {
+          "text": "Sword Coast atlas",
+          "width": 106,
+          "height": 29
+        },
+        {
+          "text": "−",
+          "width": 21,
+          "height": 29
+        },
+        {
+          "text": "+",
+          "width": 21,
+          "height": 29
+        },
+        {
+          "text": "Reset",
+          "width": 43,
+          "height": 29
+        },
+        {
+          "text": "Northern Coast & Icewind Dale",
+          "width": 182,
+          "height": 32
+        },
+        {
+          "text": "Neverwinter & Phandelver",
+          "width": 158,
+          "height": 32
+        },
+        {
+          "text": "The High Road",
+          "width": 100,
+          "height": 32
+        },
+        {
+          "text": "Waterdeep & Daggerford",
+          "width": 152,
+          "height": 32
+        },
+        {
+          "text": "Eastern Interior",
+          "width": 105,
+          "height": 32
+        },
+        {
+          "text": "Baldur’s Gate & Candlekeep",
+          "width": 168,
+          "height": 32
+        },
+        {
+          "text": "Travel & encounter kit",
+          "width": 138,
+          "height": 32
+        },
+        {
+          "text": "Open full atlas",
+          "width": 100,
+          "height": 32
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "Resume session →",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [],
+      "text": "✦ Echo Below\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nThe Echo Below\nOBJECTIVEChoose a party objective in Quests\nPrepare Thundertree 1 · Western cottage\nOpen player TV\nTV disconnected · last staged: The Echo Below\nCollapse guide\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nCURRENT SESSION\nSession 3 · Gundren’s trail\nNEXT ACTION\nPrepare Thundertree 1 · Western cottage\nResume session →\nRun a scene\nRead aloud, talk, and stage art\nStart combat\nMaps, turns, and tokens\nExplore\nFollow leads and discover places\nHandle players\nRequests, sheets, and notes\nWORLD ATLAS\nThe Sword Coast\nSword Coast atlas\n−\n100%\n+\nReset\nIcewind Dale\nReghed Glacier\nSpine of the World\nNeverwinter Wood\nSword Mountains\nSouthern Sword Mountains\nHigh Forest\nStar Mounts\nGreypeak Mountains\nWestern Anauroch\nHigh Moor\nMisty Forest\nSerpent Hills\nMarsh of Chelimber\nGreycloak Hills\nForest of Wyrms\nTrollclaws\nTrielta Hills\nFields of the Dead\nLurkwood\nMere of Dead Men\nSouthwood\nCloakwood\nWood of Sharp Teeth\nThe Drowned Observatory · offshore-site-proposal\nThe Dead God’s Scar · valley-site-proposal\nThe Frozen Door · glacier-approach-area\nThe Walking Tower · roaming-area\nThe Broken Star · terrestrial-approach-area\nThe Hollow Mountain · provisional-mountain-area\nAgatha’s Lair\nAmphail\nBaldur's Gate\nBerdusk\nBlackford Crossing\nBoareskyr Bridge\nCandlekeep\nCitadel Felbarr\nConyberry\nCragmaw Castle\nCragmaw Hideout\nDaggerford\nDragonspear Castle\nElturel\nEvereska\nFort Morninglord\nGauntlgrym\nHardbuckler\nHelm's Hold\nIronmaster\nLeilon\nLongsaddle\nLuskan\nMirabar\nMithral Hall\nMount Hotenow\nNeverwinter\nOld Owl Well\nPhandalin\nScornubel\nSecomber\nSilverymoon\nSundabar\nThe Dead God’s Scar\nThe Drowned Observatory\nThe Silent Library\nThornhold\nThundertree\nTriboar Trail ambush site\nUndermountain\nWarlock's Crypt\nWaterdeep\nWave Echo Cave\nWyvern Tor\nYartar\nParty\nFind a point of interest\n\nChoose a marker for details. Browsing is private and does not move the party.\n\nNorthern Coast & Icewind Dale\nNeverwinter & Phandelver\nThe High Road\nWaterdeep & Daggerford\nEastern Interior\nBaldur’s Gate & Candlekeep\nTravel & encounter kit\nOpen full atlas\nRestored 10 sessions as a separate campaign."
+    },
+    {
+      "name": "dm-scene",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ Echo Below",
+          "width": 129,
+          "height": 38
+        },
+        {
+          "text": "Scene",
+          "width": 66,
+          "height": 38
+        },
+        {
+          "text": "Explore",
+          "width": 75,
+          "height": 38
+        },
+        {
+          "text": "Map Desk",
+          "width": 90,
+          "height": 38
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox · clear",
+          "width": 89,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "Open current quest lead",
+          "width": 260,
+          "height": 38
+        },
+        {
+          "text": "Open player TV",
+          "width": 125,
+          "height": 31
+        },
+        {
+          "text": "Collapse guide",
+          "width": 96,
+          "height": 28
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 272,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 285,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 300,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 310,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 296,
+          "height": 38
+        },
+        {
+          "text": "▣ Show scene on TV",
+          "width": 216,
+          "height": 40
+        },
+        {
+          "text": "◫ Preview map",
+          "width": 216,
+          "height": 40
+        },
+        {
+          "text": "Next scene →",
+          "width": 216,
+          "height": 40
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "▣  Show scene on TV",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [],
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nPREPARED SCENE\nOpening · Barthen’s Provisions\nOBJECTIVEThe Missing Rockseeker · Trace Gundren’s abduction\nOpen current quest lead\nOpen player TV\nTV disconnected · last staged: Phandalin · Outside Barthen’s Provisions\nCollapse guide\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nTHE ECHO BELOW · SCENE\nOpening · Barthen’s Provisions\nOpening · Barthen’s Provisions\nLead · Business with Barthen\nLead · Check on Gundren at the inn\nLead · The captured rat\nOptional · Redbrand aftermath and witnesses\nClose · Record the actual changes\nSay aloud\n\nThe noise of Phandalin follows you to Barthen’s door: cart wheels on packed earth, a hammer somewhere farther down the street, and voices turning toward the day’s business. Gundren is at an inn behind you. Glasstaff is gone. The shop is here in front of you. What do you do?\n\nThe shop's threshold is close enough to cross, but you have not yet chosen to enter. You can begin with town business, turn back toward the inn, or stop to discuss the rat in Trista's care. For now, the street leaves each of those choices open.\n\nAsk the players\n\nDo you enter, speak outside, or go elsewhere? Who carries the supplies, if any? What do you tell Barthen about Gundren?\n\nChoices\n\nGo inside or handle the delivery.\n\nReturn to Gundren at the unnamed inn.\n\nExamine or question someone about the captured rat.\n\nLeave for another town lead; open the matching existing runbook.\n\nDM notes and secrets\nPrevious\nFull scene notes\nIf they go elsewhere\n\nDM preview · The player TV changes only when you choose Show on TV.\n\n▣ Show scene on TV\n◫ Preview map\nNext scene →\nNext session · Phandalin after Glasstaff is ready. Review carried HP and level-up choices before play."
+    },
+    {
+      "name": "dm-explore",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ Echo Below",
+          "width": 129,
+          "height": 38
+        },
+        {
+          "text": "Scene",
+          "width": 66,
+          "height": 38
+        },
+        {
+          "text": "Explore",
+          "width": 75,
+          "height": 38
+        },
+        {
+          "text": "Map Desk",
+          "width": 90,
+          "height": 38
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox · clear",
+          "width": 89,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "Open current quest lead",
+          "width": 260,
+          "height": 38
+        },
+        {
+          "text": "Open player TV",
+          "width": 125,
+          "height": 31
+        },
+        {
+          "text": "Collapse guide",
+          "width": 96,
+          "height": 28
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 272,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 285,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 300,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 310,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 296,
+          "height": 38
+        },
+        {
+          "text": "1\nOpening · Barthen’s Provisions",
+          "width": 311,
+          "height": 71
+        },
+        {
+          "text": "2\nLead · Business with Barthen",
+          "width": 311,
+          "height": 71
+        },
+        {
+          "text": "3\nLead · Check on Gundren at the inn",
+          "width": 311,
+          "height": 71
+        },
+        {
+          "text": "4\nLead · The captured rat",
+          "width": 311,
+          "height": 71
+        },
+        {
+          "text": "5\nOptional · Redbrand aftermath and witnesses",
+          "width": 311,
+          "height": 71
+        },
+        {
+          "text": "Continue →",
+          "width": 161,
+          "height": 50
+        },
+        {
+          "text": "Preview map",
+          "width": 172,
+          "height": 50
+        },
+        {
+          "text": "Nearby options & improv note",
+          "width": 311,
+          "height": 35
+        },
+        {
+          "text": "▣ Show on TV",
+          "width": 341,
+          "height": 58
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "Continue  →",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "▣  Show on TV",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [],
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nPREPARED SCENE\nOpening · Barthen’s Provisions\nOBJECTIVEThe Missing Rockseeker · Trace Gundren’s abduction\nOpen current quest lead\nOpen player TV\nTV disconnected · last staged: Phandalin · Outside Barthen’s Provisions\nCollapse guide\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nSESSION PILOT\n\nFollow the players. Use these beats when they fit.\n\nOpening · Barthen’s Provisions\nLead · Business with Barthen\nLead · Check on Gundren at the inn\nLead · The captured rat\nOptional · Redbrand aftermath and witnesses\nClose · Record the actual changes\n1\nOpening · Barthen’s Provisions\n2\nLead · Business with Barthen\n3\nLead · Check on Gundren at the inn\n4\nLead · The captured rat\n5\nOptional · Redbrand aftermath and witnesses\nBEAT 1 OF 6\nOpening · Barthen’s Provisions\nREAD ALOUD\n\nThe noise of Phandalin follows you to Barthen’s door: cart wheels on packed earth, a hammer somewhere farther down the street, and voices turning toward the day’s business. Gundren is at an inn behind you. Glasstaff is gone. The shop is here in front of you. What do you do?\n\nThe shop's threshold is close enough to cross, but you have not yet chosen to enter. You can begin with town business, turn back toward the inn, or stop to discuss the rat in Trista's care. For now, the street leaves each of those choices open.\n\nContinue →\nPreview map\nVISUAL TO STAGE\nPRIVATE NOTES\n\nThe party stopped here; entry, delivery, payment, and a conversation with Barthen are unconfirmed. Ask before treating any of them as done.\n\nBarthen wants the delivery settled and the Rockseeker brothers safe. He knows ordinary town business and the established published leads; he does not know Glasstaff’s escape destination.\n\nLost Mine of Phandelver (2014), Phandalin pp. 14–19, Redbrand Hideout pp. 20–26; actual-play record in Campaign continuity.\n\nIF THEY GO ELSEWHERE · DM ONLY\n\nGo inside or handle the delivery.\n\nReturn to Gundren at the unnamed inn.\n\nNearby options & improv note\n▣ Show on TV\nNext session · Phandalin after Glasstaff is ready. Review carried HP and level-up choices before play."
+    },
+    {
+      "name": "dm-combat",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ Echo Below",
+          "width": 129,
+          "height": 38
+        },
+        {
+          "text": "Scene",
+          "width": 66,
+          "height": 38
+        },
+        {
+          "text": "Explore",
+          "width": 75,
+          "height": 38
+        },
+        {
+          "text": "Map Desk",
+          "width": 90,
+          "height": 38
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox · clear",
+          "width": 89,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "Trista · open active turn",
+          "width": 260,
+          "height": 38
+        },
+        {
+          "text": "Open player TV",
+          "width": 125,
+          "height": 31
+        },
+        {
+          "text": "Collapse guide",
+          "width": 96,
+          "height": 28
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 272,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 285,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 300,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 310,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 296,
+          "height": 38
+        },
+        {
+          "text": "End turn →",
+          "width": 140,
+          "height": 37
+        },
+        {
+          "text": "Mark action used",
+          "width": 143,
+          "height": 37
+        },
+        {
+          "text": "Mark bonus action used",
+          "width": 189,
+          "height": 37
+        },
+        {
+          "text": "Review action",
+          "width": 122,
+          "height": 37
+        },
+        {
+          "text": "Tokens",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Fog",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Undo",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Next turn",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Map tools",
+          "width": 81,
+          "height": 59
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "End turn →",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Review action",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [],
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout · Redbrand Hideout\nOBJECTIVEThe Missing Rockseeker · Trace Gundren’s abduction\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\nCollapse guide\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nMAP DESK\nRun combat\n\nRedbrand Hideout · Redbrand Hideout\n\nGRID SCALE UNVERIFIED · CONFIRM BEFORE EXACT MEASUREMENT\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nMovement used (ft.)\nMark action used\nMark bonus action used\nChoose an action\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions and spells\nChoose an action\nFlurry of Blows · Bonus action\nPatient Defense · Bonus action\nPatient Defense + Dodge · Bonus action\nStep of the Wind · Bonus action\nStep of the Wind + Disengage · Bonus action\nUncanny Metabolism · When rolling initiative\nDeflect Attacks · Reaction\nRedirect deflected attack · After Deflect Attacks\nMinor Illusion · Action\nShadow Arts: Darkness · Action\nSlow Fall · Reaction\nSpeedy: Dash · When you Dash\nDarkness · Level 2 spell\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nAttack +6 · 1d6+4 bludgeoning.\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10 · Bonus action · Cost 1 Focus Points (4 / 4). Effects are applied only after DM review.\nReview action and effects\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nManage limited uses\nAction review\nCombat tools · saves, reactions & effects\nTokens · 5 on map\nCombat tools\nEnd combat\nTokens\nFog\nUndo\nNext turn\nMap tools\nNext session · Phandalin after Glasstaff is ready. Review carried HP and level-up choices before play."
+    },
+    {
+      "name": "dm-combat-small",
+      "viewport": [
+        1280,
+        800
+      ],
+      "pageWidth": 1280,
+      "buttons": [
+        {
+          "text": "✦ Echo Below",
+          "width": 129,
+          "height": 38
+        },
+        {
+          "text": "Scene",
+          "width": 66,
+          "height": 38
+        },
+        {
+          "text": "Explore",
+          "width": 75,
+          "height": 38
+        },
+        {
+          "text": "Map Desk",
+          "width": 90,
+          "height": 38
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox · clear",
+          "width": 89,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "Trista · open active turn",
+          "width": 260,
+          "height": 38
+        },
+        {
+          "text": "Open player TV",
+          "width": 125,
+          "height": 31
+        },
+        {
+          "text": "Collapse guide",
+          "width": 96,
+          "height": 28
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 226,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 239,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 254,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 264,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 250,
+          "height": 38
+        },
+        {
+          "text": "End turn →",
+          "width": 140,
+          "height": 37
+        },
+        {
+          "text": "Mark action used",
+          "width": 143,
+          "height": 37
+        },
+        {
+          "text": "Mark bonus action used",
+          "width": 189,
+          "height": 37
+        },
+        {
+          "text": "Tokens",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Fog",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Undo",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Next turn",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Map tools",
+          "width": 81,
+          "height": 59
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "End turn →",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [],
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout · Redbrand Hideout\nOBJECTIVEThe Missing Rockseeker · Trace Gundren’s abduction\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\nCollapse guide\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nMAP DESK\nRun combat\n\nRedbrand Hideout · Redbrand Hideout\n\nGRID SCALE UNVERIFIED · CONFIRM BEFORE EXACT MEASUREMENT\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nMovement used (ft.)\nMark action used\nMark bonus action used\nChoose an action\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions and spells\nChoose an action\nFlurry of Blows · Bonus action\nPatient Defense · Bonus action\nPatient Defense + Dodge · Bonus action\nStep of the Wind · Bonus action\nStep of the Wind + Disengage · Bonus action\nUncanny Metabolism · When rolling initiative\nDeflect Attacks · Reaction\nRedirect deflected attack · After Deflect Attacks\nMinor Illusion · Action\nShadow Arts: Darkness · Action\nSlow Fall · Reaction\nSpeedy: Dash · When you Dash\nDarkness · Level 2 spell\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nAttack +6 · 1d6+4 bludgeoning.\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10 · Bonus action · Cost 1 Focus Points (4 / 4). Effects are applied only after DM review.\nReview action and effects\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nManage limited uses\nAction review\nCombat tools · saves, reactions & effects\nTokens · 5 on map\nCombat tools\nEnd combat\nTokens\nFog\nUndo\nNext turn\nMap tools\nNext session · Phandalin after Glasstaff is ready. Review carried HP and level-up choices before play."
+    },
+    {
+      "name": "dm-quest-panel",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ Echo Below",
+          "width": 129,
+          "height": 38
+        },
+        {
+          "text": "Scene",
+          "width": 66,
+          "height": 38
+        },
+        {
+          "text": "Explore",
+          "width": 75,
+          "height": 38
+        },
+        {
+          "text": "Map Desk",
+          "width": 90,
+          "height": 38
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox · clear",
+          "width": 89,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "Trista · open active turn",
+          "width": 260,
+          "height": 38
+        },
+        {
+          "text": "Open player TV",
+          "width": 125,
+          "height": 31
+        },
+        {
+          "text": "Collapse guide",
+          "width": 96,
+          "height": 28
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 272,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 285,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 300,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 310,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 296,
+          "height": 38
+        },
+        {
+          "text": "End turn →",
+          "width": 140,
+          "height": 37
+        },
+        {
+          "text": "Mark action used",
+          "width": 143,
+          "height": 37
+        },
+        {
+          "text": "Mark bonus action used",
+          "width": 189,
+          "height": 37
+        },
+        {
+          "text": "Review action",
+          "width": 122,
+          "height": 37
+        },
+        {
+          "text": "Tokens",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Fog",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Undo",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Next turn",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Map tools",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Close",
+          "width": 64,
+          "height": 38
+        },
+        {
+          "text": "Choose leads",
+          "width": 118,
+          "height": 38
+        },
+        {
+          "text": "Session board",
+          "width": 123,
+          "height": 38
+        },
+        {
+          "text": "Player quest views",
+          "width": 153,
+          "height": 38
+        },
+        {
+          "text": "Manage quests & publication",
+          "width": 223,
+          "height": 38
+        },
+        {
+          "text": "Record an outcome",
+          "width": 158,
+          "height": 38
+        },
+        {
+          "text": "Prepare Phandalin → Waterdeep",
+          "width": 245,
+          "height": 38
+        },
+        {
+          "text": "The Missing Rockseeker · Approach 3 · Needs prep",
+          "width": 544,
+          "height": 38
+        },
+        {
+          "text": "Find Gundren · Approach 1 · Needs prep",
+          "width": 544,
+          "height": 38
+        },
+        {
+          "text": "The Redbrand Threat · Approach 3 · Needs prep",
+          "width": 544,
+          "height": 38
+        },
+        {
+          "text": "Undo prep change",
+          "width": 151,
+          "height": 38
+        },
+        {
+          "text": "Redo prep change",
+          "width": 149,
+          "height": 38
+        },
+        {
+          "text": "Active",
+          "width": 69,
+          "height": 38
+        },
+        {
+          "text": "Completed",
+          "width": 101,
+          "height": 38
+        },
+        {
+          "text": "All quests",
+          "width": 94,
+          "height": 38
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "End turn →",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Review action",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [],
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout · Redbrand Hideout\nOBJECTIVEThe Missing Rockseeker · Trace Gundren’s abduction\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\nCollapse guide\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nMAP DESK\nRun combat\n\nRedbrand Hideout · Redbrand Hideout\n\nGRID SCALE UNVERIFIED · CONFIRM BEFORE EXACT MEASUREMENT\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nMovement used (ft.)\nMark action used\nMark bonus action used\nChoose an action\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions and spells\nChoose an action\nFlurry of Blows · Bonus action\nPatient Defense · Bonus action\nPatient Defense + Dodge · Bonus action\nStep of the Wind · Bonus action\nStep of the Wind + Disengage · Bonus action\nUncanny Metabolism · When rolling initiative\nDeflect Attacks · Reaction\nRedirect deflected attack · After Deflect Attacks\nMinor Illusion · Action\nShadow Arts: Darkness · Action\nSlow Fall · Reaction\nSpeedy: Dash · When you Dash\nDarkness · Level 2 spell\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nAttack +6 · 1d6+4 bludgeoning.\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10 · Bonus action · Cost 1 Focus Points (4 / 4). Effects are applied only after DM review.\nReview action and effects\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nManage limited uses\nAction review\nCombat tools · saves, reactions & effects\nTokens · 5 on map\nCombat tools\nEnd combat\nTokens\nFog\nUndo\nNext turn\nMap tools\nTHE ECHO BELOW · CAMPAIGN MEMORY\nStory & continuity\nPhandalin · After Glasstaff\nClose\nOpen tool\nCharacter stories & spotlights\nCharacter chapters & satellite adventures\nIntervention & finale\nQuests · player view\nQuest guide\nQuest session workspace\nOutcome review\nCampaign continuity & quests\nEvidence and research\nFirst Undermountain expeditions\nExpedition record & return\nBetween expeditions\nMending Court · home & relationships\nPhandalin → Waterdeep\nWave Echo journal\nSession prep\nPhandelver packs\nBranching runbook\nSecret handouts\nEvidence\nPlayer journal\nPeople\nWaterdeep\nNine sites\nUndermountain\nCalendar & clocks\nEnd of session\nQuest workspace\n\nChoose two or three likely leads for the next session. Everything here is private preparation; approved outcomes supply the history.\n\nChoose leads\nSession board\nPlayer quest views\nManage quests & publication\nRecord an outcome\nPrepare Phandalin → Waterdeep\nPrepare for\nNext session · unassigned\nSession 1 · Goblin Arrows\nSession 2 · Phandalin\nSession 2 · Phandalin\nSession 2 · Phandalin\nSession 3\nSession 2 · Phandalin\nPart 3 · Wilderness and castle\nSession 3 · Gundren’s trail\nSession 4 · Wave Echo Cave\nThe Silent Library\nPhandalin · After Glasstaff\n3/3 likely leads\nThe Missing Rockseeker · Approach 3 · Needs prep\nFind Gundren · Approach 1 · Needs prep\nThe Redbrand Threat · Approach 3 · Needs prep\nUndo prep change\nRedo prep change\nQuest library\n\nActive quests first. Search the complete library to prepare another path; completed quests remain available for follow-ups.\n\nActive\nCompleted\nAll quests\nSearch the full quest library\n\n6 matching quests\n\nChoose a quest\nChoose a quest\nThe Echo Below · active\nThe Missing Rockseeker · active\nFind Gundren · active\nThe Redbrand Threat · active\nInvestigate the Black Spider · active\nOld Owl Well · active\nThe Redbrand Threat\n\nside · active · DM preparation\n\nCurrent objective\n\nThe Redbrand Threat · Establish the current situation\n\nKnown evidence and private context\nAvailable preparation leads\n\nThese are possible approaches to prepare. Their presence does not mean the party has learned them.\n\nApproach 1\n\nQuestion a surviving witness or examine documents actually recovered from the hideout.\n\nAdd approach 1 to board\nApproach 2\n\nCompare the account with an independent record or witness.\n\nAdd approach 2 to board\nApproach 3\n\nExamine the captured rat with Trista’s consent; separate observed behavior from guesses about its nature.\n\nOn session board\nAlternate approaches\nRelevant NPCs (4)\nScenes, maps and runbook (6 visuals · 12 beats)\nEncounters (5)\nMedia cues (7)\nCharacter opportunities (5)\nAdd a reference from the existing library\nNext session · Phandalin after Glasstaff is ready. Review carried HP and level-up choices before play."
+    },
+    {
+      "name": "dm-actions",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ Echo Below",
+          "width": 129,
+          "height": 38
+        },
+        {
+          "text": "Scene",
+          "width": 66,
+          "height": 38
+        },
+        {
+          "text": "Explore",
+          "width": 75,
+          "height": 38
+        },
+        {
+          "text": "Map Desk",
+          "width": 90,
+          "height": 38
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox · clear",
+          "width": 89,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "Trista · open active turn",
+          "width": 260,
+          "height": 38
+        },
+        {
+          "text": "Open player TV",
+          "width": 125,
+          "height": 31
+        },
+        {
+          "text": "Collapse guide",
+          "width": 96,
+          "height": 28
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 272,
+          "height": 38
+        },
+        {
+          "text": "2 · Open scene",
+          "width": 285,
+          "height": 38
+        },
+        {
+          "text": "3 · Resolve action",
+          "width": 300,
+          "height": 38
+        },
+        {
+          "text": "4 · Record outcome",
+          "width": 310,
+          "height": 38
+        },
+        {
+          "text": "5 · Close session",
+          "width": 296,
+          "height": 38
+        },
+        {
+          "text": "End turn →",
+          "width": 140,
+          "height": 37
+        },
+        {
+          "text": "Mark action used",
+          "width": 143,
+          "height": 37
+        },
+        {
+          "text": "Mark bonus action used",
+          "width": 189,
+          "height": 37
+        },
+        {
+          "text": "Review action",
+          "width": 122,
+          "height": 37
+        },
+        {
+          "text": "Tokens",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Fog",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Undo",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Next turn",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Map tools",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Close",
+          "width": 64,
+          "height": 38
+        },
+        {
+          "text": "Show this character on TV",
+          "width": 205,
+          "height": 38
+        },
+        {
+          "text": "Hide character from TV",
+          "width": 185,
+          "height": 38
+        },
+        {
+          "text": "Export sheet",
+          "width": 113,
+          "height": 38
+        },
+        {
+          "text": "Import sheet",
+          "width": 113,
+          "height": 38
+        },
+        {
+          "text": "Print emergency sheet",
+          "width": 180,
+          "height": 38
+        },
+        {
+          "text": "Party overview",
+          "width": 127,
+          "height": 38
+        },
+        {
+          "text": "Full sheet",
+          "width": 92,
+          "height": 38
+        },
+        {
+          "text": "Actions",
+          "width": 78,
+          "height": 38
+        },
+        {
+          "text": "Resources & gear",
+          "width": 146,
+          "height": 38
+        },
+        {
+          "text": "Group rest",
+          "width": 98,
+          "height": 38
+        },
+        {
+          "text": "Level up",
+          "width": 82,
+          "height": 38
+        },
+        {
+          "text": "Cast",
+          "width": 57,
+          "height": 38
+        },
+        {
+          "text": "Favorites",
+          "width": 89,
+          "height": 38
+        },
+        {
+          "text": "Import review",
+          "width": 120,
+          "height": 38
+        },
+        {
+          "text": "Level history",
+          "width": 113,
+          "height": 38
+        },
+        {
+          "text": "Review action",
+          "width": 122,
+          "height": 38
+        },
+        {
+          "text": "Roll attack",
+          "width": 98,
+          "height": 38
+        },
+        {
+          "text": "Roll damage",
+          "width": 110,
+          "height": 38
+        },
+        {
+          "text": "Edit",
+          "width": 53,
+          "height": 38
+        },
+        {
+          "text": "Review action",
+          "width": 122,
+          "height": 38
+        },
+        {
+          "text": "Roll attack",
+          "width": 98,
+          "height": 38
+        },
+        {
+          "text": "Roll damage",
+          "width": 110,
+          "height": 38
+        },
+        {
+          "text": "Edit",
+          "width": 53,
+          "height": 38
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "End turn →",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Review action",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Review action",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Review action",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [
+        {
+          "math": "Attack +6 · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning · Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Choose details",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Choose details",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4  · Uncanny Metabolism 1/1",
+          "support": "Choose details",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8 ",
+          "support": "Manual ruling",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4  · DEX save DC 10 · Focus Points 4/4",
+          "support": "Manual ruling",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Manual ruling",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 74,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout · Redbrand Hideout\nOBJECTIVEThe Missing Rockseeker · Trace Gundren’s abduction\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\nCollapse guide\n1 · Get ready\n2 · Open scene\n3 · Resolve action\n4 · Record outcome\n5 · Close session\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nMAP DESK\nRun combat\n\nRedbrand Hideout · Redbrand Hideout\n\nGRID SCALE UNVERIFIED · CONFIRM BEFORE EXACT MEASUREMENT\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nMovement used (ft.)\nMark action used\nMark bonus action used\nChoose an action\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions and spells\nChoose an action\nFlurry of Blows · Bonus action\nPatient Defense · Bonus action\nPatient Defense + Dodge · Bonus action\nStep of the Wind · Bonus action\nStep of the Wind + Disengage · Bonus action\nUncanny Metabolism · When rolling initiative\nDeflect Attacks · Reaction\nRedirect deflected attack · After Deflect Attacks\nMinor Illusion · Action\nShadow Arts: Darkness · Action\nSlow Fall · Reaction\nSpeedy: Dash · When you Dash\nDarkness · Level 2 spell\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nAttack +6 · 1d6+4 bludgeoning.\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10 · Bonus action · Cost 1 Focus Points (4 / 4). Effects are applied only after DM review.\nReview action and effects\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nManage limited uses\nAction review\nCombat tools · saves, reactions & effects\nTokens · 5 on map\nCombat tools\nEnd combat\nTokens\nFog\nUndo\nNext turn\nMap tools\nTHE ECHO BELOW · PARTY RECORD\nCharacters & party\nTrista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10 · Approved level 4 · Speedy; HP d8 roll 1; 2024 Player’s Handbook character exception\nClose\nCharacter\nAldric Vane\nPebble\nTrista\nRinggo Paul\nDonavan Kemp\nSildar Hallwinter\nWolf 1\nWolf 2\nWolf 3\nShow this character on TV\nHide character from TV\nExport sheet\nImport sheet\nPrint emergency sheet\nParty overview\nFull sheet\nActions\nResources & gear\nGroup rest\nLevel up\nCast\nFavorites\nImport review\nLevel history\nActions available now\n\nChoose Review action to check targets, costs, rolls and effects together. Quick rolls do not apply effects or spend resources.\n\nDagger · Action\nAttack +6 · 1d6+4 piercing\n\nMonk weapon; thrown range 20/60 ft.\n\nReviewed roll\nAttack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\n2014 PHB p. 195\nReview action\nRoll attack\nRoll damage\nEdit\nSpear · Action\nAttack +6 · 1d8+4 piercing\n\nVersatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft.\n\nChoose details\nChoose one or two hands; the recorded d8 is the two-handed spear.\n2014 PHB p. 195\nReview action\nRoll attack\nRoll damage\nEdit\nUnarmed Strike · Action\nAttack +6 · 1d6+4 bludgeoning\n\nMartial Arts.\n\nReviewed roll\nAttack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\n2014 PHB p. 195\nReview action\nRoll attack\nRoll damage\nEdit\nMartial Arts unarmed strike · Bonus action\nAttack +6 · 1d6+4 bludgeoning\n\nNo Attack action prerequisite while Martial Arts applies.\n\nReviewed roll\nAttack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\n2014 PHB p. 195\nReview action\nRoll attack\nRoll damage\nEdit\nFlurry of Blows · Bonus action\nAttack +6 · 1d6+4 bludgeoning · Focus Points 4/4\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nChoose details\nChoose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\n2024 Monk exception\nReview action\nRoll attack\nRoll damage\nEdit\nPatient Defense · Bonus action\n\nDisengage without spending Focus. Spend 1 Focus Point to Disengage and Dodge.\n\nChoose details\nReview the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\n2024 Monk exception\nReview action\nEdit\nPatient Defense + Dodge · Bonus action\nFocus Points 4/4\n\nSpend 1 Focus Point to Disengage and Dodge.\n\nChoose details\nReview the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\n2024 Monk exception\nReview action\nEdit\nStep of the Wind · Bonus action\n\nDash without spending Focus. Spend 1 Focus Point to Dash and Disengage and double jump distance.\n\nChoose details\nReview the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\n2024 Monk exception\nReview action\nEdit\nStep of the Wind + Disengage · Bonus action\nFocus Points 4/4\n\nSpend 1 Focus Point to Dash and Disengage; double jump distance this turn.\n\nChoose details\nReview the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\n2024 Monk exception\nReview action\nEdit\nUncanny Metabolism · When rolling initiative\n1d6+4 · Uncanny Metabolism 1/1\n\nRestore all spent Focus Points and heal 1d6 + Monk level; once per long rest.\n\nChoose details\nConfirm initiative was rolled. Restore Focus and roll healing; spend the once-per-long-rest use.\n2024 Monk exception\nReview action\nRoll damage\nEdit\nDeflect Attacks · Reaction\n1d10+8\n\nWhen hit by an attack that deals bludgeoning, piercing, or slashing, reduce total damage by 1d10 + DEX + Monk level. If reduced to 0, you may spend 1 Focus Point to redirect.\n\nManual ruling\nReview the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\n2024 Monk / Tasha’s Interception exception\nReview action\nRoll damage\nEdit\nRedirect deflected attack · After Deflect Attacks\n2d6+4 · DEX save DC 10 · Focus Points 4/4\n\nOnly if Deflect Attacks reduced damage to 0. Spend 1 Focus Point; eligible target makes DEX save DC 10 or takes the attack’s damage type.\n\nManual ruling\nReview the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\n2024 Monk / Tasha’s Interception exception\nReview action\nRoll damage\nEdit\nMinor Illusion · Action\n\nCreate a small sound or image within 30 ft.; Wisdom is the spellcasting ability.\n\nManual ruling\nExact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\n2024 character exception\nReview action\nEdit\nShadow Arts: Darkness · Action\nFocus Points 4/4\n\nSpend 1 Focus Point to cast Darkness without components; concentration up to 10 minutes. Trista can see within it and move its area within 60 ft. at the start of each turn.\n\nManual ruling\nSpend Focus, set concentration and stage the area manually. No automatic darkvision, targeting or fog changes.\n2024 Monk exception\nReview action\nEdit\nSlow Fall · Reaction\n\nWhen you fall, reduce the falling damage by 5 × Monk level (20 at level 4).\n\nManual ruling\nReview the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\n2024 Monk / Tasha’s Interception exception\nReview action\nEdit\nSpeedy: Dash · When you Dash\n\nDifficult terrain does not cost extra movement for the rest of this turn.\n\nManual ruling\nExact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\n2024 character exception\nReview action\nEdit\nAdd action or spell"
+    },
+    {
+      "name": "dm-combat-guide-collapsed",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ Echo Below",
+          "width": 129,
+          "height": 38
+        },
+        {
+          "text": "Scene",
+          "width": 66,
+          "height": 38
+        },
+        {
+          "text": "Explore",
+          "width": 75,
+          "height": 38
+        },
+        {
+          "text": "Map Desk",
+          "width": 90,
+          "height": 38
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox · clear",
+          "width": 89,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "Trista · open active turn",
+          "width": 260,
+          "height": 38
+        },
+        {
+          "text": "Open player TV",
+          "width": 125,
+          "height": 31
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 83,
+          "height": 28
+        },
+        {
+          "text": "Expand guide",
+          "width": 89,
+          "height": 28
+        },
+        {
+          "text": "End turn →",
+          "width": 140,
+          "height": 37
+        },
+        {
+          "text": "Mark action used",
+          "width": 143,
+          "height": 37
+        },
+        {
+          "text": "Mark bonus action used",
+          "width": 189,
+          "height": 37
+        },
+        {
+          "text": "Review action",
+          "width": 122,
+          "height": 37
+        },
+        {
+          "text": "Tokens",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Fog",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Undo",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Next turn",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Map tools",
+          "width": 81,
+          "height": 59
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "End turn →",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Review action",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [
+        {
+          "math": "Attack +6 · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning · Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4  · Uncanny Metabolism 1/1",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8 ",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4  · DEX save DC 10 · Focus Points 4/4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout · Redbrand Hideout\nOBJECTIVEThe Missing Rockseeker · Trace Gundren’s abduction\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\n1 · Get ready\nExpand guide\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nMAP DESK\nRun combat\n\nRedbrand Hideout · Redbrand Hideout\n\nGRID SCALE UNVERIFIED · CONFIRM BEFORE EXACT MEASUREMENT\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nMovement used (ft.)\nMark action used\nMark bonus action used\nChoose an action\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions and spells\nChoose an action\nFlurry of Blows · Bonus action\nPatient Defense · Bonus action\nPatient Defense + Dodge · Bonus action\nStep of the Wind · Bonus action\nStep of the Wind + Disengage · Bonus action\nUncanny Metabolism · When rolling initiative\nDeflect Attacks · Reaction\nRedirect deflected attack · After Deflect Attacks\nMinor Illusion · Action\nShadow Arts: Darkness · Action\nSlow Fall · Reaction\nSpeedy: Dash · When you Dash\nDarkness · Level 2 spell\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nAttack +6 · 1d6+4 bludgeoning.\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10 · Bonus action · Cost 1 Focus Points (4 / 4). Effects are applied only after DM review.\nReview action and effects\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nManage limited uses\nAction review\nCombat tools · saves, reactions & effects\nTokens · 5 on map\nCombat tools\nEnd combat\nTokens\nFog\nUndo\nNext turn\nMap tools"
+    },
+    {
+      "name": "dm-complete-objective",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ Echo Below",
+          "width": 129,
+          "height": 38
+        },
+        {
+          "text": "Scene",
+          "width": 66,
+          "height": 38
+        },
+        {
+          "text": "Explore",
+          "width": 75,
+          "height": 38
+        },
+        {
+          "text": "Map Desk",
+          "width": 90,
+          "height": 38
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox · clear",
+          "width": 89,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "Trista · open active turn",
+          "width": 260,
+          "height": 48
+        },
+        {
+          "text": "Open player TV",
+          "width": 125,
+          "height": 31
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 83,
+          "height": 28
+        },
+        {
+          "text": "Expand guide",
+          "width": 89,
+          "height": 28
+        },
+        {
+          "text": "End turn →",
+          "width": 140,
+          "height": 37
+        },
+        {
+          "text": "Mark action used",
+          "width": 143,
+          "height": 37
+        },
+        {
+          "text": "Mark bonus action used",
+          "width": 189,
+          "height": 37
+        },
+        {
+          "text": "Review action",
+          "width": 122,
+          "height": 37
+        },
+        {
+          "text": "Tokens",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Fog",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Undo",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Next turn",
+          "width": 81,
+          "height": 59
+        },
+        {
+          "text": "Map tools",
+          "width": 81,
+          "height": 59
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "End turn →",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Review action",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [
+        {
+          "math": "Attack +6 · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning · Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4  · Uncanny Metabolism 1/1",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8 ",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4  · DEX save DC 10 · Focus Points 4/4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "✦ Echo Below\nScene\nExplore\nMap Desk\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout · Redbrand Hideout\nOBJECTIVEPractice objective: protect the recovered dwarf at the unnamed inn, decide how to investigate the captured rat, hear Barthen’s available information, and choose the next lead without treating an unverified destination as a confirmed discovery.\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\n1 · Get ready\nExpand guide\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nMAP DESK\nRun combat\n\nRedbrand Hideout · Redbrand Hideout\n\nGRID SCALE UNVERIFIED · CONFIRM BEFORE EXACT MEASUREMENT\n▶ Trista 18\nDonavan 17\nRinggo 16\nPebble 15\nAldric 14\nROUND 1 · ACTIVE TURN\nTrista\nEnd turn →\nHP 29/29 · AC 14\nMove 0 / 50 ft.\nFocus Points: 4/4\nUncanny Metabolism: 1/1\nMovement used (ft.)\nMark action used\nMark bonus action used\nChoose an action\nAttack\nDagger · +6 · 1d6+4 piercing\nSpear · +6 · 1d8+4 piercing\nUnarmed Strike · +6 · 1d6+4 bludgeoning\nMartial Arts unarmed strike · +6 · 1d6+4 bludgeoning\nTarget\nChoose now or in review\nDonavan\nRinggo\nPebble\nAldric\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10. Review targets, dice, reactions, costs, and effects together.\nReview action\nOther actions and spells\nChoose an action\nFlurry of Blows · Bonus action\nPatient Defense · Bonus action\nPatient Defense + Dodge · Bonus action\nStep of the Wind · Bonus action\nStep of the Wind + Disengage · Bonus action\nUncanny Metabolism · When rolling initiative\nDeflect Attacks · Reaction\nRedirect deflected attack · After Deflect Attacks\nMinor Illusion · Action\nShadow Arts: Darkness · Action\nSlow Fall · Reaction\nSpeedy: Dash · When you Dash\nDarkness · Level 2 spell\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nAttack +6 · 1d6+4 bludgeoning.\nSource: Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10 · Bonus action · Cost 1 Focus Points (4 / 4). Effects are applied only after DM review.\nReview action and effects\nTurn reminders\nReaction available\nMark reaction used\nOpen timed effects\nManage limited uses\nAction review\nCombat tools · saves, reactions & effects\nTokens · 5 on map\nCombat tools\nEnd combat\nTokens\nFog\nUndo\nNext turn\nMap tools"
+    },
+    {
+      "name": "dm-home-guide-collapsed",
+      "viewport": [
+        1512,
+        982
+      ],
+      "pageWidth": 1512,
+      "buttons": [
+        {
+          "text": "✦ Echo Below",
+          "width": 129,
+          "height": 38
+        },
+        {
+          "text": "⌕ Search",
+          "width": 70,
+          "height": 36
+        },
+        {
+          "text": "Inbox · clear",
+          "width": 89,
+          "height": 36
+        },
+        {
+          "text": "■ Stop sound",
+          "width": 97,
+          "height": 36
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "",
+          "width": 172,
+          "height": 35
+        },
+        {
+          "text": "Trista · open active turn",
+          "width": 260,
+          "height": 38
+        },
+        {
+          "text": "Open player TV",
+          "width": 125,
+          "height": 31
+        },
+        {
+          "text": "1 · Get ready",
+          "width": 83,
+          "height": 28
+        },
+        {
+          "text": "Expand guide",
+          "width": 89,
+          "height": 28
+        },
+        {
+          "text": "Resume session →",
+          "width": 155,
+          "height": 44
+        },
+        {
+          "text": "Run a scene\nRead aloud, talk, and stage art",
+          "width": 371,
+          "height": 340
+        },
+        {
+          "text": "Start combat\nMaps, turns, and tokens",
+          "width": 371,
+          "height": 340
+        },
+        {
+          "text": "Explore\nFollow leads and discover places",
+          "width": 371,
+          "height": 340
+        },
+        {
+          "text": "Handle players\nRequests, sheets, and notes",
+          "width": 371,
+          "height": 340
+        },
+        {
+          "text": "Sword Coast atlas",
+          "width": 106,
+          "height": 29
+        },
+        {
+          "text": "−",
+          "width": 21,
+          "height": 29
+        },
+        {
+          "text": "+",
+          "width": 21,
+          "height": 29
+        },
+        {
+          "text": "Reset",
+          "width": 43,
+          "height": 29
+        },
+        {
+          "text": "Northern Coast & Icewind Dale",
+          "width": 182,
+          "height": 32
+        },
+        {
+          "text": "Neverwinter & Phandelver",
+          "width": 158,
+          "height": 32
+        },
+        {
+          "text": "The High Road",
+          "width": 100,
+          "height": 32
+        },
+        {
+          "text": "Waterdeep & Daggerford",
+          "width": 152,
+          "height": 32
+        },
+        {
+          "text": "Eastern Interior",
+          "width": 105,
+          "height": 32
+        },
+        {
+          "text": "Baldur’s Gate & Candlekeep",
+          "width": 168,
+          "height": 32
+        },
+        {
+          "text": "Travel & encounter kit",
+          "width": 138,
+          "height": 32
+        },
+        {
+          "text": "Open full atlas",
+          "width": 100,
+          "height": 32
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "Resume session →",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [
+        {
+          "math": "Attack +6 · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Attack +6 · 1d6+4 bludgeoning · Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4  · Uncanny Metabolism 1/1",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8 ",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4  · DEX save DC 10 · Focus Points 4/4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Focus Points 4/4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "✦ Echo Below\n⌕ Search\nInbox · clear\n■ Stop sound\nMenu\nSCENE\nRedbrand Hideout · Redbrand Hideout\nOBJECTIVEThe Missing Rockseeker · Trace Gundren’s abduction\nTrista · open active turn\nOpen player TV\nTV disconnected · last staged: Redbrand Hideout\n1 · Get ready\nExpand guide\nCURRENT SESSION\nPhandalin · After Glasstaff\nNEXT ACTION\nTrista · open active turn\nResume session →\nRun a scene\nRead aloud, talk, and stage art\nStart combat\nMaps, turns, and tokens\nExplore\nFollow leads and discover places\nHandle players\nRequests, sheets, and notes\nWORLD ATLAS\nThe Sword Coast\nSword Coast atlas\n−\n100%\n+\nReset\nIcewind Dale\nReghed Glacier\nSpine of the World\nNeverwinter Wood\nSword Mountains\nSouthern Sword Mountains\nHigh Forest\nStar Mounts\nGreypeak Mountains\nWestern Anauroch\nHigh Moor\nMisty Forest\nSerpent Hills\nMarsh of Chelimber\nGreycloak Hills\nForest of Wyrms\nTrollclaws\nTrielta Hills\nFields of the Dead\nLurkwood\nMere of Dead Men\nSouthwood\nCloakwood\nWood of Sharp Teeth\nThe Drowned Observatory · offshore-site-proposal\nThe Dead God’s Scar · valley-site-proposal\nThe Frozen Door · glacier-approach-area\nThe Walking Tower · roaming-area\nThe Broken Star · terrestrial-approach-area\nThe Hollow Mountain · provisional-mountain-area\nAgatha’s Lair\nAmphail\nBaldur's Gate\nBerdusk\nBlackford Crossing\nBoareskyr Bridge\nCandlekeep\nCitadel Felbarr\nConyberry\nCragmaw Castle\nCragmaw Hideout\nDaggerford\nDragonspear Castle\nElturel\nEvereska\nFort Morninglord\nGauntlgrym\nHardbuckler\nHelm's Hold\nIronmaster\nLeilon\nLongsaddle\nLuskan\nMirabar\nMithral Hall\nMount Hotenow\nNeverwinter\nOld Owl Well\nPhandalin\nScornubel\nSecomber\nSilverymoon\nSundabar\nThe Dead God’s Scar\nThe Drowned Observatory\nThe Silent Library\nThornhold\nThundertree\nTriboar Trail ambush site\nUndermountain\nWarlock's Crypt\nWaterdeep\nWave Echo Cave\nWyvern Tor\nYartar\nParty\nFind a point of interest\n\nChoose a marker for details. Browsing is private and does not move the party.\n\nNorthern Coast & Icewind Dale\nNeverwinter & Phandelver\nThe High Road\nWaterdeep & Daggerford\nEastern Interior\nBaldur’s Gate & Candlekeep\nTravel & encounter kit\nOpen full atlas"
+    },
+    {
+      "name": "tv-combat",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "pageWidth": 1920,
+      "buttons": [
+        {
+          "text": "Full screen",
+          "width": 91,
+          "height": 38
+        },
+        {
+          "text": "Journal (16)",
+          "width": 98,
+          "height": 38
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [],
+      "actionRows": [],
+      "text": "Redbrand Hideout · Redbrand Hideout\nDrag your hero; click dark areas to ask the DM to explore.\nDM seen 0s ago · update 2\nFull screen\nJournal (16)\nRound 1 · Trista’s turn\nTrista · 18\nDonavan · 17\nRinggo · 16\nPebble · 15\nAldric · 14\nT\n▼ TURN\nT\nD\nD\nR\nR\nP\nP\nA\nA\nDay · Clear"
+    },
+    {
+      "name": "phone-first-join",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "Show me where",
+          "width": 147,
+          "height": 44
+        },
+        {
+          "text": "Next",
+          "width": 62,
+          "height": 44
+        },
+        {
+          "text": "Skip for now",
+          "width": 121,
+          "height": 44
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 364,
+          "height": 58
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 52
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [],
+      "actionRows": [
+        {
+          "math": "+6 to hit · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Cantrip",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Level 2",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/12/2026, 12:31:11 AM · update 1\n\nSaved sheet & joining\nPHONE WALKTHROUGH · 1 / 5\nConfirm your character\n\nCheck the name and HP on your character card. If this is not your character, use Saved sheet & joining to rejoin.\n\nShow me whereNextSkip for now\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+6 to hit · 1d6+4 piercing\nReviewed roll\nQuick roll only\nRequest action\nSpear\n+6 to hit · 1d8+4 piercing\nChoose details\nQuick roll only\nRequest action\nUnarmed Strike\n+6 to hit · 1d6+4 bludgeoning\nReviewed roll\nQuick roll only\nRequest action\nMartial Arts unarmed strike\n+6 to hit · 1d6+4 bludgeoning\nReviewed roll\nQuick roll only\nRequest action\nFlurry of Blows\n+6 to hit · 1d6+4 bludgeoning\nChoose details\nQuick roll only\nRequest action\nPatient Defense\nChoose details\nRequest action\nPatient Defense + Dodge\nChoose details\nRequest action\nStep of the Wind\nChoose details\nRequest action\nStep of the Wind + Disengage\nChoose details\nRequest action\nUncanny Metabolism\n1d6+4\nChoose details\nRequest action\nDeflect Attacks\n1d10+8\nManual ruling\nRequest action\nRedirect deflected attack\n2d6+4\nManual ruling\nRequest action\nMinor Illusion\nManual ruling\nRequest action\nShadow Arts: Darkness\nManual ruling\nRequest action\nSlow Fall\nManual ruling\nRequest action\nSpeedy: Dash\nManual ruling\nRequest action\nAll spells (2)\nFocus Points\n4 / 4 left\nAsk to use\nUncanny Metabolism\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-turn",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 364,
+          "height": 58
+        },
+        {
+          "text": "",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 52
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [],
+      "actionRows": [
+        {
+          "math": "+6 to hit · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Cantrip",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Level 2",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/12/2026, 12:31:11 AM · update 1\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+6 to hit · 1d6+4 piercing\nReviewed roll\nQuick roll only\nRequest action\nSpear\n+6 to hit · 1d8+4 piercing\nChoose details\nQuick roll only\nRequest action\nUnarmed Strike\n+6 to hit · 1d6+4 bludgeoning\nReviewed roll\nQuick roll only\nRequest action\nMartial Arts unarmed strike\n+6 to hit · 1d6+4 bludgeoning\nReviewed roll\nQuick roll only\nRequest action\nFlurry of Blows\n+6 to hit · 1d6+4 bludgeoning\nChoose details\nQuick roll only\nRequest action\nPatient Defense\nChoose details\nRequest action\nPatient Defense + Dodge\nChoose details\nRequest action\nStep of the Wind\nChoose details\nRequest action\nStep of the Wind + Disengage\nChoose details\nRequest action\nUncanny Metabolism\n1d6+4\nChoose details\nRequest action\nDeflect Attacks\n1d10+8\nManual ruling\nRequest action\nRedirect deflected attack\n2d6+4\nManual ruling\nRequest action\nMinor Illusion\nManual ruling\nRequest action\nShadow Arts: Darkness\nManual ruling\nRequest action\nSlow Fall\nManual ruling\nRequest action\nSpeedy: Dash\nManual ruling\nRequest action\nAll spells (2)\nFocus Points\n4 / 4 left\nAsk to use\nUncanny Metabolism\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-turn-content",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Quick roll only",
+          "width": 111,
+          "height": 44
+        },
+        {
+          "text": "Request action",
+          "width": 115,
+          "height": 44
+        },
+        {
+          "text": "Quick roll only",
+          "width": 111,
+          "height": 44
+        },
+        {
+          "text": "Request action",
+          "width": 115,
+          "height": 44
+        },
+        {
+          "text": "Quick roll only",
+          "width": 111,
+          "height": 44
+        },
+        {
+          "text": "Request action",
+          "width": 115,
+          "height": 44
+        },
+        {
+          "text": "Quick roll only",
+          "width": 111,
+          "height": 44
+        },
+        {
+          "text": "Request action",
+          "width": 115,
+          "height": 44
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [],
+      "actionRows": [
+        {
+          "math": "+6 to hit · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Cantrip",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Level 2",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/12/2026, 12:31:12 AM · update 2\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+6 to hit · 1d6+4 piercing\nReviewed roll\nQuick roll only\nRequest action\nSpear\n+6 to hit · 1d8+4 piercing\nChoose details\nQuick roll only\nRequest action\nUnarmed Strike\n+6 to hit · 1d6+4 bludgeoning\nReviewed roll\nQuick roll only\nRequest action\nMartial Arts unarmed strike\n+6 to hit · 1d6+4 bludgeoning\nReviewed roll\nQuick roll only\nRequest action\nFlurry of Blows\n+6 to hit · 1d6+4 bludgeoning\nChoose details\nQuick roll only\nRequest action\nPatient Defense\nChoose details\nRequest action\nPatient Defense + Dodge\nChoose details\nRequest action\nStep of the Wind\nChoose details\nRequest action\nStep of the Wind + Disengage\nChoose details\nRequest action\nUncanny Metabolism\n1d6+4\nChoose details\nRequest action\nDeflect Attacks\n1d10+8\nManual ruling\nRequest action\nRedirect deflected attack\n2d6+4\nManual ruling\nRequest action\nMinor Illusion\nManual ruling\nRequest action\nShadow Arts: Darkness\nManual ruling\nRequest action\nSlow Fall\nManual ruling\nRequest action\nSpeedy: Dash\nManual ruling\nRequest action\nAll spells (2)\nFocus Points\n4 / 4 left\nAsk to use\nUncanny Metabolism\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-action-review",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Send for DM review",
+          "width": 178,
+          "height": 44
+        },
+        {
+          "text": "Close draft",
+          "width": 111,
+          "height": 44
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [
+        {
+          "text": "Send for DM review",
+          "background": "rgb(224, 190, 121)",
+          "color": "rgb(24, 39, 29)",
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+        }
+      ],
+      "actionRows": [
+        {
+          "math": "+6 to hit · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4",
+          "support": "Choose details",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Cantrip",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Level 2",
+          "support": "Manual ruling",
+          "gap": 8,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/12/2026, 12:31:13 AM · update 2\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nRequest an action\nAction\nDagger (attack)\nSpear (attack)\nUnarmed Strike (attack)\nMartial Arts unarmed strike (attack)\nFlurry of Blows (action)\nPatient Defense (action)\nPatient Defense + Dodge (action)\nStep of the Wind (action)\nStep of the Wind + Disengage (action)\nUncanny Metabolism (action)\nDeflect Attacks (action)\nRedirect deflected attack (action)\nMinor Illusion (action)\nShadow Arts: Darkness (action)\nSlow Fall (action)\nSpeedy: Dash (action)\nMinor Illusion (spell)\nDarkness (spell)\nFocus Points (resource)\nUncanny Metabolism (resource)\n\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\n\nChoose everyone this action should affect. For a place, object, or effect without a token, describe it below. Your DM reviews range, costs, and the effect.\n\nTrista\nDonavan\nRinggo\nPebble\nAldric\nRequested d20 mode\nnormal\nadvantage\ndisadvantage\nIntent / target details\nSend for DM reviewClose draft\n\nYour turn\n\nChoose an action and its targets. Your DM reviews the rolls, costs, and effects together. Quick rolls do not spend resources.\n\nDagger\n+6 to hit · 1d6+4 piercing\nReviewed roll\nQuick roll only\nRequest action\nSpear\n+6 to hit · 1d8+4 piercing\nChoose details\nQuick roll only\nRequest action\nUnarmed Strike\n+6 to hit · 1d6+4 bludgeoning\nReviewed roll\nQuick roll only\nRequest action\nMartial Arts unarmed strike\n+6 to hit · 1d6+4 bludgeoning\nReviewed roll\nQuick roll only\nRequest action\nFlurry of Blows\n+6 to hit · 1d6+4 bludgeoning\nChoose details\nQuick roll only\nRequest action\nPatient Defense\nChoose details\nRequest action\nPatient Defense + Dodge\nChoose details\nRequest action\nStep of the Wind\nChoose details\nRequest action\nStep of the Wind + Disengage\nChoose details\nRequest action\nUncanny Metabolism\n1d6+4\nChoose details\nRequest action\nDeflect Attacks\n1d10+8\nManual ruling\nRequest action\nRedirect deflected attack\n2d6+4\nManual ruling\nRequest action\nMinor Illusion\nManual ruling\nRequest action\nShadow Arts: Darkness\nManual ruling\nRequest action\nSlow Fall\nManual ruling\nRequest action\nSpeedy: Dash\nManual ruling\nRequest action\nAll spells (2)\nFocus Points\n4 / 4 left\nAsk to use\nUncanny Metabolism\n1 / 1 left\nAsk to use\n\nRoll dice\nd20\nAdvantage\nDisadvantage\nDice\nd4\nd6\nd8\nd10\nd12\nd20\nd100\nNumber\nModifier\nWhat is it for?\nRoll on the table\n\nDungeon searches & map notes\nPLAYER MAP\nRedbrand Hideout · Redbrand Hideout\nRound 1\n\nDrag your token to request a move. Tap a shaded square to ask your DM to reveal it.\n\nT\nD\nR\nP\nA\n\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-sheet",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 364,
+          "height": 58
+        },
+        {
+          "text": "",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Download emergency sheet",
+          "width": 239,
+          "height": 44
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [],
+      "actionRows": [
+        {
+          "math": "+6 to hit · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Cantrip",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Level 2",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/12/2026, 12:31:14 AM · update 2\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nTrista\nLevel 4\nDownload emergency sheet\n\nHuman · Monk · Warrior of Shadow · Criminal / Spy · 2024 character exception\n\nSTR\n+2\n14\nDEX\n+4\n18\nCON\n+4\n18\nINT\n-1\n9\nWIS\n+0\n11\nCHA\n+1\n12\nPassive Perception 10\nPassive Insight 10\nPassive Investigation 9\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nMinor Illusion · cantrip\naction · slot/cantrip available\n\nWarrior of Shadow; at will; Wisdom spellcasting.\n\nAsk to cast\nDarkness · level 2\nunknown · check preparation or casting resource\n\nShadow Arts; costs 1 Focus Point, no components; concentration.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nDagger\nAction · +6 to hit · 1d6+4 piercing\n\nMonk weapon; thrown range 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nSpear\nAction · +6 to hit · 1d8+4 piercing\n\nVersatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nChoose details · Choose one or two hands; the recorded d8 is the two-handed spear.\nUnarmed Strike\nAction · +6 to hit · 1d6+4 bludgeoning\n\nMartial Arts.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nMartial Arts unarmed strike\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nNo Attack action prerequisite while Martial Arts applies.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nFlurry of Blows\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nQuick roll only\nRoll damage\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nPatient Defense\nBonus action\n\nDisengage without spending Focus. Spend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nPatient Defense + Dodge\nBonus action\n\nSpend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind\nBonus action\n\nDash without spending Focus. Spend 1 Focus Point to Dash and Disengage and double jump distance.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind + Disengage\nBonus action\n\nSpend 1 Focus Point to Dash and Disengage; double jump distance this turn.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nUncanny Metabolism\nWhen rolling initiative · 1d6+4\n\nRestore all spent Focus Points and heal 1d6 + Monk level; once per long rest.\n\nRoll damage\nChoose details · Confirm initiative was rolled. Restore Focus and roll healing; spend the once-per-long-rest use.\nDeflect Attacks\nReaction · 1d10+8\n\nWhen hit by an attack that deals bludgeoning, piercing, or slashing, reduce total damage by 1d10 + DEX + Monk level. If reduced to 0, you may spend 1 Focus Point to redirect.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nRedirect deflected attack\nAfter Deflect Attacks · 2d6+4 · DC 10 DEX\n\nOnly if Deflect Attacks reduced damage to 0. Spend 1 Focus Point; eligible target makes DEX save DC 10 or takes the attack’s damage type.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nMinor Illusion\nAction\n\nCreate a small sound or image within 30 ft.; Wisdom is the spellcasting ability.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nShadow Arts: Darkness\nAction\n\nSpend 1 Focus Point to cast Darkness without components; concentration up to 10 minutes. Trista can see within it and move its area within 60 ft. at the start of each turn.\n\nManual ruling · Spend Focus, set concentration and stage the area manually. No automatic darkvision, targeting or fog changes.\nSlow Fall\nReaction\n\nWhen you fall, reduce the falling damage by 5 × Monk level (20 at level 4).\n\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nSpeedy: Dash\nWhen you Dash\n\nDifficult terrain does not cost extra movement for the rest of this turn.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-sheet-content",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Download emergency sheet",
+          "width": 239,
+          "height": 44
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [],
+      "actionRows": [
+        {
+          "math": "+6 to hit · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Cantrip",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Level 2",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/12/2026, 12:31:14 AM · update 3\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLIVE CHARACTER SHEET\nTrista\nLevel 4\nDownload emergency sheet\n\nHuman · Monk · Warrior of Shadow · Criminal / Spy · 2024 character exception\n\nSTR\n+2\n14\nDEX\n+4\n18\nCON\n+4\n18\nINT\n-1\n9\nWIS\n+0\n11\nCHA\n+1\n12\nPassive Perception 10\nPassive Insight 10\nPassive Investigation 9\nSpellbook\nSearch spells\nAvailable slots / cantrips only\nCasting time\nAll casting times\nAction\nBonus action\nReaction\nRitual\nUnconfirmed\nMinor Illusion · cantrip\naction · slot/cantrip available\n\nWarrior of Shadow; at will; Wisdom spellcasting.\n\nAsk to cast\nDarkness · level 2\nunknown · check preparation or casting resource\n\nShadow Arts; costs 1 Focus Point, no components; concentration.\n\nAsk to cast\nActions\n\nRoll buttons send dice to the table. Your DM applies effects and tracks spent resources.\n\nDagger\nAction · +6 to hit · 1d6+4 piercing\n\nMonk weapon; thrown range 20/60 ft.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nSpear\nAction · +6 to hit · 1d8+4 piercing\n\nVersatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft.\n\nQuick roll only\nRoll damage\nChoose details · Choose one or two hands; the recorded d8 is the two-handed spear.\nUnarmed Strike\nAction · +6 to hit · 1d6+4 bludgeoning\n\nMartial Arts.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nMartial Arts unarmed strike\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nNo Attack action prerequisite while Martial Arts applies.\n\nQuick roll only\nRoll damage\nReviewed roll · Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.\nFlurry of Blows\nBonus action · +6 to hit · 1d6+4 bludgeoning\n\nSpend 1 Focus Point to make two Unarmed Strikes; roll each separately.\n\nQuick roll only\nRoll damage\nChoose details · Choose exactly two strikes and their targets. Spend one Focus and one bonus action for both.\nPatient Defense\nBonus action\n\nDisengage without spending Focus. Spend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nPatient Defense + Dodge\nBonus action\n\nSpend 1 Focus Point to Disengage and Dodge.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind\nBonus action\n\nDash without spending Focus. Spend 1 Focus Point to Dash and Disengage and double jump distance.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nStep of the Wind + Disengage\nBonus action\n\nSpend 1 Focus Point to Dash and Disengage; double jump distance this turn.\n\nChoose details · Review the free or paid variant. Costs and benefit reminders are structured; movement, Dodge and opportunity attacks need a situational DM check.\nUncanny Metabolism\nWhen rolling initiative · 1d6+4\n\nRestore all spent Focus Points and heal 1d6 + Monk level; once per long rest.\n\nRoll damage\nChoose details · Confirm initiative was rolled. Restore Focus and roll healing; spend the once-per-long-rest use.\nDeflect Attacks\nReaction · 1d10+8\n\nWhen hit by an attack that deals bludgeoning, piercing, or slashing, reduce total damage by 1d10 + DEX + Monk level. If reduced to 0, you may spend 1 Focus Point to redirect.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nRedirect deflected attack\nAfter Deflect Attacks · 2d6+4 · DC 10 DEX\n\nOnly if Deflect Attacks reduced damage to 0. Spend 1 Focus Point; eligible target makes DEX save DC 10 or takes the attack’s damage type.\n\nRoll damage\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nMinor Illusion\nAction\n\nCreate a small sound or image within 30 ft.; Wisdom is the spellcasting ability.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nShadow Arts: Darkness\nAction\n\nSpend 1 Focus Point to cast Darkness without components; concentration up to 10 minutes. Trista can see within it and move its area within 60 ft. at the start of each turn.\n\nManual ruling · Spend Focus, set concentration and stage the area manually. No automatic darkvision, targeting or fog changes.\nSlow Fall\nReaction\n\nWhen you fall, reduce the falling damage by 5 × Monk level (20 at level 4).\n\nManual ruling · Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.\nSpeedy: Dash\nWhen you Dash\n\nDifficult terrain does not cost extra movement for the rest of this turn.\n\nManual ruling · Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\nSaves and skills\nResources and status\nEquipment and money\nFeatures and character info\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-journal",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 364,
+          "height": 58
+        },
+        {
+          "text": "",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 52
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [],
+      "actionRows": [
+        {
+          "math": "+6 to hit · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Cantrip",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Level 2",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/12/2026, 12:31:15 AM · update 3\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nJournal & clues\n\nShared quests and campaign events appear alongside clues sent only to your character.\n\nParty side quests\nCampaign journal\n\nNo private clues have been sent to you.\n\nMy notes\nAdd NPC or location note\nClues shared by the party\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-items",
+      "viewport": [
+        390,
+        844
+      ],
+      "pageWidth": 390,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 364,
+          "height": 58
+        },
+        {
+          "text": "",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "My turn",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Explore",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Sheet",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Journal",
+          "width": 74,
+          "height": 52
+        },
+        {
+          "text": "Items",
+          "width": 74,
+          "height": 52
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [],
+      "actionRows": [
+        {
+          "math": "+6 to hit · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Cantrip",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Level 2",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/12/2026, 12:31:15 AM · update 3\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLoot & promises\nKill Klarg in exchange for Sildar’s release · resolved\npromise · Party · Owed to Yeemik\nSildar Hallwinter · resolved\nrescue · With the party at the end of Session 1\nHideout copper and silver · unknown\ncustody · Unrecorded · Amounts unknown; do not invent quantities.\nFound healing potion · resolved\ncustody · Consumed to heal Aldric\nHamun Kost · open\nescape · Whereabouts unknown · Disappeared without combat. Do not assume death, teleportation, or surrender.\nGundren Rockseeker · open\ncustody · At an inn; specific inn unreported · Present condition and safety unconfirmed. Do not mark the rescue complete.\nIarno Albrek (Glasstaff) · open\nescape · Whereabouts unknown to the party · The DM has a private destination record.\nCaptured rat · open\ncustody · Trista · Do not assume the characters know it is a familiar.\n\nNo separate item quantities are recorded in the party inventory.\n\nManage items\n\nChanges wait for DM review. Shared loot and personal equipment are separate records.\n\nDagger ×5\nOn my sheet\nUse / transfer / equip\nSpear ×1\nOn my sheet\nUse / transfer / equip\nTinker’s tools ×1\nOn my sheet\nUse / transfer / equip\nBagpipes ×1\nOn my sheet\nUse / transfer / equip\nTorch ×10\nOn my sheet\nUse / transfer / equip\nRations ×10\nOn my sheet\nUse / transfer / equip\nOil flask ×2\nOn my sheet\nUse / transfer / equip\nRope ×1\nOn my sheet\nUse / transfer / equip\nTinderbox ×1\nOn my sheet\nUse / transfer / equip\n\nShared purse: 0 cp · 0 sp · 0 ep · 0 gp · 0 pp\n\nSplit shared coins\nOffline sheets and future home-screen app"
+    },
+    {
+      "name": "phone-items-small",
+      "viewport": [
+        360,
+        780
+      ],
+      "pageWidth": 360,
+      "buttons": [
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 135,
+          "height": 50
+        },
+        {
+          "text": "YOUR TURN · Tap for actions and rolls",
+          "width": 334,
+          "height": 58
+        },
+        {
+          "text": "",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "My turn",
+          "width": 68,
+          "height": 52
+        },
+        {
+          "text": "Explore",
+          "width": 68,
+          "height": 52
+        },
+        {
+          "text": "Sheet",
+          "width": 68,
+          "height": 52
+        },
+        {
+          "text": "Journal",
+          "width": 68,
+          "height": 52
+        },
+        {
+          "text": "Items",
+          "width": 68,
+          "height": 52
+        }
+      ],
+      "theme": {
+        "gold": "#e0be79",
+        "ui": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif"
+      },
+      "primary": [],
+      "actionRows": [
+        {
+          "math": "+6 to hit · 1d6+4 piercing",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d8+4 piercing",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Reviewed roll",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "+6 to hit · 1d6+4 bludgeoning",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d6+4",
+          "support": "Choose details",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "1d10+8",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "2d6+4",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Cantrip",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        },
+        {
+          "math": "Level 2",
+          "support": "Manual ruling",
+          "gap": 0,
+          "font": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": 13,
+          "spacing": "normal"
+        }
+      ],
+      "text": "THE ECHO BELOW\nYour adventure\n\nPhandalin · After Glasstaff · Connected\n\nLast synced · 10/12/2026, 12:31:16 AM · update 3\n\nSaved sheet & joining\nYOUR CHARACTER\nTrista\n\nHuman · Monk · Warrior of Shadow · Level 4\n\nYOUR TURN\n29 / 29\nHP\n14\nAC\n0\nTEMP HP\nday · clear · Focus Points 4/4 · Uncanny Metabolism 1/1\nYOUR TURN · Tap for actions and rolls\nWhat are we doing next?\n\nNo agreed objective yet. Propose the party’s next step.\n\nPropose a next step\nMy turn\nExplore\nSheet\nJournal\nItems\nLoot & promises\nKill Klarg in exchange for Sildar’s release · resolved\npromise · Party · Owed to Yeemik\nSildar Hallwinter · resolved\nrescue · With the party at the end of Session 1\nHideout copper and silver · unknown\ncustody · Unrecorded · Amounts unknown; do not invent quantities.\nFound healing potion · resolved\ncustody · Consumed to heal Aldric\nHamun Kost · open\nescape · Whereabouts unknown · Disappeared without combat. Do not assume death, teleportation, or surrender.\nGundren Rockseeker · open\ncustody · At an inn; specific inn unreported · Present condition and safety unconfirmed. Do not mark the rescue complete.\nIarno Albrek (Glasstaff) · open\nescape · Whereabouts unknown to the party · The DM has a private destination record.\nCaptured rat · open\ncustody · Trista · Do not assume the characters know it is a familiar.\n\nNo separate item quantities are recorded in the party inventory.\n\nManage items\n\nChanges wait for DM review. Shared loot and personal equipment are separate records.\n\nDagger ×5\nOn my sheet\nUse / transfer / equip\nSpear ×1\nOn my sheet\nUse / transfer / equip\nTinker’s tools ×1\nOn my sheet\nUse / transfer / equip\nBagpipes ×1\nOn my sheet\nUse / transfer / equip\nTorch ×10\nOn my sheet\nUse / transfer / equip\nRations ×10\nOn my sheet\nUse / transfer / equip\nOil flask ×2\nOn my sheet\nUse / transfer / equip\nRope ×1\nOn my sheet\nUse / transfer / equip\nTinderbox ×1\nOn my sheet\nUse / transfer / equip\n\nShared purse: 0 cp · 0 sp · 0 ep · 0 gp · 0 pp\n\nSplit shared coins\nOffline sheets and future home-screen app"
+    }
+  ]
+}

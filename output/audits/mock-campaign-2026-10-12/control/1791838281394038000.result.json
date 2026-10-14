@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-3-stirge-9",
+    "bloodloss": {
+      "id": "1791838281467-8i50hyzh2s",
+      "label": "Attached stirge bloodloss, no attack",
+      "notation": "1d4+3",
+      "parts": [
+        1
+      ],
+      "total": 4,
+      "kind": "digital",
+      "time": "02:51 PM"
+    }
+  }
+}

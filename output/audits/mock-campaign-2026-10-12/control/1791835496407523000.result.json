@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791835496511-mmd4pwz5",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              12
+            ],
+            "total": 18,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:04:56 PM"
+          },
+          {
+            "id": "pa-1791835496511-3d3y2m0g",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:04:56 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-bugbears-3",
+            "text": "Bugbear 3: 18 vs AC 16: hit, 8 piercing → 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Bugbear 3"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791835496589-e4x877cr",
+            "label": "Martial Arts unarmed strike · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              5
+            ],
+            "total": 11,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:04:56 PM"
+          },
+          {
+            "id": "pa-1791835496589-w8xwzmh5",
+            "label": "Martial Arts unarmed strike · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              1
+            ],
+            "total": 5,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "2:04:56 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-bugbears-3",
+            "text": "Bugbear 3: 11 vs AC 16: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

@@ -291,7 +291,8 @@
     'castle-archers':36, 'castle-trap':36, 'castle-barracks':37, 'castle-hobgoblins':38,
     'castle-banquet':38, 'castle-grick':38, 'castle-shrine':39, 'castle-guards':40,
     'castle-owlbear':40, 'castle-king':40, 'castle-warband':41 };
-  function expectedScene(encounterId) {
+  function expectedScene(encounterId,plans) {
+    const binding=plans?.[encounterId]?.sceneId;if(typeof binding==='string'&&/^[A-Za-z0-9_-]{1,100}$/.test(binding))return binding;
     if(encounterId==='road')return 'road';
     if(['blind','kennel','overpass','den','pools','klarg'].includes(encounterId))return 'interior';
     if (globalThis.ECHO_SESSION4_COMBAT?.sceneForEncounter?.[encounterId])
@@ -310,6 +311,7 @@
     if (encounterId?.startsWith('castle-')) return 'lmop-map-cragmaw-castle';
     return '';
   }
+  function positionFor(wave,id,scene,originalScene) {return !wave.positionSceneId&&!originalScene|| (wave.positionSceneId||originalScene)===scene ? wave.positions?.[id]||null : null;}
   function creatureDefense(type, customCreatures = {}) {
     const creature = CREATURES[type] || customCreatures[type] || {};
     return { surprised:false, reactionUsed:false, ready:'', concentration:'',
@@ -334,11 +336,13 @@
     for (const key of ['terrain', 'objective', 'starting', 'reinforcements', 'nonCombat', 'morale', 'retreat', 'negotiation', 'outcome'])
       base[key] = clean(base[key]);
     base.id = id;
+    if(base.aftermath&&globalThis.ECHO_COMBAT_AFTERMATH)base.aftermath=globalThis.ECHO_COMBAT_AFTERMATH.normalize(base.aftermath);
+    if(base.sceneId&&!/^[A-Za-z0-9_-]{1,100}$/.test(base.sceneId))delete base.sceneId;
     base.waves = (Array.isArray(base.waves) ? base.waves : []).slice(0, 20).map(w => ({
       name: clean(w.name, 80), tokenIds: Array.isArray(w.tokenIds) ? w.tokenIds.filter(x => typeof x === 'string').slice(0, 60) : [],
       positions: Object.fromEntries(Object.entries(w.positions || {}).slice(0, 60).map(([key, value]) =>
         [key, { x: Math.max(0, Math.min(100, Number(value?.x) || 0)), y: Math.max(0, Math.min(100, Number(value?.y) || 0)) }])),
-      note: clean(w.note, 400), deployed: w.deployed === true }));
+      positionSceneId:/^[A-Za-z0-9_-]{1,100}$/.test(w.positionSceneId||'')?w.positionSceneId:'',note: clean(w.note, 400), deployed: w.deployed === true }));
     base.wrap = Object.fromEntries(['loot', 'lootCustody', 'wagon', 'promises', 'clues', 'advancement', 'resources', 'casualties', 'consequences']
       .map(key => [key, clean(base.wrap?.[key], 1500)]));
     return base;
@@ -381,7 +385,7 @@
         maxHp: Math.max(0, Math.min(999, Number(t.maxHp) || 0)), ac: t.ac === null ? null : Math.max(0, Math.min(99, Number(t.ac) || 0)),
         x: Math.max(0, Math.min(100, Number(t.x) || 50)), y: Math.max(0, Math.min(100, Number(t.y) || 50))
       })) }));
-    return { plans, creatures: customCreatures, tokens: tokenState, effects, library };
+    return { plans, creatures: customCreatures, tokens: tokenState, effects, library, aftermathRunKey:String(raw?.aftermathRunKey||'').slice(0,80) };
   }
   function damagePreview(token, amount, type, mode, defense = {}) {
     const value = Math.max(0, Math.round(Number(amount) || 0));
@@ -438,6 +442,6 @@
       thresholds: { easy:limits[0], medium:limits[1], hard:limits[2], deadly:limits[3] }, book:'dmg', page:82,
       note: `${baseXp} base XP × ${multiplier} for ${counts} contributing foes = ${adjustedXp} adjusted XP; ${levels.length} characters. 2014 DMG pp. 82–85, levels 1–20. Adjusted XP estimates danger only; award base XP. ${terrain ? `Terrain: ${terrain}. ` : ''}Review resources, surprise, special abilities, objectives, and escape routes. Exclude insignificant foes from the count and assess separate waves separately; this is advice, not a guarantee.` };
   }
-  globalThis.ECHO_COMBAT_DATA = { CREATURES, PLANS, ENCOUNTER_PAGES, expectedScene, creatureDefense, creatureSaveBonus,
+  globalThis.ECHO_COMBAT_DATA = { CREATURES, PLANS, ENCOUNTER_PAGES, positionFor, expectedScene, creatureDefense, creatureSaveBonus,
     blank, normalizePlan, normalizeCombat, damagePreview, inShape, pace };
 })();

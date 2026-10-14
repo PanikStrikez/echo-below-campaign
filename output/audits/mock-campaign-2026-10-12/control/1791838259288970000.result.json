@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s4-wave-3-stirge-1",
+        "name": "Stirge 1",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-2",
+        "name": "Stirge 2",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-3",
+        "name": "Stirge 3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-4",
+        "name": "Stirge 4",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-5",
+        "name": "Stirge 5",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-6",
+        "name": "Stirge 6",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-7",
+        "name": "Stirge 7",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-8",
+        "name": "Stirge 8",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-9",
+        "name": "Stirge 9",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-10",
+        "name": "Stirge 10",
+        "hp": 2
+      }
+    ],
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 47
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 63
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 44
+      }
+    ]
+  }
+}

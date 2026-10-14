@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-6-ghoul-3",
+    "action": {
+      "actor": "s4-wave-6-ghoul-3",
+      "label": "Claws",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838389964-e377xll0",
+          "label": "Claws · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            3
+          ],
+          "total": 7,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:09 PM"
+        },
+        {
+          "id": "pa-1791838389964-2e5g33hb",
+          "label": "Claws · effect 1.1",
+          "notation": "2d4+2",
+          "parts": [
+            4,
+            2
+          ],
+          "total": 8,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:09 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 7 vs AC 12: miss, 0 slashing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

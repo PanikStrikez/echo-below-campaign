@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "result": {
+    "due": [
+      {
+        "id": "card-1791839128344-gw49z21",
+        "tokenId": "s4-wave-19-nezznar-1",
+        "triggerActor": "pc-donavan",
+        "triggerPoint": "start",
+        "remaining": 0,
+        "name": "Ray of Frost · speed −10 ft",
+        "condition": "",
+        "due": true,
+        "fired": true,
+        "repeatSave": false,
+        "note": "Apply until the caster’s next turn starts. Movement remains manual."
+      }
+    ],
+    "msg": "",
+    "turn": {
+      "scene": "lmop-map-wave-temple",
+      "round": 2,
+      "order": [
+        "s4-wave-19-wave-spider-2",
+        "s4-wave-19-wave-spider-3",
+        "pc-ringgo",
+        "pc-aldric",
+        "pc-pebble",
+        "s4-wave-19-nezznar-1",
+        "s4-wave-19-wave-spider-4",
+        "s4-wave-19-bugbear-2",
+        "s4-wave-19-bugbear-1",
+        "pc-donavan",
+        "s4-wave-18-vhalak-1",
+        "pc-trista",
+        "s4-wave-19-wave-spider-1"
+      ],
+      "index": 9
+    }
+  }
+}

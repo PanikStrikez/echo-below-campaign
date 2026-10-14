@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791839407901-v9fvxovs",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              20
+            ],
+            "total": 28,
+            "natural": 20,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:07 PM"
+          },
+          {
+            "id": "pa-1791839407902-vvcxvfow",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "4d10",
+            "parts": [
+              6,
+              2,
+              8,
+              2
+            ],
+            "total": 18,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:07 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-wave-spider-3",
+            "text": "Nezznar’s Spider 3: 28 vs AC 14: critical hit, 18 fire → 18; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

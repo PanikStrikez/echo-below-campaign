@@ -1,0 +1,36 @@
+{
+  "id": "trail-art",
+  "title": "Goblin trail",
+  "image": "session-01-visuals/scene-04-goblin-trail.png",
+  "key": "trail-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "trail"
+  ],
+  "sourceRecords": [
+    {
+      "id": "trail",
+      "title": "4 · Goblin trail and traps",
+      "read": [
+        "The goblin trail narrows under the trees. Broken twigs and churned earth show several small creatures passed this way, with heavier marks among them. The road disappears behind you.",
+        "Each disturbed patch offers a place to slow down and look, while the thicker growth limits what you can see ahead. You can keep the heavier marks in view, check the ground before committing your weight, or pause to decide how closely you want to follow."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Narrow goblin footpath heads northwest away from wooded road through thick thickets, small footprints and two drag marks in damp earth, broken vegetation. Ordinary forest, no hidden traps outlined or readable route signs, no captured people or goblins visible.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Goblin trail\nObservable scene and constraints: Narrow goblin footpath heads northwest away from wooded road through thick thickets, small footprints and two drag marks in damp earth, broken vegetation. Ordinary forest, no hidden traps outlined or readable route signs, no captured people or goblins visible.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "cb8e0be569f978c8a89b6bd273a9b11fc3c59d067c4b47685fa60f15f9b56652",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/trail-art.png",
+  "generatedAt": "2026-10-12T15:44:51.103Z",
+  "candidateHash": "5720609d93a1136de14151dbcdd5982e9ab68ae34eaed0bd0a05505d986dd31d",
+  "review": "passed",
+  "reviewedHash": "5720609d93a1136de14151dbcdd5982e9ab68ae34eaed0bd0a05505d986dd31d",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:06.888Z",
+  "installedHash": "5720609d93a1136de14151dbcdd5982e9ab68ae34eaed0bd0a05505d986dd31d",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-04-goblin-trail.png"
+}

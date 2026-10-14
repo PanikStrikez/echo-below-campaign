@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-19-wave-spider-1",
+    "web": {
+      "actor": "s4-wave-19-wave-spider-1",
+      "label": "Web",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839130244-0h8rvp9d",
+          "label": "Web · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            17
+          ],
+          "total": 22,
+          "natural": 17,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:30 PM"
+        },
+        {
+          "id": "pa-1791839130244-ei22g2jv",
+          "label": "Web · effect 1.1",
+          "notation": "0",
+          "parts": [],
+          "total": 0,
+          "natural": null,
+          "public": false,
+          "kind": "fixed",
+          "time": "3:05:30 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 22 vs AC 18: hit, 0 bludgeoning → 0; temp HP absorbed 0, Restrained"
+        }
+      ],
+      "costs": []
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791836252145-lpnsrg40",
+            "label": "Unarmed Strike · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              5
+            ],
+            "total": 11,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:17:32 PM"
+          },
+          {
+            "id": "pa-1791836252145-38sldw7m",
+            "label": "Unarmed Strike · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:17:32 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-2",
+            "text": "Crypt skeleton 2: 11 vs AC 13: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Crypt skeleton 2"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836252253-0y4kjt28",
+            "label": "Martial Arts unarmed strike · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              4
+            ],
+            "total": 10,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:17:32 PM"
+          },
+          {
+            "id": "pa-1791836252253-7vs22bwj",
+            "label": "Martial Arts unarmed strike · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:17:32 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-2",
+            "text": "Crypt skeleton 2: 10 vs AC 13: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

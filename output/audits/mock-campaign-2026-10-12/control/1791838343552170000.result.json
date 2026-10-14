@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-4-wave-skeleton-3",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-3",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838343664-xd9fr2pc",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            20
+          ],
+          "total": 24,
+          "natural": 20,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:23 PM"
+        },
+        {
+          "id": "pa-1791838343664-w5cr232u",
+          "label": "Shortsword · effect 1.1",
+          "notation": "2d6+2",
+          "parts": [
+            3,
+            2
+          ],
+          "total": 7,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:23 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 24 vs AC 18: critical hit, 7 piercing → 7; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

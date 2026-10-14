@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "result": {
+    "effects": [
+      {
+        "id": "card-1791829959288-h8xnbgo",
+        "tokenId": "s2-hideout-common-1",
+        "triggerActor": "pc-donavan",
+        "triggerPoint": "start",
+        "remaining": 0,
+        "name": "Ray of Frost · speed −10 ft",
+        "condition": "",
+        "due": true,
+        "fired": true,
+        "repeatSave": false,
+        "note": "Apply until the caster’s next turn starts. Movement remains manual."
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Review Common room ruffian 1 · Ray of Frost · speed −10 ft due",
+        "visible": true
+      },
+      {
+        "text": "Common room ruffian 1 · 10 · Ray of Frost · speed −10 ft DUE",
+        "visible": false
+      },
+      {
+        "text": "Next: Review Common room ruffian 1 · Ray of Frost · speed −10 ft due",
+        "visible": false
+      },
+      {
+        "text": "Review Common room ruffian 1 · Ray of Frost · speed −10 ft due",
+        "visible": false
+      },
+      {
+        "text": "Finish session",
+        "visible": false
+      },
+      {
+        "text": "Advance anyway; keep these reminders",
+        "visible": true
+      },
+      {
+        "text": "◌ Turn reminders",
+        "visible": false
+      },
+      {
+        "text": "Live clocks & reminders",
+        "visible": false
+      }
+    ]
+  }
+}

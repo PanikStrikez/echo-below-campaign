@@ -1,0 +1,36 @@
+{
+  "id": "lmop-blighted-cottages",
+  "title": "Thundertree · Area 2 · Blighted cottages",
+  "image": "lmop-visuals/blighted-cottages.png",
+  "key": "T02",
+  "chapter": "Thundertree",
+  "reveal": "On entering area 2",
+  "sourceRecordIds": [
+    "s3-tt-2"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-2",
+      "title": "Thundertree 2 · Blighted cottages",
+      "read": [
+        "Two collapsed homes stand side by side, their old rooms given over to brush and young trees.",
+        "The brush has grown across what used to separate the homes' rooms. Fallen walls still mark their old boundaries beneath the living growth. You can inspect a particular patch of rubble or keep together where the route between the two ruins is easiest to see."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "TWO adjacent collapsed cottage ruins, overgrown by dense brush and young trees; old living-room divisions still legible among fallen masonry and rotten beams. SIX twig blights remain concealed as ordinary brush. No opened coin chest, visible monsters or inhabited cottages. Daylight.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 2 · Blighted cottages\nObservable scene and constraints: TWO adjacent collapsed cottage ruins, overgrown by dense brush and young trees; old living-room divisions still legible among fallen masonry and rotten beams. SIX twig blights remain concealed as ordinary brush. No opened coin chest, visible monsters or inhabited cottages. Daylight.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "5a062cf36d1ec25fc168fc3fbbd23308315b8d4be0d802dac04a66ad144313e6",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-blighted-cottages.png",
+  "generatedAt": "2026-10-12T16:15:01.268Z",
+  "candidateHash": "4e36340ae701feae45ddc2cc8a811602381e89e09a3c6b25d302d2f011bcf39c",
+  "review": "passed",
+  "reviewedHash": "4e36340ae701feae45ddc2cc8a811602381e89e09a3c6b25d302d2f011bcf39c",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.245Z",
+  "installedHash": "4e36340ae701feae45ddc2cc8a811602381e89e09a3c6b25d302d2f011bcf39c",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/blighted-cottages.png"
+}

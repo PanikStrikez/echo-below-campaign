@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "result": {
+    "phone": [
+      "init",
+      "sync",
+      "open",
+      "refresh",
+      "setRollResult",
+      "checkStatus",
+      "start",
+      "disconnectForCampaignSwitch"
+    ],
+    "log": 64,
+    "undo": 20
+  }
+}

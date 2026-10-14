@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791836018870-paiqi5o2",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              8
+            ],
+            "total": 14,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:38 PM"
+          },
+          {
+            "id": "pa-1791836018870-xopnzwd2",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-3",
+            "text": "Barracks ruffian 3: 14 vs AC 14: hit, 8 bludgeoning → 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,552 @@
+[
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791837578568-50pv68qo",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              9
+            ],
+            "total": 17,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:38 PM"
+          },
+          {
+            "id": "pa-1791837578568-vyayvwg9",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              2,
+              3
+            ],
+            "total": 5,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King\u2019s guard 1: 17 vs AC 18: miss, 0 cold \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791837579994-a3z57p4d",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              5
+            ],
+            "total": 12,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:39 PM"
+          },
+          {
+            "id": "pa-1791837579994-3qxu1tox",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:39 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King\u2019s guard 1: 12 vs AC 18: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791837580106-lj9cfnr3",
+              "label": "Unarmed Strike \u00b7 attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                2
+              ],
+              "total": 9,
+              "natural": 2,
+              "public": true,
+              "kind": "digital",
+              "time": "2:39:40 PM"
+            },
+            {
+              "id": "pa-1791837580106-reglslbp",
+              "label": "Unarmed Strike \u00b7 effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                5
+              ],
+              "total": 9,
+              "natural": 5,
+              "public": true,
+              "kind": "digital",
+              "time": "2:39:40 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s3-castle-guards-hobgoblin-1",
+              "text": "King\u2019s guard 1: 9 vs AC 18: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "King\u2019s guard 1"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791837580233-l39c34tb",
+            "label": "Martial Arts unarmed strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              9
+            ],
+            "total": 16,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:40 PM"
+          },
+          {
+            "id": "pa-1791837580233-wi98i081",
+            "label": "Martial Arts unarmed strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King\u2019s guard 1: 16 vs AC 18: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s3-castle-guards-hobgoblin-2",
+    "action": {
+      "actor": "s3-castle-guards-hobgoblin-2",
+      "label": "Longsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791837580677-l40wup9d",
+          "label": "Longsword \u00b7 attack 1",
+          "notation": "1d20+3",
+          "parts": [
+            16
+          ],
+          "total": 19,
+          "natural": 16,
+          "public": false,
+          "kind": "digital",
+          "time": "2:39:40 PM"
+        },
+        {
+          "id": "pa-1791837580677-5fjppfhb",
+          "label": "Longsword \u00b7 effect 1.1",
+          "notation": "1d8+1",
+          "parts": [
+            3
+          ],
+          "total": 4,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:39:40 PM"
+        },
+        {
+          "id": "pa-1791837580677-1m0a13vx",
+          "label": "Longsword \u00b7 effect 1.2",
+          "notation": "2d6",
+          "parts": [
+            6,
+            2
+          ],
+          "total": 8,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "2:39:40 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 19 vs AC 14: hit, 4 slashing \u2192 4; temp HP absorbed 0, 8 slashing \u2192 8; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791837581432-81wjlelv",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              1
+            ],
+            "total": 8,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:41 PM"
+          },
+          {
+            "id": "pa-1791837581432-c59qlxop",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              8
+            ],
+            "total": 12,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:41 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King\u2019s guard 1: 8 vs AC 18: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791837581519-tj33a0ja",
+              "label": "Warhammer \u00b7 attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                14
+              ],
+              "total": 21,
+              "natural": 14,
+              "public": true,
+              "kind": "digital",
+              "time": "2:39:41 PM"
+            },
+            {
+              "id": "pa-1791837581519-c49z4a8d",
+              "label": "Warhammer \u00b7 effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                3
+              ],
+              "total": 7,
+              "natural": 3,
+              "public": true,
+              "kind": "digital",
+              "time": "2:39:41 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s3-castle-guards-hobgoblin-1",
+              "text": "King\u2019s guard 1: 21 vs AC 18: hit, 7 bludgeoning \u2192 7; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791837581893-lmtm7tpa",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              3
+            ],
+            "total": 11,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:41 PM"
+          },
+          {
+            "id": "pa-1791837581893-duvprb9n",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              5
+            ],
+            "total": 10,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:41 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King\u2019s guard 1: 11 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s3-castle-guards-hobgoblin-1",
+    "action": {
+      "actor": "s3-castle-guards-hobgoblin-1",
+      "label": "Longsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791837582325-4b8wr0ox",
+          "label": "Longsword \u00b7 attack 1",
+          "notation": "1d20+3",
+          "parts": [
+            9
+          ],
+          "total": 12,
+          "natural": 9,
+          "public": false,
+          "kind": "digital",
+          "time": "2:39:42 PM"
+        },
+        {
+          "id": "pa-1791837582325-vt5qi9sv",
+          "label": "Longsword \u00b7 effect 1.1",
+          "notation": "1d8+1",
+          "parts": [
+            7
+          ],
+          "total": 8,
+          "natural": 7,
+          "public": false,
+          "kind": "digital",
+          "time": "2:39:42 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 12 vs AC 14: miss, 0 slashing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791837582720-8t0qxc4l",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              6
+            ],
+            "total": 14,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:42 PM"
+          },
+          {
+            "id": "pa-1791837582720-7re928eo",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "2d10",
+            "parts": [
+              7,
+              4
+            ],
+            "total": 11,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:42 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King\u2019s guard 1: 14 vs AC 18: miss, 0 fire \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791837583126-v4ibh6kh",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              13
+            ],
+            "total": 21,
+            "natural": 13,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:43 PM"
+          },
+          {
+            "id": "pa-1791837583126-g269yuot",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              2,
+              5
+            ],
+            "total": 7,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:43 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King\u2019s guard 1: 21 vs AC 18: hit, 7 cold \u2192 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "complete": "hostiles defeated or fled",
+    "state": {
+      "turn": {
+        "scene": "lmop-map-cragmaw-castle",
+        "round": 2,
+        "order": [
+          "pc-donavan",
+          "pc-trista",
+          "s3-castle-guards-hobgoblin-2",
+          "pc-pebble",
+          "pc-ringgo",
+          "s3-castle-guards-hobgoblin-1",
+          "pc-aldric"
+        ],
+        "index": 1
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 26,
+          "maxHp": 38
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 38,
+          "maxHp": 38
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 36,
+          "maxHp": 36
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 53,
+          "maxHp": 53
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 37,
+          "maxHp": 37
+        }
+      ],
+      "foes": [],
+      "due": []
+    }
+  }
+]

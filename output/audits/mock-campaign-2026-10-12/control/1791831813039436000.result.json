@@ -1,0 +1,74 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "",
+      "round": 0,
+      "order": [],
+      "index": 0
+    },
+    "actions": [
+      {
+        "i": 0,
+        "name": "Cunning Action: Dash"
+      },
+      {
+        "i": 1,
+        "name": "Cunning Action: Disengage"
+      },
+      {
+        "i": 2,
+        "name": "Cunning Action: Hide"
+      },
+      {
+        "i": 3,
+        "name": "Thaumaturgy"
+      },
+      {
+        "i": 4,
+        "name": "Hellish Rebuke"
+      },
+      {
+        "i": 5,
+        "name": "Assassinate"
+      },
+      {
+        "i": 6,
+        "name": "Piercer: reroll damage"
+      },
+      {
+        "i": 7,
+        "name": "Piercer: critical hit"
+      }
+    ],
+    "stirge": {
+      "name": "Stirge 1",
+      "attacks": [
+        {
+          "name": "Blood Drain",
+          "type": "Action",
+          "attackBonus": 5,
+          "damageDice": "1d4+3",
+          "damageType": "piercing",
+          "effect": "On a hit it attaches. While attached it stops attacking; at the start of each stirge turn its target loses 1d4+3 HP. Track the attached target and blood drained.",
+          "source": "Lost Mine of Phandelver (2014), appendix B, printed p. 62",
+          "resourceId": "",
+          "cost": 0
+        }
+      ],
+      "actions": [
+        {
+          "name": "Attached blood loss",
+          "type": "Action",
+          "effect": "No attack roll; this is HP loss, not a fresh piercing hit. Apply manually after checking attachment.",
+          "damageDice": "1d4+3",
+          "damageType": "HP loss",
+          "source": "Lost Mine of Phandelver (2014), appendix B, printed p. 62"
+        }
+      ],
+      "spells": [],
+      "features": [],
+      "resources": []
+    }
+  }
+}

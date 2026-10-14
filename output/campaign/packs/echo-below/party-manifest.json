@@ -1,0 +1,1 @@
+{"schemaVersion":1,"id":"echo-below-party","version":"1.0.0","title":"Current Echo Below party migrations","requires":[{"id":"echo-below","version":"1.0.0"}],"appliesOnlyTo":"Echo Below campaigns with the pack explicitly installed"}

@@ -1,82 +1,69 @@
-VOICE STUDIO & SCENE NARRATION — 8 October 2026
+VOICE STUDIO — CURRENT WORKFLOW — 11 October 2026
 
-FIND IT
-Library > Voice studio. NPC cards also have Voice studio.
-Runbook openings have Prepare narration. Published journal entries and current
-recaps have Prepare spoken entry/recap. Shared, approved correspondence has
-Prepare spoken letter. Handouts have Prepare narration. The studio source picker
-collects these audience-approved selections in one place.
+OPEN IT
+Menu > Library > Voice studio, or Voice studio on an NPC card.
+Voice profiles & setup opens the same cast/audition workflow. Back to Voice Studio
+returns to recordings. Scene openings, published recaps, shared letters and
+approved handouts still have their existing Prepare narration shortcuts.
 
-AT THE TABLE
-1. Write a line or choose the exact published source text.
-2. Select a stock voice, delivery, and optional pronunciation corrections.
-3. Save. Expand Exact text sent for speech to review the actual spoken wording.
-4. Generate, or import audio made for the saved script/settings.
-5. Choose separate private headphones, preview the entire take, then approve it.
-6. Play approved voice to table. The floating transport has Pause, Resume, Skip,
-   and an immediate Stop. Mute all stops narration too.
+EXISTING ELEVENLABS AUDITIONS
+Choose Barthen, Sildar, Dracuseth or General narrator in Voice profiles & setup.
+Expand Completed plugin auditions. Every voice remains proposed until explicitly
+selected. Selecting a campaign voice is separate from approving a recorded line.
 
-Narration alone leaves the map and combat alone. Staging a visual and ambience
-has its own explicit Show staged visual & ambience action. Queueing is optional;
-Skip advances to the next queued approved recording. A finished recording does
-not automatically start another one.
+Plugin only means the report exists but the audio is not saved in this browser.
+Open in ElevenLabs opens an external tab: its audio is NOT routed by this app.
+Use headphones there. Download the existing sample, choose Save this audition
+locally, and import that file in Voice Studio after confirming its exact script.
+No generation is needed. The original plugin delivery settings were not reported.
 
-Use Approve text for table, then Subtitles only / read aloud myself if you prefer
-manual narration. Captions show the full selected passage, not timed word-by-word
-subtitles. Stop voice & subtitles clears them from the TV.
+Saved locally means the recording bytes and hash were verified. Open local
+recording brings that take back to Studio. A missing/invalid file gets a recovery
+message instead of an offline-ready claim. Local-service auditions also have
+Copy cached audition to Voice Studio; this copies existing audio without generating
+again and preserves mock labels. Imported copies do not select the voice or approve
+public playback automatically.
 
-PRIVATE PREVIEW
-Keep the computer default output on the table speakers. Choose named, physically
-separate headphones for previews. The app checks output identities and refuses
-private playback if separation cannot be established. A device change stops
-playback and clears output choices. Check your physical sound routing before play.
+RUN A LINE
+1. Select a saved recording or prepare the exact approved audience text.
+2. Save script, delivery and pronunciation changes. Old takes remain in history;
+   changes mark them outdated instead of replacing the approved recording.
+3. Import existing audio, or use a cached take. Choose separate private headphones.
+4. Preview the whole take privately, then approve that take.
+5. Play approved voice to table. The persistent strip says PRIVATE or TABLE and
+   names the output. Narration volume is independent of background ducking.
 
-Some browsers need microphone permission to expose output names. The alternate
-output picker explains this before requesting access; any microphone stream is
-immediately stopped, without recording or sending it. Unsupported routing leaves
-previews blocked. Manual narration and approved subtitles remain available.
+Pause restores the previous background volume. Resume ducks it again. Skip stops
+this line and may play the next queued approved recording. Stop voice clears audio
+and TV subtitles immediately, including pending file loads. Mute / Stop sound also
+interrupt narration. Opening narration alone does not switch the map, move tokens,
+or reset combat. Show staged visual & ambience is a separate deliberate action.
 
-LOCAL FILES & CHANGES
-Every take retains the exact script, NPC identity, voice/model, delivery settings,
-pronunciation corrections, source fingerprint, file hash, and approval history.
-Editing does not delete an earlier approved take; it makes that recording
-outdated until you restore its matching script/settings or approve a new take.
-Changes to approved recap events invalidate linked recap narration.
+Approve text, then Subtitles only / read aloud myself needs no recording/provider.
+Subtitles show the whole passage, not timed word-by-word captions. Changed approved
+recap events invalidate the linked recording and stop stale public narration.
 
-Recordings are stored locally in this browser. Use the existing full campaign
-backup: it embeds all local takes, including older takes. Restore as a new campaign
-on another browser. Provider keys, billing settings and sound-device choices are
-not included. Select outputs again after restoring. Do not clear browser storage
-before exporting a backup. Replay of saved takes makes no provider request.
+NO NEW PROVIDER REQUESTS BY DEFAULT
+Cached recordings remain usable when the service or internet is unavailable.
+Create mock take is available only in a practice campaign: it saves synthetic
+silence, not speech. Mock recordings cannot be approved for the live campaign.
+Real generation requires a new allowance saved in Voice profiles & setup; old
+service settings do not count as new approval in the current app session. Backend
+credit caps still apply. Account keys, billing settings and output choices are
+outside campaign exports. No new real provider requests were made for this update.
 
-PROVIDER STATUS FOR THIS UPDATE
-The workflow was tested with synthetic audio and simulated output devices in an
-isolated practice campaign. No real voice generation was made for this update.
-The local ElevenLabs service has a configured credential but generation is disabled;
-no successful local provider connection has been verified. Prior plugin auditions
-are separate from the app connection. Complete account/budget setup under Voice
-profiles & setup before real generation. No paid top-up was authorized or used.
+BACKUP & RESTORE
+Use the normal full campaign backup. It embeds the locally imported recordings,
+older takes, hashes, approvals and plugin generation references. Restore into a
+new campaign/profile and select audio outputs again. Device names are not exported.
+Replay uses the saved bytes and needs no new speech generation. Plugin-only links
+are not an offline audio backup; import their files first. Missing files should be
+restored or imported from an existing saved copy, not regenerated automatically.
 
-Each recording supports up to 5,000 characters and 12 MB of audio. Campaigns support
-500 recording entries with up to 100 takes each; the private provider history has
-a 2,000-request limit. Delivery controls currently use Multilingual v2. Split long
-recaps into shorter recordings. Emotional delivery still requires listening review.
-
-VERIFIED REHEARSAL
-- Exact audience text, pronunciation substitution, no whole DM scene sent.
-- Explicit approval; previous approved take preserved through edit/regeneration.
-- Private output blocked until selected; no public preview subtitles or fallback.
-- TV subtitles; narration volume independent of background music ducking.
-- Pause, resume, skip, stop, subtitle-only reading, cancellation.
-- Scene opening and spoken recap; changed outcomes stop stale narration.
-- Map, combat, tokens and character state unchanged by narration.
-- Offline replay without another generation request.
-- Full backup restored in a separate browser profile and replayed offline.
-- Ten sessions reopened; four recording files verified byte-for-byte in recovery.
-- Existing audition workflow and budget/credential guards still pass.
-
-TONIGHT
-Refresh the DM page and Player TV to load these changes. Phone service was left
-running. Run the existing Table check, confirm TV updates and each phone's character,
-play a familiar sound, and download a campaign backup. Use manual narration until
-your real provider and physical audio outputs have passed a short listening test.
+PHYSICAL OUTPUTS
+Private preview requires named headphones physically separate from table speakers
+and the computer default output. Unsupported or uncertain routing blocks preview.
+Device changes stop playback; previews never fall back to speakers. The app cannot
+prove where sound is physically heard from a simulated browser check. Headphone /
+speaker separation, volume and intelligibility remain physical checks, not claims
+from the automated rehearsal. Manual reading and subtitles remain available.

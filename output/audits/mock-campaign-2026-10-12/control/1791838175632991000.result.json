@@ -1,0 +1,350 @@
+{
+  "ok": true,
+  "result": {
+    "tokens": [
+      {
+        "id": "s4-wave-2-ochre-jelly-1",
+        "type": "ochre-jelly",
+        "enc": "wave-2",
+        "hp": 45
+      },
+      {
+        "id": "s4-wave-3-stirge-1",
+        "type": "stirge",
+        "enc": "wave-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-2",
+        "type": "stirge",
+        "enc": "wave-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-3",
+        "type": "stirge",
+        "enc": "wave-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-4",
+        "type": "stirge",
+        "enc": "wave-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-5",
+        "type": "stirge",
+        "enc": "wave-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-6",
+        "type": "stirge",
+        "enc": "wave-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-7",
+        "type": "stirge",
+        "enc": "wave-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-8",
+        "type": "stirge",
+        "enc": "wave-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-9",
+        "type": "stirge",
+        "enc": "wave-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-10",
+        "type": "stirge",
+        "enc": "wave-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-1",
+        "type": "wave-skeleton",
+        "enc": "wave-4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-2",
+        "type": "wave-skeleton",
+        "enc": "wave-4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-3",
+        "type": "wave-skeleton",
+        "enc": "wave-4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-4",
+        "type": "wave-skeleton",
+        "enc": "wave-4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-5",
+        "type": "wave-skeleton",
+        "enc": "wave-4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-6",
+        "type": "wave-skeleton",
+        "enc": "wave-4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-7",
+        "type": "wave-skeleton",
+        "enc": "wave-4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-8",
+        "type": "wave-skeleton",
+        "enc": "wave-4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-9",
+        "type": "wave-skeleton",
+        "enc": "wave-4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-6-ghoul-1",
+        "type": "ghoul",
+        "enc": "wave-6",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-6-ghoul-2",
+        "type": "ghoul",
+        "enc": "wave-6",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-6-ghoul-3",
+        "type": "ghoul",
+        "enc": "wave-6",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-1",
+        "type": "ghoul",
+        "enc": "wave-9",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-2",
+        "type": "ghoul",
+        "enc": "wave-9",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-3",
+        "type": "ghoul",
+        "enc": "wave-9",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-4",
+        "type": "ghoul",
+        "enc": "wave-9",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-5",
+        "type": "ghoul",
+        "enc": "wave-9",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-6",
+        "type": "ghoul",
+        "enc": "wave-9",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-7",
+        "type": "ghoul",
+        "enc": "wave-9",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-11-bugbear-1",
+        "type": "bugbear",
+        "enc": "wave-11",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-11-bugbear-2",
+        "type": "bugbear",
+        "enc": "wave-11",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-11-bugbear-3",
+        "type": "bugbear",
+        "enc": "wave-11",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-11-bugbear-4",
+        "type": "bugbear",
+        "enc": "wave-11",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-11-bugbear-5",
+        "type": "bugbear",
+        "enc": "wave-11",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-1",
+        "type": "wave-zombie",
+        "enc": "wave-12",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-2",
+        "type": "wave-zombie",
+        "enc": "wave-12",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-3",
+        "type": "wave-zombie",
+        "enc": "wave-12",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-4",
+        "type": "wave-zombie",
+        "enc": "wave-12",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-5",
+        "type": "wave-zombie",
+        "enc": "wave-12",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-6",
+        "type": "wave-zombie",
+        "enc": "wave-12",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-7",
+        "type": "wave-zombie",
+        "enc": "wave-12",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-8",
+        "type": "wave-zombie",
+        "enc": "wave-12",
+        "hp": 22
+      },
+      {
+        "id": "s4-wave-12-flameskull-1",
+        "type": "flameskull",
+        "enc": "wave-12",
+        "hp": 40
+      },
+      {
+        "id": "s4-wave-14-mormesk-1",
+        "type": "mormesk",
+        "enc": "wave-14",
+        "hp": 45
+      },
+      {
+        "id": "s4-wave-15-spectator-1",
+        "type": "spectator",
+        "enc": "wave-15",
+        "hp": 39
+      },
+      {
+        "id": "s4-wave-18-bugbear-1",
+        "type": "bugbear",
+        "enc": "wave-18",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-18-bugbear-2",
+        "type": "bugbear",
+        "enc": "wave-18",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-18-bugbear-3",
+        "type": "bugbear",
+        "enc": "wave-18",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-18-vhalak-1",
+        "type": "vhalak",
+        "enc": "wave-18",
+        "hp": 52
+      },
+      {
+        "id": "s4-wave-19-nezznar-1",
+        "type": "nezznar",
+        "enc": "wave-19",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-19-bugbear-1",
+        "type": "bugbear",
+        "enc": "wave-19",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-19-bugbear-2",
+        "type": "bugbear",
+        "enc": "wave-19",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-19-wave-spider-1",
+        "type": "wave-spider",
+        "enc": "wave-19",
+        "hp": 26
+      },
+      {
+        "id": "s4-wave-19-wave-spider-2",
+        "type": "wave-spider",
+        "enc": "wave-19",
+        "hp": 26
+      },
+      {
+        "id": "s4-wave-19-wave-spider-3",
+        "type": "wave-spider",
+        "enc": "wave-19",
+        "hp": 26
+      },
+      {
+        "id": "s4-wave-19-wave-spider-4",
+        "type": "wave-spider",
+        "enc": "wave-19",
+        "hp": 26
+      }
+    ],
+    "refresh": "()=>{let s=__mock.state.state;for(let id of ['pc-aldric','pc-donavan']){let p=s.party[id],names=new Set(p.spells.map(x=>x.name)),prof=ECHO_PARTY_DATA.proficiencyForLevel(p.level);for(let list of [p.actions,p.attacks])for(let a of list)if(names.has(a.name)){let cleric=id==='pc-donavan'&&['Command','Identify','Cure Wounds','Healing Word','Bless','Sacred Flame','Guiding Bolt','Thaumaturgy'].includes(a.name),m=ECHO_PARTY_DATA.abilityMod(p.abilities[cleric?'wis':'int']);if(Number.isFinite(a.attackBonus))a.attackBonus=prof+m;if(Number.isFinite(a.saveDC))a.saveDC=8+prof+m;if(p.level>=5&&['Fire Bolt','Ray of Frost','Mind Sliver','Sacred Flame'].includes(a.name))a.damageDice=a.damageDice.replace(/^1d/,'2d');}}__mock.combat.commit('MOCK reviewed caster math at current levels');}"
+  }
+}

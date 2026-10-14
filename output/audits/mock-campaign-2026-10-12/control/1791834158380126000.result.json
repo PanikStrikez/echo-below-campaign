@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791834158430-ov4nelyj",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              3
+            ],
+            "total": 9,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:38 PM"
+          },
+          {
+            "id": "pa-1791834158430-xxy64bou",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-1",
+            "text": "Redbrand 1: 9 vs AC 14: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

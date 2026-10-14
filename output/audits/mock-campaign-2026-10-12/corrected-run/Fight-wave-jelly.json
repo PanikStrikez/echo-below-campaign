@@ -1,0 +1,352 @@
+[
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791838703126-51v6xwbv",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              6
+            ],
+            "total": 14,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:23 PM"
+          },
+          {
+            "id": "pa-1791838703126-j10e21qp",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              4
+            ],
+            "total": 9,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:23 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-2-ochre-jelly-1",
+            "text": "Ochre Jelly: 14 vs AC 8: hit, 9 piercing \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791838704835-kjipwnl8",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              1
+            ],
+            "total": 9,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:24 PM"
+          },
+          {
+            "id": "pa-1791838704835-bx0n9kvi",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              4,
+              2
+            ],
+            "total": 6,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:24 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-2-ochre-jelly-1",
+            "text": "Ochre Jelly: 9 vs AC 8: miss, 0 cold \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791838705308-ixm679d3",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              12
+            ],
+            "total": 20,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:25 PM"
+          },
+          {
+            "id": "pa-1791838705308-z1kr6qry",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "2d10",
+            "parts": [
+              7,
+              4
+            ],
+            "total": 11,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:25 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-2-ochre-jelly-1",
+            "text": "Ochre Jelly: 20 vs AC 8: hit, 11 fire \u2192 11; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791838705832-kdxkt9k2",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              5
+            ],
+            "total": 12,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:25 PM"
+          },
+          {
+            "id": "pa-1791838705832-leotn39t",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              7
+            ],
+            "total": 11,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:25 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-2-ochre-jelly-1",
+            "text": "Ochre Jelly: 12 vs AC 8: hit, 11 bludgeoning \u2192 11; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791838705987-ypc8wk51",
+              "label": "Unarmed Strike \u00b7 attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                1
+              ],
+              "total": 8,
+              "natural": 1,
+              "public": true,
+              "kind": "digital",
+              "time": "2:58:25 PM"
+            },
+            {
+              "id": "pa-1791838705987-h67u28ku",
+              "label": "Unarmed Strike \u00b7 effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                2
+              ],
+              "total": 6,
+              "natural": 2,
+              "public": true,
+              "kind": "digital",
+              "time": "2:58:25 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-2-ochre-jelly-1",
+              "text": "Ochre Jelly: 8 vs AC 8: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Ochre Jelly"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791838706140-idlp13d5",
+            "label": "Martial Arts unarmed strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              18
+            ],
+            "total": 25,
+            "natural": 18,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:26 PM"
+          },
+          {
+            "id": "pa-1791838706140-atbx7o3p",
+            "label": "Martial Arts unarmed strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              7
+            ],
+            "total": 11,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:26 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-2-ochre-jelly-1",
+            "text": "Ochre Jelly: 25 vs AC 8: hit, 11 bludgeoning \u2192 11; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838706687-mh5b26xj",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              12
+            ],
+            "total": 20,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:26 PM"
+          },
+          {
+            "id": "pa-1791838706687-q2xykfk9",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              4
+            ],
+            "total": 9,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:26 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-2-ochre-jelly-1",
+            "text": "Ochre Jelly: 20 vs AC 8: hit, 9 bludgeoning \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "complete": "hostiles defeated or fled",
+    "state": {
+      "turn": {
+        "scene": "lmop-map-wave-south",
+        "round": 2,
+        "order": [
+          "pc-ringgo",
+          "pc-donavan",
+          "pc-aldric",
+          "pc-trista",
+          "pc-pebble",
+          "s4-wave-2-ochre-jelly-1"
+        ],
+        "index": 0
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 43,
+          "maxHp": 47
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 45,
+          "maxHp": 45
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 43,
+          "maxHp": 43
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 50,
+          "maxHp": 63
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 42,
+          "maxHp": 44
+        }
+      ],
+      "foes": [],
+      "due": []
+    }
+  }
+]

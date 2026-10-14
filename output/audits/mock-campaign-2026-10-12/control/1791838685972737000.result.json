@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "ringgo-arrows",
+      "name": "Arrows",
+      "max": 40,
+      "current": 19,
+      "restoreShort": 0,
+      "restoreLong": false,
+      "unit": "arrows",
+      "slotLevel": 0
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "app code and isolated tests; live campaign untouched",
+  "focusedTestsPassed": 23,
+  "browserPasses": [
+    "combat",
+    "outcomes",
+    "fresh-profile recovery",
+    "source-map staging",
+    "party-action panels (mocked HTTP)"
+  ],
+  "earlierFivePhoneIntegrationPassed": 9,
+  "faultInjection": "actual coordinator with in-memory record and index write failures",
+  "physicalDevicesTested": false,
+  "realProviderRequests": 0,
+  "limits": [
+    "final full-screen capture repeat timed out",
+    "latest session-map screenshot timed out",
+    "no complete story rerun or full mechanical certification"
+  ],
+  "report": "Fix-Verification-Report.txt"
+}

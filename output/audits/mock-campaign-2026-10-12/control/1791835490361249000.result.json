@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-bugbears-2",
+    "escape": {
+      "id": "1791835490462-g6yc1lhew0b",
+      "label": "Bugbear 2 STR check to escape Web DC14",
+      "notation": "1d20+2",
+      "parts": [
+        2
+      ],
+      "total": 4,
+      "kind": "digital",
+      "time": "02:04 PM"
+    },
+    "escaped": false
+  }
+}

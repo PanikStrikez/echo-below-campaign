@@ -1,0 +1,32 @@
+{
+  "id": "lmop-shrine-of-luck",
+  "title": "Phandalin · Shrine of Luck",
+  "image": "lmop-visuals/shrine-of-luck.png",
+  "key": "P07",
+  "chapter": "Phandalin",
+  "reveal": "When the party visits",
+  "sourceRecordIds": [
+    "s2-town"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-town",
+      "title": "5 · Follow the party’s town lead",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Shrine of Luck, SMALL shrine constructed of stones reused from local ruins, dedicated to Tymora. Open modest town shrine, ordinary offerings and luck/coin motif, no cathedral or giant goddess statue. Sister Garaele young female elf acolyte with scholarly demeanor, no magic action or hidden Harper badge.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Shrine of Luck\nObservable scene and constraints: Shrine of Luck, SMALL shrine constructed of stones reused from local ruins, dedicated to Tymora. Open modest town shrine, ordinary offerings and luck/coin motif, no cathedral or giant goddess statue. Sister Garaele young female elf acolyte with scholarly demeanor, no magic action or hidden Harper badge.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "bc136bf339969ff7cc124e653f01c8275b45cea7edbb4b343d0bfed0b3b55aad",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-shrine-of-luck.png",
+  "generatedAt": "2026-10-12T16:17:33.471Z",
+  "candidateHash": "3392a5040f356f58f0f5d07533161b49de798c5ffc0569c1f71b39233f92ac46",
+  "review": "passed",
+  "reviewedHash": "3392a5040f356f58f0f5d07533161b49de798c5ffc0569c1f71b39233f92ac46",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.938Z",
+  "installedHash": "3392a5040f356f58f0f5d07533161b49de798c5ffc0569c1f71b39233f92ac46",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/shrine-of-luck.png"
+}

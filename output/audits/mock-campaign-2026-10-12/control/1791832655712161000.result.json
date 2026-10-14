@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "goblin-1",
+    "action": {
+      "actor": "goblin-1",
+      "label": "Shortbow",
+      "targets": [
+        "Donavan"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791832655751-10xqaz6c",
+          "label": "Shortbow · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            4
+          ],
+          "total": 8,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "1:17:35 PM"
+        },
+        {
+          "id": "pa-1791832655751-ez4m95ef",
+          "label": "Shortbow · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:17:35 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-donavan",
+          "text": "Donavan: 8 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

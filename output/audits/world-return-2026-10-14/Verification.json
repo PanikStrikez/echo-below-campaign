@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "Newly approved records appear against existing departure baseline",
+    "NPC, quest, rescue and promise records are linked with supporting IDs",
+    "Private proposal is source-backed, player text is filtered and preparing it is read-only",
+    "Changed sources block stale TV narration",
+    "Deliberately reviewed TV publication excludes private prompts and future consequences",
+    "Actual arrival is explicit and idempotent; scene preparation does not duplicate history",
+    "Location links enter existing correction review without changing actual visits or records"
+  ],
+  "errors": [],
+  "physicalDevices": false,
+  "liveConnectionsChanged": false
+}

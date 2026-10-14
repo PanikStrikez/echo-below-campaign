@@ -1,0 +1,116 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "aftermath",
+      "read": [
+        "The woods settle. The two horses still block the road. Broken brush and small tracks lead north, away from the wagon and into thicker trees.",
+        "Among the goblins’ castoffs is a rough dark stone token. One side bears a single worn word: BELOW. The other carries part of a circle rubbed almost smooth."
+      ],
+      "run": [
+        "Any inspection of the ambush area reveals the goblin trail north of the road. A DC 10 Survival check adds that about a dozen goblins used it and two human-sized captives were dragged away. Following a fleeing goblin or questioning a captive also establishes the lead.",
+        "A captive goblin knows that the dwarf and his map were sent toward Cragmaw Castle; it can lead or direct the party toward the hideout.",
+        "If they miss the BELOW token, move it to the hideout. It is optional and never required to continue."
+      ],
+      "ask": [
+        "“Do you follow the trail now, rest, or take the wagon toward Phandalin?”",
+        "If they follow the trail, ask who secures the wagon and whether the whole party travels together.",
+        "If they examine the token, ask what they do with it; do not require a check to notice its basic features."
+      ]
+    },
+    {
+      "id": "trail",
+      "read": [
+        "The goblin trail narrows under the trees. Broken twigs and churned earth show several small creatures passed this way, with heavier marks among them. The road disappears behind you.",
+        "Each disturbed patch offers a place to slow down and look, while the thicker growth limits what you can see ahead. You can keep the heavier marks in view, check the ground before committing your weight, or pause to decide how closely you want to follow."
+      ],
+      "run": [
+        "The hideout is about five miles from the ambush. Roughly ten minutes along the trail is a snare: the lead character notices automatically with passive Perception 12 or higher; otherwise DC 12 Perception. If triggered, DC 10 Dexterity save to avoid being hoisted 10 feet and restrained. A character cut down carelessly takes 1d6 bludgeoning.",
+        "Another ten minutes along is a concealed 10-foot-deep pit: the lead notices automatically with passive Perception 15 or higher; otherwise DC 15 Perception. If triggered, DC 10 Dexterity save to avoid the fall; falling deals 1d6 bludgeoning damage.",
+        "A careful physical plan, tool, familiar, or probing pole can avoid a trap without a roll. Trista and Ringgo can scout; Donavan can document tracks; invite Pebble and Aldric to add their own methods. Pebble may remember mountain terrain but is uneasy about losing the route.",
+        "A short rest is possible if the party secures a defensible place. It costs time, and enemies may respond to noise."
+      ],
+      "ask": [
+        "“Who leads? Are you moving quickly or watching for traps?”",
+        "Ask what happens to the wagon and supplies while the party pursues the trail."
+      ]
+    },
+    {
+      "id": "cave",
+      "read": [
+        "The trail ends below a wooded hill. A shallow stream runs from a dark cave mouth, with a narrow path beside it. Briars crowd the bank. Cold water murmurs over stone.",
+        "The stream and the strip of dry ground offer different approaches to the same black opening. From outside, you can study the banks and the briars before stepping beneath the hill; the sound of running water makes the darkness beyond seem deeper."
+      ],
+      "run": [
+        "Area 1 is the cave mouth, 2-foot-deep stream, and briars. A noisy arrival can alert the bored goblin lookouts in area 2. The streamside thickets give half cover; cave chambers beyond areas 1–2 are dark.",
+        "Switch to the interior map once they enter. Reveal only what their position and light allow. One interior map square equals 5 feet."
+      ],
+      "ask": [
+        "“How do you approach? Who scouts the entrance? Are you carrying a light?”",
+        "“Where are the wagon and extra supplies?”"
+      ]
+    },
+    {
+      "id": "blind",
+      "read": [
+        "Across the stream, the briars are thick enough to swallow the path. A board creaks faintly behind them, then goes still.",
+        "The vegetation interrupts your view of whatever lies beyond it. The stream remains an obvious landmark beside the approach, but the brief creak gives you a reason to watch the cover rather than hurry past it."
+      ],
+      "run": [
+        "Two goblins wait in a hollowed-out blind on the east side of the stream. The surrounding thickets give half cover. They can fire from cover and may surprise careless intruders.",
+        "If the party made loud noise at the entrance, the lookouts notice and shoot through the briars. Do not automatically alert every cave room.",
+        "Goblin: AC 15, HP 7, attack +4 for 1d6+2, bonus-action Hide or Disengage."
+      ],
+      "ask": [
+        "“Do you cross, watch, call out, or try another path?”"
+      ]
+    },
+    {
+      "id": "kennel",
+      "read": [
+        "A sharp animal smell cuts through the damp cave air. Chains scrape against stone. Three pairs of eyes turn toward you from the dark, and low growls fill the cramped chamber.",
+        "The scrape of the chains marks the animals' movements more clearly than the dim light does. There is little room to spread out here, and the growling rises when attention turns toward them. You can stop at the edge of the chamber before choosing how to approach."
+      ],
+      "run": [
+        "Three wolves are chained here. They cannot initially reach someone who stays back on the entrance steps, but barking can carry.",
+        "DC 15 Animal Handling calms them; food can distract them with a DC 10 check. No fight is required.",
+        "The narrow chimney to area 8 is at the back of the kennel, beyond the wolves’ normal chain reach from the entrance. Reaching it requires a plan for the wolves. Climbing calls for DC 10 Athletics; a poor fall can deal 1d6 bludgeoning damage.",
+        "Wolf: AC 13, HP 11, speed 40 ft.; bite +4 for 2d4+2 piercing, DC 11 Strength save or prone. Pack Tactics gives advantage when an ally is beside the target."
+      ],
+      "ask": [
+        "“Do you approach, offer food, try to calm them, or keep your distance?”"
+      ]
+    },
+    {
+      "id": "passage",
+      "read": [
+        "The main passage climbs steeply beside the stream. Spray darkens the stone, and loose rubble shifts underfoot. Above the noise, you can make out another passage crossing high overhead.",
+        "Water follows the slope past your boots, leaving the rising stone slick and dark. The crossing overhead is separate from the route at your feet; from here, you can judge the climb and look for movement above without knowing where either passage ends."
+      ],
+      "run": [
+        "Rubble is difficult terrain. The fragile ledge collapses under more than 100 pounds; DC 10 Dexterity save, taking 2d6 bludgeoning on a failure or half on a success. Failure also knocks the creature prone.",
+        "Route at a glance: the stream climbs toward the overpass (area 5); a higher side passage west reaches Yeemik’s den (area 6); the den connects east across the bridge to the twin pools (area 7), then south to Klarg (area 8). The kennel chimney is a separate shortcut to area 8.",
+        "Noise from nearby goblins may be heard by careful listeners. Show the hazard through crumbling stone and spray before asking for a risky crossing."
+      ],
+      "ask": [
+        "“Do you take the stream passage, test the rubble, or look for another route?”"
+      ]
+    },
+    {
+      "id": "bridge",
+      "read": [
+        "A rickety bridge crosses the passage high above the water. A small figure shifts against the shadowed ceiling. Farther upstream, the sound of pooled water presses through the cave.",
+        "The bridge's boards and supports stand out against the rock when your light catches them. Below, the stream continues along the climbing passage. The figure above and the louder water ahead give you two different things to watch as you decide whether to advance."
+      ],
+      "run": [
+        "One goblin guards the bridge about 20 feet above the stream. If it spots the party, it signals area 7; the first flood arrives on the following round on the pool goblins’ initiative count.",
+        "Telegraph a flood with a physical roar and rising water. In the surge’s path, DC 10 Dexterity save to avoid being swept away; a caught creature can try DC 15 Strength to hold on. Failure washes it toward area 1 and deals 1d6 bludgeoning damage.",
+        "The goblins at the pools can release a second surge if still able. The bridge can also break; a fall from it is dangerous.",
+        "Goblin: AC 15, HP 7, attack +4 for 1d6+2, bonus-action Hide or Disengage."
+      ],
+      "ask": [
+        "“Do you move under the bridge, try to reach it, or deal with the watcher first?”"
+      ]
+    }
+  ]
+}

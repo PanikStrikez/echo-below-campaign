@@ -1,0 +1,82 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-aldric",
+      "abilities": {
+        "str": 8,
+        "dex": 14,
+        "con": 16,
+        "int": 18,
+        "wis": 12,
+        "cha": 16
+      },
+      "level": 3,
+      "feats": []
+    },
+    {
+      "id": "pc-pebble",
+      "abilities": {
+        "str": 18,
+        "dex": 10,
+        "con": 14,
+        "int": 8,
+        "wis": 13,
+        "cha": 12
+      },
+      "level": 2,
+      "feats": [
+        {
+          "name": "Crusher",
+          "text": "Once on own turn move a qualifying target 5 feet after bludgeoning hit; critical hit grants advantage to attacks against it until next turn.",
+          "source": "Tasha’s / Pebble handout p. 3"
+        }
+      ]
+    },
+    {
+      "id": "pc-trista",
+      "abilities": {
+        "str": 14,
+        "dex": 18,
+        "con": 17,
+        "int": 9,
+        "wis": 11,
+        "cha": 12
+      },
+      "level": 2,
+      "feats": []
+    },
+    {
+      "id": "pc-ringgo",
+      "abilities": {
+        "str": 7,
+        "dex": 20,
+        "con": 14,
+        "int": 10,
+        "wis": 10,
+        "cha": 18
+      },
+      "level": 4,
+      "feats": [
+        {
+          "name": "Piercer",
+          "text": "DEX +1 (now 20). Once per turn on a piercing hit, reroll one damage die from the attack and use the new roll. On a piercing critical hit, add one extra weapon damage die.",
+          "source": "Tasha’s Cauldron of Everything · feat (2014 rules)"
+        }
+      ]
+    },
+    {
+      "id": "pc-donavan",
+      "abilities": {
+        "str": 12,
+        "dex": 14,
+        "con": 16,
+        "int": 18,
+        "wis": 16,
+        "cha": 16
+      },
+      "level": 3,
+      "feats": []
+    }
+  ]
+}

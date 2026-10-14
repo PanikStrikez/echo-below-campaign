@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "key": "echo-run-workspace:practice-1791831430047-0aolt/session-01",
+      "length": 7
+    },
+    {
+      "key": "echo-dm-text-size",
+      "length": 1
+    },
+    {
+      "key": "echo-scene-workspaces-v1",
+      "length": 3933
+    },
+    {
+      "key": "echo-session-map:practice-1791831430047-0aolt/session-1791836883440-m1v2k",
+      "length": 140
+    },
+    {
+      "key": "echo-run-workspace:practice-1791831430047-0aolt/session-1791831446752-kvkr8",
+      "length": 7
+    },
+    {
+      "key": "echo-run-workspace:practice-1791831430047-0aolt/session-1791834008846-0y4mj",
+      "length": 7
+    },
+    {
+      "key": "echo-session-map:practice-1791831430047-0aolt/session-1791834008846-0y4mj",
+      "length": 146
+    },
+    {
+      "key": "echo-run-workspace:practice-1791831430047-0aolt/session-1791836883440-m1v2k",
+      "length": 7
+    },
+    {
+      "key": "echo-session-map:practice-1791831430047-0aolt/session-01",
+      "length": 123
+    },
+    {
+      "key": "echo-session-map:practice-1791831430047-0aolt/session-1791831446752-kvkr8",
+      "length": 136
+    }
+  ]
+}

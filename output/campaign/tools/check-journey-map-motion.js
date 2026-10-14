@@ -12,6 +12,9 @@ class Element {
   }
   appendChild(child) { this.children.push(child); return child; }
   replaceChildren(...children) { this.children = children; }
+  get childElementCount() { return this.children.length; }
+  querySelector(selector) { return selector === 'img.scene-image' ? this.children.find(e => e.tagName === 'img' && e.className.split(' ').includes('scene-image')) || null : null; }
+  getAttribute(name) { return this.attributes[name] ?? null; }
   addEventListener() {}
   setAttribute(name, value) { this.attributes[name] = value; }
 }
@@ -36,7 +39,7 @@ const payload = mapScene => reliability.publicPayload({
   scene: 'region-lmop', map: { scenes: { 'region-lmop': maps.publicScene(mapScene) } }, tokens: []
 });
 const board = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
-const start = board.indexOf('  function renderStage(mode) {');
+const start = board.indexOf('  const stageRenderKeys = new WeakMap();');
 const end = board.indexOf('  function addSmallButton(', start);
 assert(start >= 0 && end > start);
 vm.runInContext(board.slice(start, end), context);
@@ -56,8 +59,15 @@ assert(hasAmbient());
 assert(descendants(stage).find(el => el.className === 'journey-ambient').attributes['aria-hidden'] === 'true');
 assert.equal(stage.style['--journey-water-phase'], `${-(now / 1000 % 18)}s`);
 now += 2000;
+const oldAmbient = descendants(stage).find(el => el.className === 'journey-ambient');
+const initialPhase = stage.style['--journey-water-phase'];
 context.renderStage('player');
-assert.equal(stage.style['--journey-water-phase'], `${-(now / 1000 % 18)}s`, 'TV sync must continue the loop phase');
+assert.equal(descendants(stage).find(el => el.className === 'journey-ambient'), oldAmbient, 'Unchanged TV sync retains the running animation node');
+assert.equal(stage.style['--journey-water-phase'], initialPhase, 'A retained animation keeps its original delay and continues naturally');
+context.state.tokens = [{id:'phase-fixture',team:'pc',placed:false,x:10,y:10}];
+context.renderStage('player');
+assert.notEqual(descendants(stage).find(el => el.className === 'journey-ambient'), oldAmbient, 'Changed state rebuilds the layer');
+assert.equal(stage.style['--journey-water-phase'], `${-(now / 1000 % 18)}s`, 'A rebuilt layer resumes the absolute loop phase');
 
 // A toggle survives save normalization and both public filters, then removes all motion layers.
 const paused = maps.normalize({ scenes: { 'region-lmop': { ...region, journeyMotion: false } } });

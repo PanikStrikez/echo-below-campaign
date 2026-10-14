@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-bugbears-1",
+    "action": {
+      "actor": "s2-hideout-bugbears-1",
+      "label": "Morningstar",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791835489384-7txqdbz3",
+          "label": "Morningstar · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            14
+          ],
+          "total": 18,
+          "natural": 14,
+          "public": false,
+          "kind": "digital",
+          "time": "2:04:49 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 18 vs AC 14: hit, physical base 4, 4 piercing → 4; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  }
+}

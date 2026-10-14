@@ -1,0 +1,36 @@
+{
+  "id": "lmop-hobgoblin-barracks",
+  "title": "Cragmaw Castle · Area 6 · Hobgoblin barracks",
+  "image": "lmop-visuals/hobgoblin-barracks.png",
+  "key": "C06",
+  "chapter": "Cragmaw Castle",
+  "reveal": "On entering area 6",
+  "sourceRecordIds": [
+    "s3-area6"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area6",
+      "title": "Area 6 · Hobgoblin barracks",
+      "read": [
+        "This room is surprisingly orderly. Weapons hang on brackets above four pallets, and the floor has been swept clear of rubble.",
+        "The swept floor and arranged weapons stand out against the ruin you passed on the way here. The pallets leave recognizable places to rest and narrow spaces to move between them. You can inspect the room from its edge or check which visible exit you want watched."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Hobgoblin barracks, FOUR straw pallets/bedrolls on swept floor, damaged NORTH wall, weapons in wall brackets: spears, swords, morningstars. FOUR disciplined hobgoblins resting/guarding. No bunks, piles of floor rubble, bugbears or throne. Dim daylight through slits.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 6 · Hobgoblin barracks\nObservable scene and constraints: Hobgoblin barracks, FOUR straw pallets/bedrolls on swept floor, damaged NORTH wall, weapons in wall brackets: spears, swords, morningstars. FOUR disciplined hobgoblins resting/guarding. No bunks, piles of floor rubble, bugbears or throne. Dim daylight through slits.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "640d896d9e143664637bd0cb788eaf2ed7cc960e59030509cd9fded5cdde7ad9",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-hobgoblin-barracks.png",
+  "generatedAt": "2026-10-12T16:25:51.125Z",
+  "candidateHash": "8a0fcf199dd1468b8698fcf95a7524291e05bdcd6e4af6b4f4b1508dc79576de",
+  "review": "passed",
+  "reviewedHash": "8a0fcf199dd1468b8698fcf95a7524291e05bdcd6e4af6b4f4b1508dc79576de",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.723Z",
+  "installedHash": "8a0fcf199dd1468b8698fcf95a7524291e05bdcd6e4af6b4f4b1508dc79576de",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/hobgoblin-barracks.png"
+}

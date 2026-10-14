@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "result": {
+    "roll": {
+      "id": "1791831789323-cr4ahbdtncn",
+      "label": "Pebble initiative",
+      "notation": "1d20",
+      "parts": [
+        9
+      ],
+      "total": 9,
+      "kind": "digital",
+      "time": "01:03 PM"
+    },
+    "damageFn": "(id, amount, type, label) => applyReviewedDamage({ mode: 'damage', type, amount: String(amount), selected: [id], overrides: {}, amounts: {}, conditions: {}, label })"
+  }
+}

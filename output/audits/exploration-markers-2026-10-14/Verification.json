@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "Selecting a marker explains relevance and questions without changing gameplay, events or travel",
+    "Marker opens its bound encounter and returns without publishing or recording a visit",
+    "Existing improvisation path remains optional and preserves the prepared scene",
+    "Reviewed private postponement appears on marker and in linked-change preview",
+    "DM status changes leave tokens, fog, display and travel states unchanged and stay out of public journal",
+    "Outcome undo and redo refresh marker state",
+    "Reviewed status and selected marker survive save/reload",
+    "Private marker choices absent from player-TV module runtime",
+    "Phone transport snapshot excludes private location review and marker context"
+  ],
+  "errors": [],
+  "environment": "Fresh Chrome profile and disposable local services",
+  "liveServicesChanged": false,
+  "physicalDevices": false
+}

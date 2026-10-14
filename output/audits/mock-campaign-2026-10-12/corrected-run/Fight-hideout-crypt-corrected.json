@@ -1,0 +1,848 @@
+[
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791836710673-w0xstudn",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              5
+            ],
+            "total": 11,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:10 PM"
+          },
+          {
+            "id": "pa-1791836710673-mhel9418",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              6
+            ],
+            "total": 10,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:10 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-2",
+            "text": "Crypt skeleton 2: 11 vs AC 13: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791836712140-qrcnk2j9",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              2
+            ],
+            "total": 8,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:12 PM"
+          },
+          {
+            "id": "pa-1791836712140-613ah8sf",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:12 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-1",
+            "text": "Crypt skeleton 1: 8 vs AC 13: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Crypt skeleton 1"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836712310-jqq5ucl3",
+            "label": "Martial Arts unarmed strike \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              6
+            ],
+            "total": 12,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:12 PM"
+          },
+          {
+            "id": "pa-1791836712310-vt1w9t0w",
+            "label": "Martial Arts unarmed strike \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:12 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-1",
+            "text": "Crypt skeleton 1: 12 vs AC 13: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791836712817-bqdob6q5",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              18
+            ],
+            "total": 24,
+            "natural": 18,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:12 PM"
+          },
+          {
+            "id": "pa-1791836712817-woqbfuzo",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              4
+            ],
+            "total": 4,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:12 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-2",
+            "text": "Crypt skeleton 2: 24 vs AC 13: hit, 4 cold \u2192 4; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-hideout-crypt-2",
+    "action": {
+      "actor": "s2-hideout-crypt-2",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836713374-0bmdupcb",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            7
+          ],
+          "total": 11,
+          "natural": 7,
+          "public": false,
+          "kind": "digital",
+          "time": "2:25:13 PM"
+        },
+        {
+          "id": "pa-1791836713374-tvblst0y",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            3
+          ],
+          "total": 5,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:25:13 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 11 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s2-hideout-crypt-3",
+    "action": {
+      "actor": "s2-hideout-crypt-3",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836713849-hiy8di0i",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            20
+          ],
+          "total": 24,
+          "natural": 20,
+          "public": false,
+          "kind": "digital",
+          "time": "2:25:13 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 24 vs AC 14: critical hit, physical base 0, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s2-hideout-crypt-1",
+    "action": {
+      "actor": "s2-hideout-crypt-1",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836714743-n41a46ah",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            7
+          ],
+          "total": 11,
+          "natural": 7,
+          "public": false,
+          "kind": "digital",
+          "time": "2:25:14 PM"
+        },
+        {
+          "id": "pa-1791836714743-gnao9l5b",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            3
+          ],
+          "total": 5,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:25:14 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 11 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791836715164-f92sy4e5",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              8
+            ],
+            "total": 14,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:15 PM"
+          },
+          {
+            "id": "pa-1791836715164-eag7lk1e",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              4
+            ],
+            "total": 4,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:15 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-1",
+            "text": "Crypt skeleton 1: 14 vs AC 13: hit, 4 fire \u2192 4; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791836715680-sqkoaoox",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              19
+            ],
+            "total": 25,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:15 PM"
+          },
+          {
+            "id": "pa-1791836715680-85sq0dut",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "2d8+4",
+            "parts": [
+              5,
+              7
+            ],
+            "total": 16,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:15 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-1",
+            "text": "Crypt skeleton 1: 25 vs AC 13: critical hit, 16 bludgeoning \u2192 16; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791836716177-b16vsz9n",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              17
+            ],
+            "total": 23,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:16 PM"
+          },
+          {
+            "id": "pa-1791836716177-w2005yfi",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:16 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-2",
+            "text": "Crypt skeleton 2: 23 vs AC 13: hit, 8 piercing \u2192 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791836717690-zzk4uhyv",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              2
+            ],
+            "total": 8,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:17 PM"
+          },
+          {
+            "id": "pa-1791836717690-jc6a6m2e",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:17 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-2",
+            "text": "Crypt skeleton 2: 8 vs AC 13: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Crypt skeleton 2"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836717860-mdc2ycmz",
+            "label": "Martial Arts unarmed strike \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              19
+            ],
+            "total": 25,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:17 PM"
+          },
+          {
+            "id": "pa-1791836717861-fmasegcq",
+            "label": "Martial Arts unarmed strike \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:17 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-2",
+            "text": "Crypt skeleton 2: 25 vs AC 13: hit, 9 bludgeoning \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791836718468-4nusgfcb",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              2
+            ],
+            "total": 8,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:18 PM"
+          },
+          {
+            "id": "pa-1791836718468-7gfove1i",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              3
+            ],
+            "total": 3,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:18 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-3",
+            "text": "Crypt skeleton 3: 8 vs AC 13: miss, 0 cold \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-hideout-crypt-3",
+    "action": {
+      "actor": "s2-hideout-crypt-3",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836718958-5fdazy8a",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            17
+          ],
+          "total": 21,
+          "natural": 17,
+          "public": false,
+          "kind": "digital",
+          "time": "2:25:18 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 21 vs AC 14: hit, physical base 0, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        },
+        {
+          "actor": "pc-pebble",
+          "label": "Interception",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791836720298-ekrqmzr8",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              5
+            ],
+            "total": 11,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:20 PM"
+          },
+          {
+            "id": "pa-1791836720299-eg48khpi",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              7
+            ],
+            "total": 7,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:20 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-3",
+            "text": "Crypt skeleton 3: 11 vs AC 13: miss, 0 fire \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791836720887-6c81xeso",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              2
+            ],
+            "total": 8,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:20 PM"
+          },
+          {
+            "id": "pa-1791836720887-v1zyamjj",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:20 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-3",
+            "text": "Crypt skeleton 3: 8 vs AC 13: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791836721506-erij90jw",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              15
+            ],
+            "total": 21,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:21 PM"
+          },
+          {
+            "id": "pa-1791836721506-ss67aqg3",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:21 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-3",
+            "text": "Crypt skeleton 3: 21 vs AC 13: hit, 9 piercing \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791836722900-jgtq8tlp",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              19
+            ],
+            "total": 25,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:22 PM"
+          },
+          {
+            "id": "pa-1791836722900-dip4fle1",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              6
+            ],
+            "total": 10,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:22 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-crypt-3",
+            "text": "Crypt skeleton 3: 25 vs AC 13: hit, 10 bludgeoning \u2192 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "complete": "hostiles defeated or fled",
+    "state": {
+      "turn": {
+        "scene": "redbrand-hideout",
+        "round": 3,
+        "order": [
+          "pc-ringgo",
+          "pc-trista",
+          "pc-donavan",
+          "s2-hideout-crypt-2",
+          "s2-hideout-crypt-3",
+          "s2-hideout-crypt-1",
+          "pc-aldric",
+          "pc-pebble"
+        ],
+        "index": 2
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 17,
+          "maxHp": 21
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 24,
+          "maxHp": 24
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 24,
+          "maxHp": 24
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 23,
+          "maxHp": 23
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 16,
+          "maxHp": 23
+        }
+      ],
+      "foes": [],
+      "due": []
+    }
+  }
+]

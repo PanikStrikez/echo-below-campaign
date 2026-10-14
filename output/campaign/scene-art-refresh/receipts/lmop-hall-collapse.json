@@ -1,0 +1,36 @@
+{
+  "id": "lmop-hall-collapse",
+  "title": "Cragmaw Castle · Area 2 · Hall collapse",
+  "image": "lmop-visuals/hall-collapse.png",
+  "key": "C02B",
+  "chapter": "Cragmaw Castle",
+  "reveal": "Only if the trap triggers",
+  "sourceRecordIds": [
+    "s3-area2"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area2",
+      "title": "Area 2 · Falling rubble",
+      "read": [
+        "A wide hall disappears into half-light. Dust lies thick around a pile of fallen plaster, and closed doors lead away on either side.",
+        "The fallen plaster marks one part of the floor as different from the rest. Beyond it, the closed doors give you choices without revealing what lies behind them. You can inspect the ground, listen at a door, or choose a position that keeps the entrance in sight."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "SAME entrance corridor, now LOCAL ceiling-collapse variant: fallen heavy stones and wooden beams amid dust in eastern corridor, doors/route boundaries remain. No explosions, corpses or invented spike pit. Show hazard aftermath without asserting campaign triggered it.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 2 · Hall collapse\nObservable scene and constraints: SAME entrance corridor, now LOCAL ceiling-collapse variant: fallen heavy stones and wooden beams amid dust in eastern corridor, doors/route boundaries remain. No explosions, corpses or invented spike pit. Show hazard aftermath without asserting campaign triggered it.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "9fbd6342c8e1abd82d030815391da6f4910f04231685de8faaf78b3326d5242f",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-hall-collapse.png",
+  "generatedAt": "2026-10-12T16:23:59.606Z",
+  "candidateHash": "54215398710dcc7aa60eb0c05a591c45c0571a084f23596f14dbb5864ff7b63a",
+  "review": "passed",
+  "reviewedHash": "54215398710dcc7aa60eb0c05a591c45c0571a084f23596f14dbb5864ff7b63a",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.531Z",
+  "installedHash": "54215398710dcc7aa60eb0c05a591c45c0571a084f23596f14dbb5864ff7b63a",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/hall-collapse.png"
+}

@@ -64,7 +64,7 @@
     input(info,'Direction / follow-up notes',pref.notes,v=>mutate(()=>pref.notes=v.slice(0,2000),'Updated character direction'),true);
     check(info,'Pause personal story suggestions',pref.paused,v=>mutate(()=>pref.paused=v,'Updated arc pause'));
     s=section(b.title,`${catalog.stages.find(x=>x[0]===stage)[1]} · suggested ${b.minutes} minutes · ${b.source}`);
-    for(const [label,value]of [['Trigger',b.trigger],['Optional words to say',b.say],['Private preparation',b.dm],['Evidence to check',b.evidence],['Follow-through',b.followup],['If declined or missed',b.fallback]]){el('h4',label,s);el(label==='Optional words to say'?'blockquote':'p',value,s);}
+    for(const [label,value]of [['Trigger',b.trigger],['Optional words to say',b.say],['Private preparation',b.dm],['Evidence to check',b.evidence],['Follow-through',b.followup],['If declined or missed',b.fallback]]){el('h4',label,s);if(label==='Optional words to say'){const quote=el('blockquote',null,s);String(value||'').split(/\n\s*\n/).forEach(t=>el('p',t,quote));}else el('p',value,s);}
     el('h4','Choices and possible consequences',s);const choices=el('ul',null,s);for(const v of b.choices)el('li',v,choices);
     if(chosen==='pc-aldric'){
       const truth=el('details',null,s);el('summary','DM only · Aldric’s connection to Halaster',truth);el('p',catalog.halaster.status,truth);

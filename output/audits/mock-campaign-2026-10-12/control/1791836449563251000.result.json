@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-crypt-1",
+    "action": {
+      "actor": "s2-hideout-crypt-1",
+      "label": "Shortsword",
+      "targets": [
+        "Donavan"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836449742-xt18uy0d",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            10
+          ],
+          "total": 14,
+          "natural": 10,
+          "public": false,
+          "kind": "digital",
+          "time": "2:20:49 PM"
+        },
+        {
+          "id": "pa-1791836449742-kamh6zza",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            1
+          ],
+          "total": 3,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "2:20:49 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-donavan",
+          "text": "Donavan: 14 vs AC 16: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

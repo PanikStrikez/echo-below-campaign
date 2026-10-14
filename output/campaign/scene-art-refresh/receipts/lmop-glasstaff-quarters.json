@@ -1,0 +1,36 @@
+{
+  "id": "lmop-glasstaff-quarters",
+  "title": "Redbrand Hideout · Area 12 · Glasstaff’s quarters",
+  "image": "lmop-visuals/glasstaff-quarters.png",
+  "key": "R12",
+  "chapter": "Redbrand Hideout",
+  "reveal": "On entering area 12",
+  "sourceRecordIds": [
+    "s2-glasstaff"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-glasstaff",
+      "title": "18 · Glasstaff’s quarters · area 12",
+      "read": [
+        "A better-appointed room sits beyond the rougher hideout. Papers lie beside a travel chest. Someone has been planning from here.",
+        "The desk and chest suggest different sorts of business: work done in the open and possessions kept close. You can examine what is visible, listen toward the adjoining spaces, or check the way you came. Nothing here tells you what happened after someone left without further evidence."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Small comfortably appointed stone bedchamber. Scarlet cloth drapes cover walls. A modest writing desk with matching chair, comfortable bed and closed wooden chest at its foot. Lamp light; ordinary unreadable papers can lie on desk. CURRENT campaign: Glasstaff has escaped, so NO wizard, glass staff, rat or hostage here. Secret door visually blends into wall. No readable Black Spider letter or castle reference, no revealed loot or invented ruined furniture.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Redbrand Hideout · Area 12 · Glasstaff’s quarters\nObservable scene and constraints: Small comfortably appointed stone bedchamber. Scarlet cloth drapes cover walls. A modest writing desk with matching chair, comfortable bed and closed wooden chest at its foot. Lamp light; ordinary unreadable papers can lie on desk. CURRENT campaign: Glasstaff has escaped, so NO wizard, glass staff, rat or hostage here. Secret door visually blends into wall. No readable Black Spider letter or castle reference, no revealed loot or invented ruined furniture.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "e66e6646b1351a3d7bacded4c6bdc17d92b8403b017dda6698c3c43740019f37",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-glasstaff-quarters.png",
+  "generatedAt": "2026-10-12T16:04:41.575Z",
+  "candidateHash": "7f42bb81f31139c3e9518b4b8c258f8e551076badabc53334f4f2057ad70d57b",
+  "review": "passed",
+  "reviewedHash": "7f42bb81f31139c3e9518b4b8c258f8e551076badabc53334f4f2057ad70d57b",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:09.021Z",
+  "installedHash": "7f42bb81f31139c3e9518b4b8c258f8e551076badabc53334f4f2057ad70d57b",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/glasstaff-quarters.png"
+}

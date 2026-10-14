@@ -39,7 +39,8 @@ assert.equal(api.ensure(ECHO_STORY_DATA.normalize()).log.length,0,'A new campaig
 assert.equal(api.normalize({log:[null,{},false]}).log.length,0);
 // The live outgoing TV and phone boundaries must not contain preparation or tracker data.
 const source=fs.readFileSync(path.join(root,'Session-01-Battleboard.js'),'utf8'),boot=source.lastIndexOf('  if (IS_PLAYER) initPlayer();');
-vm.runInThisContext(source.slice(0,boot)+`\n globalThis.__spots={normalize,newCustomState,publicState,phoneSnapshot,set:v=>{state=v;campaignIndex={story:globalThis.__privateStory,sessions:[],rules:null,combatLibrary:[]}}};\n})();`);
+require('./test-support.cjs').loadTableContent();
+vm.runInThisContext(source.slice(0,boot)+`\n globalThis.__spots={normalize,newCustomState,publicState,phoneSnapshot,set:v=>{state=v;campaignIndex={story:globalThis.__privateStory,sessions:[],rules:null,combatLibrary:[],tableExtras:{}}}};\n})();`);
 global.__privateStory=story;__spots.set(__spots.normalize(__spots.newCustomState()));
 const outgoing=JSON.stringify({tv:__spots.publicState(),phone:__spots.phoneSnapshot()});
 for(const secret of ['SECRET ARC OVERRIDE','return lattice','Mera Vale','Sera Quill','Our private scene'])assert(!outgoing.includes(secret),secret);
@@ -59,5 +60,5 @@ assert(!s.continuity.events.find(e=>e.id.startsWith('spotlight-')).approved);
 press('Story cards');change('Campaign chapter','waterdeep');change('Character','pc-pebble');
 change('Interests to emphasize','Craft and helping newcomers');assert.equal(s.characterStories.profiles['pc-pebble'].interests,'Craft and helping newcomers');
 prompts=['A reliable route','Pebble drew a route and helped an arriving trader.'];press('Record an improvised played moment');assert.equal(s.characterStories.log.length,2);assert(saves>=5);
-const loader=fs.readFileSync(path.join(root,'Session-01-Loader.js'),'utf8');assert(loader.includes("if (!player) for (const file of privateScripts)"));assert(loader.includes("'Campaign-Character-Stories.js'"));
+require('./test-support.cjs').assertPrivateModules(['Campaign-Character-Stories.js','Campaign-Spotlights.js']).catch(error=>{console.error(error);process.exitCode=1;});
 console.log('Character stories passed: 5 arcs, 30 cards, unplayed defaults, attendance/preferences, fair suggestions, deduplicated outcomes, undo/redo, archive round-trip, private drafts, UI controls, and TV/phone privacy.');

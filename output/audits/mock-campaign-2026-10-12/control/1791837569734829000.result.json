@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s3-castle-guards-hobgoblin-1",
+        "name": "King’s guard 1",
+        "hp": 11
+      },
+      {
+        "id": "s3-castle-guards-hobgoblin-2",
+        "name": "King’s guard 2",
+        "hp": 11
+      }
+    ],
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 38
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 38
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 36
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 53
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 37
+      }
+    ]
+  }
+}

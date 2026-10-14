@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838392306-ghdysge0",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              15
+            ],
+            "total": 23,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:53:12 PM"
+          },
+          {
+            "id": "pa-1791838392306-n6873u2m",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              2
+            ],
+            "total": 7,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:53:12 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-6-ghoul-3",
+            "text": "South Barracks Ghoul 3: 23 vs AC 12: hit, 7 bludgeoning → 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791838392426-d1cbj48q",
+              "label": "Warhammer · attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                3
+              ],
+              "total": 11,
+              "natural": 3,
+              "public": true,
+              "kind": "digital",
+              "time": "2:53:12 PM"
+            },
+            {
+              "id": "pa-1791838392426-9d3fazmk",
+              "label": "Warhammer · effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                5
+              ],
+              "total": 10,
+              "natural": 5,
+              "public": true,
+              "kind": "digital",
+              "time": "2:53:12 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-6-ghoul-3",
+              "text": "South Barracks Ghoul 3: 11 vs AC 12: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  }
+}

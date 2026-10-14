@@ -1,0 +1,32 @@
+{
+  "id": "lmop-sleeping-giant",
+  "title": "Phandalin · Sleeping Giant tap house",
+  "image": "lmop-visuals/sleeping-giant.png",
+  "key": "P09",
+  "chapter": "Phandalin",
+  "reveal": "When the tap house comes into view",
+  "sourceRecordIds": [
+    "s2-town"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-town",
+      "title": "5 · Follow the party’s town lead",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Sleeping Giant exterior: rundown dirty TAP HOUSE at end of Phandalin main street, sagging timber building, ordinary worn ale sign without text. Small frontier scale, no upscale tavern or actual sleeping giant creature. No automatic fight, only prepared atmosphere.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Sleeping Giant tap house\nObservable scene and constraints: Sleeping Giant exterior: rundown dirty TAP HOUSE at end of Phandalin main street, sagging timber building, ordinary worn ale sign without text. Small frontier scale, no upscale tavern or actual sleeping giant creature. No automatic fight, only prepared atmosphere.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "98e5ac7fe913c459ef2da1d60153460e52d7c16d72f27900d810c0434505577a",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-sleeping-giant.png",
+  "generatedAt": "2026-10-12T15:53:26.730Z",
+  "candidateHash": "ed26288d54748049ff8264bac4da65935842d665fcfc9fe9b0d552bd3c7ef92e",
+  "review": "passed",
+  "reviewedHash": "ed26288d54748049ff8264bac4da65935842d665fcfc9fe9b0d552bd3c7ef92e",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.107Z",
+  "installedHash": "ed26288d54748049ff8264bac4da65935842d665fcfc9fe9b0d552bd3c7ef92e",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/sleeping-giant.png"
+}

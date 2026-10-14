@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791832662357-rjmi0p6b",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              7
+            ],
+            "total": 13,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:42 PM"
+          },
+          {
+            "id": "pa-1791832662357-e6sgq4m6",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:42 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-1",
+            "text": "Goblin 1: 13 vs AC 15: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

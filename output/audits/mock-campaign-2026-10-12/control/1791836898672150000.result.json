@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "s3-agatha",
+      "run": [
+        "Agatha is a social encounter. Respectful conversation and DC 15 Charisma (Persuasion) can win one answer; the silver comb from Sister Garaele secures her cooperation. A player who roleplays the exchange well has advantage.",
+        "She answers one question. She can address the castle’s location if asked, but the party may instead ask about Bowgentle’s book or something else. Record the precise answer.",
+        "If insulted or threatened, she withdraws rather than starting a mandatory fight. The prepared reward is 200 XP for successfully obtaining an answer if using XP."
+      ],
+      "read": [
+        "Beyond the ruined village, branches bend together into a low shelter. The air stills. A voice from within sounds older than the trees: “You came this far to ask me something?”",
+        "The low shelter makes a close approach very different from calling out at a distance. Still branches frame the entrance, and the voice waits for an answer. You can offer your purpose plainly, choose your words with care, or keep to the edge of the clearing while you speak."
+      ]
+    },
+    {
+      "id": "s3-old-owl",
+      "run": [
+        "The party has already encountered Hamun Kost, who disappeared without fighting. If they return, preserve what happened and investigate what remains; do not replay the first meeting as if he were still present.",
+        "The printed first-contact setup has twelve zombies concealed in the tower. Use it only for inhabitants still present in the saved dungeon state.",
+        "Kost is willing to trade information for a favor: remove the Wyvern Tor orcs or ask Agatha who built the tower. He is not an automatic combat encounter.",
+        "If the party reports a parley to Daran, track that quest. If violence starts, use the printed room and monster cards; twelve zombies plus a mage are a serious threat."
+      ],
+      "read": [
+        "The broken watchtower stands where you last saw Hamun Kost. What remains here depends on what the party left behind.",
+        "The broken stone is a landmark you can recognize without deciding what happened after your departure. You can compare the ground and the tower with your last visit, look for an actual new trace, or keep watch while someone examines the place more closely."
+      ]
+    },
+    {
+      "id": "s3-wyvern",
+      "run": [
+        "The party already cleared the orc camp. Do not redeploy its printed occupants; use this card only to review an actual return, survivors, or unpaid reward.",
+        "For an unplayed approach in another campaign, finding the hidden camp calls for DC 15 Wisdom (Perception) or DC 10 Wisdom (Survival) per hour by the lead character.",
+        "Inside are Brughor Axe-Biter, six ordinary orcs, and Gog the ogre; one additional orc watches outside. The sentry runs to warn them if it spots the party and survives.",
+        "This group is extremely dangerous for five level-2 characters. Show numbers and an exit; stealth, withdrawal, negotiation, and completing another lead first are valid.",
+        "The cave chest contains 750 cp, 180 sp, 62 ep, 30 gp, and three perfume vials worth 10 gp each; award only if found and taken."
+      ],
+      "read": [
+        "The ravine and cave mouth are familiar from the camp the party cleared. What signs remain depends on what they left behind.",
+        "The familiar approach gives you a point from which to compare what is here now with what you remember. The ravine and the opening remain useful landmarks. You can look for a specific change, approach the cave cautiously, or leave the cleared camp behind without searching it again."
+      ]
+    },
+    {
+      "id": "s3-thundertree",
+      "run": [
+        "Reidoth can identify the castle’s location, but the village is a separate, larger adventure site. Do not imply the party must clear it to earn his help.",
+        "If the players explore buildings, continue to the Thundertree area beats in this runbook. All thirteen areas, local maps, optional fights, and Reidoth’s information are prepared; reveal only locations reached in play.",
+        "Warn in-world about plant monsters, undead, and the dragon; do not reveal those tokens or portraits before the characters encounter them."
+      ],
+      "read": [
+        "A weathered warning faces the road into an overgrown village. Roofs are broken, walls lean into vines, and the hilltop tower still stands above them all.",
+        "The warning and the tower give you landmarks before you commit to any particular building. Between the ruined walls, the growth interrupts sightlines and makes some paths clearer than others. You can read the sign, study the nearest approach, or decide how to keep your companions in view."
+      ]
+    },
+    {
+      "id": "s3-tt-4",
+      "run": [
+        "Reidoth is direct but reasonably hospitable. He tells the party how to reach Cragmaw Castle if asked; no dragon bargain is required for those directions.",
+        "He warns of ash zombies, plant creatures, spiders, cultists, and a young green dragon. He knows where Wave Echo Cave is but offers that location only if the party drives the dragon off; he will not accompany them inside.",
+        "If attacked, he uses his druid shape to flee and waits for the aggressors to leave. Record whether the party earns his trust."
+      ],
+      "read": [
+        "One cottage seems to have resisted the years. Its shutters are stout, and someone has cleared the growth near the door.",
+        "The cleared approach and sturdy shutters set this house apart from its neighbors. They give you somewhere to knock or call without pushing through the overgrowth. You can announce yourselves, inspect the outside, or wait at a respectful distance for someone to answer."
+      ]
+    },
+    {
+      "id": "s3-tt-7",
+      "run": [
+        "Venomfang is a young green dragon: AC 18, HP 136, fly 60, poison breath DC 16 Constitution for 12d6 poison in a 30-foot cone, half on success. It is far beyond a routine level-2 fight.",
+        "Give players visible signs of danger and time to retreat or parley. Venomfang values its lair; if reduced to half HP it flies away. It may hear loud cottage activity and ambush.",
+        "Tower chest: 800 sp, 150 gp, four 60-gp silver goblets, misty step and lightning bolt scrolls. Hew, a +1 battleaxe with extra damage against plants and wood objects, lies under the coin. Reveal only when found."
+      ],
+      "read": [
+        "A broken tower rises above two spider corpses. The air around it smells sharp and wrong; the upper roof is open to the sky.",
+        "The dead spiders give the tower's sharp smell a more tangible companion. Broken stone and the open upper roof offer places to look before you approach the entrance. You can keep your distance, seek another view of the structure, or pause to decide what danger you are willing to meet."
+      ]
+    }
+  ]
+}

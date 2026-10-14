@@ -1,0 +1,36 @@
+{
+  "id": "cave-mouth",
+  "title": "The cave mouth",
+  "image": "session-01-visuals/scene-03-cave-mouth.png",
+  "key": "cave-mouth",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "cave"
+  ],
+  "sourceRecords": [
+    {
+      "id": "cave",
+      "title": "5 · Cave mouth and approach",
+      "read": [
+        "The trail ends below a wooded hill. A shallow stream runs from a dark cave mouth, with a narrow path beside it. Briars crowd the bank. Cold water murmurs over stone.",
+        "The stream and the strip of dry ground offer different approaches to the same black opening. From outside, you can study the banks and the briars before stepping beneath the hill; the sound of running water makes the darkness beyond seem deeper."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Cragmaw hillside cave screened by dense briars, TWO-foot-deep shallow stream flows out, narrow DRY path on RIGHT/east side leads in. Wet trees, moss and pale stones. No guards through brush, visible kennel or glowing portal. Natural daylight outside, interior dark.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: The cave mouth\nObservable scene and constraints: Cragmaw hillside cave screened by dense briars, TWO-foot-deep shallow stream flows out, narrow DRY path on RIGHT/east side leads in. Wet trees, moss and pale stones. No guards through brush, visible kennel or glowing portal. Natural daylight outside, interior dark.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "ea98cf1b04ca874a8f110c3af8c0da68c060c1fe17e72f4f622e79877da3628b",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/cave-mouth.png",
+  "generatedAt": "2026-10-12T15:45:17.912Z",
+  "candidateHash": "eb8e418dd55f59acf188eac95a4005728f2020ddacf9739f2b9fdf1680d741db",
+  "review": "passed",
+  "reviewedHash": "eb8e418dd55f59acf188eac95a4005728f2020ddacf9739f2b9fdf1680d741db",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:06.689Z",
+  "installedHash": "eb8e418dd55f59acf188eac95a4005728f2020ddacf9739f2b9fdf1680d741db",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-03-cave-mouth.png"
+}

@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791835491023-3mog0jt6",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              7
+            ],
+            "total": 13,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:04:51 PM"
+          },
+          {
+            "id": "pa-1791835491024-ann2bssv",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              6
+            ],
+            "total": 6,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:04:51 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-bugbears-1",
+            "text": "Bugbear 1: 13 vs AC 16: miss, 0 cold → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

@@ -11,6 +11,7 @@ for(const name of ['LMOP-Visual-Catalog','LMOP-Battle-Map-Catalog','Campaign-Flo
   'Session-01-Presentation','Session-01-Recovery'])require(path.join(root,name+'.js'));
 const source=fs.readFileSync(path.join(root,'Session-01-Battleboard.js'),'utf8'),boot=source.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot>0);
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(source.slice(0,boot)+`
   let rehearsalRestoreHook=()=>{},rehearsalCommits=0;
   captureRestorePoint=async()=>{await rehearsalRestoreHook();};saveLocal=async()=>{};saveCampaignIndex=async()=>{};
@@ -131,7 +132,7 @@ function fixture(){
   });
   const report={auditDate:new Date().toISOString(),passed:results.every(r=>r.pass),isolation:'In-memory production hooks and throwaway fixtures only; no live saves, browser, phone service or network used.',checks:results,
     limitations:['Actual artwork decoding and section-focus camera integration are verified separately by the browser workflow.','Legacy phone overlay remains 32 columns by 20 rows; dense floor reveals use the masked raster and keep their cell ledger private.','Automatic vision needs DM-reviewed barriers; source topology is not automatically imported.']};
-  fs.writeFileSync(path.join(root,'atlas','Exploration-Persistence-Verification.json'),JSON.stringify(report,null,2)+'\n');
+  fs.writeFileSync(path.join(process.env.ECHO_TEST_REPORT_DIR || path.join(root,'atlas'),'Exploration-Persistence-Verification.json'),JSON.stringify(report,null,2)+'\n');
   for(const r of results)console.log(`${r.pass?'PASS':'FAIL'} ${r.name}${r.pass?'':'\n'+r.error}`);
   if(!report.passed)process.exitCode=1;
 })().catch(error=>{console.error(error);process.exitCode=1;});

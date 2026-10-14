@@ -1,0 +1,81 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "phandalin-street",
+      "round": 4,
+      "order": [
+        "pc-donavan",
+        "pc-pebble",
+        "s2-ruffian-3",
+        "s2-ruffian-4",
+        "s2-ruffian-2",
+        "pc-trista",
+        "pc-ringgo",
+        "s2-ruffian-1",
+        "pc-aldric"
+      ],
+      "index": 0
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 15,
+        "maxHp": 15
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 16,
+        "maxHp": 16
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 17,
+        "maxHp": 17
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 6,
+        "maxHp": 16
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 16,
+        "maxHp": 16
+      }
+    ],
+    "foes": [
+      {
+        "id": "s2-ruffian-1",
+        "hp": 0
+      },
+      {
+        "id": "s2-ruffian-2",
+        "hp": 0
+      },
+      {
+        "id": "s2-ruffian-3",
+        "hp": 0
+      },
+      {
+        "id": "s2-ruffian-4",
+        "hp": 16
+      }
+    ],
+    "due": [
+      {
+        "id": "card-1791834164535-0ocfcrf",
+        "tokenId": "s2-ruffian-2",
+        "triggerActor": "pc-donavan",
+        "triggerPoint": "start",
+        "remaining": 0,
+        "name": "Ray of Frost · speed −10 ft",
+        "condition": "",
+        "due": true,
+        "fired": true,
+        "repeatSave": false,
+        "note": "Apply until the caster’s next turn starts. Movement remains manual."
+      }
+    ]
+  }
+}

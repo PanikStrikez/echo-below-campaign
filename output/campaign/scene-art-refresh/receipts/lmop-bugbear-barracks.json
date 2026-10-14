@@ -1,0 +1,36 @@
+{
+  "id": "lmop-bugbear-barracks",
+  "title": "Redbrand Hideout · Area 9 · Bugbear barracks",
+  "image": "lmop-visuals/bugbear-barracks.png",
+  "key": "R09",
+  "chapter": "Redbrand Hideout",
+  "reveal": "On entering area 9",
+  "sourceRecordIds": [
+    "s2-bugbears"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-bugbears",
+      "title": "15 · Bugbears and Droop · area 9",
+      "read": [
+        "Three large figures occupy the room as though it belongs to them. A goblin nearby flinches at your arrival and looks ready to disappear into the floor.",
+        "The room's sleeping places and the positions of those inside shape the space available for an approach. You have a moment to note who watches you, who avoids your gaze, and where the door sits behind you. Words are still an option before the first movement becomes an attack."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Rough barracks: FOUR crudely made wooden bunks, heaped blankets, dirty dishes and scraps of meat. THREE tall furry bugbears with broad ears lounge among the mess. Leader Mosk has a black leather jeweled eye patch. ONE little goblin Droop crouches low in distress, beginning to faint at the doorway. Practical oil lamps, stone room. No player characters, no death, no fourth bugbear, no declaration of allegiance.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Redbrand Hideout · Area 9 · Bugbear barracks\nObservable scene and constraints: Rough barracks: FOUR crudely made wooden bunks, heaped blankets, dirty dishes and scraps of meat. THREE tall furry bugbears with broad ears lounge among the mess. Leader Mosk has a black leather jeweled eye patch. ONE little goblin Droop crouches low in distress, beginning to faint at the doorway. Practical oil lamps, stone room. No player characters, no death, no fourth bugbear, no declaration of allegiance.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "e7d79dc38971752763e23cbed739877091b6ea1945666ddca59e32d5f361b511",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-bugbear-barracks.png",
+  "generatedAt": "2026-10-12T15:49:31.256Z",
+  "candidateHash": "a3d05174b98d42fb2106131e9f5268f22bf00a7c74b79741bd6c36eacbd64b63",
+  "review": "passed",
+  "reviewedHash": "a3d05174b98d42fb2106131e9f5268f22bf00a7c74b79741bd6c36eacbd64b63",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.910Z",
+  "installedHash": "a3d05174b98d42fb2106131e9f5268f22bf00a7c74b79741bd6c36eacbd64b63",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/bugbear-barracks.png"
+}

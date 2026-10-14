@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "type": "isolated real Chrome / IndexedDB / temporary campaign service; real HTTP phone filtering; physical phones not used",
+  "checks": [
+    "blank-and-example-request-no-Echo-content",
+    "independent-explicit-pack-versions",
+    "empty-campaign-and-fictional-party",
+    "real-HTTP-phone-filtering-and-campaign-change-join-invalidation",
+    "generic-movement-damage-rest-sheet-actions",
+    "main-side-owner-quest-routing",
+    "example-backup-reopened-in-throwaway-storage",
+    "fictional-TV-map-and-main-quest-without-owner-quest",
+    "fictional-Map-Desk-pointer-drag-and-undo",
+    "fictional-NPC-card-opens-without-book-or-story-seeds",
+    "blank-example-switch-clears-prior-catalog-and-preserves-original",
+    "original-ten-session-Echo-save-restored-in-isolation",
+    "stats-tokens-fog-quest-publications-preserved",
+    "Echo-to-blank-clears-private-globals-and-phone-roster",
+    "original-backup-bytes-unchanged"
+  ],
+  "realProviderRequests": 0,
+  "liveCampaignChanged": false,
+  "phoneServiceRestarted": false,
+  "physicalChecks": "Not performed",
+  "at": "2026-10-12T05:03:36.202084+00:00",
+  "versions": {
+    "app": {
+      "sha256": "181cd6ea181e4018f804bf5d808e003f5464b58166bdc2b1870bae0f13031f46",
+      "files": 210,
+      "bytes": 8579845
+    },
+    "assets": {
+      "sha256": "87a0fba317377625b02215a822b6bdde68e08697a579bfd6c49b36b9d9aacc0c",
+      "files": 521,
+      "bytes": 987844904
+    },
+    "tests": {
+      "sha256": "66d1fea100bfc844d6d38dee7b6529601b2487bed924b0dbb2dd4eb7085662f9",
+      "files": 179,
+      "bytes": 1437936
+    },
+    "saveSchema": 3
+  },
+  "releaseGatePassed": true,
+  "originalBackupSha256": "5fd26c38231c524d4bad822983129cdab0db432158e2f59bfc5d495c4b31e32b"
+}

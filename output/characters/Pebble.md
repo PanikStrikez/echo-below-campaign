@@ -6,7 +6,7 @@
 
 ## Rules build
 
-This uses the 2014 *Player's Handbook* rules with options from *Tasha's Cauldron of Everything*. Goron is represented by **custom lineage**; there is no published Goron ancestry in the supplied D&D books. Pebble is Medium, has a 30-foot walking speed and 60-foot darkvision, and speaks Common and Goron. His Goron language is subject to the DM's agreement. His +2 lineage ability increase goes to Strength. His lineage feat is **Crusher**, which adds another +1 Strength.
+This uses the 2014 *Player's Handbook* rules with options from *Tasha's Cauldron of Everything*. Goron uses **custom lineage with the DM-approved Fire-Forged and Rock Eater traits** (9 October 2026); these Goron additions are homebrew. Pebble is Medium, has a 30-foot walking speed and 60-foot darkvision, and speaks Common and Goron. His Goron language is subject to the DM's agreement. His +2 lineage ability increase goes to Strength. His lineage feat is **Crusher**, which adds another +1 Strength.
 
 **Class:** Fighter 4 - Champion
 **Background:** Outlander  
@@ -53,13 +53,15 @@ Standard array, before ancestry: Strength 15, Dexterity 10, Constitution 14, Int
 - **Second Wind:** Once per short or long rest, he can use a bonus action to regain 1d10 + 4 hit points.
 - **Tough:** His maximum HP includes +8 at level 4 and increases by another 2 at each later level.
 - **Crusher:** Once on each of his turns, after a bludgeoning hit, he can move the target 5 feet into an empty space if it is no more than one size larger than him. A bludgeoning critical hit also makes attacks against that target more accurate until the start of his next turn.
+- **Fire-Forged (Goron):** Resistance to fire damage: halve fire damage, rounding down. This passive requires no action or resource.
+- **Rock Eater (Goron):** Ordinary, nonmagical stone satisfies his food needs; he still needs water. When Pebble eats a magical stone, he stores its magical properties for 24 hours of in-game time. He chooses when to activate or use them within that window. The properties expire 24 hours after he eats the stone; using them later does not restart the clock. The DM defines the specific effect, how it is activated, and any uses or limits for that stone. Ordinary stones provide nourishment without healing.
 - **Outlander:** He remembers terrain and can usually find food and fresh water for himself and up to five others when the land provides them.
 
 ### Equipment and appearance
 
 Pebble carries a broad stone-headed warhammer, a slab-like shield, two chipped stone hatchets (mechanically handaxes), an explorer's pack, and the Outlander starting gear. His chain mail looks like linked stone plates and still follows all normal chain-mail rules. He is proficient with a drum and knows Dwarvish from the Outlander background.
 
-Pebble's rolling is how he describes ordinary movement or the Dash action; it does not change his speed or grant a special attack. His travel rations can be described as edible stones with the normal cost, weight, and food requirements. Any stronger Goron rolling or stone-eating abilities would be new house rules for the DM to approve.
+Pebble's rolling is how he describes ordinary movement or the Dash action; it does not change his speed or grant a special attack. Rock Eater now makes stone-eating a mechanical Goron trait: ordinary stone provides nourishment, and eating a magical stone stores its properties for optional use over the next 24 hours of in-game time, as recorded by the DM. This trait does not change his rolling movement rules.
 
 ## Story draft
 
@@ -75,3 +77,5 @@ Pebble grew up among a mountain tribe whose paths rarely crossed those of lowlan
 - *Player's Handbook* (2014): fighter, Outlander, standard array, weapons, armor, and ordinary movement.
 - *Tasha's Cauldron of Everything*: custom lineage, Crusher feat, and Interception fighting style.
 - *The Echo Below Player Guide*: the level-1 supply escort near Phandalin and the campaign's emphasis on people and places worth protecting.
+
+- DM ruling, 9 October 2026: Fire-Forged and Rock Eater, including gaining the properties of magical stones he eats. Magical properties can be used at his chosen time within 24 in-game hours of eating the stone. Record the eaten time and expiry; exact manifestations, activation requirements, and any uses or limits are defined for each stone.

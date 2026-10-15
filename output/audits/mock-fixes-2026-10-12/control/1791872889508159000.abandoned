@@ -1,0 +1,1 @@
+{"op": "eval", "code": "({party:__mock.state.state.party,scene:__mock.state.state.scene,fog:__mock.state.state.sceneFog})"}

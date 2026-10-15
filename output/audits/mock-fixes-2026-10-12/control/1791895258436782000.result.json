@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "result": {
+    "finished": true,
+    "errors": [
+      {
+        "screen": "rehearsal-step",
+        "command": "capture",
+        "error": "Rehearsal step timed out after 45 seconds"
+      }
+    ],
+    "network": []
+  }
+}

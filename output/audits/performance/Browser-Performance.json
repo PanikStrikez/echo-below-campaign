@@ -1,0 +1,233 @@
+{
+  "at": "2026-10-11T23:54:11.852Z",
+  "before": "2026-10-11T23:52:37.103Z",
+  "after": "2026-10-11T23:54:11.852Z",
+  "environment": {
+    "browser": "153.0.8010.53",
+    "headless": true,
+    "viewport": "1512\u00d7982 DM; 390\u00d7844 phones",
+    "hardware": "arm64",
+    "services": "real temporary localhost desktop + phone HTTP; five real browser phone clients",
+    "network": "local loopback, not household Wi-Fi",
+    "sourceBackupSha256": "5fd26c38231c524d4bad822983129cdab0db432158e2f59bfc5d495c4b31e32b",
+    "moduleVersions": {
+      "Session-01-Battleboard.js": "9b44ddeb93ecb33e0b97678fbcd6b1b32cfa0145ed0d63412330db52a8a28e3f",
+      "Session-01-Loader.js": "5562181c063d03f983cb51f930d88ee5e012a038f29d775d088c5a8dec1d4bea",
+      "Session-01-Ergonomics.js": "9fd5986598112511f7cc6c4b7cf8f4495c76ce3fe6770d74720c2ae59de7e21b",
+      "phone.js": "b0258114dc70649f56266b227db014fcb0f322b732abc5f6f60431fedb68f7a9"
+    }
+  },
+  "dataset": {
+    "scenario": "Combat phone updates; same five sheets and map stress roster",
+    "sessions": 10,
+    "sourceTokens": 103,
+    "stressTokens": 150,
+    "map": "town-phandalin",
+    "raster": {
+      "path": "town-maps/professional/phandalin-overhead.png",
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  "comparisons": [
+    {
+      "id": "startup",
+      "label": "Startup to saved Run screen",
+      "beforeMedianMs": 603.7,
+      "afterMedianMs": 313,
+      "beforeP95Ms": 613.2,
+      "afterP95Ms": 329.3,
+      "samplesPerRun": 5,
+      "medianReductionPercent": 48.2
+    },
+    {
+      "id": "mapLoadAndDecode",
+      "label": "Map switch, image decode and two frames",
+      "beforeMedianMs": 75.5,
+      "afterMedianMs": 92.2,
+      "beforeP95Ms": 97.9,
+      "afterP95Ms": 100,
+      "samplesPerRun": 5,
+      "medianReductionPercent": -22.1
+    },
+    {
+      "id": "dragToFrame",
+      "label": "Automated drag to frame (includes browser automation)",
+      "beforeMedianMs": 81.49,
+      "afterMedianMs": 81.66,
+      "beforeP95Ms": 112.7,
+      "afterP95Ms": 113.69,
+      "samplesPerRun": 9,
+      "medianReductionPercent": -0.2
+    },
+    {
+      "id": "dragReleaseToSavedFrame",
+      "label": "Drag release to saved frame",
+      "beforeMedianMs": 150.51,
+      "afterMedianMs": 133.96,
+      "beforeP95Ms": 181.88,
+      "afterP95Ms": 180.68,
+      "samplesPerRun": 9,
+      "medianReductionPercent": 11.0
+    },
+    {
+      "id": "tvResync",
+      "label": "Explicit TV resync to next frame",
+      "beforeMedianMs": 44.67,
+      "afterMedianMs": 32.93,
+      "beforeP95Ms": 60.4,
+      "afterP95Ms": 48.5,
+      "samplesPerRun": 12,
+      "medianReductionPercent": 26.3
+    },
+    {
+      "id": "searchFourQueries",
+      "label": "Four search queries",
+      "beforeMedianMs": 1.6,
+      "afterMedianMs": 1.5,
+      "beforeP95Ms": 3,
+      "afterP95Ms": 2.4,
+      "samplesPerRun": 40,
+      "medianReductionPercent": 6.2
+    },
+    {
+      "id": "phoneUpdateAllFive",
+      "label": "HP update reaching all five combat phone views",
+      "beforeMedianMs": 1134.18,
+      "afterMedianMs": 760.13,
+      "beforeP95Ms": 1222.4,
+      "afterP95Ms": 924.66,
+      "samplesPerRun": 7,
+      "medianReductionPercent": 33.0
+    }
+  ],
+  "unchangedTvMapRebuilds": {
+    "before": 12,
+    "after": 0,
+    "resyncs": 12
+  },
+  "searchResultsIdentical": true,
+  "startupStatePreserved": true,
+  "mapGeometryPreserved": true,
+  "liveServicesRestarted": false,
+  "liveCampaignChanged": false,
+  "physicalTestStatus": "Not checked; user skipped rehearsal",
+  "sections": {
+    "at": "2026-10-11T23:58:20.084Z",
+    "browser": "153.0.8010.53",
+    "method": "Real headless Chrome, nine interleaved fresh blob-image decodes per file; excludes network transfer and scene rendering.",
+    "results": [
+      {
+        "name": "full",
+        "bytes": 4098493,
+        "samples": [
+          14.800000071525574,
+          14.800000071525574,
+          14.899999976158142,
+          14.899999976158142,
+          14.899999976158142,
+          15.299999952316284,
+          15.5,
+          15.5,
+          16
+        ],
+        "nativePixels": [
+          1536,
+          1024
+        ],
+        "medianDecodeMs": 14.9
+      },
+      {
+        "name": "phandalin-section-nw",
+        "bytes": 1127167,
+        "samples": [
+          5.199999928474426,
+          5.200000047683716,
+          5.200000047683716,
+          5.299999952316284,
+          5.299999952316284,
+          5.399999976158142,
+          5.399999976158142,
+          5.399999976158142,
+          5.5
+        ],
+        "nativePixels": [
+          768,
+          512
+        ],
+        "medianDecodeMs": 5.3
+      },
+      {
+        "name": "phandalin-section-ne",
+        "bytes": 1128226,
+        "samples": [
+          5.099999904632568,
+          5.199999928474426,
+          5.200000047683716,
+          5.299999952316284,
+          5.299999952316284,
+          5.299999952316284,
+          5.399999976158142,
+          5.5,
+          5.600000023841858
+        ],
+        "nativePixels": [
+          768,
+          512
+        ],
+        "medianDecodeMs": 5.3
+      },
+      {
+        "name": "phandalin-section-sw",
+        "bytes": 1123310,
+        "samples": [
+          5.100000023841858,
+          5.199999928474426,
+          5.299999952316284,
+          5.299999952316284,
+          5.299999952316284,
+          5.300000071525574,
+          5.399999976158142,
+          5.399999976158142,
+          5.5
+        ],
+        "nativePixels": [
+          768,
+          512
+        ],
+        "medianDecodeMs": 5.3
+      },
+      {
+        "name": "phandalin-section-se",
+        "bytes": 1117249,
+        "samples": [
+          5.100000023841858,
+          5.199999928474426,
+          5.200000047683716,
+          5.200000047683716,
+          5.299999952316284,
+          5.299999952316284,
+          5.300000071525574,
+          5.300000071525574,
+          5.399999976158142
+        ],
+        "nativePixels": [
+          768,
+          512
+        ],
+        "medianDecodeMs": 5.3
+      }
+    ],
+    "losslessSavedPixelComparison": true,
+    "originalPixelsUnchanged": true,
+    "scope": "Optional clean terrain crops. Not auto-staged or assigned new live scene IDs. All four crops combined are larger than the original PNG; load one relevant section only."
+  },
+  "limitations": [
+    "Single paired run; timings vary with machine load. Samples are not a statistical guarantee.",
+    "Real headless Chrome and temporary real HTTP services on loopback; no physical TV, Wi-Fi, phone or speaker claim.",
+    "Scene-map loading was slower in the measured after run. Effects remained near the headless animation-frame cap; no proven effects gain.",
+    "Drag-to-frame includes mouse automation. It is not a direct hardware input-latency measurement.",
+    "Optional map crops preserve exact pixels but are not wired into automatic scene navigation. All four together use more disk space.",
+    "Modules still execute in original order. Downloads are preloaded in parallel; feature modules are not lazy-loaded."
+  ]
+}

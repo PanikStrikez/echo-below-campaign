@@ -1,0 +1,1210 @@
+{
+  "label": "ISOLATED MOCK CAMPAIGN — not actual history",
+  "phase": "01-before",
+  "characterId": "pc-ringgo",
+  "dmNarration": [
+    "Isolated fix verification."
+  ],
+  "question": "Current sheets must match their data.",
+  "phoneResponse": {
+    "status": 200,
+    "data": {
+      "revision": 17,
+      "resyncRequest": 0,
+      "session": "PRACTICE · Session 1 · Goblin Arrows",
+      "character": {
+        "id": "pc-ringgo",
+        "name": "Ringgo Paul",
+        "player": "Cade",
+        "className": "Rogue · Assassin",
+        "ancestry": "Tiefling",
+        "background": "Criminal / Spy",
+        "level": 4,
+        "rules": "2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export",
+        "proficiency": 2,
+        "speed": 30,
+        "senses": "Darkvision 60 ft.; fire resistance",
+        "languages": "Common, Infernal, Thieves’ Cant",
+        "hp": 22,
+        "maxHp": 22,
+        "ac": 17,
+        "tempHp": 0,
+        "hitDice": {
+          "die": 8,
+          "current": 4,
+          "max": 4,
+          "details": "4d8 (Rogue 4)"
+        },
+        "abilities": {
+          "str": {
+            "score": 7,
+            "modifier": -2
+          },
+          "dex": {
+            "score": 20,
+            "modifier": 5
+          },
+          "con": {
+            "score": 14,
+            "modifier": 2
+          },
+          "int": {
+            "score": 10,
+            "modifier": 0
+          },
+          "wis": {
+            "score": 10,
+            "modifier": 0
+          },
+          "cha": {
+            "score": 18,
+            "modifier": 4
+          }
+        },
+        "saves": [
+          {
+            "name": "STR",
+            "bonus": -2,
+            "rank": 0
+          },
+          {
+            "name": "DEX",
+            "bonus": 7,
+            "rank": 1
+          },
+          {
+            "name": "CON",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "INT",
+            "bonus": 2,
+            "rank": 1
+          },
+          {
+            "name": "WIS",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "CHA",
+            "bonus": 4,
+            "rank": 0
+          }
+        ],
+        "skills": [
+          {
+            "name": "Acrobatics",
+            "bonus": 7,
+            "rank": 1
+          },
+          {
+            "name": "Animal Handling",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Arcana",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Athletics",
+            "bonus": -2,
+            "rank": 0
+          },
+          {
+            "name": "Deception",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "History",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Insight",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Intimidation",
+            "bonus": 4,
+            "rank": 0
+          },
+          {
+            "name": "Investigation",
+            "bonus": 4,
+            "rank": 2
+          },
+          {
+            "name": "Medicine",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Nature",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Perception",
+            "bonus": 2,
+            "rank": 1
+          },
+          {
+            "name": "Performance",
+            "bonus": 4,
+            "rank": 0
+          },
+          {
+            "name": "Persuasion",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Religion",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Sleight of Hand",
+            "bonus": 7,
+            "rank": 1
+          },
+          {
+            "name": "Stealth",
+            "bonus": 9,
+            "rank": 2
+          },
+          {
+            "name": "Survival",
+            "bonus": 0,
+            "rank": 0
+          }
+        ],
+        "passives": {
+          "Perception": 12,
+          "Insight": 10,
+          "Investigation": 14
+        },
+        "attacks": [
+          {
+            "id": "ringgo-rapier",
+            "name": "Rapier",
+            "type": "Action",
+            "attackBonus": 7,
+            "damageDice": "1d8+5",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Finesse; Sneak Attack may add 2d6 once per turn.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-shortbow",
+            "name": "Shortbow",
+            "type": "Action",
+            "attackBonus": 7,
+            "damageDice": "1d6+5",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Range 80/320; Sneak Attack may add 2d6.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-dagger",
+            "name": "Dagger",
+            "type": "Action",
+            "attackBonus": 7,
+            "damageDice": "1d4+5",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Finesse, light, thrown 20/60.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-offhand",
+            "name": "Second dagger",
+            "type": "Bonus action",
+            "attackBonus": 7,
+            "damageDice": "1d4",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Two-weapon fighting; no Dexterity modifier to damage.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-sneak",
+            "name": "Sneak Attack",
+            "type": "Once per turn",
+            "attackBonus": null,
+            "damageDice": "2d6",
+            "damageType": "extra",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Add 2d6 once per turn after a qualifying hit. Eligibility and critical dice require review.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.",
+              "source": {
+                "book": "2014 PHB pp. 96–97; Tasha’s feat exception",
+                "printedPage": null,
+                "rule": "Sneak Attack / Assassinate / Piercer",
+                "confidence": "approved table choice"
+              }
+            }
+          }
+        ],
+        "actions": [
+          {
+            "id": "ringgo-cunning-dash",
+            "name": "Cunning Action: Dash",
+            "type": "Bonus action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Move up to your speed again this turn.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Bonus-action usage and benefit reminders are structured; movement and opportunity attacks remain under DM control.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 96,
+                "rule": "Cunning Action",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-cunning-disengage",
+            "name": "Cunning Action: Disengage",
+            "type": "Bonus action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Movement this turn does not provoke opportunity attacks.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Bonus-action usage and benefit reminders are structured; movement and opportunity attacks remain under DM control.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 96,
+                "rule": "Cunning Action",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-cunning-hide",
+            "name": "Cunning Action: Hide",
+            "type": "Bonus action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Attempt to hide if the circumstances allow it.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Hiding requires cover, visibility and a Stealth check; the DM decides whether hiding succeeds.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 177,
+                "rule": "Hiding; Cunning Action p. 96",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-thaumaturgy",
+            "name": "Thaumaturgy",
+            "type": "Action",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Tiefling cantrip: create a minor supernatural sign within 30 feet; no slot.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 282,
+                "rule": "Thaumaturgy",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-hellish-rebuke",
+            "name": "Hellish Rebuke",
+            "type": "Reaction",
+            "attackBonus": null,
+            "damageDice": "3d10",
+            "damageType": "fire",
+            "saveAbility": "DEX",
+            "saveDC": 14,
+            "effect": "Once per long rest as a 2nd-level spell, after a creature you can see within 60 feet damages you. Dexterity save DC 14 for half fire damage.",
+            "resourceId": "ringgo-hellish-rebuke",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Confirm the visible attacker within 60 feet that damaged Ringgo. Racial casting is fixed at 2nd level, once per long rest.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 43,
+                "rule": "Tiefling; Hellish Rebuke p. 250",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "ringgo-assassinate",
+            "name": "Assassinate",
+            "type": "On attack",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Advantage against any creature that has not yet taken a turn in this combat. A hit against a surprised creature is a critical hit.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.",
+              "source": {
+                "book": "2014 PHB pp. 96–97; Tasha’s feat exception",
+                "printedPage": null,
+                "rule": "Sneak Attack / Assassinate / Piercer",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "ringgo-piercer-reroll",
+            "name": "Piercer: reroll damage",
+            "type": "Once per turn on a hit",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "After a piercing hit, reroll one damage die from that attack; use the new roll. A piercing Sneak Attack die also qualifies.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.",
+              "source": {
+                "book": "2014 PHB pp. 96–97; Tasha’s feat exception",
+                "printedPage": null,
+                "rule": "Sneak Attack / Assassinate / Piercer",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "ringgo-piercer-critical",
+            "name": "Piercer: critical hit",
+            "type": "On a piercing critical hit",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Add one extra weapon damage die: rapier +1d8, shortbow +1d6, or dagger +1d4. This extra die is not doubled.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Use these choices inside Ringgo’s weapon review. Do not resolve this as a separate damaging attack.",
+              "source": {
+                "book": "2014 PHB pp. 96–97; Tasha’s feat exception",
+                "printedPage": null,
+                "rule": "Sneak Attack / Assassinate / Piercer",
+                "confidence": "approved table choice"
+              }
+            }
+          }
+        ],
+        "spells": [
+          {
+            "name": "Thaumaturgy",
+            "level": 0,
+            "prepared": true,
+            "notes": "Tiefling racial cantrip; Charisma spellcasting.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 282,
+                "rule": "Thaumaturgy",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Hellish Rebuke",
+            "level": 2,
+            "prepared": true,
+            "notes": "Tiefling Infernal Legacy at character level 3: cast once per long rest as a 2nd-level spell; Dexterity save DC 14, 3d10 fire.",
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Confirm the visible attacker within 60 feet that damaged Ringgo. Racial casting is fixed at 2nd level, once per long rest.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 43,
+                "rule": "Tiefling; Hellish Rebuke p. 250",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          }
+        ],
+        "resources": [
+          {
+            "id": "ringgo-arrows",
+            "name": "Arrows",
+            "current": 20,
+            "max": 20,
+            "unit": "arrows",
+            "slotLevel": 0
+          },
+          {
+            "id": "ringgo-hellish-rebuke",
+            "name": "Hellish Rebuke",
+            "current": 1,
+            "max": 1,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Rapier",
+            "quantity": 1,
+            "category": "Weapon",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Shortbow",
+            "quantity": 1,
+            "category": "Weapon",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Dagger",
+            "quantity": 2,
+            "category": "Weapon",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Studded leather",
+            "quantity": 1,
+            "category": "Armor",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Thieves’ tools",
+            "quantity": 1,
+            "category": "Tool",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Arrows",
+            "quantity": 20,
+            "category": "Ammunition",
+            "notes": " · Quantity from tracked ammunition resource",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Hammer",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Mess kit",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Backpack",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Crowbar",
+            "quantity": 2,
+            "category": "Gear",
+            "notes": "PDF lists two",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Ball bearings",
+            "quantity": 999,
+            "category": "Gear",
+            "notes": "One bag",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Bedroll",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Bell",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Candle",
+            "quantity": 5,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Waterskin",
+            "quantity": 2,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "String",
+            "quantity": 10,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Piton",
+            "quantity": 10,
+            "category": "Gear",
+            "notes": "The current sheet says piton, not potion.",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Rations",
+            "quantity": 15,
+            "category": "Consumable",
+            "notes": "One day each",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Rope, hempen 50 ft.",
+            "quantity": 2,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Hooded lantern",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Oil flask",
+            "quantity": 2,
+            "category": "Consumable",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Torch",
+            "quantity": 10,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Tinderbox",
+            "quantity": 2,
+            "category": "Gear",
+            "notes": "Updated PDF lists two",
+            "equipped": false,
+            "attuned": false
+          }
+        ],
+        "money": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 15,
+          "pp": 0
+        },
+        "features": [
+          {
+            "name": "Sneak Attack",
+            "text": "2d6 once per turn on a qualifying finesse or ranged hit.",
+            "source": "Ringgo level 3 PDF p. 2"
+          },
+          {
+            "name": "Cunning Action",
+            "text": "Dash, Disengage, or Hide as a bonus action on each of your turns.",
+            "source": "Ringgo PDF p. 2"
+          },
+          {
+            "name": "Expertise",
+            "text": "Stealth and Investigation. Investigation is the DM-confirmed second choice after this export.",
+            "source": "Ringgo PDF p. 2; DM ruling 2026-09-25"
+          },
+          {
+            "name": "Hellish Resistance",
+            "text": "Resistance to fire damage.",
+            "source": "Ringgo PDF p. 2"
+          },
+          {
+            "name": "Infernal Legacy",
+            "text": "Thaumaturgy cantrip and Hellish Rebuke once per long rest as a 2nd-level spell at this level.",
+            "source": "Ringgo level 3 PDF pp. 2, 5"
+          },
+          {
+            "name": "Assassinate",
+            "text": "Advantage on attacks against creatures that have not taken a turn yet; a hit against a surprised target is a critical hit.",
+            "source": "Ringgo level 3 PDF p. 2"
+          },
+          {
+            "name": "Bonus Proficiencies",
+            "text": "Disguise kit and poisoner’s kit from Assassin archetype.",
+            "source": "Ringgo level 3 PDF p. 2"
+          },
+          {
+            "name": "Training",
+            "text": "Light armor; simple weapons, hand crossbow, longsword, rapier, shortsword; thieves’ tools, playing cards, land vehicles.",
+            "source": "Ringgo PDF p. 1"
+          },
+          {
+            "name": "Piercer",
+            "text": "DEX +1 (now 20). Once per turn on a piercing hit, reroll one damage die from the attack and use the new roll. On a piercing critical hit, add one extra weapon damage die.",
+            "source": "Tasha’s Cauldron of Everything · feat (2014 rules)"
+          }
+        ],
+        "inspiration": false,
+        "death": {
+          "successes": 0,
+          "failures": 0,
+          "stable": false
+        },
+        "exhaustion": 0,
+        "conditions": [],
+        "concentration": "",
+        "effects": [],
+        "publicNotes": "Age 30, 6 ft. tall; purple skin, green eyes, dark purple hair. Expertise: Stealth and Investigation.",
+        "favorites": []
+      },
+      "dungeonProtocol": 1,
+      "dungeon": {
+        "enabled": false,
+        "fine": false,
+        "current": [],
+        "explored": [],
+        "objects": [],
+        "passages": []
+      },
+      "searchRequests": [],
+      "travelProtocol": 1,
+      "journey": {
+        "position": {
+          "title": "Phandalin"
+        },
+        "destination": "",
+        "weather": "clear",
+        "estimate": null,
+        "places": [
+          {
+            "id": "region-neverwinter",
+            "title": "Neverwinter",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-old-owl-well",
+            "title": "Old Owl Well",
+            "status": "visited",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-wyvern-tor",
+            "title": "Wyvern Tor",
+            "status": "cleared",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-road-ambush",
+            "title": "Triboar Trail ambush",
+            "status": "visited",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-cragmaw-hideout",
+            "title": "Cragmaw Hideout",
+            "status": "visited",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-phandalin",
+            "title": "Phandalin",
+            "status": "visited",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-tresendar",
+            "title": "Tresendar Manor ruins",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          }
+        ],
+        "events": []
+      },
+      "atlas": null,
+      "atlasImage": "",
+      "travelRequests": [],
+      "playerToolsProtocol": 1,
+      "playerTools": {
+        "notes": [],
+        "sharedClues": [],
+        "itemRequests": [],
+        "bank": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 0,
+          "pp": 0
+        },
+        "objective": {
+          "text": "",
+          "at": ""
+        },
+        "roster": [
+          {
+            "id": "pc-aldric",
+            "name": "Aldric Vane"
+          },
+          {
+            "id": "pc-pebble",
+            "name": "Pebble"
+          },
+          {
+            "id": "pc-trista",
+            "name": "Trista"
+          },
+          {
+            "id": "pc-ringgo",
+            "name": "Ringgo Paul"
+          },
+          {
+            "id": "pc-donavan",
+            "name": "Donavan Kemp"
+          }
+        ]
+      },
+      "actionProtocol": 1,
+      "combatProtocol": 1,
+      "combatPrompts": {
+        "saves": [],
+        "reactions": []
+      },
+      "movement": {
+        "columns": 30,
+        "feet": 5,
+        "metric": "grid",
+        "speed": 30,
+        "used": 0,
+        "crawling": false,
+        "areas": []
+      },
+      "scene": "cover",
+      "sceneTitle": "The Echo Below",
+      "isMap": false,
+      "mapImage": "",
+      "playerInput": true,
+      "fog": [],
+      "fogged": false,
+      "fineFog": false,
+      "points": [],
+      "tokens": [],
+      "turn": {
+        "round": 0,
+        "activeId": null
+      },
+      "roll": null,
+      "requests": "",
+      "actionRequests": [],
+      "privateClues": [],
+      "inventory": [],
+      "sceneMood": {
+        "minutes": 540,
+        "weather": "clear",
+        "phase": "day"
+      },
+      "campaignJournal": [
+        {
+          "id": "continuity-actual-s1-hideout",
+          "title": "Klarg defeated; Yeemik in charge",
+          "text": "The party killed Klarg and left Yeemik in charge after their bargain to release Sildar.",
+          "kind": "completed",
+          "when": "Session 1"
+        },
+        {
+          "id": "continuity-actual-s1-sildar",
+          "title": "Sildar rescued",
+          "text": "Sildar was rescued and traveled with the party to Phandalin.",
+          "kind": "completed",
+          "when": "Session 1"
+        },
+        {
+          "id": "continuity-actual-s1-coins",
+          "title": "Copper and silver recovered",
+          "text": "The party recovered copper and silver. Amounts and division were not recorded.",
+          "kind": "completed",
+          "when": "Session 1"
+        },
+        {
+          "id": "continuity-actual-s1-potion",
+          "title": "Aldric revived; found potion spent",
+          "text": "Aldric fell to 0 HP and the party revived him with a healing potion found in the hideout. That potion is spent.",
+          "kind": "completed",
+          "when": "Session 1"
+        },
+        {
+          "id": "continuity-actual-s1-stop",
+          "title": "Long rest and arrival at Barthen’s",
+          "text": "The whole party and Sildar completed a long rest. Session 1 ended outside Barthen’s, before entering or making a delivery.",
+          "kind": "completed",
+          "when": "Session 1"
+        },
+        {
+          "id": "continuity-actual-s23-spider",
+          "title": "The party learned of the Black Spider",
+          "text": "The party learned that the Black Spider exists.",
+          "kind": "confirmed",
+          "when": "Sessions 2–3 · combined record"
+        },
+        {
+          "id": "continuity-actual-s23-redbrands",
+          "title": "The party learned the Redbrands have Gundren",
+          "text": "The party learned that the Redbrands have Gundren. His current location and rescue have not been confirmed in this report.",
+          "kind": "confirmed",
+          "when": "Sessions 2–3 · combined record"
+        },
+        {
+          "id": "continuity-actual-s23-orcs",
+          "title": "The orc camp was cleared",
+          "text": "The party killed the orc camp. Individual enemy fates, loot, and any reward payment were not reported.",
+          "kind": "completed",
+          "when": "Sessions 2–3 · combined record"
+        },
+        {
+          "id": "continuity-actual-s23-koth",
+          "title": "Hamun Kost disappeared without a fight",
+          "text": "Hamun Kost, the wizard at Old Owl Well, disappeared instead of fighting. How he disappeared and where he went remain unknown.",
+          "kind": "completed",
+          "when": "Sessions 2–3 · combined record"
+        },
+        {
+          "id": "continuity-actual-s23-stop",
+          "title": "Stopped before the Redbrand hideout",
+          "text": "The party stopped just before entering the Redbrand hideout. The exploration inside is still ahead.",
+          "kind": "completed",
+          "when": "Sessions 2–3 · combined record"
+        },
+        {
+          "id": "continuity-actual-redbrand-gundren-with-party",
+          "title": "The party recovered Gundren",
+          "text": "Glasstaff put Gundren to sleep. The party recovered him.",
+          "kind": "confirmed",
+          "when": "Latest played Redbrand session"
+        },
+        {
+          "id": "continuity-actual-redbrand-rat-captured",
+          "title": "The party captured a rat",
+          "text": "The party captured a rat in the Redbrand hideout.",
+          "kind": "confirmed",
+          "when": "Latest played Redbrand session"
+        },
+        {
+          "id": "continuity-actual-redbrand-glasstaff-escaped",
+          "title": "Glasstaff escaped",
+          "text": "Glasstaff escaped. His destination is unknown to the party.",
+          "kind": "confirmed",
+          "when": "Latest played Redbrand session"
+        },
+        {
+          "id": "continuity-actual-redbrand-gundren-at-inn",
+          "title": "Gundren was left at an inn",
+          "text": "The party left Gundren at an inn.",
+          "kind": "confirmed",
+          "when": "Latest played Redbrand session"
+        },
+        {
+          "id": "continuity-actual-redbrand-rat-with-trista",
+          "title": "Trista has the captured rat",
+          "text": "Trista is holding the rat the party captured.",
+          "kind": "confirmed",
+          "when": "Latest played Redbrand session"
+        },
+        {
+          "id": "continuity-actual-redbrand-stop-barthens",
+          "title": "Stopped at Barthen’s Provisions",
+          "text": "The party stopped at Barthen’s Provisions.",
+          "kind": "confirmed",
+          "when": "Latest played Redbrand session"
+        }
+      ],
+      "quests": [
+        {
+          "id": "gundren",
+          "title": "Find Gundren",
+          "state": "active",
+          "goal": "The party left Gundren at an inn."
+        },
+        {
+          "id": "sildar",
+          "title": "Rescue Sildar",
+          "state": "completed",
+          "goal": "Sildar was rescued and traveled with the party to Phandalin."
+        },
+        {
+          "id": "redbrands",
+          "title": "The Redbrand Threat",
+          "state": "active",
+          "goal": "Glasstaff escaped. His destination is unknown to the party."
+        },
+        {
+          "id": "orc-camp",
+          "title": "The Orc Camp",
+          "state": "completed",
+          "goal": "The party killed the orc camp. Individual enemy fates, loot, and any reward payment were not reported."
+        },
+        {
+          "id": "black-spider",
+          "title": "Investigate the Black Spider",
+          "state": "active",
+          "goal": "The party learned that the Black Spider exists."
+        },
+        {
+          "id": "old-owl",
+          "title": "Old Owl Well",
+          "state": "active",
+          "goal": "Hamun Kost, the wizard at Old Owl Well, disappeared instead of fighting. How he disappeared and where he went remain unknown."
+        }
+      ],
+      "campaignTracks": [
+        {
+          "kind": "promise",
+          "subject": "Kill Klarg in exchange for Sildar’s release",
+          "holder": "Party",
+          "owedTo": "Yeemik",
+          "state": "resolved",
+          "note": ""
+        },
+        {
+          "kind": "rescue",
+          "subject": "Sildar Hallwinter",
+          "holder": "With the party at the end of Session 1",
+          "owedTo": "",
+          "state": "resolved",
+          "note": ""
+        },
+        {
+          "kind": "custody",
+          "subject": "Hideout copper and silver",
+          "holder": "Unrecorded",
+          "owedTo": "",
+          "state": "unknown",
+          "note": "Amounts unknown; do not invent quantities."
+        },
+        {
+          "kind": "custody",
+          "subject": "Found healing potion",
+          "holder": "Consumed to heal Aldric",
+          "owedTo": "",
+          "state": "resolved",
+          "note": ""
+        },
+        {
+          "kind": "escape",
+          "subject": "Hamun Kost",
+          "holder": "Whereabouts unknown",
+          "owedTo": "",
+          "state": "open",
+          "note": "Disappeared without combat. Do not assume death, teleportation, or surrender."
+        },
+        {
+          "kind": "custody",
+          "subject": "Gundren Rockseeker",
+          "holder": "At an inn; specific inn unreported",
+          "owedTo": "",
+          "state": "open",
+          "note": "Present condition and safety unconfirmed. Do not mark the rescue complete."
+        },
+        {
+          "kind": "escape",
+          "subject": "Iarno Albrek (Glasstaff)",
+          "holder": "Whereabouts unknown to the party",
+          "owedTo": "",
+          "state": "open",
+          "note": "The DM has a private destination record."
+        },
+        {
+          "kind": "custody",
+          "subject": "Captured rat",
+          "holder": "Trista",
+          "owedTo": "",
+          "state": "open",
+          "note": "Do not assume the characters know it is a familiar."
+        }
+      ],
+      "initiative": {
+        "open": false,
+        "total": null,
+        "bonus": 4
+      },
+      "rehearsal": false
+    }
+  },
+  "playerTV": "The Echo Below\nControls & interaction\nDay · Clear\nMAIN QUEST\nThe Echo Below\n\nFollow the evidence uncovered in Phandalin and choose the next lead together.\n\nPRACTICE CAMPAIGN",
+  "displayImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-fixes-2026-10-12/01-before-TV.png",
+  "phoneImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-fixes-2026-10-12/players/pc-ringgo-01-before.png"
+}

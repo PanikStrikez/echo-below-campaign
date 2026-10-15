@@ -1,0 +1,110 @@
+{
+  "at": "2026-10-11T23:58:20.084Z",
+  "browser": "153.0.8010.53",
+  "method": "Real headless Chrome, nine interleaved fresh blob-image decodes per file; excludes network transfer and scene rendering.",
+  "results": [
+    {
+      "name": "full",
+      "bytes": 4098493,
+      "samples": [
+        14.800000071525574,
+        14.800000071525574,
+        14.899999976158142,
+        14.899999976158142,
+        14.899999976158142,
+        15.299999952316284,
+        15.5,
+        15.5,
+        16
+      ],
+      "nativePixels": [
+        1536,
+        1024
+      ],
+      "medianDecodeMs": 14.9
+    },
+    {
+      "name": "phandalin-section-nw",
+      "bytes": 1127167,
+      "samples": [
+        5.199999928474426,
+        5.200000047683716,
+        5.200000047683716,
+        5.299999952316284,
+        5.299999952316284,
+        5.399999976158142,
+        5.399999976158142,
+        5.399999976158142,
+        5.5
+      ],
+      "nativePixels": [
+        768,
+        512
+      ],
+      "medianDecodeMs": 5.3
+    },
+    {
+      "name": "phandalin-section-ne",
+      "bytes": 1128226,
+      "samples": [
+        5.099999904632568,
+        5.199999928474426,
+        5.200000047683716,
+        5.299999952316284,
+        5.299999952316284,
+        5.299999952316284,
+        5.399999976158142,
+        5.5,
+        5.600000023841858
+      ],
+      "nativePixels": [
+        768,
+        512
+      ],
+      "medianDecodeMs": 5.3
+    },
+    {
+      "name": "phandalin-section-sw",
+      "bytes": 1123310,
+      "samples": [
+        5.100000023841858,
+        5.199999928474426,
+        5.299999952316284,
+        5.299999952316284,
+        5.299999952316284,
+        5.300000071525574,
+        5.399999976158142,
+        5.399999976158142,
+        5.5
+      ],
+      "nativePixels": [
+        768,
+        512
+      ],
+      "medianDecodeMs": 5.3
+    },
+    {
+      "name": "phandalin-section-se",
+      "bytes": 1117249,
+      "samples": [
+        5.100000023841858,
+        5.199999928474426,
+        5.200000047683716,
+        5.200000047683716,
+        5.299999952316284,
+        5.299999952316284,
+        5.300000071525574,
+        5.300000071525574,
+        5.399999976158142
+      ],
+      "nativePixels": [
+        768,
+        512
+      ],
+      "medianDecodeMs": 5.3
+    }
+  ],
+  "losslessSavedPixelComparison": true,
+  "originalPixelsUnchanged": true,
+  "scope": "Optional clean terrain crops. Not auto-staged or assigned new live scene IDs. All four crops combined are larger than the original PNG; load one relevant section only."
+}

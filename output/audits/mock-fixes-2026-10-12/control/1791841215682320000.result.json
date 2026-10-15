@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "result": {
+    "point": {
+      "id": "1791841215639-67o54",
+      "label": "PRACTICE automatic 7",
+      "kind": "automatic",
+      "created": 1791841215656,
+      "bytes": 153822,
+      "originalBytes": 918731,
+      "encoding": "gzip"
+    },
+    "hasSessions": true,
+    "sessionCount": 1
+  }
+}

@@ -1,0 +1,459 @@
+[
+  {
+    "id": "s3-prep",
+    "title": "Before play · carry forward what actually happened",
+    "read": [],
+    "ask": [
+      "The party stopped at Barthen’s Provisions. Did they enter or speak to Barthen? Is Gundren still asleep at the inn, or has he recovered? What did the party actually learn about Glasstaff’s escape?",
+      "Were the wagon and Lionshield goods delivered? Which rewards were actually paid?",
+      "Glasstaff escaped and Trista holds his rat. Are Mirna, Nars, Nilsa, and Droop safe?",
+      "What are the five current levels, HP, spell slots, supplies, and Sildar’s equipment?"
+    ],
+    "scene": "town-phandalin"
+  },
+  {
+    "id": "s3-choice",
+    "title": "1 · Choose the lead, not the destination",
+    "read": [
+      "You have stopped at Barthen’s Provisions. Gundren is at an inn, and Trista has the rat you captured. Glasstaff escaped. What do you do next?",
+      "The shop doorway is close at hand, while the inn and the rest of town remain separate places to visit. You can settle ordinary business first, check on the companion you left behind, or give Trista room to decide what to do with her captive. The next step belongs to you."
+    ],
+    "ask": [
+      "What evidence do you trust? Who comes with you? What do you buy, borrow, or leave behind?"
+    ],
+    "scene": "town-phandalin"
+  },
+  {
+    "id": "s3-travel",
+    "title": "2 · Triboar Trail and Neverwinter Wood",
+    "read": [
+      "The last chimney smoke falls behind you. The trail runs between long grasses and dark stands of trees, then narrows until every snapped twig sounds close.",
+      "The change in the ground and the narrowing view make it worth agreeing who leads and how closely you follow. Grass gives way to cover where the trail bends, and the last clear stretch of road is now behind you. You can pause to check your bearings before taking the next turn."
+    ],
+    "ask": [
+      "What is the marching order, travel pace, light plan, and watch schedule? Is anyone tracking a specific sign?"
+    ],
+    "scene": "lmop-triboar-trail"
+  },
+  {
+    "id": "s3-agatha",
+    "title": "Optional lead · Conyberry and Agatha",
+    "read": [
+      "Beyond the ruined village, branches bend together into a low shelter. The air stills. A voice from within sounds older than the trees: “You came this far to ask me something?”",
+      "The low shelter makes a close approach very different from calling out at a distance. Still branches frame the entrance, and the voice waits for an answer. You can offer your purpose plainly, choose your words with care, or keep to the edge of the clearing while you speak."
+    ],
+    "ask": [
+      "What single question matters most, and who speaks for the group? Do you offer Sister Garaele’s comb?"
+    ],
+    "scene": "lmop-agathas-lair"
+  },
+  {
+    "id": "s3-old-owl",
+    "title": "Optional lead · Old Owl Well",
+    "read": [
+      "The broken watchtower stands where you last saw Hamun Kost. What remains here depends on what the party left behind.",
+      "The broken stone is a landmark you can recognize without deciding what happened after your departure. You can compare the ground and the tower with your last visit, look for an actual new trace, or keep watch while someone examines the place more closely."
+    ],
+    "ask": [
+      "What are you looking for on your return, and how do you approach the ruins?"
+    ],
+    "scene": "lmop-old-owl-well"
+  },
+  {
+    "id": "s3-old-owl-fight",
+    "title": "If violence starts · Old Owl Well",
+    "read": [],
+    "ask": [
+      "Where are the PCs relative to the tower, well, and tent? Did Kost call a halt before spells were cast?"
+    ],
+    "scene": "lmop-map-old-owl-well"
+  },
+  {
+    "id": "s3-wyvern",
+    "title": "Optional lead · Wyvern Tor",
+    "read": [
+      "The ravine and cave mouth are familiar from the camp the party cleared. What signs remain depends on what they left behind.",
+      "The familiar approach gives you a point from which to compare what is here now with what you remember. The ravine and the opening remain useful landmarks. You can look for a specific change, approach the cave cautiously, or leave the cleared camp behind without searching it again."
+    ],
+    "ask": [
+      "What brings you back to the cleared camp, and what are you checking?"
+    ],
+    "scene": "lmop-wyvern-tor-approach"
+  },
+  {
+    "id": "s3-wyvern-fight",
+    "title": "If the camp fights · Wyvern Tor",
+    "read": [],
+    "ask": [
+      "Was the sentry silenced? Which defenders heard a warning, and what cover does each side have?"
+    ],
+    "scene": "lmop-map-wyvern-tor"
+  },
+  {
+    "id": "s3-thundertree",
+    "title": "Optional lead · Reidoth at Thundertree",
+    "read": [
+      "A weathered warning faces the road into an overgrown village. Roofs are broken, walls lean into vines, and the hilltop tower still stands above them all.",
+      "The warning and the tower give you landmarks before you commit to any particular building. Between the ruined walls, the growth interrupts sightlines and makes some paths clearer than others. You can read the sign, study the nearest approach, or decide how to keep your companions in view."
+    ],
+    "ask": [
+      "Are you seeking Reidoth, scouting ruins, or following another reason to enter?"
+    ],
+    "scene": "town-thundertree"
+  },
+  {
+    "id": "s3-tt-1",
+    "title": "Thundertree 1 · Western cottage",
+    "read": [
+      "A roofless cottage crouches beneath a broad tree. Its doorway has almost vanished into weeds.",
+      "The weeds interrupt a straight approach to the doorway, and the open roof leaves the cottage exposed to the sky. You can examine the nearer ground, look through the ruined walls, or keep watch beneath the broad tree before choosing how to enter."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-overview"
+  },
+  {
+    "id": "s3-tt-2",
+    "title": "Thundertree 2 · Blighted cottages",
+    "read": [
+      "Two collapsed homes stand side by side, their old rooms given over to brush and young trees.",
+      "The brush has grown across what used to separate the homes' rooms. Fallen walls still mark their old boundaries beneath the living growth. You can inspect a particular patch of rubble or keep together where the route between the two ruins is easiest to see."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-overview"
+  },
+  {
+    "id": "s3-tt-3",
+    "title": "Thundertree 3 · The Brown Horse",
+    "read": [
+      "A faded horse sign hangs above the door of an old tavern. Inside, forms slump against the walls and beneath the bar.",
+      "The hanging sign gives the ruin a name even though its hospitality is long gone. The slumped forms are visible among the remains of ordinary tavern furnishings. You can stop at the doorway to study them, call into the room, or decide where to stand before entering."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-brown-horse"
+  },
+  {
+    "id": "s3-tt-4",
+    "title": "Thundertree 4 · Reidoth’s watch",
+    "read": [
+      "One cottage seems to have resisted the years. Its shutters are stout, and someone has cleared the growth near the door.",
+      "The cleared approach and sturdy shutters set this house apart from its neighbors. They give you somewhere to knock or call without pushing through the overgrowth. You can announce yourselves, inspect the outside, or wait at a respectful distance for someone to answer."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-overview"
+  },
+  {
+    "id": "s3-tt-5",
+    "title": "Thundertree 5 · Blighted farmhouse",
+    "read": [
+      "The farmhouse walls have collapsed into a knot of gorse. Something small shifts in the leaves when you disturb the stones.",
+      "The tangle of shrubs hides parts of the ground where the walls once stood. The movement in the leaves is brief enough to invite attention rather than an immediate explanation. You can stop disturbing the stones, look for a clearer position, or watch the growth while discussing the approach."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-overview"
+  },
+  {
+    "id": "s3-tt-6",
+    "title": "Thundertree 6 · Ruined store and webs",
+    "read": [
+      "White strands cross the lane to a broken store. The building looks empty from outside, though its walls offer plenty of shadows.",
+      "The strands cross the lane as well as the building, making the approach itself worth examining. Your light catches some threads more readily than the shadows behind them. You can study the webbing from clear ground or decide how much of the lane you want to cross."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-spider-store"
+  },
+  {
+    "id": "s3-tt-7",
+    "title": "Thundertree 7 · Venomfang’s tower",
+    "read": [
+      "A broken tower rises above two spider corpses. The air around it smells sharp and wrong; the upper roof is open to the sky.",
+      "The dead spiders give the tower's sharp smell a more tangible companion. Broken stone and the open upper roof offer places to look before you approach the entrance. You can keep your distance, seek another view of the structure, or pause to decide what danger you are willing to meet."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-dragon-tower"
+  },
+  {
+    "id": "s3-tt-8",
+    "title": "Thundertree 8 · Old smithy",
+    "read": [
+      "Rotten wood and a wide chimney mark the old forge. Two ash-covered shapes slump where the anvils once stood.",
+      "The chimney remains a landmark above the rotten construction, while the shapes inside sit among the traces of old work. You can watch them from the entrance, inspect the nearby ground, or listen before disturbing the room. The forge's former purpose does not explain its present occupants."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-overview"
+  },
+  {
+    "id": "s3-tt-9",
+    "title": "Thundertree 9 · Herbalist’s shop",
+    "read": [
+      "Broken bottles and unreadable books fill an old shop. ",
+      "Glass fragments and damaged pages share the floor beneath the shelving. You can examine one storage place at a time rather than overturn the whole room. If someone has given you a description to follow, you can compare it with what you actually see here."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-overview"
+  },
+  {
+    "id": "s3-tt-10",
+    "title": "Thundertree 10 · Town square",
+    "read": [
+      "A leaning warrior statue watches over a square almost swallowed by brush. Paths leave in several directions.",
+      "The warrior's pose remains visible despite the statue's lean, and the paths offer several different ways to leave the square. You can study the carving, check your bearings against the surrounding ruins, or choose the next approach with the whole group in sight."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-overview"
+  },
+  {
+    "id": "s3-tt-11",
+    "title": "Thundertree 11 · Old garrison",
+    "read": [
+      "An old stone barracks still has a roof and narrow windows. Rusted armor lies among the beds.",
+      "The surviving roof makes the barracks feel more enclosed than the cottages outside. Narrow windows admit limited views, while beds and old armor divide the interior. You can stop to examine the threshold, look over the room, or listen before touching any of the remains."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-garrison"
+  },
+  {
+    "id": "s3-tt-12",
+    "title": "Thundertree 12 · Weaver’s cottage",
+    "read": [
+      "A broken loom sits in a cottage open to the weather. Thick growth hides the ground beyond its southern wall.",
+      "The broken loom identifies one kind of work once done here. Beyond it, the southern growth conceals ground you cannot yet judge. You can examine the cottage's visible remains or keep back from the thicket while deciding where to direct your attention."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-overview"
+  },
+  {
+    "id": "s3-tt-13",
+    "title": "Thundertree 13 · Dragon cultists",
+    "read": [
+      "The shutters of this apparently empty house are barred from within. You hear low voices behind them.",
+      "The voices make the barred shutters more than a sign of an abandoned house. They offer a chance to speak before attempting to get inside. You can call from the approach, listen for a response, or stand where the occupants can see you if they choose to look out."
+    ],
+    "ask": [
+      "How do you approach, and where is each character?"
+    ],
+    "scene": "lmop-map-thundertree-cultists"
+  },
+  {
+    "id": "s3-castle-sight",
+    "title": "3 · Cragmaw Castle comes into view",
+    "read": [
+      "The trees give way to a low rise. Seven broken towers crowd around a ruined stronghold. The place looks abandoned until you catch a small movement behind a narrow slit in the stone.",
+      "The broken upper stonework does not make the lower walls transparent. Trees still provide places to stop and observe, while the rise exposes anyone who crosses it. You can count visible approaches, watch the slit for another movement, or withdraw to discuss a quieter route."
+    ],
+    "ask": [
+      "How long do you watch? Do you seek another entry, wear a disguise, or approach the gate?"
+    ],
+    "scene": "lmop-castle-approach"
+  },
+  {
+    "id": "s3-castle-enter",
+    "title": "4 · Begin castle exploration",
+    "read": [],
+    "ask": [
+      "Which entrance do you use? Who is first? What light is visible to the defenders?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area1",
+    "title": "Area 1 · Entrance and sentries",
+    "read": [
+      "Shattered gate timbers lie across an old entrance. Above the wreckage, narrow slots stare out from two small chambers.",
+      "The wrecked timbers interrupt a straight walk through the entrance. The narrow openings above offer views into the approach without giving you the same view back. You can study the wall from cover, look for a clearer way through, or decide who will cross the exposed ground first."
+    ],
+    "ask": [
+      "Do you move quietly, call out, or look for another way in?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area2",
+    "title": "Area 2 · Falling rubble",
+    "read": [
+      "A wide hall disappears into half-light. Dust lies thick around a pile of fallen plaster, and closed doors lead away on either side.",
+      "The fallen plaster marks one part of the floor as different from the rest. Beyond it, the closed doors give you choices without revealing what lies behind them. You can inspect the ground, listen at a door, or choose a position that keeps the entrance in sight."
+    ],
+    "ask": [
+      "Where does each character step? Is anyone actively searching the damaged ceiling or floor?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area4",
+    "title": "Area 4 · Ruined barracks",
+    "read": [
+      "Broken stone has swallowed much of the tower, but bedrolls and a narrow cleared path show that someone still sleeps here.",
+      "The cleared strip and the bedding are more recent signs than the fallen masonry around them. You can follow the space someone has made through the rubble or stop to examine how it is being used. The damaged tower offers no assurance that everyone inside is asleep or absent."
+    ],
+    "ask": [
+      "Do you pass, search, disguise yourselves, or speak to the occupants?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area5",
+    "title": "Area 5 · Storeroom and Sildar’s gear",
+    "read": [
+      "Spoiled provisions and old casks crowd the room. Among them lie a bloodied coat of mail, a crossbow, and a sword bearing a familiar crest.",
+      "The recognizable equipment is within a room still crowded by old stores. You can examine its markings and condition without deciding how it came here. The casks and provisions break up the floor around it, so someone can watch the entrance while another person investigates."
+    ],
+    "ask": [
+      "What do you search or take? Do you recognize the equipment?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area6",
+    "title": "Area 6 · Hobgoblin barracks",
+    "read": [
+      "This room is surprisingly orderly. Weapons hang on brackets above four pallets, and the floor has been swept clear of rubble.",
+      "The swept floor and arranged weapons stand out against the ruin you passed on the way here. The pallets leave recognizable places to rest and narrow spaces to move between them. You can inspect the room from its edge or check which visible exit you want watched."
+    ],
+    "ask": [
+      "Do you parley, withdraw, or fight? Who can see the door?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area7",
+    "title": "Area 7 · Banquet hall",
+    "read": [
+      "Once a grand hall, this chamber now smells of stale food and a neglected brazier. Goblin voices rise around two scarred tables.",
+      "The two tables take up much of the social space, with the neglected brazier drawing stale smells around it. The voices give you something to listen to before you answer them. You can remain at the edge, make your presence clear, or take stock of the route back out."
+    ],
+    "ask": [
+      "Do you enter openly, use the noise as cover, or try another route?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area8",
+    "title": "Area 8 · Dark hall and grick",
+    "read": [
+      "A narrow, lightless hall bears carvings that do not match its current occupants. Heavy curtains hang to the north, and a stone brazier stands between them.",
+      "The carvings reward a closer look, but the curtains prevent you from seeing the spaces beyond them. The stone brazier is a visible landmark between those covered openings. You can study the workmanship, listen toward the cloth, or decide whether to move farther into the hall."
+    ],
+    "ask": [
+      "What light do you carry? Do you examine the carvings or move beneath the ledges?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area9",
+    "title": "Area 9 · Goblin shrine",
+    "read": [
+      "A stone altar lies beneath a blood-dark cloth. A goblin in ritual scraps fusses over gold-colored implements while two acolytes watch the curtains.",
+      "The cloth hides much of the altar's surface, while the implements catch what light reaches the room. The watchers' attention rests on the curtains as well as on you. You can address them from where you stand, inspect what is visible, or withdraw before disturbing the arrangement."
+    ],
+    "ask": [
+      "Do you interrupt, negotiate, or pass without drawing attention?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area10",
+    "title": "Area 10 · South postern gate",
+    "read": [
+      "An overgrown path climbs toward an iron door protected by the wall above it. Narrow slits overlook the approach.",
+      "The door offers a more contained approach than the wrecked main entrance, but the slits still overlook the ground before it. Brush crowds the path around your feet. You can examine the door and wall from a distance or decide how to approach without assuming the entrance is unwatched."
+    ],
+    "ask": [
+      "Do you test the lock, watch the slits, or search for another entrance?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area11",
+    "title": "Area 11 · Concealed north entrance",
+    "read": [
+      "A fallen tower lies under dusty canvas and brush. A few old crates remain where a storeroom once stood.",
+      "The canvas and vegetation break up the outline of what the tower used to be. The crates are the clearest remaining sign of its practical use. You can examine a visible patch of ground, check beneath accessible cover, or keep the ruined approach in sight while someone searches."
+    ],
+    "ask": [
+      "Where do you search? Does anyone inspect the outer wall?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area12",
+    "title": "Area 12 · Guard barracks",
+    "read": [
+      "Four pallets line a cramped guardroom. A coal brazier glows, and a curtain conceals an arch to the north.",
+      "The brazier's glow reaches the pallets more readily than it reaches beyond the hanging cloth. The curtain separates what you can see from what you can only hear. You can pause to listen, examine the guardroom, or decide who will stand nearest the covered arch."
+    ],
+    "ask": [
+      "Can the guards see you? Do you block the north route or let one run?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area13",
+    "title": "Area 13 · Owlbear tower",
+    "read": [
+      "Something heavy shifts beyond the barred door. The wood shudders once, then a low animal breath fills the silence.",
+      "The barred door gives you a boundary you can choose to keep. The weight behind it is audible before it is visible, and the wood's movement gives you reason to judge your distance. You can listen, examine the fastening, or leave the barrier intact while discussing another route."
+    ],
+    "ask": [
+      "Do you open the bar, leave it closed, or prepare a way out?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-area14",
+    "title": "Area 14 · Grol and Vyerith",
+    "read": [
+      "Voices cut through the door: a harsh demand, then a smooth reply. Inside, furs cover the floor while a towering bugbear argues with a dark-clad visitor.",
+      "The argument reveals different voices, not an agreement you understand yet. The furs and the speakers' positions divide the room into places to approach or avoid. You can listen for a few more words, announce yourselves, or look for a position that keeps your way out clear."
+    ],
+    "ask": [
+      "Do you listen longer, speak through the door, strike first, or look for another way in?"
+    ],
+    "scene": "lmop-map-cragmaw-castle"
+  },
+  {
+    "id": "s3-warband",
+    "title": "Optional consequence · Returning war band",
+    "read": [
+      "Boots and low voices approach through the trees. A returning patrol has found the castle less quiet than it expected.",
+      "The approaching sounds give you time to look toward cover and the route you used to reach the castle. How clearly you can see the patrol depends on where you stand. You can wait to learn more, call out, or decide whether to leave before the meeting becomes unavoidable."
+    ],
+    "ask": [
+      "Do you hide, negotiate, retreat, or stand your ground?"
+    ],
+    "scene": "lmop-map-triboar-trail"
+  },
+  {
+    "id": "s3-close",
+    "title": "Close · Record the trail to the mine",
+    "read": [],
+    "ask": [
+      "What do you do with Gundren, the map, Sildar’s gear, prisoners, and any bargains?",
+      "Which route or promise matters next? What did each character actually learn?"
+    ],
+    "scene": "town-phandalin"
+  }
+]

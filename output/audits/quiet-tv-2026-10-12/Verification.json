@@ -1,0 +1,353 @@
+{
+  "at": "2026-10-12T07:30:58.167Z",
+  "environment": "Disposable Chrome profile and services; original supplied save imported",
+  "physicalDevices": false,
+  "liveServicesChanged": false,
+  "providerRequests": 0,
+  "checks": [
+    "calibrated stage dimensions identical across presets",
+    "concise scene name",
+    "turn text >=17px at intended resolutions",
+    "interaction mode gates controls and map focus",
+    "objective and subtitle switches",
+    "existing label rotation",
+    "portrait setting",
+    "disconnected warning"
+  ],
+  "screens": [
+    {
+      "name": "tv-classic-1920",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "pageWidth": 1920,
+      "stage": {
+        "width": 1260,
+        "height": 840
+      },
+      "title": "Redbrand Hideout",
+      "turns": [
+        {
+          "text": "Trista · 18",
+          "size": 15
+        },
+        {
+          "text": "Donavan · 17",
+          "size": 15
+        },
+        {
+          "text": "Ringgo · 16",
+          "size": 15
+        },
+        {
+          "text": "Pebble · 15",
+          "size": 15
+        },
+        {
+          "text": "Aldric · 14",
+          "size": 15
+        }
+      ],
+      "labelRotation": "90deg",
+      "preset": "classic"
+    },
+    {
+      "name": "tv-quiet-1920",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "pageWidth": 1920,
+      "stage": {
+        "width": 1260,
+        "height": 840
+      },
+      "title": "Redbrand Hideout",
+      "turns": [
+        {
+          "text": "▶ Trista",
+          "size": 22.08
+        },
+        {
+          "text": "2 Donavan",
+          "size": 22.08
+        },
+        {
+          "text": "3 Ringgo",
+          "size": 22.08
+        },
+        {
+          "text": "4 Pebble",
+          "size": 22.08
+        },
+        {
+          "text": "5 Aldric",
+          "size": 22.08
+        }
+      ],
+      "labelRotation": "90deg",
+      "preset": "quiet"
+    },
+    {
+      "name": "tv-interaction-mode",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "pageWidth": 1920,
+      "stage": {
+        "width": 1260,
+        "height": 840
+      },
+      "title": "Redbrand Hideout",
+      "turns": [
+        {
+          "text": "▶ Trista",
+          "size": 22.08
+        },
+        {
+          "text": "2 Donavan",
+          "size": 22.08
+        },
+        {
+          "text": "3 Ringgo",
+          "size": 22.08
+        },
+        {
+          "text": "4 Pebble",
+          "size": 22.08
+        },
+        {
+          "text": "5 Aldric",
+          "size": 22.08
+        }
+      ],
+      "labelRotation": "90deg",
+      "preset": "quiet"
+    },
+    {
+      "name": "tv-objective-and-subtitles",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "pageWidth": 1920,
+      "stage": {
+        "width": 1260,
+        "height": 840
+      },
+      "title": "Redbrand Hideout",
+      "turns": [
+        {
+          "text": "▶ Trista",
+          "size": 22.08
+        },
+        {
+          "text": "2 Donavan",
+          "size": 22.08
+        },
+        {
+          "text": "3 Ringgo",
+          "size": 22.08
+        },
+        {
+          "text": "4 Pebble",
+          "size": 22.08
+        },
+        {
+          "text": "5 Aldric",
+          "size": 22.08
+        }
+      ],
+      "labelRotation": "90deg",
+      "preset": "quiet"
+    },
+    {
+      "name": "tv-overlays-off",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "pageWidth": 1920,
+      "stage": {
+        "width": 1260,
+        "height": 840
+      },
+      "title": "Redbrand Hideout",
+      "turns": [
+        {
+          "text": "▶ Trista",
+          "size": 22.08
+        },
+        {
+          "text": "2 Donavan",
+          "size": 22.08
+        },
+        {
+          "text": "3 Ringgo",
+          "size": 22.08
+        },
+        {
+          "text": "4 Pebble",
+          "size": 22.08
+        },
+        {
+          "text": "5 Aldric",
+          "size": 22.08
+        }
+      ],
+      "labelRotation": "90deg",
+      "preset": "quiet"
+    },
+    {
+      "name": "tv-quiet-3840",
+      "viewport": [
+        3840,
+        2160
+      ],
+      "pageWidth": 3840,
+      "stage": {
+        "width": 2783,
+        "height": 1855.328125
+      },
+      "title": "Redbrand Hideout",
+      "turns": [
+        {
+          "text": "▶ Trista",
+          "size": 24
+        },
+        {
+          "text": "2 Donavan",
+          "size": 24
+        },
+        {
+          "text": "3 Ringgo",
+          "size": 24
+        },
+        {
+          "text": "4 Pebble",
+          "size": 24
+        },
+        {
+          "text": "5 Aldric",
+          "size": 24
+        }
+      ],
+      "labelRotation": "90deg",
+      "preset": "quiet"
+    },
+    {
+      "name": "tv-quiet-1080",
+      "viewport": [
+        1080,
+        1920
+      ],
+      "pageWidth": 1080,
+      "stage": {
+        "width": 973,
+        "height": 648.65625
+      },
+      "title": "Redbrand Hideout",
+      "turns": [
+        {
+          "text": "▶ Trista",
+          "size": 17
+        },
+        {
+          "text": "2 Donavan",
+          "size": 17
+        },
+        {
+          "text": "3 Ringgo",
+          "size": 17
+        },
+        {
+          "text": "4 Pebble",
+          "size": 17
+        },
+        {
+          "text": "5 Aldric",
+          "size": 17
+        }
+      ],
+      "labelRotation": "90deg",
+      "preset": "quiet"
+    },
+    {
+      "name": "tv-portrait-orientation",
+      "viewport": [
+        1080,
+        1920
+      ],
+      "pageWidth": 1080,
+      "stage": {
+        "width": 973,
+        "height": 648.65625
+      },
+      "title": "Redbrand Hideout",
+      "turns": [
+        {
+          "text": "▶ Trista",
+          "size": 17
+        },
+        {
+          "text": "2 Donavan",
+          "size": 17
+        },
+        {
+          "text": "3 Ringgo",
+          "size": 17
+        },
+        {
+          "text": "4 Pebble",
+          "size": 17
+        },
+        {
+          "text": "5 Aldric",
+          "size": 17
+        }
+      ],
+      "labelRotation": "90deg",
+      "preset": "quiet"
+    },
+    {
+      "name": "tv-disconnected",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "pageWidth": 1920,
+      "stage": {
+        "width": 1260,
+        "height": 840
+      },
+      "title": "Redbrand Hideout",
+      "turns": [
+        {
+          "text": "▶ Trista",
+          "size": 22.08
+        },
+        {
+          "text": "2 Donavan",
+          "size": 22.08
+        },
+        {
+          "text": "3 Ringgo",
+          "size": 22.08
+        },
+        {
+          "text": "4 Pebble",
+          "size": 22.08
+        },
+        {
+          "text": "5 Aldric",
+          "size": 22.08
+        }
+      ],
+      "labelRotation": "90deg",
+      "preset": "quiet"
+    }
+  ],
+  "errors": []
+}

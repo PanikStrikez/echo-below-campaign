@@ -1,0 +1,26 @@
+SCENE CLARITY AND RESUME — 14 OCTOBER 2026
+
+Where
+Scene opens with Scene at a glance: immediate situation, question facing the party and observable information. The same overview appears in Session Pilot (Explore → Scene guide).
+Full read-aloud paragraphs remain under Describe in Scene and in Pilot’s reading surface. The overview is a short excerpt from prepared narration and the existing player question; it does not use conditional revelations or private motives as known facts.
+
+Private information and preparation
+Starting conditions, response guidance/mechanics, possible disclosures and private background/source material use clearly labeled expandable sections. Pilot preserves all run/private entries, replacing its former truncated note fragments. Existing full notes, editors, rule references, scene selection and TV staging remain accessible.
+Narration text on Pilot’s parchment has dark readable text. The current guide step has light text on green.
+
+Resume
+Guide steps, expanded sections and scroll are saved in private browser navigation memory, separately for each campaign/session/beat and for Scene/Pilot views. Opening supporting notes, closing the panel, visiting another scene and refreshing retain the relevant place. This memory is local to the browser; campaign play is not advanced or recorded by navigation.
+
+Outcome handoff
+Resolve → Open outcome review carries the scene’s exact recording prompts, title and preparation reference into the private draft. Prompts remain instructions, not facts or public wording. The actual account starts blank and remains unapproved/private until reviewed. Reopening the same pending scene review resumes its draft. Combat-linked scene reviews retain the existing aftermath path and its scene context.
+
+Verification
+12 focused automated checks passed across scene-context and combat-aftermath tests.
+11 new real-browser checks passed: overview grounding, original narration, supporting-note return, refresh, independent scene memory, private prompts, draft resume, full Pilot notes, Pilot refresh, gameplay/presentation preservation, laptop layouts and TV exclusion. Final text colors were checked in the browser.
+Existing Session 4 guide, map-return and combat-aftermath browser suites passed with no page errors. The existing guide test now selects Describe explicitly for reading-layout checks because refresh intentionally retains the prior guide step.
+Screenshots: Scene-overview.png, Scene-1366.png, Scene-1100.png and Pilot-overview.png. These are isolated final views, not the live table.
+Five changed JavaScript modules passed syntax checks.
+
+Limits and loading
+No live campaign database, real browser profile, source PDF, phone service or provider account was changed. Physical phones/TV/speakers were not tested. Private resume memory requires browser storage to survive reopening and is not portable campaign history. Summaries are prepared excerpts; the DM still checks that they fit actual play. Cards without narration remain clearly marked as private preparation.
+Wait for Saved, then refresh the DM page. No phone-service restart is needed.

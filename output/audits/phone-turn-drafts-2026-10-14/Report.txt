@@ -1,0 +1,49 @@
+Private next-turn drafts — verified 14 October 2026
+
+Find the workflow
+Phone action card -> Prepare next turn -> choose action/targets and intent.
+Save draft for later parks it; Resume prepared action restores it.
+Cancel private draft removes local intent only. Existing submitted requests retain
+revision and cancellation controls. Submit explicitly on the player's turn.
+Reaction requests keep their explicit out-of-turn path.
+
+Behavior
+One private prepared action is stored locally per phone origin, current QR join
+and character. It survives ordinary updates, page reload and Wi-Fi reconnect.
+It is excluded from DM state, player transport, campaign saves and backups until
+explicit submission. Drafting does not reserve resources, roll dice, change HP,
+resolve effects, move tokens, or create a pending request.
+Fresh state is fetched before submission; changed character, scene, action details,
+visibility, preparation, resources, casting pool and current turn are checked.
+Conflicts keep intent editable and show a correction. Missing targets are removed
+only by a deliberate action. Current target choices refresh without replacing the
+note field. Updated mechanics require an explicit current-action/scene refresh.
+Casting exceptions and range/cover/other situational legality remain DM review.
+After submission, the same existing action review handles effects and spending.
+No automatic submission occurs at turn start or reconnect.
+Storage failures are visible; keep the tab open when local storage is unavailable.
+A new QR/table or another character uses separate storage and does not inherit a
+previous character's private draft. Private drafts are local device conveniences,
+not canonical history or portable campaign records.
+
+Verified results
+25 unit and mechanics regression tests passed (5 draft checks, 20 existing card/
+party checks), plus the existing composer/request regression.
+8 browser checks passed in fresh Chrome profiles with disposable local services:
+private waiting draft with zero action traffic; reload with targets/intent intact;
+offline editing and reconnect; resource/hidden-target conflicts; corrected explicit
+submission on the player's turn with sheets, rolls and tokens unchanged; local
+cancellation; service rejection of changed mechanics before enqueue; service
+resource recheck. Screenshots captured at 360 and 390 pixels without overflow.
+Player phone and DM ran entirely in isolated stores. Real saves, maps, characters,
+phone assignments, source books and live services were not modified by testing.
+JavaScript and phone-service syntax checks passed.
+
+Deployment and limitations
+Reload phone pages to load local drafting. No live phone service was restarted.
+The added service-side stale-entry/race check loads at its next normal restart;
+client fresh-state checks and existing DM review work with the running service.
+Real phones and table readability were not physically tested.
+Drafts survive connection drops, not deleting browser storage or changing the QR.
+
+Evidence: Verification.json, Prepared-360.png, Prepared-390.png.

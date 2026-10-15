@@ -1,0 +1,60 @@
+Quiet phone waiting view — verified 14 October 2026
+
+Where to find it
+Reload the phone page. Home / My turn shows a compact Current objective card while
+waiting, with the round, a permitted active-creature label and pending requests.
+Tap a pending summary to deliberately open its relevant controls. Sheet, Explore,
+Journal and Items keep their existing stable navigation.
+
+Changes
+Urgent tasks: saving throws, reactions, clarification, initiative when eligible,
+your turn, failed-request correction and disconnection. A persistent compact
+alert stays beside navigation. Only an explicit tap navigates to its controls.
+New urgent tasks may vibrate once when the browser supports it; routine approval,
+completion and repeated polling do not vibrate. Quiet updates are not live-announced.
+Routine action requests are folded into Pending requests and Completed request
+history. Combat replies are folded into Response history; closed requests retain
+the last response received on this phone, without becoming urgent again. This
+local response history is capped at 40 and clears on character reassignment.
+It is presentation history, not canonical campaign history; it is not portable.
+Success notices are grouped under Updates, with repeated identical notices counted.
+Failures stay conspicuous and remain available in the same history.
+Journal, Items and spell lists no longer redraw for unrelated turn/result updates.
+Current tabs are not switched by new tasks, routine updates or a live disconnect.
+Local quest browsing remains available offline; sending remains disabled.
+Walkthrough wording now states: only your token can request movement; DM placement
+is required; map input must be open; close an action draft to drag; taps in a draft
+choose targets. Exploration and destination requests also require DM approval.
+Quick rolls do not resolve actions or spend resources; prepared actions never send
+automatically. Skipping onboarding stays dismissed for the current table join.
+The actual joining flow now retains its join context through page reload so private
+prepared drafts remain accessible after the QR code disappears from the address.
+
+Verified
+31 unit/mechanics tests passed, including 6 new attention-classification checks.
+Existing composer/request, walkthrough and player-tools scripted regressions passed.
+Waiting-view browser rehearsal checks tabs, retained DOM and scroll on Sheet,
+Explore, Journal and Items; zero routine vibrations; combined urgent tasks and one
+nudge per new task; private clarification excluded from another phone response;
+explicit alert navigation; physical save and reaction responses; folded completed
+history after closure; offline Journal/Completed browsing; reconnect; 360/390 widths;
+actual joining/reload retaining private drafts and dismissed onboarding.
+Urgent-banner computed contrast was measured and checked against 4.5:1. Visual
+inspection found and corrected the shared hover style that had darkened its background.
+Browser regression rehearsals also passed: private turn drafts (8 checks) and all
+five action-card layouts (16 checks). All services and browser profiles were isolated.
+
+Remaining checks
+Real phone readability, actual vibration behavior and physical table use were not
+tested. No claim of improved human task times is made. Response history preserves
+only statuses received during this phone-page lifetime; current service action
+history remains the authoritative request record. Missing active-creature names
+remain generic and never reveal hidden NPCs.
+No real campaign save, character statistics, map state, assets, source books,
+phone assignments or live phone service were changed by the rehearsal.
+No phone-service restart is required for this UI update.
+
+Evidence
+Verification.json; Waiting-390.png; Urgent-on-Items.png; Urgent-360.png.
+Urgent-before-contrast-fix.png records the intermediate visual defect, not a
+pre-task baseline or a comparison of human usability.

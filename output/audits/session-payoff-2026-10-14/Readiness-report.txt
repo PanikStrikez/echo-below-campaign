@@ -1,0 +1,34 @@
+SESSION PAYOFF AND COMPLETE-FLOW REVIEW — 14 October 2026
+
+WHERE TO FIND IT
+Session guide → Close.
+The closing review now gathers approved accomplishments, consequences and open decisions, character-linked references, and advancement review. Existing outcome, spotlight and sheet editors remain the places to approve actual changes.
+
+WHAT CHANGED
+• New summary reads effective approved events from this evening. Plans and unapproved drafts are excluded; rumors are separate. Supporting record IDs and observation/claim/inference labels remain visible.
+• Current open custody, promises, debts and NPC follow-ups join unresolved requests. These are references and questions, not newly invented developments.
+• Every PC receives a reminder to review one level beyond their start-of-evening level. Unknown starting levels stay unknown. Deferred choices remain open and save with the private review. No automatic levels, feats, spells or resource refills.
+• A changed level without matching reviewed advancement history remains flagged for verification. Applied advancement reaches the connected owner sheet on the next normal sync.
+• Reopening and resaving an evening updates one review instead of duplicating it.
+• DM tokens accept keyboard arrows for 1-percent-of-map nudges through the same revision-checked, undoable command used by direct dragging. These are positioning adjustments, not a movement-cost calculation. Keyboard focus remains on the token.
+• Closing controls now have visible 44-pixel button heights and keyboard focus treatment.
+
+VERIFIED IN DISPOSABLE CAMPAIGNS
+18 closing/combat-aftermath browser checks; 12 map-return checks; 6 combat receipt checks; 8 phone draft checks; 11 scene-resumption checks: 55 total.
+Additional model checks passed for evening gates, approved-only payoff, missing baselines, deferred choices, character advancement, save normalization, repeated-review identity, undo/redo, and unrestricted dragging.
+The combined rehearsal exercised combat, reaction blocking, surrender/unresolved follow-up, approved aftermath correction, undo/redo, map return, a reviewed practice advancement, a real joined browser phone, an actual player-TV window, closing and reload. Separate browser passes exercised exploration/conversation alternatives, map origin restoration, phone action drafts and reviewed effects.
+Private closing notes were absent from the phone response and player-TV presentation. Closing preserved map/fog/tokens/HP/resources/TV. Unchosen advancement remained pending. Old records without the new optional review notes still normalize.
+Accessibility checked at 1512×982 and 1366×900 DM viewports, with 125-percent closing text, keyboard disclosures, reduced motion, visible button sizes, and phone sheet overflow at 360 and 390 pixels.
+
+MEASUREMENTS AND LIMITS
+Keyboard nudge to observed new state: 245 ms. Closing click to saved review visible: 627 ms.
+Closing script: 8 observed DM clicks and 11 scroll events; counts exclude text entry, programmatic fixture setup and phone taps. Scroll events are not deliberate gesture counts.
+Map rehearsal: 21 observed clicks and 13 scroll events. Scripted routes had no accidental wrong turns; one intentional reaction interruption was tested. These are automation measurements, not human usability results or evidence of faster use. No comparable before timing was captured.
+
+Before-layout screenshot was reconstructed by hiding the newly added summary; it is not a historical capture of the live campaign. After and large-text screenshots show the actual updated UI.
+
+REMAINING CHECKS
+Closing remains scroll-heavy with five advancement entries. Character references require existing explicit links; missing outcomes or interests must be recorded by the DM, not guessed. Physical viewing distance, rotated TV seats, touch accuracy on actual phones, speakers/private headphones and human hesitation were not tested. Approved benefits still require the existing player-choice and DM-review process.
+
+PRESERVATION
+All browser/server state was temporary. No live phone service restart, source-book edits, provider requests, automatic advancement or real campaign outcome changes were made.

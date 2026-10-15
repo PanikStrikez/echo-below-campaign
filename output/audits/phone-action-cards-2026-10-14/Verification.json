@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "pc-trista @ 360: labeled mechanics, named costs, availability, 44px request buttons, no horizontal overflow or duplicate favorites",
+    "pc-trista @ 390: labeled mechanics, named costs, availability, 44px request buttons, no horizontal overflow or duplicate favorites",
+    "pc-pebble @ 360: labeled mechanics, named costs, availability, 44px request buttons, no horizontal overflow or duplicate favorites",
+    "pc-pebble @ 390: labeled mechanics, named costs, availability, 44px request buttons, no horizontal overflow or duplicate favorites",
+    "pc-ringgo @ 360: labeled mechanics, named costs, availability, 44px request buttons, no horizontal overflow or duplicate favorites",
+    "pc-ringgo @ 390: labeled mechanics, named costs, availability, 44px request buttons, no horizontal overflow or duplicate favorites",
+    "pc-donavan @ 360: labeled mechanics, named costs, availability, 44px request buttons, no horizontal overflow or duplicate favorites",
+    "pc-donavan @ 390: labeled mechanics, named costs, availability, 44px request buttons, no horizontal overflow or duplicate favorites",
+    "pc-aldric @ 360: labeled mechanics, named costs, availability, 44px request buttons, no horizontal overflow or duplicate favorites",
+    "pc-aldric @ 390: labeled mechanics, named costs, availability, 44px request buttons, no horizontal overflow or duplicate favorites",
+    "Unarmed strike and Flurry remain distinct, with the exact two-strike requirement expandable",
+    "Real phone submission preserves canonical variant and targets for review without spending or moving tokens",
+    "Freeform phone request reaches DM as a pending intent with no assumed action cost",
+    "Resource update refreshes depleted/insufficient status without hiding the reviewed request path",
+    "Disconnected phone retains action information with requests disabled",
+    "Reconnecting restores action requests without releasing another phone"
+  ],
+  "errors": [],
+  "environment": "Five separate browser phone clients; fresh DM profile/disposable services",
+  "liveServicesChanged": false,
+  "physicalDevices": false
+}

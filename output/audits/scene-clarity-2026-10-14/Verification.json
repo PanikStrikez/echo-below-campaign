@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-14",
+  "checks": [
+    "Observable overview and complete original two-paragraph narration",
+    "Supporting notes return preserves step and scroll",
+    "Refresh restores guide step, expanded guidance and scroll",
+    "Each scene keeps independent step and view memory",
+    "Scene prompts enter a private blank outcome draft without becoming facts",
+    "Reopening resumes the existing scene draft",
+    "Pilot shows the same overview and full narration, with complete private notes expandable",
+    "Pilot scroll and private-section state survive refresh",
+    "All navigation and preview work preserves gameplay and public presentation",
+    "1366 and 1100 laptop layouts keep overview and narration accessible",
+    "Private guide memory and prompt module absent from TV"
+  ],
+  "errors": [],
+  "environment": "Fresh Chrome profile and temporary local services",
+  "physicalDevices": false,
+  "liveConnectionsChanged": false
+}

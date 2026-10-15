@@ -1,0 +1,862 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Echo Below release check</title><style>body{max-width:960px;margin:40px auto;padding:0 22px;background:#151c22;color:#edf0ec;font:17px/1.55 system-ui}h1,h2{color:#e9c98b}small{display:block;color:#b4bdc6}details{border:1px solid #46515b;border-radius:8px;margin:9px 0;padding:12px}summary{cursor:pointer}pre{white-space:pre-wrap;font-size:13px}.notice{padding:16px;background:#26343c;border-radius:8px}a{color:#dfc695}</style>
+<h1>Release checks need attention</h1><p>2026-10-14T21:45:52.513856+00:00</p><p class="notice">Live campaign and phone connections were not changed. No provider requests were made. Physical table checks remain separate.</p>
+<p>97/105 check commands passed; individual test counts appear in their results. 196 existing test files inventoried.</p>
+<h2>Deliberate faults</h2><ul><li>future-schema rejection: caught</li><li>token drag commit: caught</li><li>DM module leakage: caught</li></ul><h2>Results</h2><details><summary><b>Passed</b> — Reusable extraction parity <small>source and generated module hashes · 0.11s</small></summary><pre>Reusable extractions match their recorded source and output hashes.
+</pre></details><details><summary><b>Passed</b> — JavaScript unit suite <small>unit and mocked audience context · 2.64s</small></summary><pre>✔ owner receipt includes committed own cost and public rolls, excluding private targets, math and source (8.424458ms)
+✔ DM receipt includes the actual patch math with outstanding reminders (0.427ms)
+✔ waiting cannot present a resolved receipt (3.39525ms)
+✔ approved cannot present a resolved receipt (0.226917ms)
+✔ unresolved cannot present a resolved receipt (0.182334ms)
+✔ needs clarification cannot present a resolved receipt (0.143584ms)
+✔ declined cannot present a resolved receipt (0.138166ms)
+✔ cancelled cannot present a resolved receipt (0.367209ms)
+✔ failed cannot present a resolved receipt (0.166041ms)
+✔ undone cannot present a resolved receipt (0.658666ms)
+✔ public transport projection is owner-only and does not expose the resolution object (1.537875ms)
+✔ inventory receipt reflects committed transfer and keeps remaining rulings explicit (0.3285ms)
+✔ transfer recipient receives a receipt without sender notes or unrelated private requests (1.991125ms)
+AI context: privacy, publication, NPC disclosure, status, corrections, immutability, redaction and injection boundary checks passed.
+✔ /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/ai-context.test.cjs (765.817875ms)
+✔ completed local report matches canonical original scripts and all four roles (24.811792ms)
+✔ validation rejects changed scripts, identities, rights, totals and incomplete takes (16.826708ms)
+✔ explicit selection keeps exact script, hash, model and generation reference and supports undo (76.002208ms)
+✔ collapsed panel only reads local metadata and selecting requires a separate listening check (62.7285ms)
+✔ malformed report and blank campaigns cannot create selections (33.220625ms)
+✔ exactly four proposed original DM auditions with stable character links and content revisions (29.133542ms)
+✔ source references resolve to reviewed local guidance and scripts contain no campaign revelations (1.6745ms)
+✔ normalization rejects future versions and keeps only the voice cast allowlist (3.48725ms)
+✔ cast and normalized snapshots are deeply immutable without modifying input (3.429041ms)
+✔ suggested voices cannot silently become selected and changing identity invalidates selection (61.900917ms)
+✔ clearing and undo preserve prior selection and exact prior profile (43.679167ms)
+✔ selection preserves the exact model, script fingerprint and sample reference across restore (17.199875ms)
+✔ history is bounded and unsafe legacy fields are discarded from historical snapshots (444.788209ms)
+✔ audition projection contains only exact shared script and proposed speech direction (2.104417ms)
+✔ story save normalization preserves an explicitly saved cast without seeding it into campaigns (101.74175ms)
+✔ unsupported, malformed or unavailable voice normalization fails without changing the original save (13.665125ms)
+✔ the actual TV payload allowlist excludes cast, audition notes and source metadata (3.966875ms)
+✔ history retains actual versus unplayed; superseded evidence does not return (11.076041ms)
+✔ DM sees private clue; NPC requests never receive private or future records (60.5155ms)
+✔ private recipients and everyone present constrain disclosure (46.43725ms)
+✔ friendly, deception and negotiation remain proposals with known citations (4.568792ms)
+✔ beliefs, suspicions, unknown questions and explicit withholding (71.363375ms)
+✔ rules preserve named exception and use existing sheet calculator (42.71525ms)
+✔ source validation rejects forged citations and uncited confident answers (7.785167ms)
+✔ context strips credentials and source-book prose; proposals are private future drafts (69.376042ms)
+✔ Donavan approved spells are character exceptions, not the general rules profile (15.62375ms)
+✔ outgoing selection is explicit and cannot add another audience source (79.718208ms)
+✔ strict response validation is atomic and preserves a suggested basis (21.614792ms)
+✔ claims, inferences, plans and AI wording cannot masquerade as actual events (0.6695ms)
+✔ player help excludes DM, other owners, future branches and instruction attacks (15.702875ms)
+✔ local drafts retain public recap basis; narration excludes private running notes (4.328583ms)
+✔ NPC public context never forwards private source notes; Open basis remains uncertain (58.444125ms)
+✔ forged result sections cannot inject private records into an audience packet (28.20575ms)
+✔ pack versions and dependencies reject unknown future packs without changing the source (30.170666ms)
+✔ legacy content profile infers packs; explicit empty packs do not inherit them (26.2935ms)
+✔ fictional quest audiences and blank story are independent without Echo seed modules (68.415958ms)
+✔ generic party normalization never upgrades an ID matching the old party (12.85575ms)
+✔ snapshot only contains explicitly permitted outcome fields; all original save records survive (66.481833ms)
+✔ service staging is private, reviewable and idempotent before and after approval (92.773584ms)
+✔ a malformed selected service batch cannot partially stage outcomes (6.292625ms)
+✔ updated facts from the same service record stage a correction of one stable event (31.237959ms)
+✔ current linked facts keep historical chronology and source IDs; uncertainties remain explicit (17.082791ms)
+✔ offline service leaves enabled durable browser ledger intact and reports a retryable failure (28.234208ms)
+✔ a differing service head blocks automatic overwrite (79.601834ms)
+✔ an outcome approved during a mirror request queues the latest version; unrelated saves make no requests (121.976333ms)
+✔ DM and phone intents produce identical patches, outcomes and roll values in one command (292.540792ms)
+✔ physical attack natural die, critical damage and physical concentration are reviewed together (32.884792ms)
+✔ physical damage respects misses, natural 1, saves and component defenses (2.763833ms)
+✔ components aggregate one concentration DC per damage event; deferred saves create undoable reminders (2.770292ms)
+✔ conditional defenses and unknown damage types demand explicit rulings; failed preview spends nothing (7.821666ms)
+✔ reaction boundary blocks resolve, retains dice, then recomputes AC after Shield (56.66775ms)
+✔ revision changes and defense changes invalidate preview before any costs or HP commit (24.61475ms)
+✔ NPC multiattack uses the same engine and marks only the selected sequence step (70.704792ms)
+✔ legacy staged damage enters the common engine, including physical saves, undo and resource-free events (7.165417ms)
+✔ owner receipt excludes private defenses, concentration, patch values and DM-initiated history (6.793917ms)
+✔ Shield is one reversible resolution including slot, reaction, AC and next-turn expiry (4.795875ms)
+✔ effect-only actions require a written ruling and never infer effects from prose (1.3865ms)
+✔ victory review is private, idempotent and undoable (25.65675ms)
+✔ surrender review is private, idempotent and undoable (56.707167ms)
+✔ negotiation review is private, idempotent and undoable (40.203209ms)
+✔ escape review is private, idempotent and undoable (1.870667ms)
+✔ retreat review is private, idempotent and undoable (9.609584ms)
+✔ unresolved review is private, idempotent and undoable (2.362334ms)
+✔ new fight has a distinct key, retains old full notes, clears proposed loot and normalizes (0.9555ms)
+✔ duplicate fight events and stale preview are rejected (1.617875ms)
+✔ zero HP observations never infer death, grant resources or complete quests (0.421167ms)
+✔ encounter guidance keeps authored text verbatim without guessing terrain (114.624083ms)
+✔ pacing recommendations remain suggestions, with no assumed victory or automatic ending (0.576042ms)
+✔ legacy pacing states retain save compatibility (0.7715ms)
+✔ current automated evidence needs full matching release; never certifies a physical table (205.17375ms)
+✔ approved ledger is sole fact source; selected prepared scene never becomes a visit (0.642083ms)
+✔ explicit dated reviews are bound to campaign, save, files and display and can be withdrawn (4.43525ms)
+✔ expired, future, disconnected or unknown storage evidence cannot mark ready (1.612208ms)
+✔ private status model and evidence refuse player initialization (22.821334ms)
+✔ coverage analysis and invitations are read-only and do not infer reachable sources from a selected scene (156.642833ms)
+✔ one reviewed route flags the bottleneck; several distinct source origins offer alternatives (25.639ms)
+✔ different copies of one source are not counted as different origins (29.031166ms)
+✔ source correction or relevant NPC knowledge changes invalidates access review (85.834417ms)
+✔ declined, unavailable and missing-source routes cannot count as reachable (6.807292ms)
+✔ manual spotlight history gives five optional openings and decline alternatives without counting phone use (8.68ms)
+✔ private settings preserve old prep saves and participate in existing undo/redo (23.214375ms)
+✔ later-act preparation does not keep replaying the Phandalin checkpoint (13.024916ms)
+✔ existing supporting evidence is shown with IDs and duplicate source families stay one group (3.706542ms)
+✔ new Phandelver questions can use the existing private evidence review without creating a discovery (14.329ms)
+✔ only factual approved exact marker links set DM status (7.203ms)
+✔ corrections and replacement records determine status without erasing history (0.488541ms)
+✔ context uses exact preparation references and does not turn suggested approaches into facts (1.955666ms)
+✔ marker state survives normalized save; invalid values are omitted (0.288042ms)
+✔ private marker review is undoable and never reveals or visits a location (98.420541ms)
+✔ public marker projection uses permitted wording, not DM disposition or private details (0.485542ms)
+✔ private source-layout markers reject player reveal even on a shared factual outcome (1.754584ms)
+✔ compressed restore points round-trip all history and accept old JSON; corrupted payloads fail safely (322.233625ms)
+✔ cleanup candidates protect manual and migration originals and retain chosen automatic points (0.940708ms)
+✔ inactive enemy expiry stays in inbox but is marked nonblocking; PCs and repeat saves remain urgent (4.928583ms)
+✔ objective publication requires shared confirmed review and supports correction, withdrawal and private rejection (41.453458ms)
+✔ reviewed ammunition transfer uses tracked quantity, updates both sheets and rejects stale review (94.99825ms)
+✔ prepared source-map binding survives normalization and governs later waves without changing default maps (15.487708ms)
+✔ a newer DM-reviewed player objective remains usable after an older outcome publication (0.409625ms)
+✔ level review surfaces unchanged manual bonuses instead of silently replacing confirmed statistics (46.833417ms)
+✔ stored formations cannot cross map geometry; new captures retain their scene provenance (0.53225ms)
+✔ actual DM loader follows manifest order with all declared dependencies present (101.48525ms)
+✔ player loader excludes every DM module and extracted campaign content (21.125875ms)
+✔ classic fallback remains explicit and does not load the hybrid presentation shell (14.858125ms)
+✔ blank and fictional example select reusable dependencies without requesting Echo catalogs (126.377542ms)
+✔ every authored read-aloud has actual paragraphs; unrelated data and empty preparation remain unchanged (434.888458ms)
+✔ saved defaults update by ID plus exact text; custom narration and save records remain untouched (74.685875ms)
+✔ private catalog is excluded from TV, blank, and fictional campaign loaders (60.725042ms)
+✔ voice source follows selected exact public narration and invalidates its former text fingerprint (60.886833ms)
+✔ authored sources and generated narration catalog stay in sync (170.653375ms)
+✔ card audit classifies every card without changing a character or adding spells; source labels and owner privacy survive (70.78625ms)
+✔ Flurry creates two independent attacks but spends one Focus and one bonus action, equally from phone or DM; undo restores all (324.538875ms)
+✔ 2024 Focus variants, Uncanny healing/restoration and initiative confirmation are atomic (74.921459ms)
+✔ Champion critical threshold, Second Wind and Action Surge use approved Fighter choices (88.279375ms)
+✔ Magic Missile allocates every upcast dart with shared damage; target omissions and Shield confirmation block without spending (27.79975ms)
+✔ Ice Knife burst occurs after a miss and uses one slot; Scorcher’s explicit Sculpt exclusions take no damage (26.62625ms)
+✔ multiclass spell DC, healing/upcasting and Arcane Recovery use wizard level, not total level (38.72975ms)
+✔ Sneak Attack, arrows, 2014 Assassinate and Piercer are one resolution, once per turn with undo and off-turn reuse (28.3555ms)
+✔ reference-only effects, Goron powers and hidden targets remain explicit rulings; no automatic state or secret exposure (18.019875ms)
+✔ edited spell dice and foreign features stay manual; the 2014 bonus-action spell limit blocks invalid combinations (28.778167ms)
+✔ saved pending intents remain usable when only support labels are added, while edited mechanics still invalidate them (10.450292ms)
+✔ Sneak Attack scales with rogue levels in DM and phone reviews, previews and critical dice; no sheet rewrite (106.399459ms)
+✔ effect-only saving throws report their condition without false healing or HP changes (7.842917ms)
+✔ display-only freeform request uses canonical phone review and requires a ruling without spending anything (4.095917ms)
+✔ structured rolls, named costs and depleted resources are separate, non-mutating fields (6.814834ms)
+✔ unknown pools, preparation and manual rulings stay explicit (0.82775ms)
+✔ spell cards borrow exact same-name mechanical fields without changing spell choices (0.558625ms)
+✔ not prepared is visible and no cost is inferred from empty notes (0.554709ms)
+✔ all five owner views preserve named variants and keep freeform intent outside saved records (80.748792ms)
+✔ recorded Shadow Arts Focus casting is distinct from spell slots (0.383917ms)
+✔ routine approvals and completed requests never become urgent (13.427333ms)
+✔ saving throws, reactions and clarification coexist and have stable keys (1.944209ms)
+✔ offline is conspicuous without losing underlying tasks or changing input (0.265167ms)
+✔ hidden active creatures use a generic label; arbitrary DM data is never projected (0.836083ms)
+✔ pending travel/search/items are summaries; they do not imply completion or change quests (0.547542ms)
+✔ own turn is urgent; initiative prompts respect eligibility and stale legacy replies do not override structured status (4.143375ms)
+✔ private draft validation has no mutations and permits current action on its turn (21.160208ms)
+✔ waiting drafts do not auto-submit; reaction requests retain explicit availability (0.64275ms)
+✔ removed targets, changed scene or action math, and depleted resources require correction (0.553375ms)
+✔ support text updates do not invalidate mechanics, and selected casting pools are checked (0.381417ms)
+✔ a reassigned character or changed pending request cannot submit an old draft (0.359583ms)
+Reliability, privacy, combat, media, and book-reference checks passed.
+✔ /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tests/reliability.test.cjs (489.909542ms)
+✔ overview uses only prepared observable narration and question, never conditional revelations (20.024875ms)
+✔ scene recording prompts persist in one private draft and never become event facts (46.929958ms)
+✔ drafts from different campaign/session contexts remain separate (0.439209ms)
+✔ guided coverage includes all five phones for join/sheet/quest/action and reconnect checks (1.569542ms)
+✔ live campaign cannot start a rehearsal; missing observations fail without modifying data (128.990542ms)
+✔ partial and skipped physical tests stay incomplete and never inherit simulated passes (28.803833ms)
+✔ a prepared fix or simulated retest cannot hide a real problem; a later physical pass retains history (1.616334ms)
+✔ completion requires every device result and a matching verified build; corrections remain append-only (17.814041ms)
+✔ private rehearsal modules do not initialize in the TV audience (7.98725ms)
+✔ Old displays default to quiet; presentation changes do not change calibrated map dimensions (16.564416ms)
+✔ TV title removes repeated components without changing the source title (3.20375ms)
+✔ TV settings cross the public boundary only through approved display fields (1.46475ms)
+✔ speech request contains exact corrected selection and only provider settings (33.938583ms)
+✔ explicit approval preserves old recording through editing and alternate takes (16.920834ms)
+✔ recap source changes / withdrawal block audio and subtitle-only playback (1.370833ms)
+✔ simulated approval is restricted to practice; text-only needs separate review (1.561417ms)
+✔ save roundtrip retains original and approved takes, rejects unknown schema and missing audio (1.555209ms)
+✔ audience sources omit DM notes and private letters, keep recaps source-linked (1.248875ms)
+✔ TV projection contains only explicit public subtitle fields, never files or private profiles (1.014292ms)
+✔ assistant draft basis survives backup and blocks outdated public playback (1.182542ms)
+✔ imported plugin provenance survives restoration without arbitrary provider metadata (3.801167ms)
+✔ local mock is a playable silent WAV, clearly separate from actual speech (2.4355ms)
+✔ private preview requires separate headphones and never publishes or ducks music (63.804833ms)
+✔ table transport publishes only on play, pauses ducking, restores it and stops immediately (2.142791ms)
+✔ stop during asynchronous resume cannot revive an interrupted voice (14.825666ms)
+✔ read-only build distinguishes missing boundary and refuses to turn old reports or plans into facts (10.185333ms)
+✔ departure captures a stable reviewed boundary; new facts and corrections are distinguished (4.795ms)
+✔ latest custody and relationship values override prior state without erasing history (1.231917ms)
+✔ private escape destinations and NPC motives cannot appear in generated player narration (0.8775ms)
+✔ withdrawal and source edits invalidate staged proposals; withdrawn events cannot drive current state (1.292792ms)
+✔ NPC affiliation is relevance, not a visit or location inference from free text (0.896375ms)
+✔ return recording and repeated browsing do not duplicate events, rewards or arrivals (1.466375ms)
+✔ location association correction reuses the same outcome and supports undo/save restoration (3.921792ms)
+ℹ tests 188
+ℹ suites 0
+ℹ pass 188
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2288.361292
+</pre></details><details><summary><b>Passed</b> — Python service suite <small>temporary stores and mocked providers · 14.32s</small></summary><pre>............................................................................................................................................................................127.0.0.1 - - [14/Oct/2026 15:46:08] &quot;GET /__echo_status HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 15:46:08] code 403, message Forbidden
+127.0.0.1 - - [14/Oct/2026 15:46:08] &quot;GET /__echo_status HTTP/1.1&quot; 403 -
+127.0.0.1 - - [14/Oct/2026 15:46:08] code 403, message Forbidden
+127.0.0.1 - - [14/Oct/2026 15:46:08] &quot;GET /__echo_status HTTP/1.1&quot; 403 -
+127.0.0.1 - - [14/Oct/2026 15:46:08] code 403, message Forbidden
+127.0.0.1 - - [14/Oct/2026 15:46:08] &quot;GET /__echo_status HTTP/1.1&quot; 403 -
+...............................
+----------------------------------------------------------------------
+Ran 203 tests in 13.692s
+
+OK
+</pre></details><details><summary><b>Passed</b> — check-atlas-preservation.cjs <small>in-memory or source-contract check · 0.46s</small></summary><pre>{&quot;passed&quot;:true,&quot;checks&quot;:[&quot;Existing travel values and customized distances retained&quot;,&quot;Existing routes, plans, history and requests retained&quot;,&quot;All added places start hidden&quot;,&quot;Blank campaigns remain blank&quot;,&quot;New Tresendar default uses exterior; saved arrival stays unchanged&quot;,&quot;Atlas views survive normalization&quot;],&quot;newPlaces&quot;:460,&quot;newRoutes&quot;:28}
+</pre></details><details><summary><b>Passed</b> — check-atmosphere-audio.js <small>in-memory or source-contract check · 0.12s</small></summary><pre>Presentation audio passed: ducking throughout crossfades, mute including retiring and pending tracks, and stop.
+</pre></details><details><summary><b>Passed</b> — check-atmosphere-ui.js <small>in-memory or source-contract check · 0.12s</small></summary><pre>Effects UI passed: preview/reveal, presets without autoplay, explicit playback, zone style/dismiss, rotations, off setting and scene ducking.
+</pre></details><details><summary><b>Passed</b> — check-atmosphere.js <small>in-memory or source-contract check · 0.1s</small></summary><pre>Atmosphere passed: persistence, secret filtering, expiry, actual target placement, stable transitions, off mode, audio layers, intensity, ducking, mute, crossfade and cancelled loads.
+</pre></details><details><summary><b>Passed</b> — check-campaign-atlas.js <small>in-memory or source-contract check · 0.08s</small></summary><pre>Campaign atlas checks passed: hierarchy, shared discovery, private/public boundary, stage revalidation, state preservation and player guards.
+</pre></details><details><summary><b>Passed</b> — check-chapters.js <small>in-memory or source-contract check · 0.85s</small></summary><pre>{
+  &quot;checks&quot;: [
+    {
+      &quot;name&quot;: &quot;Five approved character chains have playable chapters linked to their existing objectives&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Eight satellites are optional scopes and only the next custom site is fully prepared&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Every new beat, quest lead, scene and mystery reference resolves without inventing facts&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Selected chapter leads keep the right scene and remain private with board limits and undo&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Prepared library rooms start hidden, preserve edits and remain a plan after save/restore&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Party-copy packs preserve chosen low levels and spent resources through reload and derived sessions&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Adding live scene notes is idempotent and preserves private detail through save/restore&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;All chapter and library scene notes survive their actual storage limits&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Spotlights count actual moments, respect absence and pause, and support corrections and undo&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Actual discoveries require review, preserve quest objectives and publish only selected wording&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;New custom content is loaded only on the DM side&quot;,
+      &quot;ok&quot;: true
+    }
+  ],
+  &quot;passed&quot;: 11,
+  &quot;total&quot;: 11
+}
+</pre></details><details><summary><b>Passed</b> — check-character-tools.js <small>in-memory or source-contract check · 0.42s</small></summary><pre>Character tools passed: staged level-ups/imports, stale guards, mixed Hit Dice, rest variants/overrides, favorites, private-safe shared handouts, atomic upcasting, persistence, and guided UI.
+</pre></details><details><summary><b>Passed</b> — check-combat-plus.js <small>in-memory or source-contract check · 0.44s</small></summary><pre>Combat plus passed: path costs/crawling/difficult terrain, opportunity pauses, multi-owner saves, revisions/privacy, component defenses, Shield expiry, held rolls, damage atomicity, spell entry/turn/expiry triggers, boss events, condition guidance, persistence, and TV/phone projections.
+Combat tools UI passed: saves, damage preview/apply, template conversion, encounter events, and no movement planner.
+Large-map movement preview: 27ms for 254 tokens and 50 areas.
+</pre></details><details><summary><b>Passed</b> — check-combat-run.js <small>in-memory or source-contract check · 0.11s</small></summary><pre>Combat run passed: save migration, attack dice, and encounter state.
+</pre></details><details><summary><b>Passed</b> — check-combat.js <small>in-memory or source-contract check · 0.11s</small></summary><pre>Combat checks passed: creature sources, templates, geometry, damage, pacing, and UI hooks.
+</pre></details><details><summary><b>Passed</b> — check-content.js <small>in-memory or source-contract check · 0.27s</small></summary><pre>Content checks passed: source books, page links, creature pack, exceptions, and audio cues.
+</pre></details><details><summary><b>Passed</b> — check-continuity.js <small>in-memory or source-contract check · 0.18s</small></summary><pre>Continuity passed: seeded actual history, campaign isolation, persistence, quest states, knowledge, custody, map reveal/withdrawal, undo/redo, and TV/phone privacy.
+Continuity UI passed: selecting without mutation, edit revokes approval, approve/withdraw/undo, tracked follow-up drafts, and unpublished recap creation.
+</pre></details><details><summary><b>Passed</b> — check-courtyard.js <small>in-memory or source-contract check · 0.56s</small></summary><pre>Courtyard passed: 11 playable scenes and references; preserved legacy fingerprints and NPC notes; reviewed relationship changes, clears, independent knowledge, linked promises, correction/withdrawal/undo; lodging and spaces; three distinct factual returns plus manual disturbance gating; save/reload; production TV/phone and read-aloud privacy.
+</pre></details><details><summary><b>Passed</b> — check-dm-desk-ui.js <small>in-memory or source-contract check · 0.44s</small></summary><pre>DM desk UI passed: stale requests, token actions, pacing, automatic closing review, recovery and canonical promotion.
+</pre></details><details><summary><b>Passed</b> — check-dm-desk.js <small>in-memory or source-contract check · 0.39s</small></summary><pre>Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+DM desk model passed: derived inbox, closing capture, private promotion, persistent layouts, Undo/Redo and TV/phone privacy.
+</pre></details><details><summary><b>Passed</b> — check-dm-search.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Context search passed: scene priority, party suggestions and permanent improvised records.
+</pre></details><details><summary><b>Passed</b> — check-downtime-outcomes.js <small>in-memory or source-contract check · 0.05s</small></summary><pre>Downtime outcome schema passed: old event fingerprints, optional metadata, invalid-duration preservation, canonical preview/approval/correction/undo/reload, and owner-only in-app correspondence.
+</pre></details><details><summary><b>Passed</b> — check-downtime-settlements.js <small>in-memory or source-contract check · 0.05s</small></summary><pre>Downtime settlement integration passed: preserved old data; projected deadlines, results, corrections and undo; partial review, withdrawal reopening, no duplicated results; canonical return window and private/public recap separation.
+</pre></details><details><summary><b>Passed</b> — check-downtime.js <small>in-memory or source-contract check · 0.19s</small></summary><pre>Downtime passed: 12 opportunities across 7 categories and 5 characters; private reversible preparation; actual-cost and effort review; approved result/correction/withdrawal/undo; duplicate prevention; draft-placeholder blocking; owner-only delivered letters in production phone projections; private TV safety; pending NPC plans; filtered town-return window; preserved old outcomes, notes, sheets and save/reload.
+</pre></details><details><summary><b>Passed</b> — check-dungeon-ui.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Dungeon UI passed: profile presets, reveal controls, paired passages, phone memory overlay, stable drafts, targeted searches, revisions and offline controls.
+</pre></details><details><summary><b>Passed</b> — check-dungeon.js <small>in-memory or source-contract check · 0.09s</small></summary><pre>Dungeon checks passed: carried light, per-character senses, LOS doors, memory, manual fog, hidden enemies/notes, persistent objects, noise propagation, paired return, private searches, approval outcomes, production traversal, saves and Undo/Redo.
+</pre></details><details><summary><b>Passed</b> — check-encounter-levels.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Encounter pacing passed: levels 1–20, threshold boundaries, mixed parties, all count bands, party-size shifts, XP separation, and invalid inputs.
+</pre></details><details><summary><b>Passed</b> — check-expedition-persistence.cjs <small>in-memory or source-contract check · 0.16s</small></summary><pre>PASS Failed passage lookup and return repair are read-only
+PASS Paired links cannot exceed persisted passage or scene limits
+PASS Reviewed retreat, rest and production return retain the authoritative floor and all durable exploration
+PASS Newly blocked paired exits and native-room changes invalidate a return review without applying it
+PASS Changes during async recovery-point creation also invalidate return before switching sessions
+PASS TV and phone projections omit hidden gates, source keys, private room accounts and expedition metadata
+PASS Dense manual floor mask and section camera survive normalization, return and backup restore without publishing the ledger
+</pre></details><details><summary><b>Passed</b> — check-expedition-resume.js <small>in-memory or source-contract check · 0.1s</small></summary><pre>Expedition resume passed: current sheets and reviewed rest, saved retreat positions, no NPC imports/respawns, stale-review guards, deferred threat reminders, clocks, normalization and full archive restore.
+</pre></details><details><summary><b>Passed</b> — check-expeditions.js <small>in-memory or source-contract check · 0.09s</small></summary><pre>PASS Templates require evidence and preserve established successes
+PASS Start captures native objects, fog memory, positions and inhabitants without changing them
+PASS Retreat records exact return point without recovery, teleport or resets
+PASS Retreat rejects prepared, closed and foreign-session records
+PASS Changed room, remembered ground, supplies and injuries appear in return review
+PASS Development requires reason, consequence and concrete evidence
+PASS Review applies only the explicit target and rejects replay, duplicate targets and invalid values
+PASS Staged changes and evidence cannot be applied after state or approved history changes
+PASS Replaced outcomes no longer support a proposal
+PASS Room links preserve cleared state, follow actual edits, and surface independent conflicts
+PASS Wave Echo baseline preserves source room details and specific reminders
+PASS Campaign save normalization retains expedition baseline, return point, links and native map state
+PASS An approved blocked passage survives save/restore and cannot still be traversed
+PASS Production TV and phone projections exclude private expedition data
+PASS 14 isolated expedition checks; no real campaign save read or changed.
+</pre></details><details><summary><b>Passed</b> — check-finale.js <small>in-memory or source-contract check · 0.15s</small></summary><pre>{
+  &quot;checks&quot;: [
+    {
+      &quot;name&quot;: &quot;Five independent approaches cover prerequisites, tradeoffs, alternatives and prepared scenes&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Plans preserve characters, approved history and display payloads; save and undo round-trip&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Prerequisite review needs an explicit assessment, actual source and limited explanation&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Rumors, claims, inferences and DM-only truths stay separate from observed player support&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Corrected, withdrawn and indirectly stale sources invalidate support until re-reviewed&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Actual finale drafts require review and never choose an ending or complete objectives&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Epilogues require current actual outcomes and keep apparatus and Halaster independently unresolved&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Prepared scenes remain private, idempotent and preserve edited notes through real storage limits&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Finale quest preparation links resolve and keep the three-lead board private&quot;,
+      &quot;ok&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;New finale code is DM-only and published rejuvenation is explicitly retained&quot;,
+      &quot;ok&quot;: true
+    }
+  ],
+  &quot;passed&quot;: 10,
+  &quot;total&quot;: 10
+}
+</pre></details><details><summary><b>Passed</b> — check-growth-performance.js <small>in-memory or source-contract check · 0.07s</small></summary><pre>{&quot;tokens&quot;:500,&quot;fogCells&quot;:10000,&quot;walls&quot;:500,&quot;maxAnchors&quot;:60,&quot;maxZones&quot;:100,&quot;p95Ms&quot;:0.88,&quot;note&quot;:&quot;CPU projection and simulated DOM construction; not browser GPU/FPS or image decode.&quot;}
+</pre></details><details><summary><b>Passed</b> — check-guided-attack-flow.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Guided attack passed: choose action, explicit target, held roll, reaction confirmation, damage preview and staged transaction.
+</pre></details><details><summary><b>Passed</b> — check-guided-dm.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Guided DM passed: non-mutating suggestions, narration, branch navigation, initiative progress, reaction gate, retained reminders, off-scene combat, wrap-up and opt-out.
+Inline cockpit guidance passed: live initiative updates and return navigation.
+Focus summary passed: urgent filtering, total inbox count, read-only rendering and current-request review.
+</pre></details><details><summary><b>Passed</b> — check-guided-integration.js <small>in-memory or source-contract check · 0.1s</small></summary><pre>Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+Guided production integration passed: one-action initiative collection, no player autoroll, idempotent NPC rolls and stale-map editing guard.
+</pre></details><details><summary><b>Passed</b> — check-journey-map-art.js <small>in-memory or source-contract check · 0.06s</small></summary><pre>Journey art: PNG size, saved-image upgrade, landmark alignment, notes, reveals, view, custom artwork, and one-time migration passed.
+</pre></details><details><summary><b>Passed</b> — check-journey-map-motion.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Journey motion: saved toggle, public payload, approved TV markers, DM preview privacy, continuing animation phase, and scene scoping passed.
+</pre></details><details><summary><b>Passed</b> — check-lmop-art.js <small>in-memory or source-contract check · 0.1s</small></summary><pre>Lost Mine art: 103 valid files, all chapter packs and Session 2 cues linked, player display gated.
+</pre></details><details><summary><b>Passed</b> — check-maps.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Map checks passed: save shape, private data, wall-aware visibility, calibration, and controls.
+</pre></details><details><summary><b>Passed</b> — check-mystery.js <small>in-memory or source-contract check · 0.58s</small></summary><pre>PASS Existing saves retain old event fingerprints and new research metadata round-trips
+PASS Private preparation and stage changes do not record play, change party or reach displays
+PASS Independent origins are grouped; copies and unknown origins never prove a conclusion
+PASS Citations detect corrections, withdrawal, replacement and transitive changes; undo restores them
+PASS Two research attempts share a project but keep separate downtime results and actual values
+PASS A changed project invalidates an already reviewed result before any canonical mutation
+PASS An investigation route needs a real prediction; instructions cannot stand in for one
+PASS Long citation chains stay compact through save/restore and still detect a changed origin
+PASS Linking legacy evidence creates one authoritative entry and preserves deduplication on correction
+PASS Only deliberately reviewed wording reaches shared displays or the selected owner phone
+PASS 10 isolated mystery checks; no live campaign accessed.
+</pre></details><details><summary><b>Passed</b> — check-outcomes.js <small>in-memory or source-contract check · 0.14s</small></summary><pre>Outcome engine passed: preserved seeds, draft isolation, reviewed multi-view apply, corrections, undo/redo, owner privacy, quest scope, custody, duplicate links, stale recaps, migration and reload.
+Production projection passed: TV/phone journals match; travel does not overwrite an approved marker reveal; private details stay out of public payloads.
+</pre></details><details><summary><b>Passed</b> — check-party.js <small>in-memory or source-contract check · 0.06s</small></summary><pre>Party checks passed: five PCs and Sildar, rest variants, private TV view, and full owner-only phone sheet.
+</pre></details><details><summary><b>Passed</b> — check-pebble-goron-traits.js <small>in-memory or source-contract check · 0.06s</small></summary><pre>Pebble Goron checks passed: owner phone traits, typed fire resistance, save preservation, no stone consumption, idempotence, and current-campaign restore point.
+</pre></details><details><summary><b>Passed</b> — check-phone-action-ui.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Phone UI passed: out-of-turn requests, target selection, persistent draft, canonical action submission, revision, cancellation, and resolved roll/status display.
+</pre></details><details><summary><b>Passed</b> — check-phone-actions.js <small>in-memory or source-contract check · 0.12s</small></summary><pre>Phone actions passed: atomic resolution, resources, HP/temp HP, defenses, shared area rolls, concentration, turn usage, revisions/cancel, deduplication, stale previews, owner privacy, save/restore, conflict-aware undo, and DM review controls.
+</pre></details><details><summary><b>Passed</b> — check-phone-player-ui.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Phone player UI passed: stable note drafts, deliberate sharing, spell filters, canonical spell indices, potion previews, coin split previews and offline controls.
+</pre></details><details><summary><b>Failed</b> — check-phone-reconnect.js <small>in-memory or source-contract check · 0.05s</small></summary><pre>ReferenceError: renderTurnGuide is not defined
+    at Object.refresh (evalmachine.&lt;anonymous&gt;:21:18)
+    at async /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-phone-reconnect.js:8:309
+</pre></details><details><summary><b>Passed</b> — check-phone-walkthrough.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Phone walkthrough passed: navigation-only steps, completion per character, and reassignment.
+</pre></details><details><summary><b>Passed</b> — check-player-tools.js <small>in-memory or source-contract check · 0.1s</small></summary><pre>Player tools passed: private notes, explicit clue sharing, ownership, item splits, held potion healing, action use, stale reviews, currency conservation, equipment, objectives, persistence, TV privacy, real Undo/Redo and reconnectable handouts.
+DM inventory panel passed: separate preview/apply and persisted resolution.
+</pre></details><details><summary><b>Passed</b> — check-quest-prep.js <small>in-memory or source-contract check · 0.19s</small></summary><pre>Quest preparation passed: all 40 quests linked, actual/private evidence split, five-character opportunities, three-lead limit, read-only planning, alternatives, readiness/stale review, assigned boards, undo/redo, persistence, public-payload privacy and urgent/combat priority.
+</pre></details><details><summary><b>Passed</b> — check-quests-integration.js <small>in-memory or source-contract check · 0.09s</small></summary><pre>Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+Quest production integration passed: real TV and phone projection, party objective, character-only delivery, withdrawal and no future-story or DM-note leakage.
+Destination checks passed: main on TV only, side on phones only, character only to owner, main hide propagates.
+</pre></details><details><summary><b>Passed</b> — check-quests.js <small>in-memory or source-contract check · 0.05s</small></summary><pre>Quest checks passed: 40 quests, 146 objectives, actual-history migration, save/restore, undo/redo, manual outcomes, immutable reviewed publication, owner isolation, and rendered UI actions.
+Quest preview passed: TV, shared phones, owner-specific preview and no publication/state changes while browsing.
+</pre></details><details><summary><b>Passed</b> — check-recovery-quota.cjs <small>in-memory or source-contract check · 0.14s</small></summary><pre>Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+Coordinator quota check passed: failed record and index writes preserve state/index, recovery explanation is raised, later compressed restore point reopens. In-memory storage fault; no browser or live records touched.
+</pre></details><details><summary><b>Passed</b> — check-reliability-growth.js <small>in-memory or source-contract check · 0.1s</small></summary><pre>Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+Reliability growth passed: exact TV acknowledgement, stale heartbeat, restore preparation, isolated store reopening/media readback and failure cleanup (simulated IndexedDB).
+</pre></details><details><summary><b>Passed</b> — check-ringgo-level-four.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Ringgo level-four checks passed: Piercer, phone stats, HP/Hit Dice/resource preservation, inventory, normalization, idempotence, and active-campaign backup scope.
+</pre></details><details><summary><b>Passed</b> — check-rules-library.js <small>in-memory or source-contract check · 0.08s</small></summary><pre>Rules library checks passed: 983 references, 19 books.
+</pre></details><details><summary><b>Passed</b> — check-run-ui.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Run UI checks passed: focused mode, live actions, and unique controls.
+</pre></details><details><summary><b>Passed</b> — check-save-fallback.js <small>in-memory or source-contract check · 0.03s</small></summary><pre>PASS stale-database fallback and interrupted save: newest completed record survives database and local-storage failures.
+</pre></details><details><summary><b>Passed</b> — check-session-flow.js <small>in-memory or source-contract check · 0.16s</small></summary><pre>Evening workflow passed: opening gates, private recap, exact start baseline, resource/loot/promise changes, carried unresolved requests, stale review, safe closing, save/reload, separate sessions, repeated evenings and public-display privacy.
+Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+Production Undo/Redo preserved the evening baseline and review notes.
+</pre></details><details><summary><b>Passed</b> — check-session-payoff.js <small>in-memory or source-contract check · 0.18s</small></summary><pre>Evening workflow passed: opening gates, private recap, exact start baseline, resource/loot/promise changes, carried unresolved requests, stale review, safe closing, save/reload, separate sessions, repeated evenings and public-display privacy.
+Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+Production Undo/Redo preserved the evening baseline and review notes.
+Payoff passed: approved-only facts, separate rumors, character references, cadence without mutation, deferred choices, stale levels, history idempotence, normalization and missing baseline.
+</pre></details><details><summary><b>Passed</b> — check-session2-migration.js <small>in-memory or source-contract check · 0.06s</small></summary><pre>Session 2 save migration preserved HP and notes, added hideout content once, and kept wave IDs.
+</pre></details><details><summary><b>Passed</b> — check-session3.js <small>in-memory or source-contract check · 0.06s</small></summary><pre>Session 3 pack verified: 39 beats, 23 encounters, 98 enemy tokens.
+</pre></details><details><summary><b>Passed</b> — check-session4.js <small>in-memory or source-contract check · 0.08s</small></summary><pre>Session 4 verified: 31 cards, 20 rooms, 12 encounters, 57 tokens; migration/return state, source/art links, caster resources, private TV/phone data, conditional endings, and journal controls.
+</pre></details><details><summary><b>Passed</b> — check-settlements-integration.js <small>in-memory or source-contract check · 0.1s</small></summary><pre>Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+Settlement integration passed: production travel clock, no heartbeat double-count, departure/return, Undo/Redo, and no private TV/phone leakage.
+</pre></details><details><summary><b>Passed</b> — check-settlements-ui.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Settlement UI passed: evidence gate, NPC edit, deadline preparation, explicit approval, and reviewed TV narration excluding private consequences.
+</pre></details><details><summary><b>Passed</b> — check-settlements.js <small>in-memory or source-contract check · 0.05s</small></summary><pre>Settlements model passed: review-only deadlines, project completion review, evidence-required variants, NPC knowledge boundaries, stock previews/staleness, save roundtrip and return summaries.
+</pre></details><details><summary><b>Passed</b> — check-spotlights.js <small>in-memory or source-contract check · 0.08s</small></summary><pre>Character stories passed: 5 arcs, 30 cards, unplayed defaults, attendance/preferences, fair suggestions, deduplicated outcomes, undo/redo, archive round-trip, private drafts, UI controls, and TV/phone privacy.
+</pre></details><details><summary><b>Passed</b> — check-stage3-commands.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Stage 3 commands passed: movement, damage, resources, clue publication/undo, outcome review, stale rejection, and no partial mutation on failure.
+</pre></details><details><summary><b>Passed</b> — check-stage5-encounter-simulator.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Stage 5 encounter simulator passed: attack, reaction pause, area saves/damage, retreat, rest, return route and persistent floor state.
+</pre></details><details><summary><b>Passed</b> — check-story.js <small>in-memory or source-contract check · 0.05s</small></summary><pre>Story checks passed: nine sites, 23 floors, nine NPCs, branching, calendar, backup, and player journal controls.
+Story and creature library persist in a captured backup independently of later play.
+</pre></details><details><summary><b>Passed</b> — check-table-flow.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Scene workspace integration passed: outgoing capture, incoming restore, unchanged per-scene pan/zoom and idempotent re-show.
+Table flow passed: pins, before/after values, grouped inbox, known detours, independent practice saves and failed-switch isolation.
+</pre></details><details><summary><b>Passed</b> — check-table-tools.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Table tools passed: saved data, private clue validation, inventory, and scene time.
+</pre></details><details><summary><b>Passed</b> — check-table-workflows.js <small>in-memory or source-contract check · 0.05s</small></summary><pre>Table workflows passed: private encounter staging and one-click readiness checks.
+</pre></details><details><summary><b>Passed</b> — check-token-drag.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Direct token drag passed: free movement saves once, explicit measurement stays separate, grouped tokens move, and clicks keep their actions.
+</pre></details><details><summary><b>Passed</b> — check-town-maps.js <small>in-memory or source-contract check · 0.06s</small></summary><pre>Town and journey maps: five overhead scenes, linked content packs, approved markers, and private clue filtering passed.
+</pre></details><details><summary><b>Passed</b> — check-transition.js <small>in-memory or source-contract check · 0.31s</small></summary><pre>Transition passed: 41 quest profiles, real pack/scene/media/book references, seven neutral outcomes, four alternate leads, scenario and delay isolation, survivor presence, public/private/stale bindings, correction and undo, save normalization, preparation boards, and production TV/phone privacy.
+</pre></details><details><summary><b>Passed</b> — check-travel-ui.js <small>in-memory or source-contract check · 0.06s</small></summary><pre>Travel UI passed: preview before arrival, camp before apply, marker drag commit, stable phone drafts, revise/cancel and offline disabling.
+</pre></details><details><summary><b>Passed</b> — check-travel.js <small>in-memory or source-contract check · 0.13s</small></summary><pre>Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+</pre></details><details><summary><b>Passed</b> — check-tv-text.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>TV text checks passed: visible cards, private text filtering, and live controls.
+</pre></details><details><summary><b>Passed</b> — check-undermountain-arc.js <small>in-memory or source-contract check · 0.14s</small></summary><pre>PASS Three bounded contracts reference existing quests, rooms and scenes
+PASS Arc beats fit persistence limits and retain book/creature reference anchors
+PASS Rival and return preparation has explicit limits and owner-only personal drafts
+PASS Runbook extension is idempotent and preserves existing edits
+PASS Opening an older Waterdeep save adds guidance without resetting its dungeon or party
+PASS Quest preparation stages three contracts without changing outcomes, actors or publication
+PASS Responses create evidence-free, unapplied proposals and cannot update dungeon state
+PASS Private arc plans stay off TV and phones; existing quest audiences remain enforced
+PASS Staging a shared contract changes only its undoable draft until deliberate publication
+PASS 9 isolated Undermountain arc checks; no live campaign data accessed.
+</pre></details><details><summary><b>Passed</b> — check-waterdeep-integration.js <small>in-memory or source-contract check · 0.09s</small></summary><pre>Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+Expedition integration passed: real campaign extra snapshots, Undo/Redo and no private story/ending data in TV or phone payloads.
+</pre></details><details><summary><b>Passed</b> — check-waterdeep-pack.js <small>in-memory or source-contract check · 0.1s</small></summary><pre>Travel passed: distances and pace, partial legs, arrivals, supplies, request ownership, secret/rumor filtering, save normalization, production clock/timers, actual Undo/Redo, TV projection and combat guards.
+Waterdeep actual session creation passed: all 49 beats, valid scenes, unchanged character levels/HP and save normalization.
+</pre></details><details><summary><b>Passed</b> — check-waterdeep-ui.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Waterdeep UI passed: private staging, explicit TV approval, editable handouts, room persistence, exact stat links, hidden routes, Nine roles and choice confirmation.
+</pre></details><details><summary><b>Passed</b> — check-waterdeep.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Waterdeep content passed: 8 scenes, 7 handouts, all 41 rooms, 9 site roles, runbook/save bounds, source links, routes and non-deterministic ending evidence.
+</pre></details><details><summary><b>Passed</b> — check-wave-combat.js <small>in-memory or source-contract check · 0.04s</small></summary><pre>Wave Echo combat verified: 12 encounters, 57 unique enemies, map links, source-specific blocks, spell resources, and no duplicate reinforcements.
+</pre></details><details><summary><b>Passed</b> — check-stage4-five-phones.py <small>temporary local service or package fixture · 0.62s</small></summary><pre>Stage 4 five-phone service passed: owner-only data, isolated resync, release/rejoin, and four uninterrupted peers.
+</pre></details><details><summary><b>Passed</b> — check-stage4-phone-health.py <small>temporary local service or package fixture · 0.03s</small></summary><pre>Stage 4 phone health passed: one-phone resync and release left four other connections current.
+</pre></details><details><summary><b>Passed</b> — check-phone-service.py <small>temporary local service or package fixture · 0.75s</small></summary><pre>Phone service passed: QR join, private routes, one-character claim, initiative, map, rolls, target validation, canonical action data, owner-only status, deduplication, revisions, cancellations, stale/final request rejection, owner-only save/reaction prompts, physical/digital save events, bounded movement paths, private notes, explicit clue sharing, item ownership, request cancellation, coin-split validation, and shared images.
+</pre></details><details><summary><b>Passed</b> — check-atlas-asset-boundary.py <small>temporary local service or package fixture · 0.78s</small></summary><pre>PASS Only approved image roots or validated raster data resolve; aliases cannot enter private maps
+PASS Authenticated image endpoints return only current projected raster; private/download/thumbnail/catalog routes stay unavailable and uncached
+</pre></details><details><summary><b>Passed</b> — check-portable-service.py <small>temporary local service or package fixture · 0.61s</small></summary><pre>127.0.0.1 - - [14/Oct/2026 16:19:40] code 403, message Open the local desktop app first
+127.0.0.1 - - [14/Oct/2026 16:19:40] &quot;POST /__echo_package HTTP/1.1&quot; 403 -
+127.0.0.1 - - [14/Oct/2026 16:19:40] &quot;POST /__echo_package HTTP/1.1&quot; 200 -
+Portable HTTP download passed: authorized download, app and state present, other origins rejected.
+</pre></details><details><summary><b>Passed</b> — check-portable-package.py <small>temporary local service or package fixture · 0.06s</small></summary><pre>/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py:1550: UserWarning: Duplicate name: &#x27;campaign-backup.json&#x27;
+  return self._open_to_write(zinfo, force_zip64=force_zip64)
+Portable package and phone health passed: relocatable files, campaign archive, integrity corruption rejection, real freshness, isolated release.
+</pre></details><details><summary><b>Passed</b> — check-stage9-package.py <small>temporary local service or package fixture · 0.07s</small></summary><pre>Stage 9 package fixtures passed: separated layers, clean blank, untouched original, relocated art/audio, credential/PDF exclusion, and corrupt asset rejection.
+</pre></details><details><summary><b>Failed</b> — check-campaign-boundary-browser.cjs <small>fresh browser rehearsal · 2.53s</small></summary><pre>blank started
+blank archive
+example started
+page.evaluate: TypeError: Cannot read properties of undefined (reading &#x27;CREATURES&#x27;)
+    at speed (http://127.0.0.1:52529/output/campaign/Session-01-Combat-Plus.js:13:82)
+    at movementPreview (http://127.0.0.1:52529/output/campaign/Session-01-Combat-Plus.js:46:192)
+    at Object.placeToken (http://127.0.0.1:52529/output/campaign/Session-01-Combat-Plus.js:58:17)
+    at Object.prepare (http://127.0.0.1:52529/output/campaign/Session-01-Commands.js:26:52)
+    at eval (eval at evaluate (:311:30), &lt;anonymous&gt;:3:54)
+    at UtilityScript.evaluate (&lt;anonymous&gt;:313:16)
+    at UtilityScript.&lt;anonymous&gt; (&lt;anonymous&gt;:1:44)
+    at /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-campaign-boundary-browser.cjs:12:31 {
+  log: []
+}
+- - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/packs/lantern-ferry/Content.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Campaign-Atlas.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-Encounter-Flow.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-Map-Workspace.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-01-TV-Display.html?start=example&amp;dm-preview=1 HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/assets/Example-Ferry.svg HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-01-Battleboard.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-01-Cockpit.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-01-Interface.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-01-Hybrid-UI.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/AI-Settings.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Campaign-Courtyard.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Campaign-Engine.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-01-Player-Polish.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Visual-Language.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-01-Loader.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-01-Map-Data.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-01-Travel-View.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Campaign-Atlas-View.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:19:43] &quot;GET /output/campaign/Session-01-Dungeon-View.js HTTP/1.1&quot; 200 -
+
+</pre></details><details><summary><b>Failed</b> — check-voice-handoff-browser.cjs <small>fresh browser rehearsal · 1.88s</small></summary><pre>{
+  screen: &#x27;home&#x27;,
+  panel: &#x27;context-sidebar&#x27;,
+  dm: &#x27;app run-mode comfort-mode cockpit cockpit-v2 hybrid-ui hybrid-home guided-mode&#x27;,
+  details: []
+}
+locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator(&#x27;#hybrid-home&#x27;) to be visible[22m
+
+    at /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-voice-handoff-browser.cjs:8:99 {
+  log: [ &quot;  - waiting for locator(&#x27;#hybrid-home&#x27;) to be visible&quot; ],
+  name: &#x27;TimeoutError&#x27;
+}
+</pre></details><details><summary><b>Failed</b> — check-voice-studio-browser.cjs <small>fresh browser rehearsal · 5.02s</small></summary><pre>Choose text → save or import a take → preview in headphones → approve → play to table.
+
+Live generation allowance approved for this app session.
+
+New NPC lineVoice profiles &amp; setup
+Saved recording
+Choose a recording
+Elmar Barthen · line
+Use a scene, handout, letter or recap
+Audio outputs &amp; narration volume
+Elmar Barthen
+
+Recording voice is proposed · the campaign cast has not selected this take’s voice.
+
+Recording title
+Exact audience script
+Delivery
+Natural
+Warm / measured
+Urgent / brisk
+Quiet / restrained
+Solemn / slow
+Voice, pronunciation &amp; staged scene
+Load available voices
+Voice
+Choose a voice
+Synthetic transport fixture
+Speech model
+Multilingual v2 · delivery controls
+v3 · use auditions for expressive direction
+Pronunciation corrections (name = spoken spelling)
+Corrections replace matching words in the spoken text below. Subtitles retain the original names. Delivery changes numeric pacing and style; it does not guarantee an emotion.
+Staged visual
+Keep current map / visual
+Campaign cover
+Phandalin town map
+Conyberry town map
+Thundertree town map
+Waterdeep cast
+Gundren departs
+The empty horses
+Cave mouth
+Road ambush · revealed
+Goblin trail
+Snare · discovered
+Pit · discovered
+Area 2 · Goblin blind
+Area 3 · Kennel
+Area 4 · Steep passage
+Area 5 · Overpass
+Area 6 · Goblin den
+Area 7 · Twin pools
+Area 8 · Klarg’s cave
+Phandalin arrival · optional
+Barthen’s Provisions · optional
+Phandalin · Outside Barthen’s Provisions
+Phandalin · Stonehill Inn
+Phandalin · Stonehill common room
+Phandalin · Townmaster’s Hall
+Phandalin · Lionshield Coster
+Phandalin · Miner’s Exchange
+Phandalin · Shrine of Luck
+Phandalin · Alderleaf Farm
+Phandalin · Sleeping Giant tap house
+Phandalin · Sleeping Giant common room
+Phandalin · Edermath Orchard
+Phandalin · Redbrand confrontation
+Phandalin · Tresendar Manor ruins
+Phandalin · Hillside tunnel entrance
+Redbrand Hideout · Area 1 · Cellar and cistern
+Redbrand Hideout · Area 2 · Ruffian barracks
+Redbrand Hideout · Area 3 · Hall with hidden pit
+Redbrand Hideout · Area 3 · Pit discovered
+Redbrand Hideout · Area 4 · Crypt
+Redbrand Hideout · Area 5 · Slave pens
+Redbrand Hideout · Area 6 · Armory
+Redbrand Hideout · Area 7 · Storeroom
+Redbrand Hideout · Area 8 · Crevasse
+Redbrand Hideout · Area 8 · Nothic revealed
+Redbrand Hideout · Area 9 · Bugbear barracks
+Redbrand Hideout · Area 10 · Common room
+Redbrand Hideout · Area 11 · Wizard’s workshop
+Redbrand Hideout · Area 12 · Glasstaff’s quarters
+Wilderness · Triboar Trail journey
+Wilderness · Conyberry ruins
+Wilderness · Agatha’s woven shelter
+Wilderness · Agatha appears
+Wilderness · Old Owl Well
+Wilderness · Old Owl Well · undead revealed
+Wilderness · Wyvern Tor
+Wilderness · Wyvern Tor · orc camp
+Wilderness · Wilderness encounter · stirges
+Wilderness · Wilderness encounter · ghouls
+Wilderness · Wilderness encounter · ogre
+Wilderness · Wilderness encounter · goblins
+Wilderness · Wilderness encounter · hobgoblins
+Wilderness · Wilderness encounter · orcs
+Wilderness · Wilderness encounter · wolves
+Wilderness · Wilderness encounter · owlbear
+Thundertree · Thundertree approach
+Thundertree · Area 1 · Western cottage
+Thundertree · Area 2 · Blighted cottages
+Thundertree · Area 3 · Brown Horse
+Thundertree · Area 4 · Druid’s Watch
+Thundertree · Area 5 · Blighted farmhouse
+Thundertree · Area 6 · Ruined store
+Thundertree · Area 6 · Spiders revealed
+Thundertree · Area 7 · Dragon’s tower
+Thundertree · Area 7 · Venomfang revealed
+Thundertree · Area 8 · Old smithy
+Thundertree · Area 9 · Herbalist’s shop
+Thundertree · Area 10 · Town square
+Thundertree · Area 11 · Old garrison
+Thundertree · Area 12 · Weaver’s cottage
+Thundertree · Area 13 · Dragon cultists’ cottage
+Thundertree · Area 13 · Cultists revealed
+Cragmaw Castle · Cragmaw Castle approach
+Cragmaw Castle · Area 1 · Castle entrance
+Cragmaw Castle · Area 2 · Trapped hall
+Cragmaw Castle · Area 2 · Hall collapse
+Cragmaw Castle · Area 3 · Archer post
+Cragmaw Castle · Area 4 · Ruined barracks
+Cragmaw Castle · Area 5 · Storeroom
+Cragmaw Castle · Area 6 · Hobgoblin barracks
+Cragmaw Castle · Area 7 · Banquet hall
+Cragmaw Castle · Area 8 · Dark hall
+Cragmaw Castle · Area 8 · Grick revealed
+Cragmaw Castle · Area 9 · Goblin shrine
+Cragmaw Castle · Area 10 · Postern gate
+Cragmaw Castle · Area 11 · Ruined tower
+Cragmaw Castle · Area 12 · Guard barracks
+Cragmaw Castle · Area 13 · Owlbear tower
+Cragmaw Castle · Area 14 · King’s quarters
+Wave Echo Cave · Area 1 · Cave entrance
+Wave Echo Cave · Area 2 · Mine tunnels
+Wave Echo Cave · Area 3 · Old entrance
+Wave Echo Cave · Area 4 · Old guardroom
+Wave Echo Cave · Area 4 · Skeletons rise
+Wave Echo Cave · Area 5 · Assayers’ office
+Wave Echo Cave · Area 6 · South barracks
+Wave Echo Cave · Area 7 · Ruined storeroom
+Wave Echo Cave · Area 8 · Fungi cavern
+Wave Echo Cave · Area 8 · Spores released
+Wave Echo Cave · Area 9 · Great cavern
+Wave Echo Cave · Area 10 · Dark pool
+Wave Echo Cave · Area 11 · North barracks
+Wave Echo Cave · Area 12 · Smelter cavern
+Wave Echo Cave · Area 13 · Starry cavern
+Wave Echo Cave · Area 14 · Wizards’ quarters
+Wave Echo Cave · Area 14 · Mormesk appears
+Wave Echo Cave · Area 15 · Forge of Spells
+Wave Echo Cave · Area 16 · Booming cavern
+Wave Echo Cave · Area 17 · Old streambed
+Wave Echo Cave · Area 18 · Collapsed cavern
+Wave Echo Cave · Area 19 · Temple of Dumathoin
+Wave Echo Cave · Area 19 · Black Spider confrontation
+Wave Echo Cave · Area 20 · Priests’ quarters
+Epilogue · Phandalin homecoming
+Phandalin · Phandalin street
+Redbrand Hideout · Redbrand Hideout
+Wilderness · Triboar Trail · woodland
+Wilderness · Wilderness night camp
+Wilderness · Conyberry ruins
+Wilderness · Agatha&#x27;s woodland grove
+Wilderness · Old Owl Well
+Wilderness · Wyvern Tor ravine
+Phandalin · Sleeping Giant tap house
+Phandalin · Tresendar Manor courtyard
+Redbrand Hideout · Redbrand Hideout · crevasse
+Thundertree · Thundertree · village
+Thundertree · Thundertree · Brown Horse
+Thundertree · Thundertree · ruined store
+Thundertree · Thundertree · dragon tower
+Thundertree · Thundertree · old garrison
+Thundertree · Thundertree · cultist cottage
+Cragmaw Castle · Cragmaw Castle · complete
+Cragmaw Castle · Cragmaw Castle · king&#x27;s quarters
+Wave Echo Cave · Wave Echo Cave · southern workings
+Wave Echo Cave · Wave Echo Cave · central mine
+Wave Echo Cave · Wave Echo Cave · northern reaches
+Wave Echo Cave · Wave Echo Cave · great cavern
+Wave Echo Cave · Wave Echo Cave · smelter
+Wave Echo Cave · Wave Echo Cave · Forge of Spells
+Wave Echo Cave · Wave Echo Cave · Temple of Dumathoin
+Staged ambience
+Keep current ambience
+Vistula river · cave stream
+Into the Caves · ominous bed
+Window rain · weather
+Fireplace · hearth
+Save script &amp; delivery
+Exact text sent for speech
+Generate alternate take
+Create mock take · no provider
+
+Import an existing recording
+
+No approved recording yet.
+
+Approve text for table / manual reading
+Stage narration with a visual &amp; ambience
+▶ Play approved voice to table
+Subtitles only / read aloud myself
+■ Stop voice &amp; subtitles
+locator.selectOption: Timeout 12000ms exceeded.
+Call log:
+[2m  - waiting for getByLabel(&#x27;Delivery&#x27;, { exact: true })[22m
+
+    at /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-voice-studio-browser.cjs:26:539 {
+  log: [ &quot;  - waiting for getByLabel(&#x27;Delivery&#x27;, { exact: true })&quot; ],
+  name: &#x27;TimeoutError&#x27;
+}
+brid-UI.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Campaign-Courtyard.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/AI-Settings.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Campaign-Engine.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Session-01-Player-Polish.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Visual-Language.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Session-01-Loader.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Session-01-Map-Data.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Session-01-Travel-View.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Campaign-Atlas-View.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Session-01-Dungeon-View.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Session-01-Atmosphere-View.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Session-01-TV-Text.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Voice-Subtitles.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/core/Presentation.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Session-01-Table-Tools.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:35:39] &quot;GET /output/campaign/Session-01-Battleboard.js HTTP/1.1&quot; 200 -
+
+</pre></details><details><summary><b>Passed</b> — check-voice-auditions-browser.js <small>fresh browser rehearsal · 13.5s</small></summary><pre>{&quot;passed&quot;:true,&quot;checks&quot;:[&quot;four-proposed-scripts&quot;,&quot;free-only-default-off&quot;,&quot;explicit-setup&quot;,&quot;mock-catalog-and-generation&quot;,&quot;Creator-included-credit-limits&quot;,&quot;billing-change-needs-consent&quot;,&quot;candidate-survives-refresh&quot;,&quot;private-preview&quot;,&quot;global-mute-stops-preview&quot;,&quot;navigation-stops-preview&quot;,&quot;reopen-rechecks-private-output&quot;,&quot;mock-cannot-be-selected&quot;,&quot;profile-save-export-reload&quot;,&quot;undo&quot;,&quot;NPC-shortcut&quot;,&quot;TV-no-voice-data&quot;],&quot;realVoiceRequests&quot;:0,&quot;livePhones&quot;:&quot;untouched&quot;}
+</pre></details><details><summary><b>Passed</b> — check-performance-browser.cjs <small>fresh browser rehearsal · 5.44s</small></summary><pre>Performance regressions passed: retained rows edit current command state, free drag/undo, unchanged TV resync, changed positions/views/layers, map-image reuse, and private preload exclusion. Fresh profile; no live service reached.
+</pre></details><details><summary><b>Passed</b> — check-table-rehearsal-browser.cjs <small>fresh browser rehearsal · 9.39s</small></summary><pre>Guided rehearsal browser passed: live start blocked, existing practice setup, individual phone rows, simulated results excluded, skipped steps retained, reload, fix awaits retest, current-status warning, export, original-group access, unchanged roster/tokens, and TV exclusion. These are fixtures; physical devices not tested.
+</pre></details><details><summary><b>Passed</b> — check-current-status-browser.cjs <small>fresh browser rehearsal · 12.21s</small></summary><pre>Current status browser passed: version comparison, separate automated/DM/physical evidence, simulated observations persisted and withdrawn, history search, unchanged game state, new-group isolation, stale assets rejected, and no status data loaded on TV. Real devices/provider requests: none.
+</pre></details><details><summary><b>Failed</b> — check-stage9-browser.cjs <small>fresh browser rehearsal · 6.99s</small></summary><pre>locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator(&#x27;[data-reliable=&quot;unarchive&quot;][data-id=&quot;practice-1792018036306-5jtvm&quot;]&#x27;)[22m
+[2m    - locator resolved to &lt;button type=&quot;button&quot; data-reliable=&quot;unarchive&quot; data-id=&quot;practice-1792018036306-5jtvm&quot;&gt;Unarchive&lt;/button&gt;[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+
+    at /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-stage9-browser.cjs:15:322 {
+  log: [
+    `  - waiting for locator(&#x27;[data-reliable=&quot;unarchive&quot;][data-id=&quot;practice-1792018036306-5jtvm&quot;]&#x27;)`,
+    &#x27;    - locator resolved to &lt;button type=&quot;button&quot; data-reliable=&quot;unarchive&quot; data-id=&quot;practice-1792018036306-5jtvm&quot;&gt;Unarchive&lt;/button&gt;&#x27;,
+    &#x27;  - attempting click action&#x27;,
+    &#x27;    - waiting for element to be visible, enabled and stable&#x27;,
+    &#x27;    - element is visible, enabled and stable&#x27;,
+    &#x27;    - scrolling into view if needed&#x27;
+  ],
+  name: &#x27;TimeoutError&#x27;
+}
+Cockpit.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-Interface.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-Hybrid-UI.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Campaign-Courtyard.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/AI-Settings.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Campaign-Engine.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-Player-Polish.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-Loader.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Visual-Language.css HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-Map-Data.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-Travel-View.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Campaign-Atlas-View.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-Dungeon-View.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-Atmosphere-View.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-TV-Text.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Voice-Subtitles.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/core/Presentation.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-Table-Tools.js HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Oct/2026 16:47:16] &quot;GET /output/campaign/Session-01-Battleboard.js HTTP/1.1&quot; 200 -
+
+</pre></details><details><summary><b>Passed</b> — check-hybrid-combat-browser.js <small>fresh browser rehearsal · 6.13s</small></summary><pre>Hybrid combat passed: map staging, free drag/undo, explicit ruler, initiative, identical DM/phone-ingress reviewed results, physical dice, reaction boundary, one-event undo, slot/reaction use, and next turn. Phone ingress simulated; no live clients or services.
+</pre></details><details><summary><b>Passed</b> — check-party-actions-browser.cjs <small>fresh browser rehearsal · 4.0s</small></summary><pre>Party cards browser passed: Party → review, two Flurry strikes / one cost / undo, explicit upcast dart choices, and a 390px simulated phone with action labels, intent and targets. HTTP services mocked; no live connections touched.
+</pre></details><details><summary><b>Passed</b> — check-outcomes-browser.js <small>fresh browser rehearsal · 9.8s</small></summary><pre>App loaded
+Practice campaign open
+Outcome UI open
+Browser practice campaign passed: new outcome, explicit objective, review, apply, correction draft isolation, journal updates, undo/redo and persistence. No real campaign storage used.
+</pre></details><details><summary><b>Passed</b> — check-stage3-recovery-browser.js <small>fresh browser rehearsal · 6.52s</small></summary><pre>Stage 3 recovery passed: interrupted import rolled back, version 2 save opened, and fresh browser restored 1 sessions with matching characters, quests, and scene.
+</pre></details><details><summary><b>Failed</b> — check-evening-path-browser.js <small>fresh browser rehearsal · 5.22s</small></summary><pre>AssertionError [ERR_ASSERTION]: resolution opens exploration when combat is inactive
+    at /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-evening-path-browser.js:63:5 {
+  generatedMessage: false,
+  code: &#x27;ERR_ASSERTION&#x27;,
+  actual: false,
+  expected: true,
+  operator: &#x27;==&#x27;,
+  diff: &#x27;simple&#x27;
+}
+</pre></details><details><summary><b>Failed</b> — check-reconciliation-browser.cjs <small>fresh browser rehearsal · 20.1s</small></summary><pre>locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole(&#x27;button&#x27;, { name: &#x27;Apply reviewed outcome&#x27;, exact: true })[22m
+[2m    - locator resolved to &lt;button disabled type=&quot;button&quot;&gt;Apply reviewed outcome&lt;/button&gt;[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not enabled[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not enabled[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    28 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is not enabled[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+    at /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-reconciliation-browser.cjs:13:158 {
+  log: [
+    &quot;  - waiting for getByRole(&#x27;button&#x27;, { name: &#x27;Apply reviewed outcome&#x27;, exact: true })&quot;,
+    &#x27;    - locator resolved to &lt;button disabled type=&quot;button&quot;&gt;Apply reviewed outcome&lt;/button&gt;&#x27;,
+    &#x27;  - attempting click action&#x27;,
+    &#x27;    2 × waiting for element to be visible, enabled and stable&#x27;,
+    &#x27;      - element is not enabled&#x27;,
+    &#x27;    - retrying click action&#x27;,
+    &#x27;    - waiting 20ms&#x27;,
+    &#x27;    2 × waiting for element to be visible, enabled and stable&#x27;,
+    &#x27;      - element is not enabled&#x27;,
+    &#x27;    - retrying click action&#x27;,
+    &#x27;      - waiting 100ms&#x27;,
+    &#x27;    28 × waiting for element to be visible, enabled and stable&#x27;,
+    &#x27;       - element is not enabled&#x27;,
+    &#x27;     - retrying click action&#x27;,
+    &#x27;       - waiting 500ms&#x27;,
+    &#x27;    - waiting for element to be visible, enabled and stable&#x27;
+  ],
+  name: &#x27;TimeoutError&#x27;
+}
+</pre></details><details><summary><b>Failed</b> — check-whole-backup-browser.cjs <small>fresh browser rehearsal · 21.79s</small></summary><pre>node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+page.waitForEvent: Target page, context or browser has been closed
+=========================== logs ===========================
+waiting for event &quot;download&quot;
+============================================================
+    at /Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/campaign/tools/check-whole-backup-browser.cjs:26:82 {
+  log: []
+}
+
+Node.js v24.19.0
+</pre></details>
+<h2>Physical checks still needed</h2><ul><li>Flat TV readability, safe edges, rotation, and grid size.</li><li>Real phones on table Wi-Fi; disconnect and rejoin one phone.</li><li>Private headphone preview and public speaker playback.</li></ul>
+<p>Real providers: not tested in this release gate. Service tests use fixtures or mocks. Specialist browser rehearsals outside this gate remain listed in <a href="latest.json">the full report</a>.</p></html>

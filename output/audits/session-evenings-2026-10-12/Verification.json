@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-12",
+  "environment": "Disposable Chrome and isolated local services",
+  "physicalDevicesTested": false,
+  "liveServicesChanged": false,
+  "audit": [
+    {
+      "id": "next-session-4",
+      "beats": 9,
+      "unknownScenes": [],
+      "unknownEncounters": [],
+      "shortRead": [],
+      "duplicates": [],
+      "rooms": 0
+    },
+    {
+      "id": "next-session-5",
+      "beats": 37,
+      "unknownScenes": [],
+      "unknownEncounters": [],
+      "shortRead": [],
+      "duplicates": [],
+      "rooms": 0
+    },
+    {
+      "id": "next-session-6",
+      "beats": 32,
+      "unknownScenes": [],
+      "unknownEncounters": [],
+      "shortRead": [],
+      "duplicates": [],
+      "rooms": 20
+    }
+  ],
+  "checks": [
+    {
+      "id": "next-session-4",
+      "board": "town-phandalin",
+      "beats": 9,
+      "enemies": 0,
+      "partyPreserved": true
+    },
+    {
+      "id": "next-session-5",
+      "board": "region-lmop",
+      "beats": 37,
+      "enemies": 76,
+      "partyPreserved": true
+    },
+    {
+      "id": "next-session-6",
+      "board": "wave-echo",
+      "beats": 32,
+      "enemies": 57,
+      "partyPreserved": true
+    }
+  ],
+  "additionalChecks": [
+    "Original live backup imports",
+    "Two-paragraph player narration",
+    "All 20 Wave Echo room markers",
+    "Navigation leaves session state unchanged",
+    "Private evening module excluded from TV",
+    "Save reload preserves party and resources",
+    "Saved session reload preserves damaged enemies and fog"
+  ],
+  "errors": []
+}

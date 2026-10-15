@@ -108,14 +108,18 @@
     category: ['art', 'map', 'portrait', 'item card', 'audio', 'video'].includes(item.category) ? item.category : item.kind === 'image' ? 'art' : item.kind,
     audience: item.audience === 'dm' || ['assets/Nine-Sites-Watercolor.png','assets/Nine-Sites-Atlas.png','assets/Waterdeep-City-Map.png','world-maps/Sword-Coast-Campaign-Map.png'].includes(item.path) ? 'dm' : 'table', mime: clean(item.mime, 80), path: (/^(assets|session-01-visuals|session-02-visuals|lmop-visuals|lmop-battle-maps|town-maps)\/[A-Za-z0-9/_-]+\.(png|jpg|jpeg|webp|svg)$/i.test(item.path || '') ||
       /^audio\/(?:recorded\/)?[A-Za-z0-9_-]+\.(?:wav|mp3|ogg)$/i.test(item.path || '')) ? item.path : '',
-    hash: clean(item.hash, 100), size: number(item.size, 0, 0, 100000000), tags: Array.isArray(item.tags) ? item.tags.slice(0, 12).map(x => clean(x, 40)) : [], source: clean(item.source, 200) });
+    hash: clean(item.hash, 100), size: number(item.size, 0, 0, 100000000), tags: Array.isArray(item.tags) ? item.tags.slice(0, 12).map(x => clean(x, 40)) : [], source: clean(item.source, 200),
+    license: clean(item.license || (/(?:CC0|CC BY 3\.0)/.exec(item.source || '') || [])[0] || 'Unspecified — review before sharing', 160) });
   const normalizePage = page => ({ mediaId: clean(page.mediaId, 80), label: clean(page.label, 80), zoom: number(page.zoom, 100, 50, 300),
     panX: number(page.panX, 0, -100, 100), panY: number(page.panY, 0, -100, 100), crop: number(page.crop, 0, 0, 35) });
   const normalizeHandout = item => ({ id: clean(item.id, 80), title: clean(item.title, 100), text: clean(item.text, 1000),
     pages: Array.isArray(item.pages) ? item.pages.slice(0, 20).map(normalizePage) : [] });
   const normalizePreset = item => ({ id: clean(item.id, 80), name: clean(item.name, 100), mode: modes.includes(item.mode) ? item.mode : 'battle',
     sceneId: clean(item.sceneId, 80), mediaId: clean(item.mediaId, 80), ambienceId: clean(item.ambienceId, 80), musicId: clean(item.musicId, 80),
-    handoutId: clean(item.handoutId, 80), banner: clean(item.banner, 100), objective: clean(item.objective, 160), echo: item.echo === true });
+    handoutId: clean(item.handoutId, 80), narrationId: clean(item.narrationId, 80), weather: ['inherit','clear','rain','snow','storm','wind'].includes(item.weather) ? item.weather : 'inherit',
+    lighting: ['inherit','normal','warm','cool','dim'].includes(item.lighting) ? item.lighting : 'inherit',
+    effectsMode: ['inherit','off','subtle','full'].includes(item.effectsMode) ? item.effectsMode : 'inherit',
+    banner: clean(item.banner, 100), objective: clean(item.objective, 160), echo: item.echo === true });
   const normalizeCue = cue => ({ id: clean(cue.id, 80), action: ['scene', 'art', 'mode', 'sound', 'handout', 'banner', 'objective', 'black', 'echo'].includes(cue.action) ? cue.action : 'mode',
     value: clean(cue.value, 160), label: clean(cue.label, 100) });
   const sceneSoundCues = {
@@ -136,14 +140,14 @@
     const legacyAudioIds = new Set(['road-wind','cragmaw-stream','phandalin-evening','yawning-portal-room','echo-pressure','nine-resonances',
       ...Object.keys(formerMusic),'fx-goblins-reveal','fx-snare-snap','fx-flood-surge','fx-wolf-growl','fx-echo-discovery']);
     const saved = Array.isArray(raw?.media) ? raw.media.slice(0, 5000).map(normalizeMedia).filter(m => m.id && !(m.id === 'lmop-storeroom' && m.path === 'lmop-visuals/storeroom.png')) : [];
-    const media = raw?.contentProfile === 'blank' ? saved : [...builtins, ...saved.filter(m => !legacyAudioIds.has(m.id) && !builtins.some(b => b.id === m.id))];
+    const media = raw?.contentProfile === 'blank' ? saved : [...builtins.map(normalizeMedia), ...saved.filter(m => !legacyAudioIds.has(m.id) && !builtins.some(b => b.id === m.id))];
     const savedPresets = Array.isArray(raw?.presets) ? raw.presets.slice(0, 100).map(normalizePreset).map(p =>
       p.id === 'echo' && p.name === 'Echo glimpse' ? { ...p, name: '[SPOILER] Nine-site reveal' } : p) : null;
-    const presets = savedPresets || structuredClone(defaults);
+    const presets = savedPresets || defaults.map(normalizePreset);
     if (savedPresets && Number(raw?.presetCatalogVersion || 0) < 2)
       for (const preset of defaults.filter(p => p.id.startsWith('s1-'))) {
         const existing=presets.find(item => item.id === preset.id);
-        if (!existing) presets.push(structuredClone(preset));
+        if (!existing) presets.push(normalizePreset(preset));
         else if (!existing.musicId && existing.name === preset.name)
           existing.musicId = preset.musicId;
       }
@@ -154,15 +158,15 @@
       }
     if (savedPresets && Number(raw?.presetCatalogVersion || 0) < 4)
       for (const preset of defaults.filter(p => p.id.startsWith('s2-')))
-        if (!presets.some(item => item.id === preset.id)) presets.push(structuredClone(preset));
+        if (!presets.some(item => item.id === preset.id)) presets.push(normalizePreset(preset));
     if (savedPresets && Number(raw?.presetCatalogVersion || 0) < 5 && !presets.some(item => item.id === 's2-hideout'))
-      presets.push(structuredClone(defaults.find(item => item.id === 's2-hideout')));
+      presets.push(normalizePreset(defaults.find(item => item.id === 's2-hideout')));
     if (savedPresets && Number(raw?.presetCatalogVersion || 0) < 6)
       for (const preset of defaults.filter(item => item.id.startsWith('s3-')))
-        if (!presets.some(item => item.id === preset.id)) presets.push(structuredClone(preset));
+        if (!presets.some(item => item.id === preset.id)) presets.push(normalizePreset(preset));
     if (savedPresets && Number(raw?.presetCatalogVersion || 0) < 7)
       for (const preset of defaults.filter(item => ['s2-stonehill','s3-castle-infiltration'].includes(item.id)))
-        if (!presets.some(item => item.id === preset.id)) presets.push(structuredClone(preset));
+        if (!presets.some(item => item.id === preset.id)) presets.push(normalizePreset(preset));
     const cuesByBeat = Object.fromEntries(Object.entries(raw?.cuesByBeat || {}).slice(0, 200).map(([key, list]) =>
       [clean(key, 80), Array.isArray(list) ? list.slice(0, 30).map(normalizeCue) : []]));
     if (Number(raw?.cueCatalogVersion || 0) < 1) for (const [beat,list] of Object.entries(sceneSoundCues)) {
@@ -187,7 +191,7 @@
       banner: clean(raw?.banner, 100), objective: clean(raw?.objective, 160), event: clean(raw?.event, 160),
       eventEndsAt: number(raw?.eventEndsAt, 0, 0, 4102444800000), echo: raw?.echo === true,
       overlays: { turn: raw?.overlays?.turn !== false, roll: raw?.overlays?.roll !== false, objective: raw?.overlays?.objective !== false, event: raw?.overlays?.event !== false },
-      activePreset: clean(raw?.activePreset, 80) };
+      activePreset: clean(raw?.activePreset, 80), visualWeather: clean(raw?.visualWeather, 20), visualLighting: clean(raw?.visualLighting, 20) };
   }
   function publicMediaIds(live, library) {
     const handout = library.handouts.find(h => h.id === live.handoutId);
@@ -200,13 +204,14 @@
     const live = normalizeLive(raw), ids = publicMediaIds(live, library).filter(id=>library.media.some(m=>m.id===id&&m.audience!=='dm'));
     const handout = library.handouts.find(h => h.id === live.handoutId);
     const card = library.cards.find(c => c.id === live.cardId);
-    return { ...live, mediaId: ids.includes(live.mediaId) ? live.mediaId : '',
-      handoutId: live.mode === 'handout' ? live.handoutId : '', cardId: live.mode === 'card' ? live.cardId : '',
+    const handoutSafe = !!(handout && ids.includes(handout.pages[live.page]?.mediaId) && library.media.some(m => m.id === handout.pages[live.page]?.mediaId && m.kind === 'image'));
+    return { ...live, activePreset: '', mediaId: ids.includes(live.mediaId) ? live.mediaId : '',
+      handoutId: live.mode === 'handout' && handoutSafe ? live.handoutId : '', cardId: live.mode === 'card' ? live.cardId : '',
       media: ids.map(id => library.media.find(m => m.id === id)).filter(Boolean).map(m => ({ id: m.id, name: m.name, kind: m.kind, path: m.path, mime: m.mime })),
-      handout: handout && live.mode === 'handout' ? { title: handout.title, text: handout.text, page: normalizePage(handout.pages[live.page] || {}) } : null,
-      card: card && live.mode === 'card' ? { title: card.title, subtitle: card.subtitle, text: card.text, mediaId: card.mediaId } : null };
+      handout: handoutSafe && live.mode === 'handout' ? { title: handout.title, text: handout.text, page: normalizePage(handout.pages[live.page] || {}) } : null,
+      card: card && live.mode === 'card' ? { title: card.title, subtitle: card.subtitle, text: card.text, mediaId: ids.includes(card.mediaId) ? card.mediaId : '' } : null };
   }
-  let host, tab = 'live', selectedHandout = '', selectedCard = '', selectedBeat = '', previewPage = 0;
+  let host, tab = 'live', selectedHandout = '', selectedCard = '', selectedBeat = '', previewPage = 0, stagedPresetId = '', presetSearch = '';
   let liveCategory = 'map', liveScope = 'session', liveSearch = '', livePreviewKey = '';
   let lastMapScene = '';
   const liveRecent = [];
@@ -250,6 +255,7 @@
     (m.tags.includes(group) || !m.tags.some(tag => ['ambience','music','sfx'].includes(tag)))), chosen);
   const save = () => { void host.saveLibrary(); renderDM(); };
   const liveSave = label => host.commit(label);
+  const clearPreset = () => Object.assign(host.state.presentation, { activePreset: '', visualWeather: '', visualLighting: '' });
   function open(next = 'director', targetId = '') {
     tab = next;
     if (next === 'live' && ['map', 'art', 'handout'].includes(targetId)) {
@@ -275,13 +281,19 @@
     $('live-choose-art').onclick = () => open('live', 'art');
     $('live-choose-handout').onclick = () => open('live', 'handout');
     $('live-return-map').onclick = returnToMap;
-    $('live-black-screen').onclick = () => { host.state.presentation.mode = 'black'; liveSave('Black screen'); };
+    $('live-black-screen').onclick = () => { clearPreset(); host.state.presentation.mode = 'black'; liveSave('Black screen'); };
     $('close-presentation').onclick = close;
     $('presentation-scrim').onclick = close;
     $('presentation-tabs').onclick = event => { const button = event.target.closest('[data-presentation-tab]'); if (button) { tab = button.dataset.presentationTab; renderDM(); } };
     $('presentation-content').addEventListener('click', click);
     $('presentation-content').addEventListener('change', change);
     $('presentation-content').addEventListener('input', event => {
+      if (event.target.id === 'preset-search') {
+        presetSearch = clean(event.target.value, 100);
+        const position = event.target.selectionStart;
+        renderDM(); const replacement = $('preset-search'); replacement?.focus(); replacement?.setSelectionRange(position, position);
+        return;
+      }
       if (event.target.id !== 'live-search') return;
       liveSearch = clean(event.target.value, 100); livePreviewKey = '';
       const position = event.target.selectionStart;
@@ -327,7 +339,7 @@
       if (!mapId) return host.toast('No map is prepared for this session.');
       host.changeScene(mapId, false, false);
     }
-    host.state.presentation.mode = 'battle'; liveSave('Returned to map');
+    clearPreset(); host.state.presentation.mode = 'battle'; liveSave('Returned to map');
     if (tab === 'live') close();
   }
   function rememberLive(key) {
@@ -385,21 +397,69 @@
       ${preview ? `<div class="presentation-art-preview live-picker-preview"><div class="live-preview-image">${preview.image ? `<img src="${esc(preview.image)}" alt="DM preview of ${esc(preview.title)}">` : preview.mediaId ? `<img data-live-media="${esc(preview.mediaId)}" alt="DM preview of ${esc(preview.title)}">` : '<span>No image page</span>'}</div><div><strong>${esc(preview.title)}</strong><p>${esc(preview.detail)}</p><div class="presentation-confirm"><button type="button" class="primary" data-do="live-show" data-id="${esc(preview.key)}" ${liveCategory === 'handout' && !preview.mediaId ? 'disabled' : ''}>Show on TV</button></div></div></div>` : '<p class="live-picker-empty">Nothing matches. Try All campaign or a different search.</p>'}
       <div class="presentation-art-grid live-picker-grid">${candidates.map(c => `<button type="button" class="live-picker-card ${c.key === livePreviewKey ? 'active' : ''}" data-do="live-preview" data-id="${esc(c.key)}">${c.image ? `<img loading="lazy" decoding="async" src="${esc(c.image)}" alt="">` : c.mediaId ? `<img data-live-media="${esc(c.mediaId)}" loading="lazy" alt="">` : '<span class="live-no-image">✦</span>'}<strong>${esc(c.title)}</strong><small>${c.key === `scene:${nextScene}` ? 'Up next · ' : liveRecent.includes(c.key) ? 'Recent · ' : ''}${esc(c.detail)}</small></button>`).join('')}</div>`;
   }
+  function presetVisual(preset) {
+    const handout = host.library.handouts.find(h => h.id === preset.handoutId);
+    const mediaId = preset.mode === 'handout' ? handout?.pages?.[0]?.mediaId : preset.mediaId;
+    const item = media(mediaId);
+    const scene = host.scenes.find(s => s.id === (preset.sceneId || host.state.scene));
+    return { handout, item, image: item?.path || (preset.mode === 'battle' ? host.sceneImage(scene || {}) : ''), mediaId,
+      title: preset.mode === 'handout' ? handout?.title || 'Handout' : preset.mode === 'battle' ? scene?.title || 'Battlefield' : preset.mode === 'black' ? 'Black screen' : item?.name || preset.banner || preset.name };
+  }
+  function presetProblem(preset) {
+    const visual = presetVisual(preset);
+    if (preset.mode === 'battle' && preset.sceneId && !host.scenes.some(s => s.id === preset.sceneId)) return 'This battlefield is unavailable in the current session.';
+    if (preset.mode === 'battle' && preset.sceneId && preset.sceneId !== host.state.scene && host.state.turn.order.length) return 'End combat before changing the battlefield. You can still show scene art over the current map.';
+    if (['scene','title'].includes(preset.mode) && preset.mediaId && (!visual.item || visual.item.audience === 'dm' || visual.item.kind !== 'image')) return 'This image is private or unavailable for the TV.';
+    if (preset.mode === 'handout' && (!visual.handout?.pages?.length || !visual.item || visual.item.audience === 'dm' || visual.item.kind !== 'image')) return 'Choose a handout with a player-safe image page.';
+    return '';
+  }
   function applyPreset(preset) {
-    if (preset.sceneId && host.scenes.some(s => s.id === preset.sceneId)) host.changeScene(preset.sceneId, true, false);
+    const problem = presetProblem(preset);
+    if (problem) { host.toast(problem); return false; }
+    globalThis.ECHO_VOICE_STUDIO?.stopPreview?.();
+    // Scene art is a presentation over the current map; only a battlefield changes the game scene.
+    if (preset.mode === 'battle' && preset.sceneId && preset.sceneId !== host.state.scene) host.changeScene(preset.sceneId, true, false);
     Object.assign(host.state.presentation, { mode: preset.mode, mediaId: preset.mediaId, handoutId: preset.handoutId, page: 0,
-      title: preset.banner, banner: preset.banner, objective: preset.objective, echo: preset.echo, activePreset: preset.id });
-    liveSave(`TV preset: ${preset.name}`);
+      title: preset.banner, banner: preset.banner, objective: preset.objective, echo: preset.echo, activePreset: preset.id,
+      visualWeather: preset.weather === 'inherit' ? '' : preset.weather,
+      visualLighting: preset.lighting === 'inherit' ? '' : preset.lighting });
+    if (preset.effectsMode !== 'inherit') host.setEffectsMode?.(preset.effectsMode);
+    liveSave(`Showed scene preset: ${preset.name}`);
+    if (preset.effectsMode !== 'inherit') void host.saveLibrary();
     void playGroup('ambience', preset.ambienceId); void playGroup('music', preset.musicId);
+    if (preset.narrationId) {
+      const playback = globalThis.ECHO_VOICE_STUDIO?.playApproved?.(preset.narrationId);
+      if (playback?.catch) void playback.catch(error => host.toast(`Narration unavailable: ${error.message}. Read the approved line yourself or use subtitles.`));
+      else host.toast('Narration is unavailable. Read the line yourself.');
+    }
+    return true;
   }
   function renderDirector() {
     const live = host.state.presentation;
-    return `<h3>One-action scenes</h3><div class="presentation-presets">${host.library.presets.map(p => `<button type="button" data-do="apply-preset" data-id="${esc(p.id)}">${esc(p.name)}</button>`).join('')}</div>
+    const staged = host.library.presets.find(p => p.id === stagedPresetId), visual = staged && presetVisual(staged);
+    const voice = staged?.narrationId && globalThis.ECHO_VOICE_STUDIO?.available?.().find(v => v.id === staged.narrationId);
+    const voiceOptions = globalThis.ECHO_VOICE_STUDIO?.available?.() || [];
+    const readAloud = staged && host.beats.find(b => b.scene === staged.sceneId)?.read?.join('\n');
+    return `<h3>Scene presets</h3><p class="help">Choose a preset to preview it here. The TV and speakers change only when you press Show on TV &amp; play.</p>
+      ${staged ? `<div class="presentation-art-preview preset-staging"><div class="preset-staging-visual">${visual.image ? `<img src="${esc(visual.image)}" alt="Private preview of ${esc(visual.title)}">` : visual.mediaId ? `<img data-live-media="${esc(visual.mediaId)}" alt="Private preview of ${esc(visual.title)}">` : `<span>${esc(visual.title)}</span>`}</div>
+        <div><small>PRIVATE PREVIEW · PLAYER TV STILL SHOWS ${esc(currentTV().title)}</small><strong>${esc(staged.name)}</strong><p>${esc(visual.title)} · ${esc(staged.mode)}${staged.handoutId ? ' · handout' : ''}</p>
+        <p>Light: ${esc(staged.lighting)} · Weather: ${esc(staged.weather)} · Effects: ${esc(staged.effectsMode)}</p>
+        <p>Ambience: ${esc(media(staged.ambienceId)?.name || 'none')} · Music: ${esc(media(staged.musicId)?.name || 'none')}</p>
+        <p>Narration: ${esc(voice?.title || (staged.narrationId ? 'Recording unavailable — manual reading' : 'Manual reading'))}</p>
+        ${staged.handoutId ? `<p>Handout: ${esc(visual.handout?.title || 'Unavailable')}${staged.mode === 'handout' ? ' · shown with this preset' : ' · staged for a separate reveal'}</p>` : ''}
+        ${voice ? `<p class="preset-narration-text">${esc(voice.text)}</p><button type="button" data-do="preview-preset-voice" data-id="${esc(staged.narrationId)}">Preview voice in private headphones</button>` : readAloud ? `<p class="preset-narration-text">${esc(readAloud)}</p>` : ''}
+        ${presetProblem(staged) ? `<p role="alert">${esc(presetProblem(staged))}</p>` : ''}
+        <div class="presentation-confirm"><button type="button" class="primary" data-do="apply-preset" data-id="${esc(staged.id)}" ${presetProblem(staged) ? 'disabled' : ''}>Show on TV &amp; play</button><button type="button" class="panic-mute" data-do="stop-all-audio">■ Stop all sound</button></div></div></div>` : '<p class="help">Select a prepared scene below to see its art, sound, and narration.</p>'}
+      <label>Find a scene<input id="preset-search" type="search" value="${esc(presetSearch)}" placeholder="Search scenes"></label>
+      <div class="presentation-presets">${host.library.presets.filter(p => !presetSearch || `${p.name} ${p.banner}`.toLocaleLowerCase().includes(presetSearch.toLocaleLowerCase())).map(p => `<button type="button" data-do="stage-preset" data-id="${esc(p.id)}" class="${p.id === stagedPresetId ? 'active' : ''}">${esc(p.name)}</button>`).join('')}</div>
       <details><summary>Create a scene preset</summary><label>Name<input id="p-preset-name" maxlength="100"></label><label>Screen mode<select id="p-preset-mode">${modes.map(m => `<option value="${m}">${m}</option>`).join('')}</select></label>
       <label>Scene<select id="p-preset-scene">${sceneChoice('')}</select></label><label>Art<select id="p-preset-media">${mediaOptions('image', '')}</select></label>
       <label>Ambience<select id="p-preset-ambience">${audioOptions('ambience', '')}</select></label><label>Music<select id="p-preset-music">${audioOptions('music', '')}</select></label>
-      <label>Handout<select id="p-preset-handout">${options(host.library.handouts, '')}</select></label><label>Player banner<input id="p-preset-banner"></label>
-      <label>Objective<input id="p-preset-objective"></label><label><input id="p-preset-echo" type="checkbox"> Subtle Echo effect</label><button type="button" data-do="add-preset">Save preset</button></details>
+      <label>Handout<select id="p-preset-handout">${options(host.library.handouts, '')}</select></label><label>Approved narration<select id="p-preset-narration">${options(voiceOptions.map(v => ({id:v.id,name:v.title})), '')}</select></label>
+      <label>Visual light<select id="p-preset-lighting">${['inherit','normal','warm','cool','dim'].map(v => `<option value="${v}">${v}</option>`).join('')}</select></label>
+      <label>Weather<select id="p-preset-weather">${['inherit','clear','rain','snow','storm','wind'].map(v => `<option value="${v}">${v}</option>`).join('')}</select></label>
+      <label>Effects<select id="p-preset-effects">${['inherit','off','subtle','full'].map(v => `<option value="${v}">${v}</option>`).join('')}</select></label>
+      <label>Player banner<input id="p-preset-banner"></label><label>Objective<input id="p-preset-objective"></label><label><input id="p-preset-echo" type="checkbox"> Subtle Echo effect</label><button type="button" data-do="add-preset">Save preset</button></details>
       <h3>What players see now</h3><div class="presentation-mode-grid">${modes.map(mode => `<button type="button" data-do="mode" data-id="${mode}" class="${live.mode === mode ? 'active' : ''}">${mode}</button>`).join('')}</div>
       <p class="help">Changing TV modes preserves the map, tokens, HP, and turn order.</p>`;
   }
@@ -459,7 +519,7 @@
   function renderMedia() {
     return `<h3>Campaign media library</h3><label>Import art, map, portrait, item card, audio, or video<input id="p-media-file" type="file" multiple accept="image/png,image/jpeg,image/webp,audio/mpeg,audio/ogg,audio/wav,audio/mp4,video/mp4,video/webm"></label>
       <p class="help">Imported files are shared across sessions in this browser. The campaign backup includes them. Duplicate files are detected before storage.</p>
-      <div class="presentation-media-grid">${host.library.media.map(item => `<article class="presentation-media-item"><div class="presentation-thumb" data-media-thumb="${esc(item.id)}">${item.kind === 'image' && item.path ? `<img loading="lazy" decoding="async" src="${esc(item.path)}" alt="">` : item.kind === 'image' ? '▧' : item.kind === 'audio' ? '♫' : '▶'}</div><strong>${esc(item.name)}</strong><small>${esc(item.kind)} · ${esc(item.source)}</small><label>Type<select data-media-category="${esc(item.id)}">${(item.kind === 'image' ? ['art', 'map', 'portrait', 'item card'] : [item.kind]).map(category => `<option value="${category}" ${item.category === category ? 'selected' : ''}>${category}</option>`).join('')}</select></label><label>Tags<input data-media-tags="${esc(item.id)}" value="${esc(item.tags.join(', '))}"></label><label>Source<input data-media-source="${esc(item.id)}" value="${esc(item.source)}"></label></article>`).join('')}</div>`;
+      <div class="presentation-media-grid">${host.library.media.map(item => `<article class="presentation-media-item"><div class="presentation-thumb" data-media-thumb="${esc(item.id)}">${item.kind === 'image' && item.path ? `<img loading="lazy" decoding="async" src="${esc(item.path)}" alt="">` : item.kind === 'image' ? '▧' : item.kind === 'audio' ? '♫' : '▶'}</div><strong>${esc(item.name)}</strong><small>${esc(item.kind)} · ${esc(item.source)}</small><label>Type<select data-media-category="${esc(item.id)}">${(item.kind === 'image' ? ['art', 'map', 'portrait', 'item card'] : [item.kind]).map(category => `<option value="${category}" ${item.category === category ? 'selected' : ''}>${category}</option>`).join('')}</select></label><label>Tags<input data-media-tags="${esc(item.id)}" value="${esc(item.tags.join(', '))}"></label><label>Source<input data-media-source="${esc(item.id)}" value="${esc(item.source)}"></label><label>License / use rights<input data-media-license="${esc(item.id)}" value="${esc(item.license || 'Unspecified — review before sharing')}"></label></article>`).join('')}</div>`;
   }
   function renderHandouts() {
     const handout = host.library.handouts.find(h => h.id === selectedHandout) || host.library.handouts[0];
@@ -510,7 +570,7 @@
     if (!host || $('presentation-drawer').hidden) { updateMuteButton(); return; }
     for (const button of $('presentation-tabs').querySelectorAll('button')) button.classList.toggle('active', button.dataset.presentationTab === tab);
     $('presentation-content').innerHTML = ({ live: renderLivePicker, director: renderDirector, art: renderArt, maps: renderBattleMaps, audio: renderAudio, cues: renderCues, media: renderMedia, handouts: renderHandouts, cards: renderCards, tv: renderTV })[tab]();
-    if (tab === 'live') void renderLiveImages();
+    if (tab === 'live' || tab === 'director') void renderLiveImages();
     if (tab === 'handouts') void renderPreview();
     if (tab === 'media') void renderMediaThumbnails();
     updateMuteButton();
@@ -567,7 +627,7 @@
       try { await host.writeMedia(mediaId, file); }
       catch { host.toast('This browser cannot store imported media. Try another browser or free storage space.'); continue; }
       host.library.media.push({ id: mediaId, name: clean(file.name, 100), kind, category: kind === 'image' ? 'art' : kind, mime: file.type, path: '', hash, size: file.size,
-        tags: [`session:${host.sessionId}`], source: 'Local import' });
+        tags: [`session:${host.sessionId}`], source: 'Local import', license: 'Unspecified — review before sharing' });
       host.toast(`Imported ${file.name}`);
     }
     save();
@@ -577,7 +637,7 @@
     const action = button.dataset.do, live = host.state.presentation, library = host.library;
     if (action === 'live-category') { liveCategory = button.dataset.id; livePreviewKey = ''; renderDM(); return; }
     if (action === 'live-preview') { livePreviewKey = button.dataset.id; renderDM(); return; }
-    if (action === 'live-black') { live.mode = 'black'; liveSave('Black screen'); close(); return; }
+    if (action === 'live-black') { clearPreset(); live.mode = 'black'; liveSave('Black screen'); close(); return; }
     if (action === 'live-manage-handouts') { open('handouts'); return; }
     if (action === 'live-show') {
       const choice = liveChoices().find(item => item.key === button.dataset.id);
@@ -599,13 +659,17 @@
       } else if (choice.key.startsWith('handout:')) {
         const handout = library.handouts.find(item => item.id === choice.key.slice(8));
         if (!handout?.pages.length) return host.toast('Add an image page to this handout first.');
+        clearPreset();
         Object.assign(live, { mode: 'handout', handoutId: handout.id, page: 0 });
         rememberLive(choice.key); liveSave(`Showed handout: ${handout.title}`); shown = true;
       }
       if (shown) close();
       return;
     }
-    if (action === 'apply-preset') { const preset = library.presets.find(p => p.id === button.dataset.id); if (preset) applyPreset(preset); return; }
+    if (action === 'stage-preset') { stagedPresetId = button.dataset.id; renderDM(); return; }
+    if (action === 'preview-preset-voice') { try { await globalThis.ECHO_VOICE_STUDIO?.previewApproved?.(button.dataset.id); } catch (error) { host.toast(`Private preview unavailable: ${error.message}`); } return; }
+    if (action === 'apply-preset') { const preset = library.presets.find(p => p.id === button.dataset.id); if (preset?.id === stagedPresetId && applyPreset(preset)) renderDM(); return; }
+    if (action === 'stop-all-audio') { stopAll(); globalThis.ECHO_VOICE_STUDIO?.stop?.(); return; }
     if (action === 'preview-art') { artPreviewId = button.dataset.id; renderDM(); return; }
     if (action === 'show-art') { showCatalogArt(button.dataset.id); return; }
     if (action === 'preview-battle-map') { mapPreviewId = button.dataset.id; renderDM(); return; }
@@ -613,11 +677,13 @@
     if (action === 'return-map') { returnToMap(); return; }
     if (action === 'add-preset') {
       const name = $('p-preset-name').value.trim(); if (!name) return host.toast('Give the preset a name.');
-      library.presets.push(normalizePreset({ id: id(), name, mode: $('p-preset-mode').value, sceneId: $('p-preset-scene').value, mediaId: $('p-preset-media').value,
+      const created = normalizePreset({ id: id(), name, mode: $('p-preset-mode').value, sceneId: $('p-preset-scene').value, mediaId: $('p-preset-media').value,
         ambienceId: $('p-preset-ambience').value, musicId: $('p-preset-music').value, handoutId: $('p-preset-handout').value,
-        banner: $('p-preset-banner').value, objective: $('p-preset-objective').value, echo: $('p-preset-echo').checked })); save(); return;
+        narrationId: $('p-preset-narration').value, lighting: $('p-preset-lighting').value, weather: $('p-preset-weather').value, effectsMode: $('p-preset-effects').value,
+        banner: $('p-preset-banner').value, objective: $('p-preset-objective').value, echo: $('p-preset-echo').checked });
+      library.presets.push(created); stagedPresetId = created.id; presetSearch = ''; save(); return;
     }
-    if (action === 'mode') { live.mode = button.dataset.id; liveSave(`TV mode: ${live.mode}`); return; }
+    if (action === 'mode') { clearPreset(); live.mode = button.dataset.id; liveSave(`TV mode: ${live.mode}`); return; }
     if (action === 'mute') { toggleMute(); return; }
     if (action === 'test-sound') { await playSfx('recorded-coins'); return; }
     if (action === 'duck') { setDucking(!audioState().ducking); return; }
@@ -629,9 +695,9 @@
     if (action === 'add-page') { const handout = library.handouts.find(h => h.id === selectedHandout), mediaId = $('p-handout-image')?.value; if (handout && mediaId) { handout.pages.push(normalizePage({ mediaId })); previewPage = handout.pages.length - 1; save(); } return; }
     if (action === 'preview-page') { previewPage = Number(button.dataset.index); renderDM(); return; }
     if (action === 'narrate-handout') { close(); globalThis.ECHO_VOICE_STUDIO.fromSource({kind:'handout',id:selectedHandout}); return; }
-    if (action === 'show-handout') { const handout = library.handouts.find(h => h.id === selectedHandout); if (!handout?.pages[previewPage]) return host.toast('Add an image page first.'); Object.assign(live, { mode: 'handout', handoutId: handout.id, page: previewPage }); liveSave(`Showed handout: ${handout.title}`); return; }
-    if (action === 'hide-handout') { live.mode = 'battle'; liveSave('Returned to battle map'); return; }
-    if (action === 'show-card') { const card = getCard(); if (!card) return; Object.assign(live, { mode: 'card', cardId: card.id }); liveSave(`Showed card: ${card.title}`); return; }
+    if (action === 'show-handout') { const handout = library.handouts.find(h => h.id === selectedHandout); if (!handout?.pages[previewPage]) return host.toast('Add an image page first.'); clearPreset(); Object.assign(live, { mode: 'handout', handoutId: handout.id, page: previewPage }); liveSave(`Showed handout: ${handout.title}`); return; }
+    if (action === 'hide-handout') { clearPreset(); live.mode = 'battle'; liveSave('Returned to battle map'); return; }
+    if (action === 'show-card') { const card = getCard(); if (!card) return; clearPreset(); Object.assign(live, { mode: 'card', cardId: card.id }); liveSave(`Showed card: ${card.title}`); return; }
     if (action === 'add-cue') { const cue = normalizeCue({ id: id(), action: $('p-cue-action').value, value: $('p-cue-value').value, label: $('p-cue-label').value }); (library.cuesByBeat[selectedBeat] ||= []).push(cue); save(); return; }
     if (action === 'delete-cue') { (library.cuesByBeat[selectedBeat] ||= []).splice(Number(button.dataset.index), 1); save(); return; }
     if (action === 'run-cue') { const cue = library.cuesByBeat[selectedBeat]?.[Number(button.dataset.index)]; if (cue) await runCue(cue); return; }
@@ -665,7 +731,7 @@
     if (el.dataset.audioVolume) { library.audio[el.dataset.audioVolume] = number(el.value, 50); applyVolumes(); save(); return; }
     if (el.dataset.audioNumber) { library.audio[el.dataset.audioNumber] = number(el.value, 2, 0, el.dataset.audioNumber === 'fade' ? 10 : 100); save(); return; }
     if (el.hasAttribute('data-echo-sound')) { library.audio.echoMediaId = el.value; save(); return; }
-    if (el.dataset.mediaTags || el.dataset.mediaSource || el.dataset.mediaCategory) { const item = media(el.dataset.mediaTags || el.dataset.mediaSource || el.dataset.mediaCategory); if (item) { if (el.dataset.mediaTags) item.tags = el.value.split(',').map(s => clean(s.trim(), 40)).filter(Boolean).slice(0, 12); else if (el.dataset.mediaSource) item.source = clean(el.value, 200); else item.category = el.value; save(); } return; }
+    if (el.dataset.mediaTags || el.dataset.mediaSource || el.dataset.mediaCategory || el.dataset.mediaLicense) { const item = media(el.dataset.mediaTags || el.dataset.mediaSource || el.dataset.mediaCategory || el.dataset.mediaLicense); if (item) { if (el.dataset.mediaTags) item.tags = el.value.split(',').map(s => clean(s.trim(), 40)).filter(Boolean).slice(0, 12); else if (el.dataset.mediaSource) item.source = clean(el.value, 200); else if (el.dataset.mediaLicense) item.license = clean(el.value, 160); else item.category = el.value; save(); } return; }
     const handout = library.handouts.find(h => h.id === selectedHandout);
     if (handout && el.hasAttribute('data-handout-title')) { handout.title = clean(el.value, 100); save(); return; }
     if (handout && el.hasAttribute('data-handout-text')) { handout.text = clean(el.value, 1000); save(); return; }
@@ -713,7 +779,7 @@
   async function playGroup(group, mediaId) {
     if(!['ambience','music'].includes(group))return;
     if(!mediaId){stopGroup(group);audioStatus(`Stopped ${group}.`);return;}
-    const item=media(mediaId);if(!item||item.kind!=='audio'||item.audience==='dm')return;
+    const item=media(mediaId);if(!item||item.kind!=='audio'||item.audience==='dm'){audioStatus(`${group} is unavailable. The visual remains on TV; continue without sound.`,true);return;}
     if(audio.muted){audioStatus('Audio is muted. Press Resume audio, then Play.',true);return;}
     const generation=++groupVersions[group],url=item.path||await urlFor(mediaId);
     if(generation!==groupVersions[group]||audio.muted)return;
@@ -725,7 +791,7 @@
     if(generation!==groupVersions[group]){if(!fadingAudio.has(next))next.pause();if(prior){prior.pause();fadingAudio.delete(prior);}return;}
     if(audio.muted)next.pause();
     audio.ids[group]=mediaId;audioStatus(`Playing ${item.name} on this computer.`,false);const start=performance.now();
-    function step(now){if(audio[group]!==next){if(prior){prior.pause();fadingAudio.delete(prior);}return;}const f=duration?Math.min(1,(now-start)/duration):1;fadeGains[group]=f;next.volume=groupVolume(group)*f;if(prior){const gain=priorGain*(1-f);prior.volume=groupVolume(group)*gain;fadingAudio.set(prior,{group,gain});}if(f<1)requestAnimationFrame(step);else if(prior){prior.pause();fadingAudio.delete(prior);}}
+    function step(now){if(audio[group]!==next){if(prior){prior.pause();fadingAudio.delete(prior);}return;}const f=duration?Math.max(0,Math.min(1,(now-start)/duration)):1;fadeGains[group]=f;next.volume=groupVolume(group)*f;if(prior){const gain=priorGain*(1-f);prior.volume=groupVolume(group)*gain;fadingAudio.set(prior,{group,gain});}if(f<1)requestAnimationFrame(step);else if(prior){prior.pause();fadingAudio.delete(prior);}}
     requestAnimationFrame(step);
   }
   async function playSfx(mediaId) {
@@ -764,7 +830,7 @@
         const markup = `<div class="presentation-journal"><h1>Party journal</h1>${entries.map(e => `<article><h2>${esc(e.title)}</h2><p>${esc(e.text)}</p></article>`).join('')}</div>`;
         if (markup !== lastPresentationMarkup) { surface.innerHTML = markup; lastPresentationMarkup = markup; }
       } else {
-        const markup = `<div class="presentation-screen presentation-${esc(live.mode)} ${live.echo ? 'echo-active' : ''}">${visual}<div class="presentation-caption"><h1>${esc(title || '')}</h1><p>${esc(subtitle || '')}</p></div></div>`;
+        const markup = `<div class="presentation-screen presentation-${esc(live.mode)} ${live.echo ? 'echo-active' : ''}">${visual}<div class="presentation-caption"><h1>${esc(globalThis.ECHO_MAP_DATA?.displayTitle(title||'')||title||'')}</h1><p>${esc(subtitle || '')}</p></div></div>`;
         if (markup !== lastPresentationMarkup) { surface.innerHTML = markup; lastPresentationMarkup = markup; }
       }
     }
@@ -780,7 +846,7 @@
     for (const [enabled, value, name] of [[live.overlays?.objective, live.objective, 'Objective'], [live.overlays?.event, live.event, 'Event']]) {
       if (!enabled || !value || live.mode === 'black') continue;
       const pill = document.createElement('div'); pill.className = 'presentation-overlay';
-      if (name === 'Event') pill.id = 'presentation-event-overlay';
+      if (name === 'Event') pill.id = 'presentation-event-overlay';if(name==='Objective')pill.id='presentation-objective-overlay';
       pill.textContent = `${name}: ${value}`; overlays.appendChild(pill);
     }
     overlays.hidden = !overlays.childElementCount;

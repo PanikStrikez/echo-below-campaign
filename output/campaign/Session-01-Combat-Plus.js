@@ -10,7 +10,7 @@
  }
  function scale(s,columns=24){const c=own(s).calibration[s.scene]||{};return {columns:num(c.columns||columns,1,200),feet:num(c.feet||5,1,100),metric:c.metric==='euclidean'?'euclidean':'grid'};}
  function distance(a,b,c){const x=Math.abs(b.x-a.x),y=Math.abs(b.y-a.y)*2/3;return (c.metric==='euclidean'?Math.hypot(x,y):Math.max(x,y))*c.columns*c.feet/100;}
- function speed(s,t){const sh=s.party[t.id],creature=globalThis.ECHO_COMBAT_DATA.CREATURES[t.type]||s.combat.creatures[t.type];let value=sh?Number(sh.speed):parseFloat(creature?.speed);if(!Number.isFinite(value))value=null;
+ function speed(s,t){const sh=s.party[t.id],creature=globalThis.ECHO_COMBAT_DATA?.CREATURES?.[t.type]||s.combat?.creatures?.[t.type];let value=sh?Number(sh.speed):parseFloat(creature?.speed);if(!Number.isFinite(value))value=null;
   if(t.conditions.some(c=>['Grappled','Restrained','Paralyzed','Petrified','Stunned','Unconscious'].includes(c)))return 0;
   if(value!==null&&sh?.rules?.startsWith('2024'))value=Math.max(0,value-5*(t.exhaustion||0));
   if((t.exhaustion||0)>=6||!sh?.rules?.startsWith('2024')&&(t.exhaustion||0)>=5)return 0;

@@ -10,11 +10,15 @@ import re
 import secrets
 import threading
 import time
+import tempfile
+import shutil
 from urllib.parse import urlsplit
 
 from ai_service import AIError, AIService
 from campaign_store import CampaignStore, KINDS, RevisionConflict
 from campaign_sessions import SessionEngine, checked_text
+from campaign_reconciliation import Reconciler
+from campaign_backup import WholeBackup, MAX_UPLOAD, export_store
 from campaign_voice import VoiceService
 from voice_audition import VoiceAuditionService
 
@@ -33,6 +37,7 @@ class CampaignService:
         self.token = secrets.token_urlsafe(32)
         self.lock = threading.RLock()
         self.engines, self.replies, self.indexes, self.ai_jobs = {}, {}, {}, {}
+        self.backups=WholeBackup(self)
 
     def engine(self, campaign_id):
         if not isinstance(campaign_id, str) or not re.fullmatch(r'[A-Za-z0-9_.:-]{1,120}', campaign_id):
@@ -149,6 +154,23 @@ class CampaignService:
             raise AIError('not_found', 'That campaign endpoint does not exist.', 404)
         if path == '/records/query':
             return {'records': store.list_records(audience=payload.get('audience', 'dm'), npc_id=payload.get('npcId'), kind=payload.get('kind') or None), 'revision': store.revision()}
+        if path in ('/backup/prepare','/backup/commit','/backup/cancel'):
+            with self.lock:
+                if path=='/backup/prepare':return self.backups.prepare(payload.get('ticket'),payload.get('targetCampaignId'))
+                if path=='/backup/commit':return self.backups.commit(payload.get('ticket'),payload.get('targetCampaignId'))
+                return self.backups.cancel(payload.get('ticket'))
+        if path=='/backup/check':
+            snapshot=export_store(store,campaign_id)
+            return {'compatible':True,'databaseVersion':snapshot['schemaVersion'],'structuredRecords':len(snapshot['tables']['campaign_records']),'referenceIndexes':'excluded; rebuild locally'}
+        if path == '/outcomes/preview':
+            return Reconciler(store, campaign_id).preview(payload.get('snapshot'))
+        if path == '/outcomes/apply':
+            return Reconciler(store, campaign_id).apply(payload)
+        if path == '/outcomes/status':
+            return Reconciler(store, campaign_id).head()
+        if path == '/outcomes/history':
+            mirror=Reconciler(store,campaign_id)
+            return {'entry':mirror.history_detail(payload['sequence'])} if 'sequence' in payload else {'history':mirror.history()}
         if path == '/records/upsert':
             if type(payload.get('expectedRevision')) is not int:
                 raise AIError('revision_required', 'Reload campaign state before saving a record.', 409)
@@ -219,6 +241,22 @@ class CampaignService:
             if method not in ('GET', 'POST'):
                 raise AIError('method_not_allowed', 'Use GET or POST for campaign control.', 405)
             payload = {}
+            if method=='POST' and path=='/backup/upload':
+                if handler.headers.get('Transfer-Encoding') or handler.headers.get('Content-Type','').split(';')[0]!='application/zip':
+                    raise AIError('invalid_content_type','Choose a whole-campaign ZIP.',415)
+                length=int(handler.headers.get('Content-Length','0'))
+                if not 0<length<=MAX_UPLOAD:raise AIError('body_too_large','Backup is empty or exceeds 4 GB.',413)
+                with tempfile.TemporaryDirectory(prefix='echo-backup-upload-') as folder:
+                    uploaded=Path(folder)/'backup.zip'
+                    with uploaded.open('wb') as dst:
+                        remaining=length
+                        while remaining:
+                            chunk=handler.rfile.read(min(1024*1024,remaining))
+                            if not chunk:raise ValueError('Backup upload was interrupted. The original campaign was not changed.')
+                            dst.write(chunk);remaining-=len(chunk)
+                    with self.lock:result=self.backups.stage(uploaded)
+                    AIService._respond(handler,200,json.dumps(result,ensure_ascii=False).encode())
+                return True
             if method == 'POST':
                 if handler.headers.get('Transfer-Encoding'):
                     raise AIError('invalid_body', 'Transfer encoding is not supported.')
@@ -228,8 +266,9 @@ class CampaignService:
                     length = int(handler.headers.get('Content-Length', '0'))
                 except ValueError:
                     raise AIError('invalid_body', 'A valid body length is required.') from None
-                if not 0 < length <= MAX_BODY:
-                    raise AIError('body_too_large', 'The request is empty or exceeds 2 MB.', 413)
+                limit=300_000_000 if path=='/backup/create' else MAX_BODY
+                if not 0 < length <= limit:
+                    raise AIError('body_too_large', 'The request is empty or exceeds '+('300 MB of browser data.' if path=='/backup/create' else '2 MB.'), 413)
                 try:
                     payload = json.loads(handler.rfile.read(length))
                 except (ValueError, UnicodeError):
@@ -237,6 +276,15 @@ class CampaignService:
                 if not isinstance(payload, dict):
                     raise AIError('invalid_json', 'Use a JSON object.')
             campaign_id = handler.headers.get('X-Echo-Campaign-Id', 'echo-below')
+            if method=='POST' and path=='/backup/create':
+                with tempfile.TemporaryDirectory(prefix='echo-whole-backup-') as folder:
+                    output=Path(folder)/'campaign.zip'
+                    self.backups.create(campaign_id,payload.get('archive',{}),output)
+                    handler.send_response(200)
+                    for name,value in {'Content-Type':'application/zip','Content-Length':str(output.stat().st_size),'Content-Disposition':'attachment; filename="Echo-Whole-Campaign.zip"','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'}.items():handler.send_header(name,value)
+                    handler.end_headers()
+                    with output.open('rb') as src:shutil.copyfileobj(src,handler.wfile)
+                return True
             result = self.dispatch(method, path, payload, campaign_id)
             if isinstance(result, tuple):
                 AIService._respond(handler, 200, result[0], result[1])

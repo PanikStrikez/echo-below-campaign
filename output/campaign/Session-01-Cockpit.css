@@ -48,3 +48,9 @@
 
 /* Session guide stays in the contextual sidebar, leaving the battle map visible. */
 #session-flow-workspace{min-width:0;gap:12px}#session-flow-workspace h3,#session-flow-workspace h4{margin:10px 0 5px}#session-flow-workspace label{display:block;font-size:12px;margin:9px 0}#session-flow-workspace textarea{box-sizing:border-box;resize:vertical;font:inherit;line-height:1.5;background:#14251d;color:#eee2c5;border:1px solid #af925963;padding:9px}#session-flow-workspace details{border-top:1px solid #af925940;padding-top:6px}#session-flow-workspace summary{padding:10px 0;cursor:pointer;color:#e0c691;font-size:13px}#session-flow-workspace details button{display:block;width:100%;margin:7px 0}#session-flow-workspace pre{font:12px/1.5 system-ui;overflow-wrap:anywhere}.session-flow-nav{display:flex;gap:5px;flex-wrap:wrap}.session-flow-nav button{flex:1;text-align:center;font-size:12px;padding:8px}.session-flow-nav [aria-pressed="true"]{background:#c0a166;color:#14211e}#session-flow-workspace input[type="checkbox"]{width:auto;margin-right:8px}#session-flow-close-status,#session-flow-start-status{border-left:2px solid #c0a166;padding-left:9px}#session-flow-urgent details[open]{border-left:2px solid #d2a369;padding-left:8px}
+/* Closing review retains the shared palette and accessible controls. */
+#session-flow-workspace #session-flow-payoff{border-left:3px solid #c0a166;padding:10px 12px;overflow-wrap:anywhere}
+#session-flow-workspace #session-flow-advancement article{margin:12px 0;padding:10px;background:#14251d;border-radius:6px}
+#dm-app #session-flow-workspace button,#dm-app #session-flow-workspace summary{min-height:44px!important;flex-shrink:0}
+#session-flow-workspace textarea{width:100%;max-width:100%;font-size:1rem}
+#session-flow-workspace :is(button,summary,textarea):focus-visible{outline:3px solid #e4cb82;outline-offset:3px}

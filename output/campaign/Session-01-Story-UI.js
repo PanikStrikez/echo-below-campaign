@@ -27,11 +27,15 @@
   const save = label => host.save(label);
   const clip = (v, max = 1200) => String(v || '').slice(0, max);
   const split = value => String(value || '').split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
-  function open(next = 'prep') { tool = next; $('story-drawer').hidden = false; $('story-scrim').hidden = false; render(); }
+  const panelHistory=[];
+  function open(next = 'prep') { if(!$('story-drawer').hidden&&next!==tool)panelHistory.push({tool,scroll:$('story-drawer').scrollTop});else if($('story-drawer').hidden)panelHistory.length=0;tool = next; $('story-drawer').hidden = false; $('story-scrim').hidden = false; render(); }
   function outcome(values={}) { globalThis.ECHO_OUTCOMES_UI.start(host,values); }
   function close() { $('story-drawer').hidden = true; $('story-scrim').hidden = true; }
   function render(force=false) { if (!host || $('story-drawer').hidden) return;
     if(!force&&['expeditions','finale'].includes(tool)&&$('story-content').contains(document.activeElement)&&['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;
+    let back=$('story-panel-back');if(!back){back=btn(document.querySelector('.story-head'),'← Back',()=>{const prior=panelHistory.pop();if(!prior){close();return;}tool=prior.tool;render();requestAnimationFrame(()=>$('story-drawer').scrollTop=prior.scroll);});back.id='story-panel-back';}
+    back.hidden=!panelHistory.length;
+    document.querySelector('.story-head h2').textContent=$('story-tool').querySelector(`option[value="${tool}"]`)?.textContent||'Campaign details';
     $('story-context').textContent = host.sessionName(); $('story-tool').value = tool;
     const root = $('story-content'); root.replaceChildren();
     ({ finale: root => globalThis.ECHO_FINALE_UI?.render(root,host), chapters: root => globalThis.ECHO_ADVENTURES_UI?.render(root,host), mystery: root => globalThis.ECHO_MYSTERY_UI?.render(root,host), 'undermountain-arc': root => globalThis.ECHO_UNDERMOUNTAIN_ARC_UI?.render(root,host), expeditions: root => globalThis.ECHO_EXPEDITIONS_UI?.render(root,host), downtime: root => globalThis.ECHO_DOWNTIME_UI?.render(root,host), courtyard: root => globalThis.ECHO_COURTYARD_UI?.render(root,host), transition: root => globalThis.ECHO_TRANSITION_UI?.render(root,host), 'quest-workspace': root => globalThis.ECHO_QUEST_PREP_UI?.render(root,host), outcomes: root => globalThis.ECHO_OUTCOMES_UI?.render(root,host), 'quest-preview': root => globalThis.ECHO_QUESTS_UI?.renderPreview(root,host), quests: root => globalThis.ECHO_QUESTS_UI?.render(root,host), spotlights: root => globalThis.ECHO_SPOTLIGHTS_UI?.render(root,host), continuity: root => globalThis.ECHO_CONTINUITY_UI?.render(root, host), 'wave-echo': root => globalThis.ECHO_WAVE_ECHO?.render(root, host), prep:prepView,adventures:adventuresView,handouts:handoutsView,runbook:runbookView,evidence:evidenceView,journal:journalView,people:peopleView,
@@ -68,7 +72,7 @@
       note(s, 'Use Session 4 · Wave Echo Cave and homecoming in the top session selector for all 20 room cards, staged encounters, and return visits.');
     }
     if(pack.visual && host.scenes().some(scene=>scene.id===pack.visual))btn(s,'Show safe scene art on TV',()=>host.changeScene(pack.visual));
-    const aloud = section(root, 'Opening description · paraphrase'); note(aloud, pack.say);
+    const aloud = section(root, 'Opening description · paraphrase'); String(pack.say||'').split(/\n\s*\n/).forEach(t=>note(aloud,t));
     btn(aloud, 'Show this text on TV', () => host.showText(pack.name, pack.say));
     s = section(root, 'DM scene card');
     for (const [title, value] of [['Objective',pack.objective],['People and conflicts',pack.people],
@@ -189,6 +193,7 @@
   }
   function evidenceView(root) {
     let s=section(root,'Evidence ledger','Observed is witnessed, Inferred is a conclusion, Claimed is testimony, and Open is unresolved.');
+    if(data().clueEvents?.length)btn(s,'Undo last clue publication',()=>{try{host.undoCluePublication();render();}catch(error){host.toast(error.message);render();}});
     if(globalThis.ECHO_MYSTERY_UI)btn(s,'Open evidence and research',()=>open('mystery'));
     btn(s,'Add evidence',()=>{const title=prompt('Short evidence title:'); if(!title?.trim())return;
       data().evidence.unshift({id:uid('evidence'),title:clip(title,120),detail:'',status:'Open',whoKnows:'',playerSaw:'',source:'',sessionId:host.sessionId(),published:false});save('Add evidence');render();});
@@ -203,7 +208,7 @@
       const observation=field(item,'What the players actually saw',e.playerSaw,v=>{e.playerSaw=clip(v,1000);save('Player observation');},{multiline:true,rows:2});
       btn(item,'Show observation on TV',()=>host.showText(e.title,observation.value));
       field(item,'Source / page / scene',e.source,v=>{e.source=clip(v,250);save('Evidence source');});
-      const r=row(item);field(r,'Publish player observation to journal',e.published,v=>{e.published=v;save('Publish evidence');},{type:'checkbox'});
+      const r=row(item);field(r,'Publish player observation to journal',e.published,v=>{try{host.publishClue(e.id,v);render();}catch(error){host.toast(error.message);render();}},{type:'checkbox'});
       btn(r,'Delete',()=>{if(!confirm(`Delete “${e.title}”?`))return;data().evidence=data().evidence.filter(x=>x.id!==e.id);save('Delete evidence');render();});
     }
   }

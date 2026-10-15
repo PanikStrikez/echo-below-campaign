@@ -1,3 +1,7 @@
+HISTORICAL AUDITION REPORT — 5 October 2026
+For the current handoff, caching and playback steps, see Voice-Studio-Guide.txt.
+This report does not authorize new generation or establish local offline audio.
+
 THE ECHO BELOW — PRIVATE VOICE AUDITIONS
 Updated 5 October 2026
 

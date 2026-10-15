@@ -1,0 +1,36 @@
+{
+  "stage": 8,
+  "date": "2026-10-11",
+  "location": "Menu \u2192 Session \u2192 DM assistant; settings in Menu \u2192 Settings \u2192 AI assistance",
+  "features": [
+    "Existing focused scene/NPC/clue/rule/next-action assistance",
+    "Actual, claimed, inferred, planned, suggested and unconfirmed basis labels",
+    "Explicit record selection and exact outgoing prompt preview; books stay local",
+    "Audience projections rebuilt before transport",
+    "Editable narration, recap, improv and consequence drafts",
+    "Approval before TV preview or Voice Studio; proposals use outcome review",
+    "Outdated TV previews and stored voice drafts blocked",
+    "Per-request deadline, cancellation, late-response discard and usage display"
+  ],
+  "verified": {
+    "assistantUnitTests": 16,
+    "audienceContextSuite": "passed",
+    "voiceUnitTests": 8,
+    "serviceAndExportUnitTests": 52,
+    "browser": "isolated practice campaign, network blocked; mock and synthetic responses only",
+    "liveProvider": "one actual ChatGPT request, fictional records only, validated separately"
+  },
+  "preserved": [
+    "Existing campaign schema",
+    "Source PDFs remain read-only",
+    "No real campaign outcome or mechanical mutations",
+    "Phone service not restarted"
+  ],
+  "limits": [
+    "AI is disabled after the one approved test; further provider use needs a new allowance",
+    "Citations validate source membership, not semantic correctness; interpretation remains a draft",
+    "Player assistance is an owner-scoped DM preview; approved delivery uses existing private journal/handout controls",
+    "Unrelated campaign corrections can conservatively invalidate a saved assistant voice draft"
+  ],
+  "liveReport": "Stage-8-Live-Provider-Verification.json"
+}

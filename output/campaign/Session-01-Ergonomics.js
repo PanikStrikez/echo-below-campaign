@@ -52,8 +52,9 @@
   }
   function find(queryText) {
     const words = cut(queryText, 120).toLowerCase().trim().split(/\s+/).filter(Boolean);
-    const context=entry=>entry.kind==='Character'?25:entry.kind==='Scene'&&entry.id===host.state.scene?35:entry.kind==='Beat'&&(entry.id===host.state.runbook||entry.scene===host.state.scene)?30:entry.kind==='Encounter'&&entry.id===host.selectedEncounter?30:entry.kind==='Monster'&&(host.state.tokens||[]).some(t=>t.type===entry.id&&t.placed&&t.scene===host.state.scene)?20:0;
-    return searchItems().map(entry => ({ entry, rank: words.length?(score(entry,words)<0?-1:score(entry,words)*10+context(entry)):context(entry)||-1 })).filter(x => x.rank >= 0).sort((a, b) => b.rank - a.rank || a.entry.title.localeCompare(b.entry.title)).slice(0, 30).map(x => x.entry);
+    const activeTypes=new Set((host.state.tokens||[]).filter(t=>t.placed&&t.scene===host.state.scene).map(t=>t.type));
+    const context=entry=>entry.kind==='Character'?25:entry.kind==='Scene'&&entry.id===host.state.scene?35:entry.kind==='Beat'&&(entry.id===host.state.runbook||entry.scene===host.state.scene)?30:entry.kind==='Encounter'&&entry.id===host.selectedEncounter?30:entry.kind==='Monster'&&activeTypes.has(entry.id)?20:0;
+    return searchItems().map(entry => {const rank=words.length?score(entry,words):null;return {entry,rank:rank===null?context(entry)||-1:rank<0?-1:rank*10+context(entry)};}).filter(x => x.rank >= 0).sort((a, b) => b.rank - a.rank || a.entry.title.localeCompare(b.entry.title)).slice(0, 30).map(x => x.entry);
   }
   function jump(entry) {
     if (!entry) return;
@@ -129,7 +130,7 @@
     const active = state.tokens.find(t => t.id === activeId);
     const next = host.beats[(host.beats || []).findIndex(b => b.id === beat?.id) + 1];
     target.innerHTML = `<div class="run-focus-top"><h2>Now / Next</h2><span class="status-pill">${esc(state.turn?.round ? `Round ${state.turn.round}` : 'Exploration')}</span></div>
-      <strong>${esc(beat?.title || 'Choose a runbook beat')}</strong><p>${esc(beat?.read?.[0] || beat?.run?.[0] || 'Keep the next scene and player choice in view.')}</p>
+      <strong>${esc(beat?.title || 'Choose a runbook beat')}</strong>${(beat?.read?.length?beat.read:[beat?.run?.[0] || 'Keep the next scene and player choice in view.']).map(line=>`<p>${esc(line)}</p>`).join('')}
       <div class="run-focus-status"><span>Scene: ${esc(host.scenes.find(s => s.id === state.scene)?.title || state.scene)}</span><span>${esc(active?.name ? `Turn: ${active.name}` : `Encounter: ${encounter?.name || 'None'}`)}</span><span id="focus-tv-status">TV: ${host.tvConnected ? 'connected' : 'closed'}</span></div>
       ${next ? `<small>Next beat: ${esc(next.title)}</small>` : ''}<div class="run-focus-actions">${beat?.read?.[0] ? '<button type="button" data-ergo-action="focus-show-text">Show text on TV</button>' : ''}<button type="button" data-ergo-action="focus-encounter">Encounter card</button><button type="button" data-ergo-action="focus-next">Next beat</button></div>`;
   }
@@ -229,7 +230,7 @@
   function action(name) {
     const state = host.state, encounter = selectedEncounter();
     if (name === 'focus-encounter') open('encounter');
-    else if (name === 'focus-show-text') { const beat = selectedBeat(); if (beat?.read?.[0]) host.showText(beat.title, beat.read[0]); }
+    else if (name === 'focus-show-text') { const beat = selectedBeat(); if (beat?.read?.[0]) host.showText(beat.title, beat.read.join('\n\n')); }
     else if (name === 'encounter-show-text') { const read = $('ergonomics-content').querySelector('[data-ergo-card="read"]')?.value; host.showText(encounter?.name || 'Say aloud', read); }
     else if (name === 'focus-next') { const beats = host.beats, index = beats.findIndex(b => b.id === selectedBeat()?.id); if (beats[index + 1]) host.selectBeat(beats[index + 1].id); }
     else if(name==='closing-inbox')globalThis.ECHO_DM_DESK_UI?.open('closing');

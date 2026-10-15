@@ -14,7 +14,7 @@
   function publicCards(cards) {
     return normalizeCards(cards).filter(card => card.visible).map(({ id, title, text, position }) => ({ id, title, text, position, visible: true }));
   }
-  let host;
+  let host, previewDialog;
   function add(title, value) {
     const text = cut(value, 3000).trim();
     if (!text) { host.toast('Write player-facing text first.'); return false; }
@@ -25,6 +25,21 @@
     cards.push({ id: `text-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`, title: cut(title, 100).trim(), text, position, visible: true });
     host.commit(`Show text on TV: ${cut(title || text, 80)}`);
     return true;
+  }
+  function preview(title, value, options={}) {
+    const text=cut(value,3000).trim();
+    if(!text){host.toast('Write player-facing text first.');return false;}
+    if(host.cards().length>=8){host.toast('Remove an old TV text card before adding another.');return false;}
+    if(!previewDialog){previewDialog=document.createElement('dialog');previewDialog.className='tv-text-preview-dialog';document.body.append(previewDialog);}
+    previewDialog.replaceChildren();
+    const heading=document.createElement('small');heading.textContent='DM PREVIEW · TV UNCHANGED';previewDialog.append(heading);
+    const label=document.createElement('h2');label.textContent=cut(title,100).trim()||'Player text';previewDialog.append(label);
+    const body=document.createElement('p');body.textContent=text;previewDialog.append(body);
+    const actions=document.createElement('div');actions.className='button-row';
+    const cancel=document.createElement('button');cancel.type='button';cancel.textContent='Keep private';cancel.onclick=()=>previewDialog.close();actions.append(cancel);
+    const show=document.createElement('button');show.type='button';show.className='primary';show.textContent='Show on TV';
+    show.onclick=()=>{try{options.validate?.();if(add(title,text))previewDialog.close();}catch(e){host.toast(e.message);previewDialog.close();}};actions.append(show);previewDialog.append(actions);
+    if(!previewDialog.open)previewDialog.showModal();return true;
   }
   function renderDM() {
     if (!host) return;
@@ -80,7 +95,7 @@
   function initDM(options) {
     host = options;
     $('tv-text-add').addEventListener('click', () => {
-      if (add($('tv-text-title').value, $('tv-text-body').value)) { $('tv-text-title').value = ''; $('tv-text-body').value = ''; }
+      if (preview($('tv-text-title').value, $('tv-text-body').value)) { $('tv-text-title').value = ''; $('tv-text-body').value = ''; }
     });
     $('tv-text-hide-all').addEventListener('click', () => {
       if (!host.cards().some(card => card.visible)) return;
@@ -88,5 +103,5 @@
       host.commit('Hide all TV text');
     });
   }
-  globalThis.ECHO_TV_TEXT = { POSITIONS, normalizeCards, publicCards, initDM, add, renderDM, renderPlayer };
+  globalThis.ECHO_TV_TEXT = { POSITIONS, normalizeCards, publicCards, initDM, add, preview, renderDM, renderPlayer };
 })();

@@ -17,12 +17,14 @@
   const select = (parent, label, options, value, change) => {
     const wrap = el('label', label, 'combat-field'), input = el('select');
     for (const [id, name] of options) { const option = el('option', name); option.value = id; input.append(option); }
-    input.value = value; input.addEventListener('change', () => change(input.value)); wrap.append(input); parent.append(wrap); return input;
+    input.setAttribute('aria-label',label);input.value = value; input.addEventListener('change', () => change(input.value)); wrap.append(input); parent.append(wrap); return input;
   };
   const section = (parent, name, note = '') => {
     const box = el('section', '', 'combat-section'); box.append(el('h3', name));
     if (note) box.append(el('p', note, 'combat-muted')); parent.append(box); return box;
   };
+  let quietEditing=false;
+  const saveDraft=label=>{quietEditing=true;try{host.commit(label);}finally{quietEditing=false;}};
   let host, tab = 'encounters', encounterId = '', creatureId = 'goblin';
   let damage = { mode: 'damage', type: 'slashing', amount: '0', selected: [], overrides: {}, amounts: {}, conditions: {} };
   let area = { shape: '', selected: [], damage: '0', type: 'fire', dc: '13', ability: 'dex', rolls: {} };
@@ -34,10 +36,10 @@
   const save = label => { host.commit(label); render(); };
   const tokenOptions = () => tokens().map(t => [t.id, `${t.name} · ${t.team}`]);
   const encounterOptions = () => host.encounters().map(e => [e.id, e.name]);
-  function open(next) { if (next) tab = next; $('combat-scrim').hidden = false; $('combat-drawer').hidden = false; render(); }
-  function close() {
+  function open(next,id) { if (next) tab = next;if(id&&host.encounters().some(e=>e.id===id))encounterId=id;else if(next==='wrap'&&host.aftermathEncounter?.())encounterId=host.aftermathEncounter(); $('combat-scrim').hidden = false; $('combat-drawer').hidden = false; render(); }
+  function close(restoreFocus = true) {
     $('combat-scrim').hidden = true; $('combat-drawer').hidden = true;
-    (document.querySelector('#dm-app.run-mode') ? $('quick-encounter') : document.querySelector('.header-menu summary'))?.focus();
+    if(restoreFocus)(document.querySelector('#dm-app.run-mode') ? $('quick-encounter') : document.querySelector('.header-menu summary'))?.focus();
   }
   function renderNav() {
     if (!host.encounters().some(e => e.id === encounterId)) encounterId = host.encounters()[0]?.id || '';
@@ -75,8 +77,8 @@
         row.append(box);
       });
       button(row, 'Capture map positions', () => {
-        wave.positions = Object.fromEntries(wave.tokenIds.map(id => tokens().find(t => t.id === id)).filter(t => t?.placed)
-          .map(t => [t.id, { x: t.x, y: t.y }])); save(`Captured ${wave.name} positions`);
+        wave.positions = Object.fromEntries(wave.tokenIds.map(id => tokens().find(t => t.id === id)).filter(t => t?.placed&&t.scene===host.scene())
+          .map(t => [t.id, { x: t.x, y: t.y }])); wave.positionSceneId=host.scene(); save(`Captured ${wave.name} positions`);
       });
       button(row, 'Deploy wave', () => host.deployWave(encounterId, index));
       button(row, 'Remove', () => { p.waves.splice(index, 1); save(`Removed ${wave.name}`); });
@@ -282,7 +284,7 @@
     }
   }
   function renderDamage(root) {
-    const box = section(root, 'Review damage or healing', 'Select every affected token. Resistance and immunity are explicit per target; temporary HP is spent first. Nothing changes until Apply is pressed.');
+    const box = section(root, 'Review damage or healing', 'Select every affected token. Resistance and immunity are explicit per target; temporary HP is spent first. Continue to the shared action review to check reactions and apply the final effects. No HP changes here.');
     select(box, 'Change', [['damage', 'Damage'], ['heal', 'Healing']], damage.mode, value => { damage.mode = value; render(); });
     field(box, 'Amount rolled', damage.amount, value => { damage.amount = value; render(); }, 'number');
     field(box, 'Damage type', damage.type, value => { damage.type = value.toLowerCase().trim(); render(); });
@@ -314,9 +316,9 @@
       }
       review.append(row);
     }
-    button(review, 'Apply reviewed changes', () => {
+    button(review, 'Review damage & reactions', () => {
       if (!damage.selected.length) { host.toast('Choose at least one target.'); return; }
-      host.applyDamage(damage); damage.selected = []; damage.overrides = {}; damage.amounts = {}; damage.conditions = {};
+      host.applyDamage(damage); close(false); damage.selected = []; damage.overrides = {}; damage.amounts = {}; damage.conditions = {};
     }).disabled = !damage.selected.length;
   }
   function renderArea(root) {
@@ -367,26 +369,51 @@
     box.append(el('strong', `${estimate.label} · ${estimate.note}`));
     for (const [label, key] of [['Terrain and hazards', 'terrain'], ['Morale and surrender', 'morale'], ['Retreat options', 'retreat'], ['Negotiation', 'negotiation']])
       field(box, label, p?.[key] || '', value => { if (!p) return; p[key] = value.slice(0, 800); save(`Updated ${active.name} pacing`); }, 'textarea');
+    if(active)button(box,'Review combat ending',()=>open('wrap',encounterId));
     box.append(el('p', 'This is a planning estimate. A poisoned foe, a collapsing bridge, surprise, or a prisoner can change the actual danger.', 'combat-muted'));
   }
   function renderWrap(root) {
-    const active = current(), p = active ? plan() : null;
-    const box = section(root, 'After-combat wrap-up', 'Record what changed before moving to the next scene. These notes stay on the DM screen and in the campaign backup.');
-    select(box, 'Encounter', encounterOptions(), encounterId, value => { encounterId = value; render(); });
-    if (!p) return;
-    for (const [label, key] of [['Loot and treasure', 'loot'], ['Who holds the loot?', 'lootCustody'], ['Wagon, supplies, and current location', 'wagon'],
-      ['Promises and debts still open', 'promises'], ['Clues discovered and who knows them', 'clues'], ['XP or milestone progress', 'advancement'],
-      ['Resources spent', 'resources'], ['Casualties and captives', 'casualties'], ['NPC and world consequences', 'consequences']])
-      field(box, label, p.wrap[key], value => { p.wrap[key] = value.slice(0, 1500); save(`Updated ${active.name} wrap-up`); }, 'textarea');
-    field(box, 'Outcome and next scene', p.outcome, value => { p.outcome = value.slice(0, 800); save(`Updated ${active.name} outcome`); }, 'textarea');
-    button(box, 'Capture current casualties and party resources', () => {
-      p.wrap.casualties = tokens().filter(t => t.encounter === encounterId && t.hp === 0).map(t => t.name).join(', ');
-      p.wrap.resources = Object.values(host.party()).map(s => `${s.name}: ${s.resources.map(r => `${r.name} ${r.current ?? '?'}/${r.max ?? '?'}`).join(', ')}`).join('\n');
-      save(`Captured ${active.name} aftermath`);
-    });
+    const active=current(),p=active?plan():null,A=globalThis.ECHO_COMBAT_AFTERMATH;
+    const box=section(root,'Combat aftermath','How did it end? → What changed? → Review updates → Return to map');
+    select(box,'Encounter',encounterOptions(),encounterId,value=>{encounterId=value;render();});if(!p||!A)return;
+    const a=host.ensureAftermath(encounterId),ledger=host.continuity(),record=A.record(ledger,a.runKey),approved=A.approved(ledger,a.runKey);
+    const changedNotes=approved&&a.reviewedNotes&&a.reviewedNotes!==A.notesSignature(p),canFinish=approved&&!changedNotes;if(a.step===4&&!canFinish)a.step=3;const stage=a.step;box.append(el('p','Step '+stage+' of 4 · '+active.name,'combat-muted'));
+    const nav=el('div','','button-row');for(const [i,label]of [[1,'How did it end?'],[2,'What changed?'],[3,'Review updates'],[4,'Return to map']]){const b=button(nav,label,()=>{a.step=i;save('Opened aftermath step');});b.disabled=i>1&&!a.ending||i===4&&!canFinish;b.setAttribute('aria-current',i===stage?'step':'false');}box.append(nav);
+    if(record)box.append(el('p',record.approved?'This fight already has a reviewed record. Reopening offers a correction, not another award.':'Approval was withdrawn. Review the existing record before finishing.','combat-muted'));
+    if(stage===1){
+      for(const [label,value]of [['Objective',p.objective],['Morale',p.morale],['Retreat route',p.retreat],['Negotiation',p.negotiation],['Reinforcements',p.reinforcements],['Encounter pacing',host.encounterStatus?.(encounterId)]])if(value)box.append(el('p',label+': '+value));
+      const recommendation=A.recommendation(host.encounterStatus?.(encounterId));if(recommendation)box.append(el('p','Suggested review: '+recommendation.text,'live-caution'));
+      select(box,'How did this fight end?',[['','Choose an ending'],...A.endings.map(v=>[v,v[0].toUpperCase()+v.slice(1)])],a.ending,value=>{a.ending=value;save('Saved proposed combat ending');});
+      box.append(el('p','Choose the actual result. HP alone does not establish a death, capture or surrender.','combat-muted'));
+      button(box,'Continue to changes',()=>{a.step=2;save('Opened aftermath changes');}).disabled=!a.ending;
+    }
+    if(stage===2){
+      const observed=tokens().filter(t=>t.encounter===encounterId||host.turn().order.includes(t.id));box.append(el('p','Current token observations: '+(observed.map(t=>t.name+' · '+t.hp+' HP').join('; ')||'No assigned combatants')));
+      for(const [label,key]of [['Loot and treasure','loot'],['Who holds the loot?','lootCustody'],['Location and supplies','wagon'],['Promises and debts','promises'],['Clues and who knows them','clues'],['XP or milestone notes','advancement'],['Resources observed','resources'],['Survivors, captives, escaped and defeated people','casualties'],['NPC and world consequences','consequences']])field(box,label,p.wrap[key],value=>{p.wrap[key]=value.slice(0,1500);saveDraft('Saved private aftermath notes');},'textarea');
+      field(box,'What actually happened',p.outcome,value=>{p.outcome=value.slice(0,800);saveDraft('Saved private combat account');},'textarea');
+      field(box,'Still open / needs follow-up',a.pending,value=>{a.pending=value.slice(0,1500);saveDraft('Saved unresolved aftermath items');},'textarea');
+      button(box,'Capture HP and resource observations',()=>{p.wrap.casualties=observed.map(t=>t.name+': '+t.hp+' HP; fate unconfirmed').join(', ').slice(0,1500);p.wrap.resources=Object.values(host.party()).map(s=>s.name+': '+s.resources.map(r=>r.name+' '+(r.current??'?')+'/'+(r.max??'?')).join(', ')).join('\n').slice(0,1500);save('Captured observations for review');});
+      box.append(el('p','Blank fields remain unrecorded. Full notes stay here; the outcome review starts with a short editable summary. Loot notes do not award money or items.','combat-muted'));
+      button(box,'Continue to review',()=>{a.step=3;save('Opened aftermath review');});
+    }
+    if(stage===3){
+      box.append(el('p','Review the account, audience, quest links, NPC knowledge, custody and map changes together. Unrelated objectives remain open.'));
+      if(a.pending)box.append(el('p','Still open: '+a.pending));
+      button(box,A.draft(ledger,a.runKey)?'Resume aftermath draft':record?'Correct reviewed aftermath':'Review aftermath updates',()=>{try{host.reviewAftermath(encounterId);close(false);}catch(e){host.toast(e.message);}}).className='primary';
+      button(box,'Leave unfinished and return to combat',()=>close());
+      if(changedNotes)box.append(el('p','Private notes changed since approval. Review the correction before returning.','combat-muted'));
+      if(canFinish)button(box,'Continue to map return',()=>{a.step=4;save('Opened reviewed map return');});
+    }
+    if(stage===4){
+      box.append(el('p','Reviewed ending: '+approved.combatAftermath.ending));if(approved.combatAftermath.pending)box.append(el('p','Follow-up remains open: '+approved.combatAftermath.pending));
+      box.append(el('p','End initiative and restore the originating exploration view. HP, tokens, fog, resources and the TV presentation remain as played. Pending requests and reminders remain available.','combat-muted'));
+      button(box,'Finish aftermath and return to map',()=>{try{host.finishAftermath(encounterId);close(false);}catch(e){host.toast(e.message);}}).className='primary';
+      button(box,'Review / correct this record',()=>{host.reviewAftermath(encounterId);close(false);});
+    }
+    if(a.pausedTurn)button(box,'Resume paused combat',()=>{try{host.resumeAftermath(encounterId);close(false);}catch(e){host.toast(e.message);}});
   }
   function render() {
-    if (!host || $('combat-drawer').hidden) return;
+    if (quietEditing || !host || $('combat-drawer').hidden) return;
     renderNav(); const root = $('combat-content'); root.replaceChildren();
     if (tab === 'encounters') renderEncounters(root);
     else if (tab === 'creatures') renderCreatures(root);

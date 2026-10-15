@@ -12,7 +12,7 @@
       run: ['If play stopped mid-hideout or mid-combat, continue the existing saved session. Do not reset fog, enemies, or token positions.',
         'Session 1 remains fixed: Klarg died, Yeemik kept the hideout, Sildar was rescued, and Trista privately took the BELOW token. Donavan noticed concealment, not the object.',
         'Latest actual play: Glasstaff put Gundren to sleep; the party recovered him and left him at an unnamed inn. Glasstaff escaped to Cragmaw Castle, but the party does not know his destination. Trista holds his captured rat. Play stopped at Barthen’s Provisions. Do not place Gundren or the rat at the castle.',
-        'Do not assume the party reached level 3. The castle is dangerous to a depleted level-2 party; make scouting, retreat, and negotiation meaningful.'],
+        'Current confirmed levels: Trista, Pebble, and Ringgo are level 4; Donavan and Aldric are level 3. Check the saved HP, resources, and any newer sheet before combat. Scouting, retreat, and negotiation remain meaningful.'],
       private: ['Sources: Lost Mine of Phandelver pp. 27 and 35–41; Session 1 actual recap and the recorded Session 2 outcome.']
     },
     {

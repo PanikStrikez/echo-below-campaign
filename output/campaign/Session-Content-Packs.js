@@ -11,6 +11,17 @@
     beats: ['prep', 'cave', 'blind', 'kennel', 'passage', 'bridge', 'den', 'pools', 'klarg', 'sildar', 'close', 'rules'],
     firstScene: 'cave-mouth'
   }, {
+    id: 'phandalin-aftermath-next',
+    name: 'Next session · Phandalin after Glasstaff',
+    defaultName: 'Phandalin · After Glasstaff',
+    description: 'Starts at Barthen’s Provisions with Gundren at an unnamed inn and Trista holding the rat. Three leads and an open fallback. Keeps Glasstaff’s castle destination private.',
+    source: 'Lost Mine of Phandelver (2014), Phandalin pp. 14–19 and Redbrand Hideout pp. 20–26; confirmed table outcomes.',
+    scenes: ['cover', 'black', ...townMaps, 'phandalin-art', 'lmop-barthen-exterior', 'barthen-art', 'phandalin-street', 'redbrand-hideout', 'lmop-tresendar-manor'],
+    encounters: [],
+    runbook: globalThis.ECHO_STAGE6?.beats || [],
+    beats: (globalThis.ECHO_STAGE6?.beats || []).map(beat => beat.id),
+    firstScene: 'lmop-barthen-exterior'
+  }, {
     id: 'phandalin-session-2',
     name: 'Session 2 · First steps in Phandalin',
     description: 'Begins outside Barthen’s Provisions. Includes town leads, Redbrand pressure, and the full optional hideout route while preserving actual Session 1 knowledge.',
@@ -25,8 +36,8 @@
     defaultName: 'Session 2 · Phandalin'
   }, {
     id: 'gundren-session-3',
-    name: 'Session 3 · Gundren’s trail and Cragmaw Castle',
-    description: 'Prepared lead gathering, travel, Thundertree, and Cragmaw Castle. Latest actual play left Gundren at an unnamed inn, Trista holding Glasstaff’s rat, and the party at Barthen’s Provisions. Glasstaff escaped; the castle destination remains DM-only until discovered.',
+    name: 'Optional continuation · Wilderness and Cragmaw Castle',
+    description: 'Future lead gathering, travel, Thundertree, and Cragmaw Castle. Gundren is already at an unnamed inn, Trista holds Glasstaff’s rat, and the castle destination remains DM-only until discovered. Use the new Phandalin aftermath package first.',
     source: 'Lost Mine of Phandelver pp. 27–41; The Echo Below actual-play continuity',
     scenes: ['cover', 'black', ...townMaps, 'phandalin-art', 'barthen-art', 'redbrand-hideout',
       ...(globalThis.LMOP_VISUAL_CATALOG || []).filter(item => ['Wilderness', 'Thundertree', 'Cragmaw Castle'].includes(item.chapter)).map(item => item.id),
@@ -38,7 +49,7 @@
     beats: (globalThis.ECHO_SESSION3_RUNBOOK || []).map(beat => beat.id),
     runbook: globalThis.ECHO_SESSION3_RUNBOOK || [],
     firstScene: 'town-phandalin',
-    defaultName: 'Session 3 · Gundren’s trail'
+    defaultName: 'Wilderness and castle · optional continuation'
   }, {
     id: 'lmop-part-3-visuals',
     name: 'Part 3 · Wilderness and castle visuals',

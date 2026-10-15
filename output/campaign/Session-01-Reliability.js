@@ -1,7 +1,8 @@
 (() => {
   'use strict';
-  const VERSION = 2;
+  const VERSION = 3;
   const $ = id => document.getElementById(id);
+  let recoveryIssue='',storageSummary='Storage usage not checked.';
   const cut = (value, max = 120) => String(value ?? '').slice(0, max);
   const esc = value => cut(value, 4000).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
   const versionOf = value => Number.isInteger(value?.schemaVersion) ? value.schemaVersion : 1;
@@ -13,7 +14,7 @@
   }
   function normalizeRegistry(raw) {
     const campaigns = (Array.isArray(raw?.campaigns) ? raw.campaigns : []).slice(0, 100).filter(x => x && /^[a-z0-9-]{1,80}$/i.test(x.id) && typeof x.name === 'string')
-      .map(x => ({ id: x.id, name: cut(x.name, 80), archived: x.archived === true, ...(typeof x.practiceSource==='string'&&/^[a-z0-9-]{1,80}$/i.test(x.practiceSource)?{practiceSource:x.practiceSource}:{}) }));
+      .map(x => ({ id: x.id, name: cut(x.name, 80), archived: x.archived === true, ...(typeof x.originId==='string'&&/^[A-Za-z0-9_.:-]{1,120}$/.test(x.originId)?{originId:x.originId}:{}), ...(typeof x.practiceSource==='string'&&/^[a-z0-9-]{1,80}$/i.test(x.practiceSource)?{practiceSource:x.practiceSource}:{}) }));
     if (!campaigns.length) campaigns.push({ id: 'default', name: 'The Echo Below', archived: false });
     if (campaigns.every(x => x.archived)) campaigns[0].archived = false;
     const active = campaigns.some(x => x.id === raw?.active && !x.archived) ? raw.active : campaigns.find(x => !x.archived).id;
@@ -89,12 +90,13 @@
         damageDice: a.damageDice, damageType: a.damageType, saveAbility: a.saveAbility,
         saveDC: a.saveDC, effect: a.effect })) } : null;
     return { atlas: globalThis.ECHO_ATLAS_VIEW?.normalize(raw.atlas) || null, atmosphere: globalThis.ECHO_ATMOSPHERE_VIEW?.clean(raw.atmosphere) || null, dungeon: globalThis.ECHO_DUNGEON_VIEW?.clean(raw.dungeon) || null, journey: globalThis.ECHO_TRAVEL_VIEW?.clean(raw.journey) || null, sessionKind: raw.sessionKind, scenes: allowedScenes, sessionName: raw.sessionName,
-      scene: raw.scene, grid: raw.grid, playerReveal: raw.playerReveal,
+      scene: raw.scene, grid: raw.grid, playerReveal: raw.playerReveal, calibrationCheck: raw.calibrationCheck === true,
       map: { playerInput: raw.map?.playerInput,
         display: raw.map?.display ? { name: raw.map.display.name, width: raw.map.display.width,
           height: raw.map.display.height, physicalWidth: raw.map.display.physicalWidth,
           squareInches: raw.map.display.squareInches, safeEdge: raw.map.display.safeEdge,
-          orientation: raw.map.display.orientation, scaleLock: raw.map.display.scaleLock } : null,
+          orientation: raw.map.display.orientation, scaleLock: raw.map.display.scaleLock,
+          tvPreset:raw.map.display.tvPreset==='classic'?'classic':'quiet',showObjective:raw.map.display.showObjective!==false,showSubtitles:raw.map.display.showSubtitles!==false } : null,
         scenes: sceneData, tokenMeta },
       fog: raw.fog || [], sceneFog: raw.sceneFog?.[raw.scene] ? { [raw.scene]: raw.sceneFog[raw.scene] } : {}, tokens, turn,
       publicRoll: raw.publicRoll ? { label: raw.publicRoll.label, notation: raw.publicRoll.notation,
@@ -116,14 +118,15 @@
     return tokens.filter(t => t && t.placed && t.visible && t.scene === scene &&
       (t.team !== 'enemy' || (lightVisible(t) && (!hasFog || exposed.has(tileForPoint(t))))));
   }
-  let host, tab = 'health', readiness = [], checking = false, verification = '';
+  let host, tab = 'health', readiness = [], checking = false, verification = '', otherRecoveryOpen=false;
   let tableReport = null;
-  function open(next = 'health') { tab = next; $('reliability-drawer').hidden = false; $('reliability-scrim').hidden = false; render(); }
+  function open(next = 'status') { tab = next === 'status' && !globalThis.ECHO_CURRENT_STATUS_UI ? 'health' : next; $('reliability-drawer').hidden = false; $('reliability-scrim').hidden = false; render(); }
   function close() { $('reliability-drawer').hidden = true; $('reliability-scrim').hidden = true; }
   function renderHealth() {
     const status = host.connection(),perf=host.performance?.();
     return `<h3>Table readiness</h3><p class="reliability-lead">Campaign: ${esc(host.campaignName)} · Session: ${esc(host.sessionName)} · Data version ${VERSION}</p>
-      <div class="reliability-status ${esc(status.level)}"><strong id="reliability-tv-status">Player TV: ${esc(status.label)}</strong><button type="button" data-reliable="resync">Resync TV</button></div>
+      ${host.migrationReport?.length?`<details><summary>Data upgrade report</summary>${host.migrationReport.slice(-5).reverse().map(item=>`<p>${esc(new Date(item.at).toLocaleString())}: version ${esc(item.from)} → ${esc(item.to)} for ${esc(item.session)}. Original: ${esc(item.restorePoint)}. ${esc(item.note)}</p>`).join('')}</details>`:''}
+      <div class="reliability-status ${esc(status.level)}"><strong id="reliability-tv-status">Player TV: ${esc(status.label)}</strong><span>${esc(status.details||'No update applied yet.')}</span><button type="button" data-reliable="resync">Resync TV</button></div>
       ${perf?`<p>Current map: ${perf.tokens} placed tokens · DM render ${Math.round(perf.dmMs)} ms · TV render ${perf.tvConnected?Math.round(perf.tvMs)+' ms':'not measured'}. ${Math.max(perf.dmMs,perf.tvMs)>50?'Slow rendering: try Subtle or Off effects, fewer active spell areas, or a smaller map image.':'These timings measure map construction, not animation frame rate.'}</p>`:''}<button type="button" data-reliable="check-offline" ${checking ? 'disabled' : ''}>${checking ? 'Checking…' : 'Check offline files'}</button>
       <p class="reliability-help">Image and uploaded media checks run here. Some browsers restrict checking local PDFs; those files are marked unverified so you can open them manually before play.</p>
       <div class="reliability-file-list">${readiness.map(file => `<div class="reliability-file ${esc(file.status)}"><strong>${esc(file.status)}</strong><span>${esc(file.name)}</span><small>${esc(file.note || file.path)}</small></div>`).join('')}</div>`;
@@ -133,11 +136,11 @@
     const checks = report?.checks || {};
     const rows = [['tv','Player TV','Open or resync TV'],['phones','Player phones','Connect phones'],
       ['audio','Speakers','Open audio board'],['assets','Session maps and media','Open media library'],
-      ['backup','Campaign backup','Download backup']];
+      ['storage','Browser storage','Open recovery'],['backup','Campaign backup','Download backup']];
     const values = Object.values(checks);
-    const attention = values.some(item => item.status === 'attention' || item.status === 'confirm');
+    const attention = values.some(item => !['ready','checking'].includes(item.status));
     const pending = !report || report.running || values.length < rows.length;
-    const headline = pending ? 'Checking the table…' : attention ? 'Needs attention before play' : 'Ready for play';
+    const headline = pending ? 'Checking the table…' : attention ? 'Needs attention before play' : globalThis.ECHO_CURRENT_STATUS_UI?.summary()?.ready ? 'Ready for play' : 'Connection checks passed · physical review remains';
     return `<h3>One-click table check</h3><p class="reliability-lead">${esc(host.sessionName)} · Checks the connected displays, phones, a sound sample, this session’s maps and media, and a recovery copy.</p>
       <div class="table-check-summary ${pending ? 'checking' : attention ? 'attention' : 'ready'}" role="status"><strong>${esc(report ? headline : 'Run the check before players arrive')}</strong><span>${esc(report?.started ? new Date(report.started).toLocaleTimeString() : 'No check run yet')}</span></div>
       <div class="button-row"><button type="button" class="primary" data-reliable="run-table-check" ${report?.running ? 'disabled' : ''}>${report?.running ? 'Checking…' : 'Run table check again'}</button><button type="button" data-reliable="download-backup">Download portable backup</button></div>
@@ -146,26 +149,32 @@
   }
   function renderSnapshots() {
     const points = host.restorePoints || [];
-    return `<h3>Restore points</h3><p class="reliability-help">Automatic copies are made before a session and major changes. Restore points are separate from Undo and Redo. Restoring first makes a copy of the current campaign.</p>
-      <button type="button" data-reliable="create-point">Create restore point now</button><div class="reliability-point-list">${points.length ? points.slice().reverse().map(point => `<article><div><strong>${esc(point.label)}</strong><small>${esc(new Date(point.created).toLocaleString())} · ${esc(point.kind)}</small></div><button type="button" data-reliable="restore-point" data-id="${esc(point.id)}">Restore</button><button type="button" data-reliable="download-point" data-id="${esc(point.id)}">Download</button></article>`).join('') : '<p>No restore points yet.</p>'}</div>`;
+    return `<h3>Restore points</h3><p role="status">${esc(storageSummary)}</p>${recoveryIssue?`<p role="alert" class="story-note">${esc(recoveryIssue)}</p>`:''}<button type="button" data-reliable="check-storage">Check storage usage</button><details><summary>Review automatic-point cleanup</summary><p>New restore points are compressed without discarding campaign or undo data. Download a backup before removing old automatic points. Manual and migration originals are protected.</p><label>Automatic points to keep <input id="recovery-keep" type="number" min="1" max="30" value="6"></label><button type="button" data-reliable="prune-points">Review cleanup</button></details><p class="reliability-help">Automatic copies are made before a session and major changes. Restore points are separate from Undo and Redo. Restoring first makes a copy of the current campaign.</p>
+      <button type="button" data-reliable="create-point">Create restore point now</button><div class="reliability-point-list">${points.length ? points.slice().reverse().map(point => `<article><div><strong>${esc(point.label)}</strong><small>${esc(new Date(point.created).toLocaleString())} · ${esc(point.kind)}${point.bytes?' · '+(point.bytes/1048576).toFixed(1)+' MB'+(point.encoding==='gzip'?' compressed':''):''}</small></div><button type="button" data-reliable="restore-point" data-id="${esc(point.id)}">Restore</button><button type="button" data-reliable="download-point" data-id="${esc(point.id)}">Download</button></article>`).join('') : '<p>No restore points yet.</p>'}</div>`;
   }
   function renderCampaigns() {
     const rows = host.registry.campaigns;
-    return `<h3>Campaigns</h3><p class="reliability-help">Each campaign has its own sessions, characters, story, encounter library, and settings. Archived campaigns remain saved and can be restored.</p>
+    const packs=globalThis.ECHO_BOOT?.installedPacks||[];
+    return `<h3>Campaigns</h3><p>Installed packs: ${packs.length?packs.map(p=>esc(p.name||p.id)+' · '+esc(p.version)).join('; '):'None · reusable blank table'}</p><p class="reliability-help">Choose New group for a blank table, or an exact continuation or practice copy. Each campaign has its own records. Archive keeps the original available for unarchiving.</p>
       <div class="reliability-campaign-list">${rows.map(c => `<article><div><strong>${esc(c.name)}</strong><small>${c.id === host.campaignId ? 'Current' : c.archived ? 'Archived' : 'Available'}</small></div>
-      ${c.archived ? `<button type="button" data-reliable="unarchive" data-id="${esc(c.id)}">Unarchive</button>` : `<button type="button" data-reliable="switch" data-id="${esc(c.id)}" ${c.id === host.campaignId ? 'disabled' : ''}>Open</button><button type="button" data-reliable="duplicate" data-id="${esc(c.id)}">Duplicate</button><button type="button" data-reliable="archive" data-id="${esc(c.id)}" ${rows.filter(x => !x.archived).length < 2 ? 'disabled' : ''}>Archive</button>`}</article>`).join('')}</div>
-      <button type="button" data-reliable="new-campaign">Create empty campaign</button>`;
+      ${c.archived ? `<button type="button" data-reliable="unarchive" data-id="${esc(c.id)}">Unarchive</button>` : `<button type="button" data-reliable="switch" data-id="${esc(c.id)}" ${c.id === host.campaignId ? 'disabled' : ''}>Open</button><button type="button" data-reliable="duplicate" data-id="${esc(c.id)}">Start a copy / new group</button><button type="button" data-reliable="archive" data-id="${esc(c.id)}" ${rows.filter(x => !x.archived).length < 2 ? 'disabled' : ''}>Archive</button>`}</article>`).join('')}</div>
+      <button type="button" data-reliable="new-campaign">Create empty campaign</button><button type="button" data-reliable="example-campaign">Create fictional example</button>`;
   }
   function renderBackup() {
-    return `<h3>Portable backup</h3><button type="button" data-reliable="package">Download full app + campaign + artwork package</button><button type="button" data-reliable="rehearse">Rehearse restore in temporary storage</button><p>The full ZIP includes the app, artwork and DM secrets. Personal source books stay separate. Keep the package private. The rehearsal reopens every session and verifies imported media without changing the live campaign.</p><p class="reliability-help">A campaign backup includes every session, campaign settings, custom story, uploaded images, and imported media. Local rulebook PDFs stay on this computer and must be supplied separately.</p>
-      <button type="button" data-reliable="download-backup">Download current campaign</button><button type="button" data-reliable="restore-backup">Restore a backup as a new campaign</button>
-      <label>Check a backup file before using it<input id="reliability-verify-file" type="file" accept=".json,application/json"></label><p id="reliability-verify-result">${esc(verification)}</p>
-      <p class="reliability-help">For a second-browser check, copy this page and its files to the other browser, restore the downloaded backup there, and run Offline check. This app can validate the file here but cannot inspect another browser’s storage from this window.</p>`;
+    return `<h3>Complete campaign backup</h3><div class="button-row"><button type="button" class="primary" data-reliable="download-backup">Back up whole campaign</button><button type="button" data-reliable="restore-backup">Restore whole campaign</button></div>
+      <p>One private ZIP contains browser sessions, structured campaign records and history, required artwork/audio, and matching versions. Personal books, rebuildable book indexes and provider accounts stay outside it.</p>
+      <p>Restore previews characters, quests, scene, database compatibility and missing media. Both stores are verified in a separate campaign before you choose to open it. The current table and phones stay connected during preparation.</p>
+      <details id="reliability-other-tools" ${otherRecoveryOpen?'open':''}><summary>Other recovery tools</summary><button type="button" data-reliable="package">Download portable app + campaign release</button><button type="button" data-reliable="rehearse">Rehearse browser-data restore in temporary storage</button><button type="button" data-reliable="browser-data">Download legacy browser-only JSON</button>
+      <p>Old JSON files and restore points contain browser data only. Keep using them for emergency data recovery; use the complete ZIP to recover both stores and artwork.</p>
+      <label>Check a legacy JSON file<input id="reliability-verify-file" type="file" accept=".json,application/json"></label><p id="reliability-verify-result">${esc(verification)}</p></details>`;
   }
   function render() {
     globalThis.ECHO_SESSION_FLOW_UI?.refresh();
     if (!host || $('reliability-drawer').hidden) return;
+    if($('reliability-other-tools'))otherRecoveryOpen=$('reliability-other-tools').open;
     for (const button of $('reliability-tabs').querySelectorAll('button')) button.classList.toggle('active', button.dataset.reliabilityTab === tab);
+    if(tab==='rehearsal'&&globalThis.ECHO_TABLE_REHEARSAL_UI){globalThis.ECHO_TABLE_REHEARSAL_UI.render($('reliability-content'));return;}
+    if(tab==='status'&&globalThis.ECHO_CURRENT_STATUS_UI){globalThis.ECHO_CURRENT_STATUS_UI.render($('reliability-content'));return;}
     $('reliability-content').innerHTML = ({ table: renderTableCheck, health: renderHealth, snapshots: renderSnapshots, campaigns: renderCampaigns, backup: renderBackup })[tab]();
   }
   function refreshConnection() {
@@ -246,7 +255,7 @@
     if(!options.inline){tab = 'table'; open('table');}
     const report = tableReport = { campaignId:host.campaignId, sessionId: host.sessionId, started: Date.now(), running: true, checks: {} };
     const set = (key, status, detail) => { if (tableReport !== report) return; report.checks[key] = { status, detail }; render(); };
-    for (const key of ['tv','phones','audio','assets','backup']) set(key, 'checking', 'Checking…');
+    for (const key of ['tv','phones','audio','assets','storage','backup']) set(key, 'checking', 'Checking…');
     let sound;
     try { sound = host.audioTest(); } catch (error) { sound = Promise.reject(error); }
     const tv = host.connection();
@@ -257,10 +266,18 @@
         !info.service ? info.error || 'Phone service unavailable.' : !info.enabled ? 'Phone access is off.' : `${info.connected} phones up to date; ${info.stale||0} stale or offline.`)).catch(error => set('phones','attention',error.message)),
       checkSessionAssets().then(files => { const bad = files.filter(item => item.status !== 'ready');
         set('assets', bad.length ? 'attention' : 'ready', bad.length ? `${bad.length} of ${files.length} session files need review: ${bad.slice(0,3).map(item => item.name).join(', ')}.` : `${files.length} prepared map and audio files opened.`); }).catch(error => set('assets','attention',error.message)),
+      (async()=>{const estimate=await globalThis.navigator?.storage?.estimate?.();
+        if(!estimate?.quota){set('storage','unchecked','Storage estimate unavailable here. Backup restoration is a separate check.');return;}
+        const percent=Math.round(100*(estimate.usage||0)/estimate.quota),used=Math.round((estimate.usage||0)/1048576),total=Math.round(estimate.quota/1048576);
+        set('storage',percent>=80?'attention':'ready',`${used} MB of ${total} MB used (${percent}%).${percent>=80?' Download a backup and free browser storage before play.':''}`);
+      })().catch(error=>set('storage','attention','Could not check browser storage: '+error.message)),
       (async () => { await host.createRestorePoint(`Table check · ${host.sessionName}`, 'manual');
         const archive = await host.validateBackup();
         const result = validateArchive(archive);
-        set('backup', result.valid ? 'ready' : 'attention', result.valid ? `Restore point created; ${result.sessions} sessions and imported media validated.` : `Missing media: ${result.missingMedia.join(', ')}.`); })().catch(error => set('backup','attention',error.message))
+        if(!result.valid){set('backup','attention',`Missing media: ${result.missingMedia.join(', ')}.`);return;}
+        const rehearsal=await host.rehearseBackup?.(archive);
+        const structured=await host.checkWholeStore?.();
+        set('backup','ready',`Browser restore point checked; ${structured?`${structured.structuredRecords} structured records, database version ${structured.databaseVersion} checked. Download the whole ZIP to keep both stores and required artwork.`:rehearsal||`${result.sessions} sessions and imported media validated.`}`); })().catch(error => set('backup','attention',error.message))
     ];
     await Promise.all(jobs);
     if (tableReport === report) { report.running = false; render(); }
@@ -274,14 +291,18 @@
     else if (kind === 'fix-phones') { close(); host.openPhones(); }
     else if (kind === 'fix-audio') { close(); host.openAudio(); }
     else if (kind === 'fix-assets') { close(); host.openAssets(); }
+    else if (kind === 'fix-storage') { tab='backup'; render(); return; }
     else if (kind === 'fix-backup') await host.downloadBackup();
     else if (kind === 'confirm-audio' && tableStatus()?.checks.audio?.status === 'confirm') {
       tableReport.checks.audio = { status: 'ready', detail: 'Sound heard at the table.' };
     }
     else if (kind === 'check-offline') await checkOffline();
+    else if(kind==='check-storage'){const e=await navigator.storage?.estimate?.();storageSummary=e?.quota?`${Math.round((e.usage||0)/1048576)} MB of ${Math.round(e.quota/1048576)} MB used (${Math.round(100*(e.usage||0)/e.quota)}%).`:'Storage estimate unavailable; export a backup before large changes.';}
+    else if(kind==='prune-points'){host.toast(await host.pruneRestorePoints(Number($('recovery-keep').value)));}
     else if (kind === 'create-point') await host.createRestorePoint('Manual restore point', 'manual');
     else if (kind === 'restore-point') await host.restorePoint(id);
     else if (kind === 'download-point') await host.downloadPoint(id);
+    else if(kind==='example-campaign')await host.createCampaign('Lantern Ferry · example',true);
     else if (kind === 'new-campaign') await host.createCampaign();
     else if (kind === 'switch') await host.switchCampaign(id);
     else if (kind === 'duplicate') await host.duplicateCampaign(id);
@@ -290,23 +311,27 @@
     else if (kind === 'package') {button.disabled=true;try{await host.downloadPackage();}finally{button.disabled=false;}}
     else if (kind === 'rehearse') {button.disabled=true;try{verification=await host.rehearseBackup();host.toast(verification);}finally{button.disabled=false;}}
     else if (kind === 'download-backup') await host.downloadBackup();
+    else if (kind === 'browser-data') await host.downloadBrowserData();
     else if (kind === 'restore-backup') $('load-campaign-button').click();
     render();
   }
   function tableStatus(){
     if(!host||tableReport?.campaignId!==host.campaignId||tableReport?.sessionId!==host.sessionId)return null;
     const result=JSON.parse(JSON.stringify(tableReport));
+    if(Date.now()-result.started>15*60000){result.expired=true;for(const key of Object.keys(result.checks))if(result.checks[key].status==='ready')result.checks[key]={status:'attention',detail:'Earlier table check expired after 15 minutes. Run it again.'};}
     if(result.checks.tv?.status==='ready'&&host.connection().level!=='connected')result.checks.tv={status:'attention',detail:host.connection().label};
     return result;
   }
-  function tableAction(kind){if(!['fix-tv','fix-phones','fix-audio','fix-assets','fix-backup','confirm-audio'].includes(kind))return;return click({target:{closest:()=>({dataset:{reliable:kind}})}});}
+  function tableAction(kind){if(!['fix-tv','fix-phones','fix-audio','fix-assets','fix-storage','fix-backup','confirm-audio'].includes(kind))return;return click({target:{closest:()=>({dataset:{reliable:kind}})}});}
   function init(context) {
     host = context;
-    $('open-reliability').onclick = () => open('health');
+    if(globalThis.ECHO_CURRENT_STATUS_UI)void globalThis.ECHO_CURRENT_STATUS_UI.init(context);
+    globalThis.ECHO_TABLE_REHEARSAL_UI?.init(context);
+    $('open-reliability').onclick = () => open(globalThis.ECHO_CURRENT_STATUS_UI?'status':'health');
     $('close-reliability').onclick = close;
     $('reliability-scrim').onclick = close;
     $('reliability-tabs').onclick = event => { const button = event.target.closest('[data-reliability-tab]'); if (button) { tab = button.dataset.reliabilityTab; render(); } };
-    $('reliability-content').addEventListener('click', event => { void click(event).catch(error => host.toast(error.message || 'That action could not be completed.')); });
+    $('reliability-content').addEventListener('click', event => { void click(event).catch(error => {recoveryIssue=error.message||'That action could not be completed.';host.toast(recoveryIssue);render();}); });
     $('reliability-content').addEventListener('change', async event => {
       if (event.target.id !== 'reliability-verify-file') return;
       const file = event.target.files?.[0]; if (!file) return;
@@ -314,10 +339,11 @@
         ? await host.rehearseBackup(archive)
         : `Incomplete backup: missing ${result.missingMedia.join(', ')}.`; }
       catch (error) { verification = error.message; }
+      if($('reliability-other-tools'))$('reliability-other-tools').open=true;
       render();
     });
     window.addEventListener('keydown', event => { if (event.key === 'Escape' && !$('reliability-drawer').hidden) { event.stopImmediatePropagation(); close(); } }, true);
   }
   globalThis.ECHO_RELIABILITY = { VERSION, versionOf, assertSupported, normalizeRegistry, validateArchive,
-    publicPayload, visibleTokens, init, open, render, refreshConnection, runTableCheck, tableStatus, tableAction };
+    setRecoveryIssue:message=>{recoveryIssue=String(message);render();},publicPayload, visibleTokens, init, open, close, render, refreshConnection, runTableCheck, tableStatus, tableAction };
 })();

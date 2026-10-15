@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "policy": "Generated reusable function extractions; campaign seeds excluded. Verify before release.",
+  "inputs": {
+    "Session-01-Party-Data.js": "e013635a4a4f27222e9b80dc6015f91b1a924dfd2b0a4506adf6c505dcd2aca7",
+    "Session-01-Combat-Data.js": "6f6d663d71267321f4121f543ea9c87b80a7d5aaaed32a5f22abbac1985b8053",
+    "Session-01-Story-Data.js": "4cd83147787b4f193c940fea2dd454d43ed151fde5b957da8601515aca2d90a5",
+    "Campaign-Continuity.js": "f653fdd0b7a545292dfe61b618d876f34d5883e1a3df41b86f7de4da61d901b4",
+    "Campaign-Quests.js": "48ee115788c8a42e01595ad5780c3d357ebb8d1c841676023a553b1712ae77d1",
+    "Session-01-Presentation.js": "58e93eba4f3cf4068887601c446b964ff9d30766557a2691f128320615b6ff7a",
+    "Session-01-Travel.js": "1fadff9920989a6c047fce091b65f94f300570c76e6cbdcaf2894fed28478f07",
+    "AI-Voice-Cast.js": "8597e696ecfdec1d6b9c3c25176263f8dc9752472caf3aa7945b486ed1dbdbc7",
+    "Session-01-Rules-Library.js": "3efc5f561ccd022ce992dbdff8af16cfd15200d37b3e1346ec1827639d2a5b64",
+    "Campaign-Settlements.js": "c2143c25c921ec356359d4b54d7160339fccdeb7fc4782fbfc32106551f9affe",
+    "Session-01-Story-UI.js": "25459eb759ff973d37d43dcfe1fd5eb092f64336acf1c0eb188d358dc1a4fef4",
+    "Campaign-Downtime.js": "2e3fb4a914a82b54074bb093a9e6d0f5b474a6da17b05e86d83bac184185c5ea",
+    "Campaign-Downtime-UI.js": "a63626304e13824f0d23396db84c7c4d9a2f596277058a481ec324b6eb9038ad",
+    "Campaign-Expedition-Data.js": "89679e9e5cd00e2d9e540f877eef6639526b9fc9483f7c2d1903d665cd1c30de"
+  },
+  "generated": {
+    "Party.js": "a20e7f012cab1f400bf715acc5d4c9b813792f39bc0c5d3c4cc48d020b613bef",
+    "Combat.js": "0a300d52a1352c27aa7b67162941d7c2441fd56f5cb6c2ac6f45c8f226f7e61a",
+    "Story.js": "b32586db79036b5ffc0613efa8cd3d3fb0cfb345b2d2179943f49c2f24a3d61b",
+    "Continuity.js": "e38c13cbe8c5f0853ae1a76942b3f38ec0141bb911ae5e8dc44c8d793eec072b",
+    "Quests.js": "50b4f4e59a939c12efc2452dbb9b948caef00bb847b45477f2f4e22d0d0802f8",
+    "Presentation.js": "0f77b3f84ac12b8d74e0b9b9e9405e11e328e271cb94faab550863cd008c6922",
+    "Travel.js": "c534bf5dbdca85631a6c5b1edf70d30f32b8293413b6561b903043ed929db76d",
+    "Voice-Cast.js": "faca23481c368572629393a4edc3efd1b8c03f7fe829b37559bdc4f055b6a98f",
+    "Rules.js": "4a70ee6c709c709bdf1ecc681e0ef7533e3af9bbc0117a07a969f3a8a4e33fee",
+    "Settlements.js": "1b18502423e5ceb48a99c8e1ae0950a933280ebf40633e364d9763a5f0adefda",
+    "Story-UI.js": "68ee2c3f6bb113f6d21a71040c9d92583b9e1d76daa903ae9a9ac25e6483ff04",
+    "Downtime.js": "f871d2a220776291c0860ad427f32916b52f50ba5b11d0bf82843aa2b9cb1dcb",
+    "Downtime-UI.js": "1ee978e3db8ca16638c29605c670dcc78abacfcef82a31aa7527d8458e32e1a4",
+    "Expedition-Data.js": "e6e8edc1c547e2fd971e872c19f40f53d5906cc8aeebf62070adfb187935f17f"
+  }
+}

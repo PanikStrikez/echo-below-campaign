@@ -1,3 +1,5 @@
+> Future campaign outline. Prepared rooms, branches and routes do not establish visits or discoveries. [Open current status guidance](App-Readiness-Status.md).
+
 # Undermountain — the long campaign
 
 DM supplement for **The Echo Below** • Spoilers throughout

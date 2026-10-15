@@ -1,3 +1,5 @@
+> Historical feature roadmap. Checkboxes describe this document’s earlier build, not current readiness. [Open current status guidance](App-Readiness-Status.md).
+
 # The Echo Below campaign table: complete-tool roadmap
 
 **Historical build list.** Its checkboxes and character-status notes were written across earlier releases and are not a current readiness assessment. Use `App-Readiness-Status.md` for verified current status and `App-Improvement-Staged-Plan.md` for the next stages.

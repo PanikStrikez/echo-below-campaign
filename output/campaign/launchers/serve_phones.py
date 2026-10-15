@@ -2,6 +2,22 @@
 from __future__ import annotations
 import phone_health
 
+def safe_receipt(raw):
+    if not isinstance(raw, dict):
+        return None
+    status = raw.get('status')
+    if status not in ('resolved', 'waiting', 'approved', 'unresolved', 'needs clarification', 'declined', 'cancelled', 'failed', 'undone'):
+        return None
+    result = {k: str(raw.get(k) or '')[:1600] for k in ('id', 'title')}
+    result['status'] = status
+    result['undo'] = 'ask-dm' if status == 'resolved' else 'unavailable'
+    for key in ('committed', 'pending', 'details'):
+        rows = raw.get(key)
+        result[key] = [str(v)[:1600] for v in rows[:25] if isinstance(v, str)] if isinstance(rows, list) else []
+    if status != 'resolved':
+        result['committed'] = []
+    return result
+
 import base64
 import hashlib
 import ipaddress
@@ -475,11 +491,11 @@ class Handler(BaseHTTPRequestHandler):
                 safe_hub = {
                     "notes": [{key: n.get(key) for key in ("id", "kind", "ref", "title", "text", "at")} for n in hub.get("notes", []) if isinstance(n, dict) and n.get("owner") == id_],
                     "sharedClues": [{key: c.get(key) for key in ("id", "title", "text", "at", "sharedBy")} | {"image": f"/api/shared-image?id={quote(str(c.get('id') or ''), safe='')}" if c.get("image") else ""} for c in hub.get("sharedClues", []) if isinstance(c, dict)],
-                    "itemRequests": [{key: r.get(key) for key in ("id", "verb", "name", "status", "message", "note")} for r in hub.get("itemRequests", []) if isinstance(r, dict)],
+                    "itemRequests": [{key: r.get(key) for key in ("id", "verb", "name", "status", "message", "note")} | {"receipt": safe_receipt(r.get("receipt"))} for r in hub.get("itemRequests", []) if isinstance(r, dict)],
                     "bank": {k: (hub.get("bank") or {}).get(k, 0) for k in ("cp", "sp", "ep", "gp", "pp")},
                     "objective": {k: (hub.get("objective") or {}).get(k, "") for k in ("text", "at")},
                     "roster": [{"id": r.get("id"), "name": r.get("name")} for r in hub.get("roster", []) if isinstance(r, dict)]}
-                result = {"revision": TABLE["revision"], "session": public.get("sessionName", ""),
+                result = {"revision": TABLE["revision"], "resyncRequest": TABLE.get("phone_health", {}).get(id_, {}).get("resync", 0), "session": public.get("sessionName", ""),
                           "character": character, "dungeonProtocol": snapshot.get("dungeonProtocol", 0), "dungeon": safe_dungeon(snapshot.get("dungeon")),
                           "searchRequests": [{k: req.get(k) for k in ("id", "scene", "objectId", "title", "area", "approach", "status", "result")} for req in snapshot.get("searchRequests", []) if isinstance(req, dict) and req.get("owner") == id_][-40:], "travelProtocol": snapshot.get("travelProtocol", 0),
                           "journey": safe_journey(snapshot.get("journey")),
@@ -500,7 +516,9 @@ class Handler(BaseHTTPRequestHandler):
                           "roll": ({"id": "practice-roll", **(public.get("publicRoll") or {})} if public.get("rehearsal") is True
                                    else (snapshot.get("rollResults") or {}).get(id_)),
                           "requests": snapshot.get("requestStatus", {}).get(id_, ""),
+                          "receipts": [r for item in (snapshot.get("receipts") or {}).get(id_, [])[-60:] if (r := safe_receipt(item))],
                           "actionRequests": [{**{key: item.get(key) for key in ("id", "label", "status", "message", "revision", "actionType", "actionIndex", "targetIds", "targetNames", "note", "mode", "result")},
+                                              "receipt": safe_receipt(item.get("receipt")),
                                               "casting": ({key: item["casting"].get(key) for key in ("mode", "resourceId", "effect", "notation", "concentration")} if isinstance(item.get("casting"), dict) else None),
                                               "history": [{key: h.get(key) for key in ("status", "at")} for h in (item.get("history") or [])[-25:] if isinstance(h, dict)],
                                               "rolls": [{key: r.get(key) for key in ("id", "label", "notation", "parts", "total")} for r in (item.get("rolls") or [])[:100] if isinstance(r, dict)]}
@@ -867,6 +885,17 @@ class Handler(BaseHTTPRequestHandler):
                         entry = entries[index]
                         if not isinstance(entry, dict) or entry.get("prepared") is False or data.get("actionName") != entry.get("name"):
                             return self.error("Your sheet changed. Choose the action again", 409)
+                        if "draftEntry" in data:
+                            draft_entry = data.get("draftEntry")
+                            mechanics = lambda value: {key: val for key, val in value.items() if key not in ("support", "derived")}
+                            if data.get("draftScene") != public.get("scene", "") or not isinstance(draft_entry, dict) or mechanics(draft_entry) != mechanics(entry):
+                                return self.error("The prepared action or scene changed. Review your private draft again", 409)
+                            resource_id = entry.get("resourceId")
+                            if resource_id:
+                                pool = next((r for r in character.get("resources", []) if r.get("id") == resource_id), None)
+                                cost = entry.get("cost", 1)
+                                if not pool or not isinstance(pool.get("current"), (int, float)) or pool["current"] < cost:
+                                    return self.error("The prepared action's resource is no longer available", 409)
                         targets = data.get("targetIds", [])
                         visible = {t.get("id") for t in public.get("tokens", [])} | {id_}
                         if not isinstance(targets, list) or len(targets) > 20 or any(not isinstance(t, str) or t not in visible for t in targets):

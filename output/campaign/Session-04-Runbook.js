@@ -9,7 +9,7 @@
       ask: ['Where did the last session actually stop? Is Gundren alive, rescued, and traveling with the party? Who has his map or another reliable route?',
         'What happened to Grol, Vyerith, Iarno, the Redbrands, and the castle defenders? Which promises, payments, and discoveries are confirmed?',
         'What are the five heroes’ current HP, resources, equipment, light sources, and level-up choices?'],
-      run: ['Trista, Pebble, Donavan, Ringgo, and Aldric currently have level-3 records. The printed mine assumes at least level 4 (2,700 XP if using XP). Opening this chapter does not level anyone up. Review earned progress before departure; if they enter at level 3, make danger and withdrawal clear.',
+      run: ['Use the current saved sheets for Trista, Pebble, Donavan, Ringgo and Aldric; their recorded levels may differ. The printed mine assumes at least level 4 (2,700 XP if using XP). Opening this chapter does not level anyone up. Review earned progress before departure; if they enter at level 3, make danger and withdrawal clear.',
         'If play ended inside an unfinished encounter, resume its existing save. Do not replace live positions, dead enemies, expended loot, or fog with a fresh chapter.',
         'Carry forward confirmed play: Klarg died; Yeemik kept Cragmaw Hideout; Sildar was rescued; the orc camp was cleared; Hamun Kost disappeared. The latest Redbrand session left Gundren at an unnamed inn after Glasstaff put him to sleep, Trista holding the captured rat, and the party at Barthen’s Provisions. Gundren’s current condition still needs confirmation.',
         'DM-only: Glasstaff escaped to Cragmaw Castle; the party has not learned that destination. Gundren is not a castle hostage. Trista’s BELOW token remains private unless she has since shared it; Donavan noticed concealment, not its identity.',
@@ -125,14 +125,14 @@
         'The escarpments are 10 feet high. Climbing requires DC 12 Strength (Athletics). Falling or being knocked from the top deals 1d6 bludgeoning and leaves the creature prone.',
         'Keep elevation, stairs, and routes of retreat visible on the DM map. These seven are additional to the three initially in area 6; reconcile any actual movement between groups.',
         'The scale and stair positions come from the private p. 43 plan when the painted close-up differs.'],
-      private: ['Lost Mine of Phandelver p. 46. Seven ghouls plus terrain can be very dangerous to the current level-3 party.']
+      private: ['Lost Mine of Phandelver p. 46. Seven ghouls plus terrain can be very dangerous to the current party.']
     },
     {
       id: 's4-room-10', title: 'Area 10 · Dark pool', scene: 'lmop-map-wave-central',
       tv: 'Show E10 and the pool; do not announce its submerged treasure before investigation.',
       read: ['Still black water fills the cave. Pale broken shells crunch along the bank, and a slow stream slides away beneath a low opening to the northeast.'],
       ask: ['Do you sound the depth, secure a rope, search underwater, or follow the stream?'],
-      run: ['The pool reaches 20 feet deep in the middle. The northeast stream is 3 feet deep, with only 2–3 feet of air above it; characters can wade along it to area 18.',
+      run: ['The dry northern passage at the stair junction leads toward area 18; it is a separate route from the low stream. The pool reaches 20 feet deep in the middle. The northeast stream is 3 feet deep, with only 2–3 feet of air above it; characters can wade along it to area 18.',
         'Searching the pool reveals a skeleton on the bottom, 10 feet from shore under 10 feet of water. It is a former human wizard, not an active monster.',
         'The skeleton has two platinum rings worth 75 gp each and a wand of magic missiles. Resolve actual underwater movement, air, retrieval, and identification; do not require an invented Perception DC just to replace the keyed discovery.',
         'Record who has the wand and its charges before use. Show any discovery handout only after it is retrieved.'],
@@ -305,7 +305,7 @@
         'Then roll d12: 1–3, 2d4 stirges; 4–5, 1d4 ghouls; 6, 1d4 gricks; 7–8, 1d4 bugbears; 9, 1d6 skeletons; 10, 1d6 zombies; 11–12, one ochre jelly.',
         'Roll only the selected count, place the actual encounter, and identify whether it is a mobile existing group or a newly generated wandering group. Never both remove a keyed enemy and add a duplicate of it.',
         'Exclude the explicitly secure area 7 refuge. An encounter is not automatically combat: signs, detection, concealment, parley, or retreat may resolve it.',
-        'For the current level-3 party, do not pile a random wave onto a major fight just to increase difficulty. Use encounter guidance before committing the result.'],
+        'For the current party, do not pile a random wave onto a major fight just to increase difficulty. Use encounter guidance before committing the result.'],
       private: ['Lost Mine of Phandelver p. 42. Table frequencies and counts are printed; choosing when an exposed delay merits a check remains a DM decision.']
     },
     {

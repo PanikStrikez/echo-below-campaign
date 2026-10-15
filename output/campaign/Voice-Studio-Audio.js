@@ -55,7 +55,7 @@
   }
   function subtitles(options){stop();active=options;mode='subtitles';publish({title:options.title,text:options.text,status:'subtitles'});emit();}
   function pause(){if(!node||!['playing','preview'].includes(mode))return;node.pause();const privateMode=mode==='preview';mode=privateMode?'preview-paused':'paused';release();if(!privateMode)publish({...lastPublic,status:'paused'});emit();}
-  async function resume(){if(!node||!['paused','preview-paused'].includes(mode))return;const ticket=epoch,isPrivate=mode==='preview-paused';if(host.mix()?.muted)throw Error('Audio is muted.');if(isPrivate)await privateSink();if(ticket!==epoch)return;await node.play();if(ticket!==epoch)return;mode=isPrivate?'preview':'playing';if(!isPrivate){host.duck(true);publish({...lastPublic,status:'playing'});}emit();}
+  async function resume(){if(!node||!['paused','preview-paused'].includes(mode))return;const ticket=epoch,current=node,isPrivate=mode==='preview-paused';if(host.mix()?.muted)throw Error('Audio is muted.');if(isPrivate)await privateSink();if(ticket!==epoch)return;await current.play();if(ticket!==epoch){current.pause();return;}mode=isPrivate?'preview':'playing';if(!isPrivate){host.duck(true);publish({...lastPublic,status:'playing'});}emit();}
   function mixChanged(mix){if(mix?.muted){if(node||active)stop();}else if(node)node.volume=volume();}
   function routeChanged(){stop();previewDevice=null;tableDevice=null;host.error?.('Audio outputs changed. Choose private headphones again before previewing.');}
   devices()?.addEventListener?.('devicechange',routeChanged);window.addEventListener('pagehide',stop);window.addEventListener('echo-audio-state',e=>mixChanged(e.detail));

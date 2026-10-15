@@ -1,0 +1,66 @@
+REVISED SESSION 4 FLOW · 12 OCTOBER 2026
+Session 4 now uses nine connected encounter cards: opening, Barthen, Gundren, rat, witnesses, Qelline, town hub, departure and closing. Explore → Audit Session 4 opens the private audit. Existing Session 4 saves can use Use revised preparation; this makes a restore point and replaces guide text while preserving gameplay and the TV. Scene uses Arrive → Describe → Respond → Resolve → Continue. Choose next step opens available exits rather than advancing a fixed sequence. Audit notes do not approve outcomes. App-Bible.html contains the standing design contract.
+
+THE ECHO BELOW — NEXT THREE EVENINGS
+Prepared 12 October 2026 · DM only · Future preparation, not a record of play
+
+WHERE TO FIND IT
+Refresh the DM app. In the top session menu choose:
+• Session 4 · Phandalin after Glasstaff
+• Session 5 · Leads and Cragmaw Castle
+• Session 6 · Wave Echo Cave expedition
+Explore opens the session overview. Choose a marker, open its scene, then Return to session map. Scene guide includes opening, conditional branches and closing review that do not have fixed locations. Preview visuals before Show on TV. Opening these packages does not award levels, restore HP/resources, pay rewards or publish discoveries.
+
+CONFIRMED START
+The party stopped at Barthen’s Provisions. Gundren was recovered after Glasstaff put him to sleep and was left at an unnamed inn. His current condition, whether anyone is watching him, and the inn’s identity remain unresolved. Trista holds the captured rat. Glasstaff escaped to Cragmaw Castle; that destination is DM-only. The older transfer of Gundren to the castle is historical. The orc camp is cleared and Hamun Kost disappeared.
+
+SESSION 4 — PHANDALIN AFTER GLASSTAFF
+Aim: settle the immediate consequences and let the party choose a useful next inquiry.
+1. Opening outside Barthen: check current sheets, devices and backup; ask for a short recap, then invite their choice.
+2. Three available leads, any order: supplies/business at Barthen; check Gundren’s actual condition; examine or decide what to do with Trista’s rat.
+3. If pursuing the escape: use available Redbrand witnesses, relevant records or Qelline’s lead to Reidoth. A Black Spider letter is not a road map. A route to the castle does not establish Glasstaff’s whereabouts.
+4. If returning to the hideout: resume the saved expedition. Establish who remains; do not respawn prisoners, enemies, treasure or traps.
+5. If they decline: town services, legitimate work, confirmed rewards not yet paid, or preparation for a different established lead remain playable.
+Stop: a departure decision, safe town rest or unresolved inquiry. Review actual discoveries, promises, custody and audience permissions.
+Suggested pacing: 10-minute opening, 45–75 town decisions, 45–60 inquiry/local scene, 15-minute closing. Adapt to the table.
+
+SESSION 5 — LEADS AND CRAGMAW CASTLE
+Aim: follow an earned route, explore the castle and determine what its inhabitants actually do.
+Entry condition: an established route and a player decision to follow it. Otherwise continue inquiry or optional Thundertree; a calendar number does not force travel.
+1. Choose purpose, supplies, marching order and retreat conditions.
+2. Regional approach and scouting. Enter by the chosen accessible route, following published connectivity.
+3. Use the complete castle room guide and linked encounters; optional Thundertree room cards remain available if Reidoth is their chosen lead.
+4. Grol, Snarl and Vyerith retain their source roles. Gundren is not their hostage in this campaign’s current situation.
+5. Privately stage Glasstaff’s refuge: negotiated protection, watched holding space or concealed escape preparation. His precise room and remaining resources are not yet established. Review the existing evil-mage card before adding a token; do not grant him fresh spells or staff charges automatically.
+6. Negotiation, capture, surrender, bypass and retreat are valid. The rat cannot automatically track its master. Castle information may lead toward the mine only when earned and recorded.
+Stop: a safe withdrawal, negotiated agreement, unresolved occupied room or reviewed mine-route discovery.
+Suggested pacing: 20–40 route/travel, 20–30 scouting, 90–120 connected scenes, 15 closing. Thundertree may become a separate evening.
+
+SESSION 6 — WAVE ECHO CAVE EXPEDITION
+Aim: pursue a chosen mine objective while maintaining a credible return route.
+Entry condition: earned mine directions or map custody, a decision to enter, and a resource review. Continue the castle or earlier lead if those conditions are unmet.
+1. Prepare lights, supplies, marching order and withdrawal signal.
+2. Approach and entrance; follow actual corridors rather than room-number order.
+3. All 20 room cards are available, including hazards, inhabitants, checks, treasure and source references. Tactical sections connect to the exploration map.
+4. Major situations include the smelter/flameskull, Mormesk’s bargaining, the spectator/Forge, Nezznar’s negotiations and tactics, Nundro’s rescue and changing responses from surviving occupants.
+5. Review spell effects, saves, terrain, concentrations and resources through the existing combat workflow. The book expects level 4 or above; use the actual saved mixed-level party. Never silently level everyone or refill resources.
+6. Rest, retreat and return use the saved expedition and Wave Echo journal. Flameskull recovery, inhabitants and temporary Forge effects require their recorded timing.
+7. Homecoming, mine custody and Waterdeep transition remain branches based on actual outcomes; no ending is chosen in advance.
+Stop: a secure refuge, retreat to town or a major resolved encounter. Wave Echo Cave can take several evenings.
+Suggested pacing: 15–20 approach, 60–90 exploration, 45–60 major encounter, 15 retreat/closing.
+
+SPOTLIGHTS
+Trista: discretion, trust and the rat; Below token remains private.
+Pebble: supplies, stonework and choosing safe footing.
+Donavan: a precise question, sourced account or correspondence draft.
+Ringgo: scouting, bargaining and legitimate work.
+Aldric: protecting someone or corroborating records; resurrection/Halaster revelations remain future mysteries.
+These are invitations, not mandatory solutions or automatic rewards.
+
+CONTINUITY AND SAVES
+Current HP, levels, temp HP, conditions and tracked resources carry forward. Enemy templates begin unplaced. Existing matching enemies and currently available exploration state are retained. The original sessions remain saved; use their saved expedition for old dungeon returns. Selecting one of these prepared packages again resumes its saved session rather than rebuilding its enemies. Use Duplicate session only when you deliberately want a separate rehearsal.
+
+SOURCES
+Read-only local Lost Mine of Phandelver (2014): Phandalin pp. 14–19; Redbrand Hideout pp. 20–26; wilderness/Thundertree/castle pp. 27–41; Wave Echo Cave pp. 42–51; appendix B creature cards.
+2014 SRD: Detect Magic p. 134, Find Familiar p. 143, Sleep p. 180, Speak with Animals p. 181. Approved character exceptions remain as recorded.
+Actual-play authority: Latest-Redbrand-Session-Actual-Recap.md, confirmed 9 October 2026. Later fates remain open.

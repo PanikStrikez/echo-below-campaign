@@ -397,7 +397,8 @@
   // from the seed sheets so older session snapshots retain their original level.
   const levelFourChoices = {
     'pc-pebble': { die: 10, roll: 10, feat: 'Tough', source: '2014 Player’s Handbook' },
-    'pc-trista': { die: 8, roll: 1, feat: 'Speedy', source: '2024 Player’s Handbook character exception' }
+    'pc-trista': { die: 8, roll: 1, feat: 'Speedy', source: '2024 Player’s Handbook character exception' },
+    'pc-ringgo': { die: 8, roll: 3, feat: 'Piercer', source: 'Tasha’s Cauldron of Everything; 2014 Rogue' }
   };
 
   function levelFourSheet(raw) {
@@ -421,7 +422,7 @@
         'Heal Pebble; once per short or long rest.', { resourceId: 'pebble-second-wind' }));
       put('features', { name: 'Second Wind', text: 'Bonus action to heal 1d10+4; once per short or long rest.', source: '2014 Fighter 1' }, 'name');
       put('features', { name: 'Tough', text: 'Maximum HP increases by 2 per character level (8 HP at level 4), and by 2 at each later level.', source: '2014 Player’s Handbook · feat' }, 'name');
-    } else {
+    } else if (raw.id === 'pc-trista') {
       // Speedy raises CON 17 → 18. The new modifier applies to all prior levels.
       gain = choice.roll + 4 + 3;
       sheet.abilities.con = 18;
@@ -446,12 +447,44 @@
       put('features', { name: 'Deflect Attacks', text: 'Reaction: reduce qualifying attack damage by 1d10+8; on reduction to 0, spend 1 Focus Point to redirect with DEX save DC 10.', source: '2024 Monk 3–4' }, 'name');
       put('features', { name: 'Slow Fall', text: 'Reaction when falling: reduce falling damage by 20 at level 4.', source: '2024 Monk 4' }, 'name');
       put('features', { name: 'Speedy', text: 'CON +1 (now 18); speed +10 ft. Dash ignores difficult terrain for the rest of the turn; opportunity attacks against Trista have disadvantage.', source: '2024 Player’s Handbook · feat' }, 'name');
+    } else if (raw.id === 'pc-ringgo') {
+      // The recorded d8 roll is 3; CON remains +2. Piercer raises DEX 19 → 20.
+      gain = choice.roll + 2;
+      sheet.abilities.dex = 20;
+      const dexGain = abilityMod(sheet.abilities.dex) - abilityMod(raw.abilities.dex);
+      if (Number.isFinite(sheet.ac)) sheet.ac += dexGain;
+      for (const [kind, key] of [['saves', 'dex'], ...Object.keys(SKILLS)
+        .filter(key => SKILLS[key] === 'dex').map(key => ['skills', key])]) {
+        const entry = sheet[kind]?.[key];
+        if (entry && Number.isFinite(entry.override)) entry.override += dexGain;
+      }
+      for (const attack of sheet.attacks || []) {
+        if (!['ringgo-rapier', 'ringgo-shortbow', 'ringgo-dagger', 'ringgo-offhand'].includes(attack.id)) continue;
+        if (Number.isFinite(attack.attackBonus)) attack.attackBonus += dexGain;
+        if (attack.id === 'ringgo-offhand') {
+          attack.effect = attack.effect.replace('no +4 damage', 'no Dexterity modifier to damage');
+        } else {
+          // Preserve an existing weapon bonus while increasing its DEX contribution.
+          attack.damageDice = attack.damageDice.replace(/([+-]\d+)$/, modifier => {
+            const total = Number(modifier) + dexGain;
+            return total >= 0 ? `+${total}` : String(total);
+          });
+        }
+      }
+      put('actions', action('ringgo-piercer-reroll', 'Piercer: reroll damage', 'Once per turn on a hit', null, '',
+        'After a piercing hit, reroll one damage die from that attack; use the new roll. A piercing Sneak Attack die also qualifies.'));
+      put('actions', action('ringgo-piercer-critical', 'Piercer: critical hit', 'On a piercing critical hit', null, '',
+        'Add one extra weapon damage die: rapier +1d8, shortbow +1d6, or dagger +1d4. This extra die is not doubled.'));
+      put('features', { name: 'Piercer', text: 'DEX +1 (now 20). Once per turn on a piercing hit, reroll one damage die from the attack and use the new roll. On a piercing critical hit, add one extra weapon damage die.', source: 'Tasha’s Cauldron of Everything · feat (2014 rules)' }, 'name');
+      sheet.notes = (sheet.notes || '').replace('Updated player export is level 3 Rogue Assassin, max HP 24; current HP blank, so preserve live damage.',
+        'The source player export was Rogue 3 Assassin with max HP 24. Approved level 4: Piercer, DEX 20, HP d8 roll 3 + CON 2, max HP 29. Preserve live damage and spent resources.');
     }
     sheet.maxHp += gain;
     if (Number.isFinite(raw.hp)) sheet.hp = raw.hp <= 0 ? raw.hp : Math.min(sheet.maxHp, raw.hp + gain);
     const oldDice = raw.hitDice || {};
     sheet.hitDice = { ...oldDice, die: choice.die, max: 4,
       current: Math.min(4, Math.max(0, (Number(oldDice.current) || 0) + 1)) };
+    if (raw.id === 'pc-ringgo') sheet.hitDice.details = '4d8 (Rogue 4)';
     if (oldDice.pools?.length === 1) sheet.hitDice.pools = [{ ...oldDice.pools[0], max: 4,
       current: Math.min(4, Math.max(0, (Number(oldDice.pools[0].current) || 0) + 1)) }];
     sheet.sourceStatus = `Approved level 4 · ${choice.feat}; HP d${choice.die} roll ${choice.roll}; ${choice.source}`;
@@ -467,9 +500,62 @@
       const next = levelFourSheet(prior);
       state.party[id] = normalizeSheet(next, prior);
       const token = state.tokens?.find(item => item.id === id);
-      if (token) { token.maxHp = next.maxHp; token.hp = next.hp; }
+      if (token) { token.maxHp = next.maxHp; token.hp = next.hp; token.ac = next.ac; }
     }
     return state;
+  }
+
+  // Homebrew approved 2026-10-09. Apply only to the current live campaign;
+  // historical seed sheets and level-history snapshots retain their old traits.
+  const goronTraitSource = 'Homebrew Goron traits · DM approved 2026-10-09';
+  const goronTraits = [
+    { name: 'Fire-Forged', text: 'You have resistance to fire damage: halve fire damage you take, rounding down.', source: goronTraitSource },
+    { name: 'Rock Eater', text: 'Ordinary, nonmagical stone can satisfy your food needs; you still need water. Eating a magical stone stores its magical properties for 24 hours of in-game time. Choose when to activate or use its power within that window. Stored properties expire 24 hours after the stone is eaten; activating late does not reset that expiry. The DM defines how each stone’s power manifests, its activation/action cost, and any stone-specific uses or limits.', source: goronTraitSource }
+  ];
+
+  function hasGoronTraits(raw) {
+    return raw?.id === 'pc-pebble' && goronTraits.every(trait =>
+      raw.features?.some(item => item.name === trait.name && item.source === goronTraitSource));
+  }
+
+  function goronTraitsSheet(raw) {
+    if (raw?.id !== 'pc-pebble') return raw;
+    const sheet = structuredClone(raw);
+    sheet.features ||= [];
+    sheet.actions ||= [];
+    for (const [index, trait] of goronTraits.entries()) {
+      const existing = sheet.features.findIndex(item => item.name === trait.name);
+      if (existing < 0) sheet.features.push({ ...trait });
+      else sheet.features[existing] = { ...sheet.features[existing], ...trait };
+      const passive = action(index === 0 ? 'pebble-fire-forged' : 'pebble-rock-eater', trait.name,
+        'Passive', null, '', trait.text, { cost: 0 });
+      const existingAction = sheet.actions.findIndex(item => item.id === passive.id);
+      if (existingAction < 0) sheet.actions.push(passive);
+      else sheet.actions[existingAction] = { ...sheet.actions[existingAction], ...passive };
+    }
+    if (!/fire resistance/i.test(sheet.senses || ''))
+      sheet.senses = [sheet.senses, 'fire resistance (Fire-Forged)'].filter(Boolean).join('; ');
+    return sheet;
+  }
+
+  function syncGoronResistance(state) {
+    if (!hasGoronTraits(state.party?.['pc-pebble'])) return state;
+    state.combat ||= {};
+    state.combat.tokens ||= {};
+    const defense = state.combat.tokens['pc-pebble'] ||= {
+      surprised: false, reactionUsed: false, ready: '', concentration: '',
+      resistances: '', vulnerabilities: '', immunities: ''
+    };
+    if (!String(defense.resistances || '').toLowerCase().split(/[,;\s]+/).includes('fire'))
+      defense.resistances = [defense.resistances, 'fire'].filter(Boolean).join(', ');
+    return state;
+  }
+
+  function applyGoronTraits(state) {
+    const previous = state.party?.['pc-pebble'];
+    if (!previous) return state;
+    if (!hasGoronTraits(previous)) state.party['pc-pebble'] = goronTraitsSheet(previous);
+    return syncGoronResistance(state);
   }
 
   function levelThreeSheet(raw, tokenSheet) {
@@ -832,7 +918,7 @@
       damageDice: item.damageDice, damageType: item.damageType, saveAbility: item.saveAbility,
       saveDC: item.saveDC, effect: item.effect, resourceId: item.resourceId,
       cost: item.cost, prepared: item.prepared !== false });
-    return {
+    const view = {
       id: sheet.id, name: sheet.name, player: sheet.player, className: sheet.className,
       ancestry: sheet.ancestry, background: sheet.background, level: sheet.level,
       rules: sheet.rules,
@@ -850,8 +936,8 @@
       resources: sheet.resources.filter(item => item.name && !item.name.toLowerCase().includes('secret'))
         .map(item => ({ id: item.id, name: item.name,
         current: item.current, max: item.max, unit: item.unit, slotLevel: globalThis.ECHO_CHARACTER_TOOLS?.slotLevel(item) || item.slotLevel || 0 })),
-      equipment: sheet.equipment.map(item => ({ name: item.name, quantity: item.quantity,
-        category: item.category, notes: item.notes, equipped: item.equipped === true, attuned: item.attuned })),
+      equipment: sheet.equipment.map(item => {const pool=(sheet.resources||[]).find(r=>/^(arrows?|bolts?|ammunition)$/i.test(r.name)&&r.name.toLowerCase().replace(/s$/,'')===item.name.toLowerCase().replace(/s$/,''));return ({ name: item.name, quantity: pool?.current ?? item.quantity,
+        category: item.category, notes: item.notes+(pool?' · Quantity from tracked ammunition resource':''), equipped: item.equipped === true, attuned: item.attuned });}),
       money: { ...sheet.money },
       features: sheet.features.map(item => ({ name: item.name, text: item.text, source: item.source })),
       inspiration: sheet.inspiration, death: { ...sheet.death },
@@ -862,6 +948,8 @@
       favorites: [...(sheet.management?.favorites || [])],
       publicNotes: sheet.publicNotes
     };
+    if(!view.actions.some(a=>a.id==='request-freeform'))view.actions.push({id:'request-freeform',name:'Describe another action',type:'Timing needs a DM ruling',attackBonus:null,damageDice:'',damageType:'',saveAbility:'',saveDC:null,effect:'Describe what you want to try and your target. The DM decides rolls, timing, costs and effects before resolving it.',resourceId:'',cost:0,prepared:true,support:{status:'reference',label:'Manual ruling',reason:'Freeform intent only; no roll, action cost or effect is assumed.',source:{book:'Player request',rule:'DM adjudication',confidence:'Intent, not a rules entitlement'}}});
+    return globalThis.ECHO_PARTY_ACTIONS?.enrich(sheet, view) || view;
   }
 
   function previewRest(sheet, kind, options = {}) {
@@ -906,6 +994,6 @@
   }
 
   globalThis.ECHO_PARTY_DATA = { ABILITIES, SKILLS, seeds, seedSheet, normalizeSheet, seedParty,
-    normalizeParty, levelThreeSheet, levelFourSheet, applyLevelFourChoices, donavanLevelThreeSheet, latestLevelThreeSheet,
+    normalizeParty, levelThreeSheet, levelFourSheet, applyLevelFourChoices, hasGoronTraits, goronTraitsSheet, applyGoronTraits, syncGoronResistance, donavanLevelThreeSheet, latestLevelThreeSheet,
     abilityMod, proficiencyForLevel, rankValue, passive, safeView, ownerView, previewRest };
 })();

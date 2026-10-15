@@ -1,0 +1,628 @@
+{
+  "ok": true,
+  "result": {
+    "step": "()=>{let s=__mock.state.state,t=s.tokens.find(t=>t.id===s.turn.order[s.turn.index]);if(t?.team==='enemy'&&t.hp>0&&t.conditions.includes('Restrained')&&s.party['pc-aldric'].concentration==='Web'){let roll=__mock.combat.roll(t.name+' STR check to escape Web DC14',1,20,2,'normal');if(roll.total>=14)t.conditions=t.conditions.filter(x=>x!=='Restrained');__mock.combat.commit('MOCK Web escape uses action, end turn');__mock.combat.endTurn();return {actor:t.id,escape:roll,escaped:roll.total>=14};}return __priorSafeStep()}",
+    "enemy": "(r)=>{\n let s=__mock.state.state,p=ECHO_PHONE_ACTIONS.initialPlan(s,r),cache={};p.acknowledged=true;p.reactionsChecked=true;if(window.__extraAttack)p.override='Additional attack in same published Multiattack or ExtraAttack action, DM confirmed';\n let preview=__mock.actions.prepare(r.id,p,cache),target=s.tokens.find(t=>t.id===r.targetIds[0]);const ar=preview.rolls.find(x=>/attack/.test(x.label));let reactions=[];\n if(ar&&ar.natural!==1&&(ar.natural===20||ar.total>=target.ac)){\n  const participants=[target.id];let guard=s.tokens.find(t=>t.id==='pc-pebble');const guardNear=guard&&guard.hp>0&&guard.id!==target.id&&Math.hypot(guard.x-target.x,guard.y-target.y)*__mock.combat.columns()/100*5<=5;\n  if(guardNear)participants.push(guard.id);\n  const pause=ECHO_COMBAT_PLUS.pause(s,{label:`${r.label}: ${ar.total} vs ${target.name} AC ${target.ac}`,targets:participants,note:'Standing player reactions reviewed before damage'});__mock.combat.commit('MOCK pause attack for declared defensive reactions');\n  let own=s.party[target.id],rec=s.combat.tokens[target.id]||{};\n let raw=preview.rolls.filter(x=>/effect/.test(x.label)).reduce((n,x)=>n+x.total,0);\n if(own&&target.id==='pc-trista'&&own.level>=3&&!rec.reactionUsed&&raw>0&&['bludgeoning','piercing','slashing'].includes(p.steps[0].damageType)){\n  let reduction=__mock.combat.roll('Trista Deflect Attacks',1,10,4+own.level,'normal');let rr=ECHO_COMBAT_ACTIONS.stage(s,{actorId:target.id,actionType:'action',entry:{name:'Deflect Attacks',type:'Reaction',effect:'Qualifying physical attack, reduction '+reduction.total},targetIds:[]});reactions.push(__resolveMock(rr,{override:'Declared defensive reaction; no Focus redirect'}));p.steps[0].manual=Math.max(0,raw-reduction.total);p.steps[0].notation='';p.effectNote+=' Deflect reduction '+reduction.total;\n }\n if(own&&target.id==='pc-ringgo'&&own.level>=5&&!rec.reactionUsed&&raw>0){let rr=ECHO_COMBAT_ACTIONS.stage(s,{actorId:target.id,actionType:'action',entry:{name:'Uncanny Dodge',type:'Reaction',effect:'Visible attacker qualifying hit'},targetIds:[]});reactions.push(__resolveMock(rr,{override:'Player standing defensive reaction, half damage before resistances'}));p.steps[0].manual=Math.floor(raw/2);p.steps[0].notation='';}\n \n  if(own&&!rec.surprised&&!rec.reactionUsed&&ar.natural!==20&&ar.total<target.ac+5){const i=own.spells.findIndex(x=>x.name==='Shield');const pool=own.resources.find(x=>/1st.*slot/i.test(x.name)&&x.current>0);if(i>=0&&pool){const rr=ECHO_COMBAT_ACTIONS.stage(s,{actorId:target.id,actionType:'spell',actionIndex:i,targetIds:[target.id],casting:{mode:'slot',resourceId:pool.id,notation:'',effect:'Standing approval: Shield negates this hit',concentration:'auto'}});reactions.push(__resolveMock(rr,{usage:\"reaction\",override:\"Shield is a reaction to this triggering attack, PHB p275\"}));}}\n  s=__mock.state.state;target=s.tokens.find(t=>t.id===target.id);guard=s.tokens.find(t=>t.id==='pc-pebble');rec=s.combat.tokens['pc-pebble']||{};\n  if(ar.total>=target.ac&&guardNear&&guard.hp>0&&!rec.surprised&&!rec.reactionUsed){const reduction=__mock.combat.roll('Pebble Interception',1,10,ECHO_PARTY_DATA.proficiencyForLevel(s.party['pc-pebble'].level),'normal');const rr=ECHO_COMBAT_ACTIONS.stage(s,{actorId:guard.id,actionType:'action',entry:{name:'Interception',type:'Reaction',effect:`Guard within 5 ft; reduce this hit by ${reduction.total}; no redirect.`},targetIds:[]});reactions.push(__resolveMock(rr,{override:'Qualifying hit and equipped shield confirmed; reaction only'}));const raw=preview.rolls.filter(x=>/effect/.test(x.label)).reduce((n,x)=>n+x.total,0);p.steps[0].manual=Math.max(0,raw-reduction.total);p.steps[0].notation='';p.effectNote+='\\nInterception reduced raw damage before defenses by '+reduction.total;}\n  const active=__mock.state.state.combatPlus.pauses.find(x=>x.id===pause.id);if(active){active.targets.forEach(x=>x.status='pass');active.status='closed';}__mock.combat.commit('MOCK resolve or pass reactions before applying attack');\n  preview=__mock.actions.prepare(r.id,p,cache);\n }\n const result={actor:r.characterId,label:r.label,targets:r.targetNames,rolls:preview.rolls,outcomes:preview.outcomes,reactions,costs:p.costs};__mock.actions.resolve(preview);return result;\n}",
+    "player": "(id,targetId)=>{\n const s=__mock.state.state,own=ECHO_COMBAT_ACTIONS.actorView(s,id);let type='attack',index=0;\n if(id==='pc-trista'){index=own.attacks.findIndex(x=>x.name==='Unarmed Strike');}\n if(id==='pc-ringgo'){index=own.attacks.findIndex(x=>/Shortbow/i.test(x.name));}\n if(id==='pc-donavan'){type='spell';index=own.spells.findIndex(x=>x.name==='Ray of Frost');}\n if(id==='pc-aldric'){type='spell';index=own.spells.findIndex(x=>x.name==='Fire Bolt');}\n const r=ECHO_COMBAT_ACTIONS.stage(s,{actorId:id,actionType:type,actionIndex:index,targetIds:[targetId]});let p=ECHO_PHONE_ACTIONS.initialPlan(s,r);p.acknowledged=true;p.reactionsChecked=true;if(window.__extraAttack)p.override='ExtraAttack: second weapon/unarmed attack within the same Action, level5 feature reviewed';\n if(id==='pc-ringgo'){\n const target=s.tokens.find(t=>t.id===targetId);const ally=s.tokens.some(t=>t.team==='pc'&&t.id!==id&&t.hp>0&&t.placed&&Math.hypot(t.x-target.x,t.y-target.y)*__mock.combat.columns()/100*5<=5);\n if(ally){const dice=Math.ceil(s.party[id].level/2);p.steps[0].components=[{notation:p.steps[0].notation,type:p.steps[0].damageType},{notation:dice+'d6',type:p.steps[0].damageType}];p.effectNote+='\\nSneak Attack: conscious ally within5ft, no disadvantage, once this turn.';}\n }\n const review=__mock.actions.prepare(r.id,p,{});const result={actor:id,label:r.label,rolls:review.rolls,outcomes:review.outcomes,costs:p.costs};__mock.actions.resolve(review);return result;\n}",
+    "party": [
+      {
+        "id": "pc-aldric",
+        "skills": {
+          "Acrobatics": {
+            "rank": 0,
+            "override": null
+          },
+          "Animal Handling": {
+            "rank": 0,
+            "override": null
+          },
+          "Arcana": {
+            "rank": 1,
+            "override": 6
+          },
+          "Athletics": {
+            "rank": 0,
+            "override": null
+          },
+          "Deception": {
+            "rank": 0,
+            "override": null
+          },
+          "History": {
+            "rank": 0,
+            "override": null
+          },
+          "Insight": {
+            "rank": 1,
+            "override": 3
+          },
+          "Intimidation": {
+            "rank": 1,
+            "override": 5
+          },
+          "Investigation": {
+            "rank": 1,
+            "override": 6
+          },
+          "Medicine": {
+            "rank": 0,
+            "override": null
+          },
+          "Nature": {
+            "rank": 0,
+            "override": null
+          },
+          "Perception": {
+            "rank": 0,
+            "override": null
+          },
+          "Performance": {
+            "rank": 0,
+            "override": null
+          },
+          "Persuasion": {
+            "rank": 1,
+            "override": 5
+          },
+          "Religion": {
+            "rank": 1,
+            "override": 6
+          },
+          "Sleight of Hand": {
+            "rank": 0,
+            "override": null
+          },
+          "Stealth": {
+            "rank": 0,
+            "override": null
+          },
+          "Survival": {
+            "rank": 0,
+            "override": null
+          }
+        },
+        "saves": {
+          "str": {
+            "rank": 0,
+            "override": null
+          },
+          "dex": {
+            "rank": 0,
+            "override": null
+          },
+          "con": {
+            "rank": 0,
+            "override": null
+          },
+          "int": {
+            "rank": 1,
+            "override": 6
+          },
+          "wis": {
+            "rank": 1,
+            "override": 3
+          },
+          "cha": {
+            "rank": 0,
+            "override": null
+          }
+        }
+      },
+      {
+        "id": "pc-pebble",
+        "skills": {
+          "Acrobatics": {
+            "rank": 0,
+            "override": null
+          },
+          "Animal Handling": {
+            "rank": 0,
+            "override": null
+          },
+          "Arcana": {
+            "rank": 0,
+            "override": null
+          },
+          "Athletics": {
+            "rank": 1,
+            "override": 6
+          },
+          "Deception": {
+            "rank": 0,
+            "override": null
+          },
+          "History": {
+            "rank": 0,
+            "override": null
+          },
+          "Insight": {
+            "rank": 1,
+            "override": 3
+          },
+          "Intimidation": {
+            "rank": 0,
+            "override": null
+          },
+          "Investigation": {
+            "rank": 0,
+            "override": null
+          },
+          "Medicine": {
+            "rank": 0,
+            "override": null
+          },
+          "Nature": {
+            "rank": 0,
+            "override": null
+          },
+          "Perception": {
+            "rank": 1,
+            "override": 3
+          },
+          "Performance": {
+            "rank": 0,
+            "override": null
+          },
+          "Persuasion": {
+            "rank": 0,
+            "override": null
+          },
+          "Religion": {
+            "rank": 0,
+            "override": null
+          },
+          "Sleight of Hand": {
+            "rank": 0,
+            "override": null
+          },
+          "Stealth": {
+            "rank": 0,
+            "override": null
+          },
+          "Survival": {
+            "rank": 1,
+            "override": 3
+          }
+        },
+        "saves": {
+          "str": {
+            "rank": 1,
+            "override": 6
+          },
+          "dex": {
+            "rank": 0,
+            "override": 0
+          },
+          "con": {
+            "rank": 1,
+            "override": 4
+          },
+          "int": {
+            "rank": 0,
+            "override": -1
+          },
+          "wis": {
+            "rank": 0,
+            "override": 1
+          },
+          "cha": {
+            "rank": 0,
+            "override": 1
+          }
+        }
+      },
+      {
+        "id": "pc-trista",
+        "skills": {
+          "Acrobatics": {
+            "rank": 1,
+            "override": 6
+          },
+          "Animal Handling": {
+            "rank": 0,
+            "override": null
+          },
+          "Arcana": {
+            "rank": 0,
+            "override": null
+          },
+          "Athletics": {
+            "rank": 0,
+            "override": null
+          },
+          "Deception": {
+            "rank": 1,
+            "override": 3
+          },
+          "History": {
+            "rank": 1,
+            "override": 1
+          },
+          "Insight": {
+            "rank": 0,
+            "override": null
+          },
+          "Intimidation": {
+            "rank": 0,
+            "override": null
+          },
+          "Investigation": {
+            "rank": 0,
+            "override": null
+          },
+          "Medicine": {
+            "rank": 0,
+            "override": null
+          },
+          "Nature": {
+            "rank": 0,
+            "override": null
+          },
+          "Perception": {
+            "rank": 0,
+            "override": null
+          },
+          "Performance": {
+            "rank": 0,
+            "override": null
+          },
+          "Persuasion": {
+            "rank": 0,
+            "override": null
+          },
+          "Religion": {
+            "rank": 0,
+            "override": null
+          },
+          "Sleight of Hand": {
+            "rank": 0,
+            "override": null
+          },
+          "Stealth": {
+            "rank": 1,
+            "override": 6
+          },
+          "Survival": {
+            "rank": 0,
+            "override": null
+          }
+        },
+        "saves": {
+          "str": {
+            "rank": 1,
+            "override": 4
+          },
+          "dex": {
+            "rank": 1,
+            "override": 6
+          },
+          "con": {
+            "rank": 0,
+            "override": 4
+          },
+          "int": {
+            "rank": 0,
+            "override": -1
+          },
+          "wis": {
+            "rank": 0,
+            "override": 0
+          },
+          "cha": {
+            "rank": 0,
+            "override": 1
+          }
+        }
+      },
+      {
+        "id": "pc-ringgo",
+        "skills": {
+          "Acrobatics": {
+            "rank": 1,
+            "override": 7
+          },
+          "Animal Handling": {
+            "rank": 0,
+            "override": null
+          },
+          "Arcana": {
+            "rank": 0,
+            "override": null
+          },
+          "Athletics": {
+            "rank": 0,
+            "override": null
+          },
+          "Deception": {
+            "rank": 1,
+            "override": 6
+          },
+          "History": {
+            "rank": 0,
+            "override": null
+          },
+          "Insight": {
+            "rank": 0,
+            "override": null
+          },
+          "Intimidation": {
+            "rank": 0,
+            "override": null
+          },
+          "Investigation": {
+            "rank": 2,
+            "override": 4
+          },
+          "Medicine": {
+            "rank": 0,
+            "override": null
+          },
+          "Nature": {
+            "rank": 0,
+            "override": null
+          },
+          "Perception": {
+            "rank": 1,
+            "override": 2
+          },
+          "Performance": {
+            "rank": 0,
+            "override": null
+          },
+          "Persuasion": {
+            "rank": 1,
+            "override": 6
+          },
+          "Religion": {
+            "rank": 0,
+            "override": null
+          },
+          "Sleight of Hand": {
+            "rank": 1,
+            "override": 7
+          },
+          "Stealth": {
+            "rank": 2,
+            "override": 9
+          },
+          "Survival": {
+            "rank": 0,
+            "override": null
+          }
+        },
+        "saves": {
+          "str": {
+            "rank": 0,
+            "override": -2
+          },
+          "dex": {
+            "rank": 1,
+            "override": 7
+          },
+          "con": {
+            "rank": 0,
+            "override": 2
+          },
+          "int": {
+            "rank": 1,
+            "override": 2
+          },
+          "wis": {
+            "rank": 0,
+            "override": 0
+          },
+          "cha": {
+            "rank": 0,
+            "override": 4
+          }
+        }
+      },
+      {
+        "id": "pc-donavan",
+        "skills": {
+          "Acrobatics": {
+            "rank": 0,
+            "override": null
+          },
+          "Animal Handling": {
+            "rank": 0,
+            "override": null
+          },
+          "Arcana": {
+            "rank": 2,
+            "override": 8
+          },
+          "Athletics": {
+            "rank": 0,
+            "override": null
+          },
+          "Deception": {
+            "rank": 0,
+            "override": null
+          },
+          "History": {
+            "rank": 2,
+            "override": 8
+          },
+          "Insight": {
+            "rank": 0,
+            "override": null
+          },
+          "Intimidation": {
+            "rank": 0,
+            "override": null
+          },
+          "Investigation": {
+            "rank": 1,
+            "override": 6
+          },
+          "Medicine": {
+            "rank": 0,
+            "override": null
+          },
+          "Nature": {
+            "rank": 0,
+            "override": null
+          },
+          "Perception": {
+            "rank": 0,
+            "override": null
+          },
+          "Performance": {
+            "rank": 0,
+            "override": null
+          },
+          "Persuasion": {
+            "rank": 0,
+            "override": null
+          },
+          "Religion": {
+            "rank": 0,
+            "override": 4
+          },
+          "Sleight of Hand": {
+            "rank": 0,
+            "override": null
+          },
+          "Stealth": {
+            "rank": 0,
+            "override": null
+          },
+          "Survival": {
+            "rank": 0,
+            "override": null
+          }
+        },
+        "saves": {
+          "str": {
+            "rank": 0,
+            "override": 1
+          },
+          "dex": {
+            "rank": 0,
+            "override": 2
+          },
+          "con": {
+            "rank": 0,
+            "override": 3
+          },
+          "int": {
+            "rank": 1,
+            "override": 6
+          },
+          "wis": {
+            "rank": 1,
+            "override": 5
+          },
+          "cha": {
+            "rank": 0,
+            "override": 3
+          }
+        }
+      },
+      {
+        "id": "ally-sildar",
+        "skills": {
+          "Acrobatics": {
+            "rank": 0,
+            "override": null
+          },
+          "Animal Handling": {
+            "rank": 0,
+            "override": null
+          },
+          "Arcana": {
+            "rank": 0,
+            "override": null
+          },
+          "Athletics": {
+            "rank": 0,
+            "override": null
+          },
+          "Deception": {
+            "rank": 0,
+            "override": null
+          },
+          "History": {
+            "rank": 0,
+            "override": null
+          },
+          "Insight": {
+            "rank": 0,
+            "override": null
+          },
+          "Intimidation": {
+            "rank": 0,
+            "override": null
+          },
+          "Investigation": {
+            "rank": 0,
+            "override": null
+          },
+          "Medicine": {
+            "rank": 0,
+            "override": null
+          },
+          "Nature": {
+            "rank": 0,
+            "override": null
+          },
+          "Perception": {
+            "rank": 0,
+            "override": null
+          },
+          "Performance": {
+            "rank": 0,
+            "override": null
+          },
+          "Persuasion": {
+            "rank": 0,
+            "override": null
+          },
+          "Religion": {
+            "rank": 0,
+            "override": null
+          },
+          "Sleight of Hand": {
+            "rank": 0,
+            "override": null
+          },
+          "Stealth": {
+            "rank": 0,
+            "override": null
+          },
+          "Survival": {
+            "rank": 0,
+            "override": null
+          }
+        },
+        "saves": {
+          "str": {
+            "rank": 0,
+            "override": null
+          },
+          "dex": {
+            "rank": 0,
+            "override": null
+          },
+          "con": {
+            "rank": 0,
+            "override": null
+          },
+          "int": {
+            "rank": 0,
+            "override": null
+          },
+          "wis": {
+            "rank": 0,
+            "override": null
+          },
+          "cha": {
+            "rank": 0,
+            "override": null
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791839407391-0b4d2gqz",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              10
+            ],
+            "total": 18,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:07 PM"
+          },
+          {
+            "id": "pa-1791839407391-og4wnols",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              3
+            ],
+            "total": 8,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:07 PM"
+          },
+          {
+            "id": "pa-1791839407391-8f6k7xsv",
+            "label": "Shortbow · effect 1.2",
+            "notation": "3d6",
+            "parts": [
+              6,
+              2,
+              6
+            ],
+            "total": 14,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:07 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-wave-spider-1",
+            "text": "Nezznar’s Spider 1: 18 vs AC 14: hit, 8 piercing → 8; temp HP absorbed 0, 14 piercing → 14; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

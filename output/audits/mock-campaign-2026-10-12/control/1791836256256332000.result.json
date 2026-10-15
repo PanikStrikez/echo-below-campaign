@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-crypt-1",
+    "action": {
+      "actor": "s2-hideout-crypt-1",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836256348-zy0de2h6",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            18
+          ],
+          "total": 22,
+          "natural": 18,
+          "public": false,
+          "kind": "digital",
+          "time": "2:17:36 PM"
+        },
+        {
+          "id": "pa-1791836256348-3iij9q6u",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            6
+          ],
+          "total": 8,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "2:17:36 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 22 vs AC 14: hit, 8 piercing → 8; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791839128344-uwgerax9",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              10
+            ],
+            "total": 18,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "3:05:28 PM"
+          },
+          {
+            "id": "pa-1791839128344-toozcn8a",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              4,
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "3:05:28 PM"
+          },
+          {
+            "id": "pa-1791839128344-8lp2pdt1",
+            "label": "Nezznar · concentration DC 10",
+            "notation": "1d20+0",
+            "parts": [
+              14
+            ],
+            "total": 14,
+            "natural": 14,
+            "public": false,
+            "kind": "digital",
+            "time": "3:05:28 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-nezznar-1",
+            "text": "Nezznar: 18 vs AC 14: hit, 8 cold → 8; temp HP absorbed 0, concentration held"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

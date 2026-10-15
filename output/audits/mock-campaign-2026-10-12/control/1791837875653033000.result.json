@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-aldric",
+      "level": 6,
+      "hp": 44,
+      "class": "Wizard · School of Evocation"
+    },
+    {
+      "id": "pc-pebble",
+      "level": 6,
+      "hp": 63,
+      "class": "Fighter · Champion"
+    },
+    {
+      "id": "pc-trista",
+      "level": 6,
+      "hp": 47,
+      "class": "Monk · Warrior of Shadow"
+    },
+    {
+      "id": "pc-ringgo",
+      "level": 6,
+      "hp": 43,
+      "class": "Rogue · Assassin"
+    },
+    {
+      "id": "pc-donavan",
+      "level": 6,
+      "hp": 45,
+      "class": "Wizard 5 / Cleric 1 · Scribes / Knowledge"
+    }
+  ]
+}

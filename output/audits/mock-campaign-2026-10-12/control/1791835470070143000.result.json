@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "result": {
+    "con": "Web",
+    "turn": {
+      "scene": "redbrand-hideout",
+      "round": 1,
+      "order": [
+        "pc-aldric",
+        "pc-trista",
+        "s2-hideout-bugbears-3",
+        "pc-ringgo",
+        "s2-hideout-bugbears-1",
+        "pc-pebble",
+        "s2-hideout-bugbears-2",
+        "pc-donavan"
+      ],
+      "index": 1
+    }
+  }
+}

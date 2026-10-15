@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "result": {
+    "crew": [
+      {
+        "id": "s4-wave-18-bugbear-1",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-18-bugbear-2",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-18-bugbear-3",
+        "hp": 27
+      }
+    ],
+    "parley": {
+      "id": "1791839451225-imwdqyyprm",
+      "label": "Ringgo offersmercenaries safeexit,PersuasionDC15",
+      "notation": "1d20+10",
+      "parts": [
+        2
+      ],
+      "total": 12,
+      "kind": "digital",
+      "time": "03:10 PM"
+    }
+  }
+}

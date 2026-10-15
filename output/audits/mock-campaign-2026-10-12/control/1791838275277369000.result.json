@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-3-stirge-6",
+    "action": {
+      "actor": "s4-wave-3-stirge-6",
+      "label": "Blood Drain",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838275389-zv8kaadl",
+          "label": "Blood Drain · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            17
+          ],
+          "total": 22,
+          "natural": 17,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:15 PM"
+        },
+        {
+          "id": "pa-1791838275389-8krbqpxi",
+          "label": "Blood Drain · effect 1.1",
+          "notation": "1d4+3",
+          "parts": [
+            1
+          ],
+          "total": 4,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "2:51:15 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 22 vs AC 18: hit, 4 piercing → 4; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

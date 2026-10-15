@@ -1,0 +1,129 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "label": "Fireball",
+    "targets": [
+      "Nezznar",
+      "Temple Bugbear 1",
+      "Temple Bugbear 2",
+      "Nezznar’s Spider 2",
+      "Nezznar’s Spider 3"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791839199096-ui0r0g4h",
+        "label": "Nezznar · DEX save",
+        "notation": "1d20+1",
+        "parts": [
+          10
+        ],
+        "total": 11,
+        "natural": 10,
+        "public": false,
+        "kind": "digital",
+        "time": "3:06:39 PM"
+      },
+      {
+        "id": "pa-1791839199096-hqu2pyw1",
+        "label": "Fireball · effect 1.1",
+        "notation": "8d6",
+        "parts": [
+          6,
+          3,
+          2,
+          5,
+          1,
+          5,
+          2,
+          3
+        ],
+        "total": 27,
+        "natural": 6,
+        "public": true,
+        "kind": "digital",
+        "time": "3:06:39 PM"
+      },
+      {
+        "id": "pa-1791839199097-lu7fup0a",
+        "label": "Temple Bugbear 1 · DEX save",
+        "notation": "1d20+2",
+        "parts": [
+          8
+        ],
+        "total": 10,
+        "natural": 8,
+        "public": false,
+        "kind": "digital",
+        "time": "3:06:39 PM"
+      },
+      {
+        "id": "pa-1791839199097-s3x3tm9f",
+        "label": "Temple Bugbear 2 · DEX save",
+        "notation": "1d20+2",
+        "parts": [
+          17
+        ],
+        "total": 19,
+        "natural": 17,
+        "public": false,
+        "kind": "digital",
+        "time": "3:06:39 PM"
+      },
+      {
+        "id": "pa-1791839199097-2qzqczud",
+        "label": "Nezznar’s Spider 2 · DEX save",
+        "notation": "1d20+3",
+        "parts": [
+          18
+        ],
+        "total": 21,
+        "natural": 18,
+        "public": false,
+        "kind": "digital",
+        "time": "3:06:39 PM"
+      },
+      {
+        "id": "pa-1791839199097-2ccx3etk",
+        "label": "Nezznar’s Spider 3 · DEX save",
+        "notation": "1d20+3",
+        "parts": [
+          15
+        ],
+        "total": 18,
+        "natural": 15,
+        "public": false,
+        "kind": "digital",
+        "time": "3:06:39 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "s4-wave-19-nezznar-1",
+        "text": "Nezznar: failed save, 27 fire → 27; temp HP absorbed 0"
+      },
+      {
+        "targetId": "s4-wave-19-bugbear-1",
+        "text": "Temple Bugbear 1: failed save, 27 fire → 27; temp HP absorbed 0"
+      },
+      {
+        "targetId": "s4-wave-19-bugbear-2",
+        "text": "Temple Bugbear 2: saved, 13 fire → 13; temp HP absorbed 0"
+      },
+      {
+        "targetId": "s4-wave-19-wave-spider-2",
+        "text": "Nezznar’s Spider 2: saved, 13 fire → 13; temp HP absorbed 0"
+      },
+      {
+        "targetId": "s4-wave-19-wave-spider-3",
+        "text": "Nezznar’s Spider 3: saved, 13 fire → 13; temp HP absorbed 0"
+      }
+    ],
+    "costs": [
+      {
+        "id": "aldric-slots-3",
+        "delta": -1
+      }
+    ]
+  }
+}

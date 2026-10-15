@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-19-bugbear-2",
+    "action": {
+      "actor": "s4-wave-19-bugbear-2",
+      "label": "Morningstar",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839127212-emowmvx8",
+          "label": "Morningstar · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            19
+          ],
+          "total": 23,
+          "natural": 19,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:27 PM"
+        },
+        {
+          "id": "pa-1791839127212-fhw5otdf",
+          "label": "Morningstar · effect 1.1",
+          "notation": "2d8+2",
+          "parts": [
+            6,
+            6
+          ],
+          "total": 14,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:27 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 23 vs AC 18: hit, 14 piercing → 14; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

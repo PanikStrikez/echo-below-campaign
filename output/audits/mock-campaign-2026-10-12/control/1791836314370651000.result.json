@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "i": 0,
+      "name": "Flurry of Blows"
+    },
+    {
+      "i": 1,
+      "name": "Patient Defense"
+    },
+    {
+      "i": 2,
+      "name": "Patient Defense + Dodge"
+    },
+    {
+      "i": 3,
+      "name": "Step of the Wind"
+    },
+    {
+      "i": 4,
+      "name": "Step of the Wind + Disengage"
+    },
+    {
+      "i": 5,
+      "name": "Uncanny Metabolism"
+    },
+    {
+      "i": 6,
+      "name": "Deflect Attacks"
+    },
+    {
+      "i": 7,
+      "name": "Redirect deflected attack"
+    },
+    {
+      "i": 8,
+      "name": "Minor Illusion"
+    },
+    {
+      "i": 9,
+      "name": "Shadow Arts: Darkness"
+    }
+  ]
+}

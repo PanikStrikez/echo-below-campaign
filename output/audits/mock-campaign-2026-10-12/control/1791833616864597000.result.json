@@ -1,0 +1,130 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "interior",
+    "party": [
+      {
+        "name": "Aldric Vane",
+        "level": 1,
+        "hp": 9
+      },
+      {
+        "name": "Pebble",
+        "level": 1,
+        "hp": 12
+      },
+      {
+        "name": "Trista",
+        "level": 1,
+        "hp": 11
+      },
+      {
+        "name": "Ringgo Paul",
+        "level": 1,
+        "hp": 10
+      },
+      {
+        "name": "Donavan Kemp",
+        "level": 1,
+        "hp": 8
+      },
+      {
+        "name": "Sildar Hallwinter",
+        "level": null,
+        "hp": 1
+      }
+    ],
+    "beats": [
+      {
+        "id": "kennel",
+        "read": [
+          "A sharp animal smell cuts through the damp cave air. Chains scrape against stone. Three pairs of eyes turn toward you from the dark, and low growls fill the cramped chamber.",
+          "The scrape of the chains marks the animals' movements more clearly than the dim light does. There is little room to spread out here, and the growling rises when attention turns toward them. You can stop at the edge of the chamber before choosing how to approach."
+        ],
+        "run": [
+          "Three wolves are chained here. They cannot initially reach someone who stays back on the entrance steps, but barking can carry.",
+          "DC 15 Animal Handling calms them; food can distract them with a DC 10 check. No fight is required.",
+          "The narrow chimney to area 8 is at the back of the kennel, beyond the wolves’ normal chain reach from the entrance. Reaching it requires a plan for the wolves. Climbing calls for DC 10 Athletics; a poor fall can deal 1d6 bludgeoning damage.",
+          "Wolf: AC 13, HP 11, speed 40 ft.; bite +4 for 2d4+2 piercing, DC 11 Strength save or prone. Pack Tactics gives advantage when an ally is beside the target."
+        ]
+      },
+      {
+        "id": "passage",
+        "read": [
+          "The main passage climbs steeply beside the stream. Spray darkens the stone, and loose rubble shifts underfoot. Above the noise, you can make out another passage crossing high overhead.",
+          "Water follows the slope past your boots, leaving the rising stone slick and dark. The crossing overhead is separate from the route at your feet; from here, you can judge the climb and look for movement above without knowing where either passage ends."
+        ],
+        "run": [
+          "Rubble is difficult terrain. The fragile ledge collapses under more than 100 pounds; DC 10 Dexterity save, taking 2d6 bludgeoning on a failure or half on a success. Failure also knocks the creature prone.",
+          "Route at a glance: the stream climbs toward the overpass (area 5); a higher side passage west reaches Yeemik’s den (area 6); the den connects east across the bridge to the twin pools (area 7), then south to Klarg (area 8). The kennel chimney is a separate shortcut to area 8.",
+          "Noise from nearby goblins may be heard by careful listeners. Show the hazard through crumbling stone and spray before asking for a risky crossing."
+        ]
+      },
+      {
+        "id": "bridge",
+        "read": [
+          "A rickety bridge crosses the passage high above the water. A small figure shifts against the shadowed ceiling. Farther upstream, the sound of pooled water presses through the cave.",
+          "The bridge's boards and supports stand out against the rock when your light catches them. Below, the stream continues along the climbing passage. The figure above and the louder water ahead give you two different things to watch as you decide whether to advance."
+        ],
+        "run": [
+          "One goblin guards the bridge about 20 feet above the stream. If it spots the party, it signals area 7; the first flood arrives on the following round on the pool goblins’ initiative count.",
+          "Telegraph a flood with a physical roar and rising water. In the surge’s path, DC 10 Dexterity save to avoid being swept away; a caught creature can try DC 15 Strength to hold on. Failure washes it toward area 1 and deals 1d6 bludgeoning damage.",
+          "The goblins at the pools can release a second surge if still able. The bridge can also break; a fall from it is dangerous.",
+          "Goblin: AC 15, HP 7, attack +4 for 1d6+2, bonus-action Hide or Disengage."
+        ]
+      },
+      {
+        "id": "den",
+        "read": [
+          "A cooking fire lights an uneven cavern. Goblins look up from their meal. On a higher ledge, a battered human man is held upright by one of them. He can barely stand.",
+          "One goblin raises a hand for the others to hold. “You want the human? Then we have something to discuss.”"
+        ],
+        "run": [
+          "Six goblins occupy the den: Yeemik has 12 HP, and the five ordinary goblins have 7 HP each. Sildar is alive at 1 HP, unarmed, and without armor.",
+          "Yeemik wants Klarg removed. He may promise Sildar in exchange, then press for ransom rather than honoring his word. Do not force the party to accept.",
+          "If openly threatened, Yeemik can shove Sildar from the ledge; the fall deals 1d6 damage unless the party intervenes or heals him. Make his position and danger legible before the decision.",
+          "All six use goblin attacks: AC 15, +4 to hit for 1d6+2, bonus-action Hide or Disengage. Yeemik has 12 HP; each other goblin has 7 HP. Yeemik carries three gold teeth worth 1 gp each and 15 sp."
+        ]
+      },
+      {
+        "id": "pools",
+        "read": [
+          "Two dark pools fill much of the cavern. Water presses against rough stone-and-timber dams. The waterfall’s echo makes quieter movement hard to place.",
+          "The rough barriers hold back a great deal of water, and the noise fills the space around them. You can inspect their visible supports, look for ground that stays out of the current, or study the onward route before putting someone beside a dam."
+        ],
+        "run": [
+          "Three goblins guard the water controls. If warned by the bridge goblin, they can release a pool into the main passage. The water must actually be present to release.",
+          "Noise here can warn Klarg in area 8; one goblin may run to him if a fight breaks out.",
+          "Goblin: AC 15, HP 7, attack +4 for 1d6+2, bonus-action Hide or Disengage."
+        ]
+      },
+      {
+        "id": "klarg",
+        "read": [
+          "Sacks and crates fill the far side of the cave. Smoke from a low fire climbs toward an opening above. Behind the stolen supplies, a hulking figure rises, morningstar in hand, while a wolf bares its teeth.",
+          "The stacked goods divide the cavern into patches of cover and narrow sightlines. Firelight catches the raised weapon and the wolf's teeth, while smoke drifts toward the opening overhead. The way you entered remains behind you as you choose how to answer this reception."
+        ],
+        "run": [
+          "Klarg the bugbear has AC 16 and 27 HP. Morningstar +4 to hit, 2d8+2 piercing. Ranged javelin +4, 1d6+2. If he surprises someone and hits in round one, add 2d6.",
+          "Ripper is a wolf: AC 13, HP 11, bite +4 for 2d4+2 and DC 11 Strength save or prone. Two goblins also fight here.",
+          "The fire pit deals 1 fire damage when entered, or 1d6 to a creature that falls prone in it. Supply piles give half cover.",
+          "If warned, Klarg and his group use the supply piles as cover. If Ripper dies, Klarg may flee down the chimney toward area 3.",
+          "Treasure: 600 cp, 110 sp, two potions of healing, and a jade frog statuette with golden eyes worth 40 gp. Returning the stolen Lionshield Coster goods in Phandalin earns 50 gp."
+        ]
+      },
+      {
+        "id": "sildar",
+        "read": [
+          "Once he can sit and breathe, Sildar looks toward the cave passage. “Gundren was taken away from here. They wanted him—and the map he carried.”",
+          "The passage is still close enough that a voice raised here could carry farther than intended. Sildar's words give you a name and an object to ask about, but not a destination. There is time to hear him out, check what help he needs, and decide where to take the conversation."
+        ],
+        "run": [
+          "Gundren and his map were sent toward Cragmaw Castle. Sildar does not know where the castle is.",
+          "The goblins said someone called the Black Spider wanted Gundren captured. Sildar does not know the Spider’s identity.",
+          "Sildar also came toward Phandalin to investigate missing wizard Iarno Albrek. He wants to reach town and offers 50 gp if escorted there safely.",
+          "At 1 HP and without his equipment, Sildar is not ready to lead a fight. If he receives healing and gear, he may help briefly while retaining his own goals."
+        ]
+      }
+    ]
+  }
+}

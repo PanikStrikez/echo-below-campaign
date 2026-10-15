@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s2-hideout-pens-1",
+        "name": "Pen guard 1",
+        "hp": 16
+      },
+      {
+        "id": "s2-hideout-pens-2",
+        "name": "Pen guard 2",
+        "hp": 16
+      }
+    ],
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 17
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 24
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 24
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 23
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 16
+      }
+    ]
+  }
+}

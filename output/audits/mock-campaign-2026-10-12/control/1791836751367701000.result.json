@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "redbrand-hideout",
+    "round": 1,
+    "order": [
+      "s2-hideout-pens-2",
+      "pc-aldric",
+      "s2-hideout-pens-1",
+      "pc-ringgo",
+      "pc-trista",
+      "pc-donavan",
+      "pc-pebble"
+    ],
+    "index": 0
+  }
+}

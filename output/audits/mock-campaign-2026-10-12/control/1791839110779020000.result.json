@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791839110936-65rn3eek",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              2
+            ],
+            "total": 10,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "3:05:10 PM"
+          },
+          {
+            "id": "pa-1791839110936-tohxvxhw",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              8
+            ],
+            "total": 13,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "3:05:10 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-nezznar-1",
+            "text": "Nezznar: 10 vs AC 14: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791839111064-t6x0nwf6",
+              "label": "Warhammer · attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                8
+              ],
+              "total": 16,
+              "natural": 8,
+              "public": true,
+              "kind": "digital",
+              "time": "3:05:11 PM"
+            },
+            {
+              "id": "pa-1791839111064-wjv999zq",
+              "label": "Warhammer · effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                1
+              ],
+              "total": 6,
+              "natural": 1,
+              "public": true,
+              "kind": "digital",
+              "time": "3:05:11 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-19-nezznar-1",
+              "text": "Nezznar: 16 vs AC 14: hit, 6 bludgeoning → 6; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  }
+}

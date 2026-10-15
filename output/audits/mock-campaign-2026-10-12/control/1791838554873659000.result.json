@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "result": {
+    "heal": {
+      "actor": "pc-pebble",
+      "label": "Second Wind",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838555051-nr32n3jm",
+          "label": "Second Wind · healing 1.1",
+          "notation": "1d10+6",
+          "parts": [
+            8
+          ],
+          "total": 14,
+          "natural": 8,
+          "public": true,
+          "kind": "digital",
+          "time": "2:55:55 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 14 healing → 14; temp HP absorbed 0"
+        }
+      ],
+      "costs": [
+        {
+          "id": "pebble-second-wind",
+          "delta": -1
+        }
+      ]
+    },
+    "leave": {
+      "actor": "pc-pebble",
+      "label": "Disengage",
+      "targets": [],
+      "rolls": [],
+      "outcomes": [],
+      "costs": []
+    },
+    "ghoulEscape": {
+      "actor": "s4-wave-6-ghoul-2",
+      "escape": {
+        "id": "1791838555516-u15i0hkyf5p",
+        "label": "South Barracks Ghoul 2 STR check to escape Web DC16",
+        "notation": "1d20+1",
+        "parts": [
+          4
+        ],
+        "total": 5,
+        "kind": "digital",
+        "time": "02:55 PM"
+      },
+      "escaped": false
+    }
+  }
+}

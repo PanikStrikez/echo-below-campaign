@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-19-wave-spider-3",
+    "escape": {
+      "id": "1791839406017-i1zd4pl0doh",
+      "label": "SpiderSTRescapeWeb16",
+      "notation": "1d20+2",
+      "parts": [
+        7
+      ],
+      "total": 9,
+      "kind": "digital",
+      "time": "03:10 PM"
+    }
+  }
+}

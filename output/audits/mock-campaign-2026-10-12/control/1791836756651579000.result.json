@@ -1,0 +1,88 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-pens-1",
+    "action": {
+      "actor": "s2-hideout-pens-1",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836756827-u0dp6a84",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            12
+          ],
+          "total": 16,
+          "natural": 12,
+          "public": false,
+          "kind": "digital",
+          "time": "2:25:56 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 16 vs AC 14: hit, physical base 0, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-hideout-pens-1",
+        "label": "Shortsword",
+        "targets": [
+          "Trista"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836757482-5krhxz9m",
+            "label": "Shortsword · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              6
+            ],
+            "total": 10,
+            "natural": 6,
+            "public": false,
+            "kind": "digital",
+            "time": "2:25:57 PM"
+          },
+          {
+            "id": "pa-1791836757482-u996aa8a",
+            "label": "Shortsword · effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              3
+            ],
+            "total": 5,
+            "natural": 3,
+            "public": false,
+            "kind": "digital",
+            "time": "2:25:57 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-trista",
+            "text": "Trista: 10 vs AC 14: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  }
+}

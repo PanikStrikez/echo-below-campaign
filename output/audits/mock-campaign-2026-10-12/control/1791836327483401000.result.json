@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "result": {
+    "costs": [
+      {
+        "id": "trista-focus",
+        "delta": -1
+      }
+    ],
+    "status": "resolved",
+    "Focus": {
+      "id": "trista-focus",
+      "name": "Focus Points",
+      "max": 3,
+      "current": 2,
+      "restoreShort": -1,
+      "restoreLong": true,
+      "unit": "points",
+      "slotLevel": 0
+    }
+  }
+}

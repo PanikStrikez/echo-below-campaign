@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-south",
+      "round": 1,
+      "order": [
+        "pc-ringgo",
+        "pc-donavan",
+        "pc-aldric",
+        "pc-trista",
+        "pc-pebble",
+        "s4-wave-2-ochre-jelly-1"
+      ],
+      "index": 2
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 43,
+        "maxHp": 47
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45,
+        "maxHp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43,
+        "maxHp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 50,
+        "maxHp": 63
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 42,
+        "maxHp": 44
+      }
+    ],
+    "foes": [
+      {
+        "id": "s4-wave-2-ochre-jelly-1",
+        "hp": 36
+      }
+    ],
+    "due": []
+  }
+}

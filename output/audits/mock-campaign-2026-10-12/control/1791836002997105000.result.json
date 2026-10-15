@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s2-hideout-barracks-1",
+        "name": "Barracks ruffian 1",
+        "hp": 16
+      },
+      {
+        "id": "s2-hideout-barracks-2",
+        "name": "Barracks ruffian 2",
+        "hp": 16
+      },
+      {
+        "id": "s2-hideout-barracks-3",
+        "name": "Barracks ruffian 3",
+        "hp": 16
+      }
+    ],
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 17
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 24
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 24
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 23
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 23
+      }
+    ]
+  }
+}

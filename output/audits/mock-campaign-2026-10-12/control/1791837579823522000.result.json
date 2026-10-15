@@ -1,0 +1,128 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791837579994-a3z57p4d",
+            "label": "Unarmed Strike · attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              5
+            ],
+            "total": 12,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:39 PM"
+          },
+          {
+            "id": "pa-1791837579994-3qxu1tox",
+            "label": "Unarmed Strike · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:39 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King’s guard 1: 12 vs AC 18: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791837580106-lj9cfnr3",
+              "label": "Unarmed Strike · attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                2
+              ],
+              "total": 9,
+              "natural": 2,
+              "public": true,
+              "kind": "digital",
+              "time": "2:39:40 PM"
+            },
+            {
+              "id": "pa-1791837580106-reglslbp",
+              "label": "Unarmed Strike · effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                5
+              ],
+              "total": 9,
+              "natural": 5,
+              "public": true,
+              "kind": "digital",
+              "time": "2:39:40 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s3-castle-guards-hobgoblin-1",
+              "text": "King’s guard 1: 9 vs AC 18: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "King’s guard 1"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791837580233-l39c34tb",
+            "label": "Martial Arts unarmed strike · attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              9
+            ],
+            "total": 16,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:40 PM"
+          },
+          {
+            "id": "pa-1791837580233-wi98i081",
+            "label": "Martial Arts unarmed strike · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King’s guard 1: 16 vs AC 18: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

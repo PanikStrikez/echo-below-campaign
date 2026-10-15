@@ -1,0 +1,71 @@
+{
+  "ok": true,
+  "result": {
+    "tokens": [
+      {
+        "id": "pc-trista",
+        "team": "pc",
+        "hp": 15,
+        "x": 42,
+        "y": 84
+      },
+      {
+        "id": "pc-donavan",
+        "team": "pc",
+        "hp": 16,
+        "x": 47,
+        "y": 84
+      },
+      {
+        "id": "pc-ringgo",
+        "team": "pc",
+        "hp": 17,
+        "x": 52,
+        "y": 84
+      },
+      {
+        "id": "pc-pebble",
+        "team": "pc",
+        "hp": 16,
+        "x": 57,
+        "y": 84
+      },
+      {
+        "id": "pc-aldric",
+        "team": "pc",
+        "hp": 16,
+        "x": 62,
+        "y": 84
+      },
+      {
+        "id": "s2-ruffian-1",
+        "team": "enemy",
+        "hp": 16,
+        "x": 75,
+        "y": 40
+      },
+      {
+        "id": "s2-ruffian-2",
+        "team": "enemy",
+        "hp": 16,
+        "x": 79,
+        "y": 47
+      },
+      {
+        "id": "s2-ruffian-3",
+        "team": "enemy",
+        "hp": 16,
+        "x": 75,
+        "y": 54
+      },
+      {
+        "id": "s2-ruffian-4",
+        "team": "enemy",
+        "hp": 16,
+        "x": 79,
+        "y": 61
+      }
+    ],
+    "cols": 30
+  }
+}

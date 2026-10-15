@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "result": {
+    "out": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Disengage",
+        "targets": [],
+        "rolls": [],
+        "outcomes": [],
+        "costs": []
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Disengage",
+        "targets": [],
+        "rolls": [],
+        "outcomes": [],
+        "costs": []
+      },
+      {
+        "actor": "pc-aldric",
+        "label": "Disengage",
+        "targets": [],
+        "rolls": [],
+        "outcomes": [],
+        "costs": []
+      }
+    ],
+    "check": {
+      "id": "1791838576327-coy1gc28spe",
+      "label": "Ghoul pursuing freshtrail afterclosingheavydoor DC15",
+      "notation": "1d20",
+      "parts": [
+        3
+      ],
+      "total": 3,
+      "kind": "digital",
+      "time": "02:56 PM"
+    }
+  }
+}

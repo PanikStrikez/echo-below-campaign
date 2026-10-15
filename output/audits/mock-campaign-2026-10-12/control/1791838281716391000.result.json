@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-south",
+      "round": 2,
+      "order": [
+        "pc-ringgo",
+        "s4-wave-3-stirge-5",
+        "pc-trista",
+        "pc-pebble",
+        "s4-wave-3-stirge-4",
+        "s4-wave-3-stirge-3",
+        "s4-wave-3-stirge-7",
+        "s4-wave-3-stirge-8",
+        "s4-wave-3-stirge-10",
+        "s4-wave-3-stirge-2",
+        "s4-wave-3-stirge-6",
+        "pc-aldric",
+        "s4-wave-3-stirge-9",
+        "s4-wave-3-stirge-1",
+        "pc-donavan"
+      ],
+      "index": 14
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 45,
+        "maxHp": 47
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45,
+        "maxHp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43,
+        "maxHp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 28,
+        "maxHp": 63
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 44,
+        "maxHp": 44
+      }
+    ],
+    "foes": [],
+    "due": [
+      {
+        "id": "card-1791838276833-ebxpk2n",
+        "tokenId": "s4-wave-3-stirge-3",
+        "triggerActor": "pc-donavan",
+        "triggerPoint": "start",
+        "remaining": 0,
+        "name": "Ray of Frost · speed −10 ft",
+        "condition": "",
+        "due": true,
+        "fired": true,
+        "repeatSave": false,
+        "note": "Apply until the caster’s next turn starts. Movement remains manual."
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "result": {
+    "investigation": {
+      "id": "1791835926754-lgi4qursxl",
+      "label": "Donavan examines fastening DC15",
+      "notation": "1d20+6",
+      "parts": [
+        11
+      ],
+      "total": 17,
+      "kind": "digital",
+      "time": "02:12 PM"
+    },
+    "healing": {
+      "actor": "pc-ringgo",
+      "label": "Administer Potion of Healing",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791835926863-468pk4rv",
+          "label": "Administer Potion of Healing · healing 1.1",
+          "notation": "2d4+2",
+          "parts": [
+            2,
+            1
+          ],
+          "total": 5,
+          "natural": 2,
+          "public": true,
+          "kind": "digital",
+          "time": "2:12:06 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 5 healing → 5; temp HP absorbed 0"
+        }
+      ],
+      "costs": [
+        {
+          "id": "mock-ringgo-potion",
+          "delta": -1
+        }
+      ]
+    },
+    "hp": 17
+  }
+}

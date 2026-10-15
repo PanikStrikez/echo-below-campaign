@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791839380962-o7a1lryp",
+            "label": "Unarmed Strike · attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              1
+            ],
+            "total": 8,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "3:09:40 PM"
+          },
+          {
+            "id": "pa-1791839380962-gyq6a6we",
+            "label": "Unarmed Strike · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "3:09:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-wave-spider-2",
+            "text": "Nezznar’s Spider 2: 8 vs AC 14: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791839381105-zz7upsri",
+              "label": "Unarmed Strike · attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                16
+              ],
+              "total": 23,
+              "natural": 16,
+              "public": true,
+              "kind": "digital",
+              "time": "3:09:41 PM"
+            },
+            {
+              "id": "pa-1791839381105-amk7iq8w",
+              "label": "Unarmed Strike · effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                4
+              ],
+              "total": 8,
+              "natural": 4,
+              "public": true,
+              "kind": "digital",
+              "time": "3:09:41 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-19-wave-spider-2",
+              "text": "Nezznar’s Spider 2: 23 vs AC 14: hit, 8 bludgeoning → 8; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  }
+}

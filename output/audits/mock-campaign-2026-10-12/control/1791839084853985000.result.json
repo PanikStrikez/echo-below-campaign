@@ -1,0 +1,93 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "label": "Fireball",
+    "targets": [
+      "Nezznar’s Spider 1",
+      "Nezznar’s Spider 2",
+      "Nezznar’s Spider 3"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791839084892-7qjngf5b",
+        "label": "Nezznar’s Spider 1 · DEX save",
+        "notation": "1d20+3",
+        "parts": [
+          9
+        ],
+        "total": 12,
+        "natural": 9,
+        "public": false,
+        "kind": "digital",
+        "time": "3:04:44 PM"
+      },
+      {
+        "id": "pa-1791839084892-kjyot07w",
+        "label": "Fireball · effect 1.1",
+        "notation": "8d6",
+        "parts": [
+          3,
+          3,
+          1,
+          1,
+          4,
+          1,
+          4,
+          2
+        ],
+        "total": 19,
+        "natural": 3,
+        "public": true,
+        "kind": "digital",
+        "time": "3:04:44 PM"
+      },
+      {
+        "id": "pa-1791839084892-v8cwu5vp",
+        "label": "Nezznar’s Spider 2 · DEX save",
+        "notation": "1d20+3",
+        "parts": [
+          20
+        ],
+        "total": 23,
+        "natural": 20,
+        "public": false,
+        "kind": "digital",
+        "time": "3:04:44 PM"
+      },
+      {
+        "id": "pa-1791839084892-701x3dqm",
+        "label": "Nezznar’s Spider 3 · DEX save",
+        "notation": "1d20+3",
+        "parts": [
+          17
+        ],
+        "total": 20,
+        "natural": 17,
+        "public": false,
+        "kind": "digital",
+        "time": "3:04:44 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "s4-wave-19-wave-spider-1",
+        "text": "Nezznar’s Spider 1: failed save, 19 fire → 19; temp HP absorbed 0"
+      },
+      {
+        "targetId": "s4-wave-19-wave-spider-2",
+        "text": "Nezznar’s Spider 2: saved, 9 fire → 9; temp HP absorbed 0"
+      },
+      {
+        "targetId": "s4-wave-19-wave-spider-3",
+        "text": "Nezznar’s Spider 3: saved, 9 fire → 9; temp HP absorbed 0"
+      }
+    ],
+    "costs": [
+      {
+        "id": "aldric-slots-3",
+        "delta": -1
+      }
+    ]
+  }
+}

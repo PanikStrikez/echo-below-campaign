@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-barracks-3",
+    "action": {
+      "actor": "s2-hideout-barracks-3",
+      "label": "Shortsword",
+      "targets": [
+        "Ringgo"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836019799-7n2dz41q",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            8
+          ],
+          "total": 12,
+          "natural": 8,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:39 PM"
+        },
+        {
+          "id": "pa-1791836019799-5lpv7oe7",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:39 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-ringgo",
+          "text": "Ringgo: 12 vs AC 16: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838706687-mh5b26xj",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              12
+            ],
+            "total": 20,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:26 PM"
+          },
+          {
+            "id": "pa-1791838706687-q2xykfk9",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              4
+            ],
+            "total": 9,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:26 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-2-ochre-jelly-1",
+            "text": "Ochre Jelly: 20 vs AC 8: hit, 9 bludgeoning → 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

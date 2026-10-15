@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791838704835-kjipwnl8",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              1
+            ],
+            "total": 9,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:24 PM"
+          },
+          {
+            "id": "pa-1791838704835-bx0n9kvi",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              4,
+              2
+            ],
+            "total": 6,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:24 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-2-ochre-jelly-1",
+            "text": "Ochre Jelly: 9 vs AC 8: miss, 0 cold → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

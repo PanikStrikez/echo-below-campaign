@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-south",
+      "round": 2,
+      "order": [
+        "s4-wave-6-ghoul-3",
+        "pc-donavan",
+        "s4-wave-6-ghoul-1",
+        "pc-pebble",
+        "s4-wave-6-ghoul-2",
+        "pc-ringgo",
+        "pc-trista",
+        "pc-aldric"
+      ],
+      "index": 4
+    },
+    "hp": 36,
+    "resources": [
+      {
+        "id": "pebble-second-wind",
+        "name": "Second Wind",
+        "max": 1,
+        "current": 1,
+        "restoreShort": 1,
+        "restoreLong": true,
+        "unit": "use",
+        "slotLevel": 0
+      },
+      {
+        "id": "pebble-action-surge",
+        "name": "Action Surge",
+        "max": 1,
+        "current": 1,
+        "restoreShort": 1,
+        "restoreLong": true,
+        "unit": "use",
+        "slotLevel": 0
+      }
+    ],
+    "foes": [
+      {
+        "id": "s4-wave-6-ghoul-1",
+        "hp": 0,
+        "c": []
+      },
+      {
+        "id": "s4-wave-6-ghoul-2",
+        "hp": 10,
+        "c": [
+          "Restrained"
+        ]
+      },
+      {
+        "id": "s4-wave-6-ghoul-3",
+        "hp": 4,
+        "c": []
+      }
+    ]
+  }
+}

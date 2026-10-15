@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "result": {
+    "keys": [
+      "stageAction",
+      "pendingDMDrafts",
+      "resumeReview",
+      "activeReview",
+      "closeReview",
+      "allState",
+      "columns",
+      "targetTool",
+      "stageDamage",
+      "pauseAttack",
+      "run",
+      "turn",
+      "scene",
+      "isMap",
+      "currentActor",
+      "tokens",
+      "party",
+      "combat",
+      "encounters",
+      "commit",
+      "endTurn",
+      "toggleInitiative",
+      "rollEnemies",
+      "buildOrder",
+      "roll",
+      "previewDamage",
+      "recordActionUse",
+      "applyDamage",
+      "openCombat",
+      "openDamage",
+      "requests",
+      "approveRequest",
+      "dismissRequest",
+      "setReaction",
+      "openParty",
+      "setEncounterStatus",
+      "deployWave"
+    ],
+    "sc": {
+      "id": "redbrand-hideout",
+      "title": "Redbrand Hideout · Redbrand Hideout",
+      "image": "lmop-battle-maps/professional/redbrand-hideout.png",
+      "kind": "map",
+      "fog": true,
+      "gridColumns": 30,
+      "grid": true
+    }
+  }
+}

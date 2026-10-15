@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791838342268-xti4c4sw",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              2
+            ],
+            "total": 10,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:22 PM"
+          },
+          {
+            "id": "pa-1791838342269-kxw9i4mg",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              1
+            ],
+            "total": 6,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:22 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-5",
+            "text": "Guardroom Skeleton 5: 10 vs AC 13: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

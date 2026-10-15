@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791836759454-n3odfvov",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              19
+            ],
+            "total": 25,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:59 PM"
+          },
+          {
+            "id": "pa-1791836759454-ephfpz8j",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              5
+            ],
+            "total": 5,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:25:59 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-2",
+            "text": "Pen guard 2: 25 vs AC 14: hit, 5 cold → 5; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

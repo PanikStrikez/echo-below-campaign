@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-temple",
+      "round": 1,
+      "order": [
+        "s4-wave-19-wave-spider-2",
+        "s4-wave-19-wave-spider-3",
+        "pc-ringgo",
+        "pc-aldric",
+        "pc-pebble",
+        "s4-wave-19-nezznar-1",
+        "s4-wave-19-wave-spider-4",
+        "s4-wave-19-bugbear-2",
+        "s4-wave-19-bugbear-1",
+        "pc-donavan",
+        "pc-trista",
+        "s4-wave-19-wave-spider-1",
+        "s4-wave-18-vhalak-1"
+      ],
+      "index": 0
+    },
+    "nAC": 14,
+    "resources": [
+      {
+        "name": "1st-level slots",
+        "current": 3,
+        "max": 4
+      },
+      {
+        "name": "2nd-level slots",
+        "current": 3,
+        "max": 3
+      },
+      {
+        "name": "Spider staff charges",
+        "current": 10,
+        "max": 10
+      },
+      {
+        "name": "Innate darkness",
+        "current": 1,
+        "max": 1
+      },
+      {
+        "name": "Innate faerie fire",
+        "current": 1,
+        "max": 1
+      },
+      {
+        "name": "Healing potion",
+        "current": 1,
+        "max": 1
+      }
+    ]
+  }
+}

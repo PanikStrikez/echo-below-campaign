@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-18-vhalak-1",
+    "action": {
+      "actor": "s4-wave-18-vhalak-1",
+      "label": "Slam",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839128898-zdzgim12",
+          "label": "Slam · attack 1",
+          "notation": "1d20+6",
+          "parts": [
+            16
+          ],
+          "total": 22,
+          "natural": 16,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:28 PM"
+        },
+        {
+          "id": "pa-1791839128898-chphwo2y",
+          "label": "Slam · effect 1.1",
+          "notation": "1d6+4",
+          "parts": [
+            3
+          ],
+          "total": 7,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:28 PM"
+        },
+        {
+          "id": "pa-1791839128898-tf4nqryk",
+          "label": "Aldric · concentration DC 10",
+          "notation": "1d20+3",
+          "parts": [
+            10
+          ],
+          "total": 13,
+          "natural": 10,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:28 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 22 vs AC 12: hit, 7 bludgeoning → 7; temp HP absorbed 0, concentration held"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

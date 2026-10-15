@@ -1,0 +1,321 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "key": "grick",
+      "data": {
+        "name": "Grick",
+        "source": "2014 SRD 5.1, printed p. 318",
+        "book": "srd",
+        "page": 318,
+        "size": "Medium monstrosity",
+        "alignment": "neutral",
+        "cr": 2,
+        "xp": 450,
+        "ac": 14,
+        "hp": 27,
+        "hitDice": "6d8",
+        "speed": "30 ft.; climb 30 ft.",
+        "abilities": [
+          14,
+          14,
+          11,
+          3,
+          14,
+          5
+        ],
+        "saves": "",
+        "skills": "",
+        "senses": "Darkvision 60 ft.; passive Perception 12",
+        "languages": "—",
+        "resistances": "",
+        "vulnerabilities": "",
+        "immunities": "",
+        "conditionImmunities": "",
+        "traits": [
+          {
+            "name": "Stone Camouflage",
+            "text": "Advantage on Stealth checks to hide in rocky terrain."
+          },
+          {
+            "name": "Conditional resistance",
+            "text": "Resists bludgeoning, piercing, and slashing damage from nonmagical attacks. Apply this manually for the actual attack; do not auto-resist magical weapons."
+          }
+        ],
+        "actions": [
+          {
+            "name": "Multiattack",
+            "text": "One tentacles attack; if it hits, one beak attack against the same target."
+          },
+          {
+            "name": "Tentacles",
+            "bonus": 4,
+            "dice": "2d6+2",
+            "type": "slashing",
+            "range": "Melee 5 ft.",
+            "note": ""
+          },
+          {
+            "name": "Beak",
+            "bonus": 4,
+            "dice": "1d6+2",
+            "type": "piercing",
+            "range": "Melee 5 ft.; only after tentacles hit",
+            "note": ""
+          }
+        ],
+        "reactions": [],
+        "spells": [],
+        "variants": "Castle area 8: hides on an upper ledge. Check Stealth against Perception for surprise."
+      }
+    },
+    {
+      "key": "hobgoblin",
+      "data": {
+        "name": "Hobgoblin",
+        "source": "2014 SRD 5.1, printed p. 322",
+        "book": "srd",
+        "page": 322,
+        "size": "Medium humanoid (goblinoid)",
+        "alignment": "lawful evil",
+        "cr": 0.5,
+        "xp": 100,
+        "ac": 18,
+        "hp": 11,
+        "hitDice": "2d8+2",
+        "speed": "30 ft.",
+        "abilities": [
+          13,
+          12,
+          12,
+          10,
+          10,
+          9
+        ],
+        "saves": "",
+        "skills": "",
+        "senses": "Darkvision 60 ft.; passive Perception 10",
+        "languages": "Common, Goblin",
+        "resistances": "",
+        "vulnerabilities": "",
+        "immunities": "",
+        "conditionImmunities": "",
+        "traits": [
+          {
+            "name": "Martial Advantage",
+            "text": "Once per turn, add 2d6 to a weapon hit if a non-incapacitated ally is within 5 feet of the target."
+          }
+        ],
+        "actions": [
+          {
+            "name": "Longsword",
+            "bonus": 3,
+            "dice": "1d8+1",
+            "type": "slashing",
+            "range": "Melee 5 ft.; 1d10+1 with two hands",
+            "note": ""
+          },
+          {
+            "name": "Longbow",
+            "bonus": 3,
+            "dice": "1d8+1",
+            "type": "piercing",
+            "range": "Range 150/600 ft.",
+            "note": ""
+          }
+        ],
+        "reactions": [],
+        "spells": [],
+        "variants": "Targor in the optional returning war band has 20 HP; ordinary castle hobgoblins have 11 HP."
+      }
+    },
+    {
+      "key": "owlbear",
+      "data": {
+        "name": "Owlbear",
+        "source": "2014 SRD 5.1, printed pp. 339–340",
+        "book": "srd",
+        "page": 339,
+        "size": "Large monstrosity",
+        "alignment": "unaligned",
+        "cr": 3,
+        "xp": 700,
+        "ac": 13,
+        "hp": 59,
+        "hitDice": "7d10+21",
+        "speed": "40 ft.",
+        "abilities": [
+          20,
+          12,
+          17,
+          3,
+          12,
+          7
+        ],
+        "saves": "",
+        "skills": "Perception +3",
+        "senses": "Darkvision 60 ft.; passive Perception 13",
+        "languages": "—",
+        "resistances": "",
+        "vulnerabilities": "",
+        "immunities": "",
+        "conditionImmunities": "",
+        "traits": [
+          {
+            "name": "Keen Sight and Smell",
+            "text": "Advantage on Perception checks using sight or smell."
+          }
+        ],
+        "actions": [
+          {
+            "name": "Multiattack",
+            "text": "One beak and one claws attack."
+          },
+          {
+            "name": "Beak",
+            "bonus": 7,
+            "dice": "1d10+5",
+            "type": "piercing",
+            "range": "Melee 5 ft.",
+            "note": ""
+          },
+          {
+            "name": "Claws",
+            "bonus": 7,
+            "dice": "2d8+5",
+            "type": "slashing",
+            "range": "Melee 5 ft.",
+            "note": ""
+          }
+        ],
+        "reactions": [],
+        "spells": [],
+        "variants": "Castle area 13: fresh meat distracts it; if freed and unblocked, it flees."
+      }
+    },
+    {
+      "key": "doppelganger",
+      "data": {
+        "name": "Doppelganger",
+        "source": "2014 SRD 5.1, printed pp. 279–280",
+        "book": "srd",
+        "page": 279,
+        "size": "Medium monstrosity (shapechanger)",
+        "alignment": "neutral",
+        "cr": 3,
+        "xp": 700,
+        "ac": 14,
+        "hp": 52,
+        "hitDice": "8d8+16",
+        "speed": "30 ft.",
+        "abilities": [
+          11,
+          18,
+          14,
+          11,
+          12,
+          14
+        ],
+        "saves": "",
+        "skills": "Deception +6; Insight +3",
+        "senses": "Darkvision 60 ft.; passive Perception 11",
+        "languages": "Common",
+        "resistances": "",
+        "vulnerabilities": "",
+        "immunities": "",
+        "conditionImmunities": "charmed",
+        "traits": [
+          {
+            "name": "Shapechanger",
+            "text": "Action to take a Small or Medium humanoid form seen before, or return to true form; equipment does not transform."
+          },
+          {
+            "name": "Ambusher",
+            "text": "Advantage on attacks against surprised creatures in the first combat round."
+          },
+          {
+            "name": "Surprise Attack",
+            "text": "If it surprises a creature and hits in round 1, add 3d6 damage."
+          }
+        ],
+        "actions": [
+          {
+            "name": "Multiattack",
+            "text": "Two melee slam attacks."
+          },
+          {
+            "name": "Slam",
+            "bonus": 6,
+            "dice": "1d6+4",
+            "type": "bludgeoning",
+            "range": "Melee 5 ft.",
+            "note": ""
+          },
+          {
+            "name": "Read Thoughts",
+            "text": "Action to read one creature’s surface thoughts within 60 ft.; concentration applies and gives social-check advantages against that target."
+          }
+        ],
+        "reactions": [],
+        "spells": [],
+        "variants": "Vyerith in castle area 14 is disguised as a drow. Keep the true type private until discovered."
+      }
+    },
+    {
+      "key": "wolf",
+      "data": {
+        "name": "Wolf",
+        "source": "SRD 5.1 p. 393",
+        "book": "srd",
+        "page": 393,
+        "size": "Medium beast",
+        "alignment": "unaligned",
+        "cr": 0.25,
+        "xp": 50,
+        "ac": 13,
+        "hp": 11,
+        "hitDice": "2d8+2",
+        "speed": "40 ft.",
+        "abilities": [
+          12,
+          15,
+          12,
+          3,
+          12,
+          6
+        ],
+        "saves": "",
+        "skills": "Perception +3; Stealth +4",
+        "senses": "Passive Perception 13",
+        "languages": "—",
+        "resistances": "",
+        "vulnerabilities": "",
+        "immunities": "",
+        "conditionImmunities": "",
+        "traits": [
+          {
+            "name": "Keen Hearing and Smell",
+            "text": "Advantage on Perception checks using hearing or smell."
+          },
+          {
+            "name": "Pack Tactics",
+            "text": "Advantage on an attack if an ally is within 5 ft. of the target and is not incapacitated."
+          }
+        ],
+        "actions": [
+          {
+            "name": "Bite",
+            "bonus": 4,
+            "dice": "2d4+2",
+            "type": "piercing",
+            "range": "Melee 5 ft.",
+            "note": "DC 11 Strength save or prone."
+          }
+        ],
+        "reactions": [],
+        "spells": [],
+        "variants": "Ripper and kennel wolves: use the wolf block; check the adventure for their behavior."
+      }
+    }
+  ]
+}

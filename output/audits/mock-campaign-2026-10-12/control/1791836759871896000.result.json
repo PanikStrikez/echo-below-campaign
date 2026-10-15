@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791836760067-shn4ai9q",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              13
+            ],
+            "total": 19,
+            "natural": 13,
+            "public": true,
+            "kind": "digital",
+            "time": "2:26:00 PM"
+          },
+          {
+            "id": "pa-1791836760067-rhkvs206",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:26:00 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-pens-2",
+            "text": "Pen guard 2: 19 vs AC 14: hit, 6 bludgeoning → 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

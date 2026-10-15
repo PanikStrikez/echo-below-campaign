@@ -1,0 +1,184 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "s3-prep",
+      "title": "Before play · carry forward what actually happened"
+    },
+    {
+      "id": "s3-choice",
+      "title": "1 · Choose the lead, not the destination"
+    },
+    {
+      "id": "s3-travel",
+      "title": "2 · Triboar Trail and Neverwinter Wood"
+    },
+    {
+      "id": "s3-agatha",
+      "title": "Optional lead · Conyberry and Agatha"
+    },
+    {
+      "id": "s3-old-owl",
+      "title": "Optional lead · Old Owl Well"
+    },
+    {
+      "id": "s3-old-owl-fight",
+      "title": "If violence starts · Old Owl Well",
+      "encounter": "old-owl-well"
+    },
+    {
+      "id": "s3-wyvern",
+      "title": "Optional lead · Wyvern Tor"
+    },
+    {
+      "id": "s3-wyvern-fight",
+      "title": "If the camp fights · Wyvern Tor",
+      "encounter": "wyvern-tor"
+    },
+    {
+      "id": "s3-thundertree",
+      "title": "Optional lead · Reidoth at Thundertree"
+    },
+    {
+      "id": "s3-tt-1",
+      "title": "Thundertree 1 · Western cottage",
+      "encounter": "tt-blights-1"
+    },
+    {
+      "id": "s3-tt-2",
+      "title": "Thundertree 2 · Blighted cottages",
+      "encounter": "tt-blights-2"
+    },
+    {
+      "id": "s3-tt-3",
+      "title": "Thundertree 3 · The Brown Horse",
+      "encounter": "tt-zombies-3"
+    },
+    {
+      "id": "s3-tt-4",
+      "title": "Thundertree 4 · Reidoth’s watch"
+    },
+    {
+      "id": "s3-tt-5",
+      "title": "Thundertree 5 · Blighted farmhouse",
+      "encounter": "tt-blights-5"
+    },
+    {
+      "id": "s3-tt-6",
+      "title": "Thundertree 6 · Ruined store and webs",
+      "encounter": "tt-spiders-6"
+    },
+    {
+      "id": "s3-tt-7",
+      "title": "Thundertree 7 · Venomfang’s tower",
+      "encounter": "tt-dragon-7"
+    },
+    {
+      "id": "s3-tt-8",
+      "title": "Thundertree 8 · Old smithy",
+      "encounter": "tt-zombies-8"
+    },
+    {
+      "id": "s3-tt-9",
+      "title": "Thundertree 9 · Herbalist’s shop"
+    },
+    {
+      "id": "s3-tt-10",
+      "title": "Thundertree 10 · Town square"
+    },
+    {
+      "id": "s3-tt-11",
+      "title": "Thundertree 11 · Old garrison",
+      "encounter": "tt-zombies-11"
+    },
+    {
+      "id": "s3-tt-12",
+      "title": "Thundertree 12 · Weaver’s cottage",
+      "encounter": "tt-blights-12"
+    },
+    {
+      "id": "s3-tt-13",
+      "title": "Thundertree 13 · Dragon cultists",
+      "encounter": "tt-cultists-13"
+    },
+    {
+      "id": "s3-castle-sight",
+      "title": "3 · Cragmaw Castle comes into view"
+    },
+    {
+      "id": "s3-castle-enter",
+      "title": "4 · Begin castle exploration"
+    },
+    {
+      "id": "s3-area1",
+      "title": "Area 1 · Entrance and sentries",
+      "encounter": "castle-archers"
+    },
+    {
+      "id": "s3-area2",
+      "title": "Area 2 · Falling rubble",
+      "encounter": "castle-trap"
+    },
+    {
+      "id": "s3-area4",
+      "title": "Area 4 · Ruined barracks",
+      "encounter": "castle-barracks"
+    },
+    {
+      "id": "s3-area5",
+      "title": "Area 5 · Storeroom and Sildar’s gear"
+    },
+    {
+      "id": "s3-area6",
+      "title": "Area 6 · Hobgoblin barracks",
+      "encounter": "castle-hobgoblins"
+    },
+    {
+      "id": "s3-area7",
+      "title": "Area 7 · Banquet hall",
+      "encounter": "castle-banquet"
+    },
+    {
+      "id": "s3-area8",
+      "title": "Area 8 · Dark hall and grick",
+      "encounter": "castle-grick"
+    },
+    {
+      "id": "s3-area9",
+      "title": "Area 9 · Goblin shrine",
+      "encounter": "castle-shrine"
+    },
+    {
+      "id": "s3-area10",
+      "title": "Area 10 · South postern gate"
+    },
+    {
+      "id": "s3-area11",
+      "title": "Area 11 · Concealed north entrance"
+    },
+    {
+      "id": "s3-area12",
+      "title": "Area 12 · Guard barracks",
+      "encounter": "castle-guards"
+    },
+    {
+      "id": "s3-area13",
+      "title": "Area 13 · Owlbear tower",
+      "encounter": "castle-owlbear"
+    },
+    {
+      "id": "s3-area14",
+      "title": "Area 14 · Grol and Vyerith",
+      "encounter": "castle-king"
+    },
+    {
+      "id": "s3-warband",
+      "title": "Optional consequence · Returning war band",
+      "encounter": "castle-warband"
+    },
+    {
+      "id": "s3-close",
+      "title": "Close · Record the trail to the mine"
+    }
+  ]
+}

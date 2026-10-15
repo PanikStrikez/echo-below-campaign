@@ -1,0 +1,234 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-trista",
+      "from": 2,
+      "to": 3,
+      "beforeHP": 15,
+      "maxHP": 21,
+      "die": {
+        "die": 8,
+        "current": 3,
+        "max": 3,
+        "details": "3d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 3,
+            "max": 3
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "Focus Points",
+          "current": 3,
+          "max": 3
+        },
+        {
+          "name": "Uncanny Metabolism",
+          "current": 1,
+          "max": 1
+        }
+      ],
+      "features": [
+        "Martial Arts",
+        "Monk’s Focus",
+        "Unarmored Movement",
+        "Uncanny Metabolism",
+        "Deflect Attacks",
+        "Shadow Arts"
+      ]
+    },
+    {
+      "id": "pc-pebble",
+      "from": 2,
+      "to": 3,
+      "beforeHP": 16,
+      "maxHP": 23,
+      "die": {
+        "die": 10,
+        "current": 3,
+        "max": 3,
+        "details": "3d10",
+        "pools": [
+          {
+            "die": 10,
+            "current": 3,
+            "max": 3
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "Second Wind",
+          "current": 1,
+          "max": 1
+        },
+        {
+          "name": "Action Surge",
+          "current": 1,
+          "max": 1
+        }
+      ],
+      "features": [
+        "Interception",
+        "Crusher",
+        "Second Wind",
+        "Action Surge",
+        "Improved Critical"
+      ]
+    },
+    {
+      "id": "pc-ringgo",
+      "from": 2,
+      "to": 3,
+      "beforeHP": 17,
+      "maxHP": 24,
+      "die": {
+        "die": 8,
+        "current": 3,
+        "max": 3,
+        "details": "3d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 3,
+            "max": 3
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "Arrows",
+          "current": 16,
+          "max": 20
+        },
+        {
+          "name": "Hellish Rebuke",
+          "current": 1,
+          "max": 1
+        }
+      ],
+      "features": [
+        "Sneak Attack",
+        "Cunning Action",
+        "Expertise",
+        "Hellish Resistance",
+        "Infernal Legacy",
+        "Assassinate",
+        "Bonus Proficiencies",
+        "Training"
+      ]
+    },
+    {
+      "id": "pc-donavan",
+      "from": 2,
+      "to": 3,
+      "beforeHP": 16,
+      "maxHP": 24,
+      "die": {
+        "die": 6,
+        "current": 3,
+        "max": 3,
+        "details": "2d6 + 1d8",
+        "pools": [
+          {
+            "die": 6,
+            "current": 2,
+            "max": 2
+          },
+          {
+            "die": 8,
+            "current": 1,
+            "max": 1
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "1st-level shared spell slots",
+          "current": 4,
+          "max": 4
+        },
+        {
+          "name": "2nd-level shared spell slots · upcasting",
+          "current": 2,
+          "max": 2
+        },
+        {
+          "name": "Arcane Recovery",
+          "current": 1,
+          "max": 1
+        },
+        {
+          "name": "Awakened Spellbook quick ritual",
+          "current": 1,
+          "max": 1
+        }
+      ],
+      "features": [
+        "Arcane Recovery",
+        "Knowledge Domain",
+        "Blessings of Knowledge",
+        "Wizard Spellcasting",
+        "Cleric Spellcasting",
+        "Wizardly Quill",
+        "Awakened Spellbook",
+        "Training"
+      ]
+    },
+    {
+      "id": "pc-aldric",
+      "from": 2,
+      "to": 3,
+      "beforeHP": 16,
+      "maxHP": 23,
+      "die": {
+        "die": 6,
+        "current": 3,
+        "max": 3,
+        "details": "3d6",
+        "pools": [
+          {
+            "die": 6,
+            "current": 3,
+            "max": 3
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "1st-level spell slots",
+          "current": 4,
+          "max": 4
+        },
+        {
+          "name": "2nd-level spell slots",
+          "current": 2,
+          "max": 2
+        },
+        {
+          "name": "Knowledge from a Past Life",
+          "current": 2,
+          "max": 2
+        },
+        {
+          "name": "Arcane Recovery",
+          "current": 1,
+          "max": 1
+        }
+      ],
+      "features": [
+        "Arcane Recovery",
+        "Sculpt Spells",
+        "Evocation Savant",
+        "Knowledge from a Past Life",
+        "Deathless Nature",
+        "Training",
+        "Heart of Darkness"
+      ]
+    }
+  ]
+}

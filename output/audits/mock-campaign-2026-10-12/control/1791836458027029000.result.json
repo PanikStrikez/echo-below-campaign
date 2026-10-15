@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "card-1791836327639-qtjj94s",
+      "tokenId": "pc-trista",
+      "triggerActor": "pc-trista",
+      "triggerPoint": "start",
+      "remaining": 0,
+      "name": "Patient Defense + Dodge",
+      "condition": "",
+      "due": true,
+      "fired": true,
+      "repeatSave": false,
+      "note": "Spend 1 Focus Point to Disengage and Dodge. Movement, opportunity attacks, Dodge and difficult terrain are checked manually."
+    },
+    {
+      "id": "mock-dodge",
+      "tokenId": "pc-trista",
+      "name": "Dodging",
+      "triggerActor": "pc-trista",
+      "triggerPoint": "start",
+      "remaining": 0,
+      "condition": "",
+      "note": "Attackers seen have disadvantage; DEXsavesadvantage, untilnextturn",
+      "fired": true,
+      "due": true
+    }
+  ]
+}

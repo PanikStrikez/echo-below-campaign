@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "k": "campaign:default:index",
+      "bytes": 302343
+    },
+    {
+      "k": "campaign:default:session:session-01",
+      "bytes": 140790
+    },
+    {
+      "k": "campaign:practice-1791831430047-0aolt:index",
+      "bytes": 342293
+    },
+    {
+      "k": "campaign:practice-1791831430047-0aolt:session:session-01",
+      "bytes": 8274598
+    },
+    {
+      "k": "campaign:practice-1791831430047-0aolt:session:session-1791831446752-kvkr8",
+      "bytes": 9396562
+    },
+    {
+      "k": "campaign:practice-1791831430047-0aolt:session:session-1791834008846-0y4mj",
+      "bytes": 24002944
+    },
+    {
+      "k": "campaign:practice-1791831430047-0aolt:session:session-1791836883440-m1v2k",
+      "bytes": 15636564
+    },
+    {
+      "k": "campaigns:registry:v2",
+      "bytes": 248
+    },
+    {
+      "k": "mock-storage-probe",
+      "bytes": 5
+    },
+    {
+      "k": "recovery:default:1791831429851-hgteu",
+      "bytes": 476804
+    },
+    {
+      "k": "recovery:default:1791831430070-1m6o9",
+      "bytes": 515019
+    },
+    {
+      "k": "recovery:default:before-party-level-4-1791831429839",
+      "bytes": 375996
+    },
+    {
+      "k": "recovery:default:before-pebble-goron-traits-1791831429843",
+      "bytes": 388376
+    },
+    {
+      "k": "recovery:practice-1791831430047-0aolt:1791836960448-euqtr",
+      "bytes": 54799817
+    },
+    {
+      "k": "recovery:practice-1791831430047-0aolt:1791836974303-ifqck",
+      "bytes": 56402160
+    },
+    {
+      "k": "recovery:practice-1791831430047-0aolt:1791836976024-jq3l7",
+      "bytes": 58006097
+    },
+    {
+      "k": "recovery:practice-1791831430047-0aolt:1791837005727-z91c6",
+      "bytes": 59610764
+    },
+    {
+      "k": "recovery:practice-1791831430047-0aolt:1791837226816-hynqy",
+      "bytes": 65554382
+    }
+  ]
+}

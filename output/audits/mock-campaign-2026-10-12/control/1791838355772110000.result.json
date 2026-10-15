@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-south",
+      "round": 3,
+      "order": [
+        "pc-donavan",
+        "s4-wave-4-wave-skeleton-2",
+        "s4-wave-4-wave-skeleton-6",
+        "s4-wave-4-wave-skeleton-7",
+        "s4-wave-4-wave-skeleton-5",
+        "s4-wave-4-wave-skeleton-9",
+        "pc-pebble",
+        "pc-aldric",
+        "pc-ringgo",
+        "s4-wave-4-wave-skeleton-8",
+        "s4-wave-4-wave-skeleton-1",
+        "s4-wave-4-wave-skeleton-3",
+        "pc-trista",
+        "s4-wave-4-wave-skeleton-4"
+      ],
+      "index": 8
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 28,
+        "maxHp": 47
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45,
+        "maxHp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43,
+        "maxHp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 37,
+        "maxHp": 63
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 28,
+        "maxHp": 44
+      }
+    ],
+    "foes": [
+      {
+        "id": "s4-wave-4-wave-skeleton-9",
+        "hp": 4
+      }
+    ],
+    "due": []
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "ok": true,
+  "result": {
+    "inspect": {
+      "id": "1791836123881-heqkxtol2k6",
+      "label": "Ringgo examines pit boundary DC15",
+      "notation": "1d20+4",
+      "parts": [
+        4
+      ],
+      "total": 8,
+      "kind": "digital",
+      "time": "02:15 PM"
+    },
+    "rolls": [
+      {
+        "id": "pc-ringgo",
+        "roll": {
+          "id": "1791836123968-nivp1lwrc59",
+          "label": "Secured edge crossing DC10 pc-ringgo",
+          "notation": "1d20+6",
+          "parts": [
+            6
+          ],
+          "total": 12,
+          "kind": "digital",
+          "time": "02:15 PM"
+        }
+      },
+      {
+        "id": "pc-trista",
+        "roll": {
+          "id": "1791836124029-52dtlydl9z",
+          "label": "Secured edge crossing DC10 pc-trista",
+          "notation": "1d20+6",
+          "parts": [
+            4
+          ],
+          "total": 10,
+          "kind": "digital",
+          "time": "02:15 PM"
+        }
+      },
+      {
+        "id": "pc-donavan",
+        "roll": {
+          "id": "1791836124089-5iznccvczl3",
+          "label": "Secured edge crossing DC10 pc-donavan",
+          "notation": "1d20+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "kind": "digital",
+          "time": "02:15 PM"
+        }
+      },
+      {
+        "id": "pc-aldric",
+        "roll": {
+          "id": "1791836124148-7hmjp0e736",
+          "label": "Secured edge crossing DC10 pc-aldric",
+          "notation": "1d20+2",
+          "parts": [
+            18
+          ],
+          "total": 20,
+          "kind": "digital",
+          "time": "02:15 PM"
+        }
+      },
+      {
+        "id": "pc-pebble",
+        "roll": {
+          "id": "1791836124206-envajynmoy",
+          "label": "Secured edge crossing DC10 pc-pebble",
+          "notation": "1d20",
+          "parts": [
+            19
+          ],
+          "total": 19,
+          "kind": "digital",
+          "time": "02:15 PM"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [],
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 43
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 39
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 35
+      }
+    ]
+  }
+}

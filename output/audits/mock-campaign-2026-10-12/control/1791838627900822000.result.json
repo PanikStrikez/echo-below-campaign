@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "result": {
+    "hp": 42,
+    "HD": {
+      "die": 6,
+      "current": 4,
+      "max": 6,
+      "details": "6d6",
+      "pools": [
+        {
+          "die": 6,
+          "current": 4,
+          "max": 6
+        }
+      ]
+    },
+    "roll": {
+      "id": "1791838627982-4kx28mnl0oa",
+      "label": "Aldricshortrest2HD",
+      "notation": "2d6+6",
+      "parts": [
+        3,
+        5
+      ],
+      "total": 14,
+      "kind": "digital",
+      "time": "02:57 PM"
+    },
+    "recovery": {
+      "id": "aldric-arcane-recovery",
+      "name": "Arcane Recovery",
+      "max": 1,
+      "current": 0,
+      "restoreShort": 0,
+      "restoreLong": true,
+      "unit": "use",
+      "slotLevel": 0
+    }
+  }
+}

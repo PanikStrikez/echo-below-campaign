@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-temple",
+      "round": 3,
+      "order": [
+        "s4-wave-19-wave-spider-2",
+        "s4-wave-19-wave-spider-3",
+        "pc-ringgo",
+        "pc-aldric",
+        "pc-pebble",
+        "s4-wave-19-nezznar-1",
+        "s4-wave-19-wave-spider-4",
+        "s4-wave-19-bugbear-2",
+        "s4-wave-19-bugbear-1",
+        "pc-donavan",
+        "s4-wave-18-vhalak-1",
+        "pc-trista",
+        "s4-wave-19-wave-spider-1"
+      ],
+      "index": 7
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 43,
+        "maxHp": 47
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45,
+        "maxHp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43,
+        "maxHp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 39,
+        "maxHp": 63
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 35,
+        "maxHp": 44
+      }
+    ],
+    "foes": [
+      {
+        "id": "s4-wave-19-wave-spider-4",
+        "hp": 9
+      }
+    ],
+    "due": []
+  }
+}

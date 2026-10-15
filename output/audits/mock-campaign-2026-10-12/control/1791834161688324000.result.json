@@ -1,0 +1,92 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-ruffian-3",
+    "action": {
+      "actor": "s2-ruffian-3",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791834161752-ky9kb4v0",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            2
+          ],
+          "total": 6,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:41 PM"
+        },
+        {
+          "id": "pa-1791834161752-08chmdyt",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:42:41 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 6 vs AC 18: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "multiattackSecond": {
+        "actor": "s2-ruffian-3",
+        "label": "Shortsword",
+        "targets": [
+          "Pebble"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791834161801-6fnhqw0v",
+            "label": "Shortsword · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              8
+            ],
+            "total": 12,
+            "natural": 8,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:41 PM"
+          },
+          {
+            "id": "pa-1791834161801-8wxbfdm1",
+            "label": "Shortsword · effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              4
+            ],
+            "total": 6,
+            "natural": 4,
+            "public": false,
+            "kind": "digital",
+            "time": "1:42:41 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 12 vs AC 18: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "reactions": [],
+        "costs": []
+      }
+    }
+  }
+}

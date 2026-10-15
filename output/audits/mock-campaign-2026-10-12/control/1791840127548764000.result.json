@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-aldric",
+      "level": 7,
+      "maxHp": 51,
+      "className": "Wizard 7 · Evocation"
+    },
+    {
+      "id": "pc-pebble",
+      "level": 7,
+      "maxHp": 73,
+      "className": "Fighter 7 · Champion"
+    },
+    {
+      "id": "pc-trista",
+      "level": 7,
+      "maxHp": 56,
+      "className": "Monk 7 · Shadow"
+    },
+    {
+      "id": "pc-ringgo",
+      "level": 7,
+      "maxHp": 50,
+      "className": "Rogue 7 · Assassin"
+    },
+    {
+      "id": "pc-donavan",
+      "level": 7,
+      "maxHp": 52,
+      "className": "Wizard 6 / Cleric 1 · Scribes / Knowledge"
+    }
+  ]
+}

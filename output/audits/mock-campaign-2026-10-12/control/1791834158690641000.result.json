@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791834158725-ngf0qc22",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              13
+            ],
+            "total": 19,
+            "natural": 13,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:38 PM"
+          },
+          {
+            "id": "pa-1791834158725-x1eo627c",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              1
+            ],
+            "total": 5,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "1:42:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-ruffian-2",
+            "text": "Redbrand 2: 19 vs AC 14: hit, 5 piercing → 5; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

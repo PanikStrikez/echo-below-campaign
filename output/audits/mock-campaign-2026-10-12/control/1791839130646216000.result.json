@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-19-wave-spider-2",
+    "action": {
+      "actor": "s4-wave-19-wave-spider-2",
+      "label": "Bite",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839130739-tinysnld",
+          "label": "Bite · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            2
+          ],
+          "total": 7,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:30 PM"
+        },
+        {
+          "id": "pa-1791839130739-8jz46j8s",
+          "label": "Bite · effect 1.1",
+          "notation": "1d8+3",
+          "parts": [
+            5
+          ],
+          "total": 8,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:30 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 7 vs AC 18: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

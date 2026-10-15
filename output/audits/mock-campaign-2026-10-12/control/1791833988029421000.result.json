@@ -1,0 +1,199 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-trista",
+      "from": 1,
+      "to": 2,
+      "beforeHP": 11,
+      "maxHP": 15,
+      "die": {
+        "die": 8,
+        "current": 2,
+        "max": 2,
+        "details": "2d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 2,
+            "max": 2
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "Focus Points",
+          "current": 2,
+          "max": 2
+        },
+        {
+          "name": "Uncanny Metabolism",
+          "current": 1,
+          "max": 1
+        }
+      ],
+      "features": [
+        "Martial Arts",
+        "Monk’s Focus",
+        "Unarmored Movement",
+        "Uncanny Metabolism"
+      ]
+    },
+    {
+      "id": "pc-pebble",
+      "from": 1,
+      "to": 2,
+      "beforeHP": 12,
+      "maxHP": 16,
+      "die": {
+        "die": 10,
+        "current": 2,
+        "max": 2,
+        "details": "2d10",
+        "pools": [
+          {
+            "die": 10,
+            "current": 2,
+            "max": 2
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "Second Wind",
+          "current": 1,
+          "max": 1
+        },
+        {
+          "name": "Action Surge",
+          "current": 1,
+          "max": 1
+        }
+      ],
+      "features": [
+        "Interception",
+        "Crusher",
+        "Second Wind",
+        "Action Surge"
+      ]
+    },
+    {
+      "id": "pc-ringgo",
+      "from": 1,
+      "to": 2,
+      "beforeHP": 10,
+      "maxHP": 17,
+      "die": {
+        "die": 8,
+        "current": 2,
+        "max": 2,
+        "details": "2d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 2,
+            "max": 2
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "Arrows",
+          "current": 19,
+          "max": 20
+        }
+      ],
+      "features": [
+        "Sneak Attack",
+        "Cunning Action",
+        "Expertise",
+        "Hellish Resistance",
+        "Infernal Legacy",
+        "Bonus Proficiencies",
+        "Training"
+      ]
+    },
+    {
+      "id": "pc-donavan",
+      "from": 1,
+      "to": 2,
+      "beforeHP": 9,
+      "maxHP": 16,
+      "die": {
+        "die": 6,
+        "current": 2,
+        "max": 2,
+        "details": "2d6",
+        "pools": [
+          {
+            "die": 6,
+            "current": 2,
+            "max": 2
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "1st-level shared spell slots",
+          "current": 3,
+          "max": 3
+        },
+        {
+          "name": "Arcane Recovery",
+          "current": 1,
+          "max": 1
+        }
+      ],
+      "features": [
+        "Arcane Recovery",
+        "Wizard Spellcasting",
+        "Awakened Spellbook"
+      ]
+    },
+    {
+      "id": "pc-aldric",
+      "from": 1,
+      "to": 2,
+      "beforeHP": 9,
+      "maxHP": 16,
+      "die": {
+        "die": 6,
+        "current": 2,
+        "max": 2,
+        "details": "2d6",
+        "pools": [
+          {
+            "die": 6,
+            "current": 2,
+            "max": 2
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "1st-level spell slots",
+          "current": 3,
+          "max": 3
+        },
+        {
+          "name": "Knowledge from a Past Life",
+          "current": 2,
+          "max": 2
+        },
+        {
+          "name": "Arcane Recovery",
+          "current": 1,
+          "max": 1
+        }
+      ],
+      "features": [
+        "Arcane Recovery",
+        "Knowledge from a Past Life",
+        "Deathless Nature",
+        "Training",
+        "Heart of Darkness",
+        "Sculpt Spells"
+      ]
+    }
+  ]
+}

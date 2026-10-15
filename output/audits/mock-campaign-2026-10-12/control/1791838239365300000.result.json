@@ -1,0 +1,210 @@
+{
+  "ok": true,
+  "result": {
+    "wave": {
+      "version": 1,
+      "rooms": {
+        "1": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "2": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "3": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "4": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "5": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "6": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "7": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "8": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "9": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "10": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "11": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "12": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "13": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "14": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "15": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "16": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "17": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "18": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "19": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        },
+        "20": {
+          "status": "unvisited",
+          "treasure": "unrecorded",
+          "notes": "",
+          "remaining": ""
+        }
+      },
+      "outcomes": {
+        "gundren": "unknown",
+        "nundro": "unknown",
+        "nezznar": "unknown",
+        "forge": "unknown",
+        "redbrands": "unknown",
+        "custody": "unknown",
+        "mineShare": "unknown"
+      },
+      "phase": "exploring",
+      "minutes": 0,
+      "visit": 1,
+      "room": 1,
+      "resumeBeat": "s4-room-1",
+      "alert": "",
+      "promises": "",
+      "next": "",
+      "playerAccount": "",
+      "flameskull": {
+        "status": "unrecorded",
+        "destroyedAt": 0
+      },
+      "forgeItems": [],
+      "log": []
+    },
+    "combatKeys": [
+      "surprised",
+      "reactionUsed",
+      "ready",
+      "concentration",
+      "resistances",
+      "vulnerabilities",
+      "immunities"
+    ],
+    "party": [
+      {
+        "id": "pc-aldric",
+        "level": 6,
+        "hp": 44,
+        "skills": {
+          "rank": 0,
+          "override": null
+        }
+      },
+      {
+        "id": "pc-pebble",
+        "level": 6,
+        "hp": 63,
+        "skills": {
+          "rank": 0,
+          "override": null
+        }
+      },
+      {
+        "id": "pc-trista",
+        "level": 6,
+        "hp": 47,
+        "skills": {
+          "rank": 1,
+          "override": null
+        }
+      },
+      {
+        "id": "pc-ringgo",
+        "level": 6,
+        "hp": 43,
+        "skills": {
+          "rank": 2,
+          "override": null
+        }
+      },
+      {
+        "id": "pc-donavan",
+        "level": 6,
+        "hp": 45,
+        "skills": {
+          "rank": 0,
+          "override": null
+        }
+      }
+    ]
+  }
+}

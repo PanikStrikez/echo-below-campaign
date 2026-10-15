@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-6-ghoul-1",
+    "action": {
+      "actor": "s4-wave-6-ghoul-1",
+      "label": "Claws",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838391717-go4z4g1c",
+          "label": "Claws · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            7
+          ],
+          "total": 11,
+          "natural": 7,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:11 PM"
+        },
+        {
+          "id": "pa-1791838391717-soizz3n2",
+          "label": "Claws · effect 1.1",
+          "notation": "2d4+2",
+          "parts": [
+            3,
+            4
+          ],
+          "total": 9,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:11 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 11 vs AC 18: miss, 0 slashing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

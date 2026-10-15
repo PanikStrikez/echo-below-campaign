@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "1791837549430-f62gri0peqv",
+      "label": "Investigation threshold",
+      "notation": "1d20+6",
+      "parts": [
+        9
+      ],
+      "total": 15,
+      "kind": "digital",
+      "time": "02:39 PM"
+    },
+    {
+      "id": "1791837549524-3kgxgs4c0ey",
+      "label": "Stealth scout",
+      "notation": "1d20+11",
+      "parts": [
+        18
+      ],
+      "total": 29,
+      "kind": "digital",
+      "time": "02:39 PM"
+    },
+    {
+      "id": "1791837549580-i1t6r812fr9",
+      "label": "Pebble armor stealth disadvantage",
+      "notation": "dis 2d20+0",
+      "parts": [
+        17,
+        10
+      ],
+      "total": 10,
+      "kind": "digital",
+      "time": "02:39 PM"
+    }
+  ]
+}

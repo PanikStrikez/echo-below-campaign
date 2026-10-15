@@ -1,0 +1,95 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "s2-prep",
+      "title": "Before play · Session 1 handoff"
+    },
+    {
+      "id": "s2-arrival",
+      "title": "1 · Outside Barthen’s Provisions"
+    },
+    {
+      "id": "s2-barthen",
+      "title": "2 · Barthen’s Provisions"
+    },
+    {
+      "id": "s2-sildar",
+      "title": "3 · Sildar’s next step"
+    },
+    {
+      "id": "s2-inn",
+      "title": "4 · Stonehill Inn and rumors"
+    },
+    {
+      "id": "s2-town",
+      "title": "5 · Follow the party’s town lead"
+    },
+    {
+      "id": "s2-redbrands",
+      "title": "6 · Redbrand confrontation · optional",
+      "encounter": "redbrand-street"
+    },
+    {
+      "id": "s2-manor",
+      "title": "7 · If they reach Tresendar Manor"
+    },
+    {
+      "id": "s2-cellar",
+      "title": "8 · Cellar and cistern · area 1",
+      "encounter": "hideout-cellar"
+    },
+    {
+      "id": "s2-barracks",
+      "title": "9 · Redbrand barracks · area 2",
+      "encounter": "hideout-barracks"
+    },
+    {
+      "id": "s2-trap",
+      "title": "10 · Hall and hidden pit · area 3",
+      "encounter": "hideout-trap"
+    },
+    {
+      "id": "s2-crypt",
+      "title": "11 · Crypt · area 4",
+      "encounter": "hideout-crypt"
+    },
+    {
+      "id": "s2-pens",
+      "title": "12 · Slave pens · area 5",
+      "encounter": "hideout-pens"
+    },
+    {
+      "id": "s2-armory",
+      "title": "13 · Armory and storeroom · areas 6–7"
+    },
+    {
+      "id": "s2-crevasse",
+      "title": "14 · Crevasse and nothic · area 8",
+      "encounter": "hideout-crevasse"
+    },
+    {
+      "id": "s2-bugbears",
+      "title": "15 · Bugbears and Droop · area 9",
+      "encounter": "hideout-bugbears"
+    },
+    {
+      "id": "s2-common",
+      "title": "16 · Common room · area 10",
+      "encounter": "hideout-common"
+    },
+    {
+      "id": "s2-workshop",
+      "title": "17 · Wizard’s workshop · area 11"
+    },
+    {
+      "id": "s2-glasstaff",
+      "title": "18 · Glasstaff’s quarters · area 12",
+      "encounter": "hideout-glasstaff"
+    },
+    {
+      "id": "s2-close",
+      "title": "Close · What changed in Phandalin"
+    }
+  ]
+}

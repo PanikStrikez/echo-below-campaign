@@ -1,0 +1,250 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "s4-room-1",
+      "scene": "lmop-map-wave-south",
+      "run": [
+        "The dead dwarf is Tharden, Gundren’s brother, killed by Nezznar. Nundro was captured and is in area 20; the camp alone does not tell the characters his current location.",
+        "Useful ordinary provisions and mining equipment remain. Tharden wears boots of striding and springing; record discovery, identification, and ownership separately.",
+        "The pit is 10 feet wide and 20 feet deep. Without a rope, climbing its wall requires DC 15 Strength (Athletics). Failing by 5 or more causes a fall: 1d6 bludgeoning per 10 feet fallen, then prone.",
+        "From the pit bottom, the northwest passage leads to area 2; the east passage leads to area 3. The existing rope offers a practical way down; do not apply the no-rope DC to every descent."
+      ],
+      "choices": [
+        "Northwest: mine tunnels, area 2.",
+        "East: old entrance, area 3.",
+        "Return to the surface using the actual secured route."
+      ]
+    },
+    {
+      "id": "s4-room-2",
+      "scene": "lmop-map-wave-south",
+      "enc": "wave-2",
+      "run": [
+        "These older workings have ceilings only 6 feet high. Several branches end at abandoned rock faces.",
+        "One ochre jelly lurks in a dead end. It stalks intruders and tries to catch a lone target. Use its actual movement and opportunities; it does not appear in several passages at once.",
+        "Review its Split reaction before resolving slashing or lightning damage. Track each resulting jelly’s identity and HP if it splits.",
+        "There is no keyed treasure here. Use the private map to adjudicate the maze rather than inventing forced wrong turns."
+      ]
+    },
+    {
+      "id": "s4-room-3",
+      "scene": "lmop-map-wave-south",
+      "enc": "wave-3",
+      "run": [
+        "Ten stirges cling to the 30-foot-high ceiling. Roll one Dexterity (Stealth) check for the group and compare it with each character’s passive Perception if that character is not watching the ceiling; resolve active observation normally.",
+        "Use the 2014 surprise procedure individually for any creature that failed to notice the threat. Characters who detect them hear flapping as the attack begins.",
+        "The bones are remains of miners and invaders, not another skeleton encounter. Track attached stirges on their specific targets and remove them when detached or slain.",
+        "The old southern entrance was buried long ago. It is not a usable shortcut to the surface without a separately planned excavation."
+      ]
+    },
+    {
+      "id": "s4-room-4",
+      "scene": "lmop-map-wave-south",
+      "enc": "wave-4",
+      "run": [
+        "In the round after a living creature enters, the remains assemble into nine skeletons. Start combat at that trigger; they do not rise before someone enters.",
+        "The skeletons fight until destroyed. Keep survivors recorded if the party withdraws; a later visit does not create nine new skeletons.",
+        "Rubble and broken furniture can affect movement or cover only where actually present. No treasure is keyed here."
+      ]
+    },
+    {
+      "id": "s4-room-5",
+      "scene": "lmop-map-wave-south",
+      "run": [
+        "The papers crumble when touched. Someone who reads Dwarvish can make out remnants of ore weights and payments; there is no complete surviving ledger to take.",
+        "A locked iron strongbox sits behind the counter. Opening its lock requires thieves’ tools and DC 20 Dexterity.",
+        "Contents: 600 cp, 180 sp, 90 ep, and 60 gp. Add only money actually collected to party inventory; record an unopened or emptied box for the return visit."
+      ]
+    },
+    {
+      "id": "s4-room-6",
+      "scene": "lmop-map-wave-south",
+      "enc": "wave-6",
+      "run": [
+        "Listening at the partly open door: DC 10 Wisdom (Perception) hears crunching and splintering.",
+        "Three ghouls attack fresh prey immediately. They belong to the larger pack whose other seven members occupy area 9; these are separate starting groups, not replacements.",
+        "Review claw paralysis, the creature’s immunity exceptions, and end-of-turn saves. Mark a paralyzed target so subsequent attacks are resolved correctly.",
+        "If a pursuit moves these three elsewhere, update their location instead of deploying them again."
+      ]
+    },
+    {
+      "id": "s4-room-7",
+      "scene": "lmop-map-wave-south",
+      "run": [
+        "The northern storeroom is a secure resting place: the adventure explicitly says monsters do not come here. Its sound door can be blocked or barred from inside.",
+        "Do not roll routine wandering attacks inside this refuge. If the party knowingly leads an active pursuer here, resolve that specific pursuit openly before calling it secure.",
+        "The kegs are empty. Track rest duration, recovery choices, light, and ongoing conditions through the rest controls. A rest does not revive defeated enemies or replace taken treasure."
+      ],
+      "choices": [
+        "Use the Rest / retreat card to review recovery and the expedition record.",
+        "Continue through an already explored route after the players choose."
+      ]
+    },
+    {
+      "id": "s4-room-8",
+      "scene": "lmop-map-wave-south",
+      "enc": "wave-8",
+      "run": [
+        "Most fungi are harmless, and the glow lights the whole cavern. Attempting to cross disturbs the carpet and releases poison gas.",
+        "Each creature in the cavern makes DC 11 Constitution: failure deals 3d6 poison and causes Poisoned for 10 minutes; success avoids these effects. Do not apply half damage on success.",
+        "Gas disperses after 1 minute. Until then, each living creature ending its turn in the cavern repeats the save. Review poison immunities and resistances separately for each target.",
+        "The book does not give a fixed DC for every invented crossing method. Decide whether the plan avoids disturbance before rolling, state any ruling, and preserve player alternatives.",
+        "Record gas start/end time and each character’s condition. Pebble’s mineral interest is not evidence that this fungus is edible or that an unconfirmed ancestry trait grants poison immunity."
+      ]
+    },
+    {
+      "id": "s4-room-9",
+      "scene": "lmop-map-wave-great-cavern",
+      "enc": "wave-9",
+      "run": [
+        "Seven ghouls lurk on the western ledge. They notice light or noise elsewhere in this cavern and rush down to attack; they fight until destroyed.",
+        "The escarpments are 10 feet high. Climbing requires DC 12 Strength (Athletics). Falling or being knocked from the top deals 1d6 bludgeoning and leaves the creature prone.",
+        "Keep elevation, stairs, and routes of retreat visible on the DM map. These seven are additional to the three initially in area 6; reconcile any actual movement between groups.",
+        "The scale and stair positions come from the private p. 43 plan when the painted close-up differs."
+      ]
+    },
+    {
+      "id": "s4-room-10",
+      "scene": "lmop-map-wave-central",
+      "run": [
+        "The pool reaches 20 feet deep in the middle. The northeast stream is 3 feet deep, with only 2–3 feet of air above it; characters can wade along it to area 18.",
+        "Searching the pool reveals a skeleton on the bottom, 10 feet from shore under 10 feet of water. It is a former human wizard, not an active monster.",
+        "The skeleton has two platinum rings worth 75 gp each and a wand of magic missiles. Resolve actual underwater movement, air, retrieval, and identification; do not require an invented Perception DC just to replace the keyed discovery.",
+        "Record who has the wand and its charges before use. Show any discovery handout only after it is retrieved."
+      ],
+      "choices": [
+        "The northeast stream reaches the collapsed cavern, area 18.",
+        "The stairway east reaches the north barracks, area 11."
+      ]
+    },
+    {
+      "id": "s4-room-11",
+      "scene": "lmop-map-wave-central",
+      "enc": "wave-11",
+      "run": [
+        "Five bugbears serve Nezznar here and hold back the undead. Listening at either door with DC 10 Wisdom (Perception) hears hungry voices speaking Goblin.",
+        "The eastern door is barricaded from within: DC 20 Strength to force it. The west door is not given that barricade.",
+        "The largest bugbear carries 15 cp, 13 ep, and a potion of vitality. This is vitality, not a healing potion; use its actual item effects.",
+        "Bargaining, misdirection, and withdrawal remain possible if the players attempt them; the book gives no automatic friendly bargain. Track anyone sent elsewhere rather than spawning a replacement."
+      ]
+    },
+    {
+      "id": "s4-room-12",
+      "scene": "lmop-map-wave-smelter",
+      "enc": "wave-12",
+      "run": [
+        "Eight corpses are zombies. They rise against living creatures entering the room but pursue outside it for no more than one round. One flameskull follows its ancient order to prevent intruders passing.",
+        "Review the flameskull’s spell card before combat: its area damage is a major danger. Preserve actual spell use, concentration, defenses, and targets; do not grant unlimited fireballs.",
+        "A destroyed flameskull reforms after 1 hour unless its remains receive holy water, dispel magic, or remove curse. Record which method was used and the deadline; merely reducing HP to 0 is not permanent clearance.",
+        "The dry channel is 10 feet wide and its floor 5 feet below the room. No ability check is needed to scramble in or out. It runs north and east; beyond the room its ceiling is only 5 feet high.",
+        "Area 17 provides another route around these guardians. Do not force the party to win this encounter to reach the Forge."
+      ]
+    },
+    {
+      "id": "s4-room-13",
+      "scene": "lmop-map-wave-central",
+      "run": [
+        "The ceiling’s minerals are attractive but neither magical nor valuable. Do not silently turn Pebble’s taste for unusual stone into a magic-item reward.",
+        "A character proficient in Arcana senses subtle magic here; detect magic also reveals it. The aura strengthens toward the northern building, area 15.",
+        "The buildings use human proportions, unlike the dwarf-sized doors elsewhere. Area 14 is the former guest quarters; area 15 is the workshop.",
+        "No creature encounter or fixed treasure is keyed to this open cavern. If an actual wandering encounter occurs, use the wandering card and record it separately."
+      ]
+    },
+    {
+      "id": "s4-room-14",
+      "scene": "lmop-map-wave-central",
+      "enc": "wave-14",
+      "run": [
+        "The damaged doors need DC 15 Strength to wrench or smash open. Mormesk the wraith rises when a living creature enters. He attacks if no one attempts to reason with him.",
+        "If neither he nor his property has been harmed, he listens. A useful magic item, scroll, spellbook, or arcane knowledge plus DC 10 Charisma (Persuasion) can persuade him of an offering’s value.",
+        "After accepting a gift, he permits examination of his books and lets the party keep the hidden map. He offers the coins and gems for killing the spectator in area 15, but never willingly gives up his wooden pipe.",
+        "Unlocked chest: 1,100 cp, 160 sp, 50 ep, three diamonds worth 100 gp each, and a platinum-decorated wooden pipe worth 150 gp. Reward access depends on the actual bargain or defeat.",
+        "DC 12 Intelligence (Investigation) reveals a map sewn into one preserved book. Its destination is a DM-created future dungeon; record your chosen location before publishing it.",
+        "Mormesk is dangerous and self-interested, not a trustworthy guide to the whole mine. Track Life Drain’s maximum-HP reduction if combat occurs."
+      ],
+      "choices": [
+        "A gift can buy access without combat.",
+        "Rejecting his request to kill the guardian remains a valid choice.",
+        "A map can seed the next campaign chapter after the party chooses to follow it."
+      ]
+    },
+    {
+      "id": "s4-room-15",
+      "scene": "lmop-map-wave-forge",
+      "enc": "wave-15",
+      "run": [
+        "One spectator guards the workshop and still believes the mine operates. It does not attack merely because visitors speak; it attacks if they try to remove anything.",
+        "DC 15 Charisma (Deception) can convince it that one or more characters are wizards or miners authorized by the owners to end its employment. On success it returns to its home plane. Blinding it also makes it leave, believing it can no longer perform its task.",
+        "The north room’s door needs DC 15 Strength to force; the western double doors are damaged but slightly open. The northern workroom holds no additional keyed treasure.",
+        "DC 15 Intelligence (Arcana) identifies the brazier as the magical source. The depleted Forge cannot make permanent enchantments. A nonmagical weapon or armor bathed in its flame for at least 1 minute becomes +1 for 1d12 hours. The brazier cannot be removed.",
+        "The southeast table holds Lightbringer (+1 mace; commanded torch-like light; +1d6 radiant against undead while glowing) and Dragonguard (+1 breastplate; advantage on saves against dragon breath weapons). Claim only after resolving the guardian and record the actual bearer.",
+        "Use the Forge-use card for temporary items and expiry. Do not stack another +1 onto an already magical item or treat the fire as a permanent upgrade."
+      ],
+      "choices": [
+        "Discharge the guardian through deception, depart peacefully, or fight if the party chooses.",
+        "Mormesk’s demand is optional; the spectator can leave without being slain."
+      ]
+    },
+    {
+      "id": "s4-room-16",
+      "scene": "lmop-map-wave-north",
+      "run": [
+        "At normal level, the south ledge is 15 feet above water. A surge every 2 minutes raises the water 10 feet; after 1 minute it drops to its normal 20-foot depth.",
+        "The printed room has no automatic damaging wave attack or fixed swim DC. If characters enter, explain the current circumstances and adjudicate swimming, breath, rescue, and any stated ruling.",
+        "The sound suggests a larger cavern to the northeast, but that unkeyed continuation is not a prepared secret exit. Do not invent a safe passage without establishing it.",
+        "This is the physical source of the mine’s rhythmic booming. No Echo revelation is required to explain it."
+      ]
+    },
+    {
+      "id": "s4-room-17",
+      "scene": "lmop-map-wave-north",
+      "run": [
+        "The passage is only 4 feet high and strewn with rounded stones. Describe the restriction and apply squeezing only if a creature’s size and the actual passage dimensions require it.",
+        "This was an old route toward area 16. Water was first diverted toward the smelter, then redirected again by the collapse in area 18.",
+        "The surviving passage offers a bypass around the undead in area 12. Nezznar has not discovered this route in the initial state; do not give him that knowledge without a cause.",
+        "There is no keyed monster or treasure here. Record the newly known route so it remains available for retreat."
+      ]
+    },
+    {
+      "id": "s4-room-18",
+      "scene": "lmop-map-wave-north",
+      "enc": "wave-18",
+      "run": [
+        "Three bugbears are here initially: two digging in the rift, one guarding the west side. Vhalak, a doppelganger disguised as a male drow, supervises. If fighting starts, the two below climb up to join.",
+        "When two or more bugbears are killed, Vhalak attempts to retreat to area 19 and warn Nezznar. Move the same survivor token and keep its damage; successful escape is not automatic.",
+        "The rift is 20 feet deep. Climbing without a rope requires DC 10 Strength (Athletics); failure by 5 or more causes a fall for 1d6 bludgeoning per 10 feet fallen, then prone.",
+        "A crushed dwarf beneath heavy rubble wears gauntlets of ogre power. DC 20 Wisdom (Perception) finds the remains; each searching character may make one check per hour. Time spent searching matters.",
+        "If these occupants survive and hear fighting in area 19, they arrive after 3 rounds, immediately after the giant spiders’ initiative. Bring only actual available survivors, once."
+      ]
+    },
+    {
+      "id": "s4-room-19",
+      "scene": "lmop-map-wave-temple",
+      "enc": "wave-19",
+      "run": [
+        "Initial defenders: Nezznar, two bugbears, and four giant spiders. If warned, spiders hide behind pillars and Nezznar casts invisibility near the table. Roll the spiders’ Stealth. Their first move is to web targets before closing; Nezznar joins on the following round.",
+        "If Vhalak actually escaped area 18, it can pose as Nundro for a false-hostage ploy. The real Nundro remains in area 20; never duplicate Vhalak or assume it survived.",
+        "Unresolved occupants of area 18 can hear combat and arrive after 3 rounds, immediately after the spiders in initiative. Record the alarm round and relocate survivors rather than creating a new full wave.",
+        "Religion proficiency recognizes Dumathoin. DC 15 Intelligence (Investigation) reveals the apparent emerald eyes are worthless glass. Detect magic reveals strong abjuration. Removing either eye with DC 10 Strength triggers a room-wide collapse: DC 15 Dexterity, 4d10 bludgeoning and prone on failure, half damage on success.",
+        "The table has Nezznar’s exploration notes and maps. His sack holds 190 ep, 130 gp, 15 pp, nine 10-gp gems, and a 100-gp electrum ale mug. Nezznar carries a healing potion, spider staff, and the anvil-headed key to area 20; expended items do not reappear as loot.",
+        "Use the following Nezznar card for conversation, tactics, and consequences. Defeating him does not automatically clear the undead or rescue Nundro."
+      ]
+    },
+    {
+      "id": "s4-room-20",
+      "scene": "lmop-map-wave-north",
+      "run": [
+        "The door is locked: thieves’ tools and DC 15 Dexterity, or Nezznar’s anvil-headed key. Noisy activity here draws area 19’s attention if those enemies still can respond; Nezznar sends spiders to investigate.",
+        "The prisoner is Nundro, youngest Rockseeker brother, a dwarf commoner, bound and unconscious after captivity. The book does not assign him Gundren’s stable-at-0-HP state; assess and record his actual condition before resolving healing and care.",
+        "Once rescued and able to travel, he is grateful and offers to accompany the party during the remaining exploration. He knows no more about the mine’s layout than they do. Prefer a protected escort over silently treating him as a trained combat ally.",
+        "This room becomes a safe, comfortable rest site after Nezznar and his minions are dealt with. It is not automatically safe while enemies remain next door.",
+        "If rescued and alive at the adventure’s end, Nundro provides a 200-XP party award divided equally if using XP. Mark the reward pending until survival is known; do not award repeatedly on reload."
+      ],
+      "choices": [
+        "Escort Nundro out now, secure a rest, or continue with a stated protection plan.",
+        "If Gundren lives, arrange an actual reunion; if he died, let Nundro learn the truth from the party."
+      ]
+    }
+  ]
+}

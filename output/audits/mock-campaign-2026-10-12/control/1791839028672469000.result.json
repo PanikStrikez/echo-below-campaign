@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-19-wave-spider-3",
+    "web": {
+      "actor": "s4-wave-19-wave-spider-3",
+      "label": "Web",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839028757-c3vkyv15",
+          "label": "Web · attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            7
+          ],
+          "total": 12,
+          "natural": 7,
+          "public": false,
+          "kind": "digital",
+          "time": "3:03:48 PM"
+        },
+        {
+          "id": "pa-1791839028757-5t2v7wo9",
+          "label": "Web · effect 1.1",
+          "notation": "0",
+          "parts": [],
+          "total": 0,
+          "natural": null,
+          "public": false,
+          "kind": "fixed",
+          "time": "3:03:48 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 12 vs AC 12: hit, 0 bludgeoning → 0; temp HP absorbed 0, Restrained"
+        }
+      ],
+      "costs": []
+    }
+  }
+}

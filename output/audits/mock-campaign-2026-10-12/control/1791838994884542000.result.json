@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "lmop-map-wave-temple",
+    "round": 1,
+    "order": [
+      "s4-wave-19-wave-spider-2",
+      "s4-wave-19-wave-spider-3",
+      "pc-ringgo",
+      "pc-aldric",
+      "pc-pebble",
+      "s4-wave-19-nezznar-1",
+      "s4-wave-19-wave-spider-4",
+      "s4-wave-19-bugbear-2",
+      "s4-wave-19-bugbear-1",
+      "pc-donavan",
+      "pc-trista",
+      "s4-wave-19-wave-spider-1"
+    ],
+    "index": 0
+  }
+}

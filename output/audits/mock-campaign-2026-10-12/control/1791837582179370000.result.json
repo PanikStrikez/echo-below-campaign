@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s3-castle-guards-hobgoblin-1",
+    "action": {
+      "actor": "s3-castle-guards-hobgoblin-1",
+      "label": "Longsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791837582325-4b8wr0ox",
+          "label": "Longsword · attack 1",
+          "notation": "1d20+3",
+          "parts": [
+            9
+          ],
+          "total": 12,
+          "natural": 9,
+          "public": false,
+          "kind": "digital",
+          "time": "2:39:42 PM"
+        },
+        {
+          "id": "pa-1791837582325-vt5qi9sv",
+          "label": "Longsword · effect 1.1",
+          "notation": "1d8+1",
+          "parts": [
+            7
+          ],
+          "total": 8,
+          "natural": 7,
+          "public": false,
+          "kind": "digital",
+          "time": "2:39:42 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 12 vs AC 14: miss, 0 slashing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

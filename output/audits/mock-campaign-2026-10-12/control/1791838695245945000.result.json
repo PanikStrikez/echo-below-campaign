@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "lmop-map-wave-south",
+    "round": 1,
+    "order": [
+      "pc-ringgo",
+      "pc-donavan",
+      "pc-aldric",
+      "pc-trista",
+      "pc-pebble",
+      "s4-wave-2-ochre-jelly-1"
+    ],
+    "index": 0
+  }
+}

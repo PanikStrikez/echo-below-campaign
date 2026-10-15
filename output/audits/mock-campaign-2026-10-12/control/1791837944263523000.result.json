@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "v": "session-01",
+      "t": "Session 1 · Goblin Arrows"
+    },
+    {
+      "v": "session-1791831446752-kvkr8",
+      "t": "Session 6 · Wave Echo Cave expedition"
+    },
+    {
+      "v": "session-1791834008846-0y4mj",
+      "t": "MOCK Session 3 · Redbrand Hideout"
+    },
+    {
+      "v": "session-1791836883440-m1v2k",
+      "t": "MOCK Session 5 · Cragmaw Castle"
+    },
+    {
+      "v": "pack:next-session-4",
+      "t": "Session 4 · Phandalin after Glasstaff · create"
+    },
+    {
+      "v": "pack:next-session-5",
+      "t": "Session 5 · Leads and Cragmaw Castle · create"
+    },
+    {
+      "v": "pack:phandalin-aftermath-next",
+      "t": "Phandalin · After Glasstaff · create"
+    },
+    {
+      "v": "pack:lmop-part-4-visuals",
+      "t": "Session 4 · Wave Echo Cave · create"
+    },
+    {
+      "v": "pack:phandalin-waterdeep-transition",
+      "t": "Phandalin → Waterdeep · create"
+    },
+    {
+      "v": "pack:mending-court-home",
+      "t": "Mending Court · home · create"
+    },
+    {
+      "v": "pack:waterdeep-undermountain-1",
+      "t": "Waterdeep · First expedition · create"
+    },
+    {
+      "v": "pack:silent-library-expedition",
+      "t": "The Silent Library · create"
+    },
+    {
+      "v": "pack:lmop-part-3-visuals",
+      "t": "Part 3 · Wilderness and castle · create"
+    },
+    {
+      "v": "pack:cragmaw-continuation",
+      "t": "Cragmaw Hideout continuation · create"
+    }
+  ]
+}

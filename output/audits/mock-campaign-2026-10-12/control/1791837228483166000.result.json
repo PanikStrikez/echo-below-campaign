@@ -1,0 +1,117 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "s3-area1",
+      "run": [
+        "There are two goblins in each area-3 archer post, four total. They glance out only intermittently. Compare the party’s Stealth to their passive Perception rather than granting automatic detection.",
+        "If they see intruders, they shoot from behind arrow-slit cover and shout. They cannot fire directly at enemies who have passed the broken gate.",
+        "Their alarm can bring goblins from area 4 and hobgoblins from area 6 into area 2."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area2",
+      "run": [
+        "The hidden tripwire is spotted by passive Perception 20 or active DC 10 Wisdom (Perception) while searching this area. Once found, it is easy to avoid or disable without a check.",
+        "A creature that crosses the rubble without avoiding it triggers a ceiling collapse. Creatures in the marked area make DC 10 Dexterity saves: 3d6 bludgeoning on failure, half on success.",
+        "The noise alerts areas 3, 7, 8, and 9. Record the alarm before moving to another room."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area4",
+      "run": [
+        "Three goblins bunk here. A loud fight draws one goblin from area 7 to investigate; if that scout does not return or raises alarm, the others respond.",
+        "The eastern passage through rubble is safe despite its appearance."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area5",
+      "run": [
+        "The chain mail, heavy crossbow, and longsword belong to Sildar. Record whether the party returns them; his equipped combat card is appropriate only after he regains gear.",
+        "A small cask contains dwarven brandy. A second glass within one hour poisons the drinker for one hour, per the book."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area6",
+      "run": [
+        "Four hobgoblins defend this room and respond quickly to the sentries’ alarm. They usually ignore noise elsewhere unless their own room is threatened.",
+        "Hobgoblin: AC 18, HP 11, speed 30, longsword +3 for 1d8+1; longbow +3 for 1d8+1. Once per turn, Martial Advantage adds 2d6 when an ally is within 5 feet of the target.",
+        "A light, carved quarterstaff on the wall is worth 10 gp. Other mounted arms are ordinary."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area7",
+      "run": [
+        "Seven ordinary goblins and Yegg, their 12-HP cook, are here initially. Reconcile any scout sent to area 4 before deploying this wave.",
+        "If Yegg falls, surviving goblins flee east or west, avoiding the trapped north route. They need not fight to the last."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area8",
+      "run": [
+        "A grick watches from an upper rocky ledge. Compare its Stealth to the party’s Perception to determine who notices it; do not give automatic surprise.",
+        "Grick: AC 14, HP 27, climb 30; tentacles +4 for 2d6+2 slashing. If they hit, it can make a beak +4 for 1d6+2 piercing against the same target. Its resistance to nonmagical weapon damage needs manual review in the damage panel.",
+        "DC 10 Intelligence (Religion) identifies the old human gods in the carvings. A gold sun-elf statuette worth 100 gp is hidden under coal in the brazier. It can answer one augury-like question for a non-evil creature, then loses that power."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area9",
+      "run": [
+        "Lhupo, a goblin with 12 HP, and two ordinary goblins occupy the shrine. If they heard the grick fight, they hide behind the altar and cannot be surprised.",
+        "The human-made chalice, knife, and censer are worth 150 gp, 60 gp, and 120 gp respectively if taken."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area10",
+      "run": [
+        "The door is locked: DC 15 Dexterity with thieves’ tools or DC 25 Strength to break it. The goblins in area 7 can be heard from the arrow slits if the party pauses.",
+        "The goblins do not actively watch this path, but loud noise draws their attention and can raise the alarm."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area11",
+      "run": [
+        "From outside, DC 15 Wisdom (Perception) spots signs of a path to the concealed entrance. If actively searching the castle’s exterior for a hidden way in, DC 10 Wisdom (Perception) spots the canvas door.",
+        "This entrance can allow a quieter route toward the king’s side of the castle. Record whether the party leaves the canvas disturbed."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area12",
+      "run": [
+        "Two loyal hobgoblins guard this room. At the start of combat, one runs to warn Grol in area 14 and returns two rounds later if able.",
+        "Track that warning explicitly; it changes Vyerith’s position in the final room."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area13",
+      "run": [
+        "The owlbear has AC 13, HP 59, speed 40; one beak +7 for 1d10+5 and one claws +7 for 2d8+5 on its turn. It is dangerous for a level-2 party.",
+        "Fresh meat distracts it. If freed and not blocked, it flees the castle, attacking creatures that get in its way. Releasing it can earn the same printed XP as defeating it.",
+        "A chest on a high ledge requires DC 15 Wisdom (Perception) to notice; it holds 90 ep, 120 gp, a healing potion, silence scroll, and revivify scroll."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    },
+    {
+      "id": "s3-area14",
+      "run": [
+        "King Grol is a 45-HP bugbear. Snarl is an 18-HP wolf. Vyerith is a 52-HP doppelganger disguised as a drow emissary of the Black Spider; its true nature is secret.",
+        "The printed encounter makes Gundren a hostage, but actual play left him at an inn. Grol and Vyerith may still bargain over information or possessions they actually hold. Do not invent a new hostage or assume they have Gundren’s map.",
+        "If warned, Vyerith may hide near the northeast exit. If Grol falls, Vyerith may try to escape through area 11; track any item it actually carries.",
+        "The printed room has 220 sp, 160 ep, and three healing potions in a sack. Confirm the map’s current custody from actual play before placing it there.",
+        "Allow conversation, retreat, and pursuit. Record what the party finds and learns; Gundren’s safety is resolved separately at the inn."
+      ],
+      "scene": "lmop-map-cragmaw-castle"
+    }
+  ]
+}

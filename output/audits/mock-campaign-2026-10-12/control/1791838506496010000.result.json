@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "result": {
+    "heal": {
+      "actor": "pc-donavan",
+      "label": "Healing Word",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838506571-dgs6x2pf",
+          "label": "Healing Word · healing 1.1",
+          "notation": "2d4+3",
+          "parts": [
+            2,
+            1
+          ],
+          "total": 6,
+          "natural": 2,
+          "public": true,
+          "kind": "digital",
+          "time": "2:55:06 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 6 healing → 6; temp HP absorbed 0"
+        }
+      ],
+      "costs": [
+        {
+          "id": "donavan-slots-2",
+          "delta": -1
+        }
+      ]
+    },
+    "escape": {
+      "actor": "pc-donavan",
+      "label": "Disengage",
+      "targets": [],
+      "rolls": [],
+      "outcomes": [],
+      "costs": []
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838341417-cbj24h6z",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              3
+            ],
+            "total": 11,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:21 PM"
+          },
+          {
+            "id": "pa-1791838341417-zddk174q",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              3
+            ],
+            "total": 8,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:21 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-2",
+            "text": "Guardroom Skeleton 2: 11 vs AC 13: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791838341509-39rjjm5w",
+              "label": "Warhammer · attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                7
+              ],
+              "total": 15,
+              "natural": 7,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:21 PM"
+            },
+            {
+              "id": "pa-1791838341509-dn8fatib",
+              "label": "Warhammer · effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                1
+              ],
+              "total": 6,
+              "natural": 1,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:21 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-4-wave-skeleton-2",
+              "text": "Guardroom Skeleton 2: 15 vs AC 13: hit, 6 bludgeoning → 12; temp HP absorbed 0; vulnerabilities: bludgeoning"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  }
+}

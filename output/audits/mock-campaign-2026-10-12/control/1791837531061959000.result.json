@@ -1,0 +1,244 @@
+{
+  "ok": true,
+  "result": {
+    "enemy": "(r)=>{const first=__baseEnemyAttack(r),s=__mock.state.state,actor=s.tokens.find(t=>t.id===r.characterId);if(/ruffian/i.test(actor.type)&&actor.hp>0){let target=s.tokens.find(t=>t.id===r.targetIds[0]);if(target.hp<=0)target=s.tokens.find(t=>t.team==='pc'&&t.hp>0&&t.placed&&t.scene===s.scene);if(target){window.__extraAttack=true;try{first.multiattackSecond=__baseEnemyAttack(ECHO_COMBAT_ACTIONS.stage(s,{actorId:actor.id,actionType:'attack',actionIndex:0,targetIds:[target.id]}));}finally{window.__extraAttack=false}}}return first}",
+    "step": "()=>{\n const s=__mock.state.state,a=s.turn.order[s.turn.index],t=s.tokens.find(t=>t.id===a);if(!t)return {stop:'No actor'};\n if(s.combat.tokens[a]?.surprised){__mock.combat.endTurn();return {actor:a,status:'First surprised turn passed; reaction now available'}}\n if(t.hp<=0){if(t.team==='pc'){const roll=__mock.combat.roll(t.name+' death save',1,20,0,'normal');const d=s.party[a].death; if(roll.total===20){t.hp=1;s.party[a].hp=1;d.successes=d.failures=0;}else if(roll.total===1)d.failures+=2;else if(roll.total>=10)d.successes++;else d.failures++;d.stable=d.successes>=3;__mock.combat.commit('MOCK death save reviewed');__mock.combat.endTurn();return {actor:a,roll,death:d};}__mock.combat.endTurn();return {actor:a,status:'Defeated; turn passed'}}\n if(t.team==='pc'){\n  const actions=[];if(a==='pc-pebble'&&t.hp<=t.maxHp/2){const v=ECHO_COMBAT_ACTIONS.actorView(s,a),i=v.actions.findIndex(x=>x.name==='Second Wind');const pool=s.party[a].resources.find(x=>x.id==='pebble-second-wind');if(i>=0&&pool?.current>0)actions.push(__stageMock(a,'action',i,[a]));}\n  const enemies=__mock.state.state.tokens.filter(x=>x.team==='enemy'&&x.placed&&x.visible&&x.scene===s.scene&&x.hp>0);\n  if(!enemies.length)return {stop:'No hostile remains'};\n  const target=enemies.sort((x,y)=>Math.hypot(x.x-t.x,x.y-t.y)-Math.hypot(y.x-t.x,y.y-t.y))[0];\n  if(a==='pc-pebble'){const cur=__mock.state.state.tokens.find(x=>x.id===a);cur.x=target.x+2;cur.y=target.y;__mock.combat.commit('MOCK DM free drag within reviewed approach distance');}\n  if(a==='pc-trista'&&Math.hypot(target.x-t.x,target.y-t.y)*__mock.combat.columns()/100*5<=40){t.x=target.x+2;t.y=target.y;__mock.combat.commit('MOCK Trista approaches within declared speed, no planned movement');}actions.push(__mockPlayerAttack(a,target.id));\n  if(a==='pc-trista'&&Math.hypot(target.x-t.x,target.y-t.y)*__mock.combat.columns()/100*5<=5&&__mock.state.state.tokens.find(x=>x.id===target.id).hp>0){const v=ECHO_COMBAT_ACTIONS.actorView(__mock.state.state,a),i=v.attacks.findIndex(x=>/Martial Arts.*strike/i.test(x.name));if(i>=0)actions.push(__stageMock(a,'attack',i,[target.id]));}\n  __mock.combat.endTurn();return {actor:a,actions};\n }\n const living=s.tokens.filter(x=>x.team==='pc'&&x.placed&&x.scene===s.scene&&x.hp>0);if(!living.length)return {stop:'Party down; pause for ending/branch'};\n let target=living.sort((x,y)=>Math.hypot(x.x-t.x,x.y-t.y)-Math.hypot(y.x-t.x,y.y-t.y))[0];\n const v=ECHO_COMBAT_ACTIONS.actorView(s,a);let i=0;\n if(t.encounter==='road'&&/goblin-[12]$/.test(t.id)){i=v.attacks.findIndex(x=>/Shortbow/.test(x.name));target=s.tokens.find(x=>x.id===(t.id==='goblin-1'?'pc-donavan':'pc-aldric'));if(target.hp<=0)target=living[0];}\n else{t.x=target.x-2;t.y=target.y;__mock.combat.commit('MOCK enemy closes on nearest visible opponent');}\n const r=ECHO_COMBAT_ACTIONS.stage(__mock.state.state,{actorId:a,actionType:'attack',actionIndex:i,targetIds:[target.id]});const action=__mockEnemyAttack(r);__mock.combat.endTurn();return {actor:a,action};\n}",
+    "baseStep": "()=>{let s=__mock.state.state,a=s.turn.order[s.turn.index],t=s.tokens.find(t=>t.id===a);if(a==='pc-donavan'){let fallen=s.tokens.find(t=>t.team==='pc'&&t.placed&&t.hp<=0),own=s.party[a],pool=own.resources.find(x=>/1st.*slot/i.test(x.name)&&x.current>0);if(fallen&&own.level>=3&&pool){let v=ECHO_COMBAT_ACTIONS.actorView(s,a),i=v.spells.findIndex(x=>x.name==='Healing Word');if(i>=0)return {rescue:__stageMock(a,'spell',i,[fallen.id],{override:'Declared rescue on own turn'},{mode:'slot',resourceId:pool.id,concentration:'auto'})};}}\n if(t?.team==='enemy'&&/ruffian/i.test(t.id)){let all=s.tokens.filter(x=>x.encounter===t.encounter&&x.team==='enemy');if(all.filter(x=>x.hp>0).length===1&&all.filter(x=>x.hp<=0).length>=3){t.placed=false;__mock.combat.commit('MOCK prepared morale trigger: last ruffian flees');__mock.combat.endTurn();return {actor:a,status:'fled',morale:true};}}\n return __mockStep();}",
+    "beat": {
+      "id": "s3-area12",
+      "title": "Area 12 · Guard barracks",
+      "scene": "lmop-map-cragmaw-castle",
+      "encounter": "castle-guards",
+      "tv": "Reveal the east barracks; place its two guards when seen.",
+      "read": [
+        "Four pallets line a cramped guardroom. A coal brazier glows, and a curtain conceals an arch to the north.",
+        "The brazier's glow reaches the pallets more readily than it reaches beyond the hanging cloth. The curtain separates what you can see from what you can only hear. You can pause to listen, examine the guardroom, or decide who will stand nearest the covered arch."
+      ],
+      "ask": [
+        "Can the guards see you? Do you block the north route or let one run?"
+      ],
+      "run": [
+        "Two loyal hobgoblins guard this room. At the start of combat, one runs to warn Grol in area 14 and returns two rounds later if able.",
+        "Track that warning explicitly; it changes Vyerith’s position in the final room."
+      ],
+      "private": [
+        "Adventure p. 40."
+      ],
+      "flowVersion": 1,
+      "choices": [
+        "Area 10 · South postern gate",
+        "Area 11 · Concealed north entrance",
+        "Area 13 · Owlbear tower",
+        "Return to the castle map",
+        "Retreat along the known route",
+        "Close the session here"
+      ]
+    },
+    "tokens": [
+      {
+        "id": "s3-castle-archers-goblin-1",
+        "type": "goblin",
+        "enc": "castle-archers",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-archers-goblin-2",
+        "type": "goblin",
+        "enc": "castle-archers",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-archers-goblin-3",
+        "type": "goblin",
+        "enc": "castle-archers",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-archers-goblin-4",
+        "type": "goblin",
+        "enc": "castle-archers",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-barracks-goblin-1",
+        "type": "goblin",
+        "enc": "castle-barracks",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-barracks-goblin-2",
+        "type": "goblin",
+        "enc": "castle-barracks",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-barracks-goblin-3",
+        "type": "goblin",
+        "enc": "castle-barracks",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-hobgoblins-hobgoblin-1",
+        "type": "hobgoblin",
+        "enc": "castle-hobgoblins",
+        "hp": 11
+      },
+      {
+        "id": "s3-castle-hobgoblins-hobgoblin-2",
+        "type": "hobgoblin",
+        "enc": "castle-hobgoblins",
+        "hp": 11
+      },
+      {
+        "id": "s3-castle-hobgoblins-hobgoblin-3",
+        "type": "hobgoblin",
+        "enc": "castle-hobgoblins",
+        "hp": 11
+      },
+      {
+        "id": "s3-castle-hobgoblins-hobgoblin-4",
+        "type": "hobgoblin",
+        "enc": "castle-hobgoblins",
+        "hp": 11
+      },
+      {
+        "id": "s3-castle-banquet-goblin-1",
+        "type": "goblin",
+        "enc": "castle-banquet",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-banquet-goblin-2",
+        "type": "goblin",
+        "enc": "castle-banquet",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-banquet-goblin-3",
+        "type": "goblin",
+        "enc": "castle-banquet",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-banquet-goblin-4",
+        "type": "goblin",
+        "enc": "castle-banquet",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-banquet-goblin-5",
+        "type": "goblin",
+        "enc": "castle-banquet",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-banquet-goblin-6",
+        "type": "goblin",
+        "enc": "castle-banquet",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-banquet-goblin-7",
+        "type": "goblin",
+        "enc": "castle-banquet",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-grick-grick-1",
+        "type": "grick",
+        "enc": "castle-grick",
+        "hp": 27
+      },
+      {
+        "id": "s3-castle-shrine-goblin-1",
+        "type": "goblin",
+        "enc": "castle-shrine",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-shrine-goblin-2",
+        "type": "goblin",
+        "enc": "castle-shrine",
+        "hp": 7
+      },
+      {
+        "id": "s3-castle-guards-hobgoblin-1",
+        "type": "hobgoblin",
+        "enc": "castle-guards",
+        "hp": 11
+      },
+      {
+        "id": "s3-castle-guards-hobgoblin-2",
+        "type": "hobgoblin",
+        "enc": "castle-guards",
+        "hp": 11
+      },
+      {
+        "id": "s3-castle-owlbear-owlbear-1",
+        "type": "owlbear",
+        "enc": "castle-owlbear",
+        "hp": 59
+      },
+      {
+        "id": "s3-castle-warband-hobgoblin-1",
+        "type": "hobgoblin",
+        "enc": "castle-warband",
+        "hp": 11
+      },
+      {
+        "id": "s3-castle-warband-hobgoblin-2",
+        "type": "hobgoblin",
+        "enc": "castle-warband",
+        "hp": 11
+      },
+      {
+        "id": "s3-castle-warband-wolf-1",
+        "type": "wolf",
+        "enc": "castle-warband",
+        "hp": 11
+      },
+      {
+        "id": "s3-castle-warband-wolf-2",
+        "type": "wolf",
+        "enc": "castle-warband",
+        "hp": 11
+      },
+      {
+        "id": "s3-yegg",
+        "type": "goblin",
+        "enc": "castle-banquet",
+        "hp": 12
+      },
+      {
+        "id": "s3-lhupo",
+        "type": "goblin",
+        "enc": "castle-shrine",
+        "hp": 12
+      },
+      {
+        "id": "s3-grol",
+        "type": "bugbear",
+        "enc": "castle-king",
+        "hp": 45
+      },
+      {
+        "id": "s3-snarl",
+        "type": "wolf",
+        "enc": "castle-king",
+        "hp": 18
+      },
+      {
+        "id": "s3-vyerith",
+        "type": "doppelganger",
+        "enc": "castle-king",
+        "hp": 52
+      },
+      {
+        "id": "s3-targor",
+        "type": "hobgoblin",
+        "enc": "castle-warband",
+        "hp": 20
+      }
+    ]
+  }
+}

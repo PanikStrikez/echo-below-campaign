@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "result": {
+    "p": {
+      "id": "ringgo-shortbow",
+      "name": "Shortbow",
+      "type": "Action",
+      "attackBonus": 8,
+      "damageDice": "1d6+5",
+      "damageType": "piercing",
+      "saveAbility": "",
+      "saveDC": null,
+      "effect": "Range 80/320; Sneak Attack may add 2d6.",
+      "resourceId": "",
+      "cost": 1,
+      "prepared": true
+    },
+    "plan": {
+      "shield": false,
+      "effectRulingRequired": false,
+      "usage": "action",
+      "override": "",
+      "concentration": "keep",
+      "concentrationName": "",
+      "grantAction": false,
+      "costs": [],
+      "effectNote": "Range 80/320; Sneak Attack may add 2d6.",
+      "acknowledged": false,
+      "reactionsChecked": false,
+      "reminders": [],
+      "steps": [],
+      "partyCard": {
+        "kind": "weapon",
+        "choices": {
+          "sneak": false,
+          "qualifies": false,
+          "targetNotActed": false,
+          "surprised": false,
+          "piercerIndex": "",
+          "offhandEligible": false
+        },
+        "turnStamp": "lmop-map-wave-south:0:0:outside-combat"
+      },
+      "support": {
+        "status": "choice",
+        "label": "Choose details",
+        "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+        "source": {
+          "book": "2014 PHB",
+          "printedPage": 195,
+          "rule": "Attack and damage; weapon table p. 149",
+          "confidence": "verified rule / approved sheet"
+        }
+      }
+    }
+  }
+}

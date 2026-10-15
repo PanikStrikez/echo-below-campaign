@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-ringgo",
+    "label": "Rapier",
+    "targets": [
+      "Web on Pebble"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791839198566-hxdbjugf",
+        "label": "Rapier · attack 1",
+        "notation": "1d20+8",
+        "parts": [
+          5
+        ],
+        "total": 13,
+        "natural": 5,
+        "public": true,
+        "kind": "digital",
+        "time": "3:06:38 PM"
+      },
+      {
+        "id": "pa-1791839198566-ncc6bl9j",
+        "label": "Rapier · effect 1.1",
+        "notation": "1d8+5",
+        "parts": [
+          8
+        ],
+        "total": 13,
+        "natural": 8,
+        "public": true,
+        "kind": "digital",
+        "time": "3:06:38 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "mock-web-pebble",
+        "text": "Web on Pebble: 13 vs AC 10: hit, 13 piercing → 13; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  }
+}

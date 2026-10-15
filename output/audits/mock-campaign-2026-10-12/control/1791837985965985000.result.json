@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "result": {
+    "exists": true,
+    "options": [
+      "session-01",
+      "session-1791831446752-kvkr8",
+      "session-1791834008846-0y4mj",
+      "session-1791836883440-m1v2k",
+      "pack:next-session-4",
+      "pack:next-session-5",
+      "pack:phandalin-aftermath-next",
+      "pack:lmop-part-4-visuals",
+      "pack:phandalin-waterdeep-transition",
+      "pack:mending-court-home",
+      "pack:waterdeep-undermountain-1",
+      "pack:silent-library-expedition",
+      "pack:lmop-part-3-visuals",
+      "pack:cragmaw-continuation"
+    ]
+  }
+}

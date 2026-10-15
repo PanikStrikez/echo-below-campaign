@@ -1,0 +1,66 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "s2-barthen",
+      "read": [
+        "Warm lamplight falls over rope, trail food, tools, and stacks of ledgers. Behind the counter, a thin shopkeeper looks up. His welcoming smile falters as he counts the faces coming through the door. “Where is Gundren?”",
+        "The shelves are arranged for practical journeys rather than impressive purchases: coils of rope, provisions, and tools ready to be carried away. The counter is a place to set down goods or ask for help, and the shopkeeper waits to hear which business brought you through his door."
+      ],
+      "run": [
+        "Elmar Barthen expected Gundren but has not seen him. He mentions Nundro and Tharden Rockseeker, who have also been away. He knows no confirmed location for Gundren.",
+        "If the supplies are actually delivered, pay the published 10 gp per character and record it. If the wagon is absent or damaged, talk through what arrived before deciding payment.",
+        "Barthen can point to Stonehill Inn for lodgings. If asked about danger, he says Redbrands harass local merchants and frequent the Sleeping Giant. He does not stock armor or weapons."
+      ]
+    },
+    {
+      "id": "s2-sildar",
+      "read": [
+        "Sildar scans the main street. “I will ask after Iarno and find us a place to gather our thoughts. We need something firmer than a rumor before we choose a road.”",
+        "The street gives him several places to begin an inquiry, but his glance does not settle on an answer. Shops, passing residents, and the possibility of a shared meeting place lie within reach. You can accompany him or agree where to find one another after making your own inquiries."
+      ],
+      "run": [
+        "Sildar is looking for Iarno Albrek, a missing Lords’ Alliance member. He can help ask questions without taking the decision away from the party.",
+        "At this table, no confirmed Gundren destination was established in Session 1. If asked, describe only what Sildar actually witnessed or learned, then let the party investigate.",
+        "After lodging at Stonehill, Sildar wants to restore order and investigate both Iarno and the missing mine. He offers 500 gp if the party can locate Cragmaw Castle; this is a future reward, not a clue to its location.",
+        "Confirm his current armor and weapons before using his equipped combat statistics."
+      ]
+    },
+    {
+      "id": "s2-inn",
+      "read": [
+        "The inn is warmer and louder than the street. Supper, wet cloaks, and low conversation crowd the common room. Several people glance toward your travel-worn gear. A child at one table stops talking mid-sentence.",
+        "Tables and travel-worn clothing break up the room, leaving conversations close enough to approach without addressing everyone at once. The child's sudden quiet is one detail among several. You can choose a seat, seek the keeper, or listen before deciding whose story you want to hear."
+      ],
+      "run": [
+        "Toblen keeps the inn; Trilena knows families worried by the Redbrands. Pip knows his friend Carp found a tunnel near Tresendar Manor.",
+        "Give one relevant rumor per conversation. The Redbrands harass townsfolk, use the Sleeping Giant, and have a connection to Tresendar Manor.",
+        "The Dendrar family’s disappearance is a serious consequence of the gang’s actions. Let it become a player-chosen motive, not a forced quest."
+      ]
+    },
+    {
+      "id": "s2-town",
+      "run": [
+        "Lionshield Coster · Linene Graywind is brisk and wary of the gang. Say: “If you have something with a blue lion mark, bring it where I can see it.” She offers 50 gp for the stolen goods from Cragmaw Hideout once returned or located.",
+        "Alderleaf Farm · Qelline is a welcoming halfling farmer. Her son Carp found a tunnel near the manor; he can guide the party to area 8. Say: “Carp came back white as a sheet, but he remembers exactly where he went.” If asked how to find Cragmaw Castle, Qelline suggests Reidoth the druid in Thundertree, who knows the surrounding land; she cannot locate the castle herself.",
+        "Edermath Orchard · Daran is a retired adventurer who wants someone to teach the Redbrands a lesson. Say: “Bullies grow bold when decent folk look away.” He can also ask the party to investigate Old Owl Well; the Order of the Gauntlet is a later opportunity.",
+        "Townmaster’s Hall · Harbin Wester is fearful and downplays the Redbrands. His posted orc task offers 100 gp for a group that deals with the threat at Wyvern Tor. Say: “The notice is there. I would rather you looked east than stirred up trouble here.”",
+        "Miner’s Exchange · Halia Thornton offers 100 gp to remove Glasstaff and bring her his correspondence. She knows the Redbrands have a goblin who may know the castle’s location; she does not know it herself. DC 15 Insight can reveal that she wants control of the gang, not merely its end.",
+        "Shrine of Luck · Sister Garaele seeks news of Bowgentle’s spellbook through the banshee Agatha. She can offer three healing potions as payment if the party takes the errand. Say: “I need someone who can ask a delicate question and return with the answer.”",
+        "Sleeping Giant · Grista runs the rough tap house where Redbrands gather. Entering can trigger the street confrontation; the party may scout, talk, or leave. Do not start initiative merely because they approach."
+      ]
+    },
+    {
+      "id": "s2-redbrands",
+      "read": [
+        "Four people in dirty red cloaks drift into your path. One plants a boot on the boardwalk. Another watches the townsfolk make room without being asked. The first says, “Visitors usually learn how things work here before asking questions.” What do you do?",
+        "Their attention gives the encounter an immediate edge, but the street still offers space to speak or withdraw. Before anyone reaches for a weapon, you can look at where the strangers stand and decide whether to answer together, keep your distance, or let one person do the talking."
+      ],
+      "run": [
+        "Trigger after the party has engaged with town trouble, visits the Sleeping Giant, or investigates the manor. Do not force it immediately outside Barthen’s.",
+        "Four Redbrand Ruffians. Each has AC 14, HP 16, initiative +2, speed 30 ft.; Multiattack makes two shortsword attacks, +4 to hit for 1d6+2 piercing each. No automatic surprise.",
+        "If three are defeated, the last tries to escape toward Tresendar Manor. A captured ruffian can confirm Redbrands abducted Gundren, but rank-and-file members do not know his destination. Protect bystanders from automatic splash damage."
+      ]
+    }
+  ]
+}

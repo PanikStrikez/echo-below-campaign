@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791836668038-u726bxq3",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              20
+            ],
+            "total": 26,
+            "natural": 20,
+            "public": true,
+            "kind": "digital",
+            "time": "2:24:28 PM"
+          },
+          {
+            "id": "pa-1791836668038-736qv657",
+            "label": "Shortbow · effect 1.1",
+            "notation": "2d6+4",
+            "parts": [
+              6,
+              4
+            ],
+            "total": 14,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:24:28 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-2",
+            "text": "Barracks ruffian 2: 26 vs AC 14: critical hit, 14 piercing → 14; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

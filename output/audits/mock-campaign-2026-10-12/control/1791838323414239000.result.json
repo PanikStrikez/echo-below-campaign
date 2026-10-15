@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-pebble",
+      "roll": {
+        "id": "1791838323467-t0gsfjdoqf",
+        "label": "Pebble shortrestHitDice",
+        "notation": "2d10+4",
+        "parts": [
+          4,
+          1
+        ],
+        "total": 9,
+        "kind": "digital",
+        "time": "02:52 PM"
+      },
+      "hp": 44,
+      "HD": {
+        "die": 10,
+        "current": 4,
+        "max": 6,
+        "details": "6d10",
+        "pools": [
+          {
+            "die": 10,
+            "current": 4,
+            "max": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "pc-trista",
+      "roll": {
+        "id": "1791838323539-u1mfxkxcfk",
+        "label": "Trista shortrestHitDice",
+        "notation": "1d8+4",
+        "parts": [
+          3
+        ],
+        "total": 7,
+        "kind": "digital",
+        "time": "02:52 PM"
+      },
+      "hp": 47,
+      "HD": {
+        "die": 8,
+        "current": 5,
+        "max": 6,
+        "details": "6d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 5,
+            "max": 6
+          }
+        ]
+      }
+    }
+  ]
+}

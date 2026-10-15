@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-aldric",
+      "spells": [
+        {
+          "name": "Fire Bolt"
+        },
+        {
+          "name": "Web"
+        },
+        {
+          "name": "Fireball"
+        }
+      ]
+    },
+    {
+      "id": "pc-donavan",
+      "spells": [
+        {
+          "name": "Ray of Frost"
+        },
+        {
+          "name": "Web"
+        }
+      ]
+    }
+  ]
+}

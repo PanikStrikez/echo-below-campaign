@@ -1,0 +1,93 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "actor": "pc-donavan",
+      "actions": [
+        {
+          "actor": "pc-donavan",
+          "label": "Ray of Frost",
+          "rolls": [
+            {
+              "id": "pa-1791834147559-f3imaqe4",
+              "label": "Ray of Frost · attack 1",
+              "notation": "1d20+6",
+              "parts": [
+                17
+              ],
+              "total": 23,
+              "natural": 17,
+              "public": true,
+              "kind": "digital",
+              "time": "1:42:27 PM"
+            },
+            {
+              "id": "pa-1791834147559-4z6wqbpk",
+              "label": "Ray of Frost · effect 1.1",
+              "notation": "1d8",
+              "parts": [
+                6
+              ],
+              "total": 6,
+              "natural": 6,
+              "public": true,
+              "kind": "digital",
+              "time": "1:42:27 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s2-ruffian-1",
+              "text": "Redbrand 1: 23 vs AC 14: hit, 6 cold → 6; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      ]
+    },
+    {
+      "actor": "pc-pebble",
+      "actions": [
+        {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791834147727-f5nzs7vj",
+              "label": "Warhammer · attack 1",
+              "notation": "1d20+6",
+              "parts": [
+                1
+              ],
+              "total": 7,
+              "natural": 1,
+              "public": true,
+              "kind": "digital",
+              "time": "1:42:27 PM"
+            },
+            {
+              "id": "pa-1791834147727-8qsfiiiq",
+              "label": "Warhammer · effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                1
+              ],
+              "total": 5,
+              "natural": 1,
+              "public": true,
+              "kind": "digital",
+              "time": "1:42:27 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s2-ruffian-3",
+              "text": "Redbrand 3: 7 vs AC 14: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      ]
+    }
+  ]
+}

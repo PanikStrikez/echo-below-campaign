@@ -1,0 +1,372 @@
+{
+  "ok": true,
+  "result": {
+    "rest": [
+      {
+        "id": "pc-trista",
+        "hp": 47,
+        "HD": {
+          "die": 8,
+          "current": 6,
+          "max": 6,
+          "details": "6d8",
+          "pools": [
+            {
+              "die": 8,
+              "current": 6,
+              "max": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 63,
+        "HD": {
+          "die": 10,
+          "current": 6,
+          "max": 6,
+          "details": "6d10",
+          "pools": [
+            {
+              "die": 10,
+              "current": 6,
+              "max": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45,
+        "HD": {
+          "die": 6,
+          "current": 6,
+          "max": 6,
+          "details": "5d6 + 1d8",
+          "pools": [
+            {
+              "die": 6,
+              "current": 5,
+              "max": 5
+            },
+            {
+              "die": 8,
+              "current": 1,
+              "max": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43,
+        "HD": {
+          "die": 8,
+          "current": 6,
+          "max": 6,
+          "details": "6d8",
+          "pools": [
+            {
+              "die": 8,
+              "current": 6,
+              "max": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 44,
+        "HD": {
+          "die": 6,
+          "current": 6,
+          "max": 6,
+          "details": "6d6",
+          "pools": [
+            {
+              "die": 6,
+              "current": 6,
+              "max": 6
+            }
+          ]
+        }
+      }
+    ],
+    "advance": [
+      {
+        "id": "pc-trista",
+        "from": 6,
+        "to": 7,
+        "beforeHP": 47,
+        "maxHP": 56,
+        "die": {
+          "die": 8,
+          "current": 7,
+          "max": 7,
+          "details": "7d8",
+          "pools": [
+            {
+              "die": 8,
+              "current": 7,
+              "max": 7
+            }
+          ]
+        },
+        "resources": [
+          {
+            "name": "Focus Points",
+            "current": 7,
+            "max": 7
+          },
+          {
+            "name": "Uncanny Metabolism",
+            "current": 1,
+            "max": 1
+          }
+        ],
+        "features": [
+          "Martial Arts",
+          "Monk’s Focus",
+          "Unarmored Movement",
+          "Uncanny Metabolism",
+          "Deflect Attacks",
+          "Shadow Arts",
+          "Slow Fall",
+          "Speedy",
+          "Extra Attack",
+          "Stunning Strike",
+          "Empowered Strikes"
+        ]
+      },
+      {
+        "id": "pc-pebble",
+        "from": 6,
+        "to": 7,
+        "beforeHP": 63,
+        "maxHP": 73,
+        "die": {
+          "die": 10,
+          "current": 7,
+          "max": 7,
+          "details": "7d10",
+          "pools": [
+            {
+              "die": 10,
+              "current": 7,
+              "max": 7
+            }
+          ]
+        },
+        "resources": [
+          {
+            "name": "Second Wind",
+            "current": 1,
+            "max": 1
+          },
+          {
+            "name": "Action Surge",
+            "current": 1,
+            "max": 1
+          }
+        ],
+        "features": [
+          "Interception",
+          "Crusher",
+          "Second Wind",
+          "Action Surge",
+          "Improved Critical",
+          "Tough",
+          "Extra Attack"
+        ]
+      },
+      {
+        "id": "pc-ringgo",
+        "from": 6,
+        "to": 7,
+        "beforeHP": 43,
+        "maxHP": 50,
+        "die": {
+          "die": 8,
+          "current": 7,
+          "max": 7,
+          "details": "7d8",
+          "pools": [
+            {
+              "die": 8,
+              "current": 7,
+              "max": 7
+            }
+          ]
+        },
+        "resources": [
+          {
+            "name": "Arrows",
+            "current": 17,
+            "max": 40
+          },
+          {
+            "name": "Hellish Rebuke",
+            "current": 1,
+            "max": 1
+          },
+          {
+            "name": "Recovered healing potion",
+            "current": 0,
+            "max": 1
+          }
+        ],
+        "features": [
+          "Sneak Attack",
+          "Cunning Action",
+          "Expertise",
+          "Hellish Resistance",
+          "Infernal Legacy",
+          "Assassinate",
+          "Bonus Proficiencies",
+          "Training",
+          "Piercer",
+          "Uncanny Dodge"
+        ]
+      },
+      {
+        "id": "pc-donavan",
+        "from": 6,
+        "to": 7,
+        "beforeHP": 45,
+        "maxHP": 52,
+        "die": {
+          "die": 6,
+          "current": 7,
+          "max": 7,
+          "details": "6d6 + 1d8",
+          "pools": [
+            {
+              "die": 6,
+              "current": 6,
+              "max": 6
+            },
+            {
+              "die": 8,
+              "current": 1,
+              "max": 1
+            }
+          ]
+        },
+        "resources": [
+          {
+            "name": "1st-level shared spell slots",
+            "current": 4,
+            "max": 4
+          },
+          {
+            "name": "2nd-level shared spell slots · upcasting",
+            "current": 3,
+            "max": 3
+          },
+          {
+            "name": "Arcane Recovery",
+            "current": 1,
+            "max": 1
+          },
+          {
+            "name": "Awakened Spellbook quick ritual",
+            "current": 1,
+            "max": 1
+          },
+          {
+            "name": "3-level spell slots",
+            "current": 3,
+            "max": 3
+          },
+          {
+            "name": "4-level spell slots",
+            "current": 1,
+            "max": 1
+          }
+        ],
+        "features": [
+          "Arcane Recovery",
+          "Knowledge Domain",
+          "Blessings of Knowledge",
+          "Wizard Spellcasting",
+          "Cleric Spellcasting",
+          "Wizardly Quill",
+          "Awakened Spellbook",
+          "Training",
+          "Mock spell selection pending review level 4",
+          "Mock spell selection pending review level 5",
+          "Mock spell selection pending review level 6",
+          "Mock spell selection pending review level 7"
+        ]
+      },
+      {
+        "id": "pc-aldric",
+        "from": 6,
+        "to": 7,
+        "beforeHP": 44,
+        "maxHP": 51,
+        "die": {
+          "die": 6,
+          "current": 7,
+          "max": 7,
+          "details": "7d6",
+          "pools": [
+            {
+              "die": 6,
+              "current": 7,
+              "max": 7
+            }
+          ]
+        },
+        "resources": [
+          {
+            "name": "1st-level spell slots",
+            "current": 4,
+            "max": 4
+          },
+          {
+            "name": "2nd-level spell slots",
+            "current": 3,
+            "max": 3
+          },
+          {
+            "name": "Knowledge from a Past Life",
+            "current": 2,
+            "max": 2
+          },
+          {
+            "name": "Arcane Recovery",
+            "current": 1,
+            "max": 1
+          },
+          {
+            "name": "3-level spell slots",
+            "current": 3,
+            "max": 3
+          },
+          {
+            "name": "4-level spell slots",
+            "current": 1,
+            "max": 1
+          }
+        ],
+        "features": [
+          "Arcane Recovery",
+          "Sculpt Spells",
+          "Evocation Savant",
+          "Knowledge from a Past Life",
+          "Deathless Nature",
+          "Training",
+          "Heart of Darkness",
+          "Mock ASI: Intelligence +2",
+          "Mock spell selection pending review level 4",
+          "Mock spell selection pending review level 5",
+          "Mock spell selection pending review level 6",
+          "Potent Cantrip",
+          "Mock spell selection pending review level 7"
+        ]
+      }
+    ]
+  }
+}

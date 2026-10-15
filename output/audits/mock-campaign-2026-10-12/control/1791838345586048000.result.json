@@ -1,0 +1,98 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-south",
+      "round": 2,
+      "order": [
+        "pc-donavan",
+        "s4-wave-4-wave-skeleton-2",
+        "s4-wave-4-wave-skeleton-6",
+        "s4-wave-4-wave-skeleton-7",
+        "s4-wave-4-wave-skeleton-5",
+        "s4-wave-4-wave-skeleton-9",
+        "pc-pebble",
+        "pc-aldric",
+        "pc-ringgo",
+        "s4-wave-4-wave-skeleton-8",
+        "s4-wave-4-wave-skeleton-1",
+        "s4-wave-4-wave-skeleton-3",
+        "pc-trista",
+        "s4-wave-4-wave-skeleton-4"
+      ],
+      "index": 0
+    },
+    "hp": [
+      {
+        "id": "pc-trista",
+        "hp": 47,
+        "maxHp": 47
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45,
+        "maxHp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43,
+        "maxHp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 37,
+        "maxHp": 63
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 28,
+        "maxHp": 44
+      }
+    ],
+    "foes": [
+      {
+        "id": "s4-wave-4-wave-skeleton-3",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-4",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-5",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-6",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-7",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-8",
+        "hp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-9",
+        "hp": 13
+      }
+    ],
+    "due": [
+      {
+        "id": "card-1791838337145-nsmhnp3",
+        "tokenId": "s4-wave-4-wave-skeleton-1",
+        "triggerActor": "pc-donavan",
+        "triggerPoint": "start",
+        "remaining": 0,
+        "name": "Ray of Frost · speed −10 ft",
+        "condition": "",
+        "due": true,
+        "fired": true,
+        "repeatSave": false,
+        "note": "Apply until the caster’s next turn starts. Movement remains manual."
+      }
+    ]
+  }
+}

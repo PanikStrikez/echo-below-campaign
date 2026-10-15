@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791838277213-dpgympof",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              10
+            ],
+            "total": 18,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:17 PM"
+          },
+          {
+            "id": "pa-1791838277213-wzdmvbf1",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              2
+            ],
+            "total": 7,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:17 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-4",
+            "text": "Stirge 4: 18 vs AC 14: hit, 7 piercing → 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

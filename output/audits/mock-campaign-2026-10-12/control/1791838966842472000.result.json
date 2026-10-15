@@ -1,0 +1,107 @@
+{
+  "ok": true,
+  "result": {
+    "name": "Nezznar",
+    "attacks": [
+      {
+        "name": "Spider Staff",
+        "type": "Action",
+        "attackBonus": 1,
+        "damageDice": "1d6-1",
+        "damageType": "bludgeoning",
+        "effect": "Add 1d6 poison to the same hit. Weapon attack, not a spell.",
+        "source": "Lost Mine of Phandelver (2014), appendix B, printed p. 59",
+        "resourceId": "",
+        "cost": 0
+      },
+      {
+        "name": "Ray of Frost",
+        "type": "Action",
+        "attackBonus": 5,
+        "damageDice": "1d8",
+        "damageType": "cold",
+        "effect": "On a hit, target speed reduced by 10 ft. until start of Nezznar’s next turn. Level-4 caster: one damage die. PHB 2014 p. 271.",
+        "source": "Lost Mine of Phandelver (2014), appendix B, printed p. 59",
+        "resourceId": "",
+        "cost": 0
+      },
+      {
+        "name": "Shocking Grasp",
+        "type": "Action",
+        "attackBonus": 5,
+        "damageDice": "1d8",
+        "damageType": "lightning",
+        "effect": "Advantage against metal armor; on hit target cannot take reactions until start of its next turn. PHB 2014 p. 275.",
+        "source": "Lost Mine of Phandelver (2014), appendix B, printed p. 59",
+        "resourceId": "",
+        "cost": 0
+      }
+    ],
+    "actions": [
+      {
+        "name": "Staff · extra poison",
+        "type": "Action",
+        "effect": "No saving throw is specified for this staff’s extra weapon damage.",
+        "damageDice": "1d6",
+        "damageType": "poison",
+        "source": "Lost Mine of Phandelver (2014), appendix B, printed p. 59"
+      },
+      {
+        "name": "Magic Missile · one dart",
+        "type": "Action",
+        "effect": "Three darts using a 1st-level slot; four at 2nd level. Assign each dart before damage. Shield blocks them. PHB 2014 p. 257.",
+        "damageDice": "1d4+1",
+        "damageType": "force",
+        "source": "Lost Mine of Phandelver (2014), appendix B, printed p. 59"
+      },
+      {
+        "name": "Potion of Healing",
+        "type": "Action",
+        "effect": "One potion; use the campaign’s 2014 action cost unless a table ruling overrides it. LMoP p. 53.",
+        "damageDice": "2d4+2",
+        "damageType": "healing",
+        "source": "Lost Mine of Phandelver (2014), appendix B, printed p. 59"
+      }
+    ],
+    "spells": [],
+    "features": [],
+    "resources": [
+      {
+        "name": "1st-level slots",
+        "current": 4,
+        "max": 4,
+        "id": "npc-resource-0"
+      },
+      {
+        "name": "2nd-level slots",
+        "current": 3,
+        "max": 3,
+        "id": "npc-resource-1"
+      },
+      {
+        "name": "Spider staff charges",
+        "current": 10,
+        "max": 10,
+        "id": "npc-resource-2"
+      },
+      {
+        "name": "Innate darkness",
+        "current": 1,
+        "max": 1,
+        "id": "npc-resource-3"
+      },
+      {
+        "name": "Innate faerie fire",
+        "current": 1,
+        "max": 1,
+        "id": "npc-resource-4"
+      },
+      {
+        "name": "Healing potion",
+        "current": 1,
+        "max": 1,
+        "id": "npc-resource-5"
+      }
+    ]
+  }
+}

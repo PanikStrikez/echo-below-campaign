@@ -1,0 +1,196 @@
+[
+  {
+    "id": "prep",
+    "title": "Before play",
+    "read": [],
+    "ask": [
+      "Who drives the wagon? Who watches ahead? Who guards the rear? Ask Byron to introduce Pebble and Bowman to introduce Aldric Vane before setting marching order.",
+      "Pebble’s handout lists Fighter 1, AC 18, HP 12, and a shield; confirm his current HP and Second Wind use. Aldric’s DM-built level-1 sheet is ready: HP 8, AC 11 before Mage Armor, spell attack +5, save DC 13, two 1st-level slots. Ask Bowman if he wants any spell choices changed before play.",
+      "Ask Donavan which 1st-level spells are prepared and Ringgo which second skill has Expertise; record only their actual choices.",
+      "Before departure, check every traveler’s light source. Pebble’s token is ready; Aldric’s token is ready; ask both new players for any corrections to the DM-built sheets."
+    ],
+    "scene": "cover"
+  },
+  {
+    "id": "departure",
+    "title": "1 · Gundren rides ahead",
+    "read": [
+      "The wagon is loaded with mining supplies and road provisions. Gundren Rockseeker checks the straps one last time while Sildar waits beside their horses. The dwarf grins, but he seems impatient to get to Phandalin. “Take this to Barthen’s Provisions. I’ll meet you there.”",
+      "Gundren turns to Donavan. “If the mine holds anything unusual, write down what you actually see before anyone decides what it is worth.” To Trista, he adds, “Make sure I come back to read his account.” To Ringgo: “Choose the safe camp over the fast one. I hired you to bring people through.”"
+    ],
+    "ask": [
+      "Ask each of the five players what their character says back to Gundren. Pebble has heard from the dwarves who made his hammer about delicious shiny rocks near mountains; let Byron decide how he says it. Let Bowman decide what Aldric says about taking the escort job; do not reveal his hidden history for him.",
+      "Who drives, scouts, and watches the rear? Let their answers decide positions at the ambush."
+    ],
+    "scene": "gundren"
+  },
+  {
+    "id": "ambush",
+    "title": "2 · Dead horses and ambush",
+    "read": [
+      "The trail bends between close woods. Two horses lie across the road ahead, dead and pierced by black-feathered arrows. Their saddlebags hang open. Neither rider is in sight.",
+      "The open saddlebags and arrows give you more to examine than the bodies alone. Beyond the bend, trunks and tangled growth break up the view into the woods; anyone moving closer will have to choose where to stand and what to watch."
+    ],
+    "ask": [
+      "“What do you do?” Wait for their approach before announcing combat.",
+      "On close inspection, identify the horses as Gundren’s and Sildar’s; the saddlebags were looted."
+    ],
+    "scene": "horses"
+  },
+  {
+    "id": "aftermath",
+    "title": "3 · Clues after the road fight",
+    "read": [
+      "The woods settle. The two horses still block the road. Broken brush and small tracks lead north, away from the wagon and into thicker trees.",
+      "Among the goblins’ castoffs is a rough dark stone token. One side bears a single worn word: BELOW. The other carries part of a circle rubbed almost smooth."
+    ],
+    "ask": [
+      "“Do you follow the trail now, rest, or take the wagon toward Phandalin?”",
+      "If they follow the trail, ask who secures the wagon and whether the whole party travels together.",
+      "If they examine the token, ask what they do with it; do not require a check to notice its basic features."
+    ],
+    "scene": "road"
+  },
+  {
+    "id": "trail",
+    "title": "4 · Goblin trail and traps",
+    "read": [
+      "The goblin trail narrows under the trees. Broken twigs and churned earth show several small creatures passed this way, with heavier marks among them. The road disappears behind you.",
+      "Each disturbed patch offers a place to slow down and look, while the thicker growth limits what you can see ahead. You can keep the heavier marks in view, check the ground before committing your weight, or pause to decide how closely you want to follow."
+    ],
+    "ask": [
+      "“Who leads? Are you moving quickly or watching for traps?”",
+      "Ask what happens to the wagon and supplies while the party pursues the trail."
+    ],
+    "scene": "black"
+  },
+  {
+    "id": "cave",
+    "title": "5 · Cave mouth and approach",
+    "read": [
+      "The trail ends below a wooded hill. A shallow stream runs from a dark cave mouth, with a narrow path beside it. Briars crowd the bank. Cold water murmurs over stone.",
+      "The stream and the strip of dry ground offer different approaches to the same black opening. From outside, you can study the banks and the briars before stepping beneath the hill; the sound of running water makes the darkness beyond seem deeper."
+    ],
+    "ask": [
+      "“How do you approach? Who scouts the entrance? Are you carrying a light?”",
+      "“Where are the wagon and extra supplies?”"
+    ],
+    "scene": "cave-mouth"
+  },
+  {
+    "id": "blind",
+    "title": "Area 2 · Goblin blind",
+    "read": [
+      "Across the stream, the briars are thick enough to swallow the path. A board creaks faintly behind them, then goes still.",
+      "The vegetation interrupts your view of whatever lies beyond it. The stream remains an obvious landmark beside the approach, but the brief creak gives you a reason to watch the cover rather than hurry past it."
+    ],
+    "ask": [
+      "“Do you cross, watch, call out, or try another path?”"
+    ],
+    "scene": "interior"
+  },
+  {
+    "id": "kennel",
+    "title": "Area 3 · Kennel and wolves",
+    "read": [
+      "A sharp animal smell cuts through the damp cave air. Chains scrape against stone. Three pairs of eyes turn toward you from the dark, and low growls fill the cramped chamber.",
+      "The scrape of the chains marks the animals' movements more clearly than the dim light does. There is little room to spread out here, and the growling rises when attention turns toward them. You can stop at the edge of the chamber before choosing how to approach."
+    ],
+    "ask": [
+      "“Do you approach, offer food, try to calm them, or keep your distance?”"
+    ],
+    "scene": "interior"
+  },
+  {
+    "id": "passage",
+    "title": "Area 4 · Steep passage",
+    "read": [
+      "The main passage climbs steeply beside the stream. Spray darkens the stone, and loose rubble shifts underfoot. Above the noise, you can make out another passage crossing high overhead.",
+      "Water follows the slope past your boots, leaving the rising stone slick and dark. The crossing overhead is separate from the route at your feet; from here, you can judge the climb and look for movement above without knowing where either passage ends."
+    ],
+    "ask": [
+      "“Do you take the stream passage, test the rubble, or look for another route?”"
+    ],
+    "scene": "interior"
+  },
+  {
+    "id": "bridge",
+    "title": "Area 5 · Overpass and flood",
+    "read": [
+      "A rickety bridge crosses the passage high above the water. A small figure shifts against the shadowed ceiling. Farther upstream, the sound of pooled water presses through the cave.",
+      "The bridge's boards and supports stand out against the rock when your light catches them. Below, the stream continues along the climbing passage. The figure above and the louder water ahead give you two different things to watch as you decide whether to advance."
+    ],
+    "ask": [
+      "“Do you move under the bridge, try to reach it, or deal with the watcher first?”"
+    ],
+    "scene": "interior"
+  },
+  {
+    "id": "den",
+    "title": "Area 6 · Yeemik and Sildar",
+    "read": [
+      "A cooking fire lights an uneven cavern. Goblins look up from their meal. On a higher ledge, a battered human man is held upright by one of them. He can barely stand.",
+      "One goblin raises a hand for the others to hold. “You want the human? Then we have something to discuss.”"
+    ],
+    "ask": [
+      "“Do you negotiate, create a distraction, try a rescue, or fight?”"
+    ],
+    "scene": "interior"
+  },
+  {
+    "id": "pools",
+    "title": "Area 7 · Twin pools",
+    "read": [
+      "Two dark pools fill much of the cavern. Water presses against rough stone-and-timber dams. The waterfall’s echo makes quieter movement hard to place.",
+      "The rough barriers hold back a great deal of water, and the noise fills the space around them. You can inspect their visible supports, look for ground that stays out of the current, or study the onward route before putting someone beside a dam."
+    ],
+    "ask": [
+      "“Do you approach the guards, examine the dams, or try a different route?”"
+    ],
+    "scene": "interior"
+  },
+  {
+    "id": "klarg",
+    "title": "Area 8 · Klarg’s cave",
+    "read": [
+      "Sacks and crates fill the far side of the cave. Smoke from a low fire climbs toward an opening above. Behind the stolen supplies, a hulking figure rises, morningstar in hand, while a wolf bares its teeth.",
+      "The stacked goods divide the cavern into patches of cover and narrow sightlines. Firelight catches the raised weapon and the wolf's teeth, while smoke drifts toward the opening overhead. The way you entered remains behind you as you choose how to answer this reception."
+    ],
+    "ask": [
+      "“Do you rush in, take cover, talk, withdraw, or try to split them up?”"
+    ],
+    "scene": "interior"
+  },
+  {
+    "id": "sildar",
+    "title": "After rescue · What Sildar knows",
+    "read": [
+      "Once he can sit and breathe, Sildar looks toward the cave passage. “Gundren was taken away from here. They wanted him—and the map he carried.”",
+      "The passage is still close enough that a voice raised here could carry farther than intended. Sildar's words give you a name and an object to ask about, but not a destination. There is time to hear him out, check what help he needs, and decide where to take the conversation."
+    ],
+    "ask": [
+      "Let the players ask questions. Sildar answers what he knows and says clearly when he does not know."
+    ],
+    "scene": "interior"
+  },
+  {
+    "id": "close",
+    "title": "Close the session",
+    "read": [
+      "The road to Phandalin is still ahead. Gundren is still out there. For a moment, you have room to decide what matters next.",
+      "Your equipment and companions are the immediate things within reach; the rest of the journey will depend on what you choose to do with them. You can make room for someone who needs help, compare the leads you actually found, or take a moment to prepare before moving on."
+    ],
+    "ask": [
+      "Ask each player: “What does your character want to do about Gundren now?”",
+      "Ask the party where they intend to go next. Do not force a full hideout clear to fit the clock."
+    ],
+    "scene": "black"
+  },
+  {
+    "id": "rules",
+    "title": "Quick rules and DM safety dial",
+    "read": [],
+    "ask": [],
+    "scene": null
+  }
+]

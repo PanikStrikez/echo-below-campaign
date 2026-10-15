@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-19-nezznar-1",
+    "cast": {
+      "actor": "s4-wave-19-nezznar-1",
+      "label": "Suggestion",
+      "targets": [
+        "Donavan"
+      ],
+      "rolls": [],
+      "outcomes": [
+        {
+          "targetId": "pc-donavan",
+          "text": "Donavan: effect reviewed"
+        }
+      ],
+      "costs": [
+        {
+          "id": "npc-resource-1",
+          "delta": -1
+        }
+      ],
+      "counterspell": {
+        "actor": "pc-donavan",
+        "label": "Counterspell",
+        "targets": [
+          "Nezznar"
+        ],
+        "rolls": [],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-nezznar-1",
+            "text": "Nezznar: effect reviewed"
+          }
+        ],
+        "costs": [
+          {
+            "id": "donavan-slots-3",
+            "delta": -1
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "result": {
+    "id": "1791835372298-c7uus9ccet",
+    "label": "Ringgo inspects bridge supports DC15",
+    "notation": "1d20+4",
+    "parts": [
+      1
+    ],
+    "total": 5,
+    "kind": "digital",
+    "time": "02:02 PM"
+  }
+}

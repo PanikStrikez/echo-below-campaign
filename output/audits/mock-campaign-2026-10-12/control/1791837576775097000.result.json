@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "lmop-map-cragmaw-castle",
+    "round": 1,
+    "order": [
+      "pc-donavan",
+      "pc-trista",
+      "s3-castle-guards-hobgoblin-2",
+      "pc-pebble",
+      "pc-ringgo",
+      "s3-castle-guards-hobgoblin-1",
+      "pc-aldric"
+    ],
+    "index": 0
+  }
+}

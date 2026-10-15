@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s2-hideout-bugbears-1",
+        "name": "Bugbear 1",
+        "hp": 27
+      },
+      {
+        "id": "s2-hideout-bugbears-2",
+        "name": "Bugbear 2",
+        "hp": 27
+      },
+      {
+        "id": "s2-hideout-bugbears-3",
+        "name": "Bugbear 3",
+        "hp": 27
+      }
+    ],
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 21
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 24
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 24
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 23
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 23
+      }
+    ]
+  }
+}

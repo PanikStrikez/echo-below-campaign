@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-6-ghoul-2",
+    "action": {
+      "actor": "s4-wave-6-ghoul-2",
+      "label": "Claws",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838392931-cki4jsiz",
+          "label": "Claws · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            18
+          ],
+          "total": 22,
+          "natural": 18,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:12 PM"
+        },
+        {
+          "id": "pa-1791838392931-klccseze",
+          "label": "Claws · effect 1.1",
+          "notation": "2d4+2",
+          "parts": [
+            2,
+            3
+          ],
+          "total": 7,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:12 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 22 vs AC 18: hit, 7 slashing → 7; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "paralysisSave": {
+        "id": "1791838393180-2nhh1g7b2z2",
+        "label": "Pebble CON ghoul paralysisDC10",
+        "notation": "1d20+5",
+        "parts": [
+          15
+        ],
+        "total": 20,
+        "kind": "digital",
+        "time": "02:53 PM"
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s3-castle-guards-hobgoblin-2",
+    "action": {
+      "actor": "s3-castle-guards-hobgoblin-2",
+      "label": "Longsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791837580677-l40wup9d",
+          "label": "Longsword · attack 1",
+          "notation": "1d20+3",
+          "parts": [
+            16
+          ],
+          "total": 19,
+          "natural": 16,
+          "public": false,
+          "kind": "digital",
+          "time": "2:39:40 PM"
+        },
+        {
+          "id": "pa-1791837580677-5fjppfhb",
+          "label": "Longsword · effect 1.1",
+          "notation": "1d8+1",
+          "parts": [
+            3
+          ],
+          "total": 4,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:39:40 PM"
+        },
+        {
+          "id": "pa-1791837580677-1m0a13vx",
+          "label": "Longsword · effect 1.2",
+          "notation": "2d6",
+          "parts": [
+            6,
+            2
+          ],
+          "total": 8,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "2:39:40 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 19 vs AC 14: hit, 4 slashing → 4; temp HP absorbed 0, 8 slashing → 8; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "label": "Web",
+    "targets": [
+      "Nezznar’s Spider 2",
+      "Nezznar’s Spider 3",
+      "Nezznar’s Spider 4"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791839329759-jfg63cik",
+        "label": "Nezznar’s Spider 2 · DEX save",
+        "notation": "1d20+3",
+        "parts": [
+          15
+        ],
+        "total": 18,
+        "natural": 15,
+        "public": false,
+        "kind": "digital",
+        "time": "3:08:49 PM"
+      },
+      {
+        "id": "pa-1791839329760-1xofabjf",
+        "label": "Nezznar’s Spider 3 · DEX save",
+        "notation": "1d20+3",
+        "parts": [
+          1
+        ],
+        "total": 4,
+        "natural": 1,
+        "public": false,
+        "kind": "digital",
+        "time": "3:08:49 PM"
+      },
+      {
+        "id": "pa-1791839329760-y4fkuioz",
+        "label": "Nezznar’s Spider 4 · DEX save",
+        "notation": "1d20+3",
+        "parts": [
+          18
+        ],
+        "total": 21,
+        "natural": 18,
+        "public": false,
+        "kind": "digital",
+        "time": "3:08:49 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "s4-wave-19-wave-spider-2",
+        "text": "Nezznar’s Spider 2: saved, 0 healing → 0; temp HP absorbed 0"
+      },
+      {
+        "targetId": "s4-wave-19-wave-spider-3",
+        "text": "Nezznar’s Spider 3: failed save, 0 healing → 0; temp HP absorbed 0, Restrained"
+      },
+      {
+        "targetId": "s4-wave-19-wave-spider-4",
+        "text": "Nezznar’s Spider 4: saved, 0 healing → 0; temp HP absorbed 0"
+      }
+    ],
+    "costs": [
+      {
+        "id": "donavan-slots-2",
+        "delta": -1
+      }
+    ]
+  }
+}

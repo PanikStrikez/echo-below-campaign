@@ -1,0 +1,64 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s4-wave-19-nezznar-1",
+        "name": "Nezznar",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-19-bugbear-1",
+        "name": "Temple Bugbear 1",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-19-bugbear-2",
+        "name": "Temple Bugbear 2",
+        "hp": 27
+      },
+      {
+        "id": "s4-wave-19-wave-spider-1",
+        "name": "Nezznar’s Spider 1",
+        "hp": 26
+      },
+      {
+        "id": "s4-wave-19-wave-spider-2",
+        "name": "Nezznar’s Spider 2",
+        "hp": 26
+      },
+      {
+        "id": "s4-wave-19-wave-spider-3",
+        "name": "Nezznar’s Spider 3",
+        "hp": 26
+      },
+      {
+        "id": "s4-wave-19-wave-spider-4",
+        "name": "Nezznar’s Spider 4",
+        "hp": 26
+      }
+    ],
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 43
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 50
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 42
+      }
+    ]
+  }
+}

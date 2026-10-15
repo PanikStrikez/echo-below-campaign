@@ -1,0 +1,6 @@
+{
+  "ok": true,
+  "result": {
+    "error": "Failed to execute 'setItem' on 'Storage': Setting the value of 'echo-below-campaign-table-v1:recovery:practice-1791831430047-0aolt:1791838045490-9tbo4' exceeded the quota."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-barracks-3",
+    "action": {
+      "actor": "s2-hideout-barracks-3",
+      "label": "Shortsword",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836015595-u3a8qihs",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            3
+          ],
+          "total": 7,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:35 PM"
+        },
+        {
+          "id": "pa-1791836015595-1xqg89ib",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:35 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 7 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

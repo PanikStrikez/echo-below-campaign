@@ -1,0 +1,4 @@
+{
+  "ok": false,
+  "error": "page.evaluate: Error: AC must be 0–99.\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:191:96)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at window.__resolveMock (eval at evaluate (:311:30), <anonymous>:1:205)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:629)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:688)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+}

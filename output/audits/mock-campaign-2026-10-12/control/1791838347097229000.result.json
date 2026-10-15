@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-4-wave-skeleton-6",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-6",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838347239-qnxmffz8",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            14
+          ],
+          "total": 18,
+          "natural": 14,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:27 PM"
+        },
+        {
+          "id": "pa-1791838347239-jpkcscrz",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:27 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 18 vs AC 14: hit, 7 piercing → 7; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

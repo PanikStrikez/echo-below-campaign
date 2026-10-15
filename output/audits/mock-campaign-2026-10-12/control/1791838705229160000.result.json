@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791838705308-ixm679d3",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              12
+            ],
+            "total": 20,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:25 PM"
+          },
+          {
+            "id": "pa-1791838705308-z1kr6qry",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "2d10",
+            "parts": [
+              7,
+              4
+            ],
+            "total": 11,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:58:25 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-2-ochre-jelly-1",
+            "text": "Ochre Jelly: 20 vs AC 8: hit, 11 fire → 11; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "result": {
+    "combatHP": 0,
+    "resource": [
+      {
+        "id": "pebble-second-wind",
+        "name": "Second Wind",
+        "max": 1,
+        "current": 0,
+        "restoreShort": 1,
+        "restoreLong": true,
+        "unit": "use",
+        "slotLevel": 0
+      },
+      {
+        "id": "pebble-action-surge",
+        "name": "Action Surge",
+        "max": 1,
+        "current": 1,
+        "restoreShort": 1,
+        "restoreLong": true,
+        "unit": "use",
+        "slotLevel": 0
+      }
+    ]
+  }
+}

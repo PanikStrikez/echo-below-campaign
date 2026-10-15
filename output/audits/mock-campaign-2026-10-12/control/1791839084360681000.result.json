@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-ringgo",
+    "label": "Rapier",
+    "targets": [
+      "Web on Aldric"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791839084442-lare0nco",
+        "label": "Rapier · attack 1",
+        "notation": "1d20+8",
+        "parts": [
+          19
+        ],
+        "total": 27,
+        "natural": 19,
+        "public": true,
+        "kind": "digital",
+        "time": "3:04:44 PM"
+      },
+      {
+        "id": "pa-1791839084442-n9elmvw2",
+        "label": "Rapier · effect 1.1",
+        "notation": "1d8+5",
+        "parts": [
+          8
+        ],
+        "total": 13,
+        "natural": 8,
+        "public": true,
+        "kind": "digital",
+        "time": "3:04:44 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "mock-web-aldric",
+        "text": "Web on Aldric: 27 vs AC 10: hit, 13 piercing → 13; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  }
+}

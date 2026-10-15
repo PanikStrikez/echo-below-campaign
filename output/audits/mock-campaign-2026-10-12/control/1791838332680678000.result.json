@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "lmop-map-wave-south",
+    "round": 1,
+    "order": [
+      "pc-donavan",
+      "s4-wave-4-wave-skeleton-2",
+      "s4-wave-4-wave-skeleton-6",
+      "s4-wave-4-wave-skeleton-7",
+      "s4-wave-4-wave-skeleton-5",
+      "s4-wave-4-wave-skeleton-9",
+      "pc-pebble",
+      "pc-aldric",
+      "pc-ringgo",
+      "s4-wave-4-wave-skeleton-8",
+      "s4-wave-4-wave-skeleton-1",
+      "s4-wave-4-wave-skeleton-3",
+      "pc-trista",
+      "s4-wave-4-wave-skeleton-4"
+    ],
+    "index": 0
+  }
+}

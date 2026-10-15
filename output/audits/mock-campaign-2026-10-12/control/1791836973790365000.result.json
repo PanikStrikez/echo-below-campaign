@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "result": {
+    "arrows": 26,
+    "newSpells": [
+      {
+        "name": "Web",
+        "level": 2,
+        "prepared": true,
+        "notes": "Approved mock Wizard3 spell selection, not live choice"
+      },
+      {
+        "name": "Misty Step",
+        "level": 2,
+        "prepared": true,
+        "notes": "Approved mock Wizard3 spell selection, not live choice"
+      }
+    ],
+    "aldricDC": [
+      {
+        "name": "Ice Knife",
+        "DC": 15
+      },
+      {
+        "name": "Ice Knife burst",
+        "DC": 15
+      },
+      {
+        "name": "Aganazzar’s Scorcher",
+        "DC": 15
+      },
+      {
+        "name": "Web",
+        "DC": 15
+      }
+    ]
+  }
+}

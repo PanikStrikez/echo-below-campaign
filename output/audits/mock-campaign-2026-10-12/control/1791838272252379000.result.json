@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838272384-kxf0uqf5",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              4
+            ],
+            "total": 12,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:12 PM"
+          },
+          {
+            "id": "pa-1791838272384-hplnedyb",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              3
+            ],
+            "total": 8,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:51:12 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-3-stirge-2",
+            "text": "Stirge 2: 12 vs AC 14: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791838272479-lt7c7q6l",
+              "label": "Warhammer · attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                14
+              ],
+              "total": 22,
+              "natural": 14,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:12 PM"
+            },
+            {
+              "id": "pa-1791838272479-cvze9eqa",
+              "label": "Warhammer · effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                7
+              ],
+              "total": 12,
+              "natural": 7,
+              "public": true,
+              "kind": "digital",
+              "time": "2:51:12 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-3-stirge-2",
+              "text": "Stirge 2: 22 vs AC 14: hit, 12 bludgeoning → 12; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  }
+}

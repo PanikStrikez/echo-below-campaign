@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791837578568-50pv68qo",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              9
+            ],
+            "total": 17,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:38 PM"
+          },
+          {
+            "id": "pa-1791837578568-vyayvwg9",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              2,
+              3
+            ],
+            "total": 5,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:39:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s3-castle-guards-hobgoblin-1",
+            "text": "King’s guard 1: 17 vs AC 18: miss, 0 cold → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

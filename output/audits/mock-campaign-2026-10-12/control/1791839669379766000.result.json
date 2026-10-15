@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "1791839669578-c8meojn3uns",
+      "label": "Aldric guestroomdoor Investigation",
+      "notation": "1d20+8",
+      "parts": [
+        9
+      ],
+      "total": 17,
+      "kind": "digital",
+      "time": "03:14 PM"
+    },
+    {
+      "id": "1791839669674-ft1yzzolwxn",
+      "label": "Pebble opensdamageddoor STRDC15",
+      "notation": "1d20+5",
+      "parts": [
+        18
+      ],
+      "total": 23,
+      "kind": "digital",
+      "time": "03:14 PM"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "result": {
+    "scenes": [
+      {
+        "id": "lmop-ruined-storeroom",
+        "title": "Wave Echo Cave · Area 7 · Ruined storeroom"
+      },
+      {
+        "id": "lmop-fungi-cavern",
+        "title": "Wave Echo Cave · Area 8 · Fungi cavern"
+      },
+      {
+        "id": "lmop-fungal-gas",
+        "title": "Wave Echo Cave · Area 8 · Spores released"
+      },
+      {
+        "id": "lmop-great-cavern",
+        "title": "Wave Echo Cave · Area 9 · Great cavern"
+      },
+      {
+        "id": "lmop-smelter-cavern",
+        "title": "Wave Echo Cave · Area 12 · Smelter cavern"
+      },
+      {
+        "id": "lmop-starry-cavern",
+        "title": "Wave Echo Cave · Area 13 · Starry cavern"
+      },
+      {
+        "id": "lmop-forge-of-spells",
+        "title": "Wave Echo Cave · Area 15 · Forge of Spells"
+      },
+      {
+        "id": "lmop-booming-cavern",
+        "title": "Wave Echo Cave · Area 16 · Booming cavern"
+      },
+      {
+        "id": "lmop-collapsed-cavern",
+        "title": "Wave Echo Cave · Area 18 · Collapsed cavern"
+      },
+      {
+        "id": "lmop-map-wave-great-cavern",
+        "title": "Wave Echo Cave · Wave Echo Cave · great cavern"
+      },
+      {
+        "id": "lmop-map-wave-smelter",
+        "title": "Wave Echo Cave · Wave Echo Cave · smelter"
+      },
+      {
+        "id": "lmop-map-wave-forge",
+        "title": "Wave Echo Cave · Wave Echo Cave · Forge of Spells"
+      }
+    ],
+    "phone": "function sync() {\n    if (!enabled) return;\n    clearTimeout(syncTimer);\n    syncTimer = setTimeout(() => { void pushSnapshot(); }, 180);\n  }"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s2-hideout-crypt-3",
+    "action": {
+      "actor": "s2-hideout-crypt-3",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836251723-c8ehon22",
+          "label": "Shortsword · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            13
+          ],
+          "total": 17,
+          "natural": 13,
+          "public": false,
+          "kind": "digital",
+          "time": "2:17:31 PM"
+        },
+        {
+          "id": "pa-1791836251723-zob6l130",
+          "label": "Shortsword · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            3
+          ],
+          "total": 5,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:17:31 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 17 vs AC 18: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

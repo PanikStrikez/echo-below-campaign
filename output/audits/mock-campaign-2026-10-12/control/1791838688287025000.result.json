@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s4-wave-2-ochre-jelly-1",
+        "name": "Ochre Jelly",
+        "hp": 45
+      }
+    ],
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 43
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 45
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 43
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 50
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 42
+      }
+    ]
+  }
+}

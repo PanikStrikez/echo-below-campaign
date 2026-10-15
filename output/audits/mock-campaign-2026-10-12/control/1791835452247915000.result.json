@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "result": {
+    "outcomes": [
+      {
+        "targetId": "s2-hideout-bugbears-1",
+        "text": "Bugbear 1: saved, physical base 0, 0 healing → 0; temp HP absorbed 0"
+      },
+      {
+        "targetId": "s2-hideout-bugbears-2",
+        "text": "Bugbear 2: failed save, physical base 0, 0 healing → 0; temp HP absorbed 0, Restrained"
+      },
+      {
+        "targetId": "s2-hideout-bugbears-3",
+        "text": "Bugbear 3: failed save, physical base 0, 0 healing → 0; temp HP absorbed 0, Restrained"
+      }
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791835452310-qnluax56",
+        "label": "Bugbear 1 · DEX save",
+        "notation": "1d20+2",
+        "parts": [
+          19
+        ],
+        "total": 21,
+        "natural": 19,
+        "public": false,
+        "kind": "digital",
+        "time": "2:04:12 PM"
+      },
+      {
+        "id": "pa-1791835452310-9m4wtptw",
+        "label": "Bugbear 2 · DEX save",
+        "notation": "1d20+2",
+        "parts": [
+          7
+        ],
+        "total": 9,
+        "natural": 7,
+        "public": false,
+        "kind": "digital",
+        "time": "2:04:12 PM"
+      },
+      {
+        "id": "pa-1791835452310-xh1xx4ma",
+        "label": "Bugbear 3 · DEX save",
+        "notation": "1d20+2",
+        "parts": [
+          2
+        ],
+        "total": 4,
+        "natural": 2,
+        "public": false,
+        "kind": "digital",
+        "time": "2:04:12 PM"
+      }
+    ],
+    "concentration": ""
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791838350132-8su2b7om",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              20
+            ],
+            "total": 28,
+            "natural": 20,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:30 PM"
+          },
+          {
+            "id": "pa-1791838350132-rgwfmm0d",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "4d10",
+            "parts": [
+              6,
+              5,
+              3,
+              2
+            ],
+            "total": 16,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:30 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-4",
+            "text": "Guardroom Skeleton 4: 28 vs AC 13: critical hit, 16 fire → 16; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

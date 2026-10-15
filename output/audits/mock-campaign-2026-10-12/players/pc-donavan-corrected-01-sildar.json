@@ -1,0 +1,931 @@
+{
+  "label": "ISOLATED MOCK CAMPAIGN — not actual history",
+  "phase": "corrected-01-sildar",
+  "characterId": "pc-donavan",
+  "dmNarration": [
+    "Once he can sit and breathe, Sildar looks toward the cave passage. “Gundren was taken away from here. They wanted him—and the map he carried.”",
+    "The passage is still close enough that a voice raised here could carry farther than intended. Sildar's words give you a name and an object to ask about, but not a destination. There is time to hear him out, check what help he needs, and decide where to take the conversation."
+  ],
+  "question": "At the entrance, Sildar crosses into your care; Donavan pays twenty-five gold. The guards let all six leave. Sildar says humanoids took Gundren and his map away; he cannot give a destination. He has heard the name Black Spider as a claim, not seen that person. He offers fifty gold once escorted safely to Phandalin. His wounds require slow travel and support.",
+  "phoneResponse": {
+    "status": 200,
+    "data": {
+      "revision": 1490,
+      "resyncRequest": 0,
+      "session": "PRACTICE · Session 1 · Goblin Arrows",
+      "character": {
+        "id": "pc-donavan",
+        "name": "Donavan Kemp",
+        "player": "Brodey",
+        "className": "Wizard 1",
+        "ancestry": "Human",
+        "background": "Sage",
+        "level": 1,
+        "rules": "2014 multiclass with Tasha Order of Scribes, Catapult and Toll the Dead exceptions; all listed spells available by table rule",
+        "proficiency": 2,
+        "speed": 30,
+        "senses": "Passive Perception 13; no familiar shown on updated sheet",
+        "languages": "Common, Dwarvish, Elvish, Giant, Goblin, Sylvan",
+        "hp": 8,
+        "maxHp": 9,
+        "ac": 12,
+        "tempHp": 0,
+        "hitDice": {
+          "die": 6,
+          "current": 0,
+          "max": 1,
+          "details": "1d6",
+          "pools": [
+            {
+              "die": 6,
+              "current": 0,
+              "max": 1
+            }
+          ]
+        },
+        "abilities": {
+          "str": {
+            "score": 12,
+            "modifier": 1
+          },
+          "dex": {
+            "score": 14,
+            "modifier": 2
+          },
+          "con": {
+            "score": 16,
+            "modifier": 3
+          },
+          "int": {
+            "score": 18,
+            "modifier": 4
+          },
+          "wis": {
+            "score": 16,
+            "modifier": 3
+          },
+          "cha": {
+            "score": 16,
+            "modifier": 3
+          }
+        },
+        "saves": [
+          {
+            "name": "STR",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "DEX",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "CON",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "INT",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "WIS",
+            "bonus": 5,
+            "rank": 1
+          },
+          {
+            "name": "CHA",
+            "bonus": 3,
+            "rank": 0
+          }
+        ],
+        "skills": [
+          {
+            "name": "Acrobatics",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "Animal Handling",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "Arcana",
+            "bonus": 8,
+            "rank": 2
+          },
+          {
+            "name": "Athletics",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Deception",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "History",
+            "bonus": 8,
+            "rank": 2
+          },
+          {
+            "name": "Insight",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "Intimidation",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "Investigation",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Medicine",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "Nature",
+            "bonus": 4,
+            "rank": 0
+          },
+          {
+            "name": "Perception",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "Performance",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "Persuasion",
+            "bonus": 3,
+            "rank": 0
+          },
+          {
+            "name": "Religion",
+            "bonus": 4,
+            "rank": 0
+          },
+          {
+            "name": "Sleight of Hand",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "Stealth",
+            "bonus": 2,
+            "rank": 0
+          },
+          {
+            "name": "Survival",
+            "bonus": 3,
+            "rank": 0
+          }
+        ],
+        "passives": {
+          "Perception": 13,
+          "Insight": 13,
+          "Investigation": 16
+        },
+        "attacks": [
+          {
+            "id": "donavan-dagger",
+            "name": "Dagger",
+            "type": "Action",
+            "attackBonus": 4,
+            "damageDice": "1d4+2",
+            "damageType": "piercing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Melee or thrown 20/60 ft.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "donavan-ray",
+            "name": "Ray of Frost",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d8",
+            "damageType": "cold",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Ranged spell attack, 60 ft.; cold damage and speed reduced by 10 ft. until the start of your next turn.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack and cold damage; on a hit add the speed reduction reminder until your next turn.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 271,
+                "rule": "Ray of Frost",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "donavan-unarmed",
+            "name": "Unarmed Strike",
+            "type": "Action",
+            "attackBonus": 3,
+            "damageDice": "2",
+            "damageType": "bludgeoning",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Melee attack; 2 bludgeoning damage on a hit.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          }
+        ],
+        "actions": [
+          {
+            "id": "donavan-arcane-recovery",
+            "name": "Arcane Recovery",
+            "type": "After short rest",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "After a short rest regain one first-level slot, once per day.",
+            "resourceId": "donavan-arcane-recovery",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Confirm a short rest and choose expended slots. Donavan can recover one slot level; Aldric two.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 115,
+                "rule": "Arcane Recovery",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          }
+        ],
+        "spells": [
+          {
+            "name": "Dancing Lights",
+            "level": 0,
+            "prepared": true,
+            "notes": "Cantrip · action · lights within 120 ft. · concentration up to 1 minute.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 230,
+                "rule": "Dancing Lights",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Prestidigitation",
+            "level": 0,
+            "prepared": true,
+            "notes": "Cantrip · action · minor magical effect within 10 ft.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 267,
+                "rule": "Prestidigitation",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Ray of Frost",
+            "level": 0,
+            "prepared": true,
+            "notes": "Cantrip · ranged spell attack +6 · 1d8 cold and speed −10 ft.",
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack and cold damage; on a hit add the speed reduction reminder until your next turn.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 271,
+                "rule": "Ray of Frost",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Identify",
+            "level": 1,
+            "prepared": true,
+            "notes": "MOCK Wizard spell · touch · learn magical properties; ritual possible; material pearl required.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 252,
+                "rule": "Identify",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Detect Magic",
+            "level": 1,
+            "prepared": true,
+            "notes": "Wizard · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 231,
+                "rule": "Detect Magic",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Comprehend Languages",
+            "level": 1,
+            "prepared": true,
+            "notes": "Wizard · Understand literal meaning of languages for 1 hour · ritual possible.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 224,
+                "rule": "Comprehend Languages",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Find Familiar",
+            "level": 1,
+            "prepared": true,
+            "notes": "Wizard · Summon a familiar · 1-hour cast or ritual · material cost applies.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 240,
+                "rule": "Find Familiar",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Magic Missile",
+            "level": 1,
+            "prepared": true,
+            "notes": "Wizard · Action · three darts within 120 ft. · each deals 1d4+1 force; no attack roll.",
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Allocate every dart; confirm visibility, range and any Shield. One slot pays for the entire spell.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 257,
+                "rule": "Magic Missile",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Shield",
+            "level": 1,
+            "prepared": true,
+            "notes": "Wizard · Reaction · +5 AC until next turn and blocks Magic Missile.",
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 275,
+                "rule": "Shield",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Catapult",
+            "level": 1,
+            "prepared": true,
+            "notes": "Wizard · Xanathar’s · action · Dexterity save DC 14 · fling a 1–5 lb. object; 3d8 bludgeoning.",
+            "support": {
+              "status": "choice",
+              "label": "Choose details",
+              "reason": "Choose an eligible object and first collision; Dexterity save, no damage on success. Upcasting adds dice.",
+              "source": {
+                "book": "Xanathar’s Guide; approved exception",
+                "printedPage": null,
+                "rule": "Catapult",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "name": "Disguise Self",
+            "level": 1,
+            "prepared": true,
+            "notes": "Wizard · Action · alter your appearance for 1 hour; inspection may reveal illusion.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 233,
+                "rule": "Disguise Self",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Feather Fall",
+            "level": 1,
+            "prepared": true,
+            "notes": "Wizard · Reaction · slow up to five falling creatures within 60 ft.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 239,
+                "rule": "Feather Fall",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Witch Bolt",
+            "level": 1,
+            "prepared": true,
+            "notes": "Wizard · Action · ranged spell attack +6 · 1d12 lightning, concentration; action to sustain.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 289,
+                "rule": "Witch Bolt",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Silent Image",
+            "level": 1,
+            "prepared": true,
+            "notes": "Wizard · Action · range 60 ft. · create a visual illusion within a 15-ft. cube; concentration up to 10 minutes.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 276,
+                "rule": "Silent Image",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "name": "Detect Magic",
+            "level": 1,
+            "prepared": true,
+            "notes": "MOCK Wizard spell · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible.",
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 231,
+                "rule": "Detect Magic",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          }
+        ],
+        "resources": [
+          {
+            "id": "donavan-slots-1",
+            "name": "1st-level shared spell slots",
+            "current": 2,
+            "max": 2,
+            "unit": "",
+            "slotLevel": 1
+          },
+          {
+            "id": "donavan-arcane-recovery",
+            "name": "Arcane Recovery",
+            "current": 1,
+            "max": 1,
+            "unit": "",
+            "slotLevel": 0
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Breastplate",
+            "quantity": 1,
+            "category": "Armor",
+            "notes": "AC 16 with DEX +2; no shield listed",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Dagger",
+            "quantity": 1,
+            "category": "Weapon",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Spellbook",
+            "quantity": 1,
+            "category": "Focus",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Arcane focus",
+            "quantity": 1,
+            "category": "Focus",
+            "notes": "Specific form not listed",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Ink bottle",
+            "quantity": 2,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Ink pen",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Backpack",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Common clothes",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Book",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Small knife",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Little bag of sand",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Parchment sheet",
+            "quantity": 13,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Bedroll",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          }
+        ],
+        "money": {
+          "cp": 1050,
+          "sp": 166,
+          "ep": 30,
+          "gp": 65,
+          "pp": 0
+        },
+        "features": [
+          {
+            "name": "Arcane Recovery",
+            "text": "After a short rest regain one first-level slot, once per day.",
+            "source": "2014 Wizard 1"
+          },
+          {
+            "name": "Wizard Spellcasting",
+            "text": "INT spell attack +6; save DC 14. Prepare wizard spells separately from cleric spells.",
+            "source": "Donavan PDF p. 2"
+          }
+        ],
+        "inspiration": false,
+        "death": {
+          "successes": 0,
+          "failures": 0,
+          "stable": false
+        },
+        "exhaustion": 0,
+        "conditions": [],
+        "concentration": "",
+        "effects": [],
+        "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+        "favorites": []
+      },
+      "dungeonProtocol": 1,
+      "dungeon": {
+        "enabled": false,
+        "fine": false,
+        "current": [],
+        "explored": [],
+        "objects": [],
+        "passages": []
+      },
+      "searchRequests": [],
+      "travelProtocol": 1,
+      "journey": {
+        "position": null,
+        "destination": "",
+        "weather": "clear",
+        "estimate": null,
+        "places": [
+          {
+            "id": "region-neverwinter",
+            "title": "Neverwinter",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-phandalin",
+            "title": "Phandalin",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          }
+        ],
+        "events": []
+      },
+      "atlas": null,
+      "atlasImage": "",
+      "travelRequests": [],
+      "playerToolsProtocol": 1,
+      "playerTools": {
+        "notes": [],
+        "sharedClues": [],
+        "itemRequests": [],
+        "bank": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 0,
+          "pp": 0
+        },
+        "objective": {
+          "text": "Escort the supplies to Phandalin and investigate danger on the road.",
+          "at": "2026-10-12T19:10:34.672Z"
+        },
+        "roster": [
+          {
+            "id": "pc-aldric",
+            "name": "Aldric Vane"
+          },
+          {
+            "id": "pc-pebble",
+            "name": "Pebble"
+          },
+          {
+            "id": "pc-trista",
+            "name": "Trista"
+          },
+          {
+            "id": "pc-ringgo",
+            "name": "Ringgo Paul"
+          },
+          {
+            "id": "pc-donavan",
+            "name": "Donavan Kemp"
+          }
+        ]
+      },
+      "actionProtocol": 1,
+      "combatProtocol": 1,
+      "combatPrompts": {
+        "saves": [],
+        "reactions": []
+      },
+      "movement": {
+        "columns": 30,
+        "feet": 5,
+        "metric": "grid",
+        "speed": 30,
+        "used": 0,
+        "crawling": false,
+        "areas": []
+      },
+      "scene": "interior",
+      "sceneTitle": "Cragmaw Hideout",
+      "isMap": true,
+      "mapImage": "/api/map?v=da7141e78e8e",
+      "playerInput": true,
+      "fog": [
+        "8,0",
+        "8,1",
+        "8,2",
+        "8,3",
+        "8,4",
+        "9,0",
+        "9,1",
+        "9,2",
+        "9,3",
+        "9,4"
+      ],
+      "fogged": true,
+      "fineFog": false,
+      "points": [],
+      "tokens": [
+        {
+          "id": "pc-trista",
+          "name": "Trista",
+          "label": "T",
+          "team": "pc",
+          "x": 10,
+          "y": 90
+        },
+        {
+          "id": "pc-donavan",
+          "name": "Donavan",
+          "label": "D",
+          "team": "pc",
+          "x": 12,
+          "y": 90
+        },
+        {
+          "id": "pc-ringgo",
+          "name": "Ringgo",
+          "label": "R",
+          "team": "pc",
+          "x": 14,
+          "y": 90
+        },
+        {
+          "id": "pc-pebble",
+          "name": "Pebble",
+          "label": "P",
+          "team": "pc",
+          "x": 16,
+          "y": 90
+        },
+        {
+          "id": "pc-aldric",
+          "name": "Aldric",
+          "label": "A",
+          "team": "pc",
+          "x": 18,
+          "y": 90
+        },
+        {
+          "id": "goblin-5",
+          "name": "Goblin 5",
+          "label": "G5",
+          "team": "enemy",
+          "x": 22,
+          "y": 84
+        },
+        {
+          "id": "goblin-6",
+          "name": "Goblin 6",
+          "label": "G6",
+          "team": "enemy",
+          "x": 26,
+          "y": 84
+        }
+      ],
+      "turn": {
+        "round": 0,
+        "activeId": null
+      },
+      "roll": {
+        "id": "1791832511459-lb2jupt13u",
+        "label": "Donavan initiative",
+        "notation": "1d20+2",
+        "parts": [
+          11
+        ],
+        "total": 13
+      },
+      "requests": "Initiative 13 (11 + 2).",
+      "actionRequests": [],
+      "privateClues": [],
+      "inventory": [],
+      "sceneMood": {
+        "minutes": 540,
+        "weather": "clear",
+        "phase": "day"
+      },
+      "campaignJournal": [
+        {
+          "id": "continuity-outcome-1791832923830-zmlxmuz",
+          "title": "CORRECTED MOCK · Road goblin surrendered",
+          "text": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+          "kind": "confirmed",
+          "when": "MOCK Session1"
+        }
+      ],
+      "quests": [],
+      "campaignTracks": [],
+      "initiative": {
+        "open": false,
+        "total": 13,
+        "bonus": 2
+      },
+      "rehearsal": false
+    }
+  },
+  "playerTV": "Cragmaw Hideout\nControls & interaction\nT\nT\nD\nD\nR\nR\nP\nP\nA\nA\nG5\nG6\nDay · Clear\nPRACTICE CAMPAIGN",
+  "displayImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/corrected-01-sildar-TV.png",
+  "phoneImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/players/pc-donavan-corrected-01-sildar.png"
+}

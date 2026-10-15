@@ -1,0 +1,863 @@
+[
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791836011644-e80676e9",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              6
+            ],
+            "total": 12,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:31 PM"
+          },
+          {
+            "id": "pa-1791836011644-av3mbfdw",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:31 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-2",
+            "text": "Barracks ruffian 2: 12 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791836012927-v993zwj0",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              12
+            ],
+            "total": 18,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:32 PM"
+          },
+          {
+            "id": "pa-1791836012927-0lxfd19w",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              2
+            ],
+            "total": 2,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:32 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-1",
+            "text": "Barracks ruffian 1: 18 vs AC 14: hit, 2 cold \u2192 2; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-hideout-barracks-2",
+    "action": {
+      "actor": "s2-hideout-barracks-2",
+      "label": "Shortsword",
+      "targets": [
+        "Ringgo"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836013397-am0njzms",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            10
+          ],
+          "total": 14,
+          "natural": 10,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:33 PM"
+        },
+        {
+          "id": "pa-1791836013397-70hugia7",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            1
+          ],
+          "total": 3,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:33 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-ringgo",
+          "text": "Ringgo: 14 vs AC 16: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s2-hideout-barracks-1",
+    "action": {
+      "actor": "s2-hideout-barracks-1",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836013888-ngyl7e52",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            6
+          ],
+          "total": 10,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:33 PM"
+        },
+        {
+          "id": "pa-1791836013888-movdh6vd",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            1
+          ],
+          "total": 3,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:33 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 10 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791836014295-t2qniaje",
+            "label": "Dagger \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              19
+            ],
+            "total": 25,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:34 PM"
+          },
+          {
+            "id": "pa-1791836014295-391atfmr",
+            "label": "Dagger \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:34 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-1",
+            "text": "Barracks ruffian 1: 25 vs AC 14: hit, 7 piercing \u2192 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Barracks ruffian 1"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836014385-2ivo811x",
+            "label": "Martial Arts unarmed strike \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              11
+            ],
+            "total": 17,
+            "natural": 11,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:34 PM"
+          },
+          {
+            "id": "pa-1791836014386-s65mjy0j",
+            "label": "Martial Arts unarmed strike \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:34 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-1",
+            "text": "Barracks ruffian 1: 17 vs AC 14: hit, 7 bludgeoning \u2192 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791836014821-taqi00r9",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              3
+            ],
+            "total": 9,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:34 PM"
+          },
+          {
+            "id": "pa-1791836014821-jjkosihc",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              1
+            ],
+            "total": 5,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:34 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-2",
+            "text": "Barracks ruffian 2: 9 vs AC 14: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791836015181-nmesu7bl",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              2
+            ],
+            "total": 8,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:35 PM"
+          },
+          {
+            "id": "pa-1791836015181-4lgdi6aq",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              3
+            ],
+            "total": 3,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:35 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-2",
+            "text": "Barracks ruffian 2: 8 vs AC 14: miss, 0 fire \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-hideout-barracks-3",
+    "action": {
+      "actor": "s2-hideout-barracks-3",
+      "label": "Shortsword",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836015595-u3a8qihs",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            3
+          ],
+          "total": 7,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:35 PM"
+        },
+        {
+          "id": "pa-1791836015595-1xqg89ib",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:35 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 7 vs AC 12: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791836015981-8m8q5n2w",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              8
+            ],
+            "total": 14,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:35 PM"
+          },
+          {
+            "id": "pa-1791836015981-eulktw3x",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:35 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-2",
+            "text": "Barracks ruffian 2: 14 vs AC 14: hit, 9 piercing \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791836017441-axa62sy8",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              16
+            ],
+            "total": 22,
+            "natural": 16,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:37 PM"
+          },
+          {
+            "id": "pa-1791836017441-hmo2izpe",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              6
+            ],
+            "total": 6,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:37 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-2",
+            "text": "Barracks ruffian 2: 22 vs AC 14: hit, 6 cold \u2192 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-hideout-barracks-2",
+    "action": {
+      "actor": "s2-hideout-barracks-2",
+      "label": "Shortsword",
+      "targets": [
+        "Donavan"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836017877-yg8m9xe1",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            10
+          ],
+          "total": 14,
+          "natural": 10,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:37 PM"
+        },
+        {
+          "id": "pa-1791836017877-yu4qxf25",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:37 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-donavan",
+          "text": "Donavan: 14 vs AC 16: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791836018297-ff2xmj3q",
+            "label": "Dagger \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              4
+            ],
+            "total": 10,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:38 PM"
+          },
+          {
+            "id": "pa-1791836018297-1h2p3pbv",
+            "label": "Dagger \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-2",
+            "text": "Barracks ruffian 2: 10 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Barracks ruffian 2"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791836018432-x3yi2iro",
+            "label": "Martial Arts unarmed strike \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              14
+            ],
+            "total": 20,
+            "natural": 14,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:38 PM"
+          },
+          {
+            "id": "pa-1791836018432-vgf2kak5",
+            "label": "Martial Arts unarmed strike \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              6
+            ],
+            "total": 10,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-2",
+            "text": "Barracks ruffian 2: 20 vs AC 14: hit, 10 bludgeoning \u2192 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791836018870-paiqi5o2",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              8
+            ],
+            "total": 14,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:38 PM"
+          },
+          {
+            "id": "pa-1791836018870-xopnzwd2",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-3",
+            "text": "Barracks ruffian 3: 14 vs AC 14: hit, 8 bludgeoning \u2192 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791836019264-lsa2jw4l",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              17
+            ],
+            "total": 23,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:39 PM"
+          },
+          {
+            "id": "pa-1791836019264-eimyrmdu",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              3
+            ],
+            "total": 3,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:39 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-3",
+            "text": "Barracks ruffian 3: 23 vs AC 14: hit, 3 fire \u2192 3; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s2-hideout-barracks-3",
+    "action": {
+      "actor": "s2-hideout-barracks-3",
+      "label": "Shortsword",
+      "targets": [
+        "Ringgo"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791836019799-7n2dz41q",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            8
+          ],
+          "total": 12,
+          "natural": 8,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:39 PM"
+        },
+        {
+          "id": "pa-1791836019799-5lpv7oe7",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:13:39 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-ringgo",
+          "text": "Ringgo: 12 vs AC 16: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791836020959-ind42zud",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              14
+            ],
+            "total": 20,
+            "natural": 14,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:40 PM"
+          },
+          {
+            "id": "pa-1791836020959-crz1nowt",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              1
+            ],
+            "total": 5,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "2:13:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-barracks-3",
+            "text": "Barracks ruffian 3: 20 vs AC 14: hit, 5 piercing \u2192 5; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "complete": "hostiles defeated or fled",
+    "state": {
+      "turn": {
+        "scene": "redbrand-hideout",
+        "round": 3,
+        "order": [
+          "pc-ringgo",
+          "pc-donavan",
+          "s2-hideout-barracks-2",
+          "s2-hideout-barracks-1",
+          "pc-trista",
+          "pc-pebble",
+          "pc-aldric",
+          "s2-hideout-barracks-3"
+        ],
+        "index": 1
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 17,
+          "maxHp": 21
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 24,
+          "maxHp": 24
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 24,
+          "maxHp": 24
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 23,
+          "maxHp": 23
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 23,
+          "maxHp": 23
+        }
+      ],
+      "foes": [],
+      "due": [
+        {
+          "id": "card-1791836017441-3rwbkbl",
+          "tokenId": "s2-hideout-barracks-2",
+          "triggerActor": "pc-donavan",
+          "triggerPoint": "start",
+          "remaining": 0,
+          "name": "Ray of Frost \u00b7 speed \u221210 ft",
+          "condition": "",
+          "due": true,
+          "fired": true,
+          "repeatSave": false,
+          "note": "Apply until the caster\u2019s next turn starts. Movement remains manual."
+        }
+      ]
+    }
+  }
+]

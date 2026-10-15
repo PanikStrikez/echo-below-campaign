@@ -1,0 +1,344 @@
+[
+  {
+    "actor": "s4-wave-6-ghoul-3",
+    "action": {
+      "actor": "s4-wave-6-ghoul-3",
+      "label": "Claws",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838389964-e377xll0",
+          "label": "Claws \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            3
+          ],
+          "total": 7,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:09 PM"
+        },
+        {
+          "id": "pa-1791838389964-2e5g33hb",
+          "label": "Claws \u00b7 effect 1.1",
+          "notation": "2d4+2",
+          "parts": [
+            4,
+            2
+          ],
+          "total": 8,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:09 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 7 vs AC 12: miss, 0 slashing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791838391227-hdxgf5al",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              15
+            ],
+            "total": 23,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:53:11 PM"
+          },
+          {
+            "id": "pa-1791838391227-y7lgm65a",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              6,
+              5
+            ],
+            "total": 11,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:53:11 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-6-ghoul-3",
+            "text": "South Barracks Ghoul 3: 23 vs AC 12: hit, 11 cold \u2192 11; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-6-ghoul-1",
+    "action": {
+      "actor": "s4-wave-6-ghoul-1",
+      "label": "Claws",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838391717-go4z4g1c",
+          "label": "Claws \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            7
+          ],
+          "total": 11,
+          "natural": 7,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:11 PM"
+        },
+        {
+          "id": "pa-1791838391717-soizz3n2",
+          "label": "Claws \u00b7 effect 1.1",
+          "notation": "2d4+2",
+          "parts": [
+            3,
+            4
+          ],
+          "total": 9,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:11 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 11 vs AC 18: miss, 0 slashing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838392306-ghdysge0",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              15
+            ],
+            "total": 23,
+            "natural": 15,
+            "public": true,
+            "kind": "digital",
+            "time": "2:53:12 PM"
+          },
+          {
+            "id": "pa-1791838392306-n6873u2m",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              2
+            ],
+            "total": 7,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:53:12 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-6-ghoul-3",
+            "text": "South Barracks Ghoul 3: 23 vs AC 12: hit, 7 bludgeoning \u2192 7; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791838392426-d1cbj48q",
+              "label": "Warhammer \u00b7 attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                3
+              ],
+              "total": 11,
+              "natural": 3,
+              "public": true,
+              "kind": "digital",
+              "time": "2:53:12 PM"
+            },
+            {
+              "id": "pa-1791838392426-9d3fazmk",
+              "label": "Warhammer \u00b7 effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                5
+              ],
+              "total": 10,
+              "natural": 5,
+              "public": true,
+              "kind": "digital",
+              "time": "2:53:12 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-6-ghoul-3",
+              "text": "South Barracks Ghoul 3: 11 vs AC 12: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-6-ghoul-2",
+    "action": {
+      "actor": "s4-wave-6-ghoul-2",
+      "label": "Claws",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838392931-cki4jsiz",
+          "label": "Claws \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            18
+          ],
+          "total": 22,
+          "natural": 18,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:12 PM"
+        },
+        {
+          "id": "pa-1791838392931-klccseze",
+          "label": "Claws \u00b7 effect 1.1",
+          "notation": "2d4+2",
+          "parts": [
+            2,
+            3
+          ],
+          "total": 7,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:53:12 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 22 vs AC 18: hit, 7 slashing \u2192 7; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": [],
+      "paralysisSave": {
+        "id": "1791838393180-2nhh1g7b2z2",
+        "label": "Pebble CON ghoul paralysisDC10",
+        "notation": "1d20+5",
+        "parts": [
+          15
+        ],
+        "total": 20,
+        "kind": "digital",
+        "time": "02:53 PM"
+      }
+    }
+  },
+  {
+    "pause": "Declared retreat threshold reached; player decision required",
+    "state": {
+      "turn": {
+        "scene": "lmop-map-wave-south",
+        "round": 1,
+        "order": [
+          "s4-wave-6-ghoul-3",
+          "pc-donavan",
+          "s4-wave-6-ghoul-1",
+          "pc-pebble",
+          "s4-wave-6-ghoul-2",
+          "pc-ringgo",
+          "pc-trista",
+          "pc-aldric"
+        ],
+        "index": 5
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 28,
+          "maxHp": 47
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 45,
+          "maxHp": 45
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 43,
+          "maxHp": 43
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 30,
+          "maxHp": 63
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 28,
+          "maxHp": 44
+        }
+      ],
+      "foes": [
+        {
+          "id": "s4-wave-6-ghoul-1",
+          "hp": 22
+        },
+        {
+          "id": "s4-wave-6-ghoul-2",
+          "hp": 22
+        },
+        {
+          "id": "s4-wave-6-ghoul-3",
+          "hp": 4
+        }
+      ],
+      "due": []
+    }
+  }
+]

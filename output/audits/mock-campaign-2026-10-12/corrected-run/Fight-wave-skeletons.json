@@ -1,0 +1,1679 @@
+[
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791838337145-he9u8t6l",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              6
+            ],
+            "total": 14,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:17 PM"
+          },
+          {
+            "id": "pa-1791838337145-80rnycpc",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              7,
+              3
+            ],
+            "total": 10,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:17 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-1",
+            "text": "Guardroom Skeleton 1: 14 vs AC 13: hit, 10 cold \u2192 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-2",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-2",
+      "label": "Shortsword",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838338473-g13ox0qd",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            13
+          ],
+          "total": 17,
+          "natural": 13,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:18 PM"
+        },
+        {
+          "id": "pa-1791838338473-bx14t0tz",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            3
+          ],
+          "total": 5,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:18 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 17 vs AC 12: hit, 5 piercing \u2192 5; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-6",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-6",
+      "label": "Shortsword",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838339065-ohfymx8a",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            5
+          ],
+          "total": 9,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:19 PM"
+        },
+        {
+          "id": "pa-1791838339065-40dxftir",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            1
+          ],
+          "total": 3,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:19 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 9 vs AC 12: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-7",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-7",
+      "label": "Shortsword",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838339515-js050yd0",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            15
+          ],
+          "total": 19,
+          "natural": 15,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:19 PM"
+        },
+        {
+          "id": "pa-1791838339515-4iqxkcm3",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            3
+          ],
+          "total": 5,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:19 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 19 vs AC 12: hit, 5 piercing \u2192 5; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-5",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-5",
+      "label": "Shortsword",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838340312-1es92zar",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            2
+          ],
+          "total": 6,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:20 PM"
+        },
+        {
+          "id": "pa-1791838340312-aed6umr5",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:20 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 6 vs AC 12: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-9",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-9",
+      "label": "Shortsword",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838340787-28q09ubn",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            14
+          ],
+          "total": 18,
+          "natural": 14,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:20 PM"
+        },
+        {
+          "id": "pa-1791838340787-0awe8o10",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            4
+          ],
+          "total": 6,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:20 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 18 vs AC 12: hit, 6 piercing \u2192 6; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838341417-cbj24h6z",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              3
+            ],
+            "total": 11,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:21 PM"
+          },
+          {
+            "id": "pa-1791838341417-zddk174q",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              3
+            ],
+            "total": 8,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:21 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-2",
+            "text": "Guardroom Skeleton 2: 11 vs AC 13: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791838341509-39rjjm5w",
+              "label": "Warhammer \u00b7 attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                7
+              ],
+              "total": 15,
+              "natural": 7,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:21 PM"
+            },
+            {
+              "id": "pa-1791838341509-dn8fatib",
+              "label": "Warhammer \u00b7 effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                1
+              ],
+              "total": 6,
+              "natural": 1,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:21 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-4-wave-skeleton-2",
+              "text": "Guardroom Skeleton 2: 15 vs AC 13: hit, 6 bludgeoning \u2192 12; temp HP absorbed 0; vulnerabilities: bludgeoning"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791838341887-4xaq8n60",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              19
+            ],
+            "total": 27,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:21 PM"
+          },
+          {
+            "id": "pa-1791838341887-z0v1xuls",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "2d10",
+            "parts": [
+              2,
+              1
+            ],
+            "total": 3,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:21 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-2",
+            "text": "Guardroom Skeleton 2: 27 vs AC 13: hit, 3 fire \u2192 3; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791838342268-xti4c4sw",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              2
+            ],
+            "total": 10,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:22 PM"
+          },
+          {
+            "id": "pa-1791838342269-kxw9i4mg",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              1
+            ],
+            "total": 6,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:22 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-5",
+            "text": "Guardroom Skeleton 5: 10 vs AC 13: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-8",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-8",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838342711-txe6dso3",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            11
+          ],
+          "total": 15,
+          "natural": 11,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:22 PM"
+        },
+        {
+          "id": "pa-1791838342711-za713hcq",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:22 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 15 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-1",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-1",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838343171-fqx6wxxw",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            10
+          ],
+          "total": 14,
+          "natural": 10,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:23 PM"
+        },
+        {
+          "id": "pa-1791838343171-y1p15yqt",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            3
+          ],
+          "total": 5,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:23 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 14 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-3",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-3",
+      "label": "Shortsword",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838343664-xd9fr2pc",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            20
+          ],
+          "total": 24,
+          "natural": 20,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:23 PM"
+        },
+        {
+          "id": "pa-1791838343664-w5cr232u",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "2d6+2",
+          "parts": [
+            3,
+            2
+          ],
+          "total": 7,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:23 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 24 vs AC 18: critical hit, 7 piercing \u2192 7; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791838344284-6ogfbzzl",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              2
+            ],
+            "total": 9,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:24 PM"
+          },
+          {
+            "id": "pa-1791838344284-m7s709xc",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              7
+            ],
+            "total": 11,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:24 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-1",
+            "text": "Guardroom Skeleton 1: 9 vs AC 13: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791838344386-uy8q7w4i",
+              "label": "Unarmed Strike \u00b7 attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                6
+              ],
+              "total": 13,
+              "natural": 6,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:24 PM"
+            },
+            {
+              "id": "pa-1791838344386-6kqzlmft",
+              "label": "Unarmed Strike \u00b7 effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                1
+              ],
+              "total": 5,
+              "natural": 1,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:24 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-4-wave-skeleton-1",
+              "text": "Guardroom Skeleton 1: 13 vs AC 13: hit, 5 bludgeoning \u2192 10; temp HP absorbed 0; vulnerabilities: bludgeoning"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-4",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-4",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838344841-bssmcz97",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            20
+          ],
+          "total": 24,
+          "natural": 20,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:24 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 24 vs AC 14: critical hit, physical base 0, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        },
+        {
+          "actor": "pc-pebble",
+          "label": "Interception",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791838345899-es54movf",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              6
+            ],
+            "total": 14,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:25 PM"
+          },
+          {
+            "id": "pa-1791838345899-nf8wjg3y",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              3,
+              7
+            ],
+            "total": 10,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:25 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-3",
+            "text": "Guardroom Skeleton 3: 14 vs AC 13: hit, 10 cold \u2192 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-6",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-6",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838347239-qnxmffz8",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            14
+          ],
+          "total": 18,
+          "natural": 14,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:27 PM"
+        },
+        {
+          "id": "pa-1791838347239-jpkcscrz",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:27 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 18 vs AC 14: hit, 7 piercing \u2192 7; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-7",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-7",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838347841-c7tc5ml0",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            4
+          ],
+          "total": 8,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:27 PM"
+        },
+        {
+          "id": "pa-1791838347841-22tustyx",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            6
+          ],
+          "total": 8,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:27 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 8 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-5",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-5",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838348293-623tzg4o",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            17
+          ],
+          "total": 21,
+          "natural": 17,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:28 PM"
+        },
+        {
+          "id": "pa-1791838348293-yo42cf1m",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            4
+          ],
+          "total": 6,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:28 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 21 vs AC 14: hit, 6 piercing \u2192 6; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-9",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-9",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838349003-e4v73tnk",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            12
+          ],
+          "total": 16,
+          "natural": 12,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:29 PM"
+        },
+        {
+          "id": "pa-1791838349003-vp03d0hk",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            4
+          ],
+          "total": 6,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:29 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 16 vs AC 14: hit, 6 piercing \u2192 6; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838349630-942wqsbt",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              2
+            ],
+            "total": 10,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:29 PM"
+          },
+          {
+            "id": "pa-1791838349630-xwbtvduy",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              7
+            ],
+            "total": 12,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:29 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-3",
+            "text": "Guardroom Skeleton 3: 10 vs AC 13: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791838349734-c3p4j6o5",
+              "label": "Warhammer \u00b7 attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                5
+              ],
+              "total": 13,
+              "natural": 5,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:29 PM"
+            },
+            {
+              "id": "pa-1791838349734-sij7dp8z",
+              "label": "Warhammer \u00b7 effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                3
+              ],
+              "total": 8,
+              "natural": 3,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:29 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-4-wave-skeleton-3",
+              "text": "Guardroom Skeleton 3: 13 vs AC 13: hit, 8 bludgeoning \u2192 16; temp HP absorbed 0; vulnerabilities: bludgeoning"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791838350132-8su2b7om",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              20
+            ],
+            "total": 28,
+            "natural": 20,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:30 PM"
+          },
+          {
+            "id": "pa-1791838350132-rgwfmm0d",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "4d10",
+            "parts": [
+              6,
+              5,
+              3,
+              2
+            ],
+            "total": 16,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:30 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-4",
+            "text": "Guardroom Skeleton 4: 28 vs AC 13: critical hit, 16 fire \u2192 16; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791838350530-1lrkqqyp",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              14
+            ],
+            "total": 22,
+            "natural": 14,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:30 PM"
+          },
+          {
+            "id": "pa-1791838350530-4gjtrxce",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              5
+            ],
+            "total": 10,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:30 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-5",
+            "text": "Guardroom Skeleton 5: 22 vs AC 13: hit, 10 piercing \u2192 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-8",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-8",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838350997-z06jfnrq",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            4
+          ],
+          "total": 8,
+          "natural": 4,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:30 PM"
+        },
+        {
+          "id": "pa-1791838350997-dyzdslqh",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            5
+          ],
+          "total": 7,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:30 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 8 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791838351478-y827zo08",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              2
+            ],
+            "total": 9,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:31 PM"
+          },
+          {
+            "id": "pa-1791838351478-qxj4uwbc",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:31 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-5",
+            "text": "Guardroom Skeleton 5: 9 vs AC 13: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791838351612-4h2nysu5",
+              "label": "Unarmed Strike \u00b7 attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                15
+              ],
+              "total": 22,
+              "natural": 15,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:31 PM"
+            },
+            {
+              "id": "pa-1791838351612-b7wndhpi",
+              "label": "Unarmed Strike \u00b7 effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                8
+              ],
+              "total": 12,
+              "natural": 8,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:31 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-4-wave-skeleton-5",
+              "text": "Guardroom Skeleton 5: 22 vs AC 13: hit, 12 bludgeoning \u2192 24; temp HP absorbed 0; vulnerabilities: bludgeoning"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791838352210-sac6ok6w",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              13
+            ],
+            "total": 21,
+            "natural": 13,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:32 PM"
+          },
+          {
+            "id": "pa-1791838352210-q28djyo2",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              8,
+              8
+            ],
+            "total": 16,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:32 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-6",
+            "text": "Guardroom Skeleton 6: 21 vs AC 13: hit, 16 cold \u2192 16; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-7",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-7",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838353590-2v0mdu02",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            8
+          ],
+          "total": 12,
+          "natural": 8,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:33 PM"
+        },
+        {
+          "id": "pa-1791838353590-9209fl2q",
+          "label": "Shortsword \u00b7 effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            3
+          ],
+          "total": 5,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:33 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 12 vs AC 14: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-4-wave-skeleton-9",
+    "action": {
+      "actor": "s4-wave-4-wave-skeleton-9",
+      "label": "Shortsword",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791838354065-eulyjo4j",
+          "label": "Shortsword \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            11
+          ],
+          "total": 15,
+          "natural": 11,
+          "public": false,
+          "kind": "digital",
+          "time": "2:52:34 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 15 vs AC 14: hit, physical base 0, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        },
+        {
+          "actor": "pc-pebble",
+          "label": "Interception",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791838355063-t9ni6ovy",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              12
+            ],
+            "total": 20,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:35 PM"
+          },
+          {
+            "id": "pa-1791838355063-moa7xtxj",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              6
+            ],
+            "total": 11,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:35 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-7",
+            "text": "Guardroom Skeleton 7: 20 vs AC 13: hit, 11 bludgeoning \u2192 22; temp HP absorbed 0; vulnerabilities: bludgeoning"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791838355180-js4mftq8",
+              "label": "Warhammer \u00b7 attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                9
+              ],
+              "total": 17,
+              "natural": 9,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:35 PM"
+            },
+            {
+              "id": "pa-1791838355180-3njcqkj4",
+              "label": "Warhammer \u00b7 effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                4
+              ],
+              "total": 9,
+              "natural": 4,
+              "public": true,
+              "kind": "digital",
+              "time": "2:52:35 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-4-wave-skeleton-8",
+              "text": "Guardroom Skeleton 8: 17 vs AC 13: hit, 9 bludgeoning \u2192 18; temp HP absorbed 0; vulnerabilities: bludgeoning"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791838355581-u38isf07",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              11
+            ],
+            "total": 19,
+            "natural": 11,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:35 PM"
+          },
+          {
+            "id": "pa-1791838355582-kagp0jwj",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "2d10",
+            "parts": [
+              5,
+              4
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:35 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-9",
+            "text": "Guardroom Skeleton 9: 19 vs AC 13: hit, 9 fire \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791838355998-plq9oeb2",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              2
+            ],
+            "total": 10,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:35 PM"
+          },
+          {
+            "id": "pa-1791838355998-z22tueyc",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              2
+            ],
+            "total": 7,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:35 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-9",
+            "text": "Guardroom Skeleton 9: 10 vs AC 13: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791838356510-bo0b9cvt",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              10
+            ],
+            "total": 17,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:36 PM"
+          },
+          {
+            "id": "pa-1791838356510-4pp3ugm1",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "2:52:36 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-4-wave-skeleton-9",
+            "text": "Guardroom Skeleton 9: 17 vs AC 13: hit, 6 bludgeoning \u2192 12; temp HP absorbed 0; vulnerabilities: bludgeoning"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "complete": "hostiles defeated or fled",
+    "state": {
+      "turn": {
+        "scene": "lmop-map-wave-south",
+        "round": 4,
+        "order": [
+          "pc-donavan",
+          "s4-wave-4-wave-skeleton-2",
+          "s4-wave-4-wave-skeleton-6",
+          "s4-wave-4-wave-skeleton-7",
+          "s4-wave-4-wave-skeleton-5",
+          "s4-wave-4-wave-skeleton-9",
+          "pc-pebble",
+          "pc-aldric",
+          "pc-ringgo",
+          "s4-wave-4-wave-skeleton-8",
+          "s4-wave-4-wave-skeleton-1",
+          "s4-wave-4-wave-skeleton-3",
+          "pc-trista",
+          "s4-wave-4-wave-skeleton-4"
+        ],
+        "index": 0
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 28,
+          "maxHp": 47
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 45,
+          "maxHp": 45
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 43,
+          "maxHp": 43
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 37,
+          "maxHp": 63
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 28,
+          "maxHp": 44
+        }
+      ],
+      "foes": [],
+      "due": [
+        {
+          "id": "card-1791838352210-om4ff9f",
+          "tokenId": "s4-wave-4-wave-skeleton-6",
+          "triggerActor": "pc-donavan",
+          "triggerPoint": "start",
+          "remaining": 0,
+          "name": "Ray of Frost \u00b7 speed \u221210 ft",
+          "condition": "",
+          "due": true,
+          "fired": true,
+          "repeatSave": false,
+          "note": "Apply until the caster\u2019s next turn starts. Movement remains manual."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,1045 @@
+[
+  {
+    "actor": "s4-wave-19-wave-spider-4",
+    "web": {
+      "actor": "s4-wave-19-wave-spider-4",
+      "label": "Web",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839125805-3irkefy1",
+          "label": "Web \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            12
+          ],
+          "total": 17,
+          "natural": 12,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:25 PM"
+        },
+        {
+          "id": "pa-1791839125805-vaq0gbrl",
+          "label": "Web \u00b7 effect 1.1",
+          "notation": "0",
+          "parts": [],
+          "total": 0,
+          "natural": null,
+          "public": false,
+          "kind": "fixed",
+          "time": "3:05:25 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 17 vs AC 18: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-19-bugbear-2",
+    "action": {
+      "actor": "s4-wave-19-bugbear-2",
+      "label": "Morningstar",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839127212-emowmvx8",
+          "label": "Morningstar \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            19
+          ],
+          "total": 23,
+          "natural": 19,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:27 PM"
+        },
+        {
+          "id": "pa-1791839127212-fhw5otdf",
+          "label": "Morningstar \u00b7 effect 1.1",
+          "notation": "2d8+2",
+          "parts": [
+            6,
+            6
+          ],
+          "total": 14,
+          "natural": 6,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:27 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 23 vs AC 18: hit, 14 piercing \u2192 14; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-19-bugbear-1",
+    "action": {
+      "actor": "s4-wave-19-bugbear-1",
+      "label": "Morningstar",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839127899-qzh75wlf",
+          "label": "Morningstar \u00b7 attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            9
+          ],
+          "total": 13,
+          "natural": 9,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:27 PM"
+        },
+        {
+          "id": "pa-1791839127899-iug6i0io",
+          "label": "Morningstar \u00b7 effect 1.1",
+          "notation": "2d8+2",
+          "parts": [
+            8,
+            5
+          ],
+          "total": 15,
+          "natural": 8,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:27 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 13 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791839128344-uwgerax9",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              10
+            ],
+            "total": 18,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "3:05:28 PM"
+          },
+          {
+            "id": "pa-1791839128344-toozcn8a",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              4,
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "3:05:28 PM"
+          },
+          {
+            "id": "pa-1791839128344-8lp2pdt1",
+            "label": "Nezznar \u00b7 concentration DC 10",
+            "notation": "1d20+0",
+            "parts": [
+              14
+            ],
+            "total": 14,
+            "natural": 14,
+            "public": false,
+            "kind": "digital",
+            "time": "3:05:28 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-nezznar-1",
+            "text": "Nezznar: 18 vs AC 14: hit, 8 cold \u2192 8; temp HP absorbed 0, concentration held"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-18-vhalak-1",
+    "action": {
+      "actor": "s4-wave-18-vhalak-1",
+      "label": "Slam",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839128898-zdzgim12",
+          "label": "Slam \u00b7 attack 1",
+          "notation": "1d20+6",
+          "parts": [
+            16
+          ],
+          "total": 22,
+          "natural": 16,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:28 PM"
+        },
+        {
+          "id": "pa-1791839128898-chphwo2y",
+          "label": "Slam \u00b7 effect 1.1",
+          "notation": "1d6+4",
+          "parts": [
+            3
+          ],
+          "total": 7,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:28 PM"
+        },
+        {
+          "id": "pa-1791839128898-tf4nqryk",
+          "label": "Aldric \u00b7 concentration DC 10",
+          "notation": "1d20+3",
+          "parts": [
+            10
+          ],
+          "total": 13,
+          "natural": 10,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:28 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 22 vs AC 12: hit, 7 bludgeoning \u2192 7; temp HP absorbed 0, concentration held"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791839129594-l0jnkxhi",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              4
+            ],
+            "total": 11,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "3:05:29 PM"
+          },
+          {
+            "id": "pa-1791839129594-8v8ptqig",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "3:05:29 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-18-vhalak-1",
+            "text": "Drow overseer: 11 vs AC 14: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-trista",
+          "label": "Unarmed Strike",
+          "rolls": [
+            {
+              "id": "pa-1791839129707-cn10u953",
+              "label": "Unarmed Strike \u00b7 attack 1",
+              "notation": "1d20+7",
+              "parts": [
+                16
+              ],
+              "total": 23,
+              "natural": 16,
+              "public": true,
+              "kind": "digital",
+              "time": "3:05:29 PM"
+            },
+            {
+              "id": "pa-1791839129707-c2mf3a7p",
+              "label": "Unarmed Strike \u00b7 effect 1.1",
+              "notation": "1d8+4",
+              "parts": [
+                2
+              ],
+              "total": 6,
+              "natural": 2,
+              "public": true,
+              "kind": "digital",
+              "time": "3:05:29 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-18-vhalak-1",
+              "text": "Drow overseer: 23 vs AC 14: hit, 6 bludgeoning \u2192 6; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      },
+      {
+        "actor": "pc-trista",
+        "label": "Martial Arts unarmed strike",
+        "targets": [
+          "Drow overseer"
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791839129830-afrxn2hc",
+            "label": "Martial Arts unarmed strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              11
+            ],
+            "total": 18,
+            "natural": 11,
+            "public": true,
+            "kind": "digital",
+            "time": "3:05:29 PM"
+          },
+          {
+            "id": "pa-1791839129830-aunz5ti9",
+            "label": "Martial Arts unarmed strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "3:05:29 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-18-vhalak-1",
+            "text": "Drow overseer: 18 vs AC 14: hit, 8 bludgeoning \u2192 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-19-wave-spider-1",
+    "web": {
+      "actor": "s4-wave-19-wave-spider-1",
+      "label": "Web",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839130244-0h8rvp9d",
+          "label": "Web \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            17
+          ],
+          "total": 22,
+          "natural": 17,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:30 PM"
+        },
+        {
+          "id": "pa-1791839130244-ei22g2jv",
+          "label": "Web \u00b7 effect 1.1",
+          "notation": "0",
+          "parts": [],
+          "total": 0,
+          "natural": null,
+          "public": false,
+          "kind": "fixed",
+          "time": "3:05:30 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 22 vs AC 18: hit, 0 bludgeoning \u2192 0; temp HP absorbed 0, Restrained"
+        }
+      ],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-19-wave-spider-2",
+    "action": {
+      "actor": "s4-wave-19-wave-spider-2",
+      "label": "Bite",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839130739-tinysnld",
+          "label": "Bite \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            2
+          ],
+          "total": 7,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:30 PM"
+        },
+        {
+          "id": "pa-1791839130739-8jz46j8s",
+          "label": "Bite \u00b7 effect 1.1",
+          "notation": "1d8+3",
+          "parts": [
+            5
+          ],
+          "total": 8,
+          "natural": 5,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:30 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 7 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-19-wave-spider-3",
+    "action": {
+      "actor": "s4-wave-19-wave-spider-3",
+      "label": "Bite",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839132170-rcqum7cw",
+          "label": "Bite \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            15
+          ],
+          "total": 20,
+          "natural": 15,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:32 PM"
+        },
+        {
+          "id": "pa-1791839132170-8lpgfkzw",
+          "label": "Bite \u00b7 effect 1.1",
+          "notation": "1d8+3",
+          "parts": [
+            3
+          ],
+          "total": 6,
+          "natural": 3,
+          "public": false,
+          "kind": "digital",
+          "time": "3:05:32 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 20 vs AC 18: hit, 6 piercing \u2192 6; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "pause": "Declared retreat threshold reached; player decision required",
+    "state": {
+      "turn": {
+        "scene": "lmop-map-wave-temple",
+        "round": 2,
+        "order": [
+          "s4-wave-19-wave-spider-2",
+          "s4-wave-19-wave-spider-3",
+          "pc-ringgo",
+          "pc-aldric",
+          "pc-pebble",
+          "s4-wave-19-nezznar-1",
+          "s4-wave-19-wave-spider-4",
+          "s4-wave-19-bugbear-2",
+          "s4-wave-19-bugbear-1",
+          "pc-donavan",
+          "s4-wave-18-vhalak-1",
+          "pc-trista",
+          "s4-wave-19-wave-spider-1"
+        ],
+        "index": 2
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 43,
+          "maxHp": 47
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 45,
+          "maxHp": 45
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 43,
+          "maxHp": 43
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 30,
+          "maxHp": 63
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 35,
+          "maxHp": 44
+        }
+      ],
+      "foes": [
+        {
+          "id": "s4-wave-18-vhalak-1",
+          "hp": 38
+        },
+        {
+          "id": "s4-wave-19-nezznar-1",
+          "hp": 19
+        },
+        {
+          "id": "s4-wave-19-bugbear-1",
+          "hp": 27
+        },
+        {
+          "id": "s4-wave-19-bugbear-2",
+          "hp": 27
+        },
+        {
+          "id": "s4-wave-19-wave-spider-1",
+          "hp": 7
+        },
+        {
+          "id": "s4-wave-19-wave-spider-2",
+          "hp": 17
+        },
+        {
+          "id": "s4-wave-19-wave-spider-3",
+          "hp": 17
+        },
+        {
+          "id": "s4-wave-19-wave-spider-4",
+          "hp": 26
+        }
+      ],
+      "due": []
+    }
+  },
+  {
+    "actor": "s4-wave-19-wave-spider-1",
+    "action": {
+      "actor": "s4-wave-19-wave-spider-1",
+      "label": "Bite",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839404221-g7vpndeo",
+          "label": "Bite \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            15
+          ],
+          "total": 20,
+          "natural": 15,
+          "public": false,
+          "kind": "digital",
+          "time": "3:10:04 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 20 vs AC 14: hit, physical base 0, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [
+        {
+          "actor": "pc-trista",
+          "label": "Deflect Attacks",
+          "targets": [],
+          "rolls": [],
+          "outcomes": [],
+          "costs": []
+        }
+      ],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-19-wave-spider-3",
+    "escape": {
+      "id": "1791839406017-i1zd4pl0doh",
+      "label": "SpiderSTRescapeWeb16",
+      "notation": "1d20+2",
+      "parts": [
+        7
+      ],
+      "total": 9,
+      "kind": "digital",
+      "time": "03:10 PM"
+    }
+  },
+  {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791839407391-0b4d2gqz",
+            "label": "Shortbow \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              10
+            ],
+            "total": 18,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:07 PM"
+          },
+          {
+            "id": "pa-1791839407391-og4wnols",
+            "label": "Shortbow \u00b7 effect 1.1",
+            "notation": "1d6+5",
+            "parts": [
+              3
+            ],
+            "total": 8,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:07 PM"
+          },
+          {
+            "id": "pa-1791839407391-8f6k7xsv",
+            "label": "Shortbow \u00b7 effect 1.2",
+            "notation": "3d6",
+            "parts": [
+              6,
+              2,
+              6
+            ],
+            "total": 14,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:07 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-wave-spider-1",
+            "text": "Nezznar\u2019s Spider 1: 18 vs AC 14: hit, 8 piercing \u2192 8; temp HP absorbed 0, 14 piercing \u2192 14; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791839407901-v9fvxovs",
+            "label": "Fire Bolt \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              20
+            ],
+            "total": 28,
+            "natural": 20,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:07 PM"
+          },
+          {
+            "id": "pa-1791839407902-vvcxvfow",
+            "label": "Fire Bolt \u00b7 effect 1.1",
+            "notation": "4d10",
+            "parts": [
+              6,
+              2,
+              8,
+              2
+            ],
+            "total": 18,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:07 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-wave-spider-3",
+            "text": "Nezznar\u2019s Spider 3: 28 vs AC 14: critical hit, 18 fire \u2192 18; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791839408472-me8tq8sz",
+            "label": "Warhammer \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              8
+            ],
+            "total": 16,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:08 PM"
+          },
+          {
+            "id": "pa-1791839408472-3cdulg1o",
+            "label": "Warhammer \u00b7 effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              4
+            ],
+            "total": 9,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:08 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-wave-spider-4",
+            "text": "Nezznar\u2019s Spider 4: 16 vs AC 14: hit, 9 bludgeoning \u2192 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "secondAttack": {
+          "actor": "pc-pebble",
+          "label": "Warhammer",
+          "rolls": [
+            {
+              "id": "pa-1791839408682-m309pyfk",
+              "label": "Warhammer \u00b7 attack 1",
+              "notation": "1d20+8",
+              "parts": [
+                9
+              ],
+              "total": 17,
+              "natural": 9,
+              "public": true,
+              "kind": "digital",
+              "time": "3:10:08 PM"
+            },
+            {
+              "id": "pa-1791839408682-c272omcz",
+              "label": "Warhammer \u00b7 effect 1.1",
+              "notation": "1d8+5",
+              "parts": [
+                3
+              ],
+              "total": 8,
+              "natural": 3,
+              "public": true,
+              "kind": "digital",
+              "time": "3:10:08 PM"
+            }
+          ],
+          "outcomes": [
+            {
+              "targetId": "s4-wave-19-wave-spider-4",
+              "text": "Nezznar\u2019s Spider 4: 17 vs AC 14: hit, 8 bludgeoning \u2192 8; temp HP absorbed 0"
+            }
+          ],
+          "costs": []
+        }
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-19-wave-spider-4",
+    "action": {
+      "actor": "s4-wave-19-wave-spider-4",
+      "label": "Bite",
+      "targets": [
+        "Pebble"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791839409189-pvjuausu",
+          "label": "Bite \u00b7 attack 1",
+          "notation": "1d20+5",
+          "parts": [
+            11
+          ],
+          "total": 16,
+          "natural": 11,
+          "public": false,
+          "kind": "digital",
+          "time": "3:10:09 PM"
+        },
+        {
+          "id": "pa-1791839409189-lt4kmtyr",
+          "label": "Bite \u00b7 effect 1.1",
+          "notation": "1d8+3",
+          "parts": [
+            7
+          ],
+          "total": 10,
+          "natural": 7,
+          "public": false,
+          "kind": "digital",
+          "time": "3:10:09 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-pebble",
+          "text": "Pebble: 16 vs AC 18: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  },
+  {
+    "actor": "s4-wave-19-bugbear-2",
+    "status": "Departed/disarmed; no turn"
+  },
+  {
+    "actor": "pc-donavan",
+    "actions": [
+      {
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791839410000-xf8lw3p7",
+            "label": "Ray of Frost \u00b7 attack 1",
+            "notation": "1d20+8",
+            "parts": [
+              3
+            ],
+            "total": 11,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:10 PM"
+          },
+          {
+            "id": "pa-1791839410000-i7fj3w17",
+            "label": "Ray of Frost \u00b7 effect 1.1",
+            "notation": "2d8",
+            "parts": [
+              4,
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:10 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-wave-spider-4",
+            "text": "Nezznar\u2019s Spider 4: 11 vs AC 14: miss, 0 cold \u2192 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "actor": "s4-wave-18-vhalak-1",
+    "status": "Departed/disarmed; no turn"
+  },
+  {
+    "actor": "pc-trista",
+    "actions": [
+      {
+        "actor": "pc-trista",
+        "label": "Unarmed Strike",
+        "rolls": [
+          {
+            "id": "pa-1791839410904-d9adc3mc",
+            "label": "Unarmed Strike \u00b7 attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              18
+            ],
+            "total": 25,
+            "natural": 18,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:10 PM"
+          },
+          {
+            "id": "pa-1791839410904-8gnfm3hn",
+            "label": "Unarmed Strike \u00b7 effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              6
+            ],
+            "total": 10,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "3:10:10 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s4-wave-19-wave-spider-4",
+            "text": "Nezznar\u2019s Spider 4: 25 vs AC 14: hit, 10 bludgeoning \u2192 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  },
+  {
+    "complete": "hostiles defeated or fled",
+    "state": {
+      "turn": {
+        "scene": "lmop-map-wave-temple",
+        "round": 4,
+        "order": [
+          "s4-wave-19-wave-spider-2",
+          "s4-wave-19-wave-spider-3",
+          "pc-ringgo",
+          "pc-aldric",
+          "pc-pebble",
+          "s4-wave-19-nezznar-1",
+          "s4-wave-19-wave-spider-4",
+          "s4-wave-19-bugbear-2",
+          "s4-wave-19-bugbear-1",
+          "pc-donavan",
+          "s4-wave-18-vhalak-1",
+          "pc-trista",
+          "s4-wave-19-wave-spider-1"
+        ],
+        "index": 2
+      },
+      "hp": [
+        {
+          "id": "pc-trista",
+          "hp": 43,
+          "maxHp": 47
+        },
+        {
+          "id": "pc-donavan",
+          "hp": 45,
+          "maxHp": 45
+        },
+        {
+          "id": "pc-ringgo",
+          "hp": 43,
+          "maxHp": 43
+        },
+        {
+          "id": "pc-pebble",
+          "hp": 39,
+          "maxHp": 63
+        },
+        {
+          "id": "pc-aldric",
+          "hp": 35,
+          "maxHp": 44
+        }
+      ],
+      "foes": [],
+      "due": []
+    }
+  }
+]

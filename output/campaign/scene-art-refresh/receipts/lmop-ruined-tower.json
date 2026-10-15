@@ -1,0 +1,36 @@
+{
+  "id": "lmop-ruined-tower",
+  "title": "Cragmaw Castle · Area 11 · Ruined tower",
+  "image": "lmop-visuals/ruined-tower.png",
+  "key": "C11",
+  "chapter": "Cragmaw Castle",
+  "reveal": "On entering area 11",
+  "sourceRecordIds": [
+    "s3-area11"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area11",
+      "title": "Area 11 · Concealed north entrance",
+      "read": [
+        "A fallen tower lies under dusty canvas and brush. A few old crates remain where a storeroom once stood.",
+        "The canvas and vegetation break up the outline of what the tower used to be. The crates are the clearest remaining sign of its practical use. You can examine a visible patch of ground, check beneath accessible cover, or keep the ruined approach in sight while someone searches."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Almost completely collapsed castle tower, open ground floor amid rubble, rotten crates and old barrels, heavy SOUTH curtain, intact wooden EAST door. North canvas-covered access not highlighted or revealed from exterior. No inhabitants, new supplies or hidden secret tunnel label. Natural daylight through ruin.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 11 · Ruined tower\nObservable scene and constraints: Almost completely collapsed castle tower, open ground floor amid rubble, rotten crates and old barrels, heavy SOUTH curtain, intact wooden EAST door. North canvas-covered access not highlighted or revealed from exterior. No inhabitants, new supplies or hidden secret tunnel label. Natural daylight through ruin.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "0e6eebb6205a5398897063fc2e6fb99c71bf895132cb485b544ccae8fab83def",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-ruined-tower.png",
+  "generatedAt": "2026-10-12T16:26:10.598Z",
+  "candidateHash": "0944a433f7ec5210bfee8608117de4391caede8f1309e2b4fb49e63532cf125e",
+  "review": "passed",
+  "reviewedHash": "0944a433f7ec5210bfee8608117de4391caede8f1309e2b4fb49e63532cf125e",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.002Z",
+  "installedHash": "0944a433f7ec5210bfee8608117de4391caede8f1309e2b4fb49e63532cf125e",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/ruined-tower.png"
+}

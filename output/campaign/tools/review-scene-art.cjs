@@ -1,0 +1,23 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const root=path.resolve(__dirname,'..'),dir=path.join(root,'scene-art-refresh');
+const file=path.join(dir,'Generation-Progress.json');
+const rows=JSON.parse(fs.readFileSync(file));
+const notesFile=path.join(dir,'Review-Notes.json'),notes=fs.existsSync(notesFile)?JSON.parse(fs.readFileSync(notesFile)):{};
+for(const row of rows){const receipt=path.join(dir,'receipts',row.id+'.json');if(fs.existsSync(receipt))Object.assign(row,JSON.parse(fs.readFileSync(receipt)));if(notes[row.id])Object.assign(row,notes[row.id]);}
+if(process.argv.includes('--install')){
+ for(const row of rows.filter(r=>r.review==='passed'&&r.status!=='installed')){
+  const target=path.join(root,row.image),candidate=path.join(root,row.candidate),hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+  if(hash(target)!==row.originalHash)throw Error('Original changed since audit: '+row.id);
+  if(hash(candidate)!==row.candidateHash||row.reviewedHash!==row.candidateHash)throw Error('Candidate changed since review: '+row.id);
+  const backup=path.join(dir,'originals',row.image);fs.mkdirSync(path.dirname(backup),{recursive:true});fs.copyFileSync(target,backup);
+  fs.copyFileSync(candidate,target+'.refresh');fs.renameSync(target+'.refresh',target);
+  Object.assign(row,{status:'installed',installedAt:new Date().toISOString(),installedHash:hash(target),originalBackup:path.relative(root,backup)});
+  fs.writeFileSync(path.join(dir,'receipts',row.id+'.json'),JSON.stringify(row,null,2));
+ }
+}
+fs.writeFileSync(file+'.tmp',JSON.stringify(rows,null,2));fs.renameSync(file+'.tmp',file);
+const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const rationaleFile=path.join(dir,'Image-by-Image-Reasons.json');const rationale=fs.existsSync(rationaleFile)?JSON.parse(fs.readFileSync(rationaleFile)):[];const why=Object.fromEntries(rationale.map(r=>[r.id,r]));
+const sections=rows.map(r=>`<article data-search="${esc(r.title+' '+r.chapter+' '+r.status)}"><h2>${esc(r.title)}</h2><p>${esc(r.chapter)} · ${esc(r.key)} · ${esc(r.status)} · ${esc(r.review||'Not reviewed')}</p><section class="reason"><h3>Why I chose this image</h3><p>${esc(why[r.id]?.reason||r.brief)}</p><p>Basis: ${esc(why[r.id]?.source)}. ${esc(why[r.id]?.interpretation)}</p></section><div class="pair"><figure><img loading="lazy" src="${esc(r.originalBackup?'originals/'+r.image:'../'+r.image)}"><figcaption>Original</figcaption></figure><figure>${r.candidate?`<img loading="lazy" src="${esc(r.candidate.replace('scene-art-refresh/',''))}">`:'<div class="pending">Replacement pending</div>'}<figcaption>Replacement</figcaption></figure></div><details><summary>Scene accuracy brief and reveal restriction</summary><p>${esc(r.brief)}</p><p>Stage: ${esc(r.reveal)}</p><p>Records: ${esc(r.sourceRecordIds.join(', '))}</p><p>Review: ${esc(r.reviewNote)}</p></details></article>`).join('');
+fs.writeFileSync(path.join(dir,'Before-and-After.html'),`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scene art review — DM only</title><style>body{background:#14261f;color:#f3ead8;font:17px system-ui;margin:0;padding:24px}header{position:sticky;top:0;background:#14261f;padding:16px;z-index:1}h1,h2{font-family:Georgia}input{font:inherit;padding:12px;min-width:300px}article{margin:32px 0;padding:20px;border:1px solid #57694e;border-radius:12px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0}img{width:100%;height:auto;display:block}figcaption,p{color:#d3cbb8}details{padding:12px;background:#1e352b}.pending{aspect-ratio:3/2;display:grid;place-items:center;background:#24382e}@media(max-width:700px){.pair{grid-template-columns:1fr}}</style><header><h1>Scene art review</h1><p>Private DM audit. These are prepared views, not evidence of actual play. Encounter/reveal variants require deliberate staging. Maps, saves, tokens and fog are preserved.</p><input id="search" aria-label="Search scene art" placeholder="Search room, region or status"></header>${sections}<script>document.querySelector('#search').addEventListener('input',e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('article').forEach(a=>a.hidden=!a.dataset.search.toLowerCase().includes(q))});</script></html>`);
+console.log(JSON.stringify({total:rows.length,generated:rows.filter(r=>r.candidate).length,passed:rows.filter(r=>r.review==='passed').length,installed:rows.filter(r=>r.status==='installed').length,pending:rows.filter(r=>!r.candidate).length}));

@@ -1,0 +1,27 @@
+const assert=require('node:assert/strict');
+const path=require('node:path');
+const {chromium}=require('playwright');
+(async()=>{const browser=await chromium.launch({headless:true,channel:'chrome'});try{
+  const page=await (await browser.newContext({viewport:{width:1440,height:900}})).newPage(),errors=[];
+  page.on('pageerror',error=>errors.push(error.message));page.on('dialog',dialog=>dialog.accept('Rehearsal clue'));
+  await page.goto('file://'+path.resolve(__dirname,'../Session-01-TV-Display.html'));
+  await page.locator('#hybrid-home').waitFor();
+  await page.evaluate(()=>[...document.querySelectorAll('button')].find(b=>b.textContent==='Create practice campaign').click());
+  await page.waitForFunction(()=>document.body.textContent.includes('PRACTICE ·'));
+  await page.evaluate(()=>ECHO_STORY_UI.open('evidence'));
+  await page.getByRole('button',{name:'Add evidence',exact:true}).click();
+  const clue=page.locator('#story-content article.story-card').first();
+  await clue.getByLabel('What the players actually saw').fill('The group found a copper token.');
+  await clue.getByLabel('Publish player observation to journal').check();
+  const projection=()=>page.evaluate(async()=>{const db=await new Promise((resolve,reject)=>{const r=indexedDB.open('echo-below-campaign-table-v1',1);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});const registry=await new Promise(resolve=>{const r=db.transaction('records','readonly').objectStore('records').get('campaigns:registry:v2');r.onsuccess=()=>resolve(JSON.parse(r.result));});const index=await new Promise(resolve=>{const r=db.transaction('records','readonly').objectStore('records').get(`campaign:${registry.active}:index`);r.onsuccess=()=>resolve(JSON.parse(r.result));});db.close();return {evidence:index.story.evidence,journal:ECHO_OUTCOMES.journal(index.story)};});
+  await page.waitForFunction(()=>document.getElementById('save-status')?.textContent==='Saved');
+  assert((await projection()).journal.some(entry=>entry.text==='The group found a copper token.'),'published clue reached the player journal projection');
+  await page.evaluate(()=>ECHO_STORY_UI.open('evidence'));
+  await page.getByRole('button',{name:'Undo last clue publication'}).click();
+  await page.waitForFunction(()=>document.getElementById('save-status')?.textContent==='Saved');
+  assert.equal((await projection()).journal.some(entry=>entry.text==='The group found a copper token.'),false,'undo removed the public clue');
+  await page.reload();await page.locator('#hybrid-home').waitFor();
+  assert.equal((await projection()).journal.some(entry=>entry.text==='The group found a copper token.'),false,'unpublished clue stayed private after reload');
+  assert.deepEqual(errors,[]);
+  console.log('Stage 3 clue passed: reviewed publication, undo, player journal projection, and private state after reload in an isolated practice campaign.');
+}finally{await browser.close();}})().catch(error=>{console.error(error);process.exitCode=1;});

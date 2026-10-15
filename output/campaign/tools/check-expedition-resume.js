@@ -13,6 +13,7 @@ for (const file of ['LMOP-Visual-Catalog.js','LMOP-Battle-Map-Catalog.js','Sessi
 const code = fs.readFileSync(path.join(__dirname, '..', 'Session-01-Battleboard.js'), 'utf8');
 const boot = code.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot > 0);
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(code.slice(0, boot) + '\nglobalThis.__s4={normalize,newState,newCustomState,session4EnemyTokens};})();');
 const M = ECHO_EXPEDITION_RESUME, clone = value => JSON.parse(JSON.stringify(value));
 const pack = ECHO_CONTENT_PACKS.find(p => p.id === 'lmop-part-4-visuals');

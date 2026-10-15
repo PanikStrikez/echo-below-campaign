@@ -1,0 +1,36 @@
+{
+  "id": "passage-art",
+  "title": "Area 4 · Steep passage",
+  "image": "session-01-visuals/scene-07-steep-passage.png",
+  "key": "passage-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "passage"
+  ],
+  "sourceRecords": [
+    {
+      "id": "passage",
+      "title": "Area 4 · Steep passage",
+      "read": [
+        "The main passage climbs steeply beside the stream. Spray darkens the stone, and loose rubble shifts underfoot. Above the noise, you can make out another passage crossing high overhead.",
+        "Water follows the slope past your boots, leaving the rising stone slick and dark. The crossing overhead is separate from the route at your feet; from here, you can judge the climb and look for movement above without knowing where either passage ends."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Cragmaw steep main cave passage climbs north/uphill; shallow stream flows down WEST/left side, rough dry footing right. Narrow west side passage through loose rocks crosses stream. Overhead bridge only distant dim ordinary wood if visible, no identifiable hidden lookout. Natural ceiling20-30feet, dark except off-frame visitor light. No masonry staircase, permanent wall sconces or magical waterfall.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Area 4 · Steep passage\nObservable scene and constraints: Cragmaw steep main cave passage climbs north/uphill; shallow stream flows down WEST/left side, rough dry footing right. Narrow west side passage through loose rocks crosses stream. Overhead bridge only distant dim ordinary wood if visible, no identifiable hidden lookout. Natural ceiling20-30feet, dark except off-frame visitor light. No masonry staircase, permanent wall sconces or magical waterfall.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "1e1ea10ca2a1ffaa943459704791029b5fa869c2cafec42d39836a2806f476a8",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/passage-art.png",
+  "generatedAt": "2026-10-12T15:47:02.292Z",
+  "candidateHash": "75a1d7b707963e27866d61305802d6e2c5b6ca9c09ecf6a61ab3c0e922839d83",
+  "review": "passed",
+  "reviewedHash": "75a1d7b707963e27866d61305802d6e2c5b6ca9c09ecf6a61ab3c0e922839d83",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.200Z",
+  "installedHash": "75a1d7b707963e27866d61305802d6e2c5b6ca9c09ecf6a61ab3c0e922839d83",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-07-steep-passage.png"
+}

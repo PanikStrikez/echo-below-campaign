@@ -1,0 +1,36 @@
+{
+  "id": "lmop-smelter-cavern",
+  "title": "Wave Echo Cave · Area 12 · Smelter cavern",
+  "image": "lmop-visuals/smelter-cavern.png",
+  "key": "E12",
+  "chapter": "Wave Echo Cave",
+  "reveal": "On entering area 12",
+  "sourceRecordIds": [
+    "s4-room-12"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-room-12",
+      "title": "Area 12 · Smelter cavern",
+      "read": [
+        "A cold furnace towers above abandoned ore carts. Beside it, a motionless wheel hangs over a dry channel. Green fire dances around a skull suspended above the armored dead.",
+        "Ore carts stand idle beside the furnace, and the wheel hangs motionless over a dry channel. Green fire outlines the skull and catches on the armored dead. The old machinery divides the floor into working spaces; the threat now occupies the same ground where miners once labored."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "Smelter cavern dominated by COLD blast furnace and mechanical bellows powered by stationary waterwheel. TEN-foot-wide DRY channel five feet below floor crosses room, exits north and east. Coal heaps and carts of unrefined ore. More than dozen withered dwarf/orc remains on floor, still inert; ONE skull surrounded by GREEN flame floats above them, initially visible. No flowing channel, molten lava or working miners. Flameskull provides local green light, rest dim.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 12 · Smelter cavern\nObservable scene and constraints: Smelter cavern dominated by COLD blast furnace and mechanical bellows powered by stationary waterwheel. TEN-foot-wide DRY channel five feet below floor crosses room, exits north and east. Coal heaps and carts of unrefined ore. More than dozen withered dwarf/orc remains on floor, still inert; ONE skull surrounded by GREEN flame floats above them, initially visible. No flowing channel, molten lava or working miners. Flameskull provides local green light, rest dim.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "cd76d7b09f9fca4b2cb54def4ffb36b081d78c6685950714884de8f6a75ff705",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-smelter-cavern.png",
+  "generatedAt": "2026-10-12T16:31:03.589Z",
+  "candidateHash": "894265323e1f4947daad825d580e60b1c2a0b3149bf52f696d632005ec6da611",
+  "review": "passed",
+  "reviewedHash": "894265323e1f4947daad825d580e60b1c2a0b3149bf52f696d632005ec6da611",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.752Z",
+  "installedHash": "894265323e1f4947daad825d580e60b1c2a0b3149bf52f696d632005ec6da611",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/smelter-cavern.png"
+}

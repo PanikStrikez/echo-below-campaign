@@ -21,4 +21,4 @@ assert.equal(next.ECHO_TRAVEL.normalize({contentProfile:'blank'}).places.length,
 assert.equal(next.ECHO_TRAVEL.normalize({contentProfile:'blank'}).routes.length,0);
 const workspace={views:{world:{zoom:2,panX:13,panY:-5}},shown:null};assert.deepEqual(plain(next.ECHO_ATLAS.normalizeWorkspace(workspace)).views,workspace.views);
 const result={passed:true,checks:['Existing travel values and customized distances retained','Existing routes, plans, history and requests retained','All added places start hidden','Blank campaigns remain blank','New Tresendar default uses exterior; saved arrival stays unchanged','Atlas views survive normalization'],newPlaces:after.places.length-prior.places.length,newRoutes:after.routes.length-prior.routes.length};
-fs.writeFileSync(path.join(app,'atlas/Save-Compatibility.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));
+fs.writeFileSync(path.join(process.env.ECHO_TEST_REPORT_DIR || path.join(app,'atlas'),'Save-Compatibility.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));

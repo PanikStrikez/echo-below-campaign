@@ -33,7 +33,7 @@ assert.equal(attacks.length, 1);
 assert.equal(attacks[0].name, 'Shortsword');
 assert.deepEqual(run.sequence(ruffian, attacks).map(step => step.attackIndex), [0,0]);
 const root = path.resolve(__dirname, '..');
-assert(fs.readFileSync(path.join(root, 'Session-01-Loader.js'), 'utf8').includes('Session-01-Combat-Run.js'));
+assert(fs.readFileSync(path.join(root, 'Campaign-Module-Manifest.js'), 'utf8').includes('Session-01-Combat-Run.js'));
 const html = fs.readFileSync(path.join(root, 'Session-01-TV-Display.html'), 'utf8');
 assert(html.includes('id="combat-live-panel"') && html.includes('id="request-initiative"'));
 console.log('Combat run passed: save migration, attack dice, and encounter state.');

@@ -1,0 +1,32 @@
+{
+  "id": "lmop-tresendar-tunnel",
+  "title": "Phandalin · Hillside tunnel entrance",
+  "image": "lmop-visuals/tresendar-tunnel.png",
+  "key": "P12",
+  "chapter": "Phandalin",
+  "reveal": "Once the tunnel is found",
+  "sourceRecordIds": [
+    "s2-manor"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-manor",
+      "title": "7 · If they reach Tresendar Manor",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Discovered forest tunnel south of Tresendar Manor: LOW rough-hewn opening screened by dense thicket, short earthen approach, ruined manor distant if visible. Natural smugglers access, not grand glowing portal or stairs to visible whole dungeon. No captives, enemies or secret labels. Show only AFTER Carp or a search establishes entrance.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Hillside tunnel entrance\nObservable scene and constraints: Discovered forest tunnel south of Tresendar Manor: LOW rough-hewn opening screened by dense thicket, short earthen approach, ruined manor distant if visible. Natural smugglers access, not grand glowing portal or stairs to visible whole dungeon. No captives, enemies or secret labels. Show only AFTER Carp or a search establishes entrance.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "0e26e7f1edbc46cc1430214bec8c6e9c15de2230bbcf5c2c5eb6f65cbc85ac73",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-tresendar-tunnel.png",
+  "generatedAt": "2026-10-12T16:07:23.509Z",
+  "candidateHash": "66ccc97a5367e30e5735adbd3f9f41c91fe153b522c94023913919f518a6bda3",
+  "review": "passed",
+  "reviewedHash": "66ccc97a5367e30e5735adbd3f9f41c91fe153b522c94023913919f518a6bda3",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.398Z",
+  "installedHash": "66ccc97a5367e30e5735adbd3f9f41c91fe153b522c94023913919f518a6bda3",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/tresendar-tunnel.png"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "barthen-art",
+  "title": "Barthen’s Provisions",
+  "image": "session-01-visuals/scene-16-barthens-provisions.png",
+  "key": "barthen-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "aftermath",
+    "s2-barthen",
+    "s5-barthen"
+  ],
+  "sourceRecords": [
+    {
+      "id": "aftermath",
+      "title": "3 · Clues after the road fight",
+      "read": [
+        "The woods settle. The two horses still block the road. Broken brush and small tracks lead north, away from the wagon and into thicker trees.",
+        "Among the goblins’ castoffs is a rough dark stone token. One side bears a single worn word: BELOW. The other carries part of a circle rubbed almost smooth."
+      ],
+      "source": "ECHO_RUNBOOK"
+    },
+    {
+      "id": "s2-barthen",
+      "title": "2 · Barthen’s Provisions",
+      "read": [
+        "Warm lamplight falls over rope, trail food, tools, and stacks of ledgers. Behind the counter, a thin shopkeeper looks up. His welcoming smile falters as he counts the faces coming through the door. “Where is Gundren?”",
+        "The shelves are arranged for practical journeys rather than impressive purchases: coils of rope, provisions, and tools ready to be carried away. The counter is a place to set down goods or ask for help, and the shopkeeper waits to hear which business brought you through his door."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    },
+    {
+      "id": "s5-barthen",
+      "title": "Lead · Business with Barthen",
+      "read": [
+        "Rope coils hang beside trail rations and stacks of useful things. Barthen lays down a pencil as you approach. “Tell me what you need,” he says, looking from one face to the next.",
+        "The counter offers room to set down goods or explain what brought you here. Barthen waits for your account rather than supplying one of his own. You can ask for ordinary equipment, discuss the supplies, or tell him only as much of your recent trouble as you choose."
+      ],
+      "source": "ECHO_STAGE6"
+    }
+  ],
+  "brief": "Barthen Provisions interior, broad trading-store shelves of rope, tools, lanterns, flour, food and ledgers. Elmar Barthen is lean balding human shopkeeper around fifty, friendly concerned expression behind counter. No armor, weapons display or captured Gundren. Practical amber light, modest frontier timber/stone setting, mundane stocks. No player figures or BELOW token visible.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Barthen’s Provisions\nObservable scene and constraints: Barthen Provisions interior, broad trading-store shelves of rope, tools, lanterns, flour, food and ledgers. Elmar Barthen is lean balding human shopkeeper around fifty, friendly concerned expression behind counter. No armor, weapons display or captured Gundren. Practical amber light, modest frontier timber/stone setting, mundane stocks. No player figures or BELOW token visible.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "d4b28ff407fde3e39f96413572644fb063f0b66ff1936e397b9ff72fbef383ca",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/barthen-art.png",
+  "generatedAt": "2026-10-12T15:49:52.420Z",
+  "candidateHash": "e7f5da382a3c6861e6a702372912bfdd3ec15374eded2b7825203b3d77fe7829",
+  "review": "passed",
+  "reviewedHash": "e7f5da382a3c6861e6a702372912bfdd3ec15374eded2b7825203b3d77fe7829",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.535Z",
+  "installedHash": "e7f5da382a3c6861e6a702372912bfdd3ec15374eded2b7825203b3d77fe7829",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-16-barthens-provisions.png"
+}

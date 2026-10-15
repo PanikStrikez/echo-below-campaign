@@ -1,0 +1,36 @@
+{
+  "id": "lmop-grick-reveal",
+  "title": "Cragmaw Castle · Area 8 · Grick revealed",
+  "image": "lmop-visuals/grick-reveal.png",
+  "key": "C08B",
+  "chapter": "Cragmaw Castle",
+  "reveal": "When the grick attacks or is found",
+  "sourceRecordIds": [
+    "s3-area8"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area8",
+      "title": "Area 8 · Dark hall and grick",
+      "read": [
+        "A narrow, lightless hall bears carvings that do not match its current occupants. Heavy curtains hang to the north, and a stone brazier stands between them.",
+        "The carvings reward a closer look, but the curtains prevent you from seeing the spaces beyond them. The stone brazier is a visible landmark between those covered openings. You can study the workmanship, listen toward the cloth, or decide whether to move farther into the hall."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "SAME narrow chapel, angel sculptures, TWO curtained north archways, cracked ornate brazier between. ONE GRICK revealed by upper ledge: snake-like gray-green segmented body, four tentacles around beaked mouth, no legs, no humanoid face or floating eyeball. No revealed hidden gold statuette or victim.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 8 · Grick revealed\nObservable scene and constraints: SAME narrow chapel, angel sculptures, TWO curtained north archways, cracked ornate brazier between. ONE GRICK revealed by upper ledge: snake-like gray-green segmented body, four tentacles around beaked mouth, no legs, no humanoid face or floating eyeball. No revealed hidden gold statuette or victim.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "213eae99b46f3c9c21396d269a4cefcce626b305510da1b00b8c7bb75da7abd3",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-grick-reveal.png",
+  "generatedAt": "2026-10-12T16:25:45.833Z",
+  "candidateHash": "3b7da23aed0a4727051ab0f6f7a9daf8ef32b807dd04cf7954b3d5aa68e239b6",
+  "review": "passed",
+  "reviewedHash": "3b7da23aed0a4727051ab0f6f7a9daf8ef32b807dd04cf7954b3d5aa68e239b6",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.847Z",
+  "installedHash": "3b7da23aed0a4727051ab0f6f7a9daf8ef32b807dd04cf7954b3d5aa68e239b6",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/grick-reveal.png"
+}

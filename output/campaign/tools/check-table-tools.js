@@ -3,7 +3,7 @@ const path = require('node:path');
 require(path.resolve(__dirname, '..', 'Session-01-Table-Tools.js'));
 
 const tools = globalThis.ECHO_TABLE;
-assert.deepEqual(tools.normalize(null), {schemaVersion: 1, clues: [], inventory: [], reducedEffects: false, sessionFlow:null, expeditions:null, flow:null, desk:null, expedition:null, settlements:null, atmosphere:null, dungeon:null, travel:null, playerHub:null});
+assert.deepEqual(tools.normalize(null), {schemaVersion: 1, clues: [], inventory: [], reducedEffects: false, sessionFlow:null, expeditions:null, flow:null, desk:null, expedition:null, settlements:null, atmosphere:null, dungeon:null, atlas:null, travel:null, playerHub:null});
 const saved = tools.normalize({
   clues: [
     {id: 'clue-1', to: 'pc-trista', title: 'Below token', text: 'The stone feels warm.', image: 'assets/token.png', delivered: true},

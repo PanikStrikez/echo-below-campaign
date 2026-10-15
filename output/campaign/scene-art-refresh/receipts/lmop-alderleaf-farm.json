@@ -1,0 +1,32 @@
+{
+  "id": "lmop-alderleaf-farm",
+  "title": "Phandalin · Alderleaf Farm",
+  "image": "lmop-visuals/alderleaf-farm.png",
+  "key": "P08",
+  "chapter": "Phandalin",
+  "reveal": "When the party reaches the farm",
+  "sourceRecordIds": [
+    "s2-town"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-town",
+      "title": "5 · Follow the party’s town lead",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Alderleaf farm: modest farmhouse, barn/hayloft, worked fields and ordinary livestock on outskirts of Phandalin. Qelline middle-aged female halfling and Carp ten-year-old male halfling child in ordinary daily farm work. No tunnel entrance marked, monster reveal or opulent manor.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Alderleaf Farm\nObservable scene and constraints: Alderleaf farm: modest farmhouse, barn/hayloft, worked fields and ordinary livestock on outskirts of Phandalin. Qelline middle-aged female halfling and Carp ten-year-old male halfling child in ordinary daily farm work. No tunnel entrance marked, monster reveal or opulent manor.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "cde6f9b573391b2fcdb57dbf28c83dd138817a7856c37c9eb0eca8dfce76dae5",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-alderleaf-farm.png",
+  "generatedAt": "2026-10-12T15:53:26.733Z",
+  "candidateHash": "9d277b6e125501d75d1630566c134c548ed7146f53b18eaeddcc658420c88eb8",
+  "review": "passed",
+  "reviewedHash": "9d277b6e125501d75d1630566c134c548ed7146f53b18eaeddcc658420c88eb8",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.027Z",
+  "installedHash": "9d277b6e125501d75d1630566c134c548ed7146f53b18eaeddcc658420c88eb8",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/alderleaf-farm.png"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "lmop-dark-pool",
+  "title": "Wave Echo Cave · Area 10 · Dark pool",
+  "image": "lmop-visuals/dark-pool.png",
+  "key": "E10",
+  "chapter": "Wave Echo Cave",
+  "reveal": "On entering area 10",
+  "sourceRecordIds": [
+    "s4-room-10"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-room-10",
+      "title": "Area 10 · Dark pool",
+      "read": [
+        "Still black water fills the cave. Pale broken shells crunch along the bank, and a slow stream slides away beneath a low opening to the northeast.",
+        "The bank's shells crunch beneath a careful step, while the black water gives little sense of its depth. The stream's low northeastern opening draws your eye away from the pool. Following it would mean approaching stone and water that conceal what lies beyond."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "Dark underground pool with shore littered in broken PALE MUSSEL SHELLS. Steps climb EAST, passage SOUTH, sluggish shallow stream leaves NORTHEAST. Water opaque, no hidden skeleton or rings visible. Off-frame visitor lantern, no ocean or water monster.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 10 · Dark pool\nObservable scene and constraints: Dark underground pool with shore littered in broken PALE MUSSEL SHELLS. Steps climb EAST, passage SOUTH, sluggish shallow stream leaves NORTHEAST. Water opaque, no hidden skeleton or rings visible. Off-frame visitor lantern, no ocean or water monster.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "8152878f82cc0b533ce25fb277424f3eb4788de2991ed92a7fa59d43142fa077",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-dark-pool.png",
+  "generatedAt": "2026-10-12T16:29:41.871Z",
+  "candidateHash": "ec7736063cf376e804de0c55b0b4a7f396e11282bc64704b0e0a04ade6024d6d",
+  "review": "passed",
+  "reviewedHash": "ec7736063cf376e804de0c55b0b4a7f396e11282bc64704b0e0a04ade6024d6d",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.677Z",
+  "installedHash": "ec7736063cf376e804de0c55b0b4a7f396e11282bc64704b0e0a04ade6024d6d",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/dark-pool.png"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "lmop-goblin-shrine",
+  "title": "Cragmaw Castle · Area 9 · Goblin shrine",
+  "image": "lmop-visuals/goblin-shrine.png",
+  "key": "C09",
+  "chapter": "Cragmaw Castle",
+  "reveal": "On entering area 9",
+  "sourceRecordIds": [
+    "s3-area9"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area9",
+      "title": "Area 9 · Goblin shrine",
+      "read": [
+        "A stone altar lies beneath a blood-dark cloth. A goblin in ritual scraps fusses over gold-colored implements while two acolytes watch the curtains.",
+        "The cloth hides much of the altar's surface, while the implements catch what light reaches the room. The watchers' attention rests on the curtains as well as on you. You can address them from where you stand, inspect what is visible, or withdraw before disturbing the arrangement."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Northern castle tower shrine, stone altar fully draped in stained BLACK cloth, GOLD chalice, ritual knife and censer on top, TWO southern archways covered by heavy curtains. THREE goblins in dirty robes over armor kneel in ordinary prayer. No magical sacrifice, captive, divine apparition or overt gods carved through covering cloth.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 9 · Goblin shrine\nObservable scene and constraints: Northern castle tower shrine, stone altar fully draped in stained BLACK cloth, GOLD chalice, ritual knife and censer on top, TWO southern archways covered by heavy curtains. THREE goblins in dirty robes over armor kneel in ordinary prayer. No magical sacrifice, captive, divine apparition or overt gods carved through covering cloth.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "15e74f4101a2d8f5bcc733022c71ed6ca800bdd467ecce1737f2dc5fecad7fd3",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-goblin-shrine.png",
+  "generatedAt": "2026-10-12T16:25:45.833Z",
+  "candidateHash": "6d57c3a5d0ddd22b9a0e93442df4ba5fb845443ca82d83ca91ecaa5159b3ad09",
+  "review": "passed",
+  "reviewedHash": "6d57c3a5d0ddd22b9a0e93442df4ba5fb845443ca82d83ca91ecaa5159b3ad09",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.924Z",
+  "installedHash": "6d57c3a5d0ddd22b9a0e93442df4ba5fb845443ca82d83ca91ecaa5159b3ad09",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/goblin-shrine.png"
+}

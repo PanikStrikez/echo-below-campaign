@@ -6,10 +6,14 @@ import tempfile
 from http.server import ThreadingHTTPServer
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'launchers'))
+import serve_campaign
+if os.environ.get('ECHO_TEST_PROJECT_ROOT'):
+    serve_campaign.ROOT = Path(os.environ['ECHO_TEST_PROJECT_ROOT']).resolve()
 from serve_campaign import Handler, ROOT
 from ai_service import AIService
 
 with tempfile.TemporaryDirectory(prefix='echo-ai-rehearsal-') as private:
+    os.environ['ECHO_CAMPAIGN_STATE_DIR'] = str(Path(private) / 'campaign')
     server = ThreadingHTTPServer(('127.0.0.1', 0), Handler)
     server.ai_service = AIService(private, served_root=ROOT, port=server.server_port)
     if os.environ.get('ECHO_TEST_VOICE_FIXTURE') == '1':

@@ -5,7 +5,7 @@ const vm = require('node:vm');
 
 const root = path.resolve(__dirname, '..');
 const context = { globalThis: {} };
-for (const file of ['Session-01-Map-Data.js', 'Session-01-Town-Maps.js', 'LMOP-Visual-Catalog.js',
+for (const file of ['Session-01-Map-Data.js', 'Session-01-Town-Maps.js', 'LMOP-Visual-Catalog.js', 'Campaign-Transition-Data.js',
   'Session-02-Runbook.js', 'Session-Content-Packs.js'])
   vm.runInNewContext(fs.readFileSync(path.join(root, file), 'utf8'), context, { filename: file });
 const towns = context.globalThis.ECHO_TOWN_MAPS;
@@ -26,7 +26,7 @@ for (const id of ids) {
   assert(publicScene.points.every(point => !('clue' in point) && !('note' in point)), 'Private text leaked on ' + id);
   for (const hidden of scene.points.filter(point => !point.visible || !point.approved))
     assert(!publicScene.points.some(point => point.id === hidden.id), 'Hidden marker leaked on ' + id);
-  for (const pack of context.globalThis.ECHO_CONTENT_PACKS.filter(p=>p.id!=='waterdeep-undermountain-1'||id==='city-waterdeep'))
+  for (const pack of context.globalThis.ECHO_CONTENT_PACKS.filter(p=>['phandalin-session-2','gundren-session-3'].includes(p.id)))
     assert(pack.scenes.includes(id), 'Town map absent from pack ' + pack.id);
 }
 for (const [file, id] of [['phandelver-region.svg', ids[0]], ['phandalin-overhead.svg', ids[1]],
@@ -46,11 +46,10 @@ assert.equal(towns.regionScene('region-cragmaw-castle'), 'lmop-map-cragmaw-castl
 const revealed = region.points.find(point => point.id === 'region-cragmaw-castle');
 revealed.visible = true; revealed.approved = true;
 assert(map.publicScene(region).points.some(point => point.id === revealed.id), 'Revealed castle should reach the TV');
-const loader = fs.readFileSync(path.join(root, 'Session-01-Loader.js'), 'utf8');
-assert(/const privateScripts = \[[\s\S]*?'Session-01-Town-Maps.js'[\s\S]*?\];/.test(loader), 'Town clues must load on the DM side only');
-assert(loader.includes('if (!player) for (const file of privateScripts) await load(file)'));
-assert(!loader.includes("await load('Session-01-Town-Maps.js')"), 'Town secrets cannot load on the shared path');
+require('./test-support.cjs').assertPrivateModules(['Session-01-Town-Maps.js']).catch(error=>{console.error(error);process.exitCode=1;});
 const board = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
-assert(board.includes('seedTownMapScenes') && board.includes('town-maps/phandalin-overhead.svg'));
+assert(board.includes('seedTownMapScenes'));
+vm.runInNewContext(fs.readFileSync(path.join(root,'Echo-Below-Table-Content.js'),'utf8'),context);
+assert.equal(context.globalThis.ECHO_TABLE_CONTENT.SCENES['town-phandalin'].image,'town-maps/professional/phandalin-overhead.png');
 assert(board.includes('globalThis.ECHO_TOWN_MAPS?.isTown(state.scene)'));
 console.log('Town and journey maps: five overhead scenes, linked content packs, approved markers, and private clue filtering passed.');

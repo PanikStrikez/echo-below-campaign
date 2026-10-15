@@ -25,6 +25,7 @@ for (const name of [
 const source = fs.readFileSync(path.join(root,'Session-01-Battleboard.js'),'utf8');
 const boot = source.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot > 0, 'Stop before browser initialization and live campaign access');
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(source.slice(0,boot)+`\nglobalThis.__finaleFixture={normalize,newCustomState,context:questPrepContext,scenes:SCENES,publicState,phoneSnapshot,set:(s,i)=>{state=s;campaignIndex=i;activeCampaignId='practice-finale';}};\n})();`);
 const F=__finaleFixture,A=ECHO_FINALE,P=ECHO_QUEST_PREP,C=ECHO_CONTINUITY,O=ECHO_OUTCOMES,S=ECHO_SPOTLIGHTS;
 const copy=v=>JSON.parse(JSON.stringify(v)),checks=[];
@@ -150,10 +151,12 @@ await check('Finale quest preparation links resolve and keep the three-lead boar
   const fourth=A.approaches()[3];assert.throws(()=>P.add(f.ctx,fourth.questId,A.leads(fourth.questId)[0].id),/three/);
   assert.equal(f.payload(),before);assert.equal(f.d.events.length,0);P.restore(f.prep);assert.equal(P.board(f.prep,'next').leads.length,2);
 });
-await check('New finale code is DM-only and published rejuvenation is explicitly retained',()=>{
+await check('New finale code is DM-only and published rejuvenation is explicitly retained',async()=>{
   const loader=fs.readFileSync(path.join(root,'Session-01-Loader.js'),'utf8'),privateList=fs.readFileSync(path.join(root,'Campaign-Module-Manifest.js'),'utf8');
   for(const file of ['Campaign-Finale-Data.js','Campaign-Finale.js','Campaign-Finale-UI.js'])assert(privateList.includes(file));
-  assert(loader.includes('if (!player) for (const file of ECHO_MODULES.ordered)'));
+  await require('./test-support.cjs').assertPrivateModules(['Campaign-Finale-Data.js','Campaign-Finale.js','Campaign-Finale-UI.js']);
+  const blank=await require('./test-support.cjs').loadedScripts(false,false,'blank');
+  for(const file of ['Campaign-Finale-Data.js','Campaign-Finale.js','Campaign-Finale-UI.js'])assert(!blank.includes(file));
   const content=JSON.stringify(A.data());assert(/1d10/i.test(content));assert(/310/.test(content));assert(/rejuvenation/i.test(content));
   const story=ECHO_STORY_DATA.normalize(),d=C.ensure(story,'default');assert(d.events.some(e=>e.id==='actual-s23-stop'&&/before.*Redbrand/i.test(e.detail)));assert(!d.events.some(e=>/finale-/i.test(e.id)),'Default campaign receives no invented finale event');
 });

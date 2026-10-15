@@ -1,0 +1,36 @@
+{
+  "id": "lmop-dragon-tower",
+  "title": "Thundertree · Area 7 · Dragon’s tower",
+  "image": "lmop-visuals/dragon-tower.png",
+  "key": "T07",
+  "chapter": "Thundertree",
+  "reveal": "When tower hill is approached",
+  "sourceRecordIds": [
+    "s3-tt-7"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-7",
+      "title": "Thundertree 7 · Venomfang’s tower",
+      "read": [
+        "A broken tower rises above two spider corpses. The air around it smells sharp and wrong; the upper roof is open to the sky.",
+        "The dead spiders give the tower's sharp smell a more tangible companion. Broken stone and the open upper roof offer places to look before you approach the entrance. You can keep your distance, seek another view of the structure, or pause to decide what danger you are willing to meet."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Round stone tower on hill with a small attached cottage, both generally sound except HALF the tower roof gone. Arrow-slit windows and ordinary cottage door. TWO dead giant spiders lie near pathway, discolored and shriveled but non-graphic. No dragon visible outside or flying overhead, no enormous fortress, no magic beams. Initial exterior approach in quiet daylight.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 7 · Dragon’s tower\nObservable scene and constraints: Round stone tower on hill with a small attached cottage, both generally sound except HALF the tower roof gone. Arrow-slit windows and ordinary cottage door. TWO dead giant spiders lie near pathway, discolored and shriveled but non-graphic. No dragon visible outside or flying overhead, no enormous fortress, no magic beams. Initial exterior approach in quiet daylight.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "14e041427fd3529abdd1e9ee5b9f5049240918813f6e969d9506f65867ad5066",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-dragon-tower.png",
+  "generatedAt": "2026-10-12T16:16:22.928Z",
+  "candidateHash": "aa4ef538c9c0b9d7b5091863d74428cddf4b3486595dc60e6936bf815a9dc4f4",
+  "review": "passed",
+  "reviewedHash": "aa4ef538c9c0b9d7b5091863d74428cddf4b3486595dc60e6936bf815a9dc4f4",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.746Z",
+  "installedHash": "aa4ef538c9c0b9d7b5091863d74428cddf4b3486595dc60e6936bf815a9dc4f4",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/dragon-tower.png"
+}

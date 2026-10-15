@@ -1,0 +1,36 @@
+{
+  "id": "lmop-wizards-workshop",
+  "title": "Redbrand Hideout · Area 11 · Wizard’s workshop",
+  "image": "lmop-visuals/wizards-workshop.png",
+  "key": "R11",
+  "chapter": "Redbrand Hideout",
+  "reveal": "On entering area 11",
+  "sourceRecordIds": [
+    "s2-workshop"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-workshop",
+      "title": "17 · Wizard’s workshop · area 11",
+      "read": [
+        "Glassware, notes, and pungent powders cover the benches.",
+        "The worktable, shelves, and unfamiliar apparatus offer several separate lines of inquiry. You can examine the written material without assuming what the equipment does, or look over the apparatus without touching it. The ordinary routes through the room remain worth keeping clear while you investigate."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Wizard's utilitarian alchemical workshop in a stone cellar. LARGE worktable crowded with alembics, glass retorts, distillation coils, bubbling small vessels; bookshelves with parchment bundles and worn tomes. Practical oil lamps. Current campaign version: NO rat because Trista captured it; no wizard because he escaped. No invisible-potion success, glowing prophecy, readable book titles, evidence letters or magic portals. Unsearched closed containers remain uninspected.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Redbrand Hideout · Area 11 · Wizard’s workshop\nObservable scene and constraints: Wizard's utilitarian alchemical workshop in a stone cellar. LARGE worktable crowded with alembics, glass retorts, distillation coils, bubbling small vessels; bookshelves with parchment bundles and worn tomes. Practical oil lamps. Current campaign version: NO rat because Trista captured it; no wizard because he escaped. No invisible-potion success, glowing prophecy, readable book titles, evidence letters or magic portals. Unsearched closed containers remain uninspected.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "e23bd72d682909568c9c90d799d751520e567efabdc3f39cf37a2188eb7315aa",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-wizards-workshop.png",
+  "generatedAt": "2026-10-12T15:50:01.672Z",
+  "candidateHash": "14993d251a61b6c0aae64db06a4c8cad982dae2f2f72d7b6981c639abef2af76",
+  "review": "passed",
+  "reviewedHash": "14993d251a61b6c0aae64db06a4c8cad982dae2f2f72d7b6981c639abef2af76",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.965Z",
+  "installedHash": "14993d251a61b6c0aae64db06a4c8cad982dae2f2f72d7b6981c639abef2af76",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/wizards-workshop.png"
+}

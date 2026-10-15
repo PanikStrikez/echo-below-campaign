@@ -1,0 +1,36 @@
+{
+  "id": "lmop-archer-post",
+  "title": "Cragmaw Castle · Area 3 · Archer post",
+  "image": "lmop-visuals/archer-post.png",
+  "key": "C03",
+  "chapter": "Cragmaw Castle",
+  "reveal": "When an archer post is entered",
+  "sourceRecordIds": [
+    "s3-area1"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area1",
+      "title": "Area 1 · Entrance and sentries",
+      "read": [
+        "Shattered gate timbers lie across an old entrance. Above the wreckage, narrow slots stare out from two small chambers.",
+        "The wrecked timbers interrupt a straight walk through the entrance. The narrow openings above offer views into the approach without giving you the same view back. You can study the wall from cover, look for a clearer way through, or decide who will cross the exposed ground first."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "ONE small castle archer-post room, debris floor, narrow arrow slit opposite door overlooking main terrace. EXACTLY TWO small goblins with shortbows, credible cover at slit. Daylight, no giant siege-ballista, four archers inside this one post or castle-wide cutaway.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 3 · Archer post\nObservable scene and constraints: ONE small castle archer-post room, debris floor, narrow arrow slit opposite door overlooking main terrace. EXACTLY TWO small goblins with shortbows, credible cover at slit. Daylight, no giant siege-ballista, four archers inside this one post or castle-wide cutaway.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "62973d1a8893ec130f148b3ef88498a55c376319cb07b4646867a630e6ca0d8f",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-archer-post.png",
+  "generatedAt": "2026-10-12T16:24:21.405Z",
+  "candidateHash": "ac76e801e0edc5d0ccab862c163df2d31fc2d692ff482d49a6dfca4d61a830e0",
+  "review": "passed",
+  "reviewedHash": "ac76e801e0edc5d0ccab862c163df2d31fc2d692ff482d49a6dfca4d61a830e0",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.585Z",
+  "installedHash": "ac76e801e0edc5d0ccab862c163df2d31fc2d692ff482d49a6dfca4d61a830e0",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/archer-post.png"
+}

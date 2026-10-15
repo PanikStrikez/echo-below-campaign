@@ -1,0 +1,36 @@
+{
+  "id": "lmop-castle-storeroom",
+  "title": "Cragmaw Castle · Area 5 · Storeroom",
+  "image": "lmop-visuals/castle-storeroom.png",
+  "key": "C05",
+  "chapter": "Cragmaw Castle",
+  "reveal": "On entering area 5",
+  "sourceRecordIds": [
+    "s3-area5"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area5",
+      "title": "Area 5 · Storeroom and Sildar’s gear",
+      "read": [
+        "Spoiled provisions and old casks crowd the room. Among them lie a bloodied coat of mail, a crossbow, and a sword bearing a familiar crest.",
+        "The recognizable equipment is within a room still crowded by old stores. You can examine its markings and condition without deciding how it came here. The casks and provisions break up the floor around it, so someone can watch the entrance while another person investigates."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Castle storeroom: old casks of salted meat, sacks of rotten grain, ordinary closed small brandy cask. Bloody/rust-stained chainmail, heavy crossbow and unsheathed longsword with small Neverwinter emblem among supplies, no graphic gore. No owner magically named, opened treasure or fresh banquet. Dim natural slit light.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 5 · Storeroom\nObservable scene and constraints: Castle storeroom: old casks of salted meat, sacks of rotten grain, ordinary closed small brandy cask. Bloody/rust-stained chainmail, heavy crossbow and unsheathed longsword with small Neverwinter emblem among supplies, no graphic gore. No owner magically named, opened treasure or fresh banquet. Dim natural slit light.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "5454dc6eb83a5905ce729ec1dfd5071fa4a840e793ff6c14ec0f652f1c3498da",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-castle-storeroom.png",
+  "generatedAt": "2026-10-12T16:25:45.833Z",
+  "candidateHash": "a340c955fb2f0b3ee7e30838e1fc6379d4822fd2fc965134b9ec559e9f56ecf9",
+  "review": "passed",
+  "reviewedHash": "a340c955fb2f0b3ee7e30838e1fc6379d4822fd2fc965134b9ec559e9f56ecf9",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.682Z",
+  "installedHash": "a340c955fb2f0b3ee7e30838e1fc6379d4822fd2fc965134b9ec559e9f56ecf9",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/castle-storeroom.png"
+}

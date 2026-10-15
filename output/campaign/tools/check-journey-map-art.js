@@ -11,6 +11,7 @@ for (const file of ['LMOP-Visual-Catalog.js', 'Session-02-Runbook.js', 'Session-
 const source = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
 const boot = source.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot > 0);
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(source.slice(0, boot) + '  globalThis.__journeyArtTest = { normalize };\n})();');
 const art = 'town-maps/professional/phandelver-region.png';
 const png = fs.readFileSync(path.join(root, art));

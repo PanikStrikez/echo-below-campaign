@@ -1,0 +1,36 @@
+{
+  "id": "lmop-pit-hall",
+  "title": "Redbrand Hideout · Area 3 · Hall with hidden pit",
+  "image": "lmop-visuals/pit-hall.png",
+  "key": "R03",
+  "chapter": "Redbrand Hideout",
+  "reveal": "On entering area 3",
+  "sourceRecordIds": [
+    "s2-trap"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-trap",
+      "title": "10 · Hall and hidden pit · area 3",
+      "read": [
+        "A dusty stone hall runs toward copper-covered double doors. Old decorative columns break up the walls.",
+        "The hall gives you a direct way forward, but its floor deserves as much attention as its far end. Dust, joins in the stone, and the places where boots might fall are visible things to inspect. You can slow the group or check the route without assuming that the way is safe."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Somber straight stone hallway. Thick dust covers an intact flagstone floor. Faux columns every ten feet along the walls. Tarnished green copper double doors at the west end carry a mournful angel relief. Oil lamps. The pit is still concealed: NO gap, cracks outlining it, warning markings, missing tiles or visible mechanisms. Empty corridor.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Redbrand Hideout · Area 3 · Hall with hidden pit\nObservable scene and constraints: Somber straight stone hallway. Thick dust covers an intact flagstone floor. Faux columns every ten feet along the walls. Tarnished green copper double doors at the west end carry a mournful angel relief. Oil lamps. The pit is still concealed: NO gap, cracks outlining it, warning markings, missing tiles or visible mechanisms. Empty corridor.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "fee7ffaaa27149dac7077be40c5ddbbe0c715a4099fb3084e78fae4b10057eea",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-pit-hall.png",
+  "generatedAt": "2026-10-12T16:03:57.163Z",
+  "candidateHash": "299a0ad40b2f707c2799f8a9de648ade740f7b930eb29e637990dfce0c2ed984",
+  "review": "passed",
+  "reviewedHash": "299a0ad40b2f707c2799f8a9de648ade740f7b930eb29e637990dfce0c2ed984",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.461Z",
+  "installedHash": "299a0ad40b2f707c2799f8a9de648ade740f7b930eb29e637990dfce0c2ed984",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/pit-hall.png"
+}

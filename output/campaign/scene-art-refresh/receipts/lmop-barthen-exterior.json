@@ -1,0 +1,52 @@
+{
+  "id": "lmop-barthen-exterior",
+  "title": "Phandalin · Outside Barthen’s Provisions",
+  "image": "lmop-visuals/barthen-exterior.png",
+  "key": "P01",
+  "chapter": "Phandalin",
+  "reveal": "On arrival at the shop",
+  "sourceRecordIds": [
+    "s2-prep",
+    "s2-arrival",
+    "s5-open"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-prep",
+      "title": "Before play · Session 1 handoff",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    },
+    {
+      "id": "s2-arrival",
+      "title": "1 · Outside Barthen’s Provisions",
+      "read": [
+        "The road ends in a street of packed earth and old stone. A trading house stands ahead, its doorway busy with local customers. Sildar slows beside you and studies the town as if trying to remember the face of an old friend. Gundren should have been here before you. He is not. What do you do?",
+        "The trading house offers an obvious place to ask questions or settle the delivery, while the street leaves you free to keep walking. Its traffic is ordinary enough that you can watch the doorway, approach together, or decide who will speak before going inside."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    },
+    {
+      "id": "s5-open",
+      "title": "Opening · Barthen’s Provisions",
+      "read": [
+        "The noise of Phandalin follows you to Barthen’s door: cart wheels on packed earth, a hammer somewhere farther down the street, and voices turning toward the day’s business. Gundren is at an inn behind you. Glasstaff is gone. The shop is here in front of you. What do you do?",
+        "The shop's threshold is close enough to cross, but you have not yet chosen to enter. You can begin with town business, turn back toward the inn, or stop to discuss the rat in Trista's care. For now, the street leaves each of those choices open."
+      ],
+      "source": "ECHO_STAGE6"
+    }
+  ],
+  "brief": "Barthen exterior: largest trading post in modest FRONTIER Phandalin, wooden low buildings with old ruined stone foundations among them, earth street. Shop supplies and stacked barrels by open entrance, no armor shop or sprawling city. Subtle sign illustrated rope and provisions, no generated writing. Ordinary customers, no Gundren prisoner or resolved delivery.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Outside Barthen’s Provisions\nObservable scene and constraints: Barthen exterior: largest trading post in modest FRONTIER Phandalin, wooden low buildings with old ruined stone foundations among them, earth street. Shop supplies and stacked barrels by open entrance, no armor shop or sprawling city. Subtle sign illustrated rope and provisions, no generated writing. Ordinary customers, no Gundren prisoner or resolved delivery.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "d2cbf50082b552de2238b426271c76d262a0cf547ee3fdb5117c7dbf19d0f60d",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-barthen-exterior.png",
+  "generatedAt": "2026-10-12T15:51:14.315Z",
+  "candidateHash": "a2355423010c4efc44f4b130f779e6ab623f7a9486b6f25e307fee5971f6e7dd",
+  "review": "passed",
+  "reviewedHash": "a2355423010c4efc44f4b130f779e6ab623f7a9486b6f25e307fee5971f6e7dd",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.608Z",
+  "installedHash": "a2355423010c4efc44f4b130f779e6ab623f7a9486b6f25e307fee5971f6e7dd",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/barthen-exterior.png"
+}

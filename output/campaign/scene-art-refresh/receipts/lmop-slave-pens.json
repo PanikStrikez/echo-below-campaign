@@ -1,0 +1,37 @@
+{
+  "id": "lmop-slave-pens",
+  "title": "Redbrand Hideout · Area 5 · Slave pens",
+  "image": "lmop-visuals/slave-pens.png",
+  "key": "R05",
+  "chapter": "Redbrand Hideout",
+  "reveal": "When the pens are visible",
+  "sourceRecordIds": [
+    "s2-pens"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-pens",
+      "title": "12 · Slave pens · area 5",
+      "read": [
+        "Iron bars divide the chamber into cells. Two armed Redbrands stand guard. A woman and a young woman are confined to one side; a boy is held apart from them.",
+        "The bars turn the room into a place of confinement rather than ordinary storage. The doors and the space beside them matter if anyone is to leave in a hurry. You can address whoever is actually present, inspect the locks, or check the surrounding route before promising a way out."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Long stone chamber split into three parts by iron bars: north cell holds one thirteen-year-old human boy; south cell holds his mother and eighteen-year-old sister. Plain gray tunics and iron neck collars; filthy straw floors; hinged cell doors with chains and padlocks. Discarded clothing heap against far wall. TWO human guards wearing scarlet cloaks in the central passage. Respectful depiction, no torture or graphic injuries. No Gundren, no extra captives. Prepared first-entry scene, no implied completed rescue.",
+  "prompt": "Wide landscape respectful NON-GRAPHIC fantasy adventure illustration. A long stone chamber contains two barred rooms on north and south with a central aisle, straw on floors, shut barred doors with simple padlocks. In southern room sit an adult mother and her adult daughter, and in northern room a boy sits apart; all THREE are fully dressed in modest opaque gray tunics with long sleeves and trousers, ordinary shoes, composed faces. No injuries, nudity, restraint actions, torture, sexualization, violence or body emphasis. TWO adult male human guards in PLAIN scarlet cloaks stand in central aisle. They are awaiting the adventurers who may help the family. Dusty lamplight, dressed masonry, heap of old clothes in far corner. Grounded adventure-story gouache and watercolor, visitor doorway view. No extra people, names, symbols, glowing secrets, map grid or UI. This is the prepared first encounter, not a claim a rescue has already happened.",
+  "originalHash": "984d2acbaaae37a88a360a188e591d51a757f7a4a0d1b34038cc9fe2fac93046",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-slave-pens.png",
+  "generatedAt": "2026-10-12T16:13:01.588Z",
+  "candidateHash": "d3326682fd490eb2785160471ee6487713830f3b2dd5892ab87caeaae68e2c16",
+  "presentationLimitation": "Family not illustrated; use narration and NPC tokens. Side-cell interiors are out of frame, not confirmed empty.",
+  "review": "passed",
+  "reviewedHash": "d3326682fd490eb2785160471ee6487713830f3b2dd5892ab87caeaae68e2c16",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Guards and near cell bars are visible; captive family remains off frame after two generator rejections. Use narration and NPC tokens. No rescue outcome is implied.",
+  "installedAt": "2026-10-12T16:38:08.661Z",
+  "installedHash": "d3326682fd490eb2785160471ee6487713830f3b2dd5892ab87caeaae68e2c16",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/slave-pens.png"
+}

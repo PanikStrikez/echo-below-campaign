@@ -1,0 +1,36 @@
+{
+  "id": "lmop-agatha-reveal",
+  "title": "Wilderness · Agatha appears",
+  "image": "lmop-visuals/agatha-reveal.png",
+  "key": "W04",
+  "chapter": "Wilderness",
+  "reveal": "Only when Agatha manifests",
+  "sourceRecordIds": [
+    "s3-agatha"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-agatha",
+      "title": "Optional lead · Conyberry and Agatha",
+      "read": [
+        "Beyond the ruined village, branches bend together into a low shelter. The air stills. A voice from within sounds older than the trees: “You came this far to ask me something?”",
+        "The low shelter makes a close approach very different from calling out at a distance. Still branches frame the entrance, and the voice waits for an answer. You can offer your purpose plainly, choose your words with care, or keep to the edge of the clearing while you speak."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Inside SAME woven-branch dome with old elven table, shelves, chests, reclining couch. ONE female elf banshee Agatha manifests in pale cold light, spectral long hair and robes, disdainful expression. Upright conversational presence, not screaming attack, skull monster or human murder scene. No magical answer shown in text.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wilderness · Agatha appears\nObservable scene and constraints: Inside SAME woven-branch dome with old elven table, shelves, chests, reclining couch. ONE female elf banshee Agatha manifests in pale cold light, spectral long hair and robes, disdainful expression. Upright conversational presence, not screaming attack, skull monster or human murder scene. No magical answer shown in text.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "c09f6c04af23627308c50111721c065c0b1136d38aa53728ae65e1ca86338ae4",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-agatha-reveal.png",
+  "generatedAt": "2026-10-12T16:13:34.227Z",
+  "candidateHash": "d1730ffffe605a82c3ef8bcaa1ac02433b8d0d8ca4b1ba2afa65ae80710fbd21",
+  "review": "passed",
+  "reviewedHash": "d1730ffffe605a82c3ef8bcaa1ac02433b8d0d8ca4b1ba2afa65ae80710fbd21",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:09.200Z",
+  "installedHash": "d1730ffffe605a82c3ef8bcaa1ac02433b8d0d8ca4b1ba2afa65ae80710fbd21",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/agatha-reveal.png"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "lmop-forge-of-spells",
+  "title": "Wave Echo Cave · Area 15 · Forge of Spells",
+  "image": "lmop-visuals/forge-of-spells-v2.png",
+  "key": "E15",
+  "chapter": "Wave Echo Cave",
+  "reveal": "On entering area 15",
+  "sourceRecordIds": [
+    "s4-room-15",
+    "s4-forge-use"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-room-15",
+      "title": "Area 15 · Forge of Spells and its guardian",
+      "read": [
+        "Scorched worktables ring a workshop that should have fallen silent centuries ago. Yet green flame still moves in a brazier at its heart. Above it, a many-eyed creature turns, and a greeting sounds inside your mind.",
+        "The brazier's green light colors the scorched tables, while the many-eyed creature hangs within the ruined workspace. Its greeting reaches you without crossing the air. There is room to answer before moving closer; the surviving forge equipment remains something to study rather than claim on sight."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    },
+    {
+      "id": "s4-forge-use",
+      "title": "Forge use · temporary magic and item custody",
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "Forge of Spells inside small stone workshop building in cavern. Stone pedestal supports a brazier of GREEN magical flame; old forge tools, workbench, ruined furnishings. ONE spectator beholderkin if initially present: spherical levitating body, ONE large central eye and FOUR smaller eye stalks, toothy mouth. Not a full beholder. No active dwarf smiths, restored machine, Echo apparatus, dragon or huge magical loot hoard. Green fire is the room's established light, keep architecture utilitarian.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 15 · Forge of Spells\nObservable scene and constraints: Forge of Spells inside small stone workshop building in cavern. Stone pedestal supports a brazier of GREEN magical flame; old forge tools, workbench, ruined furnishings. ONE spectator beholderkin if initially present: spherical levitating body, ONE large central eye and FOUR smaller eye stalks, toothy mouth. Not a full beholder. No active dwarf smiths, restored machine, Echo apparatus, dragon or huge magical loot hoard. Green fire is the room's established light, keep architecture utilitarian.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "ec936a18ff7412124803e1ba03c589737a8d5b9739be4e106e8bbb532300a0e7",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-forge-of-spells.png",
+  "generatedAt": "2026-10-12T16:31:47.707Z",
+  "candidateHash": "8a49481dba850ded7ef2215bddfbac6420b9dff80470449ab91a11c8db7454bf",
+  "review": "passed",
+  "reviewedHash": "8a49481dba850ded7ef2215bddfbac6420b9dff80470449ab91a11c8db7454bf",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:32.601Z",
+  "installedHash": "8a49481dba850ded7ef2215bddfbac6420b9dff80470449ab91a11c8db7454bf",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/forge-of-spells-v2.png"
+}

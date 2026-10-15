@@ -1,0 +1,36 @@
+{
+  "id": "lmop-kings-quarters",
+  "title": "Cragmaw Castle · Area 14 · King’s quarters",
+  "image": "lmop-visuals/kings-quarters.png",
+  "key": "C14",
+  "chapter": "Cragmaw Castle",
+  "reveal": "When room is visible",
+  "sourceRecordIds": [
+    "s3-area14"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area14",
+      "title": "Area 14 · Grol and Vyerith",
+      "read": [
+        "Voices cut through the door: a harsh demand, then a smooth reply. Inside, furs cover the floor while a towering bugbear argues with a dark-clad visitor.",
+        "The argument reveals different voices, not an agreement you understand yet. The furs and the speakers' positions divide the room into places to approach or avoid. You can listen for a few more words, announce yourselves, or look for a position that keeps your way out clear."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "King Grol quarters: thick fur rugs, old trophies, large NORTH bed, bright coal brazier, round table/chairs SOUTH. ONE old hunched bugbear King Grol, ONE ordinary wolf Snarl, ONE apparent female drow Vyerith in discussion. CURRENT campaign Gundren is at inn, so NO dwarf prisoner. Glasstaff known DM-only to have fled here, omit him in public base image. No exposed doppelganger or castle route text.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 14 · King’s quarters\nObservable scene and constraints: King Grol quarters: thick fur rugs, old trophies, large NORTH bed, bright coal brazier, round table/chairs SOUTH. ONE old hunched bugbear King Grol, ONE ordinary wolf Snarl, ONE apparent female drow Vyerith in discussion. CURRENT campaign Gundren is at inn, so NO dwarf prisoner. Glasstaff known DM-only to have fled here, omit him in public base image. No exposed doppelganger or castle route text.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "6b20b8420f4ffd2edb7a7ebd9aab29bdfaf99dc7c968ae9f26d1c213089b472a",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-kings-quarters.png",
+  "generatedAt": "2026-10-12T16:26:46.315Z",
+  "candidateHash": "3b7fed88e29b9e5a30baadfc563576dadac21cb8b894ee6988ce841cec251963",
+  "review": "passed",
+  "reviewedHash": "3b7fed88e29b9e5a30baadfc563576dadac21cb8b894ee6988ce841cec251963",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.132Z",
+  "installedHash": "3b7fed88e29b9e5a30baadfc563576dadac21cb8b894ee6988ce841cec251963",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/kings-quarters.png"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "lmop-castle-entrance",
+  "title": "Cragmaw Castle · Area 1 · Castle entrance",
+  "image": "lmop-visuals/castle-entrance.png",
+  "key": "C01",
+  "chapter": "Cragmaw Castle",
+  "reveal": "At the entrance",
+  "sourceRecordIds": [
+    "s3-area1"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area1",
+      "title": "Area 1 · Entrance and sentries",
+      "read": [
+        "Shattered gate timbers lie across an old entrance. Above the wreckage, narrow slots stare out from two small chambers.",
+        "The wrecked timbers interrupt a straight walk through the entrance. The narrow openings above offer views into the approach without giving you the same view back. You can study the wall from cover, look for a clearer way through, or decide who will cross the exposed ground first."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Cragmaw castle WEST main entrance: short stone stairs to terrace, TWO broken corroded bronze-sheathed wooden gates, flanking round towers with arrow slits, shadowed entrance hall. No goblin positions visible inside slits until spotted, no restored doors or trapped prisoner.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 1 · Castle entrance\nObservable scene and constraints: Cragmaw castle WEST main entrance: short stone stairs to terrace, TWO broken corroded bronze-sheathed wooden gates, flanking round towers with arrow slits, shadowed entrance hall. No goblin positions visible inside slits until spotted, no restored doors or trapped prisoner.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "fd296b417a458073c4977281e2bcfd26e06dc17fe48084cf91052c5e49173a8e",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-castle-entrance.png",
+  "generatedAt": "2026-10-12T16:23:59.610Z",
+  "candidateHash": "47aabf70540704362709511063624c912ae9db28c4dbeec73fd5cee0844a46ab",
+  "review": "passed",
+  "reviewedHash": "47aabf70540704362709511063624c912ae9db28c4dbeec73fd5cee0844a46ab",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.439Z",
+  "installedHash": "47aabf70540704362709511063624c912ae9db28c4dbeec73fd5cee0844a46ab",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/castle-entrance.png"
+}

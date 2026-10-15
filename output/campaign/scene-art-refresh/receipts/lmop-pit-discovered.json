@@ -1,0 +1,36 @@
+{
+  "id": "lmop-pit-discovered",
+  "title": "Redbrand Hideout · Area 3 · Pit discovered",
+  "image": "lmop-visuals/pit-discovered.png",
+  "key": "R03B",
+  "chapter": "Redbrand Hideout",
+  "reveal": "After the pit is detected or triggered",
+  "sourceRecordIds": [
+    "s2-trap"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-trap",
+      "title": "10 · Hall and hidden pit · area 3",
+      "read": [
+        "A dusty stone hall runs toward copper-covered double doors. Old decorative columns break up the walls.",
+        "The hall gives you a direct way forward, but its floor deserves as much attention as its far end. Dust, joins in the stone, and the places where boots might fall are visible things to inspect. You can slow the group or check the route without assuming that the way is safe."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "The SAME straight stone hallway, faux columns and green copper double doors with mournful angel relief. Revealed central twenty-foot-deep pit, broken loose tiles and snapped supporting timbers. Narrow intact ledges remain along both sides. No spikes, lava, treasure, trapped person, or additional pits. Show the discovered hazard without claiming anyone fell.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Redbrand Hideout · Area 3 · Pit discovered\nObservable scene and constraints: The SAME straight stone hallway, faux columns and green copper double doors with mournful angel relief. Revealed central twenty-foot-deep pit, broken loose tiles and snapped supporting timbers. Narrow intact ledges remain along both sides. No spikes, lava, treasure, trapped person, or additional pits. Show the discovered hazard without claiming anyone fell.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "3c7ae56df13fc68b1e24715bd09dd4a04c7ad08f50df03835af5498f86eb52d7",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-pit-discovered.png",
+  "generatedAt": "2026-10-12T16:15:20.761Z",
+  "candidateHash": "80c2eb8ad185318e8ff0ae9eb5cc0925b2e1c53af05bf75c9192ceaa85b3b271",
+  "review": "passed",
+  "reviewedHash": "80c2eb8ad185318e8ff0ae9eb5cc0925b2e1c53af05bf75c9192ceaa85b3b271",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.520Z",
+  "installedHash": "80c2eb8ad185318e8ff0ae9eb5cc0925b2e1c53af05bf75c9192ceaa85b3b271",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/pit-discovered.png"
+}

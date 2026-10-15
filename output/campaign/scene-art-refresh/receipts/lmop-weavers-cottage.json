@@ -1,0 +1,36 @@
+{
+  "id": "lmop-weavers-cottage",
+  "title": "Thundertree · Area 12 · Weaver’s cottage",
+  "image": "lmop-visuals/weavers-cottage.png",
+  "key": "T12",
+  "chapter": "Thundertree",
+  "reveal": "On entering area 12",
+  "sourceRecordIds": [
+    "s3-tt-12"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-12",
+      "title": "Thundertree 12 · Weaver’s cottage",
+      "read": [
+        "A broken loom sits in a cottage open to the weather. Thick growth hides the ground beyond its southern wall.",
+        "The broken loom identifies one kind of work once done here. Beyond it, the southern growth conceals ground you cannot yet judge. You can examine the cottage's visible remains or keep back from the thicket while deciding where to direct your attention."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Weather-open weaver's cottage, broken wooden loom inside collapsed walls; thick ordinary vegetation to SOUTH hides SIX twig blights. Daylight and old ash-gray debris. No visible blights, functioning workshop or magical cloth.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 12 · Weaver’s cottage\nObservable scene and constraints: Weather-open weaver's cottage, broken wooden loom inside collapsed walls; thick ordinary vegetation to SOUTH hides SIX twig blights. Daylight and old ash-gray debris. No visible blights, functioning workshop or magical cloth.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "5ab1a6c49f493ea8a8861b6e4e631f3120e12aae084ab72b7f89d224d1752191",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-weavers-cottage.png",
+  "generatedAt": "2026-10-12T16:18:52.078Z",
+  "candidateHash": "efbbbe64a6e48857b5b7ecd4c53b97342403c02f5935547c2b64a16b03126d53",
+  "review": "passed",
+  "reviewedHash": "efbbbe64a6e48857b5b7ecd4c53b97342403c02f5935547c2b64a16b03126d53",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.153Z",
+  "installedHash": "efbbbe64a6e48857b5b7ecd4c53b97342403c02f5935547c2b64a16b03126d53",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/weavers-cottage.png"
+}

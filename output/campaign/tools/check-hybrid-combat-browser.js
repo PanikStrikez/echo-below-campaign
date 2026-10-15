@@ -1,0 +1,140 @@
+const assert = require('node:assert/strict');
+const path = require('node:path');
+const read=async page=>page.evaluate(async()=>{const db=await new Promise((ok,bad)=>{const r=indexedDB.open('echo-below-campaign-table-v1',1);r.onsuccess=()=>ok(r.result);r.onerror=()=>bad(r.error);});try{return await new Promise((ok,bad)=>{const r=db.transaction('records','readonly').objectStore('records').get('campaign:default:session:session-01');r.onsuccess=()=>ok(JSON.parse(r.result));r.onerror=()=>bad(r.error);});}finally{db.close();}});
+const saved=page=>page.waitForFunction(()=>document.querySelector('#save-status')?.textContent==='Saved');
+const {chromium} = require('playwright');
+
+(async () => {
+  const browser = await chromium.launch({headless:true,channel:'chrome'});
+  try {
+    const context = await browser.newContext({viewport:{width:Number(process.env.ECHO_REHEARSAL_WIDTH)||1512,height:process.env.ECHO_REHEARSAL_WIDTH==='1280'?800:982}});
+    // This rehearsal must never reach the running table's phone or AI services.
+    await context.route(/^https?:\/\//,route=>route.abort());
+    await context.addInitScript(()=>{let bridge;Object.defineProperty(window,'ECHO_PHONE',{configurable:true,get:()=>bridge,set:v=>{const init=v.init;v.init=host=>{window.__phoneIngress=host;return init(host);};bridge=v;}});});
+    const page = await context.newPage();
+    const errors=[];
+    page.on('pageerror',error=>errors.push(error.message));
+    page.on('dialog',dialog=>dialog.accept());
+    await page.goto('file://'+path.resolve(__dirname,'../Session-01-TV-Display.html'));
+    await page.locator('#dm-app.hybrid-ui').waitFor();
+    await page.locator('#hybrid-home .hybrid-tile').filter({hasText:'Start combat'}).click();
+    const rail=page.locator('#hybrid-combat-rail');
+    assert(await rail.isVisible());
+    if(await rail.getByRole('button',{name:'Choose a map'}).count()){
+      await rail.getByRole('button',{name:'Choose a map'}).click();
+      await page.locator('#context-scene select[aria-label="Visual type"]').selectOption('map');
+      const picker=page.locator('#context-scene select[aria-label="Choose scene"]');
+      const first=await picker.locator('option[value]:not([value=""])').first().getAttribute('value');
+      assert(first,'a tactical map is available');
+      await picker.selectOption(first);
+      await page.locator('#context-scene button').filter({hasText:'Show on TV'}).click();
+      await page.locator('.hybrid-drawer-close').click();
+    }
+    await rail.locator('.hybrid-combat-tokens').waitFor();
+    const party=rail.locator('.hybrid-combat-token').filter({has:page.locator('.hybrid-combat-token-info strong', {hasText:/Trista|Pebble|Donavan|Ringgo|Aldric/})});
+    assert(await party.count(),'party tokens appear in Map Desk');
+    const partyRow=party.filter({hasText:'Aldric'}).first();
+    const partyName=await partyRow.locator('strong').innerText();
+    await partyRow.getByRole('button',{name:'Place'}).click();
+    assert(await page.locator('#dm-stage .token.pc').count(),'placed hero appears on map');
+    const enemy=rail.locator('.hybrid-combat-team').filter({hasText:'ENEMIES'})
+      .locator('xpath=following-sibling::div[contains(@class,"hybrid-combat-token")][1]');
+    assert(await enemy.count(),'selected encounter has a combatant');
+    await enemy.getByRole('button',{name:'Place'}).click();
+    if(await enemy.getByRole('button',{name:'Hidden',exact:true}).count())await enemy.getByRole('button',{name:'Hidden',exact:true}).click();
+    await page.evaluate(()=>document.getElementById('reveal-all').click());
+    const token=page.locator('#dm-stage .token.pc').first();
+    const before=await token.getAttribute('style');
+    const box=await token.boundingBox();
+    assert(box,'placed token can be dragged');
+    await page.mouse.move(box.x+box.width/2,box.y+box.height/2);
+    await page.mouse.down();
+    await page.mouse.move(box.x+box.width/2+34,box.y+box.height/2+24,{steps:5});
+    await page.mouse.up();
+    const after=await page.locator('#dm-stage .token.pc').first().getAttribute('style');
+    assert.notEqual(after,before,'dragged token remains at its new position');
+    assert.equal(await page.locator('#dm-stage .ruler-label').count(),0,'token drag does not draw a ruler');
+    await page.locator('.hybrid-map-dock').getByRole('button',{name:'Undo'}).click();
+    assert.equal(await page.locator('#dm-stage .token.pc').first().getAttribute('style'),before,'Undo restores the token position');
+    await page.locator('.hybrid-map-dock').getByRole('button',{name:'Map tools'}).click();
+    await page.locator('#map-tools [data-map-tool="ruler"]').click();
+    const measured=await page.locator('#dm-stage .token.pc').first().boundingBox();
+    await page.mouse.move(measured.x+measured.width/2,measured.y+measured.height/2);
+    await page.mouse.down();
+    await page.mouse.move(measured.x+measured.width/2+80,measured.y+measured.height/2+20,{steps:5});
+    await page.mouse.up();
+    assert.equal(await page.locator('#dm-stage .token.pc').first().getAttribute('style'),before,'Ruler drag does not move a token');
+    assert(await page.locator('#dm-stage .ruler-label').count(),'Ruler can measure from a token');
+    await page.locator('#map-tools [data-map-tool="move"]').click();
+    const initiative=rail.locator('input[aria-label$=" initiative"]');
+    let count=await initiative.count();
+    assert(count>0,'placed combatants have initiative fields');
+    for(let index=0;index<count;index++){
+      const field=rail.locator('input[aria-label$=" initiative"]').nth(index);
+      await field.fill(String(18-index));
+      await field.press('Tab');
+    }
+    await rail.getByRole('button',{name:'Begin round 1'}).click();
+    assert.equal(await page.locator('#combat-live-panel').evaluate(element=>element.parentElement.id),'hybrid-combat-rail','active-turn controls stay in the map rail');
+    assert((await rail.innerText()).includes('ACTIVE TURN'),'combat begins in the same panel');
+    await page.screenshot({path:'/private/tmp/echo-hybrid-combat-active.png'});
+    await rail.locator('.hybrid-combat-tokens summary').click();
+    await rail.getByRole('button',{name:'Target'}).first().click();
+    assert(await rail.locator('.live-attack select').count(),'targeting keeps the attack flow beside the map');
+    const attack=rail.locator('#combat-live-panel .live-attack');
+    const chosenTarget=await attack.getByLabel('Target',{exact:true}).locator('option[value]:not([value=""])').first().getAttribute('value');
+    await attack.getByLabel('Target',{exact:true}).selectOption(chosenTarget);
+    await saved(page);const beforeReview=await read(page);
+    await attack.getByRole('button',{name:'Review action',exact:true}).click();
+    const review=rail.locator('#phone-action-review-detail');
+    assert(await review.isVisible(),'shared review stays in the map rail');
+    async function enterPhysical(){
+      if(!await review.getByLabel('Attack dice',{exact:true}).count())throw Error('Missing shared attack controls: '+(await review.innerText()).slice(0,3500)+'; errors: '+errors.join(' | '));
+      await review.getByLabel('Attack dice',{exact:true}).selectOption('physical');
+      await review.getByLabel('Physical attack total',{exact:true}).fill('18');await review.getByLabel('Physical attack total',{exact:true}).press('Tab');
+      await review.getByLabel('Natural attack die (1–20)',{exact:true}).fill('13');await review.getByLabel('Natural attack die (1–20)',{exact:true}).press('Tab');
+      await review.getByLabel('Physical damage / healing (critical dice already included; blank rolls digitally)',{exact:true}).fill('5');await review.getByLabel('Physical damage / healing (critical dice already included; blank rolls digitally)',{exact:true}).press('Tab');
+      await review.getByLabel('I checked the targets, timing, full effect, costs, and any exceptions',{exact:true}).check();
+      await review.getByRole('button',{name:'Prepare rolls & preview',exact:true}).click();
+      assert((await review.innerText()).includes('Review before applying'),'rolls and effects preview exists before resolve');
+      if(process.env.ECHO_REHEARSAL_SHOTS){require('fs').mkdirSync(process.env.ECHO_REHEARSAL_SHOTS,{recursive:true});await review.getByRole('button',{name:'Approve & resolve together',exact:true}).scrollIntoViewIfNeeded();await page.screenshot({path:path.join(process.env.ECHO_REHEARSAL_SHOTS,'dm-reviewed-attack-'+(process.env.ECHO_REHEARSAL_WIDTH||1512)+'.png')});}
+    await review.getByRole('button',{name:'Approve & resolve together',exact:true}).click();
+      assert((await page.locator('#toast').innerText()).includes('Confirm reactions'),'cannot resolve before reaction review');
+      await review.getByLabel('Reactions have been resolved or passed',{exact:true}).check();
+      await review.getByRole('button',{name:'Prepare rolls & preview',exact:true}).click();
+    }
+    await enterPhysical();await page.screenshot({path:'/private/tmp/echo-shared-combat-review.png'});await saved(page);const staged=await read(page);
+    assert.equal(staged.party['pc-aldric'].hp,beforeReview.party['pc-aldric'].hp,'preparing rolls never spends HP or resources');
+    await review.getByRole('button',{name:'Approve & resolve together',exact:true}).click();await saved(page);
+    const dmResolved=await read(page),dmResult=dmResolved.phoneActions.requests.at(-1).resolution;
+    assert.equal(dmResolved.undoStack.length,staged.undoStack.length+1,'entire resolution adds exactly one undo event');
+    assert.equal(dmResolved.phoneActions.requests.at(-1).source,'dm');
+    await review.locator('details').filter({has:page.getByText(/^History ·/)}).evaluate(e=>e.open=true);
+    await review.getByRole('button',{name:'Undo this resolution',exact:true}).click();await saved(page);
+    const undone=await read(page);assert.deepEqual(undone.party,beforeReview.party,'Undo restores all sheet effects together');assert.deepEqual(undone.tokens,beforeReview.tokens,'Undo restores HP, temp HP, conditions and AC together');
+    await page.evaluate(target=>{const snap=__phoneIngress.snapshot(),id=snap.public.turn.activeId,entry=snap.characters[id].attacks[0];if(!snap.public.tokens.some(t=>t.id===target))throw Error('Simulated phone target is not public');__phoneIngress.onAction({kind:'action-request',requestId:'browser-phone-attack',characterId:id,scene:snap.public.scene,actionType:'attack',actionIndex:0,actionName:entry.name,entry,targetIds:[target],note:'Same attack from a simulated phone',mode:'normal'});ECHO_PHONE_ACTIONS_UI.open('browser-phone-attack');},chosenTarget);
+    await enterPhysical();await review.getByRole('button',{name:'Approve & resolve together',exact:true}).click();await saved(page);
+    const phoneResolved=await read(page),phoneResult=phoneResolved.phoneActions.requests.at(-1).resolution;
+    assert.deepEqual(phoneResult.patches,dmResult.patches,'DM and actual phone ingress produce the same reviewed state changes');
+    const receipt=await page.evaluate(()=>__phoneIngress.snapshot().actionRequests['pc-aldric'].find(r=>r.id==='browser-phone-attack'));
+    assert.equal(receipt.status,'resolved');assert(!JSON.stringify(receipt).includes('patches'),'phone receives safe result, not DM review');
+    await review.locator('details').filter({has:page.getByText(/^History ·/)}).evaluate(e=>e.open=true);
+    await review.getByRole('button',{name:'Undo this resolution',exact:true}).click();await saved(page);
+    await rail.locator('.live-extra-actions').evaluate(e=>e.open=true);
+    await rail.locator('.live-utility').getByLabel('Choose an action').selectOption('aldric-shield');
+    await rail.locator('.live-utility').getByRole('button',{name:'Review action and effects'}).click();
+    await review.getByLabel('I checked the targets, timing, full effect, costs, and any exceptions',{exact:true}).check();
+    await review.getByLabel('Reactions have been resolved or passed',{exact:true}).check();
+    await review.getByRole('button',{name:'Prepare rolls & preview',exact:true}).click();
+    assert((await review.innerText()).includes('4 → 3'),'slot cost appears in the shared review before commit');
+    await review.getByRole('button',{name:'Approve & resolve together',exact:true}).click();await saved(page);
+    assert((await rail.locator('.live-reminders').innerText()).includes('Reaction spent'),'resolution updates reaction usage');
+    const current=await rail.locator('.live-head h2').innerText();
+    await rail.getByRole('button',{name:'End turn'}).click();
+    assert((await rail.locator('.live-head h2').innerText())!==current || count===1,'turn advances');
+    await rail.getByRole('button',{name:'Review combat ending',exact:true}).click();assert(await rail.locator(':scope > .live-head').count(),'Review keeps the active fight until approved');
+    await page.getByLabel('How did this fight end?',{exact:true}).selectOption('unresolved');await page.getByRole('button',{name:'Continue to changes',exact:true}).click();await page.getByRole('button',{name:'Continue to review',exact:true}).click();await page.getByRole('button',{name:'Review aftermath updates',exact:true}).click();await page.getByRole('button',{name:'Preview linked changes',exact:true}).click();await page.getByRole('button',{name:'Apply reviewed outcome',exact:true}).click();await page.getByRole('button',{name:'Finish aftermath and return to map',exact:true}).click();await saved(page);assert.equal(await rail.locator(':scope > .live-head').count(),0,'Reviewed ending removes the active creature');
+    assert.deepEqual(errors,[]);
+    console.log('Hybrid combat passed: map staging, free drag/undo, explicit ruler, initiative, identical DM/phone-ingress reviewed results, physical dice, reaction boundary, one-event undo, slot/reaction use, and next turn. Phone ingress simulated; no live clients or services.');
+  } finally {await browser.close();}
+})().catch(error=>{console.error(error);process.exitCode=1;});

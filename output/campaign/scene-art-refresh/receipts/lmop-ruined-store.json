@@ -1,0 +1,36 @@
+{
+  "id": "lmop-ruined-store",
+  "title": "Thundertree · Area 6 · Ruined store",
+  "image": "lmop-visuals/ruined-store.png",
+  "key": "T06",
+  "chapter": "Thundertree",
+  "reveal": "When the webbed ruin is seen",
+  "sourceRecordIds": [
+    "s3-tt-6"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-6",
+      "title": "Thundertree 6 · Ruined store and webs",
+      "read": [
+        "White strands cross the lane to a broken store. The building looks empty from outside, though its walls offer plenty of shadows.",
+        "The strands cross the lane as well as the building, making the approach itself worth examining. Your light catches some threads more readily than the shadows behind them. You can study the webbing from clear ground or decide how much of the lane you want to cross."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Ruined general store/workshop at village junction, part of its TILE roof intact. Lane to north climbs hill; sheets of white spider silk stretch across lane from store to trees north of road. Dense north-side thickets. TWO giant spiders hidden on inner walls must remain out of view. Exterior approach, no cocooned body revealed through masonry, no endless webs blanketing entire village.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 6 · Ruined store\nObservable scene and constraints: Ruined general store/workshop at village junction, part of its TILE roof intact. Lane to north climbs hill; sheets of white spider silk stretch across lane from store to trees north of road. Dense north-side thickets. TWO giant spiders hidden on inner walls must remain out of view. Exterior approach, no cocooned body revealed through masonry, no endless webs blanketing entire village.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "b8b42fab9c142e45e82376b7b8331602f9e44e701c6a5b276442dc3ca2346563",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-ruined-store.png",
+  "generatedAt": "2026-10-12T16:17:33.458Z",
+  "candidateHash": "342720f0069afb40ecc3225fb5ab2da33188e97bffff417c0ce82bd8335b5ae8",
+  "review": "passed",
+  "reviewedHash": "342720f0069afb40ecc3225fb5ab2da33188e97bffff417c0ce82bd8335b5ae8",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.647Z",
+  "installedHash": "342720f0069afb40ecc3225fb5ab2da33188e97bffff417c0ce82bd8335b5ae8",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/ruined-store.png"
+}

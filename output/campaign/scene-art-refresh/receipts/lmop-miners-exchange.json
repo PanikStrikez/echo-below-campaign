@@ -1,0 +1,32 @@
+{
+  "id": "lmop-miners-exchange",
+  "title": "Phandalin · Miner’s Exchange",
+  "image": "lmop-visuals/miners-exchange.png",
+  "key": "P06",
+  "chapter": "Phandalin",
+  "reveal": "When the party visits",
+  "sourceRecordIds": [
+    "s2-town"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-town",
+      "title": "5 · Follow the party’s town lead",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Phandalin Miners Exchange, practical frontier weighing/record office for prospectors. Ordinary ore samples, ledgers, scales and tools, Halia human woman behind counter. No giant mine entrance inside shop, magical mineral portal or overt secret-faction badges. Dirt street wooden/stone shop exterior if framing requires.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Miner’s Exchange\nObservable scene and constraints: Phandalin Miners Exchange, practical frontier weighing/record office for prospectors. Ordinary ore samples, ledgers, scales and tools, Halia human woman behind counter. No giant mine entrance inside shop, magical mineral portal or overt secret-faction badges. Dirt street wooden/stone shop exterior if framing requires.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "7aba3e6093074362c1c12e4ea5e90aeabe85543e6e96b8f6a0a5187032d005c0",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-miners-exchange.png",
+  "generatedAt": "2026-10-12T15:52:02.229Z",
+  "candidateHash": "0c66e64d7b57874c400d8cf7deb87bea65c084a804715fb7c9ebc38e57f89c1b",
+  "review": "passed",
+  "reviewedHash": "0c66e64d7b57874c400d8cf7deb87bea65c084a804715fb7c9ebc38e57f89c1b",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.897Z",
+  "installedHash": "0c66e64d7b57874c400d8cf7deb87bea65c084a804715fb7c9ebc38e57f89c1b",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/miners-exchange.png"
+}

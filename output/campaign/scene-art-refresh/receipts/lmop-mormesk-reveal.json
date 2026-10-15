@@ -1,0 +1,36 @@
+{
+  "id": "lmop-mormesk-reveal",
+  "title": "Wave Echo Cave · Area 14 · Mormesk appears",
+  "image": "lmop-visuals/mormesk-reveal.png",
+  "key": "E14B",
+  "chapter": "Wave Echo Cave",
+  "reveal": "When the wraith manifests",
+  "sourceRecordIds": [
+    "s4-room-14"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-room-14",
+      "title": "Area 14 · Mormesk and the wizards’ quarters",
+      "read": [
+        "Charred furniture stands beneath a sagging ceiling. A scorched chest waits beside a ruined bed. As you step in, darkness gathers out of the floor and turns toward you.",
+        "Charred furniture crowds the room beneath the damaged ceiling. The bed and chest survived the destruction well enough to recognize, though their contents cannot be judged from here. The dark presence near the floor draws attention away from them, making the threshold a useful place to stop and look."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "SAME scorched wizard's stone quarters. ONE dark incorporeal humanoid wraith Mormesk manifests above ruined furniture, ragged smoky form, menacing but no action against player characters. No solid living wizard, undead army, blue portal or visible treasure reward. Local lantern, scorched books remain.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 14 · Mormesk appears\nObservable scene and constraints: SAME scorched wizard's stone quarters. ONE dark incorporeal humanoid wraith Mormesk manifests above ruined furniture, ragged smoky form, menacing but no action against player characters. No solid living wizard, undead army, blue portal or visible treasure reward. Local lantern, scorched books remain.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "02ff75dee4e075fa01989f43e895b833f90218266687122ecc389f7a1f1c758c",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-mormesk-reveal.png",
+  "generatedAt": "2026-10-12T16:32:06.808Z",
+  "candidateHash": "3be0aea12540b4bea4a5c9da4bf51f00b28a2b798a7365ca0961267492118e77",
+  "review": "passed",
+  "reviewedHash": "3be0aea12540b4bea4a5c9da4bf51f00b28a2b798a7365ca0961267492118e77",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.867Z",
+  "installedHash": "3be0aea12540b4bea4a5c9da4bf51f00b28a2b798a7365ca0961267492118e77",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/mormesk-reveal.png"
+}

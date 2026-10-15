@@ -1,0 +1,36 @@
+{
+  "id": "lmop-brown-horse",
+  "title": "Thundertree · Area 3 · Brown Horse",
+  "image": "lmop-visuals/brown-horse.png",
+  "key": "T03",
+  "chapter": "Thundertree",
+  "reveal": "On entering area 3",
+  "sourceRecordIds": [
+    "s3-tt-3"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-3",
+      "title": "Thundertree 3 · The Brown Horse",
+      "read": [
+        "A faded horse sign hangs above the door of an old tavern. Inside, forms slump against the walls and beneath the bar.",
+        "The hanging sign gives the ruin a name even though its hospitality is long gone. The slumped forms are visible among the remains of ordinary tavern furnishings. You can stop at the doorway to study them, call into the room, or decide where to stand before entering."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Abandoned Brown Horse tavern. Weathered horse-shaped sign, roof largely intact, interior viewed from doorway. Eastern common room with ruined bar; western brewing/kitchen area with HUGE wooden ale tuns. FOUR ash-covered human zombie forms slump motionlessly against walls or beneath bar, initial observable state before rising. No active attack, drinks, living patrons or flaming zombies. Dusty daylight, cold hearth.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 3 · Brown Horse\nObservable scene and constraints: Abandoned Brown Horse tavern. Weathered horse-shaped sign, roof largely intact, interior viewed from doorway. Eastern common room with ruined bar; western brewing/kitchen area with HUGE wooden ale tuns. FOUR ash-covered human zombie forms slump motionlessly against walls or beneath bar, initial observable state before rising. No active attack, drinks, living patrons or flaming zombies. Dusty daylight, cold hearth.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "675c88b62993aa86deb676b55ca6bb4ba4edb9fb2b653ded3363ffaf03d21a12",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-brown-horse.png",
+  "generatedAt": "2026-10-12T16:15:01.257Z",
+  "candidateHash": "5e77a930c6275e552616733e8fcbc7d1ca2dea76f5ebad45d0fe87e11e97bbfd",
+  "review": "passed",
+  "reviewedHash": "5e77a930c6275e552616733e8fcbc7d1ca2dea76f5ebad45d0fe87e11e97bbfd",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.349Z",
+  "installedHash": "5e77a930c6275e552616733e8fcbc7d1ca2dea76f5ebad45d0fe87e11e97bbfd",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/brown-horse.png"
+}

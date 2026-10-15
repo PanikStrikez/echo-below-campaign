@@ -22,6 +22,7 @@ M.receive(d,{...event,requestId:'cancel'},owners);M.receive(d,{...event,requestI
 // Run real board public projection and Undo/Redo with the new campaign-level record.
 const src=fs.readFileSync(path.join(root,'Session-01-Battleboard.js'),'utf8'),boot=src.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 const initStart=src.indexOf('    globalThis.ECHO_TRAVEL_UI?.init({'),initEnd=src.indexOf('    globalThis.ECHO_TABLE?.init({',initStart),initTravel=src.slice(initStart,initEnd);
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(src.slice(0,boot)+`
 renderDM=()=>{};sendToPlayer=()=>{};saveLocal=()=>{};saveCampaignIndex=()=>{};toast=()=>{};captureRestorePoint=async()=>{};
 globalThis.__travel={fresh:()=>normalize(newCustomState()),set:(s,e)=>{state=s;campaignIndex.tableExtras=e;lastCommittedSnapshot=gameSnapshot(state);},get:()=>({state,extras:campaignIndex.tableExtras}),commit,undo:undoLast,redo:redoLast,publicState,phoneSnapshot,setup:()=>{${initTravel}}};

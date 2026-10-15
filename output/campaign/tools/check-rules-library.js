@@ -58,7 +58,6 @@ assert.equal(roundtrip.rulings[0].source, 'House ruling');
 assert(roundtrip.favorites.includes('advantage'));
 
 const loader = fs.readFileSync(path.join(root, 'Session-01-Loader.js'), 'utf8');
-assert(loader.includes('if (!player) for (const file of privateScripts) await load(file)'));
-assert(loader.includes('Session-01-Handout-Data.js'));
+require('./test-support.cjs').assertPrivateModules(['Session-01-Rules-Data.js','Session-01-Rules-Index.js','Session-01-Rules-Library.js','Session-01-Handout-Data.js']).catch(error=>{console.error(error);process.exitCode=1;});
 assert(!html.includes('src="Session-01-Rules-Index.js"'));
 console.log(`Rules library checks passed: ${entries.length} references, ${Object.keys(books).length} books.`);

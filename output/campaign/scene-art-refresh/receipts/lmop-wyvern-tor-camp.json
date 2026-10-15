@@ -1,0 +1,36 @@
+{
+  "id": "lmop-wyvern-tor-camp",
+  "title": "Wilderness · Wyvern Tor · orc camp",
+  "image": "lmop-visuals/wyvern-tor-camp.png",
+  "key": "W08",
+  "chapter": "Wilderness",
+  "reveal": "When the camp is visible",
+  "sourceRecordIds": [
+    "s3-wyvern"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-wyvern",
+      "title": "Optional lead · Wyvern Tor",
+      "read": [
+        "The ravine and cave mouth are familiar from the camp the party cleared. What signs remain depends on what they left behind.",
+        "The familiar approach gives you a point from which to compare what is here now with what you remember. The ravine and the opening remain useful landmarks. You can look for a specific change, approach the cave cautiously, or leave the cleared camp behind without searching it again."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Wyvern Tor cave camp after party cleared it: rough natural cave, simple discarded bedding and cooking remnants, gear unclaimed or closed. NO surviving orcs, ogre, corpses or permanent trophies assumed. Empty reusable room scene, not replay of completed battle. No lava, giant fortress or shiny rock prophecy.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wilderness · Wyvern Tor · orc camp\nObservable scene and constraints: Wyvern Tor cave camp after party cleared it: rough natural cave, simple discarded bedding and cooking remnants, gear unclaimed or closed. NO surviving orcs, ogre, corpses or permanent trophies assumed. Empty reusable room scene, not replay of completed battle. No lava, giant fortress or shiny rock prophecy.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "4bca92dec7fcb100cc37e82be250fac3fefe426670f8d0becfa2e8c36b2fe2a2",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-wyvern-tor-camp.png",
+  "generatedAt": "2026-10-12T16:13:01.611Z",
+  "candidateHash": "555da06b6d039d00281a7d710ab7c320c4c4808f6ccd11c2a25a74d03f57ce8f",
+  "review": "passed",
+  "reviewedHash": "555da06b6d039d00281a7d710ab7c320c4c4808f6ccd11c2a25a74d03f57ce8f",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:09.446Z",
+  "installedHash": "555da06b6d039d00281a7d710ab7c320c4c4808f6ccd11c2a25a74d03f57ce8f",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/wyvern-tor-camp.png"
+}

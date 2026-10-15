@@ -1,0 +1,36 @@
+{
+  "id": "lmop-redbrand-confrontation",
+  "title": "Phandalin · Redbrand confrontation",
+  "image": "lmop-visuals/redbrand-confrontation.png",
+  "key": "P10",
+  "chapter": "Phandalin",
+  "reveal": "After the ruffians confront the party",
+  "sourceRecordIds": [
+    "s2-redbrands"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-redbrands",
+      "title": "6 · Redbrand confrontation · optional",
+      "read": [
+        "Four people in dirty red cloaks drift into your path. One plants a boot on the boardwalk. Another watches the townsfolk make room without being asked. The first says, “Visitors usually learn how things work here before asking questions.” What do you do?",
+        "Their attention gives the encounter an immediate edge, but the street still offers space to speak or withdraw. Before anyone reaches for a weapon, you can look at where the strangers stand and decide whether to answer together, keep your distance, or let one person do the talking."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Phandalin dirt street outside shabby Sleeping Giant: FOUR human ruffians in scarlet cloaks confront unseen travelers, rough shortswords and light gear. Threatening postures, not attack hitting defined player characters. Modest frontier buildings, no plate-armored soldiers or outcome of fight shown. Historical first-encounter variant only.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin · Redbrand confrontation\nObservable scene and constraints: Phandalin dirt street outside shabby Sleeping Giant: FOUR human ruffians in scarlet cloaks confront unseen travelers, rough shortswords and light gear. Threatening postures, not attack hitting defined player characters. Modest frontier buildings, no plate-armored soldiers or outcome of fight shown. Historical first-encounter variant only.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "7bfbad2b66ee9c1bbb160224c6bfcf447b66047952284e2d1958f95b84729301",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-redbrand-confrontation.png",
+  "generatedAt": "2026-10-12T16:06:43.981Z",
+  "candidateHash": "588101a44e15c55b6773bcd427bf01eb4c6cfa5ca06bfe5a21809f3c75a9a7b7",
+  "review": "passed",
+  "reviewedHash": "588101a44e15c55b6773bcd427bf01eb4c6cfa5ca06bfe5a21809f3c75a9a7b7",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.249Z",
+  "installedHash": "588101a44e15c55b6773bcd427bf01eb4c6cfa5ca06bfe5a21809f3c75a9a7b7",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/redbrand-confrontation.png"
+}

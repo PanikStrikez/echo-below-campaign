@@ -1,0 +1,87 @@
+{
+  "id": "wd-contact",
+  "title": "Dracuseth · Waterdeep contact",
+  "image": "assets/Dracuseth-Maw-of-Flames.png",
+  "key": "wd-contact",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "wd-dracuseth",
+    "contact",
+    "tr-dracuseth",
+    "mc-dracuseth",
+    "tr-dracuseth"
+  ],
+  "sourceRecords": [
+    {
+      "id": "wd-dracuseth",
+      "title": "Dracuseth at the Portal",
+      "read": "Dracuseth rises from a table near the wall. “There you are. Sit down. Tell me what happened before anyone tells you what it means.”\n\nThe offered seats give the conversation somewhere to begin without turning it into a formal report. You can set down what you choose to share and keep the rest close. Dracuseth waits for your account, leaving the first questions and the pace of the meeting to you.",
+      "source": "Echo Below custom Waterdeep scenes; Durnan/Yawning Portal refer to DotMM pp6–9."
+    },
+    {
+      "id": "contact",
+      "title": "An address and an ordinary beginning",
+      "read": [
+        "“Come if the city has something you want. I can help you find a door and someone worth speaking to. The rest should be your decision.”",
+        "An offered introduction can open a conversation without committing you to the city. There is time to ask who is waiting and what help they can actually give. You can carry the address as an option while finishing work closer to home."
+      ],
+      "source": [
+        {
+          "book": "madMage",
+          "page": 6,
+          "label": "Dungeon of the Mad Mage (2018)",
+          "note": "Printed page; setting anchor verified in the existing Waterdeep expedition reference."
+        }
+      ]
+    },
+    {
+      "id": "tr-dracuseth",
+      "title": "Dracuseth · hear the account before interpreting it",
+      "read": [
+        "Dracuseth moves a chair out from the table. “You have had a long road. Tell me what happened in your words. I can wait until you have eaten.”",
+        "The offered chair makes the meal possible before an explanation is required. Dracuseth leaves space for the account you choose to give. You can ask for practical help without treating every private discovery as part of the introduction."
+      ],
+      "source": []
+    },
+    {
+      "id": "mc-dracuseth",
+      "title": "Dracuseth · a useful promise with limits",
+      "read": [
+        "Dracuseth waits until the account is finished before reaching for the map. “What needs doing here while you are away?” he asks. “Name the task, and tell me what would count as enough.”",
+        "His hand reaches toward the map only after listening. A named task can be smaller than a promise to keep the whole city safe. You can agree on limits and a way to send word before asking him to act while you are away."
+      ],
+      "source": [
+        {
+          "book": "madMage",
+          "page": 6,
+          "label": "Dungeon of the Mad Mage",
+          "note": "The Yawning Portal setting anchor only. Mending Court, its residents, rooms and agreements are custom."
+        }
+      ]
+    },
+    {
+      "id": "tr-dracuseth",
+      "title": "Dracuseth · hear the account before interpreting it",
+      "read": [
+        "Dracuseth moves a chair out from the table. “You have had a long road. Tell me what happened in your words. I can wait until you have eaten.”",
+        "The offered chair makes the meal possible before an explanation is required. Dracuseth leaves space for the account you choose to give. You can ask for practical help without treating every private discovery as part of the introduction."
+      ],
+      "source": []
+    }
+  ],
+  "brief": "Preserve established Dracuseth/Drakuseth character design from existing portrait; full adult dragonborn Waterdeep contact, same face/scales/clothing/weapon silhouette, no player party membership asserted. In ordinary Waterdeep meeting setting without Halaster, secret apparatus, Nine map or future Echo imagery. This is contact art, not an enemy or new form.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Dracuseth · Waterdeep contact\nObservable scene and constraints: Preserve established Dracuseth/Drakuseth character design from existing portrait; full adult dragonborn Waterdeep contact, same face/scales/clothing/weapon silhouette, no player party membership asserted. In ordinary Waterdeep meeting setting without Halaster, secret apparatus, Nine map or future Echo imagery. This is contact art, not an enemy or new form.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "a996438284062f3e8ac6a04f55409e00bb85a80ac426909b7d8e3c4a071259eb",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/wd-contact.png",
+  "generatedAt": "2026-10-12T16:06:11.632Z",
+  "candidateHash": "b18aa0f97dd16fec65367c7e735fdb178ec529208e94c392fe92ca031592a43d",
+  "review": "passed",
+  "reviewedHash": "b18aa0f97dd16fec65367c7e735fdb178ec529208e94c392fe92ca031592a43d",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:32.846Z",
+  "installedHash": "b18aa0f97dd16fec65367c7e735fdb178ec529208e94c392fe92ca031592a43d",
+  "originalBackup": "scene-art-refresh/originals/assets/Dracuseth-Maw-of-Flames.png"
+}

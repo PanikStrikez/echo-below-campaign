@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const [id,source]=process.argv.slice(2),root=path.resolve(__dirname,'..'),dir=path.join(root,'scene-art-refresh');
+const file=path.join(dir,'Generation-Progress.json'),rows=JSON.parse(fs.readFileSync(file));
+const row=rows.find(r=>r.id===id);if(!row)throw Error('Unknown scene');
+const target=path.join(dir,'candidates',id+'.png');fs.copyFileSync(source,target+'.new');fs.renameSync(target+'.new',target);
+delete row.review;delete row.reviewedHash;delete row.reviewNote;
+Object.assign(row,{status:'generated-awaiting-visual-review',candidate:path.relative(root,target),generatedAt:new Date().toISOString(),candidateHash:crypto.createHash('sha256').update(fs.readFileSync(target)).digest('hex')});
+fs.mkdirSync(path.join(dir,'receipts'),{recursive:true});
+const receipt=path.join(dir,'receipts',id+'.json');
+fs.writeFileSync(receipt+'.tmp',JSON.stringify(row,null,2));fs.renameSync(receipt+'.tmp',receipt);
+console.log(JSON.stringify({id,candidate:target,status:row.status}));

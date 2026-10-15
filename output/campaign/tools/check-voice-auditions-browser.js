@@ -16,10 +16,10 @@ const port=new Promise((resolve,reject)=>{server.stdout.once('data',b=>resolve(N
   window.__outputs=[{kind:'audiooutput',deviceId:'default',groupId:'table',label:'Table speakers'},{kind:'audiooutput',deviceId:'headphones',groupId:'private',label:'Private headphones'}];Object.defineProperty(navigator.mediaDevices,'selectAudioOutput',{value:async()=>__outputs[1]});Object.defineProperty(navigator.mediaDevices,'enumerateDevices',{value:async()=>__outputs});HTMLMediaElement.prototype.setSinkId=async function(){};
   const NativeAudio=window.Audio;window.Audio=class extends NativeAudio{constructor(url){super(url);window.__previewAudio=this;}};
  });
- await page.goto(url);await page.locator('.cockpit-nav').waitFor();
+ await page.goto(url);await page.locator('#hybrid-home').waitFor();
  await page.locator('#load-campaign-file').setInputFiles(backup);await page.waitForFunction(()=>document.getElementById('toast').textContent.includes('Restored'));
  const before=await page.evaluate(()=>JSON.stringify(__aiHost.context().state));
- await page.getByRole('button',{name:'Settings',exact:true}).click();await page.getByRole('button',{name:'AI assistance',exact:true}).click();
+ await page.evaluate(()=>ECHO_COCKPIT.open('Settings'));await page.getByRole('button',{name:'AI assistance',exact:true}).click();
  await page.getByRole('button',{name:'Voice auditions',exact:true}).click();
  await page.waitForFunction(()=>document.querySelector('.voice-auditions .ai-status')?.textContent.includes('key saved'));
  assert.equal(await page.locator('#voice-character option').count(),4);
@@ -37,16 +37,17 @@ const port=new Promise((resolve,reject)=>{server.stdout.once('data',b=>resolve(N
  await page.getByLabel('Proposed stock voice',{exact:true}).selectOption('stock-1');
  await page.getByRole('button',{name:'Generate this audition · included credits only',exact:true}).click();
  await page.waitForFunction(()=>document.querySelector('#voice-job-list')?.textContent.includes('MOCK transport test · completed'));
+ await page.getByRole('button',{name:'Copy cached audition to Voice Studio',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.voice-studio')?.textContent.includes('SIMULATED'));assert.equal(await page.evaluate(()=>ECHO_VOICE_STUDIO.available().length),0,'Copy does not approve playback');await page.evaluate(()=>ECHO_VOICE_UI.open('barthen'));await page.waitForFunction(()=>document.getElementById('voice-job-list')?.textContent.includes('completed'));
  assert.match(await page.locator('#voice-job-list').innerText(),/0 real samples/);
  assert.equal(await page.getByRole('button',{name:'Preview on this computer',exact:true}).isEnabled(),false);
  await page.getByRole('button',{name:'Choose private headphones',exact:true}).click();await page.getByLabel('Headphones or another private computer output are ready',{exact:true}).check();
  await page.getByRole('button',{name:'Preview on this computer',exact:true}).click();
  await page.waitForFunction(()=>window.__previewAudio&&!__previewAudio.paused);
- await page.locator('#quick-mute').click();await page.waitForFunction(()=>__previewAudio.paused);
+ await page.locator('#hybrid-top-more summary').click();await page.locator('#hybrid-top-mute').click();await page.waitForFunction(()=>__previewAudio.paused);
  assert.equal(await page.getByRole('button',{name:'Use this voice for Elmar Barthen',exact:true}).isEnabled(),false,'A synthetic fixture cannot become a selected real voice');
- await page.locator('#quick-mute').click();
+ await page.locator('#hybrid-top-more summary').click();await page.locator('#hybrid-top-mute').click();
  await page.getByRole('button',{name:'Preview on this computer',exact:true}).click();await page.waitForFunction(()=>!__previewAudio.paused);
- await page.getByRole('button',{name:'Settings',exact:true}).click();await page.waitForFunction(()=>__previewAudio.paused);
+ await page.evaluate(()=>ECHO_COCKPIT.open('Settings'));await page.waitForFunction(()=>__previewAudio.paused);
  await page.getByRole('button',{name:'AI assistance',exact:true}).click();await page.getByRole('button',{name:'Voice auditions',exact:true}).click();
  assert.equal(await page.getByLabel('Headphones or another private computer output are ready',{exact:true}).isChecked(),false,'Reopening requires a fresh private-output check');
  await openSetup();await consent().check();await page.getByLabel('Credit source',{exact:true}).selectOption('included');
@@ -69,7 +70,7 @@ const port=new Promise((resolve,reject)=>{server.stdout.once('data',b=>resolve(N
  assert.equal(await page.evaluate(()=>JSON.stringify(__aiHost.context().state)),before,'Voice edits must not change combat/character/session state');
  const archive=await page.evaluate(()=>__recovery.validateBackup());assert(archive.story.voiceCast.profiles[0].notes.includes('VOICE_PRIVATE_SENTINEL'));
  assert(!JSON.stringify(archive).includes('xi-api-key'));assert(!JSON.stringify(archive).includes('accountConfirmed'));assert(!JSON.stringify(archive).includes('voice-audio'));
- await page.reload();await page.locator('.cockpit-nav').waitFor();assert.deepEqual(await page.evaluate(()=>__voiceHost.get()),saved);
+ await page.reload();await page.locator('#hybrid-home').waitFor();assert.deepEqual(await page.evaluate(()=>__voiceHost.get()),saved);
  // Existing NPC navigation reaches the same right panel, without publishing a scene.
  await page.evaluate(()=>ECHO_STORY_UI.openPerson('dracuseth'));await page.getByRole('button',{name:'Voice audition',exact:true}).click();
  assert.equal(await page.locator('#voice-character').inputValue(),'dracuseth');assert.equal(await page.locator('#story-drawer').isHidden(),true);

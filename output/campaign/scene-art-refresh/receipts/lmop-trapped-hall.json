@@ -1,0 +1,36 @@
+{
+  "id": "lmop-trapped-hall",
+  "title": "Cragmaw Castle · Area 2 · Trapped hall",
+  "image": "lmop-visuals/trapped-hall.png",
+  "key": "C02",
+  "chapter": "Cragmaw Castle",
+  "reveal": "On entering area 2",
+  "sourceRecordIds": [
+    "s3-area2"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area2",
+      "title": "Area 2 · Falling rubble",
+      "read": [
+        "A wide hall disappears into half-light. Dust lies thick around a pile of fallen plaster, and closed doors lead away on either side.",
+        "The fallen plaster marks one part of the floor as different from the rest. Beyond it, the closed doors give you choices without revealing what lies behind them. You can inspect the ground, listen at a door, or choose a position that keeps the entrance in sight."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Castle broad entrance hall with north/south ordinary wooden doors; southern hall partly obstructed by rubble. East corridor has fallen plaster and dust, more ordinary doors at far end. Copper tripwire CONCEALED, no exposed glowing trap or active ceiling collapse. Daylight dim through arrow slits.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 2 · Trapped hall\nObservable scene and constraints: Castle broad entrance hall with north/south ordinary wooden doors; southern hall partly obstructed by rubble. East corridor has fallen plaster and dust, more ordinary doors at far end. Copper tripwire CONCEALED, no exposed glowing trap or active ceiling collapse. Daylight dim through arrow slits.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "5cce3293a53eff2d58c5bedc814e3a8cddb7f8dfea79206d385fd6f6a0fe3f72",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-trapped-hall.png",
+  "generatedAt": "2026-10-12T16:24:35.142Z",
+  "candidateHash": "971285df9d118ed0e894bc334dd9dcbf33e2a8d6ba284c268807fd48406cd5e3",
+  "review": "passed",
+  "reviewedHash": "971285df9d118ed0e894bc334dd9dcbf33e2a8d6ba284c268807fd48406cd5e3",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.467Z",
+  "installedHash": "971285df9d118ed0e894bc334dd9dcbf33e2a8d6ba284c268807fd48406cd5e3",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/trapped-hall.png"
+}

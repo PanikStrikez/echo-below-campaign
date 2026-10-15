@@ -45,6 +45,7 @@ for (const [beatId, artKeys] of Object.entries(global.ECHO_SESSION3_ART)) {
 const board = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
 const boot = board.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot > 0);
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(board.slice(0, boot) +
   '  globalThis.__session3Test = { normalize, session3EnemyTokens };\n})();');
 const tokens = global.__session3Test.session3EnemyTokens();

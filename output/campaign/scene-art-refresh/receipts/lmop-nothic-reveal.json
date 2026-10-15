@@ -1,0 +1,36 @@
+{
+  "id": "lmop-nothic-reveal",
+  "title": "Redbrand Hideout · Area 8 · Nothic revealed",
+  "image": "lmop-visuals/nothic-reveal.png",
+  "key": "R08B",
+  "chapter": "Redbrand Hideout",
+  "reveal": "Only when the nothic is seen",
+  "sourceRecordIds": [
+    "s2-crevasse"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-crevasse",
+      "title": "14 · Crevasse and nothic · area 8",
+      "read": [
+        "The worked stone gives way to a raw split in the earth. Two narrow bridges cross the dark gap, and the space below is difficult to make out.",
+        "The break in the cavern floor divides your approach into separate stretches of ground. Its edges and any visible crossing deserve a careful look before someone moves ahead. You can stop to judge the drop or keep to the near side while deciding what you want to investigate."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "SAME cavern, two rough support columns, narrow deep fissure and TWO arched wooden plank bridges WITHOUT rails. ONE nothic is now visible beside a west-side stone column: a hunched lean green-skinned aberration, ONE enormous central eye, elongated clawed arms, naked rough-scaled anatomy. Small humanoid scale, not a towering beholder, no eyestalks or mouth in its eye. It watches warily rather than attacking. Hidden chest and body below remain out of view, no glowing magical crevasse.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Redbrand Hideout · Area 8 · Nothic revealed\nObservable scene and constraints: SAME cavern, two rough support columns, narrow deep fissure and TWO arched wooden plank bridges WITHOUT rails. ONE nothic is now visible beside a west-side stone column: a hunched lean green-skinned aberration, ONE enormous central eye, elongated clawed arms, naked rough-scaled anatomy. Small humanoid scale, not a towering beholder, no eyestalks or mouth in its eye. It watches warily rather than attacking. Hidden chest and body below remain out of view, no glowing magical crevasse.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "2d8c419c58426ff6b5c8cb75e9bc60cde787905ad65ee5f697ef783634706642",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-nothic-reveal.png",
+  "generatedAt": "2026-10-12T16:17:33.464Z",
+  "candidateHash": "4bcbda7ed0715241398237da83ff8f349b29af28b685f8a96efaf00a22dbd1ab",
+  "review": "passed",
+  "reviewedHash": "4bcbda7ed0715241398237da83ff8f349b29af28b685f8a96efaf00a22dbd1ab",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.832Z",
+  "installedHash": "4bcbda7ed0715241398237da83ff8f349b29af28b685f8a96efaf00a22dbd1ab",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/nothic-reveal.png"
+}

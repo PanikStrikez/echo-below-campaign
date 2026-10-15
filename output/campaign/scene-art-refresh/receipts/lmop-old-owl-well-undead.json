@@ -1,0 +1,36 @@
+{
+  "id": "lmop-old-owl-well-undead",
+  "title": "Wilderness · Old Owl Well · undead revealed",
+  "image": "lmop-visuals/old-owl-well-undead.png",
+  "key": "W06",
+  "chapter": "Wilderness",
+  "reveal": "When the zombies emerge",
+  "sourceRecordIds": [
+    "s3-old-owl"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-old-owl",
+      "title": "Optional lead · Old Owl Well",
+      "read": [
+        "The broken watchtower stands where you last saw Hamun Kost. What remains here depends on what the party left behind.",
+        "The broken stone is a landmark you can recognize without deciding what happened after your departure. You can compare the ground and the tower with your last visit, look for an actual new trace, or keep watch while someone examines the place more closely."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "SAME ruined stump tower, rubble courtyard, well and colorful travel tent. TWELVE human zombies emerge from ruined tower only after discovery, worn clothing and non-graphic decay. Hamun Kost absent following confirmed disappearance. No attacking wizard, graveyard army or glowing undead portal. This is conditional reveal, not confirmation zombies survived.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wilderness · Old Owl Well · undead revealed\nObservable scene and constraints: SAME ruined stump tower, rubble courtyard, well and colorful travel tent. TWELVE human zombies emerge from ruined tower only after discovery, worn clothing and non-graphic decay. Hamun Kost absent following confirmed disappearance. No attacking wizard, graveyard army or glowing undead portal. This is conditional reveal, not confirmation zombies survived.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "4b69183a26660c6bb5a29ac774210d86ae477e5aed0f3e73574459d8915969c7",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-old-owl-well-undead.png",
+  "generatedAt": "2026-10-12T16:31:22.445Z",
+  "candidateHash": "3e02f9cf11d8fa6bd98deefcf53d33313073abcd1246526577b47331a2259c70",
+  "review": "passed",
+  "reviewedHash": "3e02f9cf11d8fa6bd98deefcf53d33313073abcd1246526577b47331a2259c70",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:09.358Z",
+  "installedHash": "3e02f9cf11d8fa6bd98deefcf53d33313073abcd1246526577b47331a2259c70",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/old-owl-well-undead.png"
+}

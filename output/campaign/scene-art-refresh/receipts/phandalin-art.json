@@ -1,0 +1,78 @@
+{
+  "id": "phandalin-art",
+  "title": "Phandalin arrival",
+  "image": "session-01-visuals/scene-15-phandalin-arrival.png",
+  "key": "phandalin-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "aftermath",
+    "s2-sildar",
+    "s2-town",
+    "s2-close",
+    "s5-inn",
+    "s5-rat"
+  ],
+  "sourceRecords": [
+    {
+      "id": "aftermath",
+      "title": "3 · Clues after the road fight",
+      "read": [
+        "The woods settle. The two horses still block the road. Broken brush and small tracks lead north, away from the wagon and into thicker trees.",
+        "Among the goblins’ castoffs is a rough dark stone token. One side bears a single worn word: BELOW. The other carries part of a circle rubbed almost smooth."
+      ],
+      "source": "ECHO_RUNBOOK"
+    },
+    {
+      "id": "s2-sildar",
+      "title": "3 · Sildar’s next step",
+      "read": [
+        "Sildar scans the main street. “I will ask after Iarno and find us a place to gather our thoughts. We need something firmer than a rumor before we choose a road.”",
+        "The street gives him several places to begin an inquiry, but his glance does not settle on an answer. Shops, passing residents, and the possibility of a shared meeting place lie within reach. You can accompany him or agree where to find one another after making your own inquiries."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    },
+    {
+      "id": "s2-town",
+      "title": "5 · Follow the party’s town lead",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    },
+    {
+      "id": "s2-close",
+      "title": "Close · What changed in Phandalin",
+      "source": "ECHO_SESSION2_RUNBOOK"
+    },
+    {
+      "id": "s5-inn",
+      "title": "Lead · Check on Gundren at the inn",
+      "read": [
+        "The common room is busy enough that your return draws only a few glances. Somewhere beyond it is the room where you left Gundren.",
+        "The place you left him is the first thing to check, before any questions about the wider trouble. You can ask the keeper to take you there, find out who has been nearby, or arrange for someone to watch the approach. Gundren's present condition is something you must see for yourselves."
+      ],
+      "source": "ECHO_STAGE6"
+    },
+    {
+      "id": "s5-rat",
+      "title": "Lead · The captured rat",
+      "read": [
+        "Trista has the rat you captured in the hideout. How are you keeping it, and what do you want to try?",
+        "The rat's containment is something you can check before beginning an examination. What you know so far comes from the capture, not from any explanation it has given you. You can observe it, ask Trista what help she wants, or leave the question for another meeting."
+      ],
+      "source": "ECHO_STAGE6"
+    }
+  ],
+  "brief": "Wide arrival view of small FRONTIER Phandalin: forty-to-fifty modest log/fieldstone buildings on old ruined foundations, dirt streets, central green, fields and rolling hills with Sword Mountains distant. Broken walls show older settlement beneath. Ordinary working locals, no huge walled city, castle, river port or visible private storyline. Neutral arrival, no guaranteed parade or rebuilt mine.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Phandalin arrival\nObservable scene and constraints: Wide arrival view of small FRONTIER Phandalin: forty-to-fifty modest log/fieldstone buildings on old ruined foundations, dirt streets, central green, fields and rolling hills with Sword Mountains distant. Broken walls show older settlement beneath. Ordinary working locals, no huge walled city, castle, river port or visible private storyline. Neutral arrival, no guaranteed parade or rebuilt mine.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "a8fbabd8f30884a191560eafdd90d2e791f0985d568196abd0a61646d252ee3e",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/phandalin-art.png",
+  "generatedAt": "2026-10-12T15:49:03.666Z",
+  "candidateHash": "962f3ede58f302fa91a8bdecc78b45c55ffec25bbd547b5ae1c57f147f42dcd1",
+  "review": "passed",
+  "reviewedHash": "962f3ede58f302fa91a8bdecc78b45c55ffec25bbd547b5ae1c57f147f42dcd1",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:07.503Z",
+  "installedHash": "962f3ede58f302fa91a8bdecc78b45c55ffec25bbd547b5ae1c57f147f42dcd1",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-15-phandalin-arrival.png"
+}

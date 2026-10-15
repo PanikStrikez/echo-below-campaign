@@ -1,0 +1,36 @@
+{
+  "id": "lmop-blighted-farmhouse",
+  "title": "Thundertree · Area 5 · Blighted farmhouse",
+  "image": "lmop-visuals/blighted-farmhouse.png",
+  "key": "T05",
+  "chapter": "Thundertree",
+  "reveal": "On entering area 5",
+  "sourceRecordIds": [
+    "s3-tt-5"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-5",
+      "title": "Thundertree 5 · Blighted farmhouse",
+      "read": [
+        "The farmhouse walls have collapsed into a knot of gorse. Something small shifts in the leaves when you disturb the stones.",
+        "The tangle of shrubs hides parts of the ground where the walls once stood. The movement in the leaves is brief enough to invite attention rather than an immediate explanation. You can stop disturbing the stones, look for a clearer position, or watch the growth while discussing the approach."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Ruined farmhouse half-swallowed by thicket, trees grow through collapsed foundations. Gorse and briars cover adjacent field; north and south doorway openings remain accessible. Ordinary brush hides twig blights: no eight-creature visible swarm. Daylight, no occupied farmhouse or villagers.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 5 · Blighted farmhouse\nObservable scene and constraints: Ruined farmhouse half-swallowed by thicket, trees grow through collapsed foundations. Gorse and briars cover adjacent field; north and south doorway openings remain accessible. Ordinary brush hides twig blights: no eight-creature visible swarm. Daylight, no occupied farmhouse or villagers.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "acb2135a835c5fb62f80db8c954b0c2ae321a6d341fc5b7db8c3ffa4bb98f111",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-blighted-farmhouse.png",
+  "generatedAt": "2026-10-12T16:16:22.934Z",
+  "candidateHash": "3ef671bb81ba63a20c9500242a24822b3d6e920b7739c95bab235be20a05f0c5",
+  "review": "passed",
+  "reviewedHash": "3ef671bb81ba63a20c9500242a24822b3d6e920b7739c95bab235be20a05f0c5",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.542Z",
+  "installedHash": "3ef671bb81ba63a20c9500242a24822b3d6e920b7739c95bab235be20a05f0c5",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/blighted-farmhouse.png"
+}

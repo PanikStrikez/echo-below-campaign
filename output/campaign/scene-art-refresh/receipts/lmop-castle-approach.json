@@ -1,0 +1,36 @@
+{
+  "id": "lmop-castle-approach",
+  "title": "Cragmaw Castle · Cragmaw Castle approach",
+  "image": "lmop-visuals/castle-approach.png",
+  "key": "C00",
+  "chapter": "Cragmaw Castle",
+  "reveal": "When the castle is first seen",
+  "sourceRecordIds": [
+    "s3-castle-sight"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-castle-sight",
+      "title": "3 · Cragmaw Castle comes into view",
+      "read": [
+        "The trees give way to a low rise. Seven broken towers crowd around a ruined stronghold. The place looks abandoned until you catch a small movement behind a narrow slit in the stone.",
+        "The broken upper stonework does not make the lower walls transparent. Trees still provide places to stop and observe, while the rise exposes anyone who crosses it. You can count visible approaches, watch the slit for another movement, or withdraw to discuss a quieter route."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Cragmaw Castle approach in dense Neverwinter Wood. SEVEN crumbling stone towers of unequal sizes/heights clustered in a compact ruin, upper floors partially collapsed. Short steps to west entry terrace and broken bronze-covered wooden gates, narrow arrow slits. No occupied modern castle, moat, visible interior hostages, magic portal or Glasstaff exposed.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Cragmaw Castle approach\nObservable scene and constraints: Cragmaw Castle approach in dense Neverwinter Wood. SEVEN crumbling stone towers of unequal sizes/heights clustered in a compact ruin, upper floors partially collapsed. Short steps to west entry terrace and broken bronze-covered wooden gates, narrow arrow slits. No occupied modern castle, moat, visible interior hostages, magic portal or Glasstaff exposed.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "af5bcb59a879bd302a8907fbe099a9118433311bfc47fdc185ec5d7dc8857683",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-castle-approach.png",
+  "generatedAt": "2026-10-12T16:23:59.610Z",
+  "candidateHash": "23af328ad74c91b250c38a3dad24cc8718c560870bce4e35d6774c1d8e2ec69c",
+  "review": "passed",
+  "reviewedHash": "23af328ad74c91b250c38a3dad24cc8718c560870bce4e35d6774c1d8e2ec69c",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.362Z",
+  "installedHash": "23af328ad74c91b250c38a3dad24cc8718c560870bce4e35d6774c1d8e2ec69c",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/castle-approach.png"
+}

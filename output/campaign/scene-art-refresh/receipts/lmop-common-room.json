@@ -1,0 +1,36 @@
+{
+  "id": "lmop-common-room",
+  "title": "Redbrand Hideout · Area 10 · Common room",
+  "image": "lmop-visuals/common-room.png",
+  "key": "R10",
+  "chapter": "Redbrand Hideout",
+  "reveal": "On entering area 10",
+  "sourceRecordIds": [
+    "s2-common"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s2-common",
+      "title": "16 · Common room · area 10",
+      "read": [
+        "Dice clatter across a scarred table. Four red-cloaked figures sit around a game, cups and coins at their elbows.",
+        "The tables and scattered possessions make this a room people spend time in, not simply a passage to somewhere else. You can take in the faces and the gaps between the furniture before answering. Whether you listen, bluff, or confront them, their reactions are something you can actually observe."
+      ],
+      "source": "ECHO_SESSION2_RUNBOOK"
+    }
+  ],
+  "brief": "Large stone common room with several worn tables and chairs, wooden benches against walls hung with brown and red draperies, tapped ale kegs. FOUR rough-looking human warriors wearing scarlet cloaks drink and play knucklebones around ONE table; small heap of ordinary coins and trinkets on its surface. Relaxed unruly moment before interruption, not combat. Bright oil lamps; no skull throne, tavern crowd or extra guards.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Redbrand Hideout · Area 10 · Common room\nObservable scene and constraints: Large stone common room with several worn tables and chairs, wooden benches against walls hung with brown and red draperies, tapped ale kegs. FOUR rough-looking human warriors wearing scarlet cloaks drink and play knucklebones around ONE table; small heap of ordinary coins and trinkets on its surface. Relaxed unruly moment before interruption, not combat. Bright oil lamps; no skull throne, tavern crowd or extra guards.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "99f6d28add2d15c2669bf746d8896da5583841dd2163e881375d4fbc6b92999a",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-common-room.png",
+  "generatedAt": "2026-10-12T16:16:22.935Z",
+  "candidateHash": "592c666a06fbd44c3dd872a608b5e5d24f5219103723c298a8d88c2fdadb2494",
+  "review": "passed",
+  "reviewedHash": "592c666a06fbd44c3dd872a608b5e5d24f5219103723c298a8d88c2fdadb2494",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:08.938Z",
+  "installedHash": "592c666a06fbd44c3dd872a608b5e5d24f5219103723c298a8d88c2fdadb2494",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/common-room.png"
+}

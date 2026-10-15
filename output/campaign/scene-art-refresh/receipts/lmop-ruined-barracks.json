@@ -1,0 +1,36 @@
+{
+  "id": "lmop-ruined-barracks",
+  "title": "Cragmaw Castle · Area 4 · Ruined barracks",
+  "image": "lmop-visuals/ruined-barracks.png",
+  "key": "C04",
+  "chapter": "Cragmaw Castle",
+  "reveal": "On entering area 4",
+  "sourceRecordIds": [
+    "s3-area4"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-area4",
+      "title": "Area 4 · Ruined barracks",
+      "read": [
+        "Broken stone has swallowed much of the tower, but bedrolls and a narrow cleared path show that someone still sleeps here.",
+        "The cleared strip and the bedding are more recent signs than the fallen masonry around them. You can follow the space someone has made through the rubble or stop to examine how it is being used. The damaged tower offers no assurance that everyone inside is asleep or absent."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Southwest castle tower ruins, mostly rubble with several ragged bedrolls on surviving floor, narrow winding passage exits east safely. THREE goblins resting amid remains. No large lit barracks, unstable collapse underway or bugbears.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Cragmaw Castle · Area 4 · Ruined barracks\nObservable scene and constraints: Southwest castle tower ruins, mostly rubble with several ragged bedrolls on surviving floor, narrow winding passage exits east safely. THREE goblins resting amid remains. No large lit barracks, unstable collapse underway or bugbears.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "a02c0858ec0c2199f2dfdab0cf585357704205bb8f0a4bb6e35a7b1331098481",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-ruined-barracks.png",
+  "generatedAt": "2026-10-12T16:24:58.140Z",
+  "candidateHash": "30c7f2d99d424705f7b08748da99d2ec4534a13a8a1d80ace47759b8d0ab8c72",
+  "review": "passed",
+  "reviewedHash": "30c7f2d99d424705f7b08748da99d2ec4534a13a8a1d80ace47759b8d0ab8c72",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:11.652Z",
+  "installedHash": "30c7f2d99d424705f7b08748da99d2ec4534a13a8a1d80ace47759b8d0ab8c72",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/ruined-barracks.png"
+}

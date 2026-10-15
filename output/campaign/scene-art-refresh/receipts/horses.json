@@ -1,0 +1,36 @@
+{
+  "id": "horses",
+  "title": "The empty horses",
+  "image": "session-01-visuals/scene-02-empty-horses.png",
+  "key": "horses",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "ambush"
+  ],
+  "sourceRecords": [
+    {
+      "id": "ambush",
+      "title": "2 · Dead horses and ambush",
+      "read": [
+        "The trail bends between close woods. Two horses lie across the road ahead, dead and pierced by black-feathered arrows. Their saddlebags hang open. Neither rider is in sight.",
+        "The open saddlebags and arrows give you more to examine than the bodies alone. Beyond the bend, trunks and tangled growth break up the view into the woods; anyone moving closer will have to choose where to stand and what to watch."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Two FALLEN DEAD saddled horses lie across wooded dirt trail, black-feathered arrows in them, looted open saddlebags and empty leather map case on ground. Trail bend, dense brush on both sides. No riders, goblins, gore, token or castle directions visible. Quiet initial ambush approach, compassionate non-graphic framing.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: The empty horses\nObservable scene and constraints: Two FALLEN DEAD saddled horses lie across wooded dirt trail, black-feathered arrows in them, looted open saddlebags and empty leather map case on ground. Trail bend, dense brush on both sides. No riders, goblins, gore, token or castle directions visible. Quiet initial ambush approach, compassionate non-graphic framing.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "afda257a2029961e0ad6298980850055691ceac82a925c6011920a0f58fb83c0",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/horses.png",
+  "generatedAt": "2026-10-12T15:43:53.747Z",
+  "candidateHash": "23df2307e359d650b6a196ec3c8d8fa9014dc551296f49eda5d5f738f97e5b3f",
+  "review": "passed",
+  "reviewedHash": "23df2307e359d650b6a196ec3c8d8fa9014dc551296f49eda5d5f738f97e5b3f",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:06.636Z",
+  "installedHash": "23df2307e359d650b6a196ec3c8d8fa9014dc551296f49eda5d5f738f97e5b3f",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-02-empty-horses.png"
+}

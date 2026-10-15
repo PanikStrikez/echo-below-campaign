@@ -1,0 +1,36 @@
+{
+  "id": "lmop-old-smithy",
+  "title": "Thundertree · Area 8 · Old smithy",
+  "image": "lmop-visuals/old-smithy.png",
+  "key": "T08",
+  "chapter": "Thundertree",
+  "reveal": "On entering area 8",
+  "sourceRecordIds": [
+    "s3-tt-8"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-8",
+      "title": "Thundertree 8 · Old smithy",
+      "read": [
+        "Rotten wood and a wide chimney mark the old forge. Two ash-covered shapes slump where the anvils once stood.",
+        "The chimney remains a landmark above the rotten construction, while the shapes inside sit among the traces of old work. You can watch them from the entrance, inspect the nearby ground, or listen before disturbing the room. The forge's former purpose does not explain its present occupants."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Sagging old smithy, broad chimney and rotten firewood beside walls. Interior has pair of iron anvils, scattered tongs, bellows and hammers, cold forge. TWO ash-covered zombie bodies lie slumped motionless before activation. Daylight through gaps, no active forge, living blacksmith, flames or mineral hoard.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 8 · Old smithy\nObservable scene and constraints: Sagging old smithy, broad chimney and rotten firewood beside walls. Interior has pair of iron anvils, scattered tongs, bellows and hammers, cold forge. TWO ash-covered zombie bodies lie slumped motionless before activation. Daylight through gaps, no active forge, living blacksmith, flames or mineral hoard.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "8b005ed7a61c065a0d77a5a24c2d1e05c4bc028c1ab21fa3ca4d94d5e51afdb3",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-old-smithy.png",
+  "generatedAt": "2026-10-12T16:17:33.447Z",
+  "candidateHash": "6cf3c6f7741b145f2616377c2ecfecca9ca743740e1dc2df859c73bbf8cd4927",
+  "review": "passed",
+  "reviewedHash": "6cf3c6f7741b145f2616377c2ecfecca9ca743740e1dc2df859c73bbf8cd4927",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.887Z",
+  "installedHash": "6cf3c6f7741b145f2616377c2ecfecca9ca743740e1dc2df859c73bbf8cd4927",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/old-smithy.png"
+}

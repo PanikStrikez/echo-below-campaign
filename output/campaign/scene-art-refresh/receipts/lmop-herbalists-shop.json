@@ -1,0 +1,36 @@
+{
+  "id": "lmop-herbalists-shop",
+  "title": "Thundertree · Area 9 · Herbalist’s shop",
+  "image": "lmop-visuals/herbalists-shop.png",
+  "key": "T09",
+  "chapter": "Thundertree",
+  "reveal": "On entering area 9",
+  "sourceRecordIds": [
+    "s3-tt-9"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-9",
+      "title": "Thundertree 9 · Herbalist’s shop",
+      "read": [
+        "Broken bottles and unreadable books fill an old shop. ",
+        "Glass fragments and damaged pages share the floor beneath the shelving. You can examine one storage place at a time rather than overturn the whole room. If someone has given you a description to follow, you can compare it with what you actually see here."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Ruined herb/alchemy shop, sagging storage shelves, broken furniture, glass and pottery shards among weeds and rubble, rotted books and casks. The hidden necklace case stays beneath shelves and INVISIBLE. Daylight, no living herbalist, intact glowing potion shop or emerald display.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 9 · Herbalist’s shop\nObservable scene and constraints: Ruined herb/alchemy shop, sagging storage shelves, broken furniture, glass and pottery shards among weeds and rubble, rotted books and casks. The hidden necklace case stays beneath shelves and INVISIBLE. Daylight, no living herbalist, intact glowing potion shop or emerald display.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "1dd2d9faf7a8c8f2ba7deb1f74e5cac08b28b3f4456ebc721b9e7b14f7a52256",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-herbalists-shop.png",
+  "generatedAt": "2026-10-12T16:19:47.459Z",
+  "candidateHash": "b110cb03ba833e286649aef74c817298a903e3fbcae747e99f8d100c1420195c",
+  "review": "passed",
+  "reviewedHash": "b110cb03ba833e286649aef74c817298a903e3fbcae747e99f8d100c1420195c",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.968Z",
+  "installedHash": "b110cb03ba833e286649aef74c817298a903e3fbcae747e99f8d100c1420195c",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/herbalists-shop.png"
+}

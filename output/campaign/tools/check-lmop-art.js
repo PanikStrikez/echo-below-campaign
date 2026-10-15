@@ -5,7 +5,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 global.window = global;
 global.location = { hash: '' };
-for (const name of ['LMOP-Visual-Catalog.js', 'Session-02-Runbook.js', 'Session-Content-Packs.js', 'Session-01-Presentation.js'])
+for (const name of ['LMOP-Visual-Catalog.js', 'Session-02-Runbook.js', 'Campaign-Transition-Data.js', 'Session-Content-Packs.js', 'Session-01-Presentation.js'])
   require(path.join(root, name));
 
 const catalog = global.LMOP_VISUAL_CATALOG;
@@ -56,5 +56,6 @@ assert.deepEqual(shown.media.map(item => item.id), [session2[0].id]);
 const html = fs.readFileSync(path.join(root, 'Session-01-TV-Display.html'), 'utf8');
 const app = fs.readFileSync(path.join(root, 'Session-01-Battleboard.js'), 'utf8');
 assert(html.includes('data-presentation-tab="art"'));
-assert(app.includes('ECHO_SESSION2_ART') && app.includes("ECHO_PRESENTATION?.showCatalogArt"));
+assert(app.includes('ECHO_SESSION2_ART'));
+assert.equal(typeof ECHO_PRESENTATION.showCatalogArt,'function');
 console.log(`Lost Mine art: ${catalog.length} valid files, all chapter packs and Session 2 cues linked, player display gated.`);

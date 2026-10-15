@@ -1,0 +1,36 @@
+{
+  "id": "lmop-venomfang-reveal",
+  "title": "Thundertree · Area 7 · Venomfang revealed",
+  "image": "lmop-visuals/venomfang-reveal.png",
+  "key": "T07B",
+  "chapter": "Thundertree",
+  "reveal": "Only when the dragon is seen",
+  "sourceRecordIds": [
+    "s3-tt-7"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-7",
+      "title": "Thundertree 7 · Venomfang’s tower",
+      "read": [
+        "A broken tower rises above two spider corpses. The air around it smells sharp and wrong; the upper roof is open to the sky.",
+        "The dead spiders give the tower's sharp smell a more tangible companion. Broken stone and the open upper roof offer places to look before you approach the entrance. You can keep your distance, seek another view of the structure, or pause to decide what danger you are willing to meet."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Interior of SAME round stone tower. SINGLE room with FORTY-foot ceiling, five-foot-wide staircase circles inner wall to half-open roof; heavy timber beams and stair supports cross overhead. ONE young GREEN dragon Venomfang occupies floor, neck alert, wings folded sufficiently for enclosed space. Modest broken wooden chest with scattered coins nearby, not a mountain of gold. No fire breath, extra dragon, wizard, exposed magical axe or dead player characters. Daylight from roof.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 7 · Venomfang revealed\nObservable scene and constraints: Interior of SAME round stone tower. SINGLE room with FORTY-foot ceiling, five-foot-wide staircase circles inner wall to half-open roof; heavy timber beams and stair supports cross overhead. ONE young GREEN dragon Venomfang occupies floor, neck alert, wings folded sufficiently for enclosed space. Modest broken wooden chest with scattered coins nearby, not a mountain of gold. No fire breath, extra dragon, wizard, exposed magical axe or dead player characters. Daylight from roof.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "b9f5f62f231d6f855c7888463f7b6b9c92ffadcd26ef1e0841fa951ad3aa05e9",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-venomfang-reveal.png",
+  "generatedAt": "2026-10-12T16:17:33.445Z",
+  "candidateHash": "af45e3c026cea998c940b10f10dff1f962415608a35647eb8a5072b18801eee7",
+  "review": "passed",
+  "reviewedHash": "af45e3c026cea998c940b10f10dff1f962415608a35647eb8a5072b18801eee7",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.817Z",
+  "installedHash": "af45e3c026cea998c940b10f10dff1f962415608a35647eb8a5072b18801eee7",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/venomfang-reveal.png"
+}

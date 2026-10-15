@@ -1,0 +1,36 @@
+{
+  "id": "lmop-druids-watch",
+  "title": "Thundertree · Area 4 · Druid’s Watch",
+  "image": "lmop-visuals/druids-watch.png",
+  "key": "T04",
+  "chapter": "Thundertree",
+  "reveal": "When cottage is approached",
+  "sourceRecordIds": [
+    "s3-tt-4"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-tt-4",
+      "title": "Thundertree 4 · Reidoth’s watch",
+      "read": [
+        "One cottage seems to have resisted the years. Its shutters are stout, and someone has cleared the growth near the door.",
+        "The cleared approach and sturdy shutters set this house apart from its neighbors. They give you somewhere to knock or call without pushing through the overgrowth. You can announce yourselves, inspect the outside, or wait at a respectful distance for someone to answer."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Reidoth's small watch cottage exterior, notably sounder than surrounding ruins, heavy iron bands reinforce wooden door and stout shutters. Undergrowth cleared close to entrance. Ordinary modest dwelling, no giant druid tower, glowing magic garden or visible secret mine directions. Daylight. Reidoth not shown through closed walls.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Thundertree · Area 4 · Druid’s Watch\nObservable scene and constraints: Reidoth's small watch cottage exterior, notably sounder than surrounding ruins, heavy iron bands reinforce wooden door and stout shutters. Undergrowth cleared close to entrance. Ordinary modest dwelling, no giant druid tower, glowing magic garden or visible secret mine directions. Daylight. Reidoth not shown through closed walls.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "43767a45c0090f5ff7a35456f097f996ac3f8731c959a4f7c6e1c6a4fc2d413c",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-druids-watch.png",
+  "generatedAt": "2026-10-12T16:15:22.427Z",
+  "candidateHash": "b2151ec82577930bf59102a5e6d385f5c884c90cda94d8a6251e143f1698980e",
+  "review": "passed",
+  "reviewedHash": "b2151ec82577930bf59102a5e6d385f5c884c90cda94d8a6251e143f1698980e",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:10.398Z",
+  "installedHash": "b2151ec82577930bf59102a5e6d385f5c884c90cda94d8a6251e143f1698980e",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/druids-watch.png"
+}

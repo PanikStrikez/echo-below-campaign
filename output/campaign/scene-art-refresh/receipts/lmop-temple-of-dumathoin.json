@@ -1,0 +1,36 @@
+{
+  "id": "lmop-temple-of-dumathoin",
+  "title": "Wave Echo Cave · Area 19 · Temple of Dumathoin",
+  "image": "lmop-visuals/temple-of-dumathoin.png",
+  "key": "E19",
+  "chapter": "Wave Echo Cave",
+  "reveal": "On entering area 19",
+  "sourceRecordIds": [
+    "s4-room-19"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-room-19",
+      "title": "Area 19 · Temple of Dumathoin",
+      "read": [
+        "Six cracked pillars frame a hall swept clean of rubble. At the far end, a seated dwarf carved from stone watches over a rough camp. Bedrolls, packs, and a paper-covered table show that this shrine has become someone’s headquarters.",
+        "The figures and stonework draw your eye to different parts of the room. You can note where everyone stands and which route remains behind you before answering. The distance between you and anyone present is something to consider while there is still time to speak."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "Dumathoin temple: SIX cracked marble pillars line walls, NINE-foot dwarf statue seated NORTH on throne with stone WARHAMMER across lap and green glass-like eyes. Floor debris swept to one side. SIX bedrolls/packs around rough fire pit before statue; wooden table WEST between pillars, papers unreadable and closed leather sack. No villain, spiders or bugbears in neutral architecture view; no visible trap or prophecy. Off-frame lantern.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 19 · Temple of Dumathoin\nObservable scene and constraints: Dumathoin temple: SIX cracked marble pillars line walls, NINE-foot dwarf statue seated NORTH on throne with stone WARHAMMER across lap and green glass-like eyes. Floor debris swept to one side. SIX bedrolls/packs around rough fire pit before statue; wooden table WEST between pillars, papers unreadable and closed leather sack. No villain, spiders or bugbears in neutral architecture view; no visible trap or prophecy. Off-frame lantern.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "d141c51b33ce2b224d0a76fb5a40affbfdc91492c390d07ec5693d8f4b1a8528",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-temple-of-dumathoin.png",
+  "generatedAt": "2026-10-12T16:33:10.180Z",
+  "candidateHash": "7f554ae602fbd92b67bc97c773978afca903084253207bcddd2322ae7e9b0b42",
+  "review": "passed",
+  "reviewedHash": "7f554ae602fbd92b67bc97c773978afca903084253207bcddd2322ae7e9b0b42",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:32.717Z",
+  "installedHash": "7f554ae602fbd92b67bc97c773978afca903084253207bcddd2322ae7e9b0b42",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/temple-of-dumathoin.png"
+}

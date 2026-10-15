@@ -1,0 +1,36 @@
+{
+  "id": "lmop-fungi-cavern",
+  "title": "Wave Echo Cave · Area 8 · Fungi cavern",
+  "image": "lmop-visuals/fungi-cavern.png",
+  "key": "E08",
+  "chapter": "Wave Echo Cave",
+  "reveal": "On entering area 8",
+  "sourceRecordIds": [
+    "s4-room-8"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s4-room-8",
+      "title": "Area 8 · Fungi cavern and poison gas",
+      "read": [
+        "Pale caps, thick stalks, and shelves of fungus crowd the cavern. Some growths glow green, casting enough light to reveal the far wall. The floor between them is almost lost beneath the carpet.",
+        "The faint green light clings to the caps and stalks, leaving the room's edges hard to judge. The growth covers the walking surface as well as the view ahead. Before crossing, you can study its spread from the threshold and decide how close to bring your light."
+      ],
+      "source": "ECHO_SESSION4_RUNBOOK"
+    }
+  ],
+  "brief": "Large damp fungi cavern, pale mushrooms and shelf fungi dense across ground, giant fungi at human scale. Natural living bioluminescent growth provides restrained glow. Clear route through growth visible, no poison cloud until disturbed, no face-shaped mushrooms, hidden monsters or Echo runes.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wave Echo Cave · Area 8 · Fungi cavern\nObservable scene and constraints: Large damp fungi cavern, pale mushrooms and shelf fungi dense across ground, giant fungi at human scale. Natural living bioluminescent growth provides restrained glow. Clear route through growth visible, no poison cloud until disturbed, no face-shaped mushrooms, hidden monsters or Echo runes.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "e3cf34c8aa692f31b41ad85cee0cbb18d4cd727f7ba82e47f82433d9fd069d3a",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-fungi-cavern.png",
+  "generatedAt": "2026-10-12T16:30:11.959Z",
+  "candidateHash": "47696df79056ec3a4a81178519821aced4666917387572d8d3f55037b5b9ac92",
+  "review": "passed",
+  "reviewedHash": "47696df79056ec3a4a81178519821aced4666917387572d8d3f55037b5b9ac92",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:12.562Z",
+  "installedHash": "47696df79056ec3a4a81178519821aced4666917387572d8d3f55037b5b9ac92",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/fungi-cavern.png"
+}

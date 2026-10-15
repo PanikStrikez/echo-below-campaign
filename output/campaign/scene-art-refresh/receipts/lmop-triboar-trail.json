@@ -1,0 +1,36 @@
+{
+  "id": "lmop-triboar-trail",
+  "title": "Wilderness · Triboar Trail journey",
+  "image": "lmop-visuals/triboar-trail.png",
+  "key": "W01",
+  "chapter": "Wilderness",
+  "reveal": "During travel east of Phandalin",
+  "sourceRecordIds": [
+    "s3-travel"
+  ],
+  "sourceRecords": [
+    {
+      "id": "s3-travel",
+      "title": "2 · Triboar Trail and Neverwinter Wood",
+      "read": [
+        "The last chimney smoke falls behind you. The trail runs between long grasses and dark stands of trees, then narrows until every snapped twig sounds close.",
+        "The change in the ground and the narrowing view make it worth agreeing who leads and how closely you follow. Grass gives way to cover where the trail bends, and the last clear stretch of road is now behind you. You can pause to check your bearings before taking the next turn."
+      ],
+      "source": "ECHO_SESSION3_RUNBOOK"
+    }
+  ],
+  "brief": "Triboar Trail: rolling sparsely wooded plains/foothills between Sword Mountains south and Neverwinter Wood north, worn dirt trail, low grass and intermittent trees. Distant rugged mountains, natural daylight, no paved highway, visible castle destination or magic phenomena.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Wilderness · Triboar Trail journey\nObservable scene and constraints: Triboar Trail: rolling sparsely wooded plains/foothills between Sword Mountains south and Neverwinter Wood north, worn dirt trail, low grass and intermittent trees. Distant rugged mountains, natural daylight, no paved highway, visible castle destination or magic phenomena.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "ea66bf54b9252cfcc47122cc8eaa522cafbe1b3c0049c5fe9e01e66870d81c02",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/lmop-triboar-trail.png",
+  "generatedAt": "2026-10-12T16:09:36.663Z",
+  "candidateHash": "4b0c0b9805952e847ed62830852004ec245105ab3e578b585a081c930054a7bf",
+  "review": "passed",
+  "reviewedHash": "4b0c0b9805952e847ed62830852004ec245105ab3e578b585a081c930054a7bf",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity.",
+  "installedAt": "2026-10-12T16:38:09.113Z",
+  "installedHash": "4b0c0b9805952e847ed62830852004ec245105ab3e578b585a081c930054a7bf",
+  "originalBackup": "scene-art-refresh/originals/lmop-visuals/triboar-trail.png"
+}

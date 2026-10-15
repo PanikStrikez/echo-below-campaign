@@ -1,0 +1,36 @@
+{
+  "id": "klarg-art",
+  "title": "Area 8 · Klarg’s cave",
+  "image": "session-01-visuals/scene-11-klargs-cave.png",
+  "key": "klarg-art",
+  "chapter": "Session 1 / campaign",
+  "reveal": "DM stages explicitly after discovery",
+  "sourceRecordIds": [
+    "klarg"
+  ],
+  "sourceRecords": [
+    {
+      "id": "klarg",
+      "title": "Area 8 · Klarg’s cave",
+      "read": [
+        "Sacks and crates fill the far side of the cave. Smoke from a low fire climbs toward an opening above. Behind the stolen supplies, a hulking figure rises, morningstar in hand, while a wolf bares its teeth.",
+        "The stacked goods divide the cavern into patches of cover and narrow sightlines. Firelight catches the raised weapon and the wolf's teeth, while smoke drifts toward the opening overhead. The way you entered remains behind you as you choose how to answer this reception."
+      ],
+      "source": "ECHO_RUNBOOK"
+    }
+  ],
+  "brief": "Cragmaw area8 cave, looted mundane crates/sacks at SOUTH, most display simple BLUE LION emblem, central smoldering COAL FIRE, WEST floor slopes to narrow chimney opening, broad NORTH opening down natural stone steps toward waterfall. Prepared HISTORICAL encounter: ONE furry bugbear Klarg, ONE mangy wolf Ripper, TWO goblins visible if discovered. No throne, glowing token or opened treasure chest. Klarg was killed in actual play: this is original encounter art, not present occupancy.",
+  "prompt": "Wide landscape 3:2 player-facing fantasy story illustration. Cohesive campaign art: refined hand-painted watercolor and gouache with subtle ink edges, weathered earthy materials, muted forest greens and stone grays, restrained amber highlights, realistic grounded scale. Clear observable scene composition at visitor eye level, not a tactical map, no cutaway through closed walls. Room facts and creature anatomy take priority over spectacle. Bright enough to read on a flat table TV while respecting the specified lighting; any off-frame visitor lamp is illustrative and does not establish an actual party light source. No UI, frame, grid, labels, readable documents, watermark, player figures, unexplained magic, invented entrances, hidden loot or secret mechanisms.\n\nScene: Area 8 · Klarg’s cave\nObservable scene and constraints: Cragmaw area8 cave, looted mundane crates/sacks at SOUTH, most display simple BLUE LION emblem, central smoldering COAL FIRE, WEST floor slopes to narrow chimney opening, broad NORTH opening down natural stone steps toward waterfall. Prepared HISTORICAL encounter: ONE furry bugbear Klarg, ONE mangy wolf Ripper, TWO goblins visible if discovered. No throne, glowing token or opened treasure chest. Klarg was killed in actual play: this is original encounter art, not present occupancy.\nDo not illustrate a consequence, revelation or creature not specified in this brief. The picture is a prepared view, never evidence that play happened.",
+  "originalHash": "e9b9630fb0190db93dae6d32013cdc1abbd3d186b4ca5ac4a1ed0af21341e609",
+  "status": "installed",
+  "candidate": "scene-art-refresh/candidates/klarg-art.png",
+  "generatedAt": "2026-10-12T15:49:03.666Z",
+  "candidateHash": "e2dc67d21ca458d3c6fbde2c210d877bc856b271ae34588e3017da80d3b6277c",
+  "review": "passed",
+  "reviewedHash": "e2dc67d21ca458d3c6fbde2c210d877bc856b271ae34588e3017da80d3b6277c",
+  "reviewedAt": "2026-10-12T16:38:06.420Z",
+  "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity. Historical original encounter only; rescued Sildar and killed Klarg must not be reinstated by this art.",
+  "installedAt": "2026-10-12T16:38:07.449Z",
+  "installedHash": "e2dc67d21ca458d3c6fbde2c210d877bc856b271ae34588e3017da80d3b6277c",
+  "originalBackup": "scene-art-refresh/originals/session-01-visuals/scene-11-klargs-cave.png"
+}

@@ -24,6 +24,7 @@ for (const name of [
 const source = fs.readFileSync(path.join(root,'Session-01-Battleboard.js'),'utf8');
 const boot = source.lastIndexOf('  if (IS_PLAYER) initPlayer();');
 assert(boot > 0, 'Stop before browser initialization and live campaign access');
+require('./test-support.cjs').loadTableContent();
 vm.runInThisContext(source.slice(0,boot)+`\nglobalThis.__chapterFixture={normalize,newCustomState,context:questPrepContext,scenes:SCENES,publicState,phoneSnapshot,set:(s,i)=>{state=s;campaignIndex=i;activeCampaignId='practice-chapters';}};\n})();`);
 const F=__chapterFixture,A=ECHO_ADVENTURES,P=ECHO_QUEST_PREP,C=ECHO_CONTINUITY,O=ECHO_OUTCOMES,S=ECHO_SPOTLIGHTS;
 const copy=v=>JSON.parse(JSON.stringify(v)),checks=[];
@@ -165,11 +166,13 @@ await check('Actual discoveries require review, preserve quest objectives and pu
   for(const id of ['pc-pebble','pc-donavan','pc-ringgo','pc-aldric'])assert(!JSON.stringify(phones.privateClues[id]).includes('TRISTA_REVIEWED_OWNER_TEXT'));
   C.restore(f.d);assert.equal(f.d.events.length,0);assert(!f.payload().includes('TRISTA_REVIEWED_OWNER_TEXT'));
 });
-await check('New custom content is loaded only on the DM side',()=>{
+await check('New custom content is loaded only on the DM side',async()=>{
   const loader=fs.readFileSync(path.join(root,'Session-01-Loader.js'),'utf8');
   const declaration=fs.readFileSync(path.join(root,'Campaign-Module-Manifest.js'),'utf8');
   for(const file of ['Campaign-Character-Chapters-Data.js','Campaign-Satellites-Data.js','Campaign-Adventures.js','Campaign-Adventures-UI.js','Campaign-Adventures-Links.js'])assert(declaration.includes(file),file+' is private');
-  assert(loader.includes('if (!player) for (const file of ECHO_MODULES.ordered)'));
+  await require('./test-support.cjs').assertPrivateModules(['Campaign-Character-Chapters-Data.js','Campaign-Satellites-Data.js','Campaign-Adventures.js','Campaign-Adventures-UI.js','Campaign-Adventures-Links.js']);
+  const blank=await require('./test-support.cjs').loadedScripts(false,false,'blank');
+  for(const file of ['Campaign-Character-Chapters-Data.js','Campaign-Satellites-Data.js','Campaign-Adventures.js'])assert(!blank.includes(file));
 });
 console.log(JSON.stringify({checks,passed:checks.filter(x=>x.ok).length,total:checks.length},null,2));
 if(checks.some(x=>!x.ok))process.exitCode=1;

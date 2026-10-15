@@ -1,0 +1,690 @@
+{
+  "label": "ISOLATED MOCK CAMPAIGN — not actual history",
+  "phase": "corrected-03-common",
+  "characterId": "pc-pebble",
+  "dmNarration": [
+    "Dice clatter across a scarred table. Four red-cloaked figures sit around a game, cups and coins at their elbows.",
+    "The tables and scattered possessions make this a room people spend time in, not simply a passage to somewhere else. You can take in the faces and the gaps between the furniture before answering. Whether you listen, bluff, or confront them, their reactions are something you can actually observe."
+  ],
+  "question": "The four drinking Redbrands look up as you ask about prisoners. One reaches for a sword, but another says, “Our guards are down? We’re not dying for the wizard.” They offer to put down weapons and leave if allowed safe passage. They say the Dendrars are behind eastern cell doors; their information does not establish Gundren’s present location. Do you accept surrender, detain them, or demand more?",
+  "phoneResponse": {
+    "status": 200,
+    "data": {
+      "revision": 2081,
+      "resyncRequest": 0,
+      "session": "PRACTICE · Session 2 · Phandalin",
+      "character": {
+        "id": "pc-pebble",
+        "name": "Pebble",
+        "player": "Byron",
+        "className": "Fighter · Champion",
+        "ancestry": "Goron (custom lineage)",
+        "background": "Outlander",
+        "level": 3,
+        "rules": "2014 PHB with Tasha options",
+        "proficiency": 2,
+        "speed": 30,
+        "senses": "Darkvision 60 ft.",
+        "languages": "Common, Goron, Dwarvish",
+        "hp": 23,
+        "maxHp": 23,
+        "ac": 18,
+        "tempHp": 0,
+        "hitDice": {
+          "die": 10,
+          "current": 3,
+          "max": 3,
+          "details": "3d10",
+          "pools": [
+            {
+              "die": 10,
+              "current": 3,
+              "max": 3
+            }
+          ]
+        },
+        "abilities": {
+          "str": {
+            "score": 18,
+            "modifier": 4
+          },
+          "dex": {
+            "score": 10,
+            "modifier": 0
+          },
+          "con": {
+            "score": 14,
+            "modifier": 2
+          },
+          "int": {
+            "score": 8,
+            "modifier": -1
+          },
+          "wis": {
+            "score": 13,
+            "modifier": 1
+          },
+          "cha": {
+            "score": 12,
+            "modifier": 1
+          }
+        },
+        "saves": [
+          {
+            "name": "STR",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "DEX",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "CON",
+            "bonus": 4,
+            "rank": 1
+          },
+          {
+            "name": "INT",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "WIS",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "CHA",
+            "bonus": 1,
+            "rank": 0
+          }
+        ],
+        "skills": [
+          {
+            "name": "Acrobatics",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Animal Handling",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Arcana",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Athletics",
+            "bonus": 6,
+            "rank": 1
+          },
+          {
+            "name": "Deception",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "History",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Insight",
+            "bonus": 3,
+            "rank": 1
+          },
+          {
+            "name": "Intimidation",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Investigation",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Medicine",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Nature",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Perception",
+            "bonus": 3,
+            "rank": 1
+          },
+          {
+            "name": "Performance",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Persuasion",
+            "bonus": 1,
+            "rank": 0
+          },
+          {
+            "name": "Religion",
+            "bonus": -1,
+            "rank": 0
+          },
+          {
+            "name": "Sleight of Hand",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Stealth",
+            "bonus": 0,
+            "rank": 0
+          },
+          {
+            "name": "Survival",
+            "bonus": 3,
+            "rank": 1
+          }
+        ],
+        "passives": {
+          "Perception": 13,
+          "Insight": 13,
+          "Investigation": 9
+        },
+        "attacks": [
+          {
+            "id": "pebble-hammer",
+            "name": "Warhammer",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d8+4",
+            "damageType": "bludgeoning",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "One-handed with shield. Weapon attacks crit on natural 19–20; Crusher may move a qualifying target 5 ft. once per turn.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "pebble-handaxe",
+            "name": "Handaxe",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d6+4",
+            "damageType": "slashing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Melee or thrown 20/60 ft. Weapon attacks crit on natural 19–20.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 195,
+                "rule": "Attack and damage; weapon table p. 149",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          }
+        ],
+        "actions": [
+          {
+            "id": "pebble-interception",
+            "name": "Interception",
+            "type": "Reaction",
+            "attackBonus": null,
+            "damageDice": "1d10+2",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Reduce damage when a visible creature hits someone other than Pebble within 5 feet; Pebble must hold a shield or weapon.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Review the trigger, incoming damage, range and reduction in the damage/reaction tools. Redirect requires a zero reduction, chosen damage type and a separate saving throw.",
+              "source": {
+                "book": "2024 Monk / Tasha’s Interception exception",
+                "printedPage": null,
+                "rule": "Damage reduction reactions",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "pebble-second-wind",
+            "name": "Second Wind",
+            "type": "Bonus action",
+            "attackBonus": null,
+            "damageDice": "1d10+3",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Heal Pebble; once per short or long rest.",
+            "resourceId": "pebble-second-wind",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Self-healing, one bonus action and one use; uses the recorded Fighter level.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 72,
+                "rule": "Second Wind",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "pebble-crusher",
+            "name": "Crusher",
+            "type": "Once on Pebble’s turn",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "After a bludgeoning hit, move a creature no more than one size larger 5 feet into empty space. On a bludgeoning critical hit, attacks against it have advantage until Pebble’s next turn.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "On a qualifying hit choose the legal 5-foot push; confirm size and destination. Critical-hit advantage is a separate reminder.",
+              "source": {
+                "book": "Tasha’s Cauldron; approved feat",
+                "printedPage": null,
+                "rule": "Crusher",
+                "confidence": "approved table choice"
+              }
+            }
+          },
+          {
+            "id": "pebble-surge",
+            "name": "Action Surge",
+            "type": "On your turn",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Take one additional action on your turn; once per short or long rest.",
+            "resourceId": "pebble-action-surge",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "supported",
+              "label": "Reviewed roll",
+              "reason": "Spend one use on your own turn; make one additional action available. Does not grant a bonus action.",
+              "source": {
+                "book": "2014 PHB",
+                "printedPage": 72,
+                "rule": "Action Surge",
+                "confidence": "verified rule / approved sheet"
+              }
+            }
+          },
+          {
+            "id": "pebble-champion",
+            "name": "Improved Critical",
+            "type": "Passive",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Pebble’s weapon attacks score a critical hit on a natural 19 or 20. Double damage dice, not the modifier.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true,
+            "support": {
+              "status": "reference",
+              "label": "Manual ruling",
+              "reason": "Already included in qualifying weapon rolls or recorded fire resistance. Do not spend an action.",
+              "source": {
+                "book": "2014 Champion / approved Goron lineage",
+                "printedPage": null,
+                "rule": "Passive defense or critical range",
+                "confidence": "approved table choice"
+              }
+            }
+          }
+        ],
+        "spells": [],
+        "resources": [
+          {
+            "id": "pebble-second-wind",
+            "name": "Second Wind",
+            "current": 1,
+            "max": 1,
+            "unit": "use",
+            "slotLevel": 0
+          },
+          {
+            "id": "pebble-action-surge",
+            "name": "Action Surge",
+            "current": 1,
+            "max": 1,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Warhammer",
+            "quantity": 1,
+            "category": "Weapon",
+            "notes": "Stone appearance",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Handaxe",
+            "quantity": 2,
+            "category": "Weapon",
+            "notes": "Stone appearance",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Shield",
+            "quantity": 1,
+            "category": "Armor",
+            "notes": "Slab-like appearance",
+            "equipped": true,
+            "attuned": false
+          },
+          {
+            "name": "Chain mail",
+            "quantity": 1,
+            "category": "Armor",
+            "notes": "Stone appearance; ordinary chain mail rules",
+            "equipped": true,
+            "attuned": false
+          },
+          {
+            "name": "Explorer’s pack",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Staff",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          },
+          {
+            "name": "Hunting trap",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "equipped": false,
+            "attuned": false
+          }
+        ],
+        "money": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 10,
+          "pp": 0
+        },
+        "features": [
+          {
+            "name": "Interception",
+            "text": "Reaction; reduce damage to a nearby other target by 1d10+2.",
+            "source": "Tasha’s / Pebble handout p. 3"
+          },
+          {
+            "name": "Crusher",
+            "text": "Once on own turn move a qualifying target 5 feet after bludgeoning hit; critical hit grants advantage to attacks against it until next turn.",
+            "source": "Tasha’s / Pebble handout p. 3"
+          },
+          {
+            "name": "Second Wind",
+            "text": "Bonus action to heal 1d10+3; once per short or long rest.",
+            "source": "2014 Fighter 1"
+          },
+          {
+            "name": "Action Surge",
+            "text": "Take one additional action on your turn; once per short or long rest.",
+            "source": "2014 Fighter 2"
+          },
+          {
+            "name": "Improved Critical",
+            "text": "Weapon attacks score a critical hit on a natural 19 or 20.",
+            "source": "2014 Champion 3"
+          }
+        ],
+        "inspiration": false,
+        "death": {
+          "successes": 0,
+          "failures": 0,
+          "stable": false
+        },
+        "exhaustion": 0,
+        "conditions": [],
+        "concentration": "",
+        "effects": [],
+        "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+        "favorites": []
+      },
+      "dungeonProtocol": 1,
+      "dungeon": {
+        "enabled": false,
+        "fine": false,
+        "current": [],
+        "explored": [],
+        "objects": [],
+        "passages": []
+      },
+      "searchRequests": [],
+      "travelProtocol": 1,
+      "journey": {
+        "position": null,
+        "destination": "",
+        "weather": "clear",
+        "estimate": null,
+        "places": [
+          {
+            "id": "region-neverwinter",
+            "title": "Neverwinter",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          },
+          {
+            "id": "region-phandalin",
+            "title": "Phandalin",
+            "status": "located",
+            "inaccessible": false,
+            "reason": ""
+          }
+        ],
+        "events": []
+      },
+      "atlas": null,
+      "atlasImage": "",
+      "travelRequests": [],
+      "playerToolsProtocol": 1,
+      "playerTools": {
+        "notes": [],
+        "sharedClues": [],
+        "itemRequests": [],
+        "bank": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 0,
+          "pp": 0
+        },
+        "objective": {
+          "text": "Escort the supplies to Phandalin and investigate danger on the road.",
+          "at": "2026-10-12T19:10:34.672Z"
+        },
+        "roster": [
+          {
+            "id": "pc-aldric",
+            "name": "Aldric Vane"
+          },
+          {
+            "id": "pc-pebble",
+            "name": "Pebble"
+          },
+          {
+            "id": "pc-trista",
+            "name": "Trista"
+          },
+          {
+            "id": "pc-ringgo",
+            "name": "Ringgo Paul"
+          },
+          {
+            "id": "pc-donavan",
+            "name": "Donavan Kemp"
+          }
+        ]
+      },
+      "actionProtocol": 1,
+      "combatProtocol": 1,
+      "combatPrompts": {
+        "saves": [],
+        "reactions": []
+      },
+      "movement": {
+        "columns": 30,
+        "feet": 5,
+        "metric": "grid",
+        "speed": 30,
+        "used": 0,
+        "crawling": false,
+        "areas": []
+      },
+      "scene": "redbrand-hideout",
+      "sceneTitle": "Redbrand Hideout · Redbrand Hideout",
+      "isMap": true,
+      "mapImage": "/api/map?v=b4eef1de0bc1",
+      "playerInput": true,
+      "fog": [],
+      "fogged": true,
+      "fineFog": true,
+      "points": [],
+      "tokens": [
+        {
+          "id": "pc-trista",
+          "name": "Trista",
+          "label": "T",
+          "team": "pc",
+          "x": 32,
+          "y": 40
+        },
+        {
+          "id": "pc-donavan",
+          "name": "Donavan",
+          "label": "D",
+          "team": "pc",
+          "x": 23,
+          "y": 48
+        },
+        {
+          "id": "pc-ringgo",
+          "name": "Ringgo",
+          "label": "R",
+          "team": "pc",
+          "x": 26,
+          "y": 48
+        },
+        {
+          "id": "pc-pebble",
+          "name": "Pebble",
+          "label": "P",
+          "team": "pc",
+          "x": 32,
+          "y": 40
+        },
+        {
+          "id": "pc-aldric",
+          "name": "Aldric",
+          "label": "A",
+          "team": "pc",
+          "x": 32,
+          "y": 48
+        }
+      ],
+      "turn": {
+        "round": 0,
+        "activeId": null
+      },
+      "roll": {
+        "id": "1791835401885-9aq9xar3e0u",
+        "label": "Pebble initiative",
+        "notation": "1d20",
+        "parts": [
+          8
+        ],
+        "total": 8
+      },
+      "requests": "Initiative 8 (8 + 0).",
+      "actionRequests": [],
+      "privateClues": [],
+      "inventory": [],
+      "sceneMood": {
+        "minutes": 540,
+        "weather": "clear",
+        "phase": "day"
+      },
+      "campaignJournal": [
+        {
+          "id": "continuity-outcome-1791832923830-zmlxmuz",
+          "title": "CORRECTED MOCK · Road goblin surrendered",
+          "text": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+          "kind": "confirmed",
+          "when": "MOCK Session1"
+        }
+      ],
+      "quests": [],
+      "campaignTracks": [],
+      "initiative": {
+        "open": false,
+        "total": 8,
+        "bonus": 0
+      },
+      "rehearsal": false
+    }
+  },
+  "playerTV": "Redbrand Hideout\nControls & interaction\nT\nT\nD\nD\nR\nR\nP\nP\nA\nA\n!\n+\nDay · Clear\nPRACTICE CAMPAIGN",
+  "displayImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/corrected-03-common-TV.png",
+  "phoneImage": "/Users/Ethan/.codex/.chatgpt-projects/g-p-6ab08c2f0cac8191a5e352860ad3b7b6/output/audits/mock-campaign-2026-10-12/players/pc-pebble-corrected-03-common.png"
+}

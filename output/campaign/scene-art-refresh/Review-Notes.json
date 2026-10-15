@@ -1,0 +1,722 @@
+{
+  "gundren": {
+    "review": "passed",
+    "reviewedHash": "765acd3712310a18444201fb2b07339f8c25260838963987977e1fefdd358292",
+    "reviewedAt": "2026-10-12T16:38:06.416Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "horses": {
+    "review": "passed",
+    "reviewedHash": "23df2307e359d650b6a196ec3c8d8fa9014dc551296f49eda5d5f738f97e5b3f",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "cave-mouth": {
+    "review": "passed",
+    "reviewedHash": "eb8e418dd55f59acf188eac95a4005728f2020ddacf9739f2b9fdf1680d741db",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "road-reveal": {
+    "review": "passed",
+    "reviewedHash": "7025330554ae96274e519d8cc1da083f7df8996c5d7a203cf76f2d762ed50470",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "trail-art": {
+    "review": "passed",
+    "reviewedHash": "5720609d93a1136de14151dbcdd5982e9ab68ae34eaed0bd0a05505d986dd31d",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "snare-art": {
+    "review": "passed",
+    "reviewedHash": "69c648647b3f40395aaedfafd5ac0ba34073090476fca4f25347bc16b2529890",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "pit-art": {
+    "review": "passed",
+    "reviewedHash": "08444e5b2d9424468d7042f31585c5121650bd61f085acf93f919df61b7625f1",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "blind-art": {
+    "review": "passed",
+    "reviewedHash": "26ca29427f1f3dffbf2765b55524f5241264cad2b674fee307c46d308708f32c",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "kennel-art": {
+    "review": "passed",
+    "reviewedHash": "6ebef6f966116a411755c3161fd29c384f4c67c330fb7dbb1da9793a3f923b7c",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "passage-art": {
+    "review": "passed",
+    "reviewedHash": "75a1d7b707963e27866d61305802d6e2c5b6ca9c09ecf6a61ab3c0e922839d83",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "overpass-art": {
+    "review": "passed",
+    "reviewedHash": "c7e7168d3e1993e8e164d7b92d328860523e6c4c49be8ef8e57684128be1b9b5",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "den-art": {
+    "review": "passed",
+    "reviewedHash": "4c1b86a81bd30aa2b3c7880d4be3d9c216022a3e7f148dd1e58937eff38794c5",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity. Historical original encounter only; rescued Sildar and killed Klarg must not be reinstated by this art."
+  },
+  "pools-art": {
+    "review": "passed",
+    "reviewedHash": "5f71fde53338d5cc570595412ff5e5b8fedaed2d487f0db4769d3386eb9a6212",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "klarg-art": {
+    "review": "passed",
+    "reviewedHash": "e2dc67d21ca458d3c6fbde2c210d877bc856b271ae34588e3017da80d3b6277c",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity. Historical original encounter only; rescued Sildar and killed Klarg must not be reinstated by this art."
+  },
+  "phandalin-art": {
+    "review": "passed",
+    "reviewedHash": "962f3ede58f302fa91a8bdecc78b45c55ffec25bbd547b5ae1c57f147f42dcd1",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "barthen-art": {
+    "review": "passed",
+    "reviewedHash": "e7f5da382a3c6861e6a702372912bfdd3ec15374eded2b7825203b3d77fe7829",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-barthen-exterior": {
+    "review": "passed",
+    "reviewedHash": "a2355423010c4efc44f4b130f779e6ab623f7a9486b6f25e307fee5971f6e7dd",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-stonehill-inn": {
+    "review": "passed",
+    "reviewedHash": "870e1f88777cb704827f914a6f6a9390dfcf621478351cd308aa5c20e20a3c1b",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-stonehill-common-room": {
+    "review": "passed",
+    "reviewedHash": "36cb40928f3328eca434af7fb0855683ec06dc083000c10eb509f86580a3403f",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-townmasters-hall": {
+    "review": "passed",
+    "reviewedHash": "96a3f62a3a4737238706debb1dd90fa026d8ab075ed09f77c655d98401b62674",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-lionshield-coster": {
+    "review": "passed",
+    "reviewedHash": "f0bb851aa758af73caa58fb90ad3f2fddc11a722fd7826fc029b162cba75a259",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-miners-exchange": {
+    "review": "passed",
+    "reviewedHash": "0c66e64d7b57874c400d8cf7deb87bea65c084a804715fb7c9ebc38e57f89c1b",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-shrine-of-luck": {
+    "review": "passed",
+    "reviewedHash": "3392a5040f356f58f0f5d07533161b49de798c5ffc0569c1f71b39233f92ac46",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-alderleaf-farm": {
+    "review": "passed",
+    "reviewedHash": "9d277b6e125501d75d1630566c134c548ed7146f53b18eaeddcc658420c88eb8",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-sleeping-giant": {
+    "review": "passed",
+    "reviewedHash": "ed26288d54748049ff8264bac4da65935842d665fcfc9fe9b0d552bd3c7ef92e",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-sleeping-giant-interior": {
+    "review": "passed",
+    "reviewedHash": "cb046e5dd8c3020f1ac8ea901a8917f382d5924b484cdbc7031b0d7a85f35be9",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-edermath-orchard": {
+    "review": "passed",
+    "reviewedHash": "f68e82468e55eb37ee592630d2e2263f1634ce648e93e42a757d441d14cca9d2",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-redbrand-confrontation": {
+    "review": "passed",
+    "reviewedHash": "588101a44e15c55b6773bcd427bf01eb4c6cfa5ca06bfe5a21809f3c75a9a7b7",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-tresendar-manor": {
+    "review": "passed",
+    "reviewedHash": "42c9ce359021e164e8b88ae9635228ef58bb18dfa714e91935d6fa03144ac40c",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-tresendar-tunnel": {
+    "review": "passed",
+    "reviewedHash": "66ccc97a5367e30e5735adbd3f9f41c91fe153b522c94023913919f518a6bda3",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-cellar-cistern": {
+    "review": "passed",
+    "reviewedHash": "ff01cff5523f9b707c743227ac39b1672dcdd1a4870bf034778260f378c1b177",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-ruffian-barracks": {
+    "review": "passed",
+    "reviewedHash": "efa8b60b14013e619c28e2ce92e52f19383b72f2bccf0831acb8798b84c843e6",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-pit-hall": {
+    "review": "passed",
+    "reviewedHash": "299a0ad40b2f707c2799f8a9de648ade740f7b930eb29e637990dfce0c2ed984",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-pit-discovered": {
+    "review": "passed",
+    "reviewedHash": "80c2eb8ad185318e8ff0ae9eb5cc0925b2e1c53af05bf75c9192ceaa85b3b271",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-crypt": {
+    "review": "passed",
+    "reviewedHash": "75d0c71bcddfe4164e42cc67578e54cd3d3ab1f61c6e099d88cdffa612c42468",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-slave-pens": {
+    "review": "passed",
+    "reviewedHash": "d3326682fd490eb2785160471ee6487713830f3b2dd5892ab87caeaae68e2c16",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Guards and near cell bars are visible; captive family remains off frame after two generator rejections. Use narration and NPC tokens. No rescue outcome is implied."
+  },
+  "lmop-armory": {
+    "review": "passed",
+    "reviewedHash": "36fe36294c807484b1fd47e955e09ab8e54e54812340031e8e6af73ffe454faa",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-redbrand-storeroom": {
+    "review": "passed",
+    "reviewedHash": "acd60f4eb70f6de423d51b5cd0da3f4d29c12cb4d1ff22bcb6e1dfbedb4b8329",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-crevasse": {
+    "review": "passed",
+    "reviewedHash": "dac138480b8b0936d88663d2d327ec8f8c7f8c32823cad95652c8f27046b7183",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-nothic-reveal": {
+    "review": "passed",
+    "reviewedHash": "4bcbda7ed0715241398237da83ff8f349b29af28b685f8a96efaf00a22dbd1ab",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-bugbear-barracks": {
+    "review": "passed",
+    "reviewedHash": "a3d05174b98d42fb2106131e9f5268f22bf00a7c74b79741bd6c36eacbd64b63",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-common-room": {
+    "review": "passed",
+    "reviewedHash": "592c666a06fbd44c3dd872a608b5e5d24f5219103723c298a8d88c2fdadb2494",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-wizards-workshop": {
+    "review": "passed",
+    "reviewedHash": "14993d251a61b6c0aae64db06a4c8cad982dae2f2f72d7b6981c639abef2af76",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-glasstaff-quarters": {
+    "review": "passed",
+    "reviewedHash": "7f42bb81f31139c3e9518b4b8c258f8e551076badabc53334f4f2057ad70d57b",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-triboar-trail": {
+    "review": "passed",
+    "reviewedHash": "4b0c0b9805952e847ed62830852004ec245105ab3e578b585a081c930054a7bf",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-conyberry": {
+    "review": "passed",
+    "reviewedHash": "54e5c563f656f99b380d163b90ba485662d8810905ff90405cfe840cf5c3f341",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-agathas-lair": {
+    "review": "passed",
+    "reviewedHash": "2be21fcfb986b7d274b2384fa00acea491867fc71c56bbfd8737816ecd4ffec2",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-agatha-reveal": {
+    "review": "passed",
+    "reviewedHash": "d1730ffffe605a82c3ef8bcaa1ac02433b8d0d8ca4b1ba2afa65ae80710fbd21",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-old-owl-well": {
+    "review": "passed",
+    "reviewedHash": "1a87d94d4cb59be47fad60e033fa4135273d9bc4b1273fd7989c975eb9255c52",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-old-owl-well-undead": {
+    "review": "passed",
+    "reviewedHash": "3e02f9cf11d8fa6bd98deefcf53d33313073abcd1246526577b47331a2259c70",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-wyvern-tor-approach": {
+    "review": "passed",
+    "reviewedHash": "7b8693af487da5a68e40aab36d4f8aa02ac96704fe6d6f03223e8b9e7176ad25",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-wyvern-tor-camp": {
+    "review": "passed",
+    "reviewedHash": "555da06b6d039d00281a7d710ab7c320c4c4808f6ccd11c2a25a74d03f57ce8f",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-stirge-encounter": {
+    "review": "passed",
+    "reviewedHash": "45e542e27ad85200abf082bdbd696f29b2eaa948f17e862990931f6d3df48e42",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-ghoul-encounter": {
+    "review": "passed",
+    "reviewedHash": "89f7e387477ce43bfcc10bace6eeaf8b72c7e53bbb1de3f63c12f6b401cd2df5",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-ogre-encounter": {
+    "review": "passed",
+    "reviewedHash": "02abce072ee67adcd74e6921cd353a2818627662f5de92ad170afd8430a2bbec",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-goblin-encounter": {
+    "review": "passed",
+    "reviewedHash": "3255484840595cacd0d09bf381371ef4d56c0d404ac6bfd647d1956b70bcd1fe",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-hobgoblin-encounter": {
+    "review": "passed",
+    "reviewedHash": "27a02a80b0cf11087703e2c417411cd1bdcd5925ef23c832db5906bf2389b0a7",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-orc-encounter": {
+    "review": "passed",
+    "reviewedHash": "4ed4095bf172ea1ee816c99bdfbae2a26ddb01a5d0ee26da3291d58f95768488",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-wolf-encounter": {
+    "review": "passed",
+    "reviewedHash": "0e3daeddaf0de8bd4409ca620d89ca44586c04ac2b5b28dc7785909fe01e15d9",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-owlbear-encounter": {
+    "review": "passed",
+    "reviewedHash": "c7582ac2bfec00ed384e75d78b98072bc725d1852a029e1ed103c2e0c91758c2",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-thundertree-approach": {
+    "review": "passed",
+    "reviewedHash": "b794a652f983847bcbda6bb013653edb1d4cfb3c9b4e158ce4b432d3abfcd182",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-western-cottage": {
+    "review": "passed",
+    "reviewedHash": "f7137e8ff3f9ce32e124d8da66674201470945a84253ac87e1adef802268e038",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-blighted-cottages": {
+    "review": "passed",
+    "reviewedHash": "4e36340ae701feae45ddc2cc8a811602381e89e09a3c6b25d302d2f011bcf39c",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-brown-horse": {
+    "review": "passed",
+    "reviewedHash": "5e77a930c6275e552616733e8fcbc7d1ca2dea76f5ebad45d0fe87e11e97bbfd",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-druids-watch": {
+    "review": "passed",
+    "reviewedHash": "b2151ec82577930bf59102a5e6d385f5c884c90cda94d8a6251e143f1698980e",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-blighted-farmhouse": {
+    "review": "passed",
+    "reviewedHash": "3ef671bb81ba63a20c9500242a24822b3d6e920b7739c95bab235be20a05f0c5",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-ruined-store": {
+    "review": "passed",
+    "reviewedHash": "342720f0069afb40ecc3225fb5ab2da33188e97bffff417c0ce82bd8335b5ae8",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-spider-reveal": {
+    "review": "passed",
+    "reviewedHash": "6d231616174efe1e399840f864e154d4f8e6d1c7f0516ab3aad2c41a3663c4fc",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-dragon-tower": {
+    "review": "passed",
+    "reviewedHash": "aa4ef538c9c0b9d7b5091863d74428cddf4b3486595dc60e6936bf815a9dc4f4",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-venomfang-reveal": {
+    "review": "passed",
+    "reviewedHash": "af45e3c026cea998c940b10f10dff1f962415608a35647eb8a5072b18801eee7",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-old-smithy": {
+    "review": "passed",
+    "reviewedHash": "6cf3c6f7741b145f2616377c2ecfecca9ca743740e1dc2df859c73bbf8cd4927",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-herbalists-shop": {
+    "review": "passed",
+    "reviewedHash": "b110cb03ba833e286649aef74c817298a903e3fbcae747e99f8d100c1420195c",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-town-square": {
+    "review": "passed",
+    "reviewedHash": "e5affe39f3b9983d2b5278595281dedffebeb4767439ffe1db4e512b960b706b",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-old-garrison": {
+    "review": "passed",
+    "reviewedHash": "ca55c1023242d716af02002f6f5a130caf3e473efe182af71d3e37db43afc322",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-weavers-cottage": {
+    "review": "passed",
+    "reviewedHash": "efbbbe64a6e48857b5b7ecd4c53b97342403c02f5935547c2b64a16b03126d53",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-cultist-cottage": {
+    "review": "passed",
+    "reviewedHash": "9a1e817a81e7d406a091056495b1457b68f4fab8915e055261455bbc685e36b8",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-cultists-reveal": {
+    "review": "passed",
+    "reviewedHash": "bc44dcece9c895bb6a46327ec370e5ac40a88bbe9e3286309a8e913141ae5427",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-castle-approach": {
+    "review": "passed",
+    "reviewedHash": "23af328ad74c91b250c38a3dad24cc8718c560870bce4e35d6774c1d8e2ec69c",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-castle-entrance": {
+    "review": "passed",
+    "reviewedHash": "47aabf70540704362709511063624c912ae9db28c4dbeec73fd5cee0844a46ab",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-trapped-hall": {
+    "review": "passed",
+    "reviewedHash": "971285df9d118ed0e894bc334dd9dcbf33e2a8d6ba284c268807fd48406cd5e3",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-hall-collapse": {
+    "review": "passed",
+    "reviewedHash": "54215398710dcc7aa60eb0c05a591c45c0571a084f23596f14dbb5864ff7b63a",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-archer-post": {
+    "review": "passed",
+    "reviewedHash": "ac76e801e0edc5d0ccab862c163df2d31fc2d692ff482d49a6dfca4d61a830e0",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-ruined-barracks": {
+    "review": "passed",
+    "reviewedHash": "30c7f2d99d424705f7b08748da99d2ec4534a13a8a1d80ace47759b8d0ab8c72",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-castle-storeroom": {
+    "review": "passed",
+    "reviewedHash": "a340c955fb2f0b3ee7e30838e1fc6379d4822fd2fc965134b9ec559e9f56ecf9",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-hobgoblin-barracks": {
+    "review": "passed",
+    "reviewedHash": "8a0fcf199dd1468b8698fcf95a7524291e05bdcd6e4af6b4f4b1508dc79576de",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-banquet-hall": {
+    "review": "passed",
+    "reviewedHash": "c55c169f70f05f543ab2c1a6effe85932b23ae04c128827c86441e63478528e5",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-dark-hall": {
+    "review": "passed",
+    "reviewedHash": "80220ec516dc068e0c2ba67cb2e1b4301830d8bc7c4095f137617072149b395f",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-grick-reveal": {
+    "review": "passed",
+    "reviewedHash": "3b7da23aed0a4727051ab0f6f7a9daf8ef32b807dd04cf7954b3d5aa68e239b6",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-goblin-shrine": {
+    "review": "passed",
+    "reviewedHash": "6d57c3a5d0ddd22b9a0e93442df4ba5fb845443ca82d83ca91ecaa5159b3ad09",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-postern-gate": {
+    "review": "passed",
+    "reviewedHash": "542287b2dec63b536fe2f414288ce4c9d6a0fb97e262935107565569f06ac3bd",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-ruined-tower": {
+    "review": "passed",
+    "reviewedHash": "0944a433f7ec5210bfee8608117de4391caede8f1309e2b4fb49e63532cf125e",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-guard-barracks": {
+    "review": "passed",
+    "reviewedHash": "e21acd47ddf3bb9e3813d107bca9857711b59b8e9b4f5ea7245e0b281c82f426",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-owlbear-tower": {
+    "review": "passed",
+    "reviewedHash": "561263ffa90c526bb578a33f56a51e1c52878e1f0f25bc14a35ba1123475ed8f",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-kings-quarters": {
+    "review": "passed",
+    "reviewedHash": "3b7fed88e29b9e5a30baadfc563576dadac21cb8b894ee6988ce841cec251963",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-cave-entrance": {
+    "review": "passed",
+    "reviewedHash": "5b08a5db3055e23fe3040d372fcebd99740043696da948075229a15cac8469de",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-mine-tunnels": {
+    "review": "passed",
+    "reviewedHash": "974e13c052e36d932880ed0f24676d94c4b2fe12c420f3ac19597f4fdd30eb15",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-old-entrance": {
+    "review": "passed",
+    "reviewedHash": "a9b3371e9ed626d0c9d531f22d57cb3a275cf587e376f2026c0c32da4471d505",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-guardroom": {
+    "review": "passed",
+    "reviewedHash": "20df719e9745af89cf2d740eb96cd206a52cb2995fd860212d32ccfcb2d83bba",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-guardroom-skeletons": {
+    "review": "passed",
+    "reviewedHash": "bfa37f5e1d56f07f4cfdd1b0208dacdc782c8969bc49e938505da6fd50884b5f",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-assayers-office": {
+    "review": "passed",
+    "reviewedHash": "9f15d91f35776a5bbc4509672ac27f03453d87f01236cf44da5a1385e217e6da",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-south-barracks": {
+    "review": "passed",
+    "reviewedHash": "2563e3498dc20c96aa2e9cc83dc181629621bc8a71f89bc1a52c9621c29134cc",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-ruined-storeroom": {
+    "review": "passed",
+    "reviewedHash": "17eb2624bb38c832b8d2f65f2958a1269c837da8b9ba732cfaaf94e771dab80d",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-fungi-cavern": {
+    "review": "passed",
+    "reviewedHash": "47696df79056ec3a4a81178519821aced4666917387572d8d3f55037b5b9ac92",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-fungal-gas": {
+    "review": "passed",
+    "reviewedHash": "ec03e8f24bc017099d8a41f9e625d1259a107293ae294068de7ea245563d87e5",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-great-cavern": {
+    "review": "passed",
+    "reviewedHash": "d573f08233417dc8969cba531d08e5067ef2658931ed5233f5bf8e7f261a3328",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-dark-pool": {
+    "review": "passed",
+    "reviewedHash": "ec7736063cf376e804de0c55b0b4a7f396e11282bc64704b0e0a04ade6024d6d",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-north-barracks": {
+    "review": "passed",
+    "reviewedHash": "6e881326b492a5a17f851546b082446f44ce9cbaa911c8a8b0d48c6b22ae6ebe",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-smelter-cavern": {
+    "review": "passed",
+    "reviewedHash": "894265323e1f4947daad825d580e60b1c2a0b3149bf52f696d632005ec6da611",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-starry-cavern": {
+    "review": "passed",
+    "reviewedHash": "f6f68c81508fac59d589e65bf9571c3a38f0620011999f2e60e48f6a7517765a",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-wizards-quarters": {
+    "review": "passed",
+    "reviewedHash": "748df529f2e4c8a0e4e727b7df85bd0ce840310af94cc1bf1ed3d2fa0ba1624a",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-mormesk-reveal": {
+    "review": "passed",
+    "reviewedHash": "3be0aea12540b4bea4a5c9da4bf51f00b28a2b798a7365ca0961267492118e77",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-forge-of-spells": {
+    "review": "passed",
+    "reviewedHash": "8a49481dba850ded7ef2215bddfbac6420b9dff80470449ab91a11c8db7454bf",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-booming-cavern": {
+    "review": "passed",
+    "reviewedHash": "2837b75ec3de858a8820d678f4e2b1cb71b4d4acec9f1a22cce7ceb512b9e06f",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-old-streambed": {
+    "review": "passed",
+    "reviewedHash": "c91adc57cfadc807cc082194c66c558cfd9ab966d862c8cdb34d60f9a319442e",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-collapsed-cavern": {
+    "review": "passed",
+    "reviewedHash": "2646ef5c341097785f68ecfd60e6d024a09d6a5ab1b5fc8faa988b701edbae79",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-temple-of-dumathoin": {
+    "review": "passed",
+    "reviewedHash": "7f554ae602fbd92b67bc97c773978afca903084253207bcddd2322ae7e9b0b42",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-nezznar-confrontation": {
+    "review": "passed",
+    "reviewedHash": "a3321fce8653a88ca5d0f29f7c49e72bbd6cd83c9ac6660cc547744fe078f69b",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-priests-quarters": {
+    "review": "passed",
+    "reviewedHash": "a03b51883dd5cb5cca606e7a778e7fa8a598a492b1600ee0c959ef8aebba80a8",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "lmop-phandalin-homecoming": {
+    "review": "passed",
+    "reviewedHash": "d8821d22ae991c63d71eff56f88c45762ff3ac7d8888d772d7dc29b5fb290016",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  },
+  "wd-contact": {
+    "review": "passed",
+    "reviewedHash": "b18aa0f97dd16fec65367c7e735fdb178ec529208e94c392fe92ca031592a43d",
+    "reviewedAt": "2026-10-12T16:38:06.420Z",
+    "reviewNote": "Visually checked against the curated room brief for principal architecture, encounter identity and disclosure stage. Perspective scenery remains approximate; room cards and tactical maps govern precise counts, distances and connectivity."
+  }
+}

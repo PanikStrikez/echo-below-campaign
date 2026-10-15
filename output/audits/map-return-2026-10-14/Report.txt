@@ -1,0 +1,27 @@
+MAP → SCENE → MAP RETURN — 14 OCTOBER 2026
+
+Changed
+- Scene Continue exits labeled Return to a map now open Explore through the shared return control.
+- Town, travel, village and castle exits declare their navigation purpose. Older guides retain compatible label handling.
+- The scene launch remembers its originating board, zoom, pan, selected marker, search, map trail and beat reference.
+- Private navigation memory survives refresh and is scoped to campaign/session. It does not enter campaign exports or TV/phone projections.
+- The latest scene context remains selected after an alternative scene is opened. Returning does not replace it with the old hub notes.
+- Directly opened guides with no captured origin use their declared map; direct scene and destination navigation remain available.
+
+Where
+Explore → select a marker → Open scene → Continue → Return to the map.
+Scene / Map Desk → Back to session map uses the same return path.
+
+Verified in isolated Chrome profiles with disposable local services
+- 12 new map-return checks passed: scene exit; conversation, combat-workspace, withdrawal and postponement return controls; alternative scene; reload; other-board browsing; direct-guide fallback; dungeon room; all prepared return exits; TV module exclusion.
+- Existing session-map suite passed: nested maps, marker scene/art matching, explicit TV publication, saved zoom, map/fog/token/presentation preservation, legacy-save import in the isolated browser and laptop layouts.
+- Existing Session 3 guide suite passed: preparation compatibility, linked choices, private outcome drafts, reload, source topology, player-view preview, visibility boundaries and 1366/1100 layouts.
+- No browser page errors in the successful suites. Origin/restored screenshots were inspected.
+
+Boundaries and limitations
+No live browser profile, campaign database, phone listener, source book or provider account was changed. Test changes stayed in fresh profiles and temporary service stores.
+The withdrawal/combat cases test navigation out of those workspaces; they do not simulate new fight results or establish fictional outcomes.
+Physical phones and flat-TV viewing were not tested in this pass. Private view memory is local to this browser; it is not portable campaign history. If browser storage is unavailable, it remains usable during the open page but cannot survive reopening.
+
+Loading
+Wait for Saved, then refresh the DM page to load these interface changes. Existing phone assignments need no service restart.

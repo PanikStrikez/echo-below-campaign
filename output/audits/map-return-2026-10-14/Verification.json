@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Scene Continue exit restores map, marker, zoom, pan and search without gameplay/publication changes",
+    "conversation return preserves state",
+    "combat return preserves state",
+    "withdrawal return preserves state",
+    "postponed return preserves state",
+    "Alternative scene remains available and private",
+    "Refresh keeps originating map and latest scene context",
+    "Origin survives other-map browsing",
+    "Direct guide returns to declared fallback map without cross-session origin",
+    "Dungeon room return and nested map origin retained",
+    "All prepared map-return exits audited",
+    "Private navigation module absent from TV"
+  ],
+  "errors": [],
+  "environment": "Fresh Chrome profile and disposable local services",
+  "liveServicesChanged": false,
+  "physicalDevices": false
+}

@@ -1,0 +1,9 @@
+Action receipts — 14 October 2026
+
+Implemented one audience-neutral receipt model and renderer in the existing shared character-summary helper. Combat, resources, inventory requests/transfers, clue sharing, approved outcomes/quests and shop stock reviews now distinguish committed effects, outstanding rulings, undo conditions and expandable math/sources. The latest action result is visible on phone Home; request history and Items retain receipts. DM receipts use the reserved notification area and reviewed histories.
+
+Receipts reuse approved records, rather than applying additional effects. Resource receipts are optional save-compatible owner records restored with the existing session state; other receipts derive from their existing ledgers. Transfer recipients receive their transaction without sender notes. Shop ledger receipts explicitly leave payment/inventory unresolved; no complete commerce transaction was invented. Historical resolutions without detailed records are labeled incomplete.
+
+Verified: 13 receipt unit checks; 6 isolated browser receipt checks (actual resource command, reviewed action, undo, decline, 360/390 widths, independent owners); 12 existing waiting-view browser checks; command stale-review/atomicity checks; inventory persistence/Undo/Redo checks; campaign boundary and direct-token-drag regressions. DM and phone screenshots inspected. No live campaign or phone service was restarted, and no books or providers were used.
+
+Limits: full structured phone receipts require the updated phone service at its next authorized restart. Until then the refreshed phone UI can show existing status/message results, but extra costs/source fields may be absent. Physical phone/TV checks remain outstanding. Header receipt history is limited to the current browser visit; authoritative combat, inventory, outcome and resource records remain available through their existing saved histories. Undo remains conditional on intervening changes.

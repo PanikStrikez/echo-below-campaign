@@ -1,0 +1,28 @@
+{
+  "stage": "Campaign reconciliation",
+  "implemented": true,
+  "browserOutcomeLedger": "authoritative for approved played events and linked views",
+  "structuredService": "revision-checked searchable projection; separate records remain references or reviewable drafts",
+  "workflow": "Outcome review \u2192 Linked campaign service \u2192 Review linked updates",
+  "checks": {
+    "coreGatePassed": true,
+    "releaseSteps": 93,
+    "focusedJavaScriptTests": 8,
+    "focusedSQLiteTests": 14,
+    "browserEvidence": "release-check/latest.json \u00b7 check-reconciliation-browser.cjs output",
+    "realProviderRequests": 0
+  },
+  "deployment": {
+    "desktopServiceReloaded": true,
+    "phoneServiceRestarted": false,
+    "phoneProcessPreserved": true,
+    "liveOutcomeLinkApplied": false
+  },
+  "originalBackupSHA256": "5fd26c38231c524d4bad822983129cdab0db432158e2f59bfc5d495c4b31e32b",
+  "liveBackupPreserved": true,
+  "remaining": [
+    "Initial live comparison and any conflicts require DM review",
+    "Physical TV and real phone viewing checks were not performed",
+    "Private SQLite history/reference records still need their separate database backup; browser backup retains the authoritative ledger"
+  ]
+}

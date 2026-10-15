@@ -1,0 +1,45 @@
+{
+  "stage": "Whole-campaign backup and recovery",
+  "implemented": true,
+  "primaryAction": "Settings \u2192 Recovery & campaigns \u2192 Backup \u2192 Back up whole campaign",
+  "restoreAction": "Restore whole campaign \u2192 preview \u2192 Restore as separate campaign \u2192 Open restored campaign",
+  "included": [
+    "browser sessions, stats, settings, quests, fog and tokens",
+    "structured records, drafts, audit and outcome history",
+    "app/content and required local artwork/audio",
+    "imported media with hashes",
+    "matching storage versions, revisions and outcome head hashes"
+  ],
+  "excluded": [
+    "provider keys/accounts",
+    "phone assignments",
+    "personal source PDFs",
+    "rebuildable book/source indexes"
+  ],
+  "verified": {
+    "releaseSteps": 94,
+    "coreGatePassed": true,
+    "focusedDatabaseTests": 14,
+    "freshBrowserAndSQLiteRestore": true,
+    "interruptedBrowserTransaction": true,
+    "lostCommittedResponse": true,
+    "originalUsableAfterFailure": true,
+    "privatePlayerDataBoundary": true,
+    "realProviderRequests": 0
+  },
+  "evidence": "release-check/latest.json \u00b7 check-whole-backup-browser.cjs output",
+  "live": {
+    "originalBackupSHA256": "5fd26c38231c524d4bad822983129cdab0db432158e2f59bfc5d495c4b31e32b",
+    "originalBackupPreserved": true,
+    "desktopServiceReloaded": true,
+    "phoneServiceRestarted": false,
+    "liveRestorePerformed": false
+  },
+  "limitations": [
+    "physical Wi-Fi/TV/speakers were not tested",
+    "unsynchronized outcome heads are captured but flagged for review",
+    "conflicting existing artwork is blocked; extract into a separate installation",
+    "a lost response after commit may leave an unlisted separate database copy; original is untouched",
+    "legacy JSON backups are still browser-only"
+  ]
+}

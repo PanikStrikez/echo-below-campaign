@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-11T23:23:54.000168+00:00",
+  "scope": "Current readiness evidence, not a new account of play",
+  "statusView": "Menu \u2192 Settings \u2192 Recovery & campaigns \u2192 Current status",
+  "releaseEvidence": {
+    "path": "release-check/latest.json",
+    "at": "2026-10-11T23:21:57.793673+00:00",
+    "versions": {
+      "app": {
+        "sha256": "cc5c8f5a714c2f7ea8deb6fea5d24d81438d4b19dfcb3175c36fa011b4b558b1",
+        "files": 189,
+        "bytes": 8265075
+      },
+      "assets": {
+        "sha256": "42ad67a4b10f003f9a8231e11d772762652820aae1d737d9878dce69628701c2",
+        "files": 516,
+        "bytes": 983348098
+      },
+      "tests": {
+        "sha256": "07fb4bcd40bc34745bb0c013a241076478e51c67828f8b1e3b326b8393e69751",
+        "files": 165,
+        "bytes": 1342351
+      },
+      "saveSchema": 3
+    },
+    "passedCommands": 96,
+    "totalCommands": 96,
+    "versionsUnchanged": true,
+    "coreGatePassed": true,
+    "representativeFaultsCaught": 3
+  },
+  "history": {
+    "indexedReportsAndPlans": 43,
+    "originalBaseline": "../campaign/readiness/history/App-Readiness-Status-2026-10-09.md",
+    "basis": "Recorded dates or explicitly unrecorded dates; file fingerprints retained. None establish actual play."
+  },
+  "workflowVerification": [
+    "status file identity endpoint reads no save, database, personal book, or provider account",
+    "matching full release required for automated check labels",
+    "changed app/assets and partial release cannot certify readiness",
+    "explicit dated DM and physical observation scoped to group, save, linked-store receipt, build and display",
+    "withdrawn and expired observations retained as history",
+    "review notes survive isolated reload without changing roster, tokens or current scene",
+    "another campaign receives no prior group observations",
+    "TV does not load private status modules or notes",
+    "status evidence separated from reusable platform package",
+    "unknown browser storage cannot produce a ready result"
+  ],
+  "currentCampaignAuthority": "Effective approved outcome ledger in the selected save, never reports or current prepared scene",
+  "liveGroupOriginalSha256": "5fd26c38231c524d4bad822983129cdab0db432158e2f59bfc5d495c4b31e32b",
+  "liveServicesRestarted": false,
+  "realProviderRequests": 0,
+  "physicalDevicesTested": false,
+  "limitations": [
+    "Current-file comparison requires the loopback desktop launcher. A running server from before this change needs reopening when convenient. File-based opening still supports dated history and manual observations.",
+    "Review notes remain local to this browser and group, intentionally excluded from campaign transfers. Restoring or changing a save requires review again.",
+    "Physical observations expire after 15 minutes; DM reviews after 24 hours; scope changes invalidate previous observations.",
+    "Saved structured-service linkage is identified as last approved revision, not live database health.",
+    "Historical real AI verification is distinguished from current provider connection or audio quality."
+  ]
+}

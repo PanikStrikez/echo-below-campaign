@@ -1,0 +1,13 @@
+Mystery coverage and five-character prep — 14 October 2026
+
+Find: Quests → Quest session workspace → Prepare for Next session → Review mysteries & openings. The existing panel defaults to this session’s essential/nearby questions; the full mystery library remains available.
+
+The private audit uses approved linked evidence and reviewed access states. It flags zero/one reachable route, groups explicitly shared origins, shows source and context IDs, distinguishes context from proof, and invalidates access after source/related NPC changes. Multiple routes do not prove independence or a conclusion. Older unlinked evidence notes are flagged for review without importing or interpreting them automatically. Route review is private preparation and joins existing Prep Undo/Redo and save normalization.
+
+Next Phandalin prep offers three independent inquiry options (ordinary town contacts, Gundren’s conditional firsthand account, verified survivors/actually found evidence). Castle-location alternatives reuse Reidoth, Agatha and an accessible castle witness. Directions are separate from Glasstaff’s DM-only whereabouts. No NPC is moved, made alive, taught information or given a fabricated paper. Access, travel, survival and willingness remain explicit DM review gates.
+
+All five character invitations reuse story cards and manual spotlight records: Trista custody/trust, Pebble craft/minerals, Donavan cautious inquiry/correspondence, Ringgo legitimate work/safety, Aldric voluntary records/atonement. Every invitation has a decline alternative; paused/absent, already offered and played moments are labeled. Phone activity is never read or scored. Later acts use the matching existing story stage instead of replaying Phandalin.
+
+Passed: 10 new unit checks, 10 isolated browser checks, existing 10-check mystery suite, spotlight checks, 40-quest preparation checks and campaign-boundary checks. Browser exercised required access explanation, single-source warning, alternative route, all five openings, stale source, recorded decline, persistence and audience transport. Screenshots inspected. The reusable interface now opens the installed evidence/research and spotlight tools instead of redirecting them to general prep; Back restores the workspace. The extraction generator retains this optional-tool behavior without importing Echo content into blank campaigns. No live save, stats, map, fog, phone assignment, book or provider request was changed.
+
+Remaining: physical-table checks and DM review of route access/actual witnesses. Suggestions are offers and prepared alternatives; they cannot certify future discoveries or make an unplayed scene available as fact.

@@ -1,0 +1,7 @@
+Encounter purpose and alternative endings — 14 October 2026
+
+Map Desk now shows the saved encounter objective and terrain before attack choices. Authored morale, withdrawal routes, negotiation, other approaches, reinforcements and wave controls remain in the same panel. Multiple placed encounters require selection instead of an arbitrary first encounter.
+
+Pacing changes require explicit DM confirmation and use the existing undoable commit. Parley, surrender and withdrawal recommend an aftermath review; no ending, death, reward or public disclosure is automatically applied. Exact terrain text is reused; no objects, collision geometry or cover calculation is invented.
+
+Passed: 12 unit checks; 6 isolated encounter-purpose browser checks; 10 existing aftermath browser checks; direct token-drag regression (free/group movement and explicit measurement). Two laptop screenshots inspected. No real campaign, phone assignment, source PDF or live service was changed. Physical-table testing remains outstanding. Existing authored preparation may require a DM update after play changes the room.

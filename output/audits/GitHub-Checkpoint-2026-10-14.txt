@@ -1,0 +1,14 @@
+PRIVATE GITHUB CHECKPOINT — 14 October 2026
+
+Includes current app modules, Echo Below campaign material, artwork/audio, player handouts, tests, and audit evidence. Personal source books, local credentials, databases, runtime caches, and generated portable release archives remain under existing local exclusions.
+
+VERIFICATION
+The session-payoff pass recorded 55 browser checks across map return, scenes, combat receipts, phone drafts, aftermath and closing. These do not constitute full release certification.
+
+A broader release check was run before this commit. JavaScript and Python unit suites, most contract/service checks and several browser checks passed. The gate was NOT green. See output/audits/release-check/latest.json and latest.html for the actual initial failures. That run also observed source changes during execution; it is a diagnostic record, not a certification of the final commit.
+
+Follow-up fixes: reusable extractions refreshed; missing positionFor helper included in reusable combat extraction; missing optional combat-data guard corrected; phone-reconnect test fixture updated for current offline rendering hooks and passed; blank/example/Echo boundary browser rehearsal passed after the helper repair; a test credential replaced with an explicitly synthetic string. No paid provider calls or live phone restarts.
+
+Remaining broad-gate failures require follow-up: voice handoff/Studio, archive/unarchive browser interaction, evening navigation, outcome reconciliation and whole-campaign backup browser rehearsal. Some are stale selectors or fixture assumptions; others need diagnosis. Do not claim these workflows passed from this checkpoint.
+
+Physical TV, speakers, real-phone Wi-Fi and human usability checks remain separate and incomplete. This commit preserves the work and its evidence; it is not an auto-deployment or a claim of complete production readiness.

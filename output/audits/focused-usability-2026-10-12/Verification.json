@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-12T08:14:21.516Z",
+  "pairedViews": 35,
+  "beforeViews": 35,
+  "afterViews": 37,
+  "registeredControls": 52,
+  "retainedPanels": 10,
+  "observedChanges": {
+    "walkthroughBeforeTopPixels": [
+      2355.28125,
+      1702.125,
+      2003.921875,
+      2463.515625,
+      1774.125
+    ],
+    "walkthroughAfterTopPixels": [
+      193.984375,
+      193.984375,
+      193.984375,
+      193.984375,
+      193.984375
+    ],
+    "itemEditorBeforeTopPixels": 1543.5,
+    "itemEditorAfterTopPixels": 89.5
+  },
+  "automatedOnly": true,
+  "physicalChecksPending": [
+    "TV seat legibility and safe edges",
+    "all five actual phone browsers",
+    "human hesitation and label comprehension",
+    "speakers and headphones"
+  ],
+  "browserErrors": [],
+  "sessionRoundtrip": {
+    "differences": [],
+    "sessionSave": true,
+    "wholeMediaPackage": false
+  },
+  "workflowChecks": {
+    "reviewedDMAndSimulatedPhoneAttack": "passed",
+    "freeDragRulerUndo": "passed",
+    "completeEveningAndClosingReload": "passed",
+    "contextAndPhoneRegressionViews": 39,
+    "unitTests": 106
+  },
+  "fullMediaRestore": "Not verified in this pass: an all-media JSON export was approximately 1 GiB and its fresh-browser import failed. Disposable file removed."
+}

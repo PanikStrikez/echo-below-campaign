@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-11",
+  "scope": "Read-only product and integration audit of current code, saved campaign export, selected workflows, and prior verification reports. Not a page-by-page sourcebook re-audit or physical-device certification.",
+  "liveCampaignChanged": false,
+  "liveServicesRestarted": false,
+  "providerRequests": 0,
+  "freshChecks": {
+    "pythonTests": {
+      "passed": 173,
+      "failed": 0
+    },
+    "javascriptSuite": {
+      "passed": 42,
+      "failed": 1,
+      "failure": "Reliability test expects schema 3 to be unsupported; current app supports schema 3."
+    },
+    "hybridCombat": "passed; fresh browser, HTTP network blocked",
+    "eveningWorkflow": "passed; fresh browser, HTTP network blocked; prepared transition 2 actions",
+    "fivePhoneClients": "passed; temporary HTTP service, one-client resync/release/rejoin and owner privacy",
+    "portablePackageFixtures": "passed; temporary files, relocation, blank isolation, exclusion and corruption rejection",
+    "revisionCommands": "passed",
+    "encounterSimulator": "passed",
+    "performance": {
+      "p95Ms": 1.13,
+      "tokens": 500,
+      "fogCells": 10000,
+      "scope": "CPU projection and simulated DOM only; not real browser FPS or image decoding"
+    }
+  },
+  "legacyChecksNeedingRepair": [
+    "check-phone-actions.js: missing extracted content dependency in test setup",
+    "check-outcomes.js: engine checks passed; coordinator harness missing extracted content dependency",
+    "check-character-tools.js: missing extracted content dependency in test setup",
+    "check-rules-library.js: asserts obsolete literal loader implementation"
+  ],
+  "findings": [
+    {
+      "priority": "P0",
+      "id": "A01",
+      "title": "Repair obsolete tests and define current release gates",
+      "basis": "Fresh failures reproduce old schema expectations and pre-extraction coordinator setup; modern browser combat and evening workflows pass."
+    },
+    {
+      "priority": "P0",
+      "id": "A02",
+      "title": "Reconcile the browser campaign and structured campaign service",
+      "basis": "CAMPAIGN-ENGINE-SETUP.md documents reviewed import rather than continuous synchronization; separate engine commits do not automatically update legacy map, combat, inventory or phone journals."
+    },
+    {
+      "priority": "P0",
+      "id": "A03",
+      "title": "Back up both campaign stores together",
+      "basis": "Portable browser group export excludes the separate SQLite campaign database. Book indexing and credentials must remain separately controlled."
+    },
+    {
+      "priority": "P0",
+      "id": "A04",
+      "title": "Unify DM and phone combat resolution",
+      "basis": "Active-turn attacks route into separate damage review and warn that special effects/resource costs need separate rulings; phone action engine already has combined reviewed resolution."
+    },
+    {
+      "priority": "P1",
+      "id": "A05",
+      "title": "Generate current status from dated evidence",
+      "basis": "App-Readiness-Status.md still states no current live export, no portable package and no real text-provider test. Newer Stage 8/9 reports supersede these claims. Its Gundren-asleep statement is stronger than confirmed latest play."
+    },
+    {
+      "priority": "P1",
+      "id": "A06",
+      "title": "Audit current-party action automation across approved rules exceptions",
+      "basis": "2014 default, Trista 2024 Monk, approved feats, Goron traits and named spell exceptions require action-specific handling. Reference-only spells and situational effects still require DM review."
+    },
+    {
+      "priority": "P1",
+      "id": "A07",
+      "title": "Complete actual table usability checks",
+      "basis": "Fresh browser and simulated HTTP phones pass; flat-TV readability, actual Wi-Fi reconnection, private headphones and table speakers were not tested."
+    },
+    {
+      "priority": "P1",
+      "id": "A08",
+      "title": "Measure actual browser/map performance",
+      "basis": "Current growth benchmark uses a simulated DOM. Module manifest loads more than 100 DM scripts in sequence; large-image, real FPS and phone rendering costs remain unmeasured by that check."
+    },
+    {
+      "priority": "P1",
+      "id": "A09",
+      "title": "Finish local voice asset handoff and deliberate output routing",
+      "basis": "Four real ElevenLabs plugin auditions are recorded, but profiles await listening/selection and local-app connection is separate. No new generation or spending authorized by this audit."
+    },
+    {
+      "priority": "P2",
+      "id": "A10",
+      "title": "Complete reusable content boundary",
+      "basis": "Stage 9 package separates file layers and blank data, but runtime still loads Echo Below content and several modules mix tools with campaign seeds."
+    }
+  ],
+  "currentPlayCheckpoint": {
+    "place": "Barthen’s Provisions",
+    "gundren": "Left at unnamed inn; current sleep/health state not reported",
+    "rat": "Held by Trista; player knowledge of familiar nature not established",
+    "glasstaff": "Escaped; Cragmaw Castle destination DM-only"
+  },
+  "limits": [
+    "No physical TV, Wi-Fi, speaker or phone checks this turn",
+    "No paid or live provider calls this turn",
+    "No page-by-page verification of source books this turn",
+    "Current backup contains no uploaded media blobs; large imported-media recovery needs representative fixtures",
+    "Older records are historical facts, not automatically current situations; retain history while distinguishing superseded state"
+  ]
+}

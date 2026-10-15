@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "Objective and exact saved terrain visible before attack controls without changing campaign",
+    "Authored morale, exits, negotiation and alarms available in same panel",
+    "Parley pacing suggests review without auto-ending, rewards or history",
+    "Surrender pacing suggests review without auto-ending, rewards or history",
+    "Withdrawal pacing suggests review without auto-ending, rewards or history",
+    "Purpose, attack workflow and End turn available at two laptop sizes"
+  ],
+  "errors": [],
+  "physicalDevices": false,
+  "liveConnectionsChanged": false
+}

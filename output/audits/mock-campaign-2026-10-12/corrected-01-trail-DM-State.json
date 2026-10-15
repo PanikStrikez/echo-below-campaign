@@ -1,0 +1,6687 @@
+{
+  "pack": "",
+  "beat": "trail",
+  "scene": "black",
+  "party": {
+    "pc-aldric": {
+      "id": "pc-aldric",
+      "name": "Aldric Vane",
+      "role": "pc",
+      "player": "Bowman",
+      "className": "Wizard 1",
+      "ancestry": "Reborn",
+      "background": "Haunted One",
+      "level": 1,
+      "rules": "2014 Wizard with Reborn, Haunted One, named later spells, and all listed spells available by table rule",
+      "source": "Aldric Vane_9252026_2212.json · player export 2026-09-25",
+      "sourceStatus": "MOCK level-1 reconstruction from confirmed ability scores and ancestry. Not a live-sheet update.",
+      "proficiency": 2,
+      "abilities": {
+        "str": 8,
+        "dex": 14,
+        "con": 16,
+        "int": 18,
+        "wis": 12,
+        "cha": 16
+      },
+      "saves": {
+        "str": {
+          "rank": 0,
+          "override": null
+        },
+        "dex": {
+          "rank": 0,
+          "override": null
+        },
+        "con": {
+          "rank": 0,
+          "override": null
+        },
+        "int": {
+          "rank": 1,
+          "override": 6
+        },
+        "wis": {
+          "rank": 1,
+          "override": 3
+        },
+        "cha": {
+          "rank": 0,
+          "override": null
+        }
+      },
+      "skills": {
+        "Acrobatics": {
+          "rank": 0,
+          "override": null
+        },
+        "Animal Handling": {
+          "rank": 0,
+          "override": null
+        },
+        "Arcana": {
+          "rank": 1,
+          "override": 6
+        },
+        "Athletics": {
+          "rank": 0,
+          "override": null
+        },
+        "Deception": {
+          "rank": 0,
+          "override": null
+        },
+        "History": {
+          "rank": 0,
+          "override": null
+        },
+        "Insight": {
+          "rank": 1,
+          "override": 3
+        },
+        "Intimidation": {
+          "rank": 1,
+          "override": 5
+        },
+        "Investigation": {
+          "rank": 1,
+          "override": 6
+        },
+        "Medicine": {
+          "rank": 0,
+          "override": null
+        },
+        "Nature": {
+          "rank": 0,
+          "override": null
+        },
+        "Perception": {
+          "rank": 0,
+          "override": null
+        },
+        "Performance": {
+          "rank": 0,
+          "override": null
+        },
+        "Persuasion": {
+          "rank": 1,
+          "override": 5
+        },
+        "Religion": {
+          "rank": 1,
+          "override": 6
+        },
+        "Sleight of Hand": {
+          "rank": 0,
+          "override": null
+        },
+        "Stealth": {
+          "rank": 0,
+          "override": null
+        },
+        "Survival": {
+          "rank": 0,
+          "override": null
+        }
+      },
+      "speed": 30,
+      "senses": "Poison resistance; advantage on death saves and saves against disease or being poisoned",
+      "languages": "Common, Dwarvish, Undercommon, Infernal (from Bowman’s backstory; omitted in JSON export)",
+      "ac": 12,
+      "hp": 9,
+      "maxHp": 9,
+      "tempHp": 0,
+      "hitDice": {
+        "die": 6,
+        "current": 1,
+        "max": 1,
+        "details": "1d6",
+        "pools": [
+          {
+            "die": 6,
+            "current": 1,
+            "max": 1
+          }
+        ]
+      },
+      "attacks": [
+        {
+          "id": "aldric-fire-bolt",
+          "name": "Fire Bolt",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d10",
+          "damageType": "fire",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Ranged spell attack, 120 ft.; ignites unattended flammable objects.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "aldric-dagger",
+          "name": "Dagger",
+          "type": "Action",
+          "attackBonus": 4,
+          "damageDice": "1d4+2",
+          "damageType": "piercing",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Melee or thrown 20/60 ft.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        }
+      ],
+      "actions": [
+        {
+          "id": "aldric-control-flames",
+          "name": "Control Flames",
+          "type": "Action",
+          "attackBonus": null,
+          "damageDice": "",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Shape, expand, or extinguish a visible nonmagical flame in a 5-foot cube within 60 ft.; no slot.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "aldric-mage-hand",
+          "name": "Mage Hand",
+          "type": "Action",
+          "attackBonus": null,
+          "damageDice": "",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Create and control a spectral hand within 30 ft.; no slot.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "aldric-ice-knife",
+          "name": "Ice Knife",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d10",
+          "damageType": "piercing + cold",
+          "saveAbility": "DEX",
+          "saveDC": 14,
+          "effect": "Ranged spell attack, 60 ft.; piercing on hit, then target and creatures within 5 ft. make a Dexterity save or take 2d6 cold.",
+          "resourceId": "aldric-slots-1",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "aldric-magic-missile",
+          "name": "Magic Missile",
+          "type": "Action",
+          "attackBonus": null,
+          "damageDice": "1d4+1",
+          "damageType": "force",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Three darts at creatures within 120 ft.; no attack roll. Each dart deals force damage.",
+          "resourceId": "aldric-slots-1",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "aldric-mage-armor",
+          "name": "Mage Armor",
+          "type": "Action",
+          "attackBonus": null,
+          "damageDice": "",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Touch an unarmored willing creature; base AC becomes 13 + Dexterity modifier for 8 hours. Aldric’s AC becomes 15.",
+          "resourceId": "aldric-slots-1",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "aldric-shield",
+          "name": "Shield",
+          "type": "Reaction",
+          "attackBonus": null,
+          "damageDice": "",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "+5 AC until the start of Aldric’s next turn; blocks Magic Missile.",
+          "resourceId": "aldric-slots-1",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "aldric-silvery-barbs",
+          "name": "Silvery Barbs",
+          "type": "Reaction",
+          "attackBonus": null,
+          "damageDice": "",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "When a visible creature within 60 ft. succeeds on an attack, check, or save: force a reroll and use the lower d20; grant another visible creature advantage on one roll within 1 minute.",
+          "resourceId": "aldric-slots-1",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "aldric-arcane-recovery",
+          "name": "Arcane Recovery",
+          "type": "After short rest",
+          "attackBonus": null,
+          "damageDice": "",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "After a short rest regain one first-level slot, once per day.",
+          "resourceId": "aldric-arcane-recovery",
+          "cost": 1,
+          "prepared": true,
+          "text": "After a short rest regain one first-level slot, once per day.",
+          "source": "2014 Wizard 1"
+        }
+      ],
+      "resources": [
+        {
+          "id": "aldric-slots-1",
+          "name": "1st-level spell slots",
+          "max": 2,
+          "current": 2,
+          "restoreShort": 0,
+          "restoreLong": true,
+          "unit": "slots",
+          "slotLevel": 0
+        },
+        {
+          "id": "aldric-past-life",
+          "name": "Knowledge from a Past Life",
+          "max": 2,
+          "current": 2,
+          "restoreShort": 0,
+          "restoreLong": true,
+          "unit": "uses",
+          "slotLevel": 0
+        },
+        {
+          "id": "aldric-arcane-recovery",
+          "name": "Arcane Recovery",
+          "max": 1,
+          "current": 1,
+          "restoreShort": 0,
+          "restoreLong": true,
+          "unit": "use",
+          "slotLevel": 0
+        }
+      ],
+      "spells": [
+        {
+          "name": "Control Flames",
+          "level": 0,
+          "prepared": true,
+          "notes": "At-will cantrip."
+        },
+        {
+          "name": "Fire Bolt",
+          "level": 0,
+          "prepared": true,
+          "notes": "At-will cantrip."
+        },
+        {
+          "name": "Mage Hand",
+          "level": 0,
+          "prepared": true,
+          "notes": "At-will cantrip."
+        },
+        {
+          "name": "Ice Knife",
+          "level": 1,
+          "prepared": true,
+          "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception."
+        },
+        {
+          "name": "Mage Armor",
+          "level": 1,
+          "prepared": true,
+          "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception."
+        },
+        {
+          "name": "Magic Missile",
+          "level": 1,
+          "prepared": true,
+          "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception."
+        },
+        {
+          "name": "Shield",
+          "level": 1,
+          "prepared": true,
+          "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception."
+        },
+        {
+          "name": "Silvery Barbs",
+          "level": 1,
+          "prepared": true,
+          "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception."
+        }
+      ],
+      "equipment": [
+        {
+          "name": "Dagger",
+          "quantity": 1,
+          "category": "Weapon",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Spellbook",
+          "quantity": 1,
+          "category": "Focus",
+          "notes": "Player export",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Scholar’s pack",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Monster hunter’s pack",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Common clothes",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Trinket",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "Scorched magistrate signet ring in backstory; export labels item as trinket",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Verdict Gloves",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "Named in export equipment text; properties not specified",
+          "attuned": false,
+          "equipped": false
+        }
+      ],
+      "money": {
+        "cp": 880,
+        "sp": 180,
+        "ep": 30,
+        "gp": 170,
+        "pp": 0
+      },
+      "features": [
+        {
+          "name": "Arcane Recovery",
+          "text": "After a short rest regain one first-level slot, once per day.",
+          "source": "2014 Wizard 1",
+          "effect": "After a short rest regain one first-level slot, once per day."
+        },
+        {
+          "name": "Knowledge from a Past Life",
+          "text": "Add 1d6 to a skill check after seeing the d20; twice per long rest.",
+          "source": "Reborn lineage"
+        },
+        {
+          "name": "Deathless Nature",
+          "text": "Poison resistance; advantage on death saves and saves against disease or being poisoned; no need to eat, drink, breathe, or sleep; 4-hour motionless long rest while conscious.",
+          "source": "Reborn lineage"
+        },
+        {
+          "name": "Training",
+          "text": "No armor proficiency. Dagger, dart, light crossbow, quarterstaff, and sling proficiency. No tool proficiency listed.",
+          "source": "Aldric JSON export"
+        },
+        {
+          "name": "Heart of Darkness",
+          "text": "Commoners may aid him unless he has shown himself dangerous to them.",
+          "source": "Haunted One"
+        }
+      ],
+      "inspiration": false,
+      "death": {
+        "successes": 0,
+        "failures": 0,
+        "stable": false
+      },
+      "exhaustion": 0,
+      "conditions": [],
+      "concentration": "",
+      "effects": [],
+      "notes": "Private backstory remains as supplied by Bowman: former Crown battle mage and magistrate, returned from death, seeking atonement and his family. Level 3 export shows 42 max HP, which the DM explicitly replaced with 25 fixed-progression wizard HP (18 at level 2 + 7); retain 9 damage for 16/25 current HP. AC 12, four 1st-level and two 2nd-level slots. All ten listed spells available by table rule. Export provides no languages; retained those from Bowman’s backstory. Do not define the Crown or his resurrection without player agreement.",
+      "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+      "publicOptions": {
+        "showHp": true,
+        "showActions": true,
+        "showResources": false,
+        "showStatus": true
+      },
+      "passiveOverride": {
+        "perception": null,
+        "insight": null,
+        "investigation": null
+      },
+      "levelHistory": [],
+      "management": {
+        "favorites": []
+      }
+    },
+    "pc-pebble": {
+      "id": "pc-pebble",
+      "name": "Pebble",
+      "role": "pc",
+      "player": "Byron",
+      "className": "Fighter 1",
+      "ancestry": "Goron (custom lineage)",
+      "background": "Outlander",
+      "level": 1,
+      "rules": "2014 PHB with Tasha options",
+      "source": "Pebble Player Handout pp. 1–4; Byron’s Session 1 answers",
+      "sourceStatus": "MOCK level-1 reconstruction from confirmed ability scores and ancestry. Not a live-sheet update.",
+      "proficiency": 2,
+      "abilities": {
+        "str": 18,
+        "dex": 10,
+        "con": 14,
+        "int": 8,
+        "wis": 13,
+        "cha": 12
+      },
+      "saves": {
+        "str": {
+          "rank": 1,
+          "override": 6
+        },
+        "dex": {
+          "rank": 0,
+          "override": 0
+        },
+        "con": {
+          "rank": 1,
+          "override": 4
+        },
+        "int": {
+          "rank": 0,
+          "override": -1
+        },
+        "wis": {
+          "rank": 0,
+          "override": 1
+        },
+        "cha": {
+          "rank": 0,
+          "override": 1
+        }
+      },
+      "skills": {
+        "Acrobatics": {
+          "rank": 0,
+          "override": null
+        },
+        "Animal Handling": {
+          "rank": 0,
+          "override": null
+        },
+        "Arcana": {
+          "rank": 0,
+          "override": null
+        },
+        "Athletics": {
+          "rank": 1,
+          "override": 6
+        },
+        "Deception": {
+          "rank": 0,
+          "override": null
+        },
+        "History": {
+          "rank": 0,
+          "override": null
+        },
+        "Insight": {
+          "rank": 1,
+          "override": 3
+        },
+        "Intimidation": {
+          "rank": 0,
+          "override": null
+        },
+        "Investigation": {
+          "rank": 0,
+          "override": null
+        },
+        "Medicine": {
+          "rank": 0,
+          "override": null
+        },
+        "Nature": {
+          "rank": 0,
+          "override": null
+        },
+        "Perception": {
+          "rank": 1,
+          "override": 3
+        },
+        "Performance": {
+          "rank": 0,
+          "override": null
+        },
+        "Persuasion": {
+          "rank": 0,
+          "override": null
+        },
+        "Religion": {
+          "rank": 0,
+          "override": null
+        },
+        "Sleight of Hand": {
+          "rank": 0,
+          "override": null
+        },
+        "Stealth": {
+          "rank": 0,
+          "override": null
+        },
+        "Survival": {
+          "rank": 1,
+          "override": 3
+        }
+      },
+      "speed": 30,
+      "senses": "Darkvision 60 ft.",
+      "languages": "Common, Goron, Dwarvish",
+      "ac": 18,
+      "hp": 12,
+      "maxHp": 12,
+      "tempHp": 0,
+      "hitDice": {
+        "die": 10,
+        "current": 1,
+        "max": 1,
+        "details": "1d10",
+        "pools": [
+          {
+            "die": 10,
+            "current": 1,
+            "max": 1
+          }
+        ]
+      },
+      "attacks": [
+        {
+          "id": "pebble-hammer",
+          "name": "Warhammer",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d8+4",
+          "damageType": "bludgeoning",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "One-handed with shield; Crusher may move a qualifying target 5 feet once on Pebble’s turn.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "pebble-handaxe",
+          "name": "Handaxe",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d6+4",
+          "damageType": "slashing",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Melee or thrown 20/60 feet.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        }
+      ],
+      "actions": [
+        {
+          "id": "pebble-interception",
+          "name": "Interception",
+          "type": "Reaction",
+          "attackBonus": null,
+          "damageDice": "1d10+2",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Reduce damage when a visible creature hits someone other than Pebble within 5 feet; Pebble must hold a shield or weapon.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "pebble-second-wind",
+          "name": "Second Wind",
+          "type": "Bonus action",
+          "attackBonus": null,
+          "damageDice": "1d10+1",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Heal Pebble; once per short or long rest.",
+          "resourceId": "pebble-second-wind",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "pebble-crusher",
+          "name": "Crusher",
+          "type": "Once on Pebble’s turn",
+          "attackBonus": null,
+          "damageDice": "",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "After a bludgeoning hit, move a creature no more than one size larger 5 feet into empty space. On a bludgeoning critical hit, attacks against it have advantage until Pebble’s next turn.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        }
+      ],
+      "resources": [
+        {
+          "id": "pebble-second-wind",
+          "name": "Second Wind",
+          "max": 1,
+          "current": 1,
+          "restoreShort": 1,
+          "restoreLong": true,
+          "unit": "use",
+          "slotLevel": 0
+        }
+      ],
+      "spells": [],
+      "equipment": [
+        {
+          "name": "Warhammer",
+          "quantity": 1,
+          "category": "Weapon",
+          "notes": "Stone appearance",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Handaxe",
+          "quantity": 2,
+          "category": "Weapon",
+          "notes": "Stone appearance",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Shield",
+          "quantity": 1,
+          "category": "Armor",
+          "notes": "Slab-like appearance",
+          "attuned": false,
+          "equipped": true
+        },
+        {
+          "name": "Chain mail",
+          "quantity": 1,
+          "category": "Armor",
+          "notes": "Stone appearance; ordinary chain mail rules",
+          "attuned": false,
+          "equipped": true
+        },
+        {
+          "name": "Explorer’s pack",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Staff",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Hunting trap",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        }
+      ],
+      "money": {
+        "cp": 0,
+        "sp": 0,
+        "ep": 0,
+        "gp": 10,
+        "pp": 0
+      },
+      "features": [
+        {
+          "name": "Interception",
+          "text": "Reaction; reduce damage to a nearby other target by 1d10+2.",
+          "source": "Tasha’s / Pebble handout p. 3"
+        },
+        {
+          "name": "Crusher",
+          "text": "Once on own turn move a qualifying target 5 feet after bludgeoning hit; critical hit grants advantage to attacks against it until next turn.",
+          "source": "Tasha’s / Pebble handout p. 3"
+        },
+        {
+          "name": "Second Wind",
+          "text": "Bonus action to regain 1d10+1 HP, once per short or long rest.",
+          "source": "PHB / Pebble handout p. 3"
+        }
+      ],
+      "inspiration": false,
+      "death": {
+        "successes": 0,
+        "failures": 0,
+        "stable": false
+      },
+      "exhaustion": 0,
+      "conditions": [],
+      "concentration": "",
+      "effects": [],
+      "notes": "Byron’s answers supersede the handout’s earlier traveler rumor: dwarves who made Pebble’s hammer told him of delicious shiny rocks. Pebble fears getting lost outside his mountains. He meets the other PCs during Session 1 with no prior connection. Handout mechanics are provisional until a live sheet is supplied.",
+      "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+      "publicOptions": {
+        "showHp": true,
+        "showActions": true,
+        "showResources": false,
+        "showStatus": true
+      },
+      "passiveOverride": {
+        "perception": null,
+        "insight": null,
+        "investigation": null
+      },
+      "levelHistory": [],
+      "management": {
+        "favorites": []
+      }
+    },
+    "pc-trista": {
+      "id": "pc-trista",
+      "name": "Trista",
+      "role": "pc",
+      "player": "",
+      "className": "Monk 1",
+      "ancestry": "Human",
+      "background": "Criminal / Spy",
+      "level": 1,
+      "rules": "2024 character exception",
+      "source": "Trista D&D Beyond sheet pp. 1–2; beginner guide pp. 4–10",
+      "sourceStatus": "MOCK level-1 reconstruction from confirmed ability scores and ancestry. Not a live-sheet update.",
+      "proficiency": 2,
+      "abilities": {
+        "str": 14,
+        "dex": 18,
+        "con": 17,
+        "int": 9,
+        "wis": 11,
+        "cha": 12
+      },
+      "saves": {
+        "str": {
+          "rank": 1,
+          "override": 4
+        },
+        "dex": {
+          "rank": 1,
+          "override": 6
+        },
+        "con": {
+          "rank": 0,
+          "override": 3
+        },
+        "int": {
+          "rank": 0,
+          "override": -1
+        },
+        "wis": {
+          "rank": 0,
+          "override": 0
+        },
+        "cha": {
+          "rank": 0,
+          "override": 1
+        }
+      },
+      "skills": {
+        "Acrobatics": {
+          "rank": 1,
+          "override": 6
+        },
+        "Animal Handling": {
+          "rank": 0,
+          "override": null
+        },
+        "Arcana": {
+          "rank": 0,
+          "override": null
+        },
+        "Athletics": {
+          "rank": 0,
+          "override": null
+        },
+        "Deception": {
+          "rank": 1,
+          "override": 3
+        },
+        "History": {
+          "rank": 1,
+          "override": 1
+        },
+        "Insight": {
+          "rank": 0,
+          "override": null
+        },
+        "Intimidation": {
+          "rank": 0,
+          "override": null
+        },
+        "Investigation": {
+          "rank": 0,
+          "override": null
+        },
+        "Medicine": {
+          "rank": 0,
+          "override": null
+        },
+        "Nature": {
+          "rank": 0,
+          "override": null
+        },
+        "Perception": {
+          "rank": 0,
+          "override": null
+        },
+        "Performance": {
+          "rank": 0,
+          "override": null
+        },
+        "Persuasion": {
+          "rank": 0,
+          "override": null
+        },
+        "Religion": {
+          "rank": 0,
+          "override": null
+        },
+        "Sleight of Hand": {
+          "rank": 0,
+          "override": null
+        },
+        "Stealth": {
+          "rank": 1,
+          "override": 6
+        },
+        "Survival": {
+          "rank": 0,
+          "override": null
+        }
+      },
+      "speed": 30,
+      "senses": "",
+      "languages": "Common, Orc",
+      "ac": 14,
+      "hp": 11,
+      "maxHp": 11,
+      "tempHp": 0,
+      "hitDice": {
+        "die": 8,
+        "current": 0,
+        "max": 1,
+        "details": "1d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 0,
+            "max": 1
+          }
+        ]
+      },
+      "attacks": [
+        {
+          "id": "trista-dagger",
+          "name": "Dagger",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d6+4",
+          "damageType": "piercing",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Monk weapon; thrown range 20/60 ft.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "trista-spear",
+          "name": "Spear",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d8+4",
+          "damageType": "piercing",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Versatile: 1d8+4 with two hands; 1d6+4 with one hand or thrown 20/60 ft.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "trista-unarmed",
+          "name": "Unarmed Strike",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d6+4",
+          "damageType": "bludgeoning",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Martial Arts.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "trista-bonus-strike",
+          "name": "Martial Arts unarmed strike",
+          "type": "Bonus action",
+          "attackBonus": 6,
+          "damageDice": "1d6+4",
+          "damageType": "bludgeoning",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "After the Attack action when Martial Arts applies.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        }
+      ],
+      "actions": [],
+      "resources": [],
+      "spells": [],
+      "equipment": [
+        {
+          "name": "Dagger",
+          "quantity": 5,
+          "category": "Weapon",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Spear",
+          "quantity": 1,
+          "category": "Weapon",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Tinker’s tools",
+          "quantity": 1,
+          "category": "Tool",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Bagpipes",
+          "quantity": 1,
+          "category": "Instrument",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Torch",
+          "quantity": 10,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Rations",
+          "quantity": 10,
+          "category": "Consumable",
+          "notes": "One day each",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Oil flask",
+          "quantity": 2,
+          "category": "Consumable",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Rope",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Tinderbox",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        }
+      ],
+      "money": {
+        "cp": 0,
+        "sp": 0,
+        "ep": 0,
+        "gp": 26,
+        "pp": 0
+      },
+      "features": [
+        {
+          "name": "Martial Arts",
+          "text": "One bonus-action Unarmed Strike at level 1 when requirements apply.",
+          "source": "Trista guide p. 6"
+        }
+      ],
+      "inspiration": false,
+      "death": {
+        "successes": 0,
+        "failures": 0,
+        "stable": false
+      },
+      "exhaustion": 0,
+      "conditions": [],
+      "concentration": "",
+      "effects": [],
+      "notes": "2024 Monk exception. The uploaded sheet supplies ability scores, saves, AC, HP, and equipment; check spent supplies at the table.",
+      "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+      "publicOptions": {
+        "showHp": true,
+        "showActions": true,
+        "showResources": false,
+        "showStatus": true
+      },
+      "passiveOverride": {
+        "perception": null,
+        "insight": null,
+        "investigation": null
+      },
+      "levelHistory": [],
+      "management": {
+        "favorites": []
+      }
+    },
+    "pc-ringgo": {
+      "id": "pc-ringgo",
+      "name": "Ringgo Paul",
+      "role": "pc",
+      "player": "Cade",
+      "className": "Rogue 1",
+      "ancestry": "Tiefling",
+      "background": "Criminal / Spy",
+      "level": 1,
+      "rules": "2014 Rogue and Tiefling; ignore 2024 weapon mastery labels on export",
+      "source": "Josvo_171417930-2.pdf · Ringgo pp. 1–5",
+      "sourceStatus": "MOCK level-1 reconstruction from confirmed ability scores and ancestry. Not a live-sheet update.",
+      "proficiency": 2,
+      "abilities": {
+        "str": 7,
+        "dex": 19,
+        "con": 14,
+        "int": 10,
+        "wis": 10,
+        "cha": 18
+      },
+      "saves": {
+        "str": {
+          "rank": 0,
+          "override": null
+        },
+        "dex": {
+          "rank": 1,
+          "override": null
+        },
+        "con": {
+          "rank": 0,
+          "override": null
+        },
+        "int": {
+          "rank": 1,
+          "override": null
+        },
+        "wis": {
+          "rank": 0,
+          "override": null
+        },
+        "cha": {
+          "rank": 0,
+          "override": null
+        }
+      },
+      "skills": {
+        "Acrobatics": {
+          "rank": 1,
+          "override": null
+        },
+        "Animal Handling": {
+          "rank": 0,
+          "override": null
+        },
+        "Arcana": {
+          "rank": 0,
+          "override": null
+        },
+        "Athletics": {
+          "rank": 0,
+          "override": null
+        },
+        "Deception": {
+          "rank": 1,
+          "override": null
+        },
+        "History": {
+          "rank": 0,
+          "override": null
+        },
+        "Insight": {
+          "rank": 0,
+          "override": null
+        },
+        "Intimidation": {
+          "rank": 0,
+          "override": null
+        },
+        "Investigation": {
+          "rank": 2,
+          "override": null
+        },
+        "Medicine": {
+          "rank": 0,
+          "override": null
+        },
+        "Nature": {
+          "rank": 0,
+          "override": null
+        },
+        "Perception": {
+          "rank": 1,
+          "override": null
+        },
+        "Performance": {
+          "rank": 0,
+          "override": null
+        },
+        "Persuasion": {
+          "rank": 1,
+          "override": null
+        },
+        "Religion": {
+          "rank": 0,
+          "override": null
+        },
+        "Sleight of Hand": {
+          "rank": 1,
+          "override": null
+        },
+        "Stealth": {
+          "rank": 2,
+          "override": null
+        },
+        "Survival": {
+          "rank": 0,
+          "override": null
+        }
+      },
+      "speed": 30,
+      "senses": "Darkvision 60 ft.; fire resistance",
+      "languages": "Common, Infernal, Thieves’ Cant",
+      "ac": 16,
+      "hp": 10,
+      "maxHp": 10,
+      "tempHp": 0,
+      "hitDice": {
+        "die": 8,
+        "current": 1,
+        "max": 1,
+        "details": "1d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 1,
+            "max": 1
+          }
+        ]
+      },
+      "attacks": [
+        {
+          "id": "ringgo-rapier",
+          "name": "Rapier",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d8+4",
+          "damageType": "piercing",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Finesse; Sneak Attack may add 1d6 once per turn.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "ringgo-shortbow",
+          "name": "Shortbow",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d6+4",
+          "damageType": "piercing",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Range 80/320; Sneak Attack may add 1d6.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "ringgo-dagger",
+          "name": "Dagger",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d4+4",
+          "damageType": "piercing",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Finesse, light, thrown 20/60.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "ringgo-offhand",
+          "name": "Second dagger",
+          "type": "Bonus action",
+          "attackBonus": 6,
+          "damageDice": "1d4",
+          "damageType": "piercing",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Two-weapon fighting; no +4 damage.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "ringgo-sneak",
+          "name": "Sneak Attack",
+          "type": "Once per turn",
+          "attackBonus": 6,
+          "damageDice": "2d6",
+          "damageType": "extra",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Add to a qualifying finesse or ranged hit; check ally/advantage and no disadvantage.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        }
+      ],
+      "actions": [
+        {
+          "id": "ringgo-thaumaturgy",
+          "name": "Thaumaturgy",
+          "type": "Action",
+          "attackBonus": null,
+          "damageDice": "",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Tiefling cantrip: create a minor supernatural sign within 30 feet; no slot.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        }
+      ],
+      "resources": [
+        {
+          "id": "ringgo-arrows",
+          "name": "Arrows",
+          "max": 20,
+          "current": 19,
+          "restoreShort": 0,
+          "restoreLong": false,
+          "unit": "arrows",
+          "slotLevel": 0
+        }
+      ],
+      "spells": [],
+      "equipment": [
+        {
+          "name": "Rapier",
+          "quantity": 1,
+          "category": "Weapon",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Shortbow",
+          "quantity": 1,
+          "category": "Weapon",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Dagger",
+          "quantity": 2,
+          "category": "Weapon",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Studded leather",
+          "quantity": 1,
+          "category": "Armor",
+          "notes": "",
+          "attuned": false,
+          "equipped": true
+        },
+        {
+          "name": "Thieves’ tools",
+          "quantity": 1,
+          "category": "Tool",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Arrows",
+          "quantity": 20,
+          "category": "Ammunition",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Hammer",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Mess kit",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Backpack",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Crowbar",
+          "quantity": 2,
+          "category": "Gear",
+          "notes": "PDF lists two",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Ball bearings",
+          "quantity": 999,
+          "category": "Gear",
+          "notes": "One bag",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Bedroll",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Bell",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Candle",
+          "quantity": 5,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Waterskin",
+          "quantity": 2,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "String",
+          "quantity": 10,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Piton",
+          "quantity": 10,
+          "category": "Gear",
+          "notes": "The current sheet says piton, not potion.",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Rations",
+          "quantity": 15,
+          "category": "Consumable",
+          "notes": "One day each",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Rope, hempen 50 ft.",
+          "quantity": 2,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Hooded lantern",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Oil flask",
+          "quantity": 2,
+          "category": "Consumable",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Torch",
+          "quantity": 10,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Tinderbox",
+          "quantity": 2,
+          "category": "Gear",
+          "notes": "Updated PDF lists two",
+          "attuned": false,
+          "equipped": false
+        }
+      ],
+      "money": {
+        "cp": 0,
+        "sp": 0,
+        "ep": 0,
+        "gp": 15,
+        "pp": 0
+      },
+      "features": [
+        {
+          "name": "Sneak Attack",
+          "text": "Once per turn, +1d6 with qualifying finesse/ranged hit; review advantage or nearby ally.",
+          "source": "Ringgo level 3 PDF p. 2"
+        },
+        {
+          "name": "Expertise",
+          "text": "Stealth and Investigation. Investigation is the DM-confirmed second choice after this export.",
+          "source": "Ringgo PDF p. 2; DM ruling 2026-09-25"
+        },
+        {
+          "name": "Hellish Resistance",
+          "text": "Resistance to fire damage.",
+          "source": "Ringgo PDF p. 2"
+        },
+        {
+          "name": "Infernal Legacy",
+          "text": "Thaumaturgy cantrip and Hellish Rebuke once per long rest as a 2nd-level spell at this level.",
+          "source": "Ringgo level 3 PDF pp. 2, 5"
+        }
+      ],
+      "inspiration": false,
+      "death": {
+        "successes": 0,
+        "failures": 0,
+        "stable": false
+      },
+      "exhaustion": 0,
+      "conditions": [],
+      "concentration": "",
+      "effects": [],
+      "notes": "Updated player export is level 3 Rogue Assassin, max HP 24; current HP blank, so preserve live damage. Ignore Nick and Vex 2024 labels under the 2014 rules profile. DM confirmed Investigation as second Expertise on 2026-09-25; updated PDF still leaves it unmarked. PDF lists ten pitons, not potions. The PDF account name is Josvo; campaign player assignment remains Cade.",
+      "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+      "publicOptions": {
+        "showHp": true,
+        "showActions": true,
+        "showResources": false,
+        "showStatus": true
+      },
+      "passiveOverride": {
+        "perception": null,
+        "insight": null,
+        "investigation": null
+      },
+      "levelHistory": [],
+      "management": {
+        "favorites": []
+      }
+    },
+    "pc-donavan": {
+      "id": "pc-donavan",
+      "name": "Donavan Kemp",
+      "role": "pc",
+      "player": "Brodey",
+      "className": "Wizard 1",
+      "ancestry": "Human",
+      "background": "Sage",
+      "level": 1,
+      "rules": "2014 multiclass with Tasha Order of Scribes, Catapult and Toll the Dead exceptions; all listed spells available by table rule",
+      "source": "Donavan updated sheet 2026-09-25 · pp. 1–5",
+      "sourceStatus": "MOCK level-1 reconstruction from confirmed ability scores and ancestry. Not a live-sheet update.",
+      "proficiency": 2,
+      "abilities": {
+        "str": 12,
+        "dex": 14,
+        "con": 16,
+        "int": 18,
+        "wis": 16,
+        "cha": 16
+      },
+      "saves": {
+        "str": {
+          "rank": 0,
+          "override": 1
+        },
+        "dex": {
+          "rank": 0,
+          "override": 2
+        },
+        "con": {
+          "rank": 0,
+          "override": 3
+        },
+        "int": {
+          "rank": 1,
+          "override": 6
+        },
+        "wis": {
+          "rank": 1,
+          "override": 5
+        },
+        "cha": {
+          "rank": 0,
+          "override": 3
+        }
+      },
+      "skills": {
+        "Acrobatics": {
+          "rank": 0,
+          "override": null
+        },
+        "Animal Handling": {
+          "rank": 0,
+          "override": null
+        },
+        "Arcana": {
+          "rank": 2,
+          "override": 8
+        },
+        "Athletics": {
+          "rank": 0,
+          "override": null
+        },
+        "Deception": {
+          "rank": 0,
+          "override": null
+        },
+        "History": {
+          "rank": 2,
+          "override": 8
+        },
+        "Insight": {
+          "rank": 0,
+          "override": null
+        },
+        "Intimidation": {
+          "rank": 0,
+          "override": null
+        },
+        "Investigation": {
+          "rank": 1,
+          "override": 6
+        },
+        "Medicine": {
+          "rank": 0,
+          "override": null
+        },
+        "Nature": {
+          "rank": 0,
+          "override": null
+        },
+        "Perception": {
+          "rank": 0,
+          "override": null
+        },
+        "Performance": {
+          "rank": 0,
+          "override": null
+        },
+        "Persuasion": {
+          "rank": 0,
+          "override": null
+        },
+        "Religion": {
+          "rank": 0,
+          "override": 4
+        },
+        "Sleight of Hand": {
+          "rank": 0,
+          "override": null
+        },
+        "Stealth": {
+          "rank": 0,
+          "override": null
+        },
+        "Survival": {
+          "rank": 0,
+          "override": null
+        }
+      },
+      "speed": 30,
+      "senses": "Passive Perception 13; no familiar shown on updated sheet",
+      "languages": "Common, Dwarvish, Elvish, Giant, Goblin, Sylvan",
+      "ac": 12,
+      "hp": 8,
+      "maxHp": 9,
+      "tempHp": 0,
+      "hitDice": {
+        "die": 6,
+        "current": 0,
+        "max": 1,
+        "details": "1d6",
+        "pools": [
+          {
+            "die": 6,
+            "current": 0,
+            "max": 1
+          }
+        ]
+      },
+      "attacks": [
+        {
+          "id": "donavan-dagger",
+          "name": "Dagger",
+          "type": "Action",
+          "attackBonus": 4,
+          "damageDice": "1d4+2",
+          "damageType": "piercing",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Melee or thrown 20/60 ft.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "donavan-ray",
+          "name": "Ray of Frost",
+          "type": "Action",
+          "attackBonus": 6,
+          "damageDice": "1d8",
+          "damageType": "cold",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Ranged spell attack, 60 ft.; cold damage and speed reduced by 10 ft. until the start of your next turn.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        },
+        {
+          "id": "donavan-unarmed",
+          "name": "Unarmed Strike",
+          "type": "Action",
+          "attackBonus": 3,
+          "damageDice": "2",
+          "damageType": "bludgeoning",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "Melee attack; 2 bludgeoning damage on a hit.",
+          "resourceId": "",
+          "cost": 1,
+          "prepared": true
+        }
+      ],
+      "actions": [
+        {
+          "id": "donavan-arcane-recovery",
+          "name": "Arcane Recovery",
+          "type": "After short rest",
+          "attackBonus": null,
+          "damageDice": "",
+          "damageType": "",
+          "saveAbility": "",
+          "saveDC": null,
+          "effect": "After a short rest regain one first-level slot, once per day.",
+          "resourceId": "donavan-arcane-recovery",
+          "cost": 1,
+          "prepared": true
+        }
+      ],
+      "resources": [
+        {
+          "id": "donavan-slots-1",
+          "name": "1st-level shared spell slots",
+          "max": 2,
+          "current": 2,
+          "restoreShort": 0,
+          "restoreLong": true,
+          "unit": "",
+          "slotLevel": 0
+        },
+        {
+          "id": "donavan-arcane-recovery",
+          "name": "Arcane Recovery",
+          "max": 1,
+          "current": 1,
+          "restoreShort": 0,
+          "restoreLong": true,
+          "unit": "",
+          "slotLevel": 0
+        }
+      ],
+      "spells": [
+        {
+          "name": "Dancing Lights",
+          "level": 0,
+          "prepared": true,
+          "notes": "Cantrip · action · lights within 120 ft. · concentration up to 1 minute."
+        },
+        {
+          "name": "Prestidigitation",
+          "level": 0,
+          "prepared": true,
+          "notes": "Cantrip · action · minor magical effect within 10 ft."
+        },
+        {
+          "name": "Ray of Frost",
+          "level": 0,
+          "prepared": true,
+          "notes": "Cantrip · ranged spell attack +6 · 1d8 cold and speed −10 ft."
+        },
+        {
+          "name": "Identify",
+          "level": 1,
+          "prepared": true,
+          "notes": "MOCK Wizard spell · touch · learn magical properties; ritual possible; material pearl required."
+        },
+        {
+          "name": "Detect Magic",
+          "level": 1,
+          "prepared": true,
+          "notes": "Wizard · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible."
+        },
+        {
+          "name": "Comprehend Languages",
+          "level": 1,
+          "prepared": true,
+          "notes": "Wizard · Understand literal meaning of languages for 1 hour · ritual possible."
+        },
+        {
+          "name": "Find Familiar",
+          "level": 1,
+          "prepared": true,
+          "notes": "Wizard · Summon a familiar · 1-hour cast or ritual · material cost applies."
+        },
+        {
+          "name": "Magic Missile",
+          "level": 1,
+          "prepared": true,
+          "notes": "Wizard · Action · three darts within 120 ft. · each deals 1d4+1 force; no attack roll."
+        },
+        {
+          "name": "Shield",
+          "level": 1,
+          "prepared": true,
+          "notes": "Wizard · Reaction · +5 AC until next turn and blocks Magic Missile."
+        },
+        {
+          "name": "Catapult",
+          "level": 1,
+          "prepared": true,
+          "notes": "Wizard · Xanathar’s · action · Dexterity save DC 14 · fling a 1–5 lb. object; 3d8 bludgeoning."
+        },
+        {
+          "name": "Disguise Self",
+          "level": 1,
+          "prepared": true,
+          "notes": "Wizard · Action · alter your appearance for 1 hour; inspection may reveal illusion."
+        },
+        {
+          "name": "Feather Fall",
+          "level": 1,
+          "prepared": true,
+          "notes": "Wizard · Reaction · slow up to five falling creatures within 60 ft."
+        },
+        {
+          "name": "Witch Bolt",
+          "level": 1,
+          "prepared": true,
+          "notes": "Wizard · Action · ranged spell attack +6 · 1d12 lightning, concentration; action to sustain."
+        },
+        {
+          "name": "Silent Image",
+          "level": 1,
+          "prepared": true,
+          "notes": "Wizard · Action · range 60 ft. · create a visual illusion within a 15-ft. cube; concentration up to 10 minutes."
+        },
+        {
+          "name": "Detect Magic",
+          "level": 1,
+          "prepared": true,
+          "notes": "MOCK Wizard spell · Sense magic within 30 ft. · concentration up to 10 minutes · ritual possible."
+        }
+      ],
+      "equipment": [
+        {
+          "name": "Breastplate",
+          "quantity": 1,
+          "category": "Armor",
+          "notes": "AC 16 with DEX +2; no shield listed",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Dagger",
+          "quantity": 1,
+          "category": "Weapon",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Spellbook",
+          "quantity": 1,
+          "category": "Focus",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Arcane focus",
+          "quantity": 1,
+          "category": "Focus",
+          "notes": "Specific form not listed",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Ink bottle",
+          "quantity": 2,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Ink pen",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Backpack",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Common clothes",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Book",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Small knife",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Little bag of sand",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Parchment sheet",
+          "quantity": 13,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        },
+        {
+          "name": "Bedroll",
+          "quantity": 1,
+          "category": "Gear",
+          "notes": "",
+          "attuned": false,
+          "equipped": false
+        }
+      ],
+      "money": {
+        "cp": 1050,
+        "sp": 166,
+        "ep": 30,
+        "gp": 90,
+        "pp": 0
+      },
+      "features": [
+        {
+          "name": "Arcane Recovery",
+          "text": "After a short rest regain one first-level slot, once per day.",
+          "source": "2014 Wizard 1"
+        },
+        {
+          "name": "Wizard Spellcasting",
+          "text": "INT spell attack +6; save DC 14. Prepare wizard spells separately from cleric spells.",
+          "source": "Donavan PDF p. 2"
+        }
+      ],
+      "inspiration": false,
+      "death": {
+        "successes": 0,
+        "failures": 0,
+        "stable": false
+      },
+      "exhaustion": 0,
+      "conditions": [],
+      "concentration": "",
+      "effects": [],
+      "notes": "Updated player export shows Wizard 2 / Cleric 1, Order of Scribes / Knowledge Domain, 24 max HP, AC 16, and 2d6 + 1d8 hit dice. The current-HP field is blank, so preserve live damage. It prints four 1st-level slots; 2014 multiclass rules also grant two 2nd-level slots usable for upcasting listed 1st-level spells. DM table rule permits all listed spells as available. Command and Identify are domain spells. Duplicate PHB-2024 spell rows on export are not additional known spells. The PDF account name is Josvo; campaign assignment remains Brodey.",
+      "publicNotes": "MOCK level 1; use the resource totals shown in this sheet. No later-level features apply.",
+      "publicOptions": {
+        "showHp": true,
+        "showActions": true,
+        "showResources": false,
+        "showStatus": true
+      },
+      "passiveOverride": {
+        "perception": null,
+        "insight": null,
+        "investigation": null
+      },
+      "levelHistory": [],
+      "management": {
+        "favorites": []
+      }
+    },
+    "ally-sildar": {
+      "id": "ally-sildar",
+      "name": "Sildar Hallwinter",
+      "role": "ally",
+      "player": "",
+      "className": "Warrior",
+      "ancestry": "",
+      "background": "",
+      "level": null,
+      "rules": "2014",
+      "source": "Lost Mine of Phandelver adventure",
+      "sourceStatus": "Adventure p. 10–11; captive lacks armor and weapons",
+      "proficiency": null,
+      "abilities": {
+        "str": null,
+        "dex": null,
+        "con": null,
+        "int": null,
+        "wis": null,
+        "cha": null
+      },
+      "saves": {
+        "str": {
+          "rank": 0,
+          "override": null
+        },
+        "dex": {
+          "rank": 0,
+          "override": null
+        },
+        "con": {
+          "rank": 0,
+          "override": null
+        },
+        "int": {
+          "rank": 0,
+          "override": null
+        },
+        "wis": {
+          "rank": 0,
+          "override": null
+        },
+        "cha": {
+          "rank": 0,
+          "override": null
+        }
+      },
+      "skills": {
+        "Acrobatics": {
+          "rank": 0,
+          "override": null
+        },
+        "Animal Handling": {
+          "rank": 0,
+          "override": null
+        },
+        "Arcana": {
+          "rank": 0,
+          "override": null
+        },
+        "Athletics": {
+          "rank": 0,
+          "override": null
+        },
+        "Deception": {
+          "rank": 0,
+          "override": null
+        },
+        "History": {
+          "rank": 0,
+          "override": null
+        },
+        "Insight": {
+          "rank": 0,
+          "override": null
+        },
+        "Intimidation": {
+          "rank": 0,
+          "override": null
+        },
+        "Investigation": {
+          "rank": 0,
+          "override": null
+        },
+        "Medicine": {
+          "rank": 0,
+          "override": null
+        },
+        "Nature": {
+          "rank": 0,
+          "override": null
+        },
+        "Perception": {
+          "rank": 0,
+          "override": null
+        },
+        "Performance": {
+          "rank": 0,
+          "override": null
+        },
+        "Persuasion": {
+          "rank": 0,
+          "override": null
+        },
+        "Religion": {
+          "rank": 0,
+          "override": null
+        },
+        "Sleight of Hand": {
+          "rank": 0,
+          "override": null
+        },
+        "Stealth": {
+          "rank": 0,
+          "override": null
+        },
+        "Survival": {
+          "rank": 0,
+          "override": null
+        }
+      },
+      "speed": null,
+      "senses": "",
+      "languages": "",
+      "ac": null,
+      "hp": 1,
+      "maxHp": 27,
+      "tempHp": 0,
+      "hitDice": {
+        "die": 8,
+        "current": null,
+        "max": null,
+        "details": ""
+      },
+      "attacks": [],
+      "actions": [],
+      "resources": [],
+      "spells": [],
+      "equipment": [],
+      "money": {
+        "cp": 0,
+        "sp": 0,
+        "ep": 0,
+        "gp": 0,
+        "pp": 0
+      },
+      "features": [],
+      "inspiration": false,
+      "death": {
+        "successes": 0,
+        "failures": 0,
+        "stable": false
+      },
+      "exhaustion": 0,
+      "conditions": [],
+      "concentration": "",
+      "effects": [],
+      "notes": "Captive at 1 HP and stripped of armor and weapons. Set AC and attacks from actual gear before using him in combat.",
+      "publicNotes": "",
+      "publicOptions": {
+        "showHp": true,
+        "showActions": true,
+        "showResources": false,
+        "showStatus": true
+      },
+      "passiveOverride": {
+        "perception": null,
+        "insight": null,
+        "investigation": null
+      },
+      "levelHistory": [],
+      "management": {
+        "favorites": []
+      }
+    }
+  },
+  "tokens": [
+    {
+      "id": "pc-trista",
+      "name": "Trista",
+      "label": "T",
+      "type": "hero-trista",
+      "team": "pc",
+      "encounter": "",
+      "maxHp": 11,
+      "hp": 11,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": 21,
+      "initBonus": 4,
+      "ac": 14,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": true,
+      "visible": true,
+      "scene": "road",
+      "x": 42,
+      "y": 62
+    },
+    {
+      "id": "pc-donavan",
+      "name": "Donavan",
+      "label": "D",
+      "type": "hero-donavan",
+      "team": "pc",
+      "encounter": "",
+      "maxHp": 9,
+      "hp": 8,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": 13,
+      "initBonus": 2,
+      "ac": 12,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": true,
+      "visible": true,
+      "scene": "road",
+      "x": 47,
+      "y": 65
+    },
+    {
+      "id": "pc-ringgo",
+      "name": "Ringgo",
+      "label": "R",
+      "type": "hero-ringgo",
+      "team": "pc",
+      "encounter": "",
+      "maxHp": 10,
+      "hp": 10,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": 12,
+      "initBonus": 4,
+      "ac": 16,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": true,
+      "visible": true,
+      "scene": "road",
+      "x": 36,
+      "y": 60
+    },
+    {
+      "id": "pc-pebble",
+      "name": "Pebble",
+      "label": "P",
+      "type": "hero-pebble",
+      "team": "pc",
+      "encounter": "",
+      "maxHp": 12,
+      "hp": 12,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": 7,
+      "initBonus": 0,
+      "ac": 18,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": true,
+      "visible": true,
+      "scene": "road",
+      "x": 40,
+      "y": 40
+    },
+    {
+      "id": "pc-aldric",
+      "name": "Aldric",
+      "label": "A",
+      "type": "hero-aldric",
+      "team": "pc",
+      "encounter": "",
+      "maxHp": 9,
+      "hp": 9,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": 22,
+      "initBonus": 2,
+      "ac": 12,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": true,
+      "visible": true,
+      "scene": "road",
+      "x": 50,
+      "y": 68
+    },
+    {
+      "id": "ally-sildar",
+      "name": "Sildar",
+      "label": "S",
+      "type": "sildar",
+      "team": "ally",
+      "encounter": "",
+      "maxHp": 27,
+      "hp": 1,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 0,
+      "ac": null,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-1",
+      "name": "Goblin 1",
+      "label": "G1",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "road",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": 14,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "road",
+      "x": 30,
+      "y": 40
+    },
+    {
+      "id": "goblin-2",
+      "name": "Goblin 2",
+      "label": "G2",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "road",
+      "maxHp": 7,
+      "hp": 0,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": 3,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": true,
+      "visible": true,
+      "scene": "road",
+      "x": 38,
+      "y": 40
+    },
+    {
+      "id": "goblin-3",
+      "name": "Goblin 3",
+      "label": "G3",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "road",
+      "maxHp": 7,
+      "hp": 0,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": 16,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": true,
+      "visible": true,
+      "scene": "road",
+      "x": 40,
+      "y": 62
+    },
+    {
+      "id": "goblin-4",
+      "name": "Goblin 4",
+      "label": "G4",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "road",
+      "maxHp": 7,
+      "hp": 0,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": 4,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": true,
+      "visible": true,
+      "scene": "road",
+      "x": 43,
+      "y": 63
+    },
+    {
+      "id": "goblin-5",
+      "name": "Goblin 5",
+      "label": "G5",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "blind",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-6",
+      "name": "Goblin 6",
+      "label": "G6",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "blind",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "wolf-1",
+      "name": "Wolf 1",
+      "label": "W1",
+      "type": "wolf",
+      "team": "enemy",
+      "encounter": "kennel",
+      "maxHp": 11,
+      "hp": 11,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 13,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "wolf-2",
+      "name": "Wolf 2",
+      "label": "W2",
+      "type": "wolf",
+      "team": "enemy",
+      "encounter": "kennel",
+      "maxHp": 11,
+      "hp": 11,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 13,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "wolf-3",
+      "name": "Wolf 3",
+      "label": "W3",
+      "type": "wolf",
+      "team": "enemy",
+      "encounter": "kennel",
+      "maxHp": 11,
+      "hp": 11,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 13,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-7",
+      "name": "Goblin 7",
+      "label": "G7",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "overpass",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "yeemik",
+      "name": "Yeemik",
+      "label": "Y",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "den",
+      "maxHp": 12,
+      "hp": 12,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-8",
+      "name": "Goblin 8",
+      "label": "G8",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "den",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-9",
+      "name": "Goblin 9",
+      "label": "G9",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "den",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-10",
+      "name": "Goblin 10",
+      "label": "G10",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "den",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-11",
+      "name": "Goblin 11",
+      "label": "G11",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "den",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-12",
+      "name": "Goblin 12",
+      "label": "G12",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "den",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-13",
+      "name": "Goblin 13",
+      "label": "G13",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "pools",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-14",
+      "name": "Goblin 14",
+      "label": "G14",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "pools",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-15",
+      "name": "Goblin 15",
+      "label": "G15",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "pools",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "klarg",
+      "name": "Klarg",
+      "label": "K",
+      "type": "bugbear",
+      "team": "enemy",
+      "encounter": "klarg",
+      "maxHp": 27,
+      "hp": 27,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 16,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "ripper",
+      "name": "Ripper",
+      "label": "W4",
+      "type": "wolf",
+      "team": "enemy",
+      "encounter": "klarg",
+      "maxHp": 11,
+      "hp": 11,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 13,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-16",
+      "name": "Goblin 16",
+      "label": "G16",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "klarg",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "id": "goblin-17",
+      "name": "Goblin 17",
+      "label": "G17",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "klarg",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": false,
+      "visible": true,
+      "scene": "",
+      "x": 50,
+      "y": 50
+    }
+  ],
+  "map": {
+    "displays": [
+      {
+        "name": "Table TV",
+        "width": 1920,
+        "height": 1080,
+        "physicalWidth": 43,
+        "squareInches": 1,
+        "safeEdge": 3,
+        "orientation": "landscape",
+        "scaleLock": false,
+        "tvPreset": "quiet",
+        "showObjective": true,
+        "showSubtitles": true
+      }
+    ],
+    "displayIndex": 0,
+    "playerInput": true,
+    "preview": false,
+    "scenes": {
+      "region-lmop": {
+        "floor": "Phandelver frontier · bird’s-eye view",
+        "fineFog": false,
+        "journeyMotion": true,
+        "journeyArtVersion": 1,
+        "light": "bright",
+        "vision": "normal",
+        "dmLayers": {
+          "map": true,
+          "grid": false,
+          "fog": false,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "playerLayers": {
+          "map": true,
+          "grid": false,
+          "fog": false,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "floorFog": null,
+        "floorReveals": [],
+        "view": {
+          "zoom": 1,
+          "panX": 0,
+          "panY": 0
+        },
+        "lines": [],
+        "points": [
+          {
+            "id": "region-neverwinter",
+            "x": 14,
+            "y": 36,
+            "title": "Neverwinter",
+            "clue": "A great city on the Sword Coast, where Gundren hired the party for the journey south.",
+            "note": "Starting point. This map is an approximate campaign overview, not a measured travel map.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "region-thundertree",
+            "x": 35,
+            "y": 32,
+            "title": "Thundertree",
+            "clue": "Ruins lie at the edge of Neverwinter Wood.",
+            "note": "Chapter 3 optional branch. Reidoth can help locate Cragmaw Castle. Do not reveal the dragon or cultists on the map.",
+            "visible": false,
+            "approved": false
+          },
+          {
+            "id": "region-agatha",
+            "x": 77,
+            "y": 30,
+            "title": "Agatha’s lair",
+            "clue": "An old path leaves the ruined village and winds into the woods.",
+            "note": "Sister Garaele’s optional lead. Reveal the exact destination only when the party learns it.",
+            "visible": false,
+            "approved": false
+          },
+          {
+            "id": "region-conyberry",
+            "x": 84,
+            "y": 38,
+            "title": "Conyberry",
+            "clue": "The eastern trail reaches an abandoned village.",
+            "note": "Chapter 3 optional branch; Agatha’s trail begins nearby.",
+            "visible": false,
+            "approved": false
+          },
+          {
+            "id": "region-cragmaw-castle",
+            "x": 56,
+            "y": 36,
+            "title": "Cragmaw Castle",
+            "clue": "An old stronghold stands somewhere within the forest.",
+            "note": "DM continuity: Redbrands abducted Gundren and delivered him here. The party has not learned this. Reveal only after a credible lead.",
+            "visible": false,
+            "approved": false
+          },
+          {
+            "id": "region-old-owl-well",
+            "x": 77,
+            "y": 58,
+            "title": "Old Owl Well",
+            "clue": "Ancient stones rise from the eastern hills.",
+            "note": "Daran Edermath’s optional lead. Hamun Kost and the undead remain secret.",
+            "visible": false,
+            "approved": false
+          },
+          {
+            "id": "region-wyvern-tor",
+            "x": 89,
+            "y": 69,
+            "title": "Wyvern Tor",
+            "clue": "A rocky hill overlooks the southern wilds.",
+            "note": "Optional orc threat from the Townmaster’s Hall notice. Do not reveal occupants until discovered.",
+            "visible": false,
+            "approved": false
+          },
+          {
+            "id": "region-road-ambush",
+            "x": 38,
+            "y": 52,
+            "title": "Triboar Trail ambush",
+            "clue": "Here the party found Gundren’s horses and fought goblins on the road.",
+            "note": "Session 1 opening. The party followed the goblin trail to Cragmaw Hideout.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "region-cragmaw-hideout",
+            "x": 34,
+            "y": 44,
+            "title": "Cragmaw Hideout",
+            "clue": "The party followed a goblin trail to this cave and rescued Sildar.",
+            "note": "Session 1 complete: Klarg dead, Yeemik left in charge. Gundren’s destination was not learned.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "region-phandalin",
+            "x": 46.5,
+            "y": 67.8,
+            "title": "Phandalin",
+            "clue": "A frontier mining town at the end of the supply road. The party has reached Barthen’s Provisions.",
+            "note": "Current campaign hub. Open the Phandalin town map for shops, NPCs, and local leads.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "region-tresendar",
+            "x": 53,
+            "y": 77.5,
+            "title": "Tresendar Manor ruins",
+            "clue": "A ruined manor watches over Phandalin from a low hill.",
+            "note": "The ruins are visible from town. Redbrand hideout entrances and occupants stay private until discovered.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "region-wave-echo",
+            "x": 68,
+            "y": 73,
+            "title": "Wave Echo Cave",
+            "clue": "A hidden cave lies somewhere in the Sword Mountains.",
+            "note": "Do not reveal the point or location until Gundren’s map, testimony, or another credible discovery gives the party its position. Chapter 4.",
+            "visible": false,
+            "approved": false
+          }
+        ],
+        "links": [],
+        "lights": []
+      },
+      "town-phandalin": {
+        "floor": "Phandalin · bird’s-eye view",
+        "fineFog": false,
+        "journeyMotion": true,
+        "journeyArtVersion": 0,
+        "light": "bright",
+        "vision": "normal",
+        "dmLayers": {
+          "map": true,
+          "grid": false,
+          "fog": false,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "playerLayers": {
+          "map": true,
+          "grid": false,
+          "fog": false,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "floorFog": null,
+        "floorReveals": [],
+        "view": {
+          "zoom": 1,
+          "panX": 0,
+          "panY": 0
+        },
+        "lines": [],
+        "points": [
+          {
+            "id": "phandalin-barthen",
+            "x": 62.5,
+            "y": 33.8,
+            "title": "Barthen’s Provisions",
+            "clue": "A busy supply shop stands beside the road into town.",
+            "note": "The party begins Session 2 here. Delivery and payment only happen if played.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "phandalin-inn",
+            "x": 56.3,
+            "y": 44.8,
+            "title": "Stonehill Inn",
+            "clue": "Warm light and voices come from the largest inn near the green.",
+            "note": "Rumors and Sildar’s lodging; Lost Mine pp. 15–16.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "phandalin-hall",
+            "x": 51.8,
+            "y": 61.5,
+            "title": "Townmaster’s Hall",
+            "clue": "A modest public hall sits on the south side of the green.",
+            "note": "Harbin Wester; town notices and orc reward.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "phandalin-lionshield",
+            "x": 35.8,
+            "y": 67,
+            "title": "Lionshield Coster",
+            "clue": "A sturdy trading post displays a blue lion shield.",
+            "note": "Linene Graywind; stolen goods from Cragmaw Hideout.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "phandalin-exchange",
+            "x": 45,
+            "y": 79.5,
+            "title": "Miner’s Exchange",
+            "clue": "Prospectors come and go with pouches of ore and dust.",
+            "note": "Halia Thornton; do not announce her private goals.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "phandalin-shrine",
+            "x": 44.1,
+            "y": 39.1,
+            "title": "Shrine of Luck",
+            "clue": "A small shrine stands near the road and the town green.",
+            "note": "Sister Garaele; Agatha lead if offered.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "phandalin-giant",
+            "x": 70,
+            "y": 44,
+            "title": "Sleeping Giant",
+            "clue": "The tap house has a rougher crowd than the inn.",
+            "note": "Redbrand pressure can arise here; do not place foes until the scene warrants it.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "phandalin-alderleaf",
+            "x": 76.8,
+            "y": 72.4,
+            "title": "Alderleaf Farm",
+            "clue": "Fields and a farmhouse lie along the edge of town.",
+            "note": "Qelline and Carp; allow clues to emerge through play.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "phandalin-edermath",
+            "x": 23.2,
+            "y": 35.4,
+            "title": "Edermath Orchard",
+            "clue": "Rows of fruit trees lead to a cottage on the west side.",
+            "note": "Daran Edermath; Old Owl Well lead.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "phandalin-manor",
+            "x": 87.8,
+            "y": 44,
+            "title": "Tresendar Manor ruins",
+            "clue": "A ruined manor overlooks the settlement from a low hill.",
+            "note": "The visible ruins are public. The Redbrand entrance and tunnel remain private.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "phandalin-tunnel",
+            "x": 83.2,
+            "y": 53,
+            "title": "Hillside tunnel",
+            "clue": "A narrow opening cuts into the slope below the manor.",
+            "note": "Reveal only after the party finds this entrance.",
+            "visible": false,
+            "approved": false
+          }
+        ],
+        "links": [],
+        "lights": []
+      },
+      "town-conyberry": {
+        "floor": "Conyberry · bird’s-eye view",
+        "fineFog": false,
+        "journeyMotion": true,
+        "journeyArtVersion": 0,
+        "light": "bright",
+        "vision": "normal",
+        "dmLayers": {
+          "map": true,
+          "grid": false,
+          "fog": false,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "playerLayers": {
+          "map": true,
+          "grid": false,
+          "fog": false,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "floorFog": null,
+        "floorReveals": [],
+        "view": {
+          "zoom": 1,
+          "panX": 0,
+          "panY": 0
+        },
+        "lines": [],
+        "points": [
+          {
+            "id": "conyberry-square",
+            "x": 49.7,
+            "y": 51.4,
+            "title": "Ruined village green",
+            "clue": "Grass and saplings have overtaken the old center of Conyberry.",
+            "note": "Custom orientation landmark; the published settlement is abandoned.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "conyberry-west",
+            "x": 28.9,
+            "y": 71.8,
+            "title": "Westward ruins",
+            "clue": "Only foundations remain among the trees.",
+            "note": "Custom orientation landmark. Do not imply a keyed encounter.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "conyberry-chapel",
+            "x": 38.4,
+            "y": 36.8,
+            "title": "Broken stone building",
+            "clue": "A roofless stone building faces the old road.",
+            "note": "Custom orientation landmark. Let players describe their search.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "conyberry-mill",
+            "x": 66.5,
+            "y": 35.5,
+            "title": "Old riverside building",
+            "clue": "A large ruin stands near the watercourse.",
+            "note": "Custom orientation landmark, not a published room key.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "conyberry-forest",
+            "x": 24.6,
+            "y": 58.5,
+            "title": "Forest trail",
+            "clue": "A narrow path disappears into the western woods.",
+            "note": "Reveal when the party follows the Agatha lead or discovers the path.",
+            "visible": false,
+            "approved": false
+          }
+        ],
+        "links": [],
+        "lights": []
+      },
+      "town-thundertree": {
+        "floor": "Thundertree · bird’s-eye view",
+        "fineFog": false,
+        "journeyMotion": true,
+        "journeyArtVersion": 0,
+        "light": "bright",
+        "vision": "normal",
+        "dmLayers": {
+          "map": true,
+          "grid": false,
+          "fog": false,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "playerLayers": {
+          "map": true,
+          "grid": false,
+          "fog": false,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "floorFog": null,
+        "floorReveals": [],
+        "view": {
+          "zoom": 1,
+          "panX": 0,
+          "panY": 0
+        },
+        "lines": [],
+        "points": [
+          {
+            "id": "thundertree-west",
+            "x": 16.5,
+            "y": 46,
+            "title": "Western cottages",
+            "clue": "Broken cottages stand among ash-dusted trees.",
+            "note": "Areas 1–2. Keep occupants and hazards private.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "thundertree-horse",
+            "x": 36.5,
+            "y": 28.3,
+            "title": "Old inn",
+            "clue": "A weathered sign hangs above the remains of an inn.",
+            "note": "Area 3, Brown Horse. Reveal only what is visible.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "thundertree-druid",
+            "x": 29.8,
+            "y": 73.4,
+            "title": "Boarded cottage",
+            "clue": "This cottage is in better repair than the surrounding ruins.",
+            "note": "Area 4, Druid’s Watch. Reidoth is not on the public marker.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "thundertree-store",
+            "x": 57.8,
+            "y": 71.8,
+            "title": "Ruined store",
+            "clue": "Webs and broken beams cover a former shop.",
+            "note": "Area 6. Do not reveal spiders before seen.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "thundertree-tower",
+            "x": 63.3,
+            "y": 27.3,
+            "title": "Old tower",
+            "clue": "A round tower rises above the overgrown settlement.",
+            "note": "Area 7. Do not reveal Venomfang before seen.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "thundertree-smithy",
+            "x": 72.7,
+            "y": 70.4,
+            "title": "Old smithy",
+            "clue": "A ruined forge sits beside the eastern track.",
+            "note": "Area 8.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "thundertree-herbalist",
+            "x": 80.5,
+            "y": 43.6,
+            "title": "Herbalist’s shop",
+            "clue": "A small shop is almost swallowed by vines.",
+            "note": "Area 9.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "thundertree-square",
+            "x": 73.3,
+            "y": 48.5,
+            "title": "Town square",
+            "clue": "A worn statue stands at the meeting of the old paths.",
+            "note": "Area 10.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "thundertree-garrison",
+            "x": 88.7,
+            "y": 27.8,
+            "title": "Old garrison",
+            "clue": "Heavy stone walls still outline a guard post.",
+            "note": "Area 11.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "thundertree-east",
+            "x": 88.2,
+            "y": 73.8,
+            "title": "Eastern cottage",
+            "clue": "A cottage stands at the far edge of the ruins.",
+            "note": "Area 13. Do not identify the cultists until discovered.",
+            "visible": true,
+            "approved": true
+          }
+        ],
+        "links": [],
+        "lights": []
+      },
+      "city-waterdeep": {
+        "floor": "Waterdeep · bird’s-eye view",
+        "fineFog": false,
+        "journeyMotion": true,
+        "journeyArtVersion": 0,
+        "light": "bright",
+        "vision": "normal",
+        "dmLayers": {
+          "map": true,
+          "grid": false,
+          "fog": false,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "playerLayers": {
+          "map": true,
+          "grid": false,
+          "fog": false,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "floorFog": null,
+        "floorReveals": [],
+        "view": {
+          "zoom": 1,
+          "panX": 0,
+          "panY": 0
+        },
+        "lines": [],
+        "points": [
+          {
+            "id": "waterdeep-yawning",
+            "x": 49.8,
+            "y": 49.8,
+            "title": "The Yawning Portal",
+            "clue": "The famous inn is a gathering place for adventurers in Castle Ward.",
+            "note": "Campaign home base. The well descends to Undermountain.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "waterdeep-castle",
+            "x": 37.5,
+            "y": 56,
+            "title": "Castle Waterdeep",
+            "clue": "The city’s fortress dominates the high ground above the harbor.",
+            "note": "Public landmark; city map is a schematic, not a street-accurate plan.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "waterdeep-harbor",
+            "x": 26.5,
+            "y": 73.2,
+            "title": "Deepwater Harbor",
+            "clue": "Ships crowd the quays beside the Dock Ward.",
+            "note": "Public landmark.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "waterdeep-dead",
+            "x": 77.5,
+            "y": 39,
+            "title": "City of the Dead",
+            "clue": "Gardens and memorials fill the walled cemetery.",
+            "note": "Public landmark.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "waterdeep-north-gate",
+            "x": 56.6,
+            "y": 17.3,
+            "title": "North Gate",
+            "clue": "The northern road enters the city through its great wall.",
+            "note": "Public landmark.",
+            "visible": true,
+            "approved": true
+          },
+          {
+            "id": "waterdeep-second-margin",
+            "x": 55.8,
+            "y": 39.4,
+            "title": "Second Margin bookshop",
+            "clue": "A bookshop awaits investigation in Castle Ward.",
+            "note": "Custom Echo Below location. Reveal only after the party learns of it.",
+            "visible": false,
+            "approved": false
+          },
+          {
+            "id": "waterdeep-lantern",
+            "x": 70.1,
+            "y": 75.8,
+            "title": "Lantern House",
+            "clue": "A familiar refuge lies among the streets of the Southern Ward.",
+            "note": "Custom hub location. Reveal when introduced.",
+            "visible": false,
+            "approved": false
+          }
+        ],
+        "links": [],
+        "lights": []
+      },
+      "cover": {
+        "floor": "",
+        "fineFog": false,
+        "journeyMotion": true,
+        "journeyArtVersion": 0,
+        "light": "bright",
+        "vision": "normal",
+        "dmLayers": {
+          "map": true,
+          "grid": true,
+          "fog": true,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "playerLayers": {
+          "map": true,
+          "grid": true,
+          "fog": true,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "floorFog": null,
+        "floorReveals": [],
+        "view": {
+          "zoom": 1,
+          "panX": 0,
+          "panY": 0
+        },
+        "lines": [],
+        "points": [],
+        "links": [],
+        "lights": []
+      },
+      "gundren": {
+        "floor": "",
+        "fineFog": false,
+        "journeyMotion": true,
+        "journeyArtVersion": 0,
+        "light": "bright",
+        "vision": "normal",
+        "dmLayers": {
+          "map": true,
+          "grid": true,
+          "fog": true,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "playerLayers": {
+          "map": true,
+          "grid": true,
+          "fog": true,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "floorFog": null,
+        "floorReveals": [],
+        "view": {
+          "zoom": 1,
+          "panX": 0,
+          "panY": 0
+        },
+        "lines": [],
+        "points": [],
+        "links": [],
+        "lights": []
+      },
+      "horses": {
+        "floor": "",
+        "fineFog": false,
+        "journeyMotion": true,
+        "journeyArtVersion": 0,
+        "light": "bright",
+        "vision": "normal",
+        "dmLayers": {
+          "map": true,
+          "grid": true,
+          "fog": true,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "playerLayers": {
+          "map": true,
+          "grid": true,
+          "fog": true,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "floorFog": null,
+        "floorReveals": [],
+        "view": {
+          "zoom": 1,
+          "panX": 0,
+          "panY": 0
+        },
+        "lines": [],
+        "points": [],
+        "links": [],
+        "lights": []
+      },
+      "road": {
+        "floor": "",
+        "fineFog": false,
+        "journeyMotion": true,
+        "journeyArtVersion": 0,
+        "light": "bright",
+        "vision": "normal",
+        "dmLayers": {
+          "map": true,
+          "grid": true,
+          "fog": true,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "playerLayers": {
+          "map": true,
+          "grid": true,
+          "fog": true,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "floorFog": null,
+        "floorReveals": [],
+        "view": {
+          "zoom": 1,
+          "panX": 0,
+          "panY": 0
+        },
+        "lines": [],
+        "points": [],
+        "links": [],
+        "lights": []
+      },
+      "black": {
+        "floor": "",
+        "fineFog": false,
+        "journeyMotion": true,
+        "journeyArtVersion": 0,
+        "light": "bright",
+        "vision": "normal",
+        "dmLayers": {
+          "map": true,
+          "grid": true,
+          "fog": true,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "playerLayers": {
+          "map": true,
+          "grid": true,
+          "fog": true,
+          "tokens": true,
+          "labels": true,
+          "templates": true,
+          "annotations": true,
+          "markers": true
+        },
+        "floorFog": null,
+        "floorReveals": [],
+        "view": {
+          "zoom": 1,
+          "panX": 0,
+          "panY": 0
+        },
+        "lines": [],
+        "points": [],
+        "links": [],
+        "lights": []
+      }
+    },
+    "tokenMeta": {},
+    "group": [],
+    "history": [
+      "cover",
+      "gundren",
+      "horses",
+      "road"
+    ],
+    "clock": {
+      "minutes": 0,
+      "combatSeconds": 12,
+      "timers": [],
+      "hazard": "",
+      "wanderEvery": 0
+    }
+  },
+  "sceneFog": {},
+  "turn": {
+    "scene": "",
+    "round": 0,
+    "order": [],
+    "index": 0
+  },
+  "resources": {},
+  "events": [
+    {
+      "id": "outcome-1791832923830-zmlxmuz",
+      "kind": "discovery",
+      "publicTitle": "CORRECTED MOCK · Road goblin surrendered",
+      "recipients": [],
+      "replaces": [],
+      "origins": [],
+      "session": "MOCK Session1",
+      "title": "CORRECTED MOCK · Road goblin surrendered",
+      "detail": "The party defeated three road attackers, accepted and disarmed the fourth. It claims a human captive is held in the cave and points out a snare and pit. A guarded short rest restored Trista to11HP and Donavan to8HP; each spent oneHitDie. Wagon and supplies remain guarded.",
+      "playerText": "A surrendered goblin claims a human captive is held in a nearby cave and warns of a snare and pit. We have not yet verified the captive’s identity or condition.",
+      "source": "Corrected isolated Session1 · played roadfight through round3",
+      "status": "confirmed",
+      "basis": "Claimed",
+      "approved": true,
+      "approvedAt": "2026-10-12T19:22:03.961Z",
+      "share": "party",
+      "knows": [
+        "party"
+      ],
+      "quests": [],
+      "markers": [],
+      "tracks": []
+    }
+  ],
+  "requests": [
+    {
+      "id": "dm-action-1791832655361-xuv3bu0",
+      "source": "dm",
+      "custom": false,
+      "characterId": "goblin-3",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 0,
+      "entry": {
+        "name": "Scimitar",
+        "type": "Action",
+        "attackBonus": 4,
+        "damageDice": "1d6+2",
+        "damageType": "slashing",
+        "effect": "",
+        "source": "SRD 5.1 p. 315",
+        "resourceId": "",
+        "cost": 0
+      },
+      "label": "Scimitar",
+      "targetIds": [
+        "pc-trista"
+      ],
+      "targetNames": [
+        "Trista"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:35.361Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:35.463Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:35.463Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832655361-xuv3bu0",
+        "revision": 1,
+        "baseRevision": 28,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "pc-trista",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d6+2",
+              "bonus": 4,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "slashing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ]
+        },
+        "patches": [
+          {
+            "kind": "token",
+            "id": "pc-trista",
+            "field": "hp",
+            "before": 11,
+            "after": 7
+          },
+          {
+            "kind": "sheet",
+            "id": "pc-trista",
+            "field": "hp",
+            "before": 11,
+            "after": 7
+          },
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:1:goblin-3",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:1:goblin-3",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832655370-kqn5nqye",
+            "label": "Scimitar · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              17
+            ],
+            "total": 21,
+            "natural": 17,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:35 PM"
+          },
+          {
+            "id": "pa-1791832655370-zamkl4u3",
+            "label": "Scimitar · effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              2
+            ],
+            "total": 4,
+            "natural": 2,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:35 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-trista",
+            "text": "Trista: 21 vs AC 14: hit, 4 slashing → 4; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Trista: 21 vs AC 14: hit, 4 slashing → 4; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:35.451Z"
+      },
+      "at": "2026-10-12T19:17:35.361Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832655744-jh3tgn6",
+      "source": "dm",
+      "custom": false,
+      "characterId": "goblin-1",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 1,
+      "entry": {
+        "name": "Shortbow",
+        "type": "Action",
+        "attackBonus": 4,
+        "damageDice": "1d6+2",
+        "damageType": "piercing",
+        "effect": "",
+        "source": "SRD 5.1 p. 315",
+        "resourceId": "",
+        "cost": 0
+      },
+      "label": "Shortbow",
+      "targetIds": [
+        "pc-donavan"
+      ],
+      "targetNames": [
+        "Donavan"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:35.744Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:35.764Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:35.764Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832655744-jh3tgn6",
+        "revision": 1,
+        "baseRevision": 30,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "pc-donavan",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d6+2",
+              "bonus": 4,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "piercing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ]
+        },
+        "patches": [
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:1:goblin-1",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:1:goblin-1",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832655751-10xqaz6c",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:35 PM"
+          },
+          {
+            "id": "pa-1791832655751-ez4m95ef",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              2
+            ],
+            "total": 4,
+            "natural": 2,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:35 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-donavan",
+            "text": "Donavan: 8 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Donavan: 8 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:35.751Z"
+      },
+      "at": "2026-10-12T19:17:35.744Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832657342-2vd7ykt",
+      "source": "dm",
+      "custom": false,
+      "characterId": "goblin-4",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 0,
+      "entry": {
+        "name": "Scimitar",
+        "type": "Action",
+        "attackBonus": 4,
+        "damageDice": "1d6+2",
+        "damageType": "slashing",
+        "effect": "",
+        "source": "SRD 5.1 p. 315",
+        "resourceId": "",
+        "cost": 0
+      },
+      "label": "Scimitar",
+      "targetIds": [
+        "pc-pebble"
+      ],
+      "targetNames": [
+        "Pebble"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:37.342Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:37.359Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:37.360Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832657342-2vd7ykt",
+        "revision": 1,
+        "baseRevision": 36,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "pc-pebble",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d6+2",
+              "bonus": 4,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "slashing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ]
+        },
+        "patches": [
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:1:goblin-4",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:1:goblin-4",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832657349-nmznr0bp",
+            "label": "Scimitar · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:37 PM"
+          },
+          {
+            "id": "pa-1791832657349-fl36j4g2",
+            "label": "Scimitar · effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              6
+            ],
+            "total": 8,
+            "natural": 6,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:37 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 6 vs AC 18: miss, 0 slashing → 0; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Pebble: 6 vs AC 18: miss, 0 slashing → 0; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:37.349Z"
+      },
+      "at": "2026-10-12T19:17:37.342Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832657630-uyy1jpn",
+      "source": "dm",
+      "custom": false,
+      "characterId": "goblin-2",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 1,
+      "entry": {
+        "name": "Shortbow",
+        "type": "Action",
+        "attackBonus": 4,
+        "damageDice": "1d6+2",
+        "damageType": "piercing",
+        "effect": "",
+        "source": "SRD 5.1 p. 315",
+        "resourceId": "",
+        "cost": 0
+      },
+      "label": "Shortbow",
+      "targetIds": [
+        "pc-aldric"
+      ],
+      "targetNames": [
+        "Aldric"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:37.630Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:37.643Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:37.643Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832657630-uyy1jpn",
+        "revision": 1,
+        "baseRevision": 38,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "pc-aldric",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d6+2",
+              "bonus": 4,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "piercing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ]
+        },
+        "patches": [
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:1:goblin-2",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:1:goblin-2",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832657634-bhowxkof",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              1
+            ],
+            "total": 5,
+            "natural": 1,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:37 PM"
+          },
+          {
+            "id": "pa-1791832657634-ggq3qmn9",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              2
+            ],
+            "total": 4,
+            "natural": 2,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:37 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-aldric",
+            "text": "Aldric: 5 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Aldric: 5 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:37.634Z"
+      },
+      "at": "2026-10-12T19:17:37.630Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832658413-wde1ca3",
+      "source": "dm",
+      "custom": false,
+      "characterId": "pc-aldric",
+      "scene": "road",
+      "actionType": "spell",
+      "actionIndex": 1,
+      "entry": {
+        "name": "Fire Bolt",
+        "level": 0,
+        "prepared": true,
+        "notes": "At-will cantrip.",
+        "support": {
+          "status": "supported",
+          "label": "Reviewed roll",
+          "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 195,
+            "rule": "Attack and damage; weapon table p. 149",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Fire Bolt",
+      "targetIds": [
+        "goblin-4"
+      ],
+      "targetNames": [
+        "Goblin 4"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:38.413Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:38.431Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:38.431Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832658413-wde1ca3",
+        "revision": 1,
+        "baseRevision": 40,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "Ranged spell attack, 120 ft.; ignites unattended flammable objects.",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "goblin-4",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d10",
+              "bonus": 6,
+              "mode": "normal",
+              "magical": true,
+              "damageType": "fire",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ],
+          "partyCard": {
+            "kind": "weapon",
+            "choices": {},
+            "turnStamp": "road:2:0:pc-aldric",
+            "usedSneak": false,
+            "usedPiercer": false
+          },
+          "support": {
+            "status": "supported",
+            "label": "Reviewed roll",
+            "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+            "source": {
+              "book": "2014 PHB",
+              "printedPage": 195,
+              "rule": "Attack and damage; weapon table p. 149",
+              "confidence": "verified rule / approved sheet"
+            }
+          }
+        },
+        "patches": [
+          {
+            "kind": "token",
+            "id": "goblin-4",
+            "field": "hp",
+            "before": 7,
+            "after": 3
+          },
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:2:pc-aldric",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:2:pc-aldric",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832658420-vqm07h0q",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              9
+            ],
+            "total": 15,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:38 PM"
+          },
+          {
+            "id": "pa-1791832658420-7hc45tsn",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              4
+            ],
+            "total": 4,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-4",
+            "text": "Goblin 4: 15 vs AC 15: hit, 4 fire → 4; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Goblin 4: 15 vs AC 15: hit, 4 fire → 4; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:38.420Z"
+      },
+      "at": "2026-10-12T19:17:38.413Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832658702-d56fbg5",
+      "source": "dm",
+      "custom": false,
+      "characterId": "pc-trista",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 0,
+      "entry": {
+        "id": "trista-dagger",
+        "name": "Dagger",
+        "type": "Action",
+        "attackBonus": 6,
+        "damageDice": "1d6+4",
+        "damageType": "piercing",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Monk weapon; thrown range 20/60 ft.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true,
+        "support": {
+          "status": "supported",
+          "label": "Reviewed roll",
+          "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 195,
+            "rule": "Attack and damage; weapon table p. 149",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Dagger",
+      "targetIds": [
+        "goblin-4"
+      ],
+      "targetNames": [
+        "Goblin 4"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:38.702Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:38.719Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:38.719Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832658702-d56fbg5",
+        "revision": 1,
+        "baseRevision": 42,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "Monk weapon; thrown range 20/60 ft.",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "goblin-4",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d6+4",
+              "bonus": 6,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "piercing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ],
+          "partyCard": {
+            "kind": "weapon",
+            "choices": {},
+            "turnStamp": "road:2:1:pc-trista",
+            "usedSneak": false,
+            "usedPiercer": false
+          },
+          "support": {
+            "status": "supported",
+            "label": "Reviewed roll",
+            "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+            "source": {
+              "book": "2014 PHB",
+              "printedPage": 195,
+              "rule": "Attack and damage; weapon table p. 149",
+              "confidence": "verified rule / approved sheet"
+            }
+          }
+        },
+        "patches": [
+          {
+            "kind": "token",
+            "id": "goblin-4",
+            "field": "hp",
+            "before": 3,
+            "after": 0
+          },
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:2:pc-trista",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:2:pc-trista",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832658706-m2r0awzu",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              11
+            ],
+            "total": 17,
+            "natural": 11,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:38 PM"
+          },
+          {
+            "id": "pa-1791832658707-634b6ijb",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:38 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-4",
+            "text": "Goblin 4: 17 vs AC 15: hit, 8 piercing → 8; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Goblin 4: 17 vs AC 15: hit, 8 piercing → 8; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:38.707Z"
+      },
+      "at": "2026-10-12T19:17:38.702Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832659023-ixpnniq",
+      "source": "dm",
+      "custom": false,
+      "characterId": "goblin-3",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 0,
+      "entry": {
+        "name": "Scimitar",
+        "type": "Action",
+        "attackBonus": 4,
+        "damageDice": "1d6+2",
+        "damageType": "slashing",
+        "effect": "",
+        "source": "SRD 5.1 p. 315",
+        "resourceId": "",
+        "cost": 0
+      },
+      "label": "Scimitar",
+      "targetIds": [
+        "pc-trista"
+      ],
+      "targetNames": [
+        "Trista"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:39.023Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:39.201Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:39.201Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832659023-ixpnniq",
+        "revision": 1,
+        "baseRevision": 49,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "\nInterception reduced raw damage before defenses by 6",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "pc-trista",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "",
+              "bonus": 4,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "slashing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": 2,
+              "crit": 20
+            }
+          ]
+        },
+        "patches": [
+          {
+            "kind": "token",
+            "id": "pc-trista",
+            "field": "hp",
+            "before": 7,
+            "after": 5
+          },
+          {
+            "kind": "sheet",
+            "id": "pc-trista",
+            "field": "hp",
+            "before": 7,
+            "after": 5
+          },
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:2:goblin-3",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:2:goblin-3",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832659027-1l42avg5",
+            "label": "Scimitar · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              19
+            ],
+            "total": 23,
+            "natural": 19,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:39 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-trista",
+            "text": "Trista: 23 vs AC 14: hit, physical base 2, 2 slashing → 2; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Trista: 23 vs AC 14: hit, physical base 2, 2 slashing → 2; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:39.189Z"
+      },
+      "at": "2026-10-12T19:17:39.023Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832659079-hxjfunc",
+      "source": "dm",
+      "custom": true,
+      "characterId": "pc-pebble",
+      "scene": "road",
+      "actionType": "action",
+      "actionIndex": 0,
+      "entry": {
+        "name": "Interception",
+        "type": "Reaction",
+        "effect": "Guard within 5 ft; reduce this hit by 6; no redirect."
+      },
+      "label": "Interception",
+      "targetIds": [],
+      "targetNames": [],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:39.079Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:39.129Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:39.129Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832659079-hxjfunc",
+        "revision": 1,
+        "baseRevision": 47,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": true,
+          "usage": "reaction",
+          "override": "Qualifying hit and equipped shield confirmed; reaction only",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "Guard within 5 ft; reduce this hit by 6; no redirect.",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": []
+        },
+        "patches": [
+          {
+            "kind": "combat",
+            "id": "pc-pebble",
+            "field": "reactionUsed",
+            "before": false,
+            "after": true
+          }
+        ],
+        "effects": [],
+        "rolls": [],
+        "outcomes": [],
+        "summary": "Effect reviewed and recorded.",
+        "at": "2026-10-12T19:17:39.085Z"
+      },
+      "at": "2026-10-12T19:17:39.079Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832659481-agbvcxc",
+      "source": "dm",
+      "custom": false,
+      "characterId": "goblin-1",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 1,
+      "entry": {
+        "name": "Shortbow",
+        "type": "Action",
+        "attackBonus": 4,
+        "damageDice": "1d6+2",
+        "damageType": "piercing",
+        "effect": "",
+        "source": "SRD 5.1 p. 315",
+        "resourceId": "",
+        "cost": 0
+      },
+      "label": "Shortbow",
+      "targetIds": [
+        "pc-donavan"
+      ],
+      "targetNames": [
+        "Donavan"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:39.481Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:39.556Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:39.556Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832659481-agbvcxc",
+        "revision": 1,
+        "baseRevision": 53,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "pc-donavan",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d6+2",
+              "bonus": 4,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "piercing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ]
+        },
+        "patches": [
+          {
+            "kind": "token",
+            "id": "pc-donavan",
+            "field": "hp",
+            "before": 9,
+            "after": 2
+          },
+          {
+            "kind": "sheet",
+            "id": "pc-donavan",
+            "field": "hp",
+            "before": 9,
+            "after": 2
+          },
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:2:goblin-1",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:2:goblin-1",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832659486-zsaswf6v",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              17
+            ],
+            "total": 21,
+            "natural": 17,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:39 PM"
+          },
+          {
+            "id": "pa-1791832659486-ex8r6er4",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              5
+            ],
+            "total": 7,
+            "natural": 5,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:39 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-donavan",
+            "text": "Donavan: 21 vs AC 12: hit, 7 piercing → 7; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Donavan: 21 vs AC 12: hit, 7 piercing → 7; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:39.545Z"
+      },
+      "at": "2026-10-12T19:17:39.481Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832660334-etayypf",
+      "source": "dm",
+      "custom": false,
+      "characterId": "pc-donavan",
+      "scene": "road",
+      "actionType": "spell",
+      "actionIndex": 2,
+      "entry": {
+        "name": "Ray of Frost",
+        "level": 0,
+        "prepared": true,
+        "notes": "Cantrip · ranged spell attack +6 · 1d8 cold and speed −10 ft.",
+        "support": {
+          "status": "supported",
+          "label": "Reviewed roll",
+          "reason": "Attack and cold damage; on a hit add the speed reduction reminder until your next turn.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 271,
+            "rule": "Ray of Frost",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Ray of Frost",
+      "targetIds": [
+        "goblin-3"
+      ],
+      "targetNames": [
+        "Goblin 3"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:40.334Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:40.354Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:40.354Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832660334-etayypf",
+        "revision": 1,
+        "baseRevision": 55,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "Ranged spell attack, 60 ft.; cold damage and speed reduced by 10 ft. until the start of your next turn.",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "goblin-3",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d8",
+              "bonus": 6,
+              "mode": "normal",
+              "magical": true,
+              "damageType": "cold",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ],
+          "partyCard": {
+            "kind": "ray",
+            "choices": {},
+            "turnStamp": "road:2:4:pc-donavan",
+            "usedSneak": false,
+            "usedPiercer": false
+          },
+          "support": {
+            "status": "supported",
+            "label": "Reviewed roll",
+            "reason": "Attack and cold damage; on a hit add the speed reduction reminder until your next turn.",
+            "source": {
+              "book": "2014 PHB",
+              "printedPage": 271,
+              "rule": "Ray of Frost",
+              "confidence": "verified rule / approved sheet"
+            }
+          }
+        },
+        "patches": [
+          {
+            "kind": "token",
+            "id": "goblin-3",
+            "field": "hp",
+            "before": 7,
+            "after": 0
+          },
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:2:pc-donavan",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:2:pc-donavan",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [
+          {
+            "id": "card-1791832660340-hguoe6l",
+            "tokenId": "goblin-3",
+            "triggerActor": "pc-donavan",
+            "triggerPoint": "start",
+            "remaining": 1,
+            "name": "Ray of Frost · speed −10 ft",
+            "condition": "",
+            "due": false,
+            "fired": false,
+            "repeatSave": false,
+            "note": "Apply until the caster’s next turn starts. Movement remains manual."
+          }
+        ],
+        "rolls": [
+          {
+            "id": "pa-1791832660340-tqr5xxz5",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              10
+            ],
+            "total": 16,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          },
+          {
+            "id": "pa-1791832660340-8fh949ly",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              8
+            ],
+            "total": 8,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-3",
+            "text": "Goblin 3: 16 vs AC 15: hit, 8 cold → 8; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Goblin 3: 16 vs AC 15: hit, 8 cold → 8; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:40.340Z"
+      },
+      "at": "2026-10-12T19:17:40.334Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832660629-pe2pr1q",
+      "source": "dm",
+      "custom": false,
+      "characterId": "pc-ringgo",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 1,
+      "entry": {
+        "id": "ringgo-shortbow",
+        "name": "Shortbow",
+        "type": "Action",
+        "attackBonus": 6,
+        "damageDice": "1d6+4",
+        "damageType": "piercing",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Range 80/320; Sneak Attack may add 1d6.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true,
+        "support": {
+          "status": "choice",
+          "label": "Choose details",
+          "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 195,
+            "rule": "Attack and damage; weapon table p. 149",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Shortbow",
+      "targetIds": [
+        "goblin-2"
+      ],
+      "targetNames": [
+        "Goblin 2"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:40.629Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:40.645Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:40.645Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832660629-pe2pr1q",
+        "revision": 1,
+        "baseRevision": 57,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [
+            {
+              "id": "ringgo-arrows",
+              "delta": -1
+            }
+          ],
+          "effectNote": "Range 80/320; Sneak Attack may add 1d6.",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "goblin-2",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d6+4",
+              "bonus": 6,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "piercing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20,
+              "forceCritical": false,
+              "components": [
+                {
+                  "notation": "1d6+4",
+                  "manual": "",
+                  "type": "piercing",
+                  "magical": false,
+                  "piercer": false,
+                  "rerollIndex": ""
+                }
+              ]
+            }
+          ],
+          "partyCard": {
+            "kind": "weapon",
+            "choices": {
+              "sneak": false,
+              "qualifies": false,
+              "targetNotActed": false,
+              "surprised": false,
+              "piercerIndex": "",
+              "offhandEligible": false
+            },
+            "turnStamp": "road:2:5:pc-ringgo",
+            "usedSneak": false,
+            "usedPiercer": false
+          },
+          "support": {
+            "status": "choice",
+            "label": "Choose details",
+            "reason": "Choose Sneak Attack, Assassinate and Piercer in this weapon review. Shortbow spends one tracked arrow.",
+            "source": {
+              "book": "2014 PHB",
+              "printedPage": 195,
+              "rule": "Attack and damage; weapon table p. 149",
+              "confidence": "verified rule / approved sheet"
+            }
+          }
+        },
+        "patches": [
+          {
+            "kind": "resource",
+            "id": "pc-ringgo",
+            "field": "ringgo-arrows",
+            "before": 20,
+            "after": 19
+          },
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:2:pc-ringgo",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:2:pc-ringgo",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832660634-217mrmo2",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              4
+            ],
+            "total": 10,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          },
+          {
+            "id": "pa-1791832660634-e4d0n2f3",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-2",
+            "text": "Goblin 2: 10 vs AC 15: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Goblin 2: 10 vs AC 15: miss, 0 piercing → 0; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:40.634Z"
+      },
+      "at": "2026-10-12T19:17:40.629Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832660950-ko9mlsf",
+      "source": "dm",
+      "custom": false,
+      "characterId": "pc-pebble",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 0,
+      "entry": {
+        "id": "pebble-hammer",
+        "name": "Warhammer",
+        "type": "Action",
+        "attackBonus": 6,
+        "damageDice": "1d8+4",
+        "damageType": "bludgeoning",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "One-handed with shield; Crusher may move a qualifying target 5 feet once on Pebble’s turn.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true,
+        "support": {
+          "status": "supported",
+          "label": "Reviewed roll",
+          "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 195,
+            "rule": "Attack and damage; weapon table p. 149",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Warhammer",
+      "targetIds": [
+        "goblin-2"
+      ],
+      "targetNames": [
+        "Goblin 2"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:40.950Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:40.964Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:40.964Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832660950-ko9mlsf",
+        "revision": 1,
+        "baseRevision": 60,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "One-handed with shield; Crusher may move a qualifying target 5 feet once on Pebble’s turn.",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "goblin-2",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d8+4",
+              "bonus": 6,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "bludgeoning",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ],
+          "partyCard": {
+            "kind": "weapon",
+            "choices": {},
+            "turnStamp": "road:2:6:pc-pebble",
+            "usedSneak": false,
+            "usedPiercer": false
+          },
+          "support": {
+            "status": "supported",
+            "label": "Reviewed roll",
+            "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+            "source": {
+              "book": "2014 PHB",
+              "printedPage": 195,
+              "rule": "Attack and damage; weapon table p. 149",
+              "confidence": "verified rule / approved sheet"
+            }
+          }
+        },
+        "patches": [
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:2:pc-pebble",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:2:pc-pebble",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832660954-2ir367m0",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              8
+            ],
+            "total": 14,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          },
+          {
+            "id": "pa-1791832660955-2h1f47e1",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-2",
+            "text": "Goblin 2: 14 vs AC 15: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Goblin 2: 14 vs AC 15: miss, 0 bludgeoning → 0; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:40.955Z"
+      },
+      "at": "2026-10-12T19:17:40.950Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832661232-achegt4",
+      "source": "dm",
+      "custom": false,
+      "characterId": "goblin-2",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 1,
+      "entry": {
+        "name": "Shortbow",
+        "type": "Action",
+        "attackBonus": 4,
+        "damageDice": "1d6+2",
+        "damageType": "piercing",
+        "effect": "",
+        "source": "SRD 5.1 p. 315",
+        "resourceId": "",
+        "cost": 0
+      },
+      "label": "Shortbow",
+      "targetIds": [
+        "pc-aldric"
+      ],
+      "targetNames": [
+        "Aldric"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:41.232Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:41.246Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:41.246Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832661232-achegt4",
+        "revision": 1,
+        "baseRevision": 62,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "pc-aldric",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d6+2",
+              "bonus": 4,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "piercing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ]
+        },
+        "patches": [
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:2:goblin-2",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:2:goblin-2",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832661237-wkjlmyxx",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:41 PM"
+          },
+          {
+            "id": "pa-1791832661237-mvk2q4zp",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              5
+            ],
+            "total": 7,
+            "natural": 5,
+            "public": false,
+            "kind": "digital",
+            "time": "1:17:41 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-aldric",
+            "text": "Aldric: 8 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Aldric: 8 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:41.237Z"
+      },
+      "at": "2026-10-12T19:17:41.232Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832662025-7ylc0vz",
+      "source": "dm",
+      "custom": false,
+      "characterId": "pc-aldric",
+      "scene": "road",
+      "actionType": "spell",
+      "actionIndex": 1,
+      "entry": {
+        "name": "Fire Bolt",
+        "level": 0,
+        "prepared": true,
+        "notes": "At-will cantrip.",
+        "support": {
+          "status": "supported",
+          "label": "Reviewed roll",
+          "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 195,
+            "rule": "Attack and damage; weapon table p. 149",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Fire Bolt",
+      "targetIds": [
+        "goblin-2"
+      ],
+      "targetNames": [
+        "Goblin 2"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:42.025Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:42.045Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:42.045Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832662025-7ylc0vz",
+        "revision": 1,
+        "baseRevision": 64,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "Ranged spell attack, 120 ft.; ignites unattended flammable objects.",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "goblin-2",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d10",
+              "bonus": 6,
+              "mode": "normal",
+              "magical": true,
+              "damageType": "fire",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ],
+          "partyCard": {
+            "kind": "weapon",
+            "choices": {},
+            "turnStamp": "road:3:0:pc-aldric",
+            "usedSneak": false,
+            "usedPiercer": false
+          },
+          "support": {
+            "status": "supported",
+            "label": "Reviewed roll",
+            "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+            "source": {
+              "book": "2014 PHB",
+              "printedPage": 195,
+              "rule": "Attack and damage; weapon table p. 149",
+              "confidence": "verified rule / approved sheet"
+            }
+          }
+        },
+        "patches": [
+          {
+            "kind": "token",
+            "id": "goblin-2",
+            "field": "hp",
+            "before": 7,
+            "after": 0
+          },
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:3:pc-aldric",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:3:pc-aldric",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832662031-3zqdolgm",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              16
+            ],
+            "total": 22,
+            "natural": 16,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:42 PM"
+          },
+          {
+            "id": "pa-1791832662031-ehp8wx6p",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              9
+            ],
+            "total": 9,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:42 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-2",
+            "text": "Goblin 2: 22 vs AC 15: hit, 9 fire → 9; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Goblin 2: 22 vs AC 15: hit, 9 fire → 9; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:42.032Z"
+      },
+      "at": "2026-10-12T19:17:42.025Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832662348-b8boqza",
+      "source": "dm",
+      "custom": false,
+      "characterId": "pc-trista",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 0,
+      "entry": {
+        "id": "trista-dagger",
+        "name": "Dagger",
+        "type": "Action",
+        "attackBonus": 6,
+        "damageDice": "1d6+4",
+        "damageType": "piercing",
+        "saveAbility": "",
+        "saveDC": null,
+        "effect": "Monk weapon; thrown range 20/60 ft.",
+        "resourceId": "",
+        "cost": 1,
+        "prepared": true,
+        "support": {
+          "status": "supported",
+          "label": "Reviewed roll",
+          "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 195,
+            "rule": "Attack and damage; weapon table p. 149",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Dagger",
+      "targetIds": [
+        "goblin-1"
+      ],
+      "targetNames": [
+        "Goblin 1"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "resolved",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:42.348Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T19:17:42.379Z",
+          "note": "Approved by DM."
+        },
+        {
+          "status": "resolved",
+          "at": "2026-10-12T19:17:42.379Z",
+          "note": "Resolved by DM."
+        }
+      ],
+      "resolution": {
+        "requestId": "dm-action-1791832662348-b8boqza",
+        "revision": 1,
+        "baseRevision": 66,
+        "plan": {
+          "shield": false,
+          "effectRulingRequired": false,
+          "usage": "action",
+          "override": "",
+          "concentration": "keep",
+          "concentrationName": "",
+          "grantAction": false,
+          "costs": [],
+          "effectNote": "Monk weapon; thrown range 20/60 ft.",
+          "acknowledged": true,
+          "reactionsChecked": true,
+          "reminders": [],
+          "steps": [
+            {
+              "targetId": "goblin-1",
+              "kind": "attack",
+              "sharedRoll": "",
+              "notation": "1d6+4",
+              "bonus": 6,
+              "mode": "normal",
+              "magical": false,
+              "damageType": "piercing",
+              "saveAbility": "DEX",
+              "dc": 10,
+              "success": "none",
+              "cover": 0,
+              "ac": "",
+              "condition": "",
+              "conditionWhen": "always",
+              "acSet": "",
+              "manual": "",
+              "crit": 20
+            }
+          ],
+          "partyCard": {
+            "kind": "weapon",
+            "choices": {},
+            "turnStamp": "road:3:1:pc-trista",
+            "usedSneak": false,
+            "usedPiercer": false
+          },
+          "support": {
+            "status": "supported",
+            "label": "Reviewed roll",
+            "reason": "Attack, damage, recorded defenses and resource use are reviewed together; confirm range and legality.",
+            "source": {
+              "book": "2014 PHB",
+              "printedPage": 195,
+              "rule": "Attack and damage; weapon table p. 149",
+              "confidence": "verified rule / approved sheet"
+            }
+          }
+        },
+        "patches": [
+          {
+            "kind": "queue",
+            "id": "",
+            "field": "",
+            "before": {
+              "key": "road:3:pc-trista",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": false,
+              "bonusUsed": false
+            },
+            "after": {
+              "key": "road:3:pc-trista",
+              "done": [],
+              "movementUsed": 0,
+              "actionUsed": true,
+              "bonusUsed": false
+            }
+          }
+        ],
+        "effects": [],
+        "rolls": [
+          {
+            "id": "pa-1791832662357-rjmi0p6b",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              7
+            ],
+            "total": 13,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:42 PM"
+          },
+          {
+            "id": "pa-1791832662357-e6sgq4m6",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:42 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-1",
+            "text": "Goblin 1: 13 vs AC 15: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "summary": "Goblin 1: 13 vs AC 15: miss, 0 piercing → 0; temp HP absorbed 0",
+        "at": "2026-10-12T19:17:42.357Z"
+      },
+      "at": "2026-10-12T19:17:42.348Z",
+      "message": "Resolved by DM."
+    },
+    {
+      "id": "dm-action-1791832662885-aiby0p7",
+      "source": "dm",
+      "custom": false,
+      "characterId": "goblin-1",
+      "scene": "road",
+      "actionType": "attack",
+      "actionIndex": 1,
+      "entry": {
+        "name": "Shortbow",
+        "type": "Action",
+        "attackBonus": 4,
+        "damageDice": "1d6+2",
+        "damageType": "piercing",
+        "effect": "",
+        "source": "SRD 5.1 p. 315",
+        "resourceId": "",
+        "cost": 0
+      },
+      "label": "Shortbow",
+      "targetIds": [
+        "pc-donavan"
+      ],
+      "targetNames": [
+        "Donavan"
+      ],
+      "casting": null,
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "declined",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:42.885Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "declined",
+          "at": "2026-10-12T19:18:26.629Z",
+          "note": "Test driver preview discarded before spending or damage; replaced by the goblin’s surrender decision."
+        }
+      ],
+      "resolution": null,
+      "at": "2026-10-12T19:17:42.885Z",
+      "message": "Test driver preview discarded before spending or damage; replaced by the goblin’s surrender decision."
+    },
+    {
+      "id": "dm-action-1791832662925-iyk4ni4",
+      "source": "dm",
+      "custom": false,
+      "characterId": "pc-donavan",
+      "scene": "road",
+      "actionType": "spell",
+      "actionIndex": 8,
+      "entry": {
+        "name": "Shield",
+        "level": 1,
+        "prepared": true,
+        "notes": "Wizard · Reaction · +5 AC until next turn and blocks Magic Missile.",
+        "support": {
+          "status": "choice",
+          "label": "Choose details",
+          "reason": "Confirm the triggering attack or Magic Missile. Reaction, slot, +5 AC and expiry are reviewed together.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 275,
+            "rule": "Shield",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Shield",
+      "targetIds": [
+        "pc-donavan"
+      ],
+      "targetNames": [
+        "Donavan"
+      ],
+      "casting": {
+        "mode": "slot",
+        "resourceId": "donavan-slots-1",
+        "notation": "",
+        "effect": "Standing approval: Shield negates this hit",
+        "concentration": "auto"
+      },
+      "sequenceStep": -1,
+      "damageJobId": "",
+      "note": "",
+      "mode": "normal",
+      "revision": 1,
+      "status": "declined",
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T19:17:42.925Z",
+          "note": "Staged by DM; nothing spent or applied."
+        },
+        {
+          "status": "declined",
+          "at": "2026-10-12T19:18:26.629Z",
+          "note": "Test driver preview discarded before spending or damage; replaced by the goblin’s surrender decision."
+        }
+      ],
+      "resolution": null,
+      "at": "2026-10-12T19:17:42.925Z",
+      "message": "Test driver preview discarded before spending or damage; replaced by the goblin’s surrender decision."
+    }
+  ]
+}

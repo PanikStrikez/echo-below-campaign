@@ -6,8 +6,8 @@
  const id=prefix=>prefix+'-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,9);
  const stages=['early','middle','late','finale'];
  const relations=['supports','contradicts','context','question'];
- const topics=()=>globalThis.ECHO_MYSTERY_DATA?.topics||[];
- const conclusions=()=>globalThis.ECHO_MYSTERY_DATA?.conclusions||[];
+ const topics=()=>[...(globalThis.ECHO_MYSTERY_DATA?.topics||[]),...(globalThis.ECHO_DISCOVERY_PREP_DATA?[{id:'phandelver',title:'Phandelver inquiries',summary:'Earned leads at the recorded checkpoint; recheck current outcomes before use.'}]:[])];
+ const conclusions=()=>[...(globalThis.ECHO_MYSTERY_DATA?.conclusions||[]),...(globalThis.ECHO_DISCOVERY_PREP_DATA?.conclusions||[]).map(c=>({...c,topic:'phandelver',stage:'early'}))];
  const C=()=>globalThis.ECHO_CONTINUITY;
  function eventMeta(r={}){r||={};const m={
   links:list(r.links).slice(0,30).filter(Boolean).map(x=>({conclusionId:str(x.conclusionId,100),relation:relations.includes(x.relation)?x.relation:'context'})),

@@ -1,7 +1,7 @@
 /* Private voice auditions. Only explicit profile saves change campaign records. */
 (() => {
  'use strict';
- let host,root,chosen='barthen',status=null,catalog=[],account=null,error='',busy=false,poll=0,audio=null,audioURL='',privateOutput=false,previewEpoch=0,panelObserver,budgetDraft=null;
+ let host,root,chosen='barthen',status=null,catalog=[],account=null,error='',busy=false,poll=0,audio=null,audioURL='',privateOutput=false,previewEpoch=0,panelObserver,budgetDraft=null,freshAllowance=false;
  const heard=new Set(),staged=new Map(),M=()=>globalThis.ECHO_AI_VOICE_CAST,S=()=>globalThis.ECHO_AI_SERVICE;
  const running=j=>['queued','checking_account','running'].includes(j.status);
  const el=(tag,text,parent)=>{const n=document.createElement(tag);if(text!=null)n.textContent=String(text);parent?.append(n);return n;};
@@ -23,14 +23,14 @@
  const connectionLabel=()=>{const p=status?.providers?.find(p=>p.id==='elevenlabs');return `ElevenLabs · ${status?.settings?.freeOnly===false?'included plan credits only':'free credits only'} · ${p?.generationVerified?'local speech generation verified':p?.connected?'account checked; local speech untested':p?.configured?'key saved; connection untested':'account setup needed'}`;};
  function renderAccount(){const box=root?.querySelector('#voice-account-summary');if(box){box.hidden=!account;box.textContent=account?`${account.verifiedIncludedCredits||account.verifiedFree?'Verified '+account.tier+' allowance':'Account not eligible'} · ${account.remainingCharacters??'unknown'} credits remaining at the last check. The service checks again before each generation.`:'';}const badge=root?.querySelector('.ai-status');if(badge)badge.textContent=connectionLabel();}
  function stop(){globalThis.ECHO_VOICE_STUDIO?.stopPreview();previewEpoch++;if(audio){audio.pause();audio.src='';audio=null;}if(audioURL){URL.revokeObjectURL(audioURL);audioURL='';}}
- function init(value){host=value;window.addEventListener('echo-audio-state',e=>{if(e.detail?.muted)stop();else if(audio)audio.volume=Math.min(.8,Number(e.detail?.master??80)/100);});window.addEventListener('pagehide',stop);}
+ function init(value){host=value;freshAllowance=false;globalThis.ECHO_AI_PLUGIN_AUDITIONS?.init({get:host.get,blank:host.blank,save,localStatus:sample=>ECHO_VOICE_STUDIO.auditionAvailability(sample),prepareAudition:sample=>ECHO_VOICE_STUDIO.prepareAudition(sample)});window.addEventListener('echo-audio-state',e=>{if(e.detail?.muted)stop();else if(audio)audio.volume=Math.min(.8,Number(e.detail?.master??80)/100);});window.addEventListener('pagehide',stop);}
  function open(id){chosen=M().catalog.some(p=>p.id===id)?id:chosen;stop();privateOutput=false;panelObserver?.disconnect();host.content('Voice auditions',r=>{root=r;r.classList.add('ai-settings','voice-auditions');render();});panelObserver=new MutationObserver(()=>{if(!root?.isConnected){stop();privateOutput=false;clearTimeout(poll);panelObserver.disconnect();}});panelObserver.observe(root.parentElement,{childList:true});void refresh();}
  async function action(fn){if(busy)return;busy=true;error='';render();try{await fn();}catch(e){error=e.message;}finally{busy=false;render();}}
  async function refresh(){try{status=await S().voiceStatus();account=status.account;error='';}catch(e){error=e.message;}render();schedule();}
  function schedule(){clearTimeout(poll);if(!root?.isConnected||!(status?.jobs||[]).some(running))return;poll=setTimeout(async()=>{try{status=await S().voiceStatus();account=status.account;renderAccount();renderJobs();schedule();}catch(e){error=e.message;render();}},650);}
  async function save(next,label){await host.set(next);host.toast(label);render();}
  function setup(parent){
-  const d=details(parent,'Account & audition budget',!status?.providers?.find(p=>p.id==='elevenlabs')?.configured);
+  const d=details(parent,'Account & audition budget',false);
   const ol=el('ol',null,d);let li=el('li',null,ol);link(li,'Open your ElevenLabs account','https://elevenlabs.io/');
   li=el('li',null,ol);link(li,'Open Developers → API Keys','https://elevenlabs.io/app/developers/api-keys');el('span',' and make an Echo Below key. Allow speech generation and read access to voices, models, and your account/subscription. Keep top-ups off.',li);
   li=el('li','On this Mac, double-click Set-Up-ElevenLabs.command in the app’s launchers folder. Paste the key into the hidden local prompt. Keep it out of chat and campaign files.',ol);
@@ -51,25 +51,27 @@
   const changeAllowance=()=>{allowance.hidden=mode.value!=='included';check.checked=false;rememberBudget();};
   mode.addEventListener('change',changeAllowance);per.addEventListener('input',changeAllowance);total.addEventListener('input',changeAllowance);
   check.addEventListener('change',rememberBudget);enable.addEventListener('change',rememberBudget);allowance.hidden=mode.value!=='included';
-  button(d,'Save audition setup',()=>action(async()=>{status=await S().voiceConfigure(values());account=status.account;budgetDraft=null;host.toast('Audition settings saved.');})).disabled=busy||!status;
-  button(d,'Check account allowance',()=>action(async()=>{account=null;try{const r=await S().voiceAccount();account=r.account;}finally{status=await S().voiceStatus();}})).disabled=busy||!status?.settings?.providers?.elevenlabs?.accountConfirmed;
-  button(d,'Load stock voices',()=>action(async()=>{try{const r=await S().voiceCatalog();catalog=r.voices||[];}finally{status=await S().voiceStatus();account=status.account;}})).disabled=busy||!status?.settings?.providers?.elevenlabs?.accountConfirmed;
+  button(d,'Save audition setup',()=>action(async()=>{status=await S().voiceConfigure(values());account=status.account;budgetDraft=null;freshAllowance=!!status.settings?.enabled&&status.settings?.providers?.elevenlabs?.accountConfirmed===true;host.toast('Audition settings saved.');})).disabled=busy||!status;
+  button(d,'Check account allowance',()=>action(async()=>{account=null;try{const r=await S().voiceAccount();account=r.account;}finally{status=await S().voiceStatus();}})).disabled=busy||!freshAllowance||!status?.settings?.providers?.elevenlabs?.accountConfirmed;
+  button(d,'Load stock voices',()=>action(async()=>{try{const r=await S().voiceCatalog();catalog=r.voices||[];}finally{status=await S().voiceStatus();account=status.account;}})).disabled=busy||!freshAllowance||!status?.settings?.providers?.elevenlabs?.accountConfirmed;
   el('p','',d).id='voice-account-summary';renderAccount();
  }
- function render(){if(!root?.isConnected)return;root.replaceChildren();
+ function render(){if(!root?.isConnected)return;const expanded=new Set([...root.querySelectorAll('details[open]')].map(d=>d.querySelector('summary')?.textContent));root.replaceChildren();
   el('p','Four original audition scripts. Samples stay on this DM computer. Voice choices remain proposed until you explicitly select one.',root);
   const provider=status?.providers?.find(p=>p.id==='elevenlabs');
   el('p',connectionLabel(),root).className='ai-status';
   if(error)el('p',error,root).className='ai-error';
-  const row=el('div',null,root);button(row,'Refresh voices',refresh);button(row,'Back to AI settings',()=>{stop();clearTimeout(poll);globalThis.ECHO_AI_UI.open();});button(row,'Stop preview',stop);
+  const row=el('div',null,root);button(row,'Refresh voices',refresh);button(row,'Back to Voice Studio',()=>{stop();ECHO_VOICE_STUDIO.open();});button(row,'Back to AI settings',()=>{stop();clearTimeout(poll);globalThis.ECHO_AI_UI.open();});button(row,'Stop preview',stop);
   if(host.blank?.()){el('p','This four-person audition cast belongs to The Echo Below. No cast has been added to this blank campaign.',root);return;}
-  setup(root);
+  el('p',freshAllowance?'New local allowance approved for this app session. Provider limits still apply.':'Cached recordings only · approve a new allowance before live generation.',root).className='ai-status';
   const state=cast(),profile=M().profile(state,chosen);
   const people=select(root,'Audition character',state.profiles.map(p=>[p.id,p.name]),chosen,'voice-character');people.addEventListener('change',()=>{stop();chosen=people.value;render();});
   el('h3',profile.name,root);
   el('p',profile.voice.status==='selected'?`Selected by you: ${profile.voice.voiceName} (${profile.voice.provider})`:'Voice: not selected · direction is proposed',root);
   el('blockquote',profile.script,root).id='voice-script';
   el('small',`${profile.scriptWords} words · script revision ${profile.scriptRevision} · original hypothetical audition, not a campaign event.`,root);
+  globalThis.ECHO_AI_PLUGIN_AUDITIONS?.render(root,chosen);
+  setup(root);
   const direction=details(root,'Direction, pronunciation & listening notes');
   const style=field(direction,'Speaking style',profile.style,'voice-style');style.maxLength=800;
   const pacing=field(direction,'Pacing guidance',profile.pacing,'voice-pacing');pacing.maxLength=1200;
@@ -87,12 +89,13 @@
   const remember=()=>staged.set(chosen,{voiceId:candidate.value,model:model.value});candidate.addEventListener('change',remember);model.addEventListener('change',remember);
   el('small','Selecting a candidate here only stages an audition. It does not assign the voice to this character.',root);
   button(root,'Generate this audition · included credits only',()=>action(async()=>{
+   if(!freshAllowance)throw Error('Approve a new account allowance in setup before requesting speech.');
    if(!candidate.value)throw Error('Load stock voices and choose a proposed candidate first.');
    const current=M().audition(cast(),chosen);
    await S().voiceStart({provider:'elevenlabs',voiceId:candidate.value,model:model.value,scriptId:chosen,text:current.script,
     style:{description:current.direction.style.slice(0,800),pace:1,pronunciation:current.direction.pronunciation.map(({term,sayAs})=>({term,sayAs})),emotionalRange:current.direction.emotionalRange.map(v=>v.slice(0,120))}});
    status=await S().voiceStatus();schedule();
-  })).disabled=busy||!status?.settings?.enabled||!provider?.configured;
+  })).disabled=busy||!freshAllowance||!status?.settings?.enabled||!provider?.configured;
   button(root,'Choose private headphones',()=>action(()=>globalThis.ECHO_VOICE_STUDIO.choosePrivate()));
   const ready=field(root,'Headphones or another private computer output are ready',privateOutput,'voice-private-output','checkbox');ready.addEventListener('change',()=>{privateOutput=ready.checked;if(!privateOutput)stop();renderJobs();});
   el('small','Previews require the named private headphones selected above. They stop if outputs change and never fall back to table speakers. Mute all also stops previews.',root);
@@ -100,6 +103,7 @@
   const compare=details(root,'Provider comparison · not an audible test');
   el('p','ElevenLabs is selected for this first audition. Cartesia remains an alternative for a later identical-script comparison. No provider has been judged by listening until a sample is generated and reviewed.',compare);
   link(compare,'ElevenLabs expressive speech models','https://elevenlabs.io/docs/overview/models');el('br',null,compare);link(compare,'Cartesia models and controls','https://docs.cartesia.ai/build-with-cartesia/tts-models/latest');
+  for(const d of root.querySelectorAll('details'))if(expanded.has(d.querySelector('summary')?.textContent))d.open=true;
   el('p','Use provider stock voices. This workflow has no cloning feature. Retain provider and model information with each take; usage rights depend on the account plan used when it was generated.',compare);
  }
  function renderJobs(){const box=root?.querySelector('#voice-job-list');if(!box)return;box.replaceChildren();
@@ -112,6 +116,8 @@
    if(job.error)el('p',job.error.message,d).className='ai-error';
    if(running(job))button(d,'Cancel audition',()=>action(async()=>{await S().voiceCancel(job.id);status=await S().voiceStatus();schedule();}));
    if(job.status==='completed'&&job.audioUrl){
+    el('small','Cached by the local service. Copy into Voice Studio to include this file in campaign backup and offline browser replay.',d);
+    button(d,'Copy cached audition to Voice Studio',()=>action(()=>ECHO_VOICE_STUDIO.cacheAudition(job,M().profile(cast(),chosen))));
     button(d,'Preview on this computer',()=>action(async()=>{
       if(!privateOutput)throw Error('Confirm a private sound output before listening.');
       if(host.audioState?.().muted)throw Error('Audio is muted. Use the existing Mute all control to unmute before previewing.');
@@ -127,5 +133,5 @@
    }
   }
  }
- globalThis.ECHO_VOICE_UI={init,open,stop};
+ globalThis.ECHO_VOICE_UI={init,open,stop,liveApproved:()=>freshAllowance,revokeAllowance:()=>{freshAllowance=false;}};
 })();

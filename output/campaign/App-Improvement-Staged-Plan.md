@@ -1,3 +1,5 @@
+> Historical staged improvement proposal. Preserve it as planning; completed work and readiness are reported separately. [Open current status guidance](App-Readiness-Status.md).
+
 # The Echo Below app improvement plan
 
 **Working plan — 9 October 2026**
@@ -37,24 +39,7 @@ Run the current table check on the actual DM computer, flat TV, speakers, and al
 
 **Done when:** the DM can answer “what works tonight, what needs a manual fallback, and where is my restorable backup?” from one screen. A restore opens in an isolated browser and the real TV and phones each show their intended information. Document any device check that has not happened.
 
-## Stage 1 — Complete UI overhaul
-
-**Priority:** highest user-facing improvement. **Size:** large, released in usable slices. **Depends on:** Stage 0.
-
-Redesign the **DM screen, player TV controls, and phone companion as one product**. First map every current feature and control to its new home. Watch a full practice session and record where the DM loses the map, searches a long list, repeats a step, or cannot tell what players see. Turn those findings into clickable layouts before changing live code. Check the layouts with the DM and at least one player on an actual phone and table-sized display. A new design is not complete if a working feature becomes hard to find.
-
-Use three clear DM modes: **Prep** for editing, **Run** for the live table, and **Review** for outcomes and closing. In Run, keep the map or staged visual in the center, a single contextual panel on the right, and a compact strip for urgent requests and the next beat. Give the top bar only the actions needed repeatedly: scene, next turn, player TV, mute, inbox, and undo. Put Party, Quests, World, Library, and settings in consistent navigation and a global search; preserve direct access to advanced controls without scattering them across the live view. A token, NPC, quest, clue, or scene opens its details in the same panel with a predictable Back action. The panel should remember where the DM was when an editor or rule reference closes.
-
-For the TV, design around **one current presentation**: map, illustration, handout, journal, title card, or black screen. Show the DM an exact preview and a conspicuous **Show on TV** action; keep “Now showing” and connection status visible on the DM screen. For phones, put the player's current task first: **My turn** during combat, **Explore** during travel or dungeon play, and the active objective otherwise. Keep Sheet, Quests, Journal, and Inventory easy to reach with stable navigation. Private clues and character quests remain owner-only.
-
-Create a compact design system for type sizes, contrast, spacing, buttons, status colors, fantasy decoration, focus states, and reduced motion. Use the fantasy style for atmosphere while keeping controls plain and readable. Favor one primary action per panel, clear labels over lore-themed labels, short lists with search/filter, and confirmation only where a choice is consequential. Give every request an obvious status; distinguish **waiting for the DM**, **needs a player response**, **saved**, **shown on TV**, **offline**, and **failed**. Support keyboard use and large touch targets. Keep DM secrets out of TV and phone layouts before transport, not merely hidden by styling.
-
-Build the new interface on top of existing state and services. Release one workflow at a time, preserve a temporary way back to the previous controls during migration, and remove the old controls only after feature parity and save compatibility checks. Keep a feature-to-screen inventory and a task checklist covering table setup, scene changes, combat, exploration, quests, character sheets, inventory, maps, audio, books, outcomes, backups, and recovery.
-
-**Proposed usability targets:** find and stage a prepared scene in at most three deliberate DM actions; reach an urgent request in one action; identify what the TV shows without opening the TV window; find any existing feature through navigation or search in under 15 seconds during a timed rehearsal. These are targets to validate with people, not claims about the current app.
-
-**Done when:** the DM can run exploration, conversation, combat, and closing from the redesigned interface without consulting a guide; a player can find their turn, sheet, and quest on a phone; the TV remains readable from every seat; the feature inventory has no orphaned controls; and the old campaign save opens unchanged.
-
+##
 ## Stage 2 — Make one clear path through an evening
 
 **Priority:** high. **Size:** medium. **Depends on:** the Stage 1 navigation and live layout.

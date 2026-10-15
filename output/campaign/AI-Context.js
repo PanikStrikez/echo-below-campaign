@@ -74,7 +74,7 @@
     && list(event.recipients).includes(who) && knows(event, who) && clean(event.publicTitle) && clean(event.playerText);
   function eventBasis(event, audience) {
     const basis = ['Observed', 'Inferred', 'Claimed', 'Open'].includes(event.basis) ? event.basis : 'Open';
-    const safe = `${event.approved === true ? 'Approved' : 'Unapproved'} outcome; ${basis}; saved status: ${STATUSES.includes(event.status) ? event.status : 'unconfirmed'}.`;
+    const safe = `${event.approved === true ? 'Approved' : 'Unapproved'} historical outcome; ${basis}; saved status: ${STATUSES.includes(event.status) ? event.status : 'unconfirmed'}. A past event alone does not establish the current situation.`;
     // The DM source/session fields may contain private facts, so they never cross the audience boundary.
     return audience === 'dm' ? `${safe}${clean(event.source, 250) ? ' Source: ' + clean(event.source, 250) : ''}${clean(event.session, 80) ? ' Session: ' + clean(event.session, 80) : ''}`
       : `${safe} Explicitly published player wording; source reference is the outcome ID.`;
@@ -187,6 +187,7 @@
     const out = make('dm', id(options.campaignId) || 'campaign');
     // Canonical persisted outcomes get priority over preparation if the budget fills.
     const events = effective(data);
+    for(const row of globalThis.ECHO_RECONCILIATION?.currentRecords(data)||[])out.add(row.sourceId,row.kind,row.title,row.text,row.status,row.basis);
     for (const event of events.filter(e => e.approved === true && e.status !== 'planned').slice(-60).reverse()) addEvent(out, event, 'dm');
     for (const [characterId, sheet] of Object.entries(object(state.party)).slice(0, 20)) if (pc(characterId)) addSheet(out, sheet, characterId, 'dm');
     for (const event of events.filter(e => e.approved !== true || e.status === 'planned').slice(-40).reverse()) addEvent(out, event, 'dm');

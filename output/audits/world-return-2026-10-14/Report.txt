@@ -1,0 +1,11 @@
+World response and return scenes — 14 October 2026
+
+Find the new view in Towns / Settlements & people → Town return. It projects effective approved records into new/corrected changes, earlier references, current promises/debts, rescues, escapes, custody, NPC relationships/knowledge, relevant quests, reviewed developments and pending proposals. Every row retains supporting IDs; historical reports and prepared story notes do not become current facts.
+
+Relevant locations can be linked through the existing outcome correction review. The link alone does not visit/reveal a place, complete a quest or change NPC knowledge. Older unlinked outcomes are flagged rather than matched by text. Town affiliation identifies relevance, not presence.
+
+Private return-scene proposals have recording prompts and two-paragraph player narration drawn from approved party wording. They do not commit an arrival or world consequence. Sources are checked again before explicit TV publication; changed sources require regeneration. Repeated arrival recording is idempotent; departure checkpoints include compact signatures so corrections to the same event are visible. Optional fields preserve older saves.
+
+Passed: 8 unit tests (including correction, undo and normalization), 7 isolated browser checks with DM and a simulated TV, existing settlement UI/evidence gates, downtime integration, travel/settlement integration and atomic commands. Screenshot inspected. The browser rehearsal found and fixed a regeneration control that reused a stale view. No production saves, phone connections, source books, geometry or providers were changed.
+
+Remaining: physical-device checks; older outcomes without explicit location links require DM review; a saved departure boundary is needed before the app can honestly call records changes since the last visit. Private scene proposals are prepared on demand, not fixed future outcomes.

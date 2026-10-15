@@ -1,0 +1,94 @@
+{
+  "at": "2026-10-12T00:21:02.776569+00:00",
+  "scope": "Isolated practice campaigns. Cached metadata and synthetic recordings; no live campaign or source-book changes.",
+  "handoff": {
+    "at": "2026-10-12T00:18:39.031Z",
+    "passed": true,
+    "realProviderRequests": 0,
+    "physicalOutputsTested": false,
+    "audibleSpeechAssessed": false,
+    "checks": [
+      "plugin metadata loaded privately",
+      "proposed cast retained",
+      "plugin-only label",
+      "exact-script handoff",
+      "verified-local label",
+      "generation provenance retained",
+      "private preview unpublished",
+      "local mock makes no service request",
+      "approved recording restored and replayed offline",
+      "credentials and output choices excluded"
+    ]
+  },
+  "voiceStudio": {
+    "passed": true,
+    "speechRequests": 5,
+    "realProviderRequests": 0,
+    "checks": [
+      "private-output-block",
+      "dedicated-preview",
+      "explicit-approval",
+      "preset-voice-preview-and-play",
+      "TV-subtitles",
+      "pause-resume-stop-ducking",
+      "map-combat-unchanged",
+      "outdated-block",
+      "alternate-take-preservation",
+      "offline-replay",
+      "backup-audio",
+      "fresh-context-restore-and-replay",
+      "scene-exact-text",
+      "subtitle-only",
+      "recap-invalidation",
+      "device-loss-no-fallback",
+      "generation-cancel"
+    ],
+    "restoreReport": "10 sessions reopened and normalized; campaign identity, 90 character records, quest visibility, and current scenes matched; 4 imported media SHA-256 hashes matched. Live campaign unchanged. External artwork is covered by the full package, not this data rehearsal."
+  },
+  "auditions": {
+    "passed": true,
+    "checks": [
+      "four-proposed-scripts",
+      "free-only-default-off",
+      "explicit-setup",
+      "mock-catalog-and-generation",
+      "Creator-included-credit-limits",
+      "billing-change-needs-consent",
+      "candidate-survives-refresh",
+      "private-preview",
+      "global-mute-stops-preview",
+      "navigation-stops-preview",
+      "reopen-rechecks-private-output",
+      "mock-cannot-be-selected",
+      "profile-save-export-reload",
+      "undo",
+      "NPC-shortcut",
+      "TV-no-voice-data"
+    ],
+    "realVoiceRequests": 0,
+    "livePhones": "untouched"
+  },
+  "realProviderRequests": 0,
+  "physicalOutputsTested": false,
+  "audibleOriginalVoicesAssessed": false,
+  "sourceSnapshot": {
+    "path": "output/releases/private/Live-Group-Original-2026-10-11.json",
+    "recordingDrafts": 1,
+    "recordingTakes": 0,
+    "note": "Supplied dated backup only. Current live browser storage was not inspected or changed."
+  },
+  "remaining": [
+    "Plugin-only originals require importing their existing downloaded files for offline replay. No automatic remote audio download or regeneration.",
+    "Plugin external-tab playback is not routed or muted by the app.",
+    "Physical headphones/table-speaker separation and audible quality remain untested.",
+    "New generation requires a newly approved local allowance; existing service limits still apply."
+  ],
+  "modules": {
+    "AI-Plugin-Auditions.js": "d1f8606067d22a1f669fe61b928a659ff3f243c18edd89f2755d04778ee282a8",
+    "AI-Voice-UI.js": "e700ecf4b6076b3671e382973cb083fa0774d795d735ff5d67e5b52b1df73486",
+    "Voice-Studio-UI.js": "a5da02c832b8a28634b33fb0a5682619e831c2f35a1f46c7206e8a7b186e5a69",
+    "Voice-Studio-Data.js": "766cd3551d2722c3693e8fbe4f2b7202a899f163bcdbb420ae004267382a7da1",
+    "Voice-Studio-Audio.js": "400d8526a150ffe99fd28eb30e505de601a4b222a4b98f81b5967797696fb367",
+    "Campaign-Module-Manifest.js": "8736d18ae3441b59e3bf4b3856dcf748faa2257945fb297a3872d1f11a8a52a4"
+  }
+}

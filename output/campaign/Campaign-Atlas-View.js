@@ -1,7 +1,7 @@
 /* Shared player renderer. It has no campaign definitions and never requests metadata. */
 (() => {
   'use strict';
-  const PUBLIC_IMAGES = new Set([
+  const PUBLIC_IMAGES = new Set(['assets/Example-Ferry.svg',
     ...['Sword-Coast', 'north', 'phandelver', 'high-road', 'waterdeep', 'interior-east', 'south'].map(name => `atlas/art/${name}-Terrain.png`),
     ...['phandalin', 'conyberry', 'thundertree'].map(name => `town-maps/professional/${name}-overhead.png`), 'town-maps/waterdeep-overhead.svg'
   ]);

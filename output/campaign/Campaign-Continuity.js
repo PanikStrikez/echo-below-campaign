@@ -45,9 +45,13 @@
       detail:clip(raw.detail,2500),playerText:clip(raw.playerText,1800),source:clip(raw.source,250),
       status:STATES.includes(raw.status)?raw.status:'planned',basis:['Observed','Inferred','Claimed','Open'].includes(raw.basis)?raw.basis:'Open',
       approved:raw.approved===true,approvedAt:clip(raw.approvedAt,40),share:raw.share==='party'?'party':'private',knows:ids(raw.knows),
+      ...(Array.isArray(raw.places)?{places:ids(raw.places).slice(0,15)}:{}),
       quests:(Array.isArray(raw.quests)?raw.quests:[]).slice(0,15).filter(q=>q&&q.id).map(q=>({id:clip(q.id,80),state:['reference','planned','active','paused','completed','failed','abandoned','open','bypassed'].includes(q.state)?q.state:'reference',stepId:clip(q.stepId,100)})),
-      markers:(Array.isArray(raw.markers)?raw.markers:[]).slice(0,15).filter(m=>m&&m.scene&&m.point).map(m=>({scene:clip(m.scene,80),point:clip(m.point,80),reveal:m.reveal===true})),
+      markers:(Array.isArray(raw.markers)?raw.markers:[]).slice(0,15).filter(m=>m&&m.scene&&m.point).map(m=>({scene:clip(m.scene,80),point:clip(m.point,80),reveal:m.reveal===true,...(['unresolved','postponed','outcome-recorded'].includes(m.disposition)?{disposition:m.disposition}:{})})),
       tracks:(Array.isArray(raw.tracks)?raw.tracks:[]).slice(0,20).filter(t=>t&&TRACKS.includes(t.kind)).map(t=>({kind:t.kind,key:clip(t.key||t.subject,100),subject:clip(t.subject,120),holder:clip(t.holder,120),owedTo:clip(t.owedTo,120),state:['open','resolved','unknown'].includes(t.state)?t.state:'unknown',note:clip(t.note,500),public:t.public!==false})),
+      ...(raw.serviceLink&&typeof raw.serviceLink==='object'?{serviceLink:{origin:clip(raw.serviceLink.origin,160),recordId:clip(raw.serviceLink.recordId,160),signature:clip(raw.serviceLink.signature,64)}}:{}),
+      ...(raw.combatAftermath&&globalThis.ECHO_COMBAT_AFTERMATH?{combatAftermath:globalThis.ECHO_COMBAT_AFTERMATH.metadata(raw.combatAftermath)}:{}),
+      ...(owns(raw,'tableObjective')?{tableObjective:clip(raw.tableObjective,500)}:{}),
       ...(owns(raw,'relationships')?{relationships:relationships(raw.relationships)}:{}),
       ...(owns(raw,'courtyard')?{courtyard:courtyard(raw.courtyard)}:{}),
       ...(owns(raw,'downtime')?{downtime:downtime(raw.downtime)}:{}),
@@ -90,6 +94,13 @@
   function ensure(story, campaign='default') {
     story.continuity ||= normalize();
     const d=story.continuity;
+    // The default storage identity may also host a fresh portable blank table.
+    // Identity alone must never install this group's outcomes into another group.
+    if (story.contentProfile === 'blank') {
+      globalThis.ECHO_QUESTS?.ensure(d,'blank');
+      globalThis.ECHO_OUTCOMES?.ensure(story,d);
+      return d;
+    }
     if(campaign==='default'&&d.seedVersion<1){
       for(const e of SEEDS.slice(0,13))if(!d.events.some(x=>x.id===e.id))d.events.push(structuredClone(e));
       d.seedVersion=1;

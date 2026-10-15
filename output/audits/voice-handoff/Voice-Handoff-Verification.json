@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-12T00:18:39.031Z",
+  "passed": true,
+  "realProviderRequests": 0,
+  "physicalOutputsTested": false,
+  "audibleSpeechAssessed": false,
+  "checks": [
+    "plugin metadata loaded privately",
+    "proposed cast retained",
+    "plugin-only label",
+    "exact-script handoff",
+    "verified-local label",
+    "generation provenance retained",
+    "private preview unpublished",
+    "local mock makes no service request",
+    "approved recording restored and replayed offline",
+    "credentials and output choices excluded"
+  ]
+}

@@ -1,0 +1,31 @@
+AI assistant repair — 12 October 2026
+
+Cause: the ChatGPT registration was connected and its selected model was available,
+but the local app settings had generation disabled and plan confirmation unset.
+
+Changed:
+- Enabled the existing ChatGPT setup with its existing maximum of one request per UTC day.
+- Kept API budgets at zero; no API fallback was enabled.
+- Added AI connection & limits directly in the assistant panel.
+- Show connected-but-disabled, disconnected, launcher-only and remaining-request status explicitly.
+- Show the outgoing-context review when configured AI is enabled.
+
+Verification:
+- Live status and available-model lookup succeeded. Account details and credentials are not in this report.
+- Live status after repair: enabled, connected, selected provider ChatGPT, zero requests consumed.
+- 52 Python AI/auth/export tests and 106 JavaScript tests passed.
+- Isolated assistant browser rehearsal passed, including new disabled/launcher diagnostics,
+  local fallback, settings access, exact context approval, cancellation, forged citations,
+  owner-only help, stale record handling, and unchanged map/combat state.
+- Provider response fixtures were mocked. No real generation request was sent, preserving
+  the one available request. A generated answer is not yet verified against the live provider.
+- No phone service was restarted, campaign record changed, or PDF sent externally.
+
+Use:
+Open the app through the desktop launcher (http://127.0.0.1:48261), refresh its page,
+then Menu > Session > DM assistant. Use campaign records, select the outgoing records,
+approve the exact context and question, and choose Ask configured AI.
+Local references work independently of generation. The one-request cap remains in force.
+
+Protocol reference checked:
+https://developers.openai.com/siwc/token-sharing-open-source/preview-limitations

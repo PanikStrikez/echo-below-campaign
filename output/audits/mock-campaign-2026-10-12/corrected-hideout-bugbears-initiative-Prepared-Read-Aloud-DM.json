@@ -1,0 +1,233 @@
+[
+  {
+    "id": "s2-prep",
+    "title": "Before play · Session 1 handoff",
+    "read": [],
+    "ask": [
+      "Confirm Trista and Pebble’s level-2 HP choices. The other three players manage their own level-2 sheets; ask for combat totals only when needed.",
+      "Is the supply wagon present and intact? Who approaches Barthen? Does Sildar enter with the group?",
+      "Confirm what gear Sildar currently has. He rested, but his armor and weapons were taken in the hideout."
+    ],
+    "scene": "lmop-barthen-exterior"
+  },
+  {
+    "id": "s2-arrival",
+    "title": "1 · Outside Barthen’s Provisions",
+    "read": [
+      "The road ends in a street of packed earth and old stone. A trading house stands ahead, its doorway busy with local customers. Sildar slows beside you and studies the town as if trying to remember the face of an old friend. Gundren should have been here before you. He is not. What do you do?",
+      "The trading house offers an obvious place to ask questions or settle the delivery, while the street leaves you free to keep walking. Its traffic is ordinary enough that you can watch the doorway, approach together, or decide who will speak before going inside."
+    ],
+    "ask": [
+      "Who approaches the door? Where is the wagon? Does Sildar go in with you?"
+    ],
+    "scene": "lmop-barthen-exterior"
+  },
+  {
+    "id": "s2-barthen",
+    "title": "2 · Barthen’s Provisions",
+    "read": [
+      "Warm lamplight falls over rope, trail food, tools, and stacks of ledgers. Behind the counter, a thin shopkeeper looks up. His welcoming smile falters as he counts the faces coming through the door. “Where is Gundren?”",
+      "The shelves are arranged for practical journeys rather than impressive purchases: coils of rope, provisions, and tools ready to be carried away. The counter is a place to set down goods or ask for help, and the shopkeeper waits to hear which business brought you through his door."
+    ],
+    "ask": [
+      "What do you tell Elmar Barthen about Gundren?",
+      "Do you present the supplies, ask about the Rockseeker brothers, or ask about town?"
+    ],
+    "scene": "barthen-art"
+  },
+  {
+    "id": "s2-sildar",
+    "title": "3 · Sildar’s next step",
+    "read": [
+      "Sildar scans the main street. “I will ask after Iarno and find us a place to gather our thoughts. We need something firmer than a rumor before we choose a road.”",
+      "The street gives him several places to begin an inquiry, but his glance does not settle on an answer. Shops, passing residents, and the possibility of a shared meeting place lie within reach. You can accompany him or agree where to find one another after making your own inquiries."
+    ],
+    "ask": [
+      "Do you go with Sildar to Stonehill Inn, ask him about Iarno, or make your own inquiries?"
+    ],
+    "scene": "phandalin-art"
+  },
+  {
+    "id": "s2-inn",
+    "title": "4 · Stonehill Inn and rumors",
+    "read": [
+      "The inn is warmer and louder than the street. Supper, wet cloaks, and low conversation crowd the common room. Several people glance toward your travel-worn gear. A child at one table stops talking mid-sentence.",
+      "Tables and travel-worn clothing break up the room, leaving conversations close enough to approach without addressing everyone at once. The child's sudden quiet is one detail among several. You can choose a seat, seek the keeper, or listen before deciding whose story you want to hear."
+    ],
+    "ask": [
+      "Who do you speak with? What do you ask, and what do you keep to yourselves?"
+    ],
+    "scene": "lmop-stonehill-common-room"
+  },
+  {
+    "id": "s2-town",
+    "title": "5 · Follow the party’s town lead",
+    "read": [],
+    "ask": [
+      "Which lead matters most now: Gundren, Redbrands, the stolen goods, Iarno, or an out-of-town rumor?"
+    ],
+    "scene": "phandalin-art"
+  },
+  {
+    "id": "s2-redbrands",
+    "title": "6 · Redbrand confrontation · optional",
+    "read": [
+      "Four people in dirty red cloaks drift into your path. One plants a boot on the boardwalk. Another watches the townsfolk make room without being asked. The first says, “Visitors usually learn how things work here before asking questions.” What do you do?",
+      "Their attention gives the encounter an immediate edge, but the street still offers space to speak or withdraw. Before anyone reaches for a weapon, you can look at where the strangers stand and decide whether to answer together, keep your distance, or let one person do the talking."
+    ],
+    "ask": [
+      "Do you answer, leave, seek help, bargain, or fight? Where is everyone standing?"
+    ],
+    "scene": "phandalin-street"
+  },
+  {
+    "id": "s2-manor",
+    "title": "7 · If they reach Tresendar Manor",
+    "read": [],
+    "ask": [
+      "Do you approach the ruins openly, seek Carp’s tunnel, scout, or wait?"
+    ],
+    "scene": "lmop-tresendar-manor"
+  },
+  {
+    "id": "s2-cellar",
+    "title": "8 · Cellar and cistern · area 1",
+    "read": [
+      "Old stone steps lead below the manor. The air is cool, and dark water rests in a deep cistern. Barrels and worn flagstones crowd the cellar. A narrow door leads farther in.",
+      "The cistern and the stored goods make this a working space rather than a grand entrance. Watch where the floor leaves room to move between them. You can examine the water, check the visible doors, or establish a position before continuing farther below the manor."
+    ],
+    "ask": [
+      "How do you search the cistern and barrels? Are you quiet, and who watches the doors?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-barracks",
+    "title": "9 · Redbrand barracks · area 2",
+    "read": [
+      "A lamp warms this rough sleeping room. Red cloaks hang from pegs above bedrolls and discarded boots.",
+      "The bedding and personal clutter suggest repeated use rather than a room abandoned with the house above. The space between the sleeping places is worth noting before you enter. You can look over what is plainly visible or watch the exit while someone examines the room."
+    ],
+    "ask": [
+      "Do you speak, close the door, rush in, or withdraw?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-trap",
+    "title": "10 · Hall and hidden pit · area 3",
+    "read": [
+      "A dusty stone hall runs toward copper-covered double doors. Old decorative columns break up the walls.",
+      "The hall gives you a direct way forward, but its floor deserves as much attention as its far end. Dust, joins in the stone, and the places where boots might fall are visible things to inspect. You can slow the group or check the route without assuming that the way is safe."
+    ],
+    "ask": [
+      "Who leads, and how do you cross or inspect the floor?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-crypt",
+    "title": "11 · Crypt · area 4",
+    "read": [
+      "Three old stone coffins stand in a dusty crypt. Human skeletons in rusted armor are propped against them, and copper-covered double doors wait at the far end.",
+      "The stonework muffles the noise from elsewhere in the hideout, making a small movement feel unusually loud. The resting places and scattered remains offer different things to examine. You can leave them undisturbed, look for names or damage, or keep watch while another person searches."
+    ],
+    "ask": [
+      "Do you examine the coffins, pass through, or approach the side doors?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-pens",
+    "title": "12 · Slave pens · area 5",
+    "read": [
+      "Iron bars divide the chamber into cells. Two armed Redbrands stand guard. A woman and a young woman are confined to one side; a boy is held apart from them.",
+      "The bars turn the room into a place of confinement rather than ordinary storage. The doors and the space beside them matter if anyone is to leave in a hurry. You can address whoever is actually present, inspect the locks, or check the surrounding route before promising a way out."
+    ],
+    "ask": [
+      "How do you protect the captives? Do you fight, negotiate, or create a distraction?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-armory",
+    "title": "13 · Armory and storeroom · areas 6–7",
+    "read": [
+      "Weapon racks line one chamber; the next smells of leather, fur, and dust. Old storage here still serves someone.",
+      "The arrangement of the stored equipment makes it possible to examine one part of the room without disturbing everything else. You can check what is within reach, look for markings, or study the exits. Anything useful still has to be inspected before you decide to carry it away."
+    ],
+    "ask": [
+      "What do you take, and do you search for another way through?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-crevasse",
+    "title": "14 · Crevasse and nothic · area 8",
+    "read": [
+      "The worked stone gives way to a raw split in the earth. Two narrow bridges cross the dark gap, and the space below is difficult to make out.",
+      "The break in the cavern floor divides your approach into separate stretches of ground. Its edges and any visible crossing deserve a careful look before someone moves ahead. You can stop to judge the drop or keep to the near side while deciding what you want to investigate."
+    ],
+    "ask": [
+      "Do you cross, speak, search, or back away? What do you offer the creature?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-bugbears",
+    "title": "15 · Bugbears and Droop · area 9",
+    "read": [
+      "Three large figures occupy the room as though it belongs to them. A goblin nearby flinches at your arrival and looks ready to disappear into the floor.",
+      "The room's sleeping places and the positions of those inside shape the space available for an approach. You have a moment to note who watches you, who avoids your gaze, and where the door sits behind you. Words are still an option before the first movement becomes an attack."
+    ],
+    "ask": [
+      "Do you speak, fight, retreat, or try to separate the goblin from them?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-common",
+    "title": "16 · Common room · area 10",
+    "read": [
+      "Dice clatter across a scarred table. Four red-cloaked figures sit around a game, cups and coins at their elbows.",
+      "The tables and scattered possessions make this a room people spend time in, not simply a passage to somewhere else. You can take in the faces and the gaps between the furniture before answering. Whether you listen, bluff, or confront them, their reactions are something you can actually observe."
+    ],
+    "ask": [
+      "Do you bluff your way in, observe, attack, or leave?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-workshop",
+    "title": "17 · Wizard’s workshop · area 11",
+    "read": [
+      "Glassware, notes, and pungent powders cover the benches.",
+      "The worktable, shelves, and unfamiliar apparatus offer several separate lines of inquiry. You can examine the written material without assuming what the equipment does, or look over the apparatus without touching it. The ordinary routes through the room remain worth keeping clear while you investigate."
+    ],
+    "ask": [
+      "What do you examine? Does Trista do anything with the rat she captured?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-glasstaff",
+    "title": "18 · Glasstaff’s quarters · area 12",
+    "read": [
+      "A better-appointed room sits beyond the rougher hideout. Papers lie beside a travel chest. Someone has been planning from here.",
+      "The desk and chest suggest different sorts of business: work done in the open and possessions kept close. You can examine what is visible, listen toward the adjoining spaces, or check the way you came. Nothing here tells you what happened after someone left without further evidence."
+    ],
+    "ask": [
+      "Where did the party last see Glasstaff? What remains to search, and how is Gundren doing at the inn?"
+    ],
+    "scene": "redbrand-hideout"
+  },
+  {
+    "id": "s2-close",
+    "title": "Close · What changed in Phandalin",
+    "read": [],
+    "ask": [
+      "What did each character decide to pursue next?"
+    ],
+    "scene": "phandalin-art"
+  }
+]

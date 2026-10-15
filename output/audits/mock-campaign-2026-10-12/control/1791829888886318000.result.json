@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "result": {
+    "before": {
+      "ac": 12,
+      "slots": 4
+    },
+    "outcomes": [
+      {
+        "targetId": "pc-aldric",
+        "text": "Aldric Vane: AC updated"
+      }
+    ],
+    "patches": [
+      {
+        "kind": "token",
+        "id": "pc-aldric",
+        "field": "ac",
+        "before": 12,
+        "after": 15
+      },
+      {
+        "kind": "sheet",
+        "id": "pc-aldric",
+        "field": "ac",
+        "before": 12,
+        "after": 15
+      },
+      {
+        "kind": "resource",
+        "id": "pc-aldric",
+        "field": "aldric-slots-1",
+        "before": 4,
+        "after": 3
+      }
+    ],
+    "after": {
+      "ac": 15,
+      "slots": 3
+    }
+  }
+}

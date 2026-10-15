@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "result": {
+    "status": 409,
+    "data": {
+      "error": "Initiative is not open for your character"
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": "pc-aldric",
+      "level": 1,
+      "hp": 9,
+      "ac": 12,
+      "hitDice": {
+        "die": 6,
+        "current": 1,
+        "max": 1,
+        "details": "1d6",
+        "pools": [
+          {
+            "die": 6,
+            "current": 1,
+            "max": 1
+          }
+        ]
+      },
+      "slots": [
+        {
+          "id": "aldric-slots-1",
+          "name": "1st-level spell slots",
+          "max": 2,
+          "current": 2,
+          "restoreShort": 0,
+          "restoreLong": true,
+          "unit": "slots",
+          "slotLevel": 0
+        },
+        {
+          "id": "aldric-past-life",
+          "name": "Knowledge from a Past Life",
+          "max": 2,
+          "current": 2,
+          "restoreShort": 0,
+          "restoreLong": true,
+          "unit": "uses",
+          "slotLevel": 0
+        },
+        {
+          "id": "aldric-arcane-recovery",
+          "name": "Arcane Recovery",
+          "max": 1,
+          "current": 1,
+          "restoreShort": 0,
+          "restoreLong": true,
+          "unit": "use",
+          "slotLevel": 0
+        }
+      ]
+    },
+    {
+      "id": "pc-pebble",
+      "level": 1,
+      "hp": 12,
+      "ac": 18,
+      "hitDice": {
+        "die": 10,
+        "current": 1,
+        "max": 1,
+        "details": "1d10",
+        "pools": [
+          {
+            "die": 10,
+            "current": 1,
+            "max": 1
+          }
+        ]
+      },
+      "slots": [
+        {
+          "id": "pebble-second-wind",
+          "name": "Second Wind",
+          "max": 1,
+          "current": 1,
+          "restoreShort": 1,
+          "restoreLong": true,
+          "unit": "use",
+          "slotLevel": 0
+        }
+      ]
+    },
+    {
+      "id": "pc-trista",
+      "level": 1,
+      "hp": 11,
+      "ac": 14,
+      "hitDice": {
+        "die": 8,
+        "current": 1,
+        "max": 1,
+        "details": "1d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 1,
+            "max": 1
+          }
+        ]
+      },
+      "slots": []
+    },
+    {
+      "id": "pc-ringgo",
+      "level": 1,
+      "hp": 10,
+      "ac": 16,
+      "hitDice": {
+        "die": 8,
+        "current": 1,
+        "max": 1,
+        "details": "1d8",
+        "pools": [
+          {
+            "die": 8,
+            "current": 1,
+            "max": 1
+          }
+        ]
+      },
+      "slots": [
+        {
+          "id": "ringgo-arrows",
+          "name": "Arrows",
+          "max": 20,
+          "current": 20,
+          "restoreShort": 0,
+          "restoreLong": false,
+          "unit": "arrows",
+          "slotLevel": 0
+        }
+      ]
+    },
+    {
+      "id": "pc-donavan",
+      "level": 1,
+      "hp": 9,
+      "ac": 12,
+      "hitDice": {
+        "die": 6,
+        "current": 1,
+        "max": 1,
+        "details": "1d6",
+        "pools": [
+          {
+            "die": 6,
+            "current": 1,
+            "max": 1
+          }
+        ]
+      },
+      "slots": [
+        {
+          "id": "donavan-slots-1",
+          "name": "1st-level shared spell slots",
+          "max": 2,
+          "current": 2,
+          "restoreShort": 0,
+          "restoreLong": true,
+          "unit": "",
+          "slotLevel": 0
+        },
+        {
+          "id": "donavan-arcane-recovery",
+          "name": "Arcane Recovery",
+          "max": 1,
+          "current": 1,
+          "restoreShort": 0,
+          "restoreLong": true,
+          "unit": "",
+          "slotLevel": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "result": {
+    "request": {
+      "id": "mock-aldric-mage-armor",
+      "characterId": "pc-aldric",
+      "revision": 1,
+      "transitions": [
+        {
+          "status": "waiting",
+          "at": "2026-10-12T18:31:11.824Z",
+          "note": "Waiting for DM review."
+        }
+      ],
+      "resolution": null,
+      "source": "phone",
+      "scene": "lmop-tresendar-manor",
+      "actionType": "spell",
+      "actionIndex": 4,
+      "entry": {
+        "name": "Mage Armor",
+        "level": 1,
+        "prepared": true,
+        "notes": "Available by DM table rule. Ice Knife is the Xanathar version; Silvery Barbs is a later-source exception.",
+        "support": {
+          "status": "reference",
+          "label": "Manual ruling",
+          "reason": "Exact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.",
+          "source": {
+            "book": "2014 PHB",
+            "printedPage": 256,
+            "rule": "Mage Armor",
+            "confidence": "verified rule / approved sheet"
+          }
+        }
+      },
+      "label": "Mage Armor",
+      "targetIds": [
+        "pc-aldric"
+      ],
+      "targetNames": [
+        "Aldric Vane"
+      ],
+      "casting": {
+        "mode": "slot",
+        "resourceId": "aldric-slots-1",
+        "notation": "",
+        "effect": "Before entering the manor. Self; no armor; request DM ruling.",
+        "concentration": "auto"
+      },
+      "note": "Before entering the manor. Self; no armor; request DM ruling.",
+      "mode": "normal",
+      "at": "2026-10-12T18:31:11.824Z",
+      "status": "waiting",
+      "message": "Waiting for DM review."
+    },
+    "body": "Resolve action\n\nReview once, then apply the rolls, costs, concentration, action usage, and selected effects together. All preview rolls stay private until resolution.\n\nHistory · 0\n\nAction → Targets → Rolls → Reactions → Review → Resolve · Current step: Targets & Rolls · confirm targets and costs\n\nAldric Vane: Mage Armor\n\nRequested targets: Aldric Vane\n\nPlayer note: Before entering the manor. Self; no armor; request DM ruling.\n\nWaiting for DM review.\n\nRequired DM ruling\nNeeds clarificationDecline\n\nUses: action. Resources: 1st-level spell slots -1. Concentration: keep.\n\nTouch an unarmored willing creature; base AC becomes 13 + Dexterity modifier for 8 hours. Aldric’s AC becomes 15. Casting with 1st-level spell slots. Before entering the manor. Self; no armor; request DM ruling.\n\nCasting resource\nChoose slot or rule below\n1st-level spell slots (4/4)\n2nd-level spell slots (2/2)\n\nUpcasting, free casting, and unusual spell effects require a written ruling. Check the full effect below.\n\nTiming, cost, and effect\nManual ruling\n\nExact effect, targets, timing and any material or situational requirements need a DM ruling. The text is available; automation is not claimed.\n\n2014 PHB p. 256 · verified rule / approved sheet\nAdd target\nChoose a target\nAldric Vane\nTap token to targetAdd selected target\nTarget 1 · Aldric Vane\nTarget\nAldric Vane\nPhysical damage / healing (critical dice already included; blank rolls digitally)\nDetails · step 1 · Aldric Vane\n\nAldric Vane: effect +0 · normal · AC 12 · cover 0 · . Expand the step to adjust.\n\nAdd effect / roll step\nReminders · 0\nReactions have been resolved or passed\nI checked the targets, timing, full effect, costs, and any exceptions\nPrepare rolls & preview"
+  }
+}

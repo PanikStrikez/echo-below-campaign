@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "result": {
+    "levels": [
+      {
+        "name": "Aldric Vane",
+        "level": 1,
+        "slots": [
+          {
+            "id": "aldric-slots-1",
+            "name": "1st-level spell slots",
+            "max": 2,
+            "current": 2,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "slots",
+            "slotLevel": 0
+          }
+        ]
+      },
+      {
+        "name": "Pebble",
+        "level": 1,
+        "slots": []
+      },
+      {
+        "name": "Trista",
+        "level": 1,
+        "slots": []
+      },
+      {
+        "name": "Ringgo Paul",
+        "level": 1,
+        "slots": []
+      },
+      {
+        "name": "Donavan Kemp",
+        "level": 1,
+        "slots": [
+          {
+            "id": "donavan-slots-1",
+            "name": "1st-level shared spell slots",
+            "max": 2,
+            "current": 2,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "",
+            "slotLevel": 0
+          }
+        ]
+      }
+    ],
+    "travel": {
+      "placeId": "region-neverwinter",
+      "x": 14,
+      "y": 36
+    }
+  }
+}

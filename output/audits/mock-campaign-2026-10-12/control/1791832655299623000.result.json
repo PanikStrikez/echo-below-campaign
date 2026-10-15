@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "goblin-3",
+    "action": {
+      "actor": "goblin-3",
+      "label": "Scimitar",
+      "targets": [
+        "Trista"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791832655370-kqn5nqye",
+          "label": "Scimitar · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            17
+          ],
+          "total": 21,
+          "natural": 17,
+          "public": false,
+          "kind": "digital",
+          "time": "1:17:35 PM"
+        },
+        {
+          "id": "pa-1791832655370-zamkl4u3",
+          "label": "Scimitar · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:17:35 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-trista",
+          "text": "Trista: 21 vs AC 14: hit, 4 slashing → 4; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

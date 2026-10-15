@@ -1,0 +1,193 @@
+{
+  "ok": true,
+  "result": {
+    "party": [
+      {
+        "name": "Aldric Vane",
+        "level": 3
+      },
+      {
+        "name": "Pebble",
+        "level": 2
+      },
+      {
+        "name": "Trista",
+        "level": 2
+      },
+      {
+        "name": "Ringgo Paul",
+        "level": 4
+      },
+      {
+        "name": "Donavan Kemp",
+        "level": 3
+      },
+      {
+        "name": "Sildar Hallwinter",
+        "level": null
+      }
+    ],
+    "beats": [
+      {
+        "id": "evening6-start",
+        "title": "Session 6 · prepare the mine expedition",
+        "scene": "town-phandalin"
+      },
+      {
+        "id": "s4-arrival",
+        "title": "Arrival · follow a route the party actually earned",
+        "scene": "lmop-cave-entrance"
+      },
+      {
+        "id": "s4-room-1",
+        "title": "Area 1 · Rockseeker camp and the descent",
+        "scene": "lmop-map-wave-south"
+      },
+      {
+        "id": "s4-room-2",
+        "title": "Area 2 · Mine tunnels",
+        "scene": "lmop-map-wave-south"
+      },
+      {
+        "id": "s4-room-3",
+        "title": "Area 3 · Old entrance and ceiling stirges",
+        "scene": "lmop-map-wave-south"
+      },
+      {
+        "id": "s4-room-4",
+        "title": "Area 4 · Old guardroom",
+        "scene": "lmop-map-wave-south"
+      },
+      {
+        "id": "s4-room-5",
+        "title": "Area 5 · Assayers’ office",
+        "scene": "lmop-map-wave-south"
+      },
+      {
+        "id": "s4-room-6",
+        "title": "Area 6 · South barracks",
+        "scene": "lmop-map-wave-south"
+      },
+      {
+        "id": "s4-room-7",
+        "title": "Area 7 · Ruined storeroom and a secure rest",
+        "scene": "lmop-map-wave-south"
+      },
+      {
+        "id": "s4-room-8",
+        "title": "Area 8 · Fungi cavern and poison gas",
+        "scene": "lmop-map-wave-south"
+      },
+      {
+        "id": "s4-room-9",
+        "title": "Area 9 · Great cavern",
+        "scene": "lmop-map-wave-great-cavern"
+      },
+      {
+        "id": "s4-room-10",
+        "title": "Area 10 · Dark pool",
+        "scene": "lmop-map-wave-central"
+      },
+      {
+        "id": "s4-room-11",
+        "title": "Area 11 · North barracks",
+        "scene": "lmop-map-wave-central"
+      },
+      {
+        "id": "s4-room-12",
+        "title": "Area 12 · Smelter cavern",
+        "scene": "lmop-map-wave-smelter"
+      },
+      {
+        "id": "s4-room-13",
+        "title": "Area 13 · Starry cavern",
+        "scene": "lmop-map-wave-central"
+      },
+      {
+        "id": "s4-room-14",
+        "title": "Area 14 · Mormesk and the wizards’ quarters",
+        "scene": "lmop-map-wave-central"
+      },
+      {
+        "id": "s4-room-15",
+        "title": "Area 15 · Forge of Spells and its guardian",
+        "scene": "lmop-map-wave-forge"
+      },
+      {
+        "id": "s4-room-16",
+        "title": "Area 16 · Booming cavern",
+        "scene": "lmop-map-wave-north"
+      },
+      {
+        "id": "s4-room-17",
+        "title": "Area 17 · Old streambed bypass",
+        "scene": "lmop-map-wave-north"
+      },
+      {
+        "id": "s4-room-18",
+        "title": "Area 18 · Collapsed cavern and Vhalak",
+        "scene": "lmop-map-wave-north"
+      },
+      {
+        "id": "s4-room-19",
+        "title": "Area 19 · Temple of Dumathoin",
+        "scene": "lmop-map-wave-temple"
+      },
+      {
+        "id": "s4-nezznar",
+        "title": "Nezznar · bargain, battle, escape, or capture",
+        "scene": "lmop-map-wave-temple"
+      },
+      {
+        "id": "s4-room-20",
+        "title": "Area 20 · Rescue Nundro",
+        "scene": "lmop-map-wave-north"
+      },
+      {
+        "id": "s4-forge-use",
+        "title": "Forge use · temporary magic and item custody",
+        "scene": "lmop-map-wave-forge"
+      },
+      {
+        "id": "s4-rest",
+        "title": "Rest or retreat · keep the expedition state",
+        "scene": "lmop-map-wave-south"
+      },
+      {
+        "id": "s4-wandering",
+        "title": "Optional · wandering encounters during exposed delays",
+        "scene": "lmop-map-wave-central"
+      },
+      {
+        "id": "s4-return",
+        "title": "Return visit · resume the mine that now exists",
+        "scene": "lmop-cave-entrance"
+      },
+      {
+        "id": "s4-outcomes",
+        "title": "Before leaving · record the actual ending",
+        "scene": "lmop-cave-entrance"
+      },
+      {
+        "id": "s4-homecoming",
+        "title": "Phandalin · choose the homecoming that happened",
+        "scene": "town-phandalin"
+      },
+      {
+        "id": "s4-custody",
+        "title": "Phandalin · a living Black Spider in custody",
+        "scene": "town-phandalin"
+      },
+      {
+        "id": "s4-beyond",
+        "title": "After the mine · level 5 and the next chosen road",
+        "scene": "town-phandalin"
+      },
+      {
+        "id": "next-session-6-review",
+        "title": "Close this evening · review what actually changed",
+        "scene": "town-phandalin"
+      }
+    ]
+  }
+}

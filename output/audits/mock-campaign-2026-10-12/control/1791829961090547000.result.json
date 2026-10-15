@@ -1,0 +1,76 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s2-hideout-common-1",
+        "hp": 0
+      },
+      {
+        "id": "s2-hideout-common-2",
+        "hp": 12
+      },
+      {
+        "id": "s2-hideout-common-3",
+        "hp": 16
+      },
+      {
+        "id": "s2-hideout-common-4",
+        "hp": 16
+      }
+    ],
+    "pcs": [
+      {
+        "id": "pc-trista",
+        "hp": 11,
+        "max": 11
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 17,
+        "max": 17
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 22,
+        "max": 22
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 7,
+        "max": 12
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 9,
+        "max": 18
+      }
+    ],
+    "requests": [
+      {
+        "id": "dm-action-1791829959954-tt0x6dl",
+        "label": "Warhammer"
+      },
+      {
+        "id": "dm-action-1791829960212-iabo21z",
+        "label": "Rapier"
+      },
+      {
+        "id": "dm-action-1791829960358-dhctvpr",
+        "label": "Fire Bolt"
+      },
+      {
+        "id": "dm-action-1791829960499-jga1su3",
+        "label": "Shortsword"
+      },
+      {
+        "id": "dm-action-1791829960650-8snmq06",
+        "label": "Shortsword"
+      },
+      {
+        "id": "dm-action-1791829960799-t48tgq3",
+        "label": "Shortsword"
+      }
+    ]
+  }
+}

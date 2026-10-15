@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "road",
+    "tokens": [
+      {
+        "id": "pc-trista",
+        "name": "Trista",
+        "team": "pc",
+        "scene": "road"
+      },
+      {
+        "id": "pc-donavan",
+        "name": "Donavan",
+        "team": "pc",
+        "scene": "road"
+      },
+      {
+        "id": "pc-ringgo",
+        "name": "Ringgo",
+        "team": "pc",
+        "scene": "road"
+      },
+      {
+        "id": "pc-pebble",
+        "name": "Pebble",
+        "team": "pc",
+        "scene": "road"
+      },
+      {
+        "id": "pc-aldric",
+        "name": "Aldric",
+        "team": "pc",
+        "scene": "road"
+      },
+      {
+        "id": "goblin-1",
+        "name": "Goblin 1",
+        "team": "enemy",
+        "scene": "road"
+      },
+      {
+        "id": "goblin-2",
+        "name": "Goblin 2",
+        "team": "enemy",
+        "scene": "road"
+      },
+      {
+        "id": "goblin-3",
+        "name": "Goblin 3",
+        "team": "enemy",
+        "scene": "road"
+      },
+      {
+        "id": "goblin-4",
+        "name": "Goblin 4",
+        "team": "enemy",
+        "scene": "road"
+      }
+    ],
+    "turn": {
+      "scene": "",
+      "round": 0,
+      "order": [],
+      "index": 0
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "ok": false,
+  "error": "page.evaluate: Error: Resolve the open reaction window first.\n    at validate (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:85:104)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Phone-Actions.js:142:3)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Combat-Actions.js:42:102)\n    at Object.prepare (http://127.0.0.1:52652/output/campaign/Session-01-Battleboard.js:5260:126)\n    at window.__resolveMock (eval at evaluate (:311:30), <anonymous>:1:205)\n    at window.__mockEnemyAttack (eval at evaluate (:311:30), <anonymous>:9:478)\n    at window.__mockStep (eval at evaluate (:311:30), <anonymous>:50:137)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:1)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)"
+}

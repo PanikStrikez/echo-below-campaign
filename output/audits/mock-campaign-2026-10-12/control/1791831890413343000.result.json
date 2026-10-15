@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-3-stirge-10",
+    "label": "Blood Drain",
+    "targets": [
+      "Donavan"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831890465-p9fh1y1u",
+        "label": "Blood Drain · attack 1",
+        "notation": "1d20+5",
+        "parts": [
+          5
+        ],
+        "total": 10,
+        "natural": 5,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:50 PM"
+      },
+      {
+        "id": "pa-1791831890465-8am9wk9u",
+        "label": "Blood Drain · effect 1.1",
+        "notation": "1d4+3",
+        "parts": [
+          2
+        ],
+        "total": 5,
+        "natural": 2,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:50 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "pc-donavan",
+        "text": "Donavan: 10 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  }
+}

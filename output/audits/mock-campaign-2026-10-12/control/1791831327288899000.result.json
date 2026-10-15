@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "result": {
+    "panel": [
+      "close-phones"
+    ],
+    "questMethods": [
+      "normalize",
+      "ensure",
+      "record",
+      "cards",
+      "view",
+      "change",
+      "publication",
+      "publicCards",
+      "phoneQuests",
+      "privateClues",
+      "tvQuest",
+      "recommendations",
+      "statuses",
+      "stepStates",
+      "log"
+    ]
+  }
+}

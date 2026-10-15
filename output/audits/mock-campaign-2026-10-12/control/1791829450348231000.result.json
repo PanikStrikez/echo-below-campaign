@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "result": {
+    "hp": [
+      {
+        "id": "goblin-1",
+        "hp": 7
+      },
+      {
+        "id": "goblin-2",
+        "hp": 0
+      },
+      {
+        "id": "goblin-3",
+        "hp": 7
+      },
+      {
+        "id": "goblin-4",
+        "hp": 0
+      }
+    ],
+    "turn": {
+      "scene": "",
+      "round": 0,
+      "order": [],
+      "index": 0
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "result": {
+    "review": "Trista: physical base 5, 5 healing → 5; temp HP absorbed 0",
+    "turn": {
+      "scene": "lmop-map-wave-south",
+      "round": 1,
+      "order": [
+        "s4-wave-3-stirge-2",
+        "s4-wave-3-stirge-5",
+        "pc-trista",
+        "s4-wave-3-stirge-7",
+        "pc-aldric",
+        "s4-wave-3-stirge-8",
+        "s4-wave-3-stirge-1",
+        "s4-wave-3-stirge-4",
+        "s4-wave-3-stirge-10",
+        "pc-ringgo",
+        "pc-pebble",
+        "s4-wave-3-stirge-9",
+        "s4-wave-3-stirge-6",
+        "s4-wave-3-stirge-3",
+        "pc-donavan"
+      ],
+      "index": 10
+    },
+    "party": [
+      {
+        "id": "pc-trista",
+        "hp": 5
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 12
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 22
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 0
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 18
+      }
+    ]
+  }
+}

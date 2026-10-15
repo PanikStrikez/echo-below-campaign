@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "result": {
+    "before": {
+      "scene": "redbrand-hideout",
+      "round": 3,
+      "order": [
+        "pc-trista",
+        "pc-donavan",
+        "pc-ringgo",
+        "pc-pebble",
+        "pc-aldric",
+        "s2-hideout-common-1",
+        "s2-hideout-common-2",
+        "s2-hideout-common-3",
+        "s2-hideout-common-4"
+      ],
+      "index": 1
+    },
+    "after": {
+      "scene": "redbrand-hideout",
+      "round": 3,
+      "order": [
+        "pc-trista",
+        "pc-donavan",
+        "pc-ringgo",
+        "pc-pebble",
+        "pc-aldric",
+        "s2-hideout-common-1",
+        "s2-hideout-common-2",
+        "s2-hideout-common-3",
+        "s2-hideout-common-4"
+      ],
+      "index": 1
+    },
+    "toast": "Donavan Kemp: review Ray of Frost · speed −10 ft (start of turn)."
+  }
+}

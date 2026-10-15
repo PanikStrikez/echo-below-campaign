@@ -1,0 +1,465 @@
+{
+  "ok": true,
+  "result": {
+    "log": [
+      {
+        "id": "dm-action-1791830044206-s4yu4ge",
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791830044483-0sq8vtaw",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              11
+            ],
+            "total": 17,
+            "natural": 11,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:04 PM"
+          },
+          {
+            "id": "pa-1791830044483-61khaukn",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              1
+            ],
+            "total": 5,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:04 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-common-2",
+            "text": "Common room ruffian 2: 17 vs AC 14: hit, 5 piercing → 5; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791830044551-l6jrxhb",
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791830044681-1fy7i0b2",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              18
+            ],
+            "total": 24,
+            "natural": 18,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:04 PM"
+          },
+          {
+            "id": "pa-1791830044681-0yvyzrw6",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:04 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-common-2",
+            "text": "Common room ruffian 2: 24 vs AC 14: hit, 8 bludgeoning → 8; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791830044770-6ej1o8i",
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791830044972-748mh53s",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              14
+            ],
+            "total": 20,
+            "natural": 14,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:04 PM"
+          },
+          {
+            "id": "pa-1791830044972-ibky7e5s",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              5
+            ],
+            "total": 5,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:04 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-common-3",
+            "text": "Common room ruffian 3: 20 vs AC 14: hit, 5 cold → 5; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791830045041-bl4wq7t",
+        "actor": "pc-ringgo",
+        "label": "Rapier",
+        "rolls": [
+          {
+            "id": "pa-1791830045097-rn42385z",
+            "label": "Rapier · attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              17
+            ],
+            "total": 24,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          },
+          {
+            "id": "pa-1791830045097-dtj4mx5y",
+            "label": "Rapier · effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              1
+            ],
+            "total": 6,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-common-3",
+            "text": "Common room ruffian 3: 24 vs AC 14: hit, 6 piercing → 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791830045151-2uh66be",
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791830045237-sdqw5wyd",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              9
+            ],
+            "total": 15,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          },
+          {
+            "id": "pa-1791830045237-d043jtue",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              5
+            ],
+            "total": 5,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-common-3",
+            "text": "Common room ruffian 3: 15 vs AC 14: hit, 5 fire → 5; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791830045302-d624hdt",
+        "actor": "s2-hideout-common-4",
+        "label": "Shortsword",
+        "rolls": [
+          {
+            "id": "pa-1791830045351-jlw4umwl",
+            "label": "Shortsword · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": false,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          },
+          {
+            "id": "pa-1791830045351-d6fwx65h",
+            "label": "Shortsword · effect 1.1",
+            "notation": "1d6+2",
+            "parts": [
+              1
+            ],
+            "total": 3,
+            "natural": 1,
+            "public": false,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 6 vs AC 18: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791830045405-yp7iege",
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791830045448-ojyzcig8",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              5
+            ],
+            "total": 11,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          },
+          {
+            "id": "pa-1791830045448-po15v77o",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-common-4",
+            "text": "Common room ruffian 4: 11 vs AC 14: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791830045497-7gl8dbt",
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791830045659-hkyxqenb",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              17
+            ],
+            "total": 23,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          },
+          {
+            "id": "pa-1791830045659-mcrmrm12",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-common-4",
+            "text": "Common room ruffian 4: 23 vs AC 14: hit, 6 bludgeoning → 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791830045720-n681dgw",
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791830045915-qldy1lds",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              12
+            ],
+            "total": 18,
+            "natural": 12,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          },
+          {
+            "id": "pa-1791830045915-apynyms4",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              2
+            ],
+            "total": 2,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:05 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-common-4",
+            "text": "Common room ruffian 4: 18 vs AC 14: hit, 2 cold → 2; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791830045993-gu3a4nh",
+        "actor": "pc-ringgo",
+        "label": "Rapier",
+        "rolls": [
+          {
+            "id": "pa-1791830046045-1p9c30hj",
+            "label": "Rapier · attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              8
+            ],
+            "total": 15,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:06 PM"
+          },
+          {
+            "id": "pa-1791830046045-reprgxp8",
+            "label": "Rapier · effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              7
+            ],
+            "total": 12,
+            "natural": 7,
+            "public": true,
+            "kind": "digital",
+            "time": "12:34:06 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "s2-hideout-common-4",
+            "text": "Common room ruffian 4: 15 vs AC 14: hit, 12 piercing → 12; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      }
+    ],
+    "combatants": [
+      {
+        "id": "pc-trista",
+        "hp": 11,
+        "maxHp": 11
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 17,
+        "maxHp": 17
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 7,
+        "maxHp": 12
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 9,
+        "maxHp": 18
+      },
+      {
+        "id": "s2-hideout-common-1",
+        "hp": 0,
+        "maxHp": 16
+      },
+      {
+        "id": "s2-hideout-common-2",
+        "hp": 0,
+        "maxHp": 16
+      },
+      {
+        "id": "s2-hideout-common-3",
+        "hp": 0,
+        "maxHp": 16
+      },
+      {
+        "id": "s2-hideout-common-4",
+        "hp": 0,
+        "maxHp": 16
+      }
+    ],
+    "status": "Digital rolls and real engine commits; compressed representative combat, not a full tactical simulation."
+  }
+}

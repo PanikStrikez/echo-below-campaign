@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-ringgo",
+    "actions": [
+      {
+        "actor": "pc-ringgo",
+        "label": "Shortbow",
+        "rolls": [
+          {
+            "id": "pa-1791832660634-217mrmo2",
+            "label": "Shortbow · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              4
+            ],
+            "total": 10,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          },
+          {
+            "id": "pa-1791832660634-e4d0n2f3",
+            "label": "Shortbow · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-2",
+            "text": "Goblin 2: 10 vs AC 15: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

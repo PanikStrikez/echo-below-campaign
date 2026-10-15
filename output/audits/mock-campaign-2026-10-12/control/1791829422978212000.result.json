@@ -1,0 +1,4 @@
+{
+  "ok": true,
+  "result": "Mock resolver installed; uses production prepare and atomic commit, DM review confirmed."
+}

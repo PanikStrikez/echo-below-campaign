@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-pebble",
+    "actions": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791832660954-2ir367m0",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              8
+            ],
+            "total": 14,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          },
+          {
+            "id": "pa-1791832660955-2h1f47e1",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:40 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-2",
+            "text": "Goblin 2: 14 vs AC 15: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

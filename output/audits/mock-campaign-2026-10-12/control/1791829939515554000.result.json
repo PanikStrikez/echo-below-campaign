@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "result": {
+    "foes": [
+      {
+        "id": "s2-hideout-common-1",
+        "name": "Common room ruffian 1",
+        "hp": 16
+      },
+      {
+        "id": "s2-hideout-common-2",
+        "name": "Common room ruffian 2",
+        "hp": 16
+      },
+      {
+        "id": "s2-hideout-common-3",
+        "name": "Common room ruffian 3",
+        "hp": 16
+      },
+      {
+        "id": "s2-hideout-common-4",
+        "name": "Common room ruffian 4",
+        "hp": 16
+      }
+    ]
+  }
+}

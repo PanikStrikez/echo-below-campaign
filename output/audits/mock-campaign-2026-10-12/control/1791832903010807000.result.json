@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "result": {
+    "outcomeAPI": [
+      "kinds",
+      "normalize",
+      "ensure",
+      "effective",
+      "begin",
+      "preview",
+      "apply",
+      "retire",
+      "questDefinitions",
+      "questUpdates",
+      "journal",
+      "privateJournal",
+      "linked",
+      "fingerprint",
+      "audit"
+    ],
+    "normalized": {
+      "version": 1,
+      "migrated": false,
+      "original": "",
+      "drafts": [],
+      "revisions": [],
+      "summaries": []
+    }
+  }
+}

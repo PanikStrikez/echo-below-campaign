@@ -1,0 +1,573 @@
+{
+  "ok": true,
+  "result": {
+    "log": [
+      {
+        "id": "dm-action-1791829503725-y60jqhh",
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791829503733-q6u9l266",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              17
+            ],
+            "total": 23,
+            "natural": 17,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:03 PM"
+          },
+          {
+            "id": "pa-1791829503733-prnx14jw",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              2
+            ],
+            "total": 6,
+            "natural": 2,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:03 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "klarg",
+            "text": "Klarg: 23 vs AC 16: hit, 6 piercing → 6; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791829503782-0e9sj71",
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791829503884-3taigdr6",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              5
+            ],
+            "total": 11,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:03 PM"
+          },
+          {
+            "id": "pa-1791829503884-ho5ne27e",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              4
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:03 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "klarg",
+            "text": "Klarg: 11 vs AC 16: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791829503922-jio3v00",
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791829504130-jhzpxyx7",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              4
+            ],
+            "total": 10,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          },
+          {
+            "id": "pa-1791829504130-8ssk5yob",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              1
+            ],
+            "total": 1,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "klarg",
+            "text": "Klarg: 10 vs AC 16: miss, 0 cold → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791829504178-3dwfav6",
+        "actor": "pc-ringgo",
+        "label": "Rapier",
+        "rolls": [
+          {
+            "id": "pa-1791829504218-cmilohc2",
+            "label": "Rapier · attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              1
+            ],
+            "total": 8,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          },
+          {
+            "id": "pa-1791829504218-uqr2tiko",
+            "label": "Rapier · effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              3
+            ],
+            "total": 8,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "klarg",
+            "text": "Klarg: 8 vs AC 16: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791829504274-08a6b09",
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791829504342-xem8y1ru",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              19
+            ],
+            "total": 25,
+            "natural": 19,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          },
+          {
+            "id": "pa-1791829504342-3mybffou",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              10
+            ],
+            "total": 10,
+            "natural": 10,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "klarg",
+            "text": "Klarg: 25 vs AC 16: hit, 10 fire → 10; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791829504391-rygq9ta",
+        "actor": "klarg",
+        "label": "Morningstar",
+        "rolls": [
+          {
+            "id": "pa-1791829504428-lqyb3dw1",
+            "label": "Morningstar · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": false,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          },
+          {
+            "id": "pa-1791829504428-atw38vyt",
+            "label": "Morningstar · effect 1.1",
+            "notation": "2d8+2",
+            "parts": [
+              4,
+              8
+            ],
+            "total": 14,
+            "natural": 4,
+            "public": false,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 9 vs AC 18: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "actor": "ripper",
+        "error": "Cannot read properties of undefined (reading 'source')"
+      },
+      {
+        "actor": "goblin-16",
+        "error": "Cannot read properties of undefined (reading 'source')"
+      },
+      {
+        "actor": "goblin-17",
+        "error": "Cannot read properties of undefined (reading 'source')"
+      },
+      {
+        "id": "dm-action-1791829504559-x4x15td",
+        "actor": "pc-trista",
+        "label": "Dagger",
+        "rolls": [
+          {
+            "id": "pa-1791829504593-vn0qhrg6",
+            "label": "Dagger · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              1
+            ],
+            "total": 7,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          },
+          {
+            "id": "pa-1791829504593-00bcmztt",
+            "label": "Dagger · effect 1.1",
+            "notation": "1d6+4",
+            "parts": [
+              5
+            ],
+            "total": 9,
+            "natural": 5,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "klarg",
+            "text": "Klarg: 7 vs AC 16: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791829504639-chomwtk",
+        "actor": "pc-pebble",
+        "label": "Warhammer",
+        "rolls": [
+          {
+            "id": "pa-1791829504734-9rpry9we",
+            "label": "Warhammer · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              6
+            ],
+            "total": 12,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          },
+          {
+            "id": "pa-1791829504734-y4hzscku",
+            "label": "Warhammer · effect 1.1",
+            "notation": "1d8+4",
+            "parts": [
+              3
+            ],
+            "total": 7,
+            "natural": 3,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:04 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "klarg",
+            "text": "Klarg: 12 vs AC 16: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791829504779-dmc7m4s",
+        "actor": "pc-donavan",
+        "label": "Ray of Frost",
+        "rolls": [
+          {
+            "id": "pa-1791829505009-5uedpa58",
+            "label": "Ray of Frost · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              8
+            ],
+            "total": 14,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:05 PM"
+          },
+          {
+            "id": "pa-1791829505009-xe2ld57s",
+            "label": "Ray of Frost · effect 1.1",
+            "notation": "1d8",
+            "parts": [
+              8
+            ],
+            "total": 8,
+            "natural": 8,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:05 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "klarg",
+            "text": "Klarg: 14 vs AC 16: miss, 0 cold → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791829505088-t48pzbr",
+        "actor": "pc-ringgo",
+        "label": "Rapier",
+        "rolls": [
+          {
+            "id": "pa-1791829505136-ozuqovrp",
+            "label": "Rapier · attack 1",
+            "notation": "1d20+7",
+            "parts": [
+              6
+            ],
+            "total": 13,
+            "natural": 6,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:05 PM"
+          },
+          {
+            "id": "pa-1791829505136-lkdh9408",
+            "label": "Rapier · effect 1.1",
+            "notation": "1d8+5",
+            "parts": [
+              1
+            ],
+            "total": 6,
+            "natural": 1,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:05 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "klarg",
+            "text": "Klarg: 13 vs AC 16: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791829505180-6gonbis",
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791829505250-lr354dm2",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              9
+            ],
+            "total": 15,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:05 PM"
+          },
+          {
+            "id": "pa-1791829505250-g7kmve1b",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              4
+            ],
+            "total": 4,
+            "natural": 4,
+            "public": true,
+            "kind": "digital",
+            "time": "12:25:05 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "klarg",
+            "text": "Klarg: 15 vs AC 16: miss, 0 fire → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "id": "dm-action-1791829505298-ofql63v",
+        "actor": "klarg",
+        "label": "Morningstar",
+        "rolls": [
+          {
+            "id": "pa-1791829505335-gpxuys4b",
+            "label": "Morningstar · attack 1",
+            "notation": "1d20+4",
+            "parts": [
+              13
+            ],
+            "total": 17,
+            "natural": 13,
+            "public": false,
+            "kind": "digital",
+            "time": "12:25:05 PM"
+          },
+          {
+            "id": "pa-1791829505336-kh3v6yti",
+            "label": "Morningstar · effect 1.1",
+            "notation": "2d8+2",
+            "parts": [
+              4,
+              2
+            ],
+            "total": 8,
+            "natural": 4,
+            "public": false,
+            "kind": "digital",
+            "time": "12:25:05 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "pc-pebble",
+            "text": "Pebble: 17 vs AC 18: miss, 0 piercing → 0; temp HP absorbed 0"
+          }
+        ],
+        "costs": [],
+        "usage": "action"
+      },
+      {
+        "actor": "ripper",
+        "error": "Cannot read properties of undefined (reading 'source')"
+      },
+      {
+        "actor": "goblin-16",
+        "error": "Cannot read properties of undefined (reading 'source')"
+      },
+      {
+        "actor": "goblin-17",
+        "error": "Cannot read properties of undefined (reading 'source')"
+      }
+    ],
+    "combatants": [
+      {
+        "id": "pc-trista",
+        "hp": 11,
+        "maxHp": 11
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 17,
+        "maxHp": 17
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 12,
+        "maxHp": 12
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 9,
+        "maxHp": 18
+      },
+      {
+        "id": "klarg",
+        "hp": 11,
+        "maxHp": 27
+      },
+      {
+        "id": "ripper",
+        "hp": 11,
+        "maxHp": 11
+      },
+      {
+        "id": "goblin-16",
+        "hp": 7,
+        "maxHp": 7
+      },
+      {
+        "id": "goblin-17",
+        "hp": 7,
+        "maxHp": 7
+      }
+    ],
+    "status": "Digital rolls and real engine commits; compressed representative combat, not a full tactical simulation."
+  }
+}

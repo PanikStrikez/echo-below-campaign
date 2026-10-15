@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-south",
+      "round": 1,
+      "order": [
+        "s4-wave-3-stirge-2",
+        "s4-wave-3-stirge-5",
+        "pc-trista",
+        "s4-wave-3-stirge-7",
+        "pc-aldric",
+        "s4-wave-3-stirge-8",
+        "s4-wave-3-stirge-1",
+        "s4-wave-3-stirge-4",
+        "s4-wave-3-stirge-10",
+        "pc-ringgo",
+        "pc-pebble",
+        "s4-wave-3-stirge-9",
+        "s4-wave-3-stirge-6",
+        "s4-wave-3-stirge-3",
+        "pc-donavan"
+      ],
+      "index": 0
+    }
+  }
+}

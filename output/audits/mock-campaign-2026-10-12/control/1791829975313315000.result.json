@@ -1,0 +1,74 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "redbrand-hideout",
+    "sceneFog": {
+      "redbrand-hideout": [],
+      "lmop-map-redbrand-crevasse": []
+    },
+    "pcHP": [
+      {
+        "id": "pc-trista",
+        "hp": 11
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 17
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 22
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 7
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 9
+      }
+    ],
+    "pending": [
+      {
+        "actor": "pc-pebble",
+        "label": "Warhammer"
+      },
+      {
+        "actor": "pc-ringgo",
+        "label": "Rapier"
+      },
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt"
+      },
+      {
+        "actor": "s2-hideout-common-2",
+        "label": "Shortsword"
+      },
+      {
+        "actor": "s2-hideout-common-3",
+        "label": "Shortsword"
+      },
+      {
+        "actor": "s2-hideout-common-4",
+        "label": "Shortsword"
+      }
+    ],
+    "turn": {
+      "scene": "redbrand-hideout",
+      "round": 3,
+      "order": [
+        "pc-trista",
+        "pc-donavan",
+        "pc-ringgo",
+        "pc-pebble",
+        "pc-aldric",
+        "s2-hideout-common-1",
+        "s2-hideout-common-2",
+        "s2-hideout-common-3",
+        "s2-hideout-common-4"
+      ],
+      "index": 1
+    }
+  }
+}

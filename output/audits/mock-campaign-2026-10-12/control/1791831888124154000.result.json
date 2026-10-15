@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "s4-wave-3-stirge-8",
+    "label": "Blood Drain",
+    "targets": [
+      "Donavan"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831888218-7160xohv",
+        "label": "Blood Drain · attack 1",
+        "notation": "1d20+5",
+        "parts": [
+          13
+        ],
+        "total": 18,
+        "natural": 13,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:48 PM"
+      },
+      {
+        "id": "pa-1791831888218-0vdg5qju",
+        "label": "Blood Drain · effect 1.1",
+        "notation": "1d4+3",
+        "parts": [
+          2
+        ],
+        "total": 5,
+        "natural": 2,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:48 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "pc-donavan",
+        "text": "Donavan: 18 vs AC 12: hit, 5 piercing → 5; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  }
+}

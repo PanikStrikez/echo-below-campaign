@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "result": {
+    "id": "mock-pc-ringgo-road-1",
+    "actor": "pc-ringgo",
+    "label": "Rapier",
+    "rolls": [
+      {
+        "id": "pa-1791829425774-hs597rx3",
+        "label": "Rapier · attack 1",
+        "notation": "1d20+7",
+        "parts": [
+          7
+        ],
+        "total": 14,
+        "natural": 7,
+        "public": true,
+        "kind": "digital",
+        "time": "12:23:45 PM"
+      },
+      {
+        "id": "pa-1791829425774-feoewkrt",
+        "label": "Rapier · effect 1.1",
+        "notation": "1d8+5",
+        "parts": [
+          8
+        ],
+        "total": 13,
+        "natural": 8,
+        "public": true,
+        "kind": "digital",
+        "time": "12:23:45 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "goblin-3",
+        "text": "Goblin 3: 14 vs AC 15: miss, 0 piercing → 0; temp HP absorbed 0"
+      }
+    ],
+    "costs": [],
+    "usage": "action"
+  }
+}

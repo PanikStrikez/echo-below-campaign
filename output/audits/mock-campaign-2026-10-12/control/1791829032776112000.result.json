@@ -1,0 +1,103 @@
+{
+  "ok": true,
+  "result": {
+    "pack": "",
+    "beat": "prep",
+    "beats": [
+      {
+        "id": "prep",
+        "name": "Before play"
+      },
+      {
+        "id": "departure",
+        "name": "1 · Gundren rides ahead"
+      },
+      {
+        "id": "ambush",
+        "name": "2 · Dead horses and ambush"
+      },
+      {
+        "id": "aftermath",
+        "name": "3 · Clues after the road fight"
+      },
+      {
+        "id": "trail",
+        "name": "4 · Goblin trail and traps"
+      },
+      {
+        "id": "cave",
+        "name": "5 · Cave mouth and approach"
+      },
+      {
+        "id": "blind",
+        "name": "Area 2 · Goblin blind"
+      },
+      {
+        "id": "kennel",
+        "name": "Area 3 · Kennel and wolves"
+      },
+      {
+        "id": "passage",
+        "name": "Area 4 · Steep passage"
+      },
+      {
+        "id": "bridge",
+        "name": "Area 5 · Overpass and flood"
+      },
+      {
+        "id": "den",
+        "name": "Area 6 · Yeemik and Sildar"
+      },
+      {
+        "id": "pools",
+        "name": "Area 7 · Twin pools"
+      },
+      {
+        "id": "klarg",
+        "name": "Area 8 · Klarg’s cave"
+      },
+      {
+        "id": "sildar",
+        "name": "After rescue · What Sildar knows"
+      },
+      {
+        "id": "close",
+        "name": "Close the session"
+      },
+      {
+        "id": "rules",
+        "name": "Quick rules and DM safety dial"
+      },
+      {
+        "id": "all",
+        "name": "All notes"
+      }
+    ],
+    "party": [
+      {
+        "name": "Aldric Vane",
+        "level": 3
+      },
+      {
+        "name": "Pebble",
+        "level": 1
+      },
+      {
+        "name": "Trista",
+        "level": 1
+      },
+      {
+        "name": "Ringgo Paul",
+        "level": 4
+      },
+      {
+        "name": "Donavan Kemp",
+        "level": 3
+      },
+      {
+        "name": "Sildar Hallwinter",
+        "level": null
+      }
+    ]
+  }
+}

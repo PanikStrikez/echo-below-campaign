@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "result": {
+    "pc": [
+      {
+        "id": "pc-trista",
+        "x": 45,
+        "y": 65
+      },
+      {
+        "id": "pc-donavan",
+        "x": 51,
+        "y": 65
+      },
+      {
+        "id": "pc-ringgo",
+        "x": 42,
+        "y": 65
+      },
+      {
+        "id": "pc-pebble",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": "pc-aldric",
+        "x": 54,
+        "y": 65
+      }
+    ],
+    "phoneStatus": {
+      "level": "connected",
+      "label": "up to date",
+      "details": "Last seen 1s ago · applied update 41/42"
+    }
+  }
+}

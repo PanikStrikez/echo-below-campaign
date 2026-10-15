@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "result": {
+    "tokens": [],
+    "turn": {
+      "scene": "",
+      "round": 0,
+      "order": [],
+      "index": 0
+    },
+    "buttons": [
+      "Start combat",
+      "Ask phones for initiative",
+      "End combat",
+      "Add combatants",
+      "Combat setup",
+      "All combat tools",
+      "Start combatMaps, turns, and tokens",
+      "Personality and Background",
+      "Combat"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "result": {
+    "round": 1,
+    "hp": [
+      {
+        "name": "Trista",
+        "hp": 0
+      },
+      {
+        "name": "Donavan",
+        "hp": 12
+      },
+      {
+        "name": "Ringgo",
+        "hp": 22
+      },
+      {
+        "name": "Pebble",
+        "hp": 0
+      },
+      {
+        "name": "Aldric",
+        "hp": 18
+      }
+    ],
+    "foes": [
+      {
+        "id": "s4-wave-3-stirge-1",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-2",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-3",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-4",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-5",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-6",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-7",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-8",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-9",
+        "hp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-10",
+        "hp": 2
+      }
+    ]
+  }
+}

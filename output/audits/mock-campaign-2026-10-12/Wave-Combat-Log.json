@@ -1,0 +1,313 @@
+[
+  {
+    "actor": "s4-wave-3-stirge-5",
+    "label": "Blood Drain",
+    "targets": [
+      "Trista"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831886170-oh0khvy4",
+        "label": "Blood Drain \u00b7 attack 1",
+        "notation": "1d20+5",
+        "parts": [
+          19
+        ],
+        "total": 24,
+        "natural": 19,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:46 PM"
+      },
+      {
+        "id": "pa-1791831886170-o0xe5hli",
+        "label": "Blood Drain \u00b7 effect 1.1",
+        "notation": "1d4+3",
+        "parts": [
+          4
+        ],
+        "total": 7,
+        "natural": 4,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:46 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "pc-trista",
+        "text": "Trista: 24 vs AC 14: hit, 7 piercing \u2192 7; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  },
+  {
+    "actor": "pc-trista",
+    "label": "Unarmed Strike",
+    "targets": [
+      "Stirge 1"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831886649-3mlh9j6m",
+        "label": "Unarmed Strike \u00b7 attack 1",
+        "notation": "1d20+6",
+        "parts": [
+          7
+        ],
+        "total": 13,
+        "natural": 7,
+        "public": true,
+        "kind": "digital",
+        "time": "1:04:46 PM"
+      },
+      {
+        "id": "pa-1791831886649-mi2rujgz",
+        "label": "Unarmed Strike \u00b7 effect 1.1",
+        "notation": "1d6+4",
+        "parts": [
+          2
+        ],
+        "total": 6,
+        "natural": 2,
+        "public": true,
+        "kind": "digital",
+        "time": "1:04:46 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "s4-wave-3-stirge-1",
+        "text": "Stirge 1: 13 vs AC 14: miss, 0 bludgeoning \u2192 0; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  },
+  {
+    "actor": "s4-wave-3-stirge-7",
+    "label": "Blood Drain",
+    "targets": [
+      "Pebble"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831887114-zkg1jokb",
+        "label": "Blood Drain \u00b7 attack 1",
+        "notation": "1d20+5",
+        "parts": [
+          20
+        ],
+        "total": 25,
+        "natural": 20,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:47 PM"
+      },
+      {
+        "id": "pa-1791831887114-gvl60cmd",
+        "label": "Blood Drain \u00b7 effect 1.1",
+        "notation": "2d4+3",
+        "parts": [
+          1,
+          4
+        ],
+        "total": 8,
+        "natural": 1,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:47 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "pc-pebble",
+        "text": "Pebble: 25 vs AC 18: critical hit, 8 piercing \u2192 8; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  },
+  {
+    "actor": "pc-aldric",
+    "label": "Dash to secured passage",
+    "targets": [],
+    "rolls": [],
+    "outcomes": [],
+    "costs": []
+  },
+  {
+    "actor": "s4-wave-3-stirge-8",
+    "label": "Blood Drain",
+    "targets": [
+      "Donavan"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831888218-7160xohv",
+        "label": "Blood Drain \u00b7 attack 1",
+        "notation": "1d20+5",
+        "parts": [
+          13
+        ],
+        "total": 18,
+        "natural": 13,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:48 PM"
+      },
+      {
+        "id": "pa-1791831888218-0vdg5qju",
+        "label": "Blood Drain \u00b7 effect 1.1",
+        "notation": "1d4+3",
+        "parts": [
+          2
+        ],
+        "total": 5,
+        "natural": 2,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:48 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "pc-donavan",
+        "text": "Donavan: 18 vs AC 12: hit, 5 piercing \u2192 5; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  },
+  {
+    "actor": "s4-wave-3-stirge-1",
+    "label": "Blood Drain",
+    "targets": [
+      "Pebble"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831889482-o8yedk14",
+        "label": "Blood Drain \u00b7 attack 1",
+        "notation": "1d20+5",
+        "parts": [
+          15
+        ],
+        "total": 20,
+        "natural": 15,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:49 PM"
+      },
+      {
+        "id": "pa-1791831889482-st6wiwc4",
+        "label": "Blood Drain \u00b7 effect 1.1",
+        "notation": "1d4+3",
+        "parts": [
+          4
+        ],
+        "total": 7,
+        "natural": 4,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:49 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "pc-pebble",
+        "text": "Pebble: 20 vs AC 18: hit, 7 piercing \u2192 7; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  },
+  {
+    "actor": "s4-wave-3-stirge-4",
+    "label": "Blood Drain",
+    "targets": [
+      "Trista"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831889928-g4ztbnwr",
+        "label": "Blood Drain \u00b7 attack 1",
+        "notation": "1d20+5",
+        "parts": [
+          11
+        ],
+        "total": 16,
+        "natural": 11,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:49 PM"
+      },
+      {
+        "id": "pa-1791831889928-1xt3sxn3",
+        "label": "Blood Drain \u00b7 effect 1.1",
+        "notation": "1d4+3",
+        "parts": [
+          3
+        ],
+        "total": 6,
+        "natural": 3,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:49 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "pc-trista",
+        "text": "Trista: 16 vs AC 14: hit, 6 piercing \u2192 6; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  },
+  {
+    "actor": "s4-wave-3-stirge-10",
+    "label": "Blood Drain",
+    "targets": [
+      "Donavan"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831890465-p9fh1y1u",
+        "label": "Blood Drain \u00b7 attack 1",
+        "notation": "1d20+5",
+        "parts": [
+          5
+        ],
+        "total": 10,
+        "natural": 5,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:50 PM"
+      },
+      {
+        "id": "pa-1791831890465-8am9wk9u",
+        "label": "Blood Drain \u00b7 effect 1.1",
+        "notation": "1d4+3",
+        "parts": [
+          2
+        ],
+        "total": 5,
+        "natural": 2,
+        "public": false,
+        "kind": "digital",
+        "time": "1:04:50 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "pc-donavan",
+        "text": "Donavan: 10 vs AC 12: miss, 0 piercing \u2192 0; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  },
+  {
+    "actor": "pc-ringgo",
+    "label": "Cunning Action: Disengage",
+    "targets": [],
+    "rolls": [],
+    "outcomes": [],
+    "costs": []
+  }
+]

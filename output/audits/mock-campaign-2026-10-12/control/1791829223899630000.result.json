@@ -1,0 +1,223 @@
+{
+  "ok": true,
+  "result": {
+    "beat": {
+      "id": "ambush",
+      "title": "2 · Dead horses and ambush",
+      "scene": "horses",
+      "encounter": "road",
+      "tv": "Show The empty horses first. After goblins are seen or attack, use Road ambush · revealed; switch to the gridded road map when positions matter.",
+      "read": [
+        "The trail bends between close woods. Two horses lie across the road ahead, dead and pierced by black-feathered arrows. Their saddlebags hang open. Neither rider is in sight.",
+        "The open saddlebags and arrows give you more to examine than the bodies alone. Beyond the bend, trunks and tangled growth break up the view into the woods; anyone moving closer will have to choose where to stand and what to watch."
+      ],
+      "ask": [
+        "“What do you do?” Wait for their approach before announcing combat.",
+        "On close inspection, identify the horses as Gundren’s and Sildar’s; the saddlebags were looted."
+      ],
+      "run": [
+        "Four goblins hide in the woods, two on each side. Roll one goblin Stealth check at +6 and compare it with each traveler’s passive Perception for surprise.",
+        "On their first turn, two goblins rush forward while two shoot from cover. Goblins can Hide or Disengage as a bonus action. If three fall, the last tries to flee toward the hideout.",
+        "Goblin: AC 15, HP 7, speed 30 ft.; scimitar or shortbow +4 to hit, 1d6+2 damage. Passive Perception 9.",
+        "All five player characters choose their own opening actions. Track initiative, cover, and who is actually visible to the goblins."
+      ],
+      "choices": [
+        "Let them pick targets, use cover, capture a goblin, pursue a runner, or secure the wagon.",
+        "If combat is easy, let it be a clean win. The real problem is finding the missing travelers."
+      ],
+      "private": [
+        "Do not show goblin positions on the TV until spotted or until they attack. Stage them on your map with “On TV” unchecked if useful."
+      ]
+    },
+    "encounters": [
+      {
+        "id": "road"
+      },
+      {
+        "id": "blind"
+      },
+      {
+        "id": "kennel"
+      },
+      {
+        "id": "overpass"
+      },
+      {
+        "id": "den"
+      },
+      {
+        "id": "pools"
+      },
+      {
+        "id": "klarg"
+      },
+      {
+        "id": "redbrand-street"
+      },
+      {
+        "id": "hideout-cellar"
+      },
+      {
+        "id": "hideout-barracks"
+      },
+      {
+        "id": "hideout-trap"
+      },
+      {
+        "id": "hideout-crypt"
+      },
+      {
+        "id": "hideout-pens"
+      },
+      {
+        "id": "hideout-crevasse"
+      },
+      {
+        "id": "hideout-bugbears"
+      },
+      {
+        "id": "hideout-common"
+      },
+      {
+        "id": "hideout-glasstaff"
+      },
+      {
+        "id": "old-owl-well"
+      },
+      {
+        "id": "wyvern-tor"
+      },
+      {
+        "id": "tt-blights-1"
+      },
+      {
+        "id": "tt-blights-2"
+      },
+      {
+        "id": "tt-zombies-3"
+      },
+      {
+        "id": "tt-blights-5"
+      },
+      {
+        "id": "tt-spiders-6"
+      },
+      {
+        "id": "tt-dragon-7"
+      },
+      {
+        "id": "tt-zombies-8"
+      },
+      {
+        "id": "tt-zombies-11"
+      },
+      {
+        "id": "tt-blights-12"
+      },
+      {
+        "id": "tt-cultists-13"
+      },
+      {
+        "id": "castle-archers"
+      },
+      {
+        "id": "castle-trap"
+      },
+      {
+        "id": "castle-barracks"
+      },
+      {
+        "id": "castle-hobgoblins"
+      },
+      {
+        "id": "castle-banquet"
+      },
+      {
+        "id": "castle-grick"
+      },
+      {
+        "id": "castle-shrine"
+      },
+      {
+        "id": "castle-guards"
+      },
+      {
+        "id": "castle-owlbear"
+      },
+      {
+        "id": "castle-king"
+      },
+      {
+        "id": "castle-warband"
+      },
+      {
+        "id": "wave-2"
+      },
+      {
+        "id": "wave-3"
+      },
+      {
+        "id": "wave-4"
+      },
+      {
+        "id": "wave-6"
+      },
+      {
+        "id": "wave-8"
+      },
+      {
+        "id": "wave-9"
+      },
+      {
+        "id": "wave-11"
+      },
+      {
+        "id": "wave-12"
+      },
+      {
+        "id": "wave-14"
+      },
+      {
+        "id": "wave-15"
+      },
+      {
+        "id": "wave-18"
+      },
+      {
+        "id": "wave-19"
+      }
+    ],
+    "selected": "road",
+    "toast": "Choose a battle map first.",
+    "guide": {
+      "version": 1,
+      "guided": true,
+      "layout": "exploration",
+      "layouts": {},
+      "sessions": {
+        "session-01": {
+          "objective": "",
+          "stop": "",
+          "next": "",
+          "endAt": "",
+          "decisions": [],
+          "closing": []
+        }
+      }
+    },
+    "stageButtons": [
+      {
+        "text": "Encounter staged",
+        "visible": false
+      },
+      {
+        "text": "Show map on TV and launch",
+        "visible": false
+      },
+      {
+        "text": "Run a sceneRead aloud, talk, and stage art",
+        "visible": false
+      }
+    ]
+  }
+}

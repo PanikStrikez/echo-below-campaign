@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "result": {
+    "token": {
+      "id": "goblin-1",
+      "name": "Goblin 1",
+      "label": "G1",
+      "type": "goblin",
+      "team": "enemy",
+      "encounter": "road",
+      "maxHp": 7,
+      "hp": 7,
+      "tempHp": 0,
+      "exhaustion": 0,
+      "initiative": null,
+      "initBonus": 2,
+      "ac": 15,
+      "conditions": [],
+      "extraAttacks": [],
+      "customAttack": {
+        "name": "",
+        "bonus": 0,
+        "count": 1,
+        "sides": 8,
+        "modifier": 0,
+        "damage": "damage"
+      },
+      "placed": true,
+      "visible": false,
+      "scene": "road",
+      "x": 30,
+      "y": 40
+    }
+  }
+}

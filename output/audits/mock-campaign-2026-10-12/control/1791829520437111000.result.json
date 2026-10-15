@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "result": {
+    "name": "Ripper",
+    "attacks": [
+      {
+        "name": "Bite",
+        "type": "Action",
+        "attackBonus": 4,
+        "damageDice": "2d4+2",
+        "damageType": "piercing",
+        "effect": "DC 11 Strength save or prone.",
+        "source": "SRD 5.1 p. 393",
+        "resourceId": "",
+        "cost": 0
+      }
+    ],
+    "actions": [],
+    "spells": [],
+    "features": [],
+    "resources": []
+  }
+}

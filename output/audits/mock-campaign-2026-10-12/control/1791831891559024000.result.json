@@ -1,0 +1,135 @@
+{
+  "ok": true,
+  "result": {
+    "turn": {
+      "scene": "lmop-map-wave-south",
+      "round": 1,
+      "order": [
+        "s4-wave-3-stirge-2",
+        "s4-wave-3-stirge-5",
+        "pc-trista",
+        "s4-wave-3-stirge-7",
+        "pc-aldric",
+        "s4-wave-3-stirge-8",
+        "s4-wave-3-stirge-1",
+        "s4-wave-3-stirge-4",
+        "s4-wave-3-stirge-10",
+        "pc-ringgo",
+        "pc-pebble",
+        "s4-wave-3-stirge-9",
+        "s4-wave-3-stirge-6",
+        "s4-wave-3-stirge-3",
+        "pc-donavan"
+      ],
+      "index": 10
+    },
+    "actor": "pc-pebble",
+    "tokens": [
+      {
+        "id": "pc-trista",
+        "hp": 0,
+        "team": "pc",
+        "x": 38,
+        "y": 75
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 12,
+        "team": "pc",
+        "x": 43,
+        "y": 75
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 22,
+        "team": "pc",
+        "x": 24,
+        "y": 82
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 0,
+        "team": "pc",
+        "x": 53,
+        "y": 75
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 18,
+        "team": "pc",
+        "x": 24,
+        "y": 82
+      },
+      {
+        "id": "s4-wave-3-stirge-1",
+        "hp": 2,
+        "team": "enemy",
+        "x": 35,
+        "y": 58
+      },
+      {
+        "id": "s4-wave-3-stirge-2",
+        "hp": 2,
+        "team": "enemy",
+        "x": 41,
+        "y": 58
+      },
+      {
+        "id": "s4-wave-3-stirge-3",
+        "hp": 2,
+        "team": "enemy",
+        "x": 47,
+        "y": 58
+      },
+      {
+        "id": "s4-wave-3-stirge-4",
+        "hp": 2,
+        "team": "enemy",
+        "x": 53,
+        "y": 58
+      },
+      {
+        "id": "s4-wave-3-stirge-5",
+        "hp": 2,
+        "team": "enemy",
+        "x": 59,
+        "y": 58
+      },
+      {
+        "id": "s4-wave-3-stirge-6",
+        "hp": 2,
+        "team": "enemy",
+        "x": 35,
+        "y": 64
+      },
+      {
+        "id": "s4-wave-3-stirge-7",
+        "hp": 2,
+        "team": "enemy",
+        "x": 41,
+        "y": 64
+      },
+      {
+        "id": "s4-wave-3-stirge-8",
+        "hp": 2,
+        "team": "enemy",
+        "x": 47,
+        "y": 64
+      },
+      {
+        "id": "s4-wave-3-stirge-9",
+        "hp": 2,
+        "team": "enemy",
+        "x": 53,
+        "y": 64
+      },
+      {
+        "id": "s4-wave-3-stirge-10",
+        "hp": 2,
+        "team": "enemy",
+        "x": 59,
+        "y": 64
+      }
+    ]
+  }
+}

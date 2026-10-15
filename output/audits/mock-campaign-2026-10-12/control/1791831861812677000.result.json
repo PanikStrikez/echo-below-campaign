@@ -1,0 +1,224 @@
+{
+  "ok": true,
+  "result": {
+    "pc-donavan": [
+      {
+        "i": 0,
+        "name": "Dancing Lights",
+        "level": 0
+      },
+      {
+        "i": 1,
+        "name": "Prestidigitation",
+        "level": 0
+      },
+      {
+        "i": 2,
+        "name": "Ray of Frost",
+        "level": 0
+      },
+      {
+        "i": 3,
+        "name": "Toll the Dead",
+        "level": 0
+      },
+      {
+        "i": 4,
+        "name": "Spare the Dying",
+        "level": 0
+      },
+      {
+        "i": 5,
+        "name": "Guidance",
+        "level": 0
+      },
+      {
+        "i": 6,
+        "name": "Command",
+        "level": 1
+      },
+      {
+        "i": 7,
+        "name": "Identify",
+        "level": 1
+      },
+      {
+        "i": 8,
+        "name": "Detect Magic",
+        "level": 1
+      },
+      {
+        "i": 9,
+        "name": "Comprehend Languages",
+        "level": 1
+      },
+      {
+        "i": 10,
+        "name": "Find Familiar",
+        "level": 1
+      },
+      {
+        "i": 11,
+        "name": "Magic Missile",
+        "level": 1
+      },
+      {
+        "i": 12,
+        "name": "Shield",
+        "level": 1
+      },
+      {
+        "i": 13,
+        "name": "Catapult",
+        "level": 1
+      },
+      {
+        "i": 14,
+        "name": "Disguise Self",
+        "level": 1
+      },
+      {
+        "i": 15,
+        "name": "Feather Fall",
+        "level": 1
+      },
+      {
+        "i": 16,
+        "name": "Witch Bolt",
+        "level": 1
+      },
+      {
+        "i": 17,
+        "name": "Silent Image",
+        "level": 1
+      },
+      {
+        "i": 18,
+        "name": "Cure Wounds",
+        "level": 1
+      },
+      {
+        "i": 19,
+        "name": "Healing Word",
+        "level": 1
+      },
+      {
+        "i": 20,
+        "name": "Shield of Faith",
+        "level": 1
+      },
+      {
+        "i": 21,
+        "name": "Bane",
+        "level": 1
+      },
+      {
+        "i": 22,
+        "name": "Bless",
+        "level": 1
+      },
+      {
+        "i": 23,
+        "name": "Create or Destroy Water",
+        "level": 1
+      },
+      {
+        "i": 24,
+        "name": "Detect Evil and Good",
+        "level": 1
+      },
+      {
+        "i": 25,
+        "name": "Detect Magic",
+        "level": 1
+      },
+      {
+        "i": 26,
+        "name": "Detect Poison and Disease",
+        "level": 1
+      },
+      {
+        "i": 27,
+        "name": "Guiding Bolt",
+        "level": 1
+      },
+      {
+        "i": 28,
+        "name": "Inflict Wounds",
+        "level": 1
+      },
+      {
+        "i": 29,
+        "name": "Protection from Evil and Good",
+        "level": 1
+      },
+      {
+        "i": 30,
+        "name": "Purify Food and Drink",
+        "level": 1
+      },
+      {
+        "i": 31,
+        "name": "Sanctuary",
+        "level": 1
+      },
+      {
+        "i": 32,
+        "name": "Ceremony",
+        "level": 1
+      }
+    ],
+    "pc-aldric": [
+      {
+        "i": 0,
+        "name": "Control Flames",
+        "level": 0
+      },
+      {
+        "i": 1,
+        "name": "Fire Bolt",
+        "level": 0
+      },
+      {
+        "i": 2,
+        "name": "Mage Hand",
+        "level": 0
+      },
+      {
+        "i": 3,
+        "name": "Ice Knife",
+        "level": 1
+      },
+      {
+        "i": 4,
+        "name": "Mage Armor",
+        "level": 1
+      },
+      {
+        "i": 5,
+        "name": "Magic Missile",
+        "level": 1
+      },
+      {
+        "i": 6,
+        "name": "Shield",
+        "level": 1
+      },
+      {
+        "i": 7,
+        "name": "Silvery Barbs",
+        "level": 1
+      },
+      {
+        "i": 8,
+        "name": "Aganazzar’s Scorcher",
+        "level": 2
+      },
+      {
+        "i": 9,
+        "name": "Web",
+        "level": 2
+      }
+    ]
+  }
+}

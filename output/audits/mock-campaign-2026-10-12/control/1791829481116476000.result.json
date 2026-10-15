@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "interior",
+    "enemies": [
+      {
+        "id": "klarg",
+        "name": "Klarg",
+        "hp": 27
+      },
+      {
+        "id": "ripper",
+        "name": "Ripper",
+        "hp": 11
+      },
+      {
+        "id": "goblin-16",
+        "name": "Goblin 16",
+        "hp": 7
+      },
+      {
+        "id": "goblin-17",
+        "name": "Goblin 17",
+        "hp": 7
+      }
+    ]
+  }
+}

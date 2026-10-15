@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "result": {
+    "status": 400,
+    "data": {
+      "error": "Refresh the phone app and send a new request"
+    }
+  }
+}

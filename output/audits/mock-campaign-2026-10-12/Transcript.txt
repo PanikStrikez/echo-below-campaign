@@ -1,0 +1,329 @@
+DM — Cragmaw Hideout
+
+A cooking fire lights an uneven cavern. On a higher ledge, a goblin holds a battered man who can barely stand.
+
+“You want the human? Then we have something to discuss.” He wants Klarg removed before he releases the captive.
+
+Players: negotiate, confirm the captive's safety, keep a route out, and avoid unnecessary fighting.
+
+DM — Klarg's cave
+Sacks and crates fill the far side of the cave. Smoke rises from a low fire. Behind the stolen supplies, a hulking figure raises a morningstar while a wolf bares its teeth.
+
+The supplies divide the cavern into patches of cover. Your entrance is behind you. Will you talk, take cover, split them up, or withdraw?
+
+
+DM — Phandalin / Barthen’s Provisions
+
+Warm lamplight falls over rope, trail food, tools, and stacks of ledgers. Behind the counter, a thin shopkeeper looks up. His welcoming smile falters as he counts the faces coming through the door. “Where is Gundren?”
+
+The shelves are arranged for practical journeys rather than impressive purchases. The counter is a place to set down goods or ask for help, and Barthen waits to hear which business brought you here.
+
+What do you tell him? Do you settle the delivery, find lodging, ask about missing people, or choose another lead?
+
+Mock outcome so far: two ambushers fell; one surrendered and one escaped. Klarg accepted departure after being wounded; Yeemik released Sildar. These are rehearsal events, not your real campaign history.
+
+
+PLAYER REPLIES
+PHANDALIN — RESPONDING TO BARTHEN
+
+TRISTA: “We brought the supplies. Sildar is free, but Gundren is still missing. A witness saw Redbrands take someone matching him beneath the ruined manor.”
+Decision summary: settle delivery, ask about lodging and the witness, then quietly scout the manor for an alternate entrance.
+
+PEBBLE: “The supplies made it. Gundren hasn’t. We freed Sildar, and now someone says a dwarf like Gundren was taken beneath the manor. Have you heard anything—and do you have a good drinking stone?”
+Decision summary: protect the investigator, hear a bargain, and avoid barging through every room.
+
+DONAVAN: “We brought your supplies. Sildar is free, but Gundren is still missing. A witness reports a dwarf matching him was taken beneath the manor; we haven’t confirmed his condition.”
+Decision summary: ask Sildar about Iarno, use Guidance on an investigation, and consider Command if a fight becomes necessary.
+
+RINGGO: “We’re Gundren’s escort. The supplies are here and Sildar is safe, but Gundren is missing. Can you check the delivery, settle what we’re owed, and tell us who last saw him?”
+Decision summary: submit the party objective on the phone, question the witness, and keep a safe escape route.
+
+ALDRIC: “Your supplies are here. Sildar is free, but Gundren is still missing. A witness saw a dwarf matching him taken beneath the ruined manor; we haven’t confirmed what happened afterward.”
+Decision summary: request a short rest, then Mage Armor before investigating; preserve a passage for retreat.
+
+These are mock player-agent responses. They are not statements or outcomes from your real players.
+
+
+DM — Reidoth’s cottage / choosing the next route
+
+One cottage seems to have resisted the years. Its shutters are stout, and someone has cleared the growth near the door. The cleared approach gives you room to knock rather than pushing through the weeds.
+
+Reidoth hears your account. “I can tell you how to find the castle. You need not fight the dragon to earn directions.” He warns you of the village’s dangers and waits for your questions.
+
+Gundren has awakened in this mock and can describe the mine route. The castle is optional: recover Sildar’s equipment, investigate the gang’s connections, or head straight to Wave Echo Cave. What matters most to you?
+
+
+NEXT DESTINATION — PLAYER AGENT RESPONSES
+
+TRISTA — Decision summary: visit the castle briefly to recover Sildar’s gear and investigate the Redbrands’ connection. Do not assume Glasstaff went there. Investigate the rat before claiming it.
+
+PEBBLE: “A mine sounds like home. Gundren knows the way, so let’s get rested and follow him. Sildar’s gear matters, but I don’t want to wander into a castle just because a wizard escaped.”
+Request: Second Wind at 7/12 HP; check the recorded Fighter level before resolving.
+
+DONAVAN — Decision summary: choose the mine, record Gundren’s landmarks, ask Reidoth about hazards, and avoid the dragon. Guidance on an investigation if the DM calls for a check.
+
+RINGGO — Decision summary: scout the optional castle for Sildar’s equipment and the gang’s connections, with the mine route recorded beforehand. Withdraw if it becomes too dangerous.
+
+ALDRIC — Decision summary: choose the mine after recovery time, scout its entrance, and check whether Mage Armor expires during rest and travel.
+
+DM decision: the main mock party follows the majority choice to the mine. The castle receives a separate optional-branch test; it will not replace this choice or be recorded as the main party’s outcome.
+
+
+MOCK REHEARSAL — s4-room-3
+
+Carved miners still work along the walls above a floor strewn with ancient bones. Empty brass lamps hang in the stone. Beyond them, the high ceiling disappears into shadow.
+
+The abandoned lamps offer no light of their own. Your illumination catches the miners' carved tools and the pale bones at different heights, leaving the upper space harder to judge. You can inspect the floor, examine the figures on the walls, or direct your attention toward the ceiling.
+
+The rope inspection finds a sound anchor and a usable rope. Gundren recognizes Tharden; the party leaves his belongings respectfully in place. A majority chooses east. State how you inspect the high ceiling, who scouts, and what you do if something swoops down. The older map artwork is approximate; I will state exits and distances.
+
+PLAYER REPLIES
+TRISTA — “Check that knot before anyone puts weight on it. Once we’re down, I vote east toward the carved hall—together, with the lantern.”
+
+PEBBLE — “Let’s check that knot before it holds all this rock. Someone watch the tunnel while we look for a name on the dwarf. We’ll leave his belongings together. Once the rope is safe, I vote northwest—the workings might show where the miners went.”
+
+DONAVAN — “Let’s examine the dwarf respectfully for identifying possessions, then check this rope and its anchor. Leave the camp supplies in place for now. Once we’re safely down, I favor the east carved hall; I’ll record the junction so we can return.”
+
+RINGGO — “I’ll check the bundles and the ground around him while someone watches the passage. Leave his belongings where they are until we know what happened. Once the rope is checked, I vote for the northwest workings.”
+
+ALDRIC — “The east hall first, once the rope and stone are sound. Leave these belongings until we know whose they are. Someone keep watch while I examine the fastening.”
+
+DM RESULT — Three votes east, two northwest. The party secures the rope, leaves the camp belongings, and descends together. Gundren identifies Tharden. No one has learned the missing brother’s location.
+
+
+MOCK REHEARSAL — departure
+
+The wagon is loaded with mining supplies and road provisions. Gundren Rockseeker checks the straps one last time while Sildar waits beside their horses. The dwarf grins, but he seems impatient to get to Phandalin. “Take this to Barthen’s Provisions. I’ll meet you there.”
+
+Gundren turns to Donavan. “If the mine holds anything unusual, write down what you actually see before anyone decides what it is worth.” To Trista, he adds, “Make sure I come back to read his account.” To Ringgo: “Choose the safe camp over the fast one. I hired you to bring people through.”
+
+CORRECTED FULL REHEARSAL: all five characters begin at level 1. Each session ends with a reviewed level-up for everyone. Introduce yourselves at the wagon, choose marching order and explain how you protect the supplies. This restart is entirely isolated.
+
+PLAYER REPLIES
+TRISTA — “I’m Trista. I’ll watch the roadside and keep the wagon close. Gundren, come back in one piece—Donavan needs someone to read his account.”
+
+PEBBLE — “I’m Pebble. I came down from the mountains looking for interesting stones. I’ll keep your wagon safe—and I’ll ask before tasting anything valuable.”
+
+DONAVAN — “Donavan Kemp, scholar and wizard. You’ll have an account of what we actually find, Gundren. I’ll stay beside the wagon, watch the tree line, and keep the supplies checked and secured.”
+
+RINGGO — “Ringgo Paul. I’ll watch the road ahead and choose our camps carefully. Gundren hired us to get everyone through, so call out trouble before chasing it.”
+
+ALDRIC — “Aldric Vane. I’ll guard the wagon’s flank and keep the supplies out of the fire. Call out anything strange before you touch it.”
+
+DM CHECK — Corrected run begins with five level-1 characters. Trista11HP, Pebble12HP, Donavan9HP, Ringgo10HP, Aldric9HP. No later-level resources or discoveries apply. Each session will close with a level-up and a displayed before/after review.
+
+
+MOCK REHEARSAL — ambush
+
+The trail bends between close woods. Two horses lie across the road ahead, dead and pierced by black-feathered arrows. Their saddlebags hang open. Neither rider is in sight.
+
+The open saddlebags and arrows give you more to examine than the bodies alone. Beyond the bend, trunks and tangled growth break up the view into the woods; anyone moving closer will have to choose where to stand and what to watch.
+
+You see the dead horses from the road. Give your approach, protect the wagon and choose whether to scout, call out, or move closer. I will resolve the ambush fully in initiative if fighting starts, including declared reactions and retreat choices.
+
+PLAYER REPLIES
+TRISTA — “Stop the wagon here. Watch both sides of the road; I’ll look before we touch anything.”
+
+RINGGO — “Stop the wagon here. Keep someone with the supplies; I’ll watch the woods before approaching those horses. Nobody chase anything alone.”
+
+DONAVAN — “Stop the wagon before the bend. Those open bags suggest someone has already been here. Keep watch on both sides; I’ll look for movement before anyone approaches the horses.”
+
+PEBBLE — Standing decision: guard the wagon, shield equipped; intercept a qualifying hit against a nearby companion once his reaction becomes available.
+
+ALDRIC — Standing decision: guard the wagon’s flank, preserve one slot for Shield, and use Fire Bolt against a visible hostile with a safe line away from supplies.
+
+DM RESULT — Goblins’ concealment check21 beats the scouts’19,12,10. The 2014 surprise rule applies individually: no first-turn action or reaction until that character’s first turn ends. All five rolled initiative through their phone connections; the full fight is proceeding, with reaction windows reviewed before damage.
+
+
+MOCK REHEARSAL — blind
+
+Across the stream, the briars are thick enough to swallow the path. A board creaks faintly behind them, then goes still.
+
+The vegetation interrupts your view of whatever lies beyond it. The stream remains an obvious landmark beside the approach, but the brief creak gives you a reason to watch the cover rather than hurry past it.
+
+Two goblins challenge you from the briars, bows raised. They see their disarmed companion alive with you. Your guide says you kept your promise to spare it and asks them to hear you out. What terms do you offer the guards? Keep the streamside escape route open.
+
+PLAYER REPLIES
+DONAVAN — “Your companion is alive because we kept our word. Let us speak with whoever holds the human. We’ll keep our weapons stowed and cast no spells while the truce holds, but retain our equipment. You may escort us. Our guide may stay here freely; we ask safe passage in and out for all five.”
+
+PEBBLE — “We spared your companion, and we’ll keep that promise. Lower your bows and let us speak with whoever holds the human. We’ll keep our weapons lowered too. Your companion can join you once we agree nobody attacks while we talk.”
+
+TRISTA — “We spared your companion and kept our word. Lower your bows, and we’ll keep our weapons lowered. Let someone who can speak for the human come here; we want to arrange his safe release.”
+
+RINGGO — Standing decision: offer a chance to stand down, keep the exit open, and return major bargains to the party.
+
+ALDRIC — Standing decision: question claims before relying on them, remain together and avoid solo pursuit.
+
+DM RESPONSE — Persuasion20 vsdeclaredDC13 earns escorted access to a meeting with Yeemik. The lookouts lower bows after the party lowers weapons, agree not to attack during the meeting, and permit the surrendered guide to return freely. They will not promise the prisoner’s release or bring Yeemik outside. The party must accept or decline those terms.
+
+
+CORRECTED MOCK · Street fight, round4
+
+Three Redbrands are defeated. The last flees toward the manor. The resident escapes.
+
+DM correction: the rehearsal helper wrongly let the last ruffian attack after its flee trigger. That final six damage is reversed; Pebble is at6HP, not0. This is recorded as a rehearsal failure, not a clean morale-system pass.
+
+The party secures the street, accepts incapacitated opponents, and returns to the inn to rest before investigating the manor.
+
+PLAYER REPLIES
+PEBBLE — “Leave that person alone. We’re passing through, and we’re not paying you to hurt someone else.”
+
+TRISTA — “Let them go and we’ll walk away.”
+
+RINGGO — “We’re asking for peaceful passage, and dragging someone away won’t help your case.”
+
+DONAVAN — “We’ve delivered the supplies, but Gundren is still missing. Let’s establish what people actually witnessed before choosing our next move.”
+
+ALDRIC — “Pip, what did you witness yourself, and when did the Dendrars disappear?”
+
+DM REVIEW — The full street fight reached round4. Morale handling failed in the rehearsal helper; the last invalid attack was explicitly corrected. No live campaign changed.
+
+
+FULL MOCK · hideout-bugbears · Round 5
+
+{
+  "actor": "pc-aldric",
+  "actions": [
+    {
+      "actor": "pc-aldric",
+      "label": "Fire Bolt",
+      "rolls": [
+        {
+          "id": "pa-1791835503422-ttqai25u",
+          "label": "Fire Bolt · attack 1",
+          "notation": "1d20+6",
+          "parts": [
+            13
+          ],
+          "total": 19,
+          "natural": 13,
+          "public": true,
+          "kind": "digital",
+          "time": "2:05:03 PM"
+        },
+        {
+          "id": "pa-1791835503422-vx7hm3np",
+          "label": "Fire Bolt · effect 1.1",
+          "notation": "1d10",
+          "parts": [
+            6
+          ],
+          "total": 6,
+          "natural": 6,
+          "public": true,
+          "kind": "digital",
+          "time": "2:05:03 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "s2-hideout-bugbears-2",
+          "text": "Bugbear 2: 19 vs AC 16: hit, 6 fire → 6; temp HP absorbed 0"
+        }
+      ],
+      "costs": []
+    }
+  ]
+}
+
+PLAYER REPLIES
+RINGGO — “I can offer two days of my rations for answers. Have you seen human captives or Gundren?”
+
+ALDRIC — “Leave the unarmed goblin alone. We can talk without hurting anyone.”
+
+PEBBLE — “We’re looking for the captives. Tell us where they are, and let us pass.”
+
+TRISTA — Standing choice: use Deflect on qualifying damage; no Focus redirect without another decision.
+
+DONAVAN — Standing choice: request Healing Word if an ally falls on my turn; reserve Shield where possible.
+
+
+FULL MOCK · hideout-crypt · Round 2
+
+pc-aldric
+Fire Bolt: Crypt skeleton 3: 23 vs AC 13: hit, 5 fire → 5; temp HP absorbed 0
+
+PLAYER REPLIES
+TRISTA — “Let’s stay together, leave those skeletons alone, and check the way onward.”
+
+ALDRIC — “Three cloaks don’t make five of us safe. Leave the bones undisturbed, keep the doorway clear, and watch them as we enter.”
+
+DONAVAN — “Three of us can cross wearing the cloaks and check for two more.”
+
+PEBBLE — “If there’s still a guard alive, ask about the crypt and its password.”
+
+RINGGO — “Three cloaks won’t cover five of us. Let me check that disturbed dust before anyone puts weight on it.”
+
+DM — The trap and rope crossing were resolved first. Approaching the crypt’s inner doorway without a cloak animated the skeletons; this encounter is now being played.
+
+
+MOCK REHEARSAL — s3-area14
+
+Voices cut through the door: a harsh demand, then a smooth reply. Inside, furs cover the floor while a towering bugbear argues with a dark-clad visitor.
+
+The argument reveals different voices, not an agreement you understand yet. The furs and the speakers' positions divide the room into places to approach or avoid. You can listen for a few more words, announce yourselves, or look for a position that keeps your way out clear.
+
+Through the curtain you hear an argument about payment for a dwarf and his map. Inside, a large bugbear stands beside a wolf; a dark-clad visitor watches an unconscious dwarf. This fresh mock uses the original hostage situation. Your guard fight has warned the room. How do you seek Gundren’s safe release?
+
+PLAYER REPLIES
+DONAVAN — “We can offer fifty gold for the dwarf, his map, and safe passage out. Let us verify he’s alive. Payment changes hands as he and the map reach us—no separate price afterward.”
+
+ALDRIC — “One hundred gold for the dwarf, his map, and safe passage for all of us. Bring him away from the visitor, let us check he’s alive, and we’ll exchange at the exit. Can you guarantee everyone here honors that?”
+
+RINGGO — “We can pay one hundred gold for the living dwarf and the map, with safe passage out. Bring him and the map to the doorway, let us check him, and we’ll exchange them for payment.”
+
+TRISTA — “Step away from the dwarf. We can discuss payment once he’s safe, but nobody needs to die here.”
+
+PEBBLE — “We want the dwarf alive. Let one of us check him and hear your terms. Nobody touches him while we talk. Release him safely, and we can leave without another fight.”
+
+
+MOCK REHEARSAL — s4-room-19
+
+Six cracked pillars frame a hall swept clean of rubble. At the far end, a seated dwarf carved from stone watches over a rough camp. Bedrolls, packs, and a paper-covered table show that this shrine has become someone’s headquarters.
+
+The figures and stonework draw your eye to different parts of the room. You can note where everyone stands and which route remains behind you before answering. The distance between you and anyone present is something to consider while there is still time to speak.
+
+The overseer leads you west into a pillared temple. A dark elf at a table introduces himself as Nezznar—the Black Spider. Two bugbears watch from beside the camp. He says your missing dwarf lives behind a nearby locked door, and demands Gundren’s map and your agreement to abandon the Forge before releasing him. What do you offer or refuse?
+
+PLAYER REPLIES
+PEBBLE — “Open the door and let us speak with Nundro. We need to see that he’s alive and able to leave. Gundren’s map isn’t mine to promise.”
+
+RINGGO — “Bring the dwarf where we can see him and let us confirm who he is and whether he can travel. We’ll discuss an exchange after that.”
+
+ALDRIC — “Show us Nundro alive and let us speak with him. We’ve agreed to nothing about the map or the forge.”
+
+TRISTA — Standing policy: keep all five together, protect the captive, accept surrender, and preserve a retreat route.
+
+DONAVAN — Standing policy: verify captive claims, reserve Counterspell for a qualifying hostile cast, and protect withdrawal.
+
+
+MOCK REHEARSAL — s4-room-15
+
+Scorched worktables ring a workshop that should have fallen silent centuries ago. Yet green flame still moves in a brazier at its heart. Above it, a many-eyed creature turns, and a greeting sounds inside your mind.
+
+The brazier's green light colors the scorched tables, while the many-eyed creature hangs within the ruined workspace. Its greeting reaches you without crossing the air. There is room to answer before moving closer; the surviving forge equipment remains something to study rather than claim on sight.
+
+You approach the northern workshop through its damaged western doors. Green fire burns in a fixed brazier. A floating guardian speaks into your minds: “The mine is operating. These items are under my protection.” It asks your business and does not attack. What authority or request do you present?
+
+PLAYER REPLIES
+Ringgo — We helped Gundren and Nundro Rockseeker get out safely. Who assigned you to guard this place, and what proof would you need that your assignment has ended?
+
+Trista — The mine has been closed for a long time. We came with Gundren Rockseeker’s map and rescued his brother, but we can’t honestly claim ownership of this forge. What proof of authority would you accept? We’ll leave the protected items where they are unless you grant permission.
+
+
+MOCK REHEARSAL — s4-room-9
+
+The hall opens around long stone tables and cold braziers. Stairs climb to ledges at either end, above a floor scattered with the remains of an ancient battle.
+
+Cold braziers offer no warmth to the long tables. The stairs and ledges at either end rise above the scattered remains, giving the chamber more than one level to watch. Anything moving across the open floor would be difficult to overlook from above.
+
+The undead threaten the open cavern. The party can retreat by the stairs and the route already checked. Unknown passages remain unknown.
+
+PLAYER REPLIES
+Donavan — Nundro is safe. We can report this danger and return better prepared; there’s no need to cross that open floor today. Back down the stairs together.
+
+Pebble — Seven of them, and nobody trapped here. Let’s find a way around. Keep the stairs behind us clear.
+
+Aldric — Hold the stairs. We’ll clear this route if we can keep the fight in sight; nobody rushes onto the ledges.
+
+Ringgo — We’ve got the brothers out. Let’s return to town together and come back prepared.

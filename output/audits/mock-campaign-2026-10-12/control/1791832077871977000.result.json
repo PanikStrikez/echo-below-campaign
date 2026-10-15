@@ -1,0 +1,211 @@
+{
+  "ok": true,
+  "result": {
+    "packs": [
+      {
+        "id": "next-session-4",
+        "encounters": []
+      },
+      {
+        "id": "next-session-5",
+        "encounters": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      {
+        "id": "next-session-6",
+        "encounters": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      {
+        "id": "phandalin-aftermath-next",
+        "encounters": []
+      },
+      {
+        "id": "phandalin-session-2",
+        "encounters": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      {
+        "id": "gundren-session-3",
+        "encounters": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      {
+        "id": "lmop-part-3-visuals",
+        "encounters": []
+      },
+      {
+        "id": "lmop-part-4-visuals",
+        "encounters": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      {
+        "id": "phandalin-waterdeep-transition",
+        "encounters": []
+      }
+    ],
+    "options": [
+      {
+        "v": "session-01",
+        "t": "Session 1 · Goblin Arrows"
+      },
+      {
+        "v": "session-1791831446752-kvkr8",
+        "t": "Session 6 · Wave Echo Cave expedition"
+      },
+      {
+        "v": "pack:next-session-4",
+        "t": "Session 4 · Phandalin after Glasstaff · create"
+      },
+      {
+        "v": "pack:next-session-5",
+        "t": "Session 5 · Leads and Cragmaw Castle · create"
+      },
+      {
+        "v": "pack:phandalin-aftermath-next",
+        "t": "Phandalin · After Glasstaff · create"
+      },
+      {
+        "v": "pack:phandalin-session-2",
+        "t": "Session 2 · Phandalin · create"
+      },
+      {
+        "v": "pack:gundren-session-3",
+        "t": "Wilderness and castle · optional continuation · create"
+      },
+      {
+        "v": "pack:lmop-part-4-visuals",
+        "t": "Session 4 · Wave Echo Cave · create"
+      },
+      {
+        "v": "pack:phandalin-waterdeep-transition",
+        "t": "Phandalin → Waterdeep · create"
+      },
+      {
+        "v": "pack:mending-court-home",
+        "t": "Mending Court · home · create"
+      },
+      {
+        "v": "pack:waterdeep-undermountain-1",
+        "t": "Waterdeep · First expedition · create"
+      },
+      {
+        "v": "pack:silent-library-expedition",
+        "t": "The Silent Library · create"
+      },
+      {
+        "v": "pack:lmop-part-3-visuals",
+        "t": "Part 3 · Wilderness and castle · create"
+      },
+      {
+        "v": "pack:cragmaw-continuation",
+        "t": "Cragmaw Hideout continuation · create"
+      }
+    ],
+    "seeds": [
+      {
+        "id": "pc-trista",
+        "classes": "",
+        "features": []
+      },
+      {
+        "id": "pc-pebble",
+        "classes": "",
+        "features": []
+      },
+      {
+        "id": "pc-donavan",
+        "classes": "",
+        "features": []
+      },
+      {
+        "id": "pc-ringgo",
+        "classes": "",
+        "features": []
+      },
+      {
+        "id": "pc-aldric",
+        "classes": "",
+        "features": []
+      }
+    ]
+  }
+}

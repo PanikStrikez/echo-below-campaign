@@ -1,0 +1,175 @@
+{
+  "ok": true,
+  "result": {
+    "scene": "cover",
+    "party": [
+      {
+        "id": "pc-aldric",
+        "level": 3
+      },
+      {
+        "id": "pc-pebble",
+        "level": 1
+      },
+      {
+        "id": "pc-trista",
+        "level": 1
+      },
+      {
+        "id": "pc-ringgo",
+        "level": 4
+      },
+      {
+        "id": "pc-donavan",
+        "level": 3
+      }
+    ],
+    "beats": [
+      {
+        "id": "prep",
+        "title": "Before play",
+        "scene": "cover"
+      },
+      {
+        "id": "departure",
+        "title": "1 · Gundren rides ahead",
+        "scene": "gundren"
+      },
+      {
+        "id": "ambush",
+        "title": "2 · Dead horses and ambush",
+        "encounter": "road",
+        "scene": "horses"
+      },
+      {
+        "id": "aftermath",
+        "title": "3 · Clues after the road fight",
+        "scene": "road"
+      },
+      {
+        "id": "trail",
+        "title": "4 · Goblin trail and traps",
+        "scene": "black"
+      },
+      {
+        "id": "cave",
+        "title": "5 · Cave mouth and approach",
+        "scene": "cave-mouth"
+      },
+      {
+        "id": "blind",
+        "title": "Area 2 · Goblin blind",
+        "encounter": "blind",
+        "scene": "interior"
+      },
+      {
+        "id": "kennel",
+        "title": "Area 3 · Kennel and wolves",
+        "encounter": "kennel",
+        "scene": "interior"
+      },
+      {
+        "id": "passage",
+        "title": "Area 4 · Steep passage",
+        "scene": "interior"
+      },
+      {
+        "id": "bridge",
+        "title": "Area 5 · Overpass and flood",
+        "encounter": "overpass",
+        "scene": "interior"
+      },
+      {
+        "id": "den",
+        "title": "Area 6 · Yeemik and Sildar",
+        "encounter": "den",
+        "scene": "interior"
+      },
+      {
+        "id": "pools",
+        "title": "Area 7 · Twin pools",
+        "encounter": "pools",
+        "scene": "interior"
+      },
+      {
+        "id": "klarg",
+        "title": "Area 8 · Klarg’s cave",
+        "encounter": "klarg",
+        "scene": "interior"
+      },
+      {
+        "id": "sildar",
+        "title": "After rescue · What Sildar knows",
+        "scene": "interior"
+      },
+      {
+        "id": "close",
+        "title": "Close the session",
+        "scene": "black"
+      },
+      {
+        "id": "rules",
+        "title": "Quick rules and DM safety dial",
+        "scene": null
+      }
+    ],
+    "continuityKeys": [
+      "version",
+      "outcomes",
+      "seedVersion",
+      "questGuide",
+      "events",
+      "quests",
+      "sessionNotes",
+      "undo",
+      "redo"
+    ],
+    "storyKeys": [
+      "commandRevision",
+      "reconciliation",
+      "clueEvents",
+      "continuity",
+      "characterStories",
+      "questPrep",
+      "transition",
+      "courtyard",
+      "downtime",
+      "mystery",
+      "finale",
+      "assets",
+      "sessionPlans",
+      "adventureProgress",
+      "routes",
+      "sourceHandouts",
+      "evidence",
+      "journal",
+      "npcs",
+      "waterdeep",
+      "sites",
+      "floors",
+      "calendar",
+      "wrapUps"
+    ],
+    "co": [
+      "effective",
+      "STATES",
+      "TRACKS",
+      "QUESTS",
+      "SEEDS",
+      "event",
+      "normalize",
+      "ensure",
+      "checkpoint",
+      "restore",
+      "shared",
+      "approved",
+      "publicJournal",
+      "questCards",
+      "trackers",
+      "knowledge",
+      "projectMap",
+      "recap",
+      "adoptEvidence"
+    ]
+  }
+}

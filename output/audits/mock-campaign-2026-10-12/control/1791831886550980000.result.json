@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-trista",
+    "label": "Unarmed Strike",
+    "targets": [
+      "Stirge 1"
+    ],
+    "rolls": [
+      {
+        "id": "pa-1791831886649-3mlh9j6m",
+        "label": "Unarmed Strike · attack 1",
+        "notation": "1d20+6",
+        "parts": [
+          7
+        ],
+        "total": 13,
+        "natural": 7,
+        "public": true,
+        "kind": "digital",
+        "time": "1:04:46 PM"
+      },
+      {
+        "id": "pa-1791831886649-mi2rujgz",
+        "label": "Unarmed Strike · effect 1.1",
+        "notation": "1d6+4",
+        "parts": [
+          2
+        ],
+        "total": 6,
+        "natural": 2,
+        "public": true,
+        "kind": "digital",
+        "time": "1:04:46 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "s4-wave-3-stirge-1",
+        "text": "Stirge 1: 13 vs AC 14: miss, 0 bludgeoning → 0; temp HP absorbed 0"
+      }
+    ],
+    "costs": []
+  }
+}

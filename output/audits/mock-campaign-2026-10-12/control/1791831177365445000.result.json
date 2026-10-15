@@ -1,0 +1,1007 @@
+{
+  "ok": true,
+  "result": {
+    "methods": [
+      "stageAction",
+      "pendingDMDrafts",
+      "resumeReview",
+      "activeReview",
+      "closeReview",
+      "allState",
+      "columns",
+      "targetTool",
+      "stageDamage",
+      "pauseAttack",
+      "run",
+      "turn",
+      "scene",
+      "isMap",
+      "currentActor",
+      "tokens",
+      "party",
+      "combat",
+      "encounters",
+      "commit",
+      "endTurn",
+      "toggleInitiative",
+      "rollEnemies",
+      "buildOrder",
+      "roll",
+      "previewDamage",
+      "recordActionUse",
+      "applyDamage",
+      "openCombat",
+      "openDamage",
+      "requests",
+      "approveRequest",
+      "dismissRequest",
+      "setReaction",
+      "openParty",
+      "setEncounterStatus",
+      "deployWave"
+    ],
+    "story": [
+      "story",
+      "plan",
+      "save",
+      "toast",
+      "publishClue",
+      "undoCluePublication",
+      "applyOutcome",
+      "extras",
+      "expeditionContext",
+      "expeditionSessions",
+      "chapterSessions",
+      "chapterCreatePack",
+      "arcSessions",
+      "arcCreate",
+      "arcReturn",
+      "arcRoom",
+      "arcPhones",
+      "arcLetter",
+      "expeditionRouteList",
+      "setExpeditionRoute",
+      "expeditionSave",
+      "previewExpeditionReturn",
+      "applyExpeditionReturn",
+      "expeditionRest",
+      "expeditionDungeon",
+      "expeditionRooms",
+      "expeditionTime",
+      "expeditionBookRooms",
+      "expeditionBind",
+      "expeditionResolveLink",
+      "downtimeAdvance",
+      "ensureDowntimeTown",
+      "downtimeVisit",
+      "prepareTownPlan",
+      "prepContext",
+      "prepImage",
+      "prepStage",
+      "prepPreviewScene",
+      "prepMedia",
+      "prepSessionTools",
+      "prepTableCheck",
+      "transitionScene",
+      "courtyardSession",
+      "courtyardPreview",
+      "transitionSession",
+      "continuity",
+      "settlementNpc",
+      "openSettlements",
+      "spotlights",
+      "roster",
+      "continuityMarkers",
+      "expedition",
+      "commitExpedition",
+      "openParty",
+      "partyLevel",
+      "openBook",
+      "openPrinted",
+      "sessionId",
+      "sessionName",
+      "sceneId",
+      "scenes",
+      "encounters",
+      "beats",
+      "sceneTitle",
+      "encounterTitle",
+      "encounterTokens",
+      "changeScene",
+      "selectBeat",
+      "moveBeat",
+      "openHandout",
+      "openRules",
+      "showHandout",
+      "showText",
+      "portrait",
+      "importPortrait"
+    ],
+    "party": [
+      {
+        "id": "pc-aldric",
+        "resources": [
+          {
+            "id": "aldric-slots-1",
+            "name": "1st-level spell slots",
+            "max": 4,
+            "current": 3,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "slots",
+            "slotLevel": 0
+          },
+          {
+            "id": "aldric-slots-2",
+            "name": "2nd-level spell slots",
+            "max": 2,
+            "current": 2,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "slots",
+            "slotLevel": 0
+          },
+          {
+            "id": "aldric-past-life",
+            "name": "Knowledge from a Past Life",
+            "max": 2,
+            "current": 2,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "uses",
+            "slotLevel": 0
+          },
+          {
+            "id": "aldric-arcane-recovery",
+            "name": "Arcane Recovery",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ],
+        "spells": [
+          "Control Flames",
+          "Fire Bolt",
+          "Mage Hand",
+          "Ice Knife",
+          "Mage Armor",
+          "Magic Missile",
+          "Shield",
+          "Silvery Barbs",
+          "Aganazzar’s Scorcher",
+          "Web"
+        ]
+      },
+      {
+        "id": "pc-pebble",
+        "resources": [
+          {
+            "id": "pebble-second-wind",
+            "name": "Second Wind",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 1,
+            "restoreLong": true,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ],
+        "spells": []
+      },
+      {
+        "id": "pc-trista",
+        "resources": [],
+        "spells": []
+      },
+      {
+        "id": "pc-ringgo",
+        "resources": [
+          {
+            "id": "ringgo-arrows",
+            "name": "Arrows",
+            "max": 20,
+            "current": 20,
+            "restoreShort": 0,
+            "restoreLong": false,
+            "unit": "arrows",
+            "slotLevel": 0
+          },
+          {
+            "id": "ringgo-hellish-rebuke",
+            "name": "Hellish Rebuke",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ],
+        "spells": [
+          "Thaumaturgy",
+          "Hellish Rebuke"
+        ]
+      },
+      {
+        "id": "pc-donavan",
+        "resources": [
+          {
+            "id": "donavan-slots-1",
+            "name": "1st-level shared spell slots",
+            "max": 4,
+            "current": 4,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "",
+            "slotLevel": 0
+          },
+          {
+            "id": "donavan-slots-2",
+            "name": "2nd-level shared spell slots · upcasting",
+            "max": 2,
+            "current": 2,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "",
+            "slotLevel": 0
+          },
+          {
+            "id": "donavan-arcane-recovery",
+            "name": "Arcane Recovery",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "",
+            "slotLevel": 0
+          },
+          {
+            "id": "donavan-scribes-ritual",
+            "name": "Awakened Spellbook quick ritual",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 0,
+            "restoreLong": true,
+            "unit": "",
+            "slotLevel": 0
+          }
+        ],
+        "spells": [
+          "Dancing Lights",
+          "Prestidigitation",
+          "Ray of Frost",
+          "Toll the Dead",
+          "Spare the Dying",
+          "Guidance",
+          "Command",
+          "Identify",
+          "Detect Magic",
+          "Comprehend Languages",
+          "Find Familiar",
+          "Magic Missile",
+          "Shield",
+          "Catapult",
+          "Disguise Self",
+          "Feather Fall",
+          "Witch Bolt",
+          "Silent Image",
+          "Cure Wounds",
+          "Healing Word",
+          "Shield of Faith",
+          "Bane",
+          "Bless",
+          "Create or Destroy Water",
+          "Detect Evil and Good",
+          "Detect Magic",
+          "Detect Poison and Disease",
+          "Guiding Bolt",
+          "Inflict Wounds",
+          "Protection from Evil and Good",
+          "Purify Food and Drink",
+          "Sanctuary",
+          "Ceremony"
+        ]
+      },
+      {
+        "id": "ally-sildar",
+        "resources": [],
+        "spells": []
+      }
+    ],
+    "tokens": [
+      {
+        "id": "pc-trista",
+        "hp": 11,
+        "maxHp": 11
+      },
+      {
+        "id": "pc-donavan",
+        "hp": 17,
+        "maxHp": 17
+      },
+      {
+        "id": "pc-ringgo",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "pc-pebble",
+        "hp": 12,
+        "maxHp": 12
+      },
+      {
+        "id": "pc-aldric",
+        "hp": 9,
+        "maxHp": 18
+      },
+      {
+        "id": "ally-sildar",
+        "hp": 1,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-2-ochre-jelly-1",
+        "hp": 45,
+        "maxHp": 45
+      },
+      {
+        "id": "s4-wave-3-stirge-1",
+        "hp": 2,
+        "maxHp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-2",
+        "hp": 2,
+        "maxHp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-3",
+        "hp": 2,
+        "maxHp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-4",
+        "hp": 2,
+        "maxHp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-5",
+        "hp": 2,
+        "maxHp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-6",
+        "hp": 2,
+        "maxHp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-7",
+        "hp": 2,
+        "maxHp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-8",
+        "hp": 2,
+        "maxHp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-9",
+        "hp": 2,
+        "maxHp": 2
+      },
+      {
+        "id": "s4-wave-3-stirge-10",
+        "hp": 2,
+        "maxHp": 2
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-1",
+        "hp": 13,
+        "maxHp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-2",
+        "hp": 13,
+        "maxHp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-3",
+        "hp": 13,
+        "maxHp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-4",
+        "hp": 13,
+        "maxHp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-5",
+        "hp": 13,
+        "maxHp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-6",
+        "hp": 13,
+        "maxHp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-7",
+        "hp": 13,
+        "maxHp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-8",
+        "hp": 13,
+        "maxHp": 13
+      },
+      {
+        "id": "s4-wave-4-wave-skeleton-9",
+        "hp": 13,
+        "maxHp": 13
+      },
+      {
+        "id": "s4-wave-6-ghoul-1",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-6-ghoul-2",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-6-ghoul-3",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-1",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-2",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-3",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-4",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-5",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-6",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-9-ghoul-7",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-11-bugbear-1",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-11-bugbear-2",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-11-bugbear-3",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-11-bugbear-4",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-11-bugbear-5",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-1",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-2",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-3",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-4",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-5",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-6",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-7",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-12-wave-zombie-8",
+        "hp": 22,
+        "maxHp": 22
+      },
+      {
+        "id": "s4-wave-12-flameskull-1",
+        "hp": 40,
+        "maxHp": 40
+      },
+      {
+        "id": "s4-wave-14-mormesk-1",
+        "hp": 45,
+        "maxHp": 45
+      },
+      {
+        "id": "s4-wave-15-spectator-1",
+        "hp": 39,
+        "maxHp": 39
+      },
+      {
+        "id": "s4-wave-18-bugbear-1",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-18-bugbear-2",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-18-bugbear-3",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-18-vhalak-1",
+        "hp": 52,
+        "maxHp": 52
+      },
+      {
+        "id": "s4-wave-19-nezznar-1",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-19-bugbear-1",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-19-bugbear-2",
+        "hp": 27,
+        "maxHp": 27
+      },
+      {
+        "id": "s4-wave-19-wave-spider-1",
+        "hp": 26,
+        "maxHp": 26
+      },
+      {
+        "id": "s4-wave-19-wave-spider-2",
+        "hp": 26,
+        "maxHp": 26
+      },
+      {
+        "id": "s4-wave-19-wave-spider-3",
+        "hp": 26,
+        "maxHp": 26
+      },
+      {
+        "id": "s4-wave-19-wave-spider-4",
+        "hp": 26,
+        "maxHp": 26
+      }
+    ],
+    "top": {
+      "sheet": {
+        "id": "pc-pebble",
+        "name": "Pebble",
+        "role": "pc",
+        "player": "Byron",
+        "className": "Fighter",
+        "ancestry": "Goron (custom lineage)",
+        "background": "Outlander",
+        "level": 2,
+        "rules": "2014 PHB with Tasha options",
+        "source": "Pebble Player Handout pp. 1–4; Byron’s Session 1 answers",
+        "sourceStatus": "Player handout; confirm build against a live sheet when available",
+        "proficiency": 2,
+        "abilities": {
+          "str": 18,
+          "dex": 10,
+          "con": 14,
+          "int": 8,
+          "wis": 13,
+          "cha": 12
+        },
+        "saves": {
+          "str": {
+            "rank": 1,
+            "override": 6
+          },
+          "dex": {
+            "rank": 0,
+            "override": 0
+          },
+          "con": {
+            "rank": 1,
+            "override": 4
+          },
+          "int": {
+            "rank": 0,
+            "override": -1
+          },
+          "wis": {
+            "rank": 0,
+            "override": 1
+          },
+          "cha": {
+            "rank": 0,
+            "override": 1
+          }
+        },
+        "skills": {
+          "Acrobatics": {
+            "rank": 0,
+            "override": null
+          },
+          "Animal Handling": {
+            "rank": 0,
+            "override": null
+          },
+          "Arcana": {
+            "rank": 0,
+            "override": null
+          },
+          "Athletics": {
+            "rank": 1,
+            "override": 6
+          },
+          "Deception": {
+            "rank": 0,
+            "override": null
+          },
+          "History": {
+            "rank": 0,
+            "override": null
+          },
+          "Insight": {
+            "rank": 1,
+            "override": 3
+          },
+          "Intimidation": {
+            "rank": 0,
+            "override": null
+          },
+          "Investigation": {
+            "rank": 0,
+            "override": null
+          },
+          "Medicine": {
+            "rank": 0,
+            "override": null
+          },
+          "Nature": {
+            "rank": 0,
+            "override": null
+          },
+          "Perception": {
+            "rank": 1,
+            "override": 3
+          },
+          "Performance": {
+            "rank": 0,
+            "override": null
+          },
+          "Persuasion": {
+            "rank": 0,
+            "override": null
+          },
+          "Religion": {
+            "rank": 0,
+            "override": null
+          },
+          "Sleight of Hand": {
+            "rank": 0,
+            "override": null
+          },
+          "Stealth": {
+            "rank": 0,
+            "override": null
+          },
+          "Survival": {
+            "rank": 1,
+            "override": 3
+          }
+        },
+        "speed": 30,
+        "senses": "Darkvision 60 ft.; fire resistance (Fire-Forged)",
+        "languages": "Common, Goron, Dwarvish",
+        "ac": 18,
+        "hp": 12,
+        "maxHp": 12,
+        "tempHp": 0,
+        "hitDice": {
+          "die": 10,
+          "current": 1,
+          "max": 1,
+          "details": ""
+        },
+        "attacks": [
+          {
+            "id": "pebble-hammer",
+            "name": "Warhammer",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d8+4",
+            "damageType": "bludgeoning",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "One-handed with shield; Crusher may move a qualifying target 5 feet once on Pebble’s turn.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true
+          },
+          {
+            "id": "pebble-handaxe",
+            "name": "Handaxe",
+            "type": "Action",
+            "attackBonus": 6,
+            "damageDice": "1d6+4",
+            "damageType": "slashing",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Melee or thrown 20/60 feet.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true
+          }
+        ],
+        "actions": [
+          {
+            "id": "pebble-interception",
+            "name": "Interception",
+            "type": "Reaction",
+            "attackBonus": null,
+            "damageDice": "1d10+2",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Reduce damage when a visible creature hits someone other than Pebble within 5 feet; Pebble must hold a shield or weapon.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true
+          },
+          {
+            "id": "pebble-second-wind",
+            "name": "Second Wind",
+            "type": "Bonus action",
+            "attackBonus": null,
+            "damageDice": "1d10+1",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Heal Pebble; once per short or long rest.",
+            "resourceId": "pebble-second-wind",
+            "cost": 1,
+            "prepared": true
+          },
+          {
+            "id": "pebble-crusher",
+            "name": "Crusher",
+            "type": "Once on Pebble’s turn",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "After a bludgeoning hit, move a creature no more than one size larger 5 feet into empty space. On a bludgeoning critical hit, attacks against it have advantage until Pebble’s next turn.",
+            "resourceId": "",
+            "cost": 1,
+            "prepared": true
+          },
+          {
+            "id": "pebble-fire-forged",
+            "name": "Fire-Forged",
+            "type": "Passive",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "You have resistance to fire damage: halve fire damage you take, rounding down.",
+            "resourceId": "",
+            "cost": 0,
+            "prepared": true
+          },
+          {
+            "id": "pebble-rock-eater",
+            "name": "Rock Eater",
+            "type": "Passive",
+            "attackBonus": null,
+            "damageDice": "",
+            "damageType": "",
+            "saveAbility": "",
+            "saveDC": null,
+            "effect": "Ordinary, nonmagical stone can satisfy your food needs; you still need water. Eating a magical stone stores its magical properties for 24 hours of in-game time. Choose when to activate or use its power within that window. Stored properties expire 24 hours after the stone is eaten; activating late does not reset that expiry. The DM defines how each stone’s power manifests, its activation/action cost, and any stone-specific uses or limits.",
+            "resourceId": "",
+            "cost": 0,
+            "prepared": true
+          }
+        ],
+        "resources": [
+          {
+            "id": "pebble-second-wind",
+            "name": "Second Wind",
+            "max": 1,
+            "current": 1,
+            "restoreShort": 1,
+            "restoreLong": true,
+            "unit": "use",
+            "slotLevel": 0
+          }
+        ],
+        "spells": [],
+        "equipment": [
+          {
+            "name": "Warhammer",
+            "quantity": 1,
+            "category": "Weapon",
+            "notes": "Stone appearance",
+            "attuned": false,
+            "equipped": false
+          },
+          {
+            "name": "Handaxe",
+            "quantity": 2,
+            "category": "Weapon",
+            "notes": "Stone appearance",
+            "attuned": false,
+            "equipped": false
+          },
+          {
+            "name": "Shield",
+            "quantity": 1,
+            "category": "Armor",
+            "notes": "Slab-like appearance",
+            "attuned": false,
+            "equipped": false
+          },
+          {
+            "name": "Chain mail",
+            "quantity": 1,
+            "category": "Armor",
+            "notes": "Stone appearance; ordinary chain mail rules",
+            "attuned": false,
+            "equipped": false
+          },
+          {
+            "name": "Explorer’s pack",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "attuned": false,
+            "equipped": false
+          },
+          {
+            "name": "Staff",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "attuned": false,
+            "equipped": false
+          },
+          {
+            "name": "Hunting trap",
+            "quantity": 1,
+            "category": "Gear",
+            "notes": "",
+            "attuned": false,
+            "equipped": false
+          }
+        ],
+        "money": {
+          "cp": 0,
+          "sp": 0,
+          "ep": 0,
+          "gp": 10,
+          "pp": 0
+        },
+        "features": [
+          {
+            "name": "Interception",
+            "text": "Reaction; reduce damage to a nearby other target by 1d10+2.",
+            "source": "Tasha’s / Pebble handout p. 3"
+          },
+          {
+            "name": "Crusher",
+            "text": "Once on own turn move a qualifying target 5 feet after bludgeoning hit; critical hit grants advantage to attacks against it until next turn.",
+            "source": "Tasha’s / Pebble handout p. 3"
+          },
+          {
+            "name": "Second Wind",
+            "text": "Bonus action to regain 1d10+1 HP, once per short or long rest.",
+            "source": "PHB / Pebble handout p. 3"
+          },
+          {
+            "name": "Fire-Forged",
+            "text": "You have resistance to fire damage: halve fire damage you take, rounding down.",
+            "source": "Homebrew Goron traits · DM approved 2026-10-09"
+          },
+          {
+            "name": "Rock Eater",
+            "text": "Ordinary, nonmagical stone can satisfy your food needs; you still need water. Eating a magical stone stores its magical properties for 24 hours of in-game time. Choose when to activate or use its power within that window. Stored properties expire 24 hours after the stone is eaten; activating late does not reset that expiry. The DM defines how each stone’s power manifests, its activation/action cost, and any stone-specific uses or limits.",
+            "source": "Homebrew Goron traits · DM approved 2026-10-09"
+          }
+        ],
+        "inspiration": false,
+        "death": {
+          "successes": 0,
+          "failures": 0,
+          "stable": false
+        },
+        "exhaustion": 0,
+        "conditions": [],
+        "concentration": "",
+        "effects": [],
+        "notes": "Byron’s answers supersede the handout’s earlier traveler rumor: dwarves who made Pebble’s hammer told him of delicious shiny rocks. Pebble fears getting lost outside his mountains. He meets the other PCs during Session 1 with no prior connection. Handout mechanics are provisional until a live sheet is supplied.",
+        "publicNotes": "A curious mountain traveler seeking a delicious shiny rock. He is brave, but unfamiliar roads make him uneasy.",
+        "publicOptions": {
+          "showHp": true,
+          "showActions": true,
+          "showResources": false,
+          "showStatus": true
+        },
+        "passiveOverride": {
+          "perception": null,
+          "insight": null,
+          "investigation": null
+        },
+        "levelHistory": [],
+        "management": {
+          "favorites": []
+        }
+      },
+      "changes": [
+        "HP → 12",
+        "Death saves cleared"
+      ]
+    }
+  }
+}

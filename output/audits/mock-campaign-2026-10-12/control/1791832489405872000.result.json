@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "goblins": {
+      "id": "1791832489485-esh0e6l2rpn",
+      "label": "MOCK goblins concealment",
+      "notation": "1d20+6",
+      "parts": [
+        15
+      ],
+      "total": 21,
+      "kind": "digital",
+      "time": "01:14 PM"
+    },
+    "trista": {
+      "id": "1791832489506-7fz3b807q6",
+      "label": "Trista watches roadside",
+      "notation": "1d20",
+      "parts": [
+        19
+      ],
+      "total": 19,
+      "kind": "digital",
+      "time": "01:14 PM"
+    },
+    "ringgo": {
+      "id": "1791832489529-3phr4yuf3x2",
+      "label": "Ringgo scans treeline",
+      "notation": "1d20+2",
+      "parts": [
+        10
+      ],
+      "total": 12,
+      "kind": "digital",
+      "time": "01:14 PM"
+    },
+    "donavan": {
+      "id": "1791832489550-4a8qevk578k",
+      "label": "Donavan scans treeline",
+      "notation": "1d20+3",
+      "parts": [
+        7
+      ],
+      "total": 10,
+      "kind": "digital",
+      "time": "01:14 PM"
+    }
+  }
+}

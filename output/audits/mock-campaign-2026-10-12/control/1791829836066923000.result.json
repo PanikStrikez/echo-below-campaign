@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "text": "Publish objective",
+      "visible": true
+    },
+    {
+      "text": "Save shared purse",
+      "visible": true
+    },
+    {
+      "text": "Ringgo Paul · objective ",
+      "visible": true
+    },
+    {
+      "text": "Preview request",
+      "visible": true
+    },
+    {
+      "text": "Decline",
+      "visible": true
+    },
+    {
+      "text": "Apply reviewed request",
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+[
+  {
+    "id": "evening6-start",
+    "title": "Session 6 · prepare the mine expedition",
+    "read": [
+      "Before another journey, your equipment lies within reach: lamps to check, packs to close, provisions to count. The work ahead will take you beyond familiar doors and into stone where daylight cannot follow. You can still decide what to carry, whom to trust, and what you hope to bring back.",
+      "An expedition need not answer every question at once. You can set a limit on time, agree on a retreat signal, or choose a single objective before you enter. What is your purpose this time, and what would make you turn back?"
+    ],
+    "ask": [],
+    "scene": "town-phandalin"
+  },
+  {
+    "id": "s4-arrival",
+    "title": "Arrival · follow a route the party actually earned",
+    "read": [
+      "The foothills close around the trail. Ahead, a dark opening cuts beneath the rock. Cold air brushes past you, and from somewhere below comes a low crash, like surf heard through the earth.",
+      "The opening offers a visible threshold, but the sound beyond it reaches farther than your sight. The rocky approach gives you a place to check equipment and gather your light before entering. You can study the ground, agree on your order, or listen for the next distant surge."
+    ],
+    "ask": [
+      "Who leads, who carries the map, and what lights the way? Are you entering to rescue someone, confront the Spider, explore the mine, or all three?"
+    ],
+    "scene": "lmop-cave-entrance"
+  },
+  {
+    "id": "s4-room-1",
+    "title": "Area 1 · Rockseeker camp and the descent",
+    "read": [
+      "Three bedrolls surround a silent camp. Supplies lie where their owners left them. A dwarf’s body rests among the bundles, and a rope tied around a stone spire drops into a break in the cavern floor.",
+      "The rope is the clearest connection between this camp and the space below. Its fastening and the edge of the pit can be examined before anyone descends. The bundles and the body offer separate questions, and you can leave room for someone to keep watch while the others decide where to begin."
+    ],
+    "ask": [
+      "Do you examine the camp, tend to the dead, secure the rope, or watch the passages below?"
+    ],
+    "scene": "lmop-map-wave-south"
+  },
+  {
+    "id": "s4-room-2",
+    "title": "Area 2 · Mine tunnels",
+    "read": [
+      "Low passages cross and divide ahead of you. Tool marks stop abruptly at unfinished stone faces. Between the turns, even your footsteps seem to lose their direction.",
+      "The low stonework makes every turn feel close, and the unfinished faces give several branches a similar appearance. You can keep a mark at the last junction, follow the group carefully, or stop to compare the visible passages before choosing one. Your route back is something you can record as you go."
+    ],
+    "ask": [
+      "How do you mark the route and keep one another in sight? Who watches behind?"
+    ],
+    "scene": "lmop-map-wave-south"
+  },
+  {
+    "id": "s4-room-3",
+    "title": "Area 3 · Old entrance and ceiling stirges",
+    "read": [
+      "Carved miners still work along the walls above a floor strewn with ancient bones. Empty brass lamps hang in the stone. Beyond them, the high ceiling disappears into shadow.",
+      "The abandoned lamps offer no light of their own. Your illumination catches the miners' carved tools and the pale bones at different heights, leaving the upper space harder to judge. You can inspect the floor, examine the figures on the walls, or direct your attention toward the ceiling."
+    ],
+    "ask": [
+      "Are you studying the carvings, searching the bodies, watching the ceiling, or passing through?"
+    ],
+    "scene": "lmop-map-wave-south"
+  },
+  {
+    "id": "s4-room-4",
+    "title": "Area 4 · Old guardroom",
+    "read": [
+      "Stone bunks and splintered racks lie beneath a fallen section of ceiling. Bones are scattered between them, half buried in pale dust.",
+      "The bunks identify this as a place where people once slept, while the broken racks suggest equipment no longer fit for use. Fallen stone interrupts parts of the floor. You can study the room from the threshold, choose a route through the debris, or examine a particular set of remains."
+    ],
+    "ask": [
+      "Who enters, and where is everyone when you begin looking around?"
+    ],
+    "scene": "lmop-map-wave-south"
+  },
+  {
+    "id": "s4-room-5",
+    "title": "Area 5 · Assayers’ office",
+    "read": [
+      "Three dusty scales stand on a stone counter. Paper scraps fill small niches behind it, and the floor holds the remains of workers and warriors who never left.",
+      "The arrangement of the scales and niches suggests work that once involved careful measurements and records. The scraps are within reach, but their age is visible in their edges. You can look without touching, search the counter, or ask someone who knows the writing to examine what survives."
+    ],
+    "ask": [
+      "Do you inspect the papers, counter, or bodies? Who handles the old records?"
+    ],
+    "scene": "lmop-map-wave-south"
+  },
+  {
+    "id": "s4-room-6",
+    "title": "Area 6 · South barracks",
+    "read": [
+      "Rows of stone bunks flank an old brazier. Three gaunt shapes crouch over the scattered bones, working their jaws against scraps far too old to feed them.",
+      "The bunks and old brazier break the chamber into narrower gaps than its size first suggests. The shapes among the bones are occupied with what lies before them. You can stop at the entrance to judge those gaps, choose where to stand, or decide whether to make your presence known."
+    ],
+    "ask": [
+      "Do you listen first, slip past, draw them out, or enter?"
+    ],
+    "scene": "lmop-map-wave-south"
+  },
+  {
+    "id": "s4-room-7",
+    "title": "Area 7 · Ruined storeroom and a secure rest",
+    "read": [
+      "A collapsed wall opens onto a small chamber. Beyond a half-open door, a surviving storeroom holds neat rows of cracked, empty kegs. Its stonework is sound.",
+      "The half-open door breaks the line of the collapsed wall. Beyond it, cracked kegs still stand in something like their old order, a small island of storage amid the ruin. The sound of stonework carries here; its source remains out of sight."
+    ],
+    "ask": [
+      "Do you inspect and secure the door? Who keeps watch, and are you taking a short rest or settling in longer?"
+    ],
+    "scene": "lmop-map-wave-south"
+  },
+  {
+    "id": "s4-room-8",
+    "title": "Area 8 · Fungi cavern and poison gas",
+    "read": [
+      "Pale caps, thick stalks, and shelves of fungus crowd the cavern. Some growths glow green, casting enough light to reveal the far wall. The floor between them is almost lost beneath the carpet.",
+      "The faint green light clings to the caps and stalks, leaving the room's edges hard to judge. The growth covers the walking surface as well as the view ahead. Before crossing, you can study its spread from the threshold and decide how close to bring your light."
+    ],
+    "ask": [
+      "How do you cross without disturbing the growth? Do you test the air, scout a route, or seek another passage?"
+    ],
+    "scene": "lmop-map-wave-south"
+  },
+  {
+    "id": "s4-room-9",
+    "title": "Area 9 · Great cavern",
+    "read": [
+      "The hall opens around long stone tables and cold braziers. Stairs climb to ledges at either end, above a floor scattered with the remains of an ancient battle.",
+      "Cold braziers offer no warmth to the long tables. The stairs and ledges at either end rise above the scattered remains, giving the chamber more than one level to watch. Anything moving across the open floor would be difficult to overlook from above."
+    ],
+    "ask": [
+      "What light or noise have you brought? Do you cross the lower floor, climb a ledge, or watch the shadows first?"
+    ],
+    "scene": "lmop-map-wave-great-cavern"
+  },
+  {
+    "id": "s4-room-10",
+    "title": "Area 10 · Dark pool",
+    "read": [
+      "Still black water fills the cave. Pale broken shells crunch along the bank, and a slow stream slides away beneath a low opening to the northeast.",
+      "The bank's shells crunch beneath a careful step, while the black water gives little sense of its depth. The stream's low northeastern opening draws your eye away from the pool. Following it would mean approaching stone and water that conceal what lies beyond."
+    ],
+    "ask": [
+      "Do you sound the depth, secure a rope, search underwater, or follow the stream?"
+    ],
+    "scene": "lmop-map-wave-central"
+  },
+  {
+    "id": "s4-room-11",
+    "title": "Area 11 · North barracks",
+    "read": [
+      "Heat from a glowing brazier touches your face. Stone bunks line the walls, and a broken table has been piled against the eastern door.",
+      "The brazier's warmth sets this room apart from the colder passages. Bunks leave narrow spaces between them, and the broken table piled against the eastern door makes that exit a practical obstacle. You can inspect the barricade from this side before deciding whether to disturb it."
+    ],
+    "ask": [
+      "Do you listen, approach under a pretext, force the barricade, or find another route?"
+    ],
+    "scene": "lmop-map-wave-central"
+  },
+  {
+    "id": "s4-room-12",
+    "title": "Area 12 · Smelter cavern",
+    "read": [
+      "A cold furnace towers above abandoned ore carts. Beside it, a motionless wheel hangs over a dry channel. Green fire dances around a skull suspended above the armored dead.",
+      "Ore carts stand idle beside the furnace, and the wheel hangs motionless over a dry channel. Green fire outlines the skull and catches on the armored dead. The old machinery divides the floor into working spaces; the threat now occupies the same ground where miners once labored."
+    ],
+    "ask": [
+      "Do you retreat from the guardian, attempt to speak, use the channel, or engage? How closely are you standing together?"
+    ],
+    "scene": "lmop-map-wave-smelter"
+  },
+  {
+    "id": "s4-room-13",
+    "title": "Area 13 · Starry cavern",
+    "read": [
+      "Your light scatters across a ceiling that glitters like a field of stars. Below it stand two battered stone buildings, blackened by fire, amid the fallen dead.",
+      "Points of light prick the ceiling above the two blackened buildings. Down below, fallen bodies and scorched stone tell a harsher story. The buildings interrupt the open cavern, each offering a closer approach and a separate interior to examine."
+    ],
+    "ask": [
+      "Do you inspect the stone, examine the buildings, or look for the source of the lingering magic?"
+    ],
+    "scene": "lmop-map-wave-central"
+  },
+  {
+    "id": "s4-room-14",
+    "title": "Area 14 · Mormesk and the wizards’ quarters",
+    "read": [
+      "Charred furniture stands beneath a sagging ceiling. A scorched chest waits beside a ruined bed. As you step in, darkness gathers out of the floor and turns toward you.",
+      "Charred furniture crowds the room beneath the damaged ceiling. The bed and chest survived the destruction well enough to recognize, though their contents cannot be judged from here. The dark presence near the floor draws attention away from them, making the threshold a useful place to stop and look."
+    ],
+    "ask": [
+      "Do you answer the spirit, offer something, withdraw, or threaten it? Has anyone touched its possessions?"
+    ],
+    "scene": "lmop-map-wave-central"
+  },
+  {
+    "id": "s4-room-15",
+    "title": "Area 15 · Forge of Spells and its guardian",
+    "read": [
+      "Scorched worktables ring a workshop that should have fallen silent centuries ago. Yet green flame still moves in a brazier at its heart. Above it, a many-eyed creature turns, and a greeting sounds inside your mind.",
+      "The brazier's green light colors the scorched tables, while the many-eyed creature hangs within the ruined workspace. Its greeting reaches you without crossing the air. There is room to answer before moving closer; the surviving forge equipment remains something to study rather than claim on sight."
+    ],
+    "ask": [
+      "Do you speak to the guardian, study the fire, show credentials, or reach for something?"
+    ],
+    "scene": "lmop-map-wave-forge"
+  },
+  {
+    "id": "s4-room-16",
+    "title": "Area 16 · Booming cavern",
+    "read": [
+      "The passage ends above churning water. A surge races through the dark and strikes beneath the ledge with a crash you feel in your chest. Then the water sinks back, leaving a long, hollow roar.",
+      "Each surge changes the sound of the cavern, filling the spaces between words before falling away again. The water and the stone around it are visible things to study. You can keep back from its edge, watch the rhythm, or inspect the route without entering the water."
+    ],
+    "ask": [
+      "Do you watch a full cycle, test the ledge, enter the water, or turn back?"
+    ],
+    "scene": "lmop-map-wave-north"
+  },
+  {
+    "id": "s4-room-17",
+    "title": "Area 17 · Old streambed bypass",
+    "read": [
+      "A dry channel squeezes beneath a low ceiling. Smooth stones and rounded boulders mark the course water once followed through the dark.",
+      "Smooth stones lie among larger boulders in the dry channel. With the ceiling hanging low, the route asks you to watch both your footing and your head. Its bends and obstructions break the view ahead; you can keep track of the way back as you pass them."
+    ],
+    "ask": [
+      "Who scouts the narrow passage, how do you carry light, and how do you help anyone slowed by the space?"
+    ],
+    "scene": "lmop-map-wave-north"
+  },
+  {
+    "id": "s4-room-18",
+    "title": "Area 18 · Collapsed cavern and Vhalak",
+    "read": [
+      "Water spills down into a broad rift. Ropes hang from stakes along its western edge, while the clack of shifted rubble rises from below. Figures work under the eye of a dark-clad supervisor.",
+      "The waterfall fills the rift with a steady roar, broken by the clacking work below. Ropes fastened to stakes on the western side offer a visible means of descent. From the edge, you can examine their condition and the figures beneath before committing to the drop."
+    ],
+    "ask": [
+      "Do you observe from cover, talk, descend, or stop the excavation? Who can reach each rope?"
+    ],
+    "scene": "lmop-map-wave-north"
+  },
+  {
+    "id": "s4-room-19",
+    "title": "Area 19 · Temple of Dumathoin",
+    "read": [
+      "Six cracked pillars frame a hall swept clean of rubble. At the far end, a seated dwarf carved from stone watches over a rough camp. Bedrolls, packs, and a paper-covered table show that this shrine has become someone’s headquarters.",
+      "The figures and stonework draw your eye to different parts of the room. You can note where everyone stands and which route remains behind you before answering. The distance between you and anyone present is something to consider while there is still time to speak."
+    ],
+    "ask": [
+      "Did the occupants hear you coming? Do you announce yourselves, stay concealed, parley, or enter ready to fight?"
+    ],
+    "scene": "lmop-map-wave-temple"
+  },
+  {
+    "id": "s4-nezznar",
+    "title": "Nezznar · bargain, battle, escape, or capture",
+    "read": [
+      "The dark elf rests one hand on a spider-carved staff. “You have cost me people, time, and secrecy. Before either of us wastes more, tell me what you believe you came here to claim.”",
+      "The words being exchanged do not settle what either side will accept. You can hold your position, ask for a specific answer, or make your own terms clear. The chamber and the route behind you remain part of the conversation, even if nobody chooses to mention them."
+    ],
+    "ask": [
+      "What do you demand, what are you prepared to concede, and how will you test any promise?"
+    ],
+    "scene": "lmop-map-wave-temple"
+  },
+  {
+    "id": "s4-room-20",
+    "title": "Area 20 · Rescue Nundro",
+    "read": [
+      "Beyond the locked door, faded cloth hangs above a simple bed. A dwarf lies bound on the cold floor. His breathing is faint but steady.",
+      "You can take stock from the threshold before approaching what lies within. The visible condition of any person here and the space around them matter more than guessing what happened out of sight. You can offer help, ask a question, or check the way out before moving someone."
+    ],
+    "ask": [
+      "Who checks him, who watches the doorway, and where can you take him safely?"
+    ],
+    "scene": "lmop-map-wave-north"
+  },
+  {
+    "id": "s4-forge-use",
+    "title": "Forge use · temporary magic and item custody",
+    "read": [],
+    "ask": [
+      "Which nonmagical weapon or armor goes into the flame, who carries it, and what will you do before its magic expires?"
+    ],
+    "scene": "lmop-map-wave-forge"
+  },
+  {
+    "id": "s4-rest",
+    "title": "Rest or retreat · keep the expedition state",
+    "read": [],
+    "ask": [
+      "Where do you rest, how is the entrance secured, who keeps watch, and are you leaving the mine entirely?"
+    ],
+    "scene": "lmop-map-wave-south"
+  },
+  {
+    "id": "s4-wandering",
+    "title": "Optional · wandering encounters during exposed delays",
+    "read": [],
+    "ask": [],
+    "scene": "lmop-map-wave-central"
+  },
+  {
+    "id": "s4-return",
+    "title": "Return visit · resume the mine that now exists",
+    "read": [],
+    "ask": [
+      "How long were you away, what did you bring back, and what route do you plan to use?"
+    ],
+    "scene": "lmop-cave-entrance"
+  },
+  {
+    "id": "s4-outcomes",
+    "title": "Before leaving · record the actual ending",
+    "read": [],
+    "ask": [
+      "Is Nezznar dead, captured, escaped, allied temporarily, or still inside? Is Nundro rescued and alive? What happened to Gundren?",
+      "Is the Forge reached, its guardian resolved, and a safe route established? Which rooms or enemies remain?",
+      "Who holds each item, map, prisoner, and sensitive discovery? What did the party promise, and what do they want to do next?"
+    ],
+    "scene": "lmop-cave-entrance"
+  },
+  {
+    "id": "s4-homecoming",
+    "title": "Phandalin · choose the homecoming that happened",
+    "read": [
+      "Phandalin’s roofs appear beyond the fields. Someone by the road looks up, recognizes you, and hurries toward town. By the time you reach the first houses, people are waiting to hear what happened.",
+      "The places you recognize offer somewhere to begin your account, but the people who hear it will need your words. You can tell them what you witnessed, ask what changed during your absence, or settle a practical need before deciding what comes after the expedition."
+    ],
+    "ask": [
+      "Who do you visit first, what do you tell the town, and which news do you deliver privately?"
+    ],
+    "scene": "town-phandalin"
+  },
+  {
+    "id": "s4-custody",
+    "title": "Phandalin · a living Black Spider in custody",
+    "read": [
+      "The cell door closes. For the first time, the Spider’s reach is measured in a few feet of stone. Outside, questions arrive faster than the guards can answer them.",
+      "The cell's closed door places a boundary between the prisoner and everyone outside. Questions can wait long enough to decide who stands watch and who speaks. Whatever answer Nezznar offers will still need to be weighed against what you have actually seen."
+    ],
+    "ask": [
+      "Who takes custody, who guards him until the escort arrives, and who is allowed to speak with him?"
+    ],
+    "scene": "town-phandalin"
+  },
+  {
+    "id": "s4-beyond",
+    "title": "After the mine · level 5 and the next chosen road",
+    "read": [],
+    "ask": [
+      "Do you stay in Phandalin, follow Mormesk’s map, investigate an unresolved enemy, or seek a contact in Waterdeep? What matters personally to each of you?"
+    ],
+    "scene": "town-phandalin"
+  },
+  {
+    "id": "next-session-6-review",
+    "title": "Close this evening · review what actually changed",
+    "read": [],
+    "ask": [],
+    "scene": "town-phandalin"
+  }
+]

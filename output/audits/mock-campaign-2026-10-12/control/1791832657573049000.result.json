@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "goblin-2",
+    "action": {
+      "actor": "goblin-2",
+      "label": "Shortbow",
+      "targets": [
+        "Aldric"
+      ],
+      "rolls": [
+        {
+          "id": "pa-1791832657634-bhowxkof",
+          "label": "Shortbow · attack 1",
+          "notation": "1d20+4",
+          "parts": [
+            1
+          ],
+          "total": 5,
+          "natural": 1,
+          "public": false,
+          "kind": "digital",
+          "time": "1:17:37 PM"
+        },
+        {
+          "id": "pa-1791832657634-ggq3qmn9",
+          "label": "Shortbow · effect 1.1",
+          "notation": "1d6+2",
+          "parts": [
+            2
+          ],
+          "total": 4,
+          "natural": 2,
+          "public": false,
+          "kind": "digital",
+          "time": "1:17:37 PM"
+        }
+      ],
+      "outcomes": [
+        {
+          "targetId": "pc-aldric",
+          "text": "Aldric: 5 vs AC 12: miss, 0 piercing → 0; temp HP absorbed 0"
+        }
+      ],
+      "reactions": [],
+      "costs": []
+    }
+  }
+}

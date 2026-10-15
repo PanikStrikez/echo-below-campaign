@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "result": {
+    "id": "mock-pc-donavan-road-1",
+    "actor": "pc-donavan",
+    "label": "Ray of Frost",
+    "rolls": [
+      {
+        "id": "pa-1791829424874-43w985zr",
+        "label": "Ray of Frost · attack 1",
+        "notation": "1d20+6",
+        "parts": [
+          9
+        ],
+        "total": 15,
+        "natural": 9,
+        "public": true,
+        "kind": "digital",
+        "time": "12:23:44 PM"
+      },
+      {
+        "id": "pa-1791829424874-i22467kk",
+        "label": "Ray of Frost · effect 1.1",
+        "notation": "1d8",
+        "parts": [
+          8
+        ],
+        "total": 8,
+        "natural": 8,
+        "public": true,
+        "kind": "digital",
+        "time": "12:23:44 PM"
+      }
+    ],
+    "outcomes": [
+      {
+        "targetId": "goblin-4",
+        "text": "Goblin 4: 15 vs AC 15: hit, 8 cold → 8; temp HP absorbed 0"
+      }
+    ],
+    "costs": [],
+    "usage": "action"
+  }
+}

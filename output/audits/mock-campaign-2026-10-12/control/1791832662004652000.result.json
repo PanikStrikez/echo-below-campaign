@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "result": {
+    "actor": "pc-aldric",
+    "actions": [
+      {
+        "actor": "pc-aldric",
+        "label": "Fire Bolt",
+        "rolls": [
+          {
+            "id": "pa-1791832662031-3zqdolgm",
+            "label": "Fire Bolt · attack 1",
+            "notation": "1d20+6",
+            "parts": [
+              16
+            ],
+            "total": 22,
+            "natural": 16,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:42 PM"
+          },
+          {
+            "id": "pa-1791832662031-ehp8wx6p",
+            "label": "Fire Bolt · effect 1.1",
+            "notation": "1d10",
+            "parts": [
+              9
+            ],
+            "total": 9,
+            "natural": 9,
+            "public": true,
+            "kind": "digital",
+            "time": "1:17:42 PM"
+          }
+        ],
+        "outcomes": [
+          {
+            "targetId": "goblin-2",
+            "text": "Goblin 2: 22 vs AC 15: hit, 9 fire → 9; temp HP absorbed 0"
+          }
+        ],
+        "costs": []
+      }
+    ]
+  }
+}

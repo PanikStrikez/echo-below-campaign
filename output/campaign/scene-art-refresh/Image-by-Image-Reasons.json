@@ -1,0 +1,1563 @@
+[
+  {
+    "id": "gundren",
+    "title": "Gundren departs",
+    "reason": "The opening is a farewell to Gundren and Sildar, so I show the two mounted NPCs beside the supply wagon and leave the five player characters undefined. Their gear makes the escort job readable. The rural roadside sign was removed because the scene did not call for it.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "departure"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "horses",
+    "title": "The empty horses",
+    "reason": "The discovery must create a question before revealing an answer. Two fallen saddled horses and looted bags establish the missing travelers; keeping all goblins out preserves the ambush. The death is shown without graphic injury.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "ambush"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "cave-mouth",
+    "title": "The cave mouth",
+    "reason": "The shallow stream and dry right-hand approach are navigation information the players can actually see. The briars conceal the lookout, so the picture stops at the dark entrance rather than exposing the whole hideout.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "cave"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "road-reveal",
+    "title": "Road ambush · revealed",
+    "reason": "This is deliberately a second image after discovery: two melee goblins and two archers express the printed opening tactics. It does not decide whom the players attack, whether anyone is hit, or who wins.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "ambush"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "trail-art",
+    "title": "Goblin trail",
+    "reason": "The footprints, drag marks and disturbed plants make this a trail the party can investigate. I keep the later traps and captives out of sight so following the evidence still matters.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "trail"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "snare-art",
+    "title": "Snare · discovered",
+    "reason": "The exposed rope loop and bent sapling explain the discovered trap. Showing the mechanism without a suspended character keeps the outcome open.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "trail"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "pit-art",
+    "title": "Pit · discovered",
+    "reason": "The uncovered pit shows its width, depth and camouflaging debris. It is a discovery view; showing a victim or spikes would add consequences and hazards the scene does not establish.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "trail"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "blind-art",
+    "title": "Area 2 · Goblin blind",
+    "reason": "The briar screen and two goblin lookouts explain how this position watches the cave approach. The camera shows the position after discovery rather than labeling a hidden ambush on the arrival picture.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "blind"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "kennel-art",
+    "title": "Area 3 · Kennel",
+    "reason": "Three wolves, their chains and the anchoring stalagmite are the useful details here. Their posture leaves taming, feeding and avoiding them possible rather than assuming an attack.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "kennel"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "passage-art",
+    "title": "Area 4 · Steep passage",
+    "reason": "The steep stream passage, wet rock and narrow side route establish the physical challenge. A view from below communicates the climb without exposing rooms farther inside.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "passage"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "overpass-art",
+    "title": "Area 5 · Overpass",
+    "reason": "The high wooden bridge above the stream explains the vertical relationship. Its sentry belongs to the prepared encounter, while distant passages remain uncertain.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "bridge"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "den-art",
+    "title": "Area 6 · Goblin den",
+    "reason": "The ten-foot ledge separates Yeemik's bargaining position from the lower goblins. Sildar belongs to this historical first encounter; the image must not suggest he is still captive after your rescue.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "den"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "pools-art",
+    "title": "Area 7 · Twin pools",
+    "reason": "Two pools, low stone dams and their feeding waterfall make the flooding mechanism understandable. The prepared guards are shown without depicting the dam being broken or deciding who is swept away.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "pools"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "klarg-art",
+    "title": "Area 8 · Klarg’s cave",
+    "reason": "Klarg, Ripper and two goblins identify the original encounter, with looted crates and a coal fire grounding the room. This is historical encounter art: Klarg's presence must not override his confirmed death.",
+    "source": "Lost Mine of Phandelver, printed pp. 6–12; current Session 1 runbook",
+    "recordIds": [
+      "klarg"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "phandalin-art",
+    "title": "Phandalin arrival",
+    "reason": "A small settlement of modest buildings, dirt streets and older ruined foundations fits frontier Phandalin. The arrival view gives orientation without exposing the Redbrands' underground rooms.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19; current Phandalin runbook",
+    "recordIds": [
+      "aftermath",
+      "s2-sildar",
+      "s2-town",
+      "s2-close",
+      "s5-inn",
+      "s5-rat"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "barthen-art",
+    "title": "Barthen’s Provisions",
+    "reason": "Supplies, tools and ledgers make the delivery destination immediately recognizable. Lean, balding Barthen is approachable; the image does not invent what he knows about Gundren's present condition.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19; current Phandalin runbook",
+    "recordIds": [
+      "aftermath",
+      "s2-barthen",
+      "s5-barthen"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-barthen-exterior",
+    "title": "Phandalin · Outside Barthen’s Provisions",
+    "reason": "A broad ordinary supply shop gives players a recognizable place to return to at the current checkpoint. Visible goods explain its purpose without promising particular stock or prices.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-prep",
+      "s2-arrival",
+      "s5-open"
+    ],
+    "reveal": "On arrival at the shop",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-stonehill-inn",
+    "title": "Phandalin · Stonehill Inn",
+    "reason": "The modest fieldstone inn provides a public lodging destination. It is not labeled as Gundren's current inn, because your account left that inn unnamed.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-inn"
+    ],
+    "reveal": "When the inn comes into view",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-stonehill-common-room",
+    "title": "Phandalin · Stonehill common room",
+    "reason": "A working hearth, tables and ordinary customers support conversation and rumor gathering. No injured Gundren or announced victory is added to turn an available scene into a confirmed event.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-inn",
+      "tr-obligations",
+      "tr-obligations"
+    ],
+    "reveal": "On entering the inn",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-townmasters-hall",
+    "title": "Phandalin · Townmaster’s Hall",
+    "reason": "The hall's public frontage and bell distinguish civic business from a tavern or fortress. Notices remain unreadable so the picture cannot invent a posted reward or quest result.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-town"
+    ],
+    "reveal": "When the party visits the hall",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-lionshield-coster",
+    "title": "Phandalin · Lionshield Coster",
+    "reason": "The blue-lion identity and practical weapons distinguish this trading post from Barthen's provisions. Stock is illustrative; the shop record governs availability and prices.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-town"
+    ],
+    "reveal": "When the party finds the shop",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-miners-exchange",
+    "title": "Phandalin · Miner’s Exchange",
+    "reason": "Ore samples, scales and business records establish Halia's trade. Her visible professional manner supports negotiation while her affiliations and private motives remain unstated.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-town"
+    ],
+    "reveal": "When the party visits",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-shrine-of-luck",
+    "title": "Phandalin · Shrine of Luck",
+    "reason": "Sister Garaele and a modest stone shrine fit a small frontier religious site. Invented clover heraldry was removed; the picture supplies a meeting place without revealing her private mission.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-town"
+    ],
+    "reveal": "When the party visits",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-alderleaf-farm",
+    "title": "Phandalin · Alderleaf Farm",
+    "reason": "An ordinary farm and halfling household make hospitality plausible. The image does not expose Carp's secret route or decide whether the family shares it.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-town"
+    ],
+    "reveal": "When the party reaches the farm",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-sleeping-giant",
+    "title": "Phandalin · Sleeping Giant tap house",
+    "reason": "A rough roadside tap house expresses the establishment's reputation without turning it into a palace. The confrontation remains a separately staged encounter.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-town"
+    ],
+    "reveal": "When the tap house comes into view",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-sleeping-giant-interior",
+    "title": "Phandalin · Sleeping Giant common room",
+    "reason": "Grista's worn common room gives a usable conversation setting. Its rough furniture and cramped tables suggest atmosphere without forcing violence or adding a secret headquarters.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-town"
+    ],
+    "reveal": "When the party enters the tap house",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-edermath-orchard",
+    "title": "Phandalin · Edermath Orchard",
+    "reason": "The orchard and older half-elf make Daran's quieter life visible. His history and the information he may offer stay in the NPC card rather than becoming obvious heraldry.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-town"
+    ],
+    "reveal": "When the party visits Daran",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-redbrand-confrontation",
+    "title": "Phandalin · Redbrand confrontation",
+    "reason": "Four scarlet-cloaked ruffians establish the prepared street challenge. Their confrontational stance sets pressure but does not show a player being hit or choose how the party responds.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-redbrands"
+    ],
+    "reveal": "After the ruffians confront the party",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-tresendar-manor",
+    "title": "Phandalin · Tresendar Manor ruins",
+    "reason": "A ruined hilltop residence establishes the entrance context. Its damaged domestic architecture avoids implying that the party faces an intact occupied fortress.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-manor"
+    ],
+    "reveal": "When the manor is approached",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-tresendar-tunnel",
+    "title": "Phandalin · Hillside tunnel entrance",
+    "reason": "The hillside opening provides a discovered alternate approach. The view stops at the entrance so players do not gain a free overview of the hideout.",
+    "source": "Lost Mine of Phandelver, printed pp. 14–19",
+    "recordIds": [
+      "s2-manor"
+    ],
+    "reveal": "Once the tunnel is found",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-cellar-cistern",
+    "title": "Redbrand Hideout · Area 1 · Cellar and cistern",
+    "reason": "The cellar is ordinary storage disguising a hideout. I emphasized the raised entrance landing, two stair flights, western rectangular cistern and provisions, because those define the room and useful routes. I removed the invented bucket mechanism and kept the submerged satchel and secret door invisible.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-cellar"
+    ],
+    "reveal": "On entering area 1",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-ruffian-barracks",
+    "title": "Redbrand Hideout · Area 2 · Ruffian barracks",
+    "reason": "Two double bunks, stored provisions and three ruffians describe a small lived-in guard room. Plain scarlet garments identify the gang without invented dragon crests.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-barracks"
+    ],
+    "reveal": "On entering area 2",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-pit-hall",
+    "title": "Redbrand Hideout · Area 3 · Hall with hidden pit",
+    "reason": "The players initially see an intact dusty hall and the old copper doors. A visible gap or suspicious outline would give away the trap, so the floor stays continuous. Unsupported gang banners were removed.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-trap"
+    ],
+    "reveal": "On entering area 3",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-pit-discovered",
+    "title": "Redbrand Hideout · Area 3 · Pit discovered",
+    "reason": "This is only for a detected or triggered hazard. The central broken floor and narrow side ledges explain the new danger without adding spikes, a fallen player, or a predetermined injury. It must match the unrevealed hall rather than becoming a different room.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-trap"
+    ],
+    "reveal": "After the pit is detected or triggered",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-crypt",
+    "title": "Redbrand Hideout · Area 4 · Crypt",
+    "reason": "Three family sarcophagi, three motionless armored skeletons and oak-shaped columns are distinctive observable details. Motionless remains preserve the moment before animation; closed tombs protect the undiscovered rings.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-crypt"
+    ],
+    "reveal": "On entering area 4",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-slave-pens",
+    "title": "Redbrand Hideout · Area 5 · Slave pens",
+    "reason": "The two barred cells and central guard aisle explain the rescue problem. The generator rejected the family-inclusive view twice, so the final camera shows the two guards and near bars, with the family off frame. Narration and NPC tokens must supply the mother, daughter and boy; their rescue remains unresolved.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-pens"
+    ],
+    "reveal": "When the pens are visible",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-armory",
+    "title": "Redbrand Hideout · Area 6 · Armory",
+    "reason": "Weapon racks, quivers and scarlet cloaks establish a usable supply room. Individual stock totals remain in the room card; perspective artwork is not a reliable inventory count.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-armory"
+    ],
+    "reveal": "On entering area 6",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-redbrand-storeroom",
+    "title": "Redbrand Hideout · Area 7 · Storeroom",
+    "reason": "Crates, barrels and a rough transition into the cavern distinguish storage from a ceremonial chamber. Secret doors and hidden contents are omitted until searched.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-armory"
+    ],
+    "reveal": "On entering area 7",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-crevasse",
+    "title": "Redbrand Hideout · Area 8 · Crevasse",
+    "reason": "Two bridges, two support columns and the narrow fissure are the important navigable features. A neutral view keeps the watching nothic, hidden chest, concealed routes and body below from becoming free information.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-crevasse"
+    ],
+    "reveal": "On entering area 8",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-nothic-reveal",
+    "title": "Redbrand Hideout · Area 8 · Nothic revealed",
+    "reason": "The one-eyed creature is added only after detection or communication. Its watchful stance allows negotiation instead of presenting an unavoidable fight. The surrounding cave should remain the same as the neutral view.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-crevasse"
+    ],
+    "reveal": "Only when the nothic is seen",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-bugbear-barracks",
+    "title": "Redbrand Hideout · Area 9 · Bugbear barracks",
+    "reason": "Three bugbears, Mosk's eye patch and Droop distinguish this encounter from another ruffian room. Droop's presence allows rescue or conversation without deciding his relationship with the party.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-bugbears"
+    ],
+    "reveal": "On entering area 9",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-common-room",
+    "title": "Redbrand Hideout · Area 10 · Common room",
+    "reason": "Four ruffians gambling around a table make the social interruption readable. Kegs and plain cloth support the source's common-room function; invented gang emblems were removed.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-common"
+    ],
+    "reveal": "On entering area 10",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-wizards-workshop",
+    "title": "Redbrand Hideout · Area 11 · Wizard’s workshop",
+    "reason": "Alchemy equipment and shelves express Iarno’s work, without asserting he succeeded at making invisibility potions. Your party already captured the rat, so the current room contains no replacement familiar. Book contents and future explanations stay unreadable.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-workshop"
+    ],
+    "reveal": "On entering area 11",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-glasstaff-quarters",
+    "title": "Redbrand Hideout · Area 12 · Glasstaff’s quarters",
+    "reason": "Actual play overrides the original villain-at-desk illustration: Glasstaff escaped, so his quarters are empty. The desk, bed, scarlet drapes and closed chest support further searching. I removed invented crests and the castle painting so it cannot leak his destination.",
+    "source": "Lost Mine of Phandelver, printed pp. 20–26",
+    "recordIds": [
+      "s2-glasstaff"
+    ],
+    "reveal": "On entering area 12",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-triboar-trail",
+    "title": "Wilderness · Triboar Trail journey",
+    "reason": "A modest overland trail through foothills provides travel context. Distant terrain is atmosphere rather than a measured route or a newly discovered destination.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [
+      "s3-travel"
+    ],
+    "reveal": "During travel east of Phandalin",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-conyberry",
+    "title": "Wilderness · Conyberry ruins",
+    "reason": "Ruined homes and overgrown streets show an abandoned settlement. The picture does not add surviving residents or advertise Agatha's exact hiding place.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [
+      "s3-agatha"
+    ],
+    "reveal": "When the ruined town comes into view",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-agathas-lair",
+    "title": "Wilderness · Agatha’s woven shelter",
+    "reason": "Woven branches and old elven household objects express a shelter with a former inhabitant. Keeping Agatha absent preserves the moment before her appearance.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [
+      "s3-agatha"
+    ],
+    "reveal": "Before Agatha appears",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-agatha-reveal",
+    "title": "Wilderness · Agatha appears",
+    "reason": "A spectral elven woman within the same woven shelter makes the encounter's identity clear. A composed pose supports a difficult conversation rather than assuming combat.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [
+      "s3-agatha"
+    ],
+    "reveal": "Only when Agatha manifests",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-old-owl-well",
+    "title": "Wilderness · Old Owl Well",
+    "reason": "The approach should show a broken tower stump, functioning well and travel tent. Hamun Kost has disappeared in your campaign, so he is absent. Zombies stay inside the tower until the party earns their reveal.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [
+      "s3-old-owl"
+    ],
+    "reveal": "When the site is approached",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-old-owl-well-undead",
+    "title": "Wilderness · Old Owl Well · undead revealed",
+    "reason": "This is a conditional creature reveal, not a claim about current survivors. The twelve zombies belong to the printed first-entry setup; Kost remains absent following your actual outcome. The tower and courtyard should match the approach.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [
+      "s3-old-owl"
+    ],
+    "reveal": "When the zombies emerge",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-wyvern-tor-approach",
+    "title": "Wilderness · Wyvern Tor",
+    "reason": "The name does not mean a wyvern is present. I use rugged hills and a cave approach, and keep it empty because your party cleared the orc camp.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [
+      "s3-wyvern"
+    ],
+    "reveal": "When the tor is spotted",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-wyvern-tor-camp",
+    "title": "Wilderness · Wyvern Tor · orc camp",
+    "reason": "Your victory should persist. A used but empty camp supports a return without resurrecting the orcs or ogre, assuming bodies remain, or awarding new treasure. Unresolved custody stays unresolved.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [
+      "s3-wyvern"
+    ],
+    "reveal": "When the camp is visible",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-stirge-encounter",
+    "title": "Wilderness · Wilderness encounter · stirges",
+    "reason": "Flying stirges approaching an ordinary camp establish the threat. The artwork leaves attacks, damage and the encounter's eventual numbers to the encounter card.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [],
+    "reveal": "Only when stirges attack or are spotted",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-ghoul-encounter",
+    "title": "Wilderness · Wilderness encounter · ghouls",
+    "reason": "Ghouls approaching camp make the nighttime danger visible. No player victim is included, and the image remains a reusable wilderness encounter rather than a recorded attack.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [],
+    "reveal": "Only when ghouls are encountered",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-ogre-encounter",
+    "title": "Wilderness · Wilderness encounter · ogre",
+    "reason": "A large solitary ogre on the route communicates scale and an obstacle. The open surroundings allow avoidance or negotiation as well as a fight.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [],
+    "reveal": "Only when the ogre is encountered",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-goblin-encounter",
+    "title": "Wilderness · Wilderness encounter · goblins",
+    "reason": "Small goblins using roadside vegetation fit an ambush threat. The image shows discovered opponents without assigning their targets or the party's response.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [],
+    "reveal": "Only when goblins are encountered",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-hobgoblin-encounter",
+    "title": "Wilderness · Wilderness encounter · hobgoblins",
+    "reason": "Organized armored travelers distinguish hobgoblins from goblins. The route remains ordinary terrain so the image does not invent a fort or faction headquarters.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [],
+    "reveal": "Only when hobgoblins are encountered",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-orc-encounter",
+    "title": "Wilderness · Wilderness encounter · orcs",
+    "reason": "Orcs among rocky foothills provide a separate optional wilderness encounter. This is not the cleared Wyvern Tor camp and does not undo that success.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [],
+    "reveal": "Only when orcs are encountered",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-wolf-encounter",
+    "title": "Wilderness · Wilderness encounter · wolves",
+    "reason": "Wolves on a wooded route provide a believable animal encounter. Their alert posture leaves space for feeding, avoidance or retreat without illustrating an attack result.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [],
+    "reveal": "Only when wolves are encountered",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-owlbear-encounter",
+    "title": "Wilderness · Wilderness encounter · owlbear",
+    "reason": "A feathered bear-bodied creature makes the owlbear recognizable. The woodland route supplies context without inventing a nest, treasure or captured person.",
+    "source": "Lost Mine of Phandelver, printed pp. 27–35",
+    "recordIds": [],
+    "reveal": "Only when the owlbear is encountered",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-thundertree-approach",
+    "title": "Thundertree · Thundertree approach",
+    "reason": "Roofless buildings, vegetation and the distant tower give orientation to the abandoned village. Hidden creatures remain absent until their individual encounters are staged.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [],
+    "reveal": "When the ruined town comes into view",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-western-cottage",
+    "title": "Thundertree · Area 1 · Western cottage",
+    "reason": "A roofless cottage beneath an old tree is the actual location, not a dramatic giant-tree shrine. Ordinary weeds hide the two blights so the artwork does not replace Perception.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-1"
+    ],
+    "reveal": "On entering area 1",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-blighted-cottages",
+    "title": "Thundertree · Area 2 · Blighted cottages",
+    "reason": "Two overgrown damaged cottages fit the location's modest scale. Blights blend into the vegetation rather than being displayed before discovery.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-2"
+    ],
+    "reveal": "On entering area 2",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-brown-horse",
+    "title": "Thundertree · Area 3 · Brown Horse",
+    "reason": "The faded horse sign, damaged taproom and abandoned furnishings identify the old tavern. Inert remains and empty spaces preserve the moment before any undead stir.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-3"
+    ],
+    "reveal": "On entering area 3",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-druids-watch",
+    "title": "Thundertree · Area 4 · Druid’s Watch",
+    "reason": "A comparatively intact cottage contrasts with surrounding ruins and provides a plausible refuge. The view does not announce Reidoth's knowledge or promise that he will help.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-4"
+    ],
+    "reveal": "When cottage is approached",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-blighted-farmhouse",
+    "title": "Thundertree · Area 5 · Blighted farmhouse",
+    "reason": "A small ruined farmhouse overtaken by plants fits the village's decline. Concealed blights are omitted so approaching it still involves uncertainty.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-5"
+    ],
+    "reveal": "On entering area 5",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-ruined-store",
+    "title": "Thundertree · Area 6 · Ruined store",
+    "reason": "A damaged storefront, broken roof and webs hint at danger without naming every inhabitant. Hidden valuables remain out of sight.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-6"
+    ],
+    "reveal": "When the webbed ruin is seen",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-spider-reveal",
+    "title": "Thundertree · Area 6 · Spiders revealed",
+    "reason": "Two giant spiders become visible only in the reveal view. The same ruined shop supplies their terrain rather than moving them into a generic enormous spider cavern.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-6"
+    ],
+    "reveal": "When the spiders are seen",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-dragon-tower",
+    "title": "Thundertree · Area 7 · Dragon’s tower",
+    "reason": "The initial tower view warns through a damaged roof and two spider carcasses. Keeping Venomfang out of sight leaves the party room to observe, negotiate or retreat before a dragon reveal.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-7"
+    ],
+    "reveal": "When tower hill is approached",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-venomfang-reveal",
+    "title": "Thundertree · Area 7 · Venomfang revealed",
+    "reason": "The dragon belongs inside a single forty-foot-high tower room with a circling staircase, not in an invented cathedral or vast treasure cave. Folded wings make its size credible in the established space; its appearance does not decide combat.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-7"
+    ],
+    "reveal": "Only when the dragon is seen",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-old-smithy",
+    "title": "Thundertree · Area 8 · Old smithy",
+    "reason": "A forge, anvil and collapsed workshop roof identify the building's former use. Undead are not shown attacking before the encounter starts.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-8"
+    ],
+    "reveal": "On entering area 8",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-herbalists-shop",
+    "title": "Thundertree · Area 9 · Herbalist’s shop",
+    "reason": "Shelves, containers and creeping vegetation establish the old herbalist's premises. Hidden jewelry is not presented as obvious treasure.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-9"
+    ],
+    "reveal": "On entering area 9",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-town-square",
+    "title": "Thundertree · Area 10 · Town square",
+    "reason": "The weathered statue and open square give the village a recognizable public landmark. Nearby threats stay separate from the orientation view.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-10"
+    ],
+    "reveal": "On entering area 10",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-old-garrison",
+    "title": "Thundertree · Area 11 · Old garrison",
+    "reason": "Beds and military remnants establish a former guard building. Motionless remains do not prematurely reveal their animation or decide the fight.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-11"
+    ],
+    "reveal": "On entering area 11",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-weavers-cottage",
+    "title": "Thundertree · Area 12 · Weaver’s cottage",
+    "reason": "The ruined domestic workshop gives this room its ordinary former purpose. It remains a small cottage rather than an invented magical shrine.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-12"
+    ],
+    "reveal": "On entering area 12",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-cultist-cottage",
+    "title": "Thundertree · Area 13 · Dragon cultists’ cottage",
+    "reason": "An intact-looking cottage provides the initial exterior before meeting its occupants. No black-dragon symbol advertises their hidden allegiance from outside.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [
+      "s3-tt-13"
+    ],
+    "reveal": "When cottage is approached",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-cultists-reveal",
+    "title": "Thundertree · Area 13 · Cultists revealed",
+    "reason": "Six cloaked adults with dragon masks establish the revealed cult group. An ordinary cottage meeting leaves negotiation possible; no invented altar or sacrifice is added.",
+    "source": "Lost Mine of Phandelver, printed pp. 30–35",
+    "recordIds": [],
+    "reveal": "Once the cottage is entered",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-castle-approach",
+    "title": "Cragmaw Castle · Cragmaw Castle approach",
+    "reason": "Unequal damaged towers surrounded by woodland establish Cragmaw's recognizable silhouette. The picture cannot supply the route here before the players learn it.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-castle-sight"
+    ],
+    "reveal": "When the castle is first seen",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-castle-entrance",
+    "title": "Cragmaw Castle · Area 1 · Castle entrance",
+    "reason": "The raised approach and damaged gates show the main entry clearly. Hidden defenders and alternate entrances stay outside this first view.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area1"
+    ],
+    "reveal": "At the entrance",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-trapped-hall",
+    "title": "Cragmaw Castle · Area 2 · Trapped hall",
+    "reason": "An apparently usable dusty hall preserves the hidden hazard. The image does not mark a trigger or show collapse before detection.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area2"
+    ],
+    "reveal": "On entering area 2",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-hall-collapse",
+    "title": "Cragmaw Castle · Area 2 · Hall collapse",
+    "reason": "Fallen masonry and timbers explain the triggered change to the hall. No trapped player or predetermined injury is illustrated.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area2"
+    ],
+    "reveal": "Only if the trap triggers",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-archer-post",
+    "title": "Cragmaw Castle · Area 3 · Archer post",
+    "reason": "Two goblin archers beside a narrow opening explain the defensive position. Their sightline is more useful than a generic goblin portrait.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area1"
+    ],
+    "reveal": "When an archer post is entered",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-ruined-barracks",
+    "title": "Cragmaw Castle · Area 4 · Ruined barracks",
+    "reason": "Damaged walls, crude bedding and goblin occupants show an improvised barracks. The room remains visibly part of a ruined castle.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area4"
+    ],
+    "reveal": "On entering area 4",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-castle-storeroom",
+    "title": "Cragmaw Castle · Area 5 · Storeroom",
+    "reason": "Stored food, equipment and neglected supplies establish ordinary logistics. Recoverable items are not highlighted as if the party has already claimed them.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area5"
+    ],
+    "reveal": "On entering area 5",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-hobgoblin-barracks",
+    "title": "Cragmaw Castle · Area 6 · Hobgoblin barracks",
+    "reason": "Four hobgoblins and simple sleeping arrangements establish organized occupation. Their visible equipment supports the encounter without deciding their orders or reaction.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area6"
+    ],
+    "reveal": "On entering area 6",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-banquet-hall",
+    "title": "Cragmaw Castle · Area 7 · Banquet hall",
+    "reason": "Two long tables and a tall damaged hall fit the castle's former dining space. Yegg and the goblin group occupy it without an invented royal feast.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area7"
+    ],
+    "reveal": "On entering area 7",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-dark-hall",
+    "title": "Cragmaw Castle · Area 8 · Dark hall",
+    "reason": "Old devotional statues and curtains establish a repurposed sacred room. The grick remains concealed in this neutral view.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area8"
+    ],
+    "reveal": "On entering area 8",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-grick-reveal",
+    "title": "Cragmaw Castle · Area 8 · Grick revealed",
+    "reason": "The grick is revealed above the same devotional architecture. Its perched position explains the danger without announcing hidden treasure.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area8"
+    ],
+    "reveal": "When the grick attacks or is found",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-goblin-shrine",
+    "title": "Cragmaw Castle · Area 9 · Goblin shrine",
+    "reason": "Three robed goblins and a black-covered altar show the shrine's present use. Visible ritual objects support the room description without revealing concealed loot.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area9"
+    ],
+    "reveal": "On entering area 9",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-postern-gate",
+    "title": "Cragmaw Castle · Area 10 · Postern gate",
+    "reason": "A smaller reinforced side entrance provides an alternate approach. It is a discovered access point, not a guarantee that it is unlocked or safe.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area10"
+    ],
+    "reveal": "When found",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-ruined-tower",
+    "title": "Cragmaw Castle · Area 11 · Ruined tower",
+    "reason": "Collapsed masonry and overgrowth explain the damaged tower and possible access. The concealed doorway is not outlined for players before discovery.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area11"
+    ],
+    "reveal": "On entering area 11",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-guard-barracks",
+    "title": "Cragmaw Castle · Area 12 · Guard barracks",
+    "reason": "Two guards, bedding and a brazier make the active defensive position understandable. The barred entrance remains a practical obstacle rather than a cinematic prison scene.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area12"
+    ],
+    "reveal": "On entering area 12",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-owlbear-tower",
+    "title": "Cragmaw Castle · Area 13 · Owlbear tower",
+    "reason": "A large owlbear in a dark tall tower fits the confined encounter. Hidden treasure remains above or outside the view, and the creature's presence is staged after discovery.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area13"
+    ],
+    "reveal": "When tower interior is visible",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-kings-quarters",
+    "title": "Cragmaw Castle · Area 14 · King’s quarters",
+    "reason": "Grol, Snarl and the apparent drow belong to the prepared castle encounter. Gundren is now at the inn, so he must not appear as a castle hostage. Glasstaff’s arrival is private and stays out of the public base image; Vyerith’s true nature is also concealed.",
+    "source": "Lost Mine of Phandelver, printed pp. 35–41",
+    "recordIds": [
+      "s3-area14"
+    ],
+    "reveal": "When room is visible",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-cave-entrance",
+    "title": "Wave Echo Cave · Area 1 · Cave entrance",
+    "reason": "The Rockseeker camp, three bedrolls, Tharden’s body and rope descent introduce the mine’s immediate problem. The dead dwarf must not be mistaken for Gundren or Nundro. The pit and visible routes matter more than a grand mine entrance.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-arrival",
+      "s4-room-1",
+      "s4-return",
+      "s4-outcomes"
+    ],
+    "reveal": "On entering area 1",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-mine-tunnels",
+    "title": "Wave Echo Cave · Area 2 · Mine tunnels",
+    "reason": "The six-foot ceilings distinguish the old workings from the larger caverns. I use a cramped junction and unfinished faces, while keeping the stalking jelly out of sight.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-2"
+    ],
+    "reveal": "On entering area 2",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-old-entrance",
+    "title": "Wave Echo Cave · Area 3 · Old entrance",
+    "reason": "Carved dwarf and gnome figures, old battle remains and a spacious entrance hall establish the mine's past. Stirges remain concealed until the encounter reveals them.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-3"
+    ],
+    "reveal": "On entering area 3",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-guardroom",
+    "title": "Wave Echo Cave · Area 4 · Old guardroom",
+    "reason": "Stone benches and stone bunks are the source details, rather than generic wooden barracks. The bones remain inert until the skeletons animate; showing standing undead early would change that encounter.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-4"
+    ],
+    "reveal": "On entering area 4",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-guardroom-skeletons",
+    "title": "Wave Echo Cave · Area 4 · Skeletons rise",
+    "reason": "This is the animation reveal for the same guardroom. Nine skeletons are the encounter’s count, while the surrounding rubble and stone furniture remain consistent. No player injury or outcome is pictured.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-4"
+    ],
+    "reveal": "Once the skeletons animate",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-assayers-office",
+    "title": "Wave Echo Cave · Area 5 · Assayers’ office",
+    "reason": "A counter, balances and document cubbies make the old accounting office distinct. The strongbox stays closed; its contents are a search result, not free visual information.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-5"
+    ],
+    "reveal": "On entering area 5",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-south-barracks",
+    "title": "Wave Echo Cave · Area 6 · South barracks",
+    "reason": "Stone bunks and a cold brazier preserve the old mine's construction. Three ghouls identify the prepared encounter without adding a larger horde.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-6"
+    ],
+    "reveal": "On entering area 6",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-ruined-storeroom",
+    "title": "Wave Echo Cave · Area 7 · Ruined storeroom",
+    "reason": "Old containers, secure northern storage and an eastern collapse explain the room's condition. It is useful exploration terrain, not an invented treasure vault.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-7",
+      "s4-rest"
+    ],
+    "reveal": "On entering area 7",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-fungi-cavern",
+    "title": "Wave Echo Cave · Area 8 · Fungi cavern",
+    "reason": "Tall luminous fungi establish unusual growth and the route's environmental difficulty. A neutral view avoids announcing the poisonous response before disturbance.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-8"
+    ],
+    "reveal": "On entering area 8",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-fungal-gas",
+    "title": "Wave Echo Cave · Area 8 · Spores released",
+    "reason": "Spores spreading from the same growth show the triggered environmental hazard. No injured character or guaranteed saving-throw failure is pictured.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-8"
+    ],
+    "reveal": "Only after spores are disturbed",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-great-cavern",
+    "title": "Wave Echo Cave · Area 9 · Great cavern",
+    "reason": "The lower dining space, tables, cold braziers and side ledges communicate a large room with meaningful elevation. Concealed ghouls remain absent from the first view.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-9"
+    ],
+    "reveal": "On entering area 9",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-dark-pool",
+    "title": "Wave Echo Cave · Area 10 · Dark pool",
+    "reason": "A dark pool, mussels, steps and the incoming stream give observable clues and routes. The submerged skeleton and valuable rings remain hidden.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-10"
+    ],
+    "reveal": "On entering area 10",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-north-barracks",
+    "title": "Wave Echo Cave · Area 11 · North barracks",
+    "reason": "This room contains five bugbears, not ghouls. Its lit iron brazier and barricaded eastern door show an occupied defensive position; stone bunks retain the mine’s older function.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-11"
+    ],
+    "reveal": "On entering area 11",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-smelter-cavern",
+    "title": "Wave Echo Cave · Area 12 · Smelter cavern",
+    "reason": "The cold furnace and dry waterwheel channel explain why the foundry is not operating. The green flameskull is initially visible, but the dwarf zombies are still inert remains until activated. A flowing river or molten furnace would contradict the room.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-12"
+    ],
+    "reveal": "On entering area 12",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-starry-cavern",
+    "title": "Wave Echo Cave · Area 13 · Starry cavern",
+    "reason": "The stars are reflected light from minerals in a stone ceiling. I keep the two scorched buildings and escarpment because they organize exploration, and avoid a literal night sky, planar portal or Echo apparatus.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-13"
+    ],
+    "reveal": "On entering area 13",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-wizards-quarters",
+    "title": "Wave Echo Cave · Area 14 · Wizards’ quarters",
+    "reason": "Scorched furniture, books and an iron chest establish damaged guest quarters. Mormesk is absent until his appearance, and the closed chest does not disclose its contents.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-14"
+    ],
+    "reveal": "On entering area 14",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-mormesk-reveal",
+    "title": "Wave Echo Cave · Area 14 · Mormesk appears",
+    "reason": "A spectral former wizard appears in the same burned quarters. His presence supports a conversation or confrontation without deciding what agreement the party reaches.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-14"
+    ],
+    "reveal": "When the wraith manifests",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-forge-of-spells",
+    "title": "Wave Echo Cave · Area 15 · Forge of Spells",
+    "reason": "The source is a damaged workshop with a small green-flame brazier and a four-eyestalk spectator, not a full beholder or giant magical machine. Its greeting leaves room for conversation and deception rather than forcing combat.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-15",
+      "s4-forge-use"
+    ],
+    "reveal": "On entering area 15",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-booming-cavern",
+    "title": "Wave Echo Cave · Area 16 · Booming cavern",
+    "reason": "Water surging against stone ledges explains the sound that gives Wave Echo Cave its name. The view makes the vertical waterfront clear without adding a ship or artificial harbor.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-16"
+    ],
+    "reveal": "On entering area 16",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-old-streambed",
+    "title": "Wave Echo Cave · Area 17 · Old streambed",
+    "reason": "The four-foot-high dry passage is a practical alternate route. Its low ceiling and rounded stones matter; a full-height hallway or flowing river would change how players imagine using it.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-17"
+    ],
+    "reveal": "On entering area 17",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-collapsed-cavern",
+    "title": "Wave Echo Cave · Area 18 · Collapsed cavern",
+    "reason": "The eastern rift, western stream and ropes explain vertical movement and the excavation. Two bugbears work below, one guards above, and the apparent drow supervises. Hidden treasure and the supervisor’s actual identity are omitted.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-18"
+    ],
+    "reveal": "On entering area 18",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-temple-of-dumathoin",
+    "title": "Wave Echo Cave · Area 19 · Temple of Dumathoin",
+    "reason": "The seated dwarf with warhammer, six cracked pillars and camp establish the temple’s shape and occupation. A neutral view separates architecture from the villain reveal; the statue’s hidden danger remains unrevealed.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-19"
+    ],
+    "reveal": "On entering area 19",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-nezznar-confrontation",
+    "title": "Wave Echo Cave · Area 19 · Black Spider confrontation",
+    "reason": "Nezznar’s drow appearance and spider staff identify the revealed antagonist in his existing temple, rather than in an invented throne room. His allies appear only in this reveal variant. The image does not decide negotiation, escape, defeat or Nundro’s rescue.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-19",
+      "s4-nezznar"
+    ],
+    "reveal": "Only when Nezznar confronts the party here",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-priests-quarters",
+    "title": "Wave Echo Cave · Area 20 · Priests’ quarters",
+    "reason": "The simple former priest’s bedroom and one bound, unconscious Nundro follow the printed initial encounter. He is alive, not the corpse from the entrance camp. This prepared view does not establish that the party has reached or rescued him.",
+    "source": "Lost Mine of Phandelver, printed pp. 42–50",
+    "recordIds": [
+      "s4-room-20"
+    ],
+    "reveal": "On entering area 20",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "lmop-phandalin-homecoming",
+    "title": "Epilogue · Phandalin homecoming",
+    "reason": "A neutral working-town return supports different endings. A celebration, restored mine or rescued NPC portrait would presume outcomes your table has not established.",
+    "source": "Lost Mine of Phandelver, printed p. 51; campaign aftermath branches",
+    "recordIds": [
+      "s4-homecoming"
+    ],
+    "reveal": "Only after a successful return",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  },
+  {
+    "id": "wd-contact",
+    "title": "Dracuseth · Waterdeep contact",
+    "reason": "Dracuseth first receives the party at a table in the Yawning Portal. I preserve his established gold dragonborn identity and equipment, move him from the roadside to an ordinary tavern table, and use the offered chair to match his invitation. He remains a Waterdeep contact.",
+    "source": "Campaign Waterdeep transition and Mending Court records; established Dracuseth portrait",
+    "recordIds": [
+      "wd-dracuseth",
+      "contact",
+      "tr-dracuseth",
+      "mc-dracuseth",
+      "tr-dracuseth"
+    ],
+    "reveal": "DM stages explicitly after discovery",
+    "status": "installed",
+    "visualReview": "passed",
+    "interpretation": "Perspective illustration; use the preserved tactical map for exact distances and connectivity."
+  }
+]

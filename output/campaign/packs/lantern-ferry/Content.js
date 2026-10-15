@@ -1,0 +1,5 @@
+/* Original example atlas. Prepared locations are not recorded visits. */
+(() => {
+ const image='assets/Example-Ferry.svg';
+ globalThis.ECHO_ATLAS_DATA={schemaVersion:1,id:'lantern-ferry-atlas',title:'Lantern Ferry',rootBoardId:'ferry-overview',boards:[{id:'ferry-overview',publicId:'ferry-public',title:'Lantern Ferry',publicTitle:'Lantern Ferry',kind:'settlement',image,publicImage:image,publicImageApproved:true,viewBox:[0,0,1200,800],locationIds:['ferry-crossing'],children:[],notes:['Original fictional map. Illustrative 5-foot grid; no verified travel-distance scale.']}],locations:[{id:'ferry-crossing',name:'River crossing',publicName:'River crossing',type:'landmark',parentRegion:'ferry-overview',travelId:'ferry-crossing',boardIds:['ferry-overview'],placements:{'ferry-overview':{x:610,y:395}},publicDescription:'Two jetties and a small ferry.',dmDescription:'Lysa wants a safe crossing. Her decisions and the repair result remain open.',mapIds:['ferry'],questIds:['crossing'],npcIds:['lysa'],source:{kind:'custom',reference:'Original fictional example'},aliases:[]}],travelRoutes:[],proposals:[]};
+})();

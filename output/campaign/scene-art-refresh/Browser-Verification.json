@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-12T16:39:24.140Z",
+  "environment": "Isolated Chrome profile and disposable desktop/phone services",
+  "physicalDevices": false,
+  "liveServicesChanged": false,
+  "saveImported": true,
+  "decoded": 120,
+  "shots": [
+    {
+      "id": "lmop-cellar-cistern",
+      "src": "lmop-visuals/cellar-cistern.png",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "lmop-glasstaff-quarters",
+      "src": "lmop-visuals/glasstaff-quarters.png",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "lmop-north-barracks",
+      "src": "lmop-visuals/north-barracks.png",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "lmop-starry-cavern",
+      "src": "lmop-visuals/starry-cavern.png",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "lmop-forge-of-spells",
+      "src": "lmop-visuals/forge-of-spells-v2.png",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "checks": [
+    "120 installed images decode at native 1536x1024",
+    "five representative illustrations render on player TV",
+    "presentation changes preserve map, token, fog and combat state"
+  ],
+  "errors": []
+}

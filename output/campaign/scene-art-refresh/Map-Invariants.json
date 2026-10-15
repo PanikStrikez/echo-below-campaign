@@ -1,0 +1,182 @@
+[
+  {
+    "id": "sl-library-map",
+    "image": "assets/Silent-Library-Plan.svg",
+    "sha256": "50c9f9cfd7d77011c2932ed5d626c5b04be51eab3f276af2bf62c8e8c4ab3997"
+  },
+  {
+    "id": "road",
+    "image": "session-01-visuals/road-ambush-painted-gridless.png",
+    "sha256": "8e7c83f8bb064b83910bdfc11f4b2fbc1ce34ef9dab15051ea20f228addf4ae2"
+  },
+  {
+    "id": "approach",
+    "image": "session-01-visuals/cave-approach-painted-gridless.png",
+    "sha256": "0276849eef5c93f9d7643f62f0d2b48fbf8ac1d36270963b74dd76958e15e0ce"
+  },
+  {
+    "id": "interior",
+    "image": "session-01-visuals/cragmaw-hideout-painted-gridless.png",
+    "sha256": "c0dd61ff09dbdd693d89de42c5412fb1f2f06f6d9a1adb2081f6eb42703b14cb"
+  },
+  {
+    "id": "phandalin-street",
+    "image": "lmop-battle-maps/professional/phandalin-street.png",
+    "sha256": "045aa7f560b294126a312ed7d28d85ff6aeaaa3963a1b229f036825c77d5499d"
+  },
+  {
+    "id": "redbrand-hideout",
+    "image": "lmop-battle-maps/professional/redbrand-hideout.png",
+    "sha256": "e90deeee46287ed64a9cd90407bcb6a1d7b072420335059e8e4d542edd885e46"
+  },
+  {
+    "id": "region-lmop",
+    "image": "town-maps/professional/phandelver-region.png",
+    "sha256": "630decbb1f846806b2a05f5bb2d72736f7342a22104e051a03e95fde13bd77b5"
+  },
+  {
+    "id": "town-phandalin",
+    "image": "town-maps/professional/phandalin-overhead.png",
+    "sha256": "383492ef6761ae9570b436210729123ef6bfe5e466f86eb8c19bcf29a3751871"
+  },
+  {
+    "id": "town-conyberry",
+    "image": "town-maps/professional/conyberry-overhead.png",
+    "sha256": "190906e99a02f512beb415e7a798af02b356fe5f1692c953637333380307b570"
+  },
+  {
+    "id": "town-thundertree",
+    "image": "town-maps/professional/thundertree-overhead.png",
+    "sha256": "a348f13a61b9610103ff9bfb8a82d70454537df56420cdc93107688d3c3d99c5"
+  },
+  {
+    "id": "city-waterdeep",
+    "image": "town-maps/waterdeep-overhead.svg",
+    "sha256": "26bc290b5b60264fd1317841a3564f19f733dd274716211146fa847a2c5737c8"
+  },
+  {
+    "id": "lmop-map-triboar-trail",
+    "image": "lmop-battle-maps/professional/triboar-trail.png",
+    "sha256": "c2932c67dffa726d867325e1287db36164b9c16e8d26fa4d83eea7fbdd335b3e"
+  },
+  {
+    "id": "lmop-map-night-camp",
+    "image": "lmop-battle-maps/professional/night-camp.png",
+    "sha256": "2535e17a6c52c9141601bab4014e4a9b0921b393a26f2fef449c583300cf4b56"
+  },
+  {
+    "id": "lmop-map-conyberry-ruins",
+    "image": "lmop-battle-maps/professional/conyberry-ruins.png",
+    "sha256": "0bce27bcf4b0c090db679e2250a2a9568061c21e348f81a8ee9c4bec92fb2a3b"
+  },
+  {
+    "id": "lmop-map-agatha-grove",
+    "image": "lmop-battle-maps/professional/agatha-grove.png",
+    "sha256": "ddb57a7c03cdd34e97e5b7f2795b3c91d34a41223c60a365ad8e5eec626f24b1"
+  },
+  {
+    "id": "lmop-map-old-owl-well",
+    "image": "lmop-battle-maps/professional/old-owl-well.png",
+    "sha256": "f244ca47e405bf851a946c44e9a05ffa1548e00d80975107e5ded5da3f479b52"
+  },
+  {
+    "id": "lmop-map-wyvern-tor",
+    "image": "lmop-battle-maps/professional/wyvern-tor.png",
+    "sha256": "b6f262edd2faccee600071c5335ec41c059fde83a4b7b0269dce2484c6ef8287"
+  },
+  {
+    "id": "lmop-map-sleeping-giant",
+    "image": "lmop-battle-maps/professional/sleeping-giant.png",
+    "sha256": "016b08de85cac8e494761c58ad9b0e24f7d41624aa53e3e48e4dcff4cff36b83"
+  },
+  {
+    "id": "lmop-map-tresendar-courtyard",
+    "image": "lmop-battle-maps/professional/tresendar-courtyard.png",
+    "sha256": "b539471e1effd7a7cc43498a87d5648a453b2e15aaea4504936ceb2749f3eea2"
+  },
+  {
+    "id": "lmop-map-redbrand-crevasse",
+    "image": "lmop-battle-maps/professional/redbrand-crevasse.png",
+    "sha256": "6037ea468cc408363cf95c15082faf3cca83500f58756c2ac87633b4bb3daf7d"
+  },
+  {
+    "id": "lmop-map-thundertree-overview",
+    "image": "lmop-battle-maps/professional/thundertree-overview.png",
+    "sha256": "88fee868737998f91f22b41164f6ee871f9e76e8dc98c968fa4861c278e3c68e"
+  },
+  {
+    "id": "lmop-map-thundertree-brown-horse",
+    "image": "lmop-battle-maps/professional/thundertree-brown-horse.png",
+    "sha256": "b2b16094670c57d2d8cc5234cd83cf3f89e81a1d8d8a3064c2cd0cc591040af4"
+  },
+  {
+    "id": "lmop-map-thundertree-spider-store",
+    "image": "lmop-battle-maps/professional/thundertree-spider-store.png",
+    "sha256": "e21434306a60cbad73c1a1a14dc2b57ef94c5b57ff553d2d26c0879dfaefe3e4"
+  },
+  {
+    "id": "lmop-map-thundertree-dragon-tower",
+    "image": "lmop-battle-maps/professional/thundertree-dragon-tower.png",
+    "sha256": "e32514b7e42bac267dc1bad8a49f65c45f044f5124c2d2f144f66ffb930cb951"
+  },
+  {
+    "id": "lmop-map-thundertree-garrison",
+    "image": "lmop-battle-maps/professional/thundertree-garrison.png",
+    "sha256": "930132391a0e858ecb76b847ee95bff31ee7a23985db316594864f518ee1ad92"
+  },
+  {
+    "id": "lmop-map-thundertree-cultists",
+    "image": "lmop-battle-maps/professional/thundertree-cultists.png",
+    "sha256": "b72981a11c0a394f1728129b38244af37aa0672c1d37d3e85084adaabbece607"
+  },
+  {
+    "id": "lmop-map-cragmaw-castle",
+    "image": "lmop-battle-maps/professional/cragmaw-castle.png",
+    "sha256": "b90647150fe9997a331ca486c12cc79a8c972a85a32c92d348120ae277adbb39"
+  },
+  {
+    "id": "lmop-map-cragmaw-kings-quarters",
+    "image": "lmop-battle-maps/professional/cragmaw-kings-quarters.png",
+    "sha256": "ccfb5efe9da800bc746e7c0ea4ae313a5312550194d4dd873050e99ad7c09ced"
+  },
+  {
+    "id": "lmop-map-wave-south",
+    "image": "lmop-battle-maps/professional/wave-south.png",
+    "sha256": "503045921860eafd6e26f12ef8a96db15ec8f30f9a3ffbcb84407f1732873070"
+  },
+  {
+    "id": "lmop-map-wave-central",
+    "image": "lmop-battle-maps/professional/wave-central.png",
+    "sha256": "02455c43aa55195b1cb31e575c8538fded237fb4fb04f24a3e2488b563982344"
+  },
+  {
+    "id": "lmop-map-wave-north",
+    "image": "lmop-battle-maps/professional/wave-north.png",
+    "sha256": "fcf1b6486d9a505eada4ddafdfdcb5a6df96c2fd5d6289dea9b80e390371d73e"
+  },
+  {
+    "id": "lmop-map-wave-great-cavern",
+    "image": "lmop-battle-maps/professional/wave-great-cavern.png",
+    "sha256": "78d7b7169c24d04c490a0d81f03f5789ae7a3c31080539e96cc2b6d8d1424d20"
+  },
+  {
+    "id": "lmop-map-wave-smelter",
+    "image": "lmop-battle-maps/professional/wave-smelter.png",
+    "sha256": "3611f57558dcb83e61f4700f937f6b37cbda383b88b89948db9da35ba611a210"
+  },
+  {
+    "id": "lmop-map-wave-forge",
+    "image": "lmop-battle-maps/professional/wave-forge.png",
+    "sha256": "188fe40d297c76661aff9bfebe6e15d5058f70fb9a266b8914ed6ea42ad84757"
+  },
+  {
+    "id": "lmop-map-wave-temple",
+    "image": "lmop-battle-maps/professional/wave-temple.png",
+    "sha256": "2379fe81e4d6cdaa4ff5f92c9e867f16ff261b68fc55a5262fef1b7697567978"
+  },
+  {
+    "id": "um1-table",
+    "image": "assets/Undermountain-Tactical-Canvas.svg",
+    "sha256": "f7961e2774fcf61e8cc070c7db5d03fefbb9bb4dd0491ee0dfd727846c743b79"
+  }
+]

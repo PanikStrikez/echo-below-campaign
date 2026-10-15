@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "lantern-ferry",
+  "version": "1.0.0",
+  "title": "Lantern Ferry",
+  "kind": "fictional-example",
+  "requiresAppSchema": 3,
+  "assets": [
+    "assets/Example-Ferry.svg"
+  ],
+  "source": "Original fictional demonstration",
+  "modules": [
+    "Template.js",
+    "Content.js"
+  ]
+}

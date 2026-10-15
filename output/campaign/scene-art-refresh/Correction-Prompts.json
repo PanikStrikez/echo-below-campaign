@@ -1,0 +1,42 @@
+[
+  {
+    "id": "lmop-pit-discovered",
+    "ref": "lmop-pit-hall",
+    "prompt": "Edit this EXACT hall into its discovered-pit variant. Preserve camera, straight hall width, bare walls, faux columns, oil lamps, green copper double doors with one angel relief and all room geometry. ONLY change the central floor to an exposed twenty-foot-deep pit with broken loose flagstones and snapped support timbers, narrow INTACT ledges at both left and right. Ordinary dirt bottom visible dimly. No spikes, people, bodies, banners, heraldry, new doors or magical effects. Keep all unaffected pixels/style as close as possible. This is a revealed hazard view, not evidence anyone fell."
+  },
+  {
+    "id": "lmop-nothic-reveal",
+    "ref": "lmop-crevasse",
+    "prompt": "Edit this EXACT cavern into the nothic-revealed variant. Preserve camera, both support columns, TWO modest wooden arched plank bridges WITHOUT rails, narrow fissure, ordinary storage crates, light and all geometry. Add ONE hunched SMALL humanoid-scale green-scaled nothic beside a WEST-side support column, clearly ONE large central eye, lean elongated clawed arms, watchful negotiating stance. No eyestalks, floating body or giant cyclops. No extra props, banners, insignia, throne, exposed chest, corpse or glowing crevasse. Unseen passages stay unseen. Ordinary gap remains approximately twenty feet deep; show dim rough bottom if visible rather than a bottomless abyss."
+  },
+  {
+    "id": "lmop-common-room",
+    "ref": "lmop-common-room",
+    "prompt": "Correct only unsupported heraldry: remove the black designs/emblems from all wall drapes and banners, leaving plain weathered BROWN and RED cloth. Preserve exactly FOUR human ruffians in scarlet cloaks, drinking and playing knucklebones at same table, coins, other tables/benches, ale kegs, lamps, camera and room composition. No new people, signs, secrets or details."
+  },
+  {
+    "id": "lmop-shrine-of-luck",
+    "ref": "lmop-shrine-of-luck",
+    "prompt": "Correct only the invented clover decorations: remove the four-leaf clover emblem on the wall and matching clover on the altar cloth, leaving PLAIN weathered salvaged stone and plain cream cloth. Preserve young elf acolyte Garaele, small outdoor shrine, book, ordinary offerings/candles, greenery and camera. No new goddess statue, holy symbol, secret faction insignia, magic or text. Keep the shrine modest, not cathedral-like."
+  },
+  {
+    "id": "lmop-old-owl-well",
+    "prompt": "Correct this Lost Mine of Phandelver Old Owl Well scene to its source description. Preserve the well, ruined courtyard, colorful tent, viewpoint, grounded painterly fantasy style. Remove the owl bird and decorative owl perch entirely. Remove the owl heraldic banner and its pole; no invented owl symbols. Reduce the tower to a low broken stump of masonry, a ruin only one partial storey high with a dark entrance, not a tall standing tower. Replace distant water/lake with rugged dry rolling foothills and scattered woodland. No wizard, no people, no zombies, no text, no added secrets. Landscape 1536x1024."
+  },
+  {
+    "id": "lmop-old-owl-well-undead",
+    "prompt": "Make a conditional discovered-creature version of this exact Old Owl Well image, keeping the low tower stump, well, tent, dry rugged hills, all architecture and camera unchanged. Add exactly twelve adult fantasy zombies in worn ordinary clothing, no blood or wounds, distributed across the courtyard emerging from the tower entrance. Use three easily countable groups of four individuals, all twelve whole heads visible, none extra in the dark entrance. No wizard, no owl, no heraldry, no text. Same grounded painterly fantasy landscape style."
+  },
+  {
+    "id": "lmop-guardroom-skeletons",
+    "prompt": "Correct this Wave Echo Cave old guardroom skeleton reveal. Retain exactly nine skeletons and the same camera/room. Replace ALL wooden beds, wooden benches, wooden tables and other wood furniture with ancient carved stone sleeping platforms and stone benches along walls, rough gray rock like the dwarf mine. Remove the hanging banner; no wall cloth, heraldry or invented faction symbols. Keep rubble, nine armored skeletons only, no additional creatures, no characters, no damage outcomes. Same grounded painterly fantasy style, landscape."
+  },
+  {
+    "id": "lmop-starry-cavern",
+    "prompt": "Correct Wave Echo Cave Area 13 starry cavern. Keep this grounded painterly style and glittering mineral flecks in a real dark stone ceiling. REMOVE THE ENTIRE POOL/LAKE: all floor is dry cavern rock. Composition must clearly show TWO freestanding dwarf-built stone buildings inside the cavern, each a modest square one-storey structure with flat stone roof and door, walls scorched and damaged by ancient combat. One building at foreground-left on low ground, the second at midground-right on an elevated rocky shelf reached by a natural escarpment/slope. Both visibly separate from natural cave walls, show space around them. The ceiling sparkles reflect ordinary light, no actual stars/sky. No crates of treasure, no magical machinery, no creatures, no corpse, no people, no additional buildings. Wide clear room illustration, 1536x1024 landscape."
+  },
+  {
+    "id": "lmop-nezznar-confrontation",
+    "prompt": "Create revealed encounter variant of this EXACT Wave Echo Cave Temple of Dumathoin, preserving the camera, six cracked pillars, seated dwarf warhammer statue at north, table on left, firepit, bedrolls, DRY FLOOR and architecture. Add Nezznar, one male drow with white hair and dark robes holding a spider-topped staff, standing on floor in front of the statue. Add exactly two adult furry bugbears near him and exactly four giant spiders distributed around the room. No waterfall, pool, added stairs or side altar. No player characters, casualties, battle damage or outcome. Keep the same grounded painterly fantasy style. Landscape 1536x1024."
+  }
+]
